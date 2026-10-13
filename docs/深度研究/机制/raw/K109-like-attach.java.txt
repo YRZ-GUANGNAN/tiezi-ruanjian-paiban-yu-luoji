@@ -1,0 +1,25 @@
+    @Override // com.xingin.foundation.core.v2.Presenter
+    public void x6() {
+        r rVarY0;
+        if (PatchProxy.proxyVoid0Para(this, NoteDetailLikeBtnPresenter.class, 293255)) {
+            return;
+        }
+        super.x6();
+        View viewW6 = w6();
+        int i100 = n.J1;
+        ((BtnViewCustomTextView) viewW6.findViewById(i100)).setTypeface(Typeface.defaultFromStyle(1));
+        ((BtnViewCustomTextView) w6().findViewById(i100)).setTextColor(f.e(l56.k.f224011v));
+        s68.k.m(w6(), 0L, 1, null).d1(new k() { // from class: r96.e
+            @Override // zb9.k
+            public final Object apply(Object obj) {
+                return NoteDetailLikeBtnPresenter.K6((Unit) obj);
+            }
+        }).d(u.d(e6()).a());
+        xb9.b bVarT6 = t6();
+        e eVarN = u.n(e6());
+        Result<Object> result = eVarN.b().get(ka6.a.class);
+        if (result == null || (rVarY0 = r.b1(Result.m1123boximpl(result.m1133unboximpl()))) == null) {
+            rVarY0 = r.y0();
+        }
+        bVarT6.a(r.I(rVarY0, eVarN.a().B0(a.f108181d).d1(b.f108182d)).n1(wb9.a.a()).K1(new c()));
+    }

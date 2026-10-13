@@ -1,0 +1,138 @@
+{
+  "evidence_id": "ev_20e03091b2d04e1fdcec70ac11f8cc7844e99345b8e8b58eeba1344d782b1ec0",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-yingyongbao-9.49.1.apk",
+    "digest": {
+      "sha256": "d22b4e7c776ec59ae80aa4a4e30e306ca1bcc2a5744c35e4a7702428c05178a3"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-yingyongbao-9.49.1.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-yingyongbao-9.49.1.apk",
+    "class_name": "com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter",
+    "method_name": "Va",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 158864,
+      "resource_count": 25597,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_count\":5,\"inner_class_count\":4,\"inner_classes\":[\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter.a\",\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter.b\",\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter.c\",\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter.d\"],\"name\":\"NoteDetailLikeBtnPresenter\",\"full_name\":\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter\",\"field_count\":3,\"fields\":[{\"def_pos\":0,\"name\":\"Companion\",\"type\":\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter$a\"},{\"def_pos\":0,\"name\":\"f140422o\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"f140423p\",\"type\":\"kotlin.Lazy\"}],\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(): void\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"Na(): void\",\"is_constructor\":false,\"name\":\"Na\",\"def_pos\":0},{\"signature\":\"Ua(): android.widget.TextView\",\"is_constructor\":false,\"name\":\"Ua\",\"def_pos\":0},{\"signature\":\"Va(com.xingin.entities.notedetail.NoteFeed): void\",\"is_constructor\":false,\"name\":\"Va\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter",
+          "method_name": "Va",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"full_name\":\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter.Va\",\"class_name\":\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter\",\"overload_index\":0,\"fell_back\":false,\"body\":\"    public final void Va(NoteFeed noteFeed) {\\r\\n        if (PatchProxy.proxyVoid1Para(noteFeed, this, NoteDetailLikeBtnPresenter.class, 738516) || PatchProxy.proxyVoid1Para(noteFeed, this, NoteDetailLikeBtnPresenter.class, 738517)) {\\r\\n            return;\\r\\n        }\\r\\n        String strC2 \\u003d noteFeed.c2(trd.c.h(), noteFeed.b1());\\r\\n        boolean zE \\u003d i.f24472a.e(strC2);\\r\\n        Lazy lazy \\u003d this.f140423p;\\r\\n        if (zE \\u0026\\u0026 strC2 !\\u003d null) {\\r\\n            if (PatchProxy.proxyVoid1Para(strC2, this, NoteDetailLikeBtnPresenter.class, 738520)) {\\r\\n                return;\\r\\n            }\\r\\n            PatchProxyResult patchProxyResultProxy0Para \\u003d PatchProxy.proxy0Para(this, NoteDetailLikeBtnPresenter.class, 738506);\\r\\n            LottieAnimationView lottieAnimationView \\u003d patchProxyResultProxy0Para.isSupported ? (LottieAnimationView) patchProxyResultProxy0Para.result : (LottieAnimationView) lazy.getValue();\\r\\n            t.k(lottieAnimationView.getContext(), strC2).b(new h(lottieAnimationView));\\r\\n            return;\\r\\n        }\\r\\n        lwc.c cVarB \\u003d n96.b.f311840a.b().b();\\r\\n        String str \\u003d noteFeed.b1() ? cVarB.f295764a : cVarB.f295766c;\\r\\n        PatchProxyResult patchProxyResultProxy0Para2 \\u003d PatchProxy.proxy0Para(this, NoteDetailLikeBtnPresenter.class, 738506);\\r\\n        LottieAnimationView lottieAnimationView2 \\u003d patchProxyResultProxy0Para2.isSupported ? (LottieAnimationView) patchProxyResultProxy0Para2.result : (LottieAnimationView) lazy.getValue();\\r\\n        lottieAnimationView2.setSelected(noteFeed.b1());\\r\\n        lottieAnimationView2.setProgress(1.0f);\\r\\n        lottieAnimationView2.setAnimation(str);\\r\\n    }\",\"overload_count\":1,\"method_name\":\"Va\",\"markers\":[],\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter",
+    "method": {
+      "name": "Va",
+      "reported_signature": "Va(com.xingin.entities.notedetail.NoteFeed): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void Va(NoteFeed noteFeed) {\r\n        if (PatchProxy.proxyVoid1Para(noteFeed, this, NoteDetailLikeBtnPresenter.class, 738516) || PatchProxy.proxyVoid1Para(noteFeed, this, NoteDetailLikeBtnPresenter.class, 738517)) {\r\n            return;\r\n        }\r\n        String strC2 = noteFeed.c2(trd.c.h(), noteFeed.b1());\r\n        boolean zE = i.f24472a.e(strC2);\r\n        Lazy lazy = this.f140423p;\r\n        if (zE && strC2 != null) {\r\n            if (PatchProxy.proxyVoid1Para(strC2, this, NoteDetailLikeBtnPresenter.class, 738520)) {\r\n                return;\r\n            }\r\n            PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, NoteDetailLikeBtnPresenter.class, 738506);\r\n            LottieAnimationView lottieAnimationView = patchProxyResultProxy0Para.isSupported ? (LottieAnimationView) patchProxyResultProxy0Para.result : (LottieAnimationView) lazy.getValue();\r\n            t.k(lottieAnimationView.getContext(), strC2).b(new h(lottieAnimationView));\r\n            return;\r\n        }\r\n        lwc.c cVarB = n96.b.f311840a.b().b();\r\n        String str = noteFeed.b1() ? cVarB.f295764a : cVarB.f295766c;\r\n        PatchProxyResult patchProxyResultProxy0Para2 = PatchProxy.proxy0Para(this, NoteDetailLikeBtnPresenter.class, 738506);\r\n        LottieAnimationView lottieAnimationView2 = patchProxyResultProxy0Para2.isSupported ? (LottieAnimationView) patchProxyResultProxy0Para2.result : (LottieAnimationView) lazy.getValue();\r\n        lottieAnimationView2.setSelected(noteFeed.b1());\r\n        lottieAnimationView2.setProgress(1.0f);\r\n        lottieAnimationView2.setAnimation(str);\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "1cc8c838ca8b8fe158e0829164f3dc0b713426fe5a1222b1f5c4d2bd618fd9f9",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

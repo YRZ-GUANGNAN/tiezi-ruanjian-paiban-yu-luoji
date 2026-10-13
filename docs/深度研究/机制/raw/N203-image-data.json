@@ -1,0 +1,138 @@
+{
+  "evidence_id": "ev_f9c5e4b3c199d6e827cc0fd83e5c7a5edea443dba1e3b4c183928bfbd2fee51f",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-yingyongbao-9.49.1.apk",
+    "digest": {
+      "sha256": "d22b4e7c776ec59ae80aa4a4e30e306ca1bcc2a5744c35e4a7702428c05178a3"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-yingyongbao-9.49.1.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-yingyongbao-9.49.1.apk",
+    "class_name": "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter",
+    "method_name": "xb",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 158864,
+      "resource_count": 25597,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_count\":31,\"inner_class_count\":7,\"inner_classes\":[\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.a\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.b\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.c\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.d\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.e\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.f\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.g\"],\"name\":\"NoteDetailImageDisplayPresenter\",\"full_name\":\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter\",\"field_count\":25,\"fields\":[{\"def_pos\":0,\"name\":\"A\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"B\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"C\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"Companion\",\"type\":\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter$a\"},{\"def_pos\":0,\"name\":\"D\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"E\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"F\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"G\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"H\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"I\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"K\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"L\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"f140493J\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"f140494o\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"f140495p\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"f140496q\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"f140497r\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"f140498s\",\"type\":\"android.os.Handler\"},{\"def_pos\":0,\"name\":\"f140499t\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"f140500u\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"f140501v\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"f140502w\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"f140503x\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"f140504y\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"f140505z\",\"type\":\"kotlin.Lazy\"}],\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(): void\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"Na(): void\",\"is_constructor\":false,\"name\":\"Na\",\"def_pos\":0},{\"signature\":\"Pa(): void\",\"is_constructor\":false,\"name\":\"Pa\",\"def_pos\":0},{\"signature\":\"Ua(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): com.xingin.redplayer.ui.RedPlayerView\",\"is_constructor\":false,\"name\":\"Ua\",\"def_pos\":0},{\"signature\":\"Va(android.content.Context, float, android.widget.LinearLayout$LayoutParams): void\",\"is_constructor\":false,\"name\":\"Va\",\"def_pos\":0},{\"signature\":\"Xa(float): void\",\"is_constructor\":false,\"name\":\"Xa\",\"def_pos\":0},{\"signature\":\"Ya(android.widget.PopupWindow, boolean, boolean): void\",\"is_constructor\":false,\"name\":\"Ya\",\"def_pos\":0},{\"signature\":\"Za(long): void\",\"is_constructor\":false,\"name\":\"Za\",\"def_pos\":0},{\"signature\":\"ab(): com.xingin.xyalphaplayer.coreView.TextureRenderViewV2\",\"is_constructor\":false,\"name\":\"ab\",\"def_pos\":0},{\"signature\":\"bb(): com.xingin.redview.DotIndicatorV2View\",\"is_constructor\":false,\"name\":\"bb\",\"def_pos\":0},{\"signature\":\"cb(int, float): int\",\"is_constructor\":false,\"name\":\"cb\",\"def_pos\":0},{\"signature\":\"db(): androidx.recyclerview.widget.RecyclerView\",\"is_constructor\":false,\"name\":\"db\",\"def_pos\":0},{\"signature\":\"eb(android.content.Context): int\",\"is_constructor\":false,\"name\":\"eb\",\"def_pos\":0},{\"signature\":\"fb(): com.xingin.matrix.notedetail.imagecontent.imagegallery.ImageGalleryView\",\"is_constructor\":false,\"name\":\"fb\",\"def_pos\":0},{\"signature\":\"gb(): android.widget.TextView\",\"is_constructor\":false,\"name\":\"gb\",\"def_pos\":0},{\"signature\":\"hb(): android.view.ViewGroup\",\"is_constructor\":false,\"name\":\"hb\",\"def_pos\":0},{\"signature\":\"ib(): android.view.ViewGroup\",\"is_constructor\":false,\"name\":\"ib\",\"def_pos\":0},{\"signature\":\"jb(): android.widget.ImageView\",\"is_constructor\":false,\"name\":\"jb\",\"def_pos\":0},{\"signature\":\"kb(): android.widget.ImageView\",\"is_constructor\":false,\"name\":\"kb\",\"def_pos\":0},{\"signature\":\"lb(): android.widget.ImageView\",\"is_constructor\":false,\"name\":\"lb\",\"def_pos\":0},{\"signature\":\"mb(): android.widget.LinearLayout\",\"is_constructor\":false,\"name\":\"mb\",\"def_pos\":0},{\"signature\":\"ob(): androidx.recyclerview.widget.LinearLayoutManager\",\"is_constructor\":false,\"name\":\"ob\",\"def_pos\":0},{\"signature\":\"qb(com.xingin.entities.notedetail.NoteFeed): boolean\",\"is_constructor\":false,\"name\":\"qb\",\"def_pos\":0},{\"signature\":\"rb(): boolean\",\"is_constructor\":false,\"name\":\"rb\",\"def_pos\":0},{\"signature\":\"sb(): void\",\"is_constructor\":false,\"name\":\"sb\",\"def_pos\":0},{\"signature\":\"ub(): void\",\"is_constructor\":false,\"name\":\"ub\",\"def_pos\":0},{\"signature\":\"vb(boolean, boolean): void\",\"is_constructor\":false,\"name\":\"vb\",\"def_pos\":0},{\"signature\":\"wb(android.view.View, float, float, boolean, boolean, kotlin.jvm.functions.Function0\\u003ckotlin.Unit\\u003e): void\",\"is_constructor\":false,\"name\":\"wb\",\"def_pos\":0},{\"signature\":\"xb(com.xingin.entities.notedetail.NoteFeed): void\",\"is_constructor\":false,\"name\":\"xb\",\"def_pos\":0},{\"signature\":\"yb(com.xingin.entities.notedetail.NoteFeed): void\",\"is_constructor\":false,\"name\":\"yb\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter",
+          "method_name": "xb",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"full_name\":\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.xb\",\"class_name\":\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter\",\"overload_index\":0,\"fell_back\":false,\"body\":\"    public final void xb(NoteFeed noteFeed) {\\r\\n        String strG;\\r\\n        if (PatchProxy.proxyVoid1Para(noteFeed, this, NoteDetailImageDisplayPresenter.class, 743781)) {\\r\\n            return;\\r\\n        }\\r\\n        TextureRenderViewV2 textureRenderViewV2Ab \\u003d ab();\\r\\n        ImageBean imageBean \\u003d (ImageBean) CollectionsKt___CollectionsKt.getOrNull(noteFeed.N0(), this.f140495p);\\r\\n        XhsFilterModel xhsFilterModelR \\u003d imageBean !\\u003d null ? imageBean.R() : null;\\r\\n        if (xhsFilterModelR \\u003d\\u003d null || (strG \\u003d xhsFilterModelR.g()) \\u003d\\u003d null || strG.length() \\u003d\\u003d 0) {\\r\\n            u uVar \\u003d u.f219340a;\\r\\n            i iVar \\u003d i.UI;\\r\\n            gp9.f fVar \\u003d gp9.f.PHOTO;\\r\\n            boolean z100 \\u003d xhsFilterModelR !\\u003d null;\\r\\n            u.a(uVar, iVar, fVar, \\\"NoteDetailImageDisplayPresenter\\\", \\\"updateAnimationFilter skip: filterModel\\u003d\\\" + z100 + \\\", currentIndex\\u003d\\\" + this.f140495p, null, 16, null);\\r\\n            o.d(textureRenderViewV2Ab);\\r\\n            return;\\r\\n        }\\r\\n        o.q(textureRenderViewV2Ab);\\r\\n        String strO \\u003d xhsFilterModelR.o();\\r\\n        if (strO !\\u003d null \\u0026\\u0026 strO.length() !\\u003d 0) {\\r\\n            String strO2 \\u003d xhsFilterModelR.o();\\r\\n            if (strO2 !\\u003d null) {\\r\\n                com.xingin.xyalphaplayer.coreView.a.C2731a.b(textureRenderViewV2Ab, new File(strO2), true, false, null, 12, null);\\r\\n                return;\\r\\n            }\\r\\n            return;\\r\\n        }\\r\\n        String strG2 \\u003d xhsFilterModelR.g();\\r\\n        if (strG2 !\\u003d null) {\\r\\n            Object context \\u003d textureRenderViewV2Ab.getContext();\\r\\n            ScopeProvider scopeProvider \\u003d context instanceof ScopeProvider ? (ScopeProvider) context : null;\\r\\n            if (scopeProvider \\u003d\\u003d null) {\\r\\n                scopeProvider \\u003d ScopeProvider.UNBOUND;\\r\\n            }\\r\\n            vrb.f.g(new vrb.f(scopeProvider, strG2, xhsFilterModelR.h()), new g(xhsFilterModelR, textureRenderViewV2Ab), false, null, null, 12, null);\\r\\n        }\\r\\n    }\",\"overload_count\":1,\"method_name\":\"xb\",\"markers\":[],\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter",
+    "method": {
+      "name": "xb",
+      "reported_signature": "xb(com.xingin.entities.notedetail.NoteFeed): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void xb(NoteFeed noteFeed) {\r\n        String strG;\r\n        if (PatchProxy.proxyVoid1Para(noteFeed, this, NoteDetailImageDisplayPresenter.class, 743781)) {\r\n            return;\r\n        }\r\n        TextureRenderViewV2 textureRenderViewV2Ab = ab();\r\n        ImageBean imageBean = (ImageBean) CollectionsKt___CollectionsKt.getOrNull(noteFeed.N0(), this.f140495p);\r\n        XhsFilterModel xhsFilterModelR = imageBean != null ? imageBean.R() : null;\r\n        if (xhsFilterModelR == null || (strG = xhsFilterModelR.g()) == null || strG.length() == 0) {\r\n            u uVar = u.f219340a;\r\n            i iVar = i.UI;\r\n            gp9.f fVar = gp9.f.PHOTO;\r\n            boolean z100 = xhsFilterModelR != null;\r\n            u.a(uVar, iVar, fVar, \"NoteDetailImageDisplayPresenter\", \"updateAnimationFilter skip: filterModel=\" + z100 + \", currentIndex=\" + this.f140495p, null, 16, null);\r\n            o.d(textureRenderViewV2Ab);\r\n            return;\r\n        }\r\n        o.q(textureRenderViewV2Ab);\r\n        String strO = xhsFilterModelR.o();\r\n        if (strO != null && strO.length() != 0) {\r\n            String strO2 = xhsFilterModelR.o();\r\n            if (strO2 != null) {\r\n                com.xingin.xyalphaplayer.coreView.a.C2731a.b(textureRenderViewV2Ab, new File(strO2), true, false, null, 12, null);\r\n                return;\r\n            }\r\n            return;\r\n        }\r\n        String strG2 = xhsFilterModelR.g();\r\n        if (strG2 != null) {\r\n            Object context = textureRenderViewV2Ab.getContext();\r\n            ScopeProvider scopeProvider = context instanceof ScopeProvider ? (ScopeProvider) context : null;\r\n            if (scopeProvider == null) {\r\n                scopeProvider = ScopeProvider.UNBOUND;\r\n            }\r\n            vrb.f.g(new vrb.f(scopeProvider, strG2, xhsFilterModelR.h()), new g(xhsFilterModelR, textureRenderViewV2Ab), false, null, null, 12, null);\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "a42b3e9561681a21d3a61e9b70f7b12215c0fcd81f7879a3687e208f91216b94",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

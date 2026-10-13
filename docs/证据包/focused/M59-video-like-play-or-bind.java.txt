@@ -1,0 +1,9 @@
+    public final void x7(com.airbnb.lottie.l lVar, boolean z4) {
+        x3().getLottieView().e();
+        x3().getLottieView().setComposition(lVar);
+        if (z4) {
+            x3().getLottieView().l();
+        } else {
+            x3().getLottieView().setProgress(1.0f);
+        }
+    }

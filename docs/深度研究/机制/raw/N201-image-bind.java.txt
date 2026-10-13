@@ -1,0 +1,165 @@
+    @Override // com.xingin.foundation.core.v2.Presenter
+    public void Na() {
+        Observable observableEmpty;
+        Observable observableEmpty2;
+        Observable observableEmpty3;
+        Observable observableEmpty4;
+        Observable observableEmpty5;
+        Observable observableEmpty6;
+        Observable observableEmpty7;
+        Observable observableEmpty8;
+        Observable observableEmpty9;
+        Observable observableEmpty10;
+        Observable observableEmpty11;
+        Observable observableEmpty12;
+        Observable observableEmpty13;
+        Observable observableEmpty14;
+        Observable observableEmpty15;
+        Observable observableEmpty16;
+        if (PatchProxy.proxyVoid0Para(this, NoteDetailImageDisplayPresenter.class, 743751)) {
+            return;
+        }
+        u.d(u.f219340a, i.LIFECYCLE, gp9.f.PHOTO, "NoteDetailImageDisplayPresenter", "onAttach", null, 16, null);
+        int i82 = 3;
+        int i100 = 0;
+        int i101 = 1;
+        if (!PatchProxy.proxyVoid0Para(this, NoteDetailImageDisplayPresenter.class, 743752)) {
+            RecyclerView recyclerViewDb = db();
+            PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, NoteDetailImageDisplayPresenter.class, 743731);
+            recyclerViewDb.setAdapter(patchProxyResultProxy0Para.isSupported ? (MultiTypeAdapter) patchProxyResultProxy0Para.result : (MultiTypeAdapter) this.f140494o.getValue());
+            RecyclerView.ItemAnimator itemAnimator = recyclerViewDb.getItemAnimator();
+            SimpleItemAnimator simpleItemAnimator = itemAnimator instanceof SimpleItemAnimator ? (SimpleItemAnimator) itemAnimator : null;
+            if (simpleItemAnimator != null) {
+                simpleItemAnimator.setSupportsChangeAnimations(false);
+            }
+            recyclerViewDb.setHasFixedSize(true);
+            recyclerViewDb.setNestedScrollingEnabled(false);
+            PreOnBindViewLinearLayoutManager preOnBindViewLinearLayoutManager = new PreOnBindViewLinearLayoutManager(recyclerViewDb.getContext());
+            preOnBindViewLinearLayoutManager.setOrientation(0);
+            preOnBindViewLinearLayoutManager.f151790d = 100;
+            recyclerViewDb.setLayoutManager(preOnBindViewLinearLayoutManager);
+            recyclerViewDb.setItemViewCacheSize(3);
+            new PagerSnapHelper().attachToRecyclerView(recyclerViewDb);
+            View view = this.f120750d;
+            (view != null ? view : null).setTag("noteDetailImageGalleryView");
+            gb().bringToFront();
+            gb().setSingleLine();
+            gb().setTextColor(asd.d.f(R.color._0_resource_name_obfuscated_res_0x7f060749));
+            gb().setBackground(asd.d.i(R.drawable._0_resource_name_obfuscated_res_0x7f081679));
+            ub();
+        }
+        int i102 = 2;
+        if (!PatchProxy.proxyVoid0Para(this, NoteDetailImageDisplayPresenter.class, 743753)) {
+            if (!PatchProxy.proxyVoid0Para(this, NoteDetailImageDisplayPresenter.class, 743764)) {
+                new RecyclerViewScrollEventObservable(db()).subscribe(new a0(new w(this, i100), i100), new a0(new b0(i100), i101));
+            }
+            if (!PatchProxy.proxyVoid0Para(this, NoteDetailImageDisplayPresenter.class, 743766)) {
+                new RecyclerViewScrollStateChangeObservable(db()).doOnNext(new a0(new w(this, 19), i82)).filter(new a0(new b0(i102), 4)).map(new a0(new w(this, 20), 5)).map(new a0(new b0(i82), 6)).subscribe(p.b(getNode()).f240367b);
+            }
+            ie7.e eVarG = p.g(getNode());
+            Result<Object> result = eVarG.f240370a.get(r2.class);
+            if (result == null || (observableEmpty = Observable.just(Result.m2929boximpl(result.m2939unboximpl()))) == null) {
+                observableEmpty = Observable.empty();
+            }
+            Observable observableConcat = Observable.concat(observableEmpty, eVarG.f240371b.filter(p0.f409977d).map(w0.f410006d));
+            o2e.a0 a0Var = r2e.a.f361764a;
+            q2e.a.b(a0Var);
+            s2e.c cVarSubscribe = observableConcat.observeOn(a0Var).subscribe(new p1(this));
+            s2e.b bVar = this.f120757n;
+            bVar.b(cVarSubscribe);
+            ie7.e eVarG2 = p.g(getNode());
+            Result<Object> result2 = eVarG2.f240370a.get(t2.class);
+            if (result2 == null || (observableEmpty2 = Observable.just(Result.m2929boximpl(result2.m2939unboximpl()))) == null) {
+                observableEmpty2 = Observable.empty();
+            }
+            bVar.b(Observable.concat(observableEmpty2, eVarG2.f240371b.filter(w1.f410007d).map(d2.f409917d)).observeOn(a0Var).subscribe(new j0(this)));
+            ie7.e eVarG3 = p.g(getNode());
+            Result<Object> result3 = eVarG3.f240370a.get(w2.class);
+            if (result3 == null || (observableEmpty3 = Observable.just(Result.m2929boximpl(result3.m2939unboximpl()))) == null) {
+                observableEmpty3 = Observable.empty();
+            }
+            bVar.b(Observable.concat(observableEmpty3, eVarG3.f240371b.filter(k0.f409953d).map(l0.f409960d)).observeOn(a0Var).subscribe(new m0(this)));
+            ie7.e eVarG4 = p.g(getNode());
+            Result<Object> result4 = eVarG4.f240370a.get(i2.class);
+            if (result4 == null || (observableEmpty4 = Observable.just(Result.m2929boximpl(result4.m2939unboximpl()))) == null) {
+                observableEmpty4 = Observable.empty();
+            }
+            bVar.b(Observable.concat(observableEmpty4, eVarG4.f240371b.filter(n0.f409969d).map(o0.f409973d)).observeOn(a0Var).subscribe(new q0(this)));
+            ie7.e eVarG5 = p.g(getNode());
+            Result<Object> result5 = eVarG5.f240370a.get(s2.class);
+            if (result5 == null || (observableEmpty5 = Observable.just(Result.m2929boximpl(result5.m2939unboximpl()))) == null) {
+                observableEmpty5 = Observable.empty();
+            }
+            bVar.b(Observable.concat(observableEmpty5, eVarG5.f240371b.filter(r0.f409985d).map(s0.f409988d)).observeOn(a0Var).subscribe(new t0(this)));
+            ie7.e eVarG6 = p.g(getNode());
+            Result<Object> result6 = eVarG6.f240370a.get(k2.class);
+            if (result6 == null || (observableEmpty6 = Observable.just(Result.m2929boximpl(result6.m2939unboximpl()))) == null) {
+                observableEmpty6 = Observable.empty();
+            }
+            bVar.b(Observable.concat(observableEmpty6, eVarG6.f240371b.filter(u0.f409998d).map(v0.f410001d)).observeOn(a0Var).subscribe(new x0(this)));
+            ie7.e eVarG7 = p.g(getNode());
+            Result<Object> result7 = eVarG7.f240370a.get(j2.class);
+            if (result7 == null || (observableEmpty7 = Observable.just(Result.m2929boximpl(result7.m2939unboximpl()))) == null) {
+                observableEmpty7 = Observable.empty();
+            }
+            bVar.b(Observable.concat(observableEmpty7, eVarG7.f240371b.filter(y0.f410019d).map(z0.f410023d)).observeOn(a0Var).subscribe(new a1(this)));
+            ie7.e eVarG8 = p.g(getNode());
+            Result<Object> result8 = eVarG8.f240370a.get(s.class);
+            if (result8 == null || (observableEmpty8 = Observable.just(Result.m2929boximpl(result8.m2939unboximpl()))) == null) {
+                observableEmpty8 = Observable.empty();
+            }
+            bVar.b(Observable.concat(observableEmpty8, eVarG8.f240371b.filter(b1.f409902d).map(c1.f409908d)).observeOn(a0Var).subscribe(new d1(this)));
+            ie7.e eVarG9 = p.g(getNode());
+            Result<Object> result9 = eVarG9.f240370a.get(m2.class);
+            if (result9 == null || (observableEmpty9 = Observable.just(Result.m2929boximpl(result9.m2939unboximpl()))) == null) {
+                observableEmpty9 = Observable.empty();
+            }
+            bVar.b(Observable.concat(observableEmpty9, eVarG9.f240371b.filter(e1.f409923d).map(f1.f409928d)).observeOn(a0Var).subscribe(new g1(this)));
+            ie7.e eVarG10 = p.g(getNode());
+            Result<Object> result10 = eVarG10.f240370a.get(u2.class);
+            if (result10 == null || (observableEmpty10 = Observable.just(Result.m2929boximpl(result10.m2939unboximpl()))) == null) {
+                observableEmpty10 = Observable.empty();
+            }
+            bVar.b(Observable.concat(observableEmpty10, eVarG10.f240371b.filter(h1.f409941d).map(i1.f409947d)).observeOn(a0Var).subscribe(new j1(this)));
+            ie7.e eVarG11 = p.g(getNode());
+            Result<Object> result11 = eVarG11.f240370a.get(l2.class);
+            if (result11 == null || (observableEmpty11 = Observable.just(Result.m2929boximpl(result11.m2939unboximpl()))) == null) {
+                observableEmpty11 = Observable.empty();
+            }
+            bVar.b(Observable.concat(observableEmpty11, eVarG11.f240371b.filter(k1.f409954d).map(l1.f409961d)).observeOn(a0Var).subscribe(new m1(this)));
+            ie7.e eVarG12 = p.g(getNode());
+            Result<Object> result12 = eVarG12.f240370a.get(v2.class);
+            if (result12 == null || (observableEmpty12 = Observable.just(Result.m2929boximpl(result12.m2939unboximpl()))) == null) {
+                observableEmpty12 = Observable.empty();
+            }
+            bVar.b(Observable.concat(observableEmpty12, eVarG12.f240371b.filter(n1.f409970d).map(o1.f409974d)).observeOn(a0Var).subscribe(new q1(this)));
+            ie7.e eVarG13 = p.g(getNode());
+            Result<Object> result13 = eVarG13.f240370a.get(x2.class);
+            if (result13 == null || (observableEmpty13 = Observable.just(Result.m2929boximpl(result13.m2939unboximpl()))) == null) {
+                observableEmpty13 = Observable.empty();
+            }
+            bVar.b(Observable.concat(observableEmpty13, eVarG13.f240371b.filter(r1.f409986d).map(s1.f409989d)).observeOn(a0Var).subscribe(new t1(this)));
+            ie7.e eVarG14 = p.g(getNode());
+            Result<Object> result14 = eVarG14.f240370a.get(n2.class);
+            if (result14 == null || (observableEmpty14 = Observable.just(Result.m2929boximpl(result14.m2939unboximpl()))) == null) {
+                observableEmpty14 = Observable.empty();
+            }
+            bVar.b(Observable.concat(observableEmpty14, eVarG14.f240371b.filter(u1.f409999d).map(v1.f410002d)).observeOn(a0Var).subscribe(new x1(this)));
+            ie7.e eVarG15 = p.g(getNode());
+            Result<Object> result15 = eVarG15.f240370a.get(h2.class);
+            if (result15 == null || (observableEmpty15 = Observable.just(Result.m2929boximpl(result15.m2939unboximpl()))) == null) {
+                observableEmpty15 = Observable.empty();
+            }
+            bVar.b(Observable.concat(observableEmpty15, eVarG15.f240371b.filter(y1.f410020d).map(z1.f410024d)).observeOn(a0Var).subscribe(new a2(this)));
+            ie7.e eVarG16 = p.g(getNode());
+            Result<Object> result16 = eVarG16.f240370a.get(p2.class);
+            if (result16 == null || (observableEmpty16 = Observable.just(Result.m2929boximpl(result16.m2939unboximpl()))) == null) {
+                observableEmpty16 = Observable.empty();
+            }
+            bVar.b(Observable.concat(observableEmpty16, eVarG16.f240371b.filter(b2.f409903d).map(c2.f409909d)).observeOn(a0Var).subscribe(new e2(this)));
+        }
+        if (PatchProxy.proxyVoid0Para(this, NoteDetailImageDisplayPresenter.class, 743754)) {
+            return;
+        }
+        La().lifecycle().subscribe(new a0(new w(this, i101), i102));
+    }

@@ -1,0 +1,24 @@
+    @Override // com.xingin.foundation.core.v2.Presenter
+    public void Na() {
+        Observable observableEmpty;
+        if (PatchProxy.proxyVoid0Para(this, NoteDetailLikeBtnPresenter.class, 738507)) {
+            return;
+        }
+        u.d(u.f219340a, gp9.i.LIFECYCLE, f.ENGAGE_BAR, "NoteDetailLikeBtnPresenter", "onAttach", null, 16, null);
+        Ua().setTypeface(j.f(XYUtilsCenter.f(), 1));
+        Ua().setTextColor(asd.d.f(R.color.r_d_));
+        View view = this.f120750d;
+        if (view == null) {
+            view = null;
+        }
+        k.k(view, 0L, 1, null).map(new h(new sp9.g())).subscribe(ee7.p.b(getNode()).f240367b);
+        e eVarG = ee7.p.g(getNode());
+        Result<Object> result = eVarG.f240370a.get(nq9.a.class);
+        if (result == null || (observableEmpty = Observable.just(Result.m2929boximpl(result.m2939unboximpl()))) == null) {
+            observableEmpty = Observable.empty();
+        }
+        Observable observableConcat = Observable.concat(observableEmpty, eVarG.f240371b.filter(b.f140424d).map(c.f140425d));
+        a0 a0Var = r2e.a.f361764a;
+        q2e.a.b(a0Var);
+        this.f120757n.b(observableConcat.observeOn(a0Var).subscribe(new d()));
+    }

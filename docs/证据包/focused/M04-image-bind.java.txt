@@ -1,0 +1,250 @@
+    @Override // com.xingin.foundation.core.v2.Presenter
+    public void m7() {
+        Observable observableEmpty;
+        Observable observableEmpty2;
+        Observable observableEmpty3;
+        Observable observableEmpty4;
+        Observable observableEmpty5;
+        Observable observableEmpty6;
+        Observable observableEmpty7;
+        Observable observableEmpty8;
+        Observable observableEmpty9;
+        Observable observableEmpty10;
+        Observable observableEmpty11;
+        Observable observableEmpty12;
+        Observable observableEmpty13;
+        Observable observableEmpty14;
+        Observable observableEmpty15;
+        Observable observableEmpty16;
+        RecyclerView recyclerViewU7 = u7();
+        recyclerViewU7.setAdapter((MultiTypeAdapter) this.f55315q.getValue());
+        RecyclerView.ItemAnimator itemAnimator = recyclerViewU7.getItemAnimator();
+        SimpleItemAnimator simpleItemAnimator = itemAnimator instanceof SimpleItemAnimator ? (SimpleItemAnimator) itemAnimator : null;
+        if (simpleItemAnimator != null) {
+            simpleItemAnimator.setSupportsChangeAnimations(false);
+        }
+        recyclerViewU7.setHasFixedSize(true);
+        recyclerViewU7.setNestedScrollingEnabled(false);
+        PreOnBindViewLinearLayoutManager preOnBindViewLinearLayoutManager = new PreOnBindViewLinearLayoutManager(recyclerViewU7.getContext());
+        preOnBindViewLinearLayoutManager.setOrientation(0);
+        preOnBindViewLinearLayoutManager.f63159d = 100;
+        recyclerViewU7.setLayoutManager(preOnBindViewLinearLayoutManager);
+        recyclerViewU7.setItemViewCacheSize(3);
+        new PagerSnapHelper().attachToRecyclerView(recyclerViewU7);
+        l7().setTag("noteDetailImageGalleryView");
+        ((TextView) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09106b)).bringToFront();
+        ((TextView) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09106b)).setTextColor(zf9.f.e(R.color._0_resource_name_obfuscated_res_0x7f0606e7));
+        ((TextView) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09106b)).setBackground(zf9.f.h(R.drawable._0_resource_name_obfuscated_res_0x7f0810c2));
+        y7();
+        new RecyclerViewScrollEventObservable(u7()).map(new o() { // from class: ne6.p1
+            @Override // gl9.o
+            public final Object apply(Object obj) {
+                View view;
+                NoteDetailImageDisplayPresenter noteDetailImageDisplayPresenter = this.f159511d;
+                RecyclerView recyclerViewU8 = noteDetailImageDisplayPresenter.u7();
+                int iFindFirstVisibleItemPosition = noteDetailImageDisplayPresenter.w7().findFirstVisibleItemPosition();
+                RecyclerView.ViewHolder viewHolderFindViewHolderForAdapterPosition = recyclerViewU8.findViewHolderForAdapterPosition(iFindFirstVisibleItemPosition);
+                if (viewHolderFindViewHolderForAdapterPosition != null && (view = viewHolderFindViewHolderForAdapterPosition.itemView) != null) {
+                    Rect rect = new Rect();
+                    boolean z4 = false;
+                    int iWidth = view.getLocalVisibleRect(rect) ? rect.width() : 0;
+                    view.getHitRect(rect);
+                    int iWidth2 = rect.width();
+                    if (iWidth2 != 0 && iWidth / iWidth2 > 0.5f) {
+                        z4 = true;
+                    }
+                    if (!z4) {
+                        iFindFirstVisibleItemPosition++;
+                    }
+                }
+                return Integer.valueOf(iFindFirstVisibleItemPosition);
+            }
+        }).filter(new gl9.p() { // from class: ne6.b1
+            @Override // gl9.p
+            public final boolean test(Object obj) {
+                NoteDetailImageDisplayPresenter noteDetailImageDisplayPresenter = this.f159417d;
+                return ((Integer) obj).intValue() != noteDetailImageDisplayPresenter.f55316r || noteDetailImageDisplayPresenter.f55320v > 0;
+            }
+        }).map(new o() { // from class: ne6.q1
+            @Override // gl9.o
+            public final Object apply(Object obj) {
+                NoteDetailImageDisplayPresenter noteDetailImageDisplayPresenter = this.f159516d;
+                Integer num = (Integer) obj;
+                noteDetailImageDisplayPresenter.f55320v = 0;
+                String string = noteDetailImageDisplayPresenter.l7().getContext().getString(R.string._0_resource_name_obfuscated_res_0x7f1123f5, Integer.valueOf(num.intValue() + 1), Integer.valueOf(noteDetailImageDisplayPresenter.w7().getItemCount()));
+                int i4 = noteDetailImageDisplayPresenter.f55316r;
+                ((ImageGalleryView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091061)).setImageIndicatorText(string);
+                noteDetailImageDisplayPresenter.f55316r = num.intValue();
+                return new pl6.y0(num.intValue(), i4);
+            }
+        }).subscribe(v.b(c7()).f156535b);
+        new RecyclerViewScrollStateChangeObservable(u7()).doOnNext(new gl9.g() { // from class: ne6.m1
+            @Override // gl9.g
+            public final void accept(Object obj) {
+                final NoteDetailImageDisplayPresenter noteDetailImageDisplayPresenter = this.f159494d;
+                Integer num = (Integer) obj;
+                if (num != null && num.intValue() == 1) {
+                    noteDetailImageDisplayPresenter.f55317s = noteDetailImageDisplayPresenter.f55316r;
+                    if (noteDetailImageDisplayPresenter.w7().getItemCount() > 1) {
+                        ((TextView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09106b)).animate().alpha(1.0f).setDuration(200L).setInterpolator(new AccelerateInterpolator()).withStartAction(new Runnable() { // from class: ne6.f1
+                            @Override // java.lang.Runnable
+                            public final void run() {
+                                qe8.p.q((TextView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09106b));
+                            }
+                        }).withEndAction(new Runnable() { // from class: ne6.h1
+                            @Override // java.lang.Runnable
+                            public final void run() {
+                                noteDetailImageDisplayPresenter.t7(5000L);
+                            }
+                        }).start();
+                    }
+                }
+            }
+        }).filter(new gl9.p() { // from class: ne6.c1
+            @Override // gl9.p
+            public final boolean test(Object obj) {
+                return ((Integer) obj).intValue() == 0;
+            }
+        }).map(new o() { // from class: ne6.r1
+            @Override // gl9.o
+            public final Object apply(Object obj) {
+                NoteDetailImageDisplayPresenter noteDetailImageDisplayPresenter = this.f159523d;
+                LinearLayoutManager linearLayoutManagerW7 = noteDetailImageDisplayPresenter.w7();
+                int iFindFirstCompletelyVisibleItemPosition = linearLayoutManagerW7.findFirstCompletelyVisibleItemPosition();
+                int i4 = iFindFirstCompletelyVisibleItemPosition - noteDetailImageDisplayPresenter.f55317s;
+                if (i4 != -1) {
+                    return i4 != 1 ? new pl6.w(false, -1, linearLayoutManagerW7.getItemCount(), false, 8, null) : new pl6.w(true, iFindFirstCompletelyVisibleItemPosition, linearLayoutManagerW7.getItemCount(), false, 8, null);
+                }
+                return new pl6.w(false, iFindFirstCompletelyVisibleItemPosition, linearLayoutManagerW7.getItemCount(), false, 8, null);
+            }
+        }).map(new o() { // from class: ne6.s1
+            @Override // gl9.o
+            public final Object apply(Object obj) {
+                return new z((pl6.w) obj);
+            }
+        }).subscribe(v.b(c7()).f156535b);
+        mo4.e eVarH = v.h(c7());
+        bn9.h<Object> hVar = eVarH.f156538a.get(f4.class);
+        if (hVar == null || (observableEmpty = Observable.just(new bn9.h(hVar.f11911d))) == null) {
+            observableEmpty = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty, eVarH.f156539b.filter(z1.f159586d).map(g2.f159454d)).observeOn(dl9.a.a()).subscribe(new z2(this)));
+        mo4.e eVarH2 = v.h(c7());
+        bn9.h<Object> hVar2 = eVarH2.f156538a.get(h4.class);
+        if (hVar2 == null || (observableEmpty2 = Observable.just(new bn9.h(hVar2.f11911d))) == null) {
+            observableEmpty2 = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty2, eVarH2.f156539b.filter(g3.f159455d).map(n3.f159501d)).observeOn(dl9.a.a()).subscribe(new t1(this)));
+        mo4.e eVarH3 = v.h(c7());
+        bn9.h<Object> hVar3 = eVarH3.f156538a.get(k4.class);
+        if (hVar3 == null || (observableEmpty3 = Observable.just(new bn9.h(hVar3.f11911d))) == null) {
+            observableEmpty3 = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty3, eVarH3.f156539b.filter(u1.f159546d).map(v1.f159551d)).observeOn(dl9.a.a()).subscribe(new w1(this)));
+        mo4.e eVarH4 = v.h(c7());
+        bn9.h<Object> hVar4 = eVarH4.f156538a.get(x3.class);
+        if (hVar4 == null || (observableEmpty4 = Observable.just(new bn9.h(hVar4.f11911d))) == null) {
+            observableEmpty4 = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty4, eVarH4.f156539b.filter(x1.f159565d).map(ne6.y1.f159571d)).observeOn(dl9.a.a()).subscribe(new a2(this)));
+        mo4.e eVarH5 = v.h(c7());
+        bn9.h<Object> hVar5 = eVarH5.f156538a.get(g4.class);
+        if (hVar5 == null || (observableEmpty5 = Observable.just(new bn9.h(hVar5.f11911d))) == null) {
+            observableEmpty5 = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty5, eVarH5.f156539b.filter(b2.f159418d).map(c2.f159425d)).observeOn(dl9.a.a()).subscribe(new d2(this)));
+        mo4.e eVarH6 = v.h(c7());
+        bn9.h<Object> hVar6 = eVarH6.f156538a.get(z3.class);
+        if (hVar6 == null || (observableEmpty6 = Observable.just(new bn9.h(hVar6.f11911d))) == null) {
+            observableEmpty6 = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty6, eVarH6.f156539b.filter(e2.f159440d).map(f2.f159448d)).observeOn(dl9.a.a()).subscribe(new h2(this)));
+        mo4.e eVarH7 = v.h(c7());
+        bn9.h<Object> hVar7 = eVarH7.f156538a.get(y3.class);
+        if (hVar7 == null || (observableEmpty7 = Observable.just(new bn9.h(hVar7.f11911d))) == null) {
+            observableEmpty7 = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty7, eVarH7.f156539b.filter(i2.f159466d).map(j2.f159472d)).observeOn(dl9.a.a()).subscribe(new k2(this)));
+        mo4.e eVarH8 = v.h(c7());
+        bn9.h<Object> hVar8 = eVarH8.f156538a.get(ne6.a0.class);
+        if (hVar8 == null || (observableEmpty8 = Observable.just(new bn9.h(hVar8.f11911d))) == null) {
+            observableEmpty8 = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty8, eVarH8.f156539b.filter(l2.f159489d).map(m2.f159495d)).observeOn(dl9.a.a()).subscribe(new n2(this)));
+        mo4.e eVarH9 = v.h(c7());
+        bn9.h<Object> hVar9 = eVarH9.f156538a.get(b4.class);
+        if (hVar9 == null || (observableEmpty9 = Observable.just(new bn9.h(hVar9.f11911d))) == null) {
+            observableEmpty9 = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty9, eVarH9.f156539b.filter(o2.f159507d).map(p2.f159512d)).observeOn(dl9.a.a()).subscribe(new q2(this)));
+        mo4.e eVarH10 = v.h(c7());
+        bn9.h<Object> hVar10 = eVarH10.f156538a.get(i4.class);
+        if (hVar10 == null || (observableEmpty10 = Observable.just(new bn9.h(hVar10.f11911d))) == null) {
+            observableEmpty10 = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty10, eVarH10.f156539b.filter(r2.f159524d).map(s2.f159530d)).observeOn(dl9.a.a()).subscribe(new t2(this)));
+        mo4.e eVarH11 = v.h(c7());
+        bn9.h<Object> hVar11 = eVarH11.f156538a.get(a4.class);
+        if (hVar11 == null || (observableEmpty11 = Observable.just(new bn9.h(hVar11.f11911d))) == null) {
+            observableEmpty11 = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty11, eVarH11.f156539b.filter(u2.f159547d).map(v2.f159552d)).observeOn(dl9.a.a()).subscribe(new w2(this)));
+        mo4.e eVarH12 = v.h(c7());
+        bn9.h<Object> hVar12 = eVarH12.f156538a.get(j4.class);
+        if (hVar12 == null || (observableEmpty12 = Observable.just(new bn9.h(hVar12.f11911d))) == null) {
+            observableEmpty12 = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty12, eVarH12.f156539b.filter(x2.f159566d).map(y2.f159572d)).observeOn(dl9.a.a()).subscribe(new a3(this)));
+        mo4.e eVarH13 = v.h(c7());
+        bn9.h<Object> hVar13 = eVarH13.f156538a.get(l4.class);
+        if (hVar13 == null || (observableEmpty13 = Observable.just(new bn9.h(hVar13.f11911d))) == null) {
+            observableEmpty13 = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty13, eVarH13.f156539b.filter(b3.f159419d).map(c3.f159426d)).observeOn(dl9.a.a()).subscribe(new d3(this)));
+        mo4.e eVarH14 = v.h(c7());
+        bn9.h<Object> hVar14 = eVarH14.f156538a.get(c4.class);
+        if (hVar14 == null || (observableEmpty14 = Observable.just(new bn9.h(hVar14.f11911d))) == null) {
+            observableEmpty14 = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty14, eVarH14.f156539b.filter(e3.f159441d).map(f3.f159449d)).observeOn(dl9.a.a()).subscribe(new h3(this)));
+        mo4.e eVarH15 = v.h(c7());
+        bn9.h<Object> hVar15 = eVarH15.f156538a.get(w3.class);
+        if (hVar15 == null || (observableEmpty15 = Observable.just(new bn9.h(hVar15.f11911d))) == null) {
+            observableEmpty15 = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty15, eVarH15.f156539b.filter(i3.f159467d).map(j3.f159473d)).observeOn(dl9.a.a()).subscribe(new k3(this)));
+        mo4.e eVarH16 = v.h(c7());
+        bn9.h<Object> hVar16 = eVarH16.f156538a.get(e4.class);
+        if (hVar16 == null || (observableEmpty16 = Observable.just(new bn9.h(hVar16.f11911d))) == null) {
+            observableEmpty16 = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty16, eVarH16.f156539b.filter(l3.f159490d).map(m3.f159496d)).observeOn(dl9.a.a()).subscribe(new o3(this)));
+        i7().lifecycle().subscribe(new gl9.g() { // from class: ne6.n1
+            @Override // gl9.g
+            public final void accept(Object obj) {
+                NoteDetailImageDisplayPresenter noteDetailImageDisplayPresenter = this.f159499d;
+                Lifecycle.Event event = (Lifecycle.Event) obj;
+                int i4 = event == null ? -1 : NoteDetailImageDisplayPresenter.b.f55321a[event.ordinal()];
+                if (i4 != 1) {
+                    if (i4 == 2) {
+                        ((TextureRenderViewV2) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f090212)).F();
+                        return;
+                    } else {
+                        if (i4 != 3) {
+                            return;
+                        }
+                        ((TextureRenderViewV2) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f090212)).G();
+                        return;
+                    }
+                }
+                b0 b0Var = new b0(com.xingin.utils.core.k1.h(noteDetailImageDisplayPresenter.g7()), com.xingin.utils.core.k1.d(noteDetailImageDisplayPresenter.g7()));
+                mo4.c cVarB = io4.v.b(noteDetailImageDisplayPresenter.c7());
+                cVarB.f156534a.put(b0.class, b0Var);
+                cVarB.f156535b.onNext(b0Var);
+                ((TextureRenderViewV2) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f090212)).H();
+                if (((FrameLayout) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091367)).getVisibility() == 0) {
+                    noteDetailImageDisplayPresenter.z7(true, noteDetailImageDisplayPresenter.x7());
+                }
+            }
+        });
+    }

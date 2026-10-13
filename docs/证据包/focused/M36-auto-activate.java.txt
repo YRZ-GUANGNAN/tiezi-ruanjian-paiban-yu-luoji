@@ -1,0 +1,6 @@
+    @Override // se4.i
+    public void activateAutoScroll(boolean z4) {
+        if (isActivated != z4) {
+            isActivated = z4;
+        }
+    }

@@ -1,0 +1,11 @@
+    public final int C7(DetailNoteFeedHolder detailNoteFeedHolder) {
+        PatchProxyResult patchProxyResultProxy1Para = PatchProxy.proxy1Para(detailNoteFeedHolder, this, NoteDetailImageDisplayPresenter.class, 298263);
+        if (patchProxyResultProxy1Para.isSupported) {
+            return ((Integer) patchProxyResultProxy1Para.result).intValue();
+        }
+        if (ro.m.f288793a.c()) {
+            return -1;
+        }
+        Context context = B7().getContext();
+        return u67.f.f316785a.a((so.c.f301389a.p() || Build.VERSION.SDK_INT <= 33) ? o1.h(context) : RangesKt___RangesKt.coerceAtMost(o1.f(context), o1.e(context)), detailNoteFeedHolder.b().q0(0), 0.75f, 2.0f);
+    }

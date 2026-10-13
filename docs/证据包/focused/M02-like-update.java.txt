@@ -1,0 +1,23 @@
+    public final void t7(NoteFeed noteFeed) {
+        String strK1 = noteFeed.K1(sf9.c.f(), noteFeed.K0());
+        if (f.f192810a.d(strK1) && strK1 != null) {
+            final LottieAnimationView lottieAnimationView = (LottieAnimationView) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091a14);
+            w.j(lottieAnimationView.getContext(), strK1).b(new t0() { // from class: le6.d
+                @Override // com.airbnb.lottie.t0
+                public final void onResult(Object obj) {
+                    LottieAnimationView lottieAnimationView2 = lottieAnimationView;
+                    lottieAnimationView2.e();
+                    lottieAnimationView2.setComposition((com.airbnb.lottie.l) obj);
+                    lottieAnimationView2.setProgress(1.0f);
+                }
+            });
+            return;
+        }
+        o94.a aVar = o94.a.f165923a;
+        d dVar = (d) o94.a.b().b();
+        String str = noteFeed.K0() ? dVar.f92387a : dVar.f92389c;
+        LottieAnimationView lottieAnimationView2 = (LottieAnimationView) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091a14);
+        lottieAnimationView2.setSelected(noteFeed.K0());
+        lottieAnimationView2.setProgress(1.0f);
+        lottieAnimationView2.setAnimation(str);
+    }

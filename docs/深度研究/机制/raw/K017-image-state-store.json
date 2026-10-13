@@ -1,0 +1,135 @@
+{
+  "evidence_id": "ev_d164058bff56ddcee6e8c80377dcb72becf00c7b7af29e2e8f48f602bfb666d7",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "il4.e"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "il4.e"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_count\":3,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"e\",\"full_name\":\"il4.e\",\"field_count\":2,\"fields\":[{\"type\":\"java.util.concurrent.ConcurrentHashMap\\u003cjava.lang.Class\\u003c?\\u003e, kotlin.Result\\u003cjava.lang.Object\\u003e\\u003e\",\"def_pos\":0,\"name\":\"f194945a\"},{\"type\":\"il4.d\\u003ckotlin.Result\\u003ckotlin.Pair\\u003cjava.lang.Class\\u003c?\\u003e, kotlin.Result\\u003cjava.lang.Object\\u003e\\u003e\\u003e\\u003e\",\"def_pos\":0,\"name\":\"f194946b\"}],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(): void\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"a(): il4.d\\u003ckotlin.Result\\u003ckotlin.Pair\\u003cjava.lang.Class\\u003c?\\u003e, kotlin.Result\\u003cjava.lang.Object\\u003e\\u003e\\u003e\\u003e\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0},{\"signature\":\"b(): java.util.concurrent.ConcurrentHashMap\\u003cjava.lang.Class\\u003c?\\u003e, kotlin.Result\\u003cjava.lang.Object\\u003e\\u003e\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "il4.e",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): il4.d<kotlin.Result<kotlin.Pair<java.lang.Class<?>, kotlin.Result<java.lang.Object>>>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(): java.util.concurrent.ConcurrentHashMap<java.lang.Class<?>, kotlin.Result<java.lang.Object>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "f194945a",
+        "reported_type": "java.util.concurrent.ConcurrentHashMap<java.lang.Class<?>, kotlin.Result<java.lang.Object>>"
+      },
+      {
+        "name": "f194946b",
+        "reported_type": "il4.d<kotlin.Result<kotlin.Pair<java.lang.Class<?>, kotlin.Result<java.lang.Object>>>>"
+      }
+    ],
+    "inner_classes": []
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "55a907d166357791d9ec6cc7a8c975785094819d3efe6534617c9d00a3ee6cca",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

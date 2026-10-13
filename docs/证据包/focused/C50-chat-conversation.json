@@ -1,0 +1,234 @@
+{
+  "evidence_id": "ev_36bfd873a9894f2d03764d936cc7d52e13f05b6720f92c802967a50a461bbd74",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.chatbase.bean.ChatBean"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.chatbase.bean.ChatBean"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"chatMedal\",\"def_pos\":0,\"type\":\"h73.v\"},{\"name\":\"chatMedalV2\",\"def_pos\":0,\"type\":\"h73.v\"},{\"name\":\"chatStatus\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"chatUserId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"info\",\"def_pos\":0,\"type\":\"h73.u\"},{\"name\":\"lastMsgContent\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"lastMsgTime\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"maxStoreId\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"startStoreId\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"updateNoticeContent\",\"def_pos\":0,\"type\":\"h73.o5\"},{\"name\":\"userId\",\"def_pos\":0,\"type\":\"java.lang.String\"}],\"field_count\":11,\"full_name\":\"com.xingin.chatbase.bean.ChatBean\",\"name\":\"ChatBean\",\"inner_classes\":[],\"inner_class_count\":0,\"method_count\":12,\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"a\",\"is_constructor\":false,\"signature\":\"a(): h73.v\",\"def_pos\":0},{\"name\":\"b\",\"is_constructor\":false,\"signature\":\"b(): int\",\"def_pos\":0},{\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(): java.lang.String\",\"def_pos\":0},{\"name\":\"d\",\"is_constructor\":false,\"signature\":\"d(): h73.u\",\"def_pos\":0},{\"name\":\"e\",\"is_constructor\":false,\"signature\":\"e(): java.lang.String\",\"def_pos\":0},{\"name\":\"f\",\"is_constructor\":false,\"signature\":\"f(): long\",\"def_pos\":0},{\"name\":\"g\",\"is_constructor\":false,\"signature\":\"g(): int\",\"def_pos\":0},{\"name\":\"h\",\"is_constructor\":false,\"signature\":\"h(): int\",\"def_pos\":0},{\"name\":\"i\",\"is_constructor\":false,\"signature\":\"i(): h73.o5\",\"def_pos\":0},{\"name\":\"j\",\"is_constructor\":false,\"signature\":\"j(): java.lang.String\",\"def_pos\":0},{\"name\":\"k\",\"is_constructor\":false,\"signature\":\"k(i83.a): i83.a\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.chatbase.bean.ChatBean",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): h73.v",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(): h73.u",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(): h73.o5",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j",
+        "reported_signature": "j(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(i83.a): i83.a",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "chatMedal",
+        "reported_type": "h73.v"
+      },
+      {
+        "name": "chatMedalV2",
+        "reported_type": "h73.v"
+      },
+      {
+        "name": "chatStatus",
+        "reported_type": "int"
+      },
+      {
+        "name": "chatUserId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "info",
+        "reported_type": "h73.u"
+      },
+      {
+        "name": "lastMsgContent",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "lastMsgTime",
+        "reported_type": "long"
+      },
+      {
+        "name": "maxStoreId",
+        "reported_type": "int"
+      },
+      {
+        "name": "startStoreId",
+        "reported_type": "int"
+      },
+      {
+        "name": "updateNoticeContent",
+        "reported_type": "h73.o5"
+      },
+      {
+        "name": "userId",
+        "reported_type": "java.lang.String"
+      }
+    ],
+    "inner_classes": []
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "8cbe452ef728e03af9d08ec95104f574c74f80bbf80a08c28c1ad38b53899337",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

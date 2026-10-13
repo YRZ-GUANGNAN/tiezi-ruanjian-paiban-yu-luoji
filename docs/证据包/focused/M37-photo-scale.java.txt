@@ -1,0 +1,22 @@
+    /* JADX WARN: Code duplicated, block: B:4:0x0006 A[PHI: r0
+  0x0006: PHI (r0v2 float) = (r0v0 float), (r0v1 float) binds: [B:3:0x0004, B:6:0x000c] A[DONT_GENERATE, DONT_INLINE]] */
+    public final void L0(float f4, float f11, float f13, boolean z4) {
+        float f15;
+        float f21 = this.f39567g;
+        if (f4 < f21) {
+            f15 = f21;
+        } else {
+            f21 = this.f39569l;
+            if (f4 > f21) {
+                f15 = f21;
+            } else {
+                f15 = f4;
+            }
+        }
+        if (z4) {
+            this.f39564d.post(new a(this, Y(), f15, f11, f13, null, 16, null));
+        } else {
+            this.f39580w.setScale(Y(), f15, f11, f13);
+            x();
+        }
+    }

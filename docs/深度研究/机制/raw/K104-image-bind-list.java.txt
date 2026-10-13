@@ -1,0 +1,12 @@
+    public final void p8(DetailNoteFeedHolder detailNoteFeedHolder, int i100, boolean z100) {
+        if (PatchProxy.proxyVoid3Para(detailNoteFeedHolder, new Integer(i100), new Boolean(z100), this, NoteDetailImageDisplayPresenter.class, 298261)) {
+            return;
+        }
+        q8(detailNoteFeedHolder, i100);
+        if (z100) {
+            B7().setItemAnimator(null);
+        } else {
+            o8(detailNoteFeedHolder.b());
+            s8(detailNoteFeedHolder.b());
+        }
+    }

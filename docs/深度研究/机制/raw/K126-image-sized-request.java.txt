@@ -1,0 +1,22 @@
+    private final ImageRequestBuilder getSizedImageRequestBuilder() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, XYImageView.class, 56889);
+        if (patchProxyResultProxy0Para.isSupported) {
+            return (ImageRequestBuilder) patchProxyResultProxy0Para.result;
+        }
+        d dVar = this.f122097g;
+        int iJ = dVar != null ? dVar.j() : 0;
+        d dVar2 = this.f122097g;
+        int iD = dVar2 != null ? dVar2.d() : 0;
+        if (iJ == 0) {
+            iJ = getWidth();
+        }
+        if (iD == 0) {
+            iD = getHeight();
+        }
+        if (iJ == 0 || iD == 0) {
+            return ImageRequestBuilder.s(this.f122096f);
+        }
+        ImageRequestBuilder imageRequestBuilderS = ImageRequestBuilder.s(this.f122096f);
+        imageRequestBuilderS.D(new e(iJ, iD));
+        return imageRequestBuilderS;
+    }

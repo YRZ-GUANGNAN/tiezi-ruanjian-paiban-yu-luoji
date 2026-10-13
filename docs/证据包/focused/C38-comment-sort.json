@@ -1,0 +1,180 @@
+{
+  "evidence_id": "ev_9e00ac3284caf401d13ea17129b0381aeb5b01e3cbc23adc08c1f5239e61ba7f",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.entities.comment.consume.CommentSortStrategy"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.entities.comment.consume.CommentSortStrategy"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"CREATOR\",\"type\":\"android.os.Parcelable$Creator\\u003ccom.xingin.entities.comment.consume.CommentSortStrategy\\u003e\",\"def_pos\":0},{\"name\":\"name\",\"type\":\"java.lang.String\",\"def_pos\":0},{\"name\":\"suffixName\",\"type\":\"java.lang.String\",\"def_pos\":0},{\"name\":\"type\",\"type\":\"java.lang.String\",\"def_pos\":0}],\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cclinit\\u003e(): void\",\"is_constructor\":false},{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\",\"is_constructor\":true},{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, java.lang.String): void\",\"is_constructor\":true},{\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(): java.lang.String\",\"is_constructor\":false},{\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(): java.lang.String\",\"is_constructor\":false},{\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(): java.lang.String\",\"is_constructor\":false},{\"name\":\"describeContents\",\"def_pos\":0,\"signature\":\"describeContents(): int\",\"is_constructor\":false},{\"name\":\"writeToParcel\",\"def_pos\":0,\"signature\":\"writeToParcel(android.os.Parcel, int): void\",\"is_constructor\":false}],\"method_count\":8,\"inner_class_count\":1,\"inner_classes\":[\"com.xingin.entities.comment.consume.CommentSortStrategy.a\"],\"name\":\"CommentSortStrategy\",\"full_name\":\"com.xingin.entities.comment.consume.CommentSortStrategy\",\"field_count\":4}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.entities.comment.consume.CommentSortStrategy",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, java.lang.String, java.lang.String): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "describeContents",
+        "reported_signature": "describeContents(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "writeToParcel",
+        "reported_signature": "writeToParcel(android.os.Parcel, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "CREATOR",
+        "reported_type": "android.os.Parcelable$Creator<com.xingin.entities.comment.consume.CommentSortStrategy>"
+      },
+      {
+        "name": "name",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "suffixName",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "type",
+        "reported_type": "java.lang.String"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.entities.comment.consume.CommentSortStrategy.a"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "74b132e0a407d0f19057a1c606aff351862494407cb96f572ed61fdb721c9aa8",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

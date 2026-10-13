@@ -1,0 +1,300 @@
+{
+  "evidence_id": "ev_fa07b62d4402c7b7f0ed6c6c22791dc7b73ba568059fcda8da49c2e8711a9249",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.widgets.XYImageView"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.widgets.XYImageView"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"f122094h\",\"def_pos\":0,\"type\":\"ai8.f\"},{\"name\":\"f122095l\",\"def_pos\":0,\"type\":\"com.xingin.widgets.XYImageView$a\"},{\"name\":\"f122096f\",\"def_pos\":0,\"type\":\"android.net.Uri\"},{\"name\":\"f122097g\",\"def_pos\":0,\"type\":\"ai8.d\"}],\"field_count\":4,\"full_name\":\"com.xingin.widgets.XYImageView\",\"name\":\"XYImageView\",\"inner_classes\":[\"com.xingin.widgets.XYImageView.a\",\"com.xingin.widgets.XYImageView.b\"],\"inner_class_count\":2,\"method_count\":25,\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(android.content.Context): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(android.content.Context, android.util.AttributeSet): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(android.content.Context, android.util.AttributeSet, int): void\",\"def_pos\":0},{\"name\":\"getControllerBuilder\",\"is_constructor\":false,\"signature\":\"getControllerBuilder(): a7.i\",\"def_pos\":0},{\"name\":\"getControllerBuilder\",\"is_constructor\":false,\"signature\":\"getControllerBuilder(): f7.b\",\"def_pos\":0},{\"name\":\"getImageUri\",\"is_constructor\":false,\"signature\":\"getImageUri(): android.net.Uri\",\"def_pos\":0},{\"name\":\"getSizedImageRequestBuilder\",\"is_constructor\":false,\"signature\":\"getSizedImageRequestBuilder(): com.facebook.imagepipeline.request.ImageRequestBuilder\",\"def_pos\":0},{\"name\":\"h\",\"is_constructor\":false,\"signature\":\"h(android.net.Uri, java.lang.Object): void\",\"def_pos\":0},{\"name\":\"k\",\"is_constructor\":false,\"signature\":\"k(): ai8.f\",\"def_pos\":0},{\"name\":\"l\",\"is_constructor\":false,\"signature\":\"l(ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object): void\",\"def_pos\":0},{\"name\":\"m\",\"is_constructor\":false,\"signature\":\"m(com.xingin.widgets.XYImageView, ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object, int, java.lang.Object): void\",\"def_pos\":0},{\"name\":\"n\",\"is_constructor\":false,\"signature\":\"n(ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object, y7.b): void\",\"def_pos\":0},{\"name\":\"o\",\"is_constructor\":false,\"signature\":\"o(ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object): void\",\"def_pos\":0},{\"name\":\"p\",\"is_constructor\":false,\"signature\":\"p(com.xingin.widgets.XYImageView, ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object, int, java.lang.Object): void\",\"def_pos\":0},{\"name\":\"q\",\"is_constructor\":false,\"signature\":\"q(ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object, f7.d\\u003ce8.g\\u003e): void\",\"def_pos\":0},{\"name\":\"r\",\"is_constructor\":false,\"signature\":\"r(com.xingin.widgets.XYImageView, ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object, f7.d, int, java.lang.Object): void\",\"def_pos\":0},{\"name\":\"s\",\"is_constructor\":false,\"signature\":\"s(android.net.Uri, java.lang.Object, f7.d\\u003ce8.g\\u003e): void\",\"def_pos\":0},{\"name\":\"setFadeDuration\",\"is_constructor\":false,\"signature\":\"setFadeDuration(int): void\",\"def_pos\":0},{\"name\":\"setImageInfo\",\"is_constructor\":false,\"signature\":\"setImageInfo(ai8.d): void\",\"def_pos\":0},{\"name\":\"setImageInfoWithControllerListener\",\"is_constructor\":false,\"signature\":\"setImageInfoWithControllerListener(ai8.d): void\",\"def_pos\":0},{\"name\":\"setImageInfoWithPlaceHolderImprove\",\"is_constructor\":false,\"signature\":\"setImageInfoWithPlaceHolderImprove(ai8.d): void\",\"def_pos\":0},{\"name\":\"setImageUrl\",\"is_constructor\":false,\"signature\":\"setImageUrl(java.lang.String): void\",\"def_pos\":0},{\"name\":\"t\",\"is_constructor\":false,\"signature\":\"t(android.net.Uri, java.lang.Object, kotlin.jvm.functions.Function0\\u003ckotlin.Unit\\u003e): void\",\"def_pos\":0},{\"name\":\"u\",\"is_constructor\":false,\"signature\":\"u(): com.facebook.imagepipeline.request.a\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.widgets.XYImageView",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context, android.util.AttributeSet): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context, android.util.AttributeSet, int): void",
+        "overload_index": 2,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getControllerBuilder",
+        "reported_signature": "getControllerBuilder(): a7.i",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getControllerBuilder",
+        "reported_signature": "getControllerBuilder(): f7.b",
+        "overload_index": 1,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getImageUri",
+        "reported_signature": "getImageUri(): android.net.Uri",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getSizedImageRequestBuilder",
+        "reported_signature": "getSizedImageRequestBuilder(): com.facebook.imagepipeline.request.ImageRequestBuilder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(android.net.Uri, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(): ai8.f",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(com.xingin.widgets.XYImageView, ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object, int, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object, y7.b): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p",
+        "reported_signature": "p(com.xingin.widgets.XYImageView, ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object, int, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q",
+        "reported_signature": "q(ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object, f7.d<e8.g>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r",
+        "reported_signature": "r(com.xingin.widgets.XYImageView, ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object, f7.d, int, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s",
+        "reported_signature": "s(android.net.Uri, java.lang.Object, f7.d<e8.g>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setFadeDuration",
+        "reported_signature": "setFadeDuration(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setImageInfo",
+        "reported_signature": "setImageInfo(ai8.d): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setImageInfoWithControllerListener",
+        "reported_signature": "setImageInfoWithControllerListener(ai8.d): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setImageInfoWithPlaceHolderImprove",
+        "reported_signature": "setImageInfoWithPlaceHolderImprove(ai8.d): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setImageUrl",
+        "reported_signature": "setImageUrl(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t",
+        "reported_signature": "t(android.net.Uri, java.lang.Object, kotlin.jvm.functions.Function0<kotlin.Unit>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u",
+        "reported_signature": "u(): com.facebook.imagepipeline.request.a",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "f122094h",
+        "reported_type": "ai8.f"
+      },
+      {
+        "name": "f122095l",
+        "reported_type": "com.xingin.widgets.XYImageView$a"
+      },
+      {
+        "name": "f122096f",
+        "reported_type": "android.net.Uri"
+      },
+      {
+        "name": "f122097g",
+        "reported_type": "ai8.d"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.widgets.XYImageView.a",
+      "com.xingin.widgets.XYImageView.b"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "dd7162d3c295530b7217f3103d06cd9b871bcc7db25c04f013ef154d29210c6f",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

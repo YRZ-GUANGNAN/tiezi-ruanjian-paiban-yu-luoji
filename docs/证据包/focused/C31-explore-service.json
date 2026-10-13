@@ -1,0 +1,170 @@
+{
+  "evidence_id": "ev_b26e57f195732bcfd010eb794ce8b9436ca230856008aadc5c357c8bbe11f3dc",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.xhs.homepage.service.ExploreService"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.xhs.homepage.service.ExploreService"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[],\"methods\":[{\"name\":\"getCategories\",\"def_pos\":0,\"signature\":\"getCategories(int, int, java.lang.Boolean): io.reactivex.Observable\\u003cdk4.e\\u003e\",\"is_constructor\":false},{\"name\":\"getChannelStatus\",\"def_pos\":0,\"signature\":\"getChannelStatus(java.lang.String, java.lang.String): io.reactivex.Observable\\u003cjl6.d\\u003e\",\"is_constructor\":false},{\"name\":\"queryFakeFeed\",\"def_pos\":0,\"signature\":\"queryFakeFeed(java.lang.String, int): io.reactivex.Observable\\u003cjava.util.List\\u003ccom.xingin.entities.NoteItemBean\\u003e\\u003e\",\"is_constructor\":false},{\"name\":\"queryHomeFeed\",\"def_pos\":0,\"signature\":\"queryHomeFeed(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Boolean, int, int, java.lang.String, java.lang.Integer, java.lang.String): io.reactivex.Observable\\u003cjava.util.List\\u003ccom.xingin.entities.NoteItemBean\\u003e\\u003e\",\"is_constructor\":false},{\"name\":\"queryHomeFeed2AdapterOpt\",\"def_pos\":0,\"signature\":\"queryHomeFeed2AdapterOpt(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Boolean, int, int, java.lang.String, java.lang.Integer, java.lang.String, java.lang.Boolean, java.lang.Boolean, z78.b, java.lang.String, java.lang.Integer, z78.p): io.reactivex.Observable\\u003cjava.util.List\\u003ccom.xingin.entities.NoteItemBean\\u003e\\u003e\",\"is_constructor\":false},{\"name\":\"queryHomeFeedAdapterOpt\",\"def_pos\":0,\"signature\":\"queryHomeFeedAdapterOpt(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Boolean, int, int, java.lang.String, java.lang.Integer, java.lang.String, java.lang.Boolean, java.lang.Boolean, java.lang.String, java.lang.Integer, z78.p): io.reactivex.Observable\\u003cjava.util.List\\u003ccom.xingin.entities.NoteItemBean\\u003e\\u003e\",\"is_constructor\":false},{\"name\":\"reportInterestSelection\",\"def_pos\":0,\"signature\":\"reportInterestSelection(java.lang.String): io.reactivex.Observable\\u003cjava.lang.Object\\u003e\",\"is_constructor\":false},{\"name\":\"updateChannelInterest\",\"def_pos\":0,\"signature\":\"updateChannelInterest(java.lang.String, java.lang.String): io.reactivex.Observable\\u003cjl6.c\\u003e\",\"is_constructor\":false},{\"name\":\"uploadCategories\",\"def_pos\":0,\"signature\":\"uploadCategories(java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e): al9.b\",\"is_constructor\":false}],\"method_count\":9,\"inner_class_count\":1,\"inner_classes\":[\"com.xingin.xhs.homepage.service.ExploreService.a\"],\"name\":\"ExploreService\",\"full_name\":\"com.xingin.xhs.homepage.service.ExploreService\",\"field_count\":0}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.xhs.homepage.service.ExploreService",
+    "methods": [
+      {
+        "name": "getCategories",
+        "reported_signature": "getCategories(int, int, java.lang.Boolean): io.reactivex.Observable<dk4.e>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getChannelStatus",
+        "reported_signature": "getChannelStatus(java.lang.String, java.lang.String): io.reactivex.Observable<jl6.d>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "queryFakeFeed",
+        "reported_signature": "queryFakeFeed(java.lang.String, int): io.reactivex.Observable<java.util.List<com.xingin.entities.NoteItemBean>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "queryHomeFeed",
+        "reported_signature": "queryHomeFeed(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Boolean, int, int, java.lang.String, java.lang.Integer, java.lang.String): io.reactivex.Observable<java.util.List<com.xingin.entities.NoteItemBean>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "queryHomeFeed2AdapterOpt",
+        "reported_signature": "queryHomeFeed2AdapterOpt(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Boolean, int, int, java.lang.String, java.lang.Integer, java.lang.String, java.lang.Boolean, java.lang.Boolean, z78.b, java.lang.String, java.lang.Integer, z78.p): io.reactivex.Observable<java.util.List<com.xingin.entities.NoteItemBean>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "queryHomeFeedAdapterOpt",
+        "reported_signature": "queryHomeFeedAdapterOpt(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Boolean, int, int, java.lang.String, java.lang.Integer, java.lang.String, java.lang.Boolean, java.lang.Boolean, java.lang.String, java.lang.Integer, z78.p): io.reactivex.Observable<java.util.List<com.xingin.entities.NoteItemBean>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "reportInterestSelection",
+        "reported_signature": "reportInterestSelection(java.lang.String): io.reactivex.Observable<java.lang.Object>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "updateChannelInterest",
+        "reported_signature": "updateChannelInterest(java.lang.String, java.lang.String): io.reactivex.Observable<jl6.c>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "uploadCategories",
+        "reported_signature": "uploadCategories(java.util.Map<java.lang.String, java.lang.String>): al9.b",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [],
+    "inner_classes": [
+      "com.xingin.xhs.homepage.service.ExploreService.a"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "b9d335aa4ce4a8356153204ba5cbad177cfd64a60c0a1959e4c58b46e6e884a4",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

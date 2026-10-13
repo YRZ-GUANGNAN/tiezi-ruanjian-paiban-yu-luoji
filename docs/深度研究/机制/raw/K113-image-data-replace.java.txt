@@ -1,0 +1,20 @@
+    public final void q8(DetailNoteFeedHolder detailNoteFeedHolder, final int i100) {
+        if (PatchProxy.proxyVoid2Para(detailNoteFeedHolder, new Integer(i100), this, NoteDetailImageDisplayPresenter.class, 298262)) {
+            return;
+        }
+        s68.o.q((ImageGalleryView) w6().findViewById(l56.n.f224101o0));
+        final RecyclerView recyclerViewB7 = B7();
+        if (i100 > 0) {
+            this.f108314r = i100;
+            this.f108318v = i100;
+            recyclerViewB7.post(new Runnable() { // from class: t96.i0
+                @Override // java.lang.Runnable
+                public final void run() {
+                    NoteDetailImageDisplayPresenter.r8(recyclerViewB7, i100);
+                }
+            });
+        }
+        recyclerViewB7.getLayoutParams().height = C7(detailNoteFeedHolder);
+        recyclerViewB7.requestLayout();
+        ((FrameLayout) w6().findViewById(l56.n.Z)).getLayoutParams().height = recyclerViewB7.getLayoutParams().height;
+    }

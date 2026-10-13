@@ -1,0 +1,12 @@
+    public final void x7(long j100) {
+        if (!PatchProxy.proxyVoid1Para(new Long(j100), this, NoteDetailImageDisplayPresenter.class, 298268) && s68.o.g((TextView) w6().findViewById(l56.n.f224121t0))) {
+            this.f108317u.removeCallbacksAndMessages(null);
+            Handler handler = this.f108317u;
+            handler.sendMessageDelayed(Message.obtain(handler, new Runnable() { // from class: t96.k0
+                @Override // java.lang.Runnable
+                public final void run() {
+                    NoteDetailImageDisplayPresenter.y7(this.f309423d);
+                }
+            }), j100);
+        }
+    }

@@ -1,0 +1,6 @@
+    public final void Q6(NoteFeed noteFeed) {
+        if (PatchProxy.proxyVoid1Para(noteFeed, this, NoteDetailLikeBtnPresenter.class, 293258)) {
+            return;
+        }
+        N6(noteFeed);
+    }

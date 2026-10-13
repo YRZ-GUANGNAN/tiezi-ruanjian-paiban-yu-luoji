@@ -1,0 +1,154 @@
+{
+  "evidence_id": "ev_a5b91ead171f7018be56e33c9705f65e1c2a832ff97f61a443791daff06f76bc",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.redview.recyclerview.PreOnBindViewLinearLayoutManager",
+    "method_name": "m",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":82499,\"raw_class_count\":82499,\"resource_count\":18535,\"load_duration_ms\":55089,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.redview.recyclerview.PreOnBindViewLinearLayoutManager"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"name\":\"PreOnBindViewLinearLayoutManager\",\"inner_classes\":[],\"inner_class_count\":0,\"method_count\":7,\"methods\":[{\"signature\":\"\\u003cinit\\u003e(android.content.Context): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true},{\"signature\":\"canScrollHorizontally(): boolean\",\"def_pos\":0,\"name\":\"canScrollHorizontally\",\"is_constructor\":false},{\"signature\":\"canScrollVertically(): boolean\",\"def_pos\":0,\"name\":\"canScrollVertically\",\"is_constructor\":false},{\"signature\":\"getExtraLayoutSpace(androidx.recyclerview.widget.RecyclerView$State): int\",\"def_pos\":0,\"name\":\"getExtraLayoutSpace\",\"is_constructor\":false},{\"signature\":\"m(int): void\",\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false},{\"signature\":\"n(boolean): void\",\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false},{\"signature\":\"supportsPredictiveItemAnimations(): boolean\",\"def_pos\":0,\"name\":\"supportsPredictiveItemAnimations\",\"is_constructor\":false}],\"fields\":[{\"type\":\"int\",\"name\":\"f116935d\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f116936e\",\"def_pos\":0}],\"field_count\":2,\"full_name\":\"com.xingin.redview.recyclerview.PreOnBindViewLinearLayoutManager\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.redview.recyclerview.PreOnBindViewLinearLayoutManager",
+          "method_name": "m",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.redview.recyclerview.PreOnBindViewLinearLayoutManager\",\"full_name\":\"com.xingin.redview.recyclerview.PreOnBindViewLinearLayoutManager.m\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"m\",\"overload_count\":1,\"body\":\"    public final void m(int i100) {\\r\\n        this.f116935d \\u003d i100;\\r\\n    }\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.redview.recyclerview.PreOnBindViewLinearLayoutManager",
+    "method": {
+      "name": "m",
+      "reported_signature": "m(int): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void m(int i100) {\r\n        this.f116935d = i100;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "4bbde74bbcc6c98247fb6036ffcdcd3276fa3a25a36dbf708b737899472791da",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

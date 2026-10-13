@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_85c7ae647dccdee41175234f0a306bb69117dcef2fa37382721c6062dbdd322f",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.matrix.notedetail.v3.engagebar.collect.NoteDetailCollectBtnPresenter.c",
+    "method_name": "accept"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.engagebar.collect.NoteDetailCollectBtnPresenter.c"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"f55270d\",\"def_pos\":0,\"type\":\"com.xingin.matrix.notedetail.v3.engagebar.collect.NoteDetailCollectBtnPresenter\"}],\"field_count\":1,\"full_name\":\"com.xingin.matrix.notedetail.v3.engagebar.collect.NoteDetailCollectBtnPresenter.c\",\"name\":\"c\",\"inner_classes\":[],\"inner_class_count\":0,\"method_count\":2,\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(com.xingin.matrix.notedetail.v3.engagebar.collect.NoteDetailCollectBtnPresenter): void\",\"def_pos\":0},{\"name\":\"accept\",\"is_constructor\":false,\"signature\":\"accept(java.lang.Object): void\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.engagebar.collect.NoteDetailCollectBtnPresenter.c",
+          "method_name": "accept",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_name\":\"accept\",\"overload_count\":1,\"body\":\"        @Override // gl9.g\\r\\n        public void accept(Object obj) {\\r\\n            NoteFeed noteFeed;\\r\\n            CharSequence charSequenceF;\\r\\n            Object obj2 \\u003d ((h) obj).f11911d;\\r\\n            if (obj2 instanceof h.a) {\\r\\n                obj2 \\u003d null;\\r\\n            }\\r\\n            ef6.a aVar \\u003d (ef6.a) obj2;\\r\\n            if (aVar \\u003d\\u003d null || (noteFeed \\u003d aVar.f84779a) \\u003d\\u003d null) {\\r\\n                return;\\r\\n            }\\r\\n            noteFeed.L2(0L);\\r\\n            noteFeed.K2(false);\\r\\n            NoteDetailCollectBtnPresenter noteDetailCollectBtnPresenter \\u003d NoteDetailCollectBtnPresenter.this;\\r\\n            long jN \\u003d noteFeed.n();\\r\\n            boolean zM \\u003d noteFeed.m();\\r\\n            Objects.requireNonNull(noteDetailCollectBtnPresenter);\\r\\n            if (jN \\u003c\\u003d 0) {\\r\\n                charSequenceF \\u003d noteDetailCollectBtnPresenter.l7().getContext().getResources().getText(R.string._0_resource_name_obfuscated_res_0x7f1126ff);\\r\\n            } else {\\r\\n                NoteDetailConfigs noteDetailConfigs \\u003d NoteDetailConfigs.f41171a;\\r\\n                if (NoteDetailConfigs.b()) {\\r\\n                    qm1.c cVar \\u003d qm1.c.f181933a;\\r\\n                    charSequenceF \\u003d qm1.c.a(jN);\\r\\n                } else {\\r\\n                    charSequenceF \\u003d k0.f(jN, null, false, 3, null);\\r\\n                }\\r\\n            }\\r\\n            ((BtnViewCustomTextView) noteDetailCollectBtnPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f0919d4)).setText(charSequenceF);\\r\\n            ImageView imageView \\u003d (ImageView) noteDetailCollectBtnPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f0919d2);\\r\\n            imageView.setSelected(zM);\\r\\n            imageView.setImageDrawable(f.h(imageView.isSelected() ? R.drawable.matrix_video_feed_item_favorited_v2 : R.drawable.f69335ac6));\\r\\n        }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.matrix.notedetail.v3.engagebar.collect.NoteDetailCollectBtnPresenter.c\",\"full_name\":\"com.xingin.matrix.notedetail.v3.engagebar.collect.NoteDetailCollectBtnPresenter.c.accept\",\"mode\":\"java\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.notedetail.v3.engagebar.collect.NoteDetailCollectBtnPresenter.c",
+    "method": {
+      "name": "accept",
+      "reported_signature": "accept(java.lang.Object): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "        @Override // gl9.g\r\n        public void accept(Object obj) {\r\n            NoteFeed noteFeed;\r\n            CharSequence charSequenceF;\r\n            Object obj2 = ((h) obj).f11911d;\r\n            if (obj2 instanceof h.a) {\r\n                obj2 = null;\r\n            }\r\n            ef6.a aVar = (ef6.a) obj2;\r\n            if (aVar == null || (noteFeed = aVar.f84779a) == null) {\r\n                return;\r\n            }\r\n            noteFeed.L2(0L);\r\n            noteFeed.K2(false);\r\n            NoteDetailCollectBtnPresenter noteDetailCollectBtnPresenter = NoteDetailCollectBtnPresenter.this;\r\n            long jN = noteFeed.n();\r\n            boolean zM = noteFeed.m();\r\n            Objects.requireNonNull(noteDetailCollectBtnPresenter);\r\n            if (jN <= 0) {\r\n                charSequenceF = noteDetailCollectBtnPresenter.l7().getContext().getResources().getText(R.string._0_resource_name_obfuscated_res_0x7f1126ff);\r\n            } else {\r\n                NoteDetailConfigs noteDetailConfigs = NoteDetailConfigs.f41171a;\r\n                if (NoteDetailConfigs.b()) {\r\n                    qm1.c cVar = qm1.c.f181933a;\r\n                    charSequenceF = qm1.c.a(jN);\r\n                } else {\r\n                    charSequenceF = k0.f(jN, null, false, 3, null);\r\n                }\r\n            }\r\n            ((BtnViewCustomTextView) noteDetailCollectBtnPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f0919d4)).setText(charSequenceF);\r\n            ImageView imageView = (ImageView) noteDetailCollectBtnPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f0919d2);\r\n            imageView.setSelected(zM);\r\n            imageView.setImageDrawable(f.h(imageView.isSelected() ? R.drawable.matrix_video_feed_item_favorited_v2 : R.drawable.f69335ac6));\r\n        }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "45e38a8f4e6f04fd4c57ea5a71ad336dac2a7629b5064f16b9dfdf6deed4c3e5",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

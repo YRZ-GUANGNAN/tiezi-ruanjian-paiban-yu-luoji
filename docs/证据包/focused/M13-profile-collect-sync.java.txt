@@ -1,0 +1,14 @@
+    public final g<List<Object>, DiffUtil.DiffResult> c(NoteItemBean noteItemBean, int i4, boolean z4) {
+        if (z4) {
+            ArrayList<Object> arrayList = new ArrayList<>(this.f56577k);
+            if (arrayList.get(i4) instanceof NoteItemBean) {
+                arrayList.set(i4, noteItemBean);
+            }
+            return f(arrayList, this.f56577k, false);
+        }
+        ArrayList<Object> arrayList2 = new ArrayList<>(this.f56576j);
+        if (arrayList2.get(i4) instanceof NoteItemBean) {
+            arrayList2.set(i4, noteItemBean);
+        }
+        return f(arrayList2, this.f56576j, false);
+    }

@@ -1,0 +1,3288 @@
+{
+  "schemaVersion": 1,
+  "publishedResearchDate": "2026-10-13",
+  "publicPreparationDate": "2026-10-14",
+  "title": "帖子软件排版与逻辑",
+  "sourceScope": "Local v4 research delivery, without ZIP archives. Original captures and APKs remain local.",
+  "redactions": {
+    "localPaths": 857,
+    "devicePaths": 0,
+    "sdkValues": 47,
+    "xmlMetadata": 913,
+    "sensitiveFields": 0
+  },
+  "records": [
+    {
+      "file": "docs/00-阅读入口与进度.md",
+      "sourceRelativePath": "00-阅读入口与进度.md",
+      "originalSha256": "7b4c3bd92e88ac9b1f4170aab9dbbc85e99b2200c6b83ce7aff52ff8cbd2db4d",
+      "publicSha256": "7b4c3bd92e88ac9b1f4170aab9dbbc85e99b2200c6b83ce7aff52ff8cbd2db4d",
+      "bytes": 5731,
+      "changed": false
+    },
+    {
+      "file": "docs/01-手机端非购物研究报告.md",
+      "sourceRelativePath": "01-手机端非购物研究报告.md",
+      "originalSha256": "b3e2a85eb3c8c69682d5a5a3e4b6b81ddaf6e160f1bfd0867bc5411ad4703acc",
+      "publicSha256": "b3e2a85eb3c8c69682d5a5a3e4b6b81ddaf6e160f1bfd0867bc5411ad4703acc",
+      "bytes": 24516,
+      "changed": false
+    },
+    {
+      "file": "docs/02-页面状态机与复刻规格.md",
+      "sourceRelativePath": "02-页面状态机与复刻规格.md",
+      "originalSha256": "dc31aa0d43e8f5de211c83ca227313c6fc4fd670b4902c22d0b7a738e36d274f",
+      "publicSha256": "dc31aa0d43e8f5de211c83ca227313c6fc4fd670b4902c22d0b7a738e36d274f",
+      "bytes": 37659,
+      "changed": false
+    },
+    {
+      "file": "docs/03-真机补测与验收清单.md",
+      "sourceRelativePath": "03-真机补测与验收清单.md",
+      "originalSha256": "01f2b8c92764482070b03a7659f9830b7aedd7e4baf8799f199f5c06e2a6fdbf",
+      "publicSha256": "01f2b8c92764482070b03a7659f9830b7aedd7e4baf8799f199f5c06e2a6fdbf",
+      "bytes": 37679,
+      "changed": false
+    },
+    {
+      "file": "docs/04-官方资料与功能证据.md",
+      "sourceRelativePath": "04-官方资料与功能证据.md",
+      "originalSha256": "69b9dd0eb656117e837c1a8cc116b86a0401ca4c4106dabc83222b634d707ad6",
+      "publicSha256": "69b9dd0eb656117e837c1a8cc116b86a0401ca4c4106dabc83222b634d707ad6",
+      "bytes": 21889,
+      "changed": false
+    },
+    {
+      "file": "docs/05-静态证据索引.md",
+      "sourceRelativePath": "05-静态证据索引.md",
+      "originalSha256": "d1af161b596dc6aff6fb3c783bf1039c2fc8b3d92b0137688ff29b7243612f9c",
+      "publicSha256": "d1af161b596dc6aff6fb3c783bf1039c2fc8b3d92b0137688ff29b7243612f9c",
+      "bytes": 32632,
+      "changed": false
+    },
+    {
+      "file": "docs/06-交付校验结果.md",
+      "sourceRelativePath": "06-交付校验结果.md",
+      "originalSha256": "4d647ab4a9222fe83c1b7374372c221ba595f78155937e22535db97ec6abf899",
+      "publicSha256": "e24f78c6901347d39ff65c91afa00bf954887e4eeaf09248a0f250470d9fd548",
+      "bytes": 1461,
+      "changed": true
+    },
+    {
+      "file": "docs/小红书手机端非购物研究-排版动效与内核-20261013-v4.sha256.json",
+      "sourceRelativePath": "小红书手机端非购物研究-排版动效与内核-20261013-v4.sha256.json",
+      "originalSha256": "8d99e4f768f1af02ec6e1cfabcc3ade6fa60ced876d294b604d589c7350b94c8",
+      "publicSha256": "8d99e4f768f1af02ec6e1cfabcc3ade6fa60ced876d294b604d589c7350b94c8",
+      "bytes": 391,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/01-新版安装包来源.md",
+      "sourceRelativePath": "新版研究/01-新版安装包来源.md",
+      "originalSha256": "8d5b18a57a1169c0a13b0b1111c41345835e1fb401aaf79e03e4519a10637441",
+      "publicSha256": "8d5b18a57a1169c0a13b0b1111c41345835e1fb401aaf79e03e4519a10637441",
+      "bytes": 4774,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/04-魅族21真机实测.md",
+      "sourceRelativePath": "新版研究/04-魅族21真机实测.md",
+      "originalSha256": "7be40917ec125d2963180002fa876082244ed1ee241bf64520ab1c991b0d1149",
+      "publicSha256": "7be40917ec125d2963180002fa876082244ed1ee241bf64520ab1c991b0d1149",
+      "bytes": 8195,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/05-滑动与导航复刻规格.md",
+      "sourceRelativePath": "新版研究/05-滑动与导航复刻规格.md",
+      "originalSha256": "6d498b92851f4076b8f754336056aa64a308699223cc09984cf7eda48486d94d",
+      "publicSha256": "6d498b92851f4076b8f754336056aa64a308699223cc09984cf7eda48486d94d",
+      "bytes": 14460,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/06-实测覆盖与待补测.md",
+      "sourceRelativePath": "新版研究/06-实测覆盖与待补测.md",
+      "originalSha256": "710dab5d2f1f1db20d6aeeef0bb7ab525e7988505b2aa835512c86839028d15f",
+      "publicSha256": "710dab5d2f1f1db20d6aeeef0bb7ab525e7988505b2aa835512c86839028d15f",
+      "bytes": 8941,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/07-证据与交付校验.md",
+      "sourceRelativePath": "新版研究/07-证据与交付校验.md",
+      "originalSha256": "c4af4b3150c9c2cbb369339836a74d39c1d5badce0aa2290d16056bfea34c2a5",
+      "publicSha256": "b324e776ecaec2e2da7c778579f7b2965ee1a062469010f1cc41f3f5156a9372",
+      "bytes": 5172,
+      "changed": true
+    },
+    {
+      "file": "docs/新版研究/交互证据/index.json",
+      "sourceRelativePath": "新版研究/交互证据/index.json",
+      "originalSha256": "063c2d6d3087f6d8d367a3325090b85691af3d4daf24198f4b77a710275909c1",
+      "publicSha256": "063c2d6d3087f6d8d367a3325090b85691af3d4daf24198f4b77a710275909c1",
+      "bytes": 186470,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/交互证据/复刻验收场景.json",
+      "sourceRelativePath": "新版研究/交互证据/复刻验收场景.json",
+      "originalSha256": "66dec78b6379254404d2369917b4338c17355d42611eaac79deb0f26d74b643b",
+      "publicSha256": "66dec78b6379254404d2369917b4338c17355d42611eaac79deb0f26d74b643b",
+      "bytes": 13968,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/交互证据/资料包文件清单.json",
+      "sourceRelativePath": "新版研究/交互证据/资料包文件清单.json",
+      "originalSha256": "821f41fada21e5ca145e210a06ddfcc0370c9aaeb63c331322663c0e27017c3a",
+      "publicSha256": "94d8c5ffb0c48ef0772dad8b960e1712bb5fa18e2ee5b972d37c37c0bd835386",
+      "bytes": 40889,
+      "changed": true
+    },
+    {
+      "file": "docs/新版研究/截图/D010-home.png",
+      "sourceRelativePath": "新版研究/截图/D010-home.png",
+      "originalSha256": "7a038cf77e1e735b9298860ebef54c0ec90ce8c113cf47838a7825c7dff9e4cb",
+      "publicSha256": "7a038cf77e1e735b9298860ebef54c0ec90ce8c113cf47838a7825c7dff9e4cb",
+      "bytes": 2318730,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/D020-image-detail.png",
+      "sourceRelativePath": "新版研究/截图/D020-image-detail.png",
+      "originalSha256": "b9ef194b28158cd4603782dd679f3a3b3dd2a0c23b97491661e02d451345b5a8",
+      "publicSha256": "b9ef194b28158cd4603782dd679f3a3b3dd2a0c23b97491661e02d451345b5a8",
+      "bytes": 4035575,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R03-video-pause.png",
+      "sourceRelativePath": "新版研究/截图/R03-video-pause.png",
+      "originalSha256": "935ad30be98c02f471b4c1656b24bb1e36e978d2505139fc32852000c2b5dab5",
+      "publicSha256": "935ad30be98c02f471b4c1656b24bb1e36e978d2505139fc32852000c2b5dab5",
+      "bytes": 2896293,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R05-video-seek.png",
+      "sourceRelativePath": "新版研究/截图/R05-video-seek.png",
+      "originalSha256": "b58b8438bae3e6d0a9e3f4de695d8f0d7d289f80e6fabe3ab8dba312e2d509ea",
+      "publicSha256": "b58b8438bae3e6d0a9e3f4de695d8f0d7d289f80e6fabe3ab8dba312e2d509ea",
+      "bytes": 3734363,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R06-video-comments.png",
+      "sourceRelativePath": "新版研究/截图/R06-video-comments.png",
+      "originalSha256": "f06d60fc7f4ebdb92ae233dbe5ccedf04d249a5c1331e0f92b3ae0607b9e64d7",
+      "publicSha256": "f06d60fc7f4ebdb92ae233dbe5ccedf04d249a5c1331e0f92b3ae0607b9e64d7",
+      "bytes": 1130210,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R07-comment-replies.png",
+      "sourceRelativePath": "新版研究/截图/R07-comment-replies.png",
+      "originalSha256": "072ed707f0f42e9f3aef59c764723a05268482ac3f4030f9e697c5ac051a22dd",
+      "publicSha256": "072ed707f0f42e9f3aef59c764723a05268482ac3f4030f9e697c5ac051a22dd",
+      "bytes": 1063750,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R08-comment-scroll.png",
+      "sourceRelativePath": "新版研究/截图/R08-comment-scroll.png",
+      "originalSha256": "7605a45c5d2e47d3a0b9be4b928209241dcc783bc0bb6110b003655c62af0215",
+      "publicSha256": "7605a45c5d2e47d3a0b9be4b928209241dcc783bc0bb6110b003655c62af0215",
+      "bytes": 785454,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R10-comment-reopen.png",
+      "sourceRelativePath": "新版研究/截图/R10-comment-reopen.png",
+      "originalSha256": "a473bfb852c9270b51a42d6026cd1302786a7402b542e13580874dfba4e46967",
+      "publicSha256": "a473bfb852c9270b51a42d6026cd1302786a7402b542e13580874dfba4e46967",
+      "bytes": 1101188,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R19-image-comments.png",
+      "sourceRelativePath": "新版研究/截图/R19-image-comments.png",
+      "originalSha256": "79ebccd87f8dc4fefe3d839913957a66faf12bed70073b02c3cfee213ff18927",
+      "publicSha256": "79ebccd87f8dc4fefe3d839913957a66faf12bed70073b02c3cfee213ff18927",
+      "bytes": 374985,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R27-gallery-open.png",
+      "sourceRelativePath": "新版研究/截图/R27-gallery-open.png",
+      "originalSha256": "bf8911a988729f6a6246d94223f327ab7cc1948f1059e3f3f205f04d00403726",
+      "publicSha256": "bf8911a988729f6a6246d94223f327ab7cc1948f1059e3f3f205f04d00403726",
+      "bytes": 1378588,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R28-gallery-short.png",
+      "sourceRelativePath": "新版研究/截图/R28-gallery-short.png",
+      "originalSha256": "bf8911a988729f6a6246d94223f327ab7cc1948f1059e3f3f205f04d00403726",
+      "publicSha256": "bf8911a988729f6a6246d94223f327ab7cc1948f1059e3f3f205f04d00403726",
+      "bytes": 1378588,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R29-gallery-next.png",
+      "sourceRelativePath": "新版研究/截图/R29-gallery-next.png",
+      "originalSha256": "82ae5bbae8f1cff80acd2b5fa9e1348e66b46effce27e2a1a2db270b1266b6c9",
+      "publicSha256": "82ae5bbae8f1cff80acd2b5fa9e1348e66b46effce27e2a1a2db270b1266b6c9",
+      "bytes": 640681,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R31-indicator-timing.png",
+      "sourceRelativePath": "新版研究/截图/R31-indicator-timing.png",
+      "originalSha256": "846159145012125fb59df29a5cb80af77b1c8bbe31cd6f7dd5bdc79d97fb167d",
+      "publicSha256": "846159145012125fb59df29a5cb80af77b1c8bbe31cd6f7dd5bdc79d97fb167d",
+      "bytes": 16400,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R36-gallery-7.png",
+      "sourceRelativePath": "新版研究/截图/R36-gallery-7.png",
+      "originalSha256": "52f6cfa020b0007bfdfbc2834e2d40e159374be3e02baf8bcf20809ec1bd51ec",
+      "publicSha256": "52f6cfa020b0007bfdfbc2834e2d40e159374be3e02baf8bcf20809ec1bd51ec",
+      "bytes": 412842,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R37-gallery-end-boundary.png",
+      "sourceRelativePath": "新版研究/截图/R37-gallery-end-boundary.png",
+      "originalSha256": "52f6cfa020b0007bfdfbc2834e2d40e159374be3e02baf8bcf20809ec1bd51ec",
+      "publicSha256": "52f6cfa020b0007bfdfbc2834e2d40e159374be3e02baf8bcf20809ec1bd51ec",
+      "bytes": 412842,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R39-image-tools-only.png",
+      "sourceRelativePath": "新版研究/截图/R39-image-tools-only.png",
+      "originalSha256": "bb76aad8e662c7798a60c2e9e1ccca347dbef9c2adeb9d6e281a6043064a9b89",
+      "publicSha256": "bb76aad8e662c7798a60c2e9e1ccca347dbef9c2adeb9d6e281a6043064a9b89",
+      "bytes": 25295,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R47-gallery-start-boundary.png",
+      "sourceRelativePath": "新版研究/截图/R47-gallery-start-boundary.png",
+      "originalSha256": "ecbf38a9d8b59af2334a5434cf43624d6cdddacab46b21741ae414ce6e246e04",
+      "publicSha256": "ecbf38a9d8b59af2334a5434cf43624d6cdddacab46b21741ae414ce6e246e04",
+      "bytes": 1379306,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R49-author-stable.png",
+      "sourceRelativePath": "新版研究/截图/R49-author-stable.png",
+      "originalSha256": "7f85469dca117abaaad0cc9b5d5f68c841502a5d523118b088d46343d37e9c73",
+      "publicSha256": "7f85469dca117abaaad0cc9b5d5f68c841502a5d523118b088d46343d37e9c73",
+      "bytes": 2367513,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R50-author-scroll.png",
+      "sourceRelativePath": "新版研究/截图/R50-author-scroll.png",
+      "originalSha256": "098c818f5333f25053b928efbecca7043ad0f96c8354a6746ad0b5dfcac8ba70",
+      "publicSha256": "098c818f5333f25053b928efbecca7043ad0f96c8354a6746ad0b5dfcac8ba70",
+      "bytes": 1645391,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R51-author-collections.png",
+      "sourceRelativePath": "新版研究/截图/R51-author-collections.png",
+      "originalSha256": "0bbfdb4943bf9392807f430f6339163c457918cb69e9561f40759ad8dc120a21",
+      "publicSha256": "0bbfdb4943bf9392807f430f6339163c457918cb69e9561f40759ad8dc120a21",
+      "bytes": 2783521,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R52-author-notes-restore.png",
+      "sourceRelativePath": "新版研究/截图/R52-author-notes-restore.png",
+      "originalSha256": "ca0b19a632334f50c2fe4e476a1129c34bfee9ea84e566cbd1d0f249a87db15b",
+      "publicSha256": "ca0b19a632334f50c2fe4e476a1129c34bfee9ea84e566cbd1d0f249a87db15b",
+      "bytes": 1684898,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R59-search-stable.png",
+      "sourceRelativePath": "新版研究/截图/R59-search-stable.png",
+      "originalSha256": "4de80926032e276be6fe8eda24197ff8e19c718b9bc9d11894f7d2cea8a2fc9f",
+      "publicSha256": "4de80926032e276be6fe8eda24197ff8e19c718b9bc9d11894f7d2cea8a2fc9f",
+      "bytes": 3463202,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R61-search-return.png",
+      "sourceRelativePath": "新版研究/截图/R61-search-return.png",
+      "originalSha256": "9c310629743045ec9d2224eda0dfe82b6bc3e79cfeb2cb7535f248085bba78f0",
+      "publicSha256": "9c310629743045ec9d2224eda0dfe82b6bc3e79cfeb2cb7535f248085bba78f0",
+      "bytes": 3463600,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R63-search-filter.png",
+      "sourceRelativePath": "新版研究/截图/R63-search-filter.png",
+      "originalSha256": "50583b4edc7bd238cb4badbe41aef64eabb3469df27dcf115a9e967d88515451",
+      "publicSha256": "50583b4edc7bd238cb4badbe41aef64eabb3469df27dcf115a9e967d88515451",
+      "bytes": 821008,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R64-filter-image.png",
+      "sourceRelativePath": "新版研究/截图/R64-filter-image.png",
+      "originalSha256": "7e0372260bb557a0247dea97e80e22230f1c0ed1a0d3487fbf600b0ed67e8e50",
+      "publicSha256": "7e0372260bb557a0247dea97e80e22230f1c0ed1a0d3487fbf600b0ed67e8e50",
+      "bytes": 649823,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R66-filter-reopen.png",
+      "sourceRelativePath": "新版研究/截图/R66-filter-reopen.png",
+      "originalSha256": "7e0372260bb557a0247dea97e80e22230f1c0ed1a0d3487fbf600b0ed67e8e50",
+      "publicSha256": "7e0372260bb557a0247dea97e80e22230f1c0ed1a0d3487fbf600b0ed67e8e50",
+      "bytes": 649823,
+      "changed": false
+    },
+    {
+      "file": "docs/新版研究/截图/R67-filter-reset.png",
+      "sourceRelativePath": "新版研究/截图/R67-filter-reset.png",
+      "originalSha256": "31afd233c4fe32c426e74322fcbc5625bddcc57fdf5956638f3372ced96e3c86",
+      "publicSha256": "31afd233c4fe32c426e74322fcbc5625bddcc57fdf5956638f3372ced96e3c86",
+      "bytes": 649529,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/00-深度研究阅读入口.md",
+      "sourceRelativePath": "深度研究/00-深度研究阅读入口.md",
+      "originalSha256": "a9728d088896568b45fa3a4a1cf925c2c671acce1678c94a91a0a03ee008bb1b",
+      "publicSha256": "a9728d088896568b45fa3a4a1cf925c2c671acce1678c94a91a0a03ee008bb1b",
+      "bytes": 5098,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/01-复刻参数与验收.md",
+      "sourceRelativePath": "深度研究/01-复刻参数与验收.md",
+      "originalSha256": "922f9b00965ce31b34ad1235c540677e8fb0f6ad1743d3a1c8858316829c9371",
+      "publicSha256": "922f9b00965ce31b34ad1235c540677e8fb0f6ad1743d3a1c8858316829c9371",
+      "bytes": 6258,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/02-证据与交付校验.md",
+      "sourceRelativePath": "深度研究/02-证据与交付校验.md",
+      "originalSha256": "0a47125f042a69c8160c9d125d09139a74d6835f48375d37acadb8fa46ad6011",
+      "publicSha256": "67a66b2d3df37ffc34cccb0c1f9ccc78a385af6a43fc0b42a376b0d48f8caac2",
+      "bytes": 2488,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/validation.json",
+      "sourceRelativePath": "深度研究/validation.json",
+      "originalSha256": "da2fb1f244954f7ca6854a1bbe6944c9a278e5e1ffa2c031a3b075cc96202184",
+      "publicSha256": "6c3f1343c3210f4be0ec10a1ca2d2eb499dca4bc0ccb023dc7fc90f4c4573b1f",
+      "bytes": 922,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/动效/export-manifest.json",
+      "sourceRelativePath": "深度研究/动效/export-manifest.json",
+      "originalSha256": "791ebec9a3d9f36d609187b90ad1f37973f769ce3d080908b84bc3b3567e8980",
+      "publicSha256": "5cda5f4c3d53662d34443d48f1f0b2a82500fdded586a764e8a336e23fe8b469",
+      "bytes": 6007,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/动效/metrics-summary.json",
+      "sourceRelativePath": "深度研究/动效/metrics-summary.json",
+      "originalSha256": "01e5b82332f11afef79cd9837a37c5210b76bca65662ef40f74d146d45d60dee",
+      "publicSha256": "01e5b82332f11afef79cd9837a37c5210b76bca65662ef40f74d146d45d60dee",
+      "bytes": 3774,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/motion-findings.md",
+      "sourceRelativePath": "深度研究/动效/motion-findings.md",
+      "originalSha256": "d4cbb644b74eaa419cc335c80c7844c1ea46a64552bf14e00f0566e1339a3bd3",
+      "publicSha256": "d4cbb644b74eaa419cc335c80c7844c1ea46a64552bf14e00f0566e1339a3bd3",
+      "bytes": 8532,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/R31/badge-fadeout-detail.png",
+      "sourceRelativePath": "深度研究/动效/R31/badge-fadeout-detail.png",
+      "originalSha256": "975b2aa1b0500bfec0399da1a7f90b6ee6141eb853e4b935534fdd147edd39d9",
+      "publicSha256": "975b2aa1b0500bfec0399da1a7f90b6ee6141eb853e4b935534fdd147edd39d9",
+      "bytes": 97064,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/R31/badge-timeline.png",
+      "sourceRelativePath": "深度研究/动效/R31/badge-timeline.png",
+      "originalSha256": "c3e712b644483cf39f5946755b66be7f47e8abc7a7e89cf4f9b2097fbe528b45",
+      "publicSha256": "c3e712b644483cf39f5946755b66be7f47e8abc7a7e89cf4f9b2097fbe528b45",
+      "bytes": 723569,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/R31/fadeout-curve-fit.json",
+      "sourceRelativePath": "深度研究/动效/R31/fadeout-curve-fit.json",
+      "originalSha256": "b1d8e4a89f75ef0196ce0d9e5427bcac24b781e3179488037f49cf34d5e927c5",
+      "publicSha256": "b1d8e4a89f75ef0196ce0d9e5427bcac24b781e3179488037f49cf34d5e927c5",
+      "bytes": 535,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/R31/gallery-timeline.png",
+      "sourceRelativePath": "深度研究/动效/R31/gallery-timeline.png",
+      "originalSha256": "75b2875bad984d750500cc77f093b5bf4d30e5268d272d2f70b615046033eb10",
+      "publicSha256": "75b2875bad984d750500cc77f093b5bf4d30e5268d272d2f70b615046033eb10",
+      "bytes": 505846,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/R31/measurements.json",
+      "sourceRelativePath": "深度研究/动效/R31/measurements.json",
+      "originalSha256": "58f36fd709620042106a1ed8b86c72940e86440c583d89826daea72f992f74ca",
+      "publicSha256": "fdc1880dbd413b2c2d756c51e9cadc589fd15cedf7b6cd7966816a309afe0c72",
+      "bytes": 46459,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/动效/R31/motion-app-only.mp4",
+      "sourceRelativePath": "深度研究/动效/R31/motion-app-only.mp4",
+      "originalSha256": "6df133ca592e3370c6c7968a9f2b7298d4af059f7280eb7c13ab569383da8c0b",
+      "publicSha256": "6df133ca592e3370c6c7968a9f2b7298d4af059f7280eb7c13ab569383da8c0b",
+      "bytes": 2111551,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/R31/pixel-measurements.json",
+      "sourceRelativePath": "深度研究/动效/R31/pixel-measurements.json",
+      "originalSha256": "236604028e9820690c0862176f7c902f729b16eb4f3b9b52cc59471fa44b09b5",
+      "publicSha256": "236604028e9820690c0862176f7c902f729b16eb4f3b9b52cc59471fa44b09b5",
+      "bytes": 20668,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/R31/preview-validation.json",
+      "sourceRelativePath": "深度研究/动效/R31/preview-validation.json",
+      "originalSha256": "a4cf78f5a0898f512e1ee4fdb5871a593dfec2bf66cda82c5d9f3995c08f096c",
+      "publicSha256": "a4cf78f5a0898f512e1ee4fdb5871a593dfec2bf66cda82c5d9f3995c08f096c",
+      "bytes": 622,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/T02/entrance-neutral-geometry.png",
+      "sourceRelativePath": "深度研究/动效/T02/entrance-neutral-geometry.png",
+      "originalSha256": "44479ac26a65e82783391ebcec243e967984b556ceba596ebe4db6b9bc8664aa",
+      "publicSha256": "44479ac26a65e82783391ebcec243e967984b556ceba596ebe4db6b9bc8664aa",
+      "bytes": 13921,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/T02/geometry.json",
+      "sourceRelativePath": "深度研究/动效/T02/geometry.json",
+      "originalSha256": "72a3c6442d44e927a742967febaa5b9103d59e9fc76d5be6e4e10eaf9fa87d47",
+      "publicSha256": "72a3c6442d44e927a742967febaa5b9103d59e9fc76d5be6e4e10eaf9fa87d47",
+      "bytes": 8759,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/T02/measurements.json",
+      "sourceRelativePath": "深度研究/动效/T02/measurements.json",
+      "originalSha256": "0a7694e02e6d97530a49c8069b2d145e2ea967ef593aa4f06d9cba47ecb3a584",
+      "publicSha256": "0a7694e02e6d97530a49c8069b2d145e2ea967ef593aa4f06d9cba47ecb3a584",
+      "bytes": 14108,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/T03/exit-neutral-geometry.png",
+      "sourceRelativePath": "深度研究/动效/T03/exit-neutral-geometry.png",
+      "originalSha256": "06ab0dc17b63f3372540812e177d30cef8793df266288d598ff5881b738985a1",
+      "publicSha256": "06ab0dc17b63f3372540812e177d30cef8793df266288d598ff5881b738985a1",
+      "bytes": 14187,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/T03/geometry.json",
+      "sourceRelativePath": "深度研究/动效/T03/geometry.json",
+      "originalSha256": "53cdfe8270ae7ca9773bda96f82e825e72c4a0164af7d9ab9178f2637688f4db",
+      "publicSha256": "53cdfe8270ae7ca9773bda96f82e825e72c4a0164af7d9ab9178f2637688f4db",
+      "bytes": 9659,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/T03/measurements.json",
+      "sourceRelativePath": "深度研究/动效/T03/measurements.json",
+      "originalSha256": "5b70c7122fe55a99639335d5f9f9b22330d6a9e12a7e3c09a6504814ed928ade",
+      "publicSha256": "5b70c7122fe55a99639335d5f9f9b22330d6a9e12a7e3c09a6504814ed928ade",
+      "bytes": 7156,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/T05/enter-neutral-geometry.png",
+      "sourceRelativePath": "深度研究/动效/T05/enter-neutral-geometry.png",
+      "originalSha256": "e11d0cd91f3660392cb2e07eca19325526d967be0aeddd1057a232d4bbafe412",
+      "publicSha256": "e11d0cd91f3660392cb2e07eca19325526d967be0aeddd1057a232d4bbafe412",
+      "bytes": 16263,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/T05/geometry.json",
+      "sourceRelativePath": "深度研究/动效/T05/geometry.json",
+      "originalSha256": "6407a7d2d2327022321707ea9aecef5bdb7be598bc115f444f5f9826cb2e971e",
+      "publicSha256": "6407a7d2d2327022321707ea9aecef5bdb7be598bc115f444f5f9826cb2e971e",
+      "bytes": 35615,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/T05/measurements.json",
+      "sourceRelativePath": "深度研究/动效/T05/measurements.json",
+      "originalSha256": "511c37057b308a8fef39142e5875a8b001e462f7fad8c7655f34d3efd368359a",
+      "publicSha256": "511c37057b308a8fef39142e5875a8b001e462f7fad8c7655f34d3efd368359a",
+      "bytes": 115967,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/T06/exit-neutral-geometry.png",
+      "sourceRelativePath": "深度研究/动效/T06/exit-neutral-geometry.png",
+      "originalSha256": "ed6137b414f7eb1798eef6446f459e5bf391559710c41de9f06e886a55d3aa94",
+      "publicSha256": "ed6137b414f7eb1798eef6446f459e5bf391559710c41de9f06e886a55d3aa94",
+      "bytes": 15854,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/T06/geometry.json",
+      "sourceRelativePath": "深度研究/动效/T06/geometry.json",
+      "originalSha256": "79294e47e6841ca4fd494b29c6a694894aae6e03dfb805d444b24eca21691bbf",
+      "publicSha256": "79294e47e6841ca4fd494b29c6a694894aae6e03dfb805d444b24eca21691bbf",
+      "bytes": 40883,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/动效/T06/measurements.json",
+      "sourceRelativePath": "深度研究/动效/T06/measurements.json",
+      "originalSha256": "364c96b5c03ab35891f225f501058461bb02a19dd89258452f9a442a7829e8eb",
+      "publicSha256": "364c96b5c03ab35891f225f501058461bb02a19dd89258452f9a442a7829e8eb",
+      "bytes": 128817,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/复刻参数.json",
+      "sourceRelativePath": "深度研究/复刻参数.json",
+      "originalSha256": "01630df4d3aabf9e7d9643dec6d3201f30540a2b40c795d0167a0835ba2a674d",
+      "publicSha256": "01630df4d3aabf9e7d9643dec6d3201f30540a2b40c795d0167a0835ba2a674d",
+      "bytes": 5190,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/排版/01-feed-layout.png",
+      "sourceRelativePath": "深度研究/排版/01-feed-layout.png",
+      "originalSha256": "81eacec7d0a336eaa18bb89894ed44304b5b2a48cc12a0c7bea7a12edaa0ce24",
+      "publicSha256": "81eacec7d0a336eaa18bb89894ed44304b5b2a48cc12a0c7bea7a12edaa0ce24",
+      "bytes": 142818,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/排版/02-gallery-layout.png",
+      "sourceRelativePath": "深度研究/排版/02-gallery-layout.png",
+      "originalSha256": "433483c0391420f0f9464638e3cee69dd8db9f33ac195896520b3c680f223f3b",
+      "publicSha256": "433483c0391420f0f9464638e3cee69dd8db9f33ac195896520b3c680f223f3b",
+      "bytes": 144915,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/排版/03-video-comments-layout.png",
+      "sourceRelativePath": "深度研究/排版/03-video-comments-layout.png",
+      "originalSha256": "f1af0e876a290188e28afd5aec8bc15d2e49061469bb2ebb5fb0244d3f9b5dcc",
+      "publicSha256": "f1af0e876a290188e28afd5aec8bc15d2e49061469bb2ebb5fb0244d3f9b5dcc",
+      "bytes": 168248,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/排版/04-search-filter-layout.png",
+      "sourceRelativePath": "深度研究/排版/04-search-filter-layout.png",
+      "originalSha256": "fdf7648617a6da9d608d9a819af8f5e6ed6a62b39773a42efffae477e7deb68f",
+      "publicSha256": "fdf7648617a6da9d608d9a819af8f5e6ed6a62b39773a42efffae477e7deb68f",
+      "bytes": 197414,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/排版/05-author-sticky-layout.png",
+      "sourceRelativePath": "深度研究/排版/05-author-sticky-layout.png",
+      "originalSha256": "4997ba6e37f852d8cac7525f7a8b457db21c1c97e788c780b8c0f9b4e91f48bf",
+      "publicSha256": "4997ba6e37f852d8cac7525f7a8b457db21c1c97e788c780b8c0f9b4e91f48bf",
+      "bytes": 144348,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/排版/06-search-results-layout.png",
+      "sourceRelativePath": "深度研究/排版/06-search-results-layout.png",
+      "originalSha256": "50005c018a569326ac7de9f00082c70aa40fe59606b7f8b75895a16adfa46a6a",
+      "publicSha256": "50005c018a569326ac7de9f00082c70aa40fe59606b7f8b75895a16adfa46a6a",
+      "bytes": 147624,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/排版/layout-findings.md",
+      "sourceRelativePath": "深度研究/排版/layout-findings.md",
+      "originalSha256": "56f7d520fa793254b415e9c99d34c3efe214a62b4762289fdbc23ceb706ddd50",
+      "publicSha256": "56f7d520fa793254b415e9c99d34c3efe214a62b4762289fdbc23ceb706ddd50",
+      "bytes": 13704,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/排版/measurements.md",
+      "sourceRelativePath": "深度研究/排版/measurements.md",
+      "originalSha256": "417c553aa47e459e82d3cef98b08b04e0ffc3bb76fde4dc3798afabe31110960",
+      "publicSha256": "417c553aa47e459e82d3cef98b08b04e0ffc3bb76fde4dc3798afabe31110960",
+      "bytes": 12923,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/排版/metrics.json",
+      "sourceRelativePath": "深度研究/排版/metrics.json",
+      "originalSha256": "7debbab8672b16ebb7b779cac84cba354949839bb4408f930b0573d757164a9e",
+      "publicSha256": "7debbab8672b16ebb7b779cac84cba354949839bb4408f930b0573d757164a9e",
+      "bytes": 85872,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/排版/validation.json",
+      "sourceRelativePath": "深度研究/排版/validation.json",
+      "originalSha256": "0cd0a8c143e9270f57278bd87bbc4447ad5c78de4a093c900672acc82eab34df",
+      "publicSha256": "5677772fed868d464db48b04f1f0ba2ba8300067e6886d94772224e338c5f449",
+      "bytes": 742,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/core-findings.md",
+      "sourceRelativePath": "深度研究/机制/core-findings.md",
+      "originalSha256": "441e50b99ec91914e7959da21b2be5419bd94c2dea76817c96ba7e31317b33d9",
+      "publicSha256": "441e50b99ec91914e7959da21b2be5419bd94c2dea76817c96ba7e31317b33d9",
+      "bytes": 13844,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/evidence-index.json",
+      "sourceRelativePath": "深度研究/机制/evidence-index.json",
+      "originalSha256": "fe9b3e681991b51de2425d4691b1e946b8ee5f30b50cf8259916e70363df1447",
+      "publicSha256": "30518a196138c3d1a53ee1b6ee07c4943af158f5aa8018f0d207054395ea1796",
+      "bytes": 380085,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K001-device-package.json",
+      "sourceRelativePath": "深度研究/机制/raw/K001-device-package.json",
+      "originalSha256": "4962d8dfe1b49e2d0586af628b72eb68136ff133242663c2f1b3fd353881e1da",
+      "publicSha256": "3fa629be67fc99f639222e876901f9f6c4808327fa91c753477489b1b50aae2a",
+      "bytes": 832865,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K002-image-presenter.json",
+      "sourceRelativePath": "深度研究/机制/raw/K002-image-presenter.json",
+      "originalSha256": "4991ccf8f461c917f8239a30caeec3e745782a6735013dca2fb35e361484bb23",
+      "publicSha256": "420fc5591d4bf8c512edcb1e296c1673cb9978c1ca6d21069ff700ea7cdf78f2",
+      "bytes": 51088,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K003-like-presenter.json",
+      "sourceRelativePath": "深度研究/机制/raw/K003-like-presenter.json",
+      "originalSha256": "a3c498b7b0fb8939464b63dae28d0104f94d98a9619275dd95a4452a558e6341",
+      "publicSha256": "ff5663d22990acf1a6f5bb1592342e6d88bea7eedde652f6c52916cc64911bcb",
+      "bytes": 9461,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K004-gallery-view.json",
+      "sourceRelativePath": "深度研究/机制/raw/K004-gallery-view.json",
+      "originalSha256": "043fa413e58ea82280c22719b881fb307d6ba63c5766da5c48ea2f6bb44b1f61",
+      "publicSha256": "f570c179aecd844c1b481dd7e610c378dca35be4855547d3d62201a56603e0a0",
+      "bytes": 9701,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K005-gallery-classes.json",
+      "sourceRelativePath": "深度研究/机制/raw/K005-gallery-classes.json",
+      "originalSha256": "030c511db79d33297aed3d836e48da5679cacee79c737f1c25cc54cd80af1be2",
+      "publicSha256": "0f9fa48a5739658f1316ff7ba019ab82522804fe72250fefe8aac77c7965300d",
+      "bytes": 2121788,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K006-feed-search.json",
+      "sourceRelativePath": "深度研究/机制/raw/K006-feed-search.json",
+      "originalSha256": "006c4f6b01a593d2f7a10527df17144cf40fd2f0bda74293f261f61dc80a69fd",
+      "publicSha256": "f14acefd663bfb567037bed8c7a1e0f76ac80490dfa4734f6d6d6592806ea02d",
+      "bytes": 2120458,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K007-prebind-search.json",
+      "sourceRelativePath": "深度研究/机制/raw/K007-prebind-search.json",
+      "originalSha256": "65b954719d7298cf074d37e6166a14ef81ce5a41112130c45d72b883651d852e",
+      "publicSha256": "6d11c075bdeb4a32196ba4dceb5094d508c835394acd843eeb0a1eb47a19d698",
+      "bytes": 2120717,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K008-prebind-manager.json",
+      "sourceRelativePath": "深度研究/机制/raw/K008-prebind-manager.json",
+      "originalSha256": "736570a87f3bb9c1ef0794a6ff6e567d6faa4c98440953e8a43698954ad6a10f",
+      "publicSha256": "d02b5cd0ab1a8f5aad10004ef634df7a8953b9fcc6006229ee76ab2328c59368",
+      "bytes": 6458,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K009-gallery-controller.json",
+      "sourceRelativePath": "深度研究/机制/raw/K009-gallery-controller.json",
+      "originalSha256": "ca6ec130a4a3995c5c0e75185d001e65d183968985494703cc3a4f37d2c4b281",
+      "publicSha256": "b49c3b236d9b2fd0eda059f30a8b21f1ff59b92f20322c19841ec33db54ec4af",
+      "bytes": 100468,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K010-gallery-item.json",
+      "sourceRelativePath": "深度研究/机制/raw/K010-gallery-item.json",
+      "originalSha256": "78c42d0271166056ffc28e023fcef78baa538b69866f1123ddf3c4e53c14aec3",
+      "publicSha256": "c23b8413011c0bbb40cd3c3e4185600f70bed234c2a671512ee14c8de075eb71",
+      "bytes": 23274,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K011-feed-adapter.error.json",
+      "sourceRelativePath": "深度研究/机制/raw/K011-feed-adapter.error.json",
+      "originalSha256": "1edd4b22a6357d6cabfc146eb97afddc08a91232655cc49458ef6d038ac0bbc3",
+      "publicSha256": "118c203428c81760eeb01d9293238e4519a0150d383c25ba868168a143f4ba71",
+      "bytes": 2086,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K012-explore-service.error.json",
+      "sourceRelativePath": "深度研究/机制/raw/K012-explore-service.error.json",
+      "originalSha256": "dcb0353492a365ad8c6c0dc47d5e1d329e4f52622c8eb35798e9f3e783d4eed0",
+      "publicSha256": "eda1a19dfb7ee4dcef55764320d7bca7095b391812e2e75e6d5d45299a5fae28",
+      "bytes": 2518,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K013-explore-service-correct.json",
+      "sourceRelativePath": "深度研究/机制/raw/K013-explore-service-correct.json",
+      "originalSha256": "0b4ee310e1a0fa93a31fcd82e039f6600758df090ece4b3b0978982acb0d27fc",
+      "publicSha256": "d570f0753556479357c13a4e0d403c1b411ebd3b75a01be3f327e7d06cd100a3",
+      "bytes": 10543,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K014-image-event-store.json",
+      "sourceRelativePath": "深度研究/机制/raw/K014-image-event-store.json",
+      "originalSha256": "3a6407d332caf341d6b90c7b5fd8d43a0aa44ad57d99f60d4e6e860315e68377",
+      "publicSha256": "a9d6879df2f05341d6af4ea3d4267c4b69b5f4e81755f6466343679f465d7ecb",
+      "bytes": 4624,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K015-image-view.json",
+      "sourceRelativePath": "深度研究/机制/raw/K015-image-view.json",
+      "originalSha256": "dd7162d3c295530b7217f3103d06cd9b871bcc7db25c04f013ef154d29210c6f",
+      "publicSha256": "6aa541de7d765393b2d2bb54614f294f679a33f10130b3ab1f1b8b3440c37fad",
+      "bytes": 13883,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K016-explore-classes.json",
+      "sourceRelativePath": "深度研究/机制/raw/K016-explore-classes.json",
+      "originalSha256": "afe46907abb9560fed077bfbb38640d56f76ebe885116201e92bd58b91921d59",
+      "publicSha256": "63d4f32e93de4e1edc9918921a46570688033e1ea2e09082598bcd798fe9e49f",
+      "bytes": 2126030,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K017-image-state-store.json",
+      "sourceRelativePath": "深度研究/机制/raw/K017-image-state-store.json",
+      "originalSha256": "55a907d166357791d9ec6cc7a8c975785094819d3efe6534617c9d00a3ee6cca",
+      "publicSha256": "65eee0f99d60375530637b8547f6fdcb4bbe50c57214cc18e9743bab9feb60e5",
+      "bytes": 5499,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K018-explore-view.json",
+      "sourceRelativePath": "深度研究/机制/raw/K018-explore-view.json",
+      "originalSha256": "63e1d336c9b4f6855ba6873474e1040b1ffa6172b78693a23ddb72e24bfc802e",
+      "publicSha256": "113e97465de0895897694dcc4ec7a73e771cc807cce9f447e68f76704f8ffe9f",
+      "bytes": 121930,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K019-explore-presenter.json",
+      "sourceRelativePath": "深度研究/机制/raw/K019-explore-presenter.json",
+      "originalSha256": "d4b001a6555fc37712ce5d73fa0249dbc4954de1612d17e464a02651563a2694",
+      "publicSha256": "943a8d023724a3054111a90e16a5e798146cef9583734299a480d9fd7131994b",
+      "bytes": 28330,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K020-explore-manager.json",
+      "sourceRelativePath": "深度研究/机制/raw/K020-explore-manager.json",
+      "originalSha256": "be6ea04ba23000c53ff201433b700425f57761e4f13e879a9ab61730badd9262",
+      "publicSha256": "17921f6666afb9c3008193f3e5a750980f7ec0b8f943e09c7c1005af593ed982",
+      "bytes": 7647,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K021-explore-decoration.json",
+      "sourceRelativePath": "深度研究/机制/raw/K021-explore-decoration.json",
+      "originalSha256": "a66ac1d929025e4a89cb84a3a83efda3b3402f8584b8180c4c38a8258fb61a10",
+      "publicSha256": "ae71c138552f93e0c494b1c7c9464862abeddf7a3e00d21a2ff438439b201db9",
+      "bytes": 5702,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K022-follow-response.error.json",
+      "sourceRelativePath": "深度研究/机制/raw/K022-follow-response.error.json",
+      "originalSha256": "9f1209e1fda4196505247e1e6731b621a27f22f1d9c9647d6473f97fc1f0e5cb",
+      "publicSha256": "1e22a8632c87da02c62c196ad9be693e170f239c1c45f0558a9004b9aeeb96a0",
+      "bytes": 2020,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K023-follow-response-correct.error.json",
+      "sourceRelativePath": "深度研究/机制/raw/K023-follow-response-correct.error.json",
+      "originalSha256": "6d9df1a2d0b09701222b115565522a9f84f6fa9f8e527b87e3e747fd13720d7c",
+      "publicSha256": "3c46fcaf331f8b35dd108b81ef8eb69831fd2671464b63141fc73bd36d7fa562",
+      "bytes": 2089,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K024-prebind-setter.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K024-prebind-setter.java.txt",
+      "originalSha256": "994bb01a562c4aad112341f0bb2a5e7f58ae26a150b9a531d7bdcb480f190cfb",
+      "publicSha256": "994bb01a562c4aad112341f0bb2a5e7f58ae26a150b9a531d7bdcb480f190cfb",
+      "bytes": 73,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K024-prebind-setter.json",
+      "sourceRelativePath": "深度研究/机制/raw/K024-prebind-setter.json",
+      "originalSha256": "4bbde74bbcc6c98247fb6036ffcdcd3276fa3a25a36dbf708b737899472791da",
+      "publicSha256": "32afade48df64edd4fef6cf322a8194efafd36f1cc8525a3a15c5f6693f47364",
+      "bytes": 6702,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K025-gallery-height-helper.json",
+      "sourceRelativePath": "深度研究/机制/raw/K025-gallery-height-helper.json",
+      "originalSha256": "dee79f7992a77742d0bf4c1f895492687c674595e9b5f403ec2281b19918a5f1",
+      "publicSha256": "0f5d3e119ebd70353a07e3f83994c99316f1739f5a388dd23665514764cb4a3a",
+      "bytes": 4546,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K101-image-attach.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K101-image-attach.java.txt",
+      "originalSha256": "b108bd1b18ad4fd58b5396fed0d1ede8fec7dd26b099ad6841bbd0666e58bf41",
+      "publicSha256": "b108bd1b18ad4fd58b5396fed0d1ede8fec7dd26b099ad6841bbd0666e58bf41",
+      "bytes": 280,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K101-image-attach.json",
+      "sourceRelativePath": "深度研究/机制/raw/K101-image-attach.json",
+      "originalSha256": "9ad18b356259b699488ecda874a1b121770d43ad265061ff23239306637f42a0",
+      "publicSha256": "888873e76f90e896f6b9b166985aa1a19940e524c517a3a2d8b58a7cc65e3fbf",
+      "bytes": 25358,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K102-image-hide.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K102-image-hide.java.txt",
+      "originalSha256": "6c4d61ae995961738fc85a8ed44d9865dbafa3dd1212b7fbc5ac03a6b039ea9c",
+      "publicSha256": "6c4d61ae995961738fc85a8ed44d9865dbafa3dd1212b7fbc5ac03a6b039ea9c",
+      "bytes": 642,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K102-image-hide.json",
+      "sourceRelativePath": "深度研究/机制/raw/K102-image-hide.json",
+      "originalSha256": "45bd8bb699301ef83db18a523939a562f1f7a59d06db0e44765b6175c2ad6f6a",
+      "publicSha256": "899744787b6f36874b829a82cd7d4d261a24230aa53d7639c445fbcdc56e9fe9",
+      "bytes": 25529,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K103-image-data.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K103-image-data.java.txt",
+      "originalSha256": "91acb9cbfbb9decf66c28fd3dd1a1242068a0b05b64136bc9780160445bda7ef",
+      "publicSha256": "91acb9cbfbb9decf66c28fd3dd1a1242068a0b05b64136bc9780160445bda7ef",
+      "bytes": 1092,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K103-image-data.json",
+      "sourceRelativePath": "深度研究/机制/raw/K103-image-data.json",
+      "originalSha256": "7934a0dd47012c291099c078d97276895e19a6fbd99cb873c751cfd08f08712d",
+      "publicSha256": "fae405354570f4d63903087fb619835ccf229a4720927648ed6830c85ac20378",
+      "bytes": 26587,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K104-image-bind-list.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K104-image-bind-list.java.txt",
+      "originalSha256": "b56a74972201277e4a3126a5c8b5576a84126bba862da3c4d0c5f27e99b03ebd",
+      "publicSha256": "b56a74972201277e4a3126a5c8b5576a84126bba862da3c4d0c5f27e99b03ebd",
+      "bytes": 505,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K104-image-bind-list.json",
+      "sourceRelativePath": "深度研究/机制/raw/K104-image-bind-list.json",
+      "originalSha256": "f2aa93fb51e70b16f4926b6506d0d85ecf70c29cd7ba05ea4f2d4cad87c4d9cd",
+      "publicSha256": "0a0143aaad2d169d732ea4962bde35ab52c447929464f69597742fcd6afcdb3e",
+      "bytes": 25307,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K105-image-update.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K105-image-update.java.txt",
+      "originalSha256": "fdc2d34d15b89caec86d863f4e7f576f5dd346c77ad6f876381bbd959e297e4a",
+      "publicSha256": "fdc2d34d15b89caec86d863f4e7f576f5dd346c77ad6f876381bbd959e297e4a",
+      "bytes": 1766,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K105-image-update.json",
+      "sourceRelativePath": "深度研究/机制/raw/K105-image-update.json",
+      "originalSha256": "0d0cd1fa14b90614ad851c1e4690965ee6509d717ba9143823bf4347fccfbfd5",
+      "publicSha256": "421e329f302ef2e9f6f5b693418c1c233ef441d75eb26ab875e3a2f23e6cd5e3",
+      "bytes": 28076,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K106-image-init.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K106-image-init.java.txt",
+      "originalSha256": "656d09954c4342ce4286f2e2a1145794fcc170c5c1a6ca000a3f0b78980eceaf",
+      "publicSha256": "656d09954c4342ce4286f2e2a1145794fcc170c5c1a6ca000a3f0b78980eceaf",
+      "bytes": 429,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K106-image-init.json",
+      "sourceRelativePath": "深度研究/机制/raw/K106-image-init.json",
+      "originalSha256": "df58a2026819d652bd82b2f9d7addbb4c2bce6fea800037bc76a7640978208de",
+      "publicSha256": "af63b7599314f51506bbebf58b2a84e1b2b2121017e9ec1a71fb4641d4b78d5c",
+      "bytes": 25075,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K107-image-subscribe.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K107-image-subscribe.java.txt",
+      "originalSha256": "a541c352db1b9653e8a2f751d27fdf5cd5d58559b0a7440916252ed64c8ca677",
+      "publicSha256": "a541c352db1b9653e8a2f751d27fdf5cd5d58559b0a7440916252ed64c8ca677",
+      "bytes": 925,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K107-image-subscribe.json",
+      "sourceRelativePath": "深度研究/机制/raw/K107-image-subscribe.json",
+      "originalSha256": "fe4777d8c0d73f8a562f65ae7016f303aa8ebd339a6d7ad5089db85712e6960a",
+      "publicSha256": "bab4fbdf35a137d0af1f591dcf43219ad18eab7fa4a087299fe922c68ae5f0d9",
+      "bytes": 26127,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K108-image-layout.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K108-image-layout.java.txt",
+      "originalSha256": "73be11bd9a3080493b9c57b2dd27b0d1f58fca8e49402867d4ef8c8c0f5ac170",
+      "publicSha256": "73be11bd9a3080493b9c57b2dd27b0d1f58fca8e49402867d4ef8c8c0f5ac170",
+      "bytes": 1707,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K108-image-layout.json",
+      "sourceRelativePath": "深度研究/机制/raw/K108-image-layout.json",
+      "originalSha256": "5f4517084408d6bfe7c93c8fa86a482832562981730e6f98ffce3b3a341a97d6",
+      "publicSha256": "e312f8e7a490962c99fd1dec43cb561329ccb6ef9280ad628c5385eac9d35041",
+      "bytes": 27884,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K109-like-attach.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K109-like-attach.java.txt",
+      "originalSha256": "c2656b95db50fa4d7e36de513588682cc3e9b3d480cd295b028e039e234ee6e6",
+      "publicSha256": "c2656b95db50fa4d7e36de513588682cc3e9b3d480cd295b028e039e234ee6e6",
+      "bytes": 1134,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K109-like-attach.json",
+      "sourceRelativePath": "深度研究/机制/raw/K109-like-attach.json",
+      "originalSha256": "a88def14d110fedfba790f49ed24a80917b26de3dc1b1dc169fe25cd22390b05",
+      "publicSha256": "b74e6c14ae2483799dc326d8669c7f49e248f0eae7139c948db06f19e1f75fb0",
+      "bytes": 9684,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K110-like-state.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K110-like-state.java.txt",
+      "originalSha256": "8537198a3e12b37d37c52e219174e7dc93ff73fa16b2fca4d1b7874c425086b3",
+      "publicSha256": "8537198a3e12b37d37c52e219174e7dc93ff73fa16b2fca4d1b7874c425086b3",
+      "bytes": 207,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K110-like-state.json",
+      "sourceRelativePath": "深度研究/机制/raw/K110-like-state.json",
+      "originalSha256": "a48af889f2dc3afa21c7e3b98c9d0d2a41b19701654d47a6524f2030f02de6ad",
+      "publicSha256": "c8dd333d9b8d3fea72d1329964edd430bd069a4ba6334c59cbf7534048652897",
+      "bytes": 7677,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K111-image-list-setup.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K111-image-list-setup.java.txt",
+      "originalSha256": "648ca792c6785351b41178a710fca2bb163efb3d5957d038f1a5cdc30dc8c3c1",
+      "publicSha256": "648ca792c6785351b41178a710fca2bb163efb3d5957d038f1a5cdc30dc8c3c1",
+      "bytes": 1513,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K111-image-list-setup.json",
+      "sourceRelativePath": "深度研究/机制/raw/K111-image-list-setup.json",
+      "originalSha256": "af96eb777563f51e3b4c5665a18680bca9b6a110d70b17d819eb3ab4382f097e",
+      "publicSha256": "3e4e733203691dab2cc8b78b81f0457fc5149e54cd46051117fbff222228f3f7",
+      "bytes": 27976,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K112-image-state-subscriptions.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K112-image-state-subscriptions.java.txt",
+      "originalSha256": "f66b4f843fef062b9df24d4898816ca206026742e66129589f2700ad59c3bb19",
+      "publicSha256": "f66b4f843fef062b9df24d4898816ca206026742e66129589f2700ad59c3bb19",
+      "bytes": 6940,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K112-image-state-subscriptions.json",
+      "sourceRelativePath": "深度研究/机制/raw/K112-image-state-subscriptions.json",
+      "originalSha256": "5110a94622dd24b43007ef502a98fa2d61c962d7fe7f4e9026814c4995139709",
+      "publicSha256": "f08de749d98bc84f0c509ee331e559eca073e5ea89c5c29a220972089599662f",
+      "bytes": 39897,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K113-image-data-replace.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K113-image-data-replace.java.txt",
+      "originalSha256": "e9e5836c9aea73eeb18a63fa875d0b731e18f052a6c15f0264d5f3ab755949fc",
+      "publicSha256": "e9e5836c9aea73eeb18a63fa875d0b731e18f052a6c15f0264d5f3ab755949fc",
+      "bytes": 1007,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K113-image-data-replace.json",
+      "sourceRelativePath": "深度研究/机制/raw/K113-image-data-replace.json",
+      "originalSha256": "d3fce2ff591054bcd8b730563274e398c48fc48c61c6f926366ad90c190e4722",
+      "publicSha256": "8a21ee904002ce432777a32f805534cc83680dcada3aea9c109ac0b7b41c1cbd",
+      "bytes": 26386,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K114-image-fade-callback.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K114-image-fade-callback.java.txt",
+      "originalSha256": "f706562357d1f3d967ab72d4c7fed31b8217dcf8168800dcf0377ab07cead26b",
+      "publicSha256": "f706562357d1f3d967ab72d4c7fed31b8217dcf8168800dcf0377ab07cead26b",
+      "bytes": 687,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K114-image-fade-callback.json",
+      "sourceRelativePath": "深度研究/机制/raw/K114-image-fade-callback.json",
+      "originalSha256": "229e4dbd3f76e0f85576450373cc5bf7201d9fe9e541616c3bf7d4d7fd73802f",
+      "publicSha256": "f5d3fa8e2c4bb5fa658a1472195c98b4cad8e0f8076bf319deeee736604b3bb0",
+      "bytes": 25660,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K115-prebind-extra.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K115-prebind-extra.java.txt",
+      "originalSha256": "f6224cf4a79e1dc2331c613ccc58bd6879b0c616db6c995640ac8e670f431f88",
+      "publicSha256": "f6224cf4a79e1dc2331c613ccc58bd6879b0c616db6c995640ac8e670f431f88",
+      "bytes": 521,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K115-prebind-extra.json",
+      "sourceRelativePath": "深度研究/机制/raw/K115-prebind-extra.json",
+      "originalSha256": "3c4a19b96725850257dcd9f59514adaf22f76927865489777b5e6ee478da9255",
+      "publicSha256": "312cae2048068262cfe044acd0cac7e62d126f97d0c427c306cc3f912845e569",
+      "bytes": 7210,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K116-prebind-animation.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K116-prebind-animation.java.txt",
+      "originalSha256": "83db17cb39c0c634d15b0a0b2b80d497515a80e0c5f162aa1d4e92596bf9d112",
+      "publicSha256": "83db17cb39c0c634d15b0a0b2b80d497515a80e0c5f162aa1d4e92596bf9d112",
+      "bytes": 488,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K116-prebind-animation.json",
+      "sourceRelativePath": "深度研究/机制/raw/K116-prebind-animation.json",
+      "originalSha256": "cfe475d48549b99cb96ed1e97561bae74157e7a426a27b28571bf261d4b9d4e2",
+      "publicSha256": "a6f0deeb9e9c37bc9401feff74e42e56e609e597231b18d8e5076f953ddf9487",
+      "bytes": 7161,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K117-image-load.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K117-image-load.java.txt",
+      "originalSha256": "224cea7af98ce7fcdff5754c14deaf5212e5d6301a1b2d4d464f5b9d9a7bd250",
+      "publicSha256": "224cea7af98ce7fcdff5754c14deaf5212e5d6301a1b2d4d464f5b9d9a7bd250",
+      "bytes": 1751,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K117-image-load.json",
+      "sourceRelativePath": "深度研究/机制/raw/K117-image-load.json",
+      "originalSha256": "03d44f6fde2899b468f14936bc27638f6ee37ae3c8fc2cf5752d5e28919493a5",
+      "publicSha256": "eecd21e6f2917d3c1ef1748457fdff7da4c1c7fffec0cf21c1adbf2e1c6c941c",
+      "bytes": 17061,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K118-image-load-result.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K118-image-load-result.java.txt",
+      "originalSha256": "d1cb72b6a7b3188d158112affab55ade01a85533d83d244c4e910a48ec0145f2",
+      "publicSha256": "d1cb72b6a7b3188d158112affab55ade01a85533d83d244c4e910a48ec0145f2",
+      "bytes": 1049,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K118-image-load-result.json",
+      "sourceRelativePath": "深度研究/机制/raw/K118-image-load-result.json",
+      "originalSha256": "245bb56f57b51d59a9a2be4161cff0288a15187ba9cb4fded6e62859bf5bc17f",
+      "publicSha256": "9ab6a2dbc54742915fdcfb0c93461eb273ed2e3595b5d26c842aafcb00182dbd",
+      "bytes": 15470,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K119-image-attach.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K119-image-attach.java.txt",
+      "originalSha256": "46a0e5b9f9d3a9d2e92c37bf9bcc74441c232684c1ebc32316fa1719977ae0a8",
+      "publicSha256": "46a0e5b9f9d3a9d2e92c37bf9bcc74441c232684c1ebc32316fa1719977ae0a8",
+      "bytes": 393,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K119-image-attach.json",
+      "sourceRelativePath": "深度研究/机制/raw/K119-image-attach.json",
+      "originalSha256": "1241caae67e1ec3157856c6ffb23061e18471ee159911e7371a4ab4ff4f07be1",
+      "publicSha256": "06acc3e09b6805e83b393f46875eab90fcb8e429b3160d2516c76e43f077e737",
+      "bytes": 14068,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K120-like-render.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K120-like-render.java.txt",
+      "originalSha256": "bd96cc1a3f868917e90f710f9ba881c9ac0195d015ef8da1290746ec7fff2553",
+      "publicSha256": "bd96cc1a3f868917e90f710f9ba881c9ac0195d015ef8da1290746ec7fff2553",
+      "bytes": 727,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K120-like-render.json",
+      "sourceRelativePath": "深度研究/机制/raw/K120-like-render.json",
+      "originalSha256": "bd510f75ae3e7fe307c58f4dbb752364cd45a32bf0e997740f05edce6d14d888",
+      "publicSha256": "68f050cfa75209ddac3eff2b549bdc96b21f595f99da2ec50fa6c9399f977cda",
+      "bytes": 8819,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K121-image-height.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K121-image-height.java.txt",
+      "originalSha256": "4d2bb56d6c41c88ed6ff8f331cb76901d07a4706a8ff477ce43190b858805db6",
+      "publicSha256": "4d2bb56d6c41c88ed6ff8f331cb76901d07a4706a8ff477ce43190b858805db6",
+      "bytes": 699,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K121-image-height.json",
+      "sourceRelativePath": "深度研究/机制/raw/K121-image-height.json",
+      "originalSha256": "6d72e240c38532b2ef721e9b656049bdfae17bbdc2a11159ecd4bfb6a79b6eb5",
+      "publicSha256": "18d2a1499235b070b5d98fa9046a7209b64c9d1c814704f230eab045694f1271",
+      "bytes": 26285,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K122-image-page-state.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K122-image-page-state.java.txt",
+      "originalSha256": "1f2d5159d31fa647635816b4cef214fc5044dc76c509c49b20e977a464110281",
+      "publicSha256": "1f2d5159d31fa647635816b4cef214fc5044dc76c509c49b20e977a464110281",
+      "bytes": 1129,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K122-image-page-state.json",
+      "sourceRelativePath": "深度研究/机制/raw/K122-image-page-state.json",
+      "originalSha256": "edd28449333162a5ef036b8b6cc113e2ab7f85f9af6c870e13f9dc39ed55bc8f",
+      "publicSha256": "8a633b0f37ed7a3d8c5a838fc4d930c7f25d7a96a2f1db465c8babee2ebe10b4",
+      "bytes": 26565,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K123-image-page-update.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K123-image-page-update.java.txt",
+      "originalSha256": "f604a99e3b20875c62c61c649a7fb89c3b3ef9d6732523c02b94a361fe3c72e5",
+      "publicSha256": "f604a99e3b20875c62c61c649a7fb89c3b3ef9d6732523c02b94a361fe3c72e5",
+      "bytes": 549,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K123-image-page-update.json",
+      "sourceRelativePath": "深度研究/机制/raw/K123-image-page-update.json",
+      "originalSha256": "239db29d5cab68af76d04662547d3fd0776132ea7386027139c109dbff34f502",
+      "publicSha256": "7052675301ac4485200df2ed027f6be6dbe713f889929054c75113696770a12d",
+      "bytes": 25421,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K124-image-teardown.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K124-image-teardown.java.txt",
+      "originalSha256": "575cadcae7457d2b923fb1313b573a3b858bb1011038e1813c0ccab186b71f12",
+      "publicSha256": "575cadcae7457d2b923fb1313b573a3b858bb1011038e1813c0ccab186b71f12",
+      "bytes": 513,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K124-image-teardown.json",
+      "sourceRelativePath": "深度研究/机制/raw/K124-image-teardown.json",
+      "originalSha256": "31d72212c339219c55717418c26645fadf2acca4c6ee87d32ebf773527d921ce",
+      "publicSha256": "70bf8ddc2cfe9320861850b8dfe70a6dc5ecfb603fda6e0a526abc8134467947",
+      "bytes": 25267,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K125-image-request.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K125-image-request.java.txt",
+      "originalSha256": "96466746dbbed33980fb7712b34bc3b18098ecc927ca656cf3bdddcab6eb5f6d",
+      "publicSha256": "96466746dbbed33980fb7712b34bc3b18098ecc927ca656cf3bdddcab6eb5f6d",
+      "bytes": 1908,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K125-image-request.json",
+      "sourceRelativePath": "深度研究/机制/raw/K125-image-request.json",
+      "originalSha256": "11451087209b24a247d973bcb0ab4930275a51a34bab8e2b4a15a7a6eaa211c1",
+      "publicSha256": "828b78cd02328f84583ec044610ea1395922ecd91c4c91d7059aad1c2504e63c",
+      "bytes": 12973,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K126-image-sized-request.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K126-image-sized-request.java.txt",
+      "originalSha256": "01d119a5a75f9f989a893ac0a0fbee07ab935f6b1b9715c18dce5faee95b068a",
+      "publicSha256": "01d119a5a75f9f989a893ac0a0fbee07ab935f6b1b9715c18dce5faee95b068a",
+      "bytes": 903,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K126-image-sized-request.json",
+      "sourceRelativePath": "深度研究/机制/raw/K126-image-sized-request.json",
+      "originalSha256": "1e0881bd7d86d319f3b2423d2060508d4c34a9c6be5bd3534d15cfa28d926650",
+      "publicSha256": "5d7331b6ca6d677b6101a4c520c79a1e377b8e1189f175e16bf76de167041f89",
+      "bytes": 10942,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K127-image-fade-duration.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K127-image-fade-duration.java.txt",
+      "originalSha256": "fa6a6bb86b55f50904ef8815b9d7f7a876f32cb694182a0130ba72d933b956de",
+      "publicSha256": "fa6a6bb86b55f50904ef8815b9d7f7a876f32cb694182a0130ba72d933b956de",
+      "bytes": 274,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K127-image-fade-duration.json",
+      "sourceRelativePath": "深度研究/机制/raw/K127-image-fade-duration.json",
+      "originalSha256": "f01d59caad8833e3a0c38bc376c4e640c5ec0aebb685f72fe253bfcbf5176b8a",
+      "publicSha256": "1aa459a0611e6347cafdf327c088edab22f4ad5be021f8c6dd5cb188e7568e68",
+      "bytes": 9385,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K128-gallery-diff.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K128-gallery-diff.java.txt",
+      "originalSha256": "b564e329f30193511ac555269ae0f89e6f39df88618f7b8fcb14d618afe73f29",
+      "publicSha256": "b564e329f30193511ac555269ae0f89e6f39df88618f7b8fcb14d618afe73f29",
+      "bytes": 1104,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K128-gallery-diff.json",
+      "sourceRelativePath": "深度研究/机制/raw/K128-gallery-diff.json",
+      "originalSha256": "b912b077d01e60c895737c7581d5307744471935f6e94ce3eebc198812a57cfe",
+      "publicSha256": "f5cc3970a4278bf097c79a515a155697b5a2415f98650ff9329ea451dcd8eec9",
+      "bytes": 46070,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K129-gallery-height-helper.error.json",
+      "sourceRelativePath": "深度研究/机制/raw/K129-gallery-height-helper.error.json",
+      "originalSha256": "364e678ddaff736f561315c09885d469b5c0d6045fa4e5a855e126a6b34b8a22",
+      "publicSha256": "b76bfff01baf03dd19c3b8ff66dc42e057bc7d03c2858a27ef1e8c91c95bb304",
+      "bytes": 2600,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K130-indicator-show.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K130-indicator-show.java.txt",
+      "originalSha256": "9a989397bc0218c207676727f08d6bc38cd916693f6ecb3c36677aa386ced3fa",
+      "publicSha256": "9a989397bc0218c207676727f08d6bc38cd916693f6ecb3c36677aa386ced3fa",
+      "bytes": 780,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K130-indicator-show.json",
+      "sourceRelativePath": "深度研究/机制/raw/K130-indicator-show.json",
+      "originalSha256": "97c31d4e603cee5e091b300981fa91d67cdbcb0fd535886949ecf572f7c42829",
+      "publicSha256": "5d9d59a77790c97d77438974bc061958ba1174d6de3bd61b1fdbe30867543f48",
+      "bytes": 26394,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K131-recycled-pool.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K131-recycled-pool.java.txt",
+      "originalSha256": "e0da277226d2276a93d5c9570709e799f77a4356f5d2fcb78767eb35119fb24a",
+      "publicSha256": "e0da277226d2276a93d5c9570709e799f77a4356f5d2fcb78767eb35119fb24a",
+      "bytes": 1135,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K131-recycled-pool.json",
+      "sourceRelativePath": "深度研究/机制/raw/K131-recycled-pool.json",
+      "originalSha256": "3fc417a28fe939991812589b21db241a7d0d1dfaec0c8e4dbe23a6b3777ef559",
+      "publicSha256": "a73dfd1a24a41a296a26324b36f2718ff42d55a3e1985d3b550d6f8f73bd6b24",
+      "bytes": 53658,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K132-feed-restore.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K132-feed-restore.java.txt",
+      "originalSha256": "525ff8e87641f1cdf20bfa69b01ab82efea30b3ce5ec0155609769b506ce7a99",
+      "publicSha256": "525ff8e87641f1cdf20bfa69b01ab82efea30b3ce5ec0155609769b506ce7a99",
+      "bytes": 984,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K132-feed-restore.json",
+      "sourceRelativePath": "深度研究/机制/raw/K132-feed-restore.json",
+      "originalSha256": "57073cc468b1e9c147a59b2fe9c2934d5727a8cc2021053d725619dbe46fc8ce",
+      "publicSha256": "eee3fdf1b13a05fd694917e66ae6258f3fb728a813a7b0b7c4513da10ee0ed26",
+      "bytes": 53367,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K133-feed-list-update.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K133-feed-list-update.java.txt",
+      "originalSha256": "f44db360e756aec26c01cd191074597e5d0d3a18f4d29a6aac1fc9f69bd41cff",
+      "publicSha256": "f44db360e756aec26c01cd191074597e5d0d3a18f4d29a6aac1fc9f69bd41cff",
+      "bytes": 381,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K133-feed-list-update.json",
+      "sourceRelativePath": "深度研究/机制/raw/K133-feed-list-update.json",
+      "originalSha256": "d82f74ddd9537255409e59da606c6b4d996d637f9a348e0b89517fe5f5930baf",
+      "publicSha256": "aa28506c41d1ae3899d8d75f448d91d08c8295a55cb0aa6d5fc11c8d75be5917",
+      "bytes": 51991,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K134-feed-offset.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K134-feed-offset.java.txt",
+      "originalSha256": "b443c100cd5b04eaa1cd8c3c0b0cfb97817a258cb494ce9024dffc3b6d901f17",
+      "publicSha256": "b443c100cd5b04eaa1cd8c3c0b0cfb97817a258cb494ce9024dffc3b6d901f17",
+      "bytes": 3922,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K134-feed-offset.json",
+      "sourceRelativePath": "深度研究/机制/raw/K134-feed-offset.json",
+      "originalSha256": "3f302360523e76f64000dfaeb9364bf2e6cb712dd3a8c3bd772f3951df3b4d95",
+      "publicSha256": "b55eb91ce98a968524123a9110c9e3dc89afc462fcf43002d7d84df14a82d1ea",
+      "bytes": 14714,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K135-feed-manager-animation.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K135-feed-manager-animation.java.txt",
+      "originalSha256": "8481c681c64f190eb6a0be1f65b806e761d3df5cec5edf1724f2181f0324ea0d",
+      "publicSha256": "8481c681c64f190eb6a0be1f65b806e761d3df5cec5edf1724f2181f0324ea0d",
+      "bytes": 496,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K135-feed-manager-animation.json",
+      "sourceRelativePath": "深度研究/机制/raw/K135-feed-manager-animation.json",
+      "originalSha256": "a2154b9b9aec9a0adf1a88627aac0144f047e6227dd32db9c9f3600d3ef3af26",
+      "publicSha256": "339f683449308c142ec50ffc474193bfee4ae3ae26ada92d45ad2a3e9c814f8d",
+      "bytes": 7706,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K136-main-observe-thread.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K136-main-observe-thread.java.txt",
+      "originalSha256": "45b805084aa12bf56662362852ca712001dcf7ac536ad9ca15bca26e31a13998",
+      "publicSha256": "45b805084aa12bf56662362852ca712001dcf7ac536ad9ca15bca26e31a13998",
+      "bytes": 67,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K136-main-observe-thread.json",
+      "sourceRelativePath": "深度研究/机制/raw/K136-main-observe-thread.json",
+      "originalSha256": "7a53393c00bd9bd60aae61334333deeb33a06dc75c05847b08874a62ab0db2c5",
+      "publicSha256": "09d9dc379b0358da57629cf920940b4a8c5013997992446687def6e43fe078c5",
+      "bytes": 4954,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K137-native-pagination.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K137-native-pagination.java.txt",
+      "originalSha256": "06f0df7d663ffbfcb32fe8401a058a10b8997a94524527571ec409512af7a010",
+      "publicSha256": "06f0df7d663ffbfcb32fe8401a058a10b8997a94524527571ec409512af7a010",
+      "bytes": 9481,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K137-native-pagination.json",
+      "sourceRelativePath": "深度研究/机制/raw/K137-native-pagination.json",
+      "originalSha256": "f694096b391d504c0815072f1af3b2e0c11c21920988b5232c6f01714bdba61b",
+      "publicSha256": "8f61f197f91a5052cd635de0db501e440d84ec2ab0ff5c410e02d02e3c7fd4d9",
+      "bytes": 72636,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K138-indicator-delay.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K138-indicator-delay.java.txt",
+      "originalSha256": "cfd4d0d1b08f9b7973e293d79d431ce46dee087b0f0451c99c90cd51226f29bd",
+      "publicSha256": "cfd4d0d1b08f9b7973e293d79d431ce46dee087b0f0451c99c90cd51226f29bd",
+      "bytes": 317,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K138-indicator-delay.json",
+      "sourceRelativePath": "深度研究/机制/raw/K138-indicator-delay.json",
+      "originalSha256": "e1cd07f4cda80bbeb98a82949205d579cf2c4b19d893f3fc109d7e41e0bfed51",
+      "publicSha256": "362849c99e6a7e249c922aec74c1ee4da9f89ad400c9c731e044eedb95c427f4",
+      "bytes": 25477,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K139-feed-spacing-init.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K139-feed-spacing-init.java.txt",
+      "originalSha256": "4f843bb77ffb7e603fccf86165dba06c393e84f8de202d5f097c7d12ebf69ada",
+      "publicSha256": "4f843bb77ffb7e603fccf86165dba06c393e84f8de202d5f097c7d12ebf69ada",
+      "bytes": 149,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K139-feed-spacing-init.json",
+      "sourceRelativePath": "深度研究/机制/raw/K139-feed-spacing-init.json",
+      "originalSha256": "89f77cc81c904ad4164e3f1c3d694fea21b08b697b44a63cd000d59090c5e677",
+      "publicSha256": "95cb28173a018b471d22f817bba4ac643a0fcf7e6dc76c5474b29cea84c23faa",
+      "bytes": 6158,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K140-pool-prebind.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K140-pool-prebind.java.txt",
+      "originalSha256": "12f2f963280f03b7077e58b0d511d1d406926f2eee9c0e734a173baaa178c114",
+      "publicSha256": "12f2f963280f03b7077e58b0d511d1d406926f2eee9c0e734a173baaa178c114",
+      "bytes": 471,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K140-pool-prebind.json",
+      "sourceRelativePath": "深度研究/机制/raw/K140-pool-prebind.json",
+      "originalSha256": "60d75d2afd34d898096d60d9cd9551d31cc1b2a9fde6b2aca08c0408f39389a2",
+      "publicSha256": "57f9da27b9733ea051f7c754e797a44763ba8987182e2d9d6a32ece6483dc2cb",
+      "bytes": 52234,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K141-gallery-height-formula.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K141-gallery-height-formula.java.txt",
+      "originalSha256": "17b96cca759d37b4bb202e5fec5ae7e20323779b04629df87f2d32273731f4de",
+      "publicSha256": "17b96cca759d37b4bb202e5fec5ae7e20323779b04629df87f2d32273731f4de",
+      "bytes": 644,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K141-gallery-height-formula.json",
+      "sourceRelativePath": "深度研究/机制/raw/K141-gallery-height-formula.json",
+      "originalSha256": "13b71fcbdb0a8d3b8a74fe59cd0ebd2fdedc7c06cf4d978e8fc833b5bfc72fd8",
+      "publicSha256": "c29ccb4791be6b1144cab9074cd2ecce437bab613740f5bbd3e7636c8d68ace1",
+      "bytes": 6907,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K142-feed-spacing-default.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K142-feed-spacing-default.java.txt",
+      "originalSha256": "89ad71d984508f1ce6816dee6511433edf0c42f5fb0830f105995334d0596481",
+      "publicSha256": "89ad71d984508f1ce6816dee6511433edf0c42f5fb0830f105995334d0596481",
+      "bytes": 108,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K142-feed-spacing-default.json",
+      "sourceRelativePath": "深度研究/机制/raw/K142-feed-spacing-default.json",
+      "originalSha256": "d1042bc90f4f620597b787b122d287b4a95510f0f3c5f8e05e1640948ceac437",
+      "publicSha256": "665340bc512e9d98cf84250c4f2fbfd300769c4cc0cf8de85666413634ea8c1c",
+      "bytes": 6055,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K143-main-scheduler-init.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K143-main-scheduler-init.java.txt",
+      "originalSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "publicSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "bytes": 61,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K143-main-scheduler-init.json",
+      "sourceRelativePath": "深度研究/机制/raw/K143-main-scheduler-init.json",
+      "originalSha256": "24e26aea636752cb0483fab0f151f395e74714e944894197d8155e6bd8883a39",
+      "publicSha256": "039e0519ad9d6126721e3abd3d5ff073e7fb60030f9bda3f530c1f8e43d701e1",
+      "bytes": 4999,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K201-new-gallery-item.json",
+      "sourceRelativePath": "深度研究/机制/raw/K201-new-gallery-item.json",
+      "originalSha256": "001af4529c177443dfd808f0011595803f56705a96e6125c53055c0336144e3a",
+      "publicSha256": "45d22d367afc63114955c7d1c931bd938eabd0e115ce54b40734a66c8dc049ea",
+      "bytes": 12417,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K202-new-feed-adapter.json",
+      "sourceRelativePath": "深度研究/机制/raw/K202-new-feed-adapter.json",
+      "originalSha256": "f9d3a6b88e63271f87e8968fa0a7c6c541071913190efe97e05c7756b9444749",
+      "publicSha256": "bbdaaf791b9b920d10218f6d7db77a6b830252721de0b357e019457c1b18bb57",
+      "bytes": 8620,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K203-new-image-loader.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K203-new-image-loader.java.txt",
+      "originalSha256": "898d21b5a852f6028d6325de197cb967f2faf0af676ace4a6a94592339524088",
+      "publicSha256": "898d21b5a852f6028d6325de197cb967f2faf0af676ace4a6a94592339524088",
+      "bytes": 4162,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K203-new-image-loader.json",
+      "sourceRelativePath": "深度研究/机制/raw/K203-new-image-loader.json",
+      "originalSha256": "434c9ca4d167d5c224867ca315cb8cc17970247c397ad21617ffdd2eac044fe8",
+      "publicSha256": "779e680fafa2e835ff0d3cf6e3b6c4c6fb19553ee80526bcbe2948cd9f3f9cfc",
+      "bytes": 17738,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K204-new-feed-bind.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K204-new-feed-bind.java.txt",
+      "originalSha256": "1e940ab6b9e2522e0ec7adebfa3be53c92611a328f38117601686671dc66d905",
+      "publicSha256": "1e940ab6b9e2522e0ec7adebfa3be53c92611a328f38117601686671dc66d905",
+      "bytes": 718,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K204-new-feed-bind.json",
+      "sourceRelativePath": "深度研究/机制/raw/K204-new-feed-bind.json",
+      "originalSha256": "c1a343bf75ddc8f8979a06b3e9ab1b43e050abecd50ce336a9854c2ff62facba",
+      "publicSha256": "352a24472cbddee6202af167374d74d10728f20539a94c6d0d66a671dfd598ea",
+      "bytes": 8793,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K205-new-feed-recycle.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/K205-new-feed-recycle.java.txt",
+      "originalSha256": "6ec6f6c3f06cc3456d16829633ffaa8115d334f93cfd0ed74a7ee524df02b7c9",
+      "publicSha256": "6ec6f6c3f06cc3456d16829633ffaa8115d334f93cfd0ed74a7ee524df02b7c9",
+      "bytes": 521,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/K205-new-feed-recycle.json",
+      "sourceRelativePath": "深度研究/机制/raw/K205-new-feed-recycle.json",
+      "originalSha256": "3685c8a0e87693437f935ad7f5423a84ff7bf6f0adf6585b721ac5807db5a482",
+      "publicSha256": "ef8f55018fc4a93859c476d5a886ce49e651322bb116c30690752589f102c0fd",
+      "bytes": 8262,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/N001-package.json",
+      "sourceRelativePath": "深度研究/机制/raw/N001-package.json",
+      "originalSha256": "0567897eb6759060ffe82e1636fb715b5f2d5d7bbac6c897481ecda1185bb749",
+      "publicSha256": "9c1031549b6ee8944cbfcd50275403d929c5ce3acba03f981ca499ce3c907ac8",
+      "bytes": 1071237,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/N106-follow-response.json",
+      "sourceRelativePath": "深度研究/机制/raw/N106-follow-response.json",
+      "originalSha256": "0fdbe06c7a3d04436ba0417a89e61905a5a020555053f4f4fdfb043a3a03d7bd",
+      "publicSha256": "d71d2085e6615abdc4332ec47dcb18789ba84faaa1db472f7864f59d97082a52",
+      "bytes": 8270,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/N107-explore-service.json",
+      "sourceRelativePath": "深度研究/机制/raw/N107-explore-service.json",
+      "originalSha256": "d7c38003de308f0c62c9d292bd88f65a88c458793183e129fcabd5e6cc69dd09",
+      "publicSha256": "a92903a0b1cf4c635c79d681ae3db7a60fa3d83941c097ea86d471a1d7a20236",
+      "bytes": 8412,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/N113-image-presenter.json",
+      "sourceRelativePath": "深度研究/机制/raw/N113-image-presenter.json",
+      "originalSha256": "13427e9b403949e87517118c1bb11d8f8973d77352a06d31109c6ef8381293d7",
+      "publicSha256": "164860441251a04a017f1f19b747fc7a8e0c9f1b213b0e2841ef8bf9d4d09cb5",
+      "bytes": 18557,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/N201-image-bind.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/N201-image-bind.java.txt",
+      "originalSha256": "fe907ad9bf3186911dfec901d55a63d68aad79c1f063dd21a0f4e0ec0c62c5a4",
+      "publicSha256": "fe907ad9bf3186911dfec901d55a63d68aad79c1f063dd21a0f4e0ec0c62c5a4",
+      "bytes": 11527,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/N201-image-bind.json",
+      "sourceRelativePath": "深度研究/机制/raw/N201-image-bind.json",
+      "originalSha256": "a7e00f2afca08240140b8568ddc50b4bd76391ebfe54f26c47058ccfd6c00acb",
+      "publicSha256": "49c33dec54a630beb38abaff80e4dc3cf177dd0a0b9f47888343204390437a8d",
+      "bytes": 36458,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/N202-image-indicator-hide.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/N202-image-indicator-hide.java.txt",
+      "originalSha256": "7582da51c7d8c62cf0c14e1e051a6674740b21f027ed9c841fc688d3a6109749",
+      "publicSha256": "7582da51c7d8c62cf0c14e1e051a6674740b21f027ed9c841fc688d3a6109749",
+      "bytes": 367,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/N202-image-indicator-hide.json",
+      "sourceRelativePath": "深度研究/机制/raw/N202-image-indicator-hide.json",
+      "originalSha256": "820dd3d0ad1f5452220d364961cc54d38025163b90c1a9509ebf98068c9743de",
+      "publicSha256": "4bc772f7333645b9e6e30691279315402888d34174fed13cab1a5c5d94cba47d",
+      "bytes": 11537,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/N203-image-data.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/N203-image-data.java.txt",
+      "originalSha256": "02364896f4d531f42bba4a5e9d00fb9333ee86aa3123fca1f1be40c7c0c41409",
+      "publicSha256": "02364896f4d531f42bba4a5e9d00fb9333ee86aa3123fca1f1be40c7c0c41409",
+      "bytes": 1917,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/N203-image-data.json",
+      "sourceRelativePath": "深度研究/机制/raw/N203-image-data.json",
+      "originalSha256": "a42b3e9561681a21d3a61e9b70f7b12215c0fcd81f7879a3687e208f91216b94",
+      "publicSha256": "394999d8637dc01abbcd2969e5e6692c99ebd420ea6f042a7ba9186ef886e44f",
+      "bytes": 15050,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/N206-like-bind.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/N206-like-bind.java.txt",
+      "originalSha256": "ad896f608810edaf027ec1b1ab1243125023c622cd50b8458bdaed99e7de97e9",
+      "publicSha256": "ad896f608810edaf027ec1b1ab1243125023c622cd50b8458bdaed99e7de97e9",
+      "bytes": 1222,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/N206-like-bind.json",
+      "sourceRelativePath": "深度研究/机制/raw/N206-like-bind.json",
+      "originalSha256": "0ac212b6e409d107ac85ce4900a211ba2f626011a04f6a9ecb6271b4f0cc271b",
+      "publicSha256": "ebd429b30cb82dbc4d167296a2b528d556291c8832b36d3b775b82afa9876528",
+      "bytes": 8915,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/raw/N207-like-state.java.txt",
+      "sourceRelativePath": "深度研究/机制/raw/N207-like-state.java.txt",
+      "originalSha256": "919e5532ab161a3e13580c58abed818fdd70fd777e1f8eb99df3a0dd1de87224",
+      "publicSha256": "919e5532ab161a3e13580c58abed818fdd70fd777e1f8eb99df3a0dd1de87224",
+      "bytes": 1626,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/raw/N207-like-state.json",
+      "sourceRelativePath": "深度研究/机制/raw/N207-like-state.json",
+      "originalSha256": "1cc8c838ca8b8fe158e0829164f3dc0b713426fe5a1222b1f5c4d2bd618fd9f9",
+      "publicSha256": "34792bcd9cfa7c5d0544e143c6e8d3f5949f01ce78e9bc00dddb8a0c259723ca",
+      "bytes": 9722,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/机制/source-excerpts.md",
+      "sourceRelativePath": "深度研究/机制/source-excerpts.md",
+      "originalSha256": "ed7e05e311ceaae2e78d0520f8694a79b97fa12dc2fd9d24d959256d90c785ec",
+      "publicSha256": "ed7e05e311ceaae2e78d0520f8694a79b97fa12dc2fd9d24d959256d90c785ec",
+      "bytes": 9203,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/机制/validation.json",
+      "sourceRelativePath": "深度研究/机制/validation.json",
+      "originalSha256": "7619ae5d11ca2d2f32f1aebfc2eb1d3cd14ce9c59ac17884ccb5b5a1b79f7d81",
+      "publicSha256": "a4e186973106a7386db64560b8bcb0874604b7ad4e92b8c94f7d0802dc6d9ec8",
+      "bytes": 776,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/证据索引.json",
+      "sourceRelativePath": "深度研究/证据索引.json",
+      "originalSha256": "8b298f5a1f18261fe8877f496390a61d8059846cb1bb3064914fc68ad5818871",
+      "publicSha256": "8b298f5a1f18261fe8877f496390a61d8059846cb1bb3064914fc68ad5818871",
+      "bytes": 22878,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/资料包文件清单.json",
+      "sourceRelativePath": "深度研究/资料包文件清单.json",
+      "originalSha256": "ce1543a46646fc94d69c88315316a63048fc227d34b6aaa685c87c1db9a77286",
+      "publicSha256": "a689c6e26c5bc6a52b147b4924c88bbbfceedaec19f74627a5e96d2b22ebfba4",
+      "bytes": 74106,
+      "changed": true
+    },
+    {
+      "file": "docs/深度研究/运行/environment.json",
+      "sourceRelativePath": "深度研究/运行/environment.json",
+      "originalSha256": "6f3deef7aefa17e67632635351cfcb8f0f3f9ae21a0ab5af7e3e5e9e0f4aa03b",
+      "publicSha256": "6f3deef7aefa17e67632635351cfcb8f0f3f9ae21a0ab5af7e3e5e9e0f4aa03b",
+      "bytes": 862,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/运行/gfx-delta.json",
+      "sourceRelativePath": "深度研究/运行/gfx-delta.json",
+      "originalSha256": "af1940cd50c6fa33a20de4f4a01684033114ae7989474221b77dac21dac741af",
+      "publicSha256": "af1940cd50c6fa33a20de4f4a01684033114ae7989474221b77dac21dac741af",
+      "bytes": 96599,
+      "changed": false
+    },
+    {
+      "file": "docs/深度研究/运行/渲染管线与帧采样.md",
+      "sourceRelativePath": "深度研究/运行/渲染管线与帧采样.md",
+      "originalSha256": "57b2501dbddcb9c05b7dc8e9b995e0c31e618728a4cc955ead1babda9237a1db",
+      "publicSha256": "57b2501dbddcb9c05b7dc8e9b995e0c31e618728a4cc955ead1babda9237a1db",
+      "bytes": 3872,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/AndroidManifest.xml",
+      "sourceRelativePath": "证据包/AndroidManifest.xml",
+      "originalSha256": "e22a5ee157a11c133be1d10dd591479ecf0cf83cef85c86fe58d1e5c57db0a1b",
+      "publicSha256": "425db70b3e4c708e08240331047afea6971c0bdbc1c6f4005be94353f656781e",
+      "bytes": 398902,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/apk-package.json",
+      "sourceRelativePath": "证据包/apk-package.json",
+      "originalSha256": "3b555577c950bc222ea4ab764b1375ef44c67cc5285bb100185f69ffddd46f7a",
+      "publicSha256": "b037f1d42a8ef610269c9015bc6e0a0c9dd65a905d2f55180a90a47bba9516b3",
+      "bytes": 860008,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/classes-all.txt",
+      "sourceRelativePath": "证据包/classes-all.txt",
+      "originalSha256": "cb23bbaf95c7376f737236e83b02c412a4500c3d31d8bd54e14a9ea3de6a6d38",
+      "publicSha256": "cb23bbaf95c7376f737236e83b02c412a4500c3d31d8bd54e14a9ea3de6a6d38",
+      "bytes": 1578353,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/classes-note.json",
+      "sourceRelativePath": "证据包/classes-note.json",
+      "originalSha256": "b2d7ed0c02f6fa51c8a34e64f202400563fefc6665613424db28a853bb82b084",
+      "publicSha256": "4242fd0e2c8ce6c92f903929d4de5c9167d97d1b1f06fd86ed1939c05eb40b5b",
+      "bytes": 2045824,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C01-note-feed.json",
+      "sourceRelativePath": "证据包/focused/C01-note-feed.json",
+      "originalSha256": "3979d7c6c3cb9c994b4953086112a27a1bd7e7f704e2817caa528d17d90f01af",
+      "publicSha256": "e4b4c6a00d482bbd3eab76aa3c725e95ba2c3d4a349180cba2067b0196aeb485",
+      "bytes": 131891,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C02-note-card.json",
+      "sourceRelativePath": "证据包/focused/C02-note-card.json",
+      "originalSha256": "62d77504ed5962c49a1cd36f2f44b16497bfdea2e28be9d47d7f3adc7bb486f1",
+      "publicSha256": "7fdb60d1da4f99fa0d5486f25131ce792f344c3dc6c97c82b91e4ca10df13ef7",
+      "bytes": 49202,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C03-note-service.json",
+      "sourceRelativePath": "证据包/focused/C03-note-service.json",
+      "originalSha256": "a3243fe82e9106421fc67289cdeb0f103ae08d2b21b2a25ab0d9f0835d17d59b",
+      "publicSha256": "b7d25053ab6fa1b226ea972db8d483cdf8cd9bbe5c41297ca68a6969e8291952",
+      "bytes": 23889,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C04-note-base-service.json",
+      "sourceRelativePath": "证据包/focused/C04-note-base-service.json",
+      "originalSha256": "ab294c9a8c6a80418703afe555aacd0f884732e3e5779b9afadb6c7ca5926bb3",
+      "publicSha256": "8e2f4ec12fd1464cafb785b732e271342c149b58682a8a7e871278a31e1d709a",
+      "bytes": 4222,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C05-comment-service.json",
+      "sourceRelativePath": "证据包/focused/C05-comment-service.json",
+      "originalSha256": "cdbb2efbffde0c6f6928dda27a2850a2709556e733a3ba46c77e23b46a886dbe",
+      "publicSha256": "ef6fa454d81de5c0f4fb854c3a7563067c15883a9d186321d2ee30226d364c21",
+      "bytes": 17720,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C06-comment-request.json",
+      "sourceRelativePath": "证据包/focused/C06-comment-request.json",
+      "originalSha256": "e4c5a28db80a0e093055d833abff3190a8022bc2f962718e8afb5ef0eb9c0416",
+      "publicSha256": "bbd259debbabb14666b5bdd29fb51f00cf4565804d0188605a0a6843418ee090",
+      "bytes": 24601,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C07-comment-result.json",
+      "sourceRelativePath": "证据包/focused/C07-comment-result.json",
+      "originalSha256": "14d9a04fb73055ea943bace85b4f49e192be3ffd0ef96b9aea19617658d7f53d",
+      "publicSha256": "f3c3512705a7774da70c47fae3196f070969e2487d460add53fdc2fedca4087c",
+      "bytes": 9937,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C08-comment-target.json",
+      "sourceRelativePath": "证据包/focused/C08-comment-target.json",
+      "originalSha256": "c531785ea2dcfeb90ade2a02efdbe9141fd27e10f54f3462c7b22ce6f7f94c72",
+      "publicSha256": "c4bd49790931ea411c96fc3e3a257e6aa091a8fa6331defbaeb615dca6e757da",
+      "bytes": 43346,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C09-collect-service.json",
+      "sourceRelativePath": "证据包/focused/C09-collect-service.json",
+      "originalSha256": "f2f11cec7b3b7df756e7c45fb5bec964607e51b0b42226b822d9feb623b843af",
+      "publicSha256": "193fa2228c178315a8167323deba1bd7de6d5e891fea4b7349d1653309ae3fd0",
+      "bytes": 10387,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C10-collect-dialog.json",
+      "sourceRelativePath": "证据包/focused/C10-collect-dialog.json",
+      "originalSha256": "9bbf9e6dd42020f6b4dd7e4b45a3796d98aac44affbebcb1e1473593f07310b4",
+      "publicSha256": "448c0b03aee537a7324d685dffd3a75e14a128e47cd9bcf88ca6ace154649985",
+      "bytes": 4811,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C11-follow-feed-service.json",
+      "sourceRelativePath": "证据包/focused/C11-follow-feed-service.json",
+      "originalSha256": "202282469f5b7db7ca790b729df0b6272fd301a681bfefc0aae55892115a56a5",
+      "publicSha256": "6ddd44407f74c28d85765e587a3c8a8d0b13dfaa7066a76943e9e94a045b21ce",
+      "bytes": 6740,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C12-local-feed-service.json",
+      "sourceRelativePath": "证据包/focused/C12-local-feed-service.json",
+      "originalSha256": "b975665d52f3a87f59aef2ab49b8177dc6e8674dd9d3880ae39be74383ebacdc",
+      "publicSha256": "7c5d2636b1e2637182564e80737b98fa223b06471b913912ea6065dd5f97657e",
+      "bytes": 8989,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C13-search-service.json",
+      "sourceRelativePath": "证据包/focused/C13-search-service.json",
+      "originalSha256": "4ac048764db8c2e4c9f18b1eddad0338a87b2dc502210e1c3da88237f554e239",
+      "publicSha256": "333cb7c72395ad560397d32c1a0e0a4fb41c4db294cf50404548be30e0b62392",
+      "bytes": 22702,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C14-draft-param.json",
+      "sourceRelativePath": "证据包/focused/C14-draft-param.json",
+      "originalSha256": "853c5449632f6d3b7f922e278cc464ce5120e3ab784249f8a6fe9342a2e8aae4",
+      "publicSha256": "454fc0db0507baab46f33352c3dce7b3c476b7c43941f7a2bfae5e761e587d77",
+      "bytes": 7394,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C15-draft-service.json",
+      "sourceRelativePath": "证据包/focused/C15-draft-service.json",
+      "originalSha256": "8dc3b47a30143f79d2d5f03656d2b54f6c1ed684cabf1060966a6e6122c9d972",
+      "publicSha256": "deac0e4f17eee2c3b838b6a78fa11760be7e82a5f6c302121a52346bc3f0bf0a",
+      "bytes": 4515,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C16-message-model.json",
+      "sourceRelativePath": "证据包/focused/C16-message-model.json",
+      "originalSha256": "ee11b6162accaa4e81ad7a42588e30f3b1a287b2f3d0c633a7fc817b095a386d",
+      "publicSha256": "119e0060dfe6748f89ed25f106c0fcdfbbf74dd99c5ee611e252a544ba09f41e",
+      "bytes": 19504,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C17-profile-message-service.json",
+      "sourceRelativePath": "证据包/focused/C17-profile-message-service.json",
+      "originalSha256": "d45334dd25e87a825242c4707772dae22ded1c8e7b5bcbfd3c64183672f3f2c4",
+      "publicSha256": "6c93885c1f741ac69331658eb3288365e7190f149787a6f1e1e44291a8247a23",
+      "bytes": 4218,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C18-likes-repo.json",
+      "sourceRelativePath": "证据包/focused/C18-likes-repo.json",
+      "originalSha256": "3b9eec9148d674a436828fbabcaa3113f0478b2411a39af3750017ac418e4447",
+      "publicSha256": "3e92742b0d1f76990c0dc5cc8a2cf7ec56231b759f1077705c08413694eec658",
+      "bytes": 8705,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C19-profile-collect.json",
+      "sourceRelativePath": "证据包/focused/C19-profile-collect.json",
+      "originalSha256": "7492b64397529021ca1274fe9f8780820f3f0c36928615536f1a8b82e00429ba",
+      "publicSha256": "16dc6a76531a42a9ea97cf116ff6d247a075ca55cfb7c7693cb1567554745381",
+      "bytes": 13946,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C20-auto-scroll.json",
+      "sourceRelativePath": "证据包/focused/C20-auto-scroll.json",
+      "originalSha256": "3c727eca785b15ab69349fa6f23ab49e7a8151cddc15b7cbf7772c6652e9d270",
+      "publicSha256": "b929d5a594b19dc111064f8b3e05c1012755b34715437aa028adc90086ba34fb",
+      "bytes": 11559,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C21-like-lottie.json",
+      "sourceRelativePath": "证据包/focused/C21-like-lottie.json",
+      "originalSha256": "fc4c7b7ee7b33de0fe3d2219eb13e456bc26e70386e6d67cbf82a3ccdd805a7b",
+      "publicSha256": "57962a3ec61667456c244de840c34e873909b8b07599b39f8c67c2cc62b99430",
+      "bytes": 10236,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C22-agree-follow-service.json",
+      "sourceRelativePath": "证据包/focused/C22-agree-follow-service.json",
+      "originalSha256": "fe499c5a5144c326cb98c79ffd9ac5c93a8ccb0e7f92ab439743828172adaafa",
+      "publicSha256": "de2828ca60600ab0fadc947b87c5fcd2928267e8143abd36c7f6fc531083c3e7",
+      "bytes": 4914,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C23-follow-response.json",
+      "sourceRelativePath": "证据包/focused/C23-follow-response.json",
+      "originalSha256": "fa2ca1a85512ce17ad29b6155b3be910b44c5f724194ac2175e7b9744f78d713",
+      "publicSha256": "f0dcce2fc21b5b8c32bfc853baa2374d1364669462101318784904001d0803b7",
+      "bytes": 8239,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C24-live-square.json",
+      "sourceRelativePath": "证据包/focused/C24-live-square.json",
+      "originalSha256": "feef1b20951c6dc975db5669b6b6f2302c75b2eccb80c3a6d1d6a9ea4a6c7105",
+      "publicSha256": "aa9fdc503eff7cb59e457e138ffaa7988cb681ed8719d2c7be026f1570ac3f60",
+      "bytes": 4424,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C25-like-presenter.json",
+      "sourceRelativePath": "证据包/focused/C25-like-presenter.json",
+      "originalSha256": "e92b363fcc3c648cf1aa7ae257b98fca385eb4d28aed70b88b7634be8e1a2304",
+      "publicSha256": "8b76a50b5f85c0a8a650a1b31a3bf08e9db28e272f82a7a2dbb30ba2de45f45a",
+      "bytes": 5878,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C26-collect-presenter.json",
+      "sourceRelativePath": "证据包/focused/C26-collect-presenter.json",
+      "originalSha256": "a7f1ee272129d8cffa210ba7b3962f37a02864f40eef295106f9cda97a1cee51",
+      "publicSha256": "d49af3e83966e417b92c5318d5b537102a786a760712f8fff4b8c71654d21670",
+      "bytes": 5014,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C27-detail-root.json",
+      "sourceRelativePath": "证据包/focused/C27-detail-root.json",
+      "originalSha256": "100a04d6127180cd7c3b4ee4f146ef7959d904ff15c81dffbbb66b16d77a3b79",
+      "publicSha256": "1236b6062f9e34d7eea525d551b5548762d6f0467baab3ef4412c930c199188a",
+      "bytes": 4992,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C28-image-presenter.json",
+      "sourceRelativePath": "证据包/focused/C28-image-presenter.json",
+      "originalSha256": "cfaa2c85ff527ec258ae0b3edb13060950de0637843b60f8b872a80b27687727",
+      "publicSha256": "f331f4fcd2e9d681b30503061f93939c790accfdf9dff09522bad35f192c586f",
+      "bytes": 9679,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C29-search-filter.json",
+      "sourceRelativePath": "证据包/focused/C29-search-filter.json",
+      "originalSha256": "1ca0d1f17ad11a4c28bd4bc01433b02ed47ad7da795db09d34ca90ac8d5f3a93",
+      "publicSha256": "e32219ab7895be26778bf3f8c4bf12d84495e721c010ef42ba3652fdae95dc4c",
+      "bytes": 10312,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C30-chat-manager.json",
+      "sourceRelativePath": "证据包/focused/C30-chat-manager.json",
+      "originalSha256": "b001a2fa043d08c7d79d96deee9824c4801d68ca5e8d99cf58d764106aa54dc7",
+      "publicSha256": "f292b2902973e004c549e80f7a3458eb74145e0c4c0f51568960b4d1caeaa91c",
+      "bytes": 10095,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C31-explore-service.json",
+      "sourceRelativePath": "证据包/focused/C31-explore-service.json",
+      "originalSha256": "b9d335aa4ce4a8356153204ba5cbad177cfd64a60c0a1959e4c58b46e6e884a4",
+      "publicSha256": "1b21d09aebcbfcbd8700c9d30a50085a5e4fdc2c1ace1a25197d90e58c8d261a",
+      "bytes": 10951,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C32-upload-flow.json",
+      "sourceRelativePath": "证据包/focused/C32-upload-flow.json",
+      "originalSha256": "f6fd1b770e3e78b7cd6905e321e27a361ee4068c2ae0444b69761d460c4caf97",
+      "publicSha256": "803d48ec2ae0b661e07843779277e676cd6b057a25ede5b17ecdfa2a4b3f4be0",
+      "bytes": 14347,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C33-draft-entry.json",
+      "sourceRelativePath": "证据包/focused/C33-draft-entry.json",
+      "originalSha256": "da650c3775c0cecffb6b04b1b2f79124ab80ef93b297d69036cddb5ce61e8dba",
+      "publicSha256": "1c49be46ceafe48332f3d127035caac8cd2013b6b0d50990aa9569a2ae308a2a",
+      "bytes": 4334,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C34-photo-gesture.json",
+      "sourceRelativePath": "证据包/focused/C34-photo-gesture.json",
+      "originalSha256": "52e258636318571097e00193d82d3ec658ac93b884d2f81e9de14409f7c38d2b",
+      "publicSha256": "21ca23b8779fc66070fbd66ccff638331b16cda49b25725c0d3c60d435c19735",
+      "bytes": 46695,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C35-follow-config.json",
+      "sourceRelativePath": "证据包/focused/C35-follow-config.json",
+      "originalSha256": "e9c07401077f8339a890f586fa61bd07a78688a7d63b985e7ad9ada157cb58d1",
+      "publicSha256": "fa7905bcea95639af5f68e7c7e24f85bd6c583f143c30a1cd3e4a5c16bacfebd",
+      "bytes": 7793,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C36-new-note-route.json",
+      "sourceRelativePath": "证据包/focused/C36-new-note-route.json",
+      "originalSha256": "36996ebca7b9507d027f511ef386102491adf2008e9e5732b9ccd8bc8ac23ed1",
+      "publicSha256": "c91b258fd2dbf601105c71a8284992396418228ad5ee16bbde3d237d4b8aabaa",
+      "bytes": 27767,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C37-edit-note-route.json",
+      "sourceRelativePath": "证据包/focused/C37-edit-note-route.json",
+      "originalSha256": "68ed0913520033eebaa11f14a05b2fff40054af8e0cab272517ca263eae4e4ea",
+      "publicSha256": "7b810ac13b4acd39045444b3ab621cc795a0d4af0a2d1e656a6664d3ea5cec46",
+      "bytes": 14113,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C38-comment-sort.json",
+      "sourceRelativePath": "证据包/focused/C38-comment-sort.json",
+      "originalSha256": "74b132e0a407d0f19057a1c606aff351862494407cb96f572ed61fdb721c9aa8",
+      "publicSha256": "e5bc2c5ffd418897b1d8b5bab89484d81f1ce17de6460c6d4b97feb97c1c4689",
+      "bytes": 7239,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C39-detail-error.json",
+      "sourceRelativePath": "证据包/focused/C39-detail-error.json",
+      "originalSha256": "8b0c2352e05051a51af926c4c148a4d2e4dbc35ef3282421f63ee22026c3afe4",
+      "publicSha256": "8f351a65901e7503114ece148b158d66f1127b2788ab92220ba3bfd9af7fe7cf",
+      "bytes": 16516,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C40-feedback-service.json",
+      "sourceRelativePath": "证据包/focused/C40-feedback-service.json",
+      "originalSha256": "c34259b85fd9658311af0d6565172098c1ff29d325a89f6fe89c7b48d8e1fccf",
+      "publicSha256": "590f68f41dc6f1221879102d6eb5f3df67622f1122cd86195d0f3a3ced31b6d4",
+      "bytes": 7406,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C41-note-interaction-model.json",
+      "sourceRelativePath": "证据包/focused/C41-note-interaction-model.json",
+      "originalSha256": "7076e3889e222f24c7bd3fde04c1074be2d818481a1715dcb100fdbbcfa28074",
+      "publicSha256": "a838857040404b9603cf3f34eb7fa80c7ce31e3a702823dcde6b4667efcc05ed",
+      "bytes": 6729,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C42-msg-content.json",
+      "sourceRelativePath": "证据包/focused/C42-msg-content.json",
+      "originalSha256": "43862e9582b47aca4ce1343475b8525adf1e7df57d7345e20b310eb6d9832408",
+      "publicSha256": "b0e289fdac7c4e45e0f32bf041bc7bd6d3e4cac6e11b682ea77184f60aaf3eb9",
+      "bytes": 12237,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C43-comment-image-upload.json",
+      "sourceRelativePath": "证据包/focused/C43-comment-image-upload.json",
+      "originalSha256": "3e9b78c472c8f2f5107016ff23ea57bcebe821ec8c25ba6d60ad14cfab9e49ff",
+      "publicSha256": "4dcf422b004bf2e2cfd53fe5db8311e8a7346ed05d305a21e1b4329fd8dc28c8",
+      "bytes": 8422,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C44-new-note-config.json",
+      "sourceRelativePath": "证据包/focused/C44-new-note-config.json",
+      "originalSha256": "d30f5104cf69260f4bd3723b161d2e045aae1da9065c3dcfe4d61399f528080d",
+      "publicSha256": "f44cc1ed6222d3594c527eacf70db2ced73b5a935c0afce7d640737e15dff35d",
+      "bytes": 28359,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C45-new-note-page.json",
+      "sourceRelativePath": "证据包/focused/C45-new-note-page.json",
+      "originalSha256": "13c3ce736144d82ace7ee832a34a12b7a9613014c3e701ecb93dac2b4bcbdc81",
+      "publicSha256": "68d5bab4c9ec1552d7f2de90e83f4c4c2a7d6ff96466e0adbd3e8852d16fa081",
+      "bytes": 8025,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C46-collection-info.json",
+      "sourceRelativePath": "证据包/focused/C46-collection-info.json",
+      "originalSha256": "58873ef216d95969fc0b81ea3b734f0fd8b1ab006f0ad6db0afc6f0aa40fa6ba",
+      "publicSha256": "af1475a8ba6f66aef853549b07a4ff571d18ca509787367f00e9f6eadfe2f447",
+      "bytes": 21517,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C47-explore-tab.json",
+      "sourceRelativePath": "证据包/focused/C47-explore-tab.json",
+      "originalSha256": "93f6a311d38b2667f564e314332b32931ff27aeeda6e63cbd619278d10d51001",
+      "publicSha256": "29270343c054641535ea0a2ce4764bebe37cc6fcbb0ba1c6527784b7501e35ac",
+      "bytes": 6711,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C48-editable-image.json",
+      "sourceRelativePath": "证据包/focused/C48-editable-image.json",
+      "originalSha256": "9fdcbeaac67cae42bb40132d13490e1b8a34c6f9f990490c95fe91f160036cb7",
+      "publicSha256": "11e7fa8ce3200b45a9b47fb5934dc2d54b1a74a6c4c5979b2897ebeb9574a162",
+      "bytes": 87884,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C49-editable-video.json",
+      "sourceRelativePath": "证据包/focused/C49-editable-video.json",
+      "originalSha256": "63bbab023626aea5aff1578b29b5cedde596580c3aa8d86afc367b449fb072cf",
+      "publicSha256": "a77c7cb8cb650ebf86881e5d85067470f984d7f5be9b60cae88f14004db2a280",
+      "bytes": 84972,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C50-chat-conversation.json",
+      "sourceRelativePath": "证据包/focused/C50-chat-conversation.json",
+      "originalSha256": "8cbe452ef728e03af9d08ec95104f574c74f80bbf80a08c28c1ad38b53899337",
+      "publicSha256": "ac7511bbdff25427f608451c3594756f799daeb46e511e45b6f59be07aa8898a",
+      "bytes": 8537,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C51-like-state-consumer.json",
+      "sourceRelativePath": "证据包/focused/C51-like-state-consumer.json",
+      "originalSha256": "da350582d0cbb9045d91e208002912c438ad96a61b7ee709b35fb66b9b1161fb",
+      "publicSha256": "f9b1319dfd2181aab79ea11f4215faeee773610c3ec93140ae432b1dad7c22dc",
+      "bytes": 4902,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C52-collect-state-consumer.json",
+      "sourceRelativePath": "证据包/focused/C52-collect-state-consumer.json",
+      "originalSha256": "bd140a8db6d443e4de199c6b77e41d2015af0bfa603fad1897eeb626eefe6d6f",
+      "publicSha256": "358fae05445e4f9aed186cbe97af81674c0a2e56e72116ed07e08627817c0486",
+      "bytes": 4950,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C53-board-service.json",
+      "sourceRelativePath": "证据包/focused/C53-board-service.json",
+      "originalSha256": "c1d441732a1a623e03286decf7d35cc414cca7eea93457e0c2ee5f81609aad34",
+      "publicSha256": "3f2a7b4013ee8231a9e837dfb52e314f0eced6ef067cc76b354ff07c819871a2",
+      "bytes": 13433,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C54-follow-note-model.json",
+      "sourceRelativePath": "证据包/focused/C54-follow-note-model.json",
+      "originalSha256": "992f927519490306a388d3692301cbd2d07f65faf84538d0406d7978a59e034e",
+      "publicSha256": "9bc5a6c66e972c771aa9cdedeaae54b143d8af1d526cb0a957bbb7d8d042b1e9",
+      "bytes": 7690,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C55-wish-board.json",
+      "sourceRelativePath": "证据包/focused/C55-wish-board.json",
+      "originalSha256": "0ffa438eef0e867185660491dbd4782a1b2f80f7b5bb387239fd4f15c19e4071",
+      "publicSha256": "2f8f227f2189e2feabc4adf2e90482e20e883dae2d1e59cdba6c51c470fd931a",
+      "bytes": 22412,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C56-video-like.json",
+      "sourceRelativePath": "证据包/focused/C56-video-like.json",
+      "originalSha256": "8974170d3c470b4387be834bc0e3ea7cd7c23c039f2ff3ab357b14de1ebfd586",
+      "publicSha256": "18b3f8fa55a889f92ee44bd9062345746956833754acdd6b8a28305e670ed184",
+      "bytes": 9292,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C57-doubleclick-like.json",
+      "sourceRelativePath": "证据包/focused/C57-doubleclick-like.json",
+      "originalSha256": "4a64ee108e80336a51989a93fe2b78d5699cd2cac451df9c2ea913d4cbe66a90",
+      "publicSha256": "77a1b86e7a863000a1f91e32adff61fce69fe21ed347d13385a3288e7fa543bd",
+      "bytes": 5161,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/C58-comment-like.json",
+      "sourceRelativePath": "证据包/focused/C58-comment-like.json",
+      "originalSha256": "019d648cea8190352fdadfb093fab409ecffbb25b8cd4a862a2c17e74c7683ac",
+      "publicSha256": "d021dbb83e9013b3291334b1d7f4b9855d052ba31d25f56648ab23572ce26937",
+      "bytes": 6695,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M01-like-bind.java.txt",
+      "sourceRelativePath": "证据包/focused/M01-like-bind.java.txt",
+      "originalSha256": "d8002c4f466f965903ab693e8f28cd259568c649a6f039170c8d19cfa7e8819e",
+      "publicSha256": "d8002c4f466f965903ab693e8f28cd259568c649a6f039170c8d19cfa7e8819e",
+      "bytes": 1056,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M01-like-bind.json",
+      "sourceRelativePath": "证据包/focused/M01-like-bind.json",
+      "originalSha256": "332fd12d16373d6cc006f84c0715887d20ffb2a6311550ff3110e4cdd9843565",
+      "publicSha256": "55f7070e1ab8b313baed61adf8aadc9b4b9b915bdaff6deee22b7c3a7614b3d6",
+      "bytes": 8466,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M02-like-update.java.txt",
+      "sourceRelativePath": "证据包/focused/M02-like-update.java.txt",
+      "originalSha256": "7ca1fd31532e5289b83f5bee240e7aa3cb5c5be97f40a8bc71ef44c374299047",
+      "publicSha256": "7ca1fd31532e5289b83f5bee240e7aa3cb5c5be97f40a8bc71ef44c374299047",
+      "bytes": 1306,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M02-like-update.json",
+      "sourceRelativePath": "证据包/focused/M02-like-update.json",
+      "originalSha256": "6d16491efd83d94db2e80229d52f5d3d6afa3d3c0c97bc8c6b5b07b17d2ef0ff",
+      "publicSha256": "92761cc1c33b01262c0922275c7e5a58464775e81cd7a92371c94e89696d9f8b",
+      "bytes": 8448,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M03-collect-bind.java.txt",
+      "sourceRelativePath": "证据包/focused/M03-collect-bind.java.txt",
+      "originalSha256": "92fcb3c2532fd7b716f721e7faa654cc8d42eac69e6f2d31ac9e8de425b1ed07",
+      "publicSha256": "92fcb3c2532fd7b716f721e7faa654cc8d42eac69e6f2d31ac9e8de425b1ed07",
+      "bytes": 1052,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M03-collect-bind.json",
+      "sourceRelativePath": "证据包/focused/M03-collect-bind.json",
+      "originalSha256": "c980af67db27c1eaca5d711d9f2f5980181f7301ba2a2ca386aa03d5e4680d30",
+      "publicSha256": "b4b10c42f835dc8f0c6dc0e48cb5e46b372be6ab6016de47b362beb20f671ad8",
+      "bytes": 7809,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M04-image-bind.java.txt",
+      "sourceRelativePath": "证据包/focused/M04-image-bind.java.txt",
+      "originalSha256": "4bb486929ddd61e3344bd397b02380a866307506705dd53bf50624a064ff0650",
+      "publicSha256": "4bb486929ddd61e3344bd397b02380a866307506705dd53bf50624a064ff0650",
+      "bytes": 16783,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M04-image-bind.json",
+      "sourceRelativePath": "证据包/focused/M04-image-bind.json",
+      "originalSha256": "b9021712ebb8f822fefdfb414b9abc2ffdd1bd6ddafc8579d32022be9969f0af",
+      "publicSha256": "bdb40a91e83b5ed22882f98234ddcc0800e00a7ed0a72c363011e4564393c3e5",
+      "bytes": 43711,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M05-image-doubletap.java.txt",
+      "sourceRelativePath": "证据包/focused/M05-image-doubletap.java.txt",
+      "originalSha256": "de125fb22002fc2cd79148ffd4b229554fa808987ba5676ad9b29974f748d237",
+      "publicSha256": "de125fb22002fc2cd79148ffd4b229554fa808987ba5676ad9b29974f748d237",
+      "bytes": 4557,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M05-image-doubletap.json",
+      "sourceRelativePath": "证据包/focused/M05-image-doubletap.json",
+      "originalSha256": "8f3383bcc56df6f68b5a71cd83e04e0dc16016bf5304376bc4b811d724c7754d",
+      "publicSha256": "9eeed6883a6c768356eccc7a85ba47b9137ee93e72bcf51a12753fad170e3eed",
+      "bytes": 16968,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M06-photo-touch.java.txt",
+      "sourceRelativePath": "证据包/focused/M06-photo-touch.java.txt",
+      "originalSha256": "5cdff9e9fd6f555194fa315d9b2d5af66796fb138e56335c80eadeb5e1e53ac0",
+      "publicSha256": "5cdff9e9fd6f555194fa315d9b2d5af66796fb138e56335c80eadeb5e1e53ac0",
+      "bytes": 4357,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M06-photo-touch.json",
+      "sourceRelativePath": "证据包/focused/M06-photo-touch.json",
+      "originalSha256": "08bf44bad0bb3bfea8c057f0f99540583ee261841cf01890c337b280fe4b78db",
+      "publicSha256": "8799d76321a9302bf90ff2a073856e7f3f5678cbc06cc043597341d492eaac04",
+      "bytes": 31195,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M07-comment-list.java.txt",
+      "sourceRelativePath": "证据包/focused/M07-comment-list.java.txt",
+      "originalSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "publicSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "bytes": 61,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M07-comment-list.json",
+      "sourceRelativePath": "证据包/focused/M07-comment-list.json",
+      "originalSha256": "657404ba8c4fa2197958ddd86bda05298eff1d2e43a39e55baf77784372e5412",
+      "publicSha256": "f918044a09219de88cdb816fc448d18a498af7fe355889c267b58eff14c64f85",
+      "bytes": 11219,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M08-comment-replies.java.txt",
+      "sourceRelativePath": "证据包/focused/M08-comment-replies.java.txt",
+      "originalSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "publicSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "bytes": 61,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M08-comment-replies.json",
+      "sourceRelativePath": "证据包/focused/M08-comment-replies.json",
+      "originalSha256": "a445374ce4f8a22faed59a499d786ba4533b05f1f67c76a5b5e757cccab75c21",
+      "publicSha256": "daa4ca9abc0f990355252614a8b5b2c69f8b2e14e21f9c62ce7a52986755cc91",
+      "bytes": 11207,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M09-comment-post.java.txt",
+      "sourceRelativePath": "证据包/focused/M09-comment-post.java.txt",
+      "originalSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "publicSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "bytes": 61,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M09-comment-post.json",
+      "sourceRelativePath": "证据包/focused/M09-comment-post.json",
+      "originalSha256": "66e5d73c97fa25123ad4a8a697959b5a07e3a523072eaf959088be472956d370",
+      "publicSha256": "684ef1b3fb77f6d679533c8a94c910081cdf7731c5a3797f2abf267dc5747a1a",
+      "bytes": 11199,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M10-collection-add.java.txt",
+      "sourceRelativePath": "证据包/focused/M10-collection-add.java.txt",
+      "originalSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "publicSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "bytes": 61,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M10-collection-add.json",
+      "sourceRelativePath": "证据包/focused/M10-collection-add.json",
+      "originalSha256": "ae5318f191cb71196bdfb7b61d5abcdf2fce7d6530e50faa2ac73754584ad9c9",
+      "publicSha256": "b61fde21ce4038b3cee0d23766870f96cdfd0d3af8bb6ff69b105abce219b927",
+      "bytes": 7900,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M11-collection-create.java.txt",
+      "sourceRelativePath": "证据包/focused/M11-collection-create.java.txt",
+      "originalSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "publicSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "bytes": 61,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M11-collection-create.json",
+      "sourceRelativePath": "证据包/focused/M11-collection-create.json",
+      "originalSha256": "aa5f13693e771e863641675fb6ed1842ddc12a9bcd3f67c8560f3a494c96cbfa",
+      "publicSha256": "fe431967590d492a0d1dc4d3c5afbbc0b4e13102e6f088c8a00c96716a16481b",
+      "bytes": 7938,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M12-profile-like-load.java.txt",
+      "sourceRelativePath": "证据包/focused/M12-profile-like-load.java.txt",
+      "originalSha256": "e57372b20d06a66c9598d8cc7a85804ee180576c41eeae60bdfc639d18c9af89",
+      "publicSha256": "e57372b20d06a66c9598d8cc7a85804ee180576c41eeae60bdfc639d18c9af89",
+      "bytes": 1398,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M12-profile-like-load.json",
+      "sourceRelativePath": "证据包/focused/M12-profile-like-load.json",
+      "originalSha256": "05ace01aa07962830f6e660901d67ccbf598e5b1b409ceff5eff7aa2c43c9309",
+      "publicSha256": "268e7f33e83bdccbe8746626e9be7ed892390328ea6854761739f75ec9c9b338",
+      "bytes": 10325,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M13-profile-collect-sync.java.txt",
+      "sourceRelativePath": "证据包/focused/M13-profile-collect-sync.java.txt",
+      "originalSha256": "c70a41fe50542fbfc5cc3e7db1b1f59cdb3109a34a231ae32e35442696e5f420",
+      "publicSha256": "c70a41fe50542fbfc5cc3e7db1b1f59cdb3109a34a231ae32e35442696e5f420",
+      "bytes": 637,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M13-profile-collect-sync.json",
+      "sourceRelativePath": "证据包/focused/M13-profile-collect-sync.json",
+      "originalSha256": "52620b878c39f14290e95d3bef34dae86358d474662232936e335d241a0b9253",
+      "publicSha256": "399af01500ef39c3ba353b34b214449965b4c735d41e8c48c9311ed662d2ab5e",
+      "bytes": 10926,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M14-follow-feed.java.txt",
+      "sourceRelativePath": "证据包/focused/M14-follow-feed.java.txt",
+      "originalSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "publicSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "bytes": 61,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M14-follow-feed.json",
+      "sourceRelativePath": "证据包/focused/M14-follow-feed.json",
+      "originalSha256": "cfb7dc472fb17b5ccbd3e1417c5dc861e7ff05734b8a03d103777eafa70d4053",
+      "publicSha256": "b9ccd01b62fe2993cd89c4b353c2405cf5a5d30f679469e059677075593787c7",
+      "bytes": 6919,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M15-explore-feed.java.txt",
+      "sourceRelativePath": "证据包/focused/M15-explore-feed.java.txt",
+      "originalSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "publicSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "bytes": 61,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M15-explore-feed.json",
+      "sourceRelativePath": "证据包/focused/M15-explore-feed.json",
+      "originalSha256": "30c9492cd60706bd3c018a1488ed19d54943c15f2a03f8fce3009357aefeb791",
+      "publicSha256": "971ec8aa8039c3ce94f9c6d5d980da73cd482f1af315f87190cc1e57492cff0c",
+      "bytes": 8734,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M16-local-feed.java.txt",
+      "sourceRelativePath": "证据包/focused/M16-local-feed.java.txt",
+      "originalSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "publicSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "bytes": 61,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M16-local-feed.json",
+      "sourceRelativePath": "证据包/focused/M16-local-feed.json",
+      "originalSha256": "45e84b6fd0d81d85610fdb88186a5a23e74e3b3623f787db5f7493aabb2ad1f4",
+      "publicSha256": "e750d1f372c95978041e4753f219b37e1ae3bbe99008d714efb63ae99b1f72a1",
+      "bytes": 7631,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M17-search-notes.java.txt",
+      "sourceRelativePath": "证据包/focused/M17-search-notes.java.txt",
+      "originalSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "publicSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "bytes": 61,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M17-search-notes.json",
+      "sourceRelativePath": "证据包/focused/M17-search-notes.json",
+      "originalSha256": "bda80375ed49fa18a8dcd34996251ee7da84dbf036a9f8db7744ffb611cb4b7f",
+      "publicSha256": "fe8e7461a1e42d484410271083f270c5d13810ecb8c01439c38cbaf4f4e9d845",
+      "bytes": 13927,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M18-search-filter.java.txt",
+      "sourceRelativePath": "证据包/focused/M18-search-filter.java.txt",
+      "originalSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "publicSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "bytes": 61,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M18-search-filter.json",
+      "sourceRelativePath": "证据包/focused/M18-search-filter.json",
+      "originalSha256": "3665d48a87dd0426414c2253093c9b2eb304687f51adfec2f49ec89ec45635df",
+      "publicSha256": "00978723762c99abb952bc01191090ff2be8fe9b34311c9256ea0912defe23fe",
+      "bytes": 13578,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M19-autoscroll-state.java.txt",
+      "sourceRelativePath": "证据包/focused/M19-autoscroll-state.java.txt",
+      "originalSha256": "e44020580534a3138a2bbf669c82438e926f3daf57d88c2a40393b27ffc8b73e",
+      "publicSha256": "e44020580534a3138a2bbf669c82438e926f3daf57d88c2a40393b27ffc8b73e",
+      "bytes": 218,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M19-autoscroll-state.json",
+      "sourceRelativePath": "证据包/focused/M19-autoscroll-state.json",
+      "originalSha256": "9071214b801a0d0066297a219b51a786903b96b7378f84552915cbbac4475d0d",
+      "publicSha256": "eb0ad33489fc58ea8ad5ac354cbe010ad55e073acd151554cc7acc78baf7a2c7",
+      "bytes": 8509,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M20-autoscroll-capability.java.txt",
+      "sourceRelativePath": "证据包/focused/M20-autoscroll-capability.java.txt",
+      "originalSha256": "334b331baf9a659fbb8841b53368819c8a5d4f444e5c69c8452d12b3bcd8bbbc",
+      "publicSha256": "334b331baf9a659fbb8841b53368819c8a5d4f444e5c69c8452d12b3bcd8bbbc",
+      "bytes": 376,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M20-autoscroll-capability.json",
+      "sourceRelativePath": "证据包/focused/M20-autoscroll-capability.json",
+      "originalSha256": "8b8d151ded279cb32931a0e226cc74a9dcd96a7dca272e6638ec928f2a09eb69",
+      "publicSha256": "d2f93bc167b1229726365c2a592697b9da292def036803f2f5b2aa392c043604",
+      "bytes": 8893,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M21-follow-config.java.txt",
+      "sourceRelativePath": "证据包/focused/M21-follow-config.java.txt",
+      "originalSha256": "a74bbd1b11f19d77164c6dc762bd0a6ef2b7534706347ae19233c94818b18b8e",
+      "publicSha256": "a74bbd1b11f19d77164c6dc762bd0a6ef2b7534706347ae19233c94818b18b8e",
+      "bytes": 315,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M21-follow-config.json",
+      "sourceRelativePath": "证据包/focused/M21-follow-config.json",
+      "originalSha256": "0b86a050ba95216c441d9ea9d76b420675200810e6e653ace84f0b76eaee6d59",
+      "publicSha256": "37f74c687f477a0dbce920f2c68f486ed31b28af90d6839b3fddaeb3bdbe95f2",
+      "bytes": 6974,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M22-upload-cancel.java.txt",
+      "sourceRelativePath": "证据包/focused/M22-upload-cancel.java.txt",
+      "originalSha256": "db5bf345086f9f3bdd90d7b597e8d639f2b38765e686ebc6a1ce90e28ebfe181",
+      "publicSha256": "db5bf345086f9f3bdd90d7b597e8d639f2b38765e686ebc6a1ce90e28ebfe181",
+      "bytes": 172,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M22-upload-cancel.json",
+      "sourceRelativePath": "证据包/focused/M22-upload-cancel.json",
+      "originalSha256": "0a2d59d544225b44e9cbda5308aec29701a1bfa6d04555f54b0f074357436169",
+      "publicSha256": "416b3c6c8fde25857b364f154a9ec4d2f5fe3923b76e6403e8d715cf9902913f",
+      "bytes": 9321,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M23-message-content.java.txt",
+      "sourceRelativePath": "证据包/focused/M23-message-content.java.txt",
+      "originalSha256": "b2b09c7b38a40b361de307f31d575b61bf8a46aeda928b65117fa5aaaff08986",
+      "publicSha256": "b2b09c7b38a40b361de307f31d575b61bf8a46aeda928b65117fa5aaaff08986",
+      "bytes": 119,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M23-message-content.json",
+      "sourceRelativePath": "证据包/focused/M23-message-content.json",
+      "originalSha256": "1b70395cc0e44c41fdd783d8cc3b00eab327c7e218fae9211136f5253ec72a15",
+      "publicSha256": "6260a84e359fec3c6acbaba57ab1946dab80abb9dc3a52fa68db740228616275",
+      "bytes": 11111,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M24-chat-receive.java.txt",
+      "sourceRelativePath": "证据包/focused/M24-chat-receive.java.txt",
+      "originalSha256": "d9130d62de0fcb5888b8b5cc280e985bd6b10eec67aa41433cc03f761306d671",
+      "publicSha256": "d9130d62de0fcb5888b8b5cc280e985bd6b10eec67aa41433cc03f761306d671",
+      "bytes": 777,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M24-chat-receive.json",
+      "sourceRelativePath": "证据包/focused/M24-chat-receive.json",
+      "originalSha256": "b19f7d57e544b3954b2d9002888799d7bf694ee98dcd4b05d6fd28ab58b526b0",
+      "publicSha256": "ff26ed659277c59712e7dcf2df5c26c65f227a8f9ff2a15c0f9dfcd2a6d01083",
+      "bytes": 9128,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M25-like-asset-select.java.txt",
+      "sourceRelativePath": "证据包/focused/M25-like-asset-select.java.txt",
+      "originalSha256": "0c98dbe6db89fa966f1ecd8f57be3de8d538467870e151a7e78323161af06d2c",
+      "publicSha256": "0c98dbe6db89fa966f1ecd8f57be3de8d538467870e151a7e78323161af06d2c",
+      "bytes": 323,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M25-like-asset-select.json",
+      "sourceRelativePath": "证据包/focused/M25-like-asset-select.json",
+      "originalSha256": "5a5392e72799890ed2f349e6c864eba2befc110647e36941886f073ff3304e38",
+      "publicSha256": "53c87404a68fd054abcd96e9762d48f89b7fdf7f2a2950564775cc09137b44b3",
+      "bytes": 8185,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M26-note-detail-fetch.java.txt",
+      "sourceRelativePath": "证据包/focused/M26-note-detail-fetch.java.txt",
+      "originalSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "publicSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "bytes": 61,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M26-note-detail-fetch.json",
+      "sourceRelativePath": "证据包/focused/M26-note-detail-fetch.json",
+      "originalSha256": "7117037006962ad89cc576de5a50e792357790e2a04cabe596ec74989ff38d00",
+      "publicSha256": "45d470505e9c5c9ba41f1cfa4a2b45a47899159130d3e0312032557feffa9683",
+      "bytes": 13968,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M27-longpress-fetch.java.txt",
+      "sourceRelativePath": "证据包/focused/M27-longpress-fetch.java.txt",
+      "originalSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "publicSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "bytes": 61,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M27-longpress-fetch.json",
+      "sourceRelativePath": "证据包/focused/M27-longpress-fetch.json",
+      "originalSha256": "4e2cc6a52d6daee435fc040823a5d81bc7bf05ad992744b382cf48f5ece2fe32",
+      "publicSha256": "b3374258d740b576dbc7f9c3ecf0ed394011339929aa059e37354104f97eaca4",
+      "bytes": 6677,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M28-note-liked-field.java.txt",
+      "sourceRelativePath": "证据包/focused/M28-note-liked-field.java.txt",
+      "originalSha256": "cf1bf0cc65ff02ed3279ce4d9af3156297d9f23b59a14304743542dffc3a9475",
+      "publicSha256": "cf1bf0cc65ff02ed3279ce4d9af3156297d9f23b59a14304743542dffc3a9475",
+      "bytes": 66,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M28-note-liked-field.json",
+      "sourceRelativePath": "证据包/focused/M28-note-liked-field.json",
+      "originalSha256": "923454a8ba08cab051baead8d7d1ca4d2986d3547ebc424499afd030f8593f79",
+      "publicSha256": "6f6d5de01213e352c6feef568f11574819dbf8632079951988643a8f523aae75",
+      "bytes": 56413,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M29-note-animation-selector.java.txt",
+      "sourceRelativePath": "证据包/focused/M29-note-animation-selector.java.txt",
+      "originalSha256": "6bfd61e78c1e4b837ccbcb6daab0c24965a904ce5c87bacc3cd027f9c0fc5f42",
+      "publicSha256": "6bfd61e78c1e4b837ccbcb6daab0c24965a904ce5c87bacc3cd027f9c0fc5f42",
+      "bytes": 97,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M29-note-animation-selector.json",
+      "sourceRelativePath": "证据包/focused/M29-note-animation-selector.json",
+      "originalSha256": "f156a5716dffced63653c488c0c897e5e89ab1060782b6158084eb79d6f2e380",
+      "publicSha256": "354f2602955774fe151d14b2d0dd074730185cd8b892c2fba3023c0676377517",
+      "bytes": 56500,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M30-image-indicator-hide.java.txt",
+      "sourceRelativePath": "证据包/focused/M30-image-indicator-hide.java.txt",
+      "originalSha256": "f25750f79f6ba555559d147623e453909b9fb52c07e8e6b51a09fe3c2360ef38",
+      "publicSha256": "f25750f79f6ba555559d147623e453909b9fb52c07e8e6b51a09fe3c2360ef38",
+      "bytes": 1190,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M30-image-indicator-hide.json",
+      "sourceRelativePath": "证据包/focused/M30-image-indicator-hide.json",
+      "originalSha256": "0628ef8005ceb4ff90d3a91b9b830091d469c428620d195c66bb9e3ca8267d71",
+      "publicSha256": "5a9c39afbc14a17d8a9db4aa7209133b638c3cd239f1f608bb836142bc0feab4",
+      "bytes": 9803,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M31-image-switch.java.txt",
+      "sourceRelativePath": "证据包/focused/M31-image-switch.java.txt",
+      "originalSha256": "7bc12da9a89cc1e8a7eb6520344f402edbad35c67063c5860b9c10cc7f315570",
+      "publicSha256": "7bc12da9a89cc1e8a7eb6520344f402edbad35c67063c5860b9c10cc7f315570",
+      "bytes": 168,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M31-image-switch.json",
+      "sourceRelativePath": "证据包/focused/M31-image-switch.json",
+      "originalSha256": "09ca542321839cb9a121af9208c34ab152ed31f6e857e221f504f15708adc67c",
+      "publicSha256": "286a01d5e8370178961971592da4e6b814a8ddd8f9e62a589ddbaceef565dd43",
+      "bytes": 7669,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M32-image-bind-data.java.txt",
+      "sourceRelativePath": "证据包/focused/M32-image-bind-data.java.txt",
+      "originalSha256": "d5d0513d288de34bb1a247564ebbed2597a8ad94e05d5bfc0cbf714a2f2a5f5b",
+      "publicSha256": "d5d0513d288de34bb1a247564ebbed2597a8ad94e05d5bfc0cbf714a2f2a5f5b",
+      "bytes": 1680,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M32-image-bind-data.json",
+      "sourceRelativePath": "证据包/focused/M32-image-bind-data.json",
+      "originalSha256": "d6ed56edbe7d1d6fdd9cbbd85691a1db8c0dc8fc28674dba290aaff1e29c1db6",
+      "publicSha256": "7c50ce805eef79d11e370c8ae27463b301296049ea32607b7901c4dba3380f9a",
+      "bytes": 11034,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M33-comment-precache-guard.java.txt",
+      "sourceRelativePath": "证据包/focused/M33-comment-precache-guard.java.txt",
+      "originalSha256": "2c60297443ad9fe8a991fe27b1779057a51089835d8eca5e9e9c07263796d522",
+      "publicSha256": "2c60297443ad9fe8a991fe27b1779057a51089835d8eca5e9e9c07263796d522",
+      "bytes": 112,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M33-comment-precache-guard.json",
+      "sourceRelativePath": "证据包/focused/M33-comment-precache-guard.json",
+      "originalSha256": "373e5726001742ce31cdc3f756e94be411135e57a0cd6622a19ea82752885da5",
+      "publicSha256": "f7c39391b2614eb7ee654c651f3a0f08689633bb4b39a7496025741218bc1ddc",
+      "bytes": 13367,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M34-filter-view-created.java.txt",
+      "sourceRelativePath": "证据包/focused/M34-filter-view-created.java.txt",
+      "originalSha256": "69b3c2b0d13582d265987528c6b3233f203218b94668b2e1ee74eae0794bbc16",
+      "publicSha256": "69b3c2b0d13582d265987528c6b3233f203218b94668b2e1ee74eae0794bbc16",
+      "bytes": 1549,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M34-filter-view-created.json",
+      "sourceRelativePath": "证据包/focused/M34-filter-view-created.json",
+      "originalSha256": "e42d8491dc3fb8e6af98c97b163aed8b35a69ae2c43b83417df5c1e9cd0544da",
+      "publicSha256": "4d41cb704abb9d96085714d4eb63862b739bfe7b065e6ca20939432a5249205d",
+      "bytes": 10968,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M35-profile-collect-diff.java.txt",
+      "sourceRelativePath": "证据包/focused/M35-profile-collect-diff.java.txt",
+      "originalSha256": "96cdf33cee658a6f1aa927ab6e59147083ad1c19fee51779d47a07e29c624cc5",
+      "publicSha256": "96cdf33cee658a6f1aa927ab6e59147083ad1c19fee51779d47a07e29c624cc5",
+      "bytes": 247,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M35-profile-collect-diff.json",
+      "sourceRelativePath": "证据包/focused/M35-profile-collect-diff.json",
+      "originalSha256": "210fcec352a7cbf9f714ddd1a0558aad45870f52ae50b7b0034f326cf8bce43c",
+      "publicSha256": "cbb920df722348b268bdf0c35e14a10c0f8811c8bd63f91b8a2482fc5d3e1653",
+      "bytes": 10100,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M36-auto-activate.java.txt",
+      "sourceRelativePath": "证据包/focused/M36-auto-activate.java.txt",
+      "originalSha256": "c3722c695d7ab1eb6162925553468fed2793c985b3be4198e50ab97aaa9a1f1d",
+      "publicSha256": "c3722c695d7ab1eb6162925553468fed2793c985b3be4198e50ab97aaa9a1f1d",
+      "bytes": 155,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M36-auto-activate.json",
+      "sourceRelativePath": "证据包/focused/M36-auto-activate.json",
+      "originalSha256": "125ee0ee335c8acb29ba21dd5ef894b204f9db6246dcb2b0a6df02634e3baa57",
+      "publicSha256": "2b434d731982556911453fc1ac51a18df6691cc4c167b4df5b2d0a6a15672061",
+      "bytes": 8390,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M37-photo-scale.java.txt",
+      "sourceRelativePath": "证据包/focused/M37-photo-scale.java.txt",
+      "originalSha256": "f9039f27cc4bf322b5e481a89bef40502b092657bb3ca2f2705cdde68d70c5d1",
+      "publicSha256": "f9039f27cc4bf322b5e481a89bef40502b092657bb3ca2f2705cdde68d70c5d1",
+      "bytes": 753,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M37-photo-scale.json",
+      "sourceRelativePath": "证据包/focused/M37-photo-scale.json",
+      "originalSha256": "73da6715e48e810a5295c170dfefbc3d86fbb5c037ab6a7cf4fb3755aee3306d",
+      "publicSha256": "0f2dd1b8546dbdc42e5aa0eaab7985be2ddad1648a9b3b14ad41f63a38fe1c93",
+      "bytes": 22892,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M38-message-state-read.java.txt",
+      "sourceRelativePath": "证据包/focused/M38-message-state-read.java.txt",
+      "originalSha256": "3be1402c6021a60848d9bd89f0e40b8cb89c3eb0a2f874c7dbf5eb9018631b73",
+      "publicSha256": "3be1402c6021a60848d9bd89f0e40b8cb89c3eb0a2f874c7dbf5eb9018631b73",
+      "bytes": 71,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M38-message-state-read.json",
+      "sourceRelativePath": "证据包/focused/M38-message-state-read.json",
+      "originalSha256": "c98267f370cb68f7bcff3e9addd887f89e65fa584ef628f48b8648978c41f800",
+      "publicSha256": "61124e8262f444b743bc55f06f345ee51c66e9bffa374e6c96ecc1435922c2b2",
+      "bytes": 10983,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M39-note-unlike-request.java.txt",
+      "sourceRelativePath": "证据包/focused/M39-note-unlike-request.java.txt",
+      "originalSha256": "243c4747558e7bbbb053bba1257c299b8026fb0c2c4c165c7a03d99afd647a92",
+      "publicSha256": "243c4747558e7bbbb053bba1257c299b8026fb0c2c4c165c7a03d99afd647a92",
+      "bytes": 577,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M39-note-unlike-request.json",
+      "sourceRelativePath": "证据包/focused/M39-note-unlike-request.json",
+      "originalSha256": "0c8a61f6f91a91fc7733880de29a928492933865e911499948449cea6fc168b6",
+      "publicSha256": "3811a4dc045ecbddca3cda849655c3c4ba43b0c6365527c73c2ebc0e22a6f53a",
+      "bytes": 6836,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M40-note-like-request.java.txt",
+      "sourceRelativePath": "证据包/focused/M40-note-like-request.java.txt",
+      "originalSha256": "8168a949cebac85a9f3acb4b762403129969e5661352d3fb891c09e7ee69d8c5",
+      "publicSha256": "8168a949cebac85a9f3acb4b762403129969e5661352d3fb891c09e7ee69d8c5",
+      "bytes": 568,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M40-note-like-request.json",
+      "sourceRelativePath": "证据包/focused/M40-note-like-request.json",
+      "originalSha256": "029636be0a6b031cabbdcc90dd93f87750704a3148d43d4f97eef135c2ea2fd4",
+      "publicSha256": "0f9620cb31377e6088246f46d6253d0788e193a89889db9a3d2c6e2e36ef8355",
+      "bytes": 6818,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M41-upload-start.java.txt",
+      "sourceRelativePath": "证据包/focused/M41-upload-start.java.txt",
+      "originalSha256": "baf8beeb31c9a6ea0a04d903abf4d5ba1148124d677cfea13ff526adaddeb5f8",
+      "publicSha256": "baf8beeb31c9a6ea0a04d903abf4d5ba1148124d677cfea13ff526adaddeb5f8",
+      "bytes": 660,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M41-upload-start.json",
+      "sourceRelativePath": "证据包/focused/M41-upload-start.json",
+      "originalSha256": "4496a6045847b99dbec0ca451146ec1cc5796101a9f63d9020d01a90e815c511",
+      "publicSha256": "0a4d9f8e91cabda57bdb47b6d00c3a76f73b442c2e1f6151edd128fedbf18346",
+      "bytes": 10395,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M42-like-state-render.java.txt",
+      "sourceRelativePath": "证据包/focused/M42-like-state-render.java.txt",
+      "originalSha256": "ef399fed2b9e82c89273df9e58a4e58bfc54ba7080c0cdb642862bfd466b3592",
+      "publicSha256": "ef399fed2b9e82c89273df9e58a4e58bfc54ba7080c0cdb642862bfd466b3592",
+      "bytes": 1908,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M42-like-state-render.json",
+      "sourceRelativePath": "证据包/focused/M42-like-state-render.json",
+      "originalSha256": "a49fef33cd4e327ecc73aa73c6812e771d25380fb1a9d059e8e81a3ace4ee848",
+      "publicSha256": "56bd2a7ac35518d027bb5b117e08c5c6eb33d616b58d4f02a1259e46264899a3",
+      "bytes": 9642,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M43-collect-state-render.java.txt",
+      "sourceRelativePath": "证据包/focused/M43-collect-state-render.java.txt",
+      "originalSha256": "52b17547c276101beb6eb6d2c9ee2991b257dc8220908d9a12fed233bca6a110",
+      "publicSha256": "52b17547c276101beb6eb6d2c9ee2991b257dc8220908d9a12fed233bca6a110",
+      "bytes": 1804,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M43-collect-state-render.json",
+      "sourceRelativePath": "证据包/focused/M43-collect-state-render.json",
+      "originalSha256": "45e38a8f4e6f04fd4c57ea5a71ad336dac2a7629b5064f16b9dfdf6deed4c3e5",
+      "publicSha256": "76ef010adae2167b654728950418174b86158622f7baffec60d55144b61cc297",
+      "bytes": 9464,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M44-explore-tab-assembly.java.txt",
+      "sourceRelativePath": "证据包/focused/M44-explore-tab-assembly.java.txt",
+      "originalSha256": "96d91fadbb2e389d9a2d5b26d71ad232f0528b0c43400783b3f32e9c72d6006a",
+      "publicSha256": "96d91fadbb2e389d9a2d5b26d71ad232f0528b0c43400783b3f32e9c72d6006a",
+      "bytes": 214,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M44-explore-tab-assembly.json",
+      "sourceRelativePath": "证据包/focused/M44-explore-tab-assembly.json",
+      "originalSha256": "3132f9b31e1eb0c862ad0e4a7181fa5ac9773e6a81265d3813d9967a26caa89a",
+      "publicSha256": "d698615c3e76d8ea516e9c94abb78bc8420b861382ba7424b3c7d7f12dd3a614",
+      "bytes": 6648,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M45-comment-upload-start.java.txt",
+      "sourceRelativePath": "证据包/focused/M45-comment-upload-start.java.txt",
+      "originalSha256": "9fdbee477424ed8238587b8818156f4b5ca8571aedc6a29a96d17f50f8a74bee",
+      "publicSha256": "9fdbee477424ed8238587b8818156f4b5ca8571aedc6a29a96d17f50f8a74bee",
+      "bytes": 58,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M45-comment-upload-start.json",
+      "sourceRelativePath": "证据包/focused/M45-comment-upload-start.json",
+      "originalSha256": "2981a54cb7cc2df1a9774c7d12a8acb76322e862d52178ff7f34ecd38aa46439",
+      "publicSha256": "a4b94cf0bf0ef506410d78b6b9daed5ab56800f515acf53f9d8425bedb2393d7",
+      "bytes": 6964,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M46-like-count-field.java.txt",
+      "sourceRelativePath": "证据包/focused/M46-like-count-field.java.txt",
+      "originalSha256": "cd07b878a811ff45b9a865e587eff3628634b4ff48ada4bfdb61dc2456986c22",
+      "publicSha256": "cd07b878a811ff45b9a865e587eff3628634b4ff48ada4bfdb61dc2456986c22",
+      "bytes": 68,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M46-like-count-field.json",
+      "sourceRelativePath": "证据包/focused/M46-like-count-field.json",
+      "originalSha256": "505f4a00dd543436bbe4151c0379b3ebf6879a3856718b881db2dd2e744aefb2",
+      "publicSha256": "7f3cb561bb501e0992b3ab336539c0582839bfa93d4ac06d259ca58b7e6be11f",
+      "bytes": 56414,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M47-collected-field.java.txt",
+      "sourceRelativePath": "证据包/focused/M47-collected-field.java.txt",
+      "originalSha256": "40018dc35ebc986d21c045f8844b326dacb691a03541d1b43ece90175f35e5c4",
+      "publicSha256": "40018dc35ebc986d21c045f8844b326dacb691a03541d1b43ece90175f35e5c4",
+      "bytes": 69,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M47-collected-field.json",
+      "sourceRelativePath": "证据包/focused/M47-collected-field.json",
+      "originalSha256": "c1dfbd144e1dc27fa58733bc9eba924b385e6fc83c0f5ac5ef11e82681e9c5a1",
+      "publicSha256": "f6bfbb66457e021b8d5e019a14f24fd4adbe1ecc9e52b37c3cbd6db4de676807",
+      "bytes": 56413,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M48-collect-count-field.java.txt",
+      "sourceRelativePath": "证据包/focused/M48-collect-count-field.java.txt",
+      "originalSha256": "51bae43ab05901f2247b80594117be54fbe13f9f0d37847d718927e8490d8b4e",
+      "publicSha256": "51bae43ab05901f2247b80594117be54fbe13f9f0d37847d718927e8490d8b4e",
+      "bytes": 71,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M48-collect-count-field.json",
+      "sourceRelativePath": "证据包/focused/M48-collect-count-field.json",
+      "originalSha256": "2d2ab4bae7fbcca89e6e3c2030810bd622780ce2393512f0e5b0beb100652840",
+      "publicSha256": "4fa7fe270c7bb85ba5ce1e038b0eef670474ca406a4007a3fcbcdca1e2aa8f17",
+      "bytes": 56414,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M49-like-extra-reset.java.txt",
+      "sourceRelativePath": "证据包/focused/M49-like-extra-reset.java.txt",
+      "originalSha256": "9947548a6ed6dd5a5f5de04adc108ace9cb8ea9697a0d8e957ce0a5874de7b6d",
+      "publicSha256": "9947548a6ed6dd5a5f5de04adc108ace9cb8ea9697a0d8e957ce0a5874de7b6d",
+      "bytes": 73,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M49-like-extra-reset.json",
+      "sourceRelativePath": "证据包/focused/M49-like-extra-reset.json",
+      "originalSha256": "3bb9d15a3326e6714bfd3dbb0a3eda186a9dc3add8c329a8a058c374770b1d53",
+      "publicSha256": "9597ed3c674a3c2c1c44ae593a1ff7f587d7cc9ed24a32570a53b22bb740e3ca",
+      "bytes": 56434,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M50-collect-extra-reset.java.txt",
+      "sourceRelativePath": "证据包/focused/M50-collect-extra-reset.java.txt",
+      "originalSha256": "b745f31cfeda3c5f29fc0e23690d0e57cc57d417e41c6678ec47a6df469b7dd1",
+      "publicSha256": "b745f31cfeda3c5f29fc0e23690d0e57cc57d417e41c6678ec47a6df469b7dd1",
+      "bytes": 77,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M50-collect-extra-reset.json",
+      "sourceRelativePath": "证据包/focused/M50-collect-extra-reset.json",
+      "originalSha256": "e821c457f384a204a23f8e85450d5de3ebdaef716f617185e2bdc0a1daffe042",
+      "publicSha256": "77888359a9e62937941b13244775454fdab037f0da1b4cd749607a64cda5614d",
+      "bytes": 56442,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M51-comment-upload-progress.java.txt",
+      "sourceRelativePath": "证据包/focused/M51-comment-upload-progress.java.txt",
+      "originalSha256": "0e60a737a90f9f05ac87cd8639eef6411494a6fc106b6664af17459c8c37b77f",
+      "publicSha256": "0e60a737a90f9f05ac87cd8639eef6411494a6fc106b6664af17459c8c37b77f",
+      "bytes": 526,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M51-comment-upload-progress.json",
+      "sourceRelativePath": "证据包/focused/M51-comment-upload-progress.json",
+      "originalSha256": "103eea6e49eb8055599f231eb72227f9c638098db23109e77c1072e67acd505b",
+      "publicSha256": "0ab4ac2cc15288661cde58c3ed0bc00cfd86848952566ee3a543dbad35915e44",
+      "bytes": 8056,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M52-comment-upload-finish.java.txt",
+      "sourceRelativePath": "证据包/focused/M52-comment-upload-finish.java.txt",
+      "originalSha256": "7c0a34820aa38960360958e49d2f5c623a24f3b3cb90f9f08a3c5211d34826bc",
+      "publicSha256": "7c0a34820aa38960360958e49d2f5c623a24f3b3cb90f9f08a3c5211d34826bc",
+      "bytes": 1504,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M52-comment-upload-finish.json",
+      "sourceRelativePath": "证据包/focused/M52-comment-upload-finish.json",
+      "originalSha256": "8a6ceb105de6056336673d04cae64688f91cc039aad6979590dc1ab1cdc85ee5",
+      "publicSha256": "e60570ce95948137c10fc865a62d4d8183fef1f096252c5c7414721be7ac9231",
+      "bytes": 10454,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M53-liked-reset-field.java.txt",
+      "sourceRelativePath": "证据包/focused/M53-liked-reset-field.java.txt",
+      "originalSha256": "952922a6dcc9e095c952c22a48faf6fca12da2c02d8aa0b6f68523f61c2079b8",
+      "publicSha256": "952922a6dcc9e095c952c22a48faf6fca12da2c02d8aa0b6f68523f61c2079b8",
+      "bytes": 71,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M53-liked-reset-field.json",
+      "sourceRelativePath": "证据包/focused/M53-liked-reset-field.json",
+      "originalSha256": "985948b5e62681e09c566eb45577d4c3f3a1ad0c2848c69b9ac4892239ed3364",
+      "publicSha256": "6cf9f0ce48b329b08fec51f3bdb9600470fca24495b8ee124962a270b6903e3c",
+      "bytes": 56433,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M54-collected-reset-field.java.txt",
+      "sourceRelativePath": "证据包/focused/M54-collected-reset-field.java.txt",
+      "originalSha256": "0a32c885e0b52744a3d587ef595844a2bdf74700de70edd81545874794c258cf",
+      "publicSha256": "0a32c885e0b52744a3d587ef595844a2bdf74700de70edd81545874794c258cf",
+      "bytes": 75,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M54-collected-reset-field.json",
+      "sourceRelativePath": "证据包/focused/M54-collected-reset-field.json",
+      "originalSha256": "a3c0972d8b059bd5fe1445e58c48bc99017d886c80e8964b2a727b50020fa4ed",
+      "publicSha256": "c788c9cb8fa54eee3ff06f3bb13510dfdc7cee9d6b4065fb84fb956626507306",
+      "bytes": 56441,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M55-video-like-update.java.txt",
+      "sourceRelativePath": "证据包/focused/M55-video-like-update.java.txt",
+      "originalSha256": "3c78ad1a2a426f9b9d0037895bdd30f4aa8798898c3bf8f404db32003662e925",
+      "publicSha256": "3c78ad1a2a426f9b9d0037895bdd30f4aa8798898c3bf8f404db32003662e925",
+      "bytes": 410,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M55-video-like-update.json",
+      "sourceRelativePath": "证据包/focused/M55-video-like-update.json",
+      "originalSha256": "696125660d084da2caedd1b6350a63b22b9d4ab9dfa5acc21b57015d69edda68",
+      "publicSha256": "77c885eb3eec7c32b23aed7fa6df9b923ad0f1e350c76fc49006bb7eca11a357",
+      "bytes": 8372,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M56-video-like-animation.java.txt",
+      "sourceRelativePath": "证据包/focused/M56-video-like-animation.java.txt",
+      "originalSha256": "a252f98d58a5278b99b5593eacb3c45ed050d909d6f1ab07e57312b244a20554",
+      "publicSha256": "a252f98d58a5278b99b5593eacb3c45ed050d909d6f1ab07e57312b244a20554",
+      "bytes": 2085,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M56-video-like-animation.json",
+      "sourceRelativePath": "证据包/focused/M56-video-like-animation.json",
+      "originalSha256": "d0eb2122f31ee43edd49d1bac338b19dad26ce0ebe77f7bed6862b2f93bd76c4",
+      "publicSha256": "267918115514f5c69870a19e7fb07f96be5a8f79acb9d68aadd1356c7c479b31",
+      "bytes": 11462,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M57-doubleclick-bind.java.txt",
+      "sourceRelativePath": "证据包/focused/M57-doubleclick-bind.java.txt",
+      "originalSha256": "19f527d692cf060a061a658550303e8c579e1e28f372db89a693f449eed239ef",
+      "publicSha256": "19f527d692cf060a061a658550303e8c579e1e28f372db89a693f449eed239ef",
+      "bytes": 522,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M57-doubleclick-bind.json",
+      "sourceRelativePath": "证据包/focused/M57-doubleclick-bind.json",
+      "originalSha256": "83049cb31937badc226f649f672832b08e771bae518b503f3661f2afd4952a80",
+      "publicSha256": "d7316b44dacb57ea1ec953a5ff6668e0bd5c554461bf62e8fa992544034061ed",
+      "bytes": 6672,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M58-comment-like-bind.java.txt",
+      "sourceRelativePath": "证据包/focused/M58-comment-like-bind.java.txt",
+      "originalSha256": "7db02f277e184e78705faa24d3d95a3bf1047a9aebbc67852d8bc0e05e6969af",
+      "publicSha256": "7db02f277e184e78705faa24d3d95a3bf1047a9aebbc67852d8bc0e05e6969af",
+      "bytes": 810,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M58-comment-like-bind.json",
+      "sourceRelativePath": "证据包/focused/M58-comment-like-bind.json",
+      "originalSha256": "6ef8a4a88f372f7bb0a1c65cea1f803aab9d29134c97e4be9c5f5f1dcc2eb0c1",
+      "publicSha256": "c7b66900b54e73b224de50debe3502dadfbe932c698748603ff5426da00fc3b6",
+      "bytes": 8031,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M59-video-like-play-or-bind.java.txt",
+      "sourceRelativePath": "证据包/focused/M59-video-like-play-or-bind.java.txt",
+      "originalSha256": "81707ec8768f2676f601a611ed7e5e921f8e2939c6806ed8fdc890f505bbdbb7",
+      "publicSha256": "81707ec8768f2676f601a611ed7e5e921f8e2939c6806ed8fdc890f505bbdbb7",
+      "bytes": 298,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M59-video-like-play-or-bind.json",
+      "sourceRelativePath": "证据包/focused/M59-video-like-play-or-bind.json",
+      "originalSha256": "e4baf7532b61bf974cff61f63dd8aac3e3e3879d8d4c453c852d122358dfdc02",
+      "publicSha256": "bcfa37e160bee15aa2911a97b3493c7cafb08917decd5e46c87eba62cabc850e",
+      "bytes": 8161,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/M60-video-like-custom-compose.java.txt",
+      "sourceRelativePath": "证据包/focused/M60-video-like-custom-compose.java.txt",
+      "originalSha256": "860d55734bb82659079e2a41395fb1c4a3933aa9102929e4b97651eabdcf3c98",
+      "publicSha256": "860d55734bb82659079e2a41395fb1c4a3933aa9102929e4b97651eabdcf3c98",
+      "bytes": 386,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/focused/M60-video-like-custom-compose.json",
+      "sourceRelativePath": "证据包/focused/M60-video-like-custom-compose.json",
+      "originalSha256": "994df724294289a5036b2730bf39ad228fa74a70af870ce638ef87947e3abba8",
+      "publicSha256": "df88c9adb0089a74f112071696e0b291efbfcaa2a136da7d85c08d43b3cc7a7a",
+      "bytes": 7729,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/focused/X01-v3-like-callers.json",
+      "sourceRelativePath": "证据包/focused/X01-v3-like-callers.json",
+      "originalSha256": "664bfd138a44215fc2376cbe8d645e2b8dc5189de8f040d4ab8fe93a2197ab84",
+      "publicSha256": "39530dff083b330d91361b84a60c950f40a7096b077e6e6b3750aed99d56cd6f",
+      "bytes": 6869,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/index.json",
+      "sourceRelativePath": "证据包/index.json",
+      "originalSha256": "9466ff691c0c0288084efcf09453f050b2d4fcb719ebf934aff57491837e68fc",
+      "publicSha256": "75df593005ad9c418e2db9a6e4ce45b868c6bfea717e8586164c0c15fbd233ab",
+      "bytes": 108064,
+      "changed": true
+    },
+    {
+      "file": "docs/证据包/package-summary.json",
+      "sourceRelativePath": "证据包/package-summary.json",
+      "originalSha256": "72fcb06a80a1ec4d102a16ed76471a6edb888ae1796d8a8cb28771d355501b58",
+      "publicSha256": "72fcb06a80a1ec4d102a16ed76471a6edb888ae1796d8a8cb28771d355501b58",
+      "bytes": 4473,
+      "changed": false
+    },
+    {
+      "file": "docs/证据包/resources-summary.json",
+      "sourceRelativePath": "证据包/resources-summary.json",
+      "originalSha256": "2d91f1bf8c0d5a6a6bf6fd9a22602d18060f527e6c2eb29603f026bf39807ea3",
+      "publicSha256": "2d91f1bf8c0d5a6a6bf6fd9a22602d18060f527e6c2eb29603f026bf39807ea3",
+      "bytes": 205053,
+      "changed": false
+    }
+  ]
+}

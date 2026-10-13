@@ -1,0 +1,27 @@
+    /* JADX WARN: Multi-variable type inference failed */
+    public final void F4(Pair<? extends List<? extends Object>, ? extends DiffUtil.DiffResult> pair, boolean z100) {
+        if (PatchProxy.proxyVoid2Para(pair, new Boolean(z100), this, AsyncImageGalleryController.class, 253034)) {
+            return;
+        }
+        List<? extends Object> first = pair.getFirst();
+        ArrayList arrayList = new ArrayList();
+        for (Object obj : first) {
+            if (obj instanceof x57.b) {
+                arrayList.add(obj);
+            }
+        }
+        Iterator it9 = arrayList.iterator();
+        while (it9.hasNext()) {
+            ((x57.b) it9.next()).l().i1(z100);
+        }
+        getAdapter().d0(pair.getFirst());
+        K4();
+        pair.getSecond().dispatchUpdatesTo(getAdapter());
+        ((i2) getPresenter()).e0().post(new Runnable() { // from class: w66.y
+            @Override // java.lang.Runnable
+            public final void run() {
+                AsyncImageGalleryController.G4(this.f341236d);
+            }
+        });
+        o5().A();
+    }

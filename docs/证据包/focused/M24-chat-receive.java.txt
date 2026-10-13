@@ -1,0 +1,22 @@
+    public final void i(a0 a0Var, boolean z4) {
+        w wVar;
+        b2.b("ChatMessage", "long link");
+        a(a0Var.f222780d);
+        if (!f42265k) {
+            new r83.c(a0Var, 0, 0, z4, 6, null).e();
+            return;
+        }
+        f42257c = ca7.d.f17048a.a().getAliasInt();
+        f fVar = f42270p.a().get(String.valueOf(f42257c));
+        if (fVar != null) {
+            b2.b("ChatMessage", "networkStatus = " + f42257c + " timeout= " + fVar.b());
+            new r83.c(a0Var, fVar.b() * 1000, fVar.a(), z4).e();
+            wVar = w.f11939a;
+        } else {
+            wVar = null;
+        }
+        if (wVar == null) {
+            b2.b("ChatMessage", "no config");
+            new r83.c(a0Var, 0, 0, z4, 6, null).e();
+        }
+    }

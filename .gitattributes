@@ -1,0 +1,4 @@
+# Research evidence is hash-addressed; preserve exact bytes across platforms.
+* -text
+*.png binary
+*.mp4 binary

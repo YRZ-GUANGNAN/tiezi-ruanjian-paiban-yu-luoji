@@ -1,0 +1,620 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-13T15:48:46.000Z",
+  "scope": "8.72.0 排版、动效与客户端局部机制；9.49.1仅静态对照",
+  "deviceAlias": "meizu21-A",
+  "counts": {
+    "newActionObservations": 9,
+    "newMotionRecordings": 4,
+    "reusedMotionRecordings": 1,
+    "layoutMetrics": 84,
+    "layoutSourceScreens": 12,
+    "layoutFigures": 6,
+    "coreStaticRecords": 77
+  },
+  "environment": {
+    "id": "T00-environment",
+    "file": "运行/environment.json",
+    "sha256": "6f3deef7aefa17e67632635351cfcb8f0f3f9ae21a0ab5af7e3e5e9e0f4aa03b"
+  },
+  "observations": [
+    {
+      "id": "T01-home",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "capture",
+      "parameters": [],
+      "inputAtUtc": null,
+      "result": "已装App的首页基线。",
+      "recording": false,
+      "workspaceRelativeSource": "work/xhs-mobile-new/device/T01-home",
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "bytes": 43006,
+          "sha256": "c46b871222ab384863036450e1a63a1dba89dc3cc81889cf1cb5fc4869719c74",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "observation.json",
+          "bytes": 414,
+          "sha256": "537d8be08408824c1073a92e7bd1679a01207b7580468133cea5bf4c696166f0",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "screen.png",
+          "bytes": 34082,
+          "sha256": "61f7f8de5af7c3d1a76de9afea767889072986baf3fbb877b557f8a63b513813",
+          "availability": "retained_locally_not_bundled"
+        }
+      ],
+      "limits": "截图与层级采样非同一时刻。"
+    },
+    {
+      "id": "T02-detail-enter",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "260",
+        "560"
+      ],
+      "inputAtUtc": "2026-10-13T07:51:33.083Z",
+      "result": "公共单图笔记详情进入；专门录屏。",
+      "recording": true,
+      "workspaceRelativeSource": "work/xhs-mobile-new/deep/device/T02-detail-enter",
+      "sources": [
+        {
+          "name": "after.png",
+          "bytes": 1152023,
+          "sha256": "de8c47a5cf2b02efa9699f48c2b7a4635307f021fe5d4839c5505459341f4eeb",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "after.xml",
+          "bytes": 20784,
+          "sha256": "e6684c029562cfedee3d0267dbbd829fe2d9d1832d3cac5739947cbf1e428aaf",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "before.png",
+          "bytes": 2643881,
+          "sha256": "aed6aa4bd3f1fe55c8d4b854b8ee4e1ba4807169229eeb732e12e85af6cd68bd",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "before.xml",
+          "bytes": 43006,
+          "sha256": "c46b871222ab384863036450e1a63a1dba89dc3cc81889cf1cb5fc4869719c74",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "gfx-after.txt",
+          "bytes": 53381,
+          "sha256": "2f2ebb4014e4529fbdb4e8f80577864236bd7d88f0b28e2c28f1fd54dc871d19",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "gfx-before.txt",
+          "bytes": 45703,
+          "sha256": "1ce7bff9132c8f7a7e19b9052fd0900bd6f120d616d96f51f3a8c91335f423f3",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "motion.mp4",
+          "bytes": 739379,
+          "sha256": "8e5080366b8205f7793ec073e386769ca3952dff37e8d701cbaa211fac2ba9c0",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "observation.json",
+          "bytes": 1322,
+          "sha256": "56c4727828bb13dc6fa79177d142b43863bef6aa45bde6184830be23404e00ca",
+          "availability": "retained_locally_not_bundled"
+        }
+      ],
+      "limits": "录屏PTS与电脑输入时钟没有精确同步。逐帧时长由像素变化测量；输入返回耗时不等于动画。gfxinfo是框架帧统计，不代表视频解码帧率。"
+    },
+    {
+      "id": "T03-detail-exit",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "back",
+      "parameters": [],
+      "inputAtUtc": "2026-10-13T07:59:32.454Z",
+      "result": "系统返回首页；专门录屏。",
+      "recording": true,
+      "workspaceRelativeSource": "work/xhs-mobile-new/deep/device/T03-detail-exit",
+      "sources": [
+        {
+          "name": "after.png",
+          "bytes": 2643489,
+          "sha256": "dbfab3607243abc87ec8f054669e483cb1d40678f29e9f2bd2a079f3f694a6a1",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "after.xml",
+          "bytes": 43006,
+          "sha256": "c46b871222ab384863036450e1a63a1dba89dc3cc81889cf1cb5fc4869719c74",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "before.png",
+          "bytes": 1151503,
+          "sha256": "cfc4f2f68be924a5a34c8c189fc1d9a12b4d26082665755cd5117876a15d2ac5",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "before.xml",
+          "bytes": 20784,
+          "sha256": "e6684c029562cfedee3d0267dbbd829fe2d9d1832d3cac5739947cbf1e428aaf",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "gfx-after.txt",
+          "bytes": 45648,
+          "sha256": "0124483a28eef1a15934416f70271935646704b6ace3d81206ad8afea0000e02",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "gfx-before.txt",
+          "bytes": 53381,
+          "sha256": "cf70d7913d26220ab9df2c03d1d04d7f23dc42b411aca1be5b38a2d90c0120ea",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "motion.mp4",
+          "bytes": 722761,
+          "sha256": "1ab8a5c77773a253a89be6bb20721f5c8791defe3b9a469d0dca55650979cf08",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "observation.json",
+          "bytes": 1298,
+          "sha256": "6d4fe1defe2e9e4d133706a4e61f6d5e2836da7cf7f35bf56f91fcfd316755da",
+          "availability": "retained_locally_not_bundled"
+        }
+      ],
+      "limits": "录屏PTS与电脑输入时钟没有精确同步。逐帧时长由像素变化测量；输入返回耗时不等于动画。gfxinfo是框架帧统计，不代表视频解码帧率。"
+    },
+    {
+      "id": "T04-video-open",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "790",
+        "580"
+      ],
+      "inputAtUtc": "2026-10-13T08:06:48.594Z",
+      "result": "打开视频标记卡片；采集成功，控制台格式化报错，不能据此推断播放器机制。",
+      "recording": false,
+      "workspaceRelativeSource": "work/xhs-mobile-new/device/T04-video-open",
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "bytes": 47797,
+          "sha256": "cf0576d6dcd79f59f64e729147b98ee046c98a622d6fba0c297343326aafa8db",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "observation.json",
+          "bytes": 462,
+          "sha256": "6c9d773e11c88d2b7abc828651b26db3b733e46106953966b212784223f02884",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "screen.png",
+          "bytes": 1708576,
+          "sha256": "710a031710396ec01c5728e4503823c0b407fc825689b2cd7b8eb0aee177b5cb",
+          "availability": "retained_locally_not_bundled"
+        }
+      ],
+      "limits": "截图与层级采样非同一时刻。"
+    },
+    {
+      "id": "T04b-current",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "capture",
+      "parameters": [],
+      "inputAtUtc": null,
+      "result": "断连后重新观察的新首页；不与断连前拼接成连续时间线。",
+      "recording": false,
+      "workspaceRelativeSource": "work/xhs-mobile-new/device/T04b-current",
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "bytes": 41852,
+          "sha256": "94735e1732f7f6a2ec34ad28d57db502185e98f20961751887c017e646bbc5c1",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "observation.json",
+          "bytes": 418,
+          "sha256": "c8c664c71678b691bc49395f2a42a868a5ad099fc8f1c5b0728403fe6998da3c",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "screen.png",
+          "bytes": 2188781,
+          "sha256": "a88ad68fd65c5263a875bc0344ebf9621fabbd66d2cef1c64949d4e20321e53b",
+          "availability": "retained_locally_not_bundled"
+        }
+      ],
+      "limits": "截图与层级采样非同一时刻。"
+    },
+    {
+      "id": "T04c-video-open",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "260",
+        "1500"
+      ],
+      "inputAtUtc": "2026-10-13T08:23:53.743Z",
+      "result": "当前首页打开公共美食视频，为评论实验建立新基线。",
+      "recording": false,
+      "workspaceRelativeSource": "work/xhs-mobile-new/device/T04c-video-open",
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "bytes": 35612,
+          "sha256": "9760b79afc915dffd2beb976aec8887725b06b1f926f796c133b63cb0740a8f0",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "observation.json",
+          "bytes": 464,
+          "sha256": "4f797cf7907a9865a988a4eb122b9902b9142e1434271783cf39d42002bdace9",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "screen.png",
+          "bytes": 1899486,
+          "sha256": "3319667f3340aa207220e53f6358af7efc9334e6da97ddee33cd64a96378b924",
+          "availability": "retained_locally_not_bundled"
+        }
+      ],
+      "limits": "截图与层级采样非同一时刻。"
+    },
+    {
+      "id": "T05-comment-enter",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "1003",
+        "1330"
+      ],
+      "inputAtUtc": "2026-10-13T08:26:51.462Z",
+      "result": "点击视频评论入口展开面板；专门录屏。",
+      "recording": true,
+      "workspaceRelativeSource": "work/xhs-mobile-new/deep/device/T05-comment-enter",
+      "sources": [
+        {
+          "name": "after.png",
+          "bytes": 739381,
+          "sha256": "400420b9c67370963ff2e9fef5b514b98956efa1029aca9e44f4dbcca3adc6de",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "after.xml",
+          "bytes": 45794,
+          "sha256": "92a9256beb62d074ac961041eddd033e9ecc6012c04f8226a95414a27209fb86",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "before.png",
+          "bytes": 2419986,
+          "sha256": "870689644d7cc00aadc3f1b2bbd1d87780f86eaccd78073d5c46714761742f74",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "before.xml",
+          "bytes": 35613,
+          "sha256": "82090b1afe827864c5647249d4ba459ec3588da36852e7a481d03ac4c825fbf9",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "gfx-after.txt",
+          "bytes": 134207,
+          "sha256": "d09d8700fd70ffae5abe688ceff454cf4b7eb7cfad0c045ea8b00799b67c2b5b",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "gfx-before.txt",
+          "bytes": 125174,
+          "sha256": "af3000b6367e38b9caeb90a501cb5015a7ebeefe14c0391ca26bb038afcfdeab",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "motion.mp4",
+          "bytes": 5693494,
+          "sha256": "071143cdf0a54323d94835c9d60a4b31e62443b27a6659281e5a03ef9fb5565b",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "observation.json",
+          "bytes": 1325,
+          "sha256": "df4e95ea1a5f5c0bbe1667d8f336794c0b443e1f5fdae258000f38570f09ad60",
+          "availability": "retained_locally_not_bundled"
+        }
+      ],
+      "limits": "录屏PTS与电脑输入时钟没有精确同步。逐帧时长由像素变化测量；输入返回耗时不等于动画。gfxinfo是框架帧统计，不代表视频解码帧率。"
+    },
+    {
+      "id": "T06-comment-exit",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "back",
+      "parameters": [],
+      "inputAtUtc": "2026-10-13T08:28:30.617Z",
+      "result": "系统返回关闭评论面板；专门录屏。",
+      "recording": true,
+      "workspaceRelativeSource": "work/xhs-mobile-new/deep/device/T06-comment-exit",
+      "sources": [
+        {
+          "name": "after.png",
+          "bytes": 2283461,
+          "sha256": "c40fb24bddbe7263f4774bc0c314d49ab3e4ebfaced12cc66a7bc974d8cbaf0b",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "after.xml",
+          "bytes": 35613,
+          "sha256": "133f428b62baca18f0069e0ef59ff88a02f237bf1d6872406be69c5aeb274e8b",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "before.png",
+          "bytes": 728121,
+          "sha256": "ac3f774f31730f92e8d96824ebcce48700f69fdea885e1edc84a1ef9565bf316",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "before.xml",
+          "bytes": 45794,
+          "sha256": "92a9256beb62d074ac961041eddd033e9ecc6012c04f8226a95414a27209fb86",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "gfx-after.txt",
+          "bytes": 125533,
+          "sha256": "081aa02bbe07fd3724b45def13e2ed06ae426d94728e2e30ecdf26a155c25cd6",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "gfx-before.txt",
+          "bytes": 98921,
+          "sha256": "9a4b0674219dbbd4705c649bd7dbecb36471b0e2fcfe5e73f13b4996bf6e317c",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "motion.mp4",
+          "bytes": 8478839,
+          "sha256": "5b9a50086081b4690c57161e2fc73698f609ce0b5db75784827de61ca64450d8",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "observation.json",
+          "bytes": 1299,
+          "sha256": "95220193d190f1cec697c9d9cd177c73e10afc02e83ea93287dcca3b7b030379",
+          "availability": "retained_locally_not_bundled"
+        }
+      ],
+      "limits": "录屏PTS与电脑输入时钟没有精确同步。逐帧时长由像素变化测量；输入返回耗时不等于动画。gfxinfo是框架帧统计，不代表视频解码帧率。"
+    },
+    {
+      "id": "T07-finish-home",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "back",
+      "parameters": [],
+      "inputAtUtc": "2026-10-13T08:35:27.824Z",
+      "result": "系统返回发现首页；本轮最后一次手机操作。",
+      "recording": false,
+      "workspaceRelativeSource": "work/xhs-mobile-new/device/T07-finish-home",
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "bytes": 42179,
+          "sha256": "0e38bd6a037568d5cf2c7c91a4c1ca0578db9e0b8ab3fa30e08e5565798a797a",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "observation.json",
+          "bytes": 440,
+          "sha256": "aadd528a40c210ffa2623f26a059f79503bacc604248c0b3b71b813a4b1f37f8",
+          "availability": "retained_locally_not_bundled"
+        },
+        {
+          "name": "screen.png",
+          "bytes": 2300264,
+          "sha256": "04e2a0f7c32635fa1d1e2ea129042396136712057941cc17ef6dea0561aa4753",
+          "availability": "retained_locally_not_bundled"
+        }
+      ],
+      "limits": "截图与层级采样非同一时刻。"
+    }
+  ],
+  "layoutSources": [
+    {
+      "id": "R01",
+      "capture_at_utc": "2026-10-13T05:47:49.981Z",
+      "screenshot_sha256": "60b11adf492c4023e51a459eac53b8233c63fba81e24fca97e5a8da165f67260",
+      "hierarchy_sha256": "f150542703d42222975467f1096ada364aed30851e5dfe7e5f789b362bf67280",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R01-home",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R06",
+      "capture_at_utc": "2026-10-13T05:49:25.994Z",
+      "screenshot_sha256": "70789af4596584d63209f31d1ba228588f320ae86d2b18444c13bba523aba350",
+      "hierarchy_sha256": "672613ea55c79a0023d82c65058e4e68b70fa04fe36bf9687a5c4533a6909d69",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R06-video-comments",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R19",
+      "capture_at_utc": "2026-10-13T05:53:10.938Z",
+      "screenshot_sha256": "75232bac806506baeafc9fd06d53ab7007eacfa0a4a9ded433d6eb72115578fd",
+      "hierarchy_sha256": "eefb9c3fb86d36f2f289bab27638f9269c1a06ec768b007344999f71aad4bf8b",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R19-image-comments",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R27",
+      "capture_at_utc": "2026-10-13T05:55:50.521Z",
+      "screenshot_sha256": "376d92b91801523de92b866f25d9c579d68abf33db92da3c14bb90a77ce52d3b",
+      "hierarchy_sha256": "ac93fe1cd097d1f68937526e338bbc45021500e8b9e29138203bdd859255b09d",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R27-gallery-open",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R29",
+      "capture_at_utc": "2026-10-13T05:56:19.302Z",
+      "screenshot_sha256": "dc1e174bc3e39fb567b5e73abc88b8231117a5496d1e5a2d5a612e4b39253bef",
+      "hierarchy_sha256": "efb76c7e588caf7fbb0ad8a9f9b9002cb794a8974ee111d167cfd40e07735645",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R29-gallery-next",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R49",
+      "capture_at_utc": "2026-10-13T06:02:14.105Z",
+      "screenshot_sha256": "73e375d2c811bf1d455f56b395ff562b59bc0911c28790d543babba2d1f67265",
+      "hierarchy_sha256": "c0bbb1dcceb921e1f74f11b5bd0d0adeda19333187083fba7d22c24eaddb00d8",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R49-author-stable",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R50",
+      "capture_at_utc": "2026-10-13T06:02:33.088Z",
+      "screenshot_sha256": "8b9f28c71a8552454026161cd0d9a76f5f9cc20bbc9d32fc8c565f4c279acaf6",
+      "hierarchy_sha256": "f0a2cc9572b3574778af083efdf83b8e7adf30fcc72670ca82278fc14625a2fb",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R50-author-scroll",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R52",
+      "capture_at_utc": "2026-10-13T06:03:09.771Z",
+      "screenshot_sha256": "a806244f77c0f2012d086d8a3f49a86d42b2b7d34c12de971e5cea53a0f5a506",
+      "hierarchy_sha256": "f0a2cc9572b3574778af083efdf83b8e7adf30fcc72670ca82278fc14625a2fb",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R52-author-notes-restore",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R59",
+      "capture_at_utc": "2026-10-13T06:05:27.781Z",
+      "screenshot_sha256": "7eed1a9e10c7de71fa7ae875298f26f6baa31e75a6ca8b10a741cd50e285ec4f",
+      "hierarchy_sha256": "b39766da803a8d37f030b229bd0b2c757b1b150e985449446ed47f2756c28892",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R59-search-stable",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R61",
+      "capture_at_utc": "2026-10-13T06:06:05.994Z",
+      "screenshot_sha256": "4f74cd229fd7e9c178b136bfa111bec106c10de2a30560c7f99987f3d2c89c27",
+      "hierarchy_sha256": "b39766da803a8d37f030b229bd0b2c757b1b150e985449446ed47f2756c28892",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R61-search-return",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R63",
+      "capture_at_utc": "2026-10-13T06:06:43.754Z",
+      "screenshot_sha256": "b9392deb8c9f1f93ca054cdf6398d9d79eb63cf015687489ff39d287d47fb6d7",
+      "hierarchy_sha256": "3a9146eb8eb88b2d758d486de706cddc085e449d76a3b74e33333850c2750c41",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R63-search-filter",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R64",
+      "capture_at_utc": "2026-10-13T06:07:03.799Z",
+      "screenshot_sha256": "66dd7806547fdc6837b0b9100549afcab1791d6ecc5e85c5d48cefce1a9058f1",
+      "hierarchy_sha256": "096f01b54a71a56befd69d2cf751bb5ac5f763e060c70ab7f82d5e7eda405eb9",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R64-filter-image",
+      "availability": "retained_locally_not_bundled"
+    }
+  ],
+  "staticIndex": "机制/evidence-index.json",
+  "failedAttempts": [
+    {
+      "id": "T05-first-attempt",
+      "status": "stopped_before_action",
+      "reason": "设备已断开，前台保护阻止点击；未建完整记录，不计成功观察。"
+    }
+  ],
+  "reusedSources": [
+    {
+      "id": "R31",
+      "workspaceRelativeSource": "work/xhs-mobile-new/device/R31-gallery-timing",
+      "sha256": "81546e894c3b618128cb1f3ce33aa1aec670f126b7fed601607c4376c191870a",
+      "availability": "original_retained_locally_cropped_derivative_may_be_bundled"
+    }
+  ],
+  "exclusions": [
+    "APK",
+    "raw_phone_UI_XML",
+    "uncropped_phone_recordings",
+    "private_search_history",
+    "contacts",
+    "follow_relationships",
+    "precise_location",
+    "device_serial"
+  ],
+  "limitations": [
+    "样本计数不等于完整功能用例数。",
+    "静态默认分支未作动态方法跟踪。",
+    "T04与T04b之间断连，不能拼成连续动作序列。",
+    "本轮不发布、发送、点赞、收藏、关注或交易。"
+  ]
+}

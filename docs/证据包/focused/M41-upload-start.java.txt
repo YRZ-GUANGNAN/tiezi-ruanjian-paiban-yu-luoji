@@ -1,0 +1,17 @@
+    public void y() {
+        Object aVar;
+        g gVar = this.analyzer;
+        MixedToken mixedToken = this.currentAvailableToken;
+        n0 n0Var = this.uploaderParams;
+        gVar.b(mixedToken, n0Var.f195171e, 0, n0Var.f195167a, n0Var.f195174h, n0Var.f195180n);
+        try {
+            LocalBroadcastManager.getInstance(df7.b.a()).registerReceiver(this.receiver, new IntentFilter("action_upload_timeout"));
+            aVar = w.f11939a;
+        } catch (Throwable th2) {
+            aVar = new bn9.h.a(th2);
+        }
+        Throwable thB = bn9.h.b(aVar);
+        if (thB != null) {
+            t18.a.f199880a.e(thB);
+        }
+    }

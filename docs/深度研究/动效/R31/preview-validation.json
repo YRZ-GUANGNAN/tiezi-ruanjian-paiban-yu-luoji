@@ -1,0 +1,17 @@
+{
+  "sourceSha256": "81546e894c3b618128cb1f3ce33aa1aec670f126b7fed601607c4376c191870a",
+  "previewSha256": "6df133ca592e3370c6c7968a9f2b7298d4af059f7280eb7c13ab569383da8c0b",
+  "sourceFrames": 105,
+  "previewFrames": 105,
+  "maxPtsDifferenceSeconds": 0.0,
+  "sourceDurationSeconds": 11.2678,
+  "previewDurationSeconds": 11.2678,
+  "cropOriginalPx": [
+    0,
+    92,
+    1080,
+    2270
+  ],
+  "privacy": "System bars excluded; no audio; original PTS retained at 1/90000 timebase.",
+  "limits": "Preview re-encodes pixels. Numeric analysis uses the immutable original recording, not this lossy derivative."
+}

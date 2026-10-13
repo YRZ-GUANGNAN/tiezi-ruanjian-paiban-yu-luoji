@@ -1,0 +1,4 @@
+    public final void t7(com.airbnb.lottie.l lVar, boolean z4, boolean z9) {
+        x3().b((int) TypedValue.applyDimension(1, z9 ? 90 : 86, Resources.getSystem().getDisplayMetrics()), (int) (z9 ? TypedValue.applyDimension(1, 140, Resources.getSystem().getDisplayMetrics()) : TypedValue.applyDimension(1, 134, Resources.getSystem().getDisplayMetrics())));
+        x7(lVar, z4);
+    }

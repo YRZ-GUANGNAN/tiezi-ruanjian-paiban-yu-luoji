@@ -1,0 +1,7 @@
+    @Override // se4.i
+    public u getAutoscrollState(b bVar) {
+        if (hasAutoscrollFunction(bVar)) {
+            return isActivated ? u.ACTIVATED : u.DEACTIVATED;
+        }
+        return u.DISABLED;
+    }

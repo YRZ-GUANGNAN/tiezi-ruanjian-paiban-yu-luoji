@@ -1,0 +1,138 @@
+{
+  "evidence_id": "ev_eb2520a90296a79644051fb7c7f930fea1b921d15ab87bea375f95fc280a7c2f",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter",
+    "method_name": "e7",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"f108557r\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f108558s\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f108559t\",\"def_pos\":0,\"type\":\"boolean\"}],\"field_count\":3,\"full_name\":\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter\",\"name\":\"NoteDetailPhotoNoteItemPresenter\",\"inner_classes\":[\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.a\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.a0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.b\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.b0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.c\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.c0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.d\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.d0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.e\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.e0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.f\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.f0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.g\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.g0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.h\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.h0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.i\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.i0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.j\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.j0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.k\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.k0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.l\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.l0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.m\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.m0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.n\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.n0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.o\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.o0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.p\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.p0\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.q\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.r\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.s\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.t\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.u\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.v\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.w\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.x\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.y\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.z\"],\"inner_class_count\":42,\"method_count\":33,\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"I6\",\"is_constructor\":false,\"signature\":\"I6(java.lang.Integer): ia6.b\",\"def_pos\":0},{\"name\":\"J6\",\"is_constructor\":false,\"signature\":\"J6(java.lang.Integer): aa6.e\",\"def_pos\":0},{\"name\":\"K6\",\"is_constructor\":false,\"signature\":\"K6(java.lang.Integer): aa6.e\",\"def_pos\":0},{\"name\":\"L6\",\"is_constructor\":false,\"signature\":\"L6(com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter, int, x57.b, f7.c, cm.g$b, h0.d): void\",\"def_pos\":0},{\"name\":\"M6\",\"is_constructor\":false,\"signature\":\"M6(com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter, boolean, int, x57.b, f7.d): void\",\"def_pos\":0},{\"name\":\"N6\",\"is_constructor\":false,\"signature\":\"N6(com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter): void\",\"def_pos\":0},{\"name\":\"O6\",\"is_constructor\":false,\"signature\":\"O6(com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter): void\",\"def_pos\":0},{\"name\":\"P6\",\"is_constructor\":false,\"signature\":\"P6(com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter, java.lang.String, java.lang.String, long): void\",\"def_pos\":0},{\"name\":\"Q6\",\"is_constructor\":false,\"signature\":\"Q6(com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter, int, int): void\",\"def_pos\":0},{\"name\":\"R6\",\"is_constructor\":false,\"signature\":\"R6(com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter): void\",\"def_pos\":0},{\"name\":\"S6\",\"is_constructor\":false,\"signature\":\"S6(int, x57.b, f7.c\\u003ce8.g\\u003e, cm.g$b, h0.d): void\",\"def_pos\":0},{\"name\":\"T6\",\"is_constructor\":false,\"signature\":\"T6(boolean, int, x57.b, f7.d\\u003c? super e8.g\\u003e): void\",\"def_pos\":0},{\"name\":\"U6\",\"is_constructor\":false,\"signature\":\"U6(): void\",\"def_pos\":0},{\"name\":\"V6\",\"is_constructor\":false,\"signature\":\"V6(): void\",\"def_pos\":0},{\"name\":\"W6\",\"is_constructor\":false,\"signature\":\"W6(): void\",\"def_pos\":0},{\"name\":\"X6\",\"is_constructor\":false,\"signature\":\"X6(): void\",\"def_pos\":0},{\"name\":\"Y6\",\"is_constructor\":false,\"signature\":\"Y6(java.lang.Integer): ia6.b\",\"def_pos\":0},{\"name\":\"Z6\",\"is_constructor\":false,\"signature\":\"Z6(java.lang.Integer): aa6.e\",\"def_pos\":0},{\"name\":\"a7\",\"is_constructor\":false,\"signature\":\"a7(java.lang.Integer): aa6.e\",\"def_pos\":0},{\"name\":\"b7\",\"is_constructor\":false,\"signature\":\"b7(): ba6.c\",\"def_pos\":0},{\"name\":\"c7\",\"is_constructor\":false,\"signature\":\"c7(): p67.b\",\"def_pos\":0},{\"name\":\"d7\",\"is_constructor\":false,\"signature\":\"d7(java.lang.String, java.lang.String): boolean\",\"def_pos\":0},{\"name\":\"e7\",\"is_constructor\":false,\"signature\":\"e7(com.xingin.entities.ImageBean, boolean, int, f7.d\\u003c? super e8.g\\u003e): void\",\"def_pos\":0},{\"name\":\"f7\",\"is_constructor\":false,\"signature\":\"f7(int, x57.b, java.lang.Object): void\",\"def_pos\":0},{\"name\":\"g7\",\"is_constructor\":false,\"signature\":\"g7(java.lang.String, java.lang.String, long): void\",\"def_pos\":0},{\"name\":\"h7\",\"is_constructor\":false,\"signature\":\"h7(int, int): void\",\"def_pos\":0},{\"name\":\"i7\",\"is_constructor\":false,\"signature\":\"i7(java.lang.String): void\",\"def_pos\":0},{\"name\":\"j7\",\"is_constructor\":false,\"signature\":\"j7(): void\",\"def_pos\":0},{\"name\":\"x6\",\"is_constructor\":false,\"signature\":\"x6(): void\",\"def_pos\":0},{\"name\":\"y0\",\"is_constructor\":false,\"signature\":\"y0(int, java.lang.Object, java.lang.Object): void\",\"def_pos\":0},{\"name\":\"y6\",\"is_constructor\":false,\"signature\":\"y6(): void\",\"def_pos\":0},{\"name\":\"z\",\"is_constructor\":false,\"signature\":\"z(int): void\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter",
+          "method_name": "e7",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_name\":\"e7\",\"overload_count\":1,\"body\":\"    public final void e7(ImageBean imageBean, boolean z100, int i100, f7.d\\u003c? super e8.g\\u003e dVar) {\\r\\n        h0.d dVar2;\\r\\n        if (PatchProxy.proxyVoid4Para(imageBean, new Boolean(z100), new Integer(i100), dVar, this, NoteDetailPhotoNoteItemPresenter.class, 315096)) {\\r\\n            return;\\r\\n        }\\r\\n        if (wq1.i.f346132a.h1() \\u003c\\u003d 0 || z100) {\\r\\n            dVar2 \\u003d new h0.d(\\\"img_type_notedetail_cover\\\", 0, h0.d.a.b(h0.d.f177274r, \\\"photonote\\\", null, 2, null), false, 10, null);\\r\\n        } else {\\r\\n            dVar2 \\u003d new h0.d(\\\"img_type_notedetail_cover\\\", 4, h0.d.a.b(h0.d.f177274r, \\\"photonote\\\", null, 2, null), false, 8, null);\\r\\n        }\\r\\n        dg4.d dVar3 \\u003d new dg4.d(\\\"photonote\\\", \\\"bindImageInfo_\\\" + c7().z(), z100, false, \\\"Cover\\\", i100, null, 0L, 0, null, 960, null);\\r\\n        if (!((Boolean) l84.c.a().j(\\\"android_photonote_img_load_opt\\\", new i0().getType(), Boolean.FALSE)).booleanValue()) {\\r\\n            ((XYImageView) w6().findViewById(l56.n.Q1)).l(new ai8.d(imageBean.p0(), 0, 0, null, 0, 0, null, 0, 0.0f, null, 1022, null), null, dVar2);\\r\\n            return;\\r\\n        }\\r\\n        j0 j0Var \\u003d new j0();\\r\\n        k0 k0Var \\u003d new k0(imageBean, dVar3, j0Var, dVar);\\r\\n        View viewW6 \\u003d w6();\\r\\n        int i101 \\u003d l56.n.Q1;\\r\\n        cm.c.f((XYImageView) viewW6.findViewById(i101), Uri.parse(imageBean.p0()), ((XYImageView) w6().findViewById(i101)).getWidth(), ((XYImageView) w6().findViewById(i101)).getHeight(), up7.c.b(), (144 \\u0026 16) !\\u003d 0 ? km.f.CENTER_CROP : null, (144 \\u0026 32) !\\u003d 0 ? null : dVar2, (144 \\u0026 64) !\\u003d 0 ? new km.b(null, 0, 0, 0, 0.0f, false, null, null, false, false, false, false, false, 7679, null) : new km.b.a().c(k0Var).b(j0Var).a(), (144 \\u0026 128) !\\u003d 0 ? com.facebook.imagepipeline.request.a.EnumC0870a.DEFAULT : null);\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter\",\"full_name\":\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.e7\",\"mode\":\"java\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter",
+    "method": {
+      "name": "e7",
+      "reported_signature": "e7(com.xingin.entities.ImageBean, boolean, int, f7.d<? super e8.g>): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void e7(ImageBean imageBean, boolean z100, int i100, f7.d<? super e8.g> dVar) {\r\n        h0.d dVar2;\r\n        if (PatchProxy.proxyVoid4Para(imageBean, new Boolean(z100), new Integer(i100), dVar, this, NoteDetailPhotoNoteItemPresenter.class, 315096)) {\r\n            return;\r\n        }\r\n        if (wq1.i.f346132a.h1() <= 0 || z100) {\r\n            dVar2 = new h0.d(\"img_type_notedetail_cover\", 0, h0.d.a.b(h0.d.f177274r, \"photonote\", null, 2, null), false, 10, null);\r\n        } else {\r\n            dVar2 = new h0.d(\"img_type_notedetail_cover\", 4, h0.d.a.b(h0.d.f177274r, \"photonote\", null, 2, null), false, 8, null);\r\n        }\r\n        dg4.d dVar3 = new dg4.d(\"photonote\", \"bindImageInfo_\" + c7().z(), z100, false, \"Cover\", i100, null, 0L, 0, null, 960, null);\r\n        if (!((Boolean) l84.c.a().j(\"android_photonote_img_load_opt\", new i0().getType(), Boolean.FALSE)).booleanValue()) {\r\n            ((XYImageView) w6().findViewById(l56.n.Q1)).l(new ai8.d(imageBean.p0(), 0, 0, null, 0, 0, null, 0, 0.0f, null, 1022, null), null, dVar2);\r\n            return;\r\n        }\r\n        j0 j0Var = new j0();\r\n        k0 k0Var = new k0(imageBean, dVar3, j0Var, dVar);\r\n        View viewW6 = w6();\r\n        int i101 = l56.n.Q1;\r\n        cm.c.f((XYImageView) viewW6.findViewById(i101), Uri.parse(imageBean.p0()), ((XYImageView) w6().findViewById(i101)).getWidth(), ((XYImageView) w6().findViewById(i101)).getHeight(), up7.c.b(), (144 & 16) != 0 ? km.f.CENTER_CROP : null, (144 & 32) != 0 ? null : dVar2, (144 & 64) != 0 ? new km.b(null, 0, 0, 0, 0.0f, false, null, null, false, false, false, false, false, 7679, null) : new km.b.a().c(k0Var).b(j0Var).a(), (144 & 128) != 0 ? com.facebook.imagepipeline.request.a.EnumC0870a.DEFAULT : null);\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "03d44f6fde2899b468f14936bc27638f6ee37ae3c8fc2cf5752d5e28919493a5",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

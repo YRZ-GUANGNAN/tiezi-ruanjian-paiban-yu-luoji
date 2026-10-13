@@ -1,0 +1,7 @@
+    public final void setFadeDuration(int i100) {
+        j7.a hierarchy;
+        if (PatchProxy.proxyVoid1Para(new Integer(i100), this, XYImageView.class, 56892) || (hierarchy = getHierarchy()) == null) {
+            return;
+        }
+        hierarchy.y(i100);
+    }

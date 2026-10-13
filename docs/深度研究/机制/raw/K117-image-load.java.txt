@@ -1,0 +1,21 @@
+    public final void e7(ImageBean imageBean, boolean z100, int i100, f7.d<? super e8.g> dVar) {
+        h0.d dVar2;
+        if (PatchProxy.proxyVoid4Para(imageBean, new Boolean(z100), new Integer(i100), dVar, this, NoteDetailPhotoNoteItemPresenter.class, 315096)) {
+            return;
+        }
+        if (wq1.i.f346132a.h1() <= 0 || z100) {
+            dVar2 = new h0.d("img_type_notedetail_cover", 0, h0.d.a.b(h0.d.f177274r, "photonote", null, 2, null), false, 10, null);
+        } else {
+            dVar2 = new h0.d("img_type_notedetail_cover", 4, h0.d.a.b(h0.d.f177274r, "photonote", null, 2, null), false, 8, null);
+        }
+        dg4.d dVar3 = new dg4.d("photonote", "bindImageInfo_" + c7().z(), z100, false, "Cover", i100, null, 0L, 0, null, 960, null);
+        if (!((Boolean) l84.c.a().j("android_photonote_img_load_opt", new i0().getType(), Boolean.FALSE)).booleanValue()) {
+            ((XYImageView) w6().findViewById(l56.n.Q1)).l(new ai8.d(imageBean.p0(), 0, 0, null, 0, 0, null, 0, 0.0f, null, 1022, null), null, dVar2);
+            return;
+        }
+        j0 j0Var = new j0();
+        k0 k0Var = new k0(imageBean, dVar3, j0Var, dVar);
+        View viewW6 = w6();
+        int i101 = l56.n.Q1;
+        cm.c.f((XYImageView) viewW6.findViewById(i101), Uri.parse(imageBean.p0()), ((XYImageView) w6().findViewById(i101)).getWidth(), ((XYImageView) w6().findViewById(i101)).getHeight(), up7.c.b(), (144 & 16) != 0 ? km.f.CENTER_CROP : null, (144 & 32) != 0 ? null : dVar2, (144 & 64) != 0 ? new km.b(null, 0, 0, 0, 0.0f, false, null, null, false, false, false, false, false, 7679, null) : new km.b.a().c(k0Var).b(j0Var).a(), (144 & 128) != 0 ? com.facebook.imagepipeline.request.a.EnumC0870a.DEFAULT : null);
+    }

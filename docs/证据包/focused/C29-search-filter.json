@@ -1,0 +1,240 @@
+{
+  "evidence_id": "ev_eba341d4db7de889e907194067d4d1be48df89ff1b7c35489b6b43f8e4a21f69",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"A\",\"type\":\"java.util.Map\\u003cjava.lang.Integer, android.view.View\\u003e\",\"def_pos\":0},{\"name\":\"B\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"__xst_injected_callback_list\",\"type\":\"java.lang.Object\",\"def_pos\":0},{\"name\":\"f36669t\",\"type\":\"el4.g0\",\"def_pos\":0},{\"name\":\"f36670u\",\"type\":\"f00.b\",\"def_pos\":0},{\"name\":\"f36671v\",\"type\":\"com.xingin.business_framework.action_dispatcher.ActionDispatcher\",\"def_pos\":0},{\"name\":\"f36672w\",\"type\":\"com.xingin.alioth.search.result.entities.ResultNoteFilterTag\",\"def_pos\":0},{\"name\":\"f36673x\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"f36674y\",\"type\":\"bn9.d\",\"def_pos\":0},{\"name\":\"f36675z\",\"type\":\"qx7.h\",\"def_pos\":0}],\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\",\"is_constructor\":true},{\"name\":\"_$_clearFindViewByIdCache\",\"def_pos\":0,\"signature\":\"_$_clearFindViewByIdCache(): void\",\"is_constructor\":false},{\"name\":\"f6\",\"def_pos\":0,\"signature\":\"f6(com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment): java.lang.Object\",\"is_constructor\":false},{\"name\":\"h6\",\"def_pos\":0,\"signature\":\"h6(): com.xingin.business_framework.action_dispatcher.ActionDispatcher\",\"is_constructor\":false},{\"name\":\"j6\",\"def_pos\":0,\"signature\":\"j6(): f00.b\",\"is_constructor\":false},{\"name\":\"j7\",\"def_pos\":0,\"signature\":\"j7(): nn9.l\\u003cyq9.c, bn9.w\\u003e\",\"is_constructor\":false},{\"name\":\"k6\",\"def_pos\":0,\"signature\":\"k6(): void\",\"is_constructor\":false},{\"name\":\"onAttach\",\"def_pos\":0,\"signature\":\"onAttach(android.content.Context): void\",\"is_constructor\":false},{\"name\":\"onCreateView\",\"def_pos\":0,\"signature\":\"onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle): android.view.View\",\"is_constructor\":false},{\"name\":\"onDestroy\",\"def_pos\":0,\"signature\":\"onDestroy(): void\",\"is_constructor\":false},{\"name\":\"onDestroyView\",\"def_pos\":0,\"signature\":\"onDestroyView(): void\",\"is_constructor\":false},{\"name\":\"onResume\",\"def_pos\":0,\"signature\":\"onResume(): void\",\"is_constructor\":false},{\"name\":\"onViewCreated\",\"def_pos\":0,\"signature\":\"onViewCreated(android.view.View, android.os.Bundle): void\",\"is_constructor\":false}],\"method_count\":13,\"inner_class_count\":2,\"inner_classes\":[\"com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment.a\",\"com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment.b\"],\"name\":\"SearchFilterPanelFragment\",\"full_name\":\"com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment\",\"field_count\":10}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "_$_clearFindViewByIdCache",
+        "reported_signature": "_$_clearFindViewByIdCache(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f6",
+        "reported_signature": "f6(com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h6",
+        "reported_signature": "h6(): com.xingin.business_framework.action_dispatcher.ActionDispatcher",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j6",
+        "reported_signature": "j6(): f00.b",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j7",
+        "reported_signature": "j7(): nn9.l<yq9.c, bn9.w>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k6",
+        "reported_signature": "k6(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "onAttach",
+        "reported_signature": "onAttach(android.content.Context): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "onCreateView",
+        "reported_signature": "onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle): android.view.View",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "onDestroy",
+        "reported_signature": "onDestroy(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "onDestroyView",
+        "reported_signature": "onDestroyView(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "onResume",
+        "reported_signature": "onResume(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "onViewCreated",
+        "reported_signature": "onViewCreated(android.view.View, android.os.Bundle): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "A",
+        "reported_type": "java.util.Map<java.lang.Integer, android.view.View>"
+      },
+      {
+        "name": "B",
+        "reported_type": "int"
+      },
+      {
+        "name": "__xst_injected_callback_list",
+        "reported_type": "java.lang.Object"
+      },
+      {
+        "name": "f36669t",
+        "reported_type": "el4.g0"
+      },
+      {
+        "name": "f36670u",
+        "reported_type": "f00.b"
+      },
+      {
+        "name": "f36671v",
+        "reported_type": "com.xingin.business_framework.action_dispatcher.ActionDispatcher"
+      },
+      {
+        "name": "f36672w",
+        "reported_type": "com.xingin.alioth.search.result.entities.ResultNoteFilterTag"
+      },
+      {
+        "name": "f36673x",
+        "reported_type": "int"
+      },
+      {
+        "name": "f36674y",
+        "reported_type": "bn9.d"
+      },
+      {
+        "name": "f36675z",
+        "reported_type": "qx7.h"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment.a",
+      "com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment.b"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "1ca0d1f17ad11a4c28bd4bc01433b02ed47ad7da795db09d34ca90ac8d5f3a93",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

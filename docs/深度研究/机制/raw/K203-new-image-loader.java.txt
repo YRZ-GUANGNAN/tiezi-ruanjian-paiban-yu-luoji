@@ -1,0 +1,64 @@
+    public final void db(final ImageBean imageBean, int i82) {
+        if (PatchProxy.proxyVoid2Para(imageBean, new Integer(i82), this, NoteDetailPhotoNoteItemPresenter.class, 756318)) {
+            return;
+        }
+        ltd.d dVar = new ltd.d("img_type_notedetail_cover", 0, ltd.d.Companion.a("photonote", String.valueOf(i82)), false, 10, null);
+        final int i100 = 0;
+        final boolean z100 = hk2.u.f230128a.z0() && Intrinsics.areEqual(Za().f423202d, MiniToolInteractionMode.PREVIEW) && StringsKt__StringsJVMKt.startsWith$default(imageBean.W0(), CapaStandaloneImagePublisherImpl.FILE_SCHEME, false, 2, null);
+        f fVar = f.f230285a;
+        View view = this.f120750d;
+        if (!fVar.b((view != null ? view : null).getContext())) {
+            NoteXYImageView.n(ab(), new jwc.e(imageBean.W0(), 0, 0, null, 0, 0, null, 0, 0.0f, null, 1022, null), null, dVar, null, z100, null, null, 104, null);
+            return;
+        }
+        NoteXYImageView noteXYImageViewAb = ab();
+        Function0 function0 = new Function0(this) { // from class: bq9.p
+
+            /* JADX INFO: renamed from: e, reason: collision with root package name */
+            public final /* synthetic */ NoteDetailPhotoNoteItemPresenter f24873e;
+
+            {
+                this.f24873e = this;
+            }
+
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                int i101 = i100;
+                boolean z101 = z100;
+                Cloneable cloneable = imageBean;
+                switch (i101) {
+                    case 0:
+                        NoteDetailPhotoNoteItemPresenter noteDetailPhotoNoteItemPresenter = this.f24873e;
+                        ImageBean imageBean2 = (ImageBean) cloneable;
+                        PatchProxyResult patchProxyResultProxy3Para = PatchProxy.proxy3Para(noteDetailPhotoNoteItemPresenter, imageBean2, new Boolean(z101), null, NoteDetailPhotoNoteItemPresenter.class, 756345);
+                        if (patchProxyResultProxy3Para.isSupported) {
+                            return (Unit) patchProxyResultProxy3Para.result;
+                        }
+                        xc9.s.j(noteDetailPhotoNoteItemPresenter.ab(), new jwc.e(imageBean2.W0(), 0, 0, null, 0, 0, null, 0, 0.0f, null, 1022, null), noteDetailPhotoNoteItemPresenter.La(), z101, new n(noteDetailPhotoNoteItemPresenter, 11));
+                        return Unit.INSTANCE;
+                    default:
+                        NoteDetailPhotoNoteItemPresenter noteDetailPhotoNoteItemPresenter2 = this.f24873e;
+                        dra.b bVar = (dra.b) cloneable;
+                        PatchProxyResult patchProxyResultProxy3Para2 = PatchProxy.proxy3Para(noteDetailPhotoNoteItemPresenter2, bVar, new Boolean(z101), null, NoteDetailPhotoNoteItemPresenter.class, 756343);
+                        if (patchProxyResultProxy3Para2.isSupported) {
+                            return (Unit) patchProxyResultProxy3Para2.result;
+                        }
+                        xc9.s.j(noteDetailPhotoNoteItemPresenter2.ab(), new jwc.e(bVar.o().W0(), 0, 0, null, 0, 0, null, 0, 0.0f, null, 1022, null), noteDetailPhotoNoteItemPresenter2.La(), z101, new n(noteDetailPhotoNoteItemPresenter2, 12));
+                        return Unit.INSTANCE;
+                }
+            }
+        };
+        if (PatchProxy.proxyVoid2Para(noteXYImageViewAb, function0, this, NoteDetailPhotoNoteItemPresenter.class, 756328)) {
+            return;
+        }
+        fk2.v vVar = fk2.v.f204366a;
+        vVar.getClass();
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(vVar, fk2.v.class, 97003);
+        if (!(patchProxyResultProxy0Para.isSupported ? ((Boolean) patchProxyResultProxy0Para.result).booleanValue() : ((Boolean) fk2.v.f204378m.getValue()).booleanValue())) {
+            function0.invoke();
+        } else if (noteXYImageViewAb.isLaidOut()) {
+            function0.invoke();
+        } else {
+            noteXYImageViewAb.getViewTreeObserver().addOnGlobalLayoutListener(new h1(noteXYImageViewAb, function0));
+        }
+    }

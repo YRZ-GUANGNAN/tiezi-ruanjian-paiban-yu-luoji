@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "generatedFor": "小红书手机端 8.72.0 动效逐帧研究",
+  "device": "meizu21-A",
+  "screenPx": [1080, 2340],
+  "timeBase": "1/90000",
+  "recordings": [
+    {
+      "id": "R31",
+      "kind": "gallery_and_indicator",
+      "sourceSha256": "81546e894c3b618128cb1f3ce33aa1aec670f126b7fed601607c4376c191870a",
+      "frameCount": 105,
+      "durationSeconds": 11.2678,
+      "firstGalleryChangeSeconds": 0.678556,
+      "gridTranslationReachedTargetSeconds": 1.148589,
+      "stableTailStartSeconds": 1.156733,
+      "stableTailEndSeconds": 1.181867,
+      "indicatorFadeFit": {
+        "model": "quadratic_explanatory_fit",
+        "startSeconds": 5.86,
+        "durationSeconds": 0.195,
+        "rmse": 0.007043936582130405
+      },
+      "staticCandidate": {
+        "fadeInMilliseconds": 200,
+        "holdMilliseconds": 5000,
+        "fadeOutMilliseconds": 200,
+        "status": "same-version-static-default-candidate"
+      },
+      "limits": [
+        "hand-off time is not synchronized to recording PTS",
+        "contrast fit is not source alpha or recovered interpolator"
+      ]
+    },
+    {
+      "id": "T02",
+      "kind": "detail_enter",
+      "sourceSha256": "8e5080366b8205f7793ec073e386769ca3952dff37e8d701cbaa211fac2ba9c0",
+      "frameCount": 123,
+      "durationSeconds": 7.600867,
+      "stableBeforeSeconds": 0.858678,
+      "firstVisibleChangeSeconds": 0.875278,
+      "targetReachedSeconds": 1.067156,
+      "firstChangeToTargetMilliseconds": 191.878,
+      "samplingBoundsMilliseconds": [183.111, 208.478],
+      "candidateMilliseconds": 200,
+      "direction": "right_to_left",
+      "limits": ["single entrance sample", "content loading is not the transition geometry"]
+    },
+    {
+      "id": "T03",
+      "kind": "detail_exit",
+      "sourceSha256": "1ab8a5c77773a253a89be6bb20721f5c8791defe3b9a469d0dca55650979cf08",
+      "frameCount": 62,
+      "durationSeconds": 7.9707,
+      "stableBeforeSeconds": 1.035878,
+      "firstVisibleChangeSeconds": 1.044056,
+      "geometryOffscreenSeconds": 1.326544,
+      "tailResidualSeconds": 1.343589,
+      "geometryMilliseconds": 282.488,
+      "includingTailResidualMilliseconds": 299.533,
+      "candidateMilliseconds": 300,
+      "direction": "left_to_right",
+      "limits": ["single exit sample", "tail includes residual encoded/content change"]
+    },
+    {
+      "id": "T05",
+      "kind": "comment_panel_enter",
+      "sourceSha256": "071143cdf0a54323d94835c9d60a4b31e62443b27a6659281e5a03ef9fb5565b",
+      "frameCount": 472,
+      "durationSeconds": 7.962522,
+      "stableTopPx": 633,
+      "firstReliableTrackSeconds": 1.028822,
+      "firstReliableTopPx": 1002,
+      "fullTopReachedSeconds": 1.120311,
+      "reliablyTrackedMilliseconds": 91.489,
+      "candidateMilliseconds": null,
+      "direction": "bottom_to_top",
+      "limits": [
+        "early translucent stage is not reliably tracked",
+        "full expand duration unknown",
+        "video scale timing not independently isolated"
+      ]
+    },
+    {
+      "id": "T06",
+      "kind": "comment_panel_exit",
+      "sourceSha256": "5b9a50086081b4690c57161e2fc73698f609ce0b5db75784827de61ca64450d8",
+      "frameCount": 526,
+      "durationSeconds": 7.980167,
+      "stableTopPx": 633,
+      "stableUntilSeconds": 0.926878,
+      "firstVisibleChangeSeconds": 0.942989,
+      "firstVisibleTopPx": 791,
+      "lastVisibleSeconds": 1.225589,
+      "lastVisibleTopPx": 2264,
+      "whiteEdgeSentinelSeconds": 1.234322,
+      "visibleGeometryMilliseconds": 291.333,
+      "samplingBoundsMilliseconds": [282.6, 307.444],
+      "candidateMilliseconds": 300,
+      "direction": "top_to_bottom",
+      "limits": ["white edge sentinel is not a compositor position", "interpolator class unknown"]
+    }
+  ]
+}

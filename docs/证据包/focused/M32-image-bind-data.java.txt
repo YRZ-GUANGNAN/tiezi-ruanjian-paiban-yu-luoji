@@ -1,0 +1,32 @@
+    public final void B7(NoteFeed noteFeed) {
+        TextureRenderViewV2 textureRenderViewV2 = (TextureRenderViewV2) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f090212);
+        ImageBean imageBean = (ImageBean) a0.d0(noteFeed.t0(), this.f55316r);
+        XhsFilterModel xhsFilterModelB = imageBean != null ? imageBean.B() : null;
+        if (xhsFilterModelB != null) {
+            String strG = xhsFilterModelB.g();
+            if (!(strG == null || strG.length() == 0)) {
+                p.q(textureRenderViewV2);
+                String strO = xhsFilterModelB.o();
+                if (!(strO == null || strO.length() == 0)) {
+                    String strO2 = xhsFilterModelB.o();
+                    if (strO2 != null) {
+                        ng9.a.C2644a.b(textureRenderViewV2, new File(strO2), true, false, null, 12, null);
+                        return;
+                    }
+                    return;
+                }
+                String strG2 = xhsFilterModelB.g();
+                if (strG2 != null) {
+                    Object context = textureRenderViewV2.getContext();
+                    ScopeProvider scopeProvider = context instanceof ScopeProvider ? (ScopeProvider) context : null;
+                    if (scopeProvider == null) {
+                        scopeProvider = ScopeProvider.UNBOUND;
+                    }
+                    n18.e.h(new n18.e(scopeProvider, strG2, xhsFilterModelB.h()), new h(xhsFilterModelB, textureRenderViewV2), false, null, null, 12, null);
+                    return;
+                }
+                return;
+            }
+        }
+        p.d(textureRenderViewV2);
+    }

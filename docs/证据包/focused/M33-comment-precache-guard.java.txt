@@ -1,0 +1,4 @@
+    @Override // aj4.a
+    public boolean isEnablePrecache() {
+        return this.isEnableUsePrecache;
+    }

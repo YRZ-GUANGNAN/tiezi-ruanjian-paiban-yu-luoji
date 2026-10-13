@@ -1,0 +1,861 @@
+{
+  "evidence_id": "ev_a43a142f5067f54b79dfcebc845ef68eaf5767516db9f41381ff50df69654197",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"f108312w\",\"def_pos\":0,\"type\":\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter$a\"},{\"name\":\"f108313q\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f108314r\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f108315s\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f108316t\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f108317u\",\"def_pos\":0,\"type\":\"android.os.Handler\"},{\"name\":\"f108318v\",\"def_pos\":0,\"type\":\"int\"}],\"field_count\":7,\"full_name\":\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter\",\"name\":\"NoteDetailImageDisplayPresenter\",\"inner_classes\":[\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.a\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.a0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.a1\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.b\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.b0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.b1\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.c\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.c0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.c1\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.d\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.d0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.d1\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.e\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.e0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.e1\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.f\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.f0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.f1\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.g\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.g0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.g1\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.h\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.h0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.h1\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.i\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.i0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.i1\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.j\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.j0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.k\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.k0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.l\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.l0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.m\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.m0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.n\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.n0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.o\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.o0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.p\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.p0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.q\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.q0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.r\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.r0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.s\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.s0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.t\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.t0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.u\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.u0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.v\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.v0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.w\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.w0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.x\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.x0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.y\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.y0\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.z\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.z0\"],\"inner_class_count\":61,\"method_count\":95,\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"A7\",\"is_constructor\":false,\"signature\":\"A7(): com.drakeet.multitype.MultiTypeAdapter\",\"def_pos\":0},{\"name\":\"B7\",\"is_constructor\":false,\"signature\":\"B7(): androidx.recyclerview.widget.RecyclerView\",\"def_pos\":0},{\"name\":\"C7\",\"is_constructor\":false,\"signature\":\"C7(com.xingin.notebase.entities.notedetail.DetailNoteFeedHolder): int\",\"def_pos\":0},{\"name\":\"D7\",\"is_constructor\":false,\"signature\":\"D7(): com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter$b\",\"def_pos\":0},{\"name\":\"E7\",\"is_constructor\":false,\"signature\":\"E7(): com.xingin.redplayer.ui.RedPlayerView\",\"def_pos\":0},{\"name\":\"F6\",\"is_constructor\":false,\"signature\":\"F6(boolean, com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.animation.ValueAnimator): void\",\"def_pos\":0},{\"name\":\"F7\",\"is_constructor\":false,\"signature\":\"F7(): android.os.Handler\",\"def_pos\":0},{\"name\":\"G6\",\"is_constructor\":false,\"signature\":\"G6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, zd.b): java.lang.Integer\",\"def_pos\":0},{\"name\":\"G7\",\"is_constructor\":false,\"signature\":\"G7(): androidx.recyclerview.widget.LinearLayoutManager\",\"def_pos\":0},{\"name\":\"H6\",\"is_constructor\":false,\"signature\":\"H6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.entities.notedetail.NoteFeed, ni4.x, h08.p0): void\",\"def_pos\":0},{\"name\":\"H7\",\"is_constructor\":false,\"signature\":\"H7(): void\",\"def_pos\":0},{\"name\":\"I6\",\"is_constructor\":false,\"signature\":\"I6(java.lang.Integer): boolean\",\"def_pos\":0},{\"name\":\"I7\",\"is_constructor\":false,\"signature\":\"I7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, androidx.lifecycle.Lifecycle$Event): void\",\"def_pos\":0},{\"name\":\"J6\",\"is_constructor\":false,\"signature\":\"J6(android.view.View, com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, boolean): void\",\"def_pos\":0},{\"name\":\"J7\",\"is_constructor\":false,\"signature\":\"J7(): void\",\"def_pos\":0},{\"name\":\"K6\",\"is_constructor\":false,\"signature\":\"K6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void\",\"def_pos\":0},{\"name\":\"K7\",\"is_constructor\":false,\"signature\":\"K7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, zd.b): java.lang.Integer\",\"def_pos\":0},{\"name\":\"L6\",\"is_constructor\":false,\"signature\":\"L6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void\",\"def_pos\":0},{\"name\":\"L7\",\"is_constructor\":false,\"signature\":\"L7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): boolean\",\"def_pos\":0},{\"name\":\"M6\",\"is_constructor\":false,\"signature\":\"M6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.widget.PopupWindow, boolean, android.view.View, android.view.MotionEvent): boolean\",\"def_pos\":0},{\"name\":\"M7\",\"is_constructor\":false,\"signature\":\"M7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): tg6.x0\",\"def_pos\":0},{\"name\":\"N6\",\"is_constructor\":false,\"signature\":\"N6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): tg6.w\",\"def_pos\":0},{\"name\":\"N7\",\"is_constructor\":false,\"signature\":\"N7(): void\",\"def_pos\":0},{\"name\":\"O6\",\"is_constructor\":false,\"signature\":\"O6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): boolean\",\"def_pos\":0},{\"name\":\"O7\",\"is_constructor\":false,\"signature\":\"O7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): void\",\"def_pos\":0},{\"name\":\"P6\",\"is_constructor\":false,\"signature\":\"P6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): void\",\"def_pos\":0},{\"name\":\"P7\",\"is_constructor\":false,\"signature\":\"P7(java.lang.Integer): boolean\",\"def_pos\":0},{\"name\":\"Q6\",\"is_constructor\":false,\"signature\":\"Q6(androidx.recyclerview.widget.RecyclerView, int): void\",\"def_pos\":0},{\"name\":\"Q7\",\"is_constructor\":false,\"signature\":\"Q7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): tg6.w\",\"def_pos\":0},{\"name\":\"R6\",\"is_constructor\":false,\"signature\":\"R6(tg6.w): t96.s\",\"def_pos\":0},{\"name\":\"R7\",\"is_constructor\":false,\"signature\":\"R7(tg6.w): t96.s\",\"def_pos\":0},{\"name\":\"S6\",\"is_constructor\":false,\"signature\":\"S6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void\",\"def_pos\":0},{\"name\":\"S7\",\"is_constructor\":false,\"signature\":\"S7(int): void\",\"def_pos\":0},{\"name\":\"T6\",\"is_constructor\":false,\"signature\":\"T6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void\",\"def_pos\":0},{\"name\":\"T7\",\"is_constructor\":false,\"signature\":\"T7(): void\",\"def_pos\":0},{\"name\":\"U6\",\"is_constructor\":false,\"signature\":\"U6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.matrix.notedetail.imagecontent.imagegallery.ImageGalleryView): void\",\"def_pos\":0},{\"name\":\"U7\",\"is_constructor\":false,\"signature\":\"U7(android.view.View): boolean\",\"def_pos\":0},{\"name\":\"V6\",\"is_constructor\":false,\"signature\":\"V6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): tg6.x0\",\"def_pos\":0},{\"name\":\"V7\",\"is_constructor\":false,\"signature\":\"V7(): boolean\",\"def_pos\":0},{\"name\":\"W6\",\"is_constructor\":false,\"signature\":\"W6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.view.View, float, android.animation.ValueAnimator): void\",\"def_pos\":0},{\"name\":\"W7\",\"is_constructor\":false,\"signature\":\"W7(): boolean\",\"def_pos\":0},{\"name\":\"X6\",\"is_constructor\":false,\"signature\":\"X6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, androidx.lifecycle.Lifecycle$Event): void\",\"def_pos\":0},{\"name\":\"X7\",\"is_constructor\":false,\"signature\":\"X7(): tb9.r\\u003ch08.p0\\u003e\",\"def_pos\":0},{\"name\":\"Y6\",\"is_constructor\":false,\"signature\":\"Y6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, float): void\",\"def_pos\":0},{\"name\":\"Y7\",\"is_constructor\":false,\"signature\":\"Y7(): void\",\"def_pos\":0},{\"name\":\"Z6\",\"is_constructor\":false,\"signature\":\"Z6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.entities.notedetail.NoteFeed, ni4.x): void\",\"def_pos\":0},{\"name\":\"Z7\",\"is_constructor\":false,\"signature\":\"Z7(): void\",\"def_pos\":0},{\"name\":\"a7\",\"is_constructor\":false,\"signature\":\"a7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.notebase.entities.notedetail.DetailNoteFeedHolder): void\",\"def_pos\":0},{\"name\":\"a8\",\"is_constructor\":false,\"signature\":\"a8(): void\",\"def_pos\":0},{\"name\":\"b7\",\"is_constructor\":false,\"signature\":\"b7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.widget.PopupWindow, boolean, boolean): void\",\"def_pos\":0},{\"name\":\"b8\",\"is_constructor\":false,\"signature\":\"b8(int): void\",\"def_pos\":0},{\"name\":\"c7\",\"is_constructor\":false,\"signature\":\"c7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): androidx.recyclerview.widget.RecyclerView\",\"def_pos\":0},{\"name\":\"d7\",\"is_constructor\":false,\"signature\":\"d7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): com.xingin.redplayer.ui.RedPlayerView\",\"def_pos\":0},{\"name\":\"d8\",\"is_constructor\":false,\"signature\":\"d8(): void\",\"def_pos\":0},{\"name\":\"e7\",\"is_constructor\":false,\"signature\":\"e7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, int): void\",\"def_pos\":0},{\"name\":\"e8\",\"is_constructor\":false,\"signature\":\"e8(): void\",\"def_pos\":0},{\"name\":\"f7\",\"is_constructor\":false,\"signature\":\"f7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): boolean\",\"def_pos\":0},{\"name\":\"f8\",\"is_constructor\":false,\"signature\":\"f8(boolean, boolean): void\",\"def_pos\":0},{\"name\":\"g7\",\"is_constructor\":false,\"signature\":\"g7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, int): void\",\"def_pos\":0},{\"name\":\"g8\",\"is_constructor\":false,\"signature\":\"g8(boolean, kotlin.jvm.functions.Function1\\u003c? super android.widget.PopupWindow, kotlin.Unit\\u003e): void\",\"def_pos\":0},{\"name\":\"h7\",\"is_constructor\":false,\"signature\":\"h7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void\",\"def_pos\":0},{\"name\":\"h8\",\"is_constructor\":false,\"signature\":\"h8(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.widget.PopupWindow, boolean, android.view.View, android.view.MotionEvent): boolean\",\"def_pos\":0},{\"name\":\"i7\",\"is_constructor\":false,\"signature\":\"i7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, boolean, boolean): void\",\"def_pos\":0},{\"name\":\"i8\",\"is_constructor\":false,\"signature\":\"i8(android.view.View, com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, boolean): void\",\"def_pos\":0},{\"name\":\"j7\",\"is_constructor\":false,\"signature\":\"j7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void\",\"def_pos\":0},{\"name\":\"j8\",\"is_constructor\":false,\"signature\":\"j8(): void\",\"def_pos\":0},{\"name\":\"k7\",\"is_constructor\":false,\"signature\":\"k7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.entities.notedetail.NoteFeed): void\",\"def_pos\":0},{\"name\":\"k8\",\"is_constructor\":false,\"signature\":\"k8(android.view.View, float, float, boolean, boolean, kotlin.jvm.functions.Function0\\u003ckotlin.Unit\\u003e): void\",\"def_pos\":0},{\"name\":\"l7\",\"is_constructor\":false,\"signature\":\"l7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.notebase.entities.notedetail.DetailNoteFeedHolder, int, boolean): void\",\"def_pos\":0},{\"name\":\"l8\",\"is_constructor\":false,\"signature\":\"l8(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.view.View, float, float, boolean, boolean, kotlin.jvm.functions.Function0, int, java.lang.Object): void\",\"def_pos\":0},{\"name\":\"m7\",\"is_constructor\":false,\"signature\":\"m7(float): void\",\"def_pos\":0},{\"name\":\"m8\",\"is_constructor\":false,\"signature\":\"m8(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.view.View, float, android.animation.ValueAnimator): void\",\"def_pos\":0},{\"name\":\"n7\",\"is_constructor\":false,\"signature\":\"n7(): void\",\"def_pos\":0},{\"name\":\"n8\",\"is_constructor\":false,\"signature\":\"n8(boolean, com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.animation.ValueAnimator): void\",\"def_pos\":0},{\"name\":\"o7\",\"is_constructor\":false,\"signature\":\"o7(com.xingin.entities.notedetail.NoteFeed, ni4.x): void\",\"def_pos\":0},{\"name\":\"o8\",\"is_constructor\":false,\"signature\":\"o8(com.xingin.entities.notedetail.NoteFeed): void\",\"def_pos\":0},{\"name\":\"p7\",\"is_constructor\":false,\"signature\":\"p7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.entities.notedetail.NoteFeed, ni4.x, h08.p0): void\",\"def_pos\":0},{\"name\":\"p8\",\"is_constructor\":false,\"signature\":\"p8(com.xingin.notebase.entities.notedetail.DetailNoteFeedHolder, int, boolean): void\",\"def_pos\":0},{\"name\":\"q7\",\"is_constructor\":false,\"signature\":\"q7(com.xingin.notebase.entities.notedetail.DetailNoteFeedHolder): void\",\"def_pos\":0},{\"name\":\"q8\",\"is_constructor\":false,\"signature\":\"q8(com.xingin.notebase.entities.notedetail.DetailNoteFeedHolder, int): void\",\"def_pos\":0},{\"name\":\"r7\",\"is_constructor\":false,\"signature\":\"r7(): void\",\"def_pos\":0},{\"name\":\"r8\",\"is_constructor\":false,\"signature\":\"r8(androidx.recyclerview.widget.RecyclerView, int): void\",\"def_pos\":0},{\"name\":\"s7\",\"is_constructor\":false,\"signature\":\"s7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.matrix.notedetail.imagecontent.imagegallery.ImageGalleryView): void\",\"def_pos\":0},{\"name\":\"s8\",\"is_constructor\":false,\"signature\":\"s8(com.xingin.entities.notedetail.NoteFeed): void\",\"def_pos\":0},{\"name\":\"t7\",\"is_constructor\":false,\"signature\":\"t7(android.widget.PopupWindow, boolean, boolean): void\",\"def_pos\":0},{\"name\":\"u7\",\"is_constructor\":false,\"signature\":\"u7(): void\",\"def_pos\":0},{\"name\":\"v7\",\"is_constructor\":false,\"signature\":\"v7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void\",\"def_pos\":0},{\"name\":\"w7\",\"is_constructor\":false,\"signature\":\"w7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void\",\"def_pos\":0},{\"name\":\"x6\",\"is_constructor\":false,\"signature\":\"x6(): void\",\"def_pos\":0},{\"name\":\"x7\",\"is_constructor\":false,\"signature\":\"x7(long): void\",\"def_pos\":0},{\"name\":\"y6\",\"is_constructor\":false,\"signature\":\"y6(): void\",\"def_pos\":0},{\"name\":\"y7\",\"is_constructor\":false,\"signature\":\"y7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void\",\"def_pos\":0},{\"name\":\"z7\",\"is_constructor\":false,\"signature\":\"z7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A7",
+        "reported_signature": "A7(): com.drakeet.multitype.MultiTypeAdapter",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B7",
+        "reported_signature": "B7(): androidx.recyclerview.widget.RecyclerView",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C7",
+        "reported_signature": "C7(com.xingin.notebase.entities.notedetail.DetailNoteFeedHolder): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D7",
+        "reported_signature": "D7(): com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter$b",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "E7",
+        "reported_signature": "E7(): com.xingin.redplayer.ui.RedPlayerView",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F6",
+        "reported_signature": "F6(boolean, com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.animation.ValueAnimator): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F7",
+        "reported_signature": "F7(): android.os.Handler",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G6",
+        "reported_signature": "G6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, zd.b): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G7",
+        "reported_signature": "G7(): androidx.recyclerview.widget.LinearLayoutManager",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H6",
+        "reported_signature": "H6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.entities.notedetail.NoteFeed, ni4.x, h08.p0): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H7",
+        "reported_signature": "H7(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I6",
+        "reported_signature": "I6(java.lang.Integer): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I7",
+        "reported_signature": "I7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, androidx.lifecycle.Lifecycle$Event): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "J6",
+        "reported_signature": "J6(android.view.View, com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "J7",
+        "reported_signature": "J7(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "K6",
+        "reported_signature": "K6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "K7",
+        "reported_signature": "K7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, zd.b): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "L6",
+        "reported_signature": "L6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "L7",
+        "reported_signature": "L7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M6",
+        "reported_signature": "M6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.widget.PopupWindow, boolean, android.view.View, android.view.MotionEvent): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M7",
+        "reported_signature": "M7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): tg6.x0",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "N6",
+        "reported_signature": "N6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): tg6.w",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "N7",
+        "reported_signature": "N7(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "O6",
+        "reported_signature": "O6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "O7",
+        "reported_signature": "O7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "P6",
+        "reported_signature": "P6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "P7",
+        "reported_signature": "P7(java.lang.Integer): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Q6",
+        "reported_signature": "Q6(androidx.recyclerview.widget.RecyclerView, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Q7",
+        "reported_signature": "Q7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): tg6.w",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "R6",
+        "reported_signature": "R6(tg6.w): t96.s",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "R7",
+        "reported_signature": "R7(tg6.w): t96.s",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S6",
+        "reported_signature": "S6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S7",
+        "reported_signature": "S7(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "T6",
+        "reported_signature": "T6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "T7",
+        "reported_signature": "T7(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "U6",
+        "reported_signature": "U6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.matrix.notedetail.imagecontent.imagegallery.ImageGalleryView): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "U7",
+        "reported_signature": "U7(android.view.View): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "V6",
+        "reported_signature": "V6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, java.lang.Integer): tg6.x0",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "V7",
+        "reported_signature": "V7(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "W6",
+        "reported_signature": "W6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.view.View, float, android.animation.ValueAnimator): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "W7",
+        "reported_signature": "W7(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "X6",
+        "reported_signature": "X6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, androidx.lifecycle.Lifecycle$Event): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "X7",
+        "reported_signature": "X7(): tb9.r<h08.p0>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y6",
+        "reported_signature": "Y6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y7",
+        "reported_signature": "Y7(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Z6",
+        "reported_signature": "Z6(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.entities.notedetail.NoteFeed, ni4.x): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Z7",
+        "reported_signature": "Z7(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a7",
+        "reported_signature": "a7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.notebase.entities.notedetail.DetailNoteFeedHolder): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a8",
+        "reported_signature": "a8(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b7",
+        "reported_signature": "b7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.widget.PopupWindow, boolean, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b8",
+        "reported_signature": "b8(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c7",
+        "reported_signature": "c7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): androidx.recyclerview.widget.RecyclerView",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d7",
+        "reported_signature": "d7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): com.xingin.redplayer.ui.RedPlayerView",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d8",
+        "reported_signature": "d8(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e7",
+        "reported_signature": "e7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e8",
+        "reported_signature": "e8(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f7",
+        "reported_signature": "f7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f8",
+        "reported_signature": "f8(boolean, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g7",
+        "reported_signature": "g7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g8",
+        "reported_signature": "g8(boolean, kotlin.jvm.functions.Function1<? super android.widget.PopupWindow, kotlin.Unit>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h7",
+        "reported_signature": "h7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h8",
+        "reported_signature": "h8(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.widget.PopupWindow, boolean, android.view.View, android.view.MotionEvent): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i7",
+        "reported_signature": "i7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, boolean, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i8",
+        "reported_signature": "i8(android.view.View, com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j7",
+        "reported_signature": "j7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j8",
+        "reported_signature": "j8(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k7",
+        "reported_signature": "k7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.entities.notedetail.NoteFeed): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k8",
+        "reported_signature": "k8(android.view.View, float, float, boolean, boolean, kotlin.jvm.functions.Function0<kotlin.Unit>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l7",
+        "reported_signature": "l7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.notebase.entities.notedetail.DetailNoteFeedHolder, int, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l8",
+        "reported_signature": "l8(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.view.View, float, float, boolean, boolean, kotlin.jvm.functions.Function0, int, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m7",
+        "reported_signature": "m7(float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m8",
+        "reported_signature": "m8(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.view.View, float, android.animation.ValueAnimator): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n7",
+        "reported_signature": "n7(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n8",
+        "reported_signature": "n8(boolean, com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, android.animation.ValueAnimator): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o7",
+        "reported_signature": "o7(com.xingin.entities.notedetail.NoteFeed, ni4.x): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o8",
+        "reported_signature": "o8(com.xingin.entities.notedetail.NoteFeed): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p7",
+        "reported_signature": "p7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.entities.notedetail.NoteFeed, ni4.x, h08.p0): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p8",
+        "reported_signature": "p8(com.xingin.notebase.entities.notedetail.DetailNoteFeedHolder, int, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q7",
+        "reported_signature": "q7(com.xingin.notebase.entities.notedetail.DetailNoteFeedHolder): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q8",
+        "reported_signature": "q8(com.xingin.notebase.entities.notedetail.DetailNoteFeedHolder, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r7",
+        "reported_signature": "r7(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r8",
+        "reported_signature": "r8(androidx.recyclerview.widget.RecyclerView, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s7",
+        "reported_signature": "s7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter, com.xingin.matrix.notedetail.imagecontent.imagegallery.ImageGalleryView): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s8",
+        "reported_signature": "s8(com.xingin.entities.notedetail.NoteFeed): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t7",
+        "reported_signature": "t7(android.widget.PopupWindow, boolean, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u7",
+        "reported_signature": "u7(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v7",
+        "reported_signature": "v7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w7",
+        "reported_signature": "w7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x6",
+        "reported_signature": "x6(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x7",
+        "reported_signature": "x7(long): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y6",
+        "reported_signature": "y6(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y7",
+        "reported_signature": "y7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z7",
+        "reported_signature": "z7(com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "f108312w",
+        "reported_type": "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter$a"
+      },
+      {
+        "name": "f108313q",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f108314r",
+        "reported_type": "int"
+      },
+      {
+        "name": "f108315s",
+        "reported_type": "int"
+      },
+      {
+        "name": "f108316t",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f108317u",
+        "reported_type": "android.os.Handler"
+      },
+      {
+        "name": "f108318v",
+        "reported_type": "int"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.a",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.a0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.a1",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.b",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.b0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.b1",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.c",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.c0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.c1",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.d",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.d0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.d1",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.e",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.e0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.e1",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.f",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.f0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.f1",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.g",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.g0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.g1",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.h",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.h0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.h1",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.i",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.i0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.i1",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.j",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.j0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.k",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.k0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.l",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.l0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.m",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.m0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.n",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.n0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.o",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.o0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.p",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.p0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.q",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.q0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.r",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.r0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.s",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.s0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.t",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.t0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.u",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.u0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.v",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.v0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.w",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.w0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.x",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.x0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.y",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.y0",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.z",
+      "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.z0"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "4991ccf8f461c917f8239a30caeec3e745782a6735013dca2fb35e361484bb23",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

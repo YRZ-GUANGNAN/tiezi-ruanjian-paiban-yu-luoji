@@ -1,0 +1,138 @@
+{
+  "evidence_id": "ev_f4a17743183ec20182bb7b4e6c7a6d1687f2616f887760565b24a73f89b3a82a",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.widgets.XYImageView",
+    "method_name": "getSizedImageRequestBuilder",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.widgets.XYImageView"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_count\":25,\"inner_class_count\":2,\"inner_classes\":[\"com.xingin.widgets.XYImageView.a\",\"com.xingin.widgets.XYImageView.b\"],\"name\":\"XYImageView\",\"full_name\":\"com.xingin.widgets.XYImageView\",\"field_count\":4,\"fields\":[{\"type\":\"ai8.f\",\"def_pos\":0,\"name\":\"f122094h\"},{\"type\":\"com.xingin.widgets.XYImageView$a\",\"def_pos\":0,\"name\":\"f122095l\"},{\"type\":\"android.net.Uri\",\"def_pos\":0,\"name\":\"f122096f\"},{\"type\":\"ai8.d\",\"def_pos\":0,\"name\":\"f122097g\"}],\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"is_constructor\":false,\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(android.content.Context): void\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(android.content.Context, android.util.AttributeSet): void\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"\\u003cinit\\u003e(android.content.Context, android.util.AttributeSet, int): void\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"getControllerBuilder(): a7.i\",\"is_constructor\":false,\"name\":\"getControllerBuilder\",\"def_pos\":0},{\"signature\":\"getControllerBuilder(): f7.b\",\"is_constructor\":false,\"name\":\"getControllerBuilder\",\"def_pos\":0},{\"signature\":\"getImageUri(): android.net.Uri\",\"is_constructor\":false,\"name\":\"getImageUri\",\"def_pos\":0},{\"signature\":\"getSizedImageRequestBuilder(): com.facebook.imagepipeline.request.ImageRequestBuilder\",\"is_constructor\":false,\"name\":\"getSizedImageRequestBuilder\",\"def_pos\":0},{\"signature\":\"h(android.net.Uri, java.lang.Object): void\",\"is_constructor\":false,\"name\":\"h\",\"def_pos\":0},{\"signature\":\"k(): ai8.f\",\"is_constructor\":false,\"name\":\"k\",\"def_pos\":0},{\"signature\":\"l(ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object): void\",\"is_constructor\":false,\"name\":\"l\",\"def_pos\":0},{\"signature\":\"m(com.xingin.widgets.XYImageView, ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object, int, java.lang.Object): void\",\"is_constructor\":false,\"name\":\"m\",\"def_pos\":0},{\"signature\":\"n(ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object, y7.b): void\",\"is_constructor\":false,\"name\":\"n\",\"def_pos\":0},{\"signature\":\"o(ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object): void\",\"is_constructor\":false,\"name\":\"o\",\"def_pos\":0},{\"signature\":\"p(com.xingin.widgets.XYImageView, ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object, int, java.lang.Object): void\",\"is_constructor\":false,\"name\":\"p\",\"def_pos\":0},{\"signature\":\"q(ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object, f7.d\\u003ce8.g\\u003e): void\",\"is_constructor\":false,\"name\":\"q\",\"def_pos\":0},{\"signature\":\"r(com.xingin.widgets.XYImageView, ai8.d, com.facebook.imagepipeline.request.a$a, java.lang.Object, f7.d, int, java.lang.Object): void\",\"is_constructor\":false,\"name\":\"r\",\"def_pos\":0},{\"signature\":\"s(android.net.Uri, java.lang.Object, f7.d\\u003ce8.g\\u003e): void\",\"is_constructor\":false,\"name\":\"s\",\"def_pos\":0},{\"signature\":\"setFadeDuration(int): void\",\"is_constructor\":false,\"name\":\"setFadeDuration\",\"def_pos\":0},{\"signature\":\"setImageInfo(ai8.d): void\",\"is_constructor\":false,\"name\":\"setImageInfo\",\"def_pos\":0},{\"signature\":\"setImageInfoWithControllerListener(ai8.d): void\",\"is_constructor\":false,\"name\":\"setImageInfoWithControllerListener\",\"def_pos\":0},{\"signature\":\"setImageInfoWithPlaceHolderImprove(ai8.d): void\",\"is_constructor\":false,\"name\":\"setImageInfoWithPlaceHolderImprove\",\"def_pos\":0},{\"signature\":\"setImageUrl(java.lang.String): void\",\"is_constructor\":false,\"name\":\"setImageUrl\",\"def_pos\":0},{\"signature\":\"t(android.net.Uri, java.lang.Object, kotlin.jvm.functions.Function0\\u003ckotlin.Unit\\u003e): void\",\"is_constructor\":false,\"name\":\"t\",\"def_pos\":0},{\"signature\":\"u(): com.facebook.imagepipeline.request.a\",\"is_constructor\":false,\"name\":\"u\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.widgets.XYImageView",
+          "method_name": "getSizedImageRequestBuilder",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"mode\":\"java\",\"full_name\":\"com.xingin.widgets.XYImageView.getSizedImageRequestBuilder\",\"class_name\":\"com.xingin.widgets.XYImageView\",\"overload_index\":0,\"fell_back\":false,\"body\":\"    private final ImageRequestBuilder getSizedImageRequestBuilder() {\\r\\n        PatchProxyResult patchProxyResultProxy0Para \\u003d PatchProxy.proxy0Para(this, XYImageView.class, 56889);\\r\\n        if (patchProxyResultProxy0Para.isSupported) {\\r\\n            return (ImageRequestBuilder) patchProxyResultProxy0Para.result;\\r\\n        }\\r\\n        d dVar \\u003d this.f122097g;\\r\\n        int iJ \\u003d dVar !\\u003d null ? dVar.j() : 0;\\r\\n        d dVar2 \\u003d this.f122097g;\\r\\n        int iD \\u003d dVar2 !\\u003d null ? dVar2.d() : 0;\\r\\n        if (iJ \\u003d\\u003d 0) {\\r\\n            iJ \\u003d getWidth();\\r\\n        }\\r\\n        if (iD \\u003d\\u003d 0) {\\r\\n            iD \\u003d getHeight();\\r\\n        }\\r\\n        if (iJ \\u003d\\u003d 0 || iD \\u003d\\u003d 0) {\\r\\n            return ImageRequestBuilder.s(this.f122096f);\\r\\n        }\\r\\n        ImageRequestBuilder imageRequestBuilderS \\u003d ImageRequestBuilder.s(this.f122096f);\\r\\n        imageRequestBuilderS.D(new e(iJ, iD));\\r\\n        return imageRequestBuilderS;\\r\\n    }\",\"overload_count\":1,\"method_name\":\"getSizedImageRequestBuilder\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.widgets.XYImageView",
+    "method": {
+      "name": "getSizedImageRequestBuilder",
+      "reported_signature": "getSizedImageRequestBuilder(): com.facebook.imagepipeline.request.ImageRequestBuilder",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    private final ImageRequestBuilder getSizedImageRequestBuilder() {\r\n        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, XYImageView.class, 56889);\r\n        if (patchProxyResultProxy0Para.isSupported) {\r\n            return (ImageRequestBuilder) patchProxyResultProxy0Para.result;\r\n        }\r\n        d dVar = this.f122097g;\r\n        int iJ = dVar != null ? dVar.j() : 0;\r\n        d dVar2 = this.f122097g;\r\n        int iD = dVar2 != null ? dVar2.d() : 0;\r\n        if (iJ == 0) {\r\n            iJ = getWidth();\r\n        }\r\n        if (iD == 0) {\r\n            iD = getHeight();\r\n        }\r\n        if (iJ == 0 || iD == 0) {\r\n            return ImageRequestBuilder.s(this.f122096f);\r\n        }\r\n        ImageRequestBuilder imageRequestBuilderS = ImageRequestBuilder.s(this.f122096f);\r\n        imageRequestBuilderS.D(new e(iJ, iD));\r\n        return imageRequestBuilderS;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "1e0881bd7d86d319f3b2423d2060508d4c34a9c6be5bd3534d15cfa28d926650",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

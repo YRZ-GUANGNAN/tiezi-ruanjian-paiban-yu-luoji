@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_eb2b149c6b1fd91ef089ad4b7cda6bf94ccc4ce5b21b474773fa51b535df9896",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher",
+    "method_name": "L0"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(android.widget.ImageView): void\",\"is_constructor\":true},{\"name\":\"A\",\"def_pos\":0,\"signature\":\"A(): boolean\",\"is_constructor\":false},{\"name\":\"A0\",\"def_pos\":0,\"signature\":\"A0(hg1.t): void\",\"is_constructor\":false},{\"name\":\"B\",\"def_pos\":0,\"signature\":\"B(): boolean\",\"is_constructor\":false},{\"name\":\"B0\",\"def_pos\":0,\"signature\":\"B0(hg1.u): void\",\"is_constructor\":false},{\"name\":\"C\",\"def_pos\":0,\"signature\":\"C(float): void\",\"is_constructor\":false},{\"name\":\"C0\",\"def_pos\":0,\"signature\":\"C0(hg1.v): void\",\"is_constructor\":false},{\"name\":\"D\",\"def_pos\":0,\"signature\":\"D(): void\",\"is_constructor\":false},{\"name\":\"D0\",\"def_pos\":0,\"signature\":\"D0(hg1.w): void\",\"is_constructor\":false},{\"name\":\"E\",\"def_pos\":0,\"signature\":\"E(on9.a0, on9.a0, int, on9.a0, int, float, float, com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, float, float, float, android.graphics.PointF, on9.a0, float, float, on9.a0, android.animation.ValueAnimator): void\",\"is_constructor\":false},{\"name\":\"E0\",\"def_pos\":0,\"signature\":\"E0(hg1.x): void\",\"is_constructor\":false},{\"name\":\"F\",\"def_pos\":0,\"signature\":\"F(nn9.a\\u003cbn9.w\\u003e): void\",\"is_constructor\":false},{\"name\":\"F0\",\"def_pos\":0,\"signature\":\"F0(hg1.y): void\",\"is_constructor\":false},{\"name\":\"G\",\"def_pos\":0,\"signature\":\"G(float, com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, on9.d0, on9.a0, on9.a0, android.animation.ValueAnimator): void\",\"is_constructor\":false},{\"name\":\"G0\",\"def_pos\":0,\"signature\":\"G0(hg1.z): void\",\"is_constructor\":false},{\"name\":\"H\",\"def_pos\":0,\"signature\":\"H(): android.graphics.RectF\",\"is_constructor\":false},{\"name\":\"H0\",\"def_pos\":0,\"signature\":\"H0(float): void\",\"is_constructor\":false},{\"name\":\"I\",\"def_pos\":0,\"signature\":\"I(android.graphics.Matrix): android.graphics.RectF\",\"is_constructor\":false},{\"name\":\"I0\",\"def_pos\":0,\"signature\":\"I0(float): void\",\"is_constructor\":false},{\"name\":\"J\",\"def_pos\":0,\"signature\":\"J(): float\",\"is_constructor\":false},{\"name\":\"J0\",\"def_pos\":0,\"signature\":\"J0(float): void\",\"is_constructor\":false},{\"name\":\"K\",\"def_pos\":0,\"signature\":\"K(): boolean\",\"is_constructor\":false},{\"name\":\"K0\",\"def_pos\":0,\"signature\":\"K0(float, float, float): void\",\"is_constructor\":false},{\"name\":\"L\",\"def_pos\":0,\"signature\":\"L(): android.graphics.Matrix\",\"is_constructor\":false},{\"name\":\"L0\",\"def_pos\":0,\"signature\":\"L0(float, float, float, boolean): void\",\"is_constructor\":false},{\"name\":\"M\",\"def_pos\":0,\"signature\":\"M(android.widget.ImageView): int\",\"is_constructor\":false},{\"name\":\"M0\",\"def_pos\":0,\"signature\":\"M0(float, boolean): void\",\"is_constructor\":false},{\"name\":\"N\",\"def_pos\":0,\"signature\":\"N(android.widget.ImageView): int\",\"is_constructor\":false},{\"name\":\"N0\",\"def_pos\":0,\"signature\":\"N0(android.widget.ImageView$ScaleType): void\",\"is_constructor\":false},{\"name\":\"O\",\"def_pos\":0,\"signature\":\"O(): int\",\"is_constructor\":false},{\"name\":\"O0\",\"def_pos\":0,\"signature\":\"O0(yg1.t): void\",\"is_constructor\":false},{\"name\":\"P\",\"def_pos\":0,\"signature\":\"P(): boolean\",\"is_constructor\":false},{\"name\":\"P0\",\"def_pos\":0,\"signature\":\"P0(float, float, float): void\",\"is_constructor\":false},{\"name\":\"Q\",\"def_pos\":0,\"signature\":\"Q(): float\",\"is_constructor\":false},{\"name\":\"Q0\",\"def_pos\":0,\"signature\":\"Q0(int): void\",\"is_constructor\":false},{\"name\":\"R\",\"def_pos\":0,\"signature\":\"R(): boolean\",\"is_constructor\":false},{\"name\":\"R0\",\"def_pos\":0,\"signature\":\"R0(boolean): void\",\"is_constructor\":false},{\"name\":\"S\",\"def_pos\":0,\"signature\":\"S(): int\",\"is_constructor\":false},{\"name\":\"S0\",\"def_pos\":0,\"signature\":\"S0(android.view.View, android.graphics.PointF, android.view.MotionEvent): void\",\"is_constructor\":false},{\"name\":\"T\",\"def_pos\":0,\"signature\":\"T(): float\",\"is_constructor\":false},{\"name\":\"T0\",\"def_pos\":0,\"signature\":\"T0(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, android.view.View, android.graphics.PointF, android.view.MotionEvent, int, java.lang.Object): void\",\"is_constructor\":false},{\"name\":\"U\",\"def_pos\":0,\"signature\":\"U(): float\",\"is_constructor\":false},{\"name\":\"U0\",\"def_pos\":0,\"signature\":\"U0(android.view.View, android.graphics.PointF): void\",\"is_constructor\":false},{\"name\":\"V\",\"def_pos\":0,\"signature\":\"V(): float\",\"is_constructor\":false},{\"name\":\"V0\",\"def_pos\":0,\"signature\":\"V0(android.view.View, android.graphics.PointF, android.view.MotionEvent): void\",\"is_constructor\":false},{\"name\":\"W\",\"def_pos\":0,\"signature\":\"W(): boolean\",\"is_constructor\":false},{\"name\":\"W0\",\"def_pos\":0,\"signature\":\"W0(): void\",\"is_constructor\":false},{\"name\":\"X\",\"def_pos\":0,\"signature\":\"X(): android.graphics.RectF\",\"is_constructor\":false},{\"name\":\"X0\",\"def_pos\":0,\"signature\":\"X0(): void\",\"is_constructor\":false},{\"name\":\"Y\",\"def_pos\":0,\"signature\":\"Y(): float\",\"is_constructor\":false},{\"name\":\"Y0\",\"def_pos\":0,\"signature\":\"Y0(android.graphics.drawable.Drawable): void\",\"is_constructor\":false},{\"name\":\"Z\",\"def_pos\":0,\"signature\":\"Z(): android.widget.ImageView$ScaleType\",\"is_constructor\":false},{\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(float, com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, on9.d0, on9.a0, on9.a0, android.animation.ValueAnimator): void\",\"is_constructor\":false},{\"name\":\"a0\",\"def_pos\":0,\"signature\":\"a0(android.graphics.Matrix, int): float\",\"is_constructor\":false},{\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(on9.a0, on9.a0, int, on9.a0, int, float, float, com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, float, float, float, android.graphics.PointF, on9.a0, float, float, on9.a0, android.animation.ValueAnimator): void\",\"is_constructor\":false},{\"name\":\"b0\",\"def_pos\":0,\"signature\":\"b0(): void\",\"is_constructor\":false},{\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, kl.l): void\",\"is_constructor\":false},{\"name\":\"c0\",\"def_pos\":0,\"signature\":\"c0(): boolean\",\"is_constructor\":false},{\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, float, on9.a0, on9.a0, android.animation.ValueAnimator): void\",\"is_constructor\":false},{\"name\":\"d0\",\"def_pos\":0,\"signature\":\"d0(): void\",\"is_constructor\":false},{\"name\":\"e\",\"def_pos\":0,\"signature\":\"e(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): void\",\"is_constructor\":false},{\"name\":\"e0\",\"def_pos\":0,\"signature\":\"e0(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, kl.l): void\",\"is_constructor\":false},{\"name\":\"f\",\"def_pos\":0,\"signature\":\"f(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): android.widget.ImageView\",\"is_constructor\":false},{\"name\":\"f0\",\"def_pos\":0,\"signature\":\"f0(float, float): void\",\"is_constructor\":false},{\"name\":\"g\",\"def_pos\":0,\"signature\":\"g(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): android.view.animation.Interpolator\",\"is_constructor\":false},{\"name\":\"g0\",\"def_pos\":0,\"signature\":\"g0(boolean, float, float): void\",\"is_constructor\":false},{\"name\":\"h\",\"def_pos\":0,\"signature\":\"h(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): android.view.View$OnLongClickListener\",\"is_constructor\":false},{\"name\":\"h0\",\"def_pos\":0,\"signature\":\"h0(android.view.MotionEvent, boolean): void\",\"is_constructor\":false},{\"name\":\"i\",\"def_pos\":0,\"signature\":\"i(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): android.view.View$OnClickListener\",\"is_constructor\":false},{\"name\":\"i0\",\"def_pos\":0,\"signature\":\"i0(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, android.view.MotionEvent, boolean, int, java.lang.Object): void\",\"is_constructor\":false},{\"name\":\"j\",\"def_pos\":0,\"signature\":\"j(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): android.view.GestureDetector$OnDoubleTapListener\",\"is_constructor\":false},{\"name\":\"j0\",\"def_pos\":0,\"signature\":\"j0(): void\",\"is_constructor\":false},{\"name\":\"k\",\"def_pos\":0,\"signature\":\"k(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): hg1.s\",\"is_constructor\":false},{\"name\":\"k0\",\"def_pos\":0,\"signature\":\"k0(): void\",\"is_constructor\":false},{\"name\":\"l\",\"def_pos\":0,\"signature\":\"l(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): yg1.t\",\"is_constructor\":false},{\"name\":\"l0\",\"def_pos\":0,\"signature\":\"l0(): void\",\"is_constructor\":false},{\"name\":\"m\",\"def_pos\":0,\"signature\":\"m(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): hg1.t\",\"is_constructor\":false},{\"name\":\"m0\",\"def_pos\":0,\"signature\":\"m0(): void\",\"is_constructor\":false},{\"name\":\"n\",\"def_pos\":0,\"signature\":\"n(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): hg1.a\",\"is_constructor\":false},{\"name\":\"n0\",\"def_pos\":0,\"signature\":\"n0(): void\",\"is_constructor\":false},{\"name\":\"o\",\"def_pos\":0,\"signature\":\"o(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): hg1.v\",\"is_constructor\":false},{\"name\":\"o0\",\"def_pos\":0,\"signature\":\"o0(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, float, on9.a0, on9.a0, android.animation.ValueAnimator): void\",\"is_constructor\":false},{\"name\":\"onLayoutChange\",\"def_pos\":0,\"signature\":\"onLayoutChange(android.view.View, int, int, int, int, int, int, int, int): void\",\"is_constructor\":false},{\"name\":\"onTouch\",\"def_pos\":0,\"signature\":\"onTouch(android.view.View, android.view.MotionEvent): boolean\",\"is_constructor\":false},{\"name\":\"p\",\"def_pos\":0,\"signature\":\"p(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): hg1.z\",\"is_constructor\":false},{\"name\":\"p0\",\"def_pos\":0,\"signature\":\"p0(float, float): void\",\"is_constructor\":false},{\"name\":\"q\",\"def_pos\":0,\"signature\":\"q(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): int\",\"is_constructor\":false},{\"name\":\"q0\",\"def_pos\":0,\"signature\":\"q0(android.graphics.Matrix): void\",\"is_constructor\":false},{\"name\":\"r\",\"def_pos\":0,\"signature\":\"r(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher$g\",\"is_constructor\":false},{\"name\":\"r0\",\"def_pos\":0,\"signature\":\"r0(float): void\",\"is_constructor\":false},{\"name\":\"s0\",\"def_pos\":0,\"signature\":\"s0(float): void\",\"is_constructor\":false},{\"name\":\"t\",\"def_pos\":0,\"signature\":\"t(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float): void\",\"is_constructor\":false},{\"name\":\"t0\",\"def_pos\":0,\"signature\":\"t0(float): void\",\"is_constructor\":false},{\"name\":\"u\",\"def_pos\":0,\"signature\":\"u(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): void\",\"is_constructor\":false},{\"name\":\"u0\",\"def_pos\":0,\"signature\":\"u0(android.view.View$OnClickListener): void\",\"is_constructor\":false},{\"name\":\"v\",\"def_pos\":0,\"signature\":\"v(): boolean\",\"is_constructor\":false},{\"name\":\"v0\",\"def_pos\":0,\"signature\":\"v0(android.view.GestureDetector$OnDoubleTapListener): void\",\"is_constructor\":false},{\"name\":\"w\",\"def_pos\":0,\"signature\":\"w(): void\",\"is_constructor\":false},{\"name\":\"w0\",\"def_pos\":0,\"signature\":\"w0(hg1.p): void\",\"is_constructor\":false},{\"name\":\"x\",\"def_pos\":0,\"signature\":\"x(): void\",\"is_constructor\":false},{\"name\":\"x0\",\"def_pos\":0,\"signature\":\"x0(android.view.View$OnLongClickListener): void\",\"is_constructor\":false},{\"name\":\"y\",\"def_pos\":0,\"signature\":\"y(): boolean\",\"is_constructor\":false},{\"name\":\"y0\",\"def_pos\":0,\"signature\":\"y0(hg1.r): void\",\"is_constructor\":false},{\"name\":\"z\",\"def_pos\":0,\"signature\":\"z(): boolean\",\"is_constructor\":false},{\"name\":\"z0\",\"def_pos\":0,\"signature\":\"z0(hg1.s): void\",\"is_constructor\":false}],\"method_count\":105,\"inner_class_count\":8,\"inner_classes\":[\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.a\",\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.b\",\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.c\",\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.d\",\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.e\",\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.f\",\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.g\",\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.h\"],\"name\":\"NoteDetailPhotoViewAttacher\",\"full_name\":\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher\",\"field_count\":46,\"fields\":[{\"type\":\"hg1.t\",\"def_pos\":0,\"name\":\"A\"},{\"type\":\"hg1.s\",\"def_pos\":0,\"name\":\"B\"},{\"type\":\"hg1.z\",\"def_pos\":0,\"name\":\"C\"},{\"type\":\"android.view.View$OnClickListener\",\"def_pos\":0,\"name\":\"D\"},{\"type\":\"android.view.View$OnLongClickListener\",\"def_pos\":0,\"name\":\"E\"},{\"type\":\"android.view.GestureDetector$OnDoubleTapListener\",\"def_pos\":0,\"name\":\"F\"},{\"type\":\"hg1.u\",\"def_pos\":0,\"name\":\"G\"},{\"type\":\"hg1.p\",\"def_pos\":0,\"name\":\"H\"},{\"type\":\"hg1.v\",\"def_pos\":0,\"name\":\"I\"},{\"type\":\"hg1.y\",\"def_pos\":0,\"name\":\"K\"},{\"type\":\"hg1.x\",\"def_pos\":0,\"name\":\"L\"},{\"type\":\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher$b\",\"def_pos\":0,\"name\":\"M\"},{\"type\":\"yg1.t\",\"def_pos\":0,\"name\":\"N\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"O\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"P\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"Q\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"R\"},{\"type\":\"android.graphics.PointF\",\"def_pos\":0,\"name\":\"S\"},{\"type\":\"float\",\"def_pos\":0,\"name\":\"T\"},{\"type\":\"bn9.d\",\"def_pos\":0,\"name\":\"U\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"V\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"W\"},{\"type\":\"android.widget.ImageView$ScaleType\",\"def_pos\":0,\"name\":\"X\"},{\"type\":\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher$g\",\"def_pos\":0,\"name\":\"Y\"},{\"type\":\"el9.c\",\"def_pos\":0,\"name\":\"Z\"},{\"type\":\"hg1.w\",\"def_pos\":0,\"name\":\"f39563J\"},{\"type\":\"android.widget.ImageView\",\"def_pos\":0,\"name\":\"f39564d\"},{\"type\":\"android.view.animation.Interpolator\",\"def_pos\":0,\"name\":\"f39565e\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f39566f\"},{\"type\":\"float\",\"def_pos\":0,\"name\":\"f39567g\"},{\"type\":\"float\",\"def_pos\":0,\"name\":\"f39568h\"},{\"type\":\"float\",\"def_pos\":0,\"name\":\"f39569l\"},{\"type\":\"float\",\"def_pos\":0,\"name\":\"f39570m\"},{\"type\":\"android.graphics.PointF\",\"def_pos\":0,\"name\":\"f39571n\"},{\"type\":\"float\",\"def_pos\":0,\"name\":\"f39572o\"},{\"type\":\"float\",\"def_pos\":0,\"name\":\"f39573p\"},{\"type\":\"float\",\"def_pos\":0,\"name\":\"f39574q\"},{\"type\":\"float\",\"def_pos\":0,\"name\":\"f39575r\"},{\"type\":\"android.view.GestureDetector\",\"def_pos\":0,\"name\":\"f39576s\"},{\"type\":\"hg1.a\",\"def_pos\":0,\"name\":\"f39577t\"},{\"type\":\"android.graphics.Matrix\",\"def_pos\":0,\"name\":\"f39578u\"},{\"type\":\"android.graphics.Matrix\",\"def_pos\":0,\"name\":\"f39579v\"},{\"type\":\"android.graphics.Matrix\",\"def_pos\":0,\"name\":\"f39580w\"},{\"type\":\"android.graphics.RectF\",\"def_pos\":0,\"name\":\"f39581x\"},{\"type\":\"float[]\",\"def_pos\":0,\"name\":\"f39582y\"},{\"type\":\"hg1.r\",\"def_pos\":0,\"name\":\"f39583z\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher",
+          "method_name": "L0",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_name\":\"L0\",\"markers\":[],\"mode\":\"java\",\"full_name\":\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.L0\",\"class_name\":\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher\",\"overload_index\":0,\"fell_back\":false,\"body\":\"    /* JADX WARN: Code duplicated, block: B:4:0x0006 A[PHI: r0\\n  0x0006: PHI (r0v2 float) \\u003d (r0v0 float), (r0v1 float) binds: [B:3:0x0004, B:6:0x000c] A[DONT_GENERATE, DONT_INLINE]] */\\r\\n    public final void L0(float f4, float f11, float f13, boolean z4) {\\r\\n        float f15;\\r\\n        float f21 \\u003d this.f39567g;\\r\\n        if (f4 \\u003c f21) {\\r\\n            f15 \\u003d f21;\\r\\n        } else {\\r\\n            f21 \\u003d this.f39569l;\\r\\n            if (f4 \\u003e f21) {\\r\\n                f15 \\u003d f21;\\r\\n            } else {\\r\\n                f15 \\u003d f4;\\r\\n            }\\r\\n        }\\r\\n        if (z4) {\\r\\n            this.f39564d.post(new a(this, Y(), f15, f11, f13, null, 16, null));\\r\\n        } else {\\r\\n            this.f39580w.setScale(Y(), f15, f11, f13);\\r\\n            x();\\r\\n        }\\r\\n    }\",\"overload_count\":1}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher",
+    "method": {
+      "name": "L0",
+      "reported_signature": "L0(float, float, float, boolean): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Code duplicated, block: B:4:0x0006 A[PHI: r0\n  0x0006: PHI (r0v2 float) = (r0v0 float), (r0v1 float) binds: [B:3:0x0004, B:6:0x000c] A[DONT_GENERATE, DONT_INLINE]] */\r\n    public final void L0(float f4, float f11, float f13, boolean z4) {\r\n        float f15;\r\n        float f21 = this.f39567g;\r\n        if (f4 < f21) {\r\n            f15 = f21;\r\n        } else {\r\n            f21 = this.f39569l;\r\n            if (f4 > f21) {\r\n                f15 = f21;\r\n            } else {\r\n                f15 = f4;\r\n            }\r\n        }\r\n        if (z4) {\r\n            this.f39564d.post(new a(this, Y(), f15, f11, f13, null, 16, null));\r\n        } else {\r\n            this.f39580w.setScale(Y(), f15, f11, f13);\r\n            x();\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "73da6715e48e810a5295c170dfefbc3d86fbb5c037ab6a7cf4fb3755aee3306d",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

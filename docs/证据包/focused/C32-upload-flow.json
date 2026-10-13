@@ -1,0 +1,326 @@
+{
+  "evidence_id": "ev_8f40f8270f229cc5f7fcd3ec81c6a541d3804666670e37e090aff23c6a27e813",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.uploader.api.internal.UploaderFlow"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.uploader.api.internal.UploaderFlow"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"Companion\",\"type\":\"com.xingin.uploader.api.internal.UploaderFlow$a\",\"def_pos\":0},{\"name\":\"analyzer\",\"type\":\"vd8.g\",\"def_pos\":0},{\"name\":\"currentAvailableToken\",\"type\":\"com.xingin.uploader.api.MixedToken\",\"def_pos\":0},{\"name\":\"errorListener\",\"type\":\"com.xingin.uploader.api.internal.UploaderFlow$c\",\"def_pos\":0},{\"name\":\"hasCheckExpiredToken\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"mCanceled\",\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"def_pos\":0},{\"name\":\"receiver\",\"type\":\"android.content.BroadcastReceiver\",\"def_pos\":0},{\"name\":\"uploader\",\"type\":\"sd8.o0\",\"def_pos\":0},{\"name\":\"uploaderCache\",\"type\":\"td8.a\",\"def_pos\":0},{\"name\":\"uploaderParams\",\"type\":\"sd8.n0\",\"def_pos\":0}],\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cclinit\\u003e(): void\",\"is_constructor\":false},{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(sd8.n0): void\",\"is_constructor\":true},{\"name\":\"A\",\"def_pos\":0,\"signature\":\"A(java.lang.String): void\",\"is_constructor\":false},{\"name\":\"B\",\"def_pos\":0,\"signature\":\"B(sd8.k1): void\",\"is_constructor\":false},{\"name\":\"C\",\"def_pos\":0,\"signature\":\"C(java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, long): com.xingin.uploader.api.UploaderResult\",\"is_constructor\":false},{\"name\":\"D\",\"def_pos\":0,\"signature\":\"D(java.lang.String, java.lang.String, int, int, boolean, boolean, int, int): io.reactivex.Observable\\u003cjava.util.List\\u003ccom.xingin.uploader.api.MixedToken\\u003e\\u003e\",\"is_constructor\":false},{\"name\":\"E\",\"def_pos\":0,\"signature\":\"E(sd8.k1, java.util.List\\u003c? extends com.xingin.uploader.api.MixedToken\\u003e): boolean\",\"is_constructor\":false},{\"name\":\"F\",\"def_pos\":0,\"signature\":\"F(java.util.List\\u003c? extends com.xingin.uploader.api.MixedToken\\u003e): com.xingin.uploader.api.MixedToken\",\"is_constructor\":false},{\"name\":\"G\",\"def_pos\":0,\"signature\":\"G(com.xingin.uploader.api.MixedToken): void\",\"is_constructor\":false},{\"name\":\"H\",\"def_pos\":0,\"signature\":\"H(sd8.o0): void\",\"is_constructor\":false},{\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(com.xingin.uploader.api.internal.UploaderFlow): boolean\",\"is_constructor\":false},{\"name\":\"m\",\"def_pos\":0,\"signature\":\"m(com.xingin.uploader.api.internal.UploaderFlow, boolean): void\",\"is_constructor\":false},{\"name\":\"n\",\"def_pos\":0,\"signature\":\"n(): void\",\"is_constructor\":false},{\"name\":\"o\",\"def_pos\":0,\"signature\":\"o(): java.util.List\\u003ccom.xingin.uploader.api.MixedToken\\u003e\",\"is_constructor\":false},{\"name\":\"p\",\"def_pos\":0,\"signature\":\"p(): com.xingin.uploader.api.MixedToken\",\"is_constructor\":false},{\"name\":\"q\",\"def_pos\":0,\"signature\":\"q(): java.util.concurrent.atomic.AtomicBoolean\",\"is_constructor\":false},{\"name\":\"r\",\"def_pos\":0,\"signature\":\"r(): java.lang.String\",\"is_constructor\":false},{\"name\":\"s\",\"def_pos\":0,\"signature\":\"s(int, java.lang.String): java.lang.String\",\"is_constructor\":false},{\"name\":\"t\",\"def_pos\":0,\"signature\":\"t(): sd8.o0\",\"is_constructor\":false},{\"name\":\"u\",\"def_pos\":0,\"signature\":\"u(): sd8.n0\",\"is_constructor\":false},{\"name\":\"v\",\"def_pos\":0,\"signature\":\"v(sd8.k1, java.util.List\\u003c? extends com.xingin.uploader.api.MixedToken\\u003e): void\",\"is_constructor\":false},{\"name\":\"w\",\"def_pos\":0,\"signature\":\"w(java.lang.String, java.lang.String): void\",\"is_constructor\":false},{\"name\":\"x\",\"def_pos\":0,\"signature\":\"x(sd8.g1): void\",\"is_constructor\":false},{\"name\":\"y\",\"def_pos\":0,\"signature\":\"y(): void\",\"is_constructor\":false},{\"name\":\"z\",\"def_pos\":0,\"signature\":\"z(int): void\",\"is_constructor\":false}],\"method_count\":25,\"inner_class_count\":4,\"inner_classes\":[\"com.xingin.uploader.api.internal.UploaderFlow.a\",\"com.xingin.uploader.api.internal.UploaderFlow.b\",\"com.xingin.uploader.api.internal.UploaderFlow.c\",\"com.xingin.uploader.api.internal.UploaderFlow.d\"],\"name\":\"UploaderFlow\",\"full_name\":\"com.xingin.uploader.api.internal.UploaderFlow\",\"field_count\":10}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.uploader.api.internal.UploaderFlow",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(sd8.n0): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A",
+        "reported_signature": "A(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B",
+        "reported_signature": "B(sd8.k1): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C",
+        "reported_signature": "C(java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, long): com.xingin.uploader.api.UploaderResult",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D",
+        "reported_signature": "D(java.lang.String, java.lang.String, int, int, boolean, boolean, int, int): io.reactivex.Observable<java.util.List<com.xingin.uploader.api.MixedToken>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "E",
+        "reported_signature": "E(sd8.k1, java.util.List<? extends com.xingin.uploader.api.MixedToken>): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F",
+        "reported_signature": "F(java.util.List<? extends com.xingin.uploader.api.MixedToken>): com.xingin.uploader.api.MixedToken",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G",
+        "reported_signature": "G(com.xingin.uploader.api.MixedToken): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H",
+        "reported_signature": "H(sd8.o0): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(com.xingin.uploader.api.internal.UploaderFlow): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(com.xingin.uploader.api.internal.UploaderFlow, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(): java.util.List<com.xingin.uploader.api.MixedToken>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p",
+        "reported_signature": "p(): com.xingin.uploader.api.MixedToken",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q",
+        "reported_signature": "q(): java.util.concurrent.atomic.AtomicBoolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r",
+        "reported_signature": "r(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s",
+        "reported_signature": "s(int, java.lang.String): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t",
+        "reported_signature": "t(): sd8.o0",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u",
+        "reported_signature": "u(): sd8.n0",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v",
+        "reported_signature": "v(sd8.k1, java.util.List<? extends com.xingin.uploader.api.MixedToken>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w",
+        "reported_signature": "w(java.lang.String, java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x",
+        "reported_signature": "x(sd8.g1): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y",
+        "reported_signature": "y(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z",
+        "reported_signature": "z(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "Companion",
+        "reported_type": "com.xingin.uploader.api.internal.UploaderFlow$a"
+      },
+      {
+        "name": "analyzer",
+        "reported_type": "vd8.g"
+      },
+      {
+        "name": "currentAvailableToken",
+        "reported_type": "com.xingin.uploader.api.MixedToken"
+      },
+      {
+        "name": "errorListener",
+        "reported_type": "com.xingin.uploader.api.internal.UploaderFlow$c"
+      },
+      {
+        "name": "hasCheckExpiredToken",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "mCanceled",
+        "reported_type": "java.util.concurrent.atomic.AtomicBoolean"
+      },
+      {
+        "name": "receiver",
+        "reported_type": "android.content.BroadcastReceiver"
+      },
+      {
+        "name": "uploader",
+        "reported_type": "sd8.o0"
+      },
+      {
+        "name": "uploaderCache",
+        "reported_type": "td8.a"
+      },
+      {
+        "name": "uploaderParams",
+        "reported_type": "sd8.n0"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.uploader.api.internal.UploaderFlow.a",
+      "com.xingin.uploader.api.internal.UploaderFlow.b",
+      "com.xingin.uploader.api.internal.UploaderFlow.c",
+      "com.xingin.uploader.api.internal.UploaderFlow.d"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "f6fd1b770e3e78b7cd6905e321e27a361ee4068c2ae0444b69761d460c4caf97",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

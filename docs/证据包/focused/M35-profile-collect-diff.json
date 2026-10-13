@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_6cb790f4eba4cb0f6d7800e82fa525c3021d5d12c87ca69538f1e058c2ab6058",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo",
+    "method_name": "f"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\",\"is_constructor\":true},{\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(com.xingin.entities.NoteItemBean, int, boolean): io.reactivex.Observable\\u003cbn9.g\\u003cjava.util.List\\u003cjava.lang.Object\\u003e, androidx.recyclerview.widget.DiffUtil$DiffResult\\u003e\\u003e\",\"is_constructor\":false},{\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(com.xingin.entities.NoteItemBean, int, boolean): io.reactivex.Observable\\u003cbn9.g\\u003cjava.util.List\\u003cjava.lang.Object\\u003e, androidx.recyclerview.widget.DiffUtil$DiffResult\\u003e\\u003e\",\"is_constructor\":false},{\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(com.xingin.entities.NoteItemBean, int, boolean): bn9.g\\u003cjava.util.List\\u003cjava.lang.Object\\u003e, androidx.recyclerview.widget.DiffUtil$DiffResult\\u003e\",\"is_constructor\":false},{\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(boolean, java.lang.Object, java.lang.String): bn9.g\\u003cjava.util.List\\u003cjava.lang.Object\\u003e, androidx.recyclerview.widget.DiffUtil$DiffResult\\u003e\",\"is_constructor\":false},{\"name\":\"e\",\"def_pos\":0,\"signature\":\"e(java.lang.String): zr6.d\",\"is_constructor\":false},{\"name\":\"f\",\"def_pos\":0,\"signature\":\"f(java.util.ArrayList\\u003cjava.lang.Object\\u003e, java.util.List\\u003c? extends java.lang.Object\\u003e, boolean): bn9.g\\u003cjava.util.List\\u003cjava.lang.Object\\u003e, androidx.recyclerview.widget.DiffUtil$DiffResult\\u003e\",\"is_constructor\":false},{\"name\":\"g\",\"def_pos\":0,\"signature\":\"g(): com.xingin.matrix.v2.profile.newpage.noteinfo.collect.UserCollectedModel\",\"is_constructor\":false},{\"name\":\"h\",\"def_pos\":0,\"signature\":\"h(): java.lang.String\",\"is_constructor\":false},{\"name\":\"i\",\"def_pos\":0,\"signature\":\"i(): bm9.b\\u003cor6.d\\u003e\",\"is_constructor\":false},{\"name\":\"j\",\"def_pos\":0,\"signature\":\"j(boolean, java.lang.String): io.reactivex.Observable\\u003cbn9.g\\u003cjava.util.List\\u003cjava.lang.Object\\u003e, androidx.recyclerview.widget.DiffUtil$DiffResult\\u003e\\u003e\",\"is_constructor\":false},{\"name\":\"k\",\"def_pos\":0,\"signature\":\"k(boolean, java.util.List\\u003cjava.lang.Object\\u003e): boolean\",\"is_constructor\":false},{\"name\":\"l\",\"def_pos\":0,\"signature\":\"l(java.lang.String): io.reactivex.Observable\\u003cjava.lang.Object\\u003e\",\"is_constructor\":false},{\"name\":\"m\",\"def_pos\":0,\"signature\":\"m(boolean, java.lang.String): void\",\"is_constructor\":false}],\"method_count\":14,\"inner_class_count\":2,\"inner_classes\":[\"com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo.CollectNotesDiffCalculator\",\"com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo.a\"],\"name\":\"ProfileCollectRepo\",\"full_name\":\"com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo\",\"field_count\":21,\"fields\":[{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f56567a\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f56568b\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f56569c\"},{\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"def_pos\":0,\"name\":\"f56570d\"},{\"type\":\"com.xingin.matrix.v2.profile.newpage.noteinfo.collect.UserCollectedModel\",\"def_pos\":0,\"name\":\"f56571e\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f56572f\"},{\"type\":\"bm9.b\\u003cor6.d\\u003e\",\"def_pos\":0,\"name\":\"f56573g\"},{\"type\":\"an6.c\",\"def_pos\":0,\"name\":\"f56574h\"},{\"type\":\"mz6.c\",\"def_pos\":0,\"name\":\"f56575i\"},{\"type\":\"java.util.List\\u003cjava.lang.Object\\u003e\",\"def_pos\":0,\"name\":\"f56576j\"},{\"type\":\"java.util.List\\u003cjava.lang.Object\\u003e\",\"def_pos\":0,\"name\":\"f56577k\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f56578l\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f56579m\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f56580n\"},{\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"def_pos\":0,\"name\":\"f56581o\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f56582p\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f56583q\"},{\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"def_pos\":0,\"name\":\"f56584r\"},{\"type\":\"java.util.List\\u003cbg6.k\\u003e\",\"def_pos\":0,\"name\":\"f56585s\"},{\"type\":\"java.util.Queue\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"f56586t\"},{\"type\":\"java.util.Queue\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"f56587u\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo",
+          "method_name": "f",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_name\":\"f\",\"markers\":[],\"mode\":\"java\",\"full_name\":\"com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo.f\",\"class_name\":\"com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo\",\"overload_index\":0,\"fell_back\":false,\"body\":\"    public final g\\u003cList\\u003cObject\\u003e, DiffUtil.DiffResult\\u003e f(ArrayList\\u003cObject\\u003e arrayList, List\\u003c? extends Object\\u003e list, boolean z4) {\\r\\n        return new g\\u003c\\u003e(arrayList, DiffUtil.calculateDiff(new CollectNotesDiffCalculator(list, arrayList), z4));\\r\\n    }\",\"overload_count\":1}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo",
+    "method": {
+      "name": "f",
+      "reported_signature": "f(java.util.ArrayList<java.lang.Object>, java.util.List<? extends java.lang.Object>, boolean): bn9.g<java.util.List<java.lang.Object>, androidx.recyclerview.widget.DiffUtil$DiffResult>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final g<List<Object>, DiffUtil.DiffResult> f(ArrayList<Object> arrayList, List<? extends Object> list, boolean z4) {\r\n        return new g<>(arrayList, DiffUtil.calculateDiff(new CollectNotesDiffCalculator(list, arrayList), z4));\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "210fcec352a7cbf9f714ddd1a0558aad45870f52ae50b7b0034f326cf8bce43c",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

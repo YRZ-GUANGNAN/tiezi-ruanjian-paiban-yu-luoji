@@ -1,0 +1,3 @@
+    public final void K2(boolean z4) {
+        this.collected = z4;
+    }

@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_12c4666ff6ffff14179328faef79a1de822a6ae2445c7917018638a5d849f7fe",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.xhs.homepage.followfeed.utils.FollowFeedConfig",
+    "method_name": "a"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.xhs.homepage.followfeed.utils.FollowFeedConfig"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":1,\"method_count\":13,\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false},{\"signature\":\"a(): boolean\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false},{\"signature\":\"b(): boolean\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false},{\"signature\":\"c(): boolean\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false},{\"signature\":\"d(): boolean\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false},{\"signature\":\"e(): boolean\",\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false},{\"signature\":\"f(): boolean\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false},{\"signature\":\"g(): boolean\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false},{\"signature\":\"h(): long\",\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false},{\"signature\":\"i(): long\",\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false},{\"signature\":\"j(): boolean\",\"def_pos\":0,\"name\":\"j\",\"is_constructor\":false},{\"signature\":\"k(): boolean\",\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false},{\"signature\":\"l(): boolean\",\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false}],\"fields\":[{\"type\":\"com.xingin.xhs.homepage.followfeed.utils.FollowFeedConfig\",\"name\":\"f70616a\",\"def_pos\":0},{\"type\":\"bn9.d\",\"name\":\"f70617b\",\"def_pos\":0}],\"field_count\":2,\"full_name\":\"com.xingin.xhs.homepage.followfeed.utils.FollowFeedConfig\",\"name\":\"FollowFeedConfig\",\"inner_classes\":[\"com.xingin.xhs.homepage.followfeed.utils.FollowFeedConfig.a\"]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.xhs.homepage.followfeed.utils.FollowFeedConfig",
+          "method_name": "a",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.xhs.homepage.followfeed.utils.FollowFeedConfig\",\"full_name\":\"com.xingin.xhs.homepage.followfeed.utils.FollowFeedConfig.a\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"a\",\"overload_count\":1,\"body\":\"    public static final boolean a() {\\r\\n        return ((Number) ((XYExperimentImpl) h.f86264a).j(\\\"image_update_style\\\", new TypeToken\\u003cInteger\\u003e() { // from class: com.xingin.xhs.homepage.followfeed.utils.FollowFeedConfig$enableDotWithAvatar$$inlined$getValueJustOnce$1\\r\\n        }.getType(), 0)).intValue() \\u003e 0;\\r\\n    }\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.xhs.homepage.followfeed.utils.FollowFeedConfig",
+    "method": {
+      "name": "a",
+      "reported_signature": "a(): boolean",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public static final boolean a() {\r\n        return ((Number) ((XYExperimentImpl) h.f86264a).j(\"image_update_style\", new TypeToken<Integer>() { // from class: com.xingin.xhs.homepage.followfeed.utils.FollowFeedConfig$enableDotWithAvatar$$inlined$getValueJustOnce$1\r\n        }.getType(), 0)).intValue() > 0;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "0b86a050ba95216c441d9ea9d76b420675200810e6e653ace84f0b76eaee6d59",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

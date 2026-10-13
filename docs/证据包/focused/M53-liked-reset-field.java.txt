@@ -1,0 +1,3 @@
+    public final void o3(boolean z4) {
+        this.liked = z4;
+    }

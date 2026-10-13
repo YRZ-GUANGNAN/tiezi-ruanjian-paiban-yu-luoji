@@ -1,0 +1,117 @@
+    /* JADX WARN: Code duplicated, block: B:28:0x0057  */
+    /* JADX WARN: Code duplicated, block: B:30:0x005d  */
+    /* JADX WARN: Code duplicated, block: B:32:0x0066  */
+    /* JADX WARN: Code duplicated, block: B:41:0x008c  */
+    /* JADX WARN: Code duplicated, block: B:44:0x009c  */
+    /* JADX WARN: Code duplicated, block: B:46:0x00a2  */
+    @Override // android.view.View.OnTouchListener
+    @SuppressLint({"ClickableViewAccessibility"})
+    public boolean onTouch(View view, MotionEvent motionEvent) {
+        ViewParent parent;
+        ViewParent parent2;
+        if (motionEvent.getPointerCount() > 2) {
+            return true;
+        }
+        if (!this.W || !b0.c((ImageView) view)) {
+            return false;
+        }
+        int action = motionEvent.getAction() & 255;
+        if (action == 0) {
+            if (motionEvent.getPointerCount() == 1 && P() && B()) {
+                this.f39573p = motionEvent.getX();
+                float y4 = motionEvent.getY();
+                this.f39572o = y4;
+                this.f39575r = y4;
+            }
+            if (motionEvent.getPointerCount() == 2) {
+                this.P = true;
+                k0();
+                wg1.b.b(this.f39571n, motionEvent);
+            }
+            if (motionEvent.getAction() == 0) {
+                parent = view.getParent();
+                if (parent != null) {
+                    parent.requestDisallowInterceptTouchEvent(true);
+                }
+                yg1.f.a("[NoteDetailPhotoViewAttacher].onTouch MotionEvent.ACTION_DOWN");
+                w();
+            }
+        } else if (action == 1) {
+            parent2 = view.getParent();
+            if (parent2 != null) {
+                parent2.requestDisallowInterceptTouchEvent(false);
+            }
+            S0(view, this.f39571n, motionEvent);
+        } else if (action == 2) {
+            if (motionEvent.getPointerCount() == 1) {
+                this.P = false;
+                float y9 = motionEvent.getY();
+                float f4 = this.f39572o;
+                if (f4 > 0.0f && y9 > f4) {
+                    C(y9 - this.f39575r);
+                    this.f39575r = y9;
+                }
+            }
+            if (motionEvent.getPointerCount() == 2) {
+                wg1.b.b(this.f39571n, motionEvent);
+            }
+        } else if (action == 3) {
+            parent2 = view.getParent();
+            if (parent2 != null) {
+                parent2.requestDisallowInterceptTouchEvent(false);
+            }
+            S0(view, this.f39571n, motionEvent);
+        } else if (action == 5) {
+            if (motionEvent.getPointerCount() == 1) {
+                this.f39573p = motionEvent.getX();
+                float y11 = motionEvent.getY();
+                this.f39572o = y11;
+                this.f39575r = y11;
+            }
+            if (motionEvent.getPointerCount() == 2) {
+                this.P = true;
+                k0();
+                wg1.b.b(this.f39571n, motionEvent);
+            }
+            if (motionEvent.getAction() == 0) {
+                parent = view.getParent();
+                if (parent != null) {
+                    parent.requestDisallowInterceptTouchEvent(true);
+                }
+                yg1.f.a("[NoteDetailPhotoViewAttacher].onTouch MotionEvent.ACTION_DOWN");
+                w();
+            }
+        }
+        hg1.a aVar = this.f39577t;
+        if (aVar == null) {
+            aVar = null;
+        }
+        boolean zE = aVar.e();
+        hg1.a aVar2 = this.f39577t;
+        if (aVar2 == null) {
+            aVar2 = null;
+        }
+        boolean zD = aVar2.d();
+        hg1.a aVar3 = this.f39577t;
+        if (aVar3 == null) {
+            aVar3 = null;
+        }
+        aVar3.f(motionEvent);
+        if (!zE) {
+            hg1.a aVar4 = this.f39577t;
+            if (aVar4 == null) {
+                aVar4 = null;
+            }
+            aVar4.e();
+        }
+        if (!zD) {
+            hg1.a aVar5 = this.f39577t;
+            if (aVar5 == null) {
+                aVar5 = null;
+            }
+            aVar5.d();
+        }
+        GestureDetector gestureDetector = this.f39576s;
+        (gestureDetector != null ? gestureDetector : null).onTouchEvent(motionEvent);
+        return true;
+    }

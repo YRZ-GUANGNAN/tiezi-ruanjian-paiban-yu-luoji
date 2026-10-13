@@ -1,0 +1,8 @@
+    public final d0 f(boolean z4) {
+        String str = z4 ? this.noteSingleTapLike36 : this.noteSingleTapLike34;
+        String str2 = z4 ? this.noteSingleTapUnlike36 : this.noteSingleTapUnlike34;
+        if (str == null || str2 == null) {
+            return null;
+        }
+        return new d0(str, str2);
+    }

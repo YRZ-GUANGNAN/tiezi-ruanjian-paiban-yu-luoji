@@ -1,0 +1,280 @@
+{
+  "evidence_id": "ev_dd582a7835c8a0c568c523264c5090b70299e64af49aa21f66cf9917ab8bf046",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"CREATOR\",\"type\":\"android.os.Parcelable$Creator\",\"def_pos\":0},{\"name\":\"config\",\"type\":\"com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$Config\",\"def_pos\":0},{\"name\":\"f73179d\",\"type\":\"java.lang.String\",\"def_pos\":0},{\"name\":\"f73180e\",\"type\":\"java.lang.String\",\"def_pos\":0},{\"name\":\"f73181f\",\"type\":\"java.util.ArrayList\\u003ccom.xingin.android.xhscomm.router.page.Target\\u003e\",\"def_pos\":0},{\"name\":\"f73182g\",\"type\":\"java.lang.String\",\"def_pos\":0},{\"name\":\"f73183h\",\"type\":\"android.os.Bundle\",\"def_pos\":0},{\"name\":\"note\",\"type\":\"com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$NoteInfo\",\"def_pos\":0},{\"name\":\"source\",\"type\":\"java.lang.String\",\"def_pos\":0}],\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cclinit\\u003e(): void\",\"is_constructor\":false},{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\",\"is_constructor\":true},{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$Config, com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$NoteInfo, java.lang.String, java.lang.String, java.lang.String, java.util.ArrayList\\u003ccom.xingin.android.xhscomm.router.page.Target\\u003e, java.lang.String, android.os.Bundle): void\",\"is_constructor\":true},{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$Config, com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$NoteInfo, java.lang.String, java.lang.String, java.lang.String, java.util.ArrayList, java.lang.String, android.os.Bundle, int, kotlin.jvm.internal.DefaultConstructorMarker): void\",\"is_constructor\":true},{\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(): com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$Config\",\"is_constructor\":false},{\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(): com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$NoteInfo\",\"is_constructor\":false},{\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(): java.lang.String\",\"is_constructor\":false},{\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$Config): void\",\"is_constructor\":false},{\"name\":\"getExtra\",\"def_pos\":0,\"signature\":\"getExtra(): android.os.Bundle\",\"is_constructor\":false},{\"name\":\"getMinAppVersion\",\"def_pos\":0,\"signature\":\"getMinAppVersion(): java.lang.String\",\"is_constructor\":false},{\"name\":\"getRawUri\",\"def_pos\":0,\"signature\":\"getRawUri(): java.lang.String\",\"is_constructor\":false},{\"name\":\"getTargetId\",\"def_pos\":0,\"signature\":\"getTargetId(): java.lang.String\",\"is_constructor\":false},{\"name\":\"getTargets\",\"def_pos\":0,\"signature\":\"getTargets(): java.util.ArrayList\\u003ccom.xingin.android.xhscomm.router.page.Target\\u003e\",\"is_constructor\":false},{\"name\":\"setExtra\",\"def_pos\":0,\"signature\":\"setExtra(android.os.Bundle): void\",\"is_constructor\":false},{\"name\":\"setMinAppVersion\",\"def_pos\":0,\"signature\":\"setMinAppVersion(java.lang.String): void\",\"is_constructor\":false},{\"name\":\"setRawUri\",\"def_pos\":0,\"signature\":\"setRawUri(java.lang.String): void\",\"is_constructor\":false},{\"name\":\"setTargetId\",\"def_pos\":0,\"signature\":\"setTargetId(java.lang.String): void\",\"is_constructor\":false},{\"name\":\"setTargets\",\"def_pos\":0,\"signature\":\"setTargets(java.util.ArrayList\\u003ccom.xingin.android.xhscomm.router.page.Target\\u003e): void\",\"is_constructor\":false},{\"name\":\"writeToParcel\",\"def_pos\":0,\"signature\":\"writeToParcel(android.os.Parcel, int): void\",\"is_constructor\":false}],\"method_count\":19,\"inner_class_count\":4,\"inner_classes\":[\"com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote.Config\",\"com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote.NoteInfo\",\"com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote.a\",\"com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote.b\"],\"name\":\"PagePostEditNote\",\"full_name\":\"com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote\",\"field_count\":9}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$Config, com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$NoteInfo, java.lang.String, java.lang.String, java.lang.String, java.util.ArrayList<com.xingin.android.xhscomm.router.page.Target>, java.lang.String, android.os.Bundle): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$Config, com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$NoteInfo, java.lang.String, java.lang.String, java.lang.String, java.util.ArrayList, java.lang.String, android.os.Bundle, int, kotlin.jvm.internal.DefaultConstructorMarker): void",
+        "overload_index": 2,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$Config",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(): com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$NoteInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$Config): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getExtra",
+        "reported_signature": "getExtra(): android.os.Bundle",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getMinAppVersion",
+        "reported_signature": "getMinAppVersion(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getRawUri",
+        "reported_signature": "getRawUri(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getTargetId",
+        "reported_signature": "getTargetId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getTargets",
+        "reported_signature": "getTargets(): java.util.ArrayList<com.xingin.android.xhscomm.router.page.Target>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setExtra",
+        "reported_signature": "setExtra(android.os.Bundle): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setMinAppVersion",
+        "reported_signature": "setMinAppVersion(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setRawUri",
+        "reported_signature": "setRawUri(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setTargetId",
+        "reported_signature": "setTargetId(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setTargets",
+        "reported_signature": "setTargets(java.util.ArrayList<com.xingin.android.xhscomm.router.page.Target>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "writeToParcel",
+        "reported_signature": "writeToParcel(android.os.Parcel, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "CREATOR",
+        "reported_type": "android.os.Parcelable$Creator"
+      },
+      {
+        "name": "config",
+        "reported_type": "com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$Config"
+      },
+      {
+        "name": "f73179d",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f73180e",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f73181f",
+        "reported_type": "java.util.ArrayList<com.xingin.android.xhscomm.router.page.Target>"
+      },
+      {
+        "name": "f73182g",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f73183h",
+        "reported_type": "android.os.Bundle"
+      },
+      {
+        "name": "note",
+        "reported_type": "com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote$NoteInfo"
+      },
+      {
+        "name": "source",
+        "reported_type": "java.lang.String"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote.Config",
+      "com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote.NoteInfo",
+      "com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote.a",
+      "com.xingin.xhs.xydeeplink.xhsdiscover.post_edit_note.PagePostEditNote.b"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "68ed0913520033eebaa11f14a05b2fff40054af8e0cab272517ca263eae4e4ea",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

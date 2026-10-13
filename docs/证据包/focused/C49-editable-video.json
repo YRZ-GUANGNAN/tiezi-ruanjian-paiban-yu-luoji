@@ -1,0 +1,1636 @@
+{
+  "evidence_id": "ev_c2c1a70551fd3df1e54c10e94597bdf090d6e883df69081ea855ec2c450faed1",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.capa.feature_model.session.EditableVideo2"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.capa.feature_model.session.EditableVideo2"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"Companion\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.session.EditableVideo2$a\"},{\"name\":\"MAX_VIDEO_SLICE_COUNT\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"MIN_POST_ABLE_VIDEO_LENGTH\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"MIN_POST_ABLE_VIDEO_LENGTH_EXP\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"MIN_SPLIT_ABLE_VIDEO_LENGTH\",\"def_pos\":0,\"type\":\"double\"},{\"name\":\"TAG\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"VIDEO_DURATION_OFFSET\",\"def_pos\":0,\"type\":\"float\"},{\"name\":\"VIDEO_ENTRANCE_ALBUM\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"VIDEO_ENTRANCE_DEEPLINK\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"VIDEO_ENTRANCE_ERROR\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"VIDEO_ENTRANCE_FREE\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"VIDEO_ENTRANCE_SEGMENT\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"addressBean\",\"def_pos\":0,\"type\":\"com.xingin.common_model.exif.CapaAddressBean\"},{\"name\":\"aiLyricModel\",\"def_pos\":0,\"type\":\"a22.b\"},{\"name\":\"aigcMetadata\",\"def_pos\":0,\"type\":\"com.xingin.entities.capa.AigcMetadata\"},{\"name\":\"albumImagePath\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"audioFileId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"autoPopEffectPanel\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"},{\"name\":\"backgroundMusic\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.session.CapaMusicBean\"},{\"name\":\"bizGoodsItem\",\"def_pos\":0,\"type\":\"a22.g\"},{\"name\":\"cacheSize\",\"def_pos\":0,\"type\":\"bn9.g\\u003cjava.lang.Integer, java.lang.Integer\\u003e\"},{\"name\":\"cameraMusic\",\"def_pos\":0,\"type\":\"com.xingin.entities.MusicBean\"},{\"name\":\"capaLiveInfo\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.live.CapaLiveInfo\"},{\"name\":\"captionState\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.session.CaptionState\"},{\"name\":\"captureBeautify\",\"def_pos\":0,\"type\":\"va2.a\"},{\"name\":\"captureFilterModel\",\"def_pos\":0,\"type\":\"com.xingin.common_model.filter.CapaFilterBean\"},{\"name\":\"cloudTemplateSize\",\"def_pos\":0,\"type\":\"bn9.g\\u003cjava.lang.Integer, java.lang.Integer\\u003e\"},{\"name\":\"coverBean\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.edit.CapaVideoCoverBean\"},{\"name\":\"coverPasterList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.capa.model.text.CapaPasterBaseModel\\u003e\"},{\"name\":\"coverPasterModel\",\"def_pos\":0,\"type\":\"com.xingin.common_model.text.CapaVideoTextModel\"},{\"name\":\"coverScale\",\"def_pos\":0,\"type\":\"float\"},{\"name\":\"coverTemplateId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"coverTranX\",\"def_pos\":0,\"type\":\"float\"},{\"name\":\"coverTranY\",\"def_pos\":0,\"type\":\"float\"},{\"name\":\"editAbilityUsage\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.edit.EditAbilityUsage\"},{\"name\":\"editPageStayTime\",\"def_pos\":0,\"type\":\"g12.a\"},{\"name\":\"effectModelList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.common_model.effect.CapaEffectModel\\u003e\"},{\"name\":\"entrance\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"extraMainAudioList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.capa.feature_model.session.CapaMusicBean\\u003e\"},{\"name\":\"extractMusicCountRecord\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"filter\",\"def_pos\":0,\"type\":\"com.xingin.common_model.filter.CapaFilterBean\"},{\"name\":\"frameRate\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"fromPostPage\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"},{\"name\":\"goodsItemList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ca22.x\\u003e\"},{\"name\":\"goodsModelList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.capa.feature_model.session.CapaGoodsModel\\u003e\"},{\"name\":\"hasReplaceVideo\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"hasUpdateScale\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"interactPaster\",\"def_pos\":0,\"type\":\"com.xingin.capa.model.text.CapaPasterBaseModel\"},{\"name\":\"isAlbumImage\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isLightPreview\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isStreamExtractVideo\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isTemplateCreate\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"lightVideoEditTemplateCache\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.capa.feature_model.template.video.VideoTemplate\\u003e\"},{\"name\":\"musicId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"musicList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.capa.feature_model.session.CapaMusicBean\\u003e\"},{\"name\":\"needCompatTemplateSticker\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"needCompatTransition\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"optTimelineParam\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"paintBean\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.session.VideoPaintBean\"},{\"name\":\"pasterModelList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.capa.model.text.CapaPasterBaseModel\\u003e\"},{\"name\":\"processAnyway\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"},{\"name\":\"saveEffectImages\",\"def_pos\":0,\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\"},{\"name\":\"showUpdateDraftDialog\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"singlePropOutModel\",\"def_pos\":0,\"type\":\"com.xingin.common_model.prop.SinglePropOutModel\"},{\"name\":\"sliceList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.common_model.video.Slice\\u003e\"},{\"name\":\"strategy\",\"def_pos\":0,\"type\":\"java.lang.Integer\"},{\"name\":\"styleEditableVideoSource\",\"def_pos\":0,\"type\":\"a22.g0\"},{\"name\":\"templateId\",\"def_pos\":0,\"type\":\"java.lang.Integer\"},{\"name\":\"videoChapterList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.capa.feature_model.session.ChapterBean\\u003e\"},{\"name\":\"videoChapterSync\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"videoComment\",\"def_pos\":0,\"type\":\"a22.j0\"},{\"name\":\"videoCoverPath\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"videoCropRequirement\",\"def_pos\":0,\"type\":\"a22.l0\"},{\"name\":\"videoEditTemplate\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.template.video.VideoTemplate\"},{\"name\":\"videoHeight\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"videoScale\",\"def_pos\":0,\"type\":\"float\"},{\"name\":\"videoTagList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.capa.feature_model.session.VideoTagBean\\u003e\"},{\"name\":\"videoTemplate\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.template.video.VideoTemplate\"},{\"name\":\"videoTemplateCVRes\",\"def_pos\":0,\"type\":\"java.util.List\\u003cn84.c\\u003e\"},{\"name\":\"videoVolume\",\"def_pos\":0,\"type\":\"float\"},{\"name\":\"videoWidth\",\"def_pos\":0,\"type\":\"int\"}],\"field_count\":81,\"full_name\":\"com.xingin.capa.feature_model.session.EditableVideo2\",\"name\":\"EditableVideo2\",\"inner_classes\":[\"com.xingin.capa.feature_model.session.EditableVideo2.a\"],\"inner_class_count\":1,\"method_count\":172,\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(com.xingin.capa.feature_model.edit.CapaVideoCoverBean, java.util.List\\u003ccom.xingin.common_model.video.Slice\\u003e, com.xingin.common_model.filter.CapaFilterBean, java.lang.String, java.lang.Boolean, com.xingin.capa.feature_model.session.VideoPaintBean, java.lang.Boolean, a22.g0, boolean, com.xingin.entities.capa.AigcMetadata): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(com.xingin.capa.feature_model.edit.CapaVideoCoverBean, java.util.List, com.xingin.common_model.filter.CapaFilterBean, java.lang.String, java.lang.Boolean, com.xingin.capa.feature_model.session.VideoPaintBean, java.lang.Boolean, a22.g0, boolean, com.xingin.entities.capa.AigcMetadata, int, kotlin.jvm.internal.DefaultConstructorMarker): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(kotlin.jvm.internal.DefaultConstructorMarker): void\",\"def_pos\":0},{\"name\":\"formatToFloat\",\"is_constructor\":false,\"signature\":\"formatToFloat(long): float\",\"def_pos\":0},{\"name\":\"getAddressBean\",\"is_constructor\":false,\"signature\":\"getAddressBean(): com.xingin.common_model.exif.CapaAddressBean\",\"def_pos\":0},{\"name\":\"getAiLyricModel\",\"is_constructor\":false,\"signature\":\"getAiLyricModel(): a22.b\",\"def_pos\":0},{\"name\":\"getAigcMetadata\",\"is_constructor\":false,\"signature\":\"getAigcMetadata(): com.xingin.entities.capa.AigcMetadata\",\"def_pos\":0},{\"name\":\"getAlbumImagePath\",\"is_constructor\":false,\"signature\":\"getAlbumImagePath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getAllEffectModelList\",\"is_constructor\":false,\"signature\":\"getAllEffectModelList(): java.util.List\\u003ccom.xingin.common_model.effect.CapaEffectModel\\u003e\",\"def_pos\":0},{\"name\":\"getAllResMaxDuration\",\"is_constructor\":false,\"signature\":\"getAllResMaxDuration(): long\",\"def_pos\":0},{\"name\":\"getAudioFileId\",\"is_constructor\":false,\"signature\":\"getAudioFileId(): java.lang.String\",\"def_pos\":0},{\"name\":\"getAutoPopEffectPanel\",\"is_constructor\":false,\"signature\":\"getAutoPopEffectPanel(): java.lang.Boolean\",\"def_pos\":0},{\"name\":\"getBackgroundMusic\",\"is_constructor\":false,\"signature\":\"getBackgroundMusic(): com.xingin.capa.feature_model.session.CapaMusicBean\",\"def_pos\":0},{\"name\":\"getBackgroundMusicProtocol\",\"is_constructor\":false,\"signature\":\"getBackgroundMusicProtocol(): e94.h\",\"def_pos\":0},{\"name\":\"getBizGoodsItem\",\"is_constructor\":false,\"signature\":\"getBizGoodsItem(): a22.g\",\"def_pos\":0},{\"name\":\"getCameraMusic\",\"is_constructor\":false,\"signature\":\"getCameraMusic(): com.xingin.entities.MusicBean\",\"def_pos\":0},{\"name\":\"getCanvasHeight\",\"is_constructor\":false,\"signature\":\"getCanvasHeight(): int\",\"def_pos\":0},{\"name\":\"getCanvasWidth\",\"is_constructor\":false,\"signature\":\"getCanvasWidth(): int\",\"def_pos\":0},{\"name\":\"getCapaLiveInfo\",\"is_constructor\":false,\"signature\":\"getCapaLiveInfo(): com.xingin.capa.feature_model.live.CapaLiveInfo\",\"def_pos\":0},{\"name\":\"getCapaVideoTextModelList\",\"is_constructor\":false,\"signature\":\"getCapaVideoTextModelList(): java.util.List\\u003ccom.xingin.common_model.text.CapaVideoTextModel\\u003e\",\"def_pos\":0},{\"name\":\"getCaptionModelFromTextList\",\"is_constructor\":false,\"signature\":\"getCaptionModelFromTextList(): com.xingin.common_model.caption.CaptionModel\",\"def_pos\":0},{\"name\":\"getCaptionState\",\"is_constructor\":false,\"signature\":\"getCaptionState(): com.xingin.capa.feature_model.session.CaptionState\",\"def_pos\":0},{\"name\":\"getCaptureBeautify\",\"is_constructor\":false,\"signature\":\"getCaptureBeautify(): va2.a\",\"def_pos\":0},{\"name\":\"getCaptureFilterModel\",\"is_constructor\":false,\"signature\":\"getCaptureFilterModel(): com.xingin.common_model.filter.CapaFilterBean\",\"def_pos\":0},{\"name\":\"getCloudTemplateSize\",\"is_constructor\":false,\"signature\":\"getCloudTemplateSize(): bn9.g\\u003cjava.lang.Integer, java.lang.Integer\\u003e\",\"def_pos\":0},{\"name\":\"getCoverBean\",\"is_constructor\":false,\"signature\":\"getCoverBean(): com.xingin.capa.feature_model.edit.CapaVideoCoverBean\",\"def_pos\":0},{\"name\":\"getCoverPasterList\",\"is_constructor\":false,\"signature\":\"getCoverPasterList(): java.util.List\\u003ccom.xingin.capa.model.text.CapaPasterBaseModel\\u003e\",\"def_pos\":0},{\"name\":\"getCoverPasterModel\",\"is_constructor\":false,\"signature\":\"getCoverPasterModel(): com.xingin.common_model.text.CapaVideoTextModel\",\"def_pos\":0},{\"name\":\"getCoverScale\",\"is_constructor\":false,\"signature\":\"getCoverScale(): float\",\"def_pos\":0},{\"name\":\"getCoverTemplateId\",\"is_constructor\":false,\"signature\":\"getCoverTemplateId(): java.lang.String\",\"def_pos\":0},{\"name\":\"getCoverTranX\",\"is_constructor\":false,\"signature\":\"getCoverTranX(): float\",\"def_pos\":0},{\"name\":\"getCoverTranY\",\"is_constructor\":false,\"signature\":\"getCoverTranY(): float\",\"def_pos\":0},{\"name\":\"getEditAbilityUsage\",\"is_constructor\":false,\"signature\":\"getEditAbilityUsage(): com.xingin.capa.feature_model.edit.EditAbilityUsage\",\"def_pos\":0},{\"name\":\"getEditPageStayTime\",\"is_constructor\":false,\"signature\":\"getEditPageStayTime(): g12.a\",\"def_pos\":0},{\"name\":\"getEffectModelList\",\"is_constructor\":false,\"signature\":\"getEffectModelList(): java.util.List\\u003ccom.xingin.common_model.effect.CapaEffectModel\\u003e\",\"def_pos\":0},{\"name\":\"getEffectProtocolList\",\"is_constructor\":false,\"signature\":\"getEffectProtocolList(): java.util.List\\u003ce94.g\\u003e\",\"def_pos\":0},{\"name\":\"getEntrance\",\"is_constructor\":false,\"signature\":\"getEntrance(): java.lang.String\",\"def_pos\":0},{\"name\":\"getExtraMainAudioList\",\"is_constructor\":false,\"signature\":\"getExtraMainAudioList(): java.util.List\\u003ccom.xingin.capa.feature_model.session.CapaMusicBean\\u003e\",\"def_pos\":0},{\"name\":\"getExtractMusicCountRecord\",\"is_constructor\":false,\"signature\":\"getExtractMusicCountRecord(): int\",\"def_pos\":0},{\"name\":\"getFilter\",\"is_constructor\":false,\"signature\":\"getFilter(): com.xingin.common_model.filter.CapaFilterBean\",\"def_pos\":0},{\"name\":\"getFilterProtocol\",\"is_constructor\":false,\"signature\":\"getFilterProtocol(): e94.d\",\"def_pos\":0},{\"name\":\"getFrameRate\",\"is_constructor\":false,\"signature\":\"getFrameRate(): int\",\"def_pos\":0},{\"name\":\"getFromPostPage\",\"is_constructor\":false,\"signature\":\"getFromPostPage(): java.lang.Boolean\",\"def_pos\":0},{\"name\":\"getGoodsItemList\",\"is_constructor\":false,\"signature\":\"getGoodsItemList(): java.util.List\\u003ca22.x\\u003e\",\"def_pos\":0},{\"name\":\"getGoodsModelList\",\"is_constructor\":false,\"signature\":\"getGoodsModelList(): java.util.List\\u003ccom.xingin.capa.feature_model.session.CapaGoodsModel\\u003e\",\"def_pos\":0},{\"name\":\"getGoodsModelList$annotations\",\"is_constructor\":false,\"signature\":\"getGoodsModelList$annotations(): void\",\"def_pos\":0},{\"name\":\"getHasReplaceVideo\",\"is_constructor\":false,\"signature\":\"getHasReplaceVideo(): boolean\",\"def_pos\":0},{\"name\":\"getHasUpdateScale\",\"is_constructor\":false,\"signature\":\"getHasUpdateScale(): boolean\",\"def_pos\":0},{\"name\":\"getInteractPaster\",\"is_constructor\":false,\"signature\":\"getInteractPaster(): com.xingin.capa.model.text.CapaPasterBaseModel\",\"def_pos\":0},{\"name\":\"getLightVideoEditTemplateCache\",\"is_constructor\":false,\"signature\":\"getLightVideoEditTemplateCache(): java.util.List\\u003ccom.xingin.capa.feature_model.template.video.VideoTemplate\\u003e\",\"def_pos\":0},{\"name\":\"getMainTrackMaxDuration\",\"is_constructor\":false,\"signature\":\"getMainTrackMaxDuration(): long\",\"def_pos\":0},{\"name\":\"getMaxBitrate\",\"is_constructor\":false,\"signature\":\"getMaxBitrate(boolean): long\",\"def_pos\":0},{\"name\":\"getMaxBitrate$default\",\"is_constructor\":false,\"signature\":\"getMaxBitrate$default(com.xingin.capa.feature_model.session.EditableVideo2, boolean, int, java.lang.Object): long\",\"def_pos\":0},{\"name\":\"getMaxResolution\",\"is_constructor\":false,\"signature\":\"getMaxResolution(boolean): a22.m0\",\"def_pos\":0},{\"name\":\"getMaxResolution$default\",\"is_constructor\":false,\"signature\":\"getMaxResolution$default(com.xingin.capa.feature_model.session.EditableVideo2, boolean, int, java.lang.Object): a22.m0\",\"def_pos\":0},{\"name\":\"getMusicId\",\"is_constructor\":false,\"signature\":\"getMusicId(): java.lang.String\",\"def_pos\":0},{\"name\":\"getMusicList\",\"is_constructor\":false,\"signature\":\"getMusicList(): java.util.List\\u003ccom.xingin.capa.feature_model.session.CapaMusicBean\\u003e\",\"def_pos\":0},{\"name\":\"getNeedCompatTemplateSticker\",\"is_constructor\":false,\"signature\":\"getNeedCompatTemplateSticker(): boolean\",\"def_pos\":0},{\"name\":\"getNeedCompatTransition\",\"is_constructor\":false,\"signature\":\"getNeedCompatTransition(): boolean\",\"def_pos\":0},{\"name\":\"getOptTimelineParam\",\"is_constructor\":false,\"signature\":\"getOptTimelineParam(): boolean\",\"def_pos\":0},{\"name\":\"getOriginFileTotalSize\",\"is_constructor\":false,\"signature\":\"getOriginFileTotalSize(boolean): double\",\"def_pos\":0},{\"name\":\"getOriginFileTotalSize$default\",\"is_constructor\":false,\"signature\":\"getOriginFileTotalSize$default(com.xingin.capa.feature_model.session.EditableVideo2, boolean, int, java.lang.Object): double\",\"def_pos\":0},{\"name\":\"getPaintBean\",\"is_constructor\":false,\"signature\":\"getPaintBean(): com.xingin.capa.feature_model.session.VideoPaintBean\",\"def_pos\":0},{\"name\":\"getPaintBeanProtocol\",\"is_constructor\":false,\"signature\":\"getPaintBeanProtocol(): e94.m\",\"def_pos\":0},{\"name\":\"getPasterModelCollection\",\"is_constructor\":false,\"signature\":\"getPasterModelCollection(): java.util.Collection\\u003cya2.b\\u003e\",\"def_pos\":0},{\"name\":\"getPasterModelList\",\"is_constructor\":false,\"signature\":\"getPasterModelList(): java.util.List\\u003ccom.xingin.capa.model.text.CapaPasterBaseModel\\u003e\",\"def_pos\":0},{\"name\":\"getProcessAnyway\",\"is_constructor\":false,\"signature\":\"getProcessAnyway(): java.lang.Boolean\",\"def_pos\":0},{\"name\":\"getRecommendVideoSizeByMode\",\"is_constructor\":false,\"signature\":\"getRecommendVideoSizeByMode(boolean, boolean): bn9.g\\u003cjava.lang.Integer, java.lang.Integer\\u003e\",\"def_pos\":0},{\"name\":\"getSaveEffectImages\",\"is_constructor\":false,\"signature\":\"getSaveEffectImages(): java.util.List\\u003cjava.lang.String\\u003e\",\"def_pos\":0},{\"name\":\"getShowUpdateDraftDialog\",\"is_constructor\":false,\"signature\":\"getShowUpdateDraftDialog(): boolean\",\"def_pos\":0},{\"name\":\"getSinglePropOutModel\",\"is_constructor\":false,\"signature\":\"getSinglePropOutModel(): com.xingin.common_model.prop.SinglePropOutModel\",\"def_pos\":0},{\"name\":\"getSliceList\",\"is_constructor\":false,\"signature\":\"getSliceList(): java.util.List\\u003ccom.xingin.common_model.video.Slice\\u003e\",\"def_pos\":0},{\"name\":\"getSliceProtocolList\",\"is_constructor\":false,\"signature\":\"getSliceProtocolList(): java.util.List\\u003ce94.k\\u003e\",\"def_pos\":0},{\"name\":\"getStrategy\",\"is_constructor\":false,\"signature\":\"getStrategy(): java.lang.Integer\",\"def_pos\":0},{\"name\":\"getStyleEditableVideoSource\",\"is_constructor\":false,\"signature\":\"getStyleEditableVideoSource(): a22.g0\",\"def_pos\":0},{\"name\":\"getTemplateId\",\"is_constructor\":false,\"signature\":\"getTemplateId(): java.lang.Integer\",\"def_pos\":0},{\"name\":\"getTotalDuration\",\"is_constructor\":false,\"signature\":\"getTotalDuration(): float\",\"def_pos\":0},{\"name\":\"getTotalDurationMs\",\"is_constructor\":false,\"signature\":\"getTotalDurationMs(): long\",\"def_pos\":0},{\"name\":\"getVideoChapterList\",\"is_constructor\":false,\"signature\":\"getVideoChapterList(): java.util.List\\u003ccom.xingin.capa.feature_model.session.ChapterBean\\u003e\",\"def_pos\":0},{\"name\":\"getVideoChapterSync\",\"is_constructor\":false,\"signature\":\"getVideoChapterSync(): boolean\",\"def_pos\":0},{\"name\":\"getVideoComment\",\"is_constructor\":false,\"signature\":\"getVideoComment(): a22.j0\",\"def_pos\":0},{\"name\":\"getVideoCoverPath\",\"is_constructor\":false,\"signature\":\"getVideoCoverPath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getVideoCropRequirement\",\"is_constructor\":false,\"signature\":\"getVideoCropRequirement(): a22.l0\",\"def_pos\":0},{\"name\":\"getVideoEditTemplate\",\"is_constructor\":false,\"signature\":\"getVideoEditTemplate(): com.xingin.capa.feature_model.template.video.VideoTemplate\",\"def_pos\":0},{\"name\":\"getVideoHeight\",\"is_constructor\":false,\"signature\":\"getVideoHeight(): int\",\"def_pos\":0},{\"name\":\"getVideoScale\",\"is_constructor\":false,\"signature\":\"getVideoScale(): float\",\"def_pos\":0},{\"name\":\"getVideoSliceMetaSource\",\"is_constructor\":false,\"signature\":\"getVideoSliceMetaSource(): java.util.List\\u003cjava.lang.String\\u003e\",\"def_pos\":0},{\"name\":\"getVideoTagList\",\"is_constructor\":false,\"signature\":\"getVideoTagList(): java.util.List\\u003ccom.xingin.capa.feature_model.session.VideoTagBean\\u003e\",\"def_pos\":0},{\"name\":\"getVideoTemplate\",\"is_constructor\":false,\"signature\":\"getVideoTemplate(): com.xingin.capa.feature_model.template.video.VideoTemplate\",\"def_pos\":0},{\"name\":\"getVideoTemplateCVModel\",\"is_constructor\":false,\"signature\":\"getVideoTemplateCVModel(): java.util.List\\u003cn84.c\\u003e\",\"def_pos\":0},{\"name\":\"getVideoTemplateCVRes\",\"is_constructor\":false,\"signature\":\"getVideoTemplateCVRes(): java.util.List\\u003cn84.c\\u003e\",\"def_pos\":0},{\"name\":\"getVideoTemplateProtocol\",\"is_constructor\":false,\"signature\":\"getVideoTemplateProtocol(): m53.b\",\"def_pos\":0},{\"name\":\"getVideoVolume\",\"is_constructor\":false,\"signature\":\"getVideoVolume(): float\",\"def_pos\":0},{\"name\":\"getVideoWidth\",\"is_constructor\":false,\"signature\":\"getVideoWidth(): int\",\"def_pos\":0},{\"name\":\"hasCaptionModel\",\"is_constructor\":false,\"signature\":\"hasCaptionModel(): boolean\",\"def_pos\":0},{\"name\":\"isAlbumImage\",\"is_constructor\":false,\"signature\":\"isAlbumImage(): boolean\",\"def_pos\":0},{\"name\":\"isConsumeCustomTemplate\",\"is_constructor\":false,\"signature\":\"isConsumeCustomTemplate(): boolean\",\"def_pos\":0},{\"name\":\"isLightPreview\",\"is_constructor\":false,\"signature\":\"isLightPreview(): boolean\",\"def_pos\":0},{\"name\":\"isLive\",\"is_constructor\":false,\"signature\":\"isLive(): boolean\",\"def_pos\":0},{\"name\":\"isLivePhoto\",\"is_constructor\":false,\"signature\":\"isLivePhoto(): boolean\",\"def_pos\":0},{\"name\":\"isLiveVideo\",\"is_constructor\":false,\"signature\":\"isLiveVideo(): boolean\",\"def_pos\":0},{\"name\":\"isProcessWithEditor\",\"is_constructor\":false,\"signature\":\"isProcessWithEditor(): bn9.g\\u003cjava.lang.Boolean, com.xingin.capa.resource.FileCompat\\u003e\",\"def_pos\":0},{\"name\":\"isStreamExtractVideo\",\"is_constructor\":false,\"signature\":\"isStreamExtractVideo(): boolean\",\"def_pos\":0},{\"name\":\"isTemplateCreate\",\"is_constructor\":false,\"signature\":\"isTemplateCreate(): boolean\",\"def_pos\":0},{\"name\":\"isVideoPathLegal\",\"is_constructor\":false,\"signature\":\"isVideoPathLegal(): boolean\",\"def_pos\":0},{\"name\":\"refreshVideoSourceTimeRange\",\"is_constructor\":false,\"signature\":\"refreshVideoSourceTimeRange(int, bn9.g\\u003cjava.lang.Long, java.lang.Long\\u003e): void\",\"def_pos\":0},{\"name\":\"setAddressBean\",\"is_constructor\":false,\"signature\":\"setAddressBean(com.xingin.common_model.exif.CapaAddressBean): void\",\"def_pos\":0},{\"name\":\"setAiLyricModel\",\"is_constructor\":false,\"signature\":\"setAiLyricModel(a22.b): void\",\"def_pos\":0},{\"name\":\"setAigcMetadata\",\"is_constructor\":false,\"signature\":\"setAigcMetadata(com.xingin.entities.capa.AigcMetadata): void\",\"def_pos\":0},{\"name\":\"setAlbumImage\",\"is_constructor\":false,\"signature\":\"setAlbumImage(boolean): void\",\"def_pos\":0},{\"name\":\"setAlbumImagePath\",\"is_constructor\":false,\"signature\":\"setAlbumImagePath(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setAudioFileId\",\"is_constructor\":false,\"signature\":\"setAudioFileId(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setAutoPopEffectPanel\",\"is_constructor\":false,\"signature\":\"setAutoPopEffectPanel(java.lang.Boolean): void\",\"def_pos\":0},{\"name\":\"setBackgroundMusic\",\"is_constructor\":false,\"signature\":\"setBackgroundMusic(com.xingin.capa.feature_model.session.CapaMusicBean): void\",\"def_pos\":0},{\"name\":\"setBizGoodsItem\",\"is_constructor\":false,\"signature\":\"setBizGoodsItem(a22.g): void\",\"def_pos\":0},{\"name\":\"setCameraMusic\",\"is_constructor\":false,\"signature\":\"setCameraMusic(com.xingin.entities.MusicBean): void\",\"def_pos\":0},{\"name\":\"setCapaLiveInfo\",\"is_constructor\":false,\"signature\":\"setCapaLiveInfo(com.xingin.capa.feature_model.live.CapaLiveInfo): void\",\"def_pos\":0},{\"name\":\"setCaptionState\",\"is_constructor\":false,\"signature\":\"setCaptionState(com.xingin.capa.feature_model.session.CaptionState): void\",\"def_pos\":0},{\"name\":\"setCaptureBeautify\",\"is_constructor\":false,\"signature\":\"setCaptureBeautify(va2.a): void\",\"def_pos\":0},{\"name\":\"setCaptureFilterModel\",\"is_constructor\":false,\"signature\":\"setCaptureFilterModel(com.xingin.common_model.filter.CapaFilterBean): void\",\"def_pos\":0},{\"name\":\"setCloudTemplateSize\",\"is_constructor\":false,\"signature\":\"setCloudTemplateSize(bn9.g\\u003cjava.lang.Integer, java.lang.Integer\\u003e): void\",\"def_pos\":0},{\"name\":\"setCoverBean\",\"is_constructor\":false,\"signature\":\"setCoverBean(com.xingin.capa.feature_model.edit.CapaVideoCoverBean): void\",\"def_pos\":0},{\"name\":\"setCoverPasterList\",\"is_constructor\":false,\"signature\":\"setCoverPasterList(java.util.List\\u003ccom.xingin.capa.model.text.CapaPasterBaseModel\\u003e): void\",\"def_pos\":0},{\"name\":\"setCoverPasterModel\",\"is_constructor\":false,\"signature\":\"setCoverPasterModel(com.xingin.common_model.text.CapaVideoTextModel): void\",\"def_pos\":0},{\"name\":\"setCoverScale\",\"is_constructor\":false,\"signature\":\"setCoverScale(float): void\",\"def_pos\":0},{\"name\":\"setCoverTemplateId\",\"is_constructor\":false,\"signature\":\"setCoverTemplateId(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setCoverTranX\",\"is_constructor\":false,\"signature\":\"setCoverTranX(float): void\",\"def_pos\":0},{\"name\":\"setCoverTranY\",\"is_constructor\":false,\"signature\":\"setCoverTranY(float): void\",\"def_pos\":0},{\"name\":\"setEditAbilityUsage\",\"is_constructor\":false,\"signature\":\"setEditAbilityUsage(com.xingin.capa.feature_model.edit.EditAbilityUsage): void\",\"def_pos\":0},{\"name\":\"setEditPageStayTime\",\"is_constructor\":false,\"signature\":\"setEditPageStayTime(g12.a): void\",\"def_pos\":0},{\"name\":\"setEffectModelList\",\"is_constructor\":false,\"signature\":\"setEffectModelList(java.util.List\\u003ccom.xingin.common_model.effect.CapaEffectModel\\u003e): void\",\"def_pos\":0},{\"name\":\"setExtraMainAudioList\",\"is_constructor\":false,\"signature\":\"setExtraMainAudioList(java.util.List\\u003ccom.xingin.capa.feature_model.session.CapaMusicBean\\u003e): void\",\"def_pos\":0},{\"name\":\"setExtractMusicCountRecord\",\"is_constructor\":false,\"signature\":\"setExtractMusicCountRecord(int): void\",\"def_pos\":0},{\"name\":\"setFilter\",\"is_constructor\":false,\"signature\":\"setFilter(com.xingin.common_model.filter.CapaFilterBean): void\",\"def_pos\":0},{\"name\":\"setFromPostPage\",\"is_constructor\":false,\"signature\":\"setFromPostPage(java.lang.Boolean): void\",\"def_pos\":0},{\"name\":\"setGoodsItemList\",\"is_constructor\":false,\"signature\":\"setGoodsItemList(java.util.List\\u003ca22.x\\u003e): void\",\"def_pos\":0},{\"name\":\"setGoodsModelList\",\"is_constructor\":false,\"signature\":\"setGoodsModelList(java.util.List\\u003ccom.xingin.capa.feature_model.session.CapaGoodsModel\\u003e): void\",\"def_pos\":0},{\"name\":\"setHasReplaceVideo\",\"is_constructor\":false,\"signature\":\"setHasReplaceVideo(boolean): void\",\"def_pos\":0},{\"name\":\"setHasUpdateScale\",\"is_constructor\":false,\"signature\":\"setHasUpdateScale(boolean): void\",\"def_pos\":0},{\"name\":\"setInteractPaster\",\"is_constructor\":false,\"signature\":\"setInteractPaster(com.xingin.capa.model.text.CapaPasterBaseModel): void\",\"def_pos\":0},{\"name\":\"setLightPreview\",\"is_constructor\":false,\"signature\":\"setLightPreview(boolean): void\",\"def_pos\":0},{\"name\":\"setLightVideoEditTemplateCache\",\"is_constructor\":false,\"signature\":\"setLightVideoEditTemplateCache(java.util.List\\u003ccom.xingin.capa.feature_model.template.video.VideoTemplate\\u003e): void\",\"def_pos\":0},{\"name\":\"setMusicId\",\"is_constructor\":false,\"signature\":\"setMusicId(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setNeedCompatTemplateSticker\",\"is_constructor\":false,\"signature\":\"setNeedCompatTemplateSticker(boolean): void\",\"def_pos\":0},{\"name\":\"setNeedCompatTransition\",\"is_constructor\":false,\"signature\":\"setNeedCompatTransition(boolean): void\",\"def_pos\":0},{\"name\":\"setOptTimelineParam\",\"is_constructor\":false,\"signature\":\"setOptTimelineParam(boolean): void\",\"def_pos\":0},{\"name\":\"setPaintBean\",\"is_constructor\":false,\"signature\":\"setPaintBean(com.xingin.capa.feature_model.session.VideoPaintBean): void\",\"def_pos\":0},{\"name\":\"setPasterModelList\",\"is_constructor\":false,\"signature\":\"setPasterModelList(java.util.List\\u003ccom.xingin.capa.model.text.CapaPasterBaseModel\\u003e): void\",\"def_pos\":0},{\"name\":\"setProcessAnyway\",\"is_constructor\":false,\"signature\":\"setProcessAnyway(java.lang.Boolean): void\",\"def_pos\":0},{\"name\":\"setSaveEffectImages\",\"is_constructor\":false,\"signature\":\"setSaveEffectImages(java.util.List\\u003cjava.lang.String\\u003e): void\",\"def_pos\":0},{\"name\":\"setShowUpdateDraftDialog\",\"is_constructor\":false,\"signature\":\"setShowUpdateDraftDialog(boolean): void\",\"def_pos\":0},{\"name\":\"setSinglePropOutModel\",\"is_constructor\":false,\"signature\":\"setSinglePropOutModel(com.xingin.common_model.prop.SinglePropOutModel): void\",\"def_pos\":0},{\"name\":\"setSliceList\",\"is_constructor\":false,\"signature\":\"setSliceList(java.util.List\\u003ccom.xingin.common_model.video.Slice\\u003e): void\",\"def_pos\":0},{\"name\":\"setStrategy\",\"is_constructor\":false,\"signature\":\"setStrategy(java.lang.Integer): void\",\"def_pos\":0},{\"name\":\"setStreamExtractVideo\",\"is_constructor\":false,\"signature\":\"setStreamExtractVideo(boolean): void\",\"def_pos\":0},{\"name\":\"setStyleEditableVideoSource\",\"is_constructor\":false,\"signature\":\"setStyleEditableVideoSource(a22.g0): void\",\"def_pos\":0},{\"name\":\"setTemplateCreate\",\"is_constructor\":false,\"signature\":\"setTemplateCreate(boolean): void\",\"def_pos\":0},{\"name\":\"setTemplateId\",\"is_constructor\":false,\"signature\":\"setTemplateId(java.lang.Integer): void\",\"def_pos\":0},{\"name\":\"setVideoChapterSync\",\"is_constructor\":false,\"signature\":\"setVideoChapterSync(boolean): void\",\"def_pos\":0},{\"name\":\"setVideoComment\",\"is_constructor\":false,\"signature\":\"setVideoComment(a22.j0): void\",\"def_pos\":0},{\"name\":\"setVideoCoverPath\",\"is_constructor\":false,\"signature\":\"setVideoCoverPath(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setVideoCropRequirement\",\"is_constructor\":false,\"signature\":\"setVideoCropRequirement(a22.l0): void\",\"def_pos\":0},{\"name\":\"setVideoEditTemplate\",\"is_constructor\":false,\"signature\":\"setVideoEditTemplate(com.xingin.capa.feature_model.template.video.VideoTemplate): void\",\"def_pos\":0},{\"name\":\"setVideoHeight\",\"is_constructor\":false,\"signature\":\"setVideoHeight(int): void\",\"def_pos\":0},{\"name\":\"setVideoScale\",\"is_constructor\":false,\"signature\":\"setVideoScale(float): void\",\"def_pos\":0},{\"name\":\"setVideoTemplate\",\"is_constructor\":false,\"signature\":\"setVideoTemplate(com.xingin.capa.feature_model.template.video.VideoTemplate): void\",\"def_pos\":0},{\"name\":\"setVideoTemplateCVRes\",\"is_constructor\":false,\"signature\":\"setVideoTemplateCVRes(java.util.List\\u003cn84.c\\u003e): void\",\"def_pos\":0},{\"name\":\"setVideoVolume\",\"is_constructor\":false,\"signature\":\"setVideoVolume(float): void\",\"def_pos\":0},{\"name\":\"setVideoWidth\",\"is_constructor\":false,\"signature\":\"setVideoWidth(int): void\",\"def_pos\":0},{\"name\":\"videoTemplateCreateMinResolution\",\"is_constructor\":false,\"signature\":\"videoTemplateCreateMinResolution(): int\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.capa.feature_model.session.EditableVideo2",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(com.xingin.capa.feature_model.edit.CapaVideoCoverBean, java.util.List<com.xingin.common_model.video.Slice>, com.xingin.common_model.filter.CapaFilterBean, java.lang.String, java.lang.Boolean, com.xingin.capa.feature_model.session.VideoPaintBean, java.lang.Boolean, a22.g0, boolean, com.xingin.entities.capa.AigcMetadata): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(com.xingin.capa.feature_model.edit.CapaVideoCoverBean, java.util.List, com.xingin.common_model.filter.CapaFilterBean, java.lang.String, java.lang.Boolean, com.xingin.capa.feature_model.session.VideoPaintBean, java.lang.Boolean, a22.g0, boolean, com.xingin.entities.capa.AigcMetadata, int, kotlin.jvm.internal.DefaultConstructorMarker): void",
+        "overload_index": 2,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(kotlin.jvm.internal.DefaultConstructorMarker): void",
+        "overload_index": 3,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "formatToFloat",
+        "reported_signature": "formatToFloat(long): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAddressBean",
+        "reported_signature": "getAddressBean(): com.xingin.common_model.exif.CapaAddressBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAiLyricModel",
+        "reported_signature": "getAiLyricModel(): a22.b",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAigcMetadata",
+        "reported_signature": "getAigcMetadata(): com.xingin.entities.capa.AigcMetadata",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAlbumImagePath",
+        "reported_signature": "getAlbumImagePath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAllEffectModelList",
+        "reported_signature": "getAllEffectModelList(): java.util.List<com.xingin.common_model.effect.CapaEffectModel>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAllResMaxDuration",
+        "reported_signature": "getAllResMaxDuration(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAudioFileId",
+        "reported_signature": "getAudioFileId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAutoPopEffectPanel",
+        "reported_signature": "getAutoPopEffectPanel(): java.lang.Boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getBackgroundMusic",
+        "reported_signature": "getBackgroundMusic(): com.xingin.capa.feature_model.session.CapaMusicBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getBackgroundMusicProtocol",
+        "reported_signature": "getBackgroundMusicProtocol(): e94.h",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getBizGoodsItem",
+        "reported_signature": "getBizGoodsItem(): a22.g",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCameraMusic",
+        "reported_signature": "getCameraMusic(): com.xingin.entities.MusicBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCanvasHeight",
+        "reported_signature": "getCanvasHeight(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCanvasWidth",
+        "reported_signature": "getCanvasWidth(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCapaLiveInfo",
+        "reported_signature": "getCapaLiveInfo(): com.xingin.capa.feature_model.live.CapaLiveInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCapaVideoTextModelList",
+        "reported_signature": "getCapaVideoTextModelList(): java.util.List<com.xingin.common_model.text.CapaVideoTextModel>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCaptionModelFromTextList",
+        "reported_signature": "getCaptionModelFromTextList(): com.xingin.common_model.caption.CaptionModel",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCaptionState",
+        "reported_signature": "getCaptionState(): com.xingin.capa.feature_model.session.CaptionState",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCaptureBeautify",
+        "reported_signature": "getCaptureBeautify(): va2.a",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCaptureFilterModel",
+        "reported_signature": "getCaptureFilterModel(): com.xingin.common_model.filter.CapaFilterBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCloudTemplateSize",
+        "reported_signature": "getCloudTemplateSize(): bn9.g<java.lang.Integer, java.lang.Integer>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCoverBean",
+        "reported_signature": "getCoverBean(): com.xingin.capa.feature_model.edit.CapaVideoCoverBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCoverPasterList",
+        "reported_signature": "getCoverPasterList(): java.util.List<com.xingin.capa.model.text.CapaPasterBaseModel>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCoverPasterModel",
+        "reported_signature": "getCoverPasterModel(): com.xingin.common_model.text.CapaVideoTextModel",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCoverScale",
+        "reported_signature": "getCoverScale(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCoverTemplateId",
+        "reported_signature": "getCoverTemplateId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCoverTranX",
+        "reported_signature": "getCoverTranX(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCoverTranY",
+        "reported_signature": "getCoverTranY(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getEditAbilityUsage",
+        "reported_signature": "getEditAbilityUsage(): com.xingin.capa.feature_model.edit.EditAbilityUsage",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getEditPageStayTime",
+        "reported_signature": "getEditPageStayTime(): g12.a",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getEffectModelList",
+        "reported_signature": "getEffectModelList(): java.util.List<com.xingin.common_model.effect.CapaEffectModel>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getEffectProtocolList",
+        "reported_signature": "getEffectProtocolList(): java.util.List<e94.g>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getEntrance",
+        "reported_signature": "getEntrance(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getExtraMainAudioList",
+        "reported_signature": "getExtraMainAudioList(): java.util.List<com.xingin.capa.feature_model.session.CapaMusicBean>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getExtractMusicCountRecord",
+        "reported_signature": "getExtractMusicCountRecord(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getFilter",
+        "reported_signature": "getFilter(): com.xingin.common_model.filter.CapaFilterBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getFilterProtocol",
+        "reported_signature": "getFilterProtocol(): e94.d",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getFrameRate",
+        "reported_signature": "getFrameRate(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getFromPostPage",
+        "reported_signature": "getFromPostPage(): java.lang.Boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getGoodsItemList",
+        "reported_signature": "getGoodsItemList(): java.util.List<a22.x>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getGoodsModelList",
+        "reported_signature": "getGoodsModelList(): java.util.List<com.xingin.capa.feature_model.session.CapaGoodsModel>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getGoodsModelList$annotations",
+        "reported_signature": "getGoodsModelList$annotations(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getHasReplaceVideo",
+        "reported_signature": "getHasReplaceVideo(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getHasUpdateScale",
+        "reported_signature": "getHasUpdateScale(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getInteractPaster",
+        "reported_signature": "getInteractPaster(): com.xingin.capa.model.text.CapaPasterBaseModel",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLightVideoEditTemplateCache",
+        "reported_signature": "getLightVideoEditTemplateCache(): java.util.List<com.xingin.capa.feature_model.template.video.VideoTemplate>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getMainTrackMaxDuration",
+        "reported_signature": "getMainTrackMaxDuration(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getMaxBitrate",
+        "reported_signature": "getMaxBitrate(boolean): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getMaxBitrate$default",
+        "reported_signature": "getMaxBitrate$default(com.xingin.capa.feature_model.session.EditableVideo2, boolean, int, java.lang.Object): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getMaxResolution",
+        "reported_signature": "getMaxResolution(boolean): a22.m0",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getMaxResolution$default",
+        "reported_signature": "getMaxResolution$default(com.xingin.capa.feature_model.session.EditableVideo2, boolean, int, java.lang.Object): a22.m0",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getMusicId",
+        "reported_signature": "getMusicId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getMusicList",
+        "reported_signature": "getMusicList(): java.util.List<com.xingin.capa.feature_model.session.CapaMusicBean>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getNeedCompatTemplateSticker",
+        "reported_signature": "getNeedCompatTemplateSticker(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getNeedCompatTransition",
+        "reported_signature": "getNeedCompatTransition(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getOptTimelineParam",
+        "reported_signature": "getOptTimelineParam(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getOriginFileTotalSize",
+        "reported_signature": "getOriginFileTotalSize(boolean): double",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getOriginFileTotalSize$default",
+        "reported_signature": "getOriginFileTotalSize$default(com.xingin.capa.feature_model.session.EditableVideo2, boolean, int, java.lang.Object): double",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPaintBean",
+        "reported_signature": "getPaintBean(): com.xingin.capa.feature_model.session.VideoPaintBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPaintBeanProtocol",
+        "reported_signature": "getPaintBeanProtocol(): e94.m",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPasterModelCollection",
+        "reported_signature": "getPasterModelCollection(): java.util.Collection<ya2.b>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPasterModelList",
+        "reported_signature": "getPasterModelList(): java.util.List<com.xingin.capa.model.text.CapaPasterBaseModel>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getProcessAnyway",
+        "reported_signature": "getProcessAnyway(): java.lang.Boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getRecommendVideoSizeByMode",
+        "reported_signature": "getRecommendVideoSizeByMode(boolean, boolean): bn9.g<java.lang.Integer, java.lang.Integer>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getSaveEffectImages",
+        "reported_signature": "getSaveEffectImages(): java.util.List<java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getShowUpdateDraftDialog",
+        "reported_signature": "getShowUpdateDraftDialog(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getSinglePropOutModel",
+        "reported_signature": "getSinglePropOutModel(): com.xingin.common_model.prop.SinglePropOutModel",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getSliceList",
+        "reported_signature": "getSliceList(): java.util.List<com.xingin.common_model.video.Slice>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getSliceProtocolList",
+        "reported_signature": "getSliceProtocolList(): java.util.List<e94.k>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getStrategy",
+        "reported_signature": "getStrategy(): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getStyleEditableVideoSource",
+        "reported_signature": "getStyleEditableVideoSource(): a22.g0",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getTemplateId",
+        "reported_signature": "getTemplateId(): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getTotalDuration",
+        "reported_signature": "getTotalDuration(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getTotalDurationMs",
+        "reported_signature": "getTotalDurationMs(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoChapterList",
+        "reported_signature": "getVideoChapterList(): java.util.List<com.xingin.capa.feature_model.session.ChapterBean>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoChapterSync",
+        "reported_signature": "getVideoChapterSync(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoComment",
+        "reported_signature": "getVideoComment(): a22.j0",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoCoverPath",
+        "reported_signature": "getVideoCoverPath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoCropRequirement",
+        "reported_signature": "getVideoCropRequirement(): a22.l0",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoEditTemplate",
+        "reported_signature": "getVideoEditTemplate(): com.xingin.capa.feature_model.template.video.VideoTemplate",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoHeight",
+        "reported_signature": "getVideoHeight(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoScale",
+        "reported_signature": "getVideoScale(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoSliceMetaSource",
+        "reported_signature": "getVideoSliceMetaSource(): java.util.List<java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoTagList",
+        "reported_signature": "getVideoTagList(): java.util.List<com.xingin.capa.feature_model.session.VideoTagBean>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoTemplate",
+        "reported_signature": "getVideoTemplate(): com.xingin.capa.feature_model.template.video.VideoTemplate",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoTemplateCVModel",
+        "reported_signature": "getVideoTemplateCVModel(): java.util.List<n84.c>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoTemplateCVRes",
+        "reported_signature": "getVideoTemplateCVRes(): java.util.List<n84.c>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoTemplateProtocol",
+        "reported_signature": "getVideoTemplateProtocol(): m53.b",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoVolume",
+        "reported_signature": "getVideoVolume(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoWidth",
+        "reported_signature": "getVideoWidth(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "hasCaptionModel",
+        "reported_signature": "hasCaptionModel(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isAlbumImage",
+        "reported_signature": "isAlbumImage(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isConsumeCustomTemplate",
+        "reported_signature": "isConsumeCustomTemplate(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isLightPreview",
+        "reported_signature": "isLightPreview(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isLive",
+        "reported_signature": "isLive(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isLivePhoto",
+        "reported_signature": "isLivePhoto(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isLiveVideo",
+        "reported_signature": "isLiveVideo(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isProcessWithEditor",
+        "reported_signature": "isProcessWithEditor(): bn9.g<java.lang.Boolean, com.xingin.capa.resource.FileCompat>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isStreamExtractVideo",
+        "reported_signature": "isStreamExtractVideo(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isTemplateCreate",
+        "reported_signature": "isTemplateCreate(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isVideoPathLegal",
+        "reported_signature": "isVideoPathLegal(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "refreshVideoSourceTimeRange",
+        "reported_signature": "refreshVideoSourceTimeRange(int, bn9.g<java.lang.Long, java.lang.Long>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setAddressBean",
+        "reported_signature": "setAddressBean(com.xingin.common_model.exif.CapaAddressBean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setAiLyricModel",
+        "reported_signature": "setAiLyricModel(a22.b): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setAigcMetadata",
+        "reported_signature": "setAigcMetadata(com.xingin.entities.capa.AigcMetadata): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setAlbumImage",
+        "reported_signature": "setAlbumImage(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setAlbumImagePath",
+        "reported_signature": "setAlbumImagePath(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setAudioFileId",
+        "reported_signature": "setAudioFileId(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setAutoPopEffectPanel",
+        "reported_signature": "setAutoPopEffectPanel(java.lang.Boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setBackgroundMusic",
+        "reported_signature": "setBackgroundMusic(com.xingin.capa.feature_model.session.CapaMusicBean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setBizGoodsItem",
+        "reported_signature": "setBizGoodsItem(a22.g): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCameraMusic",
+        "reported_signature": "setCameraMusic(com.xingin.entities.MusicBean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCapaLiveInfo",
+        "reported_signature": "setCapaLiveInfo(com.xingin.capa.feature_model.live.CapaLiveInfo): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCaptionState",
+        "reported_signature": "setCaptionState(com.xingin.capa.feature_model.session.CaptionState): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCaptureBeautify",
+        "reported_signature": "setCaptureBeautify(va2.a): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCaptureFilterModel",
+        "reported_signature": "setCaptureFilterModel(com.xingin.common_model.filter.CapaFilterBean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCloudTemplateSize",
+        "reported_signature": "setCloudTemplateSize(bn9.g<java.lang.Integer, java.lang.Integer>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCoverBean",
+        "reported_signature": "setCoverBean(com.xingin.capa.feature_model.edit.CapaVideoCoverBean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCoverPasterList",
+        "reported_signature": "setCoverPasterList(java.util.List<com.xingin.capa.model.text.CapaPasterBaseModel>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCoverPasterModel",
+        "reported_signature": "setCoverPasterModel(com.xingin.common_model.text.CapaVideoTextModel): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCoverScale",
+        "reported_signature": "setCoverScale(float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCoverTemplateId",
+        "reported_signature": "setCoverTemplateId(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCoverTranX",
+        "reported_signature": "setCoverTranX(float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCoverTranY",
+        "reported_signature": "setCoverTranY(float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setEditAbilityUsage",
+        "reported_signature": "setEditAbilityUsage(com.xingin.capa.feature_model.edit.EditAbilityUsage): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setEditPageStayTime",
+        "reported_signature": "setEditPageStayTime(g12.a): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setEffectModelList",
+        "reported_signature": "setEffectModelList(java.util.List<com.xingin.common_model.effect.CapaEffectModel>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setExtraMainAudioList",
+        "reported_signature": "setExtraMainAudioList(java.util.List<com.xingin.capa.feature_model.session.CapaMusicBean>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setExtractMusicCountRecord",
+        "reported_signature": "setExtractMusicCountRecord(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setFilter",
+        "reported_signature": "setFilter(com.xingin.common_model.filter.CapaFilterBean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setFromPostPage",
+        "reported_signature": "setFromPostPage(java.lang.Boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setGoodsItemList",
+        "reported_signature": "setGoodsItemList(java.util.List<a22.x>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setGoodsModelList",
+        "reported_signature": "setGoodsModelList(java.util.List<com.xingin.capa.feature_model.session.CapaGoodsModel>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setHasReplaceVideo",
+        "reported_signature": "setHasReplaceVideo(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setHasUpdateScale",
+        "reported_signature": "setHasUpdateScale(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setInteractPaster",
+        "reported_signature": "setInteractPaster(com.xingin.capa.model.text.CapaPasterBaseModel): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setLightPreview",
+        "reported_signature": "setLightPreview(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setLightVideoEditTemplateCache",
+        "reported_signature": "setLightVideoEditTemplateCache(java.util.List<com.xingin.capa.feature_model.template.video.VideoTemplate>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setMusicId",
+        "reported_signature": "setMusicId(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setNeedCompatTemplateSticker",
+        "reported_signature": "setNeedCompatTemplateSticker(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setNeedCompatTransition",
+        "reported_signature": "setNeedCompatTransition(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setOptTimelineParam",
+        "reported_signature": "setOptTimelineParam(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setPaintBean",
+        "reported_signature": "setPaintBean(com.xingin.capa.feature_model.session.VideoPaintBean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setPasterModelList",
+        "reported_signature": "setPasterModelList(java.util.List<com.xingin.capa.model.text.CapaPasterBaseModel>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setProcessAnyway",
+        "reported_signature": "setProcessAnyway(java.lang.Boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setSaveEffectImages",
+        "reported_signature": "setSaveEffectImages(java.util.List<java.lang.String>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setShowUpdateDraftDialog",
+        "reported_signature": "setShowUpdateDraftDialog(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setSinglePropOutModel",
+        "reported_signature": "setSinglePropOutModel(com.xingin.common_model.prop.SinglePropOutModel): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setSliceList",
+        "reported_signature": "setSliceList(java.util.List<com.xingin.common_model.video.Slice>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setStrategy",
+        "reported_signature": "setStrategy(java.lang.Integer): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setStreamExtractVideo",
+        "reported_signature": "setStreamExtractVideo(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setStyleEditableVideoSource",
+        "reported_signature": "setStyleEditableVideoSource(a22.g0): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setTemplateCreate",
+        "reported_signature": "setTemplateCreate(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setTemplateId",
+        "reported_signature": "setTemplateId(java.lang.Integer): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setVideoChapterSync",
+        "reported_signature": "setVideoChapterSync(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setVideoComment",
+        "reported_signature": "setVideoComment(a22.j0): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setVideoCoverPath",
+        "reported_signature": "setVideoCoverPath(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setVideoCropRequirement",
+        "reported_signature": "setVideoCropRequirement(a22.l0): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setVideoEditTemplate",
+        "reported_signature": "setVideoEditTemplate(com.xingin.capa.feature_model.template.video.VideoTemplate): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setVideoHeight",
+        "reported_signature": "setVideoHeight(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setVideoScale",
+        "reported_signature": "setVideoScale(float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setVideoTemplate",
+        "reported_signature": "setVideoTemplate(com.xingin.capa.feature_model.template.video.VideoTemplate): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setVideoTemplateCVRes",
+        "reported_signature": "setVideoTemplateCVRes(java.util.List<n84.c>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setVideoVolume",
+        "reported_signature": "setVideoVolume(float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setVideoWidth",
+        "reported_signature": "setVideoWidth(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "videoTemplateCreateMinResolution",
+        "reported_signature": "videoTemplateCreateMinResolution(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "Companion",
+        "reported_type": "com.xingin.capa.feature_model.session.EditableVideo2$a"
+      },
+      {
+        "name": "MAX_VIDEO_SLICE_COUNT",
+        "reported_type": "int"
+      },
+      {
+        "name": "MIN_POST_ABLE_VIDEO_LENGTH",
+        "reported_type": "int"
+      },
+      {
+        "name": "MIN_POST_ABLE_VIDEO_LENGTH_EXP",
+        "reported_type": "int"
+      },
+      {
+        "name": "MIN_SPLIT_ABLE_VIDEO_LENGTH",
+        "reported_type": "double"
+      },
+      {
+        "name": "TAG",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "VIDEO_DURATION_OFFSET",
+        "reported_type": "float"
+      },
+      {
+        "name": "VIDEO_ENTRANCE_ALBUM",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "VIDEO_ENTRANCE_DEEPLINK",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "VIDEO_ENTRANCE_ERROR",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "VIDEO_ENTRANCE_FREE",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "VIDEO_ENTRANCE_SEGMENT",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "addressBean",
+        "reported_type": "com.xingin.common_model.exif.CapaAddressBean"
+      },
+      {
+        "name": "aiLyricModel",
+        "reported_type": "a22.b"
+      },
+      {
+        "name": "aigcMetadata",
+        "reported_type": "com.xingin.entities.capa.AigcMetadata"
+      },
+      {
+        "name": "albumImagePath",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "audioFileId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "autoPopEffectPanel",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "backgroundMusic",
+        "reported_type": "com.xingin.capa.feature_model.session.CapaMusicBean"
+      },
+      {
+        "name": "bizGoodsItem",
+        "reported_type": "a22.g"
+      },
+      {
+        "name": "cacheSize",
+        "reported_type": "bn9.g<java.lang.Integer, java.lang.Integer>"
+      },
+      {
+        "name": "cameraMusic",
+        "reported_type": "com.xingin.entities.MusicBean"
+      },
+      {
+        "name": "capaLiveInfo",
+        "reported_type": "com.xingin.capa.feature_model.live.CapaLiveInfo"
+      },
+      {
+        "name": "captionState",
+        "reported_type": "com.xingin.capa.feature_model.session.CaptionState"
+      },
+      {
+        "name": "captureBeautify",
+        "reported_type": "va2.a"
+      },
+      {
+        "name": "captureFilterModel",
+        "reported_type": "com.xingin.common_model.filter.CapaFilterBean"
+      },
+      {
+        "name": "cloudTemplateSize",
+        "reported_type": "bn9.g<java.lang.Integer, java.lang.Integer>"
+      },
+      {
+        "name": "coverBean",
+        "reported_type": "com.xingin.capa.feature_model.edit.CapaVideoCoverBean"
+      },
+      {
+        "name": "coverPasterList",
+        "reported_type": "java.util.List<com.xingin.capa.model.text.CapaPasterBaseModel>"
+      },
+      {
+        "name": "coverPasterModel",
+        "reported_type": "com.xingin.common_model.text.CapaVideoTextModel"
+      },
+      {
+        "name": "coverScale",
+        "reported_type": "float"
+      },
+      {
+        "name": "coverTemplateId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "coverTranX",
+        "reported_type": "float"
+      },
+      {
+        "name": "coverTranY",
+        "reported_type": "float"
+      },
+      {
+        "name": "editAbilityUsage",
+        "reported_type": "com.xingin.capa.feature_model.edit.EditAbilityUsage"
+      },
+      {
+        "name": "editPageStayTime",
+        "reported_type": "g12.a"
+      },
+      {
+        "name": "effectModelList",
+        "reported_type": "java.util.List<com.xingin.common_model.effect.CapaEffectModel>"
+      },
+      {
+        "name": "entrance",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "extraMainAudioList",
+        "reported_type": "java.util.List<com.xingin.capa.feature_model.session.CapaMusicBean>"
+      },
+      {
+        "name": "extractMusicCountRecord",
+        "reported_type": "int"
+      },
+      {
+        "name": "filter",
+        "reported_type": "com.xingin.common_model.filter.CapaFilterBean"
+      },
+      {
+        "name": "frameRate",
+        "reported_type": "int"
+      },
+      {
+        "name": "fromPostPage",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "goodsItemList",
+        "reported_type": "java.util.List<a22.x>"
+      },
+      {
+        "name": "goodsModelList",
+        "reported_type": "java.util.List<com.xingin.capa.feature_model.session.CapaGoodsModel>"
+      },
+      {
+        "name": "hasReplaceVideo",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "hasUpdateScale",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "interactPaster",
+        "reported_type": "com.xingin.capa.model.text.CapaPasterBaseModel"
+      },
+      {
+        "name": "isAlbumImage",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isLightPreview",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isStreamExtractVideo",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isTemplateCreate",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "lightVideoEditTemplateCache",
+        "reported_type": "java.util.List<com.xingin.capa.feature_model.template.video.VideoTemplate>"
+      },
+      {
+        "name": "musicId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "musicList",
+        "reported_type": "java.util.List<com.xingin.capa.feature_model.session.CapaMusicBean>"
+      },
+      {
+        "name": "needCompatTemplateSticker",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "needCompatTransition",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "optTimelineParam",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "paintBean",
+        "reported_type": "com.xingin.capa.feature_model.session.VideoPaintBean"
+      },
+      {
+        "name": "pasterModelList",
+        "reported_type": "java.util.List<com.xingin.capa.model.text.CapaPasterBaseModel>"
+      },
+      {
+        "name": "processAnyway",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "saveEffectImages",
+        "reported_type": "java.util.List<java.lang.String>"
+      },
+      {
+        "name": "showUpdateDraftDialog",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "singlePropOutModel",
+        "reported_type": "com.xingin.common_model.prop.SinglePropOutModel"
+      },
+      {
+        "name": "sliceList",
+        "reported_type": "java.util.List<com.xingin.common_model.video.Slice>"
+      },
+      {
+        "name": "strategy",
+        "reported_type": "java.lang.Integer"
+      },
+      {
+        "name": "styleEditableVideoSource",
+        "reported_type": "a22.g0"
+      },
+      {
+        "name": "templateId",
+        "reported_type": "java.lang.Integer"
+      },
+      {
+        "name": "videoChapterList",
+        "reported_type": "java.util.List<com.xingin.capa.feature_model.session.ChapterBean>"
+      },
+      {
+        "name": "videoChapterSync",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "videoComment",
+        "reported_type": "a22.j0"
+      },
+      {
+        "name": "videoCoverPath",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "videoCropRequirement",
+        "reported_type": "a22.l0"
+      },
+      {
+        "name": "videoEditTemplate",
+        "reported_type": "com.xingin.capa.feature_model.template.video.VideoTemplate"
+      },
+      {
+        "name": "videoHeight",
+        "reported_type": "int"
+      },
+      {
+        "name": "videoScale",
+        "reported_type": "float"
+      },
+      {
+        "name": "videoTagList",
+        "reported_type": "java.util.List<com.xingin.capa.feature_model.session.VideoTagBean>"
+      },
+      {
+        "name": "videoTemplate",
+        "reported_type": "com.xingin.capa.feature_model.template.video.VideoTemplate"
+      },
+      {
+        "name": "videoTemplateCVRes",
+        "reported_type": "java.util.List<n84.c>"
+      },
+      {
+        "name": "videoVolume",
+        "reported_type": "float"
+      },
+      {
+        "name": "videoWidth",
+        "reported_type": "int"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.capa.feature_model.session.EditableVideo2.a"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "63bbab023626aea5aff1578b29b5cedde596580c3aa8d86afc367b449fb072cf",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

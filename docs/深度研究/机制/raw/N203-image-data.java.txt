@@ -1,0 +1,37 @@
+    public final void xb(NoteFeed noteFeed) {
+        String strG;
+        if (PatchProxy.proxyVoid1Para(noteFeed, this, NoteDetailImageDisplayPresenter.class, 743781)) {
+            return;
+        }
+        TextureRenderViewV2 textureRenderViewV2Ab = ab();
+        ImageBean imageBean = (ImageBean) CollectionsKt___CollectionsKt.getOrNull(noteFeed.N0(), this.f140495p);
+        XhsFilterModel xhsFilterModelR = imageBean != null ? imageBean.R() : null;
+        if (xhsFilterModelR == null || (strG = xhsFilterModelR.g()) == null || strG.length() == 0) {
+            u uVar = u.f219340a;
+            i iVar = i.UI;
+            gp9.f fVar = gp9.f.PHOTO;
+            boolean z100 = xhsFilterModelR != null;
+            u.a(uVar, iVar, fVar, "NoteDetailImageDisplayPresenter", "updateAnimationFilter skip: filterModel=" + z100 + ", currentIndex=" + this.f140495p, null, 16, null);
+            o.d(textureRenderViewV2Ab);
+            return;
+        }
+        o.q(textureRenderViewV2Ab);
+        String strO = xhsFilterModelR.o();
+        if (strO != null && strO.length() != 0) {
+            String strO2 = xhsFilterModelR.o();
+            if (strO2 != null) {
+                com.xingin.xyalphaplayer.coreView.a.C2731a.b(textureRenderViewV2Ab, new File(strO2), true, false, null, 12, null);
+                return;
+            }
+            return;
+        }
+        String strG2 = xhsFilterModelR.g();
+        if (strG2 != null) {
+            Object context = textureRenderViewV2Ab.getContext();
+            ScopeProvider scopeProvider = context instanceof ScopeProvider ? (ScopeProvider) context : null;
+            if (scopeProvider == null) {
+                scopeProvider = ScopeProvider.UNBOUND;
+            }
+            vrb.f.g(new vrb.f(scopeProvider, strG2, xhsFilterModelR.h()), new g(xhsFilterModelR, textureRenderViewV2Ab), false, null, null, 12, null);
+        }
+    }

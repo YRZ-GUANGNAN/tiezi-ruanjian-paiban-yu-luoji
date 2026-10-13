@@ -1,0 +1,380 @@
+{
+  "evidence_id": "ev_0181e8f8e346dfed0ba298a3ebf3ed7ac2a1b29374fe0e719898f94c473fb096",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.notebase.notedetail.service.NoteDetailService"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.notebase.notedetail.service.NoteDetailService"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[],\"field_count\":0,\"full_name\":\"com.xingin.notebase.notedetail.service.NoteDetailService\",\"name\":\"NoteDetailService\",\"inner_classes\":[\"com.xingin.notebase.notedetail.service.NoteDetailService.a\"],\"inner_class_count\":1,\"method_count\":39,\"methods\":[{\"def_pos\":0,\"name\":\"callbackVideoFeedCloudGuideInfo\",\"is_constructor\":false,\"signature\":\"callbackVideoFeedCloudGuideInfo(java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\"},{\"def_pos\":0,\"name\":\"callbackVideoFeedCloudGuideInfoNew\",\"is_constructor\":false,\"signature\":\"callbackVideoFeedCloudGuideInfoNew(java.lang.Integer, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\"},{\"def_pos\":0,\"name\":\"checkSendMsg\",\"is_constructor\":false,\"signature\":\"checkSendMsg(java.lang.String): io.reactivex.Observable\\u003cjava.lang.Boolean\\u003e\"},{\"def_pos\":0,\"name\":\"detailFeedPreload\",\"is_constructor\":false,\"signature\":\"detailFeedPreload(java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.g1\\u003e\"},{\"def_pos\":0,\"name\":\"dislikeRecommend\",\"is_constructor\":false,\"signature\":\"dislikeRecommend(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\"},{\"def_pos\":0,\"name\":\"fetchImageSearchGuideInfoInNote\",\"is_constructor\":false,\"signature\":\"fetchImageSearchGuideInfoInNote(java.lang.String, java.lang.String): io.reactivex.Observable\\u003cjava.lang.Object\\u003e\"},{\"def_pos\":0,\"name\":\"fetchNotifySetting\",\"is_constructor\":false,\"signature\":\"fetchNotifySetting(): io.reactivex.Observable\\u003cjava.util.List\\u003csk4.k0\\u003e\\u003e\"},{\"def_pos\":0,\"name\":\"fetchVideoFinishedConfig\",\"is_constructor\":false,\"signature\":\"fetchVideoFinishedConfig(java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\"},{\"def_pos\":0,\"name\":\"getAsyncWidgets\",\"is_constructor\":false,\"signature\":\"getAsyncWidgets(sk4.f): io.reactivex.Observable\\u003cza7.a\\u003e\"},{\"def_pos\":0,\"name\":\"getCooperateDialogList\",\"is_constructor\":false,\"signature\":\"getCooperateDialogList(java.lang.String, java.lang.String): io.reactivex.Observable\\u003csk4.d\\u003e\"},{\"def_pos\":0,\"name\":\"getDistributionCards\",\"is_constructor\":false,\"signature\":\"getDistributionCards(java.lang.String): io.reactivex.Observable\\u003ccom.xingin.entities.notedetail.NoteDistribution\\u003e\"},{\"def_pos\":0,\"name\":\"getLivePhotoMarkVideoData\",\"is_constructor\":false,\"signature\":\"getLivePhotoMarkVideoData(java.lang.String): io.reactivex.Observable\\u003cbb7.c\\u003e\"},{\"def_pos\":0,\"name\":\"getLongPressInfo\",\"is_constructor\":false,\"signature\":\"getLongPressInfo(okhttp3.RequestBody): io.reactivex.Observable\\u003csk4.w\\u003e\"},{\"def_pos\":0,\"name\":\"getLotteryInfo\",\"is_constructor\":false,\"signature\":\"getLotteryInfo(java.lang.String): io.reactivex.Observable\\u003ccom.xingin.entities.nns.LotteryResponse\\u003e\"},{\"def_pos\":0,\"name\":\"getNoteProductReview\",\"is_constructor\":false,\"signature\":\"getNoteProductReview(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003ccom.xingin.entities.tags.NoteProductReview\\u003e\"},{\"def_pos\":0,\"name\":\"getPropInfo\",\"is_constructor\":false,\"signature\":\"getPropInfo(java.lang.String): io.reactivex.Observable\\u003ccom.xingin.entities.notedetail.SamePropModel\\u003e\"},{\"def_pos\":0,\"name\":\"getVideoFeedCloudGuideInfo\",\"is_constructor\":false,\"signature\":\"getVideoFeedCloudGuideInfo(java.lang.String): io.reactivex.Observable\\u003cjava.util.List\\u003ceb7.d\\u003e\\u003e\"},{\"def_pos\":0,\"name\":\"getVoteUserDetail\",\"is_constructor\":false,\"signature\":\"getVoteUserDetail(java.lang.String, java.lang.String, java.lang.String, int): io.reactivex.Observable\\u003ccom.xingin.entities.notedetail.VoteUserResult\\u003e\"},{\"def_pos\":0,\"name\":\"loadNoteShareUserInfo\",\"is_constructor\":false,\"signature\":\"loadNoteShareUserInfo(java.lang.String): io.reactivex.Observable\\u003csk4.h0\\u003e\"},{\"def_pos\":0,\"name\":\"noteDoVote\",\"is_constructor\":false,\"signature\":\"noteDoVote(java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e): io.reactivex.Observable\\u003ccom.xingin.entities.notedetail.DoVoteResult\\u003e\"},{\"def_pos\":0,\"name\":\"postReportFollowFlowInfo\",\"is_constructor\":false,\"signature\":\"postReportFollowFlowInfo(wj4.d): io.reactivex.Observable\\u003cjava.lang.Object\\u003e\"},{\"def_pos\":0,\"name\":\"postShopWidgetFlipped\",\"is_constructor\":false,\"signature\":\"postShopWidgetFlipped(java.lang.String, boolean, java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\"},{\"def_pos\":0,\"name\":\"postVideoFeedExitInfo\",\"is_constructor\":false,\"signature\":\"postVideoFeedExitInfo(sk4.z): io.reactivex.Observable\\u003cjava.lang.Object\\u003e\"},{\"def_pos\":0,\"name\":\"queryFollowedUserData\",\"is_constructor\":false,\"signature\":\"queryFollowedUserData(java.lang.String, int, int, java.lang.String, boolean, java.lang.String): io.reactivex.Observable\\u003cwj4.k\\u003e\"},{\"def_pos\":0,\"name\":\"queryGoodsNoteBenefit\",\"is_constructor\":false,\"signature\":\"queryGoodsNoteBenefit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003csk4.m\\u003e\"},{\"def_pos\":0,\"name\":\"queryNoteDetailFeedData2Up\",\"is_constructor\":false,\"signature\":\"queryNoteDetailFeedData2Up(java.lang.String, int, boolean, int, int, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String): io.reactivex.Observable\\u003cjava.util.List\\u003ccom.xingin.notebase.entities.followfeed.BaseNoteFollowFeed\\u003e\\u003e\"},{\"def_pos\":0,\"name\":\"queryNoteDetailFeedData3Up\",\"is_constructor\":false,\"signature\":\"queryNoteDetailFeedData3Up(java.lang.String, int, boolean, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String): io.reactivex.Observable\\u003cjava.util.List\\u003ccom.xingin.notebase.entities.followfeed.BaseNoteFollowFeed\\u003e\\u003e\"},{\"def_pos\":0,\"name\":\"queryNoteDetailFeedDataInDemotion2Up\",\"is_constructor\":false,\"signature\":\"queryNoteDetailFeedDataInDemotion2Up(java.lang.String, int, boolean, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String): g78.b\\u003cr78.a\\u003cjava.util.List\\u003ccom.xingin.notebase.entities.followfeed.BaseNoteFollowFeed\\u003e\\u003e, java.util.List\\u003ccom.xingin.notebase.entities.followfeed.BaseNoteFollowFeed\\u003e\\u003e\"},{\"def_pos\":0,\"name\":\"queryOutsideCardFeed\",\"is_constructor\":false,\"signature\":\"queryOutsideCardFeed(java.lang.String, int, java.lang.String, int, int, int, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cwj4.u\\u003e\"},{\"def_pos\":0,\"name\":\"recordVideoPlayed\",\"is_constructor\":false,\"signature\":\"recordVideoPlayed(java.lang.String, java.lang.String): al9.b\"},{\"def_pos\":0,\"name\":\"reportNoteWidgetsEvent\",\"is_constructor\":false,\"signature\":\"reportNoteWidgetsEvent(sk4.i): io.reactivex.Observable\\u003cjava.lang.Object\\u003e\"},{\"def_pos\":0,\"name\":\"reportQuestionnaireResult\",\"is_constructor\":false,\"signature\":\"reportQuestionnaireResult(java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e): io.reactivex.Observable\\u003cjava.lang.Object\\u003e\"},{\"def_pos\":0,\"name\":\"reportShareBubbleShow\",\"is_constructor\":false,\"signature\":\"reportShareBubbleShow(java.lang.String, int, int): io.reactivex.Observable\\u003cxh4.y\\u003e\"},{\"def_pos\":0,\"name\":\"reqLotteryRegister\",\"is_constructor\":false,\"signature\":\"reqLotteryRegister(java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\"},{\"def_pos\":0,\"name\":\"saveVideo\",\"is_constructor\":false,\"signature\":\"saveVideo(java.lang.String): io.reactivex.Observable\\u003cql4.b\\u003e\"},{\"def_pos\":0,\"name\":\"sendVideoFeedback\",\"is_constructor\":false,\"signature\":\"sendVideoFeedback(com.xingin.entities.notedetail.VideoFeedbackRequestBody): io.reactivex.Observable\\u003cxh4.y\\u003e\"},{\"def_pos\":0,\"name\":\"submitQuestionnaire\",\"is_constructor\":false,\"signature\":\"submitQuestionnaire(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String): al9.b\"},{\"def_pos\":0,\"name\":\"updateNotePrivacy\",\"is_constructor\":false,\"signature\":\"updateNotePrivacy(java.lang.String, int, java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\"},{\"def_pos\":0,\"name\":\"urgeVerification\",\"is_constructor\":false,\"signature\":\"urgeVerification(java.lang.String): io.reactivex.Observable\\u003csk4.d1\\u003e\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.notebase.notedetail.service.NoteDetailService",
+    "methods": [
+      {
+        "name": "callbackVideoFeedCloudGuideInfo",
+        "reported_signature": "callbackVideoFeedCloudGuideInfo(java.lang.String): io.reactivex.Observable<xh4.y>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "callbackVideoFeedCloudGuideInfoNew",
+        "reported_signature": "callbackVideoFeedCloudGuideInfoNew(java.lang.Integer, java.lang.String, java.lang.String): io.reactivex.Observable<xh4.y>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "checkSendMsg",
+        "reported_signature": "checkSendMsg(java.lang.String): io.reactivex.Observable<java.lang.Boolean>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "detailFeedPreload",
+        "reported_signature": "detailFeedPreload(java.lang.String, java.lang.String): io.reactivex.Observable<xh4.g1>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "dislikeRecommend",
+        "reported_signature": "dislikeRecommend(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable<xh4.y>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "fetchImageSearchGuideInfoInNote",
+        "reported_signature": "fetchImageSearchGuideInfoInNote(java.lang.String, java.lang.String): io.reactivex.Observable<java.lang.Object>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "fetchNotifySetting",
+        "reported_signature": "fetchNotifySetting(): io.reactivex.Observable<java.util.List<sk4.k0>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "fetchVideoFinishedConfig",
+        "reported_signature": "fetchVideoFinishedConfig(java.lang.String): io.reactivex.Observable<xh4.y>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAsyncWidgets",
+        "reported_signature": "getAsyncWidgets(sk4.f): io.reactivex.Observable<za7.a>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCooperateDialogList",
+        "reported_signature": "getCooperateDialogList(java.lang.String, java.lang.String): io.reactivex.Observable<sk4.d>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getDistributionCards",
+        "reported_signature": "getDistributionCards(java.lang.String): io.reactivex.Observable<com.xingin.entities.notedetail.NoteDistribution>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLivePhotoMarkVideoData",
+        "reported_signature": "getLivePhotoMarkVideoData(java.lang.String): io.reactivex.Observable<bb7.c>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLongPressInfo",
+        "reported_signature": "getLongPressInfo(okhttp3.RequestBody): io.reactivex.Observable<sk4.w>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLotteryInfo",
+        "reported_signature": "getLotteryInfo(java.lang.String): io.reactivex.Observable<com.xingin.entities.nns.LotteryResponse>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getNoteProductReview",
+        "reported_signature": "getNoteProductReview(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable<com.xingin.entities.tags.NoteProductReview>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPropInfo",
+        "reported_signature": "getPropInfo(java.lang.String): io.reactivex.Observable<com.xingin.entities.notedetail.SamePropModel>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVideoFeedCloudGuideInfo",
+        "reported_signature": "getVideoFeedCloudGuideInfo(java.lang.String): io.reactivex.Observable<java.util.List<eb7.d>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getVoteUserDetail",
+        "reported_signature": "getVoteUserDetail(java.lang.String, java.lang.String, java.lang.String, int): io.reactivex.Observable<com.xingin.entities.notedetail.VoteUserResult>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "loadNoteShareUserInfo",
+        "reported_signature": "loadNoteShareUserInfo(java.lang.String): io.reactivex.Observable<sk4.h0>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "noteDoVote",
+        "reported_signature": "noteDoVote(java.util.Map<java.lang.String, java.lang.String>): io.reactivex.Observable<com.xingin.entities.notedetail.DoVoteResult>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "postReportFollowFlowInfo",
+        "reported_signature": "postReportFollowFlowInfo(wj4.d): io.reactivex.Observable<java.lang.Object>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "postShopWidgetFlipped",
+        "reported_signature": "postShopWidgetFlipped(java.lang.String, boolean, java.lang.String): io.reactivex.Observable<xh4.y>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "postVideoFeedExitInfo",
+        "reported_signature": "postVideoFeedExitInfo(sk4.z): io.reactivex.Observable<java.lang.Object>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "queryFollowedUserData",
+        "reported_signature": "queryFollowedUserData(java.lang.String, int, int, java.lang.String, boolean, java.lang.String): io.reactivex.Observable<wj4.k>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "queryGoodsNoteBenefit",
+        "reported_signature": "queryGoodsNoteBenefit(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable<sk4.m>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "queryNoteDetailFeedData2Up",
+        "reported_signature": "queryNoteDetailFeedData2Up(java.lang.String, int, boolean, int, int, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String): io.reactivex.Observable<java.util.List<com.xingin.notebase.entities.followfeed.BaseNoteFollowFeed>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "queryNoteDetailFeedData3Up",
+        "reported_signature": "queryNoteDetailFeedData3Up(java.lang.String, int, boolean, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String): io.reactivex.Observable<java.util.List<com.xingin.notebase.entities.followfeed.BaseNoteFollowFeed>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "queryNoteDetailFeedDataInDemotion2Up",
+        "reported_signature": "queryNoteDetailFeedDataInDemotion2Up(java.lang.String, int, boolean, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String): g78.b<r78.a<java.util.List<com.xingin.notebase.entities.followfeed.BaseNoteFollowFeed>>, java.util.List<com.xingin.notebase.entities.followfeed.BaseNoteFollowFeed>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "queryOutsideCardFeed",
+        "reported_signature": "queryOutsideCardFeed(java.lang.String, int, java.lang.String, int, int, int, java.lang.String, java.lang.String): io.reactivex.Observable<wj4.u>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "recordVideoPlayed",
+        "reported_signature": "recordVideoPlayed(java.lang.String, java.lang.String): al9.b",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "reportNoteWidgetsEvent",
+        "reported_signature": "reportNoteWidgetsEvent(sk4.i): io.reactivex.Observable<java.lang.Object>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "reportQuestionnaireResult",
+        "reported_signature": "reportQuestionnaireResult(java.util.Map<java.lang.String, java.lang.String>): io.reactivex.Observable<java.lang.Object>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "reportShareBubbleShow",
+        "reported_signature": "reportShareBubbleShow(java.lang.String, int, int): io.reactivex.Observable<xh4.y>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "reqLotteryRegister",
+        "reported_signature": "reqLotteryRegister(java.lang.String): io.reactivex.Observable<xh4.y>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "saveVideo",
+        "reported_signature": "saveVideo(java.lang.String): io.reactivex.Observable<ql4.b>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "sendVideoFeedback",
+        "reported_signature": "sendVideoFeedback(com.xingin.entities.notedetail.VideoFeedbackRequestBody): io.reactivex.Observable<xh4.y>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "submitQuestionnaire",
+        "reported_signature": "submitQuestionnaire(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String): al9.b",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "updateNotePrivacy",
+        "reported_signature": "updateNotePrivacy(java.lang.String, int, java.lang.String): io.reactivex.Observable<xh4.y>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "urgeVerification",
+        "reported_signature": "urgeVerification(java.lang.String): io.reactivex.Observable<sk4.d1>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [],
+    "inner_classes": [
+      "com.xingin.notebase.notedetail.service.NoteDetailService.a"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "a3243fe82e9106421fc67289cdeb0f103ae08d2b21b2a25ab0d9f0835d17d59b",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

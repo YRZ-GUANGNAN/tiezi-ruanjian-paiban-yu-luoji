@@ -1,0 +1,13 @@
+    @Override // com.xingin.foundation.core.v2.Presenter
+    public void y6() {
+        if (PatchProxy.proxyVoid0Para(this, NoteDetailImageDisplayPresenter.class, 298282)) {
+            return;
+        }
+        super.y6();
+        F7().removeCallbacksAndMessages(null);
+        this.f108317u.removeCallbacksAndMessages(null);
+        Animation animation = ((TextView) w6().findViewById(l56.n.f224121t0)).getAnimation();
+        if (animation != null) {
+            animation.cancel();
+        }
+    }

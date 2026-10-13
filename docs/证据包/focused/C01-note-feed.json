@@ -1,0 +1,2521 @@
+{
+  "evidence_id": "ev_3da6e289bc24eca7c0d6f2a9584a2ab650a7b599950453fccd5c71d88df142d7",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.entities.notedetail.NoteFeed"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":91585,\"raw_class_count\":91585,\"resource_count\":12708,\"load_duration_ms\":15778,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.entities.notedetail.NoteFeed"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"CREATOR\",\"def_pos\":0,\"type\":\"android.os.Parcelable$Creator\\u003ccom.xingin.entities.notedetail.NoteFeed\\u003e\"},{\"name\":\"addressInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.AddressInfo\"},{\"name\":\"aiText\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"apiUpgrade\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"ats\",\"def_pos\":0,\"type\":\"java.util.List\\u003c? extends com.xingin.entities.BaseUserBean\\u003e\"},{\"name\":\"autoSlideDown\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"bizMap\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.BizMap\"},{\"name\":\"bridgeGoods\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.NewBridgeGoods\"},{\"name\":\"bulletCommentLead\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.BulletCommentLead\"},{\"name\":\"capaVersion\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"coCreation\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.NoteCoCreation\"},{\"name\":\"coProduceLink\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"collected\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"collectedCount\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"commentLikeLottie\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"commentLikeLottieDark\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"commentPromptConfig\",\"def_pos\":0,\"type\":\"com.xingin.entities.comment.CommentPromptConfig\"},{\"name\":\"commentUnlikeLottie\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"commentUnlikeLottieDark\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"commentsCount\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"contentTransInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.NoteContentTransInfo\"},{\"name\":\"cooperateBinds\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.notedetail.Brand\\u003e\"},{\"name\":\"cooperateBindsShowed\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"cooperateCard\",\"def_pos\":0,\"type\":\"com.xingin.entities.followfeed.CooperateGoodsCardInfo\"},{\"name\":\"countDown\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"coverImageIndex\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"cursor\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"cursorScore\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"debugInfo\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"debugInfoObj\",\"def_pos\":0,\"type\":\"com.google.gson.l\"},{\"name\":\"demotionCacheType\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"desc\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"descHeadLabel\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"downgradeConfig\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.DowngradeConfig\"},{\"name\":\"downgradeType\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"enableCoProduce\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"},{\"name\":\"enableListenVideo\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"errorPageDarkImageUrl\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"errorPageImageUrl\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"f50898ad\",\"def_pos\":0,\"type\":\"com.xingin.entities.ad.Ad\"},{\"name\":\"feedbackTypeCanWithdraw\",\"def_pos\":0,\"type\":\"bn9.g\\u003c? extends uj4.e, java.lang.String\\u003e\"},{\"name\":\"footTags\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.notedetail.FootTags\\u003e\"},{\"name\":\"formatCollectCount\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"formatCommentCount\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"formatLikeCount\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"formatShareCount\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"from\",\"def_pos\":0,\"type\":\"sk4.c0\"},{\"name\":\"goodsCardV2\",\"def_pos\":0,\"type\":\"com.xingin.entities.followfeed.GoodsNoteV2\"},{\"name\":\"goodsInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteDetailGoodsInfo\"},{\"name\":\"goodsList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.followfeed.PurchaseGoodsResp$GoodsItem\\u003e\"},{\"name\":\"governmentTagInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.followfeed.GovernmentTagInfo\"},{\"name\":\"groupShare\",\"def_pos\":0,\"type\":\"com.xingin.entities.followfeed.GroupShare\"},{\"name\":\"guideKeysStr\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"hasBrandLottery\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"hasEnlargeCommodityCardAnim\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"hasImpressedInLandscape\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"hasImpressedInPortrait\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"hasNoMore\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"hasPlayedCommodityCardAnim\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"hashTag\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003ccom.xingin.entities.HashTagListBean$HashTag\\u003e\"},{\"name\":\"headTags\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.notedetail.NewTag\\u003e\"},{\"name\":\"highLightIndex\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003cjava.lang.Integer\\u003e\"},{\"name\":\"id\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"illegalInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.followfeed.IllegalInfo\"},{\"name\":\"imageFromLocal\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"imageGoodsCardList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.commoditycard.ImageGoodsCardsBean\\u003e\"},{\"name\":\"imageList\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003ccom.xingin.entities.ImageBean\\u003e\"},{\"name\":\"imageStickerList\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003ccom.xingin.entities.tags.ImageStickerData\\u003e\"},{\"name\":\"impressionTime\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"interactComponentInfo\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"interactionInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.InteractionInfo\"},{\"name\":\"ipLocation\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"isDecoratePlayed\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isDemotionCache\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isDemotionCacheUpdate\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isFakeItem\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"},{\"name\":\"isFollowPage\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isFromSingleFollow\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isGoodsNote\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isLotteryDetailFirstClick\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isNnsImpression\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isNote\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isPostPreview\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isPreload\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isSourceItem\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isSourceNote\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isUrlOverride\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isUrlOverrideSuccess\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isWidgetsPreload\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"lastUpdateTime\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"lazyLoadMode\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"likeLottie\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"likeLottieInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.LikeLottieInfo\"},{\"name\":\"liked\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"likedCount\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"likedUsers\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003ccom.xingin.entities.notedetail.Avatar\\u003e\"},{\"name\":\"liveShootingInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.LiveShootingInfo\"},{\"name\":\"longPressShareInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.LongPressShareInfo\"},{\"name\":\"lotteryResponse\",\"def_pos\":0,\"type\":\"com.xingin.entities.nns.LotteryResponse\"},{\"name\":\"mediaSaveConfig\",\"def_pos\":0,\"type\":\"com.xingin.entities.MediaSaveConfig\"},{\"name\":\"modelType\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"music\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.Music\"},{\"name\":\"nativeVoice\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.NativeVoice\"},{\"name\":\"needNextStep\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"needProductReview\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"needTransition\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"newUserAvatarImage\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"nextStep\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.NoteNextStep\"},{\"name\":\"nextStepContext\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"niceCount\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"niceInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.NiceInfo\"},{\"name\":\"niced\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"noteAttributes\",\"def_pos\":0,\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\"},{\"name\":\"noteProductReview\",\"def_pos\":0,\"type\":\"com.xingin.entities.tags.NoteProductReview\"},{\"name\":\"noteStatement\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.NoteStatement\"},{\"name\":\"noteTextPressOptions\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.notedetail.NoteTextPressOptions\\u003e\"},{\"name\":\"noteTime\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.NoteTime\"},{\"name\":\"orderCooperate\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.OrderCooperate\"},{\"name\":\"outSidePlayTime\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"outerCardType\",\"def_pos\":0,\"type\":\"sk4.m0\"},{\"name\":\"poi\",\"def_pos\":0,\"type\":\"com.xingin.entities.followfeed.PoiInfo\"},{\"name\":\"poiCooperateCard\",\"def_pos\":0,\"type\":\"com.xingin.entities.followfeed.CooperatePoiCardInfo\"},{\"name\":\"position\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"preParsedLastUpdateTimeStr\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"preParsedTimeStr\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"price\",\"def_pos\":0,\"type\":\"float\"},{\"name\":\"privacy\",\"def_pos\":0,\"type\":\"com.xingin.entities.Privacy\"},{\"name\":\"readTraceId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"realUserId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"relatedGoods\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.RelatedGoods\"},{\"name\":\"resortInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.ResortInfo\"},{\"name\":\"richContent\",\"def_pos\":0,\"type\":\"android.text.SpannableStringBuilder\"},{\"name\":\"richStrList\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003cjava.lang.String\\u003e\"},{\"name\":\"richStrListAll\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003candroid.util.Pair\\u003cjava.lang.String, java.lang.String\\u003e\\u003e\"},{\"name\":\"searchBiz\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"shareGuide\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.ShareGuideInfo\"},{\"name\":\"shareGuideBubble\",\"def_pos\":0,\"type\":\"com.xingin.entities.followfeed.ShareGuideBubble\"},{\"name\":\"shareImageEntranceMap\",\"def_pos\":0,\"type\":\"java.util.LinkedHashMap\\u003cjava.lang.String, bn9.g\\u003cjava.lang.Boolean, java.lang.String\\u003e\\u003e\"},{\"name\":\"shareInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.ShareInfoDetail\"},{\"name\":\"shareText\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"sharedCount\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"simpleMusicInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.SimpleMusicInfo\"},{\"name\":\"singleLikeLottie\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"singleLikeLottieDark\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"singleUnlikeLottie\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"singleUnlikeLottieDark\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"sound\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.Sound\"},{\"name\":\"sourceNoteId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"sticky\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"strList\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003cjava.lang.String\\u003e\"},{\"name\":\"swanGoodsList\",\"def_pos\":0,\"type\":\"java.util.List\\u003c? extends com.xingin.entities.followfeed.SwanGoods$SwanGoodsItems\\u003e\"},{\"name\":\"text\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"textLanguageCode\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"time\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"title\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"trackId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"translateDesc\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"translateTitle\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"type\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"user\",\"def_pos\":0,\"type\":\"com.xingin.entities.BaseUserBean\"},{\"name\":\"userIdForErrorPage\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"video\",\"def_pos\":0,\"type\":\"com.xingin.entities.VideoInfo\"},{\"name\":\"videoFlag\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"videoGoodsCardList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.commoditycard.VideoGoodsCardsBean\\u003e\"},{\"name\":\"videoHolderCreateTime\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"videoMarks\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.VideoMarksInfo\"},{\"name\":\"videoPlayInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.VideoPlayInfo\"},{\"name\":\"videoPreviewType\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"videoV1\",\"def_pos\":0,\"type\":\"com.xingin.entities.VideoInfo\"},{\"name\":\"videoV2\",\"def_pos\":0,\"type\":\"com.xingin.entities.video.VideoInfoV2\"},{\"name\":\"viewedCount\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"widgetsContext\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"widgetsGroups\",\"def_pos\":0,\"type\":\"java.util.List\\u003c? extends java.util.List\\u003cjava.lang.String\\u003e\\u003e\"},{\"name\":\"wkDemotionCacheSource\",\"def_pos\":0,\"type\":\"int\"}],\"field_count\":174,\"full_name\":\"com.xingin.entities.notedetail.NoteFeed\",\"name\":\"NoteFeed\",\"inner_classes\":[\"com.xingin.entities.notedetail.NoteFeed.a\"],\"inner_class_count\":1,\"method_count\":243,\"methods\":[{\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"signature\":\"\\u003cclinit\\u003e(): void\"},{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\"},{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, boolean, com.xingin.entities.VideoInfo, com.xingin.entities.video.VideoInfoV2, java.lang.String, java.util.ArrayList\\u003ccom.xingin.entities.ImageBean\\u003e, int, com.xingin.entities.BaseUserBean, java.lang.String, java.lang.String, java.lang.String, int, int, boolean, java.lang.String, java.lang.String, com.xingin.entities.notedetail.NoteTime, boolean, java.lang.String, java.lang.String, com.xingin.entities.notedetail.AddressInfo, com.xingin.entities.notedetail.InteractionInfo, com.xingin.entities.notedetail.LikeLottieInfo, com.xingin.entities.notedetail.LiveShootingInfo, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, long, java.lang.String, long, long, long, long, long, boolean, boolean, boolean, com.xingin.entities.followfeed.PoiInfo, java.util.ArrayList\\u003ccom.xingin.entities.notedetail.Avatar\\u003e, long, com.xingin.entities.ShareInfoDetail, com.xingin.entities.LongPressShareInfo, boolean, com.xingin.entities.NoteDetailGoodsInfo, boolean, java.util.ArrayList\\u003ccom.xingin.entities.HashTagListBean$HashTag\\u003e, java.lang.String, com.xingin.entities.notedetail.NoteStatement, java.lang.String, float, java.lang.String, com.google.gson.l, int, java.util.List\\u003c? extends com.xingin.entities.BaseUserBean\\u003e, java.util.List\\u003ccom.xingin.entities.followfeed.PurchaseGoodsResp$GoodsItem\\u003e, java.util.List\\u003c? extends com.xingin.entities.followfeed.SwanGoods$SwanGoodsItems\\u003e, boolean, boolean, int, java.lang.String, java.util.List\\u003ccom.xingin.entities.notedetail.Brand\\u003e, boolean, com.xingin.entities.followfeed.IllegalInfo, boolean, java.lang.String, java.lang.String, com.xingin.entities.ad.Ad, com.xingin.entities.notedetail.RelatedGoods, java.lang.String, java.lang.String, long, java.util.List\\u003ccom.xingin.entities.notedetail.FootTags\\u003e, java.util.List\\u003ccom.xingin.entities.notedetail.NewTag\\u003e, com.xingin.entities.notedetail.OrderCooperate, com.xingin.entities.notedetail.NewBridgeGoods, com.xingin.entities.notedetail.Music, com.xingin.entities.nns.LotteryResponse, boolean, com.xingin.entities.notedetail.NoteNextStep, boolean, java.lang.String, boolean, java.lang.String, java.util.List\\u003c? extends java.util.List\\u003cjava.lang.String\\u003e\\u003e, com.xingin.entities.tags.NoteProductReview, com.xingin.entities.Privacy, com.xingin.entities.notedetail.VideoMarksInfo, boolean, boolean, long, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.xingin.entities.notedetail.Sound, java.lang.String, com.xingin.entities.notedetail.NativeVoice, com.xingin.entities.notedetail.SimpleMusicInfo, com.xingin.entities.notedetail.BulletCommentLead, java.util.List\\u003ccom.xingin.entities.commoditycard.VideoGoodsCardsBean\\u003e, java.util.List\\u003ccom.xingin.entities.commoditycard.ImageGoodsCardsBean\\u003e, com.xingin.entities.followfeed.GoodsNoteV2, com.xingin.entities.followfeed.CooperateGoodsCardInfo, com.xingin.entities.followfeed.CooperatePoiCardInfo, bn9.g\\u003c? extends uj4.e, java.lang.String\\u003e, com.xingin.entities.MediaSaveConfig, com.xingin.entities.notedetail.ResortInfo, boolean, boolean, boolean, java.util.LinkedHashMap\\u003cjava.lang.String, bn9.g\\u003cjava.lang.Boolean, java.lang.String\\u003e\\u003e, java.util.List\\u003cjava.lang.String\\u003e, com.xingin.entities.followfeed.GovernmentTagInfo, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.Boolean, java.lang.String, int, com.xingin.entities.notedetail.DowngradeConfig, com.xingin.entities.followfeed.GroupShare, com.xingin.entities.notedetail.ShareGuideInfo, java.lang.String, boolean, boolean, com.xingin.entities.notedetail.NiceInfo, java.lang.String, java.util.List\\u003ccom.xingin.entities.notedetail.NoteTextPressOptions\\u003e, com.xingin.entities.comment.CommentPromptConfig, com.xingin.entities.notedetail.VideoPlayInfo, com.xingin.entities.notedetail.NoteContentTransInfo, com.xingin.entities.notedetail.NoteCoCreation, com.xingin.entities.notedetail.BizMap): void\"},{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, boolean, com.xingin.entities.VideoInfo, com.xingin.entities.video.VideoInfoV2, java.lang.String, java.util.ArrayList, int, com.xingin.entities.BaseUserBean, java.lang.String, java.lang.String, java.lang.String, int, int, boolean, java.lang.String, java.lang.String, com.xingin.entities.notedetail.NoteTime, boolean, java.lang.String, java.lang.String, com.xingin.entities.notedetail.AddressInfo, com.xingin.entities.notedetail.InteractionInfo, com.xingin.entities.notedetail.LikeLottieInfo, com.xingin.entities.notedetail.LiveShootingInfo, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, long, java.lang.String, long, long, long, long, long, boolean, boolean, boolean, com.xingin.entities.followfeed.PoiInfo, java.util.ArrayList, long, com.xingin.entities.ShareInfoDetail, com.xingin.entities.LongPressShareInfo, boolean, com.xingin.entities.NoteDetailGoodsInfo, boolean, java.util.ArrayList, java.lang.String, com.xingin.entities.notedetail.NoteStatement, java.lang.String, float, java.lang.String, com.google.gson.l, int, java.util.List, java.util.List, java.util.List, boolean, boolean, int, java.lang.String, java.util.List, boolean, com.xingin.entities.followfeed.IllegalInfo, boolean, java.lang.String, java.lang.String, com.xingin.entities.ad.Ad, com.xingin.entities.notedetail.RelatedGoods, java.lang.String, java.lang.String, long, java.util.List, java.util.List, com.xingin.entities.notedetail.OrderCooperate, com.xingin.entities.notedetail.NewBridgeGoods, com.xingin.entities.notedetail.Music, com.xingin.entities.nns.LotteryResponse, boolean, com.xingin.entities.notedetail.NoteNextStep, boolean, java.lang.String, boolean, java.lang.String, java.util.List, com.xingin.entities.tags.NoteProductReview, com.xingin.entities.Privacy, com.xingin.entities.notedetail.VideoMarksInfo, boolean, boolean, long, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.xingin.entities.notedetail.Sound, java.lang.String, com.xingin.entities.notedetail.NativeVoice, com.xingin.entities.notedetail.SimpleMusicInfo, com.xingin.entities.notedetail.BulletCommentLead, java.util.List, java.util.List, com.xingin.entities.followfeed.GoodsNoteV2, com.xingin.entities.followfeed.CooperateGoodsCardInfo, com.xingin.entities.followfeed.CooperatePoiCardInfo, bn9.g, com.xingin.entities.MediaSaveConfig, com.xingin.entities.notedetail.ResortInfo, boolean, boolean, boolean, java.util.LinkedHashMap, java.util.List, com.xingin.entities.followfeed.GovernmentTagInfo, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.Boolean, java.lang.String, int, com.xingin.entities.notedetail.DowngradeConfig, com.xingin.entities.followfeed.GroupShare, com.xingin.entities.notedetail.ShareGuideInfo, java.lang.String, boolean, boolean, com.xingin.entities.notedetail.NiceInfo, java.lang.String, java.util.List, com.xingin.entities.comment.CommentPromptConfig, com.xingin.entities.notedetail.VideoPlayInfo, com.xingin.entities.notedetail.NoteContentTransInfo, com.xingin.entities.notedetail.NoteCoCreation, com.xingin.entities.notedetail.BizMap, int, int, int, int, int, kotlin.jvm.internal.DefaultConstructorMarker): void\"},{\"def_pos\":0,\"name\":\"A\",\"is_constructor\":false,\"signature\":\"A(): java.lang.String\"},{\"def_pos\":0,\"name\":\"A1\",\"is_constructor\":false,\"signature\":\"A1(): java.util.ArrayList\\u003candroid.util.Pair\\u003cjava.lang.String, java.lang.String\\u003e\\u003e\"},{\"def_pos\":0,\"name\":\"A2\",\"is_constructor\":false,\"signature\":\"A2(): boolean\"},{\"def_pos\":0,\"name\":\"A3\",\"is_constructor\":false,\"signature\":\"A3(boolean): void\"},{\"def_pos\":0,\"name\":\"B\",\"is_constructor\":false,\"signature\":\"B(): int\"},{\"def_pos\":0,\"name\":\"B0\",\"is_constructor\":false,\"signature\":\"B0(): com.xingin.entities.notedetail.InteractionInfo\"},{\"def_pos\":0,\"name\":\"B1\",\"is_constructor\":false,\"signature\":\"B1(): com.xingin.entities.notedetail.ShareGuideInfo\"},{\"def_pos\":0,\"name\":\"B2\",\"is_constructor\":false,\"signature\":\"B2(): boolean\"},{\"def_pos\":0,\"name\":\"B3\",\"is_constructor\":false,\"signature\":\"B3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"C\",\"is_constructor\":false,\"signature\":\"C(): java.lang.String\"},{\"def_pos\":0,\"name\":\"C0\",\"is_constructor\":false,\"signature\":\"C0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"C1\",\"is_constructor\":false,\"signature\":\"C1(): com.xingin.entities.followfeed.ShareGuideBubble\"},{\"def_pos\":0,\"name\":\"C2\",\"is_constructor\":false,\"signature\":\"C2(): boolean\"},{\"def_pos\":0,\"name\":\"C3\",\"is_constructor\":false,\"signature\":\"C3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"D0\",\"is_constructor\":false,\"signature\":\"D0(): long\"},{\"def_pos\":0,\"name\":\"D1\",\"is_constructor\":false,\"signature\":\"D1(): java.util.LinkedHashMap\\u003cjava.lang.String, bn9.g\\u003cjava.lang.Boolean, java.lang.String\\u003e\\u003e\"},{\"def_pos\":0,\"name\":\"D2\",\"is_constructor\":false,\"signature\":\"D2(): boolean\"},{\"def_pos\":0,\"name\":\"D3\",\"is_constructor\":false,\"signature\":\"D3(boolean): void\"},{\"def_pos\":0,\"name\":\"E1\",\"is_constructor\":false,\"signature\":\"E1(): com.xingin.entities.ShareInfoDetail\"},{\"def_pos\":0,\"name\":\"E2\",\"is_constructor\":false,\"signature\":\"E2(): boolean\"},{\"def_pos\":0,\"name\":\"E3\",\"is_constructor\":false,\"signature\":\"E3(com.xingin.entities.Privacy): void\"},{\"def_pos\":0,\"name\":\"F1\",\"is_constructor\":false,\"signature\":\"F1(): java.lang.String\"},{\"def_pos\":0,\"name\":\"F2\",\"is_constructor\":false,\"signature\":\"F2(): boolean\"},{\"def_pos\":0,\"name\":\"F3\",\"is_constructor\":false,\"signature\":\"F3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"G0\",\"is_constructor\":false,\"signature\":\"G0(): int\"},{\"def_pos\":0,\"name\":\"G2\",\"is_constructor\":false,\"signature\":\"G2(): boolean\"},{\"def_pos\":0,\"name\":\"G3\",\"is_constructor\":false,\"signature\":\"G3(android.text.SpannableStringBuilder): void\"},{\"def_pos\":0,\"name\":\"H1\",\"is_constructor\":false,\"signature\":\"H1(): long\"},{\"def_pos\":0,\"name\":\"H2\",\"is_constructor\":false,\"signature\":\"H2(com.xingin.entities.ad.Ad): void\"},{\"def_pos\":0,\"name\":\"H3\",\"is_constructor\":false,\"signature\":\"H3(com.xingin.entities.notedetail.ShareGuideInfo): void\"},{\"def_pos\":0,\"name\":\"I0\",\"is_constructor\":false,\"signature\":\"I0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"I1\",\"is_constructor\":false,\"signature\":\"I1(): com.xingin.entities.notedetail.SimpleMusicInfo\"},{\"def_pos\":0,\"name\":\"I2\",\"is_constructor\":false,\"signature\":\"I2(java.util.List\\u003c? extends com.xingin.entities.BaseUserBean\\u003e): void\"},{\"def_pos\":0,\"name\":\"I3\",\"is_constructor\":false,\"signature\":\"I3(com.xingin.entities.followfeed.ShareGuideBubble): void\"},{\"def_pos\":0,\"name\":\"J0\",\"is_constructor\":false,\"signature\":\"J0(): com.xingin.entities.notedetail.LikeLottieInfo\"},{\"def_pos\":0,\"name\":\"J1\",\"is_constructor\":false,\"signature\":\"J1(boolean): java.lang.String\"},{\"def_pos\":0,\"name\":\"J2\",\"is_constructor\":false,\"signature\":\"J2(com.xingin.entities.notedetail.NewBridgeGoods): void\"},{\"def_pos\":0,\"name\":\"J3\",\"is_constructor\":false,\"signature\":\"J3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"K0\",\"is_constructor\":false,\"signature\":\"K0(): boolean\"},{\"def_pos\":0,\"name\":\"K1\",\"is_constructor\":false,\"signature\":\"K1(boolean, boolean): java.lang.String\"},{\"def_pos\":0,\"name\":\"K2\",\"is_constructor\":false,\"signature\":\"K2(boolean): void\"},{\"def_pos\":0,\"name\":\"K3\",\"is_constructor\":false,\"signature\":\"K3(long): void\"},{\"def_pos\":0,\"name\":\"L\",\"is_constructor\":false,\"signature\":\"L(): com.xingin.entities.notedetail.DowngradeConfig\"},{\"def_pos\":0,\"name\":\"L1\",\"is_constructor\":false,\"signature\":\"L1(boolean): java.lang.String\"},{\"def_pos\":0,\"name\":\"L2\",\"is_constructor\":false,\"signature\":\"L2(long): void\"},{\"def_pos\":0,\"name\":\"L3\",\"is_constructor\":false,\"signature\":\"L3(boolean): void\"},{\"def_pos\":0,\"name\":\"M\",\"is_constructor\":false,\"signature\":\"M(): int\"},{\"def_pos\":0,\"name\":\"M0\",\"is_constructor\":false,\"signature\":\"M0(): long\"},{\"def_pos\":0,\"name\":\"M1\",\"is_constructor\":false,\"signature\":\"M1(): com.xingin.entities.notedetail.Sound\"},{\"def_pos\":0,\"name\":\"M2\",\"is_constructor\":false,\"signature\":\"M2(long): void\"},{\"def_pos\":0,\"name\":\"M3\",\"is_constructor\":false,\"signature\":\"M3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"N0\",\"is_constructor\":false,\"signature\":\"N0(): com.xingin.entities.notedetail.LiveShootingInfo\"},{\"def_pos\":0,\"name\":\"N1\",\"is_constructor\":false,\"signature\":\"N1(): java.lang.String\"},{\"def_pos\":0,\"name\":\"N2\",\"is_constructor\":false,\"signature\":\"N2(int): void\"},{\"def_pos\":0,\"name\":\"N3\",\"is_constructor\":false,\"signature\":\"N3(boolean): void\"},{\"def_pos\":0,\"name\":\"O0\",\"is_constructor\":false,\"signature\":\"O0(): com.xingin.entities.LongPressShareInfo\"},{\"def_pos\":0,\"name\":\"O1\",\"is_constructor\":false,\"signature\":\"O1(): boolean\"},{\"def_pos\":0,\"name\":\"O2\",\"is_constructor\":false,\"signature\":\"O2(int): void\"},{\"def_pos\":0,\"name\":\"O3\",\"is_constructor\":false,\"signature\":\"O3(java.util.List\\u003c? extends com.xingin.entities.followfeed.SwanGoods$SwanGoodsItems\\u003e): void\"},{\"def_pos\":0,\"name\":\"P0\",\"is_constructor\":false,\"signature\":\"P0(): com.xingin.entities.nns.LotteryResponse\"},{\"def_pos\":0,\"name\":\"P1\",\"is_constructor\":false,\"signature\":\"P1(): java.util.ArrayList\\u003cjava.lang.String\\u003e\"},{\"def_pos\":0,\"name\":\"P2\",\"is_constructor\":false,\"signature\":\"P2(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"P3\",\"is_constructor\":false,\"signature\":\"P3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"Q\",\"is_constructor\":false,\"signature\":\"Q(): java.lang.Boolean\"},{\"def_pos\":0,\"name\":\"Q0\",\"is_constructor\":false,\"signature\":\"Q0(): com.xingin.entities.MediaSaveConfig\"},{\"def_pos\":0,\"name\":\"Q1\",\"is_constructor\":false,\"signature\":\"Q1(): java.lang.String\"},{\"def_pos\":0,\"name\":\"Q2\",\"is_constructor\":false,\"signature\":\"Q2(boolean): void\"},{\"def_pos\":0,\"name\":\"Q3\",\"is_constructor\":false,\"signature\":\"Q3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"R\",\"is_constructor\":false,\"signature\":\"R(): java.lang.String\"},{\"def_pos\":0,\"name\":\"R0\",\"is_constructor\":false,\"signature\":\"R0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"R1\",\"is_constructor\":false,\"signature\":\"R1(): java.lang.String\"},{\"def_pos\":0,\"name\":\"R2\",\"is_constructor\":false,\"signature\":\"R2(int): void\"},{\"def_pos\":0,\"name\":\"R3\",\"is_constructor\":false,\"signature\":\"R3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"S\",\"is_constructor\":false,\"signature\":\"S(): java.lang.String\"},{\"def_pos\":0,\"name\":\"S0\",\"is_constructor\":false,\"signature\":\"S0(): com.xingin.entities.notedetail.Music\"},{\"def_pos\":0,\"name\":\"S1\",\"is_constructor\":false,\"signature\":\"S1(): java.lang.String\"},{\"def_pos\":0,\"name\":\"S2\",\"is_constructor\":false,\"signature\":\"S2(boolean): void\"},{\"def_pos\":0,\"name\":\"S3\",\"is_constructor\":false,\"signature\":\"S3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"T\",\"is_constructor\":false,\"signature\":\"T(): bn9.g\\u003cuj4.e, java.lang.String\\u003e\"},{\"def_pos\":0,\"name\":\"T0\",\"is_constructor\":false,\"signature\":\"T0(): com.xingin.entities.notedetail.NativeVoice\"},{\"def_pos\":0,\"name\":\"T1\",\"is_constructor\":false,\"signature\":\"T1(): java.lang.String\"},{\"def_pos\":0,\"name\":\"T2\",\"is_constructor\":false,\"signature\":\"T2(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"T3\",\"is_constructor\":false,\"signature\":\"T3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"U0\",\"is_constructor\":false,\"signature\":\"U0(): boolean\"},{\"def_pos\":0,\"name\":\"U1\",\"is_constructor\":false,\"signature\":\"U1(): java.lang.String\"},{\"def_pos\":0,\"name\":\"U2\",\"is_constructor\":false,\"signature\":\"U2(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"U3\",\"is_constructor\":false,\"signature\":\"U3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"V\",\"is_constructor\":false,\"signature\":\"V(): java.util.List\\u003ccom.xingin.entities.notedetail.FootTags\\u003e\"},{\"def_pos\":0,\"name\":\"V1\",\"is_constructor\":false,\"signature\":\"V1(): java.lang.String\"},{\"def_pos\":0,\"name\":\"V2\",\"is_constructor\":false,\"signature\":\"V2(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"V3\",\"is_constructor\":false,\"signature\":\"V3(boolean): void\"},{\"def_pos\":0,\"name\":\"W\",\"is_constructor\":false,\"signature\":\"W(): sk4.c0\"},{\"def_pos\":0,\"name\":\"W0\",\"is_constructor\":false,\"signature\":\"W0(): boolean\"},{\"def_pos\":0,\"name\":\"W1\",\"is_constructor\":false,\"signature\":\"W1(): java.lang.String\"},{\"def_pos\":0,\"name\":\"W2\",\"is_constructor\":false,\"signature\":\"W2(java.lang.Boolean): void\"},{\"def_pos\":0,\"name\":\"W3\",\"is_constructor\":false,\"signature\":\"W3(boolean): void\"},{\"def_pos\":0,\"name\":\"X\",\"is_constructor\":false,\"signature\":\"X(): com.xingin.entities.followfeed.GoodsNoteV2\"},{\"def_pos\":0,\"name\":\"X1\",\"is_constructor\":false,\"signature\":\"X1(): java.lang.String\"},{\"def_pos\":0,\"name\":\"X2\",\"is_constructor\":false,\"signature\":\"X2(bn9.g\\u003c? extends uj4.e, java.lang.String\\u003e): void\"},{\"def_pos\":0,\"name\":\"X3\",\"is_constructor\":false,\"signature\":\"X3(com.xingin.entities.BaseUserBean): void\"},{\"def_pos\":0,\"name\":\"Y\",\"is_constructor\":false,\"signature\":\"Y(): java.util.List\\u003ccom.xingin.entities.followfeed.PurchaseGoodsResp$GoodsItem\\u003e\"},{\"def_pos\":0,\"name\":\"Y0\",\"is_constructor\":false,\"signature\":\"Y0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"Y1\",\"is_constructor\":false,\"signature\":\"Y1(): java.lang.String\"},{\"def_pos\":0,\"name\":\"Y2\",\"is_constructor\":false,\"signature\":\"Y2(sk4.c0): void\"},{\"def_pos\":0,\"name\":\"Y3\",\"is_constructor\":false,\"signature\":\"Y3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"Z0\",\"is_constructor\":false,\"signature\":\"Z0(): com.xingin.entities.notedetail.NoteNextStep\"},{\"def_pos\":0,\"name\":\"Z1\",\"is_constructor\":false,\"signature\":\"Z1(): com.xingin.entities.BaseUserBean\"},{\"def_pos\":0,\"name\":\"Z2\",\"is_constructor\":false,\"signature\":\"Z2(boolean): void\"},{\"def_pos\":0,\"name\":\"Z3\",\"is_constructor\":false,\"signature\":\"Z3(com.xingin.entities.VideoInfo): void\"},{\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"signature\":\"a(): boolean\"},{\"def_pos\":0,\"name\":\"a0\",\"is_constructor\":false,\"signature\":\"a0(): com.xingin.entities.followfeed.GovernmentTagInfo\"},{\"def_pos\":0,\"name\":\"a1\",\"is_constructor\":false,\"signature\":\"a1(): java.lang.String\"},{\"def_pos\":0,\"name\":\"a2\",\"is_constructor\":false,\"signature\":\"a2(): java.lang.String\"},{\"def_pos\":0,\"name\":\"a3\",\"is_constructor\":false,\"signature\":\"a3(com.xingin.entities.followfeed.GoodsNoteV2): void\"},{\"def_pos\":0,\"name\":\"a4\",\"is_constructor\":false,\"signature\":\"a4(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"signature\":\"b(): void\"},{\"def_pos\":0,\"name\":\"b0\",\"is_constructor\":false,\"signature\":\"b0(): com.xingin.entities.followfeed.GroupShare\"},{\"def_pos\":0,\"name\":\"b1\",\"is_constructor\":false,\"signature\":\"b1(): long\"},{\"def_pos\":0,\"name\":\"b2\",\"is_constructor\":false,\"signature\":\"b2(): com.xingin.entities.VideoInfo\"},{\"def_pos\":0,\"name\":\"b3\",\"is_constructor\":false,\"signature\":\"b3(java.util.List\\u003ccom.xingin.entities.followfeed.PurchaseGoodsResp$GoodsItem\\u003e): void\"},{\"def_pos\":0,\"name\":\"b4\",\"is_constructor\":false,\"signature\":\"b4(long): void\"},{\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(com.xingin.entities.notedetail.NoteFeed, java.lang.String, java.lang.String, boolean, com.xingin.entities.VideoInfo, com.xingin.entities.video.VideoInfoV2, java.lang.String, java.util.ArrayList, int, com.xingin.entities.BaseUserBean, java.lang.String, java.lang.String, java.lang.String, int, int, boolean, java.lang.String, java.lang.String, com.xingin.entities.notedetail.NoteTime, boolean, java.lang.String, java.lang.String, com.xingin.entities.notedetail.AddressInfo, com.xingin.entities.notedetail.InteractionInfo, com.xingin.entities.notedetail.LikeLottieInfo, com.xingin.entities.notedetail.LiveShootingInfo, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, long, java.lang.String, long, long, long, long, long, boolean, boolean, boolean, com.xingin.entities.followfeed.PoiInfo, java.util.ArrayList, long, com.xingin.entities.ShareInfoDetail, com.xingin.entities.LongPressShareInfo, boolean, com.xingin.entities.NoteDetailGoodsInfo, boolean, java.util.ArrayList, java.lang.String, com.xingin.entities.notedetail.NoteStatement, java.lang.String, float, java.lang.String, com.google.gson.l, int, java.util.List, java.util.List, java.util.List, boolean, boolean, int, java.lang.String, java.util.List, boolean, com.xingin.entities.followfeed.IllegalInfo, boolean, java.lang.String, java.lang.String, com.xingin.entities.ad.Ad, com.xingin.entities.notedetail.RelatedGoods, java.lang.String, java.lang.String, long, java.util.List, java.util.List, com.xingin.entities.notedetail.OrderCooperate, com.xingin.entities.notedetail.NewBridgeGoods, com.xingin.entities.notedetail.Music, com.xingin.entities.nns.LotteryResponse, boolean, com.xingin.entities.notedetail.NoteNextStep, boolean, java.lang.String, boolean, java.lang.String, java.util.List, com.xingin.entities.tags.NoteProductReview, com.xingin.entities.Privacy, com.xingin.entities.notedetail.VideoMarksInfo, boolean, boolean, long, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.xingin.entities.notedetail.Sound, java.lang.String, com.xingin.entities.notedetail.NativeVoice, com.xingin.entities.notedetail.SimpleMusicInfo, com.xingin.entities.notedetail.BulletCommentLead, java.util.List, java.util.List, com.xingin.entities.followfeed.GoodsNoteV2, com.xingin.entities.followfeed.CooperateGoodsCardInfo, com.xingin.entities.followfeed.CooperatePoiCardInfo, bn9.g, com.xingin.entities.MediaSaveConfig, com.xingin.entities.notedetail.ResortInfo, boolean, boolean, boolean, java.util.LinkedHashMap, java.util.List, com.xingin.entities.followfeed.GovernmentTagInfo, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.Boolean, java.lang.String, int, com.xingin.entities.notedetail.DowngradeConfig, com.xingin.entities.followfeed.GroupShare, com.xingin.entities.notedetail.ShareGuideInfo, java.lang.String, boolean, boolean, com.xingin.entities.notedetail.NiceInfo, java.lang.String, java.util.List, com.xingin.entities.comment.CommentPromptConfig, com.xingin.entities.notedetail.VideoPlayInfo, com.xingin.entities.notedetail.NoteContentTransInfo, com.xingin.entities.notedetail.NoteCoCreation, com.xingin.entities.notedetail.BizMap, int, int, int, int, int, java.lang.Object): com.xingin.entities.notedetail.NoteFeed\"},{\"def_pos\":0,\"name\":\"c1\",\"is_constructor\":false,\"signature\":\"c1(): com.xingin.entities.notedetail.NiceInfo\"},{\"def_pos\":0,\"name\":\"c2\",\"is_constructor\":false,\"signature\":\"c2(): java.util.List\\u003ccom.xingin.entities.commoditycard.VideoGoodsCardsBean\\u003e\"},{\"def_pos\":0,\"name\":\"c3\",\"is_constructor\":false,\"signature\":\"c3(com.xingin.entities.followfeed.GroupShare): void\"},{\"def_pos\":0,\"name\":\"c4\",\"is_constructor\":false,\"signature\":\"c4(com.xingin.entities.VideoInfo): void\"},{\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"signature\":\"d(): com.xingin.entities.ad.Ad\"},{\"def_pos\":0,\"name\":\"d0\",\"is_constructor\":false,\"signature\":\"d0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"d1\",\"is_constructor\":false,\"signature\":\"d1(): boolean\"},{\"def_pos\":0,\"name\":\"d2\",\"is_constructor\":false,\"signature\":\"d2(): long\"},{\"def_pos\":0,\"name\":\"d3\",\"is_constructor\":false,\"signature\":\"d3(boolean): void\"},{\"def_pos\":0,\"name\":\"d4\",\"is_constructor\":false,\"signature\":\"d4(com.xingin.entities.video.VideoInfoV2): void\"},{\"def_pos\":0,\"name\":\"describeContents\",\"is_constructor\":false,\"signature\":\"describeContents(): int\"},{\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"signature\":\"e(): com.xingin.entities.notedetail.AddressInfo\"},{\"def_pos\":0,\"name\":\"e0\",\"is_constructor\":false,\"signature\":\"e0(): boolean\"},{\"def_pos\":0,\"name\":\"e2\",\"is_constructor\":false,\"signature\":\"e2(): com.xingin.entities.notedetail.VideoMarksInfo\"},{\"def_pos\":0,\"name\":\"e3\",\"is_constructor\":false,\"signature\":\"e3(boolean): void\"},{\"def_pos\":0,\"name\":\"e4\",\"is_constructor\":false,\"signature\":\"e4(boolean): void\"},{\"def_pos\":0,\"name\":\"equals\",\"is_constructor\":false,\"signature\":\"equals(java.lang.Object): boolean\"},{\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"signature\":\"f(): java.lang.String\"},{\"def_pos\":0,\"name\":\"f0\",\"is_constructor\":false,\"signature\":\"f0(): boolean\"},{\"def_pos\":0,\"name\":\"f1\",\"is_constructor\":false,\"signature\":\"f1(): java.util.List\\u003cjava.lang.String\\u003e\"},{\"def_pos\":0,\"name\":\"f2\",\"is_constructor\":false,\"signature\":\"f2(): com.xingin.entities.notedetail.VideoPlayInfo\"},{\"def_pos\":0,\"name\":\"f3\",\"is_constructor\":false,\"signature\":\"f3(boolean): void\"},{\"def_pos\":0,\"name\":\"f4\",\"is_constructor\":false,\"signature\":\"f4(int): void\"},{\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"signature\":\"g(): java.util.List\\u003ccom.xingin.entities.BaseUserBean\\u003e\"},{\"def_pos\":0,\"name\":\"g0\",\"is_constructor\":false,\"signature\":\"g0(): boolean\"},{\"def_pos\":0,\"name\":\"g1\",\"is_constructor\":false,\"signature\":\"g1(): com.xingin.entities.tags.NoteProductReview\"},{\"def_pos\":0,\"name\":\"g2\",\"is_constructor\":false,\"signature\":\"g2(): java.lang.String\"},{\"def_pos\":0,\"name\":\"g3\",\"is_constructor\":false,\"signature\":\"g3(java.util.ArrayList\\u003ccom.xingin.entities.HashTagListBean$HashTag\\u003e): void\"},{\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"signature\":\"h(): com.xingin.entities.notedetail.BizMap\"},{\"def_pos\":0,\"name\":\"h0\",\"is_constructor\":false,\"signature\":\"h0(): boolean\"},{\"def_pos\":0,\"name\":\"h1\",\"is_constructor\":false,\"signature\":\"h1(): com.xingin.entities.notedetail.NoteStatement\"},{\"def_pos\":0,\"name\":\"h2\",\"is_constructor\":false,\"signature\":\"h2(): com.xingin.entities.VideoInfo\"},{\"def_pos\":0,\"name\":\"h3\",\"is_constructor\":false,\"signature\":\"h3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"hashCode\",\"is_constructor\":false,\"signature\":\"hashCode(): int\"},{\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false,\"signature\":\"i(): com.xingin.entities.notedetail.NewBridgeGoods\"},{\"def_pos\":0,\"name\":\"i0\",\"is_constructor\":false,\"signature\":\"i0(): java.util.ArrayList\\u003ccom.xingin.entities.HashTagListBean$HashTag\\u003e\"},{\"def_pos\":0,\"name\":\"i1\",\"is_constructor\":false,\"signature\":\"i1(): java.util.List\\u003ccom.xingin.entities.notedetail.NoteTextPressOptions\\u003e\"},{\"def_pos\":0,\"name\":\"i2\",\"is_constructor\":false,\"signature\":\"i2(): com.xingin.entities.video.VideoInfoV2\"},{\"def_pos\":0,\"name\":\"i3\",\"is_constructor\":false,\"signature\":\"i3(int): void\"},{\"def_pos\":0,\"name\":\"j\",\"is_constructor\":false,\"signature\":\"j(): java.lang.String\"},{\"def_pos\":0,\"name\":\"j0\",\"is_constructor\":false,\"signature\":\"j0(): java.util.ArrayList\\u003cjava.lang.Integer\\u003e\"},{\"def_pos\":0,\"name\":\"j2\",\"is_constructor\":false,\"signature\":\"j2(): java.lang.String\"},{\"def_pos\":0,\"name\":\"j3\",\"is_constructor\":false,\"signature\":\"j3(java.util.ArrayList\\u003ccom.xingin.entities.tags.ImageStickerData\\u003e): void\"},{\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false,\"signature\":\"k(): com.xingin.entities.notedetail.NoteCoCreation\"},{\"def_pos\":0,\"name\":\"k1\",\"is_constructor\":false,\"signature\":\"k1(): com.xingin.entities.notedetail.NoteTime\"},{\"def_pos\":0,\"name\":\"k2\",\"is_constructor\":false,\"signature\":\"k2(): java.util.List\\u003cjava.util.List\\u003cjava.lang.String\\u003e\\u003e\"},{\"def_pos\":0,\"name\":\"k3\",\"is_constructor\":false,\"signature\":\"k3(long): void\"},{\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false,\"signature\":\"l(): java.lang.String\"},{\"def_pos\":0,\"name\":\"l0\",\"is_constructor\":false,\"signature\":\"l0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"l1\",\"is_constructor\":false,\"signature\":\"l1(): com.xingin.entities.notedetail.OrderCooperate\"},{\"def_pos\":0,\"name\":\"l2\",\"is_constructor\":false,\"signature\":\"l2(): int\"},{\"def_pos\":0,\"name\":\"l3\",\"is_constructor\":false,\"signature\":\"l3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false,\"signature\":\"m(): boolean\"},{\"def_pos\":0,\"name\":\"m0\",\"is_constructor\":false,\"signature\":\"m0(): com.xingin.entities.followfeed.IllegalInfo\"},{\"def_pos\":0,\"name\":\"m1\",\"is_constructor\":false,\"signature\":\"m1(): long\"},{\"def_pos\":0,\"name\":\"m2\",\"is_constructor\":false,\"signature\":\"m2(): boolean\"},{\"def_pos\":0,\"name\":\"m3\",\"is_constructor\":false,\"signature\":\"m3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false,\"signature\":\"n(): long\"},{\"def_pos\":0,\"name\":\"n0\",\"is_constructor\":false,\"signature\":\"n0(int): float\"},{\"def_pos\":0,\"name\":\"n1\",\"is_constructor\":false,\"signature\":\"n1(): sk4.m0\"},{\"def_pos\":0,\"name\":\"n2\",\"is_constructor\":false,\"signature\":\"n2(): boolean\"},{\"def_pos\":0,\"name\":\"n3\",\"is_constructor\":false,\"signature\":\"n3(long): void\"},{\"def_pos\":0,\"name\":\"o\",\"is_constructor\":false,\"signature\":\"o(boolean): java.lang.String\"},{\"def_pos\":0,\"name\":\"o2\",\"is_constructor\":false,\"signature\":\"o2(): boolean\"},{\"def_pos\":0,\"name\":\"o3\",\"is_constructor\":false,\"signature\":\"o3(boolean): void\"},{\"def_pos\":0,\"name\":\"p\",\"is_constructor\":false,\"signature\":\"p(): com.xingin.entities.comment.CommentPromptConfig\"},{\"def_pos\":0,\"name\":\"p1\",\"is_constructor\":false,\"signature\":\"p1(): com.xingin.entities.followfeed.PoiInfo\"},{\"def_pos\":0,\"name\":\"p2\",\"is_constructor\":false,\"signature\":\"p2(): boolean\"},{\"def_pos\":0,\"name\":\"p3\",\"is_constructor\":false,\"signature\":\"p3(long): void\"},{\"def_pos\":0,\"name\":\"q\",\"is_constructor\":false,\"signature\":\"q(boolean): java.lang.String\"},{\"def_pos\":0,\"name\":\"q1\",\"is_constructor\":false,\"signature\":\"q1(): com.xingin.entities.followfeed.CooperatePoiCardInfo\"},{\"def_pos\":0,\"name\":\"q2\",\"is_constructor\":false,\"signature\":\"q2(): java.lang.Boolean\"},{\"def_pos\":0,\"name\":\"q3\",\"is_constructor\":false,\"signature\":\"q3(boolean): void\"},{\"def_pos\":0,\"name\":\"r\",\"is_constructor\":false,\"signature\":\"r(): long\"},{\"def_pos\":0,\"name\":\"r0\",\"is_constructor\":false,\"signature\":\"r0(): int\"},{\"def_pos\":0,\"name\":\"r2\",\"is_constructor\":false,\"signature\":\"r2(): boolean\"},{\"def_pos\":0,\"name\":\"r3\",\"is_constructor\":false,\"signature\":\"r3(com.xingin.entities.nns.LotteryResponse): void\"},{\"def_pos\":0,\"name\":\"s\",\"is_constructor\":false,\"signature\":\"s(): com.xingin.entities.notedetail.NoteContentTransInfo\"},{\"def_pos\":0,\"name\":\"s0\",\"is_constructor\":false,\"signature\":\"s0(): java.util.List\\u003ccom.xingin.entities.commoditycard.ImageGoodsCardsBean\\u003e\"},{\"def_pos\":0,\"name\":\"s1\",\"is_constructor\":false,\"signature\":\"s1(): int\"},{\"def_pos\":0,\"name\":\"s2\",\"is_constructor\":false,\"signature\":\"s2(): boolean\"},{\"def_pos\":0,\"name\":\"s3\",\"is_constructor\":false,\"signature\":\"s3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"t\",\"is_constructor\":false,\"signature\":\"t(): java.util.List\\u003ccom.xingin.entities.notedetail.Brand\\u003e\"},{\"def_pos\":0,\"name\":\"t0\",\"is_constructor\":false,\"signature\":\"t0(): java.util.ArrayList\\u003ccom.xingin.entities.ImageBean\\u003e\"},{\"def_pos\":0,\"name\":\"t1\",\"is_constructor\":false,\"signature\":\"t1(): com.xingin.entities.Privacy\"},{\"def_pos\":0,\"name\":\"t2\",\"is_constructor\":false,\"signature\":\"t2(java.lang.String): boolean\"},{\"def_pos\":0,\"name\":\"t3\",\"is_constructor\":false,\"signature\":\"t3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"toString\",\"is_constructor\":false,\"signature\":\"toString(): java.lang.String\"},{\"def_pos\":0,\"name\":\"u\",\"is_constructor\":false,\"signature\":\"u(): boolean\"},{\"def_pos\":0,\"name\":\"u1\",\"is_constructor\":false,\"signature\":\"u1(): java.lang.String\"},{\"def_pos\":0,\"name\":\"u2\",\"is_constructor\":false,\"signature\":\"u2(): boolean\"},{\"def_pos\":0,\"name\":\"u3\",\"is_constructor\":false,\"signature\":\"u3(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"v\",\"is_constructor\":false,\"signature\":\"v(): com.xingin.entities.followfeed.CooperateGoodsCardInfo\"},{\"def_pos\":0,\"name\":\"v0\",\"is_constructor\":false,\"signature\":\"v0(): java.util.ArrayList\\u003ccom.xingin.entities.tags.ImageStickerData\\u003e\"},{\"def_pos\":0,\"name\":\"v1\",\"is_constructor\":false,\"signature\":\"v1(): java.lang.String\"},{\"def_pos\":0,\"name\":\"v2\",\"is_constructor\":false,\"signature\":\"v2(): boolean\"},{\"def_pos\":0,\"name\":\"v3\",\"is_constructor\":false,\"signature\":\"v3(long): void\"},{\"def_pos\":0,\"name\":\"w\",\"is_constructor\":false,\"signature\":\"w(): int\"},{\"def_pos\":0,\"name\":\"w0\",\"is_constructor\":false,\"signature\":\"w0(int): java.lang.String\"},{\"def_pos\":0,\"name\":\"w1\",\"is_constructor\":false,\"signature\":\"w1(): com.xingin.entities.notedetail.RelatedGoods\"},{\"def_pos\":0,\"name\":\"w2\",\"is_constructor\":false,\"signature\":\"w2(): boolean\"},{\"def_pos\":0,\"name\":\"w3\",\"is_constructor\":false,\"signature\":\"w3(boolean): void\"},{\"def_pos\":0,\"name\":\"writeToParcel\",\"is_constructor\":false,\"signature\":\"writeToParcel(android.os.Parcel, int): void\"},{\"def_pos\":0,\"name\":\"x\",\"is_constructor\":false,\"signature\":\"x(): int\"},{\"def_pos\":0,\"name\":\"x1\",\"is_constructor\":false,\"signature\":\"x1(): com.xingin.entities.notedetail.ResortInfo\"},{\"def_pos\":0,\"name\":\"x2\",\"is_constructor\":false,\"signature\":\"x2(): boolean\"},{\"def_pos\":0,\"name\":\"x3\",\"is_constructor\":false,\"signature\":\"x3(long): void\"},{\"def_pos\":0,\"name\":\"y\",\"is_constructor\":false,\"signature\":\"y(): java.lang.String\"},{\"def_pos\":0,\"name\":\"y0\",\"is_constructor\":false,\"signature\":\"y0(): long\"},{\"def_pos\":0,\"name\":\"y1\",\"is_constructor\":false,\"signature\":\"y1(): android.text.SpannableStringBuilder\"},{\"def_pos\":0,\"name\":\"y2\",\"is_constructor\":false,\"signature\":\"y2(): boolean\"},{\"def_pos\":0,\"name\":\"y3\",\"is_constructor\":false,\"signature\":\"y3(sk4.m0): void\"},{\"def_pos\":0,\"name\":\"z\",\"is_constructor\":false,\"signature\":\"z(): java.lang.String\"},{\"def_pos\":0,\"name\":\"z0\",\"is_constructor\":false,\"signature\":\"z0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"z1\",\"is_constructor\":false,\"signature\":\"z1(): java.util.ArrayList\\u003cjava.lang.String\\u003e\"},{\"def_pos\":0,\"name\":\"z2\",\"is_constructor\":false,\"signature\":\"z2(): boolean\"},{\"def_pos\":0,\"name\":\"z3\",\"is_constructor\":false,\"signature\":\"z3(int): void\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.entities.notedetail.NoteFeed",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, java.lang.String, boolean, com.xingin.entities.VideoInfo, com.xingin.entities.video.VideoInfoV2, java.lang.String, java.util.ArrayList<com.xingin.entities.ImageBean>, int, com.xingin.entities.BaseUserBean, java.lang.String, java.lang.String, java.lang.String, int, int, boolean, java.lang.String, java.lang.String, com.xingin.entities.notedetail.NoteTime, boolean, java.lang.String, java.lang.String, com.xingin.entities.notedetail.AddressInfo, com.xingin.entities.notedetail.InteractionInfo, com.xingin.entities.notedetail.LikeLottieInfo, com.xingin.entities.notedetail.LiveShootingInfo, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, long, java.lang.String, long, long, long, long, long, boolean, boolean, boolean, com.xingin.entities.followfeed.PoiInfo, java.util.ArrayList<com.xingin.entities.notedetail.Avatar>, long, com.xingin.entities.ShareInfoDetail, com.xingin.entities.LongPressShareInfo, boolean, com.xingin.entities.NoteDetailGoodsInfo, boolean, java.util.ArrayList<com.xingin.entities.HashTagListBean$HashTag>, java.lang.String, com.xingin.entities.notedetail.NoteStatement, java.lang.String, float, java.lang.String, com.google.gson.l, int, java.util.List<? extends com.xingin.entities.BaseUserBean>, java.util.List<com.xingin.entities.followfeed.PurchaseGoodsResp$GoodsItem>, java.util.List<? extends com.xingin.entities.followfeed.SwanGoods$SwanGoodsItems>, boolean, boolean, int, java.lang.String, java.util.List<com.xingin.entities.notedetail.Brand>, boolean, com.xingin.entities.followfeed.IllegalInfo, boolean, java.lang.String, java.lang.String, com.xingin.entities.ad.Ad, com.xingin.entities.notedetail.RelatedGoods, java.lang.String, java.lang.String, long, java.util.List<com.xingin.entities.notedetail.FootTags>, java.util.List<com.xingin.entities.notedetail.NewTag>, com.xingin.entities.notedetail.OrderCooperate, com.xingin.entities.notedetail.NewBridgeGoods, com.xingin.entities.notedetail.Music, com.xingin.entities.nns.LotteryResponse, boolean, com.xingin.entities.notedetail.NoteNextStep, boolean, java.lang.String, boolean, java.lang.String, java.util.List<? extends java.util.List<java.lang.String>>, com.xingin.entities.tags.NoteProductReview, com.xingin.entities.Privacy, com.xingin.entities.notedetail.VideoMarksInfo, boolean, boolean, long, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.xingin.entities.notedetail.Sound, java.lang.String, com.xingin.entities.notedetail.NativeVoice, com.xingin.entities.notedetail.SimpleMusicInfo, com.xingin.entities.notedetail.BulletCommentLead, java.util.List<com.xingin.entities.commoditycard.VideoGoodsCardsBean>, java.util.List<com.xingin.entities.commoditycard.ImageGoodsCardsBean>, com.xingin.entities.followfeed.GoodsNoteV2, com.xingin.entities.followfeed.CooperateGoodsCardInfo, com.xingin.entities.followfeed.CooperatePoiCardInfo, bn9.g<? extends uj4.e, java.lang.String>, com.xingin.entities.MediaSaveConfig, com.xingin.entities.notedetail.ResortInfo, boolean, boolean, boolean, java.util.LinkedHashMap<java.lang.String, bn9.g<java.lang.Boolean, java.lang.String>>, java.util.List<java.lang.String>, com.xingin.entities.followfeed.GovernmentTagInfo, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.Boolean, java.lang.String, int, com.xingin.entities.notedetail.DowngradeConfig, com.xingin.entities.followfeed.GroupShare, com.xingin.entities.notedetail.ShareGuideInfo, java.lang.String, boolean, boolean, com.xingin.entities.notedetail.NiceInfo, java.lang.String, java.util.List<com.xingin.entities.notedetail.NoteTextPressOptions>, com.xingin.entities.comment.CommentPromptConfig, com.xingin.entities.notedetail.VideoPlayInfo, com.xingin.entities.notedetail.NoteContentTransInfo, com.xingin.entities.notedetail.NoteCoCreation, com.xingin.entities.notedetail.BizMap): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, java.lang.String, boolean, com.xingin.entities.VideoInfo, com.xingin.entities.video.VideoInfoV2, java.lang.String, java.util.ArrayList, int, com.xingin.entities.BaseUserBean, java.lang.String, java.lang.String, java.lang.String, int, int, boolean, java.lang.String, java.lang.String, com.xingin.entities.notedetail.NoteTime, boolean, java.lang.String, java.lang.String, com.xingin.entities.notedetail.AddressInfo, com.xingin.entities.notedetail.InteractionInfo, com.xingin.entities.notedetail.LikeLottieInfo, com.xingin.entities.notedetail.LiveShootingInfo, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, long, java.lang.String, long, long, long, long, long, boolean, boolean, boolean, com.xingin.entities.followfeed.PoiInfo, java.util.ArrayList, long, com.xingin.entities.ShareInfoDetail, com.xingin.entities.LongPressShareInfo, boolean, com.xingin.entities.NoteDetailGoodsInfo, boolean, java.util.ArrayList, java.lang.String, com.xingin.entities.notedetail.NoteStatement, java.lang.String, float, java.lang.String, com.google.gson.l, int, java.util.List, java.util.List, java.util.List, boolean, boolean, int, java.lang.String, java.util.List, boolean, com.xingin.entities.followfeed.IllegalInfo, boolean, java.lang.String, java.lang.String, com.xingin.entities.ad.Ad, com.xingin.entities.notedetail.RelatedGoods, java.lang.String, java.lang.String, long, java.util.List, java.util.List, com.xingin.entities.notedetail.OrderCooperate, com.xingin.entities.notedetail.NewBridgeGoods, com.xingin.entities.notedetail.Music, com.xingin.entities.nns.LotteryResponse, boolean, com.xingin.entities.notedetail.NoteNextStep, boolean, java.lang.String, boolean, java.lang.String, java.util.List, com.xingin.entities.tags.NoteProductReview, com.xingin.entities.Privacy, com.xingin.entities.notedetail.VideoMarksInfo, boolean, boolean, long, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.xingin.entities.notedetail.Sound, java.lang.String, com.xingin.entities.notedetail.NativeVoice, com.xingin.entities.notedetail.SimpleMusicInfo, com.xingin.entities.notedetail.BulletCommentLead, java.util.List, java.util.List, com.xingin.entities.followfeed.GoodsNoteV2, com.xingin.entities.followfeed.CooperateGoodsCardInfo, com.xingin.entities.followfeed.CooperatePoiCardInfo, bn9.g, com.xingin.entities.MediaSaveConfig, com.xingin.entities.notedetail.ResortInfo, boolean, boolean, boolean, java.util.LinkedHashMap, java.util.List, com.xingin.entities.followfeed.GovernmentTagInfo, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.Boolean, java.lang.String, int, com.xingin.entities.notedetail.DowngradeConfig, com.xingin.entities.followfeed.GroupShare, com.xingin.entities.notedetail.ShareGuideInfo, java.lang.String, boolean, boolean, com.xingin.entities.notedetail.NiceInfo, java.lang.String, java.util.List, com.xingin.entities.comment.CommentPromptConfig, com.xingin.entities.notedetail.VideoPlayInfo, com.xingin.entities.notedetail.NoteContentTransInfo, com.xingin.entities.notedetail.NoteCoCreation, com.xingin.entities.notedetail.BizMap, int, int, int, int, int, kotlin.jvm.internal.DefaultConstructorMarker): void",
+        "overload_index": 2,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A",
+        "reported_signature": "A(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A1",
+        "reported_signature": "A1(): java.util.ArrayList<android.util.Pair<java.lang.String, java.lang.String>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A2",
+        "reported_signature": "A2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A3",
+        "reported_signature": "A3(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B",
+        "reported_signature": "B(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B0",
+        "reported_signature": "B0(): com.xingin.entities.notedetail.InteractionInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B1",
+        "reported_signature": "B1(): com.xingin.entities.notedetail.ShareGuideInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B2",
+        "reported_signature": "B2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B3",
+        "reported_signature": "B3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C",
+        "reported_signature": "C(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C0",
+        "reported_signature": "C0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C1",
+        "reported_signature": "C1(): com.xingin.entities.followfeed.ShareGuideBubble",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C2",
+        "reported_signature": "C2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C3",
+        "reported_signature": "C3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D0",
+        "reported_signature": "D0(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D1",
+        "reported_signature": "D1(): java.util.LinkedHashMap<java.lang.String, bn9.g<java.lang.Boolean, java.lang.String>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D2",
+        "reported_signature": "D2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D3",
+        "reported_signature": "D3(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "E1",
+        "reported_signature": "E1(): com.xingin.entities.ShareInfoDetail",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "E2",
+        "reported_signature": "E2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "E3",
+        "reported_signature": "E3(com.xingin.entities.Privacy): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F1",
+        "reported_signature": "F1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F2",
+        "reported_signature": "F2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F3",
+        "reported_signature": "F3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G0",
+        "reported_signature": "G0(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G2",
+        "reported_signature": "G2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G3",
+        "reported_signature": "G3(android.text.SpannableStringBuilder): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H1",
+        "reported_signature": "H1(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H2",
+        "reported_signature": "H2(com.xingin.entities.ad.Ad): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H3",
+        "reported_signature": "H3(com.xingin.entities.notedetail.ShareGuideInfo): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I0",
+        "reported_signature": "I0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I1",
+        "reported_signature": "I1(): com.xingin.entities.notedetail.SimpleMusicInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I2",
+        "reported_signature": "I2(java.util.List<? extends com.xingin.entities.BaseUserBean>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I3",
+        "reported_signature": "I3(com.xingin.entities.followfeed.ShareGuideBubble): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "J0",
+        "reported_signature": "J0(): com.xingin.entities.notedetail.LikeLottieInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "J1",
+        "reported_signature": "J1(boolean): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "J2",
+        "reported_signature": "J2(com.xingin.entities.notedetail.NewBridgeGoods): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "J3",
+        "reported_signature": "J3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "K0",
+        "reported_signature": "K0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "K1",
+        "reported_signature": "K1(boolean, boolean): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "K2",
+        "reported_signature": "K2(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "K3",
+        "reported_signature": "K3(long): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "L",
+        "reported_signature": "L(): com.xingin.entities.notedetail.DowngradeConfig",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "L1",
+        "reported_signature": "L1(boolean): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "L2",
+        "reported_signature": "L2(long): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "L3",
+        "reported_signature": "L3(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M",
+        "reported_signature": "M(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M0",
+        "reported_signature": "M0(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M1",
+        "reported_signature": "M1(): com.xingin.entities.notedetail.Sound",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M2",
+        "reported_signature": "M2(long): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M3",
+        "reported_signature": "M3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "N0",
+        "reported_signature": "N0(): com.xingin.entities.notedetail.LiveShootingInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "N1",
+        "reported_signature": "N1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "N2",
+        "reported_signature": "N2(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "N3",
+        "reported_signature": "N3(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "O0",
+        "reported_signature": "O0(): com.xingin.entities.LongPressShareInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "O1",
+        "reported_signature": "O1(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "O2",
+        "reported_signature": "O2(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "O3",
+        "reported_signature": "O3(java.util.List<? extends com.xingin.entities.followfeed.SwanGoods$SwanGoodsItems>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "P0",
+        "reported_signature": "P0(): com.xingin.entities.nns.LotteryResponse",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "P1",
+        "reported_signature": "P1(): java.util.ArrayList<java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "P2",
+        "reported_signature": "P2(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "P3",
+        "reported_signature": "P3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Q",
+        "reported_signature": "Q(): java.lang.Boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Q0",
+        "reported_signature": "Q0(): com.xingin.entities.MediaSaveConfig",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Q1",
+        "reported_signature": "Q1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Q2",
+        "reported_signature": "Q2(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Q3",
+        "reported_signature": "Q3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "R",
+        "reported_signature": "R(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "R0",
+        "reported_signature": "R0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "R1",
+        "reported_signature": "R1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "R2",
+        "reported_signature": "R2(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "R3",
+        "reported_signature": "R3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S",
+        "reported_signature": "S(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S0",
+        "reported_signature": "S0(): com.xingin.entities.notedetail.Music",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S1",
+        "reported_signature": "S1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S2",
+        "reported_signature": "S2(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S3",
+        "reported_signature": "S3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "T",
+        "reported_signature": "T(): bn9.g<uj4.e, java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "T0",
+        "reported_signature": "T0(): com.xingin.entities.notedetail.NativeVoice",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "T1",
+        "reported_signature": "T1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "T2",
+        "reported_signature": "T2(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "T3",
+        "reported_signature": "T3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "U0",
+        "reported_signature": "U0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "U1",
+        "reported_signature": "U1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "U2",
+        "reported_signature": "U2(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "U3",
+        "reported_signature": "U3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "V",
+        "reported_signature": "V(): java.util.List<com.xingin.entities.notedetail.FootTags>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "V1",
+        "reported_signature": "V1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "V2",
+        "reported_signature": "V2(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "V3",
+        "reported_signature": "V3(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "W",
+        "reported_signature": "W(): sk4.c0",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "W0",
+        "reported_signature": "W0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "W1",
+        "reported_signature": "W1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "W2",
+        "reported_signature": "W2(java.lang.Boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "W3",
+        "reported_signature": "W3(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "X",
+        "reported_signature": "X(): com.xingin.entities.followfeed.GoodsNoteV2",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "X1",
+        "reported_signature": "X1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "X2",
+        "reported_signature": "X2(bn9.g<? extends uj4.e, java.lang.String>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "X3",
+        "reported_signature": "X3(com.xingin.entities.BaseUserBean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y",
+        "reported_signature": "Y(): java.util.List<com.xingin.entities.followfeed.PurchaseGoodsResp$GoodsItem>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y0",
+        "reported_signature": "Y0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y1",
+        "reported_signature": "Y1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y2",
+        "reported_signature": "Y2(sk4.c0): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y3",
+        "reported_signature": "Y3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Z0",
+        "reported_signature": "Z0(): com.xingin.entities.notedetail.NoteNextStep",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Z1",
+        "reported_signature": "Z1(): com.xingin.entities.BaseUserBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Z2",
+        "reported_signature": "Z2(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Z3",
+        "reported_signature": "Z3(com.xingin.entities.VideoInfo): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a0",
+        "reported_signature": "a0(): com.xingin.entities.followfeed.GovernmentTagInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a1",
+        "reported_signature": "a1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a2",
+        "reported_signature": "a2(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a3",
+        "reported_signature": "a3(com.xingin.entities.followfeed.GoodsNoteV2): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a4",
+        "reported_signature": "a4(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b0",
+        "reported_signature": "b0(): com.xingin.entities.followfeed.GroupShare",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b1",
+        "reported_signature": "b1(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b2",
+        "reported_signature": "b2(): com.xingin.entities.VideoInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b3",
+        "reported_signature": "b3(java.util.List<com.xingin.entities.followfeed.PurchaseGoodsResp$GoodsItem>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b4",
+        "reported_signature": "b4(long): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(com.xingin.entities.notedetail.NoteFeed, java.lang.String, java.lang.String, boolean, com.xingin.entities.VideoInfo, com.xingin.entities.video.VideoInfoV2, java.lang.String, java.util.ArrayList, int, com.xingin.entities.BaseUserBean, java.lang.String, java.lang.String, java.lang.String, int, int, boolean, java.lang.String, java.lang.String, com.xingin.entities.notedetail.NoteTime, boolean, java.lang.String, java.lang.String, com.xingin.entities.notedetail.AddressInfo, com.xingin.entities.notedetail.InteractionInfo, com.xingin.entities.notedetail.LikeLottieInfo, com.xingin.entities.notedetail.LiveShootingInfo, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, long, java.lang.String, long, long, long, long, long, boolean, boolean, boolean, com.xingin.entities.followfeed.PoiInfo, java.util.ArrayList, long, com.xingin.entities.ShareInfoDetail, com.xingin.entities.LongPressShareInfo, boolean, com.xingin.entities.NoteDetailGoodsInfo, boolean, java.util.ArrayList, java.lang.String, com.xingin.entities.notedetail.NoteStatement, java.lang.String, float, java.lang.String, com.google.gson.l, int, java.util.List, java.util.List, java.util.List, boolean, boolean, int, java.lang.String, java.util.List, boolean, com.xingin.entities.followfeed.IllegalInfo, boolean, java.lang.String, java.lang.String, com.xingin.entities.ad.Ad, com.xingin.entities.notedetail.RelatedGoods, java.lang.String, java.lang.String, long, java.util.List, java.util.List, com.xingin.entities.notedetail.OrderCooperate, com.xingin.entities.notedetail.NewBridgeGoods, com.xingin.entities.notedetail.Music, com.xingin.entities.nns.LotteryResponse, boolean, com.xingin.entities.notedetail.NoteNextStep, boolean, java.lang.String, boolean, java.lang.String, java.util.List, com.xingin.entities.tags.NoteProductReview, com.xingin.entities.Privacy, com.xingin.entities.notedetail.VideoMarksInfo, boolean, boolean, long, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, com.xingin.entities.notedetail.Sound, java.lang.String, com.xingin.entities.notedetail.NativeVoice, com.xingin.entities.notedetail.SimpleMusicInfo, com.xingin.entities.notedetail.BulletCommentLead, java.util.List, java.util.List, com.xingin.entities.followfeed.GoodsNoteV2, com.xingin.entities.followfeed.CooperateGoodsCardInfo, com.xingin.entities.followfeed.CooperatePoiCardInfo, bn9.g, com.xingin.entities.MediaSaveConfig, com.xingin.entities.notedetail.ResortInfo, boolean, boolean, boolean, java.util.LinkedHashMap, java.util.List, com.xingin.entities.followfeed.GovernmentTagInfo, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.Boolean, java.lang.String, int, com.xingin.entities.notedetail.DowngradeConfig, com.xingin.entities.followfeed.GroupShare, com.xingin.entities.notedetail.ShareGuideInfo, java.lang.String, boolean, boolean, com.xingin.entities.notedetail.NiceInfo, java.lang.String, java.util.List, com.xingin.entities.comment.CommentPromptConfig, com.xingin.entities.notedetail.VideoPlayInfo, com.xingin.entities.notedetail.NoteContentTransInfo, com.xingin.entities.notedetail.NoteCoCreation, com.xingin.entities.notedetail.BizMap, int, int, int, int, int, java.lang.Object): com.xingin.entities.notedetail.NoteFeed",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c1",
+        "reported_signature": "c1(): com.xingin.entities.notedetail.NiceInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c2",
+        "reported_signature": "c2(): java.util.List<com.xingin.entities.commoditycard.VideoGoodsCardsBean>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c3",
+        "reported_signature": "c3(com.xingin.entities.followfeed.GroupShare): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c4",
+        "reported_signature": "c4(com.xingin.entities.VideoInfo): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(): com.xingin.entities.ad.Ad",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d0",
+        "reported_signature": "d0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d1",
+        "reported_signature": "d1(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d2",
+        "reported_signature": "d2(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d3",
+        "reported_signature": "d3(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d4",
+        "reported_signature": "d4(com.xingin.entities.video.VideoInfoV2): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "describeContents",
+        "reported_signature": "describeContents(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(): com.xingin.entities.notedetail.AddressInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e0",
+        "reported_signature": "e0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e2",
+        "reported_signature": "e2(): com.xingin.entities.notedetail.VideoMarksInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e3",
+        "reported_signature": "e3(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e4",
+        "reported_signature": "e4(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "equals",
+        "reported_signature": "equals(java.lang.Object): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f0",
+        "reported_signature": "f0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f1",
+        "reported_signature": "f1(): java.util.List<java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f2",
+        "reported_signature": "f2(): com.xingin.entities.notedetail.VideoPlayInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f3",
+        "reported_signature": "f3(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f4",
+        "reported_signature": "f4(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(): java.util.List<com.xingin.entities.BaseUserBean>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g0",
+        "reported_signature": "g0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g1",
+        "reported_signature": "g1(): com.xingin.entities.tags.NoteProductReview",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g2",
+        "reported_signature": "g2(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g3",
+        "reported_signature": "g3(java.util.ArrayList<com.xingin.entities.HashTagListBean$HashTag>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(): com.xingin.entities.notedetail.BizMap",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h0",
+        "reported_signature": "h0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h1",
+        "reported_signature": "h1(): com.xingin.entities.notedetail.NoteStatement",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h2",
+        "reported_signature": "h2(): com.xingin.entities.VideoInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h3",
+        "reported_signature": "h3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "hashCode",
+        "reported_signature": "hashCode(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(): com.xingin.entities.notedetail.NewBridgeGoods",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i0",
+        "reported_signature": "i0(): java.util.ArrayList<com.xingin.entities.HashTagListBean$HashTag>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i1",
+        "reported_signature": "i1(): java.util.List<com.xingin.entities.notedetail.NoteTextPressOptions>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i2",
+        "reported_signature": "i2(): com.xingin.entities.video.VideoInfoV2",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i3",
+        "reported_signature": "i3(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j",
+        "reported_signature": "j(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j0",
+        "reported_signature": "j0(): java.util.ArrayList<java.lang.Integer>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j2",
+        "reported_signature": "j2(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j3",
+        "reported_signature": "j3(java.util.ArrayList<com.xingin.entities.tags.ImageStickerData>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(): com.xingin.entities.notedetail.NoteCoCreation",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k1",
+        "reported_signature": "k1(): com.xingin.entities.notedetail.NoteTime",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k2",
+        "reported_signature": "k2(): java.util.List<java.util.List<java.lang.String>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k3",
+        "reported_signature": "k3(long): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l0",
+        "reported_signature": "l0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l1",
+        "reported_signature": "l1(): com.xingin.entities.notedetail.OrderCooperate",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l2",
+        "reported_signature": "l2(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l3",
+        "reported_signature": "l3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m0",
+        "reported_signature": "m0(): com.xingin.entities.followfeed.IllegalInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m1",
+        "reported_signature": "m1(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m2",
+        "reported_signature": "m2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m3",
+        "reported_signature": "m3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n0",
+        "reported_signature": "n0(int): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n1",
+        "reported_signature": "n1(): sk4.m0",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n2",
+        "reported_signature": "n2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n3",
+        "reported_signature": "n3(long): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(boolean): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o2",
+        "reported_signature": "o2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o3",
+        "reported_signature": "o3(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p",
+        "reported_signature": "p(): com.xingin.entities.comment.CommentPromptConfig",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p1",
+        "reported_signature": "p1(): com.xingin.entities.followfeed.PoiInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p2",
+        "reported_signature": "p2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p3",
+        "reported_signature": "p3(long): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q",
+        "reported_signature": "q(boolean): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q1",
+        "reported_signature": "q1(): com.xingin.entities.followfeed.CooperatePoiCardInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q2",
+        "reported_signature": "q2(): java.lang.Boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q3",
+        "reported_signature": "q3(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r",
+        "reported_signature": "r(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r0",
+        "reported_signature": "r0(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r2",
+        "reported_signature": "r2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r3",
+        "reported_signature": "r3(com.xingin.entities.nns.LotteryResponse): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s",
+        "reported_signature": "s(): com.xingin.entities.notedetail.NoteContentTransInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s0",
+        "reported_signature": "s0(): java.util.List<com.xingin.entities.commoditycard.ImageGoodsCardsBean>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s1",
+        "reported_signature": "s1(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s2",
+        "reported_signature": "s2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s3",
+        "reported_signature": "s3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t",
+        "reported_signature": "t(): java.util.List<com.xingin.entities.notedetail.Brand>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t0",
+        "reported_signature": "t0(): java.util.ArrayList<com.xingin.entities.ImageBean>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t1",
+        "reported_signature": "t1(): com.xingin.entities.Privacy",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t2",
+        "reported_signature": "t2(java.lang.String): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t3",
+        "reported_signature": "t3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "toString",
+        "reported_signature": "toString(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u",
+        "reported_signature": "u(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u1",
+        "reported_signature": "u1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u2",
+        "reported_signature": "u2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u3",
+        "reported_signature": "u3(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v",
+        "reported_signature": "v(): com.xingin.entities.followfeed.CooperateGoodsCardInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v0",
+        "reported_signature": "v0(): java.util.ArrayList<com.xingin.entities.tags.ImageStickerData>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v1",
+        "reported_signature": "v1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v2",
+        "reported_signature": "v2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v3",
+        "reported_signature": "v3(long): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w",
+        "reported_signature": "w(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w0",
+        "reported_signature": "w0(int): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w1",
+        "reported_signature": "w1(): com.xingin.entities.notedetail.RelatedGoods",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w2",
+        "reported_signature": "w2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w3",
+        "reported_signature": "w3(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "writeToParcel",
+        "reported_signature": "writeToParcel(android.os.Parcel, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x",
+        "reported_signature": "x(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x1",
+        "reported_signature": "x1(): com.xingin.entities.notedetail.ResortInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x2",
+        "reported_signature": "x2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x3",
+        "reported_signature": "x3(long): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y",
+        "reported_signature": "y(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y0",
+        "reported_signature": "y0(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y1",
+        "reported_signature": "y1(): android.text.SpannableStringBuilder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y2",
+        "reported_signature": "y2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y3",
+        "reported_signature": "y3(sk4.m0): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z",
+        "reported_signature": "z(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z0",
+        "reported_signature": "z0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z1",
+        "reported_signature": "z1(): java.util.ArrayList<java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z2",
+        "reported_signature": "z2(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z3",
+        "reported_signature": "z3(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "CREATOR",
+        "reported_type": "android.os.Parcelable$Creator<com.xingin.entities.notedetail.NoteFeed>"
+      },
+      {
+        "name": "addressInfo",
+        "reported_type": "com.xingin.entities.notedetail.AddressInfo"
+      },
+      {
+        "name": "aiText",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "apiUpgrade",
+        "reported_type": "int"
+      },
+      {
+        "name": "ats",
+        "reported_type": "java.util.List<? extends com.xingin.entities.BaseUserBean>"
+      },
+      {
+        "name": "autoSlideDown",
+        "reported_type": "int"
+      },
+      {
+        "name": "bizMap",
+        "reported_type": "com.xingin.entities.notedetail.BizMap"
+      },
+      {
+        "name": "bridgeGoods",
+        "reported_type": "com.xingin.entities.notedetail.NewBridgeGoods"
+      },
+      {
+        "name": "bulletCommentLead",
+        "reported_type": "com.xingin.entities.notedetail.BulletCommentLead"
+      },
+      {
+        "name": "capaVersion",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "coCreation",
+        "reported_type": "com.xingin.entities.notedetail.NoteCoCreation"
+      },
+      {
+        "name": "coProduceLink",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "collected",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "collectedCount",
+        "reported_type": "long"
+      },
+      {
+        "name": "commentLikeLottie",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "commentLikeLottieDark",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "commentPromptConfig",
+        "reported_type": "com.xingin.entities.comment.CommentPromptConfig"
+      },
+      {
+        "name": "commentUnlikeLottie",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "commentUnlikeLottieDark",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "commentsCount",
+        "reported_type": "long"
+      },
+      {
+        "name": "contentTransInfo",
+        "reported_type": "com.xingin.entities.notedetail.NoteContentTransInfo"
+      },
+      {
+        "name": "cooperateBinds",
+        "reported_type": "java.util.List<com.xingin.entities.notedetail.Brand>"
+      },
+      {
+        "name": "cooperateBindsShowed",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "cooperateCard",
+        "reported_type": "com.xingin.entities.followfeed.CooperateGoodsCardInfo"
+      },
+      {
+        "name": "countDown",
+        "reported_type": "int"
+      },
+      {
+        "name": "coverImageIndex",
+        "reported_type": "int"
+      },
+      {
+        "name": "cursor",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "cursorScore",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "debugInfo",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "debugInfoObj",
+        "reported_type": "com.google.gson.l"
+      },
+      {
+        "name": "demotionCacheType",
+        "reported_type": "int"
+      },
+      {
+        "name": "desc",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "descHeadLabel",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "downgradeConfig",
+        "reported_type": "com.xingin.entities.notedetail.DowngradeConfig"
+      },
+      {
+        "name": "downgradeType",
+        "reported_type": "int"
+      },
+      {
+        "name": "enableCoProduce",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "enableListenVideo",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "errorPageDarkImageUrl",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "errorPageImageUrl",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f50898ad",
+        "reported_type": "com.xingin.entities.ad.Ad"
+      },
+      {
+        "name": "feedbackTypeCanWithdraw",
+        "reported_type": "bn9.g<? extends uj4.e, java.lang.String>"
+      },
+      {
+        "name": "footTags",
+        "reported_type": "java.util.List<com.xingin.entities.notedetail.FootTags>"
+      },
+      {
+        "name": "formatCollectCount",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "formatCommentCount",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "formatLikeCount",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "formatShareCount",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "from",
+        "reported_type": "sk4.c0"
+      },
+      {
+        "name": "goodsCardV2",
+        "reported_type": "com.xingin.entities.followfeed.GoodsNoteV2"
+      },
+      {
+        "name": "goodsInfo",
+        "reported_type": "com.xingin.entities.NoteDetailGoodsInfo"
+      },
+      {
+        "name": "goodsList",
+        "reported_type": "java.util.List<com.xingin.entities.followfeed.PurchaseGoodsResp$GoodsItem>"
+      },
+      {
+        "name": "governmentTagInfo",
+        "reported_type": "com.xingin.entities.followfeed.GovernmentTagInfo"
+      },
+      {
+        "name": "groupShare",
+        "reported_type": "com.xingin.entities.followfeed.GroupShare"
+      },
+      {
+        "name": "guideKeysStr",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "hasBrandLottery",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "hasEnlargeCommodityCardAnim",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "hasImpressedInLandscape",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "hasImpressedInPortrait",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "hasNoMore",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "hasPlayedCommodityCardAnim",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "hashTag",
+        "reported_type": "java.util.ArrayList<com.xingin.entities.HashTagListBean$HashTag>"
+      },
+      {
+        "name": "headTags",
+        "reported_type": "java.util.List<com.xingin.entities.notedetail.NewTag>"
+      },
+      {
+        "name": "highLightIndex",
+        "reported_type": "java.util.ArrayList<java.lang.Integer>"
+      },
+      {
+        "name": "id",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "illegalInfo",
+        "reported_type": "com.xingin.entities.followfeed.IllegalInfo"
+      },
+      {
+        "name": "imageFromLocal",
+        "reported_type": "int"
+      },
+      {
+        "name": "imageGoodsCardList",
+        "reported_type": "java.util.List<com.xingin.entities.commoditycard.ImageGoodsCardsBean>"
+      },
+      {
+        "name": "imageList",
+        "reported_type": "java.util.ArrayList<com.xingin.entities.ImageBean>"
+      },
+      {
+        "name": "imageStickerList",
+        "reported_type": "java.util.ArrayList<com.xingin.entities.tags.ImageStickerData>"
+      },
+      {
+        "name": "impressionTime",
+        "reported_type": "long"
+      },
+      {
+        "name": "interactComponentInfo",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "interactionInfo",
+        "reported_type": "com.xingin.entities.notedetail.InteractionInfo"
+      },
+      {
+        "name": "ipLocation",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "isDecoratePlayed",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isDemotionCache",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isDemotionCacheUpdate",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isFakeItem",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "isFollowPage",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isFromSingleFollow",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isGoodsNote",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isLotteryDetailFirstClick",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isNnsImpression",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isNote",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isPostPreview",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isPreload",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isSourceItem",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isSourceNote",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isUrlOverride",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isUrlOverrideSuccess",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isWidgetsPreload",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "lastUpdateTime",
+        "reported_type": "long"
+      },
+      {
+        "name": "lazyLoadMode",
+        "reported_type": "int"
+      },
+      {
+        "name": "likeLottie",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "likeLottieInfo",
+        "reported_type": "com.xingin.entities.notedetail.LikeLottieInfo"
+      },
+      {
+        "name": "liked",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "likedCount",
+        "reported_type": "long"
+      },
+      {
+        "name": "likedUsers",
+        "reported_type": "java.util.ArrayList<com.xingin.entities.notedetail.Avatar>"
+      },
+      {
+        "name": "liveShootingInfo",
+        "reported_type": "com.xingin.entities.notedetail.LiveShootingInfo"
+      },
+      {
+        "name": "longPressShareInfo",
+        "reported_type": "com.xingin.entities.LongPressShareInfo"
+      },
+      {
+        "name": "lotteryResponse",
+        "reported_type": "com.xingin.entities.nns.LotteryResponse"
+      },
+      {
+        "name": "mediaSaveConfig",
+        "reported_type": "com.xingin.entities.MediaSaveConfig"
+      },
+      {
+        "name": "modelType",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "music",
+        "reported_type": "com.xingin.entities.notedetail.Music"
+      },
+      {
+        "name": "nativeVoice",
+        "reported_type": "com.xingin.entities.notedetail.NativeVoice"
+      },
+      {
+        "name": "needNextStep",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "needProductReview",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "needTransition",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "newUserAvatarImage",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "nextStep",
+        "reported_type": "com.xingin.entities.notedetail.NoteNextStep"
+      },
+      {
+        "name": "nextStepContext",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "niceCount",
+        "reported_type": "long"
+      },
+      {
+        "name": "niceInfo",
+        "reported_type": "com.xingin.entities.notedetail.NiceInfo"
+      },
+      {
+        "name": "niced",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "noteAttributes",
+        "reported_type": "java.util.List<java.lang.String>"
+      },
+      {
+        "name": "noteProductReview",
+        "reported_type": "com.xingin.entities.tags.NoteProductReview"
+      },
+      {
+        "name": "noteStatement",
+        "reported_type": "com.xingin.entities.notedetail.NoteStatement"
+      },
+      {
+        "name": "noteTextPressOptions",
+        "reported_type": "java.util.List<com.xingin.entities.notedetail.NoteTextPressOptions>"
+      },
+      {
+        "name": "noteTime",
+        "reported_type": "com.xingin.entities.notedetail.NoteTime"
+      },
+      {
+        "name": "orderCooperate",
+        "reported_type": "com.xingin.entities.notedetail.OrderCooperate"
+      },
+      {
+        "name": "outSidePlayTime",
+        "reported_type": "long"
+      },
+      {
+        "name": "outerCardType",
+        "reported_type": "sk4.m0"
+      },
+      {
+        "name": "poi",
+        "reported_type": "com.xingin.entities.followfeed.PoiInfo"
+      },
+      {
+        "name": "poiCooperateCard",
+        "reported_type": "com.xingin.entities.followfeed.CooperatePoiCardInfo"
+      },
+      {
+        "name": "position",
+        "reported_type": "int"
+      },
+      {
+        "name": "preParsedLastUpdateTimeStr",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "preParsedTimeStr",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "price",
+        "reported_type": "float"
+      },
+      {
+        "name": "privacy",
+        "reported_type": "com.xingin.entities.Privacy"
+      },
+      {
+        "name": "readTraceId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "realUserId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "relatedGoods",
+        "reported_type": "com.xingin.entities.notedetail.RelatedGoods"
+      },
+      {
+        "name": "resortInfo",
+        "reported_type": "com.xingin.entities.notedetail.ResortInfo"
+      },
+      {
+        "name": "richContent",
+        "reported_type": "android.text.SpannableStringBuilder"
+      },
+      {
+        "name": "richStrList",
+        "reported_type": "java.util.ArrayList<java.lang.String>"
+      },
+      {
+        "name": "richStrListAll",
+        "reported_type": "java.util.ArrayList<android.util.Pair<java.lang.String, java.lang.String>>"
+      },
+      {
+        "name": "searchBiz",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "shareGuide",
+        "reported_type": "com.xingin.entities.notedetail.ShareGuideInfo"
+      },
+      {
+        "name": "shareGuideBubble",
+        "reported_type": "com.xingin.entities.followfeed.ShareGuideBubble"
+      },
+      {
+        "name": "shareImageEntranceMap",
+        "reported_type": "java.util.LinkedHashMap<java.lang.String, bn9.g<java.lang.Boolean, java.lang.String>>"
+      },
+      {
+        "name": "shareInfo",
+        "reported_type": "com.xingin.entities.ShareInfoDetail"
+      },
+      {
+        "name": "shareText",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "sharedCount",
+        "reported_type": "long"
+      },
+      {
+        "name": "simpleMusicInfo",
+        "reported_type": "com.xingin.entities.notedetail.SimpleMusicInfo"
+      },
+      {
+        "name": "singleLikeLottie",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "singleLikeLottieDark",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "singleUnlikeLottie",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "singleUnlikeLottieDark",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "sound",
+        "reported_type": "com.xingin.entities.notedetail.Sound"
+      },
+      {
+        "name": "sourceNoteId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "sticky",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "strList",
+        "reported_type": "java.util.ArrayList<java.lang.String>"
+      },
+      {
+        "name": "swanGoodsList",
+        "reported_type": "java.util.List<? extends com.xingin.entities.followfeed.SwanGoods$SwanGoodsItems>"
+      },
+      {
+        "name": "text",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "textLanguageCode",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "time",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "title",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "trackId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "translateDesc",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "translateTitle",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "type",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "user",
+        "reported_type": "com.xingin.entities.BaseUserBean"
+      },
+      {
+        "name": "userIdForErrorPage",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "video",
+        "reported_type": "com.xingin.entities.VideoInfo"
+      },
+      {
+        "name": "videoFlag",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "videoGoodsCardList",
+        "reported_type": "java.util.List<com.xingin.entities.commoditycard.VideoGoodsCardsBean>"
+      },
+      {
+        "name": "videoHolderCreateTime",
+        "reported_type": "long"
+      },
+      {
+        "name": "videoMarks",
+        "reported_type": "com.xingin.entities.notedetail.VideoMarksInfo"
+      },
+      {
+        "name": "videoPlayInfo",
+        "reported_type": "com.xingin.entities.notedetail.VideoPlayInfo"
+      },
+      {
+        "name": "videoPreviewType",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "videoV1",
+        "reported_type": "com.xingin.entities.VideoInfo"
+      },
+      {
+        "name": "videoV2",
+        "reported_type": "com.xingin.entities.video.VideoInfoV2"
+      },
+      {
+        "name": "viewedCount",
+        "reported_type": "long"
+      },
+      {
+        "name": "widgetsContext",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "widgetsGroups",
+        "reported_type": "java.util.List<? extends java.util.List<java.lang.String>>"
+      },
+      {
+        "name": "wkDemotionCacheSource",
+        "reported_type": "int"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.entities.notedetail.NoteFeed.a"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "3979d7c6c3cb9c994b4953086112a27a1bd7e7f704e2817caa528d17d90f01af",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

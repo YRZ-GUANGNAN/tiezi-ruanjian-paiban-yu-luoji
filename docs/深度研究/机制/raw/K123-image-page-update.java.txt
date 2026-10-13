@@ -1,0 +1,9 @@
+    public static final void O7(NoteDetailImageDisplayPresenter noteDetailImageDisplayPresenter, Integer num) {
+        if (PatchProxy.proxyVoid2Para(noteDetailImageDisplayPresenter, num, null, NoteDetailImageDisplayPresenter.class, 298292) || num == null || num.intValue() != 1) {
+            return;
+        }
+        noteDetailImageDisplayPresenter.f108315s = noteDetailImageDisplayPresenter.f108314r;
+        if (noteDetailImageDisplayPresenter.G7().getItemCount() > 1) {
+            noteDetailImageDisplayPresenter.u7();
+        }
+    }

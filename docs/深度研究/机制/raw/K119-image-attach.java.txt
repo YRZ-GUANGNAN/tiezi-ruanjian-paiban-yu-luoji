@@ -1,0 +1,14 @@
+    @Override // com.xingin.foundation.core.v2.Presenter
+    public void x6() {
+        if (PatchProxy.proxyVoid0Para(this, NoteDetailPhotoNoteItemPresenter.class, 315087)) {
+            return;
+        }
+        super.x6();
+        b7().A();
+        b7().q(w6());
+        b7().U(new l0());
+        b7().R(new m0());
+        U6();
+        X6();
+        this.f108559t = true;
+    }

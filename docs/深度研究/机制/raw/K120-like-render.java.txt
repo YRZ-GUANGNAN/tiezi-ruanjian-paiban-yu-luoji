@@ -1,0 +1,16 @@
+    public final void N6(NoteFeed noteFeed) {
+        if (PatchProxy.proxyVoid1Para(noteFeed, this, NoteDetailLikeBtnPresenter.class, 293259)) {
+            return;
+        }
+        String strL1 = noteFeed.L1(i69.k.l(), noteFeed.M0());
+        if (gt7.g.f175369a.i(strL1) && strL1 != null) {
+            O6(strL1);
+            return;
+        }
+        ci8.c cVarB = y74.a.f358997a.c().b();
+        String str = noteFeed.M0() ? cVarB.f30823a : cVarB.f30825c;
+        LottieAnimationView lottieAnimationView = (LottieAnimationView) w6().findViewById(n.G1);
+        lottieAnimationView.setSelected(noteFeed.M0());
+        lottieAnimationView.setProgress(1.0f);
+        lottieAnimationView.setAnimation(str);
+    }

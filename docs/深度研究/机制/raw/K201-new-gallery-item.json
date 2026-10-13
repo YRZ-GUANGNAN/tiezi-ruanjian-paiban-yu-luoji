@@ -1,0 +1,295 @@
+{
+  "evidence_id": "ev_9fe26371b1a8e1874871a791f68a9d68d00b2bc017e30b1d6c5b6b6dfc7d9453",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-yingyongbao-9.49.1.apk",
+    "digest": {
+      "sha256": "d22b4e7c776ec59ae80aa4a4e30e306ca1bcc2a5744c35e4a7702428c05178a3"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-yingyongbao-9.49.1.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-yingyongbao-9.49.1.apk",
+    "class_name": "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 158864,
+      "resource_count": 25597,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":158864,\"raw_class_count\":158864,\"resource_count\":25597,\"load_duration_ms\":59245,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"A\",\"def_pos\":0,\"type\":\"dra.b\"},{\"name\":\"B\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"Companion\",\"def_pos\":0,\"type\":\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter$a\"},{\"name\":\"f140671p\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140672q\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140673r\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140674s\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140675t\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140676u\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140677v\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140678w\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140679x\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140680y\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"f140681z\",\"def_pos\":0,\"type\":\"boolean\"}],\"field_count\":14,\"full_name\":\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter\",\"name\":\"NoteDetailPhotoNoteItemPresenter\",\"inner_classes\":[\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.a\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.b\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.c\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.d\"],\"inner_class_count\":4,\"method_count\":16,\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"D1\",\"is_constructor\":false,\"signature\":\"D1(int, java.lang.Object, java.lang.Object): void\",\"def_pos\":0},{\"name\":\"Na\",\"is_constructor\":false,\"signature\":\"Na(): void\",\"def_pos\":0},{\"name\":\"Pa\",\"is_constructor\":false,\"signature\":\"Pa(): void\",\"def_pos\":0},{\"name\":\"Va\",\"is_constructor\":false,\"signature\":\"Va(): android.app.Activity\",\"def_pos\":0},{\"name\":\"Xa\",\"is_constructor\":false,\"signature\":\"Xa(): com.xingin.matrix.widget.MatrixCircleProgressBar\",\"def_pos\":0},{\"name\":\"Ya\",\"is_constructor\":false,\"signature\":\"Ya(): cq9.h\",\"def_pos\":0},{\"name\":\"Za\",\"is_constructor\":false,\"signature\":\"Za(): vra.c\",\"def_pos\":0},{\"name\":\"ab\",\"is_constructor\":false,\"signature\":\"ab(): com.xingin.matrix.notedetail.imagecontent.imagegallery.util.NoteXYImageView\",\"def_pos\":0},{\"name\":\"bb\",\"is_constructor\":false,\"signature\":\"bb(): com.xingin.matrix.notedetail.imagecontent.imagegallery.itembinder.photonote.child.AsyncPhotoNoteItemView\",\"def_pos\":0},{\"name\":\"cb\",\"is_constructor\":false,\"signature\":\"cb(): boolean\",\"def_pos\":0},{\"name\":\"db\",\"is_constructor\":false,\"signature\":\"db(com.xingin.entities.ImageBean, int): void\",\"def_pos\":0},{\"name\":\"eb\",\"is_constructor\":false,\"signature\":\"eb(): void\",\"def_pos\":0},{\"name\":\"fb\",\"is_constructor\":false,\"signature\":\"fb(boolean, java.lang.String): void\",\"def_pos\":0},{\"name\":\"s\",\"is_constructor\":false,\"signature\":\"s(int): void\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D1",
+        "reported_signature": "D1(int, java.lang.Object, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Na",
+        "reported_signature": "Na(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Pa",
+        "reported_signature": "Pa(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Va",
+        "reported_signature": "Va(): android.app.Activity",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Xa",
+        "reported_signature": "Xa(): com.xingin.matrix.widget.MatrixCircleProgressBar",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Ya",
+        "reported_signature": "Ya(): cq9.h",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Za",
+        "reported_signature": "Za(): vra.c",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "ab",
+        "reported_signature": "ab(): com.xingin.matrix.notedetail.imagecontent.imagegallery.util.NoteXYImageView",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "bb",
+        "reported_signature": "bb(): com.xingin.matrix.notedetail.imagecontent.imagegallery.itembinder.photonote.child.AsyncPhotoNoteItemView",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "cb",
+        "reported_signature": "cb(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "db",
+        "reported_signature": "db(com.xingin.entities.ImageBean, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "eb",
+        "reported_signature": "eb(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "fb",
+        "reported_signature": "fb(boolean, java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s",
+        "reported_signature": "s(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "A",
+        "reported_type": "dra.b"
+      },
+      {
+        "name": "B",
+        "reported_type": "int"
+      },
+      {
+        "name": "Companion",
+        "reported_type": "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter$a"
+      },
+      {
+        "name": "f140671p",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f140672q",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f140673r",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f140674s",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f140675t",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f140676u",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f140677v",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f140678w",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f140679x",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f140680y",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f140681z",
+        "reported_type": "boolean"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.a",
+      "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.b",
+      "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.c",
+      "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.d"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "001af4529c177443dfd808f0011595803f56705a96e6125c53055c0336144e3a",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+    public static final void D1(RecyclerView.RecycledViewPool recycledViewPool, int i100, ExploreView exploreView) {
+        if (PatchProxy.proxyVoid3Para(recycledViewPool, new Integer(i100), exploreView, null, ExploreView.class, 365419)) {
+            return;
+        }
+        if (recycledViewPool != null) {
+            recycledViewPool.setMaxRecycledViews(i100, 16);
+        }
+        exploreView.getRecyclerView().setRecycledViewPool(recycledViewPool);
+    }

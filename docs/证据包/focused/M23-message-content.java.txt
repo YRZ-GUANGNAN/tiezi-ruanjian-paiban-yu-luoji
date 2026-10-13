@@ -1,0 +1,3 @@
+    public final MsgContentBean c() {
+        return (MsgContentBean) i4.i(this.content, MsgContentBean.class);
+    }

@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_9ee18609984ced0ba780e5d27095c1325ebb0fd13203973b0f0b1e11077d205e",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter",
+    "method_name": "A7"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":8,\"method_count\":12,\"methods\":[{\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true},{\"signature\":\"A7(android.view.View, float, float, boolean, boolean, nn9.a\\u003cbn9.w\\u003e): void\",\"def_pos\":0,\"name\":\"A7\",\"is_constructor\":false},{\"signature\":\"B7(com.xingin.entities.notedetail.NoteFeed): void\",\"def_pos\":0,\"name\":\"B7\",\"is_constructor\":false},{\"signature\":\"m7(): void\",\"def_pos\":0,\"name\":\"m7\",\"is_constructor\":false},{\"signature\":\"n7(): void\",\"def_pos\":0,\"name\":\"n7\",\"is_constructor\":false},{\"signature\":\"t7(long): void\",\"def_pos\":0,\"name\":\"t7\",\"is_constructor\":false},{\"signature\":\"u7(): androidx.recyclerview.widget.RecyclerView\",\"def_pos\":0,\"name\":\"u7\",\"is_constructor\":false},{\"signature\":\"v7(com.xingin.notebase.entities.notedetail.DetailNoteFeedHolder): int\",\"def_pos\":0,\"name\":\"v7\",\"is_constructor\":false},{\"signature\":\"w7(): androidx.recyclerview.widget.LinearLayoutManager\",\"def_pos\":0,\"name\":\"w7\",\"is_constructor\":false},{\"signature\":\"x7(): boolean\",\"def_pos\":0,\"name\":\"x7\",\"is_constructor\":false},{\"signature\":\"y7(): void\",\"def_pos\":0,\"name\":\"y7\",\"is_constructor\":false},{\"signature\":\"z7(boolean, boolean): void\",\"def_pos\":0,\"name\":\"z7\",\"is_constructor\":false}],\"fields\":[{\"type\":\"bn9.d\",\"name\":\"f55315q\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"f55316r\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"f55317s\",\"def_pos\":0},{\"type\":\"bn9.d\",\"name\":\"f55318t\",\"def_pos\":0},{\"type\":\"android.os.Handler\",\"name\":\"f55319u\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"f55320v\",\"def_pos\":0}],\"field_count\":6,\"full_name\":\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter\",\"name\":\"NoteDetailImageDisplayPresenter\",\"inner_classes\":[\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.a\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.b\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.c\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.d\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.e\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.f\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.g\",\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.h\"]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter",
+          "method_name": "A7",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter\",\"full_name\":\"com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter.A7\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"A7\",\"overload_count\":1,\"body\":\"    public final void A7(final View view, float f4, float f11, final boolean z4, boolean z9, nn9.a\\u003cw\\u003e aVar) {\\r\\n        p.q((ImageView) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09136f));\\r\\n        p.q((ImageView) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091370));\\r\\n        view.setPivotX(((FrameLayout) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09136e)).getX() + (((ImageView) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09136f)).getWidth() / 2.0f));\\r\\n        view.setPivotY(0.0f);\\r\\n        final float width \\u003d ((LinearLayout) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091368)).getWidth() / view.getWidth();\\r\\n        ValueAnimator valueAnimatorOfFloat \\u003d ValueAnimator.ofFloat(f4, f11);\\r\\n        valueAnimatorOfFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: ne6.a1\\r\\n            @Override // android.animation.ValueAnimator.AnimatorUpdateListener\\r\\n            public final void onAnimationUpdate(ValueAnimator valueAnimator) {\\r\\n                NoteDetailImageDisplayPresenter noteDetailImageDisplayPresenter \\u003d this.f159408d;\\r\\n                View view2 \\u003d view;\\r\\n                float f13 \\u003d width;\\r\\n                Object animatedValue \\u003d valueAnimator.getAnimatedValue();\\r\\n                Float f15 \\u003d animatedValue instanceof Float ? (Float) animatedValue : null;\\r\\n                if (f15 !\\u003d null) {\\r\\n                    float fFloatValue \\u003d f15.floatValue();\\r\\n                    ((LinearLayout) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091368)).setAlpha(1.0f - (0.2f * fFloatValue));\\r\\n                    ((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09136f)).setAlpha(1.0f - fFloatValue);\\r\\n                    ((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091370)).setAlpha(fFloatValue);\\r\\n                    view2.setAlpha(fFloatValue);\\r\\n                    float f21 \\u003d f13 + ((1 - f13) * fFloatValue);\\r\\n                    view2.setScaleX(f21);\\r\\n                    view2.setScaleY(f21);\\r\\n                }\\r\\n            }\\r\\n        });\\r\\n        valueAnimatorOfFloat.addListener(new f(aVar));\\r\\n        valueAnimatorOfFloat.setDuration(150L);\\r\\n        if (!z9) {\\r\\n            valueAnimatorOfFloat.start();\\r\\n            return;\\r\\n        }\\r\\n        ValueAnimator valueAnimatorOfFloat2 \\u003d ValueAnimator.ofFloat(0.0f, 1.0f);\\r\\n        valueAnimatorOfFloat2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: ne6.k1\\r\\n            @Override // android.animation.ValueAnimator.AnimatorUpdateListener\\r\\n            public final void onAnimationUpdate(ValueAnimator valueAnimator) {\\r\\n                boolean z11 \\u003d z4;\\r\\n                NoteDetailImageDisplayPresenter noteDetailImageDisplayPresenter \\u003d this;\\r\\n                Object animatedValue \\u003d valueAnimator.getAnimatedValue();\\r\\n                Float f13 \\u003d animatedValue instanceof Float ? (Float) animatedValue : null;\\r\\n                if (f13 !\\u003d null) {\\r\\n                    float fFloatValue \\u003d f13.floatValue();\\r\\n                    if (z11) {\\r\\n                        qe8.p.q((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09136a));\\r\\n                        ((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09136a)).setAlpha(fFloatValue);\\r\\n                        ((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091369)).setAlpha(1 - fFloatValue);\\r\\n                    } else {\\r\\n                        qe8.p.q((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091369));\\r\\n                        ((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091369)).setAlpha(fFloatValue);\\r\\n                        ((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09136a)).setAlpha(1 - fFloatValue);\\r\\n                    }\\r\\n                }\\r\\n            }\\r\\n        });\\r\\n        valueAnimatorOfFloat2.addListener(new g(z4));\\r\\n        valueAnimatorOfFloat2.setDuration(150L);\\r\\n        AnimatorSet animatorSet \\u003d new AnimatorSet();\\r\\n        animatorSet.setDuration(150L);\\r\\n        animatorSet.playTogether(valueAnimatorOfFloat, valueAnimatorOfFloat2);\\r\\n        animatorSet.start();\\r\\n    }\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.notedetail.v3.image.NoteDetailImageDisplayPresenter",
+    "method": {
+      "name": "A7",
+      "reported_signature": "A7(android.view.View, float, float, boolean, boolean, nn9.a<bn9.w>): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void A7(final View view, float f4, float f11, final boolean z4, boolean z9, nn9.a<w> aVar) {\r\n        p.q((ImageView) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09136f));\r\n        p.q((ImageView) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091370));\r\n        view.setPivotX(((FrameLayout) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09136e)).getX() + (((ImageView) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09136f)).getWidth() / 2.0f));\r\n        view.setPivotY(0.0f);\r\n        final float width = ((LinearLayout) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091368)).getWidth() / view.getWidth();\r\n        ValueAnimator valueAnimatorOfFloat = ValueAnimator.ofFloat(f4, f11);\r\n        valueAnimatorOfFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: ne6.a1\r\n            @Override // android.animation.ValueAnimator.AnimatorUpdateListener\r\n            public final void onAnimationUpdate(ValueAnimator valueAnimator) {\r\n                NoteDetailImageDisplayPresenter noteDetailImageDisplayPresenter = this.f159408d;\r\n                View view2 = view;\r\n                float f13 = width;\r\n                Object animatedValue = valueAnimator.getAnimatedValue();\r\n                Float f15 = animatedValue instanceof Float ? (Float) animatedValue : null;\r\n                if (f15 != null) {\r\n                    float fFloatValue = f15.floatValue();\r\n                    ((LinearLayout) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091368)).setAlpha(1.0f - (0.2f * fFloatValue));\r\n                    ((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09136f)).setAlpha(1.0f - fFloatValue);\r\n                    ((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091370)).setAlpha(fFloatValue);\r\n                    view2.setAlpha(fFloatValue);\r\n                    float f21 = f13 + ((1 - f13) * fFloatValue);\r\n                    view2.setScaleX(f21);\r\n                    view2.setScaleY(f21);\r\n                }\r\n            }\r\n        });\r\n        valueAnimatorOfFloat.addListener(new f(aVar));\r\n        valueAnimatorOfFloat.setDuration(150L);\r\n        if (!z9) {\r\n            valueAnimatorOfFloat.start();\r\n            return;\r\n        }\r\n        ValueAnimator valueAnimatorOfFloat2 = ValueAnimator.ofFloat(0.0f, 1.0f);\r\n        valueAnimatorOfFloat2.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: ne6.k1\r\n            @Override // android.animation.ValueAnimator.AnimatorUpdateListener\r\n            public final void onAnimationUpdate(ValueAnimator valueAnimator) {\r\n                boolean z11 = z4;\r\n                NoteDetailImageDisplayPresenter noteDetailImageDisplayPresenter = this;\r\n                Object animatedValue = valueAnimator.getAnimatedValue();\r\n                Float f13 = animatedValue instanceof Float ? (Float) animatedValue : null;\r\n                if (f13 != null) {\r\n                    float fFloatValue = f13.floatValue();\r\n                    if (z11) {\r\n                        qe8.p.q((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09136a));\r\n                        ((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09136a)).setAlpha(fFloatValue);\r\n                        ((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091369)).setAlpha(1 - fFloatValue);\r\n                    } else {\r\n                        qe8.p.q((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091369));\r\n                        ((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091369)).setAlpha(fFloatValue);\r\n                        ((ImageView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09136a)).setAlpha(1 - fFloatValue);\r\n                    }\r\n                }\r\n            }\r\n        });\r\n        valueAnimatorOfFloat2.addListener(new g(z4));\r\n        valueAnimatorOfFloat2.setDuration(150L);\r\n        AnimatorSet animatorSet = new AnimatorSet();\r\n        animatorSet.setDuration(150L);\r\n        animatorSet.playTogether(valueAnimatorOfFloat, valueAnimatorOfFloat2);\r\n        animatorSet.start();\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "8f3383bcc56df6f68b5a71cd83e04e0dc16016bf5304376bc4b811d724c7754d",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

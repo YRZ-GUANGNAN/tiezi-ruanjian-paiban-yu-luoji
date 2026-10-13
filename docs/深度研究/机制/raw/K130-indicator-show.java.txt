@@ -1,0 +1,16 @@
+    public final void u7() {
+        if (PatchProxy.proxyVoid0Para(this, NoteDetailImageDisplayPresenter.class, 298267)) {
+            return;
+        }
+        ((TextView) w6().findViewById(l56.n.f224121t0)).animate().alpha(1.0f).setDuration(200L).setInterpolator(new AccelerateInterpolator()).withStartAction(new Runnable() { // from class: t96.l0
+            @Override // java.lang.Runnable
+            public final void run() {
+                NoteDetailImageDisplayPresenter.v7(this.f309425d);
+            }
+        }).withEndAction(new Runnable() { // from class: t96.j0
+            @Override // java.lang.Runnable
+            public final void run() {
+                NoteDetailImageDisplayPresenter.w7(this.f309421d);
+            }
+        }).start();
+    }

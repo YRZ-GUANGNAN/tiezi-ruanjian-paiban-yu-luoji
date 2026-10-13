@@ -1,0 +1,25 @@
+{
+  "id": "T00-environment",
+  "startedAt": "2026-10-13T07:59:26.404Z",
+  "completedAt": "2026-10-13T07:59:27.214Z",
+  "device": {
+    "alias": "meizu21-A",
+    "model": "MEIZU 21",
+    "androidVersion": "16",
+    "apiLevel": "36",
+    "size": "Physical size: 1080x2340",
+    "density": "Physical density: 440",
+    "fontScale": "1.0",
+    "animatorScale": "1.0",
+    "transitionScale": "1.0",
+    "windowScale": "1.0"
+  },
+  "appPackage": "com.xingin.xhs",
+  "appVersionLines": [
+    "versionCode=8720916 minSdk=21 targetSdk=34",
+    "versionName=8.72.0"
+  ],
+  "renderer": "Skia (Vulkan)",
+  "gfxSha256": "0f7b491b24d0867a35478fac4e1560ff1eca4e6e557a8a55c3d2a4d93818b6f8",
+  "limits": "显示密度用于 px/dp 换算；未从截图推定 textSize。gfxinfo 为当前 Android HWUI 路径，不能证明全部跨端页面及视频解码都使用该路径。"
+}

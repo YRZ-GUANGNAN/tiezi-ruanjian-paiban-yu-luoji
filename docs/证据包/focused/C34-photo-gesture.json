@@ -1,0 +1,1034 @@
+{
+  "evidence_id": "ev_218aa84f5dae743faf4a19b183388319c7a80750083f980f2b73677be480845e",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"A\",\"type\":\"hg1.t\",\"def_pos\":0},{\"name\":\"B\",\"type\":\"hg1.s\",\"def_pos\":0},{\"name\":\"C\",\"type\":\"hg1.z\",\"def_pos\":0},{\"name\":\"D\",\"type\":\"android.view.View$OnClickListener\",\"def_pos\":0},{\"name\":\"E\",\"type\":\"android.view.View$OnLongClickListener\",\"def_pos\":0},{\"name\":\"F\",\"type\":\"android.view.GestureDetector$OnDoubleTapListener\",\"def_pos\":0},{\"name\":\"G\",\"type\":\"hg1.u\",\"def_pos\":0},{\"name\":\"H\",\"type\":\"hg1.p\",\"def_pos\":0},{\"name\":\"I\",\"type\":\"hg1.v\",\"def_pos\":0},{\"name\":\"K\",\"type\":\"hg1.y\",\"def_pos\":0},{\"name\":\"L\",\"type\":\"hg1.x\",\"def_pos\":0},{\"name\":\"M\",\"type\":\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher$b\",\"def_pos\":0},{\"name\":\"N\",\"type\":\"yg1.t\",\"def_pos\":0},{\"name\":\"O\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"P\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"Q\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"R\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"S\",\"type\":\"android.graphics.PointF\",\"def_pos\":0},{\"name\":\"T\",\"type\":\"float\",\"def_pos\":0},{\"name\":\"U\",\"type\":\"bn9.d\",\"def_pos\":0},{\"name\":\"V\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"W\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"X\",\"type\":\"android.widget.ImageView$ScaleType\",\"def_pos\":0},{\"name\":\"Y\",\"type\":\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher$g\",\"def_pos\":0},{\"name\":\"Z\",\"type\":\"el9.c\",\"def_pos\":0},{\"name\":\"f39563J\",\"type\":\"hg1.w\",\"def_pos\":0},{\"name\":\"f39564d\",\"type\":\"android.widget.ImageView\",\"def_pos\":0},{\"name\":\"f39565e\",\"type\":\"android.view.animation.Interpolator\",\"def_pos\":0},{\"name\":\"f39566f\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"f39567g\",\"type\":\"float\",\"def_pos\":0},{\"name\":\"f39568h\",\"type\":\"float\",\"def_pos\":0},{\"name\":\"f39569l\",\"type\":\"float\",\"def_pos\":0},{\"name\":\"f39570m\",\"type\":\"float\",\"def_pos\":0},{\"name\":\"f39571n\",\"type\":\"android.graphics.PointF\",\"def_pos\":0},{\"name\":\"f39572o\",\"type\":\"float\",\"def_pos\":0},{\"name\":\"f39573p\",\"type\":\"float\",\"def_pos\":0},{\"name\":\"f39574q\",\"type\":\"float\",\"def_pos\":0},{\"name\":\"f39575r\",\"type\":\"float\",\"def_pos\":0},{\"name\":\"f39576s\",\"type\":\"android.view.GestureDetector\",\"def_pos\":0},{\"name\":\"f39577t\",\"type\":\"hg1.a\",\"def_pos\":0},{\"name\":\"f39578u\",\"type\":\"android.graphics.Matrix\",\"def_pos\":0},{\"name\":\"f39579v\",\"type\":\"android.graphics.Matrix\",\"def_pos\":0},{\"name\":\"f39580w\",\"type\":\"android.graphics.Matrix\",\"def_pos\":0},{\"name\":\"f39581x\",\"type\":\"android.graphics.RectF\",\"def_pos\":0},{\"name\":\"f39582y\",\"type\":\"float[]\",\"def_pos\":0},{\"name\":\"f39583z\",\"type\":\"hg1.r\",\"def_pos\":0}],\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(android.widget.ImageView): void\",\"is_constructor\":true},{\"name\":\"A\",\"def_pos\":0,\"signature\":\"A(): boolean\",\"is_constructor\":false},{\"name\":\"A0\",\"def_pos\":0,\"signature\":\"A0(hg1.t): void\",\"is_constructor\":false},{\"name\":\"B\",\"def_pos\":0,\"signature\":\"B(): boolean\",\"is_constructor\":false},{\"name\":\"B0\",\"def_pos\":0,\"signature\":\"B0(hg1.u): void\",\"is_constructor\":false},{\"name\":\"C\",\"def_pos\":0,\"signature\":\"C(float): void\",\"is_constructor\":false},{\"name\":\"C0\",\"def_pos\":0,\"signature\":\"C0(hg1.v): void\",\"is_constructor\":false},{\"name\":\"D\",\"def_pos\":0,\"signature\":\"D(): void\",\"is_constructor\":false},{\"name\":\"D0\",\"def_pos\":0,\"signature\":\"D0(hg1.w): void\",\"is_constructor\":false},{\"name\":\"E\",\"def_pos\":0,\"signature\":\"E(on9.a0, on9.a0, int, on9.a0, int, float, float, com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, float, float, float, android.graphics.PointF, on9.a0, float, float, on9.a0, android.animation.ValueAnimator): void\",\"is_constructor\":false},{\"name\":\"E0\",\"def_pos\":0,\"signature\":\"E0(hg1.x): void\",\"is_constructor\":false},{\"name\":\"F\",\"def_pos\":0,\"signature\":\"F(nn9.a\\u003cbn9.w\\u003e): void\",\"is_constructor\":false},{\"name\":\"F0\",\"def_pos\":0,\"signature\":\"F0(hg1.y): void\",\"is_constructor\":false},{\"name\":\"G\",\"def_pos\":0,\"signature\":\"G(float, com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, on9.d0, on9.a0, on9.a0, android.animation.ValueAnimator): void\",\"is_constructor\":false},{\"name\":\"G0\",\"def_pos\":0,\"signature\":\"G0(hg1.z): void\",\"is_constructor\":false},{\"name\":\"H\",\"def_pos\":0,\"signature\":\"H(): android.graphics.RectF\",\"is_constructor\":false},{\"name\":\"H0\",\"def_pos\":0,\"signature\":\"H0(float): void\",\"is_constructor\":false},{\"name\":\"I\",\"def_pos\":0,\"signature\":\"I(android.graphics.Matrix): android.graphics.RectF\",\"is_constructor\":false},{\"name\":\"I0\",\"def_pos\":0,\"signature\":\"I0(float): void\",\"is_constructor\":false},{\"name\":\"J\",\"def_pos\":0,\"signature\":\"J(): float\",\"is_constructor\":false},{\"name\":\"J0\",\"def_pos\":0,\"signature\":\"J0(float): void\",\"is_constructor\":false},{\"name\":\"K\",\"def_pos\":0,\"signature\":\"K(): boolean\",\"is_constructor\":false},{\"name\":\"K0\",\"def_pos\":0,\"signature\":\"K0(float, float, float): void\",\"is_constructor\":false},{\"name\":\"L\",\"def_pos\":0,\"signature\":\"L(): android.graphics.Matrix\",\"is_constructor\":false},{\"name\":\"L0\",\"def_pos\":0,\"signature\":\"L0(float, float, float, boolean): void\",\"is_constructor\":false},{\"name\":\"M\",\"def_pos\":0,\"signature\":\"M(android.widget.ImageView): int\",\"is_constructor\":false},{\"name\":\"M0\",\"def_pos\":0,\"signature\":\"M0(float, boolean): void\",\"is_constructor\":false},{\"name\":\"N\",\"def_pos\":0,\"signature\":\"N(android.widget.ImageView): int\",\"is_constructor\":false},{\"name\":\"N0\",\"def_pos\":0,\"signature\":\"N0(android.widget.ImageView$ScaleType): void\",\"is_constructor\":false},{\"name\":\"O\",\"def_pos\":0,\"signature\":\"O(): int\",\"is_constructor\":false},{\"name\":\"O0\",\"def_pos\":0,\"signature\":\"O0(yg1.t): void\",\"is_constructor\":false},{\"name\":\"P\",\"def_pos\":0,\"signature\":\"P(): boolean\",\"is_constructor\":false},{\"name\":\"P0\",\"def_pos\":0,\"signature\":\"P0(float, float, float): void\",\"is_constructor\":false},{\"name\":\"Q\",\"def_pos\":0,\"signature\":\"Q(): float\",\"is_constructor\":false},{\"name\":\"Q0\",\"def_pos\":0,\"signature\":\"Q0(int): void\",\"is_constructor\":false},{\"name\":\"R\",\"def_pos\":0,\"signature\":\"R(): boolean\",\"is_constructor\":false},{\"name\":\"R0\",\"def_pos\":0,\"signature\":\"R0(boolean): void\",\"is_constructor\":false},{\"name\":\"S\",\"def_pos\":0,\"signature\":\"S(): int\",\"is_constructor\":false},{\"name\":\"S0\",\"def_pos\":0,\"signature\":\"S0(android.view.View, android.graphics.PointF, android.view.MotionEvent): void\",\"is_constructor\":false},{\"name\":\"T\",\"def_pos\":0,\"signature\":\"T(): float\",\"is_constructor\":false},{\"name\":\"T0\",\"def_pos\":0,\"signature\":\"T0(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, android.view.View, android.graphics.PointF, android.view.MotionEvent, int, java.lang.Object): void\",\"is_constructor\":false},{\"name\":\"U\",\"def_pos\":0,\"signature\":\"U(): float\",\"is_constructor\":false},{\"name\":\"U0\",\"def_pos\":0,\"signature\":\"U0(android.view.View, android.graphics.PointF): void\",\"is_constructor\":false},{\"name\":\"V\",\"def_pos\":0,\"signature\":\"V(): float\",\"is_constructor\":false},{\"name\":\"V0\",\"def_pos\":0,\"signature\":\"V0(android.view.View, android.graphics.PointF, android.view.MotionEvent): void\",\"is_constructor\":false},{\"name\":\"W\",\"def_pos\":0,\"signature\":\"W(): boolean\",\"is_constructor\":false},{\"name\":\"W0\",\"def_pos\":0,\"signature\":\"W0(): void\",\"is_constructor\":false},{\"name\":\"X\",\"def_pos\":0,\"signature\":\"X(): android.graphics.RectF\",\"is_constructor\":false},{\"name\":\"X0\",\"def_pos\":0,\"signature\":\"X0(): void\",\"is_constructor\":false},{\"name\":\"Y\",\"def_pos\":0,\"signature\":\"Y(): float\",\"is_constructor\":false},{\"name\":\"Y0\",\"def_pos\":0,\"signature\":\"Y0(android.graphics.drawable.Drawable): void\",\"is_constructor\":false},{\"name\":\"Z\",\"def_pos\":0,\"signature\":\"Z(): android.widget.ImageView$ScaleType\",\"is_constructor\":false},{\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(float, com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, on9.d0, on9.a0, on9.a0, android.animation.ValueAnimator): void\",\"is_constructor\":false},{\"name\":\"a0\",\"def_pos\":0,\"signature\":\"a0(android.graphics.Matrix, int): float\",\"is_constructor\":false},{\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(on9.a0, on9.a0, int, on9.a0, int, float, float, com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, float, float, float, android.graphics.PointF, on9.a0, float, float, on9.a0, android.animation.ValueAnimator): void\",\"is_constructor\":false},{\"name\":\"b0\",\"def_pos\":0,\"signature\":\"b0(): void\",\"is_constructor\":false},{\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, kl.l): void\",\"is_constructor\":false},{\"name\":\"c0\",\"def_pos\":0,\"signature\":\"c0(): boolean\",\"is_constructor\":false},{\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, float, on9.a0, on9.a0, android.animation.ValueAnimator): void\",\"is_constructor\":false},{\"name\":\"d0\",\"def_pos\":0,\"signature\":\"d0(): void\",\"is_constructor\":false},{\"name\":\"e\",\"def_pos\":0,\"signature\":\"e(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): void\",\"is_constructor\":false},{\"name\":\"e0\",\"def_pos\":0,\"signature\":\"e0(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, kl.l): void\",\"is_constructor\":false},{\"name\":\"f\",\"def_pos\":0,\"signature\":\"f(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): android.widget.ImageView\",\"is_constructor\":false},{\"name\":\"f0\",\"def_pos\":0,\"signature\":\"f0(float, float): void\",\"is_constructor\":false},{\"name\":\"g\",\"def_pos\":0,\"signature\":\"g(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): android.view.animation.Interpolator\",\"is_constructor\":false},{\"name\":\"g0\",\"def_pos\":0,\"signature\":\"g0(boolean, float, float): void\",\"is_constructor\":false},{\"name\":\"h\",\"def_pos\":0,\"signature\":\"h(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): android.view.View$OnLongClickListener\",\"is_constructor\":false},{\"name\":\"h0\",\"def_pos\":0,\"signature\":\"h0(android.view.MotionEvent, boolean): void\",\"is_constructor\":false},{\"name\":\"i\",\"def_pos\":0,\"signature\":\"i(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): android.view.View$OnClickListener\",\"is_constructor\":false},{\"name\":\"i0\",\"def_pos\":0,\"signature\":\"i0(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, android.view.MotionEvent, boolean, int, java.lang.Object): void\",\"is_constructor\":false},{\"name\":\"j\",\"def_pos\":0,\"signature\":\"j(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): android.view.GestureDetector$OnDoubleTapListener\",\"is_constructor\":false},{\"name\":\"j0\",\"def_pos\":0,\"signature\":\"j0(): void\",\"is_constructor\":false},{\"name\":\"k\",\"def_pos\":0,\"signature\":\"k(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): hg1.s\",\"is_constructor\":false},{\"name\":\"k0\",\"def_pos\":0,\"signature\":\"k0(): void\",\"is_constructor\":false},{\"name\":\"l\",\"def_pos\":0,\"signature\":\"l(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): yg1.t\",\"is_constructor\":false},{\"name\":\"l0\",\"def_pos\":0,\"signature\":\"l0(): void\",\"is_constructor\":false},{\"name\":\"m\",\"def_pos\":0,\"signature\":\"m(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): hg1.t\",\"is_constructor\":false},{\"name\":\"m0\",\"def_pos\":0,\"signature\":\"m0(): void\",\"is_constructor\":false},{\"name\":\"n\",\"def_pos\":0,\"signature\":\"n(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): hg1.a\",\"is_constructor\":false},{\"name\":\"n0\",\"def_pos\":0,\"signature\":\"n0(): void\",\"is_constructor\":false},{\"name\":\"o\",\"def_pos\":0,\"signature\":\"o(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): hg1.v\",\"is_constructor\":false},{\"name\":\"o0\",\"def_pos\":0,\"signature\":\"o0(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, float, on9.a0, on9.a0, android.animation.ValueAnimator): void\",\"is_constructor\":false},{\"name\":\"onLayoutChange\",\"def_pos\":0,\"signature\":\"onLayoutChange(android.view.View, int, int, int, int, int, int, int, int): void\",\"is_constructor\":false},{\"name\":\"onTouch\",\"def_pos\":0,\"signature\":\"onTouch(android.view.View, android.view.MotionEvent): boolean\",\"is_constructor\":false},{\"name\":\"p\",\"def_pos\":0,\"signature\":\"p(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): hg1.z\",\"is_constructor\":false},{\"name\":\"p0\",\"def_pos\":0,\"signature\":\"p0(float, float): void\",\"is_constructor\":false},{\"name\":\"q\",\"def_pos\":0,\"signature\":\"q(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): int\",\"is_constructor\":false},{\"name\":\"q0\",\"def_pos\":0,\"signature\":\"q0(android.graphics.Matrix): void\",\"is_constructor\":false},{\"name\":\"r\",\"def_pos\":0,\"signature\":\"r(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher$g\",\"is_constructor\":false},{\"name\":\"r0\",\"def_pos\":0,\"signature\":\"r0(float): void\",\"is_constructor\":false},{\"name\":\"s0\",\"def_pos\":0,\"signature\":\"s0(float): void\",\"is_constructor\":false},{\"name\":\"t\",\"def_pos\":0,\"signature\":\"t(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float): void\",\"is_constructor\":false},{\"name\":\"t0\",\"def_pos\":0,\"signature\":\"t0(float): void\",\"is_constructor\":false},{\"name\":\"u\",\"def_pos\":0,\"signature\":\"u(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): void\",\"is_constructor\":false},{\"name\":\"u0\",\"def_pos\":0,\"signature\":\"u0(android.view.View$OnClickListener): void\",\"is_constructor\":false},{\"name\":\"v\",\"def_pos\":0,\"signature\":\"v(): boolean\",\"is_constructor\":false},{\"name\":\"v0\",\"def_pos\":0,\"signature\":\"v0(android.view.GestureDetector$OnDoubleTapListener): void\",\"is_constructor\":false},{\"name\":\"w\",\"def_pos\":0,\"signature\":\"w(): void\",\"is_constructor\":false},{\"name\":\"w0\",\"def_pos\":0,\"signature\":\"w0(hg1.p): void\",\"is_constructor\":false},{\"name\":\"x\",\"def_pos\":0,\"signature\":\"x(): void\",\"is_constructor\":false},{\"name\":\"x0\",\"def_pos\":0,\"signature\":\"x0(android.view.View$OnLongClickListener): void\",\"is_constructor\":false},{\"name\":\"y\",\"def_pos\":0,\"signature\":\"y(): boolean\",\"is_constructor\":false},{\"name\":\"y0\",\"def_pos\":0,\"signature\":\"y0(hg1.r): void\",\"is_constructor\":false},{\"name\":\"z\",\"def_pos\":0,\"signature\":\"z(): boolean\",\"is_constructor\":false},{\"name\":\"z0\",\"def_pos\":0,\"signature\":\"z0(hg1.s): void\",\"is_constructor\":false}],\"method_count\":105,\"inner_class_count\":8,\"inner_classes\":[\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.a\",\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.b\",\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.c\",\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.d\",\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.e\",\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.f\",\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.g\",\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.h\"],\"name\":\"NoteDetailPhotoViewAttacher\",\"full_name\":\"com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher\",\"field_count\":46}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.widget.ImageView): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A",
+        "reported_signature": "A(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A0",
+        "reported_signature": "A0(hg1.t): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B",
+        "reported_signature": "B(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B0",
+        "reported_signature": "B0(hg1.u): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C",
+        "reported_signature": "C(float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C0",
+        "reported_signature": "C0(hg1.v): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D",
+        "reported_signature": "D(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D0",
+        "reported_signature": "D0(hg1.w): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "E",
+        "reported_signature": "E(on9.a0, on9.a0, int, on9.a0, int, float, float, com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, float, float, float, android.graphics.PointF, on9.a0, float, float, on9.a0, android.animation.ValueAnimator): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "E0",
+        "reported_signature": "E0(hg1.x): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F",
+        "reported_signature": "F(nn9.a<bn9.w>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F0",
+        "reported_signature": "F0(hg1.y): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G",
+        "reported_signature": "G(float, com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, on9.d0, on9.a0, on9.a0, android.animation.ValueAnimator): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G0",
+        "reported_signature": "G0(hg1.z): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H",
+        "reported_signature": "H(): android.graphics.RectF",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H0",
+        "reported_signature": "H0(float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I",
+        "reported_signature": "I(android.graphics.Matrix): android.graphics.RectF",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I0",
+        "reported_signature": "I0(float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "J",
+        "reported_signature": "J(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "J0",
+        "reported_signature": "J0(float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "K",
+        "reported_signature": "K(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "K0",
+        "reported_signature": "K0(float, float, float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "L",
+        "reported_signature": "L(): android.graphics.Matrix",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "L0",
+        "reported_signature": "L0(float, float, float, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M",
+        "reported_signature": "M(android.widget.ImageView): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M0",
+        "reported_signature": "M0(float, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "N",
+        "reported_signature": "N(android.widget.ImageView): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "N0",
+        "reported_signature": "N0(android.widget.ImageView$ScaleType): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "O",
+        "reported_signature": "O(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "O0",
+        "reported_signature": "O0(yg1.t): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "P",
+        "reported_signature": "P(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "P0",
+        "reported_signature": "P0(float, float, float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Q",
+        "reported_signature": "Q(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Q0",
+        "reported_signature": "Q0(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "R",
+        "reported_signature": "R(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "R0",
+        "reported_signature": "R0(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S",
+        "reported_signature": "S(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S0",
+        "reported_signature": "S0(android.view.View, android.graphics.PointF, android.view.MotionEvent): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "T",
+        "reported_signature": "T(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "T0",
+        "reported_signature": "T0(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, android.view.View, android.graphics.PointF, android.view.MotionEvent, int, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "U",
+        "reported_signature": "U(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "U0",
+        "reported_signature": "U0(android.view.View, android.graphics.PointF): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "V",
+        "reported_signature": "V(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "V0",
+        "reported_signature": "V0(android.view.View, android.graphics.PointF, android.view.MotionEvent): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "W",
+        "reported_signature": "W(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "W0",
+        "reported_signature": "W0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "X",
+        "reported_signature": "X(): android.graphics.RectF",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "X0",
+        "reported_signature": "X0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y",
+        "reported_signature": "Y(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y0",
+        "reported_signature": "Y0(android.graphics.drawable.Drawable): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Z",
+        "reported_signature": "Z(): android.widget.ImageView$ScaleType",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(float, com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, on9.d0, on9.a0, on9.a0, android.animation.ValueAnimator): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a0",
+        "reported_signature": "a0(android.graphics.Matrix, int): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(on9.a0, on9.a0, int, on9.a0, int, float, float, com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, float, float, float, android.graphics.PointF, on9.a0, float, float, on9.a0, android.animation.ValueAnimator): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b0",
+        "reported_signature": "b0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, kl.l): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c0",
+        "reported_signature": "c0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, float, on9.a0, on9.a0, android.animation.ValueAnimator): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d0",
+        "reported_signature": "d0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e0",
+        "reported_signature": "e0(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, kl.l): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): android.widget.ImageView",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f0",
+        "reported_signature": "f0(float, float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): android.view.animation.Interpolator",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g0",
+        "reported_signature": "g0(boolean, float, float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): android.view.View$OnLongClickListener",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h0",
+        "reported_signature": "h0(android.view.MotionEvent, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): android.view.View$OnClickListener",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i0",
+        "reported_signature": "i0(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, android.view.MotionEvent, boolean, int, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j",
+        "reported_signature": "j(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): android.view.GestureDetector$OnDoubleTapListener",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j0",
+        "reported_signature": "j0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): hg1.s",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k0",
+        "reported_signature": "k0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): yg1.t",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l0",
+        "reported_signature": "l0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): hg1.t",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m0",
+        "reported_signature": "m0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): hg1.a",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n0",
+        "reported_signature": "n0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): hg1.v",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o0",
+        "reported_signature": "o0(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float, float, on9.a0, on9.a0, android.animation.ValueAnimator): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "onLayoutChange",
+        "reported_signature": "onLayoutChange(android.view.View, int, int, int, int, int, int, int, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "onTouch",
+        "reported_signature": "onTouch(android.view.View, android.view.MotionEvent): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p",
+        "reported_signature": "p(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): hg1.z",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p0",
+        "reported_signature": "p0(float, float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q",
+        "reported_signature": "q(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q0",
+        "reported_signature": "q0(android.graphics.Matrix): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r",
+        "reported_signature": "r(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher$g",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r0",
+        "reported_signature": "r0(float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s0",
+        "reported_signature": "s0(float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t",
+        "reported_signature": "t(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher, float, float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t0",
+        "reported_signature": "t0(float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u",
+        "reported_signature": "u(com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u0",
+        "reported_signature": "u0(android.view.View$OnClickListener): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v",
+        "reported_signature": "v(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v0",
+        "reported_signature": "v0(android.view.GestureDetector$OnDoubleTapListener): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w",
+        "reported_signature": "w(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w0",
+        "reported_signature": "w0(hg1.p): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x",
+        "reported_signature": "x(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x0",
+        "reported_signature": "x0(android.view.View$OnLongClickListener): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y",
+        "reported_signature": "y(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y0",
+        "reported_signature": "y0(hg1.r): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z",
+        "reported_signature": "z(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z0",
+        "reported_signature": "z0(hg1.s): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "A",
+        "reported_type": "hg1.t"
+      },
+      {
+        "name": "B",
+        "reported_type": "hg1.s"
+      },
+      {
+        "name": "C",
+        "reported_type": "hg1.z"
+      },
+      {
+        "name": "D",
+        "reported_type": "android.view.View$OnClickListener"
+      },
+      {
+        "name": "E",
+        "reported_type": "android.view.View$OnLongClickListener"
+      },
+      {
+        "name": "F",
+        "reported_type": "android.view.GestureDetector$OnDoubleTapListener"
+      },
+      {
+        "name": "G",
+        "reported_type": "hg1.u"
+      },
+      {
+        "name": "H",
+        "reported_type": "hg1.p"
+      },
+      {
+        "name": "I",
+        "reported_type": "hg1.v"
+      },
+      {
+        "name": "K",
+        "reported_type": "hg1.y"
+      },
+      {
+        "name": "L",
+        "reported_type": "hg1.x"
+      },
+      {
+        "name": "M",
+        "reported_type": "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher$b"
+      },
+      {
+        "name": "N",
+        "reported_type": "yg1.t"
+      },
+      {
+        "name": "O",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "P",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "Q",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "R",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "S",
+        "reported_type": "android.graphics.PointF"
+      },
+      {
+        "name": "T",
+        "reported_type": "float"
+      },
+      {
+        "name": "U",
+        "reported_type": "bn9.d"
+      },
+      {
+        "name": "V",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "W",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "X",
+        "reported_type": "android.widget.ImageView$ScaleType"
+      },
+      {
+        "name": "Y",
+        "reported_type": "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher$g"
+      },
+      {
+        "name": "Z",
+        "reported_type": "el9.c"
+      },
+      {
+        "name": "f39563J",
+        "reported_type": "hg1.w"
+      },
+      {
+        "name": "f39564d",
+        "reported_type": "android.widget.ImageView"
+      },
+      {
+        "name": "f39565e",
+        "reported_type": "android.view.animation.Interpolator"
+      },
+      {
+        "name": "f39566f",
+        "reported_type": "int"
+      },
+      {
+        "name": "f39567g",
+        "reported_type": "float"
+      },
+      {
+        "name": "f39568h",
+        "reported_type": "float"
+      },
+      {
+        "name": "f39569l",
+        "reported_type": "float"
+      },
+      {
+        "name": "f39570m",
+        "reported_type": "float"
+      },
+      {
+        "name": "f39571n",
+        "reported_type": "android.graphics.PointF"
+      },
+      {
+        "name": "f39572o",
+        "reported_type": "float"
+      },
+      {
+        "name": "f39573p",
+        "reported_type": "float"
+      },
+      {
+        "name": "f39574q",
+        "reported_type": "float"
+      },
+      {
+        "name": "f39575r",
+        "reported_type": "float"
+      },
+      {
+        "name": "f39576s",
+        "reported_type": "android.view.GestureDetector"
+      },
+      {
+        "name": "f39577t",
+        "reported_type": "hg1.a"
+      },
+      {
+        "name": "f39578u",
+        "reported_type": "android.graphics.Matrix"
+      },
+      {
+        "name": "f39579v",
+        "reported_type": "android.graphics.Matrix"
+      },
+      {
+        "name": "f39580w",
+        "reported_type": "android.graphics.Matrix"
+      },
+      {
+        "name": "f39581x",
+        "reported_type": "android.graphics.RectF"
+      },
+      {
+        "name": "f39582y",
+        "reported_type": "float[]"
+      },
+      {
+        "name": "f39583z",
+        "reported_type": "hg1.r"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.a",
+      "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.b",
+      "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.c",
+      "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.d",
+      "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.e",
+      "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.f",
+      "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.g",
+      "com.xingin.android.redutils.photoview.NoteDetailPhotoViewAttacher.h"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "52e258636318571097e00193d82d3ec658ac93b884d2f81e9de14409f7c38d2b",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "evidence_id": "ev_66cf31b10109913aecf64fc6d22ce5053c94e8e1d9362028b0d4f60f4723c110",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.entities.comment.CommentResultEntity"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.entities.comment.CommentResultEntity"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"CREATOR\",\"def_pos\":0,\"type\":\"android.os.Parcelable$Creator\\u003ccom.xingin.entities.comment.CommentResultEntity\\u003e\"},{\"name\":\"commentPictures\",\"def_pos\":0,\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\"},{\"name\":\"commentText\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"errorCode\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"errorMsg\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"isSuccessful\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"messageId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"noteId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"noteType\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"source\",\"def_pos\":0,\"type\":\"java.lang.String\"}],\"field_count\":10,\"full_name\":\"com.xingin.entities.comment.CommentResultEntity\",\"name\":\"CommentResultEntity\",\"inner_classes\":[\"com.xingin.entities.comment.CommentResultEntity.a\"],\"inner_class_count\":1,\"method_count\":12,\"methods\":[{\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"signature\":\"\\u003cclinit\\u003e(): void\"},{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\"},{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(boolean, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List\\u003cjava.lang.String\\u003e): void\"},{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(boolean, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List, int, kotlin.jvm.internal.DefaultConstructorMarker): void\"},{\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"signature\":\"a(): java.lang.String\"},{\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"signature\":\"b(): java.lang.String\"},{\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(): boolean\"},{\"def_pos\":0,\"name\":\"describeContents\",\"is_constructor\":false,\"signature\":\"describeContents(): int\"},{\"def_pos\":0,\"name\":\"equals\",\"is_constructor\":false,\"signature\":\"equals(java.lang.Object): boolean\"},{\"def_pos\":0,\"name\":\"hashCode\",\"is_constructor\":false,\"signature\":\"hashCode(): int\"},{\"def_pos\":0,\"name\":\"toString\",\"is_constructor\":false,\"signature\":\"toString(): java.lang.String\"},{\"def_pos\":0,\"name\":\"writeToParcel\",\"is_constructor\":false,\"signature\":\"writeToParcel(android.os.Parcel, int): void\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.entities.comment.CommentResultEntity",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(boolean, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List<java.lang.String>): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(boolean, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List, int, kotlin.jvm.internal.DefaultConstructorMarker): void",
+        "overload_index": 2,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "describeContents",
+        "reported_signature": "describeContents(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "equals",
+        "reported_signature": "equals(java.lang.Object): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "hashCode",
+        "reported_signature": "hashCode(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "toString",
+        "reported_signature": "toString(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "writeToParcel",
+        "reported_signature": "writeToParcel(android.os.Parcel, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "CREATOR",
+        "reported_type": "android.os.Parcelable$Creator<com.xingin.entities.comment.CommentResultEntity>"
+      },
+      {
+        "name": "commentPictures",
+        "reported_type": "java.util.List<java.lang.String>"
+      },
+      {
+        "name": "commentText",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "errorCode",
+        "reported_type": "int"
+      },
+      {
+        "name": "errorMsg",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "isSuccessful",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "messageId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "noteId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "noteType",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "source",
+        "reported_type": "java.lang.String"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.entities.comment.CommentResultEntity.a"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "14d9a04fb73055ea943bace85b4f49e192be3ffd0ef96b9aea19617658d7f53d",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

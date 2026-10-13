@@ -1,0 +1,4216 @@
+{
+  "schema": "xhs-layout-metrics-v1",
+  "generated_at_utc": "2026-10-13T10:43:59.183257+00:00",
+  "baseline": {
+    "app_version": "8.72.0",
+    "device_alias": "meizu21-A",
+    "screen_px": [
+      1080,
+      2340
+    ],
+    "density_dpi": 440,
+    "px_per_dp": 2.75,
+    "font_scale": 1,
+    "density_evidence": "T00-environment",
+    "density_evidence_path": "../运行/environment.json",
+    "density_evidence_sha256": "6f3deef7aefa17e67632635351cfcb8f0f3f9ae21a0ab5af7e3e5e9e0f4aa03b",
+    "density_read_at_utc": "2026-10-13T07:59:26.404Z",
+    "density_timing_note_zh": "本轮重新读取，晚于R样本截图；与既有设备记录一致，不冒充R截图同时采样的读数。",
+    "coordinate_origin": "original uncropped PNG top-left",
+    "bounds_convention": "left/top inclusive, right/bottom exclusive; XML coordinate differences",
+    "annotation_crop_px": [
+      0,
+      92,
+      1080,
+      2271
+    ]
+  },
+  "sources": [
+    {
+      "id": "R01",
+      "capture_at_utc": "2026-10-13T05:47:49.981Z",
+      "screenshot_sha256": "60b11adf492c4023e51a459eac53b8233c63fba81e24fca97e5a8da165f67260",
+      "hierarchy_sha256": "f150542703d42222975467f1096ada364aed30851e5dfe7e5f789b362bf67280",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R01-home",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R06",
+      "capture_at_utc": "2026-10-13T05:49:25.994Z",
+      "screenshot_sha256": "70789af4596584d63209f31d1ba228588f320ae86d2b18444c13bba523aba350",
+      "hierarchy_sha256": "672613ea55c79a0023d82c65058e4e68b70fa04fe36bf9687a5c4533a6909d69",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R06-video-comments",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R19",
+      "capture_at_utc": "2026-10-13T05:53:10.938Z",
+      "screenshot_sha256": "75232bac806506baeafc9fd06d53ab7007eacfa0a4a9ded433d6eb72115578fd",
+      "hierarchy_sha256": "eefb9c3fb86d36f2f289bab27638f9269c1a06ec768b007344999f71aad4bf8b",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R19-image-comments",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R27",
+      "capture_at_utc": "2026-10-13T05:55:50.521Z",
+      "screenshot_sha256": "376d92b91801523de92b866f25d9c579d68abf33db92da3c14bb90a77ce52d3b",
+      "hierarchy_sha256": "ac93fe1cd097d1f68937526e338bbc45021500e8b9e29138203bdd859255b09d",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R27-gallery-open",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R29",
+      "capture_at_utc": "2026-10-13T05:56:19.302Z",
+      "screenshot_sha256": "dc1e174bc3e39fb567b5e73abc88b8231117a5496d1e5a2d5a612e4b39253bef",
+      "hierarchy_sha256": "efb76c7e588caf7fbb0ad8a9f9b9002cb794a8974ee111d167cfd40e07735645",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R29-gallery-next",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R49",
+      "capture_at_utc": "2026-10-13T06:02:14.105Z",
+      "screenshot_sha256": "73e375d2c811bf1d455f56b395ff562b59bc0911c28790d543babba2d1f67265",
+      "hierarchy_sha256": "c0bbb1dcceb921e1f74f11b5bd0d0adeda19333187083fba7d22c24eaddb00d8",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R49-author-stable",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R50",
+      "capture_at_utc": "2026-10-13T06:02:33.088Z",
+      "screenshot_sha256": "8b9f28c71a8552454026161cd0d9a76f5f9cc20bbc9d32fc8c565f4c279acaf6",
+      "hierarchy_sha256": "f0a2cc9572b3574778af083efdf83b8e7adf30fcc72670ca82278fc14625a2fb",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R50-author-scroll",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R52",
+      "capture_at_utc": "2026-10-13T06:03:09.771Z",
+      "screenshot_sha256": "a806244f77c0f2012d086d8a3f49a86d42b2b7d34c12de971e5cea53a0f5a506",
+      "hierarchy_sha256": "f0a2cc9572b3574778af083efdf83b8e7adf30fcc72670ca82278fc14625a2fb",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R52-author-notes-restore",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R59",
+      "capture_at_utc": "2026-10-13T06:05:27.781Z",
+      "screenshot_sha256": "7eed1a9e10c7de71fa7ae875298f26f6baa31e75a6ca8b10a741cd50e285ec4f",
+      "hierarchy_sha256": "b39766da803a8d37f030b229bd0b2c757b1b150e985449446ed47f2756c28892",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R59-search-stable",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R61",
+      "capture_at_utc": "2026-10-13T06:06:05.994Z",
+      "screenshot_sha256": "4f74cd229fd7e9c178b136bfa111bec106c10de2a30560c7f99987f3d2c89c27",
+      "hierarchy_sha256": "b39766da803a8d37f030b229bd0b2c757b1b150e985449446ed47f2756c28892",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R61-search-return",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R63",
+      "capture_at_utc": "2026-10-13T06:06:43.754Z",
+      "screenshot_sha256": "b9392deb8c9f1f93ca054cdf6398d9d79eb63cf015687489ff39d287d47fb6d7",
+      "hierarchy_sha256": "3a9146eb8eb88b2d758d486de706cddc085e449d76a3b74e33333850c2750c41",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R63-search-filter",
+      "availability": "retained_locally_not_bundled"
+    },
+    {
+      "id": "R64",
+      "capture_at_utc": "2026-10-13T06:07:03.799Z",
+      "screenshot_sha256": "66dd7806547fdc6837b0b9100549afcab1791d6ecc5e85c5d48cefce1a9058f1",
+      "hierarchy_sha256": "096f01b54a71a56befd69d2cf751bb5ac5f763e060c70ab7f82d5e7eda405eb9",
+      "image_size_px": [
+        1080,
+        2340
+      ],
+      "workspace_relative_source": "work/xhs-mobile-new/device/R64-filter-image",
+      "availability": "retained_locally_not_bundled"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "F01",
+      "label_zh": "发现内容视口",
+      "evidence": [
+        "R01"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        213,
+        1080,
+        2147
+      ],
+      "bounds_dp": [
+        0,
+        77.455,
+        392.727,
+        780.727
+      ],
+      "size_px": [
+        1080,
+        1934
+      ],
+      "size_dp": [
+        392.727,
+        703.273
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 20,
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "bounds_px": [
+            0,
+            213,
+            1080,
+            2147
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "F02",
+      "label_zh": "发现左列首卡",
+      "evidence": [
+        "R01"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        13,
+        213,
+        534,
+        1143
+      ],
+      "bounds_dp": [
+        4.727,
+        77.455,
+        194.182,
+        415.636
+      ],
+      "size_px": [
+        521,
+        930
+      ],
+      "size_dp": [
+        189.455,
+        338.182
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 21,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            13,
+            213,
+            534,
+            1143
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "F03",
+      "label_zh": "发现右列首卡",
+      "evidence": [
+        "R01"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        546,
+        213,
+        1067,
+        1143
+      ],
+      "bounds_dp": [
+        198.545,
+        77.455,
+        388,
+        415.636
+      ],
+      "size_px": [
+        521,
+        930
+      ],
+      "size_dp": [
+        189.455,
+        338.182
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 35,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            546,
+            213,
+            1067,
+            1143
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "F04",
+      "label_zh": "发现首卡封面",
+      "evidence": [
+        "R01"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        13,
+        213,
+        534,
+        907
+      ],
+      "bounds_dp": [
+        4.727,
+        77.455,
+        194.182,
+        329.818
+      ],
+      "size_px": [
+        521,
+        694
+      ],
+      "size_dp": [
+        189.455,
+        252.364
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 25,
+          "class": "android.widget.ImageView",
+          "bounds_px": [
+            13,
+            213,
+            534,
+            907
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "F05",
+      "label_zh": "发现首卡双行标题框",
+      "evidence": [
+        "R01"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        41,
+        931,
+        507,
+        1036
+      ],
+      "bounds_dp": [
+        14.909,
+        338.545,
+        184.364,
+        376.727
+      ],
+      "size_px": [
+        466,
+        105
+      ],
+      "size_dp": [
+        169.455,
+        38.182
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 28,
+          "class": "android.view.View",
+          "bounds_px": [
+            41,
+            931,
+            507,
+            1036
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "F06",
+      "label_zh": "发现首卡作者与互动行",
+      "evidence": [
+        "R01"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        13,
+        1036,
+        523,
+        1143
+      ],
+      "bounds_dp": [
+        4.727,
+        376.727,
+        190.182,
+        415.636
+      ],
+      "size_px": [
+        510,
+        107
+      ],
+      "size_dp": [
+        185.455,
+        38.909
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 29,
+          "class": "android.widget.LinearLayout",
+          "bounds_px": [
+            13,
+            1036,
+            523,
+            1143
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "F07",
+      "label_zh": "发现首卡头像控件框",
+      "evidence": [
+        "R01"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        29,
+        1053,
+        101,
+        1125
+      ],
+      "bounds_dp": [
+        10.545,
+        382.909,
+        36.727,
+        409.091
+      ],
+      "size_px": [
+        72,
+        72
+      ],
+      "size_dp": [
+        26.182,
+        26.182
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 30,
+          "class": "android.view.View",
+          "bounds_px": [
+            29,
+            1053,
+            101,
+            1125
+          ]
+        }
+      ],
+      "note_zh": "记录控件矩形；可见头像/图标像素可能更小，不能直接当图片绘制直径。"
+    },
+    {
+      "id": "F08",
+      "label_zh": "发现首卡作者名框",
+      "evidence": [
+        "R01"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        112,
+        1073,
+        382,
+        1105
+      ],
+      "bounds_dp": [
+        40.727,
+        390.182,
+        138.909,
+        401.818
+      ],
+      "size_px": [
+        270,
+        32
+      ],
+      "size_dp": [
+        98.182,
+        11.636
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 31,
+          "class": "android.widget.TextView",
+          "bounds_px": [
+            112,
+            1073,
+            382,
+            1105
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "F09",
+      "label_zh": "发现首卡点赞图标控件框",
+      "evidence": [
+        "R01"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        382,
+        1048,
+        465,
+        1131
+      ],
+      "bounds_dp": [
+        138.909,
+        381.091,
+        169.091,
+        411.273
+      ],
+      "size_px": [
+        83,
+        83
+      ],
+      "size_dp": [
+        30.182,
+        30.182
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 33,
+          "class": "android.widget.ImageView",
+          "bounds_px": [
+            382,
+            1048,
+            465,
+            1131
+          ]
+        }
+      ],
+      "note_zh": "记录控件矩形；可见头像/图标像素可能更小，不能直接当图片绘制直径。"
+    },
+    {
+      "id": "F10",
+      "label_zh": "发现底部主导航",
+      "evidence": [
+        "R01"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        2147,
+        1080,
+        2271
+      ],
+      "bounds_dp": [
+        0,
+        780.727,
+        392.727,
+        825.818
+      ],
+      "size_px": [
+        1080,
+        124
+      ],
+      "size_dp": [
+        392.727,
+        45.091
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 103,
+          "class": "android.view.ViewGroup",
+          "bounds_px": [
+            0,
+            2147,
+            1080,
+            2271
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "F11",
+      "label_zh": "发现底部单个导航项",
+      "evidence": [
+        "R01"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        2147,
+        216,
+        2271
+      ],
+      "bounds_dp": [
+        0,
+        780.727,
+        78.545,
+        825.818
+      ],
+      "size_px": [
+        216,
+        124
+      ],
+      "size_dp": [
+        78.545,
+        45.091
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 104,
+          "class": "android.view.ViewGroup",
+          "bounds_px": [
+            0,
+            2147,
+            216,
+            2271
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G01",
+      "label_zh": "详情顶部作者栏",
+      "evidence": [
+        "R27"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        92,
+        1080,
+        246
+      ],
+      "bounds_dp": [
+        0,
+        33.455,
+        392.727,
+        89.455
+      ],
+      "size_px": [
+        1080,
+        154
+      ],
+      "size_dp": [
+        392.727,
+        56
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 11,
+          "class": "android.widget.RelativeLayout",
+          "bounds_px": [
+            0,
+            92,
+            1080,
+            246
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G02",
+      "label_zh": "图集媒体框",
+      "evidence": [
+        "R27"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        246,
+        1080,
+        1582
+      ],
+      "bounds_dp": [
+        0,
+        89.455,
+        392.727,
+        575.273
+      ],
+      "size_px": [
+        1080,
+        1336
+      ],
+      "size_dp": [
+        392.727,
+        485.818
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 31,
+          "class": "android.widget.ImageView",
+          "bounds_px": [
+            0,
+            246,
+            1080,
+            1582
+          ]
+        }
+      ],
+      "note_zh": "公共图集样本A前两张框一致；这个1336px高度并非所有图文统一比例。"
+    },
+    {
+      "id": "G03",
+      "label_zh": "图集数字页码框",
+      "evidence": [
+        "R27"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        968,
+        274,
+        1052,
+        340
+      ],
+      "bounds_dp": [
+        352,
+        99.636,
+        382.545,
+        123.636
+      ],
+      "size_px": [
+        84,
+        66
+      ],
+      "size_dp": [
+        30.545,
+        24
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 34,
+          "class": "android.widget.TextView",
+          "bounds_px": [
+            968,
+            274,
+            1052,
+            340
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G04",
+      "label_zh": "图集点状指示器容器",
+      "evidence": [
+        "R27"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        491,
+        1632,
+        588,
+        1646
+      ],
+      "bounds_dp": [
+        178.545,
+        593.455,
+        213.818,
+        598.545
+      ],
+      "size_px": [
+        97,
+        14
+      ],
+      "size_dp": [
+        35.273,
+        5.091
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 35,
+          "class": "android.widget.LinearLayout",
+          "bounds_px": [
+            491,
+            1632,
+            588,
+            1646
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G05",
+      "label_zh": "图集大圆点控件框",
+      "evidence": [
+        "R27"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        491,
+        1632,
+        504,
+        1645
+      ],
+      "bounds_dp": [
+        178.545,
+        593.455,
+        183.273,
+        598.182
+      ],
+      "size_px": [
+        13,
+        13
+      ],
+      "size_dp": [
+        4.727,
+        4.727
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 36,
+          "class": "android.widget.ImageView",
+          "bounds_px": [
+            491,
+            1632,
+            504,
+            1645
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G06",
+      "label_zh": "图集末端小圆点控件框",
+      "evidence": [
+        "R27"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        578,
+        1635,
+        585,
+        1642
+      ],
+      "bounds_dp": [
+        210.182,
+        594.545,
+        212.727,
+        597.091
+      ],
+      "size_px": [
+        7,
+        7
+      ],
+      "size_dp": [
+        2.545,
+        2.545
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 40,
+          "class": "android.widget.ImageView",
+          "bounds_px": [
+            578,
+            1635,
+            585,
+            1642
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G07",
+      "label_zh": "详情标题框",
+      "evidence": [
+        "R27"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        41,
+        1688,
+        1039,
+        1742
+      ],
+      "bounds_dp": [
+        14.909,
+        613.818,
+        377.818,
+        633.455
+      ],
+      "size_px": [
+        998,
+        54
+      ],
+      "size_dp": [
+        362.909,
+        19.636
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 46,
+          "class": "android.widget.TextView",
+          "bounds_px": [
+            41,
+            1688,
+            1039,
+            1742
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G08",
+      "label_zh": "详情话题双行文本框",
+      "evidence": [
+        "R27"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        41,
+        1770,
+        1039,
+        1886
+      ],
+      "bounds_dp": [
+        14.909,
+        643.636,
+        377.818,
+        685.818
+      ],
+      "size_px": [
+        998,
+        116
+      ],
+      "size_dp": [
+        362.909,
+        42.182
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 47,
+          "class": "android.widget.TextView",
+          "bounds_px": [
+            41,
+            1770,
+            1039,
+            1886
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G09",
+      "label_zh": "详情相关搜索容器",
+      "evidence": [
+        "R27"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        41,
+        1930,
+        1039,
+        2029
+      ],
+      "bounds_dp": [
+        14.909,
+        701.818,
+        377.818,
+        737.818
+      ],
+      "size_px": [
+        998,
+        99
+      ],
+      "size_dp": [
+        362.909,
+        36
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 48,
+          "class": "android.widget.LinearLayout",
+          "bounds_px": [
+            41,
+            1930,
+            1039,
+            2029
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G10",
+      "label_zh": "详情底部互动栏",
+      "evidence": [
+        "R27"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        2117,
+        1080,
+        2271
+      ],
+      "bounds_dp": [
+        0,
+        769.818,
+        392.727,
+        825.818
+      ],
+      "size_px": [
+        1080,
+        154
+      ],
+      "size_dp": [
+        392.727,
+        56
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 54,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            0,
+            2117,
+            1080,
+            2271
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G11",
+      "label_zh": "详情评论输入入口",
+      "evidence": [
+        "R27"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        41,
+        2145,
+        526,
+        2244
+      ],
+      "bounds_dp": [
+        14.909,
+        780,
+        191.273,
+        816
+      ],
+      "size_px": [
+        485,
+        99
+      ],
+      "size_dp": [
+        176.364,
+        36
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 56,
+          "class": "android.widget.TextView",
+          "bounds_px": [
+            41,
+            2145,
+            526,
+            2244
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G12",
+      "label_zh": "详情关注按钮框",
+      "evidence": [
+        "R27"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        767,
+        130,
+        940,
+        207
+      ],
+      "bounds_dp": [
+        278.909,
+        47.273,
+        341.818,
+        75.273
+      ],
+      "size_px": [
+        173,
+        77
+      ],
+      "size_dp": [
+        62.909,
+        28
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 18,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            767,
+            130,
+            940,
+            207
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G13",
+      "label_zh": "详情头像控件框",
+      "evidence": [
+        "R27"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        83,
+        92,
+        248,
+        246
+      ],
+      "bounds_dp": [
+        30.182,
+        33.455,
+        90.182,
+        89.455
+      ],
+      "size_px": [
+        165,
+        154
+      ],
+      "size_dp": [
+        60,
+        56
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 15,
+          "class": "android.view.View",
+          "bounds_px": [
+            83,
+            92,
+            248,
+            246
+          ]
+        }
+      ],
+      "note_zh": "记录控件矩形；可见头像/图标像素可能更小，不能直接当图片绘制直径。"
+    },
+    {
+      "id": "V01",
+      "label_zh": "视频评论整体面板",
+      "evidence": [
+        "R06"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        633,
+        1080,
+        2271
+      ],
+      "bounds_dp": [
+        0,
+        230.182,
+        392.727,
+        825.818
+      ],
+      "size_px": [
+        1080,
+        1638
+      ],
+      "size_dp": [
+        392.727,
+        595.636
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 8,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            0,
+            633,
+            1080,
+            2271
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "V02",
+      "label_zh": "视频评论面板标题区",
+      "evidence": [
+        "R06"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        633,
+        1080,
+        839
+      ],
+      "bounds_dp": [
+        0,
+        230.182,
+        392.727,
+        305.091
+      ],
+      "size_px": [
+        1080,
+        206
+      ],
+      "size_dp": [
+        392.727,
+        74.909
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 11,
+          "class": "android.view.ViewGroup",
+          "bounds_px": [
+            0,
+            633,
+            1080,
+            839
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "V03",
+      "label_zh": "视频评论列表XML框",
+      "evidence": [
+        "R06"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "partly_occluded_by_fixed_input",
+      "bounds_px": [
+        0,
+        839,
+        1080,
+        2139
+      ],
+      "bounds_dp": [
+        0,
+        305.091,
+        392.727,
+        777.818
+      ],
+      "size_px": [
+        1080,
+        1300
+      ],
+      "size_dp": [
+        392.727,
+        472.727
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 18,
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "bounds_px": [
+            0,
+            839,
+            1080,
+            2139
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "V04",
+      "label_zh": "视频评论固定输入栏",
+      "evidence": [
+        "R06"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        2115,
+        1080,
+        2271
+      ],
+      "bounds_dp": [
+        0,
+        769.091,
+        392.727,
+        825.818
+      ],
+      "size_px": [
+        1080,
+        156
+      ],
+      "size_dp": [
+        392.727,
+        56.727
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 76,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            0,
+            2115,
+            1080,
+            2271
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "V05",
+      "label_zh": "视频评论输入胶囊",
+      "evidence": [
+        "R06"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        41,
+        2138,
+        1039,
+        2249
+      ],
+      "bounds_dp": [
+        14.909,
+        777.455,
+        377.818,
+        817.818
+      ],
+      "size_px": [
+        998,
+        111
+      ],
+      "size_dp": [
+        362.909,
+        40.364
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 81,
+          "class": "android.widget.LinearLayout",
+          "bounds_px": [
+            41,
+            2138,
+            1039,
+            2249
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "V06",
+      "label_zh": "一级评论头像控件框",
+      "evidence": [
+        "R06"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        41,
+        882,
+        129,
+        970
+      ],
+      "bounds_dp": [
+        14.909,
+        320.727,
+        46.909,
+        352.727
+      ],
+      "size_px": [
+        88,
+        88
+      ],
+      "size_dp": [
+        32,
+        32
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 22,
+          "class": "android.view.View",
+          "bounds_px": [
+            41,
+            882,
+            129,
+            970
+          ]
+        }
+      ],
+      "note_zh": "记录控件矩形；可见头像/图标像素可能更小，不能直接当图片绘制直径。"
+    },
+    {
+      "id": "V07",
+      "label_zh": "一级评论正文框",
+      "evidence": [
+        "R06"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        157,
+        923,
+        933,
+        987
+      ],
+      "bounds_dp": [
+        57.091,
+        335.636,
+        339.273,
+        358.909
+      ],
+      "size_px": [
+        776,
+        64
+      ],
+      "size_dp": [
+        282.182,
+        23.273
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 27,
+          "class": "android.widget.TextView",
+          "bounds_px": [
+            157,
+            923,
+            933,
+            987
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "V08",
+      "label_zh": "评论内媒体框",
+      "evidence": [
+        "R06"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        157,
+        1004,
+        487,
+        1444
+      ],
+      "bounds_dp": [
+        57.091,
+        365.091,
+        177.091,
+        525.091
+      ],
+      "size_px": [
+        330,
+        440
+      ],
+      "size_dp": [
+        120,
+        160
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 30,
+          "class": "android.widget.ImageView",
+          "bounds_px": [
+            157,
+            1004,
+            487,
+            1444
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "V09",
+      "label_zh": "二级评论正文框",
+      "evidence": [
+        "R06"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        226,
+        1603,
+        933,
+        1713
+      ],
+      "bounds_dp": [
+        82.182,
+        582.909,
+        339.273,
+        622.909
+      ],
+      "size_px": [
+        707,
+        110
+      ],
+      "size_dp": [
+        257.091,
+        40
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 44,
+          "class": "android.widget.TextView",
+          "bounds_px": [
+            226,
+            1603,
+            933,
+            1713
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "V10",
+      "label_zh": "一级评论点赞控件框",
+      "evidence": [
+        "R06"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        961,
+        866,
+        1063,
+        968
+      ],
+      "bounds_dp": [
+        349.455,
+        314.909,
+        386.545,
+        352
+      ],
+      "size_px": [
+        102,
+        102
+      ],
+      "size_dp": [
+        37.091,
+        37.091
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 33,
+          "class": "android.widget.ImageView",
+          "bounds_px": [
+            961,
+            866,
+            1063,
+            968
+          ]
+        }
+      ],
+      "note_zh": "记录控件矩形；可见头像/图标像素可能更小，不能直接当图片绘制直径。"
+    },
+    {
+      "id": "I01",
+      "label_zh": "图文评论整页列表视口",
+      "evidence": [
+        "R19"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        246,
+        1080,
+        2117
+      ],
+      "bounds_dp": [
+        0,
+        89.455,
+        392.727,
+        769.818
+      ],
+      "size_px": [
+        1080,
+        1871
+      ],
+      "size_dp": [
+        392.727,
+        680.364
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 23,
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "bounds_px": [
+            0,
+            246,
+            1080,
+            2117
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "I02",
+      "label_zh": "图文一级评论正文框",
+      "evidence": [
+        "R19"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        157,
+        581,
+        933,
+        645
+      ],
+      "bounds_dp": [
+        57.091,
+        211.273,
+        339.273,
+        234.545
+      ],
+      "size_px": [
+        776,
+        64
+      ],
+      "size_dp": [
+        282.182,
+        23.273
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 50,
+          "class": "android.widget.TextView",
+          "bounds_px": [
+            157,
+            581,
+            933,
+            645
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "I03",
+      "label_zh": "图文二级评论正文框",
+      "evidence": [
+        "R19"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        226,
+        727,
+        933,
+        852
+      ],
+      "bounds_dp": [
+        82.182,
+        264.364,
+        339.273,
+        309.818
+      ],
+      "size_px": [
+        707,
+        125
+      ],
+      "size_dp": [
+        257.091,
+        45.455
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 63,
+          "class": "android.widget.TextView",
+          "bounds_px": [
+            226,
+            727,
+            933,
+            852
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S01",
+      "label_zh": "搜索顶栏",
+      "evidence": [
+        "R59"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        92,
+        1080,
+        213
+      ],
+      "bounds_dp": [
+        0,
+        33.455,
+        392.727,
+        77.455
+      ],
+      "size_px": [
+        1080,
+        121
+      ],
+      "size_dp": [
+        392.727,
+        44
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 128,
+          "class": "android.widget.LinearLayout",
+          "bounds_px": [
+            0,
+            92,
+            1080,
+            213
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S02",
+      "label_zh": "搜索输入胶囊",
+      "evidence": [
+        "R59"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        121,
+        108,
+        921,
+        196
+      ],
+      "bounds_dp": [
+        44,
+        39.273,
+        334.909,
+        71.273
+      ],
+      "size_px": [
+        800,
+        88
+      ],
+      "size_dp": [
+        290.909,
+        32
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 130,
+          "class": "android.widget.LinearLayout",
+          "bounds_px": [
+            121,
+            108,
+            921,
+            196
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S03",
+      "label_zh": "搜索结果首卡XML框",
+      "evidence": [
+        "R59"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "top_occluded_by_sticky_header",
+      "bounds_px": [
+        13,
+        92,
+        534,
+        894
+      ],
+      "bounds_dp": [
+        4.727,
+        33.455,
+        194.182,
+        325.091
+      ],
+      "size_px": [
+        521,
+        802
+      ],
+      "size_dp": [
+        189.455,
+        291.636
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 13,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            13,
+            92,
+            534,
+            894
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S04",
+      "label_zh": "搜索结果首卡标题框",
+      "evidence": [
+        "R59"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        41,
+        673,
+        506,
+        778
+      ],
+      "bounds_dp": [
+        14.909,
+        244.727,
+        184,
+        282.909
+      ],
+      "size_px": [
+        465,
+        105
+      ],
+      "size_dp": [
+        169.091,
+        38.182
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 16,
+          "class": "android.widget.TextView",
+          "bounds_px": [
+            41,
+            673,
+            506,
+            778
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S05",
+      "label_zh": "搜索结果作者与时间行",
+      "evidence": [
+        "R59"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        30,
+        786,
+        506,
+        880
+      ],
+      "bounds_dp": [
+        10.909,
+        285.818,
+        184,
+        320
+      ],
+      "size_px": [
+        476,
+        94
+      ],
+      "size_dp": [
+        173.091,
+        34.182
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 17,
+          "class": "android.widget.LinearLayout",
+          "bounds_px": [
+            30,
+            786,
+            506,
+            880
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S06",
+      "label_zh": "搜索结果头像控件框",
+      "evidence": [
+        "R59"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        30,
+        786,
+        124,
+        880
+      ],
+      "bounds_dp": [
+        10.909,
+        285.818,
+        45.091,
+        320
+      ],
+      "size_px": [
+        94,
+        94
+      ],
+      "size_dp": [
+        34.182,
+        34.182
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 18,
+          "class": "android.view.View",
+          "bounds_px": [
+            30,
+            786,
+            124,
+            880
+          ]
+        }
+      ],
+      "note_zh": "记录控件矩形；可见头像/图标像素可能更小，不能直接当图片绘制直径。"
+    },
+    {
+      "id": "S07",
+      "label_zh": "筛选面板",
+      "evidence": [
+        "R63"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        334,
+        1080,
+        1695
+      ],
+      "bounds_dp": [
+        0,
+        121.455,
+        392.727,
+        616.364
+      ],
+      "size_px": [
+        1080,
+        1361
+      ],
+      "size_dp": [
+        392.727,
+        494.909
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 150,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            0,
+            334,
+            1080,
+            1695
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S08",
+      "label_zh": "筛选选项滚动容器",
+      "evidence": [
+        "R63"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        334,
+        1080,
+        1563
+      ],
+      "bounds_dp": [
+        0,
+        121.455,
+        392.727,
+        568.364
+      ],
+      "size_px": [
+        1080,
+        1229
+      ],
+      "size_dp": [
+        392.727,
+        446.909
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 152,
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "bounds_px": [
+            0,
+            334,
+            1080,
+            1563
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S09",
+      "label_zh": "筛选四列第1项",
+      "evidence": [
+        "R63"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        44,
+        439,
+        275,
+        538
+      ],
+      "bounds_dp": [
+        16,
+        159.636,
+        100,
+        195.636
+      ],
+      "size_px": [
+        231,
+        99
+      ],
+      "size_dp": [
+        84,
+        36
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 156,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            44,
+            439,
+            275,
+            538
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S10",
+      "label_zh": "筛选四列第2项",
+      "evidence": [
+        "R63"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        297,
+        439,
+        528,
+        538
+      ],
+      "bounds_dp": [
+        108,
+        159.636,
+        192,
+        195.636
+      ],
+      "size_px": [
+        231,
+        99
+      ],
+      "size_dp": [
+        84,
+        36
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 160,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            297,
+            439,
+            528,
+            538
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S11",
+      "label_zh": "筛选分组标题框",
+      "evidence": [
+        "R63"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        44,
+        367,
+        200,
+        412
+      ],
+      "bounds_dp": [
+        16,
+        133.455,
+        72.727,
+        149.818
+      ],
+      "size_px": [
+        156,
+        45
+      ],
+      "size_dp": [
+        56.727,
+        16.364
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 154,
+          "class": "android.widget.TextView",
+          "bounds_px": [
+            44,
+            367,
+            200,
+            412
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S12",
+      "label_zh": "筛选选项文字框",
+      "evidence": [
+        "R63"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        112,
+        444,
+        206,
+        532
+      ],
+      "bounds_dp": [
+        40.727,
+        161.455,
+        74.909,
+        193.455
+      ],
+      "size_px": [
+        94,
+        88
+      ],
+      "size_dp": [
+        34.182,
+        32
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 159,
+          "class": "android.widget.TextView",
+          "bounds_px": [
+            112,
+            444,
+            206,
+            532
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S13",
+      "label_zh": "筛选底部操作栏",
+      "evidence": [
+        "R63"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        1563,
+        1080,
+        1695
+      ],
+      "bounds_dp": [
+        0,
+        568.364,
+        392.727,
+        616.364
+      ],
+      "size_px": [
+        1080,
+        132
+      ],
+      "size_dp": [
+        392.727,
+        48
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 248,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            0,
+            1563,
+            1080,
+            1695
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S14",
+      "label_zh": "筛选底栏竖分割线",
+      "evidence": [
+        "R63"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        539,
+        1590,
+        540,
+        1667
+      ],
+      "bounds_dp": [
+        196,
+        578.182,
+        196.364,
+        606.182
+      ],
+      "size_px": [
+        1,
+        77
+      ],
+      "size_dp": [
+        0.364,
+        28
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 253,
+          "class": "android.view.View",
+          "bounds_px": [
+            539,
+            1590,
+            540,
+            1667
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "A01",
+      "label_zh": "作者展开状态封面容器XML框",
+      "evidence": [
+        "R49"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "bottom_overlapped_by_rounded_tabs",
+      "bounds_px": [
+        0,
+        0,
+        1080,
+        1016
+      ],
+      "bounds_dp": [
+        0,
+        0,
+        392.727,
+        369.455
+      ],
+      "size_px": [
+        1080,
+        1016
+      ],
+      "size_dp": [
+        392.727,
+        369.455
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 93,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            0,
+            0,
+            1080,
+            1016
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "A02",
+      "label_zh": "作者展开状态头像控件框",
+      "evidence": [
+        "R49"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        5,
+        215,
+        302,
+        512
+      ],
+      "bounds_dp": [
+        1.818,
+        78.182,
+        109.818,
+        186.182
+      ],
+      "size_px": [
+        297,
+        297
+      ],
+      "size_dp": [
+        108,
+        108
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 66,
+          "class": "android.view.View",
+          "bounds_px": [
+            5,
+            215,
+            302,
+            512
+          ]
+        }
+      ],
+      "note_zh": "记录控件矩形；可见头像/图标像素可能更小，不能直接当图片绘制直径。"
+    },
+    {
+      "id": "A03",
+      "label_zh": "作者展开状态简介框",
+      "evidence": [
+        "R49"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        41,
+        523,
+        1039,
+        733
+      ],
+      "bounds_dp": [
+        14.909,
+        190.182,
+        377.818,
+        266.545
+      ],
+      "size_px": [
+        998,
+        210
+      ],
+      "size_dp": [
+        362.909,
+        76.364
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 74,
+          "class": "android.widget.TextView",
+          "bounds_px": [
+            41,
+            523,
+            1039,
+            733
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "A04",
+      "label_zh": "作者展开状态内容标签栏局部",
+      "evidence": [
+        "R49"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        11,
+        1005,
+        363,
+        1126
+      ],
+      "bounds_dp": [
+        4,
+        365.455,
+        132,
+        409.455
+      ],
+      "size_px": [
+        352,
+        121
+      ],
+      "size_dp": [
+        128,
+        44
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 106,
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "bounds_px": [
+            11,
+            1005,
+            363,
+            1126
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "A05",
+      "label_zh": "作者展开状态内容列表",
+      "evidence": [
+        "R49"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        1127,
+        1080,
+        2271
+      ],
+      "bounds_dp": [
+        0,
+        409.818,
+        392.727,
+        825.818
+      ],
+      "size_px": [
+        1080,
+        1144
+      ],
+      "size_dp": [
+        392.727,
+        416
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 124,
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "bounds_px": [
+            0,
+            1127,
+            1080,
+            2271
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "A06",
+      "label_zh": "作者吸顶顶部栏",
+      "evidence": [
+        "R52"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        92,
+        1080,
+        213
+      ],
+      "bounds_dp": [
+        0,
+        33.455,
+        392.727,
+        77.455
+      ],
+      "size_px": [
+        1080,
+        121
+      ],
+      "size_dp": [
+        392.727,
+        44
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 89,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            0,
+            92,
+            1080,
+            213
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "A07",
+      "label_zh": "作者吸顶内容标签栏",
+      "evidence": [
+        "R52"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        213,
+        1080,
+        334
+      ],
+      "bounds_dp": [
+        0,
+        77.455,
+        392.727,
+        121.455
+      ],
+      "size_px": [
+        1080,
+        121
+      ],
+      "size_dp": [
+        392.727,
+        44
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 97,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            0,
+            213,
+            1080,
+            334
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "A08",
+      "label_zh": "作者吸顶头像控件框",
+      "evidence": [
+        "R52"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        501,
+        115,
+        578,
+        192
+      ],
+      "bounds_dp": [
+        182.182,
+        41.818,
+        210.182,
+        69.818
+      ],
+      "size_px": [
+        77,
+        77
+      ],
+      "size_dp": [
+        28,
+        28
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 96,
+          "class": "android.view.View",
+          "bounds_px": [
+            501,
+            115,
+            578,
+            192
+          ]
+        }
+      ],
+      "note_zh": "记录控件矩形；可见头像/图标像素可能更小，不能直接当图片绘制直径。"
+    },
+    {
+      "id": "A09",
+      "label_zh": "作者吸顶内容视口",
+      "evidence": [
+        "R52"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        335,
+        1080,
+        2271
+      ],
+      "bounds_dp": [
+        0,
+        121.818,
+        392.727,
+        825.818
+      ],
+      "size_px": [
+        1080,
+        1936
+      ],
+      "size_dp": [
+        392.727,
+        704
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 116,
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "bounds_px": [
+            0,
+            335,
+            1080,
+            2271
+          ]
+        }
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "A10",
+      "label_zh": "作者吸顶首张可见卡片XML框",
+      "evidence": [
+        "R52"
+      ],
+      "method": "xml_bounds_cross_checked_with_png",
+      "visibility": "visible",
+      "bounds_px": [
+        13,
+        335,
+        534,
+        976
+      ],
+      "bounds_dp": [
+        4.727,
+        121.818,
+        194.182,
+        354.909
+      ],
+      "size_px": [
+        521,
+        641
+      ],
+      "size_dp": [
+        189.455,
+        233.091
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 117,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            13,
+            335,
+            534,
+            976
+          ]
+        }
+      ],
+      "note_zh": "已滚动后的部分卡片，XML边界受视口裁切；不用于推断完整卡片高度。"
+    },
+    {
+      "id": "F12",
+      "label_zh": "发现顶部可见应用栏",
+      "evidence": [
+        "R01"
+      ],
+      "method": "xml_bounds_minus_system_inset",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        92,
+        1080,
+        213
+      ],
+      "bounds_dp": [
+        0,
+        33.455,
+        392.727,
+        77.455
+      ],
+      "size_px": [
+        1080,
+        121
+      ],
+      "size_dp": [
+        392.727,
+        44
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 87,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            0,
+            0,
+            1080,
+            213
+          ]
+        }
+      ],
+      "note_zh": "去掉状态栏；源码不一定以此矩形作为单个控件。"
+    },
+    {
+      "id": "F13",
+      "label_zh": "两列外边距",
+      "evidence": [
+        "R01"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 13,
+      "value_dp": 4.727,
+      "axis": "x",
+      "formula": "left_card.x1=13;1080-right_card.x2=13",
+      "node_refs": [
+        21,
+        35
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "F14",
+      "label_zh": "两列中间间隙",
+      "evidence": [
+        "R01"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 12,
+      "value_dp": 4.364,
+      "axis": "x",
+      "formula": "546-534",
+      "node_refs": [
+        21,
+        35
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "F15",
+      "label_zh": "左列卡片纵向间隔",
+      "evidence": [
+        "R01"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 13,
+      "value_dp": 4.727,
+      "axis": "y",
+      "formula": "1156-1143",
+      "node_refs": [
+        21,
+        49
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "F16",
+      "label_zh": "标题相对卡片左内边距",
+      "evidence": [
+        "R01"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 28,
+      "value_dp": 10.182,
+      "axis": "x",
+      "formula": "41-13",
+      "node_refs": [
+        21,
+        28
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "F17",
+      "label_zh": "封面到底下标题框间隔",
+      "evidence": [
+        "R01"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 24,
+      "value_dp": 8.727,
+      "axis": "y",
+      "formula": "931-907",
+      "node_refs": [
+        25,
+        28
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G14",
+      "label_zh": "正文左右边距",
+      "evidence": [
+        "R27"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 41,
+      "value_dp": 14.909,
+      "axis": "x",
+      "formula": "title.x1=41;1080-title.x2=41",
+      "node_refs": [
+        46
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G15",
+      "label_zh": "标题框与话题框间隔",
+      "evidence": [
+        "R27"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 28,
+      "value_dp": 10.182,
+      "axis": "y",
+      "formula": "1770-1742",
+      "node_refs": [
+        46,
+        47
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G16",
+      "label_zh": "话题框与相关搜索框间隔",
+      "evidence": [
+        "R27"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 44,
+      "value_dp": 16,
+      "axis": "y",
+      "formula": "1930-1886",
+      "node_refs": [
+        47,
+        48
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G17",
+      "label_zh": "媒体底到指示器容器上沿",
+      "evidence": [
+        "R27"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 50,
+      "value_dp": 18.182,
+      "axis": "y",
+      "formula": "1632-1582",
+      "node_refs": [
+        31,
+        35
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "G18",
+      "label_zh": "数字页码距媒体顶/右边",
+      "evidence": [
+        "R27"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 28,
+      "value_dp": 10.182,
+      "axis": "xy",
+      "formula": "274-246;1080-1052",
+      "node_refs": [
+        31,
+        34
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "V11",
+      "label_zh": "二级正文相对一级正文缩进",
+      "evidence": [
+        "R06"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 69,
+      "value_dp": 25.091,
+      "axis": "x",
+      "formula": "226-157",
+      "node_refs": [
+        27,
+        44
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "V12",
+      "label_zh": "一级头像与正文间隔",
+      "evidence": [
+        "R06"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 28,
+      "value_dp": 10.182,
+      "axis": "x",
+      "formula": "157-129",
+      "node_refs": [
+        22,
+        27
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "V13",
+      "label_zh": "评论列表实际未被输入栏覆盖的区域",
+      "evidence": [
+        "R06"
+      ],
+      "method": "xml_bounds_intersection_with_visible_layers",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        839,
+        1080,
+        2115
+      ],
+      "bounds_dp": [
+        0,
+        305.091,
+        392.727,
+        769.091
+      ],
+      "size_px": [
+        1080,
+        1276
+      ],
+      "size_dp": [
+        392.727,
+        464
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 18,
+          "class": "androidx.recyclerview.widget.RecyclerView",
+          "bounds_px": [
+            0,
+            839,
+            1080,
+            2139
+          ]
+        },
+        {
+          "node_index_0_based": 76,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            0,
+            2115,
+            1080,
+            2271
+          ]
+        }
+      ],
+      "note_zh": "列表XML底为2139，底部24px被输入栏覆盖；不能把完整XML框当可见区域。"
+    },
+    {
+      "id": "V14",
+      "label_zh": "视频面板上方视频可见横向框",
+      "evidence": [
+        "R06"
+      ],
+      "method": "png_vertical_black_to_video_edges",
+      "visibility": "visible",
+      "bounds_px": [
+        324,
+        92,
+        756,
+        633
+      ],
+      "bounds_dp": [
+        117.818,
+        33.455,
+        274.909,
+        230.182
+      ],
+      "size_px": [
+        432,
+        541
+      ],
+      "size_dp": [
+        157.091,
+        196.727
+      ],
+      "node_refs": [],
+      "note_zh": "这是被面板裁切后的画面窗口，不是原视频完整显示高度或原始分辨率。"
+    },
+    {
+      "id": "S15",
+      "label_zh": "搜索吸顶条件行",
+      "evidence": [
+        "R59"
+      ],
+      "method": "png_verified_visible_row_with_xml_boundary",
+      "visibility": "visible",
+      "bounds_px": [
+        0,
+        213,
+        1080,
+        335
+      ],
+      "bounds_dp": [
+        0,
+        77.455,
+        392.727,
+        121.818
+      ],
+      "size_px": [
+        1080,
+        122
+      ],
+      "size_dp": [
+        392.727,
+        44.364
+      ],
+      "node_refs": [],
+      "note_zh": "分类栏XML仍在y92..213但被搜索顶栏遮住，本图没有可见的分类栏。"
+    },
+    {
+      "id": "S16",
+      "label_zh": "搜索首卡当前可见部分",
+      "evidence": [
+        "R59"
+      ],
+      "method": "xml_bounds_intersection_with_visible_layers",
+      "visibility": "visible",
+      "bounds_px": [
+        13,
+        335,
+        534,
+        894
+      ],
+      "bounds_dp": [
+        4.727,
+        121.818,
+        194.182,
+        325.091
+      ],
+      "size_px": [
+        521,
+        559
+      ],
+      "size_dp": [
+        189.455,
+        203.273
+      ],
+      "node_refs": [
+        {
+          "node_index_0_based": 13,
+          "class": "android.widget.FrameLayout",
+          "bounds_px": [
+            13,
+            92,
+            534,
+            894
+          ]
+        }
+      ],
+      "note_zh": "原卡片从y92开始，顶部被搜索栏及条件行遮住；不能由剩余封面高推断原封面比例。"
+    },
+    {
+      "id": "S17",
+      "label_zh": "筛选按钮水平/垂直间隙",
+      "evidence": [
+        "R63"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 22,
+      "value_dp": 8,
+      "axis": "xy",
+      "formula": "297-275;560-538",
+      "node_refs": [
+        156,
+        160,
+        172
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S18",
+      "label_zh": "筛选选项区域左边距",
+      "evidence": [
+        "R63"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 44,
+      "value_dp": 16,
+      "axis": "x",
+      "formula": "first_chip.x1=44",
+      "node_refs": [
+        156
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S19",
+      "label_zh": "筛选组之间间隔",
+      "evidence": [
+        "R63"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 44,
+      "value_dp": 16,
+      "axis": "y",
+      "formula": "703-659;918-874;1133-1089",
+      "node_refs": [
+        153,
+        176,
+        195,
+        214
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "S20",
+      "label_zh": "筛选组标题到按钮间隔",
+      "evidence": [
+        "R63"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 27,
+      "value_dp": 9.818,
+      "axis": "y",
+      "formula": "439-412",
+      "node_refs": [
+        154,
+        156
+      ],
+      "note_zh": ""
+    },
+    {
+      "id": "A11",
+      "label_zh": "作者标签栏上下两状态位置差",
+      "evidence": [
+        "R49",
+        "R52"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 792,
+      "value_dp": 288,
+      "axis": "y",
+      "formula": "1005-213",
+      "node_refs": [],
+      "note_zh": "这是两个稳定状态位置差，不能作为滑动阈值或动画位移时长。"
+    },
+    {
+      "id": "A12",
+      "label_zh": "作者展开列表首卡顶部间隔",
+      "evidence": [
+        "R49"
+      ],
+      "method": "difference_of_verified_xml_bounds",
+      "value_px": 13,
+      "value_dp": 4.727,
+      "axis": "y",
+      "formula": "1140-1127",
+      "node_refs": [
+        124,
+        125
+      ],
+      "note_zh": ""
+    }
+  ],
+  "color_samples": [
+    {
+      "id": "C01",
+      "label_zh": "列表间隙背景",
+      "evidence": [
+        "R01"
+      ],
+      "method": "ranked_RGB_pixel_frequency_in_PNG_crop",
+      "region_px": [
+        535,
+        400,
+        545,
+        700
+      ],
+      "rank_0_based": 0,
+      "rgb": [
+        250,
+        250,
+        250
+      ],
+      "hex": "#FAFAFA",
+      "count_pixels": 3000,
+      "area_pixels": 3000,
+      "note_zh": "仅截图最终合成像素；不是APK资源值或经过校准的品牌色。抗锯齿、透明叠层、内容压缩均可能影响邻近像素。"
+    },
+    {
+      "id": "C02",
+      "label_zh": "白色卡片底",
+      "evidence": [
+        "R01"
+      ],
+      "method": "ranked_RGB_pixel_frequency_in_PNG_crop",
+      "region_px": [
+        20,
+        920,
+        530,
+        1140
+      ],
+      "rank_0_based": 0,
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "hex": "#FFFFFF",
+      "count_pixels": 97960,
+      "area_pixels": 112200,
+      "note_zh": "仅截图最终合成像素；不是APK资源值或经过校准的品牌色。抗锯齿、透明叠层、内容压缩均可能影响邻近像素。"
+    },
+    {
+      "id": "C03",
+      "label_zh": "选中指示线",
+      "evidence": [
+        "R01"
+      ],
+      "method": "ranked_RGB_pixel_frequency_in_PNG_crop",
+      "region_px": [
+        496,
+        190,
+        584,
+        197
+      ],
+      "rank_0_based": 0,
+      "rgb": [
+        255,
+        36,
+        66
+      ],
+      "hex": "#FF2442",
+      "count_pixels": 450,
+      "area_pixels": 616,
+      "note_zh": "仅截图最终合成像素；不是APK资源值或经过校准的品牌色。抗锯齿、透明叠层、内容压缩均可能影响邻近像素。"
+    },
+    {
+      "id": "C04",
+      "label_zh": "标题主要深色像素",
+      "evidence": [
+        "R27"
+      ],
+      "method": "ranked_RGB_pixel_frequency_in_PNG_crop",
+      "region_px": [
+        41,
+        1688,
+        1039,
+        1742
+      ],
+      "rank_0_based": 1,
+      "rgb": [
+        51,
+        51,
+        51
+      ],
+      "hex": "#333333",
+      "count_pixels": 6701,
+      "area_pixels": 53892,
+      "note_zh": "仅截图最终合成像素；不是APK资源值或经过校准的品牌色。抗锯齿、透明叠层、内容压缩均可能影响邻近像素。"
+    },
+    {
+      "id": "C05",
+      "label_zh": "话题主要蓝色像素",
+      "evidence": [
+        "R27"
+      ],
+      "method": "ranked_RGB_pixel_frequency_in_PNG_crop",
+      "region_px": [
+        41,
+        1770,
+        1039,
+        1886
+      ],
+      "rank_0_based": 1,
+      "rgb": [
+        19,
+        54,
+        103
+      ],
+      "hex": "#133667",
+      "count_pixels": 9876,
+      "area_pixels": 115768,
+      "note_zh": "仅截图最终合成像素；不是APK资源值或经过校准的品牌色。抗锯齿、透明叠层、内容压缩均可能影响邻近像素。"
+    },
+    {
+      "id": "C06",
+      "label_zh": "相关搜索容器浅底",
+      "evidence": [
+        "R27"
+      ],
+      "method": "ranked_RGB_pixel_frequency_in_PNG_crop",
+      "region_px": [
+        80,
+        1935,
+        1000,
+        1948
+      ],
+      "rank_0_based": 0,
+      "rgb": [
+        244,
+        244,
+        245
+      ],
+      "hex": "#F4F4F5",
+      "count_pixels": 11960,
+      "area_pixels": 11960,
+      "note_zh": "仅截图最终合成像素；不是APK资源值或经过校准的品牌色。抗锯齿、透明叠层、内容压缩均可能影响邻近像素。"
+    },
+    {
+      "id": "C07",
+      "label_zh": "筛选选中底",
+      "evidence": [
+        "R63"
+      ],
+      "method": "ranked_RGB_pixel_frequency_in_PNG_crop",
+      "region_px": [
+        70,
+        450,
+        100,
+        520
+      ],
+      "rank_0_based": 0,
+      "rgb": [
+        255,
+        237,
+        240
+      ],
+      "hex": "#FFEDF0",
+      "count_pixels": 2100,
+      "area_pixels": 2100,
+      "note_zh": "仅截图最终合成像素；不是APK资源值或经过校准的品牌色。抗锯齿、透明叠层、内容压缩均可能影响邻近像素。"
+    },
+    {
+      "id": "C08",
+      "label_zh": "筛选未选中底",
+      "evidence": [
+        "R63"
+      ],
+      "method": "ranked_RGB_pixel_frequency_in_PNG_crop",
+      "region_px": [
+        310,
+        450,
+        350,
+        520
+      ],
+      "rank_0_based": 0,
+      "rgb": [
+        244,
+        244,
+        245
+      ],
+      "hex": "#F4F4F5",
+      "count_pixels": 2800,
+      "area_pixels": 2800,
+      "note_zh": "仅截图最终合成像素；不是APK资源值或经过校准的品牌色。抗锯齿、透明叠层、内容压缩均可能影响邻近像素。"
+    },
+    {
+      "id": "C09",
+      "label_zh": "筛选选中主要文字像素",
+      "evidence": [
+        "R63"
+      ],
+      "method": "ranked_RGB_pixel_frequency_in_PNG_crop",
+      "region_px": [
+        112,
+        444,
+        206,
+        532
+      ],
+      "rank_0_based": 1,
+      "rgb": [
+        255,
+        36,
+        66
+      ],
+      "hex": "#FF2442",
+      "count_pixels": 610,
+      "area_pixels": 8272,
+      "note_zh": "仅截图最终合成像素；不是APK资源值或经过校准的品牌色。抗锯齿、透明叠层、内容压缩均可能影响邻近像素。"
+    },
+    {
+      "id": "C10",
+      "label_zh": "评论输入胶囊底",
+      "evidence": [
+        "R06"
+      ],
+      "method": "ranked_RGB_pixel_frequency_in_PNG_crop",
+      "region_px": [
+        400,
+        2145,
+        500,
+        2160
+      ],
+      "rank_0_based": 0,
+      "rgb": [
+        244,
+        244,
+        245
+      ],
+      "hex": "#F4F4F5",
+      "count_pixels": 1500,
+      "area_pixels": 1500,
+      "note_zh": "仅截图最终合成像素；不是APK资源值或经过校准的品牌色。抗锯齿、透明叠层、内容压缩均可能影响邻近像素。"
+    },
+    {
+      "id": "C11",
+      "label_zh": "搜索打开前左卡标题主要像素",
+      "evidence": [
+        "R59"
+      ],
+      "method": "ranked_RGB_pixel_frequency_in_PNG_crop",
+      "region_px": [
+        41,
+        673,
+        506,
+        778
+      ],
+      "rank_0_based": 1,
+      "rgb": [
+        51,
+        51,
+        51
+      ],
+      "hex": "#333333",
+      "count_pixels": 6657,
+      "area_pixels": 48825,
+      "note_zh": "仅截图最终合成像素；不是APK资源值或经过校准的品牌色。抗锯齿、透明叠层、内容压缩均可能影响邻近像素。"
+    },
+    {
+      "id": "C12",
+      "label_zh": "搜索返回后左卡标题主要像素",
+      "evidence": [
+        "R61"
+      ],
+      "method": "ranked_RGB_pixel_frequency_in_PNG_crop",
+      "region_px": [
+        41,
+        673,
+        506,
+        778
+      ],
+      "rank_0_based": 1,
+      "rgb": [
+        153,
+        153,
+        153
+      ],
+      "hex": "#999999",
+      "count_pixels": 6714,
+      "area_pixels": 48825,
+      "note_zh": "仅截图最终合成像素；不是APK资源值或经过校准的品牌色。抗锯齿、透明叠层、内容压缩均可能影响邻近像素。"
+    }
+  ],
+  "raster_text_bands": [
+    {
+      "evidence": [
+        "R01"
+      ],
+      "label_zh": "双列卡片双行标题",
+      "region_px": [
+        41,
+        931,
+        507,
+        1036
+      ],
+      "method": "rows_with_at_least_10_pixels_whose_max_RGB_is_below_150",
+      "row_bands_inclusive_px": [
+        [
+          935,
+          971
+        ],
+        [
+          997,
+          1029
+        ]
+      ],
+      "glyph_band_heights_px": [
+        37,
+        33
+      ],
+      "note_zh": "只描述该段文字的光栅占用；字符/表情/抗锯齿会改变轮廓，不等于字号、基线、textSize、lineHeight或字重。"
+    },
+    {
+      "evidence": [
+        "R27"
+      ],
+      "label_zh": "图文详情标题",
+      "region_px": [
+        41,
+        1688,
+        1039,
+        1742
+      ],
+      "method": "rows_with_at_least_10_pixels_whose_max_RGB_is_below_150",
+      "row_bands_inclusive_px": [
+        [
+          1692,
+          1734
+        ]
+      ],
+      "glyph_band_heights_px": [
+        43
+      ],
+      "note_zh": "只描述该段文字的光栅占用；字符/表情/抗锯齿会改变轮廓，不等于字号、基线、textSize、lineHeight或字重。"
+    },
+    {
+      "evidence": [
+        "R27"
+      ],
+      "label_zh": "图文双行话题",
+      "region_px": [
+        41,
+        1770,
+        1039,
+        1886
+      ],
+      "method": "rows_with_at_least_10_pixels_whose_max_RGB_is_below_150",
+      "row_bands_inclusive_px": [
+        [
+          1778,
+          1814
+        ],
+        [
+          1843,
+          1879
+        ]
+      ],
+      "glyph_band_heights_px": [
+        37,
+        37
+      ],
+      "note_zh": "只描述该段文字的光栅占用；字符/表情/抗锯齿会改变轮廓，不等于字号、基线、textSize、lineHeight或字重。"
+    },
+    {
+      "evidence": [
+        "R59"
+      ],
+      "label_zh": "搜索双行卡片标题",
+      "region_px": [
+        41,
+        673,
+        506,
+        778
+      ],
+      "method": "rows_with_at_least_10_pixels_whose_max_RGB_is_below_150",
+      "row_bands_inclusive_px": [
+        [
+          677,
+          713
+        ],
+        [
+          735,
+          771
+        ]
+      ],
+      "glyph_band_heights_px": [
+        37,
+        37
+      ],
+      "note_zh": "只描述该段文字的光栅占用；字符/表情/抗锯齿会改变轮廓，不等于字号、基线、textSize、lineHeight或字重。"
+    }
+  ],
+  "comparisons": [
+    {
+      "label_zh": "横向翻页前后主要纵向布局",
+      "evidence": [
+        "R27",
+        "R29"
+      ],
+      "node_indices_0_based": [
+        31,
+        35,
+        46,
+        47,
+        48,
+        54
+      ],
+      "method": "equality_of_selected_class_bounds_text_content_desc_without_exporting_text",
+      "equal": true,
+      "record_sha256": [
+        "6501e0a6c2a2b0fd136c3de483dda61945a6b9f975b0f9cac9bb5d78bf1e028e",
+        "6501e0a6c2a2b0fd136c3de483dda61945a6b9f975b0f9cac9bb5d78bf1e028e"
+      ],
+      "note_zh": "只验证所列XML节点；截图早于XML采集。不证明全局持久性、旋转恢复或动画过程。"
+    },
+    {
+      "label_zh": "作者笔记切换返回的可见页面节点子集",
+      "evidence": [
+        "R50",
+        "R52"
+      ],
+      "node_indices_0_based": [
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162
+      ],
+      "method": "equality_of_selected_class_bounds_text_content_desc_without_exporting_text",
+      "equal": true,
+      "record_sha256": [
+        "4fedfa1b9c6eb4fe775a8beb7489aa06e0f10adabab5113d0de6bc0eb6caf0d8",
+        "4fedfa1b9c6eb4fe775a8beb7489aa06e0f10adabab5113d0de6bc0eb6caf0d8"
+      ],
+      "note_zh": "只验证所列XML节点；截图早于XML采集。不证明全局持久性、旋转恢复或动画过程。R50与R52截图存在56px位移，原因未确定，不能认定逐像素恢复。"
+    },
+    {
+      "label_zh": "搜索返回后列表节点子集",
+      "evidence": [
+        "R59",
+        "R61"
+      ],
+      "node_indices_0_based": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76
+      ],
+      "method": "equality_of_selected_class_bounds_text_content_desc_without_exporting_text",
+      "equal": true,
+      "record_sha256": [
+        "ee3d728186bced342891127882e662c772cb6c744add4a90a7e057e4191afa84",
+        "ee3d728186bced342891127882e662c772cb6c744add4a90a7e057e4191afa84"
+      ],
+      "note_zh": "只验证所列XML节点；截图早于XML采集。不证明全局持久性、旋转恢复或动画过程。返回后左卡标题像素变灰；XML一致不等于颜色或截图一致。"
+    }
+  ],
+  "raster_state_comparisons": {
+    "author_timing_mismatch": {
+      "evidence": [
+        "R50",
+        "R52"
+      ],
+      "method": "minimum_mean_absolute_RGB_difference_over_integer_vertical_translation",
+      "r50_crop_px": [
+        41,
+        400,
+        506,
+        650
+      ],
+      "candidate_shift_px": [
+        -100,
+        100
+      ],
+      "best_r52_shift_px": -56,
+      "best_mean_absolute_RGB_difference": 0,
+      "zero_shift_mean_absolute_RGB_difference": 39.528387,
+      "note_zh": "只对这一静态图片区域做平移匹配。负值表示R52内容比R50更靠上；不能判断中间动画曲线。"
+    },
+    "search_read_style": {
+      "evidence": [
+        "R59",
+        "R61"
+      ],
+      "method": "exact_RGB_frequency_in_same_title_bounds_with_unopened_right_card_control",
+      "samples": [
+        {
+          "evidence": "R59",
+          "region_px": [
+            41,
+            673,
+            506,
+            778
+          ],
+          "role": "left_before",
+          "pixels_333333": 6657,
+          "pixels_999999": 10,
+          "pixels_ffffff": 35856,
+          "top_four_RGB": [
+            {
+              "rgb": [
+                255,
+                255,
+                255
+              ],
+              "count": 35856
+            },
+            {
+              "rgb": [
+                51,
+                51,
+                51
+              ],
+              "count": 6657
+            },
+            {
+              "rgb": [
+                237,
+                237,
+                237
+              ],
+              "count": 403
+            },
+            {
+              "rgb": [
+                226,
+                226,
+                226
+              ],
+              "count": 289
+            }
+          ]
+        },
+        {
+          "evidence": "R61",
+          "region_px": [
+            41,
+            673,
+            506,
+            778
+          ],
+          "role": "left_after",
+          "pixels_333333": 0,
+          "pixels_999999": 6714,
+          "pixels_ffffff": 35917,
+          "top_four_RGB": [
+            {
+              "rgb": [
+                255,
+                255,
+                255
+              ],
+              "count": 35917
+            },
+            {
+              "rgb": [
+                153,
+                153,
+                153
+              ],
+              "count": 6714
+            },
+            {
+              "rgb": [
+                243,
+                243,
+                243
+              ],
+              "count": 391
+            },
+            {
+              "rgb": [
+                237,
+                237,
+                237
+              ],
+              "count": 309
+            }
+          ]
+        },
+        {
+          "evidence": "R59",
+          "region_px": [
+            574,
+            675,
+            1039,
+            780
+          ],
+          "role": "right_control_before",
+          "pixels_333333": 5615,
+          "pixels_999999": 18,
+          "pixels_ffffff": 37486,
+          "top_four_RGB": [
+            {
+              "rgb": [
+                255,
+                255,
+                255
+              ],
+              "count": 37486
+            },
+            {
+              "rgb": [
+                51,
+                51,
+                51
+              ],
+              "count": 5615
+            },
+            {
+              "rgb": [
+                109,
+                109,
+                109
+              ],
+              "count": 287
+            },
+            {
+              "rgb": [
+                237,
+                237,
+                237
+              ],
+              "count": 226
+            }
+          ]
+        },
+        {
+          "evidence": "R61",
+          "region_px": [
+            574,
+            675,
+            1039,
+            780
+          ],
+          "role": "right_control_after",
+          "pixels_333333": 5615,
+          "pixels_999999": 18,
+          "pixels_ffffff": 37486,
+          "top_four_RGB": [
+            {
+              "rgb": [
+                255,
+                255,
+                255
+              ],
+              "count": 37486
+            },
+            {
+              "rgb": [
+                51,
+                51,
+                51
+              ],
+              "count": 5615
+            },
+            {
+              "rgb": [
+                109,
+                109,
+                109
+              ],
+              "count": 287
+            },
+            {
+              "rgb": [
+                237,
+                237,
+                237
+              ],
+              "count": 226
+            }
+          ]
+        }
+      ],
+      "observation_zh": "打开并返回后，左卡标题主要深色像素变灰；右卡作为未打开对照。",
+      "inference_zh": "与已读状态样式相符，仅当前样本成立，未验证重启持久化或其他搜索类型。"
+    }
+  },
+  "annotations": [
+    {
+      "file": "01-feed-layout.png",
+      "evidence": [
+        "R01"
+      ],
+      "size_px": [
+        1160,
+        1280
+      ],
+      "sha256": "81eacec7d0a336eaa18bb89894ed44304b5b2a48cc12a0c7bea7a12edaa0ce24",
+      "crop_original_px": [
+        0,
+        92,
+        1080,
+        2271
+      ],
+      "screen_scale": 0.5,
+      "contains_redaction": true
+    },
+    {
+      "file": "02-gallery-layout.png",
+      "evidence": [
+        "R27"
+      ],
+      "size_px": [
+        1160,
+        1280
+      ],
+      "sha256": "433483c0391420f0f9464638e3cee69dd8db9f33ac195896520b3c680f223f3b",
+      "crop_original_px": [
+        0,
+        92,
+        1080,
+        2271
+      ],
+      "screen_scale": 0.5,
+      "contains_redaction": true
+    },
+    {
+      "file": "03-video-comments-layout.png",
+      "evidence": [
+        "R06"
+      ],
+      "size_px": [
+        1160,
+        1280
+      ],
+      "sha256": "f1af0e876a290188e28afd5aec8bc15d2e49061469bb2ebb5fb0244d3f9b5dcc",
+      "crop_original_px": [
+        0,
+        92,
+        1080,
+        2271
+      ],
+      "screen_scale": 0.5,
+      "contains_redaction": true
+    },
+    {
+      "file": "04-search-filter-layout.png",
+      "evidence": [
+        "R63"
+      ],
+      "size_px": [
+        1160,
+        1280
+      ],
+      "sha256": "fdf7648617a6da9d608d9a819af8f5e6ed6a62b39773a42efffae477e7deb68f",
+      "crop_original_px": [
+        0,
+        92,
+        1080,
+        2271
+      ],
+      "screen_scale": 0.5,
+      "contains_redaction": true
+    },
+    {
+      "file": "05-author-sticky-layout.png",
+      "evidence": [
+        "R52"
+      ],
+      "size_px": [
+        1160,
+        1280
+      ],
+      "sha256": "4997ba6e37f852d8cac7525f7a8b457db21c1c97e788c780b8c0f9b4e91f48bf",
+      "crop_original_px": [
+        0,
+        92,
+        1080,
+        2271
+      ],
+      "screen_scale": 0.5,
+      "contains_redaction": true
+    },
+    {
+      "file": "06-search-results-layout.png",
+      "evidence": [
+        "R59"
+      ],
+      "size_px": [
+        1160,
+        1280
+      ],
+      "sha256": "50005c018a569326ac7de9f00082c70aa40fe59606b7f8b75895a16adfa46a6a",
+      "crop_original_px": [
+        0,
+        92,
+        1080,
+        2271
+      ],
+      "screen_scale": 0.5,
+      "contains_redaction": true
+    }
+  ],
+  "raster_corner_samples": {
+    "evidence": [
+      "R06"
+    ],
+    "method": "first_exact_white_pixel_in_x_0_to_79_at_selected_scanlines",
+    "samples": [
+      {
+        "y_px": 633,
+        "first_pure_white_x_px": 33
+      },
+      {
+        "y_px": 634,
+        "first_pure_white_x_px": 25
+      },
+      {
+        "y_px": 638,
+        "first_pure_white_x_px": 16
+      },
+      {
+        "y_px": 643,
+        "first_pure_white_x_px": 10
+      },
+      {
+        "y_px": 650,
+        "first_pure_white_x_px": 4
+      },
+      {
+        "y_px": 659,
+        "first_pure_white_x_px": 1
+      },
+      {
+        "y_px": 666,
+        "first_pure_white_x_px": 0
+      },
+      {
+        "y_px": 670,
+        "first_pure_white_x_px": 0
+      }
+    ],
+    "inferred_radius_px_approx": 33,
+    "inferred_radius_dp_approx": 12,
+    "note_zh": "圆角轮廓约33px，仅像素推断；不是资源/outlineProvider的已知参数。"
+  },
+  "limitations_zh": [
+    "仅一个设备、纵屏、默认字体缩放，不能推定所有设备或9.49.1布局。",
+    "原始XML保留隐藏和被遮挡节点，本文件对选定区域做截图交叉核验。",
+    "dp由实时核验的密度换算，所有数值均保留原px，不倒推源码尺寸常量。",
+    "文字框高度、字形像素与字号/字重/字体族不是同一概念。",
+    "PNG像素采样仅是最终合成颜色，alpha、抗锯齿、内容压缩与色彩转换边界未解。",
+    "几何状态对比不测动画时长、曲线或fps。"
+  ]
+}

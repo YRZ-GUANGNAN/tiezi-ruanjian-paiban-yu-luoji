@@ -1,0 +1,7 @@
+    public void n() {
+        this.mCanceled.set(true);
+        o0 o0Var = this.uploader;
+        if (o0Var != null) {
+            o0Var.f195194a.a();
+        }
+    }

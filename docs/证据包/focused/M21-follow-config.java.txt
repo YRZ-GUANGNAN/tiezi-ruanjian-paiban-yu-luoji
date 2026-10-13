@@ -1,0 +1,4 @@
+    public static final boolean a() {
+        return ((Number) ((XYExperimentImpl) h.f86264a).j("image_update_style", new TypeToken<Integer>() { // from class: com.xingin.xhs.homepage.followfeed.utils.FollowFeedConfig$enableDotWithAvatar$$inlined$getValueJustOnce$1
+        }.getType(), 0)).intValue() > 0;
+    }

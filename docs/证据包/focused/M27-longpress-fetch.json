@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_fcd90ffe1a68b0a6d12767d81ae3ac693d882fa29fac8b721aa6fd726b0cf410",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.matrix.explorefeed.feedback.FeedbackService",
+    "method_name": "getLongPressInfo"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.explorefeed.feedback.FeedbackService"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"method_count\":7,\"methods\":[{\"signature\":\"dislikeRecommend(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0,\"name\":\"dislikeRecommend\",\"is_constructor\":false},{\"signature\":\"dislikeRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0,\"name\":\"dislikeRecord\",\"is_constructor\":false},{\"signature\":\"getDislikeFormInfo(java.lang.String, int, java.lang.String): io.reactivex.Observable\\u003ccom.xingin.matrix.explorefeed.feedback.entities.DisLikeBean\\u003e\",\"def_pos\":0,\"name\":\"getDislikeFormInfo\",\"is_constructor\":false},{\"signature\":\"getLongPressInfo(okhttp3.RequestBody): io.reactivex.Observable\\u003csk4.w\\u003e\",\"def_pos\":0,\"name\":\"getLongPressInfo\",\"is_constructor\":false},{\"signature\":\"shouldShowImageEmojiEntrance(java.lang.String): io.reactivex.Observable\\u003cm46.n\\u003e\",\"def_pos\":0,\"name\":\"shouldShowImageEmojiEntrance\",\"is_constructor\":false},{\"signature\":\"shouldShowImageSearchEntrance(java.lang.String, java.lang.String): io.reactivex.Observable\\u003cm46.p\\u003e\",\"def_pos\":0,\"name\":\"shouldShowImageSearchEntrance\",\"is_constructor\":false},{\"signature\":\"submitFormData(m46.f): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0,\"name\":\"submitFormData\",\"is_constructor\":false}],\"fields\":[],\"field_count\":0,\"full_name\":\"com.xingin.matrix.explorefeed.feedback.FeedbackService\",\"name\":\"FeedbackService\",\"inner_classes\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.matrix.explorefeed.feedback.FeedbackService",
+          "method_name": "getLongPressInfo",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.matrix.explorefeed.feedback.FeedbackService\",\"full_name\":\"com.xingin.matrix.explorefeed.feedback.FeedbackService.getLongPressInfo\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"getLongPressInfo\",\"overload_count\":1,\"body\":\"// method exists but has no decompiled body (native/abstract)\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.explorefeed.feedback.FeedbackService",
+    "method": {
+      "name": "getLongPressInfo",
+      "reported_signature": "getLongPressInfo(okhttp3.RequestBody): io.reactivex.Observable<sk4.w>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "not_available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "// method exists but has no decompiled body (native/abstract)",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "4e2cc6a52d6daee435fc040823a5d81bc7bf05ad992744b382cf48f5ece2fe32",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

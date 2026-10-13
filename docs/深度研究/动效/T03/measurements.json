@@ -1,0 +1,319 @@
+{
+  "sourceSha256": "1ab8a5c77773a253a89be6bb20721f5c8791defe3b9a469d0dca55650979cf08",
+  "frameCount": 62,
+  "durationSeconds": 7.9707,
+  "timeBase": "1/90000",
+  "frames": [
+    {
+      "index": 0,
+      "ptsSeconds": 0.0,
+      "appMeanAbsDelta": 0
+    },
+    {
+      "index": 1,
+      "ptsSeconds": 0.902589,
+      "appMeanAbsDelta": 0.13209310227658852
+    },
+    {
+      "index": 2,
+      "ptsSeconds": 0.9363,
+      "appMeanAbsDelta": 0.05125155736776532
+    },
+    {
+      "index": 3,
+      "ptsSeconds": 0.994189,
+      "appMeanAbsDelta": 0.023247253369577527
+    },
+    {
+      "index": 4,
+      "ptsSeconds": 1.002233,
+      "appMeanAbsDelta": 0.04870313738815268
+    },
+    {
+      "index": 5,
+      "ptsSeconds": 1.012667,
+      "appMeanAbsDelta": 0.11606637218258013
+    },
+    {
+      "index": 6,
+      "ptsSeconds": 1.020022,
+      "appMeanAbsDelta": 0.03464435383395628
+    },
+    {
+      "index": 7,
+      "ptsSeconds": 1.035878,
+      "appMeanAbsDelta": 0.38247536527353043
+    },
+    {
+      "index": 8,
+      "ptsSeconds": 1.044056,
+      "appMeanAbsDelta": 2.5274946200022654
+    },
+    {
+      "index": 9,
+      "ptsSeconds": 1.052233,
+      "appMeanAbsDelta": 7.077202967493488
+    },
+    {
+      "index": 10,
+      "ptsSeconds": 1.061989,
+      "appMeanAbsDelta": 10.444345339223014
+    },
+    {
+      "index": 11,
+      "ptsSeconds": 1.068844,
+      "appMeanAbsDelta": 12.662334352701325
+    },
+    {
+      "index": 12,
+      "ptsSeconds": 1.077222,
+      "appMeanAbsDelta": 13.97048080190282
+    },
+    {
+      "index": 13,
+      "ptsSeconds": 1.085378,
+      "appMeanAbsDelta": 15.452401177936347
+    },
+    {
+      "index": 14,
+      "ptsSeconds": 1.093933,
+      "appMeanAbsDelta": 15.619025370936686
+    },
+    {
+      "index": 15,
+      "ptsSeconds": 1.102233,
+      "appMeanAbsDelta": 15.806079397440254
+    },
+    {
+      "index": 16,
+      "ptsSeconds": 1.110711,
+      "appMeanAbsDelta": 15.825815494393476
+    },
+    {
+      "index": 17,
+      "ptsSeconds": 1.119089,
+      "appMeanAbsDelta": 15.48766847887643
+    },
+    {
+      "index": 18,
+      "ptsSeconds": 1.127244,
+      "appMeanAbsDelta": 15.554422924453505
+    },
+    {
+      "index": 19,
+      "ptsSeconds": 1.1353,
+      "appMeanAbsDelta": 15.607543323139653
+    },
+    {
+      "index": 20,
+      "ptsSeconds": 1.143589,
+      "appMeanAbsDelta": 14.61264016309888
+    },
+    {
+      "index": 21,
+      "ptsSeconds": 1.151878,
+      "appMeanAbsDelta": 14.286031826933968
+    },
+    {
+      "index": 22,
+      "ptsSeconds": 1.160578,
+      "appMeanAbsDelta": 14.86186147921622
+    },
+    {
+      "index": 23,
+      "ptsSeconds": 1.168711,
+      "appMeanAbsDelta": 13.245257107260166
+    },
+    {
+      "index": 24,
+      "ptsSeconds": 1.176844,
+      "appMeanAbsDelta": 13.01061841658172
+    },
+    {
+      "index": 25,
+      "ptsSeconds": 1.1852,
+      "appMeanAbsDelta": 13.414854456903386
+    },
+    {
+      "index": 26,
+      "ptsSeconds": 1.193956,
+      "appMeanAbsDelta": 12.045715822856495
+    },
+    {
+      "index": 27,
+      "ptsSeconds": 1.201922,
+      "appMeanAbsDelta": 11.08700022652622
+    },
+    {
+      "index": 28,
+      "ptsSeconds": 1.2102,
+      "appMeanAbsDelta": 11.023204779703251
+    },
+    {
+      "index": 29,
+      "ptsSeconds": 1.218478,
+      "appMeanAbsDelta": 9.272454411598142
+    },
+    {
+      "index": 30,
+      "ptsSeconds": 1.226756,
+      "appMeanAbsDelta": 8.527593725223694
+    },
+    {
+      "index": 31,
+      "ptsSeconds": 1.235033,
+      "appMeanAbsDelta": 8.41934250764526
+    },
+    {
+      "index": 32,
+      "ptsSeconds": 1.243467,
+      "appMeanAbsDelta": 7.075178389398573
+    },
+    {
+      "index": 33,
+      "ptsSeconds": 1.251633,
+      "appMeanAbsDelta": 6.277820251444105
+    },
+    {
+      "index": 34,
+      "ptsSeconds": 1.260078,
+      "appMeanAbsDelta": 6.125722052327557
+    },
+    {
+      "index": 35,
+      "ptsSeconds": 1.2682,
+      "appMeanAbsDelta": 5.117482161060143
+    },
+    {
+      "index": 36,
+      "ptsSeconds": 1.276567,
+      "appMeanAbsDelta": 4.537645826254389
+    },
+    {
+      "index": 37,
+      "ptsSeconds": 1.284778,
+      "appMeanAbsDelta": 3.504275682410239
+    },
+    {
+      "index": 38,
+      "ptsSeconds": 1.293444,
+      "appMeanAbsDelta": 3.257602786272511
+    },
+    {
+      "index": 39,
+      "ptsSeconds": 1.301622,
+      "appMeanAbsDelta": 2.213939857288481
+    },
+    {
+      "index": 40,
+      "ptsSeconds": 1.3098,
+      "appMeanAbsDelta": 1.8417572771548307
+    },
+    {
+      "index": 41,
+      "ptsSeconds": 1.317978,
+      "appMeanAbsDelta": 1.1856665534035564
+    },
+    {
+      "index": 42,
+      "ptsSeconds": 1.326544,
+      "appMeanAbsDelta": 0.8331351228904745
+    },
+    {
+      "index": 43,
+      "ptsSeconds": 1.334956,
+      "appMeanAbsDelta": 0.3860431532449881
+    },
+    {
+      "index": 44,
+      "ptsSeconds": 1.343589,
+      "appMeanAbsDelta": 0.3789217351908483
+    },
+    {
+      "index": 45,
+      "ptsSeconds": 1.351633,
+      "appMeanAbsDelta": 0.04319571865443425
+    },
+    {
+      "index": 46,
+      "ptsSeconds": 1.402211,
+      "appMeanAbsDelta": 0.03985445690338657
+    },
+    {
+      "index": 47,
+      "ptsSeconds": 1.410322,
+      "appMeanAbsDelta": 0.025172726243062635
+    },
+    {
+      "index": 48,
+      "ptsSeconds": 1.918356,
+      "appMeanAbsDelta": 0.024663042247140107
+    },
+    {
+      "index": 49,
+      "ptsSeconds": 1.934622,
+      "appMeanAbsDelta": 0.341516593045645
+    },
+    {
+      "index": 50,
+      "ptsSeconds": 1.942656,
+      "appMeanAbsDelta": 0.3074810284290407
+    },
+    {
+      "index": 51,
+      "ptsSeconds": 2.918033,
+      "appMeanAbsDelta": 0.4659785932721712
+    },
+    {
+      "index": 52,
+      "ptsSeconds": 3.916211,
+      "appMeanAbsDelta": 0.23303884924680032
+    },
+    {
+      "index": 53,
+      "ptsSeconds": 4.922967,
+      "appMeanAbsDelta": 0.2090978593272171
+    },
+    {
+      "index": 54,
+      "ptsSeconds": 4.939289,
+      "appMeanAbsDelta": 0.03661230037376827
+    },
+    {
+      "index": 55,
+      "ptsSeconds": 4.947522,
+      "appMeanAbsDelta": 0.0074470494959791595
+    },
+    {
+      "index": 56,
+      "ptsSeconds": 5.922167,
+      "appMeanAbsDelta": 0.003511156416355193
+    },
+    {
+      "index": 57,
+      "ptsSeconds": 5.929689,
+      "appMeanAbsDelta": 0.0021378412051194927
+    },
+    {
+      "index": 58,
+      "ptsSeconds": 6.929878,
+      "appMeanAbsDelta": 0.002477630535734511
+    },
+    {
+      "index": 59,
+      "ptsSeconds": 7.936444,
+      "appMeanAbsDelta": 0.0017697360969532224
+    },
+    {
+      "index": 60,
+      "ptsSeconds": 7.951944,
+      "appMeanAbsDelta": 0.0014157888775625778
+    },
+    {
+      "index": 61,
+      "ptsSeconds": 7.961322,
+      "appMeanAbsDelta": 0.001344999433684449
+    }
+  ],
+  "limits": "PTS are not synchronized to ADB commands; visual changes include content loading and encoding noise."
+}

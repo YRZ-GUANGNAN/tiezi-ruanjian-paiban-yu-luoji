@@ -1,0 +1,41 @@
+    @JvmOverloads
+    public final void l(d dVar, com.facebook.imagepipeline.request.a.EnumC0870a enumC0870a, Object obj) {
+        if (PatchProxy.proxyVoid3Para(dVar, enumC0870a, obj, this, XYImageView.class, 56899)) {
+            return;
+        }
+        this.f122097g = dVar;
+        if (dVar.m() && (dVar.j() != getLayoutParams().width || dVar.d() != getLayoutParams().height)) {
+            getLayoutParams().width = dVar.j();
+            getLayoutParams().height = dVar.d();
+            if ((getLayoutParams() instanceof ViewGroup.MarginLayoutParams) && dVar.f() != null) {
+                ViewGroup.LayoutParams layoutParams = getLayoutParams();
+                if (layoutParams == null) {
+                    throw new TypeCastException("null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
+                }
+                ((ViewGroup.MarginLayoutParams) layoutParams).setMargins(dVar.f().left, dVar.f().top, dVar.f().right, dVar.f().bottom);
+            }
+            setLayoutParams(getLayoutParams());
+        }
+        int i100 = w.f7458b[dVar.e().ordinal()];
+        if (i100 == 1) {
+            j7.a hierarchy = getHierarchy();
+            j7.e eVarA = j7.e.a();
+            if (dVar.a() != 0) {
+                eVarA.n(dVar.a(), dVar.b());
+            }
+            hierarchy.K(eVarA);
+        } else if (i100 == 2) {
+            getHierarchy().K(j7.e.c(dVar.c()));
+        }
+        if (dVar.g() != 0) {
+            getHierarchy().F(p69.f.h(dVar.g()));
+        }
+        if (dVar.h() != null) {
+            getHierarchy().F(dVar.h());
+        }
+        if (enumC0870a == null) {
+            h(Uri.parse(dVar.i()), obj);
+        } else {
+            setController(getControllerBuilder().C(ImageRequestBuilder.s(Uri.parse(dVar.i())).v(enumC0870a).a()).A(obj).z(true).a(getControllerBuilder().p()).build());
+        }
+    }

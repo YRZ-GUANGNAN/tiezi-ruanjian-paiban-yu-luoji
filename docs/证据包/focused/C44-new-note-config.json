@@ -1,0 +1,560 @@
+{
+  "evidence_id": "ev_634211ecfacfb3725aa2c5764215215666ff67cb07e670f08f9113b6c5512b2a",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote.PostNewNoteConfig"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":91585,\"raw_class_count\":91585,\"resource_count\":12708,\"load_duration_ms\":15113,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote.PostNewNoteConfig"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"CREATOR\",\"def_pos\":0,\"type\":\"android.os.Parcelable$Creator\"},{\"name\":\"albumSelectedPanelAbility\",\"def_pos\":0,\"type\":\"com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$c\"},{\"name\":\"albumType\",\"def_pos\":0,\"type\":\"com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$b\"},{\"name\":\"callback\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"cameraHubSelectedPage\",\"def_pos\":0,\"type\":\"com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$d\"},{\"name\":\"captureMode\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"contentNeedEnter\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"defaultOpenEditTab\",\"def_pos\":0,\"type\":\"com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$i\"},{\"name\":\"defaultThemeTab\",\"def_pos\":0,\"type\":\"com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$r\"},{\"name\":\"disablePreload\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"editType\",\"def_pos\":0,\"type\":\"com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$j\"},{\"name\":\"forbiddenGuider\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"hideOneKey\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"homeTabs\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003cjava.lang.String\\u003e\"},{\"name\":\"imageEditPageMenu\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003cjava.lang.Integer\\u003e\"},{\"name\":\"imagePublishDelay\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"isCommentToPost\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isDeeplinkFromCapa\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isFromPopup\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isHideBottomTab\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"isPostJump\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"isRequsetTemplatePopups\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isTemplateToNote\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"jumpPlatform\",\"def_pos\":0,\"type\":\"com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$JumpPlatform\"},{\"name\":\"noteTitlePlaceholder\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"postCellStyle\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"postEntrance\",\"def_pos\":0,\"type\":\"com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$m\"},{\"name\":\"postSkipLink\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"postSuccessShowShare\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"postSuccessToast\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"postingPageLaunchToast\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"progressConfig\",\"def_pos\":0,\"type\":\"com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$ProgressConfig\"},{\"name\":\"restartCapa\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"saveAlbum\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"shouldHiddenLiveTab\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"shouldUpdateSession\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"ttiResourceGroup\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"videoEditPageMenu\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003cjava.lang.Integer\\u003e\"},{\"name\":\"videoPublishDelay\",\"def_pos\":0,\"type\":\"int\"}],\"field_count\":39,\"full_name\":\"com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote.PostNewNoteConfig\",\"name\":\"PostNewNoteConfig\",\"inner_classes\":[\"com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote.PostNewNoteConfig.a\"],\"inner_class_count\":1,\"method_count\":40,\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$d, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$c, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$j, boolean, java.lang.String, int, java.lang.String, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$ProgressConfig, boolean, java.util.ArrayList\\u003cjava.lang.Integer\\u003e, java.util.ArrayList\\u003cjava.lang.Integer\\u003e, java.util.ArrayList\\u003cjava.lang.String\\u003e, boolean, int, int, int, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$m, boolean, boolean, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$i, boolean, java.lang.String, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$b, boolean, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$r, int, java.lang.String, boolean, boolean, java.lang.String, int, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$JumpPlatform, boolean, int, int, int, java.lang.String, int): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$d, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$c, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$j, boolean, java.lang.String, int, java.lang.String, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$ProgressConfig, boolean, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, boolean, int, int, int, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$m, boolean, boolean, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$i, boolean, java.lang.String, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$b, boolean, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$r, int, java.lang.String, boolean, boolean, java.lang.String, int, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$JumpPlatform, boolean, int, int, int, java.lang.String, int, int, int, kotlin.jvm.internal.DefaultConstructorMarker): void\",\"def_pos\":0},{\"name\":\"A\",\"is_constructor\":false,\"signature\":\"A(): int\",\"def_pos\":0},{\"name\":\"B\",\"is_constructor\":false,\"signature\":\"B(): boolean\",\"def_pos\":0},{\"name\":\"C\",\"is_constructor\":false,\"signature\":\"C(int): void\",\"def_pos\":0},{\"name\":\"L\",\"is_constructor\":false,\"signature\":\"L(boolean): void\",\"def_pos\":0},{\"name\":\"M\",\"is_constructor\":false,\"signature\":\"M(int): void\",\"def_pos\":0},{\"name\":\"Q\",\"is_constructor\":false,\"signature\":\"Q(java.lang.String): void\",\"def_pos\":0},{\"name\":\"R\",\"is_constructor\":false,\"signature\":\"R(boolean): void\",\"def_pos\":0},{\"name\":\"S\",\"is_constructor\":false,\"signature\":\"S(boolean): void\",\"def_pos\":0},{\"name\":\"a\",\"is_constructor\":false,\"signature\":\"a(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$c\",\"def_pos\":0},{\"name\":\"b\",\"is_constructor\":false,\"signature\":\"b(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$b\",\"def_pos\":0},{\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(): java.lang.String\",\"def_pos\":0},{\"name\":\"d\",\"is_constructor\":false,\"signature\":\"d(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$d\",\"def_pos\":0},{\"name\":\"describeContents\",\"is_constructor\":false,\"signature\":\"describeContents(): int\",\"def_pos\":0},{\"name\":\"e\",\"is_constructor\":false,\"signature\":\"e(): boolean\",\"def_pos\":0},{\"name\":\"f\",\"is_constructor\":false,\"signature\":\"f(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$i\",\"def_pos\":0},{\"name\":\"g\",\"is_constructor\":false,\"signature\":\"g(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$r\",\"def_pos\":0},{\"name\":\"h\",\"is_constructor\":false,\"signature\":\"h(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$j\",\"def_pos\":0},{\"name\":\"i\",\"is_constructor\":false,\"signature\":\"i(): int\",\"def_pos\":0},{\"name\":\"j\",\"is_constructor\":false,\"signature\":\"j(): boolean\",\"def_pos\":0},{\"name\":\"k\",\"is_constructor\":false,\"signature\":\"k(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$JumpPlatform\",\"def_pos\":0},{\"name\":\"l\",\"is_constructor\":false,\"signature\":\"l(): java.lang.String\",\"def_pos\":0},{\"name\":\"m\",\"is_constructor\":false,\"signature\":\"m(): int\",\"def_pos\":0},{\"name\":\"n\",\"is_constructor\":false,\"signature\":\"n(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$m\",\"def_pos\":0},{\"name\":\"o\",\"is_constructor\":false,\"signature\":\"o(): java.lang.String\",\"def_pos\":0},{\"name\":\"p\",\"is_constructor\":false,\"signature\":\"p(): int\",\"def_pos\":0},{\"name\":\"q\",\"is_constructor\":false,\"signature\":\"q(): java.lang.String\",\"def_pos\":0},{\"name\":\"r\",\"is_constructor\":false,\"signature\":\"r(): java.lang.String\",\"def_pos\":0},{\"name\":\"s\",\"is_constructor\":false,\"signature\":\"s(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$ProgressConfig\",\"def_pos\":0},{\"name\":\"t\",\"is_constructor\":false,\"signature\":\"t(): int\",\"def_pos\":0},{\"name\":\"u\",\"is_constructor\":false,\"signature\":\"u(): int\",\"def_pos\":0},{\"name\":\"v\",\"is_constructor\":false,\"signature\":\"v(): int\",\"def_pos\":0},{\"name\":\"w\",\"is_constructor\":false,\"signature\":\"w(): boolean\",\"def_pos\":0},{\"name\":\"writeToParcel\",\"is_constructor\":false,\"signature\":\"writeToParcel(android.os.Parcel, int): void\",\"def_pos\":0},{\"name\":\"x\",\"is_constructor\":false,\"signature\":\"x(): boolean\",\"def_pos\":0},{\"name\":\"y\",\"is_constructor\":false,\"signature\":\"y(): boolean\",\"def_pos\":0},{\"name\":\"z\",\"is_constructor\":false,\"signature\":\"z(): int\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote.PostNewNoteConfig",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$d, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$c, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$j, boolean, java.lang.String, int, java.lang.String, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$ProgressConfig, boolean, java.util.ArrayList<java.lang.Integer>, java.util.ArrayList<java.lang.Integer>, java.util.ArrayList<java.lang.String>, boolean, int, int, int, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$m, boolean, boolean, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$i, boolean, java.lang.String, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$b, boolean, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$r, int, java.lang.String, boolean, boolean, java.lang.String, int, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$JumpPlatform, boolean, int, int, int, java.lang.String, int): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$d, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$c, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$j, boolean, java.lang.String, int, java.lang.String, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$ProgressConfig, boolean, java.util.ArrayList, java.util.ArrayList, java.util.ArrayList, boolean, int, int, int, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$m, boolean, boolean, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$i, boolean, java.lang.String, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$b, boolean, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$r, int, java.lang.String, boolean, boolean, java.lang.String, int, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$JumpPlatform, boolean, int, int, int, java.lang.String, int, int, int, kotlin.jvm.internal.DefaultConstructorMarker): void",
+        "overload_index": 2,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A",
+        "reported_signature": "A(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B",
+        "reported_signature": "B(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C",
+        "reported_signature": "C(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "L",
+        "reported_signature": "L(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M",
+        "reported_signature": "M(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Q",
+        "reported_signature": "Q(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "R",
+        "reported_signature": "R(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S",
+        "reported_signature": "S(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$c",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$b",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$d",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "describeContents",
+        "reported_signature": "describeContents(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$i",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$r",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$j",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j",
+        "reported_signature": "j(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$JumpPlatform",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$m",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p",
+        "reported_signature": "p(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q",
+        "reported_signature": "q(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r",
+        "reported_signature": "r(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s",
+        "reported_signature": "s(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$ProgressConfig",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t",
+        "reported_signature": "t(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u",
+        "reported_signature": "u(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v",
+        "reported_signature": "v(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w",
+        "reported_signature": "w(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "writeToParcel",
+        "reported_signature": "writeToParcel(android.os.Parcel, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x",
+        "reported_signature": "x(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y",
+        "reported_signature": "y(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z",
+        "reported_signature": "z(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "CREATOR",
+        "reported_type": "android.os.Parcelable$Creator"
+      },
+      {
+        "name": "albumSelectedPanelAbility",
+        "reported_type": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$c"
+      },
+      {
+        "name": "albumType",
+        "reported_type": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$b"
+      },
+      {
+        "name": "callback",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "cameraHubSelectedPage",
+        "reported_type": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$d"
+      },
+      {
+        "name": "captureMode",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "contentNeedEnter",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "defaultOpenEditTab",
+        "reported_type": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$i"
+      },
+      {
+        "name": "defaultThemeTab",
+        "reported_type": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$r"
+      },
+      {
+        "name": "disablePreload",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "editType",
+        "reported_type": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$j"
+      },
+      {
+        "name": "forbiddenGuider",
+        "reported_type": "int"
+      },
+      {
+        "name": "hideOneKey",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "homeTabs",
+        "reported_type": "java.util.ArrayList<java.lang.String>"
+      },
+      {
+        "name": "imageEditPageMenu",
+        "reported_type": "java.util.ArrayList<java.lang.Integer>"
+      },
+      {
+        "name": "imagePublishDelay",
+        "reported_type": "int"
+      },
+      {
+        "name": "isCommentToPost",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isDeeplinkFromCapa",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isFromPopup",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isHideBottomTab",
+        "reported_type": "int"
+      },
+      {
+        "name": "isPostJump",
+        "reported_type": "int"
+      },
+      {
+        "name": "isRequsetTemplatePopups",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isTemplateToNote",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "jumpPlatform",
+        "reported_type": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$JumpPlatform"
+      },
+      {
+        "name": "noteTitlePlaceholder",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "postCellStyle",
+        "reported_type": "int"
+      },
+      {
+        "name": "postEntrance",
+        "reported_type": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$m"
+      },
+      {
+        "name": "postSkipLink",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "postSuccessShowShare",
+        "reported_type": "int"
+      },
+      {
+        "name": "postSuccessToast",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "postingPageLaunchToast",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "progressConfig",
+        "reported_type": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$ProgressConfig"
+      },
+      {
+        "name": "restartCapa",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "saveAlbum",
+        "reported_type": "int"
+      },
+      {
+        "name": "shouldHiddenLiveTab",
+        "reported_type": "int"
+      },
+      {
+        "name": "shouldUpdateSession",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "ttiResourceGroup",
+        "reported_type": "int"
+      },
+      {
+        "name": "videoEditPageMenu",
+        "reported_type": "java.util.ArrayList<java.lang.Integer>"
+      },
+      {
+        "name": "videoPublishDelay",
+        "reported_type": "int"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote.PostNewNoteConfig.a"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "d30f5104cf69260f4bd3723b161d2e045aae1da9065c3dcfe4d61399f528080d",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

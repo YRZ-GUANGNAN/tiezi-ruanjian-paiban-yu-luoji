@@ -1,0 +1,35 @@
+    public final void m7(float f100) {
+        if (PatchProxy.proxyVoid1Para(new Float(f100), this, NoteDetailImageDisplayPresenter.class, 298280)) {
+            return;
+        }
+        boolean z100 = f100 == 0.0f;
+        if (!ro.m.f288793a.c()) {
+            yo.c cVar = yo.c.f363521a;
+            View viewW6 = w6();
+            int i100 = l56.n.f224101o0;
+            cVar.a(f100, (ImageGalleryView) viewW6.findViewById(i100));
+            if (z100) {
+                cVar.a(f100, (ImageGalleryView) w6().findViewById(i100));
+                return;
+            }
+            return;
+        }
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(0, 0);
+        xo.g gVar = xo.g.f353713a;
+        View viewW7 = w6();
+        int i101 = l56.n.B1;
+        gVar.b(((LinearLayout) viewW7.findViewById(i101)).getContext(), f100, layoutParams, w6());
+        r7();
+        if (z100) {
+            View childAt = ((LinearLayout) w6().findViewById(i101)).getChildAt(0);
+            ImageGalleryView imageGalleryView = childAt instanceof ImageGalleryView ? (ImageGalleryView) childAt : null;
+            if (imageGalleryView == null) {
+                return;
+            }
+            ViewGroup.LayoutParams layoutParams2 = imageGalleryView.getLayoutParams();
+            Objects.requireNonNull(layoutParams2, "null cannot be cast to non-null type android.widget.LinearLayout.LayoutParams");
+            layoutParams = (LinearLayout.LayoutParams) layoutParams2;
+            gVar.b(imageGalleryView.getContext(), f100, layoutParams, w6());
+        }
+        ((ImageGalleryView) w6().findViewById(l56.n.f224101o0)).setLayoutParams(layoutParams);
+    }

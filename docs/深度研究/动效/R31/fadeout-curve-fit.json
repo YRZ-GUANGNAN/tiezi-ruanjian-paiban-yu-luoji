@@ -1,0 +1,23 @@
+{
+  "models": [
+    {
+      "power": 1,
+      "startSeconds": 5.9095,
+      "durationSeconds": 0.161,
+      "rmse": 0.042014089409497954
+    },
+    {
+      "power": 2,
+      "startSeconds": 5.86,
+      "durationSeconds": 0.195,
+      "rmse": 0.007043936582130405
+    },
+    {
+      "power": 3,
+      "startSeconds": 5.82,
+      "durationSeconds": 0.2285,
+      "rmse": 0.027399538236088563
+    }
+  ],
+  "limits": "These are explanatory fits to encoded contrast, not recovered source interpolators or constants."
+}

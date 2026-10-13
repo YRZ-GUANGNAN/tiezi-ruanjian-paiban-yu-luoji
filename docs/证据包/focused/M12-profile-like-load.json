@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_65d8dcf0a2d79b595bfa889433b0d72efce3f62cab28be15326420dd72338a2e",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository",
+    "method_name": "d"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":6,\"method_count\":6,\"methods\":[{\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true},{\"signature\":\"a(com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository, java.util.List, java.util.List, boolean, java.lang.Boolean, int, java.lang.Object): bn9.g\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false},{\"signature\":\"b(): io.reactivex.Observable\\u003cjl6.e\\u003e\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false},{\"signature\":\"c(): java.lang.String\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false},{\"signature\":\"d(int, java.lang.String, boolean, java.util.List\\u003cjava.lang.Object\\u003e): io.reactivex.Observable\\u003cbn9.g\\u003cjava.util.List\\u003cjava.lang.Object\\u003e, androidx.recyclerview.widget.DiffUtil$DiffResult\\u003e\\u003e\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false},{\"signature\":\"e(boolean, java.util.List\\u003cjava.lang.Object\\u003e): boolean\",\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false}],\"fields\":[{\"type\":\"java.lang.String\",\"name\":\"f56964a\",\"def_pos\":0},{\"type\":\"rw6.z0\",\"name\":\"f56965b\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"f56966c\",\"def_pos\":0},{\"type\":\"java.util.List\\u003cjava.lang.Object\\u003e\",\"name\":\"f56967d\",\"def_pos\":0},{\"type\":\"java.util.Queue\\u003cjava.lang.String\\u003e\",\"name\":\"f56968e\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f56969f\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"f56970g\",\"def_pos\":0},{\"type\":\"bn9.d\",\"name\":\"f56971h\",\"def_pos\":0},{\"type\":\"bn9.d\",\"name\":\"f56972i\",\"def_pos\":0}],\"field_count\":9,\"full_name\":\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository\",\"name\":\"LikesRepository\",\"inner_classes\":[\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.LikesNotesDiffCalculator\",\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.a\",\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.b\",\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.c\",\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.d\",\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.e\"]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository",
+          "method_name": "d",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository\",\"full_name\":\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.d\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"d\",\"overload_count\":1,\"body\":\"    public final Observable\\u003cg\\u003cList\\u003cObject\\u003e, DiffUtil.DiffResult\\u003e\\u003e d(final int i4, String str, final boolean z4, final List\\u003cObject\\u003e list) {\\r\\n        return (z4 ? new mz6.h().f(str) : new mz6.h().e(str)).map(new o() { // from class: kv6.c1\\r\\n            @Override // gl9.o\\r\\n            public final Object apply(Object obj) {\\r\\n                List list2 \\u003d list;\\r\\n                int i11 \\u003d i4;\\r\\n                LikesRepository likesRepository \\u003d this;\\r\\n                boolean z9 \\u003d z4;\\r\\n                Object obj2 \\u003d list2.get(i11);\\r\\n                NoteItemBean noteItemBean \\u003d obj2 instanceof NoteItemBean ? (NoteItemBean) obj2 : null;\\r\\n                NoteItemBean noteItemBean2 \\u003d noteItemBean !\\u003d null ? (NoteItemBean) noteItemBean.clone() : null;\\r\\n                ArrayList arrayList \\u003d new ArrayList(list2);\\r\\n                if (noteItemBean2 !\\u003d null) {\\r\\n                    noteItemBean2.inlikes \\u003d z9;\\r\\n                    noteItemBean2.likes +\\u003d z9 ? 1 : -1;\\r\\n                    arrayList.set(i11, noteItemBean2);\\r\\n                }\\r\\n                return LikesRepository.a(likesRepository, arrayList, list2, false, null, 12, null);\\r\\n            }\\r\\n        }).doAfterNext(new gl9.g() { // from class: kv6.w0\\r\\n            @Override // gl9.g\\r\\n            public final void accept(Object obj) {\\r\\n                this.f143878d.f56967d \\u003d (List) ((bn9.g) obj).f11909d;\\r\\n            }\\r\\n        });\\r\\n    }\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository",
+    "method": {
+      "name": "d",
+      "reported_signature": "d(int, java.lang.String, boolean, java.util.List<java.lang.Object>): io.reactivex.Observable<bn9.g<java.util.List<java.lang.Object>, androidx.recyclerview.widget.DiffUtil$DiffResult>>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final Observable<g<List<Object>, DiffUtil.DiffResult>> d(final int i4, String str, final boolean z4, final List<Object> list) {\r\n        return (z4 ? new mz6.h().f(str) : new mz6.h().e(str)).map(new o() { // from class: kv6.c1\r\n            @Override // gl9.o\r\n            public final Object apply(Object obj) {\r\n                List list2 = list;\r\n                int i11 = i4;\r\n                LikesRepository likesRepository = this;\r\n                boolean z9 = z4;\r\n                Object obj2 = list2.get(i11);\r\n                NoteItemBean noteItemBean = obj2 instanceof NoteItemBean ? (NoteItemBean) obj2 : null;\r\n                NoteItemBean noteItemBean2 = noteItemBean != null ? (NoteItemBean) noteItemBean.clone() : null;\r\n                ArrayList arrayList = new ArrayList(list2);\r\n                if (noteItemBean2 != null) {\r\n                    noteItemBean2.inlikes = z9;\r\n                    noteItemBean2.likes += z9 ? 1 : -1;\r\n                    arrayList.set(i11, noteItemBean2);\r\n                }\r\n                return LikesRepository.a(likesRepository, arrayList, list2, false, null, 12, null);\r\n            }\r\n        }).doAfterNext(new gl9.g() { // from class: kv6.w0\r\n            @Override // gl9.g\r\n            public final void accept(Object obj) {\r\n                this.f143878d.f56967d = (List) ((bn9.g) obj).f11909d;\r\n            }\r\n        });\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "05ace01aa07962830f6e660901d67ccbf598e5b1b409ceff5eff7aa2c43c9309",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

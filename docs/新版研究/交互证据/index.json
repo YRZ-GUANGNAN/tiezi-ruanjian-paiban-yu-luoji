@@ -1,0 +1,6059 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-13T15:15:44.320Z",
+  "timezone": "Asia/Shanghai",
+  "scope": "Android 手机端非购物浏览与交互观察；不包含新版本运行验证。",
+  "device": {
+    "alias": "meizu21-A",
+    "model": "MEIZU 21",
+    "androidVersion": "16",
+    "apiLevel": 36,
+    "screenPixels": [
+      1080,
+      2340
+    ],
+    "densityDpi": 440,
+    "orientation": "portrait"
+  },
+  "app": {
+    "package": "com.xingin.xhs",
+    "versionName": "8.72.0",
+    "versionCode": 8720916,
+    "installSource": "com.meizu.mstore",
+    "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+    "signatureVerified": false
+  },
+  "counts": {
+    "observationSlots": 91,
+    "observed": 89,
+    "invalid": 1,
+    "incomplete": 1,
+    "standardScreenshotHierarchyPairs": 88,
+    "timingRecordings": 1,
+    "deliveredImages": 25,
+    "findings": 30,
+    "originalCasesPartial": 31,
+    "originalCasesPending": 69,
+    "originalCasesFullyCovered": 0
+  },
+  "privacy": {
+    "excluded": [
+      "device serial",
+      "original search history",
+      "contact suggestions",
+      "followed-account screenshots",
+      "precise or nearby location screenshots",
+      "raw UI XML"
+    ],
+    "cleanup": "只移除本轮两条搜索历史；未清除原有历史。误截的其他 App 画面已删除。",
+    "publicContent": "选用的公开笔记、评论和作者资料仅为研究证据，不作为复刻产品素材。"
+  },
+  "limits": [
+    "91 个编号是观察/尝试槽位，不等于 91 个完整用例。",
+    "截图请求与返回耗时不是 App 动画时长。",
+    "UI 层级可能保留遮挡页面节点，截图与层级也不是同一采样时刻。",
+    "所有手势坐标是该手机的输入样本，不是全局触发阈值。",
+    "9.49.1 为单独的静态包，没有在本轮真机运行。"
+  ],
+  "observations": [
+    {
+      "id": "R01",
+      "sourceObservationId": "R01-home",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "capture",
+      "parameters": [],
+      "inputAtUtc": null,
+      "inputAtLocal": null,
+      "captureRequestAtUtc": "2026-10-13T05:47:49.981Z",
+      "captureRequestAtLocal": "2026-10-13T13:47:49.981+08:00",
+      "completedAtUtc": "2026-10-13T05:47:53.787Z",
+      "result": "发现首页稳定基线；首卡为公共视频 A。",
+      "findings": [
+        "N04"
+      ],
+      "originalCaseIds": [
+        "D010",
+        "D011"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "f150542703d42222975467f1096ada364aed30851e5dfe7e5f789b362bf67280",
+          "bytes": 43548,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "ef40b6c7f00c5b5ab48050036e470bfbed080f7b71abb9f6bb25a8ee4b58886d",
+          "bytes": 414,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "60b11adf492c4023e51a459eac53b8233c63fba81e24fca97e5a8da165f67260",
+          "bytes": 2364026,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R02",
+      "sourceObservationId": "R02-video-open",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "260",
+        "560"
+      ],
+      "inputAtUtc": "2026-10-13T05:48:13.015Z",
+      "inputAtLocal": "2026-10-13T13:48:13.015+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:48:14.336Z",
+      "captureRequestAtLocal": "2026-10-13T13:48:14.336+08:00",
+      "completedAtUtc": "2026-10-13T05:48:17.833Z",
+      "result": "从首页打开视频 A，自动播放；显示约 3/45 秒。",
+      "findings": [
+        "V01"
+      ],
+      "originalCaseIds": [
+        "D020",
+        "D024"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "1b920f19955895a6a2c6bd81266e0ade654d78f89b77fbcbc6c3f832c6e0ffa9",
+          "bytes": 37088,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "6a24fec04fe34a291fd29c1978cf81ad9b654a4863424c1ef629adba49f2c745",
+          "bytes": 462,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "4958e7b766e42b18a379e6c80d77fa3554a7f1349a54b50af2ec9a02987f6949",
+          "bytes": 1800069,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R03",
+      "sourceObservationId": "R03-video-pause",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "440",
+        "900"
+      ],
+      "inputAtUtc": "2026-10-13T05:48:25.801Z",
+      "inputAtLocal": "2026-10-13T13:48:25.801+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:48:27.114Z",
+      "captureRequestAtLocal": "2026-10-13T13:48:27.114+08:00",
+      "completedAtUtc": "2026-10-13T05:48:30.567Z",
+      "result": "单击视频中心后出现播放三角，进度约 12/45 秒。",
+      "findings": [
+        "V01"
+      ],
+      "originalCaseIds": [
+        "D024"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "926ca29ac785a0b72cf040a37efce769dcb6459ca14248e837d776cd173739fd",
+          "bytes": 37466,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "51d1b0c466c9b20af1f939573823e28acbb6dde2f9f013906f338f7c53be4c38",
+          "bytes": 463,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "5eeb0692a4276b6b62835f591027222382d6194d935e2e1c6f8205ab57ccc6b6",
+          "bytes": 1661828,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R03-video-pause",
+          "sourceName": "screen.png",
+          "file": "../截图/R03-video-pause.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "935ad30be98c02f471b4c1656b24bb1e36e978d2505139fc32852000c2b5dab5"
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "sourceObservationId": "R04-video-paused-confirm",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "capture",
+      "parameters": [],
+      "inputAtUtc": null,
+      "inputAtLocal": null,
+      "captureRequestAtUtc": "2026-10-13T05:48:43.697Z",
+      "captureRequestAtLocal": "2026-10-13T13:48:43.697+08:00",
+      "completedAtUtc": "2026-10-13T05:48:47.035Z",
+      "result": "后续稳定观察仍为 12/45 秒，支持暂停成立；控件仍标注“暂停”，标签不等于真实播放态。",
+      "findings": [
+        "V01",
+        "V02"
+      ],
+      "originalCaseIds": [
+        "D024"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "926ca29ac785a0b72cf040a37efce769dcb6459ca14248e837d776cd173739fd",
+          "bytes": 37466,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "71f8beea4ea18db861826215a3c66466d76873b7f6f687e1397658a18450ffa8",
+          "bytes": 430,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "b7fe779b31c3043c21a5b25b30c30939ef8810a485b36efad1d36915cc7ee457",
+          "bytes": 1661770,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R05",
+      "sourceObservationId": "R05-video-seek",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "286",
+        "2140",
+        "780",
+        "2140",
+        "800"
+      ],
+      "inputAtUtc": "2026-10-13T05:49:00.477Z",
+      "inputAtLocal": "2026-10-13T13:49:00.477+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:49:02.608Z",
+      "captureRequestAtLocal": "2026-10-13T13:49:02.608+08:00",
+      "completedAtUtc": "2026-10-13T05:49:06.957Z",
+      "result": "拖动进度条后约 36/45 秒，随后继续播放；不能说保持暂停。",
+      "findings": [
+        "V02"
+      ],
+      "originalCaseIds": [
+        "D024"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "f5e91109b0c0d88b40959fe8f27805ac78b8b22877b8012ac61b0ee224ec83a3",
+          "bytes": 37095,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "3b87ad87fc57942d575eb48a3e6c85c2ae70af29b6e7b2739cac2faa0c754683",
+          "bytes": 499,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "1fbc608201a7af3d0779f90af4c0a8084f8d5cb3e99e7c5eb47cd049e8518f2e",
+          "bytes": 2044869,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R05-video-seek",
+          "sourceName": "screen.png",
+          "file": "../截图/R05-video-seek.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "b58b8438bae3e6d0a9e3f4de695d8f0d7d289f80e6fabe3ab8dba312e2d509ea"
+        }
+      ]
+    },
+    {
+      "id": "R06",
+      "sourceObservationId": "R06-video-comments",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "1004",
+        "1330"
+      ],
+      "inputAtUtc": "2026-10-13T05:49:24.676Z",
+      "inputAtLocal": "2026-10-13T13:49:24.676+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:49:25.994Z",
+      "captureRequestAtLocal": "2026-10-13T13:49:25.994+08:00",
+      "completedAtUtc": "2026-10-13T05:49:28.785Z",
+      "result": "打开视频评论：圆角底部面板，上方视频缩小，显示 21 条评论。",
+      "findings": [
+        "V02",
+        "C01",
+        "C02"
+      ],
+      "originalCaseIds": [
+        "D027",
+        "D030"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "672613ea55c79a0023d82c65058e4e68b70fa04fe36bf9687a5c4533a6909d69",
+          "bytes": 33176,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "c06e4411aa00722de8e786ee8bebd0f2507879d8bd0260154e17d30743c08539",
+          "bytes": 468,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "70789af4596584d63209f31d1ba228588f320ae86d2b18444c13bba523aba350",
+          "bytes": 912963,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R06-video-comments",
+          "sourceName": "screen.png",
+          "file": "../截图/R06-video-comments.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "f06d60fc7f4ebdb92ae233dbe5ccedf04d249a5c1331e0f92b3ae0607b9e64d7"
+        }
+      ]
+    },
+    {
+      "id": "R07",
+      "sourceObservationId": "R07-comment-replies",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "342",
+        "1768"
+      ],
+      "inputAtUtc": "2026-10-13T05:49:50.231Z",
+      "inputAtLocal": "2026-10-13T13:49:50.231+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:49:51.572Z",
+      "captureRequestAtLocal": "2026-10-13T13:49:51.572+08:00",
+      "completedAtUtc": "2026-10-13T05:49:54.320Z",
+      "result": "展开 2 条回复，增加同级缩进的回复，并显示回复对象。",
+      "findings": [
+        "C02",
+        "C04"
+      ],
+      "originalCaseIds": [
+        "D031"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "03e98665301038cd0e13a71f701032dd4d28205c07041d3a068dcfe1718147b9",
+          "bytes": 31396,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "61ba5ad933d93bb3b13ec38ad3d6b0170d202df6806bb7df6d99f38087ac84e0",
+          "bytes": 468,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "9c5a6326baa4582f7e3ca121b5a8452163c1c474fbe183b9a40596369e3a1b52",
+          "bytes": 909668,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R07-comment-replies",
+          "sourceName": "screen.png",
+          "file": "../截图/R07-comment-replies.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "072ed707f0f42e9f3aef59c764723a05268482ac3f4030f9e697c5ac051a22dd"
+        }
+      ]
+    },
+    {
+      "id": "R08",
+      "sourceObservationId": "R08-comment-scroll",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "660",
+        "1870",
+        "660",
+        "1130",
+        "500"
+      ],
+      "inputAtUtc": "2026-10-13T05:50:03.190Z",
+      "inputAtLocal": "2026-10-13T13:50:03.190+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:50:04.989Z",
+      "captureRequestAtLocal": "2026-10-13T13:50:04.989+08:00",
+      "completedAtUtc": "2026-10-13T05:50:07.821Z",
+      "result": "评论内容向上滚动；面板标题与底部输入区保持固定。",
+      "findings": [
+        "C03",
+        "C04"
+      ],
+      "originalCaseIds": [
+        "D032"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "c7dde257baa472812c1b7471ed995f1b0d17f2c1510bd6f816ed130a4fabfd26",
+          "bytes": 44506,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "30441c7fc528755428f8913121d32f1e583e2a438db2b5328034e348139bfc97",
+          "bytes": 503,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "b4c956f3430085c714d7befa70697933254b04cb43c35b474ab0eb689586ce8f",
+          "bytes": 715505,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R08-comment-scroll",
+          "sourceName": "screen.png",
+          "file": "../截图/R08-comment-scroll.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "7605a45c5d2e47d3a0b9be4b928209241dcc783bc0bb6110b003655c62af0215"
+        }
+      ]
+    },
+    {
+      "id": "R09",
+      "sourceObservationId": "R09-comment-close",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "back",
+      "parameters": [],
+      "inputAtUtc": "2026-10-13T05:50:16.031Z",
+      "inputAtLocal": "2026-10-13T13:50:16.031+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:50:17.368Z",
+      "captureRequestAtLocal": "2026-10-13T13:50:17.368+08:00",
+      "completedAtUtc": "2026-10-13T05:50:20.593Z",
+      "result": "系统返回关闭评论面板，视频继续播放。",
+      "findings": [
+        "C03",
+        "C04"
+      ],
+      "originalCaseIds": [
+        "D027"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "8702cf1b63fce140a308e314fa553b8dc5792a7f94f5ca7a79d51c1e2c438559",
+          "bytes": 37095,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "b88e68da7bc3059c097f6fdb6bdc4606d21eb35c8a6b9f129f55664f89fe7d9a",
+          "bytes": 442,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "de0da53ab1aefb2302328808194fb893497a49ab20021bec09de19dd2974922e",
+          "bytes": 1965567,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R10",
+      "sourceObservationId": "R10-comment-reopen",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "1004",
+        "1330"
+      ],
+      "inputAtUtc": "2026-10-13T05:50:41.652Z",
+      "inputAtLocal": "2026-10-13T13:50:41.652+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:50:42.993Z",
+      "captureRequestAtLocal": "2026-10-13T13:50:42.993+08:00",
+      "completedAtUtc": "2026-10-13T05:50:45.710Z",
+      "result": "重新打开评论后回到顶部，之前展开的回复恢复折叠。",
+      "findings": [
+        "C04"
+      ],
+      "originalCaseIds": [
+        "D027",
+        "D031",
+        "D032"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "672613ea55c79a0023d82c65058e4e68b70fa04fe36bf9687a5c4533a6909d69",
+          "bytes": 33176,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "cb4b364947da4a763e8b203dd804a042548c3a382728a731748ff697ed33c9ea",
+          "bytes": 468,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "81aa74aa5f87152eecb8e69272f142d684db0cbfc302fd08fa72f2d59a127fa8",
+          "bytes": 898489,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R10-comment-reopen",
+          "sourceName": "screen.png",
+          "file": "../截图/R10-comment-reopen.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "a473bfb852c9270b51a42d6026cd1302786a7402b542e13580874dfba4e46967"
+        }
+      ]
+    },
+    {
+      "id": "R11",
+      "sourceObservationId": "R11-comment-dismiss-drag",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "516",
+        "743",
+        "516",
+        "1650",
+        "600"
+      ],
+      "inputAtUtc": "2026-10-13T05:50:55.859Z",
+      "inputAtLocal": "2026-10-13T13:50:55.859+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:50:57.772Z",
+      "captureRequestAtLocal": "2026-10-13T13:50:57.772+08:00",
+      "completedAtUtc": "2026-10-13T05:51:01.058Z",
+      "result": "从面板顶部向下拖动，关闭评论面板。",
+      "findings": [
+        "C03"
+      ],
+      "originalCaseIds": [],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "bd169f3712eb930264b1ec33f9b5ac3a9cb51cb16f0ccf839639b59d2078811f",
+          "bytes": 37095,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "2cb91f2507a437ab0a5370a39c83271c126444ae0dfbfb33fca0f43eebcec58b",
+          "bytes": 508,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "20349e88b00541fa11f3fbb8e89f80f5d0c973b66c2c29d75680349b9c834a84",
+          "bytes": 1731039,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R12",
+      "sourceObservationId": "R12-video-short-drag",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "508",
+        "1310",
+        "508",
+        "1230",
+        "650"
+      ],
+      "inputAtUtc": "2026-10-13T05:51:11.362Z",
+      "inputAtLocal": "2026-10-13T13:51:11.362+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:51:13.325Z",
+      "captureRequestAtLocal": "2026-10-13T13:51:13.325+08:00",
+      "completedAtUtc": "2026-10-13T05:51:16.622Z",
+      "result": "视频区域上拖 80px/650ms，仍是同条视频。",
+      "findings": [
+        "V03"
+      ],
+      "originalCaseIds": [
+        "D025"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "e637623d185332040d25b1cdae495010e380c97b217ee212e7b2bfb579b8ed6d",
+          "bytes": 37095,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "463a808c29318646fe95e75e960fc6e96de5a559acc839c672994036b745c1c0",
+          "bytes": 505,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "5a2b454410b31063c18388c2259b2e7cd33c146ce905e047984ad9f0769882e1",
+          "bytes": 2025447,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R13",
+      "sourceObservationId": "R13-video-next",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "505",
+        "1710",
+        "505",
+        "650",
+        "420"
+      ],
+      "inputAtUtc": "2026-10-13T05:51:26.154Z",
+      "inputAtLocal": "2026-10-13T13:51:26.154+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:51:27.882Z",
+      "captureRequestAtLocal": "2026-10-13T13:51:27.882+08:00",
+      "completedAtUtc": "2026-10-13T05:51:31.235Z",
+      "result": "上滑 1060px/420ms，切至下一条视频 B，约 3/341 秒。",
+      "findings": [
+        "V03",
+        "V04"
+      ],
+      "originalCaseIds": [
+        "D025"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "5c7a0d05564177bb879ff1cc3ad3a02f2ffdaf9ac40e59bf66efea804c418eff",
+          "bytes": 38597,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "26674daafcbd05c96ddc3cbf3bcf83c5d51ad3f7983044b5543f60051b8a585e",
+          "bytes": 498,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "42b295dc904685195e121cecfb8b69d4ffc86ba9b8b801b4ae220ad8923a95f3",
+          "bytes": 2085802,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R14",
+      "sourceObservationId": "R14-video-prev",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "505",
+        "650",
+        "505",
+        "1720",
+        "420"
+      ],
+      "inputAtUtc": "2026-10-13T05:51:38.737Z",
+      "inputAtLocal": "2026-10-13T13:51:38.737+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:51:40.467Z",
+      "captureRequestAtLocal": "2026-10-13T13:51:40.467+08:00",
+      "completedAtUtc": "2026-10-13T05:51:43.471Z",
+      "result": "下滑 1070px/420ms，回视频 A，约 44/45 秒；未从零开始。",
+      "findings": [
+        "V03",
+        "V04"
+      ],
+      "originalCaseIds": [
+        "D025"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "994196047ba451e4920aa88145116f35ce06c7965558cd34af65dcc49fc57703",
+          "bytes": 36650,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "fe96efc43eef1707b330570c7b3a1e2f78cabffbc990b3e7fc8891ee4157b30b",
+          "bytes": 498,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "6d06dd46c65b84be4d8ea5f98dc88e6e04eba9e9994afd0b9a833ad660b05431",
+          "bytes": 1417422,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R15",
+      "sourceObservationId": "R15-home-return",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "back",
+      "parameters": [],
+      "inputAtUtc": "2026-10-13T05:51:51.882Z",
+      "inputAtLocal": "2026-10-13T13:51:51.882+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:51:53.229Z",
+      "captureRequestAtLocal": "2026-10-13T13:51:53.229+08:00",
+      "completedAtUtc": "2026-10-13T05:51:56.351Z",
+      "result": "系统返回发现页；样本卡片文本及位置与 R01 对应。",
+      "findings": [
+        "N04"
+      ],
+      "originalCaseIds": [
+        "D014"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "f150542703d42222975467f1096ada364aed30851e5dfe7e5f789b362bf67280",
+          "bytes": 43548,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "404d1e5c4110a1927cd006055d4d307bec8c6188a96fc3791d2bed79e6ad6711",
+          "bytes": 440,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "4feec8e71e188a0627bfeade3bb4696a2dbe349d00e5e77b2cff352940f1815a",
+          "bytes": 2363574,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R16",
+      "sourceObservationId": "R16-feed-scroll",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "740",
+        "1800",
+        "740",
+        "650",
+        "500"
+      ],
+      "inputAtUtc": "2026-10-13T05:52:13.787Z",
+      "inputAtLocal": "2026-10-13T13:52:13.787+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:52:15.632Z",
+      "captureRequestAtLocal": "2026-10-13T13:52:15.632+08:00",
+      "completedAtUtc": "2026-10-13T05:52:18.849Z",
+      "result": "发现页上滑到列表中部，作为进入单图详情前的参考；未另采紧贴点击前的稳定帧。",
+      "findings": [
+        "N04"
+      ],
+      "originalCaseIds": [
+        "D011"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "15a503d7d57bc432d1c7cf3d5bbc1b36c514539997ba1c33449fda9fad508842",
+          "bytes": 42634,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "e8d6f1491b7fa2da5f84f10f47136d123ef33583a4daf96e18402496db8d19a5",
+          "bytes": 499,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "5549865eaead3cea9b7e467c19813eb9125a4e0bb44adfd1e0a46edb4d605bcf",
+          "bytes": 1752672,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R17",
+      "sourceObservationId": "R17-gallery-open",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "796",
+        "1100"
+      ],
+      "inputAtUtc": "2026-10-13T05:52:39.532Z",
+      "inputAtLocal": "2026-10-13T13:52:39.532+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:52:40.868Z",
+      "captureRequestAtLocal": "2026-10-13T13:52:40.868+08:00",
+      "completedAtUtc": "2026-10-13T05:52:44.108Z",
+      "result": "打开单图笔记 B，图文详情包含作者栏、正文及固定底栏。",
+      "findings": [],
+      "originalCaseIds": [
+        "D020"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "49e76a8c7e4e49cd2d5cec70a47f51cbfe89b131ec15662fd69e96644b3b1578",
+          "bytes": 21756,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "3d6c385b82c38c338c83e27793ec28dcf52f3cf040a4d07d5df91c64958bf42e",
+          "bytes": 465,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "6c35ac734130fa1519ac1f165162398a65241a120cb0fc49b0d7c12ebef70b32",
+          "bytes": 2316725,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R18",
+      "sourceObservationId": "R18-image-fullscreen",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "531",
+        "960"
+      ],
+      "inputAtUtc": "2026-10-13T05:52:54.151Z",
+      "inputAtLocal": "2026-10-13T13:52:54.151+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:52:55.444Z",
+      "captureRequestAtLocal": "2026-10-13T13:52:55.444+08:00",
+      "completedAtUtc": "2026-10-13T05:52:58.714Z",
+      "result": "单击图片中心后仍处原图文布局；本次未进入独立全屏大图。",
+      "findings": [],
+      "originalCaseIds": [
+        "D023"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "8d2d833601e3c4f2b686625aff5a1ecc3756d7f0074586abd35d007759e9b7b4",
+          "bytes": 21389,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "b22a272dfb12c94d9cefa2a66d68115b57ac626edd86d47a7607d86b249a8aff",
+          "bytes": 468,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "c558a02ed1f92d1ffb1251f2fba8b7fb178d52b84e3c50da7a2b2b53e79de92a",
+          "bytes": 2317003,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R19",
+      "sourceObservationId": "R19-image-comments",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "956",
+        "2190"
+      ],
+      "inputAtUtc": "2026-10-13T05:53:09.613Z",
+      "inputAtLocal": "2026-10-13T13:53:09.613+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:53:10.938Z",
+      "captureRequestAtLocal": "2026-10-13T13:53:10.938+08:00",
+      "completedAtUtc": "2026-10-13T05:53:13.642Z",
+      "result": "点击图文评论数后，详情整页滚到评论区；作者栏、底栏固定。",
+      "findings": [
+        "C01"
+      ],
+      "originalCaseIds": [
+        "D020",
+        "D030"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "eefb9c3fb86d36f2f289bab27638f9269c1a06ec768b007344999f71aad4bf8b",
+          "bytes": 59092,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "e9d1d64a1658cb56dc38cf8f75cdef2cd6e2c58e5f746691aa71b7b4e4fc2eca",
+          "bytes": 467,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "75232bac806506baeafc9fd06d53ab7007eacfa0a4a9ded433d6eb72115578fd",
+          "bytes": 428313,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R19-image-comments",
+          "sourceName": "screen.png",
+          "file": "../截图/R19-image-comments.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "79ebccd87f8dc4fefe3d839913957a66faf12bed70073b02c3cfee213ff18927"
+        }
+      ]
+    },
+    {
+      "id": "R20",
+      "sourceObservationId": "R20-image-scroll-back",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "650",
+        "550",
+        "650",
+        "1870",
+        "650"
+      ],
+      "inputAtUtc": "2026-10-13T05:53:23.466Z",
+      "inputAtLocal": "2026-10-13T13:53:23.466+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:53:25.421Z",
+      "captureRequestAtLocal": "2026-10-13T13:53:25.421+08:00",
+      "completedAtUtc": "2026-10-13T05:53:28.659Z",
+      "result": "向下滚动后返回图文媒体顶部。",
+      "findings": [],
+      "originalCaseIds": [
+        "D020"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "8d2d833601e3c4f2b686625aff5a1ecc3756d7f0074586abd35d007759e9b7b4",
+          "bytes": 21389,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "b5a30e9e38831691e498a76bdfe68912f3ce65aa64f48d9546853e41b35ca048",
+          "bytes": 505,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "c4faa4e567ab3949cdff0c608cf33651ae3afec3c02bbeeb49c3b9e6a4fa7546",
+          "bytes": 2316294,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R21",
+      "sourceObservationId": "R21-image-return",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "back",
+      "parameters": [],
+      "inputAtUtc": "2026-10-13T05:53:37.364Z",
+      "inputAtLocal": "2026-10-13T13:53:37.364+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:53:38.694Z",
+      "captureRequestAtLocal": "2026-10-13T13:53:38.694+08:00",
+      "completedAtUtc": "2026-10-13T05:53:41.633Z",
+      "result": "返回同一组首页卡片；相比 R16 坐标约偏移 217px，不能认定严格像素恢复。",
+      "findings": [
+        "N04"
+      ],
+      "originalCaseIds": [
+        "D014"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "af1f37f97b578eace2fb36881b7f2c3f4e8fc708f1005189272e9d5cad64e248",
+          "bytes": 43367,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "19251292211d5e2e568df2f71ac9b6a301f12359a8e3d20e77f26291448d9c33",
+          "bytes": 441,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "a545dfb430f806e5775716010743be3d722341d71747ab36e2fb4070d2bcd8a5",
+          "bytes": 1537022,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R22",
+      "sourceObservationId": "R22-search-open",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "1004",
+        "152"
+      ],
+      "inputAtUtc": "2026-10-13T05:53:57.187Z",
+      "inputAtLocal": "2026-10-13T13:53:57.187+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:53:58.494Z",
+      "captureRequestAtLocal": "2026-10-13T13:53:58.494+08:00",
+      "completedAtUtc": "2026-10-13T05:54:01.378Z",
+      "result": "进入搜索起始页；可见原有历史，原图与层级不导出。",
+      "findings": [],
+      "originalCaseIds": [
+        "D046"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "2a65c3d050650056dbce89f93f420703520b1653cf1e6b790b128e2cf0f31070",
+          "bytes": 46818,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "8e20dcc737f696e30d720da23ac5c329d8c168ff3faea9652a2eb9df1f9a5860",
+          "bytes": 464,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "3d45aa0cae0c7e2dbe8ca05d00564e62d50b5a28d99271a7ac7e34ddf35485a1",
+          "bytes": 254538,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R23",
+      "sourceObservationId": "R23-search-focus",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "421",
+        "150"
+      ],
+      "inputAtUtc": "2026-10-13T05:54:12.503Z",
+      "inputAtLocal": "2026-10-13T13:54:12.503+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:54:13.877Z",
+      "captureRequestAtLocal": "2026-10-13T13:54:13.877+08:00",
+      "completedAtUtc": "2026-10-13T05:54:16.594Z",
+      "result": "聚焦搜索输入；未对键盘高度和全部输入场景完成测量。",
+      "findings": [],
+      "originalCaseIds": [
+        "D046",
+        "D092"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "2a65c3d050650056dbce89f93f420703520b1653cf1e6b790b128e2cf0f31070",
+          "bytes": 46818,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "9633f8530064a7a5b851bf6aa8fb462ceaca28468c2e1ad2776d3d96b682c79a",
+          "bytes": 464,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "654b637bfeed6bf36ba0394849f97d2a3560f390a69eb93a4fe6311364584567",
+          "bytes": 255623,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R24",
+      "sourceObservationId": "R24-search-suggest",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "text",
+      "parameters": [
+        "PUBLIC_TEST_TERM_A"
+      ],
+      "inputAtUtc": "2026-10-13T05:54:26.411Z",
+      "inputAtLocal": "2026-10-13T13:54:26.411+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:54:27.830Z",
+      "captureRequestAtLocal": "2026-10-13T13:54:27.830+08:00",
+      "completedAtUtc": "2026-10-13T05:54:30.510Z",
+      "result": "输入本轮公共测试词 A，出现联想；没有测得防抖时长。",
+      "findings": [
+        "S01"
+      ],
+      "originalCaseIds": [
+        "D046",
+        "D047"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "4bedd75fc8cee99fd082ecad83e74fc1a9dfe5a52532cf13dd9ed080a96b0a2b",
+          "bytes": 31931,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "13786e3cd946c794bc96276abd02f3bda1c3ba7399196fdc7842124f00330c23",
+          "bytes": 461,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "3011274229b5c27e9c9604b13f1fa5a7f2cc1022a231f4f7b23983ba1fab3fa8",
+          "bytes": 207532,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R25",
+      "sourceObservationId": "R25-search-results",
+      "status": "invalid",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "994",
+        "151"
+      ],
+      "inputAtUtc": "2026-10-13T05:54:39.770Z",
+      "inputAtLocal": "2026-10-13T13:54:39.770+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:54:41.158Z",
+      "captureRequestAtLocal": "2026-10-13T13:54:41.158+08:00",
+      "completedAtUtc": "2026-10-13T05:54:44.123Z",
+      "result": "无效：前台切换到其他 App，不能作为搜索提交结果；无关截图已移除。",
+      "findings": [],
+      "originalCaseIds": [],
+      "sources": [
+        {
+          "name": "observation.json",
+          "sha256": "cd60abc7906639017e33bca036d193681aecd631625d217546ae62f6a1e8ef45",
+          "bytes": 466,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "invalid.md",
+          "sha256": "a156037c52e0a3467f2cbb52a87f56e6a6561ce11da4785019b796a3fa0a36dc",
+          "bytes": 226,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [],
+      "deletedScreenshot": "Excluded and removed; historical digest is not an available screenshot."
+    },
+    {
+      "id": "R26",
+      "sourceObservationId": "R26-search-loaded",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "capture",
+      "parameters": [],
+      "inputAtUtc": null,
+      "inputAtLocal": null,
+      "captureRequestAtUtc": "2026-10-13T05:55:32.282Z",
+      "captureRequestAtLocal": "2026-10-13T13:55:32.282+08:00",
+      "completedAtUtc": "2026-10-13T05:55:37.317Z",
+      "result": "恢复小红书后的实际画面是发现首页；目录名称不是搜索成功证据。",
+      "findings": [
+        "N04"
+      ],
+      "originalCaseIds": [
+        "D011"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "07a2529b1d5c3dae5b1c764e58f187444b9e86aac93832e460bc236d4f181138",
+          "bytes": 41843,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "67958579be678afffa351416dcab56ed3a491da966d77204eb9b75f47fc4b9ec",
+          "bytes": 423,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "eeb4a3c34b7defc191488d8050c177575ce8b43fe8e6664348638798fed8ec68",
+          "bytes": 2348563,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R27",
+      "sourceObservationId": "R27-gallery-open",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "254",
+        "565"
+      ],
+      "inputAtUtc": "2026-10-13T05:55:49.090Z",
+      "inputAtLocal": "2026-10-13T13:55:49.090+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:55:50.521Z",
+      "captureRequestAtLocal": "2026-10-13T13:55:50.521+08:00",
+      "completedAtUtc": "2026-10-13T05:55:53.548Z",
+      "result": "打开公共七图笔记 C，页码 1/7；建立图集基线。",
+      "findings": [
+        "G01"
+      ],
+      "originalCaseIds": [
+        "D020",
+        "D021"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "ac93fe1cd097d1f68937526e338bbc45021500e8b9e29138203bdd859255b09d",
+          "bytes": 24872,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "c0d23a2dea0cb9a1009970fce0612073d24bf6241eb49494f4242b612dddd3b4",
+          "bytes": 464,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "376d92b91801523de92b866f25d9c579d68abf33db92da3c14bb90a77ce52d3b",
+          "bytes": 920288,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R27-gallery-open",
+          "sourceName": "screen.png",
+          "file": "../截图/R27-gallery-open.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "bf8911a988729f6a6246d94223f327ab7cc1948f1059e3f3f205f04d00403726"
+        }
+      ]
+    },
+    {
+      "id": "R28",
+      "sourceObservationId": "R28-gallery-short",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "680",
+        "930",
+        "590",
+        "930",
+        "700"
+      ],
+      "inputAtUtc": "2026-10-13T05:56:04.379Z",
+      "inputAtLocal": "2026-10-13T13:56:04.379+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:56:06.494Z",
+      "captureRequestAtLocal": "2026-10-13T13:56:06.494+08:00",
+      "completedAtUtc": "2026-10-13T05:56:09.395Z",
+      "result": "横向短拖 90px/700ms 后保持 1/7。",
+      "findings": [
+        "G01"
+      ],
+      "originalCaseIds": [
+        "D021"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "ac93fe1cd097d1f68937526e338bbc45021500e8b9e29138203bdd859255b09d",
+          "bytes": 24872,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "fad898012d199f307396af9a18190e6e98112e09e505504410aa79fa54e3468d",
+          "bytes": 500,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "a941ecd87fc6e98d2bca9e9fef4f25ff44c7869eecf7c47fff096cf6ebbfe16f",
+          "bytes": 921196,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R28-gallery-short",
+          "sourceName": "screen.png",
+          "file": "../截图/R28-gallery-short.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "bf8911a988729f6a6246d94223f327ab7cc1948f1059e3f3f205f04d00403726"
+        }
+      ]
+    },
+    {
+      "id": "R29",
+      "sourceObservationId": "R29-gallery-next",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "870",
+        "930",
+        "200",
+        "930",
+        "600"
+      ],
+      "inputAtUtc": "2026-10-13T05:56:17.296Z",
+      "inputAtLocal": "2026-10-13T13:56:17.296+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:56:19.302Z",
+      "captureRequestAtLocal": "2026-10-13T13:56:19.302+08:00",
+      "completedAtUtc": "2026-10-13T05:56:22.074Z",
+      "result": "左滑 670px/600ms 后到 2/7，正文位置不随横向翻页变化。",
+      "findings": [
+        "G02",
+        "G04"
+      ],
+      "originalCaseIds": [
+        "D021",
+        "D022"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "efb76c7e588caf7fbb0ad8a9f9b9002cb794a8974ee111d167cfd40e07735645",
+          "bytes": 24872,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "a77347531b9dbffb7aa0eb8b46328868d8d4aceff61621d45936ac12dc8430ad",
+          "bytes": 499,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "dc1e174bc3e39fb567b5e73abc88b8231117a5496d1e5a2d5a612e4b39253bef",
+          "bytes": 629708,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R29-gallery-next",
+          "sourceName": "screen.png",
+          "file": "../截图/R29-gallery-next.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "82ae5bbae8f1cff80acd2b5fa9e1348e66b46effce27e2a1a2db270b1266b6c9"
+        }
+      ]
+    },
+    {
+      "id": "R30",
+      "sourceObservationId": "R30-gallery-idle",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "capture",
+      "parameters": [],
+      "inputAtUtc": null,
+      "inputAtLocal": null,
+      "captureRequestAtUtc": "2026-10-13T05:56:35.333Z",
+      "captureRequestAtLocal": "2026-10-13T13:56:35.333+08:00",
+      "completedAtUtc": "2026-10-13T05:56:38.090Z",
+      "result": "静置后数字页码不再可见，仍为第二张图片。",
+      "findings": [
+        "G04"
+      ],
+      "originalCaseIds": [
+        "D021",
+        "D022"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "c5401ceeb9ef18aecc9f8c0c68f7c78a5c82d9881e99b08ef439a024d353bd9e",
+          "bytes": 24499,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "9071218c113b4c1155e2eaab425f128511ff0cb96d722cbd39131f42d0888993",
+          "bytes": 422,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "53b7e8f26c237d94995465ecaf7daf1d82a886bce3dbe037ed4fc1105a905f9b",
+          "bytes": 627954,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R31",
+      "sourceObservationId": "R31-gallery-timing",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "870",
+        "930",
+        "200",
+        "930",
+        "200"
+      ],
+      "inputAtUtc": "2026-10-13T05:57:31.269Z",
+      "inputAtLocal": "2026-10-13T13:57:31.269+08:00",
+      "captureRequestAtUtc": null,
+      "captureRequestAtLocal": null,
+      "completedAtUtc": null,
+      "result": "左滑 670px/200ms 到 3/7；五次采样中前三次页码可见、后两次不可见。",
+      "findings": [
+        "G02",
+        "G04"
+      ],
+      "originalCaseIds": [
+        "D021",
+        "D022",
+        "D091"
+      ],
+      "sources": [
+        {
+          "name": "frame-0.png",
+          "sha256": "314e02d0f1c8be6e0f7eb7a96536f9abde200d17e272e9a637a5a44897480e0d",
+          "bytes": 763933,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "frame-1.png",
+          "sha256": "314e02d0f1c8be6e0f7eb7a96536f9abde200d17e272e9a637a5a44897480e0d",
+          "bytes": 763933,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "frame-2.png",
+          "sha256": "48438174b53a0c24ed824cc6a14c3829f34d88d97ae1ecafb10c9fa069aadc0a",
+          "bytes": 764132,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "frame-3.png",
+          "sha256": "3bcdd729c6bb3a239c4cc7c958e579cbb20334d24a74ea13ce59044df6a34dbf",
+          "bytes": 760316,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "frame-4.png",
+          "sha256": "f5ce077e4f481cf32cd2efb2a9dacd2bca801ab7d058e4417e93326e986fefd3",
+          "bytes": 760277,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "motion.mp4",
+          "sha256": "81546e894c3b618128cb1f3ce33aa1aec670f126b7fed601607c4376c191870a",
+          "bytes": 581162,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "53eaf58605c5efbd878e8b3f7e884473b7d5b441509ff69528358fd2ac5de6a6",
+          "bytes": 1401,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R31-gallery-timing",
+          "sourceNames": [
+            "frame-0.png",
+            "frame-1.png",
+            "frame-2.png",
+            "frame-3.png",
+            "frame-4.png"
+          ],
+          "file": "../截图/R31-indicator-timing.png",
+          "transform": "labeled-crop-contact-sheet",
+          "sourceRect": [
+            860,
+            246,
+            210,
+            180
+          ],
+          "sha256": "846159145012125fb59df29a5cb80af77b1c8bbe31cd6f7dd5bdc79d97fb167d"
+        }
+      ],
+      "timingSamples": [
+        {
+          "frame": "frame-0.png",
+          "requestMs": 826.9825000000001,
+          "returnedMs": 1295.7258,
+          "indicatorVisible": true
+        },
+        {
+          "frame": "frame-1.png",
+          "requestMs": 2605.2789000000002,
+          "returnedMs": 3082.1143,
+          "indicatorVisible": true
+        },
+        {
+          "frame": "frame-2.png",
+          "requestMs": 4638.5378,
+          "returnedMs": 5143.6933,
+          "indicatorVisible": true
+        },
+        {
+          "frame": "frame-3.png",
+          "requestMs": 5724.8789,
+          "returnedMs": 6215.5313,
+          "indicatorVisible": false
+        },
+        {
+          "frame": "frame-4.png",
+          "requestMs": 7117.8625,
+          "returnedMs": 7604.3979,
+          "indicatorVisible": false
+        }
+      ],
+      "originalCaptureLimits": "截图请求与返回夹住采样时刻；不能据此测量200ms淡入淡出。录屏另存，尚未逐帧测量。",
+      "timingLimits": "五次截图仍不能测量精确淡入淡出；已另用原录像实际PTS逐帧分析，见followupAnalysis。",
+      "followupAnalysis": "../../深度研究/动效/motion-findings.md"
+    },
+    {
+      "id": "R32",
+      "sourceObservationId": "R32-gallery-fast-confirm",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "capture",
+      "parameters": [],
+      "inputAtUtc": null,
+      "inputAtLocal": null,
+      "captureRequestAtUtc": "2026-10-13T05:58:21.222Z",
+      "captureRequestAtLocal": "2026-10-13T13:58:21.222+08:00",
+      "completedAtUtc": "2026-10-13T05:58:24.071Z",
+      "result": "稳定确认当前图片为第三张。",
+      "findings": [
+        "G02"
+      ],
+      "originalCaseIds": [
+        "D021"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "a723de2f8b33713b3039b40dd7b4d8509cf8328f6ef8b16f8af3f4d88ce29435",
+          "bytes": 24499,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "2afcb42ef4eec8d1c5468ea7d1395edd368e11faad479a5beff34edede536d63",
+          "bytes": 430,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "973085167d8188066216d4cd81381807d44b6fac72392905157829dab9149518",
+          "bytes": 760351,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R33",
+      "sourceObservationId": "R33-gallery-4",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "870",
+        "930",
+        "200",
+        "930",
+        "250"
+      ],
+      "inputAtUtc": "2026-10-13T05:58:52.922Z",
+      "inputAtLocal": "2026-10-13T13:58:52.922+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:58:54.584Z",
+      "captureRequestAtLocal": "2026-10-13T13:58:54.584+08:00",
+      "completedAtUtc": "2026-10-13T05:58:57.456Z",
+      "result": "左滑后到 4/7。",
+      "findings": [
+        "G02"
+      ],
+      "originalCaseIds": [
+        "D021"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "0327e8d3397cde6e1a9b87beff587774cab9bbcad9a9e4836e56080ae63df0c2",
+          "bytes": 24872,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "bcc76011dfd64d8393536453b1dd4982a19c8a6f6122546724e39dddf9a09f48",
+          "bytes": 496,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "9647cad0cd071532fe9315ee4a1e25d0c92b4ae3173b1b8d6e9521c4b1b6a229",
+          "bytes": 783427,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R34",
+      "sourceObservationId": "R34-gallery-5",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "870",
+        "930",
+        "200",
+        "930",
+        "250"
+      ],
+      "inputAtUtc": "2026-10-13T05:58:57.638Z",
+      "inputAtLocal": "2026-10-13T13:58:57.638+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:58:59.314Z",
+      "captureRequestAtLocal": "2026-10-13T13:58:59.314+08:00",
+      "completedAtUtc": "2026-10-13T05:59:02.430Z",
+      "result": "左滑后到 5/7。",
+      "findings": [
+        "G02"
+      ],
+      "originalCaseIds": [
+        "D021"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "f2b007501cf389846733a38bb56fc9e02a0902e7e2b7b67217c6814866481a62",
+          "bytes": 24872,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "180793a35131da91c7c468ad0c7c78336b54f9fa10236944f44b5f966d83f852",
+          "bytes": 496,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "0d8dab41cf93f3f8c80f7009a3018b9b39749b68e3be656485dbbd07db760ba5",
+          "bytes": 276555,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R35",
+      "sourceObservationId": "R35-gallery-6",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "870",
+        "930",
+        "200",
+        "930",
+        "250"
+      ],
+      "inputAtUtc": "2026-10-13T05:59:02.607Z",
+      "inputAtLocal": "2026-10-13T13:59:02.607+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:59:04.276Z",
+      "captureRequestAtLocal": "2026-10-13T13:59:04.276+08:00",
+      "completedAtUtc": "2026-10-13T05:59:07.020Z",
+      "result": "左滑后到 6/7。",
+      "findings": [
+        "G02"
+      ],
+      "originalCaseIds": [
+        "D021"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "35b6c4db479b1e87621a47e122e4e71b7c7dbeda41080ac28c8720f57515d2af",
+          "bytes": 24499,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "e101730b2cf33eb8c3f67bdf543bbc59fafbfa305348b46f7b40313fc1fbe34b",
+          "bytes": 496,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "3ca8dffd6fd3fa29a4b394d013f9b19a85a9dce4b0079c063a70629a844b21b2",
+          "bytes": 433043,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R36",
+      "sourceObservationId": "R36-gallery-7",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "870",
+        "930",
+        "200",
+        "930",
+        "250"
+      ],
+      "inputAtUtc": "2026-10-13T05:59:07.193Z",
+      "inputAtLocal": "2026-10-13T13:59:07.193+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:59:08.829Z",
+      "captureRequestAtLocal": "2026-10-13T13:59:08.829+08:00",
+      "completedAtUtc": "2026-10-13T05:59:11.513Z",
+      "result": "左滑后到 7/7。",
+      "findings": [
+        "G02",
+        "G03"
+      ],
+      "originalCaseIds": [
+        "D021"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "faa74248d35b2007121fea0bacbff8a8782133a17b91492c582d0d98736ea8af",
+          "bytes": 24872,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "62a2f93f2df74a1a45ba2044fd9f7e6ab6d0b3363e04487698b1258d28d32d8d",
+          "bytes": 496,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "d6b3606fca98d3bff501b334bce7c3045a674b95f86b58ce6b374a64f2c09093",
+          "bytes": 492572,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R36-gallery-7",
+          "sourceName": "screen.png",
+          "file": "../截图/R36-gallery-7.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "52f6cfa020b0007bfdfbc2834e2d40e159374be3e02baf8bcf20809ec1bd51ec"
+        }
+      ]
+    },
+    {
+      "id": "R37",
+      "sourceObservationId": "R37-gallery-end-boundary",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "870",
+        "930",
+        "200",
+        "930",
+        "400"
+      ],
+      "inputAtUtc": "2026-10-13T05:59:29.801Z",
+      "inputAtLocal": "2026-10-13T13:59:29.801+08:00",
+      "captureRequestAtUtc": "2026-10-13T05:59:31.602Z",
+      "captureRequestAtLocal": "2026-10-13T13:59:31.602+08:00",
+      "completedAtUtc": "2026-10-13T05:59:34.288Z",
+      "result": "末图继续左滑后保持 7/7，未切换到另一篇笔记。",
+      "findings": [
+        "G03"
+      ],
+      "originalCaseIds": [
+        "D021"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "faa74248d35b2007121fea0bacbff8a8782133a17b91492c582d0d98736ea8af",
+          "bytes": 24872,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "580025fb3dd82339f6721b7386661a926feba6ebd7a0133e1997d38742eed820",
+          "bytes": 507,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "a02e5d9c632f8036aa9705ae4fcf1c1082ac17486c64f9ed082548eac01c4d40",
+          "bytes": 492442,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R37-gallery-end-boundary",
+          "sourceName": "screen.png",
+          "file": "../截图/R37-gallery-end-boundary.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "52f6cfa020b0007bfdfbc2834e2d40e159374be3e02baf8bcf20809ec1bd51ec"
+        }
+      ]
+    },
+    {
+      "id": "R38",
+      "sourceObservationId": "R38-image-longpress",
+      "status": "incomplete",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "longpress-attempt-not-fully-recorded",
+      "parameters": null,
+      "inputAtUtc": null,
+      "inputAtLocal": null,
+      "captureRequestAtUtc": null,
+      "captureRequestAtLocal": null,
+      "completedAtUtc": null,
+      "result": "不完整尝试：长按后前台检查瞬时失败，未保存完整观察记录；菜单由 R39 单独确认。",
+      "findings": [],
+      "originalCaseIds": [],
+      "sources": [],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R39",
+      "sourceObservationId": "R39-longpress-result",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "capture",
+      "parameters": [],
+      "inputAtUtc": null,
+      "inputAtLocal": null,
+      "captureRequestAtUtc": "2026-10-13T06:00:09.467Z",
+      "captureRequestAtLocal": "2026-10-13T14:00:09.467+08:00",
+      "completedAtUtc": "2026-10-13T06:00:12.444Z",
+      "result": "观察到图片长按菜单：搜图中内容、保存、合拍、不感兴趣，以及分享入口；只导出工具行。",
+      "findings": [
+        "G05"
+      ],
+      "originalCaseIds": [
+        "D017",
+        "D028"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "e7a728feee457175d49f36522faa09b03f7b4e5556af9996c73a3cb8f6debe01",
+          "bytes": 23185,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "db41e9ec283f648cd52871966e51dc44e32f83e862238c2119a5c4d1e361a038",
+          "bytes": 426,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "a961de2f329c880408c90978cf329981c58d1ad8bc2ba903ddca8737f35fdb5e",
+          "bytes": 431490,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R39-longpress-result",
+          "sourceName": "screen.png",
+          "file": "../截图/R39-image-tools-only.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            1180,
+            1080,
+            280
+          ],
+          "sha256": "bb76aad8e662c7798a60c2e9e1ccca347dbef9c2adeb9d6e281a6043064a9b89"
+        }
+      ]
+    },
+    {
+      "id": "R40",
+      "sourceObservationId": "R40-menu-close",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "back",
+      "parameters": [],
+      "inputAtUtc": "2026-10-13T06:00:45.599Z",
+      "inputAtLocal": "2026-10-13T14:00:45.599+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:00:47.053Z",
+      "captureRequestAtLocal": "2026-10-13T14:00:47.053+08:00",
+      "completedAtUtc": "2026-10-13T06:00:49.719Z",
+      "result": "系统返回关闭菜单，仍为第七张图片。",
+      "findings": [
+        "G05"
+      ],
+      "originalCaseIds": [
+        "D017",
+        "D028"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "25dab98fc41466602fa314d1b1c30c1464ce49975372922bcf04f8d1586f6cf5",
+          "bytes": 24499,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "b40aaa30300487dd5d488226a147973fff37331a9156d465f8986a63bc9a44b9",
+          "bytes": 439,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "c3382a8f1b0433c19b15bf45c07bf57f4dc4d9566a8fda139774429e15005238",
+          "bytes": 488857,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R41",
+      "sourceObservationId": "R41-gallery-back-6",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "200",
+        "930",
+        "870",
+        "930",
+        "250"
+      ],
+      "inputAtUtc": "2026-10-13T06:00:50.375Z",
+      "inputAtLocal": "2026-10-13T14:00:50.375+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:00:52.022Z",
+      "captureRequestAtLocal": "2026-10-13T14:00:52.022+08:00",
+      "completedAtUtc": "2026-10-13T06:00:54.707Z",
+      "result": "右滑回 6/7。",
+      "findings": [
+        "G02"
+      ],
+      "originalCaseIds": [
+        "D021"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "b50714621df18ee5ac2d737bb488d67114444a46c6b8edb2bc4923e891998660",
+          "bytes": 24872,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "621edb29a6ef20f5122d6e34f342e3f2b00a322c9f47aaf0a9f7b01d4dcbb93b",
+          "bytes": 501,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "1f8bc540dda04467d9aaa8051465f5f3b0df6722a74acd311d03a3645c6887bc",
+          "bytes": 433685,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R42",
+      "sourceObservationId": "R42-gallery-back-5",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "200",
+        "930",
+        "870",
+        "930",
+        "250"
+      ],
+      "inputAtUtc": "2026-10-13T06:00:54.895Z",
+      "inputAtLocal": "2026-10-13T14:00:54.895+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:00:56.557Z",
+      "captureRequestAtLocal": "2026-10-13T14:00:56.557+08:00",
+      "completedAtUtc": "2026-10-13T06:00:59.225Z",
+      "result": "右滑回 5/7。",
+      "findings": [
+        "G02"
+      ],
+      "originalCaseIds": [
+        "D021"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "9c399cf67e9e6d474cdaf4f36ed3939380f8742a154dfa289a8a6e014e06cc3d",
+          "bytes": 24872,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "452b112eddc8047a476fbb9f3e09bee878749fdd33cfa849140d9eb5cd373676",
+          "bytes": 501,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "1c8d04b1f5607a82455ba370aa72d7d919ba87d2097536cf19f4ebf92f4c685e",
+          "bytes": 274618,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R43",
+      "sourceObservationId": "R43-gallery-back-4",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "200",
+        "930",
+        "870",
+        "930",
+        "250"
+      ],
+      "inputAtUtc": "2026-10-13T06:00:59.394Z",
+      "inputAtLocal": "2026-10-13T14:00:59.394+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:01:01.051Z",
+      "captureRequestAtLocal": "2026-10-13T14:01:01.051+08:00",
+      "completedAtUtc": "2026-10-13T06:01:03.824Z",
+      "result": "右滑回 4/7。",
+      "findings": [
+        "G02"
+      ],
+      "originalCaseIds": [
+        "D021"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "60e813eb5a5ebab217f1a48487868aa7df23fc2a1cfc5539639d8e55852b407f",
+          "bytes": 24872,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "8f301ce4b251ae8ff5d2fb16301e9f05d91687fa921c80a0370a0210250b5d28",
+          "bytes": 501,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "f70484f55752da1dd7bc706e6dcb4b0e4c19d90a1d27a4aa87c4ef2ab4670963",
+          "bytes": 782292,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R44",
+      "sourceObservationId": "R44-gallery-back-3",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "200",
+        "930",
+        "870",
+        "930",
+        "250"
+      ],
+      "inputAtUtc": "2026-10-13T06:01:04.006Z",
+      "inputAtLocal": "2026-10-13T14:01:04.006+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:01:05.649Z",
+      "captureRequestAtLocal": "2026-10-13T14:01:05.649+08:00",
+      "completedAtUtc": "2026-10-13T06:01:08.375Z",
+      "result": "右滑回 3/7。",
+      "findings": [
+        "G02"
+      ],
+      "originalCaseIds": [
+        "D021"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "c87751ec808a09598fb6c8ebac84e6237ff116d52cf7ef1482a0135cca4e8c86",
+          "bytes": 24872,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "a1ace82df3c61a93e3a9c2dc884e4e9ccf38420d703d593c4f7072eb5c8b3fbe",
+          "bytes": 501,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "9331179174e0d221504b1583b5a3b8cd103682b054bdb4d314f0643c891d9bb1",
+          "bytes": 762551,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R45",
+      "sourceObservationId": "R45-gallery-back-2",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "200",
+        "930",
+        "870",
+        "930",
+        "250"
+      ],
+      "inputAtUtc": "2026-10-13T06:01:08.550Z",
+      "inputAtLocal": "2026-10-13T14:01:08.550+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:01:10.207Z",
+      "captureRequestAtLocal": "2026-10-13T14:01:10.207+08:00",
+      "completedAtUtc": "2026-10-13T06:01:12.979Z",
+      "result": "右滑回 2/7。",
+      "findings": [
+        "G02"
+      ],
+      "originalCaseIds": [
+        "D021"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "86ca1fbf17da5582d24d67b2640a098473c6307612e71e8b37ab23d6ec7097fd",
+          "bytes": 24872,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "7b776698f5c1c4bab7b7e5bbb15ba357f9978ce11d2f0fc131c93251c886047e",
+          "bytes": 501,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "a03779db0a01fb7324ab55a73e0f7d74a4185572cfd242d71ca9ebd5df1d68b9",
+          "bytes": 628881,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R46",
+      "sourceObservationId": "R46-gallery-back-1",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "200",
+        "930",
+        "870",
+        "930",
+        "250"
+      ],
+      "inputAtUtc": "2026-10-13T06:01:13.159Z",
+      "inputAtLocal": "2026-10-13T14:01:13.159+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:01:14.822Z",
+      "captureRequestAtLocal": "2026-10-13T14:01:14.822+08:00",
+      "completedAtUtc": "2026-10-13T06:01:17.736Z",
+      "result": "右滑回 1/7。",
+      "findings": [
+        "G02",
+        "G03"
+      ],
+      "originalCaseIds": [
+        "D021"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "c9b02047c8a5396f6b1fda9c3f5eee5f762bf97148ffb762d820d8a55432c26d",
+          "bytes": 24872,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "19e0a3ace1549cde8e3de202e5aba35a6001ec232dbe9ebb4c4130a27c03314c",
+          "bytes": 501,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "37b2b966dd97284b548c1cceccba1ca43c54600268051a5491f91fc5544a6a7b",
+          "bytes": 919945,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R47",
+      "sourceObservationId": "R47-gallery-start-boundary",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "200",
+        "930",
+        "870",
+        "930",
+        "400"
+      ],
+      "inputAtUtc": "2026-10-13T06:01:36.598Z",
+      "inputAtLocal": "2026-10-13T14:01:36.598+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:01:38.456Z",
+      "captureRequestAtLocal": "2026-10-13T14:01:38.456+08:00",
+      "completedAtUtc": "2026-10-13T06:01:41.379Z",
+      "result": "首图继续右滑后仍 1/7，未离开详情页。",
+      "findings": [
+        "G03"
+      ],
+      "originalCaseIds": [
+        "D021"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "c9b02047c8a5396f6b1fda9c3f5eee5f762bf97148ffb762d820d8a55432c26d",
+          "bytes": 24872,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "d4ba43707098b54b891363b4f4b5d2384c87ddaf0fb408e5e26b2acce420ea20",
+          "bytes": 509,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "324cd8925240a5856ac0c775b6c53dc5af8b90b13dea542e61447ecab3f66db8",
+          "bytes": 919726,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R47-gallery-start-boundary",
+          "sourceName": "screen.png",
+          "file": "../截图/R47-gallery-start-boundary.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "ecbf38a9d8b59af2334a5434cf43624d6cdddacab46b21741ae414ce6e246e04"
+        }
+      ]
+    },
+    {
+      "id": "R48",
+      "sourceObservationId": "R48-author-open",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "383",
+        "163"
+      ],
+      "inputAtUtc": "2026-10-13T06:01:52.869Z",
+      "inputAtLocal": "2026-10-13T14:01:52.869+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:01:54.286Z",
+      "captureRequestAtLocal": "2026-10-13T14:01:54.286+08:00",
+      "completedAtUtc": "2026-10-13T06:01:57.873Z",
+      "result": "点击作者进入公开作者主页。",
+      "findings": [
+        "N01"
+      ],
+      "originalCaseIds": [
+        "D066",
+        "D090"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "c0bbb1dcceb921e1f74f11b5bd0d0adeda19333187083fba7d22c24eaddb00d8",
+          "bytes": 61265,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "f4a1b1282f8685b16e916b53eb817b632a1d26d1e92abba8a610606989e2461c",
+          "bytes": 463,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "c681d9ef8c67cc99e60f7b62e5478538c296c9432049427d5a68d7e43e91d6ac",
+          "bytes": 1868316,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R49",
+      "sourceObservationId": "R49-author-stable",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "capture",
+      "parameters": [],
+      "inputAtUtc": null,
+      "inputAtLocal": null,
+      "captureRequestAtUtc": "2026-10-13T06:02:14.105Z",
+      "captureRequestAtLocal": "2026-10-13T14:02:14.105+08:00",
+      "completedAtUtc": "2026-10-13T06:02:17.408Z",
+      "result": "主页稳定：资料头、笔记和收藏栏目、双列内容。",
+      "findings": [
+        "N02"
+      ],
+      "originalCaseIds": [
+        "D066"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "c0bbb1dcceb921e1f74f11b5bd0d0adeda19333187083fba7d22c24eaddb00d8",
+          "bytes": 61265,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "8abf9ad9eafd447b59d4861fee8e0fdb46c2346edb05bccb336acabf79d191b9",
+          "bytes": 423,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "73e375d2c811bf1d455f56b395ff562b59bc0911c28790d543babba2d1f67265",
+          "bytes": 1869023,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R49-author-stable",
+          "sourceName": "screen.png",
+          "file": "../截图/R49-author-stable.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "7f85469dca117abaaad0cc9b5d5f68c841502a5d523118b088d46343d37e9c73"
+        }
+      ]
+    },
+    {
+      "id": "R50",
+      "sourceObservationId": "R50-author-scroll",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "691",
+        "1920",
+        "691",
+        "490",
+        "600"
+      ],
+      "inputAtUtc": "2026-10-13T06:02:31.071Z",
+      "inputAtLocal": "2026-10-13T14:02:31.071+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:02:33.088Z",
+      "captureRequestAtLocal": "2026-10-13T14:02:33.088+08:00",
+      "completedAtUtc": "2026-10-13T06:02:36.195Z",
+      "result": "主页上滑后资料头收起，栏目吸顶，上方出现关注入口。",
+      "findings": [
+        "N02",
+        "N03"
+      ],
+      "originalCaseIds": [
+        "D066",
+        "D067"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "f0a2cc9572b3574778af083efdf83b8e7adf30fcc72670ca82278fc14625a2fb",
+          "bytes": 66970,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "0d473d0990f69e6da39deca54ccebe527b223a7b6fb52629db9b8a8f0becb737",
+          "bytes": 501,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "8b9f28c71a8552454026161cd0d9a76f5f9cc20bbc9d32fc8c565f4c279acaf6",
+          "bytes": 1072727,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R50-author-scroll",
+          "sourceName": "screen.png",
+          "file": "../截图/R50-author-scroll.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "098c818f5333f25053b928efbecca7043ad0f96c8354a6746ad0b5dfcac8ba70"
+        }
+      ]
+    },
+    {
+      "id": "R51",
+      "sourceObservationId": "R51-author-collections",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "272",
+        "273"
+      ],
+      "inputAtUtc": "2026-10-13T06:02:50.348Z",
+      "inputAtLocal": "2026-10-13T14:02:50.348+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:02:51.759Z",
+      "captureRequestAtLocal": "2026-10-13T14:02:51.759+08:00",
+      "completedAtUtc": "2026-10-13T06:02:54.946Z",
+      "result": "切到收藏，显示笔记、专辑、合集、地点子分类；未操作收藏。",
+      "findings": [
+        "N03"
+      ],
+      "originalCaseIds": [
+        "D066",
+        "D067",
+        "D075"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "bfaf8fa0bdb29e6c80277ed344cdcf037f795f7d64095bac7abb810f8c082ef0",
+          "bytes": 68850,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "761240d3af4118a2050099f3df48691896eacaa1edf80a4bac2968c88c5ccdd0",
+          "bytes": 470,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "485c584a4837775ba077fd37d7e59585f221d4f8fc7fda704f64488615e43230",
+          "bytes": 2084979,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R51-author-collections",
+          "sourceName": "screen.png",
+          "file": "../截图/R51-author-collections.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "0bbfdb4943bf9392807f430f6339163c457918cb69e9561f40759ad8dc120a21"
+        }
+      ]
+    },
+    {
+      "id": "R52",
+      "sourceObservationId": "R52-author-notes-restore",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "97",
+        "273"
+      ],
+      "inputAtUtc": "2026-10-13T06:03:08.372Z",
+      "inputAtLocal": "2026-10-13T14:03:08.372+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:03:09.771Z",
+      "captureRequestAtLocal": "2026-10-13T14:03:09.771+08:00",
+      "completedAtUtc": "2026-10-13T06:03:13.197Z",
+      "result": "切回笔记，所选文本和 XML bounds 与 R50 一致；后续像素复核存在 56px 位移，原因未定。",
+      "findings": [
+        "N03"
+      ],
+      "originalCaseIds": [
+        "D066",
+        "D067"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "f0a2cc9572b3574778af083efdf83b8e7adf30fcc72670ca82278fc14625a2fb",
+          "bytes": 66970,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "5828223b1b5eddd940b968a04510bd8f48680fcfc234723d086981f20ea24556",
+          "bytes": 471,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "a806244f77c0f2012d086d8a3f49a86d42b2b7d34c12de971e5cea53a0f5a506",
+          "bytes": 1094635,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R52-author-notes-restore",
+          "sourceName": "screen.png",
+          "file": "../截图/R52-author-notes-restore.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "ca0b19a632334f50c2fe4e476a1129c34bfee9ea84e566cbd1d0f249a87db15b"
+        }
+      ]
+    },
+    {
+      "id": "R53",
+      "sourceObservationId": "R53-author-back",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "back",
+      "parameters": [],
+      "inputAtUtc": "2026-10-13T06:03:36.796Z",
+      "inputAtLocal": "2026-10-13T14:03:36.796+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:03:38.214Z",
+      "captureRequestAtLocal": "2026-10-13T14:03:38.214+08:00",
+      "completedAtUtc": "2026-10-13T06:03:41.117Z",
+      "result": "返回原图文详情，保持第一张图片。",
+      "findings": [
+        "N01"
+      ],
+      "originalCaseIds": [
+        "D090"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "bd6c1215815a54a049f37fa28a7d0f695d7663486b7f9ded738bcf653397ec29",
+          "bytes": 24499,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "52a2cfe46d28b4cec7a1e09244a3109da90a61d2e15bc10e67f20980ed7a0dff",
+          "bytes": 440,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "6a927bf8bfe2ef09b2fabcf5ca1a2dcb5134cf50646775555e6cc3c844c6e300",
+          "bytes": 908571,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R54",
+      "sourceObservationId": "R54-detail-back",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "back",
+      "parameters": [],
+      "inputAtUtc": "2026-10-13T06:03:54.246Z",
+      "inputAtLocal": "2026-10-13T14:03:54.246+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:03:55.674Z",
+      "captureRequestAtLocal": "2026-10-13T14:03:55.674+08:00",
+      "completedAtUtc": "2026-10-13T06:03:58.469Z",
+      "result": "再返回发现页；样本卡片文本和位置与 R26 一致。",
+      "findings": [
+        "N01",
+        "N04"
+      ],
+      "originalCaseIds": [
+        "D014",
+        "D090"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "92c00146c394eabc252dd4754f5dff5a3d6b4bbf891cb91bc47677b5cff287ca",
+          "bytes": 42545,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "5170c35a47f75db28ae5517267ca6e7601803dcff5c3f7d29cc81b48c1acb777",
+          "bytes": 440,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "8e30ba1d7b24d1fe3b4e54b35ea9cb40edf2b935e3ba96f48b3f57340b177a45",
+          "bytes": 966837,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R55",
+      "sourceObservationId": "R55-search-open",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "1004",
+        "152"
+      ],
+      "inputAtUtc": "2026-10-13T06:04:11.643Z",
+      "inputAtLocal": "2026-10-13T14:04:11.643+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:04:13.037Z",
+      "captureRequestAtLocal": "2026-10-13T14:04:13.037+08:00",
+      "completedAtUtc": "2026-10-13T06:04:15.733Z",
+      "result": "再次进入搜索起始页；原有历史不导出。",
+      "findings": [
+        "S01"
+      ],
+      "originalCaseIds": [
+        "D046"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "c3e193ba98723f5f602e11e7d83a3db7c9cda1b4435046168a4f5585f0a70390",
+          "bytes": 46857,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "d629cbb726dfed7998d5a83828cf99897b8edf3d42a634199c2dcb819f5867ad",
+          "bytes": 464,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "ccf6309915edec05f0a0fc9916a3f3257be104847168d9684e3066c85565fee5",
+          "bytes": 261827,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R56",
+      "sourceObservationId": "R56-search-type",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "text",
+      "parameters": [
+        "PUBLIC_TEST_TERM_A"
+      ],
+      "inputAtUtc": "2026-10-13T06:04:26.129Z",
+      "inputAtLocal": "2026-10-13T14:04:26.129+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:04:27.660Z",
+      "captureRequestAtLocal": "2026-10-13T14:04:27.660+08:00",
+      "completedAtUtc": "2026-10-13T06:04:30.380Z",
+      "result": "输入公共测试词 A，显示联想结果。",
+      "findings": [
+        "S01"
+      ],
+      "originalCaseIds": [
+        "D046",
+        "D047",
+        "D092"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "777bc470d15257eb820de0b26d68ae19537d5e8e4c1051a4dfa9bf47d8b1523c",
+          "bytes": 34151,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "a7000b02e026e7ff5102c925787002aeface466d10c05dbeb6523472ede09ff5",
+          "bytes": 458,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "ca2748637ea4d7a9f4d2d23581298985a7289f5a035ac6745f17fffd99038941",
+          "bytes": 205695,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R57",
+      "sourceObservationId": "R57-search-submit",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "994",
+        "151"
+      ],
+      "inputAtUtc": "2026-10-13T06:04:41.529Z",
+      "inputAtLocal": "2026-10-13T14:04:41.529+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:04:42.948Z",
+      "captureRequestAtLocal": "2026-10-13T14:04:42.948+08:00",
+      "completedAtUtc": "2026-10-13T06:04:45.673Z",
+      "result": "提交后显示搜索结果页和加载占位，存在全部、用户、商品分类；未点击商品分类。",
+      "findings": [
+        "S02"
+      ],
+      "originalCaseIds": [
+        "D048"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "643c00cc665835e80513666491d4b3dce7666220b716adcf630bcfa8c06719e6",
+          "bytes": 54971,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "2f5d67bba2219c349b5b9836a48aa121420171b927682b037a39d477b64d1141",
+          "bytes": 465,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "68accff49c3d5642ad43d5f96893986124402d97056d054553975f4abad4317b",
+          "bytes": 164876,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R58",
+      "sourceObservationId": "R58-search-scroll",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "749",
+        "1750",
+        "749",
+        "713",
+        "500"
+      ],
+      "inputAtUtc": "2026-10-13T06:05:01.396Z",
+      "inputAtLocal": "2026-10-13T14:05:01.396+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:05:03.300Z",
+      "captureRequestAtLocal": "2026-10-13T14:05:03.300+08:00",
+      "completedAtUtc": "2026-10-13T06:05:06.377Z",
+      "result": "上滑搜索结果；顶部分类行收起，搜索框和条件行保留。",
+      "findings": [
+        "S02"
+      ],
+      "originalCaseIds": [
+        "D050"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "b39766da803a8d37f030b229bd0b2c757b1b150e985449446ed47f2756c28892",
+          "bytes": 50646,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "5003fc6f265202aea07d4072a64d7fe25cec34571c23cbdc126106cc7bdb0994",
+          "bytes": 501,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "0bd45041fe5fad4cbc0c8bdffe5e239d62021ffee8a577f624f758f7107349e3",
+          "bytes": 2729580,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R59",
+      "sourceObservationId": "R59-search-stable",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "capture",
+      "parameters": [],
+      "inputAtUtc": null,
+      "inputAtLocal": null,
+      "captureRequestAtUtc": "2026-10-13T06:05:27.781Z",
+      "captureRequestAtLocal": "2026-10-13T14:05:27.781+08:00",
+      "completedAtUtc": "2026-10-13T06:05:30.986Z",
+      "result": "搜索结果稳定，作为进入详情前的位置基线。",
+      "findings": [
+        "S02",
+        "S03"
+      ],
+      "originalCaseIds": [
+        "D050"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "b39766da803a8d37f030b229bd0b2c757b1b150e985449446ed47f2756c28892",
+          "bytes": 50646,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "015f1e7d29c8892b70cb7595bfa936bcb3c2551628ff224d81dcfb0a03222019",
+          "bytes": 423,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "7eed1a9e10c7de71fa7ae875298f26f6baa31e75a6ca8b10a741cd50e285ec4f",
+          "bytes": 2691709,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R59-search-stable",
+          "sourceName": "screen.png",
+          "file": "../截图/R59-search-stable.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "4de80926032e276be6fe8eda24197ff8e19c718b9bc9d11894f7d2cea8a2fc9f"
+        }
+      ]
+    },
+    {
+      "id": "R60",
+      "sourceObservationId": "R60-search-detail",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "259",
+        "500"
+      ],
+      "inputAtUtc": "2026-10-13T06:05:45.711Z",
+      "inputAtLocal": "2026-10-13T14:05:45.711+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:05:47.134Z",
+      "captureRequestAtLocal": "2026-10-13T14:05:47.134+08:00",
+      "completedAtUtc": "2026-10-13T06:05:50.381Z",
+      "result": "打开中部公共十七图笔记，仅验证进入和返回。",
+      "findings": [
+        "S03"
+      ],
+      "originalCaseIds": [
+        "D050",
+        "D090"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "bce60975668548bc948f4c1e0b05958ad134195253abee9b2007467454238340",
+          "bytes": 23743,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "ba538fd615c26a980501c0c642639c7bf0725c3bfc3ec3a0126e7ebd849305cb",
+          "bytes": 465,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "449869269b4d3ef8287a10acbda8e5377ab426010427d4fcf47389cee0a7b196",
+          "bytes": 2737479,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R61",
+      "sourceObservationId": "R61-search-return",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "back",
+      "parameters": [],
+      "inputAtUtc": "2026-10-13T06:06:04.550Z",
+      "inputAtLocal": "2026-10-13T14:06:04.550+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:06:05.994Z",
+      "captureRequestAtLocal": "2026-10-13T14:06:05.994+08:00",
+      "completedAtUtc": "2026-10-13T06:06:09.134Z",
+      "result": "返回后公共测试词 A 保持，样本卡片文本和所选 bounds 与 R59 一致；已打开左卡标题由 #333333 变 #999999。",
+      "findings": [
+        "S03",
+        "S04"
+      ],
+      "originalCaseIds": [
+        "D050",
+        "D090"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "b39766da803a8d37f030b229bd0b2c757b1b150e985449446ed47f2756c28892",
+          "bytes": 50646,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "0da1acb13d149aa8da9f94f5518a7c8e9136311ea7736eedc6eb5bff4afac6b9",
+          "bytes": 442,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "4f74cd229fd7e9c178b136bfa111bec106c10de2a30560c7f99987f3d2c89c27",
+          "bytes": 2688640,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R61-search-return",
+          "sourceName": "screen.png",
+          "file": "../截图/R61-search-return.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "9c310629743045ec9d2224eda0dfe82b6bc3e79cfeb2cb7535f248085bba78f0"
+        }
+      ]
+    },
+    {
+      "id": "R62",
+      "sourceObservationId": "R62-search-latest",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "250",
+        "273"
+      ],
+      "inputAtUtc": "2026-10-13T06:06:23.627Z",
+      "inputAtLocal": "2026-10-13T14:06:23.627+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:06:25.031Z",
+      "captureRequestAtLocal": "2026-10-13T14:06:25.031+08:00",
+      "completedAtUtc": "2026-10-13T06:06:28.578Z",
+      "result": "点击快捷“最新”，结果回到首部并更新。",
+      "findings": [
+        "S04"
+      ],
+      "originalCaseIds": [
+        "D049"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "36e6c3aabce1a9112c0426e26c9e61572cc24fd9aa0e56b5cee157ad35c83b7c",
+          "bytes": 54072,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "621a9f9ba1d3873e9ad24e9c2e2c4e30b488419b8e40ce6c6fd1f9db8f8b36c1",
+          "bytes": 465,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "448be635feb605c3d79e08a800d44f229b8ed829d1e1865f9d042d4d9bac3926",
+          "bytes": 2299231,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R63",
+      "sourceObservationId": "R63-search-filter",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "150",
+        "273"
+      ],
+      "inputAtUtc": "2026-10-13T06:06:42.339Z",
+      "inputAtLocal": "2026-10-13T14:06:42.339+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:06:43.754Z",
+      "captureRequestAtLocal": "2026-10-13T14:06:43.754+08:00",
+      "completedAtUtc": "2026-10-13T06:06:46.659Z",
+      "result": "展开完整筛选面板；排序“综合”选中，与此前快捷“最新”的选中状态不一致。",
+      "findings": [
+        "S04",
+        "S05"
+      ],
+      "originalCaseIds": [
+        "D049"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "3a9146eb8eb88b2d758d486de706cddc085e449d76a3b74e33333850c2750c41",
+          "bytes": 93623,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "9af42c329513707f140feabc0979e10101ba6db10c254f859f3b5fb06a67a82a",
+          "bytes": 465,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "b9392deb8c9f1f93ca054cdf6398d9d79eb63cf015687489ff39d287d47fb6d7",
+          "bytes": 671363,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R63-search-filter",
+          "sourceName": "screen.png",
+          "file": "../截图/R63-search-filter.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "50583b4edc7bd238cb4badbe41aef64eabb3469df27dcf115a9e967d88515451"
+        }
+      ]
+    },
+    {
+      "id": "R64",
+      "sourceObservationId": "R64-filter-image",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "666",
+        "824"
+      ],
+      "inputAtUtc": "2026-10-13T06:07:02.383Z",
+      "inputAtLocal": "2026-10-13T14:07:02.383+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:07:03.799Z",
+      "captureRequestAtLocal": "2026-10-13T14:07:03.799+08:00",
+      "completedAtUtc": "2026-10-13T06:07:06.726Z",
+      "result": "选择“图文”后面板仍打开，背后结果已变化。",
+      "findings": [
+        "S05"
+      ],
+      "originalCaseIds": [
+        "D049"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "096f01b54a71a56befd69d2cf751bb5ac5f763e060c70ab7f82d5e7eda405eb9",
+          "bytes": 93764,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "23916ee83e5b80e433ad36b0a4a124a11c92018dd951e1138b29c87310837541",
+          "bytes": 464,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "66dd7806547fdc6837b0b9100549afcab1791d6ecc5e85c5d48cefce1a9058f1",
+          "bytes": 585372,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R64-filter-image",
+          "sourceName": "screen.png",
+          "file": "../截图/R64-filter-image.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "7e0372260bb557a0247dea97e80e22230f1c0ed1a0d3487fbf600b0ed67e8e50"
+        }
+      ]
+    },
+    {
+      "id": "R65",
+      "sourceObservationId": "R65-filter-close",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "828",
+        "1627"
+      ],
+      "inputAtUtc": "2026-10-13T06:07:20.570Z",
+      "inputAtLocal": "2026-10-13T14:07:20.570+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:07:21.965Z",
+      "captureRequestAtLocal": "2026-10-13T14:07:21.965+08:00",
+      "completedAtUtc": "2026-10-13T06:07:25.199Z",
+      "result": "收起筛选，保留更新后的结果。",
+      "findings": [
+        "S05"
+      ],
+      "originalCaseIds": [
+        "D049"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "b8c9fde4443ad0cac166839638fcc551a62a466f195240480fcb48f3a79c5d67",
+          "bytes": 54213,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "427e29c2cf67bec29aaad650c0b0f3db84537f3930dc7a1deb237354f4acd7f1",
+          "bytes": 465,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "11d00ef9c2d6ffb5fb1a24ea6d10b41da723251ae7281c0d1eea4933542d65ba",
+          "bytes": 2405682,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R66",
+      "sourceObservationId": "R66-filter-reopen",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "150",
+        "273"
+      ],
+      "inputAtUtc": "2026-10-13T06:07:46.996Z",
+      "inputAtLocal": "2026-10-13T14:07:46.996+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:07:48.403Z",
+      "captureRequestAtLocal": "2026-10-13T14:07:48.403+08:00",
+      "completedAtUtc": "2026-10-13T06:07:51.326Z",
+      "result": "重开面板，“图文”仍选中。",
+      "findings": [
+        "S05",
+        "S06"
+      ],
+      "originalCaseIds": [
+        "D049"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "096f01b54a71a56befd69d2cf751bb5ac5f763e060c70ab7f82d5e7eda405eb9",
+          "bytes": 93764,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "9e12860ce89c68b323708985cf3c153a355c5382e9c1f7928b1c146c8d4a78cd",
+          "bytes": 465,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "93289ad8f0b799c73bc1ddf41393667cf38281baccae01985994b32e9ef73640",
+          "bytes": 585485,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R66-filter-reopen",
+          "sourceName": "screen.png",
+          "file": "../截图/R66-filter-reopen.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "7e0372260bb557a0247dea97e80e22230f1c0ed1a0d3487fbf600b0ed67e8e50"
+        }
+      ]
+    },
+    {
+      "id": "R67",
+      "sourceObservationId": "R67-filter-reset",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "290",
+        "1627"
+      ],
+      "inputAtUtc": "2026-10-13T06:08:11.585Z",
+      "inputAtLocal": "2026-10-13T14:08:11.585+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:08:12.992Z",
+      "captureRequestAtLocal": "2026-10-13T14:08:12.992+08:00",
+      "completedAtUtc": "2026-10-13T06:08:15.954Z",
+      "result": "点击重置，类型恢复“不限”，面板仍打开；未证明快捷排序同步重置。",
+      "findings": [
+        "S06"
+      ],
+      "originalCaseIds": [
+        "D049"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "d618f6fa73958f13746a71d350754227a8effa0b2d8a3c182c6ca123dbddd18e",
+          "bytes": 93764,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "a8bbb5956a4848fc1777164976883a6ad621990937d8c9a3c0fbeca3e74b6ef7",
+          "bytes": 465,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "ce358125a14e66731d11c97e8eddd28656275021fb1bc4fb97c8a878e774c5dc",
+          "bytes": 585641,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": [
+        {
+          "observationId": "R67-filter-reset",
+          "sourceName": "screen.png",
+          "file": "../截图/R67-filter-reset.png",
+          "transform": "crop",
+          "sourceRect": [
+            0,
+            92,
+            1080,
+            2179
+          ],
+          "sha256": "31afd233c4fe32c426e74322fcbc5625bddcc57fdf5956638f3372ced96e3c86"
+        }
+      ]
+    },
+    {
+      "id": "R68",
+      "sourceObservationId": "R68-filter-back",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "back",
+      "parameters": [],
+      "inputAtUtc": "2026-10-13T06:08:39.380Z",
+      "inputAtLocal": "2026-10-13T14:08:39.380+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:08:40.809Z",
+      "captureRequestAtLocal": "2026-10-13T14:08:40.809+08:00",
+      "completedAtUtc": "2026-10-13T06:08:43.956Z",
+      "result": "系统返回仅关闭筛选面板，仍在搜索结果页。",
+      "findings": [
+        "S06"
+      ],
+      "originalCaseIds": [
+        "D049",
+        "D090"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "c96c27e4542feac85dd5af7b9bf76d58d6f884ca4df3d237ce686ca3efab9ba5",
+          "bytes": 54213,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "89ea584a64ae899b46a197f60c31561066aa218efd9e78ed9c62c3c28dcf43d4",
+          "bytes": 440,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "9370481500ab0f77c8cc750c9ad8b377a795c18709c8bfa3a740f57bb5763ce1",
+          "bytes": 2405842,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R69",
+      "sourceObservationId": "R69-search-users",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "296",
+        "273"
+      ],
+      "inputAtUtc": "2026-10-13T06:09:07.159Z",
+      "inputAtLocal": "2026-10-13T14:09:07.159+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:09:08.543Z",
+      "captureRequestAtLocal": "2026-10-13T14:09:08.543+08:00",
+      "completedAtUtc": "2026-10-13T06:09:11.443Z",
+      "result": "切“用户”分类，展示用户结果列表。",
+      "findings": [
+        "S07"
+      ],
+      "originalCaseIds": [
+        "D048",
+        "D050"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "e84ad351079088fa43ba240e67a29a8b2c88dd83f0ad5f8cf4f86f8533c0550c",
+          "bytes": 40762,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "83eb5b3cee7a928487d5de9419cea1e1440e522ff6d95927d91e3f9a5adc2a6a",
+          "bytes": 464,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "6621e5702e9f02e3518ffca0518e3e9b477c9e6f1315ab98b7612cb8e4d0a6ed",
+          "bytes": 421570,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R70",
+      "sourceObservationId": "R70-search-clear",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "860",
+        "151"
+      ],
+      "inputAtUtc": "2026-10-13T06:09:35.862Z",
+      "inputAtLocal": "2026-10-13T14:09:35.862+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:09:37.264Z",
+      "captureRequestAtLocal": "2026-10-13T14:09:37.264+08:00",
+      "completedAtUtc": "2026-10-13T06:09:40.014Z",
+      "result": "清空输入后回搜索起始内容，公共测试词 A 出现在历史。",
+      "findings": [
+        "S07"
+      ],
+      "originalCaseIds": [
+        "D046",
+        "D050"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "c25e190efdd5c74b4ecacb22831953ba6917eb1636b0b44448f6cbcc6bd7bd1e",
+          "bytes": 47527,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "4ddc174201f4445e6dca258b4a1ed5f5b60de896fc565fbf167856e867167cae",
+          "bytes": 464,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "73953dd20aa4005bb1b2df0ee862014e63e69acc7119930e087dfd949235530b",
+          "bytes": 257621,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R71",
+      "sourceObservationId": "R71-search-empty-term",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "text",
+      "parameters": [
+        "RANDOM_TEST_TERM_B"
+      ],
+      "inputAtUtc": "2026-10-13T06:10:08.303Z",
+      "inputAtLocal": "2026-10-13T14:10:08.303+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:10:09.953Z",
+      "captureRequestAtLocal": "2026-10-13T14:10:09.953+08:00",
+      "completedAtUtc": "2026-10-13T06:10:12.716Z",
+      "result": "输入本轮随机测试词 B。",
+      "findings": [
+        "S07",
+        "S08"
+      ],
+      "originalCaseIds": [
+        "D050"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "50790c29bc7a996c98a5c332c7d1bc9966a34ebfed41f27c832a25044241c3e5",
+          "bytes": 7742,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "da4487d9da95fe12646ba137708008b615ddef45f9370eea0fd2f7869cadd3e0",
+          "bytes": 475,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "249b1824767e43f88f8c711b69950c1b8c547e554dda1f93a3563b53c975b703",
+          "bytes": 116246,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R72",
+      "sourceObservationId": "R72-search-empty-result",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "995",
+        "151"
+      ],
+      "inputAtUtc": "2026-10-13T06:10:23.833Z",
+      "inputAtLocal": "2026-10-13T14:10:23.833+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:10:25.236Z",
+      "captureRequestAtLocal": "2026-10-13T14:10:25.236+08:00",
+      "completedAtUtc": "2026-10-13T06:10:27.992Z",
+      "result": "新词提交后仍处“用户”分类，并有模糊匹配；未出现空结果。",
+      "findings": [
+        "S07",
+        "S08"
+      ],
+      "originalCaseIds": [
+        "D048",
+        "D050"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "ea4cdeaf1488b7e1d97bdf875e66a694f69f6b653cdc3b0acf771a3b74574212",
+          "bytes": 40726,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "5a35e08225a5c758f774507f5cfd09f4e30468040b9565c78d91e86c2258b2e0",
+          "bytes": 471,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "8f98d5926a8c2932cfd972c2a37dd88c01801bc417f20343b6dd130dea94dd0e",
+          "bytes": 386860,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R73",
+      "sourceObservationId": "R73-search-empty-all",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "77",
+        "273"
+      ],
+      "inputAtUtc": "2026-10-13T06:10:39.959Z",
+      "inputAtLocal": "2026-10-13T14:10:39.959+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:10:41.365Z",
+      "captureRequestAtLocal": "2026-10-13T14:10:41.365+08:00",
+      "completedAtUtc": "2026-10-13T06:10:44.427Z",
+      "result": "切“全部”后有松散相关内容及提问引导；未复现真正空结果。",
+      "findings": [
+        "S08"
+      ],
+      "originalCaseIds": [
+        "D048"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "f7a2badca3d2927f4908fff7f78fc5e0d89732d8f532b59ab181b03bca217717",
+          "bytes": 40931,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "121cce2fa585c2c207bd93150b7b40f957121375fd37bfb8e1e00c53e95a19a6",
+          "bytes": 467,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "4b585ae31b76d01918d1b36e6b584bfb925a479c1fcfb1d78294ed320639688d",
+          "bytes": 1592415,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R74",
+      "sourceObservationId": "R74-search-back",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "back",
+      "parameters": [],
+      "inputAtUtc": "2026-10-13T06:10:54.761Z",
+      "inputAtLocal": "2026-10-13T14:10:54.761+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:10:56.232Z",
+      "captureRequestAtLocal": "2026-10-13T14:10:56.232+08:00",
+      "completedAtUtc": "2026-10-13T06:10:58.948Z",
+      "result": "返回搜索起始页，本轮随机词在历史首位。",
+      "findings": [
+        "S09"
+      ],
+      "originalCaseIds": [
+        "D046",
+        "D052"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "d7fd628ce7a04dd74c20673dafd0a1cbddf8b2b3bbb547c9a4adf1f78049db5d",
+          "bytes": 46808,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "9b8021dcce4291497da207cf651445811978bc8a55d31f4a723e2301bec05a43",
+          "bytes": 440,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "0d5d241d3223f0c14c6ce3823401001206e21b6c9e07ece1b761a9d78c47f64a",
+          "bytes": 324022,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R75",
+      "sourceObservationId": "R75-history-edit",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "1013",
+        "286"
+      ],
+      "inputAtUtc": "2026-10-13T06:11:13.041Z",
+      "inputAtLocal": "2026-10-13T14:11:13.041+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:11:14.462Z",
+      "captureRequestAtLocal": "2026-10-13T14:11:14.462+08:00",
+      "completedAtUtc": "2026-10-13T06:11:17.247Z",
+      "result": "进入历史编辑态：各条删除、完成、全部删除入口可见。",
+      "findings": [
+        "S09"
+      ],
+      "originalCaseIds": [
+        "D052"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "009ea57040c50b577e3767da1a7ff141f3b5ee0bdf5cffd4485c3de35cca9a85",
+          "bytes": 56574,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "6854c55ff43f2b264ea37d95960e9d9b26a4ac730edb62f7647ea565728749d2",
+          "bytes": 465,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "310b4f6ef9547310f7971b16e84ccfb88d9f85c79ead3d30a3739a36ed84360c",
+          "bytes": 317390,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R76",
+      "sourceObservationId": "R76-history-remove-test",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "499",
+        "393"
+      ],
+      "inputAtUtc": "2026-10-13T06:11:32.041Z",
+      "inputAtLocal": "2026-10-13T14:11:32.041+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:11:33.461Z",
+      "captureRequestAtLocal": "2026-10-13T14:11:33.461+08:00",
+      "completedAtUtc": "2026-10-13T06:11:36.150Z",
+      "result": "仅移除本轮随机测试词历史。",
+      "findings": [
+        "S09"
+      ],
+      "originalCaseIds": [
+        "D052"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "9a74299bec959833c3bed03377ad56d14b8e406a9d2c2bb6c8928265fbb4219e",
+          "bytes": 55450,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "d1139196736187a7bc818a4b5713421de3029157804d219f39329ba7365b20be",
+          "bytes": 471,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "e6f3b97acbf270d0f941518790eaa0d9d4e43753248c0b0d2082a6752f7ebfa7",
+          "bytes": 309655,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R77",
+      "sourceObservationId": "R77-history-remove-citywalk",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "259",
+        "393"
+      ],
+      "inputAtUtc": "2026-10-13T06:11:46.735Z",
+      "inputAtLocal": "2026-10-13T14:11:46.735+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:11:48.146Z",
+      "captureRequestAtLocal": "2026-10-13T14:11:48.146+08:00",
+      "completedAtUtc": "2026-10-13T06:11:50.944Z",
+      "result": "仅移除本轮公共测试词 A 历史。",
+      "findings": [
+        "S09"
+      ],
+      "originalCaseIds": [
+        "D052"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "da4c414550834fbe0448a679ac5c1cf2d9777b3a80019a99debf9082ecc02589",
+          "bytes": 56639,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "595971aee78cdf949519c2d6b1ed0ea2954bbebcd489a42a86580e4f15d49457",
+          "bytes": 475,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "95d03953eb0398ba3d40d8cc4b5267fedd61e40143d2ee575bf4311db61207cb",
+          "bytes": 315221,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R78",
+      "sourceObservationId": "R78-history-done",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "995",
+        "286"
+      ],
+      "inputAtUtc": "2026-10-13T06:12:11.330Z",
+      "inputAtLocal": "2026-10-13T14:12:11.330+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:12:12.735Z",
+      "captureRequestAtLocal": "2026-10-13T14:12:12.735+08:00",
+      "completedAtUtc": "2026-10-13T06:12:15.437Z",
+      "result": "退出编辑态，原有历史保留；没有验证重启后的持久性。",
+      "findings": [
+        "S09"
+      ],
+      "originalCaseIds": [
+        "D052"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "7c5147d5cde98a540cdc43e38e47f07b98d7390bf9c4bd4c5b9389395c6acc4e",
+          "bytes": 46826,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "f6be23f8601061426841698f77542b64c48d0cca893eb636523454cb347e8381",
+          "bytes": 464,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "1800fcdfa4c0ed619382e1b532199712eae5af29b91aefb64013776079e9baf9",
+          "bytes": 319226,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R79",
+      "sourceObservationId": "R79-search-exit",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "back",
+      "parameters": [],
+      "inputAtUtc": "2026-10-13T06:12:27.010Z",
+      "inputAtLocal": "2026-10-13T14:12:27.010+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:12:28.453Z",
+      "captureRequestAtLocal": "2026-10-13T14:12:28.453+08:00",
+      "completedAtUtc": "2026-10-13T06:12:31.240Z",
+      "result": "返回发现首页。",
+      "findings": [
+        "F01"
+      ],
+      "originalCaseIds": [
+        "D046"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "92c00146c394eabc252dd4754f5dff5a3d6b4bbf891cb91bc47677b5cff287ca",
+          "bytes": 42545,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "3a4ab4cdeaef9805da19e2394977fe0934cc7d2463906a9dfc3928dbebb2b50f",
+          "bytes": 440,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "9f2aa73df926a2e266dffae64a92d0d85582172e7cd66e56853a11d7c764ec86",
+          "bytes": 966632,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R80",
+      "sourceObservationId": "R80-feed-refresh",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "532",
+        "490",
+        "532",
+        "1520",
+        "700"
+      ],
+      "inputAtUtc": "2026-10-13T06:12:43.794Z",
+      "inputAtLocal": "2026-10-13T14:12:43.794+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:12:45.916Z",
+      "captureRequestAtLocal": "2026-10-13T14:12:45.916+08:00",
+      "completedAtUtc": "2026-10-13T06:12:48.773Z",
+      "result": "顶部下拉刷新后首批内容变化，二级频道可见；未测刷新临界阈值。",
+      "findings": [
+        "F01",
+        "F02"
+      ],
+      "originalCaseIds": [
+        "D010",
+        "D012"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "0761ca112d94863e07ce3fcfeea26ca6fb91914d1914bb78cfc0a16045d8654d",
+          "bytes": 48604,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "1dbe1f39cef87609ca099a05e441da30d3e83c0f6541cb42a70641954ace6947",
+          "bytes": 500,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "f0b4f81880ee6aa6fdf6831c31685ade3f50394fa6adb670264dd686d2c78cfd",
+          "bytes": 863485,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R81",
+      "sourceObservationId": "R81-follow-channel",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "212",
+        "980",
+        "886",
+        "980",
+        "550"
+      ],
+      "inputAtUtc": "2026-10-13T06:13:01.935Z",
+      "inputAtLocal": "2026-10-13T14:13:01.935+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:13:03.905Z",
+      "captureRequestAtLocal": "2026-10-13T14:13:03.905+08:00",
+      "completedAtUtc": "2026-10-13T06:13:06.655Z",
+      "result": "右滑切到关注页；真实关注关系不纳入交付截图。",
+      "findings": [
+        "F02"
+      ],
+      "originalCaseIds": [
+        "D010",
+        "D015"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "dfa5b5c0770d9e9d24a1624ea8f40250f2268b9ca7993cb8cf9699e60b9e67f0",
+          "bytes": 34572,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "6c127878fd76dcecb2feca293982e812a09f7507ded7be8b8563b657c3f437dc",
+          "bytes": 501,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "7803baf74ca6881dd4f43b0ed794578f53fe10f82a6787561be2c51601a6983d",
+          "bytes": 731054,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R82",
+      "sourceObservationId": "R82-discover-channel",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "866",
+        "980",
+        "210",
+        "980",
+        "550"
+      ],
+      "inputAtUtc": "2026-10-13T06:13:20.947Z",
+      "inputAtLocal": "2026-10-13T14:13:20.947+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:13:22.918Z",
+      "captureRequestAtLocal": "2026-10-13T14:13:22.918+08:00",
+      "completedAtUtc": "2026-10-13T06:13:26.175Z",
+      "result": "左滑回发现，首批卡片和位置与 R80 一致。",
+      "findings": [
+        "F02"
+      ],
+      "originalCaseIds": [
+        "D010",
+        "D014"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "7126a1d3b55e4317e9ed73379c7f2993cc2484cce010d6caff249f20317ed455",
+          "bytes": 48258,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "605674b2798c98837a036f5b11b31d5c4a964ff9e71f4b4019283711fd8bb31b",
+          "bytes": 503,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "cdcb586577a9c2cbb994ed5d767fd6ac8e0c0bfd9c79df65b429a6ab192c9094",
+          "bytes": 3009084,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R83",
+      "sourceObservationId": "R83-nearby-channel",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "706",
+        "152"
+      ],
+      "inputAtUtc": "2026-10-13T06:13:56.005Z",
+      "inputAtLocal": "2026-10-13T14:13:56.005+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:13:57.401Z",
+      "captureRequestAtLocal": "2026-10-13T14:13:57.401+08:00",
+      "completedAtUtc": "2026-10-13T06:14:00.556Z",
+      "result": "点击城市进入同城列表，展示距离和探索入口；不导出具体附近位置。",
+      "findings": [
+        "M02"
+      ],
+      "originalCaseIds": [
+        "D010",
+        "D016"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "f575586db7bde684c914cc33d95702b4fcfd59a14670b05b6c9ec65f0ff636aa",
+          "bytes": 49656,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "9a8a07d6737686f3038b8a27ef78bb90f7cbb693c4287894848c5f2c6ebb1015",
+          "bytes": 466,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "82df1508205a6805493302134673b1e8569cccc7cdd11cc67ea73e7ba7cdf764",
+          "bytes": 2090212,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R84",
+      "sourceObservationId": "R84-city-selector",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "706",
+        "152"
+      ],
+      "inputAtUtc": "2026-10-13T06:14:13.337Z",
+      "inputAtLocal": "2026-10-13T14:14:13.337+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:14:14.741Z",
+      "captureRequestAtLocal": "2026-10-13T14:14:14.741+08:00",
+      "completedAtUtc": "2026-10-13T06:14:18.015Z",
+      "result": "再次点击当前城市后列表刷新，没有打开城市选择器。",
+      "findings": [
+        "M02"
+      ],
+      "originalCaseIds": [
+        "D014",
+        "D016"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "0966e59ad953543c2c50b1f48fea31c3ec71ad537449c5e3dc26455f630e565f",
+          "bytes": 42660,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "945e879159642da5748f62ed5fe5ab4f336f4a3584160f987fa1e1bde7598205",
+          "bytes": 465,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "ea61181f9a2c0ea7fd89e348daafc41b55950a646a5b4fb673c57dc369a122d5",
+          "bytes": 2904931,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R85",
+      "sourceObservationId": "R85-explore-local",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "460",
+        "309"
+      ],
+      "inputAtUtc": "2026-10-13T06:15:30.845Z",
+      "inputAtLocal": "2026-10-13T14:15:30.845+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:15:32.271Z",
+      "captureRequestAtLocal": "2026-10-13T14:15:32.271+08:00",
+      "completedAtUtc": "2026-10-13T06:15:35.222Z",
+      "result": "点击探索进入地图，底部为“探索此区域”的收起面板。",
+      "findings": [
+        "M01"
+      ],
+      "originalCaseIds": [
+        "D016"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "483916a7efad1fd297ff634f23a2874bdd833fb1a473fdc1e3a46907de055807",
+          "bytes": 38267,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "b3e9569d6047bcc436b211c541683efc25ef0308b9c563452d8acdea15811e94",
+          "bytes": 465,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "4460455402a2bb5915f522cb5511ab67acd56e8e6171ceda42f35738a6e2c78a",
+          "bytes": 144559,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R86",
+      "sourceObservationId": "R86-map-pan",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "673",
+        "1200",
+        "420",
+        "920",
+        "500"
+      ],
+      "inputAtUtc": "2026-10-13T06:15:50.760Z",
+      "inputAtLocal": "2026-10-13T14:15:50.760+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:15:52.664Z",
+      "captureRequestAtLocal": "2026-10-13T14:15:52.664+08:00",
+      "completedAtUtc": "2026-10-13T06:15:55.509Z",
+      "result": "单指拖地图后，底部面板仍保持收起。",
+      "findings": [
+        "M01"
+      ],
+      "originalCaseIds": [
+        "D016"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "483916a7efad1fd297ff634f23a2874bdd833fb1a473fdc1e3a46907de055807",
+          "bytes": 38267,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "fc9afbbca0657135d6f40f28232a517b581a020b861632c2b81d66b10b5d2283",
+          "bytes": 495,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "30d03e425d25644f1c4522bc1f8adf0de423258e3b2c426c65c2fabae37331a3",
+          "bytes": 577515,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R87",
+      "sourceObservationId": "R87-map-explore",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "519",
+        "2163"
+      ],
+      "inputAtUtc": "2026-10-13T06:16:08.628Z",
+      "inputAtLocal": "2026-10-13T14:16:08.628+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:16:10.019Z",
+      "captureRequestAtLocal": "2026-10-13T14:16:10.019+08:00",
+      "completedAtUtc": "2026-10-13T06:16:12.892Z",
+      "result": "点击探索后地点/笔记面板展开，显示地点列表；结果城市与同城页不一致。",
+      "findings": [
+        "M01",
+        "M02"
+      ],
+      "originalCaseIds": [
+        "D016"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "25c426d6345210159a13e2037743359d5bed6556bcabda78f20b7151dcc063ad",
+          "bytes": 53501,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "98520ad92e9888e42e864814bf2fb42c06174f0809dcb2c18d9b78323dad13d1",
+          "bytes": 464,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "20ebf0d8e1facc0c2ea2386354a1174a843bf43b00bc0b3469c4250a0a1eb6be",
+          "bytes": 930393,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R88",
+      "sourceObservationId": "R88-map-sheet-collapse",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "swipe",
+      "parameters": [
+        "536",
+        "183",
+        "536",
+        "1710",
+        "600"
+      ],
+      "inputAtUtc": "2026-10-13T06:16:28.498Z",
+      "inputAtLocal": "2026-10-13T14:16:28.498+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:16:30.516Z",
+      "captureRequestAtLocal": "2026-10-13T14:16:30.516+08:00",
+      "completedAtUtc": "2026-10-13T06:16:33.265Z",
+      "result": "向下拖动面板，回到收起状态。",
+      "findings": [
+        "M01"
+      ],
+      "originalCaseIds": [
+        "D016"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "483916a7efad1fd297ff634f23a2874bdd833fb1a473fdc1e3a46907de055807",
+          "bytes": 38267,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "71458e71add905b813493c6ab1bb0ddd0ce2aaab230824cf5fc7dff378920703",
+          "bytes": 506,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "bfa30bfdd26e610936a3e033920fe2833ec4972b567fd94a8de82c631493d5a8",
+          "bytes": 590817,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R89",
+      "sourceObservationId": "R89-map-back",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "back",
+      "parameters": [],
+      "inputAtUtc": "2026-10-13T06:16:46.681Z",
+      "inputAtLocal": "2026-10-13T14:16:46.681+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:16:48.071Z",
+      "captureRequestAtLocal": "2026-10-13T14:16:48.071+08:00",
+      "completedAtUtc": "2026-10-13T06:16:50.804Z",
+      "result": "一次系统返回后仍在地图，原因未确定。",
+      "findings": [
+        "M02"
+      ],
+      "originalCaseIds": [
+        "D016",
+        "D090"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "483916a7efad1fd297ff634f23a2874bdd833fb1a473fdc1e3a46907de055807",
+          "bytes": 38267,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "3a576745776892301d113fb367189de0f2f62e329521a116e4778555e00aff81",
+          "bytes": 437,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "51652289efafbb2b1f4ad3c98fae8b7742e13c4277802e9bafab7d379d490cf0",
+          "bytes": 590454,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R90",
+      "sourceObservationId": "R90-map-exit",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "102",
+        "185"
+      ],
+      "inputAtUtc": "2026-10-13T06:17:07.072Z",
+      "inputAtLocal": "2026-10-13T14:17:07.072+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:17:08.484Z",
+      "captureRequestAtLocal": "2026-10-13T14:17:08.484+08:00",
+      "completedAtUtc": "2026-10-13T06:17:11.686Z",
+      "result": "点击页面左上返回回到同城列表，原卡片仍在。",
+      "findings": [
+        "M02"
+      ],
+      "originalCaseIds": [
+        "D016",
+        "D090"
+      ],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "0966e59ad953543c2c50b1f48fea31c3ec71ad537449c5e3dc26455f630e565f",
+          "bytes": 42660,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "20f1d6d45b1ad6a5d2f3221a9c923511b378234ed00758601e98b8f3c04fbf28",
+          "bytes": 460,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "8eaf71a1db983a96a1f2bb1e95d4e1324f7c7a80d7fc3c2a4ddfa330a771655f",
+          "bytes": 2905095,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    },
+    {
+      "id": "R91",
+      "sourceObservationId": "R91-finish-home",
+      "status": "observed",
+      "package": "com.xingin.xhs",
+      "appVersion": "8.72.0",
+      "deviceAlias": "meizu21-A",
+      "action": "tap",
+      "parameters": [
+        "540",
+        "152"
+      ],
+      "inputAtUtc": "2026-10-13T06:17:28.252Z",
+      "inputAtLocal": "2026-10-13T14:17:28.252+08:00",
+      "captureRequestAtUtc": "2026-10-13T06:17:29.675Z",
+      "captureRequestAtLocal": "2026-10-13T14:17:29.675+08:00",
+      "completedAtUtc": "2026-10-13T06:17:32.898Z",
+      "result": "点击发现回到 R80 对应的首批内容；结束时停在发现页。",
+      "findings": [
+        "M02"
+      ],
+      "originalCaseIds": [],
+      "sources": [
+        {
+          "name": "hierarchy.xml",
+          "sha256": "7126a1d3b55e4317e9ed73379c7f2993cc2484cce010d6caff249f20317ed455",
+          "bytes": 48258,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "observation.json",
+          "sha256": "224399189528217dae9989cfa04715d552635720fdf43152bb952df6cc98bb36",
+          "bytes": 463,
+          "availability": "retained-locally-not-bundled"
+        },
+        {
+          "name": "screen.png",
+          "sha256": "37e70ac2b642b0e5295331fc2d8223bf01dc4feb80b6a2615b42517e14330f6a",
+          "bytes": 3009089,
+          "availability": "retained-locally-not-bundled"
+        }
+      ],
+      "deliveredAssets": []
+    }
+  ],
+  "findings": [
+    {
+      "id": "G01",
+      "title": "图集短拖取消",
+      "evidence": [
+        "R27",
+        "R28"
+      ],
+      "precondition": "七图详情第 1 张",
+      "event": "横向短拖后松开",
+      "observed": "样本仍为第 1 张",
+      "implementation": "取消拖动应吸附回当前页；阈值由独立实现单独标定。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "G02",
+      "title": "图集单页切换",
+      "evidence": [
+        "R29",
+        "R31",
+        "R32",
+        "R33",
+        "R34",
+        "R35",
+        "R36",
+        "R41",
+        "R42",
+        "R43",
+        "R44",
+        "R45",
+        "R46"
+      ],
+      "precondition": "七图详情媒体区域",
+      "event": "横向左滑或右滑",
+      "observed": "样本每次切换一张，正文不横移",
+      "implementation": "媒体分页状态和正文纵向滚动分开管理。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "G03",
+      "title": "图集首尾边界",
+      "evidence": [
+        "R36",
+        "R37",
+        "R46",
+        "R47"
+      ],
+      "precondition": "首图或末图",
+      "event": "向越界方向横滑",
+      "observed": "仍停在首图或末图，没有跨帖",
+      "implementation": "边界限制图片索引；与详情退出手势分开处理。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "G04",
+      "title": "数字页码显隐",
+      "evidence": [
+        "R29",
+        "R30",
+        "R31"
+      ],
+      "precondition": "完成翻页",
+      "event": "停止操作后继续观察",
+      "observed": "数字页码数秒后淡出；逐帧结果见深度研究",
+      "implementation": "单独管理可见态与隐藏计时；同版静态配置与像素拟合分别记录，不混作直接运行追踪。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "G05",
+      "title": "图片操作菜单",
+      "evidence": [
+        "R39",
+        "R40"
+      ],
+      "precondition": "图集第 7 张",
+      "event": "长按尝试后观察；系统返回",
+      "observed": "工具菜单可见；关闭后仍在第 7 张",
+      "implementation": "菜单作为覆盖层，保留图片索引；此次长按阈值未知。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "V01",
+      "title": "视频暂停",
+      "evidence": [
+        "R02",
+        "R03",
+        "R04"
+      ],
+      "precondition": "视频正在播放",
+      "event": "点视频中心并静置",
+      "observed": "播放图标出现，进度保持 12/45 秒",
+      "implementation": "播放器实际状态是依据；不要用操作按钮文案推导状态。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "V02",
+      "title": "拖动视频进度",
+      "evidence": [
+        "R04",
+        "R05",
+        "R06"
+      ],
+      "precondition": "视频已暂停",
+      "event": "拖进度条至后段",
+      "observed": "进度到约 36/45 秒，随后播放",
+      "implementation": "区分 seeking 与 playing；以采用的规则定义拖动后状态。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "V03",
+      "title": "竖向视频切换",
+      "evidence": [
+        "R12",
+        "R13",
+        "R14"
+      ],
+      "precondition": "单视频全屏详情",
+      "event": "短拖或较长上/下滑",
+      "observed": "短拖不切；较长滑动切下一条/上一条",
+      "implementation": "使用竖向分页；真实手势阈值与速度条件未恢复。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "V04",
+      "title": "回到前一视频",
+      "evidence": [
+        "R13",
+        "R14"
+      ],
+      "precondition": "从视频 A 切到 B",
+      "event": "向下切回 A",
+      "observed": "回到约 44/45 秒，没有从零开始",
+      "implementation": "按内容 ID 保存播放位置；此样本不证明后台播放策略。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "C01",
+      "title": "评论容器因内容类型不同",
+      "evidence": [
+        "R06",
+        "R19"
+      ],
+      "precondition": "视频详情或图文详情",
+      "event": "点评论入口",
+      "observed": "视频打开底部抽屉；图文整页滚到评论区",
+      "implementation": "同一评论数据可复用，外层滚动容器分开。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "C02",
+      "title": "回复展开",
+      "evidence": [
+        "R06",
+        "R07"
+      ],
+      "precondition": "视频评论中含两条回复的根评论",
+      "event": "点击展开两条回复",
+      "observed": "显示同级缩进和回复对象",
+      "implementation": "根评论、子回复、回复目标分开建模；多层/分页未测。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "C03",
+      "title": "评论滚动与关闭",
+      "evidence": [
+        "R08",
+        "R09",
+        "R11"
+      ],
+      "precondition": "视频评论抽屉打开",
+      "event": "滚评论、系统返回或拖面板顶部",
+      "observed": "标题/输入固定；返回或下拖关闭",
+      "implementation": "列表滚动和面板拖动设置独立命中区域。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "C04",
+      "title": "评论重开状态",
+      "evidence": [
+        "R07",
+        "R08",
+        "R09",
+        "R10"
+      ],
+      "precondition": "展开回复并滚动过的评论抽屉已关闭",
+      "event": "再次打开评论",
+      "observed": "回到顶端，回复折叠",
+      "implementation": "该样本要求抽屉会话重置；不能套用作者页的保留策略。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "N01",
+      "title": "逐层返回",
+      "evidence": [
+        "R48",
+        "R53",
+        "R54"
+      ],
+      "precondition": "发现→图文→作者主页",
+      "event": "连续系统返回两次",
+      "observed": "先回原图文且图片索引保留，再回发现",
+      "implementation": "路由栈和页面局部状态分开管理。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "N02",
+      "title": "作者头部折叠",
+      "evidence": [
+        "R49",
+        "R50"
+      ],
+      "precondition": "公开作者主页顶端",
+      "event": "向上滑动主页",
+      "observed": "资料头收起，栏目吸顶",
+      "implementation": "折叠头、固定栏、各栏目滚动区分层组织。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "N03",
+      "title": "作者栏目恢复",
+      "evidence": [
+        "R50",
+        "R51",
+        "R52"
+      ],
+      "precondition": "笔记列表已滚动",
+      "event": "切收藏再切回笔记",
+      "observed": "所选文字与 XML bounds 一致；截图存在56px位移，原因未定",
+      "implementation": "每栏目保留独立锚点；用稳定前后帧验收，不以 XML 一致冒充像素恢复。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "N04",
+      "title": "返回列表的范围",
+      "evidence": [
+        "R01",
+        "R15",
+        "R16",
+        "R21",
+        "R26",
+        "R54"
+      ],
+      "precondition": "从不同首页位置打开详情",
+      "event": "系统返回首页",
+      "observed": "两组基线恢复；R16→R21 有约 217px 偏移",
+      "implementation": "按稳定内容 ID 与相对偏移保存锚点；不能宣称全局像素不变。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "S01",
+      "title": "搜索输入与联想",
+      "evidence": [
+        "R24",
+        "R55",
+        "R56"
+      ],
+      "precondition": "搜索起始页",
+      "event": "输入公共测试词",
+      "observed": "出现联想列表",
+      "implementation": "拆分输入中与结果态；防抖和取消旧请求是建议，未测内部实现。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "S02",
+      "title": "搜索顶部滚动",
+      "evidence": [
+        "R57",
+        "R58",
+        "R59"
+      ],
+      "precondition": "搜索结果顶部",
+      "event": "上滑结果",
+      "observed": "分类行收起，搜索框/条件行保持",
+      "implementation": "吸顶按可见层组织；XML 中残留分类节点不是可见性证明。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "S03",
+      "title": "搜索返回恢复",
+      "evidence": [
+        "R59",
+        "R60",
+        "R61"
+      ],
+      "precondition": "稳定搜索结果中部",
+      "event": "打开详情后返回",
+      "observed": "关键词和所选卡片边界恢复；已打开标题由#333333变#999999",
+      "implementation": "保留查询及列表锚点，并更新阅读状态样式；持久化范围待测。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "S04",
+      "title": "快捷最新排序",
+      "evidence": [
+        "R61",
+        "R62",
+        "R63"
+      ],
+      "precondition": "搜索结果已有滚动",
+      "event": "点击快捷最新，再打开完整筛选",
+      "observed": "结果更新并回首；面板仍显示综合",
+      "implementation": "两处选中显示存在冲突，列为复测；独立实现建议统一来源。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "S05",
+      "title": "筛选即时变化",
+      "evidence": [
+        "R63",
+        "R64",
+        "R65",
+        "R66"
+      ],
+      "precondition": "完整筛选面板打开",
+      "event": "选图文，收起，再重开",
+      "observed": "面板未关时结果已变化；重开保留图文",
+      "implementation": "图文选择视为即时生效；其他条件组合需补测。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "S06",
+      "title": "筛选重置与返回",
+      "evidence": [
+        "R66",
+        "R67",
+        "R68"
+      ],
+      "precondition": "图文筛选已选",
+      "event": "重置，再系统返回",
+      "observed": "类型回不限且面板仍打开；返回只关闭面板",
+      "implementation": "重置与关闭是两种事件；不要把快捷排序同步视为已证实。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "S07",
+      "title": "换词保留分类",
+      "evidence": [
+        "R69",
+        "R70",
+        "R71",
+        "R72"
+      ],
+      "precondition": "用户分类已有结果",
+      "event": "清空再提交新词",
+      "observed": "仍在用户分类",
+      "implementation": "分类与输入词分开存储；持久范围只证实此会话。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "S08",
+      "title": "未命中词降级",
+      "evidence": [
+        "R71",
+        "R72",
+        "R73"
+      ],
+      "precondition": "随机测试词",
+      "event": "查用户后切全部",
+      "observed": "仍出现模糊/松散结果与提问引导",
+      "implementation": "区分相关性不足与真正空数据；本轮未得到空态样本。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "S09",
+      "title": "搜索历史单条删除",
+      "evidence": [
+        "R74",
+        "R75",
+        "R76",
+        "R77",
+        "R78"
+      ],
+      "precondition": "只处理本轮新增历史",
+      "event": "进编辑态，逐条删除，再完成",
+      "observed": "两条测试词已移除，原有历史保留",
+      "implementation": "历史单条删除与清空全部分离；全清和重启持久化未测。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "F01",
+      "title": "下拉刷新",
+      "evidence": [
+        "R79",
+        "R80"
+      ],
+      "precondition": "发现页顶部",
+      "event": "向下拉动",
+      "observed": "首批卡片改变，二级频道可见",
+      "implementation": "刷新更新当前列表；连续刷新与请求合并未测。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "F02",
+      "title": "主页频道横滑",
+      "evidence": [
+        "R80",
+        "R81",
+        "R82"
+      ],
+      "precondition": "发现首页",
+      "event": "右滑关注，再左滑发现",
+      "observed": "发现页原卡片与位置恢复",
+      "implementation": "频道各自保存列表；不同账号与空关注态未测。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "M01",
+      "title": "地图面板展开收起",
+      "evidence": [
+        "R85",
+        "R86",
+        "R87",
+        "R88"
+      ],
+      "precondition": "同城探索地图",
+      "event": "拖地图、点探索、下拖面板",
+      "observed": "地图拖动时面板收起；探索展开；下拖收起",
+      "implementation": "地图与面板分开接收手势；不从地图结果推断真实定位。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    },
+    {
+      "id": "M02",
+      "title": "同城导航与异常",
+      "evidence": [
+        "R83",
+        "R84",
+        "R87",
+        "R89",
+        "R90",
+        "R91"
+      ],
+      "precondition": "同城列表及地图",
+      "event": "重选城市、系统返回、页面返回",
+      "observed": "重选刷新；系统返回一次未退出；页面返回可退出；城市不一致",
+      "implementation": "城市选择器入口、返回拦截原因和定位来源待复测。",
+      "evidenceType": "device-observation",
+      "reconstructionStatus": "not-implemented-not-tested"
+    }
+  ],
+  "coverage": [
+    {
+      "id": "D001",
+      "status": "partial",
+      "evidence": [],
+      "baselineEvidence": [
+        "D001-device-package",
+        "D010-home"
+      ],
+      "observed": "已核对设备、版本、显示并打开已装 App。",
+      "remaining": "冷/热启动计时、不同登录条件。"
+    },
+    {
+      "id": "D002",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D003",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D004",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D005",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D006",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D007",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D008",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D009",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D010",
+      "status": "partial",
+      "evidence": [
+        "R01",
+        "R80",
+        "R81",
+        "R82",
+        "R83"
+      ],
+      "baselineEvidence": [],
+      "observed": "首页可见导航、频道切换。",
+      "remaining": "底部各页签及未登录差异。"
+    },
+    {
+      "id": "D011",
+      "status": "partial",
+      "evidence": [
+        "R01",
+        "R16",
+        "R26"
+      ],
+      "baselineEvidence": [],
+      "observed": "图文/视频卡片和双列布局。",
+      "remaining": "旋转、显示缩放、直播卡及自动播放条件。"
+    },
+    {
+      "id": "D012",
+      "status": "partial",
+      "evidence": [
+        "R80"
+      ],
+      "baselineEvidence": [],
+      "observed": "一次顶部下拉刷新。",
+      "remaining": "连续刷新、空态、阈值、请求合并。"
+    },
+    {
+      "id": "D013",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D014",
+      "status": "partial",
+      "evidence": [
+        "R15",
+        "R21",
+        "R54",
+        "R82",
+        "R84"
+      ],
+      "baselineEvidence": [],
+      "observed": "详情/频道返回和当前城市重选。",
+      "remaining": "多次稳定复现、其他导航重选；一组位置偏移待复测。"
+    },
+    {
+      "id": "D015",
+      "status": "partial",
+      "evidence": [
+        "R81"
+      ],
+      "baselineEvidence": [],
+      "observed": "进入已有内容的关注页。",
+      "remaining": "空关注、关系变更、分页与排序。"
+    },
+    {
+      "id": "D016",
+      "status": "partial",
+      "evidence": [
+        "R83",
+        "R84",
+        "R85",
+        "R86",
+        "R87",
+        "R88",
+        "R89",
+        "R90"
+      ],
+      "baselineEvidence": [],
+      "observed": "同城/地图切换、单指平移、面板展开收起。",
+      "remaining": "城市选择、缩放、权限及城市不一致原因。"
+    },
+    {
+      "id": "D017",
+      "status": "partial",
+      "evidence": [
+        "R39",
+        "R40"
+      ],
+      "baselineEvidence": [],
+      "observed": "图片菜单可见不感兴趣入口，随后取消。",
+      "remaining": "原因、提交、撤销；没有修改推荐偏好。"
+    },
+    {
+      "id": "D018",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D019",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D020",
+      "status": "partial",
+      "evidence": [
+        "R02",
+        "R17",
+        "R19",
+        "R20",
+        "R27"
+      ],
+      "baselineEvidence": [],
+      "observed": "图文、视频两类详情与滚动结构。",
+      "remaining": "文字模板、正文展开、话题/提及/地点跳转。"
+    },
+    {
+      "id": "D021",
+      "status": "partial",
+      "evidence": [
+        "R27",
+        "R28",
+        "R29",
+        "R30",
+        "R31",
+        "R32",
+        "R33",
+        "R34",
+        "R35",
+        "R36",
+        "R37",
+        "R41",
+        "R42",
+        "R43",
+        "R44",
+        "R45",
+        "R46",
+        "R47"
+      ],
+      "baselineEvidence": [],
+      "observed": "七图短拖、较慢/快横滑、双向逐页、首尾边界。",
+      "remaining": "更密集距离/速度组合；不能证明与旧包某代码路径同一。"
+    },
+    {
+      "id": "D022",
+      "status": "partial",
+      "evidence": [
+        "R29",
+        "R30",
+        "R31"
+      ],
+      "baselineEvidence": [],
+      "observed": "页码翻页后出现、静置后淡出；后续逐帧见深度研究。",
+      "remaining": "完整淡入曲线、触摸不翻页、计时重置及重复样本。"
+    },
+    {
+      "id": "D023",
+      "status": "partial",
+      "evidence": [
+        "R18"
+      ],
+      "baselineEvidence": [],
+      "observed": "单击未进入独立大图。",
+      "remaining": "大图其他入口、双击、双指缩放与退出手势。"
+    },
+    {
+      "id": "D024",
+      "status": "partial",
+      "evidence": [
+        "R02",
+        "R03",
+        "R04",
+        "R05"
+      ],
+      "baselineEvidence": [],
+      "observed": "视频自动播放、暂停、拖进度。",
+      "remaining": "首尾、缓冲、循环及封面恢复。"
+    },
+    {
+      "id": "D025",
+      "status": "partial",
+      "evidence": [
+        "R12",
+        "R13",
+        "R14"
+      ],
+      "baselineEvidence": [],
+      "observed": "短拖不切、上下切换、前一条进度。",
+      "remaining": "切换临界速度/距离、预载、音频是否立即停止。"
+    },
+    {
+      "id": "D026",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D027",
+      "status": "partial",
+      "evidence": [
+        "R06",
+        "R09",
+        "R10"
+      ],
+      "baselineEvidence": [],
+      "observed": "评论覆盖时视频继续推进。",
+      "remaining": "后台、锁屏、音频焦点、分享覆盖。"
+    },
+    {
+      "id": "D028",
+      "status": "partial",
+      "evidence": [
+        "R39",
+        "R40"
+      ],
+      "baselineEvidence": [],
+      "observed": "图片工具/分享入口和关闭。",
+      "remaining": "系统分享、保存、复制、自制素材分享。"
+    },
+    {
+      "id": "D029",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D030",
+      "status": "partial",
+      "evidence": [
+        "R06",
+        "R19"
+      ],
+      "baselineEvidence": [],
+      "observed": "有评论样本的图文整页和视频抽屉。",
+      "remaining": "空评论、其他入口、计数口径。"
+    },
+    {
+      "id": "D031",
+      "status": "partial",
+      "evidence": [
+        "R07",
+        "R10"
+      ],
+      "baselineEvidence": [],
+      "observed": "展开两条回复，关闭重开后折叠。",
+      "remaining": "加载更多、主动收起、多层关系。"
+    },
+    {
+      "id": "D032",
+      "status": "partial",
+      "evidence": [
+        "R08",
+        "R10"
+      ],
+      "baselineEvidence": [],
+      "observed": "主评论滚动及重开位置。",
+      "remaining": "主/子评论分页边界、去重、末页。"
+    },
+    {
+      "id": "D033",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D034",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D035",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D036",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D037",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D038",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D039",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D040",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D041",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D042",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D043",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D044",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D045",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D046",
+      "status": "partial",
+      "evidence": [
+        "R22",
+        "R23",
+        "R24",
+        "R55",
+        "R56",
+        "R70",
+        "R74",
+        "R79"
+      ],
+      "baselineEvidence": [],
+      "observed": "搜索进入、输入、清空与退出。",
+      "remaining": "其他搜索入口和上下文差异。"
+    },
+    {
+      "id": "D047",
+      "status": "partial",
+      "evidence": [
+        "R24",
+        "R56"
+      ],
+      "baselineEvidence": [],
+      "observed": "公共词出现联想。",
+      "remaining": "逐字/快速替换、点击建议、防抖和乱序响应。"
+    },
+    {
+      "id": "D048",
+      "status": "partial",
+      "evidence": [
+        "R57",
+        "R69",
+        "R72",
+        "R73"
+      ],
+      "baselineEvidence": [],
+      "observed": "全部/用户分类与随机词模糊结果。",
+      "remaining": "真正空态和其他非购物分类。"
+    },
+    {
+      "id": "D049",
+      "status": "partial",
+      "evidence": [
+        "R62",
+        "R63",
+        "R64",
+        "R65",
+        "R66",
+        "R67",
+        "R68"
+      ],
+      "baselineEvidence": [],
+      "observed": "最新、筛选图文、即时更新、重开、重置、返回。",
+      "remaining": "其他条件组合、快捷排序不一致、无结果移除。"
+    },
+    {
+      "id": "D050",
+      "status": "partial",
+      "evidence": [
+        "R58",
+        "R59",
+        "R60",
+        "R61",
+        "R69",
+        "R70",
+        "R71",
+        "R72"
+      ],
+      "baselineEvidence": [],
+      "observed": "结果滚动、详情返回、换词保留分类。",
+      "remaining": "分页去重、末页、刷新和筛选清理范围。"
+    },
+    {
+      "id": "D051",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D052",
+      "status": "partial",
+      "evidence": [
+        "R74",
+        "R75",
+        "R76",
+        "R77",
+        "R78"
+      ],
+      "baselineEvidence": [],
+      "observed": "逐条移除本轮两条测试历史，保留原记录。",
+      "remaining": "全清、重启、账号切换和同步。"
+    },
+    {
+      "id": "D053",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D054",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D055",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D056",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D057",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D058",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D059",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D060",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D061",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D062",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D063",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D064",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D065",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D066",
+      "status": "partial",
+      "evidence": [
+        "R48",
+        "R49",
+        "R50",
+        "R51",
+        "R52"
+      ],
+      "baselineEvidence": [],
+      "observed": "公开作者头部折叠、栏目及收藏子分类。",
+      "remaining": "自己/已关注身份对照和隐私空态。"
+    },
+    {
+      "id": "D067",
+      "status": "partial",
+      "evidence": [
+        "R50",
+        "R51",
+        "R52"
+      ],
+      "baselineEvidence": [],
+      "observed": "切收藏再切笔记，XML节点相同；截图存在56px位移。",
+      "remaining": "稳定前后帧、各栏多页、详情返回和重选我的页面。"
+    },
+    {
+      "id": "D068",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D069",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D070",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D071",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D072",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D073",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D074",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D075",
+      "status": "partial",
+      "evidence": [
+        "R51"
+      ],
+      "baselineEvidence": [],
+      "observed": "仅看到收藏区“合集”子分类。",
+      "remaining": "是否对应作者系列、内容与创建管理；不能把入口文字等同模型。"
+    },
+    {
+      "id": "D076",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D077",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D078",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D079",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D080",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D081",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D082",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D083",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D084",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D085",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D086",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D087",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D088",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D089",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D090",
+      "status": "partial",
+      "evidence": [
+        "R48",
+        "R53",
+        "R54",
+        "R60",
+        "R61",
+        "R68",
+        "R89",
+        "R90"
+      ],
+      "baselineEvidence": [],
+      "observed": "部分逐级系统返回及页面返回。",
+      "remaining": "边缘返回、取消手势、重复页面；地图单次返回原因。"
+    },
+    {
+      "id": "D091",
+      "status": "partial",
+      "evidence": [
+        "R31"
+      ],
+      "baselineEvidence": [],
+      "observed": "页码录屏实际11.2678秒；逐帧及新增转场见深度研究独立索引。",
+      "remaining": "重复样本、完整淡入、快速反向、中断和动画倍率。"
+    },
+    {
+      "id": "D092",
+      "status": "partial",
+      "evidence": [
+        "R23",
+        "R56"
+      ],
+      "baselineEvidence": [],
+      "observed": "搜索输入聚焦与输入。",
+      "remaining": "评论/发布/私信键盘与附件面板、安全区测量。"
+    },
+    {
+      "id": "D093",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D094",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D095",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D096",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D097",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D098",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D099",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    },
+    {
+      "id": "D100",
+      "status": "pending",
+      "evidence": [],
+      "observed": null,
+      "remaining": "按原 100 项清单保留完整待测要求。"
+    }
+  ]
+}

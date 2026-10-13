@@ -1,0 +1,12 @@
+    public final void S6(int i100, x57.b bVar, f7.c<e8.g> cVar, cm.g.b bVar2, h0.d dVar) {
+        if (PatchProxy.proxyVoid5Para(new Integer(i100), bVar, cVar, bVar2, dVar, this, NoteDetailPhotoNoteItemPresenter.class, 315095)) {
+            return;
+        }
+        i7(bVar.l().p0());
+        View viewW6 = w6();
+        int i101 = l56.n.Q1;
+        ((XYImageView) viewW6.findViewById(i101)).setBackgroundColor(p69.f.e(bVar.I() ? l56.k.A : l56.k.B));
+        ((XYImageView) w6().findViewById(i101)).getHierarchy().v(i7.q.c.f190062e);
+        cm.c.f((XYImageView) w6().findViewById(i101), Uri.parse(bVar.l().p0()), 0, 0, up7.c.b(), (144 & 16) != 0 ? km.f.CENTER_CROP : null, (144 & 32) != 0 ? null : dVar, (144 & 64) != 0 ? new km.b(null, 0, 0, 0, 0.0f, false, null, null, false, false, false, false, false, 7679, null) : new km.b.a().c(cVar).b(bVar2).a(), (144 & 128) != 0 ? com.facebook.imagepipeline.request.a.EnumC0870a.DEFAULT : null);
+        ViewCompat.setTransitionName((XYImageView) w6().findViewById(i101), bVar.l().n());
+    }

@@ -1,0 +1,261 @@
+{
+  "evidence_id": "ev_0ed0033990f445ec2b60ad28dfca99ad38d33eeb50e5563649d761617e6b980d",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.detailfeed.services.autoscroll.AutoScrollStateHelper"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.detailfeed.services.autoscroll.AutoScrollStateHelper"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"INSTANCE\",\"def_pos\":0,\"type\":\"com.xingin.detailfeed.services.autoscroll.AutoScrollStateHelper\"},{\"name\":\"enableAutoPlayStateFromServer$delegate\",\"def_pos\":0,\"type\":\"bn9.d\"},{\"name\":\"hasSyncActivateState\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isActivated\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"latestNoteFromAutoScroll\",\"def_pos\":0,\"type\":\"java.lang.String\"}],\"field_count\":5,\"full_name\":\"com.xingin.detailfeed.services.autoscroll.AutoScrollStateHelper\",\"name\":\"AutoScrollStateHelper\",\"inner_classes\":[\"com.xingin.detailfeed.services.autoscroll.AutoScrollStateHelper.a\"],\"inner_class_count\":1,\"method_count\":19,\"methods\":[{\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"signature\":\"\\u003cclinit\\u003e(): void\"},{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\"},{\"def_pos\":0,\"name\":\"activateAutoScroll\",\"is_constructor\":false,\"signature\":\"activateAutoScroll(boolean): void\"},{\"def_pos\":0,\"name\":\"enableAutoScrollStateInServer\",\"is_constructor\":false,\"signature\":\"enableAutoScrollStateInServer(): boolean\"},{\"def_pos\":0,\"name\":\"getAutoPlayServerKey\",\"is_constructor\":false,\"signature\":\"getAutoPlayServerKey(): java.lang.String\"},{\"def_pos\":0,\"name\":\"getAutoscrollState\",\"is_constructor\":false,\"signature\":\"getAutoscrollState(sb7.b): m46.u\"},{\"def_pos\":0,\"name\":\"getEnableAutoPlayStateFromServer\",\"is_constructor\":false,\"signature\":\"getEnableAutoPlayStateFromServer(): boolean\"},{\"def_pos\":0,\"name\":\"getLongPressTitle\",\"is_constructor\":false,\"signature\":\"getLongPressTitle(): java.lang.String\"},{\"def_pos\":0,\"name\":\"getToastText\",\"is_constructor\":false,\"signature\":\"getToastText(boolean): int\"},{\"def_pos\":0,\"name\":\"hasAutoscrollFunction\",\"is_constructor\":false,\"signature\":\"hasAutoscrollFunction(sb7.b): boolean\"},{\"def_pos\":0,\"name\":\"ignoreHasSetLoopFlag\",\"is_constructor\":false,\"signature\":\"ignoreHasSetLoopFlag(): boolean\"},{\"def_pos\":0,\"name\":\"isAutoPlayOpen\",\"is_constructor\":false,\"signature\":\"isAutoPlayOpen(): boolean\"},{\"def_pos\":0,\"name\":\"isAutoPlayOpenServer\",\"is_constructor\":false,\"signature\":\"isAutoPlayOpenServer(): boolean\"},{\"def_pos\":0,\"name\":\"isAutoScrollActivated\",\"is_constructor\":false,\"signature\":\"isAutoScrollActivated(sb7.b): boolean\"},{\"def_pos\":0,\"name\":\"isNoteFromAutoScroll\",\"is_constructor\":false,\"signature\":\"isNoteFromAutoScroll(java.lang.String): boolean\"},{\"def_pos\":0,\"name\":\"isShowAutoPlayIcon\",\"is_constructor\":false,\"signature\":\"isShowAutoPlayIcon(): boolean\"},{\"def_pos\":0,\"name\":\"isShowInLongPressDialog\",\"is_constructor\":false,\"signature\":\"isShowInLongPressDialog(): boolean\"},{\"def_pos\":0,\"name\":\"recordNoteFromAutoScroll\",\"is_constructor\":false,\"signature\":\"recordNoteFromAutoScroll(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"syncAutoScrollStateFromServer\",\"is_constructor\":false,\"signature\":\"syncAutoScrollStateFromServer(nn9.a\\u003cbn9.w\\u003e): void\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.detailfeed.services.autoscroll.AutoScrollStateHelper",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "activateAutoScroll",
+        "reported_signature": "activateAutoScroll(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "enableAutoScrollStateInServer",
+        "reported_signature": "enableAutoScrollStateInServer(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAutoPlayServerKey",
+        "reported_signature": "getAutoPlayServerKey(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAutoscrollState",
+        "reported_signature": "getAutoscrollState(sb7.b): m46.u",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getEnableAutoPlayStateFromServer",
+        "reported_signature": "getEnableAutoPlayStateFromServer(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLongPressTitle",
+        "reported_signature": "getLongPressTitle(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getToastText",
+        "reported_signature": "getToastText(boolean): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "hasAutoscrollFunction",
+        "reported_signature": "hasAutoscrollFunction(sb7.b): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "ignoreHasSetLoopFlag",
+        "reported_signature": "ignoreHasSetLoopFlag(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isAutoPlayOpen",
+        "reported_signature": "isAutoPlayOpen(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isAutoPlayOpenServer",
+        "reported_signature": "isAutoPlayOpenServer(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isAutoScrollActivated",
+        "reported_signature": "isAutoScrollActivated(sb7.b): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isNoteFromAutoScroll",
+        "reported_signature": "isNoteFromAutoScroll(java.lang.String): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isShowAutoPlayIcon",
+        "reported_signature": "isShowAutoPlayIcon(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isShowInLongPressDialog",
+        "reported_signature": "isShowInLongPressDialog(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "recordNoteFromAutoScroll",
+        "reported_signature": "recordNoteFromAutoScroll(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "syncAutoScrollStateFromServer",
+        "reported_signature": "syncAutoScrollStateFromServer(nn9.a<bn9.w>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "INSTANCE",
+        "reported_type": "com.xingin.detailfeed.services.autoscroll.AutoScrollStateHelper"
+      },
+      {
+        "name": "enableAutoPlayStateFromServer$delegate",
+        "reported_type": "bn9.d"
+      },
+      {
+        "name": "hasSyncActivateState",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isActivated",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "latestNoteFromAutoScroll",
+        "reported_type": "java.lang.String"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.detailfeed.services.autoscroll.AutoScrollStateHelper.a"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "3c727eca785b15ab69349fa6f23ab49e7a8151cddc15b7cbf7772c6652e9d270",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

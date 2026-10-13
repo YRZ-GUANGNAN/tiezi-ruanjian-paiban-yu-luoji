@@ -1,0 +1,15 @@
+    @Override // com.xingin.foundation.core.v2.Presenter
+    public void o7() {
+        Observable observableEmpty;
+        super.o7();
+        p.b(l7());
+        l0 l0Var = l0.LIST_ITEM;
+        el9.b bVar = this.f51173p;
+        mo4.e eVarI = v.i(c7(), v.d(l0Var));
+        h<Object> hVar = eVarI.f156538a.get(oo4.c.class);
+        if (hVar == null || (observableEmpty = Observable.just(new h(hVar.f11911d))) == null) {
+            observableEmpty = Observable.empty();
+        }
+        bVar.c(Observable.concat(observableEmpty, eVarI.f156539b.filter(uf3.m.f208681d).map(n.f208682d)).observeOn(dl9.a.a()).subscribe(new o(this)));
+        Presenter.f7(this, qe8.k.j((LinearLayout) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09141a), 500L), null, new uf3.p(this), 1, null);
+    }

@@ -1,0 +1,15 @@
+/work/
+/outputs/
+/node_modules/
+/.cache/
+*.apk
+*.dex
+*.so
+*.zip
+*.partial
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

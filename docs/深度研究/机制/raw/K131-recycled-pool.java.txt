@@ -1,0 +1,29 @@
+    public final void C1(final RecyclerView.RecycledViewPool recycledViewPool) {
+        if (PatchProxy.proxyVoid1Para(recycledViewPool, this, ExploreView.class, 365256)) {
+            return;
+        }
+        MultiTypeAdapter multiTypeAdapter = this.f123252n;
+        final int i100 = 0;
+        int size = multiTypeAdapter.M().getSize();
+        while (true) {
+            if (i100 >= size) {
+                i100 = -1;
+                break;
+            } else if (multiTypeAdapter.M().getType(i100).d() instanceof pz8.e) {
+                break;
+            } else {
+                i100++;
+            }
+        }
+        oh1.c cVar = oh1.c.f256492a;
+        if (cVar.n()) {
+            oh1.c.e(cVar, "init_item_view_task", 0, true, 0L, new a0(new WeakReference(getContext()), recycledViewPool, i100, this), 10, null);
+        } else {
+            h68.k.H1(new Runnable() { // from class: nq8.e0
+                @Override // java.lang.Runnable
+                public final void run() {
+                    ExploreView.D1(recycledViewPool, i100, this);
+                }
+            });
+        }
+    }

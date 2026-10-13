@@ -1,0 +1,10 @@
+    @Override // com.xingin.foundation.core.v2.Presenter
+    public void m7() {
+        Observable observableEmpty;
+        mo4.e eVarH = v.h(c7());
+        h<Object> hVar = eVarH.f156538a.get(e.class);
+        if (hVar == null || (observableEmpty = Observable.just(new h(hVar.f11911d))) == null) {
+            observableEmpty = Observable.empty();
+        }
+        this.f51173p.c(Observable.concat(observableEmpty, eVarH.f156539b.filter(a.f66578d).map(b.f66579d)).observeOn(dl9.a.a()).subscribe(new c()));
+    }

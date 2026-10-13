@@ -1,0 +1,515 @@
+{
+  "evidence_id": "ev_d7b3e8f7ac058f2cc039ec582125de4e17c227a07f14cf66690df23a9075f7d1",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.entities.comment.consume.CommentListRequestBean"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.entities.comment.consume.CommentListRequestBean"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"CREATOR\",\"def_pos\":0,\"type\":\"android.os.Parcelable$Creator\\u003ccom.xingin.entities.comment.consume.CommentListRequestBean\\u003e\"},{\"name\":\"Companion\",\"def_pos\":0,\"type\":\"com.xingin.entities.comment.consume.CommentListRequestBean$b\"},{\"name\":\"excludeCommentIds\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"forceMaster\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"},{\"name\":\"gson$delegate\",\"def_pos\":0,\"type\":\"bn9.d\\u003ccom.google.gson.Gson\\u003e\"},{\"name\":\"isEnableUsePrecache\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isPrecache\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isPrecacheBackupL1\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"noteId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"num\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"pageContext\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"precacheTriggerPolicy\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"sceneType\",\"def_pos\":0,\"type\":\"zi4.c\"},{\"name\":\"showPrioritySubComments\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"sortStrategy\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"source\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"start\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"timeOut\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"topCommentId\",\"def_pos\":0,\"type\":\"java.lang.String\"}],\"field_count\":19,\"full_name\":\"com.xingin.entities.comment.consume.CommentListRequestBean\",\"name\":\"CommentListRequestBean\",\"inner_classes\":[\"com.xingin.entities.comment.consume.CommentListRequestBean.a\",\"com.xingin.entities.comment.consume.CommentListRequestBean.b\",\"com.xingin.entities.comment.consume.CommentListRequestBean.c\"],\"inner_class_count\":3,\"method_count\":47,\"methods\":[{\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"signature\":\"\\u003cclinit\\u003e(): void\"},{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, boolean, boolean, boolean, zi4.c, java.lang.String, int, java.lang.String, java.lang.String): void\"},{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, boolean, boolean, boolean, zi4.c, java.lang.String, int, java.lang.String, java.lang.String, int, kotlin.jvm.internal.DefaultConstructorMarker): void\"},{\"def_pos\":0,\"name\":\"access$getGson$delegate$cp\",\"is_constructor\":false,\"signature\":\"access$getGson$delegate$cp(): bn9.d\"},{\"def_pos\":0,\"name\":\"component1\",\"is_constructor\":false,\"signature\":\"component1(): java.lang.String\"},{\"def_pos\":0,\"name\":\"component10\",\"is_constructor\":false,\"signature\":\"component10(): boolean\"},{\"def_pos\":0,\"name\":\"component11\",\"is_constructor\":false,\"signature\":\"component11(): boolean\"},{\"def_pos\":0,\"name\":\"component12\",\"is_constructor\":false,\"signature\":\"component12(): zi4.c\"},{\"def_pos\":0,\"name\":\"component13\",\"is_constructor\":false,\"signature\":\"component13(): java.lang.String\"},{\"def_pos\":0,\"name\":\"component14\",\"is_constructor\":false,\"signature\":\"component14(): int\"},{\"def_pos\":0,\"name\":\"component15\",\"is_constructor\":false,\"signature\":\"component15(): java.lang.String\"},{\"def_pos\":0,\"name\":\"component16\",\"is_constructor\":false,\"signature\":\"component16(): java.lang.String\"},{\"def_pos\":0,\"name\":\"component2\",\"is_constructor\":false,\"signature\":\"component2(): java.lang.String\"},{\"def_pos\":0,\"name\":\"component3\",\"is_constructor\":false,\"signature\":\"component3(): int\"},{\"def_pos\":0,\"name\":\"component4\",\"is_constructor\":false,\"signature\":\"component4(): int\"},{\"def_pos\":0,\"name\":\"component5\",\"is_constructor\":false,\"signature\":\"component5(): java.lang.String\"},{\"def_pos\":0,\"name\":\"component6\",\"is_constructor\":false,\"signature\":\"component6(): java.lang.String\"},{\"def_pos\":0,\"name\":\"component7\",\"is_constructor\":false,\"signature\":\"component7(): java.lang.String\"},{\"def_pos\":0,\"name\":\"component8\",\"is_constructor\":false,\"signature\":\"component8(): java.lang.Boolean\"},{\"def_pos\":0,\"name\":\"component9\",\"is_constructor\":false,\"signature\":\"component9(): boolean\"},{\"def_pos\":0,\"name\":\"copy\",\"is_constructor\":false,\"signature\":\"copy(java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, boolean, boolean, boolean, zi4.c, java.lang.String, int, java.lang.String, java.lang.String): com.xingin.entities.comment.consume.CommentListRequestBean\"},{\"def_pos\":0,\"name\":\"copy$default\",\"is_constructor\":false,\"signature\":\"copy$default(com.xingin.entities.comment.consume.CommentListRequestBean, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, boolean, boolean, boolean, zi4.c, java.lang.String, int, java.lang.String, java.lang.String, int, java.lang.Object): com.xingin.entities.comment.consume.CommentListRequestBean\"},{\"def_pos\":0,\"name\":\"describeContents\",\"is_constructor\":false,\"signature\":\"describeContents(): int\"},{\"def_pos\":0,\"name\":\"equals\",\"is_constructor\":false,\"signature\":\"equals(java.lang.Object): boolean\"},{\"def_pos\":0,\"name\":\"getExcludeCommentIds\",\"is_constructor\":false,\"signature\":\"getExcludeCommentIds(): java.lang.String\"},{\"def_pos\":0,\"name\":\"getForceMaster\",\"is_constructor\":false,\"signature\":\"getForceMaster(): java.lang.Boolean\"},{\"def_pos\":0,\"name\":\"getNoteId\",\"is_constructor\":false,\"signature\":\"getNoteId(): java.lang.String\"},{\"def_pos\":0,\"name\":\"getNum\",\"is_constructor\":false,\"signature\":\"getNum(): int\"},{\"def_pos\":0,\"name\":\"getPageContext\",\"is_constructor\":false,\"signature\":\"getPageContext(): java.lang.String\"},{\"def_pos\":0,\"name\":\"getPrecacheTriggerPolicy\",\"is_constructor\":false,\"signature\":\"getPrecacheTriggerPolicy(): java.lang.String\"},{\"def_pos\":0,\"name\":\"getSceneType\",\"is_constructor\":false,\"signature\":\"getSceneType(): zi4.c\"},{\"def_pos\":0,\"name\":\"getShowPrioritySubComments\",\"is_constructor\":false,\"signature\":\"getShowPrioritySubComments(): int\"},{\"def_pos\":0,\"name\":\"getSortStrategy\",\"is_constructor\":false,\"signature\":\"getSortStrategy(): java.lang.String\"},{\"def_pos\":0,\"name\":\"getSource\",\"is_constructor\":false,\"signature\":\"getSource(): java.lang.String\"},{\"def_pos\":0,\"name\":\"getStart\",\"is_constructor\":false,\"signature\":\"getStart(): java.lang.String\"},{\"def_pos\":0,\"name\":\"getTimeOut\",\"is_constructor\":false,\"signature\":\"getTimeOut(): int\"},{\"def_pos\":0,\"name\":\"getTopCommentId\",\"is_constructor\":false,\"signature\":\"getTopCommentId(): java.lang.String\"},{\"def_pos\":0,\"name\":\"hashCode\",\"is_constructor\":false,\"signature\":\"hashCode(): int\"},{\"def_pos\":0,\"name\":\"isEnablePrecache\",\"is_constructor\":false,\"signature\":\"isEnablePrecache(): boolean\"},{\"def_pos\":0,\"name\":\"isPrecache\",\"is_constructor\":false,\"signature\":\"isPrecache(): boolean\"},{\"def_pos\":0,\"name\":\"isPrecacheBackupL1\",\"is_constructor\":false,\"signature\":\"isPrecacheBackupL1(): boolean\"},{\"def_pos\":0,\"name\":\"setPageContext\",\"is_constructor\":false,\"signature\":\"setPageContext(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"setPrecacheTriggerPolicy\",\"is_constructor\":false,\"signature\":\"setPrecacheTriggerPolicy(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"setSortStrategy\",\"is_constructor\":false,\"signature\":\"setSortStrategy(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"setTimeOut\",\"is_constructor\":false,\"signature\":\"setTimeOut(int): void\"},{\"def_pos\":0,\"name\":\"toString\",\"is_constructor\":false,\"signature\":\"toString(): java.lang.String\"},{\"def_pos\":0,\"name\":\"writeToParcel\",\"is_constructor\":false,\"signature\":\"writeToParcel(android.os.Parcel, int): void\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.entities.comment.consume.CommentListRequestBean",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, boolean, boolean, boolean, zi4.c, java.lang.String, int, java.lang.String, java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, boolean, boolean, boolean, zi4.c, java.lang.String, int, java.lang.String, java.lang.String, int, kotlin.jvm.internal.DefaultConstructorMarker): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "access$getGson$delegate$cp",
+        "reported_signature": "access$getGson$delegate$cp(): bn9.d",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component1",
+        "reported_signature": "component1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component10",
+        "reported_signature": "component10(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component11",
+        "reported_signature": "component11(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component12",
+        "reported_signature": "component12(): zi4.c",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component13",
+        "reported_signature": "component13(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component14",
+        "reported_signature": "component14(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component15",
+        "reported_signature": "component15(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component16",
+        "reported_signature": "component16(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component2",
+        "reported_signature": "component2(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component3",
+        "reported_signature": "component3(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component4",
+        "reported_signature": "component4(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component5",
+        "reported_signature": "component5(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component6",
+        "reported_signature": "component6(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component7",
+        "reported_signature": "component7(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component8",
+        "reported_signature": "component8(): java.lang.Boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component9",
+        "reported_signature": "component9(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "copy",
+        "reported_signature": "copy(java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, boolean, boolean, boolean, zi4.c, java.lang.String, int, java.lang.String, java.lang.String): com.xingin.entities.comment.consume.CommentListRequestBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "copy$default",
+        "reported_signature": "copy$default(com.xingin.entities.comment.consume.CommentListRequestBean, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, boolean, boolean, boolean, zi4.c, java.lang.String, int, java.lang.String, java.lang.String, int, java.lang.Object): com.xingin.entities.comment.consume.CommentListRequestBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "describeContents",
+        "reported_signature": "describeContents(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "equals",
+        "reported_signature": "equals(java.lang.Object): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getExcludeCommentIds",
+        "reported_signature": "getExcludeCommentIds(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getForceMaster",
+        "reported_signature": "getForceMaster(): java.lang.Boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getNoteId",
+        "reported_signature": "getNoteId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getNum",
+        "reported_signature": "getNum(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPageContext",
+        "reported_signature": "getPageContext(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPrecacheTriggerPolicy",
+        "reported_signature": "getPrecacheTriggerPolicy(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getSceneType",
+        "reported_signature": "getSceneType(): zi4.c",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getShowPrioritySubComments",
+        "reported_signature": "getShowPrioritySubComments(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getSortStrategy",
+        "reported_signature": "getSortStrategy(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getSource",
+        "reported_signature": "getSource(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getStart",
+        "reported_signature": "getStart(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getTimeOut",
+        "reported_signature": "getTimeOut(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getTopCommentId",
+        "reported_signature": "getTopCommentId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "hashCode",
+        "reported_signature": "hashCode(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isEnablePrecache",
+        "reported_signature": "isEnablePrecache(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isPrecache",
+        "reported_signature": "isPrecache(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isPrecacheBackupL1",
+        "reported_signature": "isPrecacheBackupL1(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setPageContext",
+        "reported_signature": "setPageContext(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setPrecacheTriggerPolicy",
+        "reported_signature": "setPrecacheTriggerPolicy(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setSortStrategy",
+        "reported_signature": "setSortStrategy(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setTimeOut",
+        "reported_signature": "setTimeOut(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "toString",
+        "reported_signature": "toString(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "writeToParcel",
+        "reported_signature": "writeToParcel(android.os.Parcel, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "CREATOR",
+        "reported_type": "android.os.Parcelable$Creator<com.xingin.entities.comment.consume.CommentListRequestBean>"
+      },
+      {
+        "name": "Companion",
+        "reported_type": "com.xingin.entities.comment.consume.CommentListRequestBean$b"
+      },
+      {
+        "name": "excludeCommentIds",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "forceMaster",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "gson$delegate",
+        "reported_type": "bn9.d<com.google.gson.Gson>"
+      },
+      {
+        "name": "isEnableUsePrecache",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isPrecache",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isPrecacheBackupL1",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "noteId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "num",
+        "reported_type": "int"
+      },
+      {
+        "name": "pageContext",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "precacheTriggerPolicy",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "sceneType",
+        "reported_type": "zi4.c"
+      },
+      {
+        "name": "showPrioritySubComments",
+        "reported_type": "int"
+      },
+      {
+        "name": "sortStrategy",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "source",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "start",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "timeOut",
+        "reported_type": "int"
+      },
+      {
+        "name": "topCommentId",
+        "reported_type": "java.lang.String"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.entities.comment.consume.CommentListRequestBean.a",
+      "com.xingin.entities.comment.consume.CommentListRequestBean.b",
+      "com.xingin.entities.comment.consume.CommentListRequestBean.c"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "e4c5a28db80a0e093055d833abff3190a8022bc2f962718e8afb5ef0eb9c0416",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

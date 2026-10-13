@@ -1,0 +1,362 @@
+{
+  "evidence_id": "ev_c0141085f5e98bca8ec2f41044675320567e19d8481649bd25c771e2fea578f5",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.notebase.entities.notedetail.ErrorDetail"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.notebase.entities.notedetail.ErrorDetail"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"countDown\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"cursorScore\",\"type\":\"java.lang.String\",\"def_pos\":0},{\"name\":\"errorPageImageUrl\",\"type\":\"java.lang.String\",\"def_pos\":0},{\"name\":\"isSourceItem\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"modelType\",\"type\":\"java.lang.String\",\"def_pos\":0},{\"name\":\"noteId\",\"type\":\"java.lang.String\",\"def_pos\":0},{\"name\":\"text\",\"type\":\"java.lang.String\",\"def_pos\":0},{\"name\":\"track_id\",\"type\":\"java.lang.String\",\"def_pos\":0}],\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\",\"is_constructor\":true},{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, int): void\",\"is_constructor\":true},{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, int, int, kotlin.jvm.internal.DefaultConstructorMarker): void\",\"is_constructor\":true},{\"name\":\"component1\",\"def_pos\":0,\"signature\":\"component1(): java.lang.String\",\"is_constructor\":false},{\"name\":\"component2\",\"def_pos\":0,\"signature\":\"component2(): java.lang.String\",\"is_constructor\":false},{\"name\":\"component3\",\"def_pos\":0,\"signature\":\"component3(): java.lang.String\",\"is_constructor\":false},{\"name\":\"component4\",\"def_pos\":0,\"signature\":\"component4(): boolean\",\"is_constructor\":false},{\"name\":\"component5\",\"def_pos\":0,\"signature\":\"component5(): java.lang.String\",\"is_constructor\":false},{\"name\":\"component6\",\"def_pos\":0,\"signature\":\"component6(): java.lang.String\",\"is_constructor\":false},{\"name\":\"component7\",\"def_pos\":0,\"signature\":\"component7(): java.lang.String\",\"is_constructor\":false},{\"name\":\"component8\",\"def_pos\":0,\"signature\":\"component8(): int\",\"is_constructor\":false},{\"name\":\"copy\",\"def_pos\":0,\"signature\":\"copy(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, int): com.xingin.notebase.entities.notedetail.ErrorDetail\",\"is_constructor\":false},{\"name\":\"copy$default\",\"def_pos\":0,\"signature\":\"copy$default(com.xingin.notebase.entities.notedetail.ErrorDetail, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.Object): com.xingin.notebase.entities.notedetail.ErrorDetail\",\"is_constructor\":false},{\"name\":\"equals\",\"def_pos\":0,\"signature\":\"equals(java.lang.Object): boolean\",\"is_constructor\":false},{\"name\":\"getCountDown\",\"def_pos\":0,\"signature\":\"getCountDown(): int\",\"is_constructor\":false},{\"name\":\"getCursorScore\",\"def_pos\":0,\"signature\":\"getCursorScore(): java.lang.String\",\"is_constructor\":false},{\"name\":\"getErrorPageImageUrl\",\"def_pos\":0,\"signature\":\"getErrorPageImageUrl(): java.lang.String\",\"is_constructor\":false},{\"name\":\"getModelType\",\"def_pos\":0,\"signature\":\"getModelType(): java.lang.String\",\"is_constructor\":false},{\"name\":\"getNoteId\",\"def_pos\":0,\"signature\":\"getNoteId(): java.lang.String\",\"is_constructor\":false},{\"name\":\"getText\",\"def_pos\":0,\"signature\":\"getText(): java.lang.String\",\"is_constructor\":false},{\"name\":\"getTrack_id\",\"def_pos\":0,\"signature\":\"getTrack_id(): java.lang.String\",\"is_constructor\":false},{\"name\":\"hashCode\",\"def_pos\":0,\"signature\":\"hashCode(): int\",\"is_constructor\":false},{\"name\":\"isSourceItem\",\"def_pos\":0,\"signature\":\"isSourceItem(): boolean\",\"is_constructor\":false},{\"name\":\"setCountDown\",\"def_pos\":0,\"signature\":\"setCountDown(int): void\",\"is_constructor\":false},{\"name\":\"setCursorScore\",\"def_pos\":0,\"signature\":\"setCursorScore(java.lang.String): void\",\"is_constructor\":false},{\"name\":\"setErrorPageImageUrl\",\"def_pos\":0,\"signature\":\"setErrorPageImageUrl(java.lang.String): void\",\"is_constructor\":false},{\"name\":\"setModelType\",\"def_pos\":0,\"signature\":\"setModelType(java.lang.String): void\",\"is_constructor\":false},{\"name\":\"setNoteId\",\"def_pos\":0,\"signature\":\"setNoteId(java.lang.String): void\",\"is_constructor\":false},{\"name\":\"setSourceItem\",\"def_pos\":0,\"signature\":\"setSourceItem(boolean): void\",\"is_constructor\":false},{\"name\":\"setText\",\"def_pos\":0,\"signature\":\"setText(java.lang.String): void\",\"is_constructor\":false},{\"name\":\"setTrack_id\",\"def_pos\":0,\"signature\":\"setTrack_id(java.lang.String): void\",\"is_constructor\":false},{\"name\":\"toString\",\"def_pos\":0,\"signature\":\"toString(): java.lang.String\",\"is_constructor\":false}],\"method_count\":32,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"ErrorDetail\",\"full_name\":\"com.xingin.notebase.entities.notedetail.ErrorDetail\",\"field_count\":8}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.notebase.entities.notedetail.ErrorDetail",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, int): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, int, int, kotlin.jvm.internal.DefaultConstructorMarker): void",
+        "overload_index": 2,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component1",
+        "reported_signature": "component1(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component2",
+        "reported_signature": "component2(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component3",
+        "reported_signature": "component3(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component4",
+        "reported_signature": "component4(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component5",
+        "reported_signature": "component5(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component6",
+        "reported_signature": "component6(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component7",
+        "reported_signature": "component7(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "component8",
+        "reported_signature": "component8(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "copy",
+        "reported_signature": "copy(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, int): com.xingin.notebase.entities.notedetail.ErrorDetail",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "copy$default",
+        "reported_signature": "copy$default(com.xingin.notebase.entities.notedetail.ErrorDetail, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.Object): com.xingin.notebase.entities.notedetail.ErrorDetail",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "equals",
+        "reported_signature": "equals(java.lang.Object): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCountDown",
+        "reported_signature": "getCountDown(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCursorScore",
+        "reported_signature": "getCursorScore(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getErrorPageImageUrl",
+        "reported_signature": "getErrorPageImageUrl(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getModelType",
+        "reported_signature": "getModelType(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getNoteId",
+        "reported_signature": "getNoteId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getText",
+        "reported_signature": "getText(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getTrack_id",
+        "reported_signature": "getTrack_id(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "hashCode",
+        "reported_signature": "hashCode(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isSourceItem",
+        "reported_signature": "isSourceItem(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCountDown",
+        "reported_signature": "setCountDown(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCursorScore",
+        "reported_signature": "setCursorScore(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setErrorPageImageUrl",
+        "reported_signature": "setErrorPageImageUrl(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setModelType",
+        "reported_signature": "setModelType(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setNoteId",
+        "reported_signature": "setNoteId(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setSourceItem",
+        "reported_signature": "setSourceItem(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setText",
+        "reported_signature": "setText(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setTrack_id",
+        "reported_signature": "setTrack_id(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "toString",
+        "reported_signature": "toString(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "countDown",
+        "reported_type": "int"
+      },
+      {
+        "name": "cursorScore",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "errorPageImageUrl",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "isSourceItem",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "modelType",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "noteId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "text",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "track_id",
+        "reported_type": "java.lang.String"
+      }
+    ],
+    "inner_classes": []
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "8b0c2352e05051a51af926c4c148a4d2e4dbc35ef3282421f63ee22026c3afe4",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

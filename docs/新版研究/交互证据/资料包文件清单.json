@@ -1,0 +1,1143 @@
+{
+  "createdAtUtc": "2026-10-13T06:57:08.2840121Z",
+  "version": "2026-10-13-device-8.72.0",
+  "scope": "旧静态研究与本轮真机报告、裁切图、结构化交互记录；不包含 APK、手机原始层级、未裁切录屏或旧压缩包。",
+  "entries": [
+    {
+      "file": "00-阅读入口与进度.md",
+      "bytes": 4757,
+      "sha256": "51a0a453111f75d8a1268a3ff8cf3183e414d067d37b38da963d3ad30e3084b1"
+    },
+    {
+      "file": "01-手机端非购物研究报告.md",
+      "bytes": 24516,
+      "sha256": "b3e2a85eb3c8c69682d5a5a3e4b6b81ddaf6e160f1bfd0867bc5411ad4703acc"
+    },
+    {
+      "file": "02-页面状态机与复刻规格.md",
+      "bytes": 37659,
+      "sha256": "dc31aa0d43e8f5de211c83ca227313c6fc4fd670b4902c22d0b7a738e36d274f"
+    },
+    {
+      "file": "03-真机补测与验收清单.md",
+      "bytes": 37679,
+      "sha256": "01f2b8c92764482070b03a7659f9830b7aedd7e4baf8799f199f5c06e2a6fdbf"
+    },
+    {
+      "file": "04-官方资料与功能证据.md",
+      "bytes": 21889,
+      "sha256": "69b9dd0eb656117e837c1a8cc116b86a0401ca4c4106dabc83222b634d707ad6"
+    },
+    {
+      "file": "05-静态证据索引.md",
+      "bytes": 32632,
+      "sha256": "d1af161b596dc6aff6fb3c783bf1039c2fc8b3d92b0137688ff29b7243612f9c"
+    },
+    {
+      "file": "06-交付校验结果.md",
+      "bytes": 1080,
+      "sha256": "d58f602c960503ea7ae8a60420fae903e8fcc7a1298cc33da6892b340649ab4a"
+    },
+    {
+      "file": "新版研究/01-新版安装包来源.md",
+      "bytes": 4774,
+      "sha256": "8d5b18a57a1169c0a13b0b1111c41345835e1fb401aaf79e03e4519a10637441"
+    },
+    {
+      "file": "新版研究/04-魅族21真机实测.md",
+      "bytes": 7495,
+      "sha256": "be71bd714f56aaf1b7839558b95824a8a3b612890b03181bb6b9e914d6fefa97"
+    },
+    {
+      "file": "新版研究/05-滑动与导航复刻规格.md",
+      "bytes": 14016,
+      "sha256": "75cf490f63b5ac08500219ff6d1b7b1f2e3b5ef5ac7b4abcf128b6a0d5e392da"
+    },
+    {
+      "file": "新版研究/06-实测覆盖与待补测.md",
+      "bytes": 8482,
+      "sha256": "c1ffa2940496cb1777cc2273174b8b86521fd6bccc2110b268715f9c86e05061"
+    },
+    {
+      "file": "新版研究/07-证据与交付校验.md",
+      "bytes": 4657,
+      "sha256": "31107e9278106370eec6e4d0f312ee6d99b77ba8cde7e7c15399f4e242850678"
+    },
+    {
+      "file": "新版研究/交互证据/复刻验收场景.json",
+      "bytes": 13779,
+      "sha256": "8aede729d06547e46ef2c7a2f031cd6007139463d2329d84c8e11aa9bd5ffdd9"
+    },
+    {
+      "file": "新版研究/交互证据/index.json",
+      "bytes": 185839,
+      "sha256": "45224895dadb941ebf0fd2ad3a9e7f4e85721b77cc7cac981ba8982364f853d9"
+    },
+    {
+      "file": "新版研究/截图/D010-home.png",
+      "bytes": 2318730,
+      "sha256": "7a038cf77e1e735b9298860ebef54c0ec90ce8c113cf47838a7825c7dff9e4cb"
+    },
+    {
+      "file": "新版研究/截图/D020-image-detail.png",
+      "bytes": 4035575,
+      "sha256": "b9ef194b28158cd4603782dd679f3a3b3dd2a0c23b97491661e02d451345b5a8"
+    },
+    {
+      "file": "新版研究/截图/R03-video-pause.png",
+      "bytes": 2896293,
+      "sha256": "935ad30be98c02f471b4c1656b24bb1e36e978d2505139fc32852000c2b5dab5"
+    },
+    {
+      "file": "新版研究/截图/R05-video-seek.png",
+      "bytes": 3734363,
+      "sha256": "b58b8438bae3e6d0a9e3f4de695d8f0d7d289f80e6fabe3ab8dba312e2d509ea"
+    },
+    {
+      "file": "新版研究/截图/R06-video-comments.png",
+      "bytes": 1130210,
+      "sha256": "f06d60fc7f4ebdb92ae233dbe5ccedf04d249a5c1331e0f92b3ae0607b9e64d7"
+    },
+    {
+      "file": "新版研究/截图/R07-comment-replies.png",
+      "bytes": 1063750,
+      "sha256": "072ed707f0f42e9f3aef59c764723a05268482ac3f4030f9e697c5ac051a22dd"
+    },
+    {
+      "file": "新版研究/截图/R08-comment-scroll.png",
+      "bytes": 785454,
+      "sha256": "7605a45c5d2e47d3a0b9be4b928209241dcc783bc0bb6110b003655c62af0215"
+    },
+    {
+      "file": "新版研究/截图/R10-comment-reopen.png",
+      "bytes": 1101188,
+      "sha256": "a473bfb852c9270b51a42d6026cd1302786a7402b542e13580874dfba4e46967"
+    },
+    {
+      "file": "新版研究/截图/R19-image-comments.png",
+      "bytes": 374985,
+      "sha256": "79ebccd87f8dc4fefe3d839913957a66faf12bed70073b02c3cfee213ff18927"
+    },
+    {
+      "file": "新版研究/截图/R27-gallery-open.png",
+      "bytes": 1378588,
+      "sha256": "bf8911a988729f6a6246d94223f327ab7cc1948f1059e3f3f205f04d00403726"
+    },
+    {
+      "file": "新版研究/截图/R28-gallery-short.png",
+      "bytes": 1378588,
+      "sha256": "bf8911a988729f6a6246d94223f327ab7cc1948f1059e3f3f205f04d00403726"
+    },
+    {
+      "file": "新版研究/截图/R29-gallery-next.png",
+      "bytes": 640681,
+      "sha256": "82ae5bbae8f1cff80acd2b5fa9e1348e66b46effce27e2a1a2db270b1266b6c9"
+    },
+    {
+      "file": "新版研究/截图/R31-indicator-timing.png",
+      "bytes": 16400,
+      "sha256": "846159145012125fb59df29a5cb80af77b1c8bbe31cd6f7dd5bdc79d97fb167d"
+    },
+    {
+      "file": "新版研究/截图/R36-gallery-7.png",
+      "bytes": 412842,
+      "sha256": "52f6cfa020b0007bfdfbc2834e2d40e159374be3e02baf8bcf20809ec1bd51ec"
+    },
+    {
+      "file": "新版研究/截图/R37-gallery-end-boundary.png",
+      "bytes": 412842,
+      "sha256": "52f6cfa020b0007bfdfbc2834e2d40e159374be3e02baf8bcf20809ec1bd51ec"
+    },
+    {
+      "file": "新版研究/截图/R39-image-tools-only.png",
+      "bytes": 25295,
+      "sha256": "bb76aad8e662c7798a60c2e9e1ccca347dbef9c2adeb9d6e281a6043064a9b89"
+    },
+    {
+      "file": "新版研究/截图/R47-gallery-start-boundary.png",
+      "bytes": 1379306,
+      "sha256": "ecbf38a9d8b59af2334a5434cf43624d6cdddacab46b21741ae414ce6e246e04"
+    },
+    {
+      "file": "新版研究/截图/R49-author-stable.png",
+      "bytes": 2367513,
+      "sha256": "7f85469dca117abaaad0cc9b5d5f68c841502a5d523118b088d46343d37e9c73"
+    },
+    {
+      "file": "新版研究/截图/R50-author-scroll.png",
+      "bytes": 1645391,
+      "sha256": "098c818f5333f25053b928efbecca7043ad0f96c8354a6746ad0b5dfcac8ba70"
+    },
+    {
+      "file": "新版研究/截图/R51-author-collections.png",
+      "bytes": 2783521,
+      "sha256": "0bbfdb4943bf9392807f430f6339163c457918cb69e9561f40759ad8dc120a21"
+    },
+    {
+      "file": "新版研究/截图/R52-author-notes-restore.png",
+      "bytes": 1684898,
+      "sha256": "ca0b19a632334f50c2fe4e476a1129c34bfee9ea84e566cbd1d0f249a87db15b"
+    },
+    {
+      "file": "新版研究/截图/R59-search-stable.png",
+      "bytes": 3463202,
+      "sha256": "4de80926032e276be6fe8eda24197ff8e19c718b9bc9d11894f7d2cea8a2fc9f"
+    },
+    {
+      "file": "新版研究/截图/R61-search-return.png",
+      "bytes": 3463600,
+      "sha256": "9c310629743045ec9d2224eda0dfe82b6bc3e79cfeb2cb7535f248085bba78f0"
+    },
+    {
+      "file": "新版研究/截图/R63-search-filter.png",
+      "bytes": 821008,
+      "sha256": "50583b4edc7bd238cb4badbe41aef64eabb3469df27dcf115a9e967d88515451"
+    },
+    {
+      "file": "新版研究/截图/R64-filter-image.png",
+      "bytes": 649823,
+      "sha256": "7e0372260bb557a0247dea97e80e22230f1c0ed1a0d3487fbf600b0ed67e8e50"
+    },
+    {
+      "file": "新版研究/截图/R66-filter-reopen.png",
+      "bytes": 649823,
+      "sha256": "7e0372260bb557a0247dea97e80e22230f1c0ed1a0d3487fbf600b0ed67e8e50"
+    },
+    {
+      "file": "新版研究/截图/R67-filter-reset.png",
+      "bytes": 649529,
+      "sha256": "31afd233c4fe32c426e74322fcbc5625bddcc57fdf5956638f3372ced96e3c86"
+    },
+    {
+      "file": "证据包/AndroidManifest.xml",
+      "bytes": 396664,
+      "sha256": "e22a5ee157a11c133be1d10dd591479ecf0cf83cef85c86fe58d1e5c57db0a1b"
+    },
+    {
+      "file": "证据包/apk-package.json",
+      "bytes": 853839,
+      "sha256": "3b555577c950bc222ea4ab764b1375ef44c67cc5285bb100185f69ffddd46f7a"
+    },
+    {
+      "file": "证据包/classes-all.txt",
+      "bytes": 1578353,
+      "sha256": "cb23bbaf95c7376f737236e83b02c412a4500c3d31d8bd54e14a9ea3de6a6d38"
+    },
+    {
+      "file": "证据包/classes-note.json",
+      "bytes": 2033271,
+      "sha256": "b2d7ed0c02f6fa51c8a34e64f202400563fefc6665613424db28a853bb82b084"
+    },
+    {
+      "file": "证据包/focused/C01-note-feed.json",
+      "bytes": 132006,
+      "sha256": "3979d7c6c3cb9c994b4953086112a27a1bd7e7f704e2817caa528d17d90f01af"
+    },
+    {
+      "file": "证据包/focused/C02-note-card.json",
+      "bytes": 49161,
+      "sha256": "62d77504ed5962c49a1cd36f2f44b16497bfdea2e28be9d47d7f3adc7bb486f1"
+    },
+    {
+      "file": "证据包/focused/C03-note-service.json",
+      "bytes": 23848,
+      "sha256": "a3243fe82e9106421fc67289cdeb0f103ae08d2b21b2a25ab0d9f0835d17d59b"
+    },
+    {
+      "file": "证据包/focused/C04-note-base-service.json",
+      "bytes": 4181,
+      "sha256": "ab294c9a8c6a80418703afe555aacd0f884732e3e5779b9afadb6c7ca5926bb3"
+    },
+    {
+      "file": "证据包/focused/C05-comment-service.json",
+      "bytes": 17679,
+      "sha256": "cdbb2efbffde0c6f6928dda27a2850a2709556e733a3ba46c77e23b46a886dbe"
+    },
+    {
+      "file": "证据包/focused/C06-comment-request.json",
+      "bytes": 24560,
+      "sha256": "e4c5a28db80a0e093055d833abff3190a8022bc2f962718e8afb5ef0eb9c0416"
+    },
+    {
+      "file": "证据包/focused/C07-comment-result.json",
+      "bytes": 9896,
+      "sha256": "14d9a04fb73055ea943bace85b4f49e192be3ffd0ef96b9aea19617658d7f53d"
+    },
+    {
+      "file": "证据包/focused/C08-comment-target.json",
+      "bytes": 43305,
+      "sha256": "c531785ea2dcfeb90ade2a02efdbe9141fd27e10f54f3462c7b22ce6f7f94c72"
+    },
+    {
+      "file": "证据包/focused/C09-collect-service.json",
+      "bytes": 10346,
+      "sha256": "f2f11cec7b3b7df756e7c45fb5bec964607e51b0b42226b822d9feb623b843af"
+    },
+    {
+      "file": "证据包/focused/C10-collect-dialog.json",
+      "bytes": 4770,
+      "sha256": "9bbf9e6dd42020f6b4dd7e4b45a3796d98aac44affbebcb1e1473593f07310b4"
+    },
+    {
+      "file": "证据包/focused/C11-follow-feed-service.json",
+      "bytes": 6699,
+      "sha256": "202282469f5b7db7ca790b729df0b6272fd301a681bfefc0aae55892115a56a5"
+    },
+    {
+      "file": "证据包/focused/C12-local-feed-service.json",
+      "bytes": 8948,
+      "sha256": "b975665d52f3a87f59aef2ab49b8177dc6e8674dd9d3880ae39be74383ebacdc"
+    },
+    {
+      "file": "证据包/focused/C13-search-service.json",
+      "bytes": 22661,
+      "sha256": "4ac048764db8c2e4c9f18b1eddad0338a87b2dc502210e1c3da88237f554e239"
+    },
+    {
+      "file": "证据包/focused/C14-draft-param.json",
+      "bytes": 7353,
+      "sha256": "853c5449632f6d3b7f922e278cc464ce5120e3ab784249f8a6fe9342a2e8aae4"
+    },
+    {
+      "file": "证据包/focused/C15-draft-service.json",
+      "bytes": 4474,
+      "sha256": "8dc3b47a30143f79d2d5f03656d2b54f6c1ed684cabf1060966a6e6122c9d972"
+    },
+    {
+      "file": "证据包/focused/C16-message-model.json",
+      "bytes": 19463,
+      "sha256": "ee11b6162accaa4e81ad7a42588e30f3b1a287b2f3d0c633a7fc817b095a386d"
+    },
+    {
+      "file": "证据包/focused/C17-profile-message-service.json",
+      "bytes": 4177,
+      "sha256": "d45334dd25e87a825242c4707772dae22ded1c8e7b5bcbfd3c64183672f3f2c4"
+    },
+    {
+      "file": "证据包/focused/C18-likes-repo.json",
+      "bytes": 8664,
+      "sha256": "3b9eec9148d674a436828fbabcaa3113f0478b2411a39af3750017ac418e4447"
+    },
+    {
+      "file": "证据包/focused/C19-profile-collect.json",
+      "bytes": 13905,
+      "sha256": "7492b64397529021ca1274fe9f8780820f3f0c36928615536f1a8b82e00429ba"
+    },
+    {
+      "file": "证据包/focused/C20-auto-scroll.json",
+      "bytes": 11518,
+      "sha256": "3c727eca785b15ab69349fa6f23ab49e7a8151cddc15b7cbf7772c6652e9d270"
+    },
+    {
+      "file": "证据包/focused/C21-like-lottie.json",
+      "bytes": 10195,
+      "sha256": "fc4c7b7ee7b33de0fe3d2219eb13e456bc26e70386e6d67cbf82a3ccdd805a7b"
+    },
+    {
+      "file": "证据包/focused/C22-agree-follow-service.json",
+      "bytes": 4873,
+      "sha256": "fe499c5a5144c326cb98c79ffd9ac5c93a8ccb0e7f92ab439743828172adaafa"
+    },
+    {
+      "file": "证据包/focused/C23-follow-response.json",
+      "bytes": 8198,
+      "sha256": "fa2ca1a85512ce17ad29b6155b3be910b44c5f724194ac2175e7b9744f78d713"
+    },
+    {
+      "file": "证据包/focused/C24-live-square.json",
+      "bytes": 4383,
+      "sha256": "feef1b20951c6dc975db5669b6b6f2302c75b2eccb80c3a6d1d6a9ea4a6c7105"
+    },
+    {
+      "file": "证据包/focused/C25-like-presenter.json",
+      "bytes": 5993,
+      "sha256": "e92b363fcc3c648cf1aa7ae257b98fca385eb4d28aed70b88b7634be8e1a2304"
+    },
+    {
+      "file": "证据包/focused/C26-collect-presenter.json",
+      "bytes": 4973,
+      "sha256": "a7f1ee272129d8cffa210ba7b3962f37a02864f40eef295106f9cda97a1cee51"
+    },
+    {
+      "file": "证据包/focused/C27-detail-root.json",
+      "bytes": 4951,
+      "sha256": "100a04d6127180cd7c3b4ee4f146ef7959d904ff15c81dffbbb66b16d77a3b79"
+    },
+    {
+      "file": "证据包/focused/C28-image-presenter.json",
+      "bytes": 9638,
+      "sha256": "cfaa2c85ff527ec258ae0b3edb13060950de0637843b60f8b872a80b27687727"
+    },
+    {
+      "file": "证据包/focused/C29-search-filter.json",
+      "bytes": 10271,
+      "sha256": "1ca0d1f17ad11a4c28bd4bc01433b02ed47ad7da795db09d34ca90ac8d5f3a93"
+    },
+    {
+      "file": "证据包/focused/C30-chat-manager.json",
+      "bytes": 10054,
+      "sha256": "b001a2fa043d08c7d79d96deee9824c4801d68ca5e8d99cf58d764106aa54dc7"
+    },
+    {
+      "file": "证据包/focused/C31-explore-service.json",
+      "bytes": 10910,
+      "sha256": "b9d335aa4ce4a8356153204ba5cbad177cfd64a60c0a1959e4c58b46e6e884a4"
+    },
+    {
+      "file": "证据包/focused/C32-upload-flow.json",
+      "bytes": 14306,
+      "sha256": "f6fd1b770e3e78b7cd6905e321e27a361ee4068c2ae0444b69761d460c4caf97"
+    },
+    {
+      "file": "证据包/focused/C33-draft-entry.json",
+      "bytes": 4293,
+      "sha256": "da650c3775c0cecffb6b04b1b2f79124ab80ef93b297d69036cddb5ce61e8dba"
+    },
+    {
+      "file": "证据包/focused/C34-photo-gesture.json",
+      "bytes": 46654,
+      "sha256": "52e258636318571097e00193d82d3ec658ac93b884d2f81e9de14409f7c38d2b"
+    },
+    {
+      "file": "证据包/focused/C35-follow-config.json",
+      "bytes": 7752,
+      "sha256": "e9c07401077f8339a890f586fa61bd07a78688a7d63b985e7ad9ada157cb58d1"
+    },
+    {
+      "file": "证据包/focused/C36-new-note-route.json",
+      "bytes": 27726,
+      "sha256": "36996ebca7b9507d027f511ef386102491adf2008e9e5732b9ccd8bc8ac23ed1"
+    },
+    {
+      "file": "证据包/focused/C37-edit-note-route.json",
+      "bytes": 14072,
+      "sha256": "68ed0913520033eebaa11f14a05b2fff40054af8e0cab272517ca263eae4e4ea"
+    },
+    {
+      "file": "证据包/focused/C38-comment-sort.json",
+      "bytes": 7198,
+      "sha256": "74b132e0a407d0f19057a1c606aff351862494407cb96f572ed61fdb721c9aa8"
+    },
+    {
+      "file": "证据包/focused/C39-detail-error.json",
+      "bytes": 16475,
+      "sha256": "8b0c2352e05051a51af926c4c148a4d2e4dbc35ef3282421f63ee22026c3afe4"
+    },
+    {
+      "file": "证据包/focused/C40-feedback-service.json",
+      "bytes": 7365,
+      "sha256": "c34259b85fd9658311af0d6565172098c1ff29d325a89f6fe89c7b48d8e1fccf"
+    },
+    {
+      "file": "证据包/focused/C41-note-interaction-model.json",
+      "bytes": 6844,
+      "sha256": "7076e3889e222f24c7bd3fde04c1074be2d818481a1715dcb100fdbbcfa28074"
+    },
+    {
+      "file": "证据包/focused/C42-msg-content.json",
+      "bytes": 12196,
+      "sha256": "43862e9582b47aca4ce1343475b8525adf1e7df57d7345e20b310eb6d9832408"
+    },
+    {
+      "file": "证据包/focused/C43-comment-image-upload.json",
+      "bytes": 8381,
+      "sha256": "3e9b78c472c8f2f5107016ff23ea57bcebe821ec8c25ba6d60ad14cfab9e49ff"
+    },
+    {
+      "file": "证据包/focused/C44-new-note-config.json",
+      "bytes": 28474,
+      "sha256": "d30f5104cf69260f4bd3723b161d2e045aae1da9065c3dcfe4d61399f528080d"
+    },
+    {
+      "file": "证据包/focused/C45-new-note-page.json",
+      "bytes": 7984,
+      "sha256": "13c3ce736144d82ace7ee832a34a12b7a9613014c3e701ecb93dac2b4bcbdc81"
+    },
+    {
+      "file": "证据包/focused/C46-collection-info.json",
+      "bytes": 21632,
+      "sha256": "58873ef216d95969fc0b81ea3b734f0fd8b1ab006f0ad6db0afc6f0aa40fa6ba"
+    },
+    {
+      "file": "证据包/focused/C47-explore-tab.json",
+      "bytes": 6670,
+      "sha256": "93f6a311d38b2667f564e314332b32931ff27aeeda6e63cbd619278d10d51001"
+    },
+    {
+      "file": "证据包/focused/C48-editable-image.json",
+      "bytes": 87843,
+      "sha256": "9fdcbeaac67cae42bb40132d13490e1b8a34c6f9f990490c95fe91f160036cb7"
+    },
+    {
+      "file": "证据包/focused/C49-editable-video.json",
+      "bytes": 84931,
+      "sha256": "63bbab023626aea5aff1578b29b5cedde596580c3aa8d86afc367b449fb072cf"
+    },
+    {
+      "file": "证据包/focused/C50-chat-conversation.json",
+      "bytes": 8496,
+      "sha256": "8cbe452ef728e03af9d08ec95104f574c74f80bbf80a08c28c1ad38b53899337"
+    },
+    {
+      "file": "证据包/focused/C51-like-state-consumer.json",
+      "bytes": 4861,
+      "sha256": "da350582d0cbb9045d91e208002912c438ad96a61b7ee709b35fb66b9b1161fb"
+    },
+    {
+      "file": "证据包/focused/C52-collect-state-consumer.json",
+      "bytes": 4909,
+      "sha256": "bd140a8db6d443e4de199c6b77e41d2015af0bfa603fad1897eeb626eefe6d6f"
+    },
+    {
+      "file": "证据包/focused/C53-board-service.json",
+      "bytes": 13548,
+      "sha256": "c1d441732a1a623e03286decf7d35cc414cca7eea93457e0c2ee5f81609aad34"
+    },
+    {
+      "file": "证据包/focused/C54-follow-note-model.json",
+      "bytes": 7649,
+      "sha256": "992f927519490306a388d3692301cbd2d07f65faf84538d0406d7978a59e034e"
+    },
+    {
+      "file": "证据包/focused/C55-wish-board.json",
+      "bytes": 22527,
+      "sha256": "0ffa438eef0e867185660491dbd4782a1b2f80f7b5bb387239fd4f15c19e4071"
+    },
+    {
+      "file": "证据包/focused/C56-video-like.json",
+      "bytes": 9407,
+      "sha256": "8974170d3c470b4387be834bc0e3ea7cd7c23c039f2ff3ab357b14de1ebfd586"
+    },
+    {
+      "file": "证据包/focused/C57-doubleclick-like.json",
+      "bytes": 5120,
+      "sha256": "4a64ee108e80336a51989a93fe2b78d5699cd2cac451df9c2ea913d4cbe66a90"
+    },
+    {
+      "file": "证据包/focused/C58-comment-like.json",
+      "bytes": 6654,
+      "sha256": "019d648cea8190352fdadfb093fab409ecffbb25b8cd4a862a2c17e74c7683ac"
+    },
+    {
+      "file": "证据包/focused/M01-like-bind.java.txt",
+      "bytes": 1056,
+      "sha256": "d8002c4f466f965903ab693e8f28cd259568c649a6f039170c8d19cfa7e8819e"
+    },
+    {
+      "file": "证据包/focused/M01-like-bind.json",
+      "bytes": 8581,
+      "sha256": "332fd12d16373d6cc006f84c0715887d20ffb2a6311550ff3110e4cdd9843565"
+    },
+    {
+      "file": "证据包/focused/M02-like-update.java.txt",
+      "bytes": 1306,
+      "sha256": "7ca1fd31532e5289b83f5bee240e7aa3cb5c5be97f40a8bc71ef44c374299047"
+    },
+    {
+      "file": "证据包/focused/M02-like-update.json",
+      "bytes": 8407,
+      "sha256": "6d16491efd83d94db2e80229d52f5d3d6afa3d3c0c97bc8c6b5b07b17d2ef0ff"
+    },
+    {
+      "file": "证据包/focused/M03-collect-bind.java.txt",
+      "bytes": 1052,
+      "sha256": "92fcb3c2532fd7b716f721e7faa654cc8d42eac69e6f2d31ac9e8de425b1ed07"
+    },
+    {
+      "file": "证据包/focused/M03-collect-bind.json",
+      "bytes": 7768,
+      "sha256": "c980af67db27c1eaca5d711d9f2f5980181f7301ba2a2ca386aa03d5e4680d30"
+    },
+    {
+      "file": "证据包/focused/M04-image-bind.java.txt",
+      "bytes": 16783,
+      "sha256": "4bb486929ddd61e3344bd397b02380a866307506705dd53bf50624a064ff0650"
+    },
+    {
+      "file": "证据包/focused/M04-image-bind.json",
+      "bytes": 43670,
+      "sha256": "b9021712ebb8f822fefdfb414b9abc2ffdd1bd6ddafc8579d32022be9969f0af"
+    },
+    {
+      "file": "证据包/focused/M05-image-doubletap.java.txt",
+      "bytes": 4557,
+      "sha256": "de125fb22002fc2cd79148ffd4b229554fa808987ba5676ad9b29974f748d237"
+    },
+    {
+      "file": "证据包/focused/M05-image-doubletap.json",
+      "bytes": 16927,
+      "sha256": "8f3383bcc56df6f68b5a71cd83e04e0dc16016bf5304376bc4b811d724c7754d"
+    },
+    {
+      "file": "证据包/focused/M06-photo-touch.java.txt",
+      "bytes": 4357,
+      "sha256": "5cdff9e9fd6f555194fa315d9b2d5af66796fb138e56335c80eadeb5e1e53ac0"
+    },
+    {
+      "file": "证据包/focused/M06-photo-touch.json",
+      "bytes": 31154,
+      "sha256": "08bf44bad0bb3bfea8c057f0f99540583ee261841cf01890c337b280fe4b78db"
+    },
+    {
+      "file": "证据包/focused/M07-comment-list.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M07-comment-list.json",
+      "bytes": 11178,
+      "sha256": "657404ba8c4fa2197958ddd86bda05298eff1d2e43a39e55baf77784372e5412"
+    },
+    {
+      "file": "证据包/focused/M08-comment-replies.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M08-comment-replies.json",
+      "bytes": 11166,
+      "sha256": "a445374ce4f8a22faed59a499d786ba4533b05f1f67c76a5b5e757cccab75c21"
+    },
+    {
+      "file": "证据包/focused/M09-comment-post.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M09-comment-post.json",
+      "bytes": 11158,
+      "sha256": "66e5d73c97fa25123ad4a8a697959b5a07e3a523072eaf959088be472956d370"
+    },
+    {
+      "file": "证据包/focused/M10-collection-add.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M10-collection-add.json",
+      "bytes": 7859,
+      "sha256": "ae5318f191cb71196bdfb7b61d5abcdf2fce7d6530e50faa2ac73754584ad9c9"
+    },
+    {
+      "file": "证据包/focused/M11-collection-create.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M11-collection-create.json",
+      "bytes": 7897,
+      "sha256": "aa5f13693e771e863641675fb6ed1842ddc12a9bcd3f67c8560f3a494c96cbfa"
+    },
+    {
+      "file": "证据包/focused/M12-profile-like-load.java.txt",
+      "bytes": 1398,
+      "sha256": "e57372b20d06a66c9598d8cc7a85804ee180576c41eeae60bdfc639d18c9af89"
+    },
+    {
+      "file": "证据包/focused/M12-profile-like-load.json",
+      "bytes": 10284,
+      "sha256": "05ace01aa07962830f6e660901d67ccbf598e5b1b409ceff5eff7aa2c43c9309"
+    },
+    {
+      "file": "证据包/focused/M13-profile-collect-sync.java.txt",
+      "bytes": 637,
+      "sha256": "c70a41fe50542fbfc5cc3e7db1b1f59cdb3109a34a231ae32e35442696e5f420"
+    },
+    {
+      "file": "证据包/focused/M13-profile-collect-sync.json",
+      "bytes": 10885,
+      "sha256": "52620b878c39f14290e95d3bef34dae86358d474662232936e335d241a0b9253"
+    },
+    {
+      "file": "证据包/focused/M14-follow-feed.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M14-follow-feed.json",
+      "bytes": 6878,
+      "sha256": "cfb7dc472fb17b5ccbd3e1417c5dc861e7ff05734b8a03d103777eafa70d4053"
+    },
+    {
+      "file": "证据包/focused/M15-explore-feed.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M15-explore-feed.json",
+      "bytes": 8693,
+      "sha256": "30c9492cd60706bd3c018a1488ed19d54943c15f2a03f8fce3009357aefeb791"
+    },
+    {
+      "file": "证据包/focused/M16-local-feed.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M16-local-feed.json",
+      "bytes": 7590,
+      "sha256": "45e84b6fd0d81d85610fdb88186a5a23e74e3b3623f787db5f7493aabb2ad1f4"
+    },
+    {
+      "file": "证据包/focused/M17-search-notes.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M17-search-notes.json",
+      "bytes": 13886,
+      "sha256": "bda80375ed49fa18a8dcd34996251ee7da84dbf036a9f8db7744ffb611cb4b7f"
+    },
+    {
+      "file": "证据包/focused/M18-search-filter.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M18-search-filter.json",
+      "bytes": 13537,
+      "sha256": "3665d48a87dd0426414c2253093c9b2eb304687f51adfec2f49ec89ec45635df"
+    },
+    {
+      "file": "证据包/focused/M19-autoscroll-state.java.txt",
+      "bytes": 218,
+      "sha256": "e44020580534a3138a2bbf669c82438e926f3daf57d88c2a40393b27ffc8b73e"
+    },
+    {
+      "file": "证据包/focused/M19-autoscroll-state.json",
+      "bytes": 8468,
+      "sha256": "9071214b801a0d0066297a219b51a786903b96b7378f84552915cbbac4475d0d"
+    },
+    {
+      "file": "证据包/focused/M20-autoscroll-capability.java.txt",
+      "bytes": 376,
+      "sha256": "334b331baf9a659fbb8841b53368819c8a5d4f444e5c69c8452d12b3bcd8bbbc"
+    },
+    {
+      "file": "证据包/focused/M20-autoscroll-capability.json",
+      "bytes": 8852,
+      "sha256": "8b8d151ded279cb32931a0e226cc74a9dcd96a7dca272e6638ec928f2a09eb69"
+    },
+    {
+      "file": "证据包/focused/M21-follow-config.java.txt",
+      "bytes": 315,
+      "sha256": "a74bbd1b11f19d77164c6dc762bd0a6ef2b7534706347ae19233c94818b18b8e"
+    },
+    {
+      "file": "证据包/focused/M21-follow-config.json",
+      "bytes": 6933,
+      "sha256": "0b86a050ba95216c441d9ea9d76b420675200810e6e653ace84f0b76eaee6d59"
+    },
+    {
+      "file": "证据包/focused/M22-upload-cancel.java.txt",
+      "bytes": 172,
+      "sha256": "db5bf345086f9f3bdd90d7b597e8d639f2b38765e686ebc6a1ce90e28ebfe181"
+    },
+    {
+      "file": "证据包/focused/M22-upload-cancel.json",
+      "bytes": 9280,
+      "sha256": "0a2d59d544225b44e9cbda5308aec29701a1bfa6d04555f54b0f074357436169"
+    },
+    {
+      "file": "证据包/focused/M23-message-content.java.txt",
+      "bytes": 119,
+      "sha256": "b2b09c7b38a40b361de307f31d575b61bf8a46aeda928b65117fa5aaaff08986"
+    },
+    {
+      "file": "证据包/focused/M23-message-content.json",
+      "bytes": 11070,
+      "sha256": "1b70395cc0e44c41fdd783d8cc3b00eab327c7e218fae9211136f5253ec72a15"
+    },
+    {
+      "file": "证据包/focused/M24-chat-receive.java.txt",
+      "bytes": 777,
+      "sha256": "d9130d62de0fcb5888b8b5cc280e985bd6b10eec67aa41433cc03f761306d671"
+    },
+    {
+      "file": "证据包/focused/M24-chat-receive.json",
+      "bytes": 9087,
+      "sha256": "b19f7d57e544b3954b2d9002888799d7bf694ee98dcd4b05d6fd28ab58b526b0"
+    },
+    {
+      "file": "证据包/focused/M25-like-asset-select.java.txt",
+      "bytes": 323,
+      "sha256": "0c98dbe6db89fa966f1ecd8f57be3de8d538467870e151a7e78323161af06d2c"
+    },
+    {
+      "file": "证据包/focused/M25-like-asset-select.json",
+      "bytes": 8144,
+      "sha256": "5a5392e72799890ed2f349e6c864eba2befc110647e36941886f073ff3304e38"
+    },
+    {
+      "file": "证据包/focused/M26-note-detail-fetch.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M26-note-detail-fetch.json",
+      "bytes": 13927,
+      "sha256": "7117037006962ad89cc576de5a50e792357790e2a04cabe596ec74989ff38d00"
+    },
+    {
+      "file": "证据包/focused/M27-longpress-fetch.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M27-longpress-fetch.json",
+      "bytes": 6636,
+      "sha256": "4e2cc6a52d6daee435fc040823a5d81bc7bf05ad992744b382cf48f5ece2fe32"
+    },
+    {
+      "file": "证据包/focused/M28-note-liked-field.java.txt",
+      "bytes": 66,
+      "sha256": "cf1bf0cc65ff02ed3279ce4d9af3156297d9f23b59a14304743542dffc3a9475"
+    },
+    {
+      "file": "证据包/focused/M28-note-liked-field.json",
+      "bytes": 56372,
+      "sha256": "923454a8ba08cab051baead8d7d1ca4d2986d3547ebc424499afd030f8593f79"
+    },
+    {
+      "file": "证据包/focused/M29-note-animation-selector.java.txt",
+      "bytes": 97,
+      "sha256": "6bfd61e78c1e4b837ccbcb6daab0c24965a904ce5c87bacc3cd027f9c0fc5f42"
+    },
+    {
+      "file": "证据包/focused/M29-note-animation-selector.json",
+      "bytes": 56459,
+      "sha256": "f156a5716dffced63653c488c0c897e5e89ab1060782b6158084eb79d6f2e380"
+    },
+    {
+      "file": "证据包/focused/M30-image-indicator-hide.java.txt",
+      "bytes": 1190,
+      "sha256": "f25750f79f6ba555559d147623e453909b9fb52c07e8e6b51a09fe3c2360ef38"
+    },
+    {
+      "file": "证据包/focused/M30-image-indicator-hide.json",
+      "bytes": 9762,
+      "sha256": "0628ef8005ceb4ff90d3a91b9b830091d469c428620d195c66bb9e3ca8267d71"
+    },
+    {
+      "file": "证据包/focused/M31-image-switch.java.txt",
+      "bytes": 168,
+      "sha256": "7bc12da9a89cc1e8a7eb6520344f402edbad35c67063c5860b9c10cc7f315570"
+    },
+    {
+      "file": "证据包/focused/M31-image-switch.json",
+      "bytes": 7628,
+      "sha256": "09ca542321839cb9a121af9208c34ab152ed31f6e857e221f504f15708adc67c"
+    },
+    {
+      "file": "证据包/focused/M32-image-bind-data.java.txt",
+      "bytes": 1680,
+      "sha256": "d5d0513d288de34bb1a247564ebbed2597a8ad94e05d5bfc0cbf714a2f2a5f5b"
+    },
+    {
+      "file": "证据包/focused/M32-image-bind-data.json",
+      "bytes": 10993,
+      "sha256": "d6ed56edbe7d1d6fdd9cbbd85691a1db8c0dc8fc28674dba290aaff1e29c1db6"
+    },
+    {
+      "file": "证据包/focused/M33-comment-precache-guard.java.txt",
+      "bytes": 112,
+      "sha256": "2c60297443ad9fe8a991fe27b1779057a51089835d8eca5e9e9c07263796d522"
+    },
+    {
+      "file": "证据包/focused/M33-comment-precache-guard.json",
+      "bytes": 13326,
+      "sha256": "373e5726001742ce31cdc3f756e94be411135e57a0cd6622a19ea82752885da5"
+    },
+    {
+      "file": "证据包/focused/M34-filter-view-created.java.txt",
+      "bytes": 1549,
+      "sha256": "69b3c2b0d13582d265987528c6b3233f203218b94668b2e1ee74eae0794bbc16"
+    },
+    {
+      "file": "证据包/focused/M34-filter-view-created.json",
+      "bytes": 10927,
+      "sha256": "e42d8491dc3fb8e6af98c97b163aed8b35a69ae2c43b83417df5c1e9cd0544da"
+    },
+    {
+      "file": "证据包/focused/M35-profile-collect-diff.java.txt",
+      "bytes": 247,
+      "sha256": "96cdf33cee658a6f1aa927ab6e59147083ad1c19fee51779d47a07e29c624cc5"
+    },
+    {
+      "file": "证据包/focused/M35-profile-collect-diff.json",
+      "bytes": 10059,
+      "sha256": "210fcec352a7cbf9f714ddd1a0558aad45870f52ae50b7b0034f326cf8bce43c"
+    },
+    {
+      "file": "证据包/focused/M36-auto-activate.java.txt",
+      "bytes": 155,
+      "sha256": "c3722c695d7ab1eb6162925553468fed2793c985b3be4198e50ab97aaa9a1f1d"
+    },
+    {
+      "file": "证据包/focused/M36-auto-activate.json",
+      "bytes": 8349,
+      "sha256": "125ee0ee335c8acb29ba21dd5ef894b204f9db6246dcb2b0a6df02634e3baa57"
+    },
+    {
+      "file": "证据包/focused/M37-photo-scale.java.txt",
+      "bytes": 753,
+      "sha256": "f9039f27cc4bf322b5e481a89bef40502b092657bb3ca2f2705cdde68d70c5d1"
+    },
+    {
+      "file": "证据包/focused/M37-photo-scale.json",
+      "bytes": 22851,
+      "sha256": "73da6715e48e810a5295c170dfefbc3d86fbb5c037ab6a7cf4fb3755aee3306d"
+    },
+    {
+      "file": "证据包/focused/M38-message-state-read.java.txt",
+      "bytes": 71,
+      "sha256": "3be1402c6021a60848d9bd89f0e40b8cb89c3eb0a2f874c7dbf5eb9018631b73"
+    },
+    {
+      "file": "证据包/focused/M38-message-state-read.json",
+      "bytes": 10942,
+      "sha256": "c98267f370cb68f7bcff3e9addd887f89e65fa584ef628f48b8648978c41f800"
+    },
+    {
+      "file": "证据包/focused/M39-note-unlike-request.java.txt",
+      "bytes": 577,
+      "sha256": "243c4747558e7bbbb053bba1257c299b8026fb0c2c4c165c7a03d99afd647a92"
+    },
+    {
+      "file": "证据包/focused/M39-note-unlike-request.json",
+      "bytes": 6795,
+      "sha256": "0c8a61f6f91a91fc7733880de29a928492933865e911499948449cea6fc168b6"
+    },
+    {
+      "file": "证据包/focused/M40-note-like-request.java.txt",
+      "bytes": 568,
+      "sha256": "8168a949cebac85a9f3acb4b762403129969e5661352d3fb891c09e7ee69d8c5"
+    },
+    {
+      "file": "证据包/focused/M40-note-like-request.json",
+      "bytes": 6777,
+      "sha256": "029636be0a6b031cabbdcc90dd93f87750704a3148d43d4f97eef135c2ea2fd4"
+    },
+    {
+      "file": "证据包/focused/M41-upload-start.java.txt",
+      "bytes": 660,
+      "sha256": "baf8beeb31c9a6ea0a04d903abf4d5ba1148124d677cfea13ff526adaddeb5f8"
+    },
+    {
+      "file": "证据包/focused/M41-upload-start.json",
+      "bytes": 10354,
+      "sha256": "4496a6045847b99dbec0ca451146ec1cc5796101a9f63d9020d01a90e815c511"
+    },
+    {
+      "file": "证据包/focused/M42-like-state-render.java.txt",
+      "bytes": 1908,
+      "sha256": "ef399fed2b9e82c89273df9e58a4e58bfc54ba7080c0cdb642862bfd466b3592"
+    },
+    {
+      "file": "证据包/focused/M42-like-state-render.json",
+      "bytes": 9601,
+      "sha256": "a49fef33cd4e327ecc73aa73c6812e771d25380fb1a9d059e8e81a3ace4ee848"
+    },
+    {
+      "file": "证据包/focused/M43-collect-state-render.java.txt",
+      "bytes": 1804,
+      "sha256": "52b17547c276101beb6eb6d2c9ee2991b257dc8220908d9a12fed233bca6a110"
+    },
+    {
+      "file": "证据包/focused/M43-collect-state-render.json",
+      "bytes": 9423,
+      "sha256": "45e38a8f4e6f04fd4c57ea5a71ad336dac2a7629b5064f16b9dfdf6deed4c3e5"
+    },
+    {
+      "file": "证据包/focused/M44-explore-tab-assembly.java.txt",
+      "bytes": 214,
+      "sha256": "96d91fadbb2e389d9a2d5b26d71ad232f0528b0c43400783b3f32e9c72d6006a"
+    },
+    {
+      "file": "证据包/focused/M44-explore-tab-assembly.json",
+      "bytes": 6607,
+      "sha256": "3132f9b31e1eb0c862ad0e4a7181fa5ac9773e6a81265d3813d9967a26caa89a"
+    },
+    {
+      "file": "证据包/focused/M45-comment-upload-start.java.txt",
+      "bytes": 58,
+      "sha256": "9fdbee477424ed8238587b8818156f4b5ca8571aedc6a29a96d17f50f8a74bee"
+    },
+    {
+      "file": "证据包/focused/M45-comment-upload-start.json",
+      "bytes": 6923,
+      "sha256": "2981a54cb7cc2df1a9774c7d12a8acb76322e862d52178ff7f34ecd38aa46439"
+    },
+    {
+      "file": "证据包/focused/M46-like-count-field.java.txt",
+      "bytes": 68,
+      "sha256": "cd07b878a811ff45b9a865e587eff3628634b4ff48ada4bfdb61dc2456986c22"
+    },
+    {
+      "file": "证据包/focused/M46-like-count-field.json",
+      "bytes": 56373,
+      "sha256": "505f4a00dd543436bbe4151c0379b3ebf6879a3856718b881db2dd2e744aefb2"
+    },
+    {
+      "file": "证据包/focused/M47-collected-field.java.txt",
+      "bytes": 69,
+      "sha256": "40018dc35ebc986d21c045f8844b326dacb691a03541d1b43ece90175f35e5c4"
+    },
+    {
+      "file": "证据包/focused/M47-collected-field.json",
+      "bytes": 56372,
+      "sha256": "c1dfbd144e1dc27fa58733bc9eba924b385e6fc83c0f5ac5ef11e82681e9c5a1"
+    },
+    {
+      "file": "证据包/focused/M48-collect-count-field.java.txt",
+      "bytes": 71,
+      "sha256": "51bae43ab05901f2247b80594117be54fbe13f9f0d37847d718927e8490d8b4e"
+    },
+    {
+      "file": "证据包/focused/M48-collect-count-field.json",
+      "bytes": 56373,
+      "sha256": "2d2ab4bae7fbcca89e6e3c2030810bd622780ce2393512f0e5b0beb100652840"
+    },
+    {
+      "file": "证据包/focused/M49-like-extra-reset.java.txt",
+      "bytes": 73,
+      "sha256": "9947548a6ed6dd5a5f5de04adc108ace9cb8ea9697a0d8e957ce0a5874de7b6d"
+    },
+    {
+      "file": "证据包/focused/M49-like-extra-reset.json",
+      "bytes": 56393,
+      "sha256": "3bb9d15a3326e6714bfd3dbb0a3eda186a9dc3add8c329a8a058c374770b1d53"
+    },
+    {
+      "file": "证据包/focused/M50-collect-extra-reset.java.txt",
+      "bytes": 77,
+      "sha256": "b745f31cfeda3c5f29fc0e23690d0e57cc57d417e41c6678ec47a6df469b7dd1"
+    },
+    {
+      "file": "证据包/focused/M50-collect-extra-reset.json",
+      "bytes": 56401,
+      "sha256": "e821c457f384a204a23f8e85450d5de3ebdaef716f617185e2bdc0a1daffe042"
+    },
+    {
+      "file": "证据包/focused/M51-comment-upload-progress.java.txt",
+      "bytes": 526,
+      "sha256": "0e60a737a90f9f05ac87cd8639eef6411494a6fc106b6664af17459c8c37b77f"
+    },
+    {
+      "file": "证据包/focused/M51-comment-upload-progress.json",
+      "bytes": 8015,
+      "sha256": "103eea6e49eb8055599f231eb72227f9c638098db23109e77c1072e67acd505b"
+    },
+    {
+      "file": "证据包/focused/M52-comment-upload-finish.java.txt",
+      "bytes": 1504,
+      "sha256": "7c0a34820aa38960360958e49d2f5c623a24f3b3cb90f9f08a3c5211d34826bc"
+    },
+    {
+      "file": "证据包/focused/M52-comment-upload-finish.json",
+      "bytes": 10413,
+      "sha256": "8a6ceb105de6056336673d04cae64688f91cc039aad6979590dc1ab1cdc85ee5"
+    },
+    {
+      "file": "证据包/focused/M53-liked-reset-field.java.txt",
+      "bytes": 71,
+      "sha256": "952922a6dcc9e095c952c22a48faf6fca12da2c02d8aa0b6f68523f61c2079b8"
+    },
+    {
+      "file": "证据包/focused/M53-liked-reset-field.json",
+      "bytes": 56392,
+      "sha256": "985948b5e62681e09c566eb45577d4c3f3a1ad0c2848c69b9ac4892239ed3364"
+    },
+    {
+      "file": "证据包/focused/M54-collected-reset-field.java.txt",
+      "bytes": 75,
+      "sha256": "0a32c885e0b52744a3d587ef595844a2bdf74700de70edd81545874794c258cf"
+    },
+    {
+      "file": "证据包/focused/M54-collected-reset-field.json",
+      "bytes": 56400,
+      "sha256": "a3c0972d8b059bd5fe1445e58c48bc99017d886c80e8964b2a727b50020fa4ed"
+    },
+    {
+      "file": "证据包/focused/M55-video-like-update.java.txt",
+      "bytes": 410,
+      "sha256": "3c78ad1a2a426f9b9d0037895bdd30f4aa8798898c3bf8f404db32003662e925"
+    },
+    {
+      "file": "证据包/focused/M55-video-like-update.json",
+      "bytes": 8487,
+      "sha256": "696125660d084da2caedd1b6350a63b22b9d4ab9dfa5acc21b57015d69edda68"
+    },
+    {
+      "file": "证据包/focused/M56-video-like-animation.java.txt",
+      "bytes": 2085,
+      "sha256": "a252f98d58a5278b99b5593eacb3c45ed050d909d6f1ab07e57312b244a20554"
+    },
+    {
+      "file": "证据包/focused/M56-video-like-animation.json",
+      "bytes": 11421,
+      "sha256": "d0eb2122f31ee43edd49d1bac338b19dad26ce0ebe77f7bed6862b2f93bd76c4"
+    },
+    {
+      "file": "证据包/focused/M57-doubleclick-bind.java.txt",
+      "bytes": 522,
+      "sha256": "19f527d692cf060a061a658550303e8c579e1e28f372db89a693f449eed239ef"
+    },
+    {
+      "file": "证据包/focused/M57-doubleclick-bind.json",
+      "bytes": 6631,
+      "sha256": "83049cb31937badc226f649f672832b08e771bae518b503f3661f2afd4952a80"
+    },
+    {
+      "file": "证据包/focused/M58-comment-like-bind.java.txt",
+      "bytes": 810,
+      "sha256": "7db02f277e184e78705faa24d3d95a3bf1047a9aebbc67852d8bc0e05e6969af"
+    },
+    {
+      "file": "证据包/focused/M58-comment-like-bind.json",
+      "bytes": 7990,
+      "sha256": "6ef8a4a88f372f7bb0a1c65cea1f803aab9d29134c97e4be9c5f5f1dcc2eb0c1"
+    },
+    {
+      "file": "证据包/focused/M59-video-like-play-or-bind.java.txt",
+      "bytes": 298,
+      "sha256": "81707ec8768f2676f601a611ed7e5e921f8e2939c6806ed8fdc890f505bbdbb7"
+    },
+    {
+      "file": "证据包/focused/M59-video-like-play-or-bind.json",
+      "bytes": 8276,
+      "sha256": "e4baf7532b61bf974cff61f63dd8aac3e3e3879d8d4c453c852d122358dfdc02"
+    },
+    {
+      "file": "证据包/focused/M60-video-like-custom-compose.java.txt",
+      "bytes": 386,
+      "sha256": "860d55734bb82659079e2a41395fb1c4a3933aa9102929e4b97651eabdcf3c98"
+    },
+    {
+      "file": "证据包/focused/M60-video-like-custom-compose.json",
+      "bytes": 7688,
+      "sha256": "994df724294289a5036b2730bf39ad228fa74a70af870ce638ef87947e3abba8"
+    },
+    {
+      "file": "证据包/focused/X01-v3-like-callers.json",
+      "bytes": 6828,
+      "sha256": "664bfd138a44215fc2376cbe8d645e2b8dc5189de8f040d4ab8fe93a2197ab84"
+    },
+    {
+      "file": "证据包/index.json",
+      "bytes": 96941,
+      "sha256": "9466ff691c0c0288084efcf09453f050b2d4fcb719ebf934aff57491837e68fc"
+    },
+    {
+      "file": "证据包/package-summary.json",
+      "bytes": 4473,
+      "sha256": "72fcb06a80a1ec4d102a16ed76471a6edb888ae1796d8a8cb28771d355501b58"
+    },
+    {
+      "file": "证据包/resources-summary.json",
+      "bytes": 205053,
+      "sha256": "2d91f1bf8c0d5a6a6bf6fd9a22602d18060f527e6c2eb29603f026bf39807ea3"
+    }
+  ],
+  "publicationScope": "Historical local research verification or archive manifest. These counts and hashes do not validate the public derived repository. Use the root public-manifest.json and node tools/verify.mjs."
+}

@@ -1,0 +1,10 @@
+    @Override // com.drakeet.multitype.MultiTypeAdapter, androidx.recyclerview.widget.RecyclerView.Adapter
+    public void onViewRecycled(RecyclerView.ViewHolder viewHolder) {
+        if (PatchProxy.proxyVoid1Para(viewHolder, this, FeedCustomMultiTypeAdapter.class, 380416)) {
+            return;
+        }
+        H0(viewHolder).onViewRecycled(viewHolder);
+        if (this.f163561i) {
+            f.t("FeedCustomMultiTypeAdapter", "onViewRecycled() holder: " + viewHolder.getAdapterPosition());
+        }
+    }

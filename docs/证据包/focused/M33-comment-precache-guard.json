@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_ccfa56a690ab6484fe92271df458c71156cfc4810b518f5c8bbebfb3ba41e472",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.entities.comment.consume.CommentListRequestBean",
+    "method_name": "isEnablePrecache"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.entities.comment.consume.CommentListRequestBean"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cclinit\\u003e(): void\",\"is_constructor\":false},{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, boolean, boolean, boolean, zi4.c, java.lang.String, int, java.lang.String, java.lang.String): void\",\"is_constructor\":true},{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, boolean, boolean, boolean, zi4.c, java.lang.String, int, java.lang.String, java.lang.String, int, kotlin.jvm.internal.DefaultConstructorMarker): void\",\"is_constructor\":true},{\"name\":\"access$getGson$delegate$cp\",\"def_pos\":0,\"signature\":\"access$getGson$delegate$cp(): bn9.d\",\"is_constructor\":false},{\"name\":\"component1\",\"def_pos\":0,\"signature\":\"component1(): java.lang.String\",\"is_constructor\":false},{\"name\":\"component10\",\"def_pos\":0,\"signature\":\"component10(): boolean\",\"is_constructor\":false},{\"name\":\"component11\",\"def_pos\":0,\"signature\":\"component11(): boolean\",\"is_constructor\":false},{\"name\":\"component12\",\"def_pos\":0,\"signature\":\"component12(): zi4.c\",\"is_constructor\":false},{\"name\":\"component13\",\"def_pos\":0,\"signature\":\"component13(): java.lang.String\",\"is_constructor\":false},{\"name\":\"component14\",\"def_pos\":0,\"signature\":\"component14(): int\",\"is_constructor\":false},{\"name\":\"component15\",\"def_pos\":0,\"signature\":\"component15(): java.lang.String\",\"is_constructor\":false},{\"name\":\"component16\",\"def_pos\":0,\"signature\":\"component16(): java.lang.String\",\"is_constructor\":false},{\"name\":\"component2\",\"def_pos\":0,\"signature\":\"component2(): java.lang.String\",\"is_constructor\":false},{\"name\":\"component3\",\"def_pos\":0,\"signature\":\"component3(): int\",\"is_constructor\":false},{\"name\":\"component4\",\"def_pos\":0,\"signature\":\"component4(): int\",\"is_constructor\":false},{\"name\":\"component5\",\"def_pos\":0,\"signature\":\"component5(): java.lang.String\",\"is_constructor\":false},{\"name\":\"component6\",\"def_pos\":0,\"signature\":\"component6(): java.lang.String\",\"is_constructor\":false},{\"name\":\"component7\",\"def_pos\":0,\"signature\":\"component7(): java.lang.String\",\"is_constructor\":false},{\"name\":\"component8\",\"def_pos\":0,\"signature\":\"component8(): java.lang.Boolean\",\"is_constructor\":false},{\"name\":\"component9\",\"def_pos\":0,\"signature\":\"component9(): boolean\",\"is_constructor\":false},{\"name\":\"copy\",\"def_pos\":0,\"signature\":\"copy(java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, boolean, boolean, boolean, zi4.c, java.lang.String, int, java.lang.String, java.lang.String): com.xingin.entities.comment.consume.CommentListRequestBean\",\"is_constructor\":false},{\"name\":\"copy$default\",\"def_pos\":0,\"signature\":\"copy$default(com.xingin.entities.comment.consume.CommentListRequestBean, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean, boolean, boolean, boolean, zi4.c, java.lang.String, int, java.lang.String, java.lang.String, int, java.lang.Object): com.xingin.entities.comment.consume.CommentListRequestBean\",\"is_constructor\":false},{\"name\":\"describeContents\",\"def_pos\":0,\"signature\":\"describeContents(): int\",\"is_constructor\":false},{\"name\":\"equals\",\"def_pos\":0,\"signature\":\"equals(java.lang.Object): boolean\",\"is_constructor\":false},{\"name\":\"getExcludeCommentIds\",\"def_pos\":0,\"signature\":\"getExcludeCommentIds(): java.lang.String\",\"is_constructor\":false},{\"name\":\"getForceMaster\",\"def_pos\":0,\"signature\":\"getForceMaster(): java.lang.Boolean\",\"is_constructor\":false},{\"name\":\"getNoteId\",\"def_pos\":0,\"signature\":\"getNoteId(): java.lang.String\",\"is_constructor\":false},{\"name\":\"getNum\",\"def_pos\":0,\"signature\":\"getNum(): int\",\"is_constructor\":false},{\"name\":\"getPageContext\",\"def_pos\":0,\"signature\":\"getPageContext(): java.lang.String\",\"is_constructor\":false},{\"name\":\"getPrecacheTriggerPolicy\",\"def_pos\":0,\"signature\":\"getPrecacheTriggerPolicy(): java.lang.String\",\"is_constructor\":false},{\"name\":\"getSceneType\",\"def_pos\":0,\"signature\":\"getSceneType(): zi4.c\",\"is_constructor\":false},{\"name\":\"getShowPrioritySubComments\",\"def_pos\":0,\"signature\":\"getShowPrioritySubComments(): int\",\"is_constructor\":false},{\"name\":\"getSortStrategy\",\"def_pos\":0,\"signature\":\"getSortStrategy(): java.lang.String\",\"is_constructor\":false},{\"name\":\"getSource\",\"def_pos\":0,\"signature\":\"getSource(): java.lang.String\",\"is_constructor\":false},{\"name\":\"getStart\",\"def_pos\":0,\"signature\":\"getStart(): java.lang.String\",\"is_constructor\":false},{\"name\":\"getTimeOut\",\"def_pos\":0,\"signature\":\"getTimeOut(): int\",\"is_constructor\":false},{\"name\":\"getTopCommentId\",\"def_pos\":0,\"signature\":\"getTopCommentId(): java.lang.String\",\"is_constructor\":false},{\"name\":\"hashCode\",\"def_pos\":0,\"signature\":\"hashCode(): int\",\"is_constructor\":false},{\"name\":\"isEnablePrecache\",\"def_pos\":0,\"signature\":\"isEnablePrecache(): boolean\",\"is_constructor\":false},{\"name\":\"isPrecache\",\"def_pos\":0,\"signature\":\"isPrecache(): boolean\",\"is_constructor\":false},{\"name\":\"isPrecacheBackupL1\",\"def_pos\":0,\"signature\":\"isPrecacheBackupL1(): boolean\",\"is_constructor\":false},{\"name\":\"setPageContext\",\"def_pos\":0,\"signature\":\"setPageContext(java.lang.String): void\",\"is_constructor\":false},{\"name\":\"setPrecacheTriggerPolicy\",\"def_pos\":0,\"signature\":\"setPrecacheTriggerPolicy(java.lang.String): void\",\"is_constructor\":false},{\"name\":\"setSortStrategy\",\"def_pos\":0,\"signature\":\"setSortStrategy(java.lang.String): void\",\"is_constructor\":false},{\"name\":\"setTimeOut\",\"def_pos\":0,\"signature\":\"setTimeOut(int): void\",\"is_constructor\":false},{\"name\":\"toString\",\"def_pos\":0,\"signature\":\"toString(): java.lang.String\",\"is_constructor\":false},{\"name\":\"writeToParcel\",\"def_pos\":0,\"signature\":\"writeToParcel(android.os.Parcel, int): void\",\"is_constructor\":false}],\"method_count\":47,\"inner_class_count\":3,\"inner_classes\":[\"com.xingin.entities.comment.consume.CommentListRequestBean.a\",\"com.xingin.entities.comment.consume.CommentListRequestBean.b\",\"com.xingin.entities.comment.consume.CommentListRequestBean.c\"],\"name\":\"CommentListRequestBean\",\"full_name\":\"com.xingin.entities.comment.consume.CommentListRequestBean\",\"field_count\":19,\"fields\":[{\"type\":\"android.os.Parcelable$Creator\\u003ccom.xingin.entities.comment.consume.CommentListRequestBean\\u003e\",\"def_pos\":0,\"name\":\"CREATOR\"},{\"type\":\"com.xingin.entities.comment.consume.CommentListRequestBean$b\",\"def_pos\":0,\"name\":\"Companion\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"excludeCommentIds\"},{\"type\":\"java.lang.Boolean\",\"def_pos\":0,\"name\":\"forceMaster\"},{\"type\":\"bn9.d\\u003ccom.google.gson.Gson\\u003e\",\"def_pos\":0,\"name\":\"gson$delegate\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"isEnableUsePrecache\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"isPrecache\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"isPrecacheBackupL1\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"noteId\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"num\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"pageContext\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"precacheTriggerPolicy\"},{\"type\":\"zi4.c\",\"def_pos\":0,\"name\":\"sceneType\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"showPrioritySubComments\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"sortStrategy\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"source\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"start\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"timeOut\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"topCommentId\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.entities.comment.consume.CommentListRequestBean",
+          "method_name": "isEnablePrecache",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_name\":\"isEnablePrecache\",\"markers\":[],\"mode\":\"java\",\"full_name\":\"com.xingin.entities.comment.consume.CommentListRequestBean.isEnablePrecache\",\"class_name\":\"com.xingin.entities.comment.consume.CommentListRequestBean\",\"overload_index\":0,\"fell_back\":false,\"body\":\"    @Override // aj4.a\\r\\n    public boolean isEnablePrecache() {\\r\\n        return this.isEnableUsePrecache;\\r\\n    }\",\"overload_count\":1}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.entities.comment.consume.CommentListRequestBean",
+    "method": {
+      "name": "isEnablePrecache",
+      "reported_signature": "isEnablePrecache(): boolean",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // aj4.a\r\n    public boolean isEnablePrecache() {\r\n        return this.isEnableUsePrecache;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "373e5726001742ce31cdc3f756e94be411135e57a0cd6622a19ea82752885da5",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

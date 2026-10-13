@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_77077552d836b46ddb1f555886560d39f164e78869ad96d4c4f320a6bf73fab5",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.alioth.search.net.AliothServices",
+    "method_name": "searchSnsNotes"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.alioth.search.net.AliothServices"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":1,\"method_count\":31,\"methods\":[{\"signature\":\"dislikeFeedBackRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0,\"name\":\"dislikeFeedBackRecord\",\"is_constructor\":false},{\"signature\":\"getHotTopicListData(): io.reactivex.Observable\\u003cxt.e1\\u003e\",\"def_pos\":0,\"name\":\"getHotTopicListData\",\"is_constructor\":false},{\"signature\":\"getLocalFeedHotPoi(): io.reactivex.Observable\\u003cjava.util.List\\u003cjava.lang.Object\\u003e\\u003e\",\"def_pos\":0,\"name\":\"getLocalFeedHotPoi\",\"is_constructor\":false},{\"signature\":\"getLocalFeedPoiRecommends(java.lang.String, java.lang.String, int): io.reactivex.Observable\\u003cjava.util.List\\u003cjava.lang.Object\\u003e\\u003e\",\"def_pos\":0,\"name\":\"getLocalFeedPoiRecommends\",\"is_constructor\":false},{\"signature\":\"getNoteRecommendInfoV4(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cjava.util.List\\u003cxt.w\\u003e\\u003e\",\"def_pos\":0,\"name\":\"getNoteRecommendInfoV4\",\"is_constructor\":false},{\"signature\":\"getNoteRecommends(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer): io.reactivex.Observable\\u003cai4.j\\u003e\",\"def_pos\":0,\"name\":\"getNoteRecommends\",\"is_constructor\":false},{\"signature\":\"getNoteRecommendsSearchAgentPage(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cai4.j\\u003e\",\"def_pos\":0,\"name\":\"getNoteRecommendsSearchAgentPage\",\"is_constructor\":false},{\"signature\":\"getPoiNoteRecommends(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003clz.m\\u003e\",\"def_pos\":0,\"name\":\"getPoiNoteRecommends\",\"is_constructor\":false},{\"signature\":\"getRelatedQueryInNoteCard(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, long, long, int, int, int): io.reactivex.Observable\\u003cxt.h0\\u003e\",\"def_pos\":0,\"name\":\"getRelatedQueryInNoteCard\",\"is_constructor\":false},{\"signature\":\"getResultNoteFilter(java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cjava.util.List\\u003ccom.xingin.alioth.search.result.entities.ResultNoteFilterTagGroup\\u003e\\u003e\",\"def_pos\":0,\"name\":\"getResultNoteFilter\",\"is_constructor\":false},{\"signature\":\"getSnsSearchTrending(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Long, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Long): io.reactivex.Observable\\u003cxt.b1\\u003e\",\"def_pos\":0,\"name\":\"getSnsSearchTrending\",\"is_constructor\":false},{\"signature\":\"getSnsTrendingHotList(): io.reactivex.Observable\\u003cxt.d1\\u003e\",\"def_pos\":0,\"name\":\"getSnsTrendingHotList\",\"is_constructor\":false},{\"signature\":\"getStarSignalInfo(java.lang.String): io.reactivex.Observable\\u003cxt.g1\\u003e\",\"def_pos\":0,\"name\":\"getStarSignalInfo\",\"is_constructor\":false},{\"signature\":\"getStoreHotList(): io.reactivex.Observable\\u003cxt.d1\\u003e\",\"def_pos\":0,\"name\":\"getStoreHotList\",\"is_constructor\":false},{\"signature\":\"getStoreSearchTrending(java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxt.k1\\u003e\",\"def_pos\":0,\"name\":\"getStoreSearchTrending\",\"is_constructor\":false},{\"signature\":\"getStoreSearchTrendingV2(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxt.k1\\u003e\",\"def_pos\":0,\"name\":\"getStoreSearchTrendingV2\",\"is_constructor\":false},{\"signature\":\"postOneBoxAnimationFeedback(uw.j): io.reactivex.Observable\\u003cjava.lang.Object\\u003e\",\"def_pos\":0,\"name\":\"postOneBoxAnimationFeedback\",\"is_constructor\":false},{\"signature\":\"resultGoodsTabDotClicked(java.lang.String): io.reactivex.Observable\\u003cjava.lang.Object\\u003e\",\"def_pos\":0,\"name\":\"resultGoodsTabDotClicked\",\"is_constructor\":false},{\"signature\":\"searchNotesV11(java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, int, java.lang.String, java.lang.String, int, int, int, int, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String): io.reactivex.Observable\\u003cjava.lang.Object\\u003e\",\"def_pos\":0,\"name\":\"searchNotesV11\",\"is_constructor\":false},{\"signature\":\"searchResultGroupList(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003csy.i\\u003e\",\"def_pos\":0,\"name\":\"searchResultGroupList\",\"is_constructor\":false},{\"signature\":\"searchResultGroupListV2(sy.g): io.reactivex.Observable\\u003csy.i\\u003e\",\"def_pos\":0,\"name\":\"searchResultGroupListV2\",\"is_constructor\":false},{\"signature\":\"searchResultMPList(java.lang.String, java.lang.String, int, int, java.lang.String): io.reactivex.Observable\\u003ccom.xingin.alioth.search.result.mp_tab.bean.SearchResultMPTabBean\\u003e\",\"def_pos\":0,\"name\":\"searchResultMPList\",\"is_constructor\":false},{\"signature\":\"searchResultPOIList(java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003clz.l\\u003e\",\"def_pos\":0,\"name\":\"searchResultPOIList\",\"is_constructor\":false},{\"signature\":\"searchResultTopicList(java.lang.String, java.lang.String, int, int): io.reactivex.Observable\\u003ccom.xingin.alioth.search.result.topic_tab.bean.SearchResultTopicTabBean\\u003e\",\"def_pos\":0,\"name\":\"searchResultTopicList\",\"is_constructor\":false},{\"signature\":\"searchSnsNotes(java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.Integer, int, int, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxt.g\\u003e\",\"def_pos\":0,\"name\":\"searchSnsNotes\",\"is_constructor\":false},{\"signature\":\"searchSnsVideoNotes(java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.Integer, int, int, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.String): io.reactivex.Observable\\u003cxt.g\\u003e\",\"def_pos\":0,\"name\":\"searchSnsVideoNotes\",\"is_constructor\":false},{\"signature\":\"searchUser(java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxt.t0\\u003e\",\"def_pos\":0,\"name\":\"searchUser\",\"is_constructor\":false},{\"signature\":\"speedTest(): io.reactivex.Observable\\u003cjava.lang.Object\\u003e\",\"def_pos\":0,\"name\":\"speedTest\",\"is_constructor\":false},{\"signature\":\"trailerSubscribe(long, int): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0,\"name\":\"trailerSubscribe\",\"is_constructor\":false},{\"signature\":\"unSubscribeTrailer(long): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0,\"name\":\"unSubscribeTrailer\",\"is_constructor\":false},{\"signature\":\"updateXhsSearchAgentFeedbackState(java.lang.String, java.lang.String, long, java.lang.String): io.reactivex.Observable\\u003cjava.lang.Object\\u003e\",\"def_pos\":0,\"name\":\"updateXhsSearchAgentFeedbackState\",\"is_constructor\":false}],\"fields\":[],\"field_count\":0,\"full_name\":\"com.xingin.alioth.search.net.AliothServices\",\"name\":\"AliothServices\",\"inner_classes\":[\"com.xingin.alioth.search.net.AliothServices.a\"]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.alioth.search.net.AliothServices",
+          "method_name": "searchSnsNotes",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.alioth.search.net.AliothServices\",\"full_name\":\"com.xingin.alioth.search.net.AliothServices.searchSnsNotes\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"searchSnsNotes\",\"overload_count\":1,\"body\":\"// method exists but has no decompiled body (native/abstract)\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.alioth.search.net.AliothServices",
+    "method": {
+      "name": "searchSnsNotes",
+      "reported_signature": "searchSnsNotes(java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.Integer, int, int, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable<xt.g>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "not_available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "// method exists but has no decompiled body (native/abstract)",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "bda80375ed49fa18a8dcd34996251ee7da84dbf036a9f8db7744ffb611cb4b7f",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+    @Override // sd8.d
+    public void a(double d4) {
+        b0.b("CommentMediaPostFlow-imageUpload", "========== UpLoadCommentImage【 Progress: " + d4 + " 】 ");
+        if (CommentTestHelper.f53334a.t()) {
+            od3.a aVar = this.f44179c;
+            if (aVar != null) {
+                aVar.n(d4, xh4.b.IMAGE);
+                return;
+            }
+            return;
+        }
+        od3.a aVar2 = this.f44179c;
+        if (aVar2 != null) {
+            aVar2.m(d4 / ((double) 2));
+        }
+    }

@@ -1,0 +1,10 @@
+    @Override // com.xingin.foundation.core.v2.Presenter
+    public void x6() {
+        if (PatchProxy.proxyVoid0Para(this, NoteDetailImageDisplayPresenter.class, 298246)) {
+            return;
+        }
+        super.x6();
+        T7();
+        n7();
+        H7();
+    }

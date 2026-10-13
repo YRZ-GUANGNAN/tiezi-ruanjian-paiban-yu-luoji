@@ -1,0 +1,4 @@
+    @Override // an1.a
+    public e.a getTabModel() {
+        return new e.a(f.EXPLORE.getValue(), e1.d(R.string._0_resource_name_obfuscated_res_0x7f111837), false, false, false, null, 0, null, 252, null);
+    }

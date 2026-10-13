@@ -1,0 +1,8 @@
+    @Override // androidx.recyclerview.widget.LinearLayoutManager, androidx.recyclerview.widget.RecyclerView.LayoutManager
+    public boolean supportsPredictiveItemAnimations() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, PreOnBindViewLinearLayoutManager.class, 99034);
+        if (patchProxyResultProxy0Para.isSupported) {
+            return ((Boolean) patchProxyResultProxy0Para.result).booleanValue();
+        }
+        return false;
+    }

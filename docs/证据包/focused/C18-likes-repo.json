@@ -1,0 +1,191 @@
+{
+  "evidence_id": "ev_fed32f372da271fd57485ea6f32242dbdf0abfa32f37a292948e4e8a7a16f72c",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"f56964a\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"f56965b\",\"def_pos\":0,\"type\":\"rw6.z0\"},{\"name\":\"f56966c\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"f56967d\",\"def_pos\":0,\"type\":\"java.util.List\\u003cjava.lang.Object\\u003e\"},{\"name\":\"f56968e\",\"def_pos\":0,\"type\":\"java.util.Queue\\u003cjava.lang.String\\u003e\"},{\"name\":\"f56969f\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"f56970g\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"f56971h\",\"def_pos\":0,\"type\":\"bn9.d\"},{\"name\":\"f56972i\",\"def_pos\":0,\"type\":\"bn9.d\"}],\"field_count\":9,\"full_name\":\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository\",\"name\":\"LikesRepository\",\"inner_classes\":[\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.LikesNotesDiffCalculator\",\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.a\",\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.b\",\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.c\",\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.d\",\"com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.e\"],\"inner_class_count\":6,\"method_count\":6,\"methods\":[{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\"},{\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"signature\":\"a(com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository, java.util.List, java.util.List, boolean, java.lang.Boolean, int, java.lang.Object): bn9.g\"},{\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"signature\":\"b(): io.reactivex.Observable\\u003cjl6.e\\u003e\"},{\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(): java.lang.String\"},{\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"signature\":\"d(int, java.lang.String, boolean, java.util.List\\u003cjava.lang.Object\\u003e): io.reactivex.Observable\\u003cbn9.g\\u003cjava.util.List\\u003cjava.lang.Object\\u003e, androidx.recyclerview.widget.DiffUtil$DiffResult\\u003e\\u003e\"},{\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"signature\":\"e(boolean, java.util.List\\u003cjava.lang.Object\\u003e): boolean\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository, java.util.List, java.util.List, boolean, java.lang.Boolean, int, java.lang.Object): bn9.g",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(): io.reactivex.Observable<jl6.e>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(int, java.lang.String, boolean, java.util.List<java.lang.Object>): io.reactivex.Observable<bn9.g<java.util.List<java.lang.Object>, androidx.recyclerview.widget.DiffUtil$DiffResult>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(boolean, java.util.List<java.lang.Object>): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "f56964a",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f56965b",
+        "reported_type": "rw6.z0"
+      },
+      {
+        "name": "f56966c",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f56967d",
+        "reported_type": "java.util.List<java.lang.Object>"
+      },
+      {
+        "name": "f56968e",
+        "reported_type": "java.util.Queue<java.lang.String>"
+      },
+      {
+        "name": "f56969f",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f56970g",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f56971h",
+        "reported_type": "bn9.d"
+      },
+      {
+        "name": "f56972i",
+        "reported_type": "bn9.d"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.LikesNotesDiffCalculator",
+      "com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.a",
+      "com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.b",
+      "com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.c",
+      "com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.d",
+      "com.xingin.matrix.v2.profile.newpage.noteinfo.likes.LikesRepository.e"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "3b9eec9148d674a436828fbabcaa3113f0478b2411a39af3750017ac418e4447",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

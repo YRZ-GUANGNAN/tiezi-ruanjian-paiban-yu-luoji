@@ -1,0 +1,322 @@
+{
+  "sourceSha256": "8e5080366b8205f7793ec073e386769ca3952dff37e8d701cbaa211fac2ba9c0",
+  "region": [
+    0,
+    100,
+    1080,
+    242
+  ],
+  "gridPx": 2,
+  "model": "Incoming detail header overlays stationary feed header and translates horizontally from right; no scale term.",
+  "positions": [
+    {
+      "index": 0,
+      "ptsSeconds": 0.0,
+      "incomingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 0.0,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 1,
+      "ptsSeconds": 0.218789,
+      "incomingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 0.4082133173942566,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 2,
+      "ptsSeconds": 0.759733,
+      "incomingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 0.3981652855873108,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 3,
+      "ptsSeconds": 0.769556,
+      "incomingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 0.42515432834625244,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 4,
+      "ptsSeconds": 0.808978,
+      "incomingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 0.4554869830608368,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 5,
+      "ptsSeconds": 0.833856,
+      "incomingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 0.5433298945426941,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 6,
+      "ptsSeconds": 0.842478,
+      "incomingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 0.5518004298210144,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 7,
+      "ptsSeconds": 0.850511,
+      "incomingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 1.097325086593628,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 8,
+      "ptsSeconds": 0.858678,
+      "incomingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 1.1326303482055664,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 9,
+      "ptsSeconds": 0.875278,
+      "incomingLeftPx": 1078,
+      "headerMeanAbsoluteRgbError": 1.1434670686721802,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 10,
+      "ptsSeconds": 0.8836,
+      "incomingLeftPx": 1062,
+      "headerMeanAbsoluteRgbError": 1.1671639680862427,
+      "contentChangeBoundaryPx": 1061
+    },
+    {
+      "index": 11,
+      "ptsSeconds": 0.891922,
+      "incomingLeftPx": 1040,
+      "headerMeanAbsoluteRgbError": 1.1557955741882324,
+      "contentChangeBoundaryPx": 1039
+    },
+    {
+      "index": 12,
+      "ptsSeconds": 0.900244,
+      "incomingLeftPx": 1006,
+      "headerMeanAbsoluteRgbError": 1.6143862009048462,
+      "contentChangeBoundaryPx": 1005
+    },
+    {
+      "index": 13,
+      "ptsSeconds": 0.908567,
+      "incomingLeftPx": 968,
+      "headerMeanAbsoluteRgbError": 1.7278120517730713,
+      "contentChangeBoundaryPx": 967
+    },
+    {
+      "index": 14,
+      "ptsSeconds": 0.918189,
+      "incomingLeftPx": 964,
+      "headerMeanAbsoluteRgbError": 2.489797592163086,
+      "contentChangeBoundaryPx": 922
+    },
+    {
+      "index": 15,
+      "ptsSeconds": 0.925956,
+      "incomingLeftPx": 964,
+      "headerMeanAbsoluteRgbError": 3.1411008834838867,
+      "contentChangeBoundaryPx": 871
+    },
+    {
+      "index": 16,
+      "ptsSeconds": 0.935311,
+      "incomingLeftPx": 964,
+      "headerMeanAbsoluteRgbError": 3.8720507621765137,
+      "contentChangeBoundaryPx": 808
+    },
+    {
+      "index": 17,
+      "ptsSeconds": 0.942089,
+      "incomingLeftPx": 964,
+      "headerMeanAbsoluteRgbError": 4.824314117431641,
+      "contentChangeBoundaryPx": 747
+    },
+    {
+      "index": 18,
+      "ptsSeconds": 0.950689,
+      "incomingLeftPx": 682,
+      "headerMeanAbsoluteRgbError": 8.07007884979248,
+      "contentChangeBoundaryPx": 682
+    },
+    {
+      "index": 19,
+      "ptsSeconds": 0.9586,
+      "incomingLeftPx": 608,
+      "headerMeanAbsoluteRgbError": 8.006190299987793,
+      "contentChangeBoundaryPx": 608
+    },
+    {
+      "index": 20,
+      "ptsSeconds": 0.966811,
+      "incomingLeftPx": 540,
+      "headerMeanAbsoluteRgbError": 7.809070587158203,
+      "contentChangeBoundaryPx": 546
+    },
+    {
+      "index": 21,
+      "ptsSeconds": 0.975022,
+      "incomingLeftPx": 472,
+      "headerMeanAbsoluteRgbError": 7.459962368011475,
+      "contentChangeBoundaryPx": 472
+    },
+    {
+      "index": 22,
+      "ptsSeconds": 0.983467,
+      "incomingLeftPx": 398,
+      "headerMeanAbsoluteRgbError": 1.0805898904800415,
+      "contentChangeBoundaryPx": 398
+    },
+    {
+      "index": 23,
+      "ptsSeconds": 0.991633,
+      "incomingLeftPx": 334,
+      "headerMeanAbsoluteRgbError": 2.479663848876953,
+      "contentChangeBoundaryPx": 333
+    },
+    {
+      "index": 24,
+      "ptsSeconds": 1.000089,
+      "incomingLeftPx": 272,
+      "headerMeanAbsoluteRgbError": 0.9102365970611572,
+      "contentChangeBoundaryPx": 272
+    },
+    {
+      "index": 25,
+      "ptsSeconds": 1.008422,
+      "incomingLeftPx": 210,
+      "headerMeanAbsoluteRgbError": 2.7243313789367676,
+      "contentChangeBoundaryPx": 209
+    },
+    {
+      "index": 26,
+      "ptsSeconds": 1.0169,
+      "incomingLeftPx": 158,
+      "headerMeanAbsoluteRgbError": 1.0455418825149536,
+      "contentChangeBoundaryPx": 158
+    },
+    {
+      "index": 27,
+      "ptsSeconds": 1.025189,
+      "incomingLeftPx": 114,
+      "headerMeanAbsoluteRgbError": 2.907356023788452,
+      "contentChangeBoundaryPx": 113
+    },
+    {
+      "index": 28,
+      "ptsSeconds": 1.033933,
+      "incomingLeftPx": 72,
+      "headerMeanAbsoluteRgbError": 3.079063892364502,
+      "contentChangeBoundaryPx": 71
+    },
+    {
+      "index": 29,
+      "ptsSeconds": 1.0419,
+      "incomingLeftPx": 42,
+      "headerMeanAbsoluteRgbError": 3.14681077003479,
+      "contentChangeBoundaryPx": 41
+    },
+    {
+      "index": 30,
+      "ptsSeconds": 1.050144,
+      "incomingLeftPx": 20,
+      "headerMeanAbsoluteRgbError": 3.108881950378418,
+      "contentChangeBoundaryPx": 19
+    },
+    {
+      "index": 31,
+      "ptsSeconds": 1.058389,
+      "incomingLeftPx": 4,
+      "headerMeanAbsoluteRgbError": 0.8868141174316406,
+      "contentChangeBoundaryPx": 4
+    },
+    {
+      "index": 32,
+      "ptsSeconds": 1.067156,
+      "incomingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.7825960516929626,
+      "contentChangeBoundaryPx": 0
+    },
+    {
+      "index": 33,
+      "ptsSeconds": 1.074756,
+      "incomingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.6735424995422363,
+      "contentChangeBoundaryPx": 0
+    },
+    {
+      "index": 34,
+      "ptsSeconds": 1.091278,
+      "incomingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.6022804975509644,
+      "contentChangeBoundaryPx": 0
+    },
+    {
+      "index": 35,
+      "ptsSeconds": 1.0999,
+      "incomingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.5946502089500427,
+      "contentChangeBoundaryPx": 0
+    },
+    {
+      "index": 36,
+      "ptsSeconds": 1.108722,
+      "incomingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.606052815914154,
+      "contentChangeBoundaryPx": 0
+    },
+    {
+      "index": 37,
+      "ptsSeconds": 1.124956,
+      "incomingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.5913923382759094,
+      "contentChangeBoundaryPx": 0
+    },
+    {
+      "index": 38,
+      "ptsSeconds": 1.132722,
+      "incomingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.4680212736129761,
+      "contentChangeBoundaryPx": 0
+    },
+    {
+      "index": 39,
+      "ptsSeconds": 1.174267,
+      "incomingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.26042523980140686,
+      "contentChangeBoundaryPx": 0
+    },
+    {
+      "index": 40,
+      "ptsSeconds": 1.190989,
+      "incomingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.0,
+      "contentChangeBoundaryPx": 0
+    },
+    {
+      "index": 41,
+      "ptsSeconds": 1.199256,
+      "incomingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.027589162811636925,
+      "contentChangeBoundaryPx": 0
+    },
+    {
+      "index": 42,
+      "ptsSeconds": 1.216289,
+      "incomingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.019015774130821228,
+      "contentChangeBoundaryPx": 0
+    },
+    {
+      "index": 43,
+      "ptsSeconds": 1.291189,
+      "incomingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.04156378656625748,
+      "contentChangeBoundaryPx": 1
+    }
+  ],
+  "limits": "Model observes encoded headers only, not native Activity/Fragment internals. Early content loading is a separate change."
+}

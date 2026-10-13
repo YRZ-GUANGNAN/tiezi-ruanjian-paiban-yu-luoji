@@ -1,0 +1,24 @@
+    public final void Va(NoteFeed noteFeed) {
+        if (PatchProxy.proxyVoid1Para(noteFeed, this, NoteDetailLikeBtnPresenter.class, 738516) || PatchProxy.proxyVoid1Para(noteFeed, this, NoteDetailLikeBtnPresenter.class, 738517)) {
+            return;
+        }
+        String strC2 = noteFeed.c2(trd.c.h(), noteFeed.b1());
+        boolean zE = i.f24472a.e(strC2);
+        Lazy lazy = this.f140423p;
+        if (zE && strC2 != null) {
+            if (PatchProxy.proxyVoid1Para(strC2, this, NoteDetailLikeBtnPresenter.class, 738520)) {
+                return;
+            }
+            PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, NoteDetailLikeBtnPresenter.class, 738506);
+            LottieAnimationView lottieAnimationView = patchProxyResultProxy0Para.isSupported ? (LottieAnimationView) patchProxyResultProxy0Para.result : (LottieAnimationView) lazy.getValue();
+            t.k(lottieAnimationView.getContext(), strC2).b(new h(lottieAnimationView));
+            return;
+        }
+        lwc.c cVarB = n96.b.f311840a.b().b();
+        String str = noteFeed.b1() ? cVarB.f295764a : cVarB.f295766c;
+        PatchProxyResult patchProxyResultProxy0Para2 = PatchProxy.proxy0Para(this, NoteDetailLikeBtnPresenter.class, 738506);
+        LottieAnimationView lottieAnimationView2 = patchProxyResultProxy0Para2.isSupported ? (LottieAnimationView) patchProxyResultProxy0Para2.result : (LottieAnimationView) lazy.getValue();
+        lottieAnimationView2.setSelected(noteFeed.b1());
+        lottieAnimationView2.setProgress(1.0f);
+        lottieAnimationView2.setAnimation(str);
+    }

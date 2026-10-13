@@ -1,0 +1,135 @@
+    public final void n7() {
+        tb9.r rVarY0;
+        tb9.r rVarY1;
+        tb9.r rVarY2;
+        tb9.r rVarY3;
+        tb9.r rVarY4;
+        tb9.r rVarY5;
+        tb9.r rVarY6;
+        tb9.r rVarY7;
+        tb9.r rVarY8;
+        tb9.r rVarY9;
+        tb9.r rVarY10;
+        tb9.r rVarY11;
+        tb9.r rVarY12;
+        tb9.r rVarY13;
+        tb9.r rVarY14;
+        tb9.r rVarY15;
+        if (PatchProxy.proxyVoid0Para(this, NoteDetailImageDisplayPresenter.class, 298248)) {
+            return;
+        }
+        J7();
+        N7();
+        xb9.b bVarT6 = t6();
+        il4.e eVarN = el4.u.n(e6());
+        Result<Object> result = eVarN.b().get(t96.z0.class);
+        if (result == null || (rVarY0 = tb9.r.b1(Result.m1123boximpl(result.m1133unboximpl()))) == null) {
+            rVarY0 = tb9.r.y0();
+        }
+        bVarT6.a(tb9.r.I(rVarY0, eVarN.a().B0(j.f108357d).d1(q.f108371d)).n1(wb9.a.a()).K1(new j0()));
+        xb9.b bVarT7 = t6();
+        il4.e eVarN2 = el4.u.n(e6());
+        Result<Object> result2 = eVarN2.b().get(t96.b1.class);
+        if (result2 == null || (rVarY1 = tb9.r.b1(Result.m1123boximpl(result2.m1133unboximpl()))) == null) {
+            rVarY1 = tb9.r.y0();
+        }
+        bVarT7.a(tb9.r.I(rVarY1, eVarN2.a().B0(q0.f108372d).d1(x0.f108386d)).n1(wb9.a.a()).K1(new d()));
+        xb9.b bVarT8 = t6();
+        il4.e eVarN3 = el4.u.n(e6());
+        Result<Object> result3 = eVarN3.b().get(t96.e1.class);
+        if (result3 == null || (rVarY2 = tb9.r.b1(Result.m1123boximpl(result3.m1133unboximpl()))) == null) {
+            rVarY2 = tb9.r.y0();
+        }
+        bVarT8.a(tb9.r.I(rVarY2, eVarN3.a().B0(e.f108337d).d1(f.f108341d)).n1(wb9.a.a()).K1(new g()));
+        xb9.b bVarT9 = t6();
+        il4.e eVarN4 = el4.u.n(e6());
+        Result<Object> result4 = eVarN4.b().get(t96.r0.class);
+        if (result4 == null || (rVarY3 = tb9.r.b1(Result.m1123boximpl(result4.m1133unboximpl()))) == null) {
+            rVarY3 = tb9.r.y0();
+        }
+        bVarT9.a(tb9.r.I(rVarY3, eVarN4.a().B0(h.f108349d).d1(i.f108353d)).n1(wb9.a.a()).K1(new k()));
+        xb9.b bVarT10 = t6();
+        il4.e eVarN5 = el4.u.n(e6());
+        Result<Object> result5 = eVarN5.b().get(t96.a1.class);
+        if (result5 == null || (rVarY4 = tb9.r.b1(Result.m1123boximpl(result5.m1133unboximpl()))) == null) {
+            rVarY4 = tb9.r.y0();
+        }
+        bVarT10.a(tb9.r.I(rVarY4, eVarN5.a().B0(l.f108361d).d1(m.f108363d)).n1(wb9.a.a()).K1(new n()));
+        xb9.b bVarT11 = t6();
+        il4.e eVarN6 = el4.u.n(e6());
+        Result<Object> result6 = eVarN6.b().get(t96.t0.class);
+        if (result6 == null || (rVarY5 = tb9.r.b1(Result.m1123boximpl(result6.m1133unboximpl()))) == null) {
+            rVarY5 = tb9.r.y0();
+        }
+        bVarT11.a(tb9.r.I(rVarY5, eVarN6.a().B0(o.f108367d).d1(p.f108369d)).n1(wb9.a.a()).K1(new r()));
+        xb9.b bVarT12 = t6();
+        il4.e eVarN7 = el4.u.n(e6());
+        Result<Object> result7 = eVarN7.b().get(t96.s0.class);
+        if (result7 == null || (rVarY6 = tb9.r.b1(Result.m1123boximpl(result7.m1133unboximpl()))) == null) {
+            rVarY6 = tb9.r.y0();
+        }
+        bVarT12.a(tb9.r.I(rVarY6, eVarN7.a().B0(s.f108375d).d1(t.f108377d)).n1(wb9.a.a()).K1(new u()));
+        xb9.b bVarT13 = t6();
+        il4.e eVarN8 = el4.u.n(e6());
+        Result<Object> result8 = eVarN8.b().get(t96.t.class);
+        if (result8 == null || (rVarY7 = tb9.r.b1(Result.m1123boximpl(result8.m1133unboximpl()))) == null) {
+            rVarY7 = tb9.r.y0();
+        }
+        bVarT13.a(tb9.r.I(rVarY7, eVarN8.a().B0(v.f108381d).d1(w.f108383d)).n1(wb9.a.a()).K1(new x()));
+        xb9.b bVarT14 = t6();
+        il4.e eVarN9 = el4.u.n(e6());
+        Result<Object> result9 = eVarN9.b().get(t96.v0.class);
+        if (result9 == null || (rVarY8 = tb9.r.b1(Result.m1123boximpl(result9.m1133unboximpl()))) == null) {
+            rVarY8 = tb9.r.y0();
+        }
+        bVarT14.a(tb9.r.I(rVarY8, eVarN9.a().B0(y.f108387d).d1(z.f108389d)).n1(wb9.a.a()).K1(new a0()));
+        xb9.b bVarT15 = t6();
+        il4.e eVarN10 = el4.u.n(e6());
+        Result<Object> result10 = eVarN10.b().get(t96.c1.class);
+        if (result10 == null || (rVarY9 = tb9.r.b1(Result.m1123boximpl(result10.m1133unboximpl()))) == null) {
+            rVarY9 = tb9.r.y0();
+        }
+        bVarT15.a(tb9.r.I(rVarY9, eVarN10.a().B0(b0.f108323d).d1(c0.f108332d)).n1(wb9.a.a()).K1(new d0()));
+        xb9.b bVarT16 = t6();
+        il4.e eVarN11 = el4.u.n(e6());
+        Result<Object> result11 = eVarN11.b().get(t96.u0.class);
+        if (result11 == null || (rVarY10 = tb9.r.b1(Result.m1123boximpl(result11.m1133unboximpl()))) == null) {
+            rVarY10 = tb9.r.y0();
+        }
+        bVarT16.a(tb9.r.I(rVarY10, eVarN11.a().B0(e0.f108338d).d1(f0.f108342d)).n1(wb9.a.a()).K1(new g0()));
+        xb9.b bVarT17 = t6();
+        il4.e eVarN12 = el4.u.n(e6());
+        Result<Object> result12 = eVarN12.b().get(t96.d1.class);
+        if (result12 == null || (rVarY11 = tb9.r.b1(Result.m1123boximpl(result12.m1133unboximpl()))) == null) {
+            rVarY11 = tb9.r.y0();
+        }
+        bVarT17.a(tb9.r.I(rVarY11, eVarN12.a().B0(h0.f108350d).d1(i0.f108354d)).n1(wb9.a.a()).K1(new k0()));
+        xb9.b bVarT18 = t6();
+        il4.e eVarN13 = el4.u.n(e6());
+        Result<Object> result13 = eVarN13.b().get(t96.f1.class);
+        if (result13 == null || (rVarY12 = tb9.r.b1(Result.m1123boximpl(result13.m1133unboximpl()))) == null) {
+            rVarY12 = tb9.r.y0();
+        }
+        bVarT18.a(tb9.r.I(rVarY12, eVarN13.a().B0(l0.f108362d).d1(m0.f108364d)).n1(wb9.a.a()).K1(new n0()));
+        xb9.b bVarT19 = t6();
+        il4.e eVarN14 = el4.u.n(e6());
+        Result<Object> result14 = eVarN14.b().get(t96.w0.class);
+        if (result14 == null || (rVarY13 = tb9.r.b1(Result.m1123boximpl(result14.m1133unboximpl()))) == null) {
+            rVarY13 = tb9.r.y0();
+        }
+        bVarT19.a(tb9.r.I(rVarY13, eVarN14.a().B0(o0.f108368d).d1(p0.f108370d)).n1(wb9.a.a()).K1(new r0()));
+        xb9.b bVarT20 = t6();
+        il4.e eVarN15 = el4.u.n(e6());
+        Result<Object> result15 = eVarN15.b().get(t96.q0.class);
+        if (result15 == null || (rVarY14 = tb9.r.b1(Result.m1123boximpl(result15.m1133unboximpl()))) == null) {
+            rVarY14 = tb9.r.y0();
+        }
+        bVarT20.a(tb9.r.I(rVarY14, eVarN15.a().B0(s0.f108376d).d1(t0.f108378d)).n1(wb9.a.a()).K1(new u0()));
+        xb9.b bVarT21 = t6();
+        il4.e eVarN16 = el4.u.n(e6());
+        Result<Object> result16 = eVarN16.b().get(t96.y0.class);
+        if (result16 == null || (rVarY15 = tb9.r.b1(Result.m1123boximpl(result16.m1133unboximpl()))) == null) {
+            rVarY15 = tb9.r.y0();
+        }
+        bVarT21.a(tb9.r.I(rVarY15, eVarN16.a().B0(v0.f108382d).d1(w0.f108384d)).n1(wb9.a.a()).K1(new y0()));
+    }

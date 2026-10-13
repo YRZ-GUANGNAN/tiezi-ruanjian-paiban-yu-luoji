@@ -1,0 +1,627 @@
+{
+  "evidence_id": "ev_61a0ba8cd23aa73a822d32ad3dcc7fd1173f1d43041dfe75fd4286a4eb1d59e3",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_count\":63,\"inner_class_count\":7,\"inner_classes\":[\"com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter.a\",\"com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter.b\",\"com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter.c\",\"com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter.d\",\"com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter.e\",\"com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter.f\",\"com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter.g\"],\"name\":\"SmoothExplorePresenter\",\"full_name\":\"com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter\",\"field_count\":18,\"fields\":[{\"type\":\"com.xingin.xhs.homepage.homechannel.viewpager.adapter.ExplorePageAdapter\",\"def_pos\":0,\"name\":\"f123377d\"},{\"type\":\"com.xingin.android.redutils.base.XhsActivity\",\"def_pos\":0,\"name\":\"f123378e\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f123379f\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f123380g\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f123381h\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f123382l\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f123383m\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f123384n\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f123385o\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f123386p\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f123387q\"},{\"type\":\"zh4.e$a\",\"def_pos\":0,\"name\":\"f123388r\"},{\"type\":\"java.util.ArrayList\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"f123389s\"},{\"type\":\"zq8.e\",\"def_pos\":0,\"name\":\"f123390t\"},{\"type\":\"com.google.android.material.appbar.AppBarLayout\",\"def_pos\":0,\"name\":\"f123391u\"},{\"type\":\"kotlin.jvm.functions.Function1\\u003c? super zh4.e$a, java.lang.String\\u003e\",\"def_pos\":0,\"name\":\"f123392v\"},{\"type\":\"kotlin.Lazy\",\"def_pos\":0,\"name\":\"f123393w\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f123394x\"}],\"methods\":[{\"signature\":\"\\u003cinit\\u003e(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExploreView): void\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0},{\"signature\":\"A0(boolean): void\",\"is_constructor\":false,\"name\":\"A0\",\"def_pos\":0},{\"signature\":\"B0(java.util.List\\u003czh4.e$a\\u003e): void\",\"is_constructor\":false,\"name\":\"B0\",\"def_pos\":0},{\"signature\":\"C0(boolean): void\",\"is_constructor\":false,\"name\":\"C0\",\"def_pos\":0},{\"signature\":\"D(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter): boolean\",\"is_constructor\":false,\"name\":\"D\",\"def_pos\":0},{\"signature\":\"D0(boolean): void\",\"is_constructor\":false,\"name\":\"D0\",\"def_pos\":0},{\"signature\":\"E0(kotlin.jvm.functions.Function1\\u003c? super zh4.e$a, java.lang.String\\u003e): void\",\"is_constructor\":false,\"name\":\"E0\",\"def_pos\":0},{\"signature\":\"F(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter, boolean): kotlin.jvm.functions.Function1\",\"is_constructor\":false,\"name\":\"F\",\"def_pos\":0},{\"signature\":\"F0(java.lang.String): void\",\"is_constructor\":false,\"name\":\"F0\",\"def_pos\":0},{\"signature\":\"G(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter): int\",\"is_constructor\":false,\"name\":\"G\",\"def_pos\":0},{\"signature\":\"G0(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter, java.lang.String, int, java.lang.Object): void\",\"is_constructor\":false,\"name\":\"G0\",\"def_pos\":0},{\"signature\":\"H(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter): com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExploreView\",\"is_constructor\":false,\"name\":\"H\",\"def_pos\":0},{\"signature\":\"H0(): void\",\"is_constructor\":false,\"name\":\"H0\",\"def_pos\":0},{\"signature\":\"I(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter): kotlin.jvm.functions.Function1\",\"is_constructor\":false,\"name\":\"I\",\"def_pos\":0},{\"signature\":\"I0(zh4.e, boolean, boolean): void\",\"is_constructor\":false,\"name\":\"I0\",\"def_pos\":0},{\"signature\":\"J(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter, boolean): void\",\"is_constructor\":false,\"name\":\"J\",\"def_pos\":0},{\"signature\":\"J0(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter, zh4.e, boolean, boolean, int, java.lang.Object): void\",\"is_constructor\":false,\"name\":\"J0\",\"def_pos\":0},{\"signature\":\"K(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter, int): void\",\"is_constructor\":false,\"name\":\"K\",\"def_pos\":0},{\"signature\":\"K0(zh4.e$a, int): void\",\"is_constructor\":false,\"name\":\"K0\",\"def_pos\":0},{\"signature\":\"L(): void\",\"is_constructor\":false,\"name\":\"L\",\"def_pos\":0},{\"signature\":\"L0(java.util.List\\u003czh4.e$a\\u003e): void\",\"is_constructor\":false,\"name\":\"L0\",\"def_pos\":0},{\"signature\":\"M(): void\",\"is_constructor\":false,\"name\":\"M\",\"def_pos\":0},{\"signature\":\"M0(java.util.List\\u003czh4.e$a\\u003e): void\",\"is_constructor\":false,\"name\":\"M0\",\"def_pos\":0},{\"signature\":\"N(): tb9.r\\u003ch08.p0\\u003e\",\"is_constructor\":false,\"name\":\"N\",\"def_pos\":0},{\"signature\":\"N0(zh4.e$a, int): void\",\"is_constructor\":false,\"name\":\"N0\",\"def_pos\":0},{\"signature\":\"O(int, boolean): void\",\"is_constructor\":false,\"name\":\"O\",\"def_pos\":0},{\"signature\":\"P(): com.xingin.android.redutils.base.XhsActivity\",\"is_constructor\":false,\"name\":\"P\",\"def_pos\":0},{\"signature\":\"Q(): int\",\"is_constructor\":false,\"name\":\"Q\",\"def_pos\":0},{\"signature\":\"R(): tb9.r\\u003cjava.lang.Integer\\u003e\",\"is_constructor\":false,\"name\":\"R\",\"def_pos\":0},{\"signature\":\"S(): boolean\",\"is_constructor\":false,\"name\":\"S\",\"def_pos\":0},{\"signature\":\"T(boolean): kotlin.jvm.functions.Function1\\u003cjava.lang.Integer, h08.b1\\u003e\",\"is_constructor\":false,\"name\":\"T\",\"def_pos\":0},{\"signature\":\"U(): androidx.fragment.app.Fragment\",\"is_constructor\":false,\"name\":\"U\",\"def_pos\":0},{\"signature\":\"W(): int\",\"is_constructor\":false,\"name\":\"W\",\"def_pos\":0},{\"signature\":\"X(): androidx.coordinatorlayout.widget.CoordinatorLayout\",\"is_constructor\":false,\"name\":\"X\",\"def_pos\":0},{\"signature\":\"Y(): boolean\",\"is_constructor\":false,\"name\":\"Y\",\"def_pos\":0},{\"signature\":\"a0(int, boolean): ko8.g\",\"is_constructor\":false,\"name\":\"a0\",\"def_pos\":0},{\"signature\":\"b0(java.lang.String): int\",\"is_constructor\":false,\"name\":\"b0\",\"def_pos\":0},{\"signature\":\"c0(): int\",\"is_constructor\":false,\"name\":\"c0\",\"def_pos\":0},{\"signature\":\"d0(): zh4.e$a\",\"is_constructor\":false,\"name\":\"d0\",\"def_pos\":0},{\"signature\":\"didLoad(): void\",\"is_constructor\":false,\"name\":\"didLoad\",\"def_pos\":0},{\"signature\":\"e0(): com.xingin.xhs.homepage.homechannel.viewpager.adapter.ExplorePageAdapter\",\"is_constructor\":false,\"name\":\"e0\",\"def_pos\":0},{\"signature\":\"f0(): com.xingin.xhs.homepage.homechannel.viewpager.ExploreViewPager\",\"is_constructor\":false,\"name\":\"f0\",\"def_pos\":0},{\"signature\":\"g0(int): void\",\"is_constructor\":false,\"name\":\"g0\",\"def_pos\":0},{\"signature\":\"h0(java.util.List\\u003czh4.e$a\\u003e): void\",\"is_constructor\":false,\"name\":\"h0\",\"def_pos\":0},{\"signature\":\"i0(): void\",\"is_constructor\":false,\"name\":\"i0\",\"def_pos\":0},{\"signature\":\"j0(zh4.e, boolean): void\",\"is_constructor\":false,\"name\":\"j0\",\"def_pos\":0},{\"signature\":\"k0(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter, zh4.e, boolean, int, java.lang.Object): void\",\"is_constructor\":false,\"name\":\"k0\",\"def_pos\":0},{\"signature\":\"l0(): void\",\"is_constructor\":false,\"name\":\"l0\",\"def_pos\":0},{\"signature\":\"m0(): void\",\"is_constructor\":false,\"name\":\"m0\",\"def_pos\":0},{\"signature\":\"n0(): boolean\",\"is_constructor\":false,\"name\":\"n0\",\"def_pos\":0},{\"signature\":\"o0(): boolean\",\"is_constructor\":false,\"name\":\"o0\",\"def_pos\":0},{\"signature\":\"onSkinChange(i69.l, int, int): void\",\"is_constructor\":false,\"name\":\"onSkinChange\",\"def_pos\":0},{\"signature\":\"p0(): boolean\",\"is_constructor\":false,\"name\":\"p0\",\"def_pos\":0},{\"signature\":\"q0(): uc9.d\\u003ccom.xingin.matrix.widgets.NewTabLayout$h\\u003e\",\"is_constructor\":false,\"name\":\"q0\",\"def_pos\":0},{\"signature\":\"r0(zh4.e, java.util.List\\u003czh4.e$a\\u003e, java.util.List\\u003czh4.e$a\\u003e): void\",\"is_constructor\":false,\"name\":\"r0\",\"def_pos\":0},{\"signature\":\"s0(int): void\",\"is_constructor\":false,\"name\":\"s0\",\"def_pos\":0},{\"signature\":\"t0(int): void\",\"is_constructor\":false,\"name\":\"t0\",\"def_pos\":0},{\"signature\":\"u0(o0.f): boolean\",\"is_constructor\":false,\"name\":\"u0\",\"def_pos\":0},{\"signature\":\"v0(int): void\",\"is_constructor\":false,\"name\":\"v0\",\"def_pos\":0},{\"signature\":\"w0(boolean): void\",\"is_constructor\":false,\"name\":\"w0\",\"def_pos\":0},{\"signature\":\"willUnload(): void\",\"is_constructor\":false,\"name\":\"willUnload\",\"def_pos\":0},{\"signature\":\"y0(int): void\",\"is_constructor\":false,\"name\":\"y0\",\"def_pos\":0},{\"signature\":\"z0(zh4.e$a): void\",\"is_constructor\":false,\"name\":\"z0\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExploreView): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A0",
+        "reported_signature": "A0(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B0",
+        "reported_signature": "B0(java.util.List<zh4.e$a>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C0",
+        "reported_signature": "C0(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D",
+        "reported_signature": "D(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D0",
+        "reported_signature": "D0(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "E0",
+        "reported_signature": "E0(kotlin.jvm.functions.Function1<? super zh4.e$a, java.lang.String>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F",
+        "reported_signature": "F(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter, boolean): kotlin.jvm.functions.Function1",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F0",
+        "reported_signature": "F0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G",
+        "reported_signature": "G(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G0",
+        "reported_signature": "G0(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter, java.lang.String, int, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H",
+        "reported_signature": "H(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter): com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExploreView",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H0",
+        "reported_signature": "H0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I",
+        "reported_signature": "I(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter): kotlin.jvm.functions.Function1",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I0",
+        "reported_signature": "I0(zh4.e, boolean, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "J",
+        "reported_signature": "J(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "J0",
+        "reported_signature": "J0(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter, zh4.e, boolean, boolean, int, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "K",
+        "reported_signature": "K(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "K0",
+        "reported_signature": "K0(zh4.e$a, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "L",
+        "reported_signature": "L(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "L0",
+        "reported_signature": "L0(java.util.List<zh4.e$a>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M",
+        "reported_signature": "M(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M0",
+        "reported_signature": "M0(java.util.List<zh4.e$a>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "N",
+        "reported_signature": "N(): tb9.r<h08.p0>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "N0",
+        "reported_signature": "N0(zh4.e$a, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "O",
+        "reported_signature": "O(int, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "P",
+        "reported_signature": "P(): com.xingin.android.redutils.base.XhsActivity",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Q",
+        "reported_signature": "Q(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "R",
+        "reported_signature": "R(): tb9.r<java.lang.Integer>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S",
+        "reported_signature": "S(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "T",
+        "reported_signature": "T(boolean): kotlin.jvm.functions.Function1<java.lang.Integer, h08.b1>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "U",
+        "reported_signature": "U(): androidx.fragment.app.Fragment",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "W",
+        "reported_signature": "W(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "X",
+        "reported_signature": "X(): androidx.coordinatorlayout.widget.CoordinatorLayout",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y",
+        "reported_signature": "Y(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a0",
+        "reported_signature": "a0(int, boolean): ko8.g",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b0",
+        "reported_signature": "b0(java.lang.String): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c0",
+        "reported_signature": "c0(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d0",
+        "reported_signature": "d0(): zh4.e$a",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "didLoad",
+        "reported_signature": "didLoad(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e0",
+        "reported_signature": "e0(): com.xingin.xhs.homepage.homechannel.viewpager.adapter.ExplorePageAdapter",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f0",
+        "reported_signature": "f0(): com.xingin.xhs.homepage.homechannel.viewpager.ExploreViewPager",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g0",
+        "reported_signature": "g0(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h0",
+        "reported_signature": "h0(java.util.List<zh4.e$a>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i0",
+        "reported_signature": "i0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j0",
+        "reported_signature": "j0(zh4.e, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k0",
+        "reported_signature": "k0(com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter, zh4.e, boolean, int, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l0",
+        "reported_signature": "l0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m0",
+        "reported_signature": "m0(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n0",
+        "reported_signature": "n0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o0",
+        "reported_signature": "o0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "onSkinChange",
+        "reported_signature": "onSkinChange(i69.l, int, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p0",
+        "reported_signature": "p0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q0",
+        "reported_signature": "q0(): uc9.d<com.xingin.matrix.widgets.NewTabLayout$h>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r0",
+        "reported_signature": "r0(zh4.e, java.util.List<zh4.e$a>, java.util.List<zh4.e$a>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s0",
+        "reported_signature": "s0(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t0",
+        "reported_signature": "t0(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u0",
+        "reported_signature": "u0(o0.f): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v0",
+        "reported_signature": "v0(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w0",
+        "reported_signature": "w0(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "willUnload",
+        "reported_signature": "willUnload(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y0",
+        "reported_signature": "y0(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z0",
+        "reported_signature": "z0(zh4.e$a): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "f123377d",
+        "reported_type": "com.xingin.xhs.homepage.homechannel.viewpager.adapter.ExplorePageAdapter"
+      },
+      {
+        "name": "f123378e",
+        "reported_type": "com.xingin.android.redutils.base.XhsActivity"
+      },
+      {
+        "name": "f123379f",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f123380g",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f123381h",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f123382l",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f123383m",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f123384n",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f123385o",
+        "reported_type": "int"
+      },
+      {
+        "name": "f123386p",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f123387q",
+        "reported_type": "int"
+      },
+      {
+        "name": "f123388r",
+        "reported_type": "zh4.e$a"
+      },
+      {
+        "name": "f123389s",
+        "reported_type": "java.util.ArrayList<java.lang.String>"
+      },
+      {
+        "name": "f123390t",
+        "reported_type": "zq8.e"
+      },
+      {
+        "name": "f123391u",
+        "reported_type": "com.google.android.material.appbar.AppBarLayout"
+      },
+      {
+        "name": "f123392v",
+        "reported_type": "kotlin.jvm.functions.Function1<? super zh4.e$a, java.lang.String>"
+      },
+      {
+        "name": "f123393w",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f123394x",
+        "reported_type": "boolean"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter.a",
+      "com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter.b",
+      "com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter.c",
+      "com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter.d",
+      "com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter.e",
+      "com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter.f",
+      "com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExplorePresenter.g"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "d4b001a6555fc37712ce5d73fa0249dbc4954de1612d17e464a02651563a2694",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

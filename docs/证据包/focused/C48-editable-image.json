@@ -1,0 +1,1755 @@
+{
+  "evidence_id": "ev_7e3d7769a4e30fd1e747e45a6453a071aab4caa8c502b0fcc2c683661bfb8232",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.capa.feature_model.session.CapaImageModel3"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.capa.feature_model.session.CapaImageModel3"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"Companion\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.session.CapaImageModel3$a\"},{\"name\":\"TAG\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"aiTemplateImageInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.capa.AiTemplateImageInfo\"},{\"name\":\"applySessionId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"bgColor\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"bizGoodsItem\",\"def_pos\":0,\"type\":\"a22.g\"},{\"name\":\"capaFilterExtensions\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.session.CapaFilterExtensions\"},{\"name\":\"changed\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"coProduceInfo\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.session.CoProduceImageInfo\"},{\"name\":\"composeErrorCode\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"composeErrorMsg\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"currentFolderPath\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"deeplinkCarryImageUrl\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"downloadImageSuccess\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"downloadLiveVideoSuccess\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"exifInfo\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.session.CapaPhotoExifInfo\"},{\"name\":\"extraInfo\",\"def_pos\":0,\"type\":\"com.google.gson.l\"},{\"name\":\"fileId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"flashLamp\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"goodsItem\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.session.GoodsItem\"},{\"name\":\"goodsItemList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ca22.x\\u003e\"},{\"name\":\"handledFileId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"imageBeforeComposeData\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.session.ImageBeforeComposeData\"},{\"name\":\"imageHeight\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"imageMountableMap\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.session.ImageBizModelMap\"},{\"name\":\"imageScaleBean\",\"def_pos\":0,\"type\":\"com.xingin.capa.model.image.CapaImageCropBean\"},{\"name\":\"imageServerOriginalPath\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"imageTemplate\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.template.image.ImageTemplateBean\"},{\"name\":\"imageType\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"imageUrl\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"imageWidth\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"isEnableUseLivePhoto\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isLivePhotoSoundMute\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isUploadDirectly\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"},{\"name\":\"isWaterColorMode\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"jigsawTemplateInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.capa.JigsawTemplateInfo\"},{\"name\":\"latitudeServer\",\"def_pos\":0,\"type\":\"double\"},{\"name\":\"layerTree\",\"def_pos\":0,\"type\":\"com.xingin.capa.model.layer.BGLayer\"},{\"name\":\"lightUsedImageTemplate\",\"def_pos\":0,\"type\":\"com.xingin.capa.feature_model.template.image.ImageTemplate\"},{\"name\":\"livePhotoTimelineString\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"livePhotoVideoFileId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"livePhotoVideoHdr\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"livePhotoVideoPath\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"livePhotoVideoUrl\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"longitudeServer\",\"def_pos\":0,\"type\":\"double\"},{\"name\":\"needCompositeInDeeplink\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"originLayerTree\",\"def_pos\":0,\"type\":\"com.xingin.capa.model.layer.BGLayer\"},{\"name\":\"pagesOutPicPath\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"parentFolderPath\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"pasterResultList\",\"def_pos\":0,\"type\":\"java.util.List\\u003cd0.k\\u003e\"},{\"name\":\"photoIsUHDR\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"placeHolderPath\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"previewBitmap\",\"def_pos\":0,\"type\":\"android.graphics.Bitmap\"},{\"name\":\"previewImagePath\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"reEditPassThroughInfo\",\"def_pos\":0,\"type\":\"a22.r\"},{\"name\":\"reason\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"resultAspectRatio\",\"def_pos\":0,\"type\":\"float\"},{\"name\":\"resultPath\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"serverLivePhotoSoundMuteStatus\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"stickerComposePath\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"thumbnail\",\"def_pos\":0,\"type\":\"android.graphics.Bitmap\"},{\"name\":\"traceId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"type\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"uniqueId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"useNewUiLayout\",\"def_pos\":0,\"type\":\"boolean\"}],\"field_count\":65,\"full_name\":\"com.xingin.capa.feature_model.session.CapaImageModel3\",\"name\":\"CapaImageModel3\",\"inner_classes\":[\"com.xingin.capa.feature_model.session.CapaImageModel3.a\",\"com.xingin.capa.feature_model.session.CapaImageModel3.b\"],\"inner_class_count\":2,\"method_count\":198,\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(com.xingin.capa.model.layer.BGLayer): void\",\"def_pos\":0},{\"name\":\"canPlayLive\",\"is_constructor\":false,\"signature\":\"canPlayLive(): boolean\",\"def_pos\":0},{\"name\":\"checkImageUhdr\",\"is_constructor\":false,\"signature\":\"checkImageUhdr(): boolean\",\"def_pos\":0},{\"name\":\"clone\",\"is_constructor\":false,\"signature\":\"clone(): com.xingin.capa.feature_model.session.CapaImageModel3\",\"def_pos\":0},{\"name\":\"differentWithOriginPic\",\"is_constructor\":false,\"signature\":\"differentWithOriginPic(): boolean\",\"def_pos\":0},{\"name\":\"downgradeToNormalImage\",\"is_constructor\":false,\"signature\":\"downgradeToNormalImage(): void\",\"def_pos\":0},{\"name\":\"enableShowLivePhoto\",\"is_constructor\":false,\"signature\":\"enableShowLivePhoto(): boolean\",\"def_pos\":0},{\"name\":\"getAiTemplateImageInfo\",\"is_constructor\":false,\"signature\":\"getAiTemplateImageInfo(): com.xingin.entities.capa.AiTemplateImageInfo\",\"def_pos\":0},{\"name\":\"getAndroidRenderReason\",\"is_constructor\":false,\"signature\":\"getAndroidRenderReason(): int\",\"def_pos\":0},{\"name\":\"getAnimFilter\",\"is_constructor\":false,\"signature\":\"getAnimFilter(com.xingin.capa.model.layer.BGLayer): com.xingin.common_model.filter.CapaFilterBean\",\"def_pos\":0},{\"name\":\"getAnimFilter$default\",\"is_constructor\":false,\"signature\":\"getAnimFilter$default(com.xingin.capa.feature_model.session.CapaImageModel3, com.xingin.capa.model.layer.BGLayer, int, java.lang.Object): com.xingin.common_model.filter.CapaFilterBean\",\"def_pos\":0},{\"name\":\"getApplySessionId\",\"is_constructor\":false,\"signature\":\"getApplySessionId(): java.lang.String\",\"def_pos\":0},{\"name\":\"getBgColor\",\"is_constructor\":false,\"signature\":\"getBgColor(): java.lang.String\",\"def_pos\":0},{\"name\":\"getBizGoodsItem\",\"is_constructor\":false,\"signature\":\"getBizGoodsItem(): a22.g\",\"def_pos\":0},{\"name\":\"getCapaFilterExtensions\",\"is_constructor\":false,\"signature\":\"getCapaFilterExtensions(): com.xingin.capa.feature_model.session.CapaFilterExtensions\",\"def_pos\":0},{\"name\":\"getChanged\",\"is_constructor\":false,\"signature\":\"getChanged(): boolean\",\"def_pos\":0},{\"name\":\"getCoProduceInfo\",\"is_constructor\":false,\"signature\":\"getCoProduceInfo(): com.xingin.capa.feature_model.session.CoProduceImageInfo\",\"def_pos\":0},{\"name\":\"getColorSpace\",\"is_constructor\":false,\"signature\":\"getColorSpace(): fi4.c\",\"def_pos\":0},{\"name\":\"getCompileErrorCode\",\"is_constructor\":false,\"signature\":\"getCompileErrorCode(): int\",\"def_pos\":0},{\"name\":\"getCompileErrorMsg\",\"is_constructor\":false,\"signature\":\"getCompileErrorMsg(): java.lang.String\",\"def_pos\":0},{\"name\":\"getCompileUniqueId\",\"is_constructor\":false,\"signature\":\"getCompileUniqueId(): java.lang.String\",\"def_pos\":0},{\"name\":\"getComposeCurFolderPath\",\"is_constructor\":false,\"signature\":\"getComposeCurFolderPath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getComposeErrorCode\",\"is_constructor\":false,\"signature\":\"getComposeErrorCode(): int\",\"def_pos\":0},{\"name\":\"getComposeErrorMsg\",\"is_constructor\":false,\"signature\":\"getComposeErrorMsg(): java.lang.String\",\"def_pos\":0},{\"name\":\"getComposePathNullable\",\"is_constructor\":false,\"signature\":\"getComposePathNullable(): java.lang.String\",\"def_pos\":0},{\"name\":\"getComposeResultPath\",\"is_constructor\":false,\"signature\":\"getComposeResultPath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getCurImageHeight\",\"is_constructor\":false,\"signature\":\"getCurImageHeight(): int\",\"def_pos\":0},{\"name\":\"getCurImageWidth\",\"is_constructor\":false,\"signature\":\"getCurImageWidth(): int\",\"def_pos\":0},{\"name\":\"getDeeplinkCarryImageUrl\",\"is_constructor\":false,\"signature\":\"getDeeplinkCarryImageUrl(): java.lang.String\",\"def_pos\":0},{\"name\":\"getDisplayResultPath\",\"is_constructor\":false,\"signature\":\"getDisplayResultPath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getDownloadImageSuccess\",\"is_constructor\":false,\"signature\":\"getDownloadImageSuccess(): boolean\",\"def_pos\":0},{\"name\":\"getDownloadLiveVideoSuccess\",\"is_constructor\":false,\"signature\":\"getDownloadLiveVideoSuccess(): boolean\",\"def_pos\":0},{\"name\":\"getEffectModelList\",\"is_constructor\":false,\"signature\":\"getEffectModelList(com.xingin.capa.model.layer.BGLayer): java.util.List\\u003ccom.xingin.common_model.effect.CapaEffectModel\\u003e\",\"def_pos\":0},{\"name\":\"getEffectModelList$default\",\"is_constructor\":false,\"signature\":\"getEffectModelList$default(com.xingin.capa.feature_model.session.CapaImageModel3, com.xingin.capa.model.layer.BGLayer, int, java.lang.Object): java.util.List\",\"def_pos\":0},{\"name\":\"getExifInfo\",\"is_constructor\":false,\"signature\":\"getExifInfo(): com.xingin.capa.feature_model.session.CapaPhotoExifInfo\",\"def_pos\":0},{\"name\":\"getExtraInfo\",\"is_constructor\":false,\"signature\":\"getExtraInfo(): com.google.gson.l\",\"def_pos\":0},{\"name\":\"getFileId\",\"is_constructor\":false,\"signature\":\"getFileId(): java.lang.String\",\"def_pos\":0},{\"name\":\"getFirstImageHeight\",\"is_constructor\":false,\"signature\":\"getFirstImageHeight(): int\",\"def_pos\":0},{\"name\":\"getFirstImageWidth\",\"is_constructor\":false,\"signature\":\"getFirstImageWidth(): int\",\"def_pos\":0},{\"name\":\"getFirstPhoto\",\"is_constructor\":false,\"signature\":\"getFirstPhoto(): com.xingin.common_model.image.CapaPicLayerModel\",\"def_pos\":0},{\"name\":\"getFlashLamp\",\"is_constructor\":false,\"signature\":\"getFlashLamp(): int\",\"def_pos\":0},{\"name\":\"getGoodsItem\",\"is_constructor\":false,\"signature\":\"getGoodsItem(): com.xingin.capa.feature_model.session.GoodsItem\",\"def_pos\":0},{\"name\":\"getGoodsItem$annotations\",\"is_constructor\":false,\"signature\":\"getGoodsItem$annotations(): void\",\"def_pos\":0},{\"name\":\"getGoodsItemList\",\"is_constructor\":false,\"signature\":\"getGoodsItemList(): java.util.List\\u003ca22.x\\u003e\",\"def_pos\":0},{\"name\":\"getHandledFileId\",\"is_constructor\":false,\"signature\":\"getHandledFileId(): java.lang.String\",\"def_pos\":0},{\"name\":\"getHandledFileId$annotations\",\"is_constructor\":false,\"signature\":\"getHandledFileId$annotations(): void\",\"def_pos\":0},{\"name\":\"getImageBeforeComposeData\",\"is_constructor\":false,\"signature\":\"getImageBeforeComposeData(): com.xingin.capa.feature_model.session.ImageBeforeComposeData\",\"def_pos\":0},{\"name\":\"getImageCanvasBean\",\"is_constructor\":false,\"signature\":\"getImageCanvasBean(): com.xingin.capa.model.image.ImageCanvasModel3\",\"def_pos\":0},{\"name\":\"getImageHeight\",\"is_constructor\":false,\"signature\":\"getImageHeight(): int\",\"def_pos\":0},{\"name\":\"getImageMountableMap\",\"is_constructor\":false,\"signature\":\"getImageMountableMap(): com.xingin.capa.feature_model.session.ImageBizModelMap\",\"def_pos\":0},{\"name\":\"getImageRatio\",\"is_constructor\":false,\"signature\":\"getImageRatio(): float\",\"def_pos\":0},{\"name\":\"getImageScaleBean\",\"is_constructor\":false,\"signature\":\"getImageScaleBean(): com.xingin.capa.model.image.CapaImageCropBean\",\"def_pos\":0},{\"name\":\"getImageServerOriginalPath\",\"is_constructor\":false,\"signature\":\"getImageServerOriginalPath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getImageTemplate\",\"is_constructor\":false,\"signature\":\"getImageTemplate(): com.xingin.capa.feature_model.template.image.ImageTemplateBean\",\"def_pos\":0},{\"name\":\"getImageType\",\"is_constructor\":false,\"signature\":\"getImageType(): int\",\"def_pos\":0},{\"name\":\"getImageUrl\",\"is_constructor\":false,\"signature\":\"getImageUrl(): java.lang.String\",\"def_pos\":0},{\"name\":\"getImageWidth\",\"is_constructor\":false,\"signature\":\"getImageWidth(): int\",\"def_pos\":0},{\"name\":\"getJigsawTemplateInfo\",\"is_constructor\":false,\"signature\":\"getJigsawTemplateInfo(): com.xingin.entities.capa.JigsawTemplateInfo\",\"def_pos\":0},{\"name\":\"getLatitude\",\"is_constructor\":false,\"signature\":\"getLatitude(): float\",\"def_pos\":0},{\"name\":\"getLatitudeServer\",\"is_constructor\":false,\"signature\":\"getLatitudeServer(): double\",\"def_pos\":0},{\"name\":\"getLayerTree\",\"is_constructor\":false,\"signature\":\"getLayerTree(): com.xingin.capa.model.layer.BGLayer\",\"def_pos\":0},{\"name\":\"getLightUsedImageTemplate\",\"is_constructor\":false,\"signature\":\"getLightUsedImageTemplate(): com.xingin.capa.feature_model.template.image.ImageTemplate\",\"def_pos\":0},{\"name\":\"getLivePhotoTimelineString\",\"is_constructor\":false,\"signature\":\"getLivePhotoTimelineString(): java.lang.String\",\"def_pos\":0},{\"name\":\"getLivePhotoVideoFileId\",\"is_constructor\":false,\"signature\":\"getLivePhotoVideoFileId(): java.lang.String\",\"def_pos\":0},{\"name\":\"getLivePhotoVideoHdr\",\"is_constructor\":false,\"signature\":\"getLivePhotoVideoHdr(): boolean\",\"def_pos\":0},{\"name\":\"getLivePhotoVideoPath\",\"is_constructor\":false,\"signature\":\"getLivePhotoVideoPath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getLivePhotoVideoUrl\",\"is_constructor\":false,\"signature\":\"getLivePhotoVideoUrl(): java.lang.String\",\"def_pos\":0},{\"name\":\"getLocalImagePath\",\"is_constructor\":false,\"signature\":\"getLocalImagePath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getLongitude\",\"is_constructor\":false,\"signature\":\"getLongitude(): float\",\"def_pos\":0},{\"name\":\"getLongitudeServer\",\"is_constructor\":false,\"signature\":\"getLongitudeServer(): double\",\"def_pos\":0},{\"name\":\"getManualBeauty\",\"is_constructor\":false,\"signature\":\"getManualBeauty(java.util.List\\u003cva2.b\\u003e): com.xingin.common_model.beauty.CapaBeautyModel\",\"def_pos\":0},{\"name\":\"getManualEffectModel\",\"is_constructor\":false,\"signature\":\"getManualEffectModel(com.xingin.capa.model.layer.BGLayer): com.xingin.common_model.effect.CapaEffectModel\",\"def_pos\":0},{\"name\":\"getManualEffectModel$default\",\"is_constructor\":false,\"signature\":\"getManualEffectModel$default(com.xingin.capa.feature_model.session.CapaImageModel3, com.xingin.capa.model.layer.BGLayer, int, java.lang.Object): com.xingin.common_model.effect.CapaEffectModel\",\"def_pos\":0},{\"name\":\"getManualFilter\",\"is_constructor\":false,\"signature\":\"getManualFilter(com.xingin.capa.model.layer.BGLayer): com.xingin.common_model.filter.CapaFilterBean\",\"def_pos\":0},{\"name\":\"getManualFilter$default\",\"is_constructor\":false,\"signature\":\"getManualFilter$default(com.xingin.capa.feature_model.session.CapaImageModel3, com.xingin.capa.model.layer.BGLayer, int, java.lang.Object): com.xingin.common_model.filter.CapaFilterBean\",\"def_pos\":0},{\"name\":\"getNeedCompositeInDeeplink\",\"is_constructor\":false,\"signature\":\"getNeedCompositeInDeeplink(): boolean\",\"def_pos\":0},{\"name\":\"getOriginFileCompat\",\"is_constructor\":false,\"signature\":\"getOriginFileCompat(): com.xingin.capa.resource.FileCompat\",\"def_pos\":0},{\"name\":\"getOriginLayerTree\",\"is_constructor\":false,\"signature\":\"getOriginLayerTree(): com.xingin.capa.model.layer.BGLayer\",\"def_pos\":0},{\"name\":\"getOriginMediaColorSpace\",\"is_constructor\":false,\"signature\":\"getOriginMediaColorSpace(): fi4.c\",\"def_pos\":0},{\"name\":\"getOriginMediaUri\",\"is_constructor\":false,\"signature\":\"getOriginMediaUri(): android.net.Uri\",\"def_pos\":0},{\"name\":\"getOriginPath\",\"is_constructor\":false,\"signature\":\"getOriginPath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getPagesOutPicPath\",\"is_constructor\":false,\"signature\":\"getPagesOutPicPath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getParentFolderPath\",\"is_constructor\":false,\"signature\":\"getParentFolderPath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getPasterModelList\",\"is_constructor\":false,\"signature\":\"getPasterModelList(): java.util.List\\u003ccom.xingin.capa.model.text.CapaPasterBaseModel\\u003e\",\"def_pos\":0},{\"name\":\"getPasterModelList$annotations\",\"is_constructor\":false,\"signature\":\"getPasterModelList$annotations(): void\",\"def_pos\":0},{\"name\":\"getPasterResult\",\"is_constructor\":false,\"signature\":\"getPasterResult(): java.util.List\\u003cd0.k\\u003e\",\"def_pos\":0},{\"name\":\"getPasterResultList\",\"is_constructor\":false,\"signature\":\"getPasterResultList(): java.util.List\\u003cd0.k\\u003e\",\"def_pos\":0},{\"name\":\"getPasterResultList$annotations\",\"is_constructor\":false,\"signature\":\"getPasterResultList$annotations(): void\",\"def_pos\":0},{\"name\":\"getPhotoIsUHDR\",\"is_constructor\":false,\"signature\":\"getPhotoIsUHDR(): boolean\",\"def_pos\":0},{\"name\":\"getPhotoType\",\"is_constructor\":false,\"signature\":\"getPhotoType(): com.xingin.capa.model.constants.CapaPhotoType\",\"def_pos\":0},{\"name\":\"getPlaceHolderPath\",\"is_constructor\":false,\"signature\":\"getPlaceHolderPath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getPreviewBitmap\",\"is_constructor\":false,\"signature\":\"getPreviewBitmap(): android.graphics.Bitmap\",\"def_pos\":0},{\"name\":\"getPreviewBitmap$annotations\",\"is_constructor\":false,\"signature\":\"getPreviewBitmap$annotations(): void\",\"def_pos\":0},{\"name\":\"getPreviewImagePath\",\"is_constructor\":false,\"signature\":\"getPreviewImagePath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getPreviewImagePath$annotations\",\"is_constructor\":false,\"signature\":\"getPreviewImagePath$annotations(): void\",\"def_pos\":0},{\"name\":\"getReEditPassThroughInfo\",\"is_constructor\":false,\"signature\":\"getReEditPassThroughInfo(): a22.r\",\"def_pos\":0},{\"name\":\"getReason\",\"is_constructor\":false,\"signature\":\"getReason(): java.lang.String\",\"def_pos\":0},{\"name\":\"getResultAspectRatio\",\"is_constructor\":false,\"signature\":\"getResultAspectRatio(): float\",\"def_pos\":0},{\"name\":\"getResultPath\",\"is_constructor\":false,\"signature\":\"getResultPath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getRootLayerTree\",\"is_constructor\":false,\"signature\":\"getRootLayerTree(): com.xingin.capa.model.layer.BGLayer\",\"def_pos\":0},{\"name\":\"getServerLivePhotoSoundMuteStatus\",\"is_constructor\":false,\"signature\":\"getServerLivePhotoSoundMuteStatus(): boolean\",\"def_pos\":0},{\"name\":\"getStickerComposePath\",\"is_constructor\":false,\"signature\":\"getStickerComposePath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getStickerComposeResultPath\",\"is_constructor\":false,\"signature\":\"getStickerComposeResultPath(): java.lang.String\",\"def_pos\":0},{\"name\":\"getThumbnail\",\"is_constructor\":false,\"signature\":\"getThumbnail(): android.graphics.Bitmap\",\"def_pos\":0},{\"name\":\"getTraceId\",\"is_constructor\":false,\"signature\":\"getTraceId(): java.lang.String\",\"def_pos\":0},{\"name\":\"getType\",\"is_constructor\":false,\"signature\":\"getType(): int\",\"def_pos\":0},{\"name\":\"getUUID\",\"is_constructor\":false,\"signature\":\"getUUID(): java.lang.String\",\"def_pos\":0},{\"name\":\"getUniqueId\",\"is_constructor\":false,\"signature\":\"getUniqueId(): java.lang.String\",\"def_pos\":0},{\"name\":\"getUseNewUiLayout\",\"is_constructor\":false,\"signature\":\"getUseNewUiLayout(): boolean\",\"def_pos\":0},{\"name\":\"hasAndroidRenderNode\",\"is_constructor\":false,\"signature\":\"hasAndroidRenderNode(): boolean\",\"def_pos\":0},{\"name\":\"hasAnyModificationsOrEdits\",\"is_constructor\":false,\"signature\":\"hasAnyModificationsOrEdits(): boolean\",\"def_pos\":0},{\"name\":\"hasEditAnyRenderEffects\",\"is_constructor\":false,\"signature\":\"hasEditAnyRenderEffects(): boolean\",\"def_pos\":0},{\"name\":\"ifOnlyChangeCanvas\",\"is_constructor\":false,\"signature\":\"ifOnlyChangeCanvas(): boolean\",\"def_pos\":0},{\"name\":\"isAnimationFilter\",\"is_constructor\":false,\"signature\":\"isAnimationFilter(): boolean\",\"def_pos\":0},{\"name\":\"isBlockCompile\",\"is_constructor\":false,\"signature\":\"isBlockCompile(): boolean\",\"def_pos\":0},{\"name\":\"isCoProduceImage\",\"is_constructor\":false,\"signature\":\"isCoProduceImage(): boolean\",\"def_pos\":0},{\"name\":\"isEnableUseLivePhoto\",\"is_constructor\":false,\"signature\":\"isEnableUseLivePhoto(): boolean\",\"def_pos\":0},{\"name\":\"isLatLngValid\",\"is_constructor\":false,\"signature\":\"isLatLngValid(): boolean\",\"def_pos\":0},{\"name\":\"isLivePhoto\",\"is_constructor\":false,\"signature\":\"isLivePhoto(): boolean\",\"def_pos\":0},{\"name\":\"isLivePhotoAfterPublish\",\"is_constructor\":false,\"signature\":\"isLivePhotoAfterPublish(): boolean\",\"def_pos\":0},{\"name\":\"isLivePhotoSoundMute\",\"is_constructor\":false,\"signature\":\"isLivePhotoSoundMute(): boolean\",\"def_pos\":0},{\"name\":\"isUploadDirectly\",\"is_constructor\":false,\"signature\":\"isUploadDirectly(): java.lang.Boolean\",\"def_pos\":0},{\"name\":\"isWaterColorMode\",\"is_constructor\":false,\"signature\":\"isWaterColorMode(): boolean\",\"def_pos\":0},{\"name\":\"refreshColorSpace\",\"is_constructor\":false,\"signature\":\"refreshColorSpace(): void\",\"def_pos\":0},{\"name\":\"removePasterModels\",\"is_constructor\":false,\"signature\":\"removePasterModels(java.util.List\\u003c? extends com.xingin.capa.model.text.CapaPasterBaseModel\\u003e): void\",\"def_pos\":0},{\"name\":\"setAiTemplateImageInfo\",\"is_constructor\":false,\"signature\":\"setAiTemplateImageInfo(com.xingin.entities.capa.AiTemplateImageInfo): void\",\"def_pos\":0},{\"name\":\"setApplySessionId\",\"is_constructor\":false,\"signature\":\"setApplySessionId(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setBgColor\",\"is_constructor\":false,\"signature\":\"setBgColor(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setBizGoodsItem\",\"is_constructor\":false,\"signature\":\"setBizGoodsItem(a22.g): void\",\"def_pos\":0},{\"name\":\"setChanged\",\"is_constructor\":false,\"signature\":\"setChanged(boolean): void\",\"def_pos\":0},{\"name\":\"setCoProduceImagePath\",\"is_constructor\":false,\"signature\":\"setCoProduceImagePath(int, java.lang.String): void\",\"def_pos\":0},{\"name\":\"setCoProduceInfo\",\"is_constructor\":false,\"signature\":\"setCoProduceInfo(com.xingin.capa.feature_model.session.CoProduceImageInfo): void\",\"def_pos\":0},{\"name\":\"setCompileReason\",\"is_constructor\":false,\"signature\":\"setCompileReason(su1.d): void\",\"def_pos\":0},{\"name\":\"setComposeCurrentFolderPath\",\"is_constructor\":false,\"signature\":\"setComposeCurrentFolderPath(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setComposeErrorCode\",\"is_constructor\":false,\"signature\":\"setComposeErrorCode(int): void\",\"def_pos\":0},{\"name\":\"setComposeErrorMsg\",\"is_constructor\":false,\"signature\":\"setComposeErrorMsg(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setComposeParentFolderPath\",\"is_constructor\":false,\"signature\":\"setComposeParentFolderPath(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setComposedResultPath\",\"is_constructor\":false,\"signature\":\"setComposedResultPath(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setDeeplinkCarryImageUrl\",\"is_constructor\":false,\"signature\":\"setDeeplinkCarryImageUrl(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setDownloadImageSuccess\",\"is_constructor\":false,\"signature\":\"setDownloadImageSuccess(boolean): void\",\"def_pos\":0},{\"name\":\"setDownloadLiveVideoSuccess\",\"is_constructor\":false,\"signature\":\"setDownloadLiveVideoSuccess(boolean): void\",\"def_pos\":0},{\"name\":\"setEnableUseLivePhoto\",\"is_constructor\":false,\"signature\":\"setEnableUseLivePhoto(boolean): void\",\"def_pos\":0},{\"name\":\"setExtraInfo\",\"is_constructor\":false,\"signature\":\"setExtraInfo(com.google.gson.l): void\",\"def_pos\":0},{\"name\":\"setFileId\",\"is_constructor\":false,\"signature\":\"setFileId(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setFlashLamp\",\"is_constructor\":false,\"signature\":\"setFlashLamp(int): void\",\"def_pos\":0},{\"name\":\"setGoodsItem\",\"is_constructor\":false,\"signature\":\"setGoodsItem(com.xingin.capa.feature_model.session.GoodsItem): void\",\"def_pos\":0},{\"name\":\"setGoodsItemList\",\"is_constructor\":false,\"signature\":\"setGoodsItemList(java.util.List\\u003ca22.x\\u003e): void\",\"def_pos\":0},{\"name\":\"setHandledFileId\",\"is_constructor\":false,\"signature\":\"setHandledFileId(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setImageBeforeComposeData\",\"is_constructor\":false,\"signature\":\"setImageBeforeComposeData(com.xingin.capa.feature_model.session.ImageBeforeComposeData): void\",\"def_pos\":0},{\"name\":\"setImageHeight\",\"is_constructor\":false,\"signature\":\"setImageHeight(int): void\",\"def_pos\":0},{\"name\":\"setImageMountableMap\",\"is_constructor\":false,\"signature\":\"setImageMountableMap(com.xingin.capa.feature_model.session.ImageBizModelMap): void\",\"def_pos\":0},{\"name\":\"setImageScaleBean\",\"is_constructor\":false,\"signature\":\"setImageScaleBean(com.xingin.capa.model.image.CapaImageCropBean): void\",\"def_pos\":0},{\"name\":\"setImageServerOriginalPath\",\"is_constructor\":false,\"signature\":\"setImageServerOriginalPath(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setImageTemplate\",\"is_constructor\":false,\"signature\":\"setImageTemplate(com.xingin.capa.feature_model.template.image.ImageTemplateBean): void\",\"def_pos\":0},{\"name\":\"setImageType\",\"is_constructor\":false,\"signature\":\"setImageType(int): void\",\"def_pos\":0},{\"name\":\"setImageUrl\",\"is_constructor\":false,\"signature\":\"setImageUrl(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setImageWidth\",\"is_constructor\":false,\"signature\":\"setImageWidth(int): void\",\"def_pos\":0},{\"name\":\"setJigsawTemplateInfo\",\"is_constructor\":false,\"signature\":\"setJigsawTemplateInfo(com.xingin.entities.capa.JigsawTemplateInfo): void\",\"def_pos\":0},{\"name\":\"setLatitudeServer\",\"is_constructor\":false,\"signature\":\"setLatitudeServer(double): void\",\"def_pos\":0},{\"name\":\"setLayerTree\",\"is_constructor\":false,\"signature\":\"setLayerTree(com.xingin.capa.model.layer.BGLayer): void\",\"def_pos\":0},{\"name\":\"setLightUsedImageTemplate\",\"is_constructor\":false,\"signature\":\"setLightUsedImageTemplate(com.xingin.capa.feature_model.template.image.ImageTemplate): void\",\"def_pos\":0},{\"name\":\"setLivePhotoSoundMute\",\"is_constructor\":false,\"signature\":\"setLivePhotoSoundMute(boolean): void\",\"def_pos\":0},{\"name\":\"setLivePhotoTimelineString\",\"is_constructor\":false,\"signature\":\"setLivePhotoTimelineString(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setLivePhotoVideoFileId\",\"is_constructor\":false,\"signature\":\"setLivePhotoVideoFileId(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setLivePhotoVideoHdr\",\"is_constructor\":false,\"signature\":\"setLivePhotoVideoHdr(boolean): void\",\"def_pos\":0},{\"name\":\"setLivePhotoVideoPath\",\"is_constructor\":false,\"signature\":\"setLivePhotoVideoPath(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setLivePhotoVideoUrl\",\"is_constructor\":false,\"signature\":\"setLivePhotoVideoUrl(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setLongitudeServer\",\"is_constructor\":false,\"signature\":\"setLongitudeServer(double): void\",\"def_pos\":0},{\"name\":\"setNeedCompositeInDeeplink\",\"is_constructor\":false,\"signature\":\"setNeedCompositeInDeeplink(boolean): void\",\"def_pos\":0},{\"name\":\"setOriginColorSpace\",\"is_constructor\":false,\"signature\":\"setOriginColorSpace(fi4.c): void\",\"def_pos\":0},{\"name\":\"setOriginLayerTree\",\"is_constructor\":false,\"signature\":\"setOriginLayerTree(com.xingin.capa.model.layer.BGLayer): void\",\"def_pos\":0},{\"name\":\"setOriginPath\",\"is_constructor\":false,\"signature\":\"setOriginPath(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setPagesOutPicPath\",\"is_constructor\":false,\"signature\":\"setPagesOutPicPath(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setParentFolderPath\",\"is_constructor\":false,\"signature\":\"setParentFolderPath(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setPasterResultList\",\"is_constructor\":false,\"signature\":\"setPasterResultList(java.util.List\\u003cd0.k\\u003e): void\",\"def_pos\":0},{\"name\":\"setPhotoIsUHDR\",\"is_constructor\":false,\"signature\":\"setPhotoIsUHDR(boolean): void\",\"def_pos\":0},{\"name\":\"setPlaceHolderPath\",\"is_constructor\":false,\"signature\":\"setPlaceHolderPath(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setPreviewBitmap\",\"is_constructor\":false,\"signature\":\"setPreviewBitmap(android.graphics.Bitmap): void\",\"def_pos\":0},{\"name\":\"setPreviewImagePath\",\"is_constructor\":false,\"signature\":\"setPreviewImagePath(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setReEditPassThroughInfo\",\"is_constructor\":false,\"signature\":\"setReEditPassThroughInfo(a22.r): void\",\"def_pos\":0},{\"name\":\"setReason\",\"is_constructor\":false,\"signature\":\"setReason(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setResultAspectRatio\",\"is_constructor\":false,\"signature\":\"setResultAspectRatio(float): void\",\"def_pos\":0},{\"name\":\"setResultPath\",\"is_constructor\":false,\"signature\":\"setResultPath(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setServerLivePhotoSoundMuteStatus\",\"is_constructor\":false,\"signature\":\"setServerLivePhotoSoundMuteStatus(boolean): void\",\"def_pos\":0},{\"name\":\"setStickerComposePath\",\"is_constructor\":false,\"signature\":\"setStickerComposePath(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setStickerCompositePath\",\"is_constructor\":false,\"signature\":\"setStickerCompositePath(java.util.List\\u003cd0.k\\u003e): void\",\"def_pos\":0},{\"name\":\"setThumbnail\",\"is_constructor\":false,\"signature\":\"setThumbnail(android.graphics.Bitmap): void\",\"def_pos\":0},{\"name\":\"setTraceId\",\"is_constructor\":false,\"signature\":\"setTraceId(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setType\",\"is_constructor\":false,\"signature\":\"setType(int): void\",\"def_pos\":0},{\"name\":\"setUniqueId\",\"is_constructor\":false,\"signature\":\"setUniqueId(java.lang.String): void\",\"def_pos\":0},{\"name\":\"setUploadDirectly\",\"is_constructor\":false,\"signature\":\"setUploadDirectly(java.lang.Boolean): void\",\"def_pos\":0},{\"name\":\"setUseNewUiLayout\",\"is_constructor\":false,\"signature\":\"setUseNewUiLayout(boolean): void\",\"def_pos\":0},{\"name\":\"setWaterColorMode\",\"is_constructor\":false,\"signature\":\"setWaterColorMode(boolean): void\",\"def_pos\":0},{\"name\":\"shouldRenderImage\",\"is_constructor\":false,\"signature\":\"shouldRenderImage(): boolean\",\"def_pos\":0},{\"name\":\"toString\",\"is_constructor\":false,\"signature\":\"toString(): java.lang.String\",\"def_pos\":0},{\"name\":\"updateExifInfo\",\"is_constructor\":false,\"signature\":\"updateExifInfo(): void\",\"def_pos\":0},{\"name\":\"updateWidthAndHeight\",\"is_constructor\":false,\"signature\":\"updateWidthAndHeight(int, int): void\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.capa.feature_model.session.CapaImageModel3",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(com.xingin.capa.model.layer.BGLayer): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "canPlayLive",
+        "reported_signature": "canPlayLive(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "checkImageUhdr",
+        "reported_signature": "checkImageUhdr(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "clone",
+        "reported_signature": "clone(): com.xingin.capa.feature_model.session.CapaImageModel3",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "differentWithOriginPic",
+        "reported_signature": "differentWithOriginPic(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "downgradeToNormalImage",
+        "reported_signature": "downgradeToNormalImage(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "enableShowLivePhoto",
+        "reported_signature": "enableShowLivePhoto(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAiTemplateImageInfo",
+        "reported_signature": "getAiTemplateImageInfo(): com.xingin.entities.capa.AiTemplateImageInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAndroidRenderReason",
+        "reported_signature": "getAndroidRenderReason(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAnimFilter",
+        "reported_signature": "getAnimFilter(com.xingin.capa.model.layer.BGLayer): com.xingin.common_model.filter.CapaFilterBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAnimFilter$default",
+        "reported_signature": "getAnimFilter$default(com.xingin.capa.feature_model.session.CapaImageModel3, com.xingin.capa.model.layer.BGLayer, int, java.lang.Object): com.xingin.common_model.filter.CapaFilterBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getApplySessionId",
+        "reported_signature": "getApplySessionId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getBgColor",
+        "reported_signature": "getBgColor(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getBizGoodsItem",
+        "reported_signature": "getBizGoodsItem(): a22.g",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCapaFilterExtensions",
+        "reported_signature": "getCapaFilterExtensions(): com.xingin.capa.feature_model.session.CapaFilterExtensions",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getChanged",
+        "reported_signature": "getChanged(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCoProduceInfo",
+        "reported_signature": "getCoProduceInfo(): com.xingin.capa.feature_model.session.CoProduceImageInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getColorSpace",
+        "reported_signature": "getColorSpace(): fi4.c",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCompileErrorCode",
+        "reported_signature": "getCompileErrorCode(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCompileErrorMsg",
+        "reported_signature": "getCompileErrorMsg(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCompileUniqueId",
+        "reported_signature": "getCompileUniqueId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getComposeCurFolderPath",
+        "reported_signature": "getComposeCurFolderPath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getComposeErrorCode",
+        "reported_signature": "getComposeErrorCode(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getComposeErrorMsg",
+        "reported_signature": "getComposeErrorMsg(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getComposePathNullable",
+        "reported_signature": "getComposePathNullable(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getComposeResultPath",
+        "reported_signature": "getComposeResultPath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCurImageHeight",
+        "reported_signature": "getCurImageHeight(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCurImageWidth",
+        "reported_signature": "getCurImageWidth(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getDeeplinkCarryImageUrl",
+        "reported_signature": "getDeeplinkCarryImageUrl(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getDisplayResultPath",
+        "reported_signature": "getDisplayResultPath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getDownloadImageSuccess",
+        "reported_signature": "getDownloadImageSuccess(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getDownloadLiveVideoSuccess",
+        "reported_signature": "getDownloadLiveVideoSuccess(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getEffectModelList",
+        "reported_signature": "getEffectModelList(com.xingin.capa.model.layer.BGLayer): java.util.List<com.xingin.common_model.effect.CapaEffectModel>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getEffectModelList$default",
+        "reported_signature": "getEffectModelList$default(com.xingin.capa.feature_model.session.CapaImageModel3, com.xingin.capa.model.layer.BGLayer, int, java.lang.Object): java.util.List",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getExifInfo",
+        "reported_signature": "getExifInfo(): com.xingin.capa.feature_model.session.CapaPhotoExifInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getExtraInfo",
+        "reported_signature": "getExtraInfo(): com.google.gson.l",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getFileId",
+        "reported_signature": "getFileId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getFirstImageHeight",
+        "reported_signature": "getFirstImageHeight(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getFirstImageWidth",
+        "reported_signature": "getFirstImageWidth(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getFirstPhoto",
+        "reported_signature": "getFirstPhoto(): com.xingin.common_model.image.CapaPicLayerModel",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getFlashLamp",
+        "reported_signature": "getFlashLamp(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getGoodsItem",
+        "reported_signature": "getGoodsItem(): com.xingin.capa.feature_model.session.GoodsItem",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getGoodsItem$annotations",
+        "reported_signature": "getGoodsItem$annotations(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getGoodsItemList",
+        "reported_signature": "getGoodsItemList(): java.util.List<a22.x>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getHandledFileId",
+        "reported_signature": "getHandledFileId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getHandledFileId$annotations",
+        "reported_signature": "getHandledFileId$annotations(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getImageBeforeComposeData",
+        "reported_signature": "getImageBeforeComposeData(): com.xingin.capa.feature_model.session.ImageBeforeComposeData",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getImageCanvasBean",
+        "reported_signature": "getImageCanvasBean(): com.xingin.capa.model.image.ImageCanvasModel3",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getImageHeight",
+        "reported_signature": "getImageHeight(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getImageMountableMap",
+        "reported_signature": "getImageMountableMap(): com.xingin.capa.feature_model.session.ImageBizModelMap",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getImageRatio",
+        "reported_signature": "getImageRatio(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getImageScaleBean",
+        "reported_signature": "getImageScaleBean(): com.xingin.capa.model.image.CapaImageCropBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getImageServerOriginalPath",
+        "reported_signature": "getImageServerOriginalPath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getImageTemplate",
+        "reported_signature": "getImageTemplate(): com.xingin.capa.feature_model.template.image.ImageTemplateBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getImageType",
+        "reported_signature": "getImageType(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getImageUrl",
+        "reported_signature": "getImageUrl(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getImageWidth",
+        "reported_signature": "getImageWidth(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getJigsawTemplateInfo",
+        "reported_signature": "getJigsawTemplateInfo(): com.xingin.entities.capa.JigsawTemplateInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLatitude",
+        "reported_signature": "getLatitude(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLatitudeServer",
+        "reported_signature": "getLatitudeServer(): double",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLayerTree",
+        "reported_signature": "getLayerTree(): com.xingin.capa.model.layer.BGLayer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLightUsedImageTemplate",
+        "reported_signature": "getLightUsedImageTemplate(): com.xingin.capa.feature_model.template.image.ImageTemplate",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLivePhotoTimelineString",
+        "reported_signature": "getLivePhotoTimelineString(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLivePhotoVideoFileId",
+        "reported_signature": "getLivePhotoVideoFileId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLivePhotoVideoHdr",
+        "reported_signature": "getLivePhotoVideoHdr(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLivePhotoVideoPath",
+        "reported_signature": "getLivePhotoVideoPath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLivePhotoVideoUrl",
+        "reported_signature": "getLivePhotoVideoUrl(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLocalImagePath",
+        "reported_signature": "getLocalImagePath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLongitude",
+        "reported_signature": "getLongitude(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getLongitudeServer",
+        "reported_signature": "getLongitudeServer(): double",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getManualBeauty",
+        "reported_signature": "getManualBeauty(java.util.List<va2.b>): com.xingin.common_model.beauty.CapaBeautyModel",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getManualEffectModel",
+        "reported_signature": "getManualEffectModel(com.xingin.capa.model.layer.BGLayer): com.xingin.common_model.effect.CapaEffectModel",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getManualEffectModel$default",
+        "reported_signature": "getManualEffectModel$default(com.xingin.capa.feature_model.session.CapaImageModel3, com.xingin.capa.model.layer.BGLayer, int, java.lang.Object): com.xingin.common_model.effect.CapaEffectModel",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getManualFilter",
+        "reported_signature": "getManualFilter(com.xingin.capa.model.layer.BGLayer): com.xingin.common_model.filter.CapaFilterBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getManualFilter$default",
+        "reported_signature": "getManualFilter$default(com.xingin.capa.feature_model.session.CapaImageModel3, com.xingin.capa.model.layer.BGLayer, int, java.lang.Object): com.xingin.common_model.filter.CapaFilterBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getNeedCompositeInDeeplink",
+        "reported_signature": "getNeedCompositeInDeeplink(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getOriginFileCompat",
+        "reported_signature": "getOriginFileCompat(): com.xingin.capa.resource.FileCompat",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getOriginLayerTree",
+        "reported_signature": "getOriginLayerTree(): com.xingin.capa.model.layer.BGLayer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getOriginMediaColorSpace",
+        "reported_signature": "getOriginMediaColorSpace(): fi4.c",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getOriginMediaUri",
+        "reported_signature": "getOriginMediaUri(): android.net.Uri",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getOriginPath",
+        "reported_signature": "getOriginPath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPagesOutPicPath",
+        "reported_signature": "getPagesOutPicPath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getParentFolderPath",
+        "reported_signature": "getParentFolderPath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPasterModelList",
+        "reported_signature": "getPasterModelList(): java.util.List<com.xingin.capa.model.text.CapaPasterBaseModel>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPasterModelList$annotations",
+        "reported_signature": "getPasterModelList$annotations(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPasterResult",
+        "reported_signature": "getPasterResult(): java.util.List<d0.k>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPasterResultList",
+        "reported_signature": "getPasterResultList(): java.util.List<d0.k>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPasterResultList$annotations",
+        "reported_signature": "getPasterResultList$annotations(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPhotoIsUHDR",
+        "reported_signature": "getPhotoIsUHDR(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPhotoType",
+        "reported_signature": "getPhotoType(): com.xingin.capa.model.constants.CapaPhotoType",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPlaceHolderPath",
+        "reported_signature": "getPlaceHolderPath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPreviewBitmap",
+        "reported_signature": "getPreviewBitmap(): android.graphics.Bitmap",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPreviewBitmap$annotations",
+        "reported_signature": "getPreviewBitmap$annotations(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPreviewImagePath",
+        "reported_signature": "getPreviewImagePath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPreviewImagePath$annotations",
+        "reported_signature": "getPreviewImagePath$annotations(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getReEditPassThroughInfo",
+        "reported_signature": "getReEditPassThroughInfo(): a22.r",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getReason",
+        "reported_signature": "getReason(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getResultAspectRatio",
+        "reported_signature": "getResultAspectRatio(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getResultPath",
+        "reported_signature": "getResultPath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getRootLayerTree",
+        "reported_signature": "getRootLayerTree(): com.xingin.capa.model.layer.BGLayer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getServerLivePhotoSoundMuteStatus",
+        "reported_signature": "getServerLivePhotoSoundMuteStatus(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getStickerComposePath",
+        "reported_signature": "getStickerComposePath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getStickerComposeResultPath",
+        "reported_signature": "getStickerComposeResultPath(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getThumbnail",
+        "reported_signature": "getThumbnail(): android.graphics.Bitmap",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getTraceId",
+        "reported_signature": "getTraceId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getType",
+        "reported_signature": "getType(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getUUID",
+        "reported_signature": "getUUID(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getUniqueId",
+        "reported_signature": "getUniqueId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getUseNewUiLayout",
+        "reported_signature": "getUseNewUiLayout(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "hasAndroidRenderNode",
+        "reported_signature": "hasAndroidRenderNode(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "hasAnyModificationsOrEdits",
+        "reported_signature": "hasAnyModificationsOrEdits(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "hasEditAnyRenderEffects",
+        "reported_signature": "hasEditAnyRenderEffects(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "ifOnlyChangeCanvas",
+        "reported_signature": "ifOnlyChangeCanvas(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isAnimationFilter",
+        "reported_signature": "isAnimationFilter(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isBlockCompile",
+        "reported_signature": "isBlockCompile(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isCoProduceImage",
+        "reported_signature": "isCoProduceImage(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isEnableUseLivePhoto",
+        "reported_signature": "isEnableUseLivePhoto(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isLatLngValid",
+        "reported_signature": "isLatLngValid(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isLivePhoto",
+        "reported_signature": "isLivePhoto(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isLivePhotoAfterPublish",
+        "reported_signature": "isLivePhotoAfterPublish(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isLivePhotoSoundMute",
+        "reported_signature": "isLivePhotoSoundMute(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isUploadDirectly",
+        "reported_signature": "isUploadDirectly(): java.lang.Boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "isWaterColorMode",
+        "reported_signature": "isWaterColorMode(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "refreshColorSpace",
+        "reported_signature": "refreshColorSpace(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "removePasterModels",
+        "reported_signature": "removePasterModels(java.util.List<? extends com.xingin.capa.model.text.CapaPasterBaseModel>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setAiTemplateImageInfo",
+        "reported_signature": "setAiTemplateImageInfo(com.xingin.entities.capa.AiTemplateImageInfo): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setApplySessionId",
+        "reported_signature": "setApplySessionId(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setBgColor",
+        "reported_signature": "setBgColor(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setBizGoodsItem",
+        "reported_signature": "setBizGoodsItem(a22.g): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setChanged",
+        "reported_signature": "setChanged(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCoProduceImagePath",
+        "reported_signature": "setCoProduceImagePath(int, java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCoProduceInfo",
+        "reported_signature": "setCoProduceInfo(com.xingin.capa.feature_model.session.CoProduceImageInfo): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCompileReason",
+        "reported_signature": "setCompileReason(su1.d): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setComposeCurrentFolderPath",
+        "reported_signature": "setComposeCurrentFolderPath(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setComposeErrorCode",
+        "reported_signature": "setComposeErrorCode(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setComposeErrorMsg",
+        "reported_signature": "setComposeErrorMsg(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setComposeParentFolderPath",
+        "reported_signature": "setComposeParentFolderPath(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setComposedResultPath",
+        "reported_signature": "setComposedResultPath(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setDeeplinkCarryImageUrl",
+        "reported_signature": "setDeeplinkCarryImageUrl(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setDownloadImageSuccess",
+        "reported_signature": "setDownloadImageSuccess(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setDownloadLiveVideoSuccess",
+        "reported_signature": "setDownloadLiveVideoSuccess(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setEnableUseLivePhoto",
+        "reported_signature": "setEnableUseLivePhoto(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setExtraInfo",
+        "reported_signature": "setExtraInfo(com.google.gson.l): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setFileId",
+        "reported_signature": "setFileId(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setFlashLamp",
+        "reported_signature": "setFlashLamp(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setGoodsItem",
+        "reported_signature": "setGoodsItem(com.xingin.capa.feature_model.session.GoodsItem): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setGoodsItemList",
+        "reported_signature": "setGoodsItemList(java.util.List<a22.x>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setHandledFileId",
+        "reported_signature": "setHandledFileId(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setImageBeforeComposeData",
+        "reported_signature": "setImageBeforeComposeData(com.xingin.capa.feature_model.session.ImageBeforeComposeData): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setImageHeight",
+        "reported_signature": "setImageHeight(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setImageMountableMap",
+        "reported_signature": "setImageMountableMap(com.xingin.capa.feature_model.session.ImageBizModelMap): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setImageScaleBean",
+        "reported_signature": "setImageScaleBean(com.xingin.capa.model.image.CapaImageCropBean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setImageServerOriginalPath",
+        "reported_signature": "setImageServerOriginalPath(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setImageTemplate",
+        "reported_signature": "setImageTemplate(com.xingin.capa.feature_model.template.image.ImageTemplateBean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setImageType",
+        "reported_signature": "setImageType(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setImageUrl",
+        "reported_signature": "setImageUrl(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setImageWidth",
+        "reported_signature": "setImageWidth(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setJigsawTemplateInfo",
+        "reported_signature": "setJigsawTemplateInfo(com.xingin.entities.capa.JigsawTemplateInfo): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setLatitudeServer",
+        "reported_signature": "setLatitudeServer(double): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setLayerTree",
+        "reported_signature": "setLayerTree(com.xingin.capa.model.layer.BGLayer): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setLightUsedImageTemplate",
+        "reported_signature": "setLightUsedImageTemplate(com.xingin.capa.feature_model.template.image.ImageTemplate): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setLivePhotoSoundMute",
+        "reported_signature": "setLivePhotoSoundMute(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setLivePhotoTimelineString",
+        "reported_signature": "setLivePhotoTimelineString(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setLivePhotoVideoFileId",
+        "reported_signature": "setLivePhotoVideoFileId(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setLivePhotoVideoHdr",
+        "reported_signature": "setLivePhotoVideoHdr(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setLivePhotoVideoPath",
+        "reported_signature": "setLivePhotoVideoPath(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setLivePhotoVideoUrl",
+        "reported_signature": "setLivePhotoVideoUrl(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setLongitudeServer",
+        "reported_signature": "setLongitudeServer(double): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setNeedCompositeInDeeplink",
+        "reported_signature": "setNeedCompositeInDeeplink(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setOriginColorSpace",
+        "reported_signature": "setOriginColorSpace(fi4.c): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setOriginLayerTree",
+        "reported_signature": "setOriginLayerTree(com.xingin.capa.model.layer.BGLayer): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setOriginPath",
+        "reported_signature": "setOriginPath(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setPagesOutPicPath",
+        "reported_signature": "setPagesOutPicPath(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setParentFolderPath",
+        "reported_signature": "setParentFolderPath(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setPasterResultList",
+        "reported_signature": "setPasterResultList(java.util.List<d0.k>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setPhotoIsUHDR",
+        "reported_signature": "setPhotoIsUHDR(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setPlaceHolderPath",
+        "reported_signature": "setPlaceHolderPath(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setPreviewBitmap",
+        "reported_signature": "setPreviewBitmap(android.graphics.Bitmap): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setPreviewImagePath",
+        "reported_signature": "setPreviewImagePath(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setReEditPassThroughInfo",
+        "reported_signature": "setReEditPassThroughInfo(a22.r): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setReason",
+        "reported_signature": "setReason(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setResultAspectRatio",
+        "reported_signature": "setResultAspectRatio(float): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setResultPath",
+        "reported_signature": "setResultPath(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setServerLivePhotoSoundMuteStatus",
+        "reported_signature": "setServerLivePhotoSoundMuteStatus(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setStickerComposePath",
+        "reported_signature": "setStickerComposePath(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setStickerCompositePath",
+        "reported_signature": "setStickerCompositePath(java.util.List<d0.k>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setThumbnail",
+        "reported_signature": "setThumbnail(android.graphics.Bitmap): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setTraceId",
+        "reported_signature": "setTraceId(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setType",
+        "reported_signature": "setType(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setUniqueId",
+        "reported_signature": "setUniqueId(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setUploadDirectly",
+        "reported_signature": "setUploadDirectly(java.lang.Boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setUseNewUiLayout",
+        "reported_signature": "setUseNewUiLayout(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setWaterColorMode",
+        "reported_signature": "setWaterColorMode(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "shouldRenderImage",
+        "reported_signature": "shouldRenderImage(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "toString",
+        "reported_signature": "toString(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "updateExifInfo",
+        "reported_signature": "updateExifInfo(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "updateWidthAndHeight",
+        "reported_signature": "updateWidthAndHeight(int, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "Companion",
+        "reported_type": "com.xingin.capa.feature_model.session.CapaImageModel3$a"
+      },
+      {
+        "name": "TAG",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "aiTemplateImageInfo",
+        "reported_type": "com.xingin.entities.capa.AiTemplateImageInfo"
+      },
+      {
+        "name": "applySessionId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "bgColor",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "bizGoodsItem",
+        "reported_type": "a22.g"
+      },
+      {
+        "name": "capaFilterExtensions",
+        "reported_type": "com.xingin.capa.feature_model.session.CapaFilterExtensions"
+      },
+      {
+        "name": "changed",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "coProduceInfo",
+        "reported_type": "com.xingin.capa.feature_model.session.CoProduceImageInfo"
+      },
+      {
+        "name": "composeErrorCode",
+        "reported_type": "int"
+      },
+      {
+        "name": "composeErrorMsg",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "currentFolderPath",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "deeplinkCarryImageUrl",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "downloadImageSuccess",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "downloadLiveVideoSuccess",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "exifInfo",
+        "reported_type": "com.xingin.capa.feature_model.session.CapaPhotoExifInfo"
+      },
+      {
+        "name": "extraInfo",
+        "reported_type": "com.google.gson.l"
+      },
+      {
+        "name": "fileId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "flashLamp",
+        "reported_type": "int"
+      },
+      {
+        "name": "goodsItem",
+        "reported_type": "com.xingin.capa.feature_model.session.GoodsItem"
+      },
+      {
+        "name": "goodsItemList",
+        "reported_type": "java.util.List<a22.x>"
+      },
+      {
+        "name": "handledFileId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "imageBeforeComposeData",
+        "reported_type": "com.xingin.capa.feature_model.session.ImageBeforeComposeData"
+      },
+      {
+        "name": "imageHeight",
+        "reported_type": "int"
+      },
+      {
+        "name": "imageMountableMap",
+        "reported_type": "com.xingin.capa.feature_model.session.ImageBizModelMap"
+      },
+      {
+        "name": "imageScaleBean",
+        "reported_type": "com.xingin.capa.model.image.CapaImageCropBean"
+      },
+      {
+        "name": "imageServerOriginalPath",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "imageTemplate",
+        "reported_type": "com.xingin.capa.feature_model.template.image.ImageTemplateBean"
+      },
+      {
+        "name": "imageType",
+        "reported_type": "int"
+      },
+      {
+        "name": "imageUrl",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "imageWidth",
+        "reported_type": "int"
+      },
+      {
+        "name": "isEnableUseLivePhoto",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isLivePhotoSoundMute",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isUploadDirectly",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "isWaterColorMode",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "jigsawTemplateInfo",
+        "reported_type": "com.xingin.entities.capa.JigsawTemplateInfo"
+      },
+      {
+        "name": "latitudeServer",
+        "reported_type": "double"
+      },
+      {
+        "name": "layerTree",
+        "reported_type": "com.xingin.capa.model.layer.BGLayer"
+      },
+      {
+        "name": "lightUsedImageTemplate",
+        "reported_type": "com.xingin.capa.feature_model.template.image.ImageTemplate"
+      },
+      {
+        "name": "livePhotoTimelineString",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "livePhotoVideoFileId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "livePhotoVideoHdr",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "livePhotoVideoPath",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "livePhotoVideoUrl",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "longitudeServer",
+        "reported_type": "double"
+      },
+      {
+        "name": "needCompositeInDeeplink",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "originLayerTree",
+        "reported_type": "com.xingin.capa.model.layer.BGLayer"
+      },
+      {
+        "name": "pagesOutPicPath",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "parentFolderPath",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "pasterResultList",
+        "reported_type": "java.util.List<d0.k>"
+      },
+      {
+        "name": "photoIsUHDR",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "placeHolderPath",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "previewBitmap",
+        "reported_type": "android.graphics.Bitmap"
+      },
+      {
+        "name": "previewImagePath",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "reEditPassThroughInfo",
+        "reported_type": "a22.r"
+      },
+      {
+        "name": "reason",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "resultAspectRatio",
+        "reported_type": "float"
+      },
+      {
+        "name": "resultPath",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "serverLivePhotoSoundMuteStatus",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "stickerComposePath",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "thumbnail",
+        "reported_type": "android.graphics.Bitmap"
+      },
+      {
+        "name": "traceId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "type",
+        "reported_type": "int"
+      },
+      {
+        "name": "uniqueId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "useNewUiLayout",
+        "reported_type": "boolean"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.capa.feature_model.session.CapaImageModel3.a",
+      "com.xingin.capa.feature_model.session.CapaImageModel3.b"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "9fdcbeaac67cae42bb40132d13490e1b8a34c6f9f990490c95fe91f160036cb7",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

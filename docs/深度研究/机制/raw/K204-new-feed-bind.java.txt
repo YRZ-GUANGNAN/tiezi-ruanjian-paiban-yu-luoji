@@ -1,0 +1,15 @@
+    @Override // com.drakeet.multitype.MultiTypeAdapter, androidx.recyclerview.widget.RecyclerView.Adapter
+    public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int i82, List<? extends Object> list) {
+        if (PatchProxy.proxyVoid3Para(viewHolder, new Integer(i82), list, this, FeedCustomMultiTypeAdapter.class, 380415)) {
+            return;
+        }
+        if (this.f163561i) {
+            f.t("FeedCustomMultiTypeAdapter", "onBindViewHolder() position: " + i82 + "; payloads=" + list);
+        }
+        this.f163560h++;
+        super.onBindViewHolder(viewHolder, i82, list);
+        if (!T0() || this.f163560h <= 100) {
+            return;
+        }
+        U0("MAX_COUNT");
+    }

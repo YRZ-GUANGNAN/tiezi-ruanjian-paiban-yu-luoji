@@ -1,0 +1,183 @@
+{
+  "evidence_id": "ev_155e9faf81006d6db9f8b8bba6e10c362f76d83ad920980b3de3ce5c56b4148b",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote.Page"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote.Page"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"CREATOR\",\"def_pos\":0,\"type\":\"android.os.Parcelable$Creator\"},{\"name\":\"pageType\",\"def_pos\":0,\"type\":\"com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$l\"},{\"name\":\"subType\",\"def_pos\":0,\"type\":\"java.lang.String\"}],\"field_count\":3,\"full_name\":\"com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote.Page\",\"name\":\"Page\",\"inner_classes\":[\"com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote.Page.a\"],\"inner_class_count\":1,\"method_count\":9,\"methods\":[{\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(java.lang.String, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$l): void\",\"def_pos\":0},{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(java.lang.String, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$l, int, kotlin.jvm.internal.DefaultConstructorMarker): void\",\"def_pos\":0},{\"name\":\"a\",\"is_constructor\":false,\"signature\":\"a(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$l\",\"def_pos\":0},{\"name\":\"b\",\"is_constructor\":false,\"signature\":\"b(): java.lang.String\",\"def_pos\":0},{\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$l): void\",\"def_pos\":0},{\"name\":\"describeContents\",\"is_constructor\":false,\"signature\":\"describeContents(): int\",\"def_pos\":0},{\"name\":\"writeToParcel\",\"is_constructor\":false,\"signature\":\"writeToParcel(android.os.Parcel, int): void\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote.Page",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$l): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$l, int, kotlin.jvm.internal.DefaultConstructorMarker): void",
+        "overload_index": 2,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$l",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$l): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "describeContents",
+        "reported_signature": "describeContents(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "writeToParcel",
+        "reported_signature": "writeToParcel(android.os.Parcel, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "CREATOR",
+        "reported_type": "android.os.Parcelable$Creator"
+      },
+      {
+        "name": "pageType",
+        "reported_type": "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote$l"
+      },
+      {
+        "name": "subType",
+        "reported_type": "java.lang.String"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.xhs.xydeeplink.xhsdiscover.post_new_note.PagePostNewNote.Page.a"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "13c3ce736144d82ace7ee832a34a12b7a9613014c3e701ecb93dac2b4bcbdc81",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

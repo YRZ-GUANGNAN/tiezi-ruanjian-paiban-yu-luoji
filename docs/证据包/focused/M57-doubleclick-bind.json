@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_4444e803e83bca0937bba07ef4f0f912da9b0ca0a951eddff8ecbedb416e08cd",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.video.feed.videoitem.doubleclick.DoubleClickLikePresenter",
+    "method_name": "m7"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.video.feed.videoitem.doubleclick.DoubleClickLikePresenter"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[],\"field_count\":0,\"full_name\":\"com.xingin.video.feed.videoitem.doubleclick.DoubleClickLikePresenter\",\"name\":\"DoubleClickLikePresenter\",\"inner_classes\":[\"com.xingin.video.feed.videoitem.doubleclick.DoubleClickLikePresenter.a\",\"com.xingin.video.feed.videoitem.doubleclick.DoubleClickLikePresenter.b\",\"com.xingin.video.feed.videoitem.doubleclick.DoubleClickLikePresenter.c\"],\"inner_class_count\":3,\"method_count\":3,\"methods\":[{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\"},{\"def_pos\":0,\"name\":\"m7\",\"is_constructor\":false,\"signature\":\"m7(): void\"},{\"def_pos\":0,\"name\":\"p7\",\"is_constructor\":false,\"signature\":\"p7(): void\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.video.feed.videoitem.doubleclick.DoubleClickLikePresenter",
+          "method_name": "m7",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"method_name\":\"m7\",\"overload_count\":1,\"body\":\"    @Override // com.xingin.foundation.core.v2.Presenter\\r\\n    public void m7() {\\r\\n        Observable observableEmpty;\\r\\n        mo4.e eVarH \\u003d v.h(c7());\\r\\n        h\\u003cObject\\u003e hVar \\u003d eVarH.f156538a.get(e.class);\\r\\n        if (hVar \\u003d\\u003d null || (observableEmpty \\u003d Observable.just(new h(hVar.f11911d))) \\u003d\\u003d null) {\\r\\n            observableEmpty \\u003d Observable.empty();\\r\\n        }\\r\\n        this.f51173p.c(Observable.concat(observableEmpty, eVarH.f156539b.filter(a.f66578d).map(b.f66579d)).observeOn(dl9.a.a()).subscribe(new c()));\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.video.feed.videoitem.doubleclick.DoubleClickLikePresenter\",\"full_name\":\"com.xingin.video.feed.videoitem.doubleclick.DoubleClickLikePresenter.m7\",\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.video.feed.videoitem.doubleclick.DoubleClickLikePresenter",
+    "method": {
+      "name": "m7",
+      "reported_signature": "m7(): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // com.xingin.foundation.core.v2.Presenter\r\n    public void m7() {\r\n        Observable observableEmpty;\r\n        mo4.e eVarH = v.h(c7());\r\n        h<Object> hVar = eVarH.f156538a.get(e.class);\r\n        if (hVar == null || (observableEmpty = Observable.just(new h(hVar.f11911d))) == null) {\r\n            observableEmpty = Observable.empty();\r\n        }\r\n        this.f51173p.c(Observable.concat(observableEmpty, eVarH.f156539b.filter(a.f66578d).map(b.f66579d)).observeOn(dl9.a.a()).subscribe(new c()));\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "83049cb31937badc226f649f672832b08e771bae518b503f3661f2afd4952a80",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

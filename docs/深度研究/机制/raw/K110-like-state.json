@@ -1,0 +1,138 @@
+{
+  "evidence_id": "ev_e35d685dc0ea1b68d282668d02fcf1d9c6fd9697fc358a50323d071b9ef6863b",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter",
+    "method_name": "Q6",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":4,\"inner_classes\":[\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter.a\",\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter.b\",\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter.c\",\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter.d\"],\"name\":\"NoteDetailLikeBtnPresenter\",\"full_name\":\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter\",\"field_count\":0,\"fields\":[],\"methods\":[{\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\"},{\"is_constructor\":false,\"name\":\"F6\",\"def_pos\":0,\"signature\":\"F6(com.airbnb.lottie.LottieAnimationView, t2.l): void\"},{\"is_constructor\":false,\"name\":\"G6\",\"def_pos\":0,\"signature\":\"G6(kotlin.Unit): r96.g\"},{\"is_constructor\":false,\"name\":\"H6\",\"def_pos\":0,\"signature\":\"H6(com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter, com.xingin.entities.notedetail.NoteFeed): void\"},{\"is_constructor\":false,\"name\":\"I6\",\"def_pos\":0,\"signature\":\"I6(com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter, com.xingin.entities.notedetail.NoteFeed): void\"},{\"is_constructor\":false,\"name\":\"J6\",\"def_pos\":0,\"signature\":\"J6(com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter, com.xingin.entities.notedetail.NoteFeed): void\"},{\"is_constructor\":false,\"name\":\"K6\",\"def_pos\":0,\"signature\":\"K6(kotlin.Unit): r96.g\"},{\"is_constructor\":false,\"name\":\"L6\",\"def_pos\":0,\"signature\":\"L6(com.xingin.entities.notedetail.NoteFeed): void\"},{\"is_constructor\":false,\"name\":\"M6\",\"def_pos\":0,\"signature\":\"M6(com.xingin.entities.notedetail.NoteFeed): void\"},{\"is_constructor\":false,\"name\":\"N6\",\"def_pos\":0,\"signature\":\"N6(com.xingin.entities.notedetail.NoteFeed): void\"},{\"is_constructor\":false,\"name\":\"O6\",\"def_pos\":0,\"signature\":\"O6(java.lang.String): void\"},{\"is_constructor\":false,\"name\":\"P6\",\"def_pos\":0,\"signature\":\"P6(com.airbnb.lottie.LottieAnimationView, t2.l): void\"},{\"is_constructor\":false,\"name\":\"Q6\",\"def_pos\":0,\"signature\":\"Q6(com.xingin.entities.notedetail.NoteFeed): void\"},{\"is_constructor\":false,\"name\":\"x6\",\"def_pos\":0,\"signature\":\"x6(): void\"}],\"method_count\":14}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter",
+          "method_name": "Q6",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_index\":0,\"fell_back\":false,\"body\":\"    public final void Q6(NoteFeed noteFeed) {\\r\\n        if (PatchProxy.proxyVoid1Para(noteFeed, this, NoteDetailLikeBtnPresenter.class, 293258)) {\\r\\n            return;\\r\\n        }\\r\\n        N6(noteFeed);\\r\\n    }\",\"overload_count\":1,\"method_name\":\"Q6\",\"markers\":[],\"mode\":\"java\",\"full_name\":\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter.Q6\",\"class_name\":\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter",
+    "method": {
+      "name": "Q6",
+      "reported_signature": "Q6(com.xingin.entities.notedetail.NoteFeed): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void Q6(NoteFeed noteFeed) {\r\n        if (PatchProxy.proxyVoid1Para(noteFeed, this, NoteDetailLikeBtnPresenter.class, 293258)) {\r\n            return;\r\n        }\r\n        N6(noteFeed);\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "a48af889f2dc3afa21c7e3b98c9d0d2a41b19701654d47a6524f2030f02de6ad",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

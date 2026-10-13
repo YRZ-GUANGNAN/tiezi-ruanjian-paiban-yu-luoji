@@ -1,0 +1,140 @@
+{
+  "generatedAt": "2026-10-13T15:48:46.178Z",
+  "method": "explicit_allowlist_copy",
+  "assets": [
+    {
+      "file": "动效/motion-findings.md",
+      "bytes": 8532,
+      "sha256": "d4cbb644b74eaa419cc335c80c7844c1ea46a64552bf14e00f0566e1339a3bd3",
+      "originalSha256": "d4cbb644b74eaa419cc335c80c7844c1ea46a64552bf14e00f0566e1339a3bd3"
+    },
+    {
+      "file": "动效/metrics-summary.json",
+      "bytes": 3774,
+      "sha256": "01e5b82332f11afef79cd9837a37c5210b76bca65662ef40f74d146d45d60dee",
+      "originalSha256": "01e5b82332f11afef79cd9837a37c5210b76bca65662ef40f74d146d45d60dee"
+    },
+    {
+      "file": "动效/R31/measurements.json",
+      "bytes": 46459,
+      "sha256": "fdc1880dbd413b2c2d756c51e9cadc589fd15cedf7b6cd7966816a309afe0c72",
+      "originalSha256": "58f36fd709620042106a1ed8b86c72940e86440c583d89826daea72f992f74ca"
+    },
+    {
+      "file": "动效/R31/pixel-measurements.json",
+      "bytes": 20668,
+      "sha256": "236604028e9820690c0862176f7c902f729b16eb4f3b9b52cc59471fa44b09b5",
+      "originalSha256": "236604028e9820690c0862176f7c902f729b16eb4f3b9b52cc59471fa44b09b5"
+    },
+    {
+      "file": "动效/R31/fadeout-curve-fit.json",
+      "bytes": 535,
+      "sha256": "b1d8e4a89f75ef0196ce0d9e5427bcac24b781e3179488037f49cf34d5e927c5",
+      "originalSha256": "b1d8e4a89f75ef0196ce0d9e5427bcac24b781e3179488037f49cf34d5e927c5"
+    },
+    {
+      "file": "动效/R31/preview-validation.json",
+      "bytes": 622,
+      "sha256": "a4cf78f5a0898f512e1ee4fdb5871a593dfec2bf66cda82c5d9f3995c08f096c",
+      "originalSha256": "a4cf78f5a0898f512e1ee4fdb5871a593dfec2bf66cda82c5d9f3995c08f096c"
+    },
+    {
+      "file": "动效/R31/badge-timeline.png",
+      "bytes": 723569,
+      "sha256": "c3e712b644483cf39f5946755b66be7f47e8abc7a7e89cf4f9b2097fbe528b45",
+      "originalSha256": "c3e712b644483cf39f5946755b66be7f47e8abc7a7e89cf4f9b2097fbe528b45"
+    },
+    {
+      "file": "动效/R31/gallery-timeline.png",
+      "bytes": 505846,
+      "sha256": "75b2875bad984d750500cc77f093b5bf4d30e5268d272d2f70b615046033eb10",
+      "originalSha256": "75b2875bad984d750500cc77f093b5bf4d30e5268d272d2f70b615046033eb10"
+    },
+    {
+      "file": "动效/R31/badge-fadeout-detail.png",
+      "bytes": 97064,
+      "sha256": "975b2aa1b0500bfec0399da1a7f90b6ee6141eb853e4b935534fdd147edd39d9",
+      "originalSha256": "975b2aa1b0500bfec0399da1a7f90b6ee6141eb853e4b935534fdd147edd39d9"
+    },
+    {
+      "file": "动效/R31/motion-app-only.mp4",
+      "bytes": 2111551,
+      "sha256": "6df133ca592e3370c6c7968a9f2b7298d4af059f7280eb7c13ab569383da8c0b",
+      "originalSha256": "6df133ca592e3370c6c7968a9f2b7298d4af059f7280eb7c13ab569383da8c0b"
+    },
+    {
+      "file": "动效/T02/measurements.json",
+      "bytes": 14108,
+      "sha256": "0a7694e02e6d97530a49c8069b2d145e2ea967ef593aa4f06d9cba47ecb3a584",
+      "originalSha256": "0a7694e02e6d97530a49c8069b2d145e2ea967ef593aa4f06d9cba47ecb3a584"
+    },
+    {
+      "file": "动效/T02/geometry.json",
+      "bytes": 8759,
+      "sha256": "72a3c6442d44e927a742967febaa5b9103d59e9fc76d5be6e4e10eaf9fa87d47",
+      "originalSha256": "72a3c6442d44e927a742967febaa5b9103d59e9fc76d5be6e4e10eaf9fa87d47"
+    },
+    {
+      "file": "动效/T02/entrance-neutral-geometry.png",
+      "bytes": 13921,
+      "sha256": "44479ac26a65e82783391ebcec243e967984b556ceba596ebe4db6b9bc8664aa",
+      "originalSha256": "44479ac26a65e82783391ebcec243e967984b556ceba596ebe4db6b9bc8664aa"
+    },
+    {
+      "file": "动效/T03/measurements.json",
+      "bytes": 7156,
+      "sha256": "5b70c7122fe55a99639335d5f9f9b22330d6a9e12a7e3c09a6504814ed928ade",
+      "originalSha256": "5b70c7122fe55a99639335d5f9f9b22330d6a9e12a7e3c09a6504814ed928ade"
+    },
+    {
+      "file": "动效/T03/geometry.json",
+      "bytes": 9659,
+      "sha256": "53cdfe8270ae7ca9773bda96f82e825e72c4a0164af7d9ab9178f2637688f4db",
+      "originalSha256": "53cdfe8270ae7ca9773bda96f82e825e72c4a0164af7d9ab9178f2637688f4db"
+    },
+    {
+      "file": "动效/T03/exit-neutral-geometry.png",
+      "bytes": 14187,
+      "sha256": "06ab0dc17b63f3372540812e177d30cef8793df266288d598ff5881b738985a1",
+      "originalSha256": "06ab0dc17b63f3372540812e177d30cef8793df266288d598ff5881b738985a1"
+    },
+    {
+      "file": "动效/T05/measurements.json",
+      "bytes": 115967,
+      "sha256": "511c37057b308a8fef39142e5875a8b001e462f7fad8c7655f34d3efd368359a",
+      "originalSha256": "511c37057b308a8fef39142e5875a8b001e462f7fad8c7655f34d3efd368359a"
+    },
+    {
+      "file": "动效/T05/geometry.json",
+      "bytes": 35615,
+      "sha256": "6407a7d2d2327022321707ea9aecef5bdb7be598bc115f444f5f9826cb2e971e",
+      "originalSha256": "6407a7d2d2327022321707ea9aecef5bdb7be598bc115f444f5f9826cb2e971e"
+    },
+    {
+      "file": "动效/T05/enter-neutral-geometry.png",
+      "bytes": 16263,
+      "sha256": "e11d0cd91f3660392cb2e07eca19325526d967be0aeddd1057a232d4bbafe412",
+      "originalSha256": "e11d0cd91f3660392cb2e07eca19325526d967be0aeddd1057a232d4bbafe412"
+    },
+    {
+      "file": "动效/T06/measurements.json",
+      "bytes": 128817,
+      "sha256": "364c96b5c03ab35891f225f501058461bb02a19dd89258452f9a442a7829e8eb",
+      "originalSha256": "364c96b5c03ab35891f225f501058461bb02a19dd89258452f9a442a7829e8eb"
+    },
+    {
+      "file": "动效/T06/geometry.json",
+      "bytes": 40883,
+      "sha256": "79294e47e6841ca4fd494b29c6a694894aae6e03dfb805d444b24eca21691bbf",
+      "originalSha256": "79294e47e6841ca4fd494b29c6a694894aae6e03dfb805d444b24eca21691bbf"
+    },
+    {
+      "file": "动效/T06/exit-neutral-geometry.png",
+      "bytes": 15854,
+      "sha256": "ed6137b414f7eb1798eef6446f459e5bf391559710c41de9f06e886a55d3aa94",
+      "originalSha256": "ed6137b414f7eb1798eef6446f459e5bf391559710c41de9f06e886a55d3aa94"
+    }
+  ],
+  "limits": "仅R31分发已裁系统栏的App录屏；新转场分发去内容的几何图和数值，不分发完整广告或视频画面。",
+  "publication": "Public derived export; capture and preview pixels unchanged."
+}

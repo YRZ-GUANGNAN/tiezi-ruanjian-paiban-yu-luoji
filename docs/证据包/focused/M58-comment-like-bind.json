@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_616b811a622412cb364474eed075495b4bd7ae3bcd9c5ff45210aadbf782bcda",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.commentpanel.panel.comment.list.item.component.like.CommentLikePresenter",
+    "method_name": "o7"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.commentpanel.panel.comment.list.item.component.like.CommentLikePresenter"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"f44734q\",\"def_pos\":0,\"type\":\"bn9.d\"},{\"name\":\"f44735r\",\"def_pos\":0,\"type\":\"bn9.d\"},{\"name\":\"f44736s\",\"def_pos\":0,\"type\":\"bn9.d\"},{\"name\":\"f44737t\",\"def_pos\":0,\"type\":\"bn9.d\"},{\"name\":\"f44738u\",\"def_pos\":0,\"type\":\"gm6.a\"}],\"field_count\":5,\"full_name\":\"com.xingin.commentpanel.panel.comment.list.item.component.like.CommentLikePresenter\",\"name\":\"CommentLikePresenter\",\"inner_classes\":[\"com.xingin.commentpanel.panel.comment.list.item.component.like.CommentLikePresenter.a\",\"com.xingin.commentpanel.panel.comment.list.item.component.like.CommentLikePresenter.b\",\"com.xingin.commentpanel.panel.comment.list.item.component.like.CommentLikePresenter.c\",\"com.xingin.commentpanel.panel.comment.list.item.component.like.CommentLikePresenter.d\",\"com.xingin.commentpanel.panel.comment.list.item.component.like.CommentLikePresenter.e\"],\"inner_class_count\":5,\"method_count\":4,\"methods\":[{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\"},{\"def_pos\":0,\"name\":\"o7\",\"is_constructor\":false,\"signature\":\"o7(): void\"},{\"def_pos\":0,\"name\":\"t7\",\"is_constructor\":false,\"signature\":\"t7(): kf3.g\"},{\"def_pos\":0,\"name\":\"u7\",\"is_constructor\":false,\"signature\":\"u7(): bn9.g\\u003cjava.lang.String, java.lang.String\\u003e\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.commentpanel.panel.comment.list.item.component.like.CommentLikePresenter",
+          "method_name": "o7",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"method_name\":\"o7\",\"overload_count\":1,\"body\":\"    @Override // com.xingin.foundation.core.v2.Presenter\\r\\n    public void o7() {\\r\\n        Observable observableEmpty;\\r\\n        super.o7();\\r\\n        p.b(l7());\\r\\n        l0 l0Var \\u003d l0.LIST_ITEM;\\r\\n        el9.b bVar \\u003d this.f51173p;\\r\\n        mo4.e eVarI \\u003d v.i(c7(), v.d(l0Var));\\r\\n        h\\u003cObject\\u003e hVar \\u003d eVarI.f156538a.get(oo4.c.class);\\r\\n        if (hVar \\u003d\\u003d null || (observableEmpty \\u003d Observable.just(new h(hVar.f11911d))) \\u003d\\u003d null) {\\r\\n            observableEmpty \\u003d Observable.empty();\\r\\n        }\\r\\n        bVar.c(Observable.concat(observableEmpty, eVarI.f156539b.filter(uf3.m.f208681d).map(n.f208682d)).observeOn(dl9.a.a()).subscribe(new o(this)));\\r\\n        Presenter.f7(this, qe8.k.j((LinearLayout) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09141a), 500L), null, new uf3.p(this), 1, null);\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.commentpanel.panel.comment.list.item.component.like.CommentLikePresenter\",\"full_name\":\"com.xingin.commentpanel.panel.comment.list.item.component.like.CommentLikePresenter.o7\",\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.commentpanel.panel.comment.list.item.component.like.CommentLikePresenter",
+    "method": {
+      "name": "o7",
+      "reported_signature": "o7(): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // com.xingin.foundation.core.v2.Presenter\r\n    public void o7() {\r\n        Observable observableEmpty;\r\n        super.o7();\r\n        p.b(l7());\r\n        l0 l0Var = l0.LIST_ITEM;\r\n        el9.b bVar = this.f51173p;\r\n        mo4.e eVarI = v.i(c7(), v.d(l0Var));\r\n        h<Object> hVar = eVarI.f156538a.get(oo4.c.class);\r\n        if (hVar == null || (observableEmpty = Observable.just(new h(hVar.f11911d))) == null) {\r\n            observableEmpty = Observable.empty();\r\n        }\r\n        bVar.c(Observable.concat(observableEmpty, eVarI.f156539b.filter(uf3.m.f208681d).map(n.f208682d)).observeOn(dl9.a.a()).subscribe(new o(this)));\r\n        Presenter.f7(this, qe8.k.j((LinearLayout) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09141a), 500L), null, new uf3.p(this), 1, null);\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "6ef8a4a88f372f7bb0a1c65cea1f803aab9d29134c97e4be9c5f5f1dcc2eb0c1",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

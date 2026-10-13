@@ -1,0 +1,170 @@
+{
+  "evidence_id": "ev_461acce942881d9e430d69d45d4b9bf9d2b955e217280c50eb588010990691b3",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.notebase.followfeed.model.FollowNoteModel"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.notebase.followfeed.model.FollowNoteModel"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[],\"field_count\":0,\"full_name\":\"com.xingin.notebase.followfeed.model.FollowNoteModel\",\"name\":\"FollowNoteModel\",\"inner_classes\":[\"com.xingin.notebase.followfeed.model.FollowNoteModel.FollowNoteService\"],\"inner_class_count\":1,\"method_count\":9,\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0},{\"name\":\"a\",\"is_constructor\":false,\"signature\":\"a(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003ccom.xingin.entities.notedetail.NewBridgeGoods\\u003e\",\"def_pos\":0},{\"name\":\"b\",\"is_constructor\":false,\"signature\":\"b(java.lang.String): io.reactivex.Observable\\u003ccom.xingin.entities.notedetail.NewBridgeGoods\\u003e\",\"def_pos\":0},{\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(): io.reactivex.Observable\\u003cdb7.a\\u003e\",\"def_pos\":0},{\"name\":\"d\",\"is_constructor\":false,\"signature\":\"d(java.lang.String, java.lang.String, java.lang.String, boolean): io.reactivex.Observable\\u003cdb7.c\\u003e\",\"def_pos\":0},{\"name\":\"e\",\"is_constructor\":false,\"signature\":\"e(java.lang.String): io.reactivex.Observable\\u003cdb7.d\\u003e\",\"def_pos\":0},{\"name\":\"f\",\"is_constructor\":false,\"signature\":\"f(java.lang.String, int): io.reactivex.Observable\\u003cokhttp3.ResponseBody\\u003e\",\"def_pos\":0},{\"name\":\"g\",\"is_constructor\":false,\"signature\":\"g(java.lang.String, java.lang.String, int): io.reactivex.Observable\\u003cdb7.e\\u003e\",\"def_pos\":0},{\"name\":\"getNoteImageStickers\",\"is_constructor\":false,\"signature\":\"getNoteImageStickers(java.lang.String, java.lang.String): io.reactivex.Observable\\u003cjava.util.List\\u003ccom.xingin.entities.tags.ImageStickerData\\u003e\\u003e\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.notebase.followfeed.model.FollowNoteModel",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable<com.xingin.entities.notedetail.NewBridgeGoods>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(java.lang.String): io.reactivex.Observable<com.xingin.entities.notedetail.NewBridgeGoods>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(): io.reactivex.Observable<db7.a>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(java.lang.String, java.lang.String, java.lang.String, boolean): io.reactivex.Observable<db7.c>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(java.lang.String): io.reactivex.Observable<db7.d>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(java.lang.String, int): io.reactivex.Observable<okhttp3.ResponseBody>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(java.lang.String, java.lang.String, int): io.reactivex.Observable<db7.e>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getNoteImageStickers",
+        "reported_signature": "getNoteImageStickers(java.lang.String, java.lang.String): io.reactivex.Observable<java.util.List<com.xingin.entities.tags.ImageStickerData>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [],
+    "inner_classes": [
+      "com.xingin.notebase.followfeed.model.FollowNoteModel.FollowNoteService"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "992f927519490306a388d3692301cbd2d07f65faf84538d0406d7978a59e034e",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

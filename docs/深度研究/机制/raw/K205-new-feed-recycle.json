@@ -1,0 +1,138 @@
+{
+  "evidence_id": "ev_121fed34d7301efffddf2130b813f95415f9133f3727efbe3ac5022ee490fc99",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-yingyongbao-9.49.1.apk",
+    "digest": {
+      "sha256": "d22b4e7c776ec59ae80aa4a4e30e306ca1bcc2a5744c35e4a7702428c05178a3"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-yingyongbao-9.49.1.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-yingyongbao-9.49.1.apk",
+    "class_name": "com.xingin.xhs.homepage.explorefeed.mainfeed.view.FeedCustomMultiTypeAdapter",
+    "method_name": "onViewRecycled",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 158864,
+      "resource_count": 25597,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.xhs.homepage.explorefeed.mainfeed.view.FeedCustomMultiTypeAdapter"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"Companion\",\"def_pos\":0,\"type\":\"com.xingin.xhs.homepage.explorefeed.mainfeed.view.FeedCustomMultiTypeAdapter$a\"},{\"name\":\"f163558f\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"f163559g\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"f163560h\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"f163561i\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"f163562m\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f163563n\",\"def_pos\":0,\"type\":\"java.lang.String\"}],\"field_count\":7,\"full_name\":\"com.xingin.xhs.homepage.explorefeed.mainfeed.view.FeedCustomMultiTypeAdapter\",\"name\":\"FeedCustomMultiTypeAdapter\",\"inner_classes\":[\"com.xingin.xhs.homepage.explorefeed.mainfeed.view.FeedCustomMultiTypeAdapter.a\"],\"inner_class_count\":1,\"method_count\":9,\"methods\":[{\"is_constructor\":false,\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\"},{\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\"},{\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(java.lang.String): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\"},{\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(java.lang.String, int, kotlin.jvm.internal.DefaultConstructorMarker): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\"},{\"is_constructor\":false,\"signature\":\"T0(): boolean\",\"def_pos\":0,\"name\":\"T0\"},{\"is_constructor\":false,\"signature\":\"U0(java.lang.String): void\",\"def_pos\":0,\"name\":\"U0\"},{\"is_constructor\":false,\"signature\":\"onBindViewHolder(androidx.recyclerview.widget.RecyclerView$ViewHolder, int, java.util.List\\u003c? extends java.lang.Object\\u003e): void\",\"def_pos\":0,\"name\":\"onBindViewHolder\"},{\"is_constructor\":false,\"signature\":\"onCreateViewHolder(android.view.ViewGroup, int): androidx.recyclerview.widget.RecyclerView$ViewHolder\",\"def_pos\":0,\"name\":\"onCreateViewHolder\"},{\"is_constructor\":false,\"signature\":\"onViewRecycled(androidx.recyclerview.widget.RecyclerView$ViewHolder): void\",\"def_pos\":0,\"name\":\"onViewRecycled\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.xhs.homepage.explorefeed.mainfeed.view.FeedCustomMultiTypeAdapter",
+          "method_name": "onViewRecycled",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_name\":\"onViewRecycled\",\"overload_count\":1,\"body\":\"    @Override // com.drakeet.multitype.MultiTypeAdapter, androidx.recyclerview.widget.RecyclerView.Adapter\\r\\n    public void onViewRecycled(RecyclerView.ViewHolder viewHolder) {\\r\\n        if (PatchProxy.proxyVoid1Para(viewHolder, this, FeedCustomMultiTypeAdapter.class, 380416)) {\\r\\n            return;\\r\\n        }\\r\\n        H0(viewHolder).onViewRecycled(viewHolder);\\r\\n        if (this.f163561i) {\\r\\n            f.t(\\\"FeedCustomMultiTypeAdapter\\\", \\\"onViewRecycled() holder: \\\" + viewHolder.getAdapterPosition());\\r\\n        }\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.xhs.homepage.explorefeed.mainfeed.view.FeedCustomMultiTypeAdapter\",\"full_name\":\"com.xingin.xhs.homepage.explorefeed.mainfeed.view.FeedCustomMultiTypeAdapter.onViewRecycled\",\"mode\":\"java\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.xhs.homepage.explorefeed.mainfeed.view.FeedCustomMultiTypeAdapter",
+    "method": {
+      "name": "onViewRecycled",
+      "reported_signature": "onViewRecycled(androidx.recyclerview.widget.RecyclerView$ViewHolder): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // com.drakeet.multitype.MultiTypeAdapter, androidx.recyclerview.widget.RecyclerView.Adapter\r\n    public void onViewRecycled(RecyclerView.ViewHolder viewHolder) {\r\n        if (PatchProxy.proxyVoid1Para(viewHolder, this, FeedCustomMultiTypeAdapter.class, 380416)) {\r\n            return;\r\n        }\r\n        H0(viewHolder).onViewRecycled(viewHolder);\r\n        if (this.f163561i) {\r\n            f.t(\"FeedCustomMultiTypeAdapter\", \"onViewRecycled() holder: \" + viewHolder.getAdapterPosition());\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "3685c8a0e87693437f935ad7f5423a84ff7bf6f0adf6585b721ac5807db5a482",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

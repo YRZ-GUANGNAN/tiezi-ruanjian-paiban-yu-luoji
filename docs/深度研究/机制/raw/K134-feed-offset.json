@@ -1,0 +1,138 @@
+{
+  "evidence_id": "ev_dd7116d3f2e2ccdf644de7e8d0ba427668ae377481b13447690a85775bb6dcf2",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.redview.explorefeed.ExploreDoubleRowStaggeredDiverDecoration",
+    "method_name": "getItemOffsets",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.redview.explorefeed.ExploreDoubleRowStaggeredDiverDecoration"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\"},{\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(int): void\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\"},{\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(int, int, kotlin.jvm.internal.DefaultConstructorMarker): void\",\"is_constructor\":true,\"name\":\"\\u003cinit\\u003e\"},{\"def_pos\":0,\"signature\":\"getItemOffsets(android.graphics.Rect, android.view.View, androidx.recyclerview.widget.RecyclerView, androidx.recyclerview.widget.RecyclerView$State): void\",\"is_constructor\":false,\"name\":\"getItemOffsets\"}],\"method_count\":4,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"ExploreDoubleRowStaggeredDiverDecoration\",\"full_name\":\"com.xingin.redview.explorefeed.ExploreDoubleRowStaggeredDiverDecoration\",\"field_count\":2,\"fields\":[{\"type\":\"int\",\"def_pos\":0,\"name\":\"f116813a\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f116814b\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.redview.explorefeed.ExploreDoubleRowStaggeredDiverDecoration",
+          "method_name": "getItemOffsets",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"mode\":\"java\",\"full_name\":\"com.xingin.redview.explorefeed.ExploreDoubleRowStaggeredDiverDecoration.getItemOffsets\",\"class_name\":\"com.xingin.redview.explorefeed.ExploreDoubleRowStaggeredDiverDecoration\",\"overload_index\":0,\"fell_back\":false,\"body\":\"    @Override // androidx.recyclerview.widget.RecyclerView.ItemDecoration\\r\\n    public void getItemOffsets(Rect rect, View view, RecyclerView recyclerView, RecyclerView.State state) {\\r\\n        StaggeredGridLayoutManager staggeredGridLayoutManager;\\r\\n        if (PatchProxy.proxyVoid4Para(rect, view, recyclerView, state, this, ExploreDoubleRowStaggeredDiverDecoration.class, 66808)) {\\r\\n            return;\\r\\n        }\\r\\n        super.getItemOffsets(rect, view, recyclerView, state);\\r\\n        ViewGroup.LayoutParams layoutParams \\u003d view.getLayoutParams();\\r\\n        Objects.requireNonNull(layoutParams, \\\"null cannot be cast to non-null type androidx.recyclerview.widget.StaggeredGridLayoutManager.LayoutParams\\\");\\r\\n        int childAdapterPosition \\u003d recyclerView.getChildAdapterPosition(view);\\r\\n        boolean z100 \\u003d false;\\r\\n        if (((StaggeredGridLayoutManager.LayoutParams) layoutParams).isFullSpan()) {\\r\\n            rect.left \\u003d 0;\\r\\n            rect.top \\u003d 0;\\r\\n            rect.right \\u003d 0;\\r\\n            rect.bottom \\u003d 0;\\r\\n            this.f116814b \\u003d Math.max(this.f116814b, childAdapterPosition);\\r\\n            return;\\r\\n        }\\r\\n        if (this.f116814b \\u003d\\u003d childAdapterPosition) {\\r\\n            this.f116814b \\u003d -1;\\r\\n        }\\r\\n        ViewGroup.LayoutParams layoutParams2 \\u003d view.getLayoutParams();\\r\\n        Objects.requireNonNull(layoutParams2, \\\"null cannot be cast to non-null type androidx.recyclerview.widget.StaggeredGridLayoutManager.LayoutParams\\\");\\r\\n        int spanIndex \\u003d ((StaggeredGridLayoutManager.LayoutParams) layoutParams2).getSpanIndex();\\r\\n        if ((view instanceof CardView) || (view instanceof e) || (view instanceof ConstraintLayout)) {\\r\\n            RecyclerView.LayoutManager layoutManager \\u003d recyclerView.getLayoutManager();\\r\\n            staggeredGridLayoutManager \\u003d layoutManager instanceof StaggeredGridLayoutManager ? (StaggeredGridLayoutManager) layoutManager : null;\\r\\n            int spanCount \\u003d staggeredGridLayoutManager !\\u003d null ? staggeredGridLayoutManager.getSpanCount() : 2;\\r\\n            int i100 \\u003d this.f116813a;\\r\\n            if (spanIndex !\\u003d 0) {\\r\\n                i100 \\u003e\\u003e\\u003d 1;\\r\\n            }\\r\\n            rect.left \\u003d i100;\\r\\n            rect.right \\u003d spanIndex \\u003d\\u003d spanCount + (-1) ? this.f116813a : this.f116813a \\u003e\\u003e 1;\\r\\n            int i101 \\u003d this.f116814b;\\r\\n            int i102 \\u003d i101 + 1;\\r\\n            if (childAdapterPosition \\u003c\\u003d i101 + spanCount \\u0026\\u0026 i102 \\u003c\\u003d childAdapterPosition) {\\r\\n                z100 \\u003d true;\\r\\n            }\\r\\n            int i103 \\u003d this.f116813a;\\r\\n            if (!z100) {\\r\\n                i103 \\u003e\\u003e\\u003d 1;\\r\\n            }\\r\\n            rect.top \\u003d i103;\\r\\n            if (staggeredGridLayoutManager !\\u003d null) {\\r\\n                rect.bottom \\u003d recyclerView.indexOfChild(view) + staggeredGridLayoutManager.getSpanCount() \\u003e staggeredGridLayoutManager.getItemCount() ? this.f116813a : this.f116813a \\u003e\\u003e 1;\\r\\n                return;\\r\\n            }\\r\\n            return;\\r\\n        }\\r\\n        if (!(view instanceof FrameLayout) \\u0026\\u0026 !(view instanceof LinearLayout) \\u0026\\u0026 !(view instanceof CanvasLayout)) {\\r\\n            rect.left \\u003d 0;\\r\\n            rect.right \\u003d spanIndex \\u003d\\u003d 0 ? this.f116813a : 0;\\r\\n            rect.top \\u003d this.f116813a;\\r\\n            rect.bottom \\u003d 0;\\r\\n            return;\\r\\n        }\\r\\n        RecyclerView.LayoutManager layoutManager2 \\u003d recyclerView.getLayoutManager();\\r\\n        staggeredGridLayoutManager \\u003d layoutManager2 instanceof StaggeredGridLayoutManager ? (StaggeredGridLayoutManager) layoutManager2 : null;\\r\\n        int spanCount2 \\u003d staggeredGridLayoutManager !\\u003d null ? staggeredGridLayoutManager.getSpanCount() : 2;\\r\\n        int i104 \\u003d this.f116813a;\\r\\n        rect.top \\u003d i104;\\r\\n        rect.bottom \\u003d 0;\\r\\n        if (spanIndex \\u003d\\u003d 0) {\\r\\n            rect.left \\u003d i104;\\r\\n        } else {\\r\\n            rect.left \\u003d i104 / 2;\\r\\n        }\\r\\n        if (spanIndex \\u003d\\u003d spanCount2 - 1) {\\r\\n            rect.right \\u003d i104;\\r\\n        } else {\\r\\n            rect.right \\u003d i104 / 2;\\r\\n        }\\r\\n    }\",\"overload_count\":1,\"method_name\":\"getItemOffsets\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.redview.explorefeed.ExploreDoubleRowStaggeredDiverDecoration",
+    "method": {
+      "name": "getItemOffsets",
+      "reported_signature": "getItemOffsets(android.graphics.Rect, android.view.View, androidx.recyclerview.widget.RecyclerView, androidx.recyclerview.widget.RecyclerView$State): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // androidx.recyclerview.widget.RecyclerView.ItemDecoration\r\n    public void getItemOffsets(Rect rect, View view, RecyclerView recyclerView, RecyclerView.State state) {\r\n        StaggeredGridLayoutManager staggeredGridLayoutManager;\r\n        if (PatchProxy.proxyVoid4Para(rect, view, recyclerView, state, this, ExploreDoubleRowStaggeredDiverDecoration.class, 66808)) {\r\n            return;\r\n        }\r\n        super.getItemOffsets(rect, view, recyclerView, state);\r\n        ViewGroup.LayoutParams layoutParams = view.getLayoutParams();\r\n        Objects.requireNonNull(layoutParams, \"null cannot be cast to non-null type androidx.recyclerview.widget.StaggeredGridLayoutManager.LayoutParams\");\r\n        int childAdapterPosition = recyclerView.getChildAdapterPosition(view);\r\n        boolean z100 = false;\r\n        if (((StaggeredGridLayoutManager.LayoutParams) layoutParams).isFullSpan()) {\r\n            rect.left = 0;\r\n            rect.top = 0;\r\n            rect.right = 0;\r\n            rect.bottom = 0;\r\n            this.f116814b = Math.max(this.f116814b, childAdapterPosition);\r\n            return;\r\n        }\r\n        if (this.f116814b == childAdapterPosition) {\r\n            this.f116814b = -1;\r\n        }\r\n        ViewGroup.LayoutParams layoutParams2 = view.getLayoutParams();\r\n        Objects.requireNonNull(layoutParams2, \"null cannot be cast to non-null type androidx.recyclerview.widget.StaggeredGridLayoutManager.LayoutParams\");\r\n        int spanIndex = ((StaggeredGridLayoutManager.LayoutParams) layoutParams2).getSpanIndex();\r\n        if ((view instanceof CardView) || (view instanceof e) || (view instanceof ConstraintLayout)) {\r\n            RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();\r\n            staggeredGridLayoutManager = layoutManager instanceof StaggeredGridLayoutManager ? (StaggeredGridLayoutManager) layoutManager : null;\r\n            int spanCount = staggeredGridLayoutManager != null ? staggeredGridLayoutManager.getSpanCount() : 2;\r\n            int i100 = this.f116813a;\r\n            if (spanIndex != 0) {\r\n                i100 >>= 1;\r\n            }\r\n            rect.left = i100;\r\n            rect.right = spanIndex == spanCount + (-1) ? this.f116813a : this.f116813a >> 1;\r\n            int i101 = this.f116814b;\r\n            int i102 = i101 + 1;\r\n            if (childAdapterPosition <= i101 + spanCount && i102 <= childAdapterPosition) {\r\n                z100 = true;\r\n            }\r\n            int i103 = this.f116813a;\r\n            if (!z100) {\r\n                i103 >>= 1;\r\n            }\r\n            rect.top = i103;\r\n            if (staggeredGridLayoutManager != null) {\r\n                rect.bottom = recyclerView.indexOfChild(view) + staggeredGridLayoutManager.getSpanCount() > staggeredGridLayoutManager.getItemCount() ? this.f116813a : this.f116813a >> 1;\r\n                return;\r\n            }\r\n            return;\r\n        }\r\n        if (!(view instanceof FrameLayout) && !(view instanceof LinearLayout) && !(view instanceof CanvasLayout)) {\r\n            rect.left = 0;\r\n            rect.right = spanIndex == 0 ? this.f116813a : 0;\r\n            rect.top = this.f116813a;\r\n            rect.bottom = 0;\r\n            return;\r\n        }\r\n        RecyclerView.LayoutManager layoutManager2 = recyclerView.getLayoutManager();\r\n        staggeredGridLayoutManager = layoutManager2 instanceof StaggeredGridLayoutManager ? (StaggeredGridLayoutManager) layoutManager2 : null;\r\n        int spanCount2 = staggeredGridLayoutManager != null ? staggeredGridLayoutManager.getSpanCount() : 2;\r\n        int i104 = this.f116813a;\r\n        rect.top = i104;\r\n        rect.bottom = 0;\r\n        if (spanIndex == 0) {\r\n            rect.left = i104;\r\n        } else {\r\n            rect.left = i104 / 2;\r\n        }\r\n        if (spanIndex == spanCount2 - 1) {\r\n            rect.right = i104;\r\n        } else {\r\n            rect.right = i104 / 2;\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "3f302360523e76f64000dfaeb9364bf2e6cb712dd3a8c3bd772f3951df3b4d95",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

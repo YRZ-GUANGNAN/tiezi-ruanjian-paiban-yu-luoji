@@ -1,0 +1,3 @@
+    public final long M0() {
+        return this.likedCount;
+    }

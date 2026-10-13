@@ -1,0 +1,10 @@
+    public final Observable<y> f(final String str) {
+        long jElapsedRealtime = SystemClock.elapsedRealtime();
+        b87.b bVar = b87.b.f8782a;
+        return n.b(((CommonNoteService) b87.b.b(CommonNoteService.class)).likePost("discovery." + str).observeOn(dl9.a.a()).doOnTerminate(new gl9.a() { // from class: mz6.d
+            @Override // gl9.a
+            public final void run() {
+                qk4.b.INSTANCE.a().onNext(new qk4.a("LIKE_NOTE", str));
+            }
+        }), "/api/sns/v1/note/like", jElapsedRealtime, 0L, null, 8, null);
+    }

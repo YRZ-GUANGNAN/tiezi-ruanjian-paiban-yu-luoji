@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_6efcd57de814a1a0cf9cc97818cae8d3c7dfc04bfa3292548fa619f327beb0a4",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment",
+    "method_name": "onViewCreated"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\",\"is_constructor\":true},{\"name\":\"_$_clearFindViewByIdCache\",\"def_pos\":0,\"signature\":\"_$_clearFindViewByIdCache(): void\",\"is_constructor\":false},{\"name\":\"f6\",\"def_pos\":0,\"signature\":\"f6(com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment): java.lang.Object\",\"is_constructor\":false},{\"name\":\"h6\",\"def_pos\":0,\"signature\":\"h6(): com.xingin.business_framework.action_dispatcher.ActionDispatcher\",\"is_constructor\":false},{\"name\":\"j6\",\"def_pos\":0,\"signature\":\"j6(): f00.b\",\"is_constructor\":false},{\"name\":\"j7\",\"def_pos\":0,\"signature\":\"j7(): nn9.l\\u003cyq9.c, bn9.w\\u003e\",\"is_constructor\":false},{\"name\":\"k6\",\"def_pos\":0,\"signature\":\"k6(): void\",\"is_constructor\":false},{\"name\":\"onAttach\",\"def_pos\":0,\"signature\":\"onAttach(android.content.Context): void\",\"is_constructor\":false},{\"name\":\"onCreateView\",\"def_pos\":0,\"signature\":\"onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle): android.view.View\",\"is_constructor\":false},{\"name\":\"onDestroy\",\"def_pos\":0,\"signature\":\"onDestroy(): void\",\"is_constructor\":false},{\"name\":\"onDestroyView\",\"def_pos\":0,\"signature\":\"onDestroyView(): void\",\"is_constructor\":false},{\"name\":\"onResume\",\"def_pos\":0,\"signature\":\"onResume(): void\",\"is_constructor\":false},{\"name\":\"onViewCreated\",\"def_pos\":0,\"signature\":\"onViewCreated(android.view.View, android.os.Bundle): void\",\"is_constructor\":false}],\"method_count\":13,\"inner_class_count\":2,\"inner_classes\":[\"com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment.a\",\"com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment.b\"],\"name\":\"SearchFilterPanelFragment\",\"full_name\":\"com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment\",\"field_count\":10,\"fields\":[{\"type\":\"java.util.Map\\u003cjava.lang.Integer, android.view.View\\u003e\",\"def_pos\":0,\"name\":\"A\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"B\"},{\"type\":\"java.lang.Object\",\"def_pos\":0,\"name\":\"__xst_injected_callback_list\"},{\"type\":\"el4.g0\",\"def_pos\":0,\"name\":\"f36669t\"},{\"type\":\"f00.b\",\"def_pos\":0,\"name\":\"f36670u\"},{\"type\":\"com.xingin.business_framework.action_dispatcher.ActionDispatcher\",\"def_pos\":0,\"name\":\"f36671v\"},{\"type\":\"com.xingin.alioth.search.result.entities.ResultNoteFilterTag\",\"def_pos\":0,\"name\":\"f36672w\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f36673x\"},{\"type\":\"bn9.d\",\"def_pos\":0,\"name\":\"f36674y\"},{\"type\":\"qx7.h\",\"def_pos\":0,\"name\":\"f36675z\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment",
+          "method_name": "onViewCreated",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_name\":\"onViewCreated\",\"markers\":[],\"mode\":\"java\",\"full_name\":\"com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment.onViewCreated\",\"class_name\":\"com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment\",\"overload_index\":0,\"fell_back\":false,\"body\":\"    @Override // com.xingin.business_framework.android.fragment.AbsComponentFragment, androidx.fragment.app.Fragment\\r\\n    public void onViewCreated(View view, Bundle bundle) {\\r\\n        super.onViewCreated(view, bundle);\\r\\n        SearchFilterPanelRootSectionGroup searchFilterPanelRootSectionGroup \\u003d new SearchFilterPanelRootSectionGroup(new em1.b(this, f00.b.class, requireContext(), P5(), null, getScopeNode(), null, null, false, null, null, 2000, null), view);\\r\\n        fm1.e eVar \\u003d searchFilterPanelRootSectionGroup.f125981g;\\r\\n        f00.b bVarJ6 \\u003d j6();\\r\\n        bVarJ6.l().e(true);\\r\\n        bVarJ6.l().d(Integer.valueOf(this.f36673x));\\r\\n        fm1.e.d(eVar, bVarJ6, false, 2, null);\\r\\n        h6().c(this, a00.w.class, new d00.b(searchFilterPanelRootSectionGroup, this));\\r\\n        P5().d(a00.g.class, new d00.g(this, view));\\r\\n        AliothOnlineConfigCenter aliothOnlineConfigCenter \\u003d AliothOnlineConfigCenter.f35644a;\\r\\n        if (AliothOnlineConfigCenter.f()) {\\r\\n            DeviceInfoContainer deviceInfoContainer \\u003d DeviceInfoContainer.INSTANCE;\\r\\n            if (deviceInfoContainer.isPad()) {\\r\\n                te8.a aVar \\u003d te8.a.f202235b;\\r\\n                qe8.k.i(te8.a.b(kl.l.class).observeOn(dl9.a.a()), R5(), new d00.h(this), new d00.i(u40.g0.f206650a));\\r\\n            }\\r\\n            if (deviceInfoContainer.isHorizontalFolderDevice()) {\\r\\n                te8.a aVar2 \\u003d te8.a.f202235b;\\r\\n                qe8.k.i(te8.a.b(kl.l.class).observeOn(dl9.a.a()), R5(), new d00.j(this), new d00.k(u40.g0.f206650a));\\r\\n            }\\r\\n        }\\r\\n    }\",\"overload_count\":1}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.alioth.search.result.notes.filter_panel.SearchFilterPanelFragment",
+    "method": {
+      "name": "onViewCreated",
+      "reported_signature": "onViewCreated(android.view.View, android.os.Bundle): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // com.xingin.business_framework.android.fragment.AbsComponentFragment, androidx.fragment.app.Fragment\r\n    public void onViewCreated(View view, Bundle bundle) {\r\n        super.onViewCreated(view, bundle);\r\n        SearchFilterPanelRootSectionGroup searchFilterPanelRootSectionGroup = new SearchFilterPanelRootSectionGroup(new em1.b(this, f00.b.class, requireContext(), P5(), null, getScopeNode(), null, null, false, null, null, 2000, null), view);\r\n        fm1.e eVar = searchFilterPanelRootSectionGroup.f125981g;\r\n        f00.b bVarJ6 = j6();\r\n        bVarJ6.l().e(true);\r\n        bVarJ6.l().d(Integer.valueOf(this.f36673x));\r\n        fm1.e.d(eVar, bVarJ6, false, 2, null);\r\n        h6().c(this, a00.w.class, new d00.b(searchFilterPanelRootSectionGroup, this));\r\n        P5().d(a00.g.class, new d00.g(this, view));\r\n        AliothOnlineConfigCenter aliothOnlineConfigCenter = AliothOnlineConfigCenter.f35644a;\r\n        if (AliothOnlineConfigCenter.f()) {\r\n            DeviceInfoContainer deviceInfoContainer = DeviceInfoContainer.INSTANCE;\r\n            if (deviceInfoContainer.isPad()) {\r\n                te8.a aVar = te8.a.f202235b;\r\n                qe8.k.i(te8.a.b(kl.l.class).observeOn(dl9.a.a()), R5(), new d00.h(this), new d00.i(u40.g0.f206650a));\r\n            }\r\n            if (deviceInfoContainer.isHorizontalFolderDevice()) {\r\n                te8.a aVar2 = te8.a.f202235b;\r\n                qe8.k.i(te8.a.b(kl.l.class).observeOn(dl9.a.a()), R5(), new d00.j(this), new d00.k(u40.g0.f206650a));\r\n            }\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "e42d8491dc3fb8e6af98c97b163aed8b35a69ae2c43b83417df5c1e9cd0544da",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

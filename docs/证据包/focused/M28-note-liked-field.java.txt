@@ -1,0 +1,3 @@
+    public final boolean K0() {
+        return this.liked;
+    }

@@ -1,0 +1,21 @@
+    public final void J7() {
+        if (PatchProxy.proxyVoid0Para(this, NoteDetailImageDisplayPresenter.class, 298259)) {
+            return;
+        }
+        zd.c.b(B7()).d1(new zb9.k() { // from class: t96.z
+            @Override // zb9.k
+            public final Object apply(Object obj) {
+                return NoteDetailImageDisplayPresenter.K7(this.f309465d, (zd.b) obj);
+            }
+        }).B0(new zb9.m() { // from class: t96.d0
+            @Override // zb9.m
+            public final boolean test(Object obj) {
+                return NoteDetailImageDisplayPresenter.L7(this.f309395d, (Integer) obj);
+            }
+        }).d1(new zb9.k() { // from class: t96.b0
+            @Override // zb9.k
+            public final Object apply(Object obj) {
+                return NoteDetailImageDisplayPresenter.M7(this.f309389d, (Integer) obj);
+            }
+        }).d(el4.u.d(e6()).a());
+    }

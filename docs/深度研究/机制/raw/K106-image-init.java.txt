@@ -1,0 +1,11 @@
+    public final void H7() {
+        if (PatchProxy.proxyVoid0Para(this, NoteDetailImageDisplayPresenter.class, 298249)) {
+            return;
+        }
+        u6().lifecycle().K1(new zb9.g() { // from class: t96.w
+            @Override // zb9.g
+            public final void accept(Object obj) {
+                NoteDetailImageDisplayPresenter.I7(this.f309457d, (Lifecycle.Event) obj);
+            }
+        });
+    }

@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_b19994c484e0e6ca610ae55f3c01394e04ede23e1dedee5b7d153595ab321a6a",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.chatbase.manager.longlink.ChatMessageManager",
+    "method_name": "i"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.chatbase.manager.longlink.ChatMessageManager"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":1,\"method_count\":12,\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false},{\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true},{\"signature\":\"a(java.lang.String): void\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false},{\"signature\":\"b(): boolean\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false},{\"signature\":\"c(): boolean\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false},{\"signature\":\"d(): void\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false},{\"signature\":\"e(): void\",\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false},{\"signature\":\"f(): void\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false},{\"signature\":\"g(java.lang.String): void\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false},{\"signature\":\"h(wj.a0): void\",\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false},{\"signature\":\"i(wj.a0, boolean): void\",\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false},{\"signature\":\"j(wj.a0, boolean): void\",\"def_pos\":0,\"name\":\"j\",\"is_constructor\":false}],\"fields\":[{\"type\":\"com.xingin.chatbase.manager.longlink.ChatMessageManager\",\"name\":\"f42255a\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"f42256b\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"f42257c\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"f42258d\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"f42259e\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"f42260f\",\"def_pos\":0},{\"type\":\"long\",\"name\":\"f42261g\",\"def_pos\":0},{\"type\":\"long\",\"name\":\"f42262h\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"f42263i\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"f42264j\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f42265k\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f42266l\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f42267m\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f42268n\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"f42269o\",\"def_pos\":0},{\"type\":\"r83.e\",\"name\":\"f42270p\",\"def_pos\":0},{\"type\":\"r83.h\",\"name\":\"f42271q\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f42272r\",\"def_pos\":0},{\"type\":\"java.util.concurrent.ConcurrentHashMap\\u003cjava.lang.String, java.lang.Integer\\u003e\",\"name\":\"f42273s\",\"def_pos\":0}],\"field_count\":19,\"full_name\":\"com.xingin.chatbase.manager.longlink.ChatMessageManager\",\"name\":\"ChatMessageManager\",\"inner_classes\":[\"com.xingin.chatbase.manager.longlink.ChatMessageManager.a\"]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.chatbase.manager.longlink.ChatMessageManager",
+          "method_name": "i",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.chatbase.manager.longlink.ChatMessageManager\",\"full_name\":\"com.xingin.chatbase.manager.longlink.ChatMessageManager.i\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"i\",\"overload_count\":1,\"body\":\"    public final void i(a0 a0Var, boolean z4) {\\r\\n        w wVar;\\r\\n        b2.b(\\\"ChatMessage\\\", \\\"long link\\\");\\r\\n        a(a0Var.f222780d);\\r\\n        if (!f42265k) {\\r\\n            new r83.c(a0Var, 0, 0, z4, 6, null).e();\\r\\n            return;\\r\\n        }\\r\\n        f42257c \\u003d ca7.d.f17048a.a().getAliasInt();\\r\\n        f fVar \\u003d f42270p.a().get(String.valueOf(f42257c));\\r\\n        if (fVar !\\u003d null) {\\r\\n            b2.b(\\\"ChatMessage\\\", \\\"networkStatus \\u003d \\\" + f42257c + \\\" timeout\\u003d \\\" + fVar.b());\\r\\n            new r83.c(a0Var, fVar.b() * 1000, fVar.a(), z4).e();\\r\\n            wVar \\u003d w.f11939a;\\r\\n        } else {\\r\\n            wVar \\u003d null;\\r\\n        }\\r\\n        if (wVar \\u003d\\u003d null) {\\r\\n            b2.b(\\\"ChatMessage\\\", \\\"no config\\\");\\r\\n            new r83.c(a0Var, 0, 0, z4, 6, null).e();\\r\\n        }\\r\\n    }\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.chatbase.manager.longlink.ChatMessageManager",
+    "method": {
+      "name": "i",
+      "reported_signature": "i(wj.a0, boolean): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void i(a0 a0Var, boolean z4) {\r\n        w wVar;\r\n        b2.b(\"ChatMessage\", \"long link\");\r\n        a(a0Var.f222780d);\r\n        if (!f42265k) {\r\n            new r83.c(a0Var, 0, 0, z4, 6, null).e();\r\n            return;\r\n        }\r\n        f42257c = ca7.d.f17048a.a().getAliasInt();\r\n        f fVar = f42270p.a().get(String.valueOf(f42257c));\r\n        if (fVar != null) {\r\n            b2.b(\"ChatMessage\", \"networkStatus = \" + f42257c + \" timeout= \" + fVar.b());\r\n            new r83.c(a0Var, fVar.b() * 1000, fVar.a(), z4).e();\r\n            wVar = w.f11939a;\r\n        } else {\r\n            wVar = null;\r\n        }\r\n        if (wVar == null) {\r\n            b2.b(\"ChatMessage\", \"no config\");\r\n            new r83.c(a0Var, 0, 0, z4, 6, null).e();\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "b19f7d57e544b3954b2d9002888799d7bf694ee98dcd4b05d6fd28ab58b526b0",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

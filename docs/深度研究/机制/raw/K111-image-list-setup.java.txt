@@ -1,0 +1,27 @@
+    public final void T7() {
+        if (PatchProxy.proxyVoid0Para(this, NoteDetailImageDisplayPresenter.class, 298247)) {
+            return;
+        }
+        RecyclerView recyclerViewB7 = B7();
+        recyclerViewB7.setAdapter(A7());
+        RecyclerView.ItemAnimator itemAnimator = recyclerViewB7.getItemAnimator();
+        SimpleItemAnimator simpleItemAnimator = itemAnimator instanceof SimpleItemAnimator ? (SimpleItemAnimator) itemAnimator : null;
+        if (simpleItemAnimator != null) {
+            simpleItemAnimator.setSupportsChangeAnimations(false);
+        }
+        recyclerViewB7.setHasFixedSize(true);
+        recyclerViewB7.setNestedScrollingEnabled(false);
+        PreOnBindViewLinearLayoutManager preOnBindViewLinearLayoutManager = new PreOnBindViewLinearLayoutManager(recyclerViewB7.getContext());
+        preOnBindViewLinearLayoutManager.setOrientation(0);
+        preOnBindViewLinearLayoutManager.m(100);
+        recyclerViewB7.setLayoutManager(preOnBindViewLinearLayoutManager);
+        recyclerViewB7.setItemViewCacheSize(3);
+        new PagerSnapHelper().attachToRecyclerView(recyclerViewB7);
+        w6().setTag("noteDetailImageGalleryView");
+        View viewW6 = w6();
+        int i100 = l56.n.f224121t0;
+        ((TextView) viewW6.findViewById(i100)).bringToFront();
+        ((TextView) w6().findViewById(i100)).setTextColor(p69.f.e(l56.k.f224004o));
+        ((TextView) w6().findViewById(i100)).setBackground(p69.f.h(l56.m.f224038t));
+        d8();
+    }

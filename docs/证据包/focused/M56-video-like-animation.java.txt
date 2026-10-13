@@ -1,0 +1,39 @@
+    public final void v7(NoteFeed noteFeed, final boolean z4) {
+        int i4;
+        String strA;
+        d0 d0VarF;
+        x3().getLottieView().setSelected(noteFeed.K0());
+        if (DetailFeedAbTestHelper.INSTANCE.enableOutlinedEngageButton()) {
+            FluencyOptExperiment.EngageBarMaskOpt engageBarMaskOpt = FluencyOptExperiment.EngageBarMaskOpt.f39064a;
+            if (FluencyOptExperiment.EngageBarMaskOpt.a()) {
+                i4 = noteFeed.K0() ? R.raw._0_resource_name_obfuscated_res_0x7f100029 : R.raw._0_resource_name_obfuscated_res_0x7f100026;
+            } else {
+                i4 = noteFeed.K0() ? R.raw._0_resource_name_obfuscated_res_0x7f100028 : R.raw._0_resource_name_obfuscated_res_0x7f100025;
+            }
+        } else {
+            i4 = noteFeed.K0() ? R.raw._0_resource_name_obfuscated_res_0x7f100027 : R.raw._0_resource_name_obfuscated_res_0x7f100024;
+        }
+        final boolean zE = lh8.a.f148797a.e(l7().getContext());
+        LikeLottieInfo likeLottieInfoJ0 = noteFeed.J0();
+        if (likeLottieInfoJ0 == null || (d0VarF = likeLottieInfoJ0.f(zE)) == null) {
+            strA = null;
+        } else {
+            strA = noteFeed.K0() ? d0VarF.a() : d0VarF.b();
+        }
+        final boolean zD = ry7.f.f192810a.d(strA);
+        (zD ? com.airbnb.lottie.w.j(l7().getContext(), strA) : com.airbnb.lottie.w.g(l7().getContext(), i4)).b(new t0() { // from class: ih8.d0
+            @Override // com.airbnb.lottie.t0
+            public final void onResult(Object obj) {
+                boolean z9 = zD;
+                VideoFeedItemLikeBtnPresenter videoFeedItemLikeBtnPresenter = this;
+                boolean z11 = z4;
+                boolean z13 = zE;
+                com.airbnb.lottie.l lVar = (com.airbnb.lottie.l) obj;
+                if (!z9 || videoFeedItemLikeBtnPresenter.x3().c()) {
+                    videoFeedItemLikeBtnPresenter.x7(lVar, z11);
+                } else {
+                    videoFeedItemLikeBtnPresenter.t7(lVar, z11, z13);
+                }
+            }
+        });
+    }

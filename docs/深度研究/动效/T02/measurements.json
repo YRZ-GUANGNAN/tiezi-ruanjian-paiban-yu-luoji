@@ -1,0 +1,624 @@
+{
+  "sourceSha256": "8e5080366b8205f7793ec073e386769ca3952dff37e8d701cbaa211fac2ba9c0",
+  "frameCount": 123,
+  "durationSeconds": 7.600867,
+  "timeBase": "1/90000",
+  "frames": [
+    {
+      "index": 0,
+      "ptsSeconds": 0.0,
+      "appMeanAbsDelta": 0
+    },
+    {
+      "index": 1,
+      "ptsSeconds": 0.218789,
+      "appMeanAbsDelta": 0.18494450107599955
+    },
+    {
+      "index": 2,
+      "ptsSeconds": 0.759733,
+      "appMeanAbsDelta": 0.060142711518858305
+    },
+    {
+      "index": 3,
+      "ptsSeconds": 0.769556,
+      "appMeanAbsDelta": 0.03984029901461094
+    },
+    {
+      "index": 4,
+      "ptsSeconds": 0.808978,
+      "appMeanAbsDelta": 0.07728791482614113
+    },
+    {
+      "index": 5,
+      "ptsSeconds": 0.833856,
+      "appMeanAbsDelta": 0.27660267300940083
+    },
+    {
+      "index": 6,
+      "ptsSeconds": 0.842478,
+      "appMeanAbsDelta": 0.059250764525993885
+    },
+    {
+      "index": 7,
+      "ptsSeconds": 0.850511,
+      "appMeanAbsDelta": 0.4844546381243629
+    },
+    {
+      "index": 8,
+      "ptsSeconds": 0.858678,
+      "appMeanAbsDelta": 0.1018801676294031
+    },
+    {
+      "index": 9,
+      "ptsSeconds": 0.875278,
+      "appMeanAbsDelta": 0.07110091743119266
+    },
+    {
+      "index": 10,
+      "ptsSeconds": 0.8836,
+      "appMeanAbsDelta": 0.33806206818439233
+    },
+    {
+      "index": 11,
+      "ptsSeconds": 0.891922,
+      "appMeanAbsDelta": 1.1025031147355306
+    },
+    {
+      "index": 12,
+      "ptsSeconds": 0.900244,
+      "appMeanAbsDelta": 1.9542133876996262
+    },
+    {
+      "index": 13,
+      "ptsSeconds": 0.908567,
+      "appMeanAbsDelta": 2.850974062747763
+    },
+    {
+      "index": 14,
+      "ptsSeconds": 0.918189,
+      "appMeanAbsDelta": 3.194642654887303
+    },
+    {
+      "index": 15,
+      "ptsSeconds": 0.925956,
+      "appMeanAbsDelta": 3.3399450673915507
+    },
+    {
+      "index": 16,
+      "ptsSeconds": 0.935311,
+      "appMeanAbsDelta": 4.530340355646166
+    },
+    {
+      "index": 17,
+      "ptsSeconds": 0.942089,
+      "appMeanAbsDelta": 4.28291709140333
+    },
+    {
+      "index": 18,
+      "ptsSeconds": 0.950689,
+      "appMeanAbsDelta": 4.509372522369464
+    },
+    {
+      "index": 19,
+      "ptsSeconds": 0.9586,
+      "appMeanAbsDelta": 4.775059463132858
+    },
+    {
+      "index": 20,
+      "ptsSeconds": 0.966811,
+      "appMeanAbsDelta": 4.124759315890814
+    },
+    {
+      "index": 21,
+      "ptsSeconds": 0.975022,
+      "appMeanAbsDelta": 5.234058217238645
+    },
+    {
+      "index": 22,
+      "ptsSeconds": 0.983467,
+      "appMeanAbsDelta": 44.123881526786725
+    },
+    {
+      "index": 23,
+      "ptsSeconds": 0.991633,
+      "appMeanAbsDelta": 17.03654151092989
+    },
+    {
+      "index": 24,
+      "ptsSeconds": 1.000089,
+      "appMeanAbsDelta": 17.465780382829312
+    },
+    {
+      "index": 25,
+      "ptsSeconds": 1.008422,
+      "appMeanAbsDelta": 18.8597802695662
+    },
+    {
+      "index": 26,
+      "ptsSeconds": 1.0169,
+      "appMeanAbsDelta": 17.11377279420093
+    },
+    {
+      "index": 27,
+      "ptsSeconds": 1.025189,
+      "appMeanAbsDelta": 16.322261864310793
+    },
+    {
+      "index": 28,
+      "ptsSeconds": 1.033933,
+      "appMeanAbsDelta": 16.833800543662928
+    },
+    {
+      "index": 29,
+      "ptsSeconds": 1.0419,
+      "appMeanAbsDelta": 15.726639483520218
+    },
+    {
+      "index": 30,
+      "ptsSeconds": 1.050144,
+      "appMeanAbsDelta": 14.302285083248385
+    },
+    {
+      "index": 31,
+      "ptsSeconds": 1.058389,
+      "appMeanAbsDelta": 12.605575376599841
+    },
+    {
+      "index": 32,
+      "ptsSeconds": 1.067156,
+      "appMeanAbsDelta": 4.623980632008155
+    },
+    {
+      "index": 33,
+      "ptsSeconds": 1.074756,
+      "appMeanAbsDelta": 0.09957243175897611
+    },
+    {
+      "index": 34,
+      "ptsSeconds": 1.091278,
+      "appMeanAbsDelta": 6.066315551025031
+    },
+    {
+      "index": 35,
+      "ptsSeconds": 1.0999,
+      "appMeanAbsDelta": 0.0367963529278514
+    },
+    {
+      "index": 36,
+      "ptsSeconds": 1.108722,
+      "appMeanAbsDelta": 0.04170914033299354
+    },
+    {
+      "index": 37,
+      "ptsSeconds": 1.124956,
+      "appMeanAbsDelta": 0.13760052101030695
+    },
+    {
+      "index": 38,
+      "ptsSeconds": 1.132722,
+      "appMeanAbsDelta": 0.06225223694642655
+    },
+    {
+      "index": 39,
+      "ptsSeconds": 1.174267,
+      "appMeanAbsDelta": 0.11258353154377619
+    },
+    {
+      "index": 40,
+      "ptsSeconds": 1.190989,
+      "appMeanAbsDelta": 0.17517555782081776
+    },
+    {
+      "index": 41,
+      "ptsSeconds": 1.199256,
+      "appMeanAbsDelta": 0.023332200702231284
+    },
+    {
+      "index": 42,
+      "ptsSeconds": 1.216289,
+      "appMeanAbsDelta": 0.02374277947672443
+    },
+    {
+      "index": 43,
+      "ptsSeconds": 1.291189,
+      "appMeanAbsDelta": 0.5004530524408201
+    },
+    {
+      "index": 44,
+      "ptsSeconds": 2.217,
+      "appMeanAbsDelta": 0.16850719220749802
+    },
+    {
+      "index": 45,
+      "ptsSeconds": 2.248756,
+      "appMeanAbsDelta": 0.030269566202287913
+    },
+    {
+      "index": 46,
+      "ptsSeconds": 2.256533,
+      "appMeanAbsDelta": 0.023459621701211915
+    },
+    {
+      "index": 47,
+      "ptsSeconds": 2.265156,
+      "appMeanAbsDelta": 0.022128780156303093
+    },
+    {
+      "index": 48,
+      "ptsSeconds": 2.274333,
+      "appMeanAbsDelta": 0.004657945407180881
+    },
+    {
+      "index": 49,
+      "ptsSeconds": 2.281578,
+      "appMeanAbsDelta": 0.12494336844489749
+    },
+    {
+      "index": 50,
+      "ptsSeconds": 2.289989,
+      "appMeanAbsDelta": 0.028386566995129685
+    },
+    {
+      "index": 51,
+      "ptsSeconds": 2.298211,
+      "appMeanAbsDelta": 0.009145996149054253
+    },
+    {
+      "index": 52,
+      "ptsSeconds": 2.306722,
+      "appMeanAbsDelta": 0.0036102616377845734
+    },
+    {
+      "index": 53,
+      "ptsSeconds": 2.314844,
+      "appMeanAbsDelta": 0.0028315777551251556
+    },
+    {
+      "index": 54,
+      "ptsSeconds": 2.323422,
+      "appMeanAbsDelta": 0.0026050515347151434
+    },
+    {
+      "index": 55,
+      "ptsSeconds": 2.331444,
+      "appMeanAbsDelta": 0.0023360516479782535
+    },
+    {
+      "index": 56,
+      "ptsSeconds": 2.339989,
+      "appMeanAbsDelta": 0.0018405255408313512
+    },
+    {
+      "index": 57,
+      "ptsSeconds": 2.348733,
+      "appMeanAbsDelta": 0.0020104202061388605
+    },
+    {
+      "index": 58,
+      "ptsSeconds": 2.356856,
+      "appMeanAbsDelta": 0.0019679465398119832
+    },
+    {
+      "index": 59,
+      "ptsSeconds": 2.364978,
+      "appMeanAbsDelta": 0.0022227885377732472
+    },
+    {
+      "index": 60,
+      "ptsSeconds": 2.3731,
+      "appMeanAbsDelta": 0.002109525427568241
+    },
+    {
+      "index": 61,
+      "ptsSeconds": 2.380967,
+      "appMeanAbsDelta": 0.0019537886510363573
+    },
+    {
+      "index": 62,
+      "ptsSeconds": 2.389433,
+      "appMeanAbsDelta": 0.002151999093895118
+    },
+    {
+      "index": 63,
+      "ptsSeconds": 2.3979,
+      "appMeanAbsDelta": 0.0022935779816513763
+    },
+    {
+      "index": 64,
+      "ptsSeconds": 2.4066,
+      "appMeanAbsDelta": 0.0022652622041001245
+    },
+    {
+      "index": 65,
+      "ptsSeconds": 2.414644,
+      "appMeanAbsDelta": 0.016380677313399025
+    },
+    {
+      "index": 66,
+      "ptsSeconds": 2.423144,
+      "appMeanAbsDelta": 0.0033978933061501867
+    },
+    {
+      "index": 67,
+      "ptsSeconds": 2.431144,
+      "appMeanAbsDelta": 0.006144523728621588
+    },
+    {
+      "index": 68,
+      "ptsSeconds": 2.439867,
+      "appMeanAbsDelta": 0.0028882093102276588
+    },
+    {
+      "index": 69,
+      "ptsSeconds": 2.448011,
+      "appMeanAbsDelta": 0.002251104315324499
+    },
+    {
+      "index": 70,
+      "ptsSeconds": 2.456467,
+      "appMeanAbsDelta": 0.00244931475818326
+    },
+    {
+      "index": 71,
+      "ptsSeconds": 2.464511,
+      "appMeanAbsDelta": 0.002732472533695775
+    },
+    {
+      "index": 72,
+      "ptsSeconds": 2.473111,
+      "appMeanAbsDelta": 0.003199682863291426
+    },
+    {
+      "index": 73,
+      "ptsSeconds": 2.481222,
+      "appMeanAbsDelta": 0.002944840865330162
+    },
+    {
+      "index": 74,
+      "ptsSeconds": 2.489611,
+      "appMeanAbsDelta": 0.002378525314305131
+    },
+    {
+      "index": 75,
+      "ptsSeconds": 2.497789,
+      "appMeanAbsDelta": 0.0022227885377732472
+    },
+    {
+      "index": 76,
+      "ptsSeconds": 2.506333,
+      "appMeanAbsDelta": 0.0028598935326764074
+    },
+    {
+      "index": 77,
+      "ptsSeconds": 2.514433,
+      "appMeanAbsDelta": 0.008338996488843583
+    },
+    {
+      "index": 78,
+      "ptsSeconds": 2.522944,
+      "appMeanAbsDelta": 0.011722731906218144
+    },
+    {
+      "index": 79,
+      "ptsSeconds": 2.531122,
+      "appMeanAbsDelta": 0.0031572091969645486
+    },
+    {
+      "index": 80,
+      "ptsSeconds": 2.539778,
+      "appMeanAbsDelta": 0.005351681957186544
+    },
+    {
+      "index": 81,
+      "ptsSeconds": 2.547856,
+      "appMeanAbsDelta": 0.005521576622494054
+    },
+    {
+      "index": 82,
+      "ptsSeconds": 2.556522,
+      "appMeanAbsDelta": 0.004870313738815268
+    },
+    {
+      "index": 83,
+      "ptsSeconds": 2.564433,
+      "appMeanAbsDelta": 0.004912787405142146
+    },
+    {
+      "index": 84,
+      "ptsSeconds": 2.572989,
+      "appMeanAbsDelta": 0.004912787405142146
+    },
+    {
+      "index": 85,
+      "ptsSeconds": 2.580956,
+      "appMeanAbsDelta": 0.0047712085173858875
+    },
+    {
+      "index": 86,
+      "ptsSeconds": 2.589533,
+      "appMeanAbsDelta": 0.00627194472760222
+    },
+    {
+      "index": 87,
+      "ptsSeconds": 2.597744,
+      "appMeanAbsDelta": 0.006625891946992864
+    },
+    {
+      "index": 88,
+      "ptsSeconds": 7.281456,
+      "appMeanAbsDelta": 0.0064418393929097295
+    },
+    {
+      "index": 89,
+      "ptsSeconds": 7.302467,
+      "appMeanAbsDelta": 0.006484313059236606
+    },
+    {
+      "index": 90,
+      "ptsSeconds": 7.318867,
+      "appMeanAbsDelta": 0.006569260391890362
+    },
+    {
+      "index": 91,
+      "ptsSeconds": 7.335267,
+      "appMeanAbsDelta": 0.014002151999093895
+    },
+    {
+      "index": 92,
+      "ptsSeconds": 7.3435,
+      "appMeanAbsDelta": 0.0037518405255408315
+    },
+    {
+      "index": 93,
+      "ptsSeconds": 7.351911,
+      "appMeanAbsDelta": 0.0029731566428814137
+    },
+    {
+      "index": 94,
+      "ptsSeconds": 7.360322,
+      "appMeanAbsDelta": 0.0031288934194132973
+    },
+    {
+      "index": 95,
+      "ptsSeconds": 7.368733,
+      "appMeanAbsDelta": 0.002704156756144524
+    },
+    {
+      "index": 96,
+      "ptsSeconds": 7.375833,
+      "appMeanAbsDelta": 0.010802469135802469
+    },
+    {
+      "index": 97,
+      "ptsSeconds": 7.383944,
+      "appMeanAbsDelta": 0.010887416468456224
+    },
+    {
+      "index": 98,
+      "ptsSeconds": 7.392511,
+      "appMeanAbsDelta": 0.010434364027636199
+    },
+    {
+      "index": 99,
+      "ptsSeconds": 7.400422,
+      "appMeanAbsDelta": 0.010675048136821836
+    },
+    {
+      "index": 100,
+      "ptsSeconds": 7.4091,
+      "appMeanAbsDelta": 0.010675048136821836
+    },
+    {
+      "index": 101,
+      "ptsSeconds": 7.417222,
+      "appMeanAbsDelta": 0.010236153584777438
+    },
+    {
+      "index": 102,
+      "ptsSeconds": 7.425544,
+      "appMeanAbsDelta": 0.010250311473553065
+    },
+    {
+      "index": 103,
+      "ptsSeconds": 7.433867,
+      "appMeanAbsDelta": 0.010859100690904972
+    },
+    {
+      "index": 104,
+      "ptsSeconds": 7.442311,
+      "appMeanAbsDelta": 0.01134046890927625
+    },
+    {
+      "index": 105,
+      "ptsSeconds": 7.450433,
+      "appMeanAbsDelta": 0.01117057424396874
+    },
+    {
+      "index": 106,
+      "ptsSeconds": 7.459122,
+      "appMeanAbsDelta": 0.010844942802129347
+    },
+    {
+      "index": 107,
+      "ptsSeconds": 7.467256,
+      "appMeanAbsDelta": 0.0044455770755464944
+    },
+    {
+      "index": 108,
+      "ptsSeconds": 7.475189,
+      "appMeanAbsDelta": 0.0047712085173858875
+    },
+    {
+      "index": 109,
+      "ptsSeconds": 7.483344,
+      "appMeanAbsDelta": 0.005379997734737796
+    },
+    {
+      "index": 110,
+      "ptsSeconds": 7.491944,
+      "appMeanAbsDelta": 0.004813682183712765
+    },
+    {
+      "index": 111,
+      "ptsSeconds": 7.499833,
+      "appMeanAbsDelta": 0.0028598935326764074
+    },
+    {
+      "index": 112,
+      "ptsSeconds": 7.508822,
+      "appMeanAbsDelta": 0.0031855249745158
+    },
+    {
+      "index": 113,
+      "ptsSeconds": 7.516933,
+      "appMeanAbsDelta": 0.0031713670857401745
+    },
+    {
+      "index": 114,
+      "ptsSeconds": 7.525267,
+      "appMeanAbsDelta": 0.002420998980632008
+    },
+    {
+      "index": 115,
+      "ptsSeconds": 7.5336,
+      "appMeanAbsDelta": 0.0030439460867595423
+    },
+    {
+      "index": 116,
+      "ptsSeconds": 7.542111,
+      "appMeanAbsDelta": 0.00590383961943595
+    },
+    {
+      "index": 117,
+      "ptsSeconds": 7.550189,
+      "appMeanAbsDelta": 0.0047712085173858875
+    },
+    {
+      "index": 118,
+      "ptsSeconds": 7.558767,
+      "appMeanAbsDelta": 0.005691471287801563
+    },
+    {
+      "index": 119,
+      "ptsSeconds": 7.566856,
+      "appMeanAbsDelta": 0.0031572091969645486
+    },
+    {
+      "index": 120,
+      "ptsSeconds": 7.575522,
+      "appMeanAbsDelta": 0.013959678332767018
+    },
+    {
+      "index": 121,
+      "ptsSeconds": 7.583511,
+      "appMeanAbsDelta": 0.0036244195265601993
+    },
+    {
+      "index": 122,
+      "ptsSeconds": 7.592189,
+      "appMeanAbsDelta": 0.003327103862272058
+    }
+  ],
+  "limits": "PTS are not synchronized to ADB commands; visual changes include content loading and encoding noise."
+}

@@ -1,0 +1,154 @@
+{
+  "evidence_id": "ev_68ef2466777d242ac5dbcea929d88dc8ad1e01f7524dd8dac535d1432cb51280",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-yingyongbao-9.49.1.apk",
+    "digest": {
+      "sha256": "d22b4e7c776ec59ae80aa4a4e30e306ca1bcc2a5744c35e4a7702428c05178a3"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-yingyongbao-9.49.1.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-yingyongbao-9.49.1.apk",
+    "class_name": "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter",
+    "method_name": "db",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 158864,
+      "resource_count": 25597,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":158864,\"raw_class_count\":158864,\"resource_count\":25597,\"load_duration_ms\":60542,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"A\",\"def_pos\":0,\"type\":\"dra.b\"},{\"name\":\"B\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"Companion\",\"def_pos\":0,\"type\":\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter$a\"},{\"name\":\"f140671p\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140672q\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140673r\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140674s\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140675t\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140676u\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140677v\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140678w\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140679x\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f140680y\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"f140681z\",\"def_pos\":0,\"type\":\"boolean\"}],\"field_count\":14,\"full_name\":\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter\",\"name\":\"NoteDetailPhotoNoteItemPresenter\",\"inner_classes\":[\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.a\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.b\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.c\",\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.d\"],\"inner_class_count\":4,\"method_count\":16,\"methods\":[{\"is_constructor\":false,\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\"},{\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\"},{\"is_constructor\":false,\"signature\":\"D1(int, java.lang.Object, java.lang.Object): void\",\"def_pos\":0,\"name\":\"D1\"},{\"is_constructor\":false,\"signature\":\"Na(): void\",\"def_pos\":0,\"name\":\"Na\"},{\"is_constructor\":false,\"signature\":\"Pa(): void\",\"def_pos\":0,\"name\":\"Pa\"},{\"is_constructor\":false,\"signature\":\"Va(): android.app.Activity\",\"def_pos\":0,\"name\":\"Va\"},{\"is_constructor\":false,\"signature\":\"Xa(): com.xingin.matrix.widget.MatrixCircleProgressBar\",\"def_pos\":0,\"name\":\"Xa\"},{\"is_constructor\":false,\"signature\":\"Ya(): cq9.h\",\"def_pos\":0,\"name\":\"Ya\"},{\"is_constructor\":false,\"signature\":\"Za(): vra.c\",\"def_pos\":0,\"name\":\"Za\"},{\"is_constructor\":false,\"signature\":\"ab(): com.xingin.matrix.notedetail.imagecontent.imagegallery.util.NoteXYImageView\",\"def_pos\":0,\"name\":\"ab\"},{\"is_constructor\":false,\"signature\":\"bb(): com.xingin.matrix.notedetail.imagecontent.imagegallery.itembinder.photonote.child.AsyncPhotoNoteItemView\",\"def_pos\":0,\"name\":\"bb\"},{\"is_constructor\":false,\"signature\":\"cb(): boolean\",\"def_pos\":0,\"name\":\"cb\"},{\"is_constructor\":false,\"signature\":\"db(com.xingin.entities.ImageBean, int): void\",\"def_pos\":0,\"name\":\"db\"},{\"is_constructor\":false,\"signature\":\"eb(): void\",\"def_pos\":0,\"name\":\"eb\"},{\"is_constructor\":false,\"signature\":\"fb(boolean, java.lang.String): void\",\"def_pos\":0,\"name\":\"fb\"},{\"is_constructor\":false,\"signature\":\"s(int): void\",\"def_pos\":0,\"name\":\"s\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter",
+          "method_name": "db",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_name\":\"db\",\"overload_count\":1,\"body\":\"    public final void db(final ImageBean imageBean, int i82) {\\r\\n        if (PatchProxy.proxyVoid2Para(imageBean, new Integer(i82), this, NoteDetailPhotoNoteItemPresenter.class, 756318)) {\\r\\n            return;\\r\\n        }\\r\\n        ltd.d dVar \\u003d new ltd.d(\\\"img_type_notedetail_cover\\\", 0, ltd.d.Companion.a(\\\"photonote\\\", String.valueOf(i82)), false, 10, null);\\r\\n        final int i100 \\u003d 0;\\r\\n        final boolean z100 \\u003d hk2.u.f230128a.z0() \\u0026\\u0026 Intrinsics.areEqual(Za().f423202d, MiniToolInteractionMode.PREVIEW) \\u0026\\u0026 StringsKt__StringsJVMKt.startsWith$default(imageBean.W0(), CapaStandaloneImagePublisherImpl.FILE_SCHEME, false, 2, null);\\r\\n        f fVar \\u003d f.f230285a;\\r\\n        View view \\u003d this.f120750d;\\r\\n        if (!fVar.b((view !\\u003d null ? view : null).getContext())) {\\r\\n            NoteXYImageView.n(ab(), new jwc.e(imageBean.W0(), 0, 0, null, 0, 0, null, 0, 0.0f, null, 1022, null), null, dVar, null, z100, null, null, 104, null);\\r\\n            return;\\r\\n        }\\r\\n        NoteXYImageView noteXYImageViewAb \\u003d ab();\\r\\n        Function0 function0 \\u003d new Function0(this) { // from class: bq9.p\\r\\n\\r\\n            /* JADX INFO: renamed from: e, reason: collision with root package name */\\r\\n            public final /* synthetic */ NoteDetailPhotoNoteItemPresenter f24873e;\\r\\n\\r\\n            {\\r\\n                this.f24873e \\u003d this;\\r\\n            }\\r\\n\\r\\n            @Override // kotlin.jvm.functions.Function0\\r\\n            public final Object invoke() {\\r\\n                int i101 \\u003d i100;\\r\\n                boolean z101 \\u003d z100;\\r\\n                Cloneable cloneable \\u003d imageBean;\\r\\n                switch (i101) {\\r\\n                    case 0:\\r\\n                        NoteDetailPhotoNoteItemPresenter noteDetailPhotoNoteItemPresenter \\u003d this.f24873e;\\r\\n                        ImageBean imageBean2 \\u003d (ImageBean) cloneable;\\r\\n                        PatchProxyResult patchProxyResultProxy3Para \\u003d PatchProxy.proxy3Para(noteDetailPhotoNoteItemPresenter, imageBean2, new Boolean(z101), null, NoteDetailPhotoNoteItemPresenter.class, 756345);\\r\\n                        if (patchProxyResultProxy3Para.isSupported) {\\r\\n                            return (Unit) patchProxyResultProxy3Para.result;\\r\\n                        }\\r\\n                        xc9.s.j(noteDetailPhotoNoteItemPresenter.ab(), new jwc.e(imageBean2.W0(), 0, 0, null, 0, 0, null, 0, 0.0f, null, 1022, null), noteDetailPhotoNoteItemPresenter.La(), z101, new n(noteDetailPhotoNoteItemPresenter, 11));\\r\\n                        return Unit.INSTANCE;\\r\\n                    default:\\r\\n                        NoteDetailPhotoNoteItemPresenter noteDetailPhotoNoteItemPresenter2 \\u003d this.f24873e;\\r\\n                        dra.b bVar \\u003d (dra.b) cloneable;\\r\\n                        PatchProxyResult patchProxyResultProxy3Para2 \\u003d PatchProxy.proxy3Para(noteDetailPhotoNoteItemPresenter2, bVar, new Boolean(z101), null, NoteDetailPhotoNoteItemPresenter.class, 756343);\\r\\n                        if (patchProxyResultProxy3Para2.isSupported) {\\r\\n                            return (Unit) patchProxyResultProxy3Para2.result;\\r\\n                        }\\r\\n                        xc9.s.j(noteDetailPhotoNoteItemPresenter2.ab(), new jwc.e(bVar.o().W0(), 0, 0, null, 0, 0, null, 0, 0.0f, null, 1022, null), noteDetailPhotoNoteItemPresenter2.La(), z101, new n(noteDetailPhotoNoteItemPresenter2, 12));\\r\\n                        return Unit.INSTANCE;\\r\\n                }\\r\\n            }\\r\\n        };\\r\\n        if (PatchProxy.proxyVoid2Para(noteXYImageViewAb, function0, this, NoteDetailPhotoNoteItemPresenter.class, 756328)) {\\r\\n            return;\\r\\n        }\\r\\n        fk2.v vVar \\u003d fk2.v.f204366a;\\r\\n        vVar.getClass();\\r\\n        PatchProxyResult patchProxyResultProxy0Para \\u003d PatchProxy.proxy0Para(vVar, fk2.v.class, 97003);\\r\\n        if (!(patchProxyResultProxy0Para.isSupported ? ((Boolean) patchProxyResultProxy0Para.result).booleanValue() : ((Boolean) fk2.v.f204378m.getValue()).booleanValue())) {\\r\\n            function0.invoke();\\r\\n        } else if (noteXYImageViewAb.isLaidOut()) {\\r\\n            function0.invoke();\\r\\n        } else {\\r\\n            noteXYImageViewAb.getViewTreeObserver().addOnGlobalLayoutListener(new h1(noteXYImageViewAb, function0));\\r\\n        }\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter\",\"full_name\":\"com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter.db\",\"mode\":\"java\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.notedetail.v3.image.item.photonote.NoteDetailPhotoNoteItemPresenter",
+    "method": {
+      "name": "db",
+      "reported_signature": "db(com.xingin.entities.ImageBean, int): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void db(final ImageBean imageBean, int i82) {\r\n        if (PatchProxy.proxyVoid2Para(imageBean, new Integer(i82), this, NoteDetailPhotoNoteItemPresenter.class, 756318)) {\r\n            return;\r\n        }\r\n        ltd.d dVar = new ltd.d(\"img_type_notedetail_cover\", 0, ltd.d.Companion.a(\"photonote\", String.valueOf(i82)), false, 10, null);\r\n        final int i100 = 0;\r\n        final boolean z100 = hk2.u.f230128a.z0() && Intrinsics.areEqual(Za().f423202d, MiniToolInteractionMode.PREVIEW) && StringsKt__StringsJVMKt.startsWith$default(imageBean.W0(), CapaStandaloneImagePublisherImpl.FILE_SCHEME, false, 2, null);\r\n        f fVar = f.f230285a;\r\n        View view = this.f120750d;\r\n        if (!fVar.b((view != null ? view : null).getContext())) {\r\n            NoteXYImageView.n(ab(), new jwc.e(imageBean.W0(), 0, 0, null, 0, 0, null, 0, 0.0f, null, 1022, null), null, dVar, null, z100, null, null, 104, null);\r\n            return;\r\n        }\r\n        NoteXYImageView noteXYImageViewAb = ab();\r\n        Function0 function0 = new Function0(this) { // from class: bq9.p\r\n\r\n            /* JADX INFO: renamed from: e, reason: collision with root package name */\r\n            public final /* synthetic */ NoteDetailPhotoNoteItemPresenter f24873e;\r\n\r\n            {\r\n                this.f24873e = this;\r\n            }\r\n\r\n            @Override // kotlin.jvm.functions.Function0\r\n            public final Object invoke() {\r\n                int i101 = i100;\r\n                boolean z101 = z100;\r\n                Cloneable cloneable = imageBean;\r\n                switch (i101) {\r\n                    case 0:\r\n                        NoteDetailPhotoNoteItemPresenter noteDetailPhotoNoteItemPresenter = this.f24873e;\r\n                        ImageBean imageBean2 = (ImageBean) cloneable;\r\n                        PatchProxyResult patchProxyResultProxy3Para = PatchProxy.proxy3Para(noteDetailPhotoNoteItemPresenter, imageBean2, new Boolean(z101), null, NoteDetailPhotoNoteItemPresenter.class, 756345);\r\n                        if (patchProxyResultProxy3Para.isSupported) {\r\n                            return (Unit) patchProxyResultProxy3Para.result;\r\n                        }\r\n                        xc9.s.j(noteDetailPhotoNoteItemPresenter.ab(), new jwc.e(imageBean2.W0(), 0, 0, null, 0, 0, null, 0, 0.0f, null, 1022, null), noteDetailPhotoNoteItemPresenter.La(), z101, new n(noteDetailPhotoNoteItemPresenter, 11));\r\n                        return Unit.INSTANCE;\r\n                    default:\r\n                        NoteDetailPhotoNoteItemPresenter noteDetailPhotoNoteItemPresenter2 = this.f24873e;\r\n                        dra.b bVar = (dra.b) cloneable;\r\n                        PatchProxyResult patchProxyResultProxy3Para2 = PatchProxy.proxy3Para(noteDetailPhotoNoteItemPresenter2, bVar, new Boolean(z101), null, NoteDetailPhotoNoteItemPresenter.class, 756343);\r\n                        if (patchProxyResultProxy3Para2.isSupported) {\r\n                            return (Unit) patchProxyResultProxy3Para2.result;\r\n                        }\r\n                        xc9.s.j(noteDetailPhotoNoteItemPresenter2.ab(), new jwc.e(bVar.o().W0(), 0, 0, null, 0, 0, null, 0, 0.0f, null, 1022, null), noteDetailPhotoNoteItemPresenter2.La(), z101, new n(noteDetailPhotoNoteItemPresenter2, 12));\r\n                        return Unit.INSTANCE;\r\n                }\r\n            }\r\n        };\r\n        if (PatchProxy.proxyVoid2Para(noteXYImageViewAb, function0, this, NoteDetailPhotoNoteItemPresenter.class, 756328)) {\r\n            return;\r\n        }\r\n        fk2.v vVar = fk2.v.f204366a;\r\n        vVar.getClass();\r\n        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(vVar, fk2.v.class, 97003);\r\n        if (!(patchProxyResultProxy0Para.isSupported ? ((Boolean) patchProxyResultProxy0Para.result).booleanValue() : ((Boolean) fk2.v.f204378m.getValue()).booleanValue())) {\r\n            function0.invoke();\r\n        } else if (noteXYImageViewAb.isLaidOut()) {\r\n            function0.invoke();\r\n        } else {\r\n            noteXYImageViewAb.getViewTreeObserver().addOnGlobalLayoutListener(new h1(noteXYImageViewAb, function0));\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "434c9ca4d167d5c224867ca315cb8cc17970247c397ad21617ffdd2eac044fe8",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+        @Override // gl9.g
+        public void accept(Object obj) {
+            NoteFeed noteFeed;
+            CharSequence charSequenceF;
+            Object obj2 = ((h) obj).f11911d;
+            if (obj2 instanceof h.a) {
+                obj2 = null;
+            }
+            ef6.a aVar = (ef6.a) obj2;
+            if (aVar == null || (noteFeed = aVar.f84779a) == null) {
+                return;
+            }
+            noteFeed.L2(0L);
+            noteFeed.K2(false);
+            NoteDetailCollectBtnPresenter noteDetailCollectBtnPresenter = NoteDetailCollectBtnPresenter.this;
+            long jN = noteFeed.n();
+            boolean zM = noteFeed.m();
+            Objects.requireNonNull(noteDetailCollectBtnPresenter);
+            if (jN <= 0) {
+                charSequenceF = noteDetailCollectBtnPresenter.l7().getContext().getResources().getText(R.string._0_resource_name_obfuscated_res_0x7f1126ff);
+            } else {
+                NoteDetailConfigs noteDetailConfigs = NoteDetailConfigs.f41171a;
+                if (NoteDetailConfigs.b()) {
+                    qm1.c cVar = qm1.c.f181933a;
+                    charSequenceF = qm1.c.a(jN);
+                } else {
+                    charSequenceF = k0.f(jN, null, false, 3, null);
+                }
+            }
+            ((BtnViewCustomTextView) noteDetailCollectBtnPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f0919d4)).setText(charSequenceF);
+            ImageView imageView = (ImageView) noteDetailCollectBtnPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f0919d2);
+            imageView.setSelected(zM);
+            imageView.setImageDrawable(f.h(imageView.isSelected() ? R.drawable.matrix_video_feed_item_favorited_v2 : R.drawable.f69335ac6));
+        }

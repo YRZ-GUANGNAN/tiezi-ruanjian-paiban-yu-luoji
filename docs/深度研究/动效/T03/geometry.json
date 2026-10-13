@@ -1,0 +1,357 @@
+{
+  "sourceSha256": "1ab8a5c77773a253a89be6bb20721f5c8791defe3b9a469d0dca55650979cf08",
+  "region": [
+    0,
+    100,
+    1080,
+    242
+  ],
+  "gridPx": 2,
+  "model": "Detail header translates right, revealing stationary feed header.",
+  "positions": [
+    {
+      "index": 0,
+      "ptsSeconds": 0.0,
+      "outgoingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.0,
+      "contentChangeBoundaryPx": 1
+    },
+    {
+      "index": 1,
+      "ptsSeconds": 0.902589,
+      "outgoingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.17959533631801605,
+      "contentChangeBoundaryPx": 1
+    },
+    {
+      "index": 2,
+      "ptsSeconds": 0.9363,
+      "outgoingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.21635802090168,
+      "contentChangeBoundaryPx": 1
+    },
+    {
+      "index": 3,
+      "ptsSeconds": 0.994189,
+      "outgoingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.22419409453868866,
+      "contentChangeBoundaryPx": 1
+    },
+    {
+      "index": 4,
+      "ptsSeconds": 1.002233,
+      "outgoingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.24007201194763184,
+      "contentChangeBoundaryPx": 1
+    },
+    {
+      "index": 5,
+      "ptsSeconds": 1.012667,
+      "outgoingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.3098079562187195,
+      "contentChangeBoundaryPx": 1
+    },
+    {
+      "index": 6,
+      "ptsSeconds": 1.020022,
+      "outgoingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.28436213731765747,
+      "contentChangeBoundaryPx": 1
+    },
+    {
+      "index": 7,
+      "ptsSeconds": 1.035878,
+      "outgoingLeftPx": 0,
+      "headerMeanAbsoluteRgbError": 0.8263202905654907,
+      "contentChangeBoundaryPx": 1
+    },
+    {
+      "index": 8,
+      "ptsSeconds": 1.044056,
+      "outgoingLeftPx": 2,
+      "headerMeanAbsoluteRgbError": 0.9643861651420593,
+      "contentChangeBoundaryPx": 3
+    },
+    {
+      "index": 9,
+      "ptsSeconds": 1.052233,
+      "outgoingLeftPx": 8,
+      "headerMeanAbsoluteRgbError": 1.0379458665847778,
+      "contentChangeBoundaryPx": 9
+    },
+    {
+      "index": 10,
+      "ptsSeconds": 1.061989,
+      "outgoingLeftPx": 18,
+      "headerMeanAbsoluteRgbError": 1.0687414407730103,
+      "contentChangeBoundaryPx": 18
+    },
+    {
+      "index": 11,
+      "ptsSeconds": 1.068844,
+      "outgoingLeftPx": 32,
+      "headerMeanAbsoluteRgbError": 1.1135116815567017,
+      "contentChangeBoundaryPx": 32
+    },
+    {
+      "index": 12,
+      "ptsSeconds": 1.077222,
+      "outgoingLeftPx": 50,
+      "headerMeanAbsoluteRgbError": 3.218158483505249,
+      "contentChangeBoundaryPx": 49
+    },
+    {
+      "index": 13,
+      "ptsSeconds": 1.085378,
+      "outgoingLeftPx": 72,
+      "headerMeanAbsoluteRgbError": 1.2854423522949219,
+      "contentChangeBoundaryPx": 72
+    },
+    {
+      "index": 14,
+      "ptsSeconds": 1.093933,
+      "outgoingLeftPx": 98,
+      "headerMeanAbsoluteRgbError": 3.003274917602539,
+      "contentChangeBoundaryPx": 97
+    },
+    {
+      "index": 15,
+      "ptsSeconds": 1.102233,
+      "outgoingLeftPx": 124,
+      "headerMeanAbsoluteRgbError": 1.2650548219680786,
+      "contentChangeBoundaryPx": 124
+    },
+    {
+      "index": 16,
+      "ptsSeconds": 1.110711,
+      "outgoingLeftPx": 158,
+      "headerMeanAbsoluteRgbError": 1.2637859582901,
+      "contentChangeBoundaryPx": 158
+    },
+    {
+      "index": 17,
+      "ptsSeconds": 1.119089,
+      "outgoingLeftPx": 192,
+      "headerMeanAbsoluteRgbError": 2.8294410705566406,
+      "contentChangeBoundaryPx": 191
+    },
+    {
+      "index": 18,
+      "ptsSeconds": 1.127244,
+      "outgoingLeftPx": 228,
+      "headerMeanAbsoluteRgbError": 2.6778292655944824,
+      "contentChangeBoundaryPx": 226
+    },
+    {
+      "index": 19,
+      "ptsSeconds": 1.1353,
+      "outgoingLeftPx": 270,
+      "headerMeanAbsoluteRgbError": 1.1120198965072632,
+      "contentChangeBoundaryPx": 270
+    },
+    {
+      "index": 20,
+      "ptsSeconds": 1.143589,
+      "outgoingLeftPx": 310,
+      "headerMeanAbsoluteRgbError": 1.0951474905014038,
+      "contentChangeBoundaryPx": 310
+    },
+    {
+      "index": 21,
+      "ptsSeconds": 1.151878,
+      "outgoingLeftPx": 352,
+      "headerMeanAbsoluteRgbError": 1.1119341850280762,
+      "contentChangeBoundaryPx": 352
+    },
+    {
+      "index": 22,
+      "ptsSeconds": 1.160578,
+      "outgoingLeftPx": 400,
+      "headerMeanAbsoluteRgbError": 1.1743484735488892,
+      "contentChangeBoundaryPx": 400
+    },
+    {
+      "index": 23,
+      "ptsSeconds": 1.168711,
+      "outgoingLeftPx": 444,
+      "headerMeanAbsoluteRgbError": 1.2058985233306885,
+      "contentChangeBoundaryPx": 444
+    },
+    {
+      "index": 24,
+      "ptsSeconds": 1.176844,
+      "outgoingLeftPx": 490,
+      "headerMeanAbsoluteRgbError": 2.591066598892212,
+      "contentChangeBoundaryPx": 489
+    },
+    {
+      "index": 25,
+      "ptsSeconds": 1.1852,
+      "outgoingLeftPx": 540,
+      "headerMeanAbsoluteRgbError": 1.4443073272705078,
+      "contentChangeBoundaryPx": 541
+    },
+    {
+      "index": 26,
+      "ptsSeconds": 1.193956,
+      "outgoingLeftPx": 586,
+      "headerMeanAbsoluteRgbError": 2.9225308895111084,
+      "contentChangeBoundaryPx": 585
+    },
+    {
+      "index": 27,
+      "ptsSeconds": 1.201922,
+      "outgoingLeftPx": 630,
+      "headerMeanAbsoluteRgbError": 1.540346384048462,
+      "contentChangeBoundaryPx": 630
+    },
+    {
+      "index": 28,
+      "ptsSeconds": 1.2102,
+      "outgoingLeftPx": 680,
+      "headerMeanAbsoluteRgbError": 1.4628429412841797,
+      "contentChangeBoundaryPx": 680
+    },
+    {
+      "index": 29,
+      "ptsSeconds": 1.218478,
+      "outgoingLeftPx": 724,
+      "headerMeanAbsoluteRgbError": 2.299365520477295,
+      "contentChangeBoundaryPx": 722
+    },
+    {
+      "index": 30,
+      "ptsSeconds": 1.226756,
+      "outgoingLeftPx": 766,
+      "headerMeanAbsoluteRgbError": 2.2597908973693848,
+      "contentChangeBoundaryPx": 765
+    },
+    {
+      "index": 31,
+      "ptsSeconds": 1.235033,
+      "outgoingLeftPx": 810,
+      "headerMeanAbsoluteRgbError": 1.4177125692367554,
+      "contentChangeBoundaryPx": 809
+    },
+    {
+      "index": 32,
+      "ptsSeconds": 1.243467,
+      "outgoingLeftPx": 848,
+      "headerMeanAbsoluteRgbError": 1.3728737831115723,
+      "contentChangeBoundaryPx": 848
+    },
+    {
+      "index": 33,
+      "ptsSeconds": 1.251633,
+      "outgoingLeftPx": 884,
+      "headerMeanAbsoluteRgbError": 1.3479423522949219,
+      "contentChangeBoundaryPx": 884
+    },
+    {
+      "index": 34,
+      "ptsSeconds": 1.260078,
+      "outgoingLeftPx": 922,
+      "headerMeanAbsoluteRgbError": 1.2083675861358643,
+      "contentChangeBoundaryPx": 922
+    },
+    {
+      "index": 35,
+      "ptsSeconds": 1.2682,
+      "outgoingLeftPx": 952,
+      "headerMeanAbsoluteRgbError": 1.1479766368865967,
+      "contentChangeBoundaryPx": 952
+    },
+    {
+      "index": 36,
+      "ptsSeconds": 1.276567,
+      "outgoingLeftPx": 980,
+      "headerMeanAbsoluteRgbError": 0.9314814805984497,
+      "contentChangeBoundaryPx": 980
+    },
+    {
+      "index": 37,
+      "ptsSeconds": 1.284778,
+      "outgoingLeftPx": 1006,
+      "headerMeanAbsoluteRgbError": 1.030829906463623,
+      "contentChangeBoundaryPx": 1005
+    },
+    {
+      "index": 38,
+      "ptsSeconds": 1.293444,
+      "outgoingLeftPx": 1030,
+      "headerMeanAbsoluteRgbError": 0.9859053492546082,
+      "contentChangeBoundaryPx": 1029
+    },
+    {
+      "index": 39,
+      "ptsSeconds": 1.301622,
+      "outgoingLeftPx": 1046,
+      "headerMeanAbsoluteRgbError": 0.9679012298583984,
+      "contentChangeBoundaryPx": 1046
+    },
+    {
+      "index": 40,
+      "ptsSeconds": 1.3098,
+      "outgoingLeftPx": 1060,
+      "headerMeanAbsoluteRgbError": 0.9512860178947449,
+      "contentChangeBoundaryPx": 1060
+    },
+    {
+      "index": 41,
+      "ptsSeconds": 1.317978,
+      "outgoingLeftPx": 1072,
+      "headerMeanAbsoluteRgbError": 0.9375514388084412,
+      "contentChangeBoundaryPx": 1072
+    },
+    {
+      "index": 42,
+      "ptsSeconds": 1.326544,
+      "outgoingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 0.9040294885635376,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 43,
+      "ptsSeconds": 1.334956,
+      "outgoingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 0.6788923144340515,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 44,
+      "ptsSeconds": 1.343589,
+      "outgoingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 0.11392318457365036,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 45,
+      "ptsSeconds": 1.351633,
+      "outgoingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 0.10865911841392517,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 46,
+      "ptsSeconds": 1.402211,
+      "outgoingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 0.02992112562060356,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 47,
+      "ptsSeconds": 1.410322,
+      "outgoingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 0.07673182338476181,
+      "contentChangeBoundaryPx": 1080
+    },
+    {
+      "index": 48,
+      "ptsSeconds": 1.918356,
+      "outgoingLeftPx": 1080,
+      "headerMeanAbsoluteRgbError": 0.0,
+      "contentChangeBoundaryPx": 1080
+    }
+  ],
+  "limits": "Observed pixel geometry does not identify the native animation implementation or interpolator class."
+}

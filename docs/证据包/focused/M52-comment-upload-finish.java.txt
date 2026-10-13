@@ -1,0 +1,37 @@
+    @Override // sd8.d
+    public void d(List<c> list, List<c> list2) {
+        b0.b("CommentMediaPostFlow-imageUpload", "========== UpLoadCommentImage【 onComplete 】. successPathListSize :" + list.size() + " failedPathListSize is " + list2.size() + " ========== ");
+        if (!list2.isEmpty()) {
+            od3.a aVar = this.f44179c;
+            if (aVar != null) {
+                i iVar = i.f17514a;
+                ia3.a.c(aVar, 1003, i.f17517d, false, 4, null);
+                return;
+            }
+            return;
+        }
+        l<Map<String, FileUploadResult>, w> lVar = this.f44178b;
+        ArrayList<c> arrayList = new ArrayList();
+        for (Object obj : list) {
+            String str = ((c) obj).f194974c;
+            if (!(str == null || str.length() == 0)) {
+                arrayList.add(obj);
+            }
+        }
+        int iB = o0.b(t.p(arrayList, 10));
+        if (iB < 16) {
+            iB = 16;
+        }
+        LinkedHashMap linkedHashMap = new LinkedHashMap(iB);
+        for (c cVar : arrayList) {
+            String str2 = cVar.f194974c;
+            String str3 = str2 == null ? "" : str2;
+            String str4 = cVar.f194972a;
+            linkedHashMap.put(str3, new FileUploadResult(str4 == null ? "" : str4, cVar.f194983l, str2 == null ? "" : str2, 0, 0, 24, null));
+        }
+        lVar.invoke(linkedHashMap);
+        od3.a aVar2 = this.f44179c;
+        if (aVar2 != null) {
+            aVar2.f();
+        }
+    }

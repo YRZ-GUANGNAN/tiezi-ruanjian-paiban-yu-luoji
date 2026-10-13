@@ -1,0 +1,10 @@
+    public final Observable<y> e(final String str) {
+        long jElapsedRealtime = SystemClock.elapsedRealtime();
+        b87.b bVar = b87.b.f8782a;
+        return n.b(((CommonNoteService) b87.b.b(CommonNoteService.class)).dislikePost("discovery." + str).observeOn(dl9.a.a()).doOnTerminate(new gl9.a() { // from class: mz6.e
+            @Override // gl9.a
+            public final void run() {
+                qk4.b.INSTANCE.a().onNext(new qk4.a("DISLIKE_NOTE", str));
+            }
+        }), "/api/sns/v1/note/dislike", jElapsedRealtime, 0L, null, 8, null);
+    }

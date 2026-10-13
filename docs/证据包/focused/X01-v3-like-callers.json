@@ -1,0 +1,159 @@
+{
+  "evidence_id": "ev_c56a3b287b813f7bca06d96fce811eef64388a0d86a7c2633be234364c009102",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "trace_android_references",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"full_name\":\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter\",\"name\":\"NoteDetailLikeBtnPresenter\",\"inner_classes\":[\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter.a\",\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter.b\",\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter.c\"],\"inner_class_count\":3,\"method_count\":3,\"methods\":[{\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true},{\"signature\":\"m7(): void\",\"def_pos\":0,\"name\":\"m7\",\"is_constructor\":false},{\"signature\":\"t7(com.xingin.entities.notedetail.NoteFeed): void\",\"def_pos\":0,\"name\":\"t7\",\"is_constructor\":false}],\"fields\":[],\"field_count\":0}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_xrefs_to_class",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter",
+          "limit": 2147483647,
+          "resolve_line": false
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"total\":4,\"resolve_line\":false,\"target\":\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter\",\"count\":4,\"items\":[{\"kind\":\"class\",\"name\":\"c\",\"full_name\":\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter.c\",\"containing_class\":\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter\",\"top_class\":\"com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"i\",\"full_name\":\"ie6.i\",\"containing_class\":\"\",\"top_class\":\"ie6.i\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"f\",\"full_name\":\"le6.f\",\"containing_class\":\"\",\"top_class\":\"le6.g\",\"def_pos\":0},{\"kind\":\"class\",\"name\":\"g\",\"full_name\":\"le6.g\",\"containing_class\":\"\",\"top_class\":\"le6.g\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter",
+    "method_name": null,
+    "total": 4,
+    "references": [
+      {
+        "kind": "class",
+        "name": "c",
+        "reported_full_name": "com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter.c",
+        "containing_class": "com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter",
+        "top_class": "com.xingin.matrix.notedetail.v3.engagebar.like.NoteDetailLikeBtnPresenter",
+        "source_line": null,
+        "dex_offset": null
+      },
+      {
+        "kind": "class",
+        "name": "i",
+        "reported_full_name": "ie6.i",
+        "containing_class": "",
+        "top_class": "ie6.i",
+        "source_line": null,
+        "dex_offset": null
+      },
+      {
+        "kind": "class",
+        "name": "f",
+        "reported_full_name": "le6.f",
+        "containing_class": "",
+        "top_class": "le6.g",
+        "source_line": null,
+        "dex_offset": null
+      },
+      {
+        "kind": "class",
+        "name": "g",
+        "reported_full_name": "le6.g",
+        "containing_class": "",
+        "top_class": "le6.g",
+        "source_line": null,
+        "dex_offset": null
+      }
+    ],
+    "coverage": "complete"
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "664bfd138a44215fc2376cbe8d645e2b8dc5189de8f040d4ab8fe93a2197ab84",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

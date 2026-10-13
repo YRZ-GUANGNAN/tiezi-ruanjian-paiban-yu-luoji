@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "source_count": 12,
+  "metric_count": 84,
+  "annotation_count": 6,
+  "evidence_hashes_verified": true,
+  "relative_report_links_checked": true,
+  "video_edge_scanlines": [
+    {
+      "y": 100,
+      "left": 324,
+      "right_exclusive": 756
+    },
+    {
+      "y": 200,
+      "left": 324,
+      "right_exclusive": 756
+    },
+    {
+      "y": 400,
+      "left": 324,
+      "right_exclusive": 756
+    },
+    {
+      "y": 600,
+      "left": 324,
+      "right_exclusive": 756
+    }
+  ],
+  "errors": [],
+  "publicationScope": "Historical local research verification or archive manifest. These counts and hashes do not validate the public derived repository. Use the root public-manifest.json and node tools/verify.mjs."
+}

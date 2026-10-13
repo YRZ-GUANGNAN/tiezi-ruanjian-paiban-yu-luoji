@@ -1,0 +1,4 @@
+    public final void u7(NoteFeed noteFeed) {
+        DetailFeedConfigCenter detailFeedConfigCenter = DetailFeedConfigCenter.f50384a;
+        x3().setText(DetailFeedConfigCenter.r() ? m0.a(noteFeed.M0(), l7().getResources().getString(R.string._0_resource_name_obfuscated_res_0x7f112708)) : k0.d(noteFeed.M0(), l7().getResources().getString(R.string._0_resource_name_obfuscated_res_0x7f112708), true));
+    }

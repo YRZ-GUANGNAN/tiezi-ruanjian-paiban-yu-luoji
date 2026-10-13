@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_a373c2c94324ed330dc5e9358a41ad1a91649466d805769053bc44b213242bc6",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.xhs.homepage.localfeed.repo.LocalFeedService",
+    "method_name": "fetchNotes"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.xhs.homepage.localfeed.repo.LocalFeedService"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":1,\"method_count\":9,\"methods\":[{\"signature\":\"fetchCategories(java.lang.String, boolean, boolean): io.reactivex.Observable\\u003ccom.xingin.xhs.homepage.localfeed.entities.LocalFeedCategoryInfo\\u003e\",\"def_pos\":0,\"name\":\"fetchCategories\",\"is_constructor\":false},{\"signature\":\"fetchLiveShootingBar(java.lang.String, java.lang.String, boolean): io.reactivex.Observable\\u003ccom.xingin.xhs.homepage.localfeed.entities.LocalFeedLiveShootingData\\u003e\",\"def_pos\":0,\"name\":\"fetchLiveShootingBar\",\"is_constructor\":false},{\"signature\":\"fetchLocalMapEntrance(int, java.lang.String, java.lang.Integer, java.lang.String): io.reactivex.Observable\\u003ce49.j\\u003e\",\"def_pos\":0,\"name\":\"fetchLocalMapEntrance\",\"is_constructor\":false},{\"signature\":\"fetchNotes(java.lang.String, int, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.Boolean, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean): io.reactivex.Observable\\u003cjava.util.List\\u003ccom.google.gson.l\\u003e\\u003e\",\"def_pos\":0,\"name\":\"fetchNotes\",\"is_constructor\":false},{\"signature\":\"fetchTopBarAndMapEntranceData(java.lang.String, java.lang.String): io.reactivex.Observable\\u003ce49.g\\u003e\",\"def_pos\":0,\"name\":\"fetchTopBarAndMapEntranceData\",\"is_constructor\":false},{\"signature\":\"fetchTopBarData(java.lang.String, java.lang.Integer, java.lang.String): io.reactivex.Observable\\u003ce49.h\\u003e\",\"def_pos\":0,\"name\":\"fetchTopBarData\",\"is_constructor\":false},{\"signature\":\"fetchTopBarDataNew(java.lang.String): io.reactivex.Observable\\u003ce49.h\\u003e\",\"def_pos\":0,\"name\":\"fetchTopBarDataNew\",\"is_constructor\":false},{\"signature\":\"getLocalFeedTabInfo(java.lang.String, java.lang.String, java.lang.Boolean): io.reactivex.Observable\\u003ce49.f\\u003e\",\"def_pos\":0,\"name\":\"getLocalFeedTabInfo\",\"is_constructor\":false},{\"signature\":\"uploadLocation(float, float, java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e): io.reactivex.Observable\\u003ckk4.b\\u003e\",\"def_pos\":0,\"name\":\"uploadLocation\",\"is_constructor\":false}],\"fields\":[],\"field_count\":0,\"full_name\":\"com.xingin.xhs.homepage.localfeed.repo.LocalFeedService\",\"name\":\"LocalFeedService\",\"inner_classes\":[\"com.xingin.xhs.homepage.localfeed.repo.LocalFeedService.a\"]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.xhs.homepage.localfeed.repo.LocalFeedService",
+          "method_name": "fetchNotes",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.xhs.homepage.localfeed.repo.LocalFeedService\",\"full_name\":\"com.xingin.xhs.homepage.localfeed.repo.LocalFeedService.fetchNotes\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"fetchNotes\",\"overload_count\":1,\"body\":\"// method exists but has no decompiled body (native/abstract)\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.xhs.homepage.localfeed.repo.LocalFeedService",
+    "method": {
+      "name": "fetchNotes",
+      "reported_signature": "fetchNotes(java.lang.String, int, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.Boolean, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.Boolean): io.reactivex.Observable<java.util.List<com.google.gson.l>>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "not_available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "// method exists but has no decompiled body (native/abstract)",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "45e84b6fd0d81d85610fdb88186a5a23e74e3b3623f787db5f7493aabb2ad1f4",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

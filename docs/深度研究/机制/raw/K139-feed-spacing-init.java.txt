@@ -1,0 +1,5 @@
+    @JvmOverloads
+    public ExploreDoubleRowStaggeredDiverDecoration(int i100) {
+        this.f116813a = i100;
+        this.f116814b = -1;
+    }

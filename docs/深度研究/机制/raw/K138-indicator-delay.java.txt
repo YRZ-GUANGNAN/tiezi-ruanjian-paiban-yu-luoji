@@ -1,0 +1,6 @@
+    public static final void w7(NoteDetailImageDisplayPresenter noteDetailImageDisplayPresenter) {
+        if (PatchProxy.proxyVoid1Para(noteDetailImageDisplayPresenter, null, NoteDetailImageDisplayPresenter.class, 298298)) {
+            return;
+        }
+        noteDetailImageDisplayPresenter.x7(5000L);
+    }

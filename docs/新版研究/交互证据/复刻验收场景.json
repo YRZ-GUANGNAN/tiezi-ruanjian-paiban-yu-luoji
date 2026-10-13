@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 1,
+  "target": "未来独立实现",
+  "status": "建议验收场景，尚未开发或执行",
+  "sourceVersion": "8.72.0",
+  "scenarios": [
+    {
+      "id": "G01",
+      "title": "图集短拖取消",
+      "given": "七图详情第 1 张",
+      "when": "横向短拖后松开",
+      "observedReference": "样本仍为第 1 张",
+      "implementationChoice": "取消拖动应吸附回当前页；阈值由独立实现单独标定。",
+      "evidence": [
+        "R27",
+        "R28"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "G02",
+      "title": "图集单页切换",
+      "given": "七图详情媒体区域",
+      "when": "横向左滑或右滑",
+      "observedReference": "样本每次切换一张，正文不横移",
+      "implementationChoice": "媒体分页状态和正文纵向滚动分开管理。",
+      "evidence": [
+        "R29",
+        "R31",
+        "R32",
+        "R33",
+        "R34",
+        "R35",
+        "R36",
+        "R41",
+        "R42",
+        "R43",
+        "R44",
+        "R45",
+        "R46"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "G03",
+      "title": "图集首尾边界",
+      "given": "首图或末图",
+      "when": "向越界方向横滑",
+      "observedReference": "仍停在首图或末图，没有跨帖",
+      "implementationChoice": "边界限制图片索引；与详情退出手势分开处理。",
+      "evidence": [
+        "R36",
+        "R37",
+        "R46",
+        "R47"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "G04",
+      "title": "数字页码显隐",
+      "given": "完成翻页",
+      "when": "停止操作后继续观察",
+      "observedReference": "数字页码数秒后淡出；逐帧结果见深度研究",
+      "implementationChoice": "单独管理可见态与隐藏计时；同版静态配置与像素拟合分别记录，不混作直接运行追踪。",
+      "evidence": [
+        "R29",
+        "R30",
+        "R31"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "G05",
+      "title": "图片操作菜单",
+      "given": "图集第 7 张",
+      "when": "长按尝试后观察；系统返回",
+      "observedReference": "工具菜单可见；关闭后仍在第 7 张",
+      "implementationChoice": "菜单作为覆盖层，保留图片索引；此次长按阈值未知。",
+      "evidence": [
+        "R39",
+        "R40"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "V01",
+      "title": "视频暂停",
+      "given": "视频正在播放",
+      "when": "点视频中心并静置",
+      "observedReference": "播放图标出现，进度保持 12/45 秒",
+      "implementationChoice": "播放器实际状态是依据；不要用操作按钮文案推导状态。",
+      "evidence": [
+        "R02",
+        "R03",
+        "R04"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "V02",
+      "title": "拖动视频进度",
+      "given": "视频已暂停",
+      "when": "拖进度条至后段",
+      "observedReference": "进度到约 36/45 秒，随后播放",
+      "implementationChoice": "区分 seeking 与 playing；以采用的规则定义拖动后状态。",
+      "evidence": [
+        "R04",
+        "R05",
+        "R06"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "V03",
+      "title": "竖向视频切换",
+      "given": "单视频全屏详情",
+      "when": "短拖或较长上/下滑",
+      "observedReference": "短拖不切；较长滑动切下一条/上一条",
+      "implementationChoice": "使用竖向分页；真实手势阈值与速度条件未恢复。",
+      "evidence": [
+        "R12",
+        "R13",
+        "R14"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "V04",
+      "title": "回到前一视频",
+      "given": "从视频 A 切到 B",
+      "when": "向下切回 A",
+      "observedReference": "回到约 44/45 秒，没有从零开始",
+      "implementationChoice": "按内容 ID 保存播放位置；此样本不证明后台播放策略。",
+      "evidence": [
+        "R13",
+        "R14"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "C01",
+      "title": "评论容器因内容类型不同",
+      "given": "视频详情或图文详情",
+      "when": "点评论入口",
+      "observedReference": "视频打开底部抽屉；图文整页滚到评论区",
+      "implementationChoice": "同一评论数据可复用，外层滚动容器分开。",
+      "evidence": [
+        "R06",
+        "R19"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "C02",
+      "title": "回复展开",
+      "given": "视频评论中含两条回复的根评论",
+      "when": "点击展开两条回复",
+      "observedReference": "显示同级缩进和回复对象",
+      "implementationChoice": "根评论、子回复、回复目标分开建模；多层/分页未测。",
+      "evidence": [
+        "R06",
+        "R07"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "C03",
+      "title": "评论滚动与关闭",
+      "given": "视频评论抽屉打开",
+      "when": "滚评论、系统返回或拖面板顶部",
+      "observedReference": "标题/输入固定；返回或下拖关闭",
+      "implementationChoice": "列表滚动和面板拖动设置独立命中区域。",
+      "evidence": [
+        "R08",
+        "R09",
+        "R11"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "C04",
+      "title": "评论重开状态",
+      "given": "展开回复并滚动过的评论抽屉已关闭",
+      "when": "再次打开评论",
+      "observedReference": "回到顶端，回复折叠",
+      "implementationChoice": "该样本要求抽屉会话重置；不能套用作者页的保留策略。",
+      "evidence": [
+        "R07",
+        "R08",
+        "R09",
+        "R10"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "N01",
+      "title": "逐层返回",
+      "given": "发现→图文→作者主页",
+      "when": "连续系统返回两次",
+      "observedReference": "先回原图文且图片索引保留，再回发现",
+      "implementationChoice": "路由栈和页面局部状态分开管理。",
+      "evidence": [
+        "R48",
+        "R53",
+        "R54"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "N02",
+      "title": "作者头部折叠",
+      "given": "公开作者主页顶端",
+      "when": "向上滑动主页",
+      "observedReference": "资料头收起，栏目吸顶",
+      "implementationChoice": "折叠头、固定栏、各栏目滚动区分层组织。",
+      "evidence": [
+        "R49",
+        "R50"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "N03",
+      "title": "作者栏目恢复",
+      "given": "笔记列表已滚动",
+      "when": "切收藏再切回笔记",
+      "observedReference": "所选文字与 XML bounds 一致；截图存在56px位移，原因未定",
+      "implementationChoice": "每栏目保留独立锚点；用稳定前后帧验收，不以 XML 一致冒充像素恢复。",
+      "evidence": [
+        "R50",
+        "R51",
+        "R52"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "N04",
+      "title": "返回列表的范围",
+      "given": "从不同首页位置打开详情",
+      "when": "系统返回首页",
+      "observedReference": "两组基线恢复；R16→R21 有约 217px 偏移",
+      "implementationChoice": "按稳定内容 ID 与相对偏移保存锚点；不能宣称全局像素不变。",
+      "evidence": [
+        "R01",
+        "R15",
+        "R16",
+        "R21",
+        "R26",
+        "R54"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "S01",
+      "title": "搜索输入与联想",
+      "given": "搜索起始页",
+      "when": "输入公共测试词",
+      "observedReference": "出现联想列表",
+      "implementationChoice": "拆分输入中与结果态；防抖和取消旧请求是建议，未测内部实现。",
+      "evidence": [
+        "R24",
+        "R55",
+        "R56"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "S02",
+      "title": "搜索顶部滚动",
+      "given": "搜索结果顶部",
+      "when": "上滑结果",
+      "observedReference": "分类行收起，搜索框/条件行保持",
+      "implementationChoice": "吸顶按可见层组织；XML 中残留分类节点不是可见性证明。",
+      "evidence": [
+        "R57",
+        "R58",
+        "R59"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "S03",
+      "title": "搜索返回恢复",
+      "given": "稳定搜索结果中部",
+      "when": "打开详情后返回",
+      "observedReference": "关键词和所选卡片边界恢复；已打开标题由#333333变#999999",
+      "implementationChoice": "保留查询及列表锚点，并更新阅读状态样式；持久化范围待测。",
+      "evidence": [
+        "R59",
+        "R60",
+        "R61"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "S04",
+      "title": "快捷最新排序",
+      "given": "搜索结果已有滚动",
+      "when": "点击快捷最新，再打开完整筛选",
+      "observedReference": "结果更新并回首；面板仍显示综合",
+      "implementationChoice": "两处选中显示存在冲突，列为复测；独立实现建议统一来源。",
+      "evidence": [
+        "R61",
+        "R62",
+        "R63"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "S05",
+      "title": "筛选即时变化",
+      "given": "完整筛选面板打开",
+      "when": "选图文，收起，再重开",
+      "observedReference": "面板未关时结果已变化；重开保留图文",
+      "implementationChoice": "图文选择视为即时生效；其他条件组合需补测。",
+      "evidence": [
+        "R63",
+        "R64",
+        "R65",
+        "R66"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "S06",
+      "title": "筛选重置与返回",
+      "given": "图文筛选已选",
+      "when": "重置，再系统返回",
+      "observedReference": "类型回不限且面板仍打开；返回只关闭面板",
+      "implementationChoice": "重置与关闭是两种事件；不要把快捷排序同步视为已证实。",
+      "evidence": [
+        "R66",
+        "R67",
+        "R68"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "S07",
+      "title": "换词保留分类",
+      "given": "用户分类已有结果",
+      "when": "清空再提交新词",
+      "observedReference": "仍在用户分类",
+      "implementationChoice": "分类与输入词分开存储；持久范围只证实此会话。",
+      "evidence": [
+        "R69",
+        "R70",
+        "R71",
+        "R72"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "S08",
+      "title": "未命中词降级",
+      "given": "随机测试词",
+      "when": "查用户后切全部",
+      "observedReference": "仍出现模糊/松散结果与提问引导",
+      "implementationChoice": "区分相关性不足与真正空数据；本轮未得到空态样本。",
+      "evidence": [
+        "R71",
+        "R72",
+        "R73"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "S09",
+      "title": "搜索历史单条删除",
+      "given": "只处理本轮新增历史",
+      "when": "进编辑态，逐条删除，再完成",
+      "observedReference": "两条测试词已移除，原有历史保留",
+      "implementationChoice": "历史单条删除与清空全部分离；全清和重启持久化未测。",
+      "evidence": [
+        "R74",
+        "R75",
+        "R76",
+        "R77",
+        "R78"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "F01",
+      "title": "下拉刷新",
+      "given": "发现页顶部",
+      "when": "向下拉动",
+      "observedReference": "首批卡片改变，二级频道可见",
+      "implementationChoice": "刷新更新当前列表；连续刷新与请求合并未测。",
+      "evidence": [
+        "R79",
+        "R80"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "F02",
+      "title": "主页频道横滑",
+      "given": "发现首页",
+      "when": "右滑关注，再左滑发现",
+      "observedReference": "发现页原卡片与位置恢复",
+      "implementationChoice": "频道各自保存列表；不同账号与空关注态未测。",
+      "evidence": [
+        "R80",
+        "R81",
+        "R82"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "M01",
+      "title": "地图面板展开收起",
+      "given": "同城探索地图",
+      "when": "拖地图、点探索、下拖面板",
+      "observedReference": "地图拖动时面板收起；探索展开；下拖收起",
+      "implementationChoice": "地图与面板分开接收手势；不从地图结果推断真实定位。",
+      "evidence": [
+        "R85",
+        "R86",
+        "R87",
+        "R88"
+      ],
+      "status": "not-run-on-reconstruction"
+    },
+    {
+      "id": "M02",
+      "title": "同城导航与异常",
+      "given": "同城列表及地图",
+      "when": "重选城市、系统返回、页面返回",
+      "observedReference": "重选刷新；系统返回一次未退出；页面返回可退出；城市不一致",
+      "implementationChoice": "城市选择器入口、返回拦截原因和定位来源待复测。",
+      "evidence": [
+        "R83",
+        "R84",
+        "R87",
+        "R89",
+        "R90",
+        "R91"
+      ],
+      "status": "not-run-on-reconstruction"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+    @Override // androidx.recyclerview.widget.LinearLayoutManager
+    public int getExtraLayoutSpace(RecyclerView.State state) {
+        PatchProxyResult patchProxyResultProxy1Para = PatchProxy.proxy1Para(state, this, PreOnBindViewLinearLayoutManager.class, 99031);
+        if (patchProxyResultProxy1Para.isSupported) {
+            return ((Integer) patchProxyResultProxy1Para.result).intValue();
+        }
+        int i100 = this.f116935d;
+        return i100 > 0 ? i100 : super.getExtraLayoutSpace(state);
+    }

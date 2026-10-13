@@ -1,0 +1,558 @@
+{
+  "evidence_id": "ev_838c1cc566a4c7f717b6c7d961434e47aafe1a546b1a0f6886afbb2b780d9251",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.entities.WishBoardDetail"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":91585,\"raw_class_count\":91585,\"resource_count\":12708,\"load_duration_ms\":15255,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.entities.WishBoardDetail"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":2,\"method_count\":43,\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false},{\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true},{\"signature\":\"\\u003cinit\\u003e(android.os.Parcel): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true},{\"signature\":\"B(): com.xingin.entities.IllegalInfo\",\"def_pos\":0,\"name\":\"B\",\"is_constructor\":false},{\"signature\":\"B0(int): void\",\"def_pos\":0,\"name\":\"B0\",\"is_constructor\":false},{\"signature\":\"L(): java.lang.String\",\"def_pos\":0,\"name\":\"L\",\"is_constructor\":false},{\"signature\":\"M(): java.util.ArrayList\\u003cjava.lang.String\\u003e\",\"def_pos\":0,\"name\":\"M\",\"is_constructor\":false},{\"signature\":\"Q(): int\",\"def_pos\":0,\"name\":\"Q\",\"is_constructor\":false},{\"signature\":\"R(): java.lang.String\",\"def_pos\":0,\"name\":\"R\",\"is_constructor\":false},{\"signature\":\"S(): int\",\"def_pos\":0,\"name\":\"S\",\"is_constructor\":false},{\"signature\":\"T(): com.xingin.entities.WishBoardDetail$BoardBannerInfo\",\"def_pos\":0,\"name\":\"T\",\"is_constructor\":false},{\"signature\":\"V(): java.lang.String\",\"def_pos\":0,\"name\":\"V\",\"is_constructor\":false},{\"signature\":\"W(): java.lang.String\",\"def_pos\":0,\"name\":\"W\",\"is_constructor\":false},{\"signature\":\"X(): java.lang.String\",\"def_pos\":0,\"name\":\"X\",\"is_constructor\":false},{\"signature\":\"Y(): com.xingin.entities.ShareBoardInfo\",\"def_pos\":0,\"name\":\"Y\",\"is_constructor\":false},{\"signature\":\"b0(): java.lang.Boolean\",\"def_pos\":0,\"name\":\"b0\",\"is_constructor\":false},{\"signature\":\"clone(): java.lang.Object\",\"def_pos\":0,\"name\":\"clone\",\"is_constructor\":false},{\"signature\":\"d0(): java.lang.String\",\"def_pos\":0,\"name\":\"d0\",\"is_constructor\":false},{\"signature\":\"describeContents(): int\",\"def_pos\":0,\"name\":\"describeContents\",\"is_constructor\":false},{\"signature\":\"e0(): java.lang.String\",\"def_pos\":0,\"name\":\"e0\",\"is_constructor\":false},{\"signature\":\"equals(java.lang.Object): boolean\",\"def_pos\":0,\"name\":\"equals\",\"is_constructor\":false},{\"signature\":\"f0(): int\",\"def_pos\":0,\"name\":\"f0\",\"is_constructor\":false},{\"signature\":\"g(): com.xingin.entities.WishBoardDetail$BoardBannerInfo\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false},{\"signature\":\"g0(): com.xingin.entities.BaseUserBean\",\"def_pos\":0,\"name\":\"g0\",\"is_constructor\":false},{\"signature\":\"getId(): java.lang.String\",\"def_pos\":0,\"name\":\"getId\",\"is_constructor\":false},{\"signature\":\"h(): int\",\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false},{\"signature\":\"h0(): boolean\",\"def_pos\":0,\"name\":\"h0\",\"is_constructor\":false},{\"signature\":\"i0(): boolean\",\"def_pos\":0,\"name\":\"i0\",\"is_constructor\":false},{\"signature\":\"j0(): boolean\",\"def_pos\":0,\"name\":\"j0\",\"is_constructor\":false},{\"signature\":\"l0(java.lang.String): boolean\",\"def_pos\":0,\"name\":\"l0\",\"is_constructor\":false},{\"signature\":\"m(): java.lang.String\",\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false},{\"signature\":\"m0(java.lang.String): void\",\"def_pos\":0,\"name\":\"m0\",\"is_constructor\":false},{\"signature\":\"n(): java.lang.String\",\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false},{\"signature\":\"n0(boolean): void\",\"def_pos\":0,\"name\":\"n0\",\"is_constructor\":false},{\"signature\":\"o(): int\",\"def_pos\":0,\"name\":\"o\",\"is_constructor\":false},{\"signature\":\"p(): java.lang.String\",\"def_pos\":0,\"name\":\"p\",\"is_constructor\":false},{\"signature\":\"r0(java.lang.String): void\",\"def_pos\":0,\"name\":\"r0\",\"is_constructor\":false},{\"signature\":\"t0(java.lang.String): void\",\"def_pos\":0,\"name\":\"t0\",\"is_constructor\":false},{\"signature\":\"v0(int): void\",\"def_pos\":0,\"name\":\"v0\",\"is_constructor\":false},{\"signature\":\"writeToParcel(android.os.Parcel, int): void\",\"def_pos\":0,\"name\":\"writeToParcel\",\"is_constructor\":false},{\"signature\":\"x(): boolean\",\"def_pos\":0,\"name\":\"x\",\"is_constructor\":false},{\"signature\":\"y0(int): void\",\"def_pos\":0,\"name\":\"y0\",\"is_constructor\":false},{\"signature\":\"z0(java.lang.String): void\",\"def_pos\":0,\"name\":\"z0\",\"is_constructor\":false}],\"fields\":[{\"type\":\"com.xingin.entities.WishBoardDetail$a\",\"name\":\"CREATOR\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"TYPE_ADD_BOARD\",\"def_pos\":0},{\"type\":\"com.xingin.entities.WishBoardDetail$BoardBannerInfo\",\"name\":\"boardBannerInfo\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"boardStatus\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"coverImage\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"desc\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"enabled\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"fans\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"fstatus\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"hideFollowBtn\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"id\",\"def_pos\":0},{\"type\":\"com.xingin.entities.IllegalInfo\",\"name\":\"illegalInfo\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"image\",\"def_pos\":0},{\"type\":\"java.util.ArrayList\\u003cjava.lang.String\\u003e\",\"name\":\"images\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"index\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"inviteToast\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"lasttime\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"likes\",\"def_pos\":0},{\"type\":\"com.xingin.entities.WishBoardDetail$BoardBannerInfo\",\"name\":\"limitShareInfo\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"link\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"name\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"popUp\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"privacy\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"recommendInfo\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"recommendTrackId\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"reportLink\",\"def_pos\":0},{\"type\":\"com.xingin.entities.ShareBoardInfo\",\"name\":\"shareBoardInfo\",\"def_pos\":0},{\"type\":\"java.lang.Boolean\",\"name\":\"shareEnabled\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"shareLink\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"shareToast\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"total\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"type\",\"def_pos\":0},{\"type\":\"com.xingin.entities.BaseUserBean\",\"name\":\"user\",\"def_pos\":0}],\"field_count\":33,\"full_name\":\"com.xingin.entities.WishBoardDetail\",\"name\":\"WishBoardDetail\",\"inner_classes\":[\"com.xingin.entities.WishBoardDetail.BoardBannerInfo\",\"com.xingin.entities.WishBoardDetail.a\"]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.entities.WishBoardDetail",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.os.Parcel): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B",
+        "reported_signature": "B(): com.xingin.entities.IllegalInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B0",
+        "reported_signature": "B0(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "L",
+        "reported_signature": "L(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M",
+        "reported_signature": "M(): java.util.ArrayList<java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Q",
+        "reported_signature": "Q(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "R",
+        "reported_signature": "R(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S",
+        "reported_signature": "S(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "T",
+        "reported_signature": "T(): com.xingin.entities.WishBoardDetail$BoardBannerInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "V",
+        "reported_signature": "V(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "W",
+        "reported_signature": "W(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "X",
+        "reported_signature": "X(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y",
+        "reported_signature": "Y(): com.xingin.entities.ShareBoardInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b0",
+        "reported_signature": "b0(): java.lang.Boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "clone",
+        "reported_signature": "clone(): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d0",
+        "reported_signature": "d0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "describeContents",
+        "reported_signature": "describeContents(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e0",
+        "reported_signature": "e0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "equals",
+        "reported_signature": "equals(java.lang.Object): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f0",
+        "reported_signature": "f0(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(): com.xingin.entities.WishBoardDetail$BoardBannerInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g0",
+        "reported_signature": "g0(): com.xingin.entities.BaseUserBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getId",
+        "reported_signature": "getId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h0",
+        "reported_signature": "h0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i0",
+        "reported_signature": "i0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j0",
+        "reported_signature": "j0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l0",
+        "reported_signature": "l0(java.lang.String): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m0",
+        "reported_signature": "m0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n0",
+        "reported_signature": "n0(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p",
+        "reported_signature": "p(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r0",
+        "reported_signature": "r0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t0",
+        "reported_signature": "t0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v0",
+        "reported_signature": "v0(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "writeToParcel",
+        "reported_signature": "writeToParcel(android.os.Parcel, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x",
+        "reported_signature": "x(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y0",
+        "reported_signature": "y0(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z0",
+        "reported_signature": "z0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "CREATOR",
+        "reported_type": "com.xingin.entities.WishBoardDetail$a"
+      },
+      {
+        "name": "TYPE_ADD_BOARD",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "boardBannerInfo",
+        "reported_type": "com.xingin.entities.WishBoardDetail$BoardBannerInfo"
+      },
+      {
+        "name": "boardStatus",
+        "reported_type": "int"
+      },
+      {
+        "name": "coverImage",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "desc",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "enabled",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "fans",
+        "reported_type": "int"
+      },
+      {
+        "name": "fstatus",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "hideFollowBtn",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "id",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "illegalInfo",
+        "reported_type": "com.xingin.entities.IllegalInfo"
+      },
+      {
+        "name": "image",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "images",
+        "reported_type": "java.util.ArrayList<java.lang.String>"
+      },
+      {
+        "name": "index",
+        "reported_type": "int"
+      },
+      {
+        "name": "inviteToast",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "lasttime",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "likes",
+        "reported_type": "int"
+      },
+      {
+        "name": "limitShareInfo",
+        "reported_type": "com.xingin.entities.WishBoardDetail$BoardBannerInfo"
+      },
+      {
+        "name": "link",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "name",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "popUp",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "privacy",
+        "reported_type": "int"
+      },
+      {
+        "name": "recommendInfo",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "recommendTrackId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "reportLink",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "shareBoardInfo",
+        "reported_type": "com.xingin.entities.ShareBoardInfo"
+      },
+      {
+        "name": "shareEnabled",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "shareLink",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "shareToast",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "total",
+        "reported_type": "int"
+      },
+      {
+        "name": "type",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "user",
+        "reported_type": "com.xingin.entities.BaseUserBean"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.entities.WishBoardDetail.BoardBannerInfo",
+      "com.xingin.entities.WishBoardDetail.a"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "0ffa438eef0e867185660491dbd4782a1b2f80f7b5bb387239fd4f15c19e4071",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

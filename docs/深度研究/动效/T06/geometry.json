@@ -1,0 +1,1431 @@
+{
+  "sourceSha256": "5b9a50086081b4690c57161e2fc73698f609ce0b5db75784827de61ca64450d8",
+  "method": "Horizontal decode reduced 4x; y unchanged. Opening: normalize-correlate close-icon template x988..1036,y674..723, require correlation>=0.70 and subtract 41px header offset. Closing: first three wide near-white rows over x60..1020.",
+  "stableTopPx": 633,
+  "noWhitePanelSentinelPx": 2271,
+  "positions": [
+    {
+      "index": 0,
+      "ptsSeconds": 0.0,
+      "panelTopPx": 640,
+      "trackedPanelTopPx": 640,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9947383403778076,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 1,
+      "ptsSeconds": 0.004856,
+      "panelTopPx": 640,
+      "trackedPanelTopPx": 640,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9947948455810547,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 2,
+      "ptsSeconds": 0.0226,
+      "panelTopPx": 637,
+      "trackedPanelTopPx": 637,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.994621753692627,
+      "wideWhiteRowFraction": 0.9625
+    },
+    {
+      "index": 3,
+      "ptsSeconds": 0.037544,
+      "panelTopPx": 637,
+      "trackedPanelTopPx": 637,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9950354099273682,
+      "wideWhiteRowFraction": 0.9625
+    },
+    {
+      "index": 4,
+      "ptsSeconds": 0.054333,
+      "panelTopPx": 634,
+      "trackedPanelTopPx": 634,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9949182868003845,
+      "wideWhiteRowFraction": 0.9875
+    },
+    {
+      "index": 5,
+      "ptsSeconds": 0.071122,
+      "panelTopPx": 639,
+      "trackedPanelTopPx": 639,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9958652853965759,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 6,
+      "ptsSeconds": 0.087911,
+      "panelTopPx": 639,
+      "trackedPanelTopPx": 639,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9967136383056641,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 7,
+      "ptsSeconds": 0.104433,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9984742403030396,
+      "wideWhiteRowFraction": 0.9833333333333333
+    },
+    {
+      "index": 8,
+      "ptsSeconds": 0.121144,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9985808730125427,
+      "wideWhiteRowFraction": 0.9791666666666666
+    },
+    {
+      "index": 9,
+      "ptsSeconds": 0.137644,
+      "panelTopPx": 634,
+      "trackedPanelTopPx": 634,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9985906481742859,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 10,
+      "ptsSeconds": 0.154678,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9986491799354553,
+      "wideWhiteRowFraction": 0.9916666666666667
+    },
+    {
+      "index": 11,
+      "ptsSeconds": 0.171844,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9986563324928284,
+      "wideWhiteRowFraction": 0.9916666666666667
+    },
+    {
+      "index": 12,
+      "ptsSeconds": 0.188078,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.99861079454422,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 13,
+      "ptsSeconds": 0.204311,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.99869304895401,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 14,
+      "ptsSeconds": 0.221578,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.99869304895401,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 15,
+      "ptsSeconds": 0.237922,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991720914840698,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 16,
+      "ptsSeconds": 0.254567,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991875290870667,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 17,
+      "ptsSeconds": 0.271522,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991876482963562,
+      "wideWhiteRowFraction": 0.9833333333333333
+    },
+    {
+      "index": 18,
+      "ptsSeconds": 0.288178,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 0.9875
+    },
+    {
+      "index": 19,
+      "ptsSeconds": 0.304833,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 20,
+      "ptsSeconds": 0.321156,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 0.9916666666666667
+    },
+    {
+      "index": 21,
+      "ptsSeconds": 0.3383,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 0.9916666666666667
+    },
+    {
+      "index": 22,
+      "ptsSeconds": 0.354289,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 23,
+      "ptsSeconds": 0.371667,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 24,
+      "ptsSeconds": 0.388411,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 25,
+      "ptsSeconds": 0.404456,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 26,
+      "ptsSeconds": 0.4213,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 27,
+      "ptsSeconds": 0.438144,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 28,
+      "ptsSeconds": 0.471111,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 29,
+      "ptsSeconds": 0.488211,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 30,
+      "ptsSeconds": 0.504489,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 31,
+      "ptsSeconds": 0.521267,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 32,
+      "ptsSeconds": 0.5382,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 33,
+      "ptsSeconds": 0.554111,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 34,
+      "ptsSeconds": 0.570967,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 35,
+      "ptsSeconds": 0.587622,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 36,
+      "ptsSeconds": 0.604878,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 37,
+      "ptsSeconds": 0.620767,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 38,
+      "ptsSeconds": 0.638789,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 39,
+      "ptsSeconds": 0.654133,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 40,
+      "ptsSeconds": 0.671089,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 41,
+      "ptsSeconds": 0.687489,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 42,
+      "ptsSeconds": 0.704156,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 43,
+      "ptsSeconds": 0.721189,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 44,
+      "ptsSeconds": 0.738044,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 45,
+      "ptsSeconds": 0.754189,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 46,
+      "ptsSeconds": 0.771511,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 47,
+      "ptsSeconds": 0.787722,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 48,
+      "ptsSeconds": 0.8041,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 49,
+      "ptsSeconds": 0.820633,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 0.9916666666666667
+    },
+    {
+      "index": 50,
+      "ptsSeconds": 0.837444,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 0.9916666666666667
+    },
+    {
+      "index": 51,
+      "ptsSeconds": 0.854022,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 52,
+      "ptsSeconds": 0.8712,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 53,
+      "ptsSeconds": 0.887767,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 54,
+      "ptsSeconds": 0.904178,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 55,
+      "ptsSeconds": 0.926878,
+      "panelTopPx": 633,
+      "trackedPanelTopPx": 633,
+      "closeTemplateTopPx": 633,
+      "closeTemplateCorrelation": 0.9991884231567383,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 56,
+      "ptsSeconds": 0.942989,
+      "panelTopPx": 791,
+      "trackedPanelTopPx": 791,
+      "closeTemplateTopPx": 791,
+      "closeTemplateCorrelation": 0.9983558058738708,
+      "wideWhiteRowFraction": 0.9291666666666667
+    },
+    {
+      "index": 57,
+      "ptsSeconds": 0.960267,
+      "panelTopPx": 1056,
+      "trackedPanelTopPx": 1056,
+      "closeTemplateTopPx": 1056,
+      "closeTemplateCorrelation": 0.9986665844917297,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 58,
+      "ptsSeconds": 0.968633,
+      "panelTopPx": 1168,
+      "trackedPanelTopPx": 1168,
+      "closeTemplateTopPx": 1167,
+      "closeTemplateCorrelation": 0.9966772198677063,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 59,
+      "ptsSeconds": 0.977,
+      "panelTopPx": 1271,
+      "trackedPanelTopPx": 1271,
+      "closeTemplateTopPx": 1270,
+      "closeTemplateCorrelation": 0.9949639439582825,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 60,
+      "ptsSeconds": 0.985367,
+      "panelTopPx": 1366,
+      "trackedPanelTopPx": 1366,
+      "closeTemplateTopPx": 1365,
+      "closeTemplateCorrelation": 0.9931438565254211,
+      "wideWhiteRowFraction": 0.9833333333333333
+    },
+    {
+      "index": 61,
+      "ptsSeconds": 0.993544,
+      "panelTopPx": 1465,
+      "trackedPanelTopPx": 1465,
+      "closeTemplateTopPx": 1463,
+      "closeTemplateCorrelation": 0.9935813546180725,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 62,
+      "ptsSeconds": 1.000833,
+      "panelTopPx": 1543,
+      "trackedPanelTopPx": 1543,
+      "closeTemplateTopPx": 1542,
+      "closeTemplateCorrelation": 0.991017758846283,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 63,
+      "ptsSeconds": 1.0089,
+      "panelTopPx": 1616,
+      "trackedPanelTopPx": 1616,
+      "closeTemplateTopPx": 1616,
+      "closeTemplateCorrelation": 0.9902185201644897,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 64,
+      "ptsSeconds": 1.017622,
+      "panelTopPx": 1695,
+      "trackedPanelTopPx": 1695,
+      "closeTemplateTopPx": 1691,
+      "closeTemplateCorrelation": 0.9853903651237488,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 65,
+      "ptsSeconds": 1.025544,
+      "panelTopPx": 1752,
+      "trackedPanelTopPx": 1752,
+      "closeTemplateTopPx": 1752,
+      "closeTemplateCorrelation": 0.9896283745765686,
+      "wideWhiteRowFraction": 0.9375
+    },
+    {
+      "index": 66,
+      "ptsSeconds": 1.034078,
+      "panelTopPx": 1808,
+      "trackedPanelTopPx": 1808,
+      "closeTemplateTopPx": 1808,
+      "closeTemplateCorrelation": 0.9898666739463806,
+      "wideWhiteRowFraction": 0.9666666666666667
+    },
+    {
+      "index": 67,
+      "ptsSeconds": 1.042156,
+      "panelTopPx": 1868,
+      "trackedPanelTopPx": 1868,
+      "closeTemplateTopPx": 1865,
+      "closeTemplateCorrelation": 0.9911199808120728,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 68,
+      "ptsSeconds": 1.0505,
+      "panelTopPx": 1913,
+      "trackedPanelTopPx": 1913,
+      "closeTemplateTopPx": 1910,
+      "closeTemplateCorrelation": 0.9904519319534302,
+      "wideWhiteRowFraction": 0.95
+    },
+    {
+      "index": 69,
+      "ptsSeconds": 1.0587,
+      "panelTopPx": 1952,
+      "trackedPanelTopPx": 1952,
+      "closeTemplateTopPx": 1952,
+      "closeTemplateCorrelation": 0.9907919764518738,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 70,
+      "ptsSeconds": 1.067189,
+      "panelTopPx": 2000,
+      "trackedPanelTopPx": 2000,
+      "closeTemplateTopPx": 1994,
+      "closeTemplateCorrelation": 0.991885781288147,
+      "wideWhiteRowFraction": 0.9958333333333333
+    },
+    {
+      "index": 71,
+      "ptsSeconds": 1.075478,
+      "panelTopPx": 2028,
+      "trackedPanelTopPx": 2028,
+      "closeTemplateTopPx": 2027,
+      "closeTemplateCorrelation": 0.9920040965080261,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 72,
+      "ptsSeconds": 1.084033,
+      "panelTopPx": 2059,
+      "trackedPanelTopPx": 2059,
+      "closeTemplateTopPx": 2058,
+      "closeTemplateCorrelation": 0.9919315576553345,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 73,
+      "ptsSeconds": 1.093489,
+      "panelTopPx": 2093,
+      "trackedPanelTopPx": 2093,
+      "closeTemplateTopPx": 2088,
+      "closeTemplateCorrelation": 0.9918981194496155,
+      "wideWhiteRowFraction": 0.9333333333333333
+    },
+    {
+      "index": 74,
+      "ptsSeconds": 1.100933,
+      "panelTopPx": 2112,
+      "trackedPanelTopPx": 2112,
+      "closeTemplateTopPx": 2112,
+      "closeTemplateCorrelation": 0.9917260408401489,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 75,
+      "ptsSeconds": 1.109233,
+      "panelTopPx": 2133,
+      "trackedPanelTopPx": 2133,
+      "closeTemplateTopPx": 2133,
+      "closeTemplateCorrelation": 0.9929302930831909,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 76,
+      "ptsSeconds": 1.117533,
+      "panelTopPx": 2157,
+      "trackedPanelTopPx": 2157,
+      "closeTemplateTopPx": 2155,
+      "closeTemplateCorrelation": 0.9927231669425964,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 77,
+      "ptsSeconds": 1.125833,
+      "panelTopPx": 2176,
+      "trackedPanelTopPx": 2176,
+      "closeTemplateTopPx": 2171,
+      "closeTemplateCorrelation": 0.9924750924110413,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 78,
+      "ptsSeconds": 1.134133,
+      "panelTopPx": 2187,
+      "trackedPanelTopPx": 2187,
+      "closeTemplateTopPx": 2185,
+      "closeTemplateCorrelation": 0.5247125029563904,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 79,
+      "ptsSeconds": 1.142433,
+      "panelTopPx": 2205,
+      "trackedPanelTopPx": 2205,
+      "closeTemplateTopPx": 1964,
+      "closeTemplateCorrelation": 0.3542410135269165,
+      "wideWhiteRowFraction": 0.9458333333333333
+    },
+    {
+      "index": 80,
+      "ptsSeconds": 1.150922,
+      "panelTopPx": 2215,
+      "trackedPanelTopPx": 2215,
+      "closeTemplateTopPx": 1964,
+      "closeTemplateCorrelation": 0.3495481312274933,
+      "wideWhiteRowFraction": 0.9666666666666667
+    },
+    {
+      "index": 81,
+      "ptsSeconds": 1.159122,
+      "panelTopPx": 2222,
+      "trackedPanelTopPx": 2222,
+      "closeTemplateTopPx": 1963,
+      "closeTemplateCorrelation": 0.36203286051750183,
+      "wideWhiteRowFraction": 0.9583333333333334
+    },
+    {
+      "index": 82,
+      "ptsSeconds": 1.167489,
+      "panelTopPx": 2232,
+      "trackedPanelTopPx": 2232,
+      "closeTemplateTopPx": 1963,
+      "closeTemplateCorrelation": 0.3455023765563965,
+      "wideWhiteRowFraction": 0.9875
+    },
+    {
+      "index": 83,
+      "ptsSeconds": 1.1757,
+      "panelTopPx": 2240,
+      "trackedPanelTopPx": 2240,
+      "closeTemplateTopPx": 1963,
+      "closeTemplateCorrelation": 0.3470538854598999,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 84,
+      "ptsSeconds": 1.184722,
+      "panelTopPx": 2244,
+      "trackedPanelTopPx": 2244,
+      "closeTemplateTopPx": 1963,
+      "closeTemplateCorrelation": 0.34233084321022034,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 85,
+      "ptsSeconds": 1.192544,
+      "panelTopPx": 2250,
+      "trackedPanelTopPx": 2250,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.3455065190792084,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 86,
+      "ptsSeconds": 1.200978,
+      "panelTopPx": 2254,
+      "trackedPanelTopPx": 2254,
+      "closeTemplateTopPx": 1961,
+      "closeTemplateCorrelation": 0.37621691823005676,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 87,
+      "ptsSeconds": 1.209044,
+      "panelTopPx": 2258,
+      "trackedPanelTopPx": 2258,
+      "closeTemplateTopPx": 1961,
+      "closeTemplateCorrelation": 0.3832304775714874,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 88,
+      "ptsSeconds": 1.217533,
+      "panelTopPx": 2261,
+      "trackedPanelTopPx": 2261,
+      "closeTemplateTopPx": 1961,
+      "closeTemplateCorrelation": 0.4022443890571594,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 89,
+      "ptsSeconds": 1.225589,
+      "panelTopPx": 2264,
+      "trackedPanelTopPx": 2264,
+      "closeTemplateTopPx": 1961,
+      "closeTemplateCorrelation": 0.4058017134666443,
+      "wideWhiteRowFraction": 1.0
+    },
+    {
+      "index": 90,
+      "ptsSeconds": 1.234322,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1961,
+      "closeTemplateCorrelation": 0.42797937989234924,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 91,
+      "ptsSeconds": 1.242311,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1961,
+      "closeTemplateCorrelation": 0.4384496212005615,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 92,
+      "ptsSeconds": 1.250856,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.35921889543533325,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 93,
+      "ptsSeconds": 1.259,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1963,
+      "closeTemplateCorrelation": 0.3660915493965149,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 94,
+      "ptsSeconds": 1.267444,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1964,
+      "closeTemplateCorrelation": 0.31313103437423706,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 95,
+      "ptsSeconds": 1.275622,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1964,
+      "closeTemplateCorrelation": 0.3205714225769043,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 96,
+      "ptsSeconds": 1.284322,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1276,
+      "closeTemplateCorrelation": 0.2729682922363281,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 97,
+      "ptsSeconds": 1.301533,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1276,
+      "closeTemplateCorrelation": 0.2774636745452881,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 98,
+      "ptsSeconds": 1.310756,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1276,
+      "closeTemplateCorrelation": 0.26985469460487366,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 99,
+      "ptsSeconds": 1.319378,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1276,
+      "closeTemplateCorrelation": 0.26346880197525024,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 100,
+      "ptsSeconds": 1.326867,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1276,
+      "closeTemplateCorrelation": 0.27174755930900574,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 101,
+      "ptsSeconds": 1.334678,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1276,
+      "closeTemplateCorrelation": 0.26707693934440613,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 102,
+      "ptsSeconds": 1.342489,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1966,
+      "closeTemplateCorrelation": 0.2650558650493622,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 103,
+      "ptsSeconds": 1.350844,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1276,
+      "closeTemplateCorrelation": 0.26265040040016174,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 104,
+      "ptsSeconds": 1.359744,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1965,
+      "closeTemplateCorrelation": 0.2717958092689514,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 105,
+      "ptsSeconds": 1.367478,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1275,
+      "closeTemplateCorrelation": 0.2751777768135071,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 106,
+      "ptsSeconds": 1.376867,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1275,
+      "closeTemplateCorrelation": 0.2778369188308716,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 107,
+      "ptsSeconds": 1.384633,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1967,
+      "closeTemplateCorrelation": 0.30203568935394287,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 108,
+      "ptsSeconds": 1.392856,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1967,
+      "closeTemplateCorrelation": 0.30203568935394287,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 109,
+      "ptsSeconds": 1.401078,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1275,
+      "closeTemplateCorrelation": 0.2711867094039917,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 110,
+      "ptsSeconds": 1.409811,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1275,
+      "closeTemplateCorrelation": 0.2712041735649109,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 111,
+      "ptsSeconds": 1.417889,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 864,
+      "closeTemplateCorrelation": 0.2884356677532196,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 112,
+      "ptsSeconds": 1.426478,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 864,
+      "closeTemplateCorrelation": 0.2884095013141632,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 113,
+      "ptsSeconds": 1.434489,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1965,
+      "closeTemplateCorrelation": 0.27289408445358276,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 114,
+      "ptsSeconds": 1.443311,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1965,
+      "closeTemplateCorrelation": 0.2740021347999573,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 115,
+      "ptsSeconds": 1.451167,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1275,
+      "closeTemplateCorrelation": 0.2703723907470703,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 116,
+      "ptsSeconds": 1.459644,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1275,
+      "closeTemplateCorrelation": 0.2703723907470703,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 117,
+      "ptsSeconds": 1.468711,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1965,
+      "closeTemplateCorrelation": 0.3630322217941284,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 118,
+      "ptsSeconds": 1.477222,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1965,
+      "closeTemplateCorrelation": 0.36701062321662903,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 119,
+      "ptsSeconds": 1.485544,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1963,
+      "closeTemplateCorrelation": 0.2803223431110382,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 120,
+      "ptsSeconds": 1.500444,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1963,
+      "closeTemplateCorrelation": 0.30891555547714233,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 121,
+      "ptsSeconds": 1.517389,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1963,
+      "closeTemplateCorrelation": 0.3131517767906189,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 122,
+      "ptsSeconds": 1.533933,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1963,
+      "closeTemplateCorrelation": 0.2814171314239502,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 123,
+      "ptsSeconds": 1.550756,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1276,
+      "closeTemplateCorrelation": 0.2841396629810333,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 124,
+      "ptsSeconds": 1.567256,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 919,
+      "closeTemplateCorrelation": 0.2940042018890381,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 125,
+      "ptsSeconds": 1.583756,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 918,
+      "closeTemplateCorrelation": 0.33790352940559387,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 126,
+      "ptsSeconds": 1.6008,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 918,
+      "closeTemplateCorrelation": 0.36980926990509033,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 127,
+      "ptsSeconds": 1.617289,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 918,
+      "closeTemplateCorrelation": 0.3929239809513092,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 128,
+      "ptsSeconds": 1.634433,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 918,
+      "closeTemplateCorrelation": 0.36198657751083374,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 129,
+      "ptsSeconds": 1.6511,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 917,
+      "closeTemplateCorrelation": 0.34593328833580017,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 130,
+      "ptsSeconds": 1.667,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 917,
+      "closeTemplateCorrelation": 0.3313531279563904,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 131,
+      "ptsSeconds": 1.683133,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 917,
+      "closeTemplateCorrelation": 0.3058072626590729,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 132,
+      "ptsSeconds": 1.700067,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 917,
+      "closeTemplateCorrelation": 0.2932451665401459,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 133,
+      "ptsSeconds": 1.716633,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 916,
+      "closeTemplateCorrelation": 0.2869928777217865,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 134,
+      "ptsSeconds": 1.7332,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 970,
+      "closeTemplateCorrelation": 0.28679755330085754,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 135,
+      "ptsSeconds": 1.750367,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 970,
+      "closeTemplateCorrelation": 0.27951955795288086,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 136,
+      "ptsSeconds": 1.766889,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 970,
+      "closeTemplateCorrelation": 0.27359631657600403,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 137,
+      "ptsSeconds": 1.783411,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1276,
+      "closeTemplateCorrelation": 0.27355116605758667,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 138,
+      "ptsSeconds": 1.799933,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1276,
+      "closeTemplateCorrelation": 0.26921066641807556,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 139,
+      "ptsSeconds": 1.8082,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1276,
+      "closeTemplateCorrelation": 0.26921066641807556,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 140,
+      "ptsSeconds": 1.816467,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1469,
+      "closeTemplateCorrelation": 0.27342116832733154,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 141,
+      "ptsSeconds": 1.833167,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1276,
+      "closeTemplateCorrelation": 0.2712225019931793,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 142,
+      "ptsSeconds": 1.849867,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.2876218855381012,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 143,
+      "ptsSeconds": 1.866456,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.2978385090827942,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 144,
+      "ptsSeconds": 1.883044,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.29678574204444885,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 145,
+      "ptsSeconds": 1.899756,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.3019748628139496,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 146,
+      "ptsSeconds": 1.916467,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.302578866481781,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 147,
+      "ptsSeconds": 1.933044,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1961,
+      "closeTemplateCorrelation": 0.3071525990962982,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 148,
+      "ptsSeconds": 1.949622,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.2965119183063507,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 149,
+      "ptsSeconds": 1.966556,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.29905441403388977,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 150,
+      "ptsSeconds": 1.983311,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.2998368442058563,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 151,
+      "ptsSeconds": 2.000067,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.3084477186203003,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 152,
+      "ptsSeconds": 2.008222,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.3084477186203003,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 153,
+      "ptsSeconds": 2.016867,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.3091663718223572,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 154,
+      "ptsSeconds": 2.033467,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.31027740240097046,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 155,
+      "ptsSeconds": 2.050333,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.3030756115913391,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 156,
+      "ptsSeconds": 2.067789,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.3058393895626068,
+      "wideWhiteRowFraction": null
+    },
+    {
+      "index": 157,
+      "ptsSeconds": 2.083656,
+      "panelTopPx": 2271,
+      "trackedPanelTopPx": 2271,
+      "closeTemplateTopPx": 1962,
+      "closeTemplateCorrelation": 0.2855781018733978,
+      "wideWhiteRowFraction": null
+    }
+  ],
+  "limits": "Opening is translucent initially: white-row detection fails and cannot determine full duration. The close-icon track covers only its reliably visible portion; null is untracked, not absence. This is not a compositor property."
+}

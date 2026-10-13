@@ -1,0 +1,3 @@
+    public final void z7(boolean z4, boolean z9) {
+        p.r((FrameLayout) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f091367), z4, new d(z9));
+    }

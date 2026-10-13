@@ -1,0 +1,35 @@
+    public final void o8(NoteFeed noteFeed) {
+        if (PatchProxy.proxyVoid1Para(noteFeed, this, NoteDetailImageDisplayPresenter.class, 298266)) {
+            return;
+        }
+        TextureRenderViewV2 textureRenderViewV2 = (TextureRenderViewV2) w6().findViewById(l56.n.f224069g);
+        ImageBean imageBean = (ImageBean) CollectionsKt___CollectionsKt.getOrNull(noteFeed.u0(), this.f108314r);
+        XhsFilterModel xhsFilterModelO = imageBean != null ? imageBean.o() : null;
+        if (xhsFilterModelO != null) {
+            String strG = xhsFilterModelO.g();
+            if (!(strG == null || strG.length() == 0)) {
+                s68.o.q(textureRenderViewV2);
+                String strO = xhsFilterModelO.o();
+                if (!(strO == null || strO.length() == 0)) {
+                    String strO2 = xhsFilterModelO.o();
+                    if (strO2 != null) {
+                        f79.a.C2878a.b(textureRenderViewV2, new File(strO2), true, false, null, 12, null);
+                        return;
+                    }
+                    return;
+                }
+                String strG2 = xhsFilterModelO.g();
+                if (strG2 != null) {
+                    Object context = textureRenderViewV2.getContext();
+                    zk.a0 a0Var = context instanceof zk.a0 ? (zk.a0) context : null;
+                    if (a0Var == null) {
+                        a0Var = zk.a0.f392849m0;
+                    }
+                    jv7.e.m(new jv7.e(a0Var, strG2, xhsFilterModelO.h()), new i1(xhsFilterModelO, textureRenderViewV2), false, null, null, 12, null);
+                    return;
+                }
+                return;
+            }
+        }
+        s68.o.d(textureRenderViewV2);
+    }

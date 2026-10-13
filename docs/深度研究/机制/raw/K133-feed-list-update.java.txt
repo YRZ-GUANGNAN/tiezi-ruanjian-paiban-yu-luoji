@@ -1,0 +1,4 @@
+    public final String u1(boolean z100, List<? extends Object> list, String str) {
+        PatchProxyResult patchProxyResultProxy3Para = PatchProxy.proxy3Para(new Boolean(z100), list, str, this, ExploreView.class, 365329);
+        return patchProxyResultProxy3Para.isSupported ? (String) patchProxyResultProxy3Para.result : getMExplorePresenter().V6().f(z100, list, str);
+    }

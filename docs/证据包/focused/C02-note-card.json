@@ -1,0 +1,1121 @@
+{
+  "evidence_id": "ev_45b1db715d7f1cdb356ec3641d4978ebb5cfe38fe78624cb87fa8355969554ff",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.entities.NoteItemBean"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.entities.NoteItemBean"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"CREATOR\",\"def_pos\":0,\"type\":\"android.os.Parcelable$Creator\\u003ccom.xingin.entities.NoteItemBean\\u003e\"},{\"name\":\"activityInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteItemBean$ActivityInfo\"},{\"name\":\"adsInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.ad.AdsInfo\"},{\"name\":\"advancedWidgetsGroups\",\"def_pos\":0,\"type\":\"com.xingin.entities.AdvancedWidgetsGroups\"},{\"name\":\"ats\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003ccom.xingin.entities.AtUserInfo\\u003e\"},{\"name\":\"attachQuestionnaire\",\"def_pos\":0,\"type\":\"com.xingin.entities.card.QuestionnaireSurveyBean\"},{\"name\":\"attributes\",\"def_pos\":0,\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\"},{\"name\":\"badgeInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.BadgeInfo\"},{\"name\":\"bindState\",\"def_pos\":0,\"type\":\"xh4.b1\"},{\"name\":\"bizRelations\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003cxh4.c1\\u003e\"},{\"name\":\"blockPrivateMsg\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"},{\"name\":\"brandList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.NoteItemBean$Brand\\u003e\"},{\"name\":\"browsingHistoryState\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"buttonText\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"capaVersion\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"channelCard\",\"def_pos\":0,\"type\":\"com.xingin.entities.cardbean.FeedChannelCardBean\"},{\"name\":\"channelId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"cnyPendantInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.pendant.config.CnyPendantInfo\"},{\"name\":\"coCreation\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.NoteCoCreation\"},{\"name\":\"collectedCount\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"comments\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"commentsCount\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"componentState\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"componentTip\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"cornerTags\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.Tag\\u003e\"},{\"name\":\"cornerText\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"cover\",\"def_pos\":0,\"type\":\"com.xingin.entities.ImageBean\"},{\"name\":\"coverCallContext\",\"def_pos\":0,\"type\":\"java.lang.Object\"},{\"name\":\"createTime\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"cursorScore\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"debugInfo\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"defenseDemotion\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"deleteCooperateNoteDialogInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteItemBean$DeleteCooperateNoteDialogInfo\"},{\"name\":\"demotion\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"descHtml\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"descHtmlUrl\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"disableFirstBrushCache\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"dislikeOptionInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.DislikeOptionInfo\"},{\"name\":\"displayGoodsInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteItemBean$GoodsInfo\"},{\"name\":\"displayInfo\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"displayTitle\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"enabled\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"extraButton\",\"def_pos\":0,\"type\":\"com.xingin.entities.card.ExtraButton\"},{\"name\":\"extraInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteExtraInfo\"},{\"name\":\"f50892id1\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"filter_tags\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003ccom.xingin.entities.BaseTagBean\\u003e\"},{\"name\":\"generateItemIndex\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"geo\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"geoInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.Geo\"},{\"name\":\"geoLink\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"goodsCardIcon\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"goodsCooperateList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.NoteItemBean$GoodsCooperate\\u003e\"},{\"name\":\"goodsInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteDetailGoodsInfo\"},{\"name\":\"goodsNoteV2\",\"def_pos\":0,\"type\":\"com.xingin.entities.followfeed.GoodsNoteV2\"},{\"name\":\"graffitiTrackData\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.capa.ReportAIGeneratedTrackInfo\\u003e\"},{\"name\":\"grayMask\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"},{\"name\":\"groupShareTitle\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"hasCoProduce\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"hasExposure\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"hasImpressed\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"hasMusic\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"hasShow\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"hashTag\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003ccom.xingin.entities.HashTagListBean$HashTag\\u003e\"},{\"name\":\"hashTags\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003ccom.xingin.entities.BaseTagBean\\u003e\"},{\"name\":\"haveRedPacket\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"},{\"name\":\"height\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"hfRecoAttrs\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"homeChannelId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"icon\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteItemBean$AdsIcon\"},{\"name\":\"illegalInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.IllegalInfo\"},{\"name\":\"image\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"imageFromLocal\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"imageUrl\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"imageUrlDark\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"imageb\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"infavs\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"inlikes\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isAd\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isAdTracking\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isBrand\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isFromCache\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isFromHeraFeedCache\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isFromHomeFeedCache\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isFromRedTvSingle\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isFromWkFeedCache\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isGoodsNote\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isNotNeedConsumption\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isPlay\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isRedtube\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isShowAdTips\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isTopShowEcoOfficerNote\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"isTrackingUpgrade\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"itemExtraInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteItemExtraInfo\"},{\"name\":\"label\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"labelMap\",\"def_pos\":0,\"type\":\"java.util.HashMap\\u003cjava.lang.String, java.lang.String\\u003e\"},{\"name\":\"lastUpdateTime\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"likedCount\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"likes\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"link\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"live\",\"def_pos\":0,\"type\":\"com.xingin.entities.cardbean.LiveCardBean\"},{\"name\":\"liveShootingTag\",\"def_pos\":0,\"type\":\"com.xingin.entities.LiveShootingTagBean\"},{\"name\":\"localContentExhausted\",\"def_pos\":0,\"type\":\"com.xingin.entities.LocalContentExhausted\"},{\"name\":\"localCoverPath\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"localInsertNote\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"longPressShareInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.LongPressShareInfo\"},{\"name\":\"longTextToImage\",\"def_pos\":0,\"type\":\"com.xingin.entities.capa.ReportAIGeneratedTrackInfo\"},{\"name\":\"mediaSaveConfig\",\"def_pos\":0,\"type\":\"com.xingin.entities.MediaSaveConfig\"},{\"name\":\"metadata\",\"def_pos\":0,\"type\":\"com.xingin.entities.capa.MetaData\"},{\"name\":\"mixRankTrackId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"modelType\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"musicInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.MusicBean\"},{\"name\":\"name\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"nearbyLiveCornerTag\",\"def_pos\":0,\"type\":\"com.xingin.entities.Tag\"},{\"name\":\"needDynamicCover\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"niceCount\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"niced\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"notePriorityCoverInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteItemBean$NotePriorityCoverInfo\"},{\"name\":\"noteProductReviewBean\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteProductReviewBean\"},{\"name\":\"noteTradeInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteTradeInfo\"},{\"name\":\"noteWidgets\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.NoteWidgets\"},{\"name\":\"notes\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.NoteItemBean$InterestNote\\u003e\"},{\"name\":\"operationList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.cardbean.LiveOperationItemBean\\u003e\"},{\"name\":\"options\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.card.OptionBean\\u003e\"},{\"name\":\"orderCooperate\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteItemBean$OrderCooperate\"},{\"name\":\"pkFileId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"pkStatusInfo\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"platform\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"poiIdList\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"poiTypeList\",\"def_pos\":0,\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\"},{\"name\":\"polyCard\",\"def_pos\":0,\"type\":\"com.xingin.entities.cardbean.FeedPolyCardBean\"},{\"name\":\"postLoc\",\"def_pos\":0,\"type\":\"com.xingin.entities.AddressV3Bean\"},{\"name\":\"postLocList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.AddressV3Bean\\u003e\"},{\"name\":\"postTime\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"postTiming\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"preLoadInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.a\"},{\"name\":\"preLoadInfoStr\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"price\",\"def_pos\":0,\"type\":\"float\"},{\"name\":\"privacy\",\"def_pos\":0,\"type\":\"com.xingin.entities.Privacy\"},{\"name\":\"projectId\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"queries\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.ExploreSearchRecommendQuery\\u003e\"},{\"name\":\"quesType\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"questionnaireId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"rankCardBean\",\"def_pos\":0,\"type\":\"com.xingin.entities.cardbean.LiveGoodsRankCardBean\"},{\"name\":\"reason\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"recExtraInfo\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"recParams\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"recommend\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteRecommendInfo\"},{\"name\":\"redDotLinkId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"redPacket\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteDetailRedPacketBean\"},{\"name\":\"redtubeFirstNoteId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"relatedQuestionnaire\",\"def_pos\":0,\"type\":\"com.xingin.entities.card.QuestionnaireBean\"},{\"name\":\"shareCodeFlag\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"shareCount\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"shareImageEntranceMap\",\"def_pos\":0,\"type\":\"java.util.LinkedHashMap\\u003cjava.lang.String, bn9.g\\u003cjava.lang.Boolean, java.lang.String\\u003e\\u003e\"},{\"name\":\"shareInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.ShareInfoDetail\"},{\"name\":\"share_link\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"sharedCount\",\"def_pos\":0,\"type\":\"long\"},{\"name\":\"showDynamicCover\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"showHaveSeen\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"},{\"name\":\"showInNoteCardForm\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"showWeChatTag\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"},{\"name\":\"sketchId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"soundInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.SoundBean\"},{\"name\":\"source\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"sticky\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"style\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"subNoteType\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"subQuestionDeeplink\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"surveyType\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"taskId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"tempCoverIndex\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"time\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"timestamp\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"tips\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"topicConfig\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteItemBean$TopicConfig\"},{\"name\":\"topicInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.TopicInfo\"},{\"name\":\"topics\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.TopicBean\\u003e\"},{\"name\":\"trackId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"trackingUpgradeClickUrls\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003cjava.lang.String\\u003e\"},{\"name\":\"trackingUpgradeImpressiomUrls\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003cjava.lang.String\\u003e\"},{\"name\":\"trailerNote\",\"def_pos\":0,\"type\":\"com.xingin.entities.cardbean.LiveNoteItemBean\"},{\"name\":\"ttiTrackData\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.capa.ReportAIGeneratedTrackInfo\\u003e\"},{\"name\":\"uiType\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"userCoverShareV2\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"userSmallDiskCache\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"userSubTitle\",\"def_pos\":0,\"type\":\"com.xingin.entities.NoteItemBean$UserSubTitle\"},{\"name\":\"video\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"videoPreviewType\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"viewCount\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"watchingNum\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"widgetsContext\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"width\",\"def_pos\":0,\"type\":\"int\"}],\"field_count\":192,\"full_name\":\"com.xingin.entities.NoteItemBean\",\"name\":\"NoteItemBean\",\"inner_classes\":[\"com.xingin.entities.NoteItemBean.ActivityInfo\",\"com.xingin.entities.NoteItemBean.AdsIcon\",\"com.xingin.entities.NoteItemBean.Brand\",\"com.xingin.entities.NoteItemBean.BrandAccount\",\"com.xingin.entities.NoteItemBean.DeleteCooperateNoteDialogInfo\",\"com.xingin.entities.NoteItemBean.GoodsCooperate\",\"com.xingin.entities.NoteItemBean.GoodsCooperateH5\",\"com.xingin.entities.NoteItemBean.GoodsInfo\",\"com.xingin.entities.NoteItemBean.InterestNote\",\"com.xingin.entities.NoteItemBean.NotePriorityCoverInfo\",\"com.xingin.entities.NoteItemBean.OrderCooperate\",\"com.xingin.entities.NoteItemBean.TopicConfig\",\"com.xingin.entities.NoteItemBean.UserSubTitle\",\"com.xingin.entities.NoteItemBean.a\",\"com.xingin.entities.NoteItemBean.b\"],\"inner_class_count\":15,\"method_count\":33,\"methods\":[{\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"signature\":\"\\u003cclinit\\u003e(): void\"},{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\"},{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(android.os.Parcel): void\"},{\"def_pos\":0,\"name\":\"B0\",\"is_constructor\":false,\"signature\":\"B0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"C0\",\"is_constructor\":false,\"signature\":\"C0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"I0\",\"is_constructor\":false,\"signature\":\"I0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"M0\",\"is_constructor\":false,\"signature\":\"M0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"P0\",\"is_constructor\":false,\"signature\":\"P0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"S0\",\"is_constructor\":false,\"signature\":\"S0(): com.xingin.entities.ShareInfoDetail\"},{\"def_pos\":0,\"name\":\"X\",\"is_constructor\":false,\"signature\":\"X(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"Y0\",\"is_constructor\":false,\"signature\":\"Y0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"Z0\",\"is_constructor\":false,\"signature\":\"Z0(): boolean\"},{\"def_pos\":0,\"name\":\"a1\",\"is_constructor\":false,\"signature\":\"a1(): boolean\"},{\"def_pos\":0,\"name\":\"b1\",\"is_constructor\":false,\"signature\":\"b1(): boolean\"},{\"def_pos\":0,\"name\":\"c1\",\"is_constructor\":false,\"signature\":\"c1(): boolean\"},{\"def_pos\":0,\"name\":\"clone\",\"is_constructor\":false,\"signature\":\"clone(): java.lang.Object\"},{\"def_pos\":0,\"name\":\"d1\",\"is_constructor\":false,\"signature\":\"d1(): void\"},{\"def_pos\":0,\"name\":\"describeContents\",\"is_constructor\":false,\"signature\":\"describeContents(): int\"},{\"def_pos\":0,\"name\":\"equals\",\"is_constructor\":false,\"signature\":\"equals(java.lang.Object): boolean\"},{\"def_pos\":0,\"name\":\"f1\",\"is_constructor\":false,\"signature\":\"f1(): com.xingin.entities.MusicBean\"},{\"def_pos\":0,\"name\":\"getId\",\"is_constructor\":false,\"signature\":\"getId(): java.lang.String\"},{\"def_pos\":0,\"name\":\"getPreloadAble\",\"is_constructor\":false,\"signature\":\"getPreloadAble(): com.xingin.entities.a\"},{\"def_pos\":0,\"name\":\"i0\",\"is_constructor\":false,\"signature\":\"i0(): com.google.gson.l\"},{\"def_pos\":0,\"name\":\"j0\",\"is_constructor\":false,\"signature\":\"j0(java.lang.String): com.xingin.entities.NoteItemBean\"},{\"def_pos\":0,\"name\":\"l0\",\"is_constructor\":false,\"signature\":\"l0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"m0\",\"is_constructor\":false,\"signature\":\"m0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"n0\",\"is_constructor\":false,\"signature\":\"n0(): long\"},{\"def_pos\":0,\"name\":\"r0\",\"is_constructor\":false,\"signature\":\"r0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"t0\",\"is_constructor\":false,\"signature\":\"t0(): com.xingin.entities.ImageBean\"},{\"def_pos\":0,\"name\":\"v0\",\"is_constructor\":false,\"signature\":\"v0(): float\"},{\"def_pos\":0,\"name\":\"writeToParcel\",\"is_constructor\":false,\"signature\":\"writeToParcel(android.os.Parcel, int): void\"},{\"def_pos\":0,\"name\":\"y0\",\"is_constructor\":false,\"signature\":\"y0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"z0\",\"is_constructor\":false,\"signature\":\"z0(): long\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.entities.NoteItemBean",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.os.Parcel): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B0",
+        "reported_signature": "B0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C0",
+        "reported_signature": "C0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I0",
+        "reported_signature": "I0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M0",
+        "reported_signature": "M0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "P0",
+        "reported_signature": "P0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S0",
+        "reported_signature": "S0(): com.xingin.entities.ShareInfoDetail",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "X",
+        "reported_signature": "X(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y0",
+        "reported_signature": "Y0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Z0",
+        "reported_signature": "Z0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a1",
+        "reported_signature": "a1(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b1",
+        "reported_signature": "b1(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c1",
+        "reported_signature": "c1(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "clone",
+        "reported_signature": "clone(): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d1",
+        "reported_signature": "d1(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "describeContents",
+        "reported_signature": "describeContents(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "equals",
+        "reported_signature": "equals(java.lang.Object): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f1",
+        "reported_signature": "f1(): com.xingin.entities.MusicBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getId",
+        "reported_signature": "getId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPreloadAble",
+        "reported_signature": "getPreloadAble(): com.xingin.entities.a",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i0",
+        "reported_signature": "i0(): com.google.gson.l",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j0",
+        "reported_signature": "j0(java.lang.String): com.xingin.entities.NoteItemBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l0",
+        "reported_signature": "l0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m0",
+        "reported_signature": "m0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n0",
+        "reported_signature": "n0(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r0",
+        "reported_signature": "r0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t0",
+        "reported_signature": "t0(): com.xingin.entities.ImageBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v0",
+        "reported_signature": "v0(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "writeToParcel",
+        "reported_signature": "writeToParcel(android.os.Parcel, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y0",
+        "reported_signature": "y0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z0",
+        "reported_signature": "z0(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "CREATOR",
+        "reported_type": "android.os.Parcelable$Creator<com.xingin.entities.NoteItemBean>"
+      },
+      {
+        "name": "activityInfo",
+        "reported_type": "com.xingin.entities.NoteItemBean$ActivityInfo"
+      },
+      {
+        "name": "adsInfo",
+        "reported_type": "com.xingin.entities.ad.AdsInfo"
+      },
+      {
+        "name": "advancedWidgetsGroups",
+        "reported_type": "com.xingin.entities.AdvancedWidgetsGroups"
+      },
+      {
+        "name": "ats",
+        "reported_type": "java.util.ArrayList<com.xingin.entities.AtUserInfo>"
+      },
+      {
+        "name": "attachQuestionnaire",
+        "reported_type": "com.xingin.entities.card.QuestionnaireSurveyBean"
+      },
+      {
+        "name": "attributes",
+        "reported_type": "java.util.List<java.lang.String>"
+      },
+      {
+        "name": "badgeInfo",
+        "reported_type": "com.xingin.entities.BadgeInfo"
+      },
+      {
+        "name": "bindState",
+        "reported_type": "xh4.b1"
+      },
+      {
+        "name": "bizRelations",
+        "reported_type": "java.util.ArrayList<xh4.c1>"
+      },
+      {
+        "name": "blockPrivateMsg",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "brandList",
+        "reported_type": "java.util.List<com.xingin.entities.NoteItemBean$Brand>"
+      },
+      {
+        "name": "browsingHistoryState",
+        "reported_type": "int"
+      },
+      {
+        "name": "buttonText",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "capaVersion",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "channelCard",
+        "reported_type": "com.xingin.entities.cardbean.FeedChannelCardBean"
+      },
+      {
+        "name": "channelId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "cnyPendantInfo",
+        "reported_type": "com.xingin.entities.pendant.config.CnyPendantInfo"
+      },
+      {
+        "name": "coCreation",
+        "reported_type": "com.xingin.entities.notedetail.NoteCoCreation"
+      },
+      {
+        "name": "collectedCount",
+        "reported_type": "long"
+      },
+      {
+        "name": "comments",
+        "reported_type": "int"
+      },
+      {
+        "name": "commentsCount",
+        "reported_type": "long"
+      },
+      {
+        "name": "componentState",
+        "reported_type": "int"
+      },
+      {
+        "name": "componentTip",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "cornerTags",
+        "reported_type": "java.util.List<com.xingin.entities.Tag>"
+      },
+      {
+        "name": "cornerText",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "cover",
+        "reported_type": "com.xingin.entities.ImageBean"
+      },
+      {
+        "name": "coverCallContext",
+        "reported_type": "java.lang.Object"
+      },
+      {
+        "name": "createTime",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "cursorScore",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "debugInfo",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "defenseDemotion",
+        "reported_type": "int"
+      },
+      {
+        "name": "deleteCooperateNoteDialogInfo",
+        "reported_type": "com.xingin.entities.NoteItemBean$DeleteCooperateNoteDialogInfo"
+      },
+      {
+        "name": "demotion",
+        "reported_type": "int"
+      },
+      {
+        "name": "descHtml",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "descHtmlUrl",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "disableFirstBrushCache",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "dislikeOptionInfo",
+        "reported_type": "com.xingin.entities.DislikeOptionInfo"
+      },
+      {
+        "name": "displayGoodsInfo",
+        "reported_type": "com.xingin.entities.NoteItemBean$GoodsInfo"
+      },
+      {
+        "name": "displayInfo",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "displayTitle",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "enabled",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "extraButton",
+        "reported_type": "com.xingin.entities.card.ExtraButton"
+      },
+      {
+        "name": "extraInfo",
+        "reported_type": "com.xingin.entities.NoteExtraInfo"
+      },
+      {
+        "name": "f50892id1",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "filter_tags",
+        "reported_type": "java.util.ArrayList<com.xingin.entities.BaseTagBean>"
+      },
+      {
+        "name": "generateItemIndex",
+        "reported_type": "int"
+      },
+      {
+        "name": "geo",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "geoInfo",
+        "reported_type": "com.xingin.entities.Geo"
+      },
+      {
+        "name": "geoLink",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "goodsCardIcon",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "goodsCooperateList",
+        "reported_type": "java.util.List<com.xingin.entities.NoteItemBean$GoodsCooperate>"
+      },
+      {
+        "name": "goodsInfo",
+        "reported_type": "com.xingin.entities.NoteDetailGoodsInfo"
+      },
+      {
+        "name": "goodsNoteV2",
+        "reported_type": "com.xingin.entities.followfeed.GoodsNoteV2"
+      },
+      {
+        "name": "graffitiTrackData",
+        "reported_type": "java.util.List<com.xingin.entities.capa.ReportAIGeneratedTrackInfo>"
+      },
+      {
+        "name": "grayMask",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "groupShareTitle",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "hasCoProduce",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "hasExposure",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "hasImpressed",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "hasMusic",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "hasShow",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "hashTag",
+        "reported_type": "java.util.ArrayList<com.xingin.entities.HashTagListBean$HashTag>"
+      },
+      {
+        "name": "hashTags",
+        "reported_type": "java.util.ArrayList<com.xingin.entities.BaseTagBean>"
+      },
+      {
+        "name": "haveRedPacket",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "height",
+        "reported_type": "int"
+      },
+      {
+        "name": "hfRecoAttrs",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "homeChannelId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "icon",
+        "reported_type": "com.xingin.entities.NoteItemBean$AdsIcon"
+      },
+      {
+        "name": "illegalInfo",
+        "reported_type": "com.xingin.entities.IllegalInfo"
+      },
+      {
+        "name": "image",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "imageFromLocal",
+        "reported_type": "int"
+      },
+      {
+        "name": "imageUrl",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "imageUrlDark",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "imageb",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "infavs",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "inlikes",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isAd",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isAdTracking",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isBrand",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isFromCache",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isFromHeraFeedCache",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isFromHomeFeedCache",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isFromRedTvSingle",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isFromWkFeedCache",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isGoodsNote",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isNotNeedConsumption",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isPlay",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isRedtube",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isShowAdTips",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isTopShowEcoOfficerNote",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isTrackingUpgrade",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "itemExtraInfo",
+        "reported_type": "com.xingin.entities.NoteItemExtraInfo"
+      },
+      {
+        "name": "label",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "labelMap",
+        "reported_type": "java.util.HashMap<java.lang.String, java.lang.String>"
+      },
+      {
+        "name": "lastUpdateTime",
+        "reported_type": "long"
+      },
+      {
+        "name": "likedCount",
+        "reported_type": "long"
+      },
+      {
+        "name": "likes",
+        "reported_type": "int"
+      },
+      {
+        "name": "link",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "live",
+        "reported_type": "com.xingin.entities.cardbean.LiveCardBean"
+      },
+      {
+        "name": "liveShootingTag",
+        "reported_type": "com.xingin.entities.LiveShootingTagBean"
+      },
+      {
+        "name": "localContentExhausted",
+        "reported_type": "com.xingin.entities.LocalContentExhausted"
+      },
+      {
+        "name": "localCoverPath",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "localInsertNote",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "longPressShareInfo",
+        "reported_type": "com.xingin.entities.LongPressShareInfo"
+      },
+      {
+        "name": "longTextToImage",
+        "reported_type": "com.xingin.entities.capa.ReportAIGeneratedTrackInfo"
+      },
+      {
+        "name": "mediaSaveConfig",
+        "reported_type": "com.xingin.entities.MediaSaveConfig"
+      },
+      {
+        "name": "metadata",
+        "reported_type": "com.xingin.entities.capa.MetaData"
+      },
+      {
+        "name": "mixRankTrackId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "modelType",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "musicInfo",
+        "reported_type": "com.xingin.entities.MusicBean"
+      },
+      {
+        "name": "name",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "nearbyLiveCornerTag",
+        "reported_type": "com.xingin.entities.Tag"
+      },
+      {
+        "name": "needDynamicCover",
+        "reported_type": "int"
+      },
+      {
+        "name": "niceCount",
+        "reported_type": "long"
+      },
+      {
+        "name": "niced",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "notePriorityCoverInfo",
+        "reported_type": "com.xingin.entities.NoteItemBean$NotePriorityCoverInfo"
+      },
+      {
+        "name": "noteProductReviewBean",
+        "reported_type": "com.xingin.entities.NoteProductReviewBean"
+      },
+      {
+        "name": "noteTradeInfo",
+        "reported_type": "com.xingin.entities.NoteTradeInfo"
+      },
+      {
+        "name": "noteWidgets",
+        "reported_type": "com.xingin.entities.notedetail.NoteWidgets"
+      },
+      {
+        "name": "notes",
+        "reported_type": "java.util.List<com.xingin.entities.NoteItemBean$InterestNote>"
+      },
+      {
+        "name": "operationList",
+        "reported_type": "java.util.List<com.xingin.entities.cardbean.LiveOperationItemBean>"
+      },
+      {
+        "name": "options",
+        "reported_type": "java.util.List<com.xingin.entities.card.OptionBean>"
+      },
+      {
+        "name": "orderCooperate",
+        "reported_type": "com.xingin.entities.NoteItemBean$OrderCooperate"
+      },
+      {
+        "name": "pkFileId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "pkStatusInfo",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "platform",
+        "reported_type": "int"
+      },
+      {
+        "name": "poiIdList",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "poiTypeList",
+        "reported_type": "java.util.List<java.lang.String>"
+      },
+      {
+        "name": "polyCard",
+        "reported_type": "com.xingin.entities.cardbean.FeedPolyCardBean"
+      },
+      {
+        "name": "postLoc",
+        "reported_type": "com.xingin.entities.AddressV3Bean"
+      },
+      {
+        "name": "postLocList",
+        "reported_type": "java.util.List<com.xingin.entities.AddressV3Bean>"
+      },
+      {
+        "name": "postTime",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "postTiming",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "preLoadInfo",
+        "reported_type": "com.xingin.entities.a"
+      },
+      {
+        "name": "preLoadInfoStr",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "price",
+        "reported_type": "float"
+      },
+      {
+        "name": "privacy",
+        "reported_type": "com.xingin.entities.Privacy"
+      },
+      {
+        "name": "projectId",
+        "reported_type": "int"
+      },
+      {
+        "name": "queries",
+        "reported_type": "java.util.List<com.xingin.entities.ExploreSearchRecommendQuery>"
+      },
+      {
+        "name": "quesType",
+        "reported_type": "int"
+      },
+      {
+        "name": "questionnaireId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "rankCardBean",
+        "reported_type": "com.xingin.entities.cardbean.LiveGoodsRankCardBean"
+      },
+      {
+        "name": "reason",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "recExtraInfo",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "recParams",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "recommend",
+        "reported_type": "com.xingin.entities.NoteRecommendInfo"
+      },
+      {
+        "name": "redDotLinkId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "redPacket",
+        "reported_type": "com.xingin.entities.NoteDetailRedPacketBean"
+      },
+      {
+        "name": "redtubeFirstNoteId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "relatedQuestionnaire",
+        "reported_type": "com.xingin.entities.card.QuestionnaireBean"
+      },
+      {
+        "name": "shareCodeFlag",
+        "reported_type": "int"
+      },
+      {
+        "name": "shareCount",
+        "reported_type": "int"
+      },
+      {
+        "name": "shareImageEntranceMap",
+        "reported_type": "java.util.LinkedHashMap<java.lang.String, bn9.g<java.lang.Boolean, java.lang.String>>"
+      },
+      {
+        "name": "shareInfo",
+        "reported_type": "com.xingin.entities.ShareInfoDetail"
+      },
+      {
+        "name": "share_link",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "sharedCount",
+        "reported_type": "long"
+      },
+      {
+        "name": "showDynamicCover",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "showHaveSeen",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "showInNoteCardForm",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "showWeChatTag",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "sketchId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "soundInfo",
+        "reported_type": "com.xingin.entities.SoundBean"
+      },
+      {
+        "name": "source",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "sticky",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "style",
+        "reported_type": "int"
+      },
+      {
+        "name": "subNoteType",
+        "reported_type": "int"
+      },
+      {
+        "name": "subQuestionDeeplink",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "surveyType",
+        "reported_type": "int"
+      },
+      {
+        "name": "taskId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "tempCoverIndex",
+        "reported_type": "int"
+      },
+      {
+        "name": "time",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "timestamp",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "tips",
+        "reported_type": "int"
+      },
+      {
+        "name": "topicConfig",
+        "reported_type": "com.xingin.entities.NoteItemBean$TopicConfig"
+      },
+      {
+        "name": "topicInfo",
+        "reported_type": "com.xingin.entities.TopicInfo"
+      },
+      {
+        "name": "topics",
+        "reported_type": "java.util.List<com.xingin.entities.TopicBean>"
+      },
+      {
+        "name": "trackId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "trackingUpgradeClickUrls",
+        "reported_type": "java.util.ArrayList<java.lang.String>"
+      },
+      {
+        "name": "trackingUpgradeImpressiomUrls",
+        "reported_type": "java.util.ArrayList<java.lang.String>"
+      },
+      {
+        "name": "trailerNote",
+        "reported_type": "com.xingin.entities.cardbean.LiveNoteItemBean"
+      },
+      {
+        "name": "ttiTrackData",
+        "reported_type": "java.util.List<com.xingin.entities.capa.ReportAIGeneratedTrackInfo>"
+      },
+      {
+        "name": "uiType",
+        "reported_type": "int"
+      },
+      {
+        "name": "userCoverShareV2",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "userSmallDiskCache",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "userSubTitle",
+        "reported_type": "com.xingin.entities.NoteItemBean$UserSubTitle"
+      },
+      {
+        "name": "video",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "videoPreviewType",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "viewCount",
+        "reported_type": "int"
+      },
+      {
+        "name": "watchingNum",
+        "reported_type": "int"
+      },
+      {
+        "name": "widgetsContext",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "width",
+        "reported_type": "int"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.entities.NoteItemBean.ActivityInfo",
+      "com.xingin.entities.NoteItemBean.AdsIcon",
+      "com.xingin.entities.NoteItemBean.Brand",
+      "com.xingin.entities.NoteItemBean.BrandAccount",
+      "com.xingin.entities.NoteItemBean.DeleteCooperateNoteDialogInfo",
+      "com.xingin.entities.NoteItemBean.GoodsCooperate",
+      "com.xingin.entities.NoteItemBean.GoodsCooperateH5",
+      "com.xingin.entities.NoteItemBean.GoodsInfo",
+      "com.xingin.entities.NoteItemBean.InterestNote",
+      "com.xingin.entities.NoteItemBean.NotePriorityCoverInfo",
+      "com.xingin.entities.NoteItemBean.OrderCooperate",
+      "com.xingin.entities.NoteItemBean.TopicConfig",
+      "com.xingin.entities.NoteItemBean.UserSubTitle",
+      "com.xingin.entities.NoteItemBean.a",
+      "com.xingin.entities.NoteItemBean.b"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "62d77504ed5962c49a1cd36f2f44b16497bfdea2e28be9d47d7f3adc7bb486f1",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

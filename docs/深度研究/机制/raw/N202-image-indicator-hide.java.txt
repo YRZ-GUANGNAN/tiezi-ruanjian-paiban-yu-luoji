@@ -1,0 +1,7 @@
+    public final void Za(long j82) {
+        if (!PatchProxy.proxyVoid1Para(new Long(j82), this, NoteDetailImageDisplayPresenter.class, 743783) && o.g(gb())) {
+            Handler handler = this.f140498s;
+            handler.removeCallbacksAndMessages(null);
+            handler.sendMessageDelayed(Message.obtain(handler, new f0(this, 0)), j82);
+        }
+    }

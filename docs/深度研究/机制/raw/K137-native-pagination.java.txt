@@ -1,0 +1,243 @@
+    /* JADX WARN: Code duplicated, block: B:45:0x00b8  */
+    /* JADX WARN: Code duplicated, block: B:48:0x00d8 A[DONT_INVERT] */
+    /* JADX WARN: Code duplicated, block: B:49:0x00da  */
+    /* JADX WARN: Code duplicated, block: B:55:0x00fa  */
+    /* JADX WARN: Code duplicated, block: B:59:0x011b  */
+    /* JADX WARN: Code duplicated, block: B:60:0x0120  */
+    /* JADX WARN: Code duplicated, block: B:62:0x0124  */
+    /* JADX WARN: Code duplicated, block: B:63:0x0129  */
+    /* JADX WARN: Code duplicated, block: B:66:0x014d  */
+    /* JADX WARN: Code duplicated, block: B:69:0x0164  */
+    /* JADX WARN: Code duplicated, block: B:70:0x0167  */
+    /* JADX WARN: Code duplicated, block: B:73:0x017e  */
+    /* JADX WARN: Code duplicated, block: B:74:0x0181  */
+    /* JADX WARN: Code duplicated, block: B:77:0x0197  */
+    /* JADX WARN: Code duplicated, block: B:78:0x019a  */
+    public final void M2(zf4.q1 q1Var, boolean z100, o0.f fVar, tb9.r<List<NoteItemBean>> rVar) {
+        o0.f fVar2;
+        String str;
+        Integer num;
+        String strE;
+        int i100;
+        j2 j2Var;
+        j2 j2Var2;
+        boolean z101;
+        String str2;
+        String str3;
+        ar8.k kVar;
+        wq1.d dVar;
+        int iIntValue;
+        int iIntValue2;
+        String second;
+        wq8.q qVar;
+        if (PatchProxy.proxyVoid4Para(q1Var, new Boolean(z100), fVar, rVar, this, ExploreView.class, 365320)) {
+            return;
+        }
+        this.f123258q = z100;
+        this.f123260r = 0;
+        if (this.f123250l.a().length() == 0) {
+            Function0<Unit> function0 = this.D;
+            if (function0 != null) {
+                function0.invoke();
+                return;
+            }
+            return;
+        }
+        br1.e eVar = br1.e.f20154a;
+        String strB = eVar.b();
+        if (strB == null || strB.length() == 0) {
+            hw8.e eVar2 = hw8.e.f186568a;
+            String strE2 = eVar2.e();
+            if (strE2 == null || strE2.length() == 0) {
+                fVar2 = fVar;
+                str = null;
+                num = null;
+            } else {
+                strE = eVar2.e();
+                i100 = 1;
+                fVar2 = fVar;
+            }
+            if (!pw8.l.f269992a.a() && fVar2 == o0.f.CLICK_HOME_TAB_REFRESH && lw8.a.f231558a.a()) {
+                zq8.a.f394875a.P(fVar2, this.f123250l.a(), this.f123250l.c(), true);
+            } else {
+                zq8.a.C9855a.Q(zq8.a.f394875a, fVar2, this.f123250l.a(), this.f123250l.c(), false, 8, null);
+            }
+            T2(true);
+            if (k3()) {
+                if (rVar != null) {
+                    wq8.q.f346220a.v();
+                }
+                qVar = wq8.q.f346220a;
+                if (qVar.N() || rVar != null) {
+                    j2Var = this.G;
+                } else {
+                    j2 j2VarA = qVar.I().a();
+                    qVar.v();
+                    j2Var2 = j2VarA;
+                }
+                String strA = this.f123250l.a();
+                int i101 = 0;
+                zf4.q1 q1VarA = ar8.q.f10422a.a();
+                String str4 = null;
+                String str5 = null;
+                String str6 = null;
+                ca.l lVar = null;
+                z101 = this.f123258q;
+                if (z101) {
+                    str2 = this.f123262s;
+                } else {
+                    str2 = "";
+                }
+                if (z101) {
+                    str3 = this.f123264t;
+                } else {
+                    str3 = "";
+                }
+                ArrayList<Object> arrayList = this.f123245d;
+                kVar = ar8.k.f10380e;
+                String strU1 = u1(true, arrayList, kVar.i6().getSecond());
+                String str7 = null;
+                int i102 = 0;
+                int i103 = 0;
+                String str8 = null;
+                String str9 = null;
+                Integer numValueOf = q1Var == zf4.q1.PASSIVE_REFRESH ? Integer.valueOf(sg1.h.a.HotStart.getValue()) : null;
+                Boolean bool = null;
+                dVar = wq1.d.f346109a;
+                if (dVar.U()) {
+                    iIntValue = -1;
+                } else {
+                    iIntValue = kVar.k6().getFirst().intValue() + 1;
+                }
+                if (dVar.U()) {
+                    iIntValue2 = -1;
+                } else {
+                    iIntValue2 = kVar.j6().getFirst().intValue();
+                }
+                if (dVar.U()) {
+                    second = "";
+                } else {
+                    second = kVar.j6().getSecond();
+                }
+                getMExplorePresenter().a5(true, new rq8.d(strA, "", i101, q1Var, fVar2, q1VarA, j2Var2, str4, str5, str6, lVar, str2, str3, strU1, str7, i102, i103, str8, str9, numValueOf, bool, iIntValue, iIntValue2, second, null, null, false, null, str, num, 253216640, null), new f1(), rVar);
+                this.f123248g = false;
+            }
+            j2Var = this.G;
+            j2Var2 = j2Var;
+            String strA2 = this.f123250l.a();
+            int i104 = 0;
+            zf4.q1 q1VarA2 = ar8.q.f10422a.a();
+            String str10 = null;
+            String str11 = null;
+            String str12 = null;
+            ca.l lVar2 = null;
+            z101 = this.f123258q;
+            if (z101) {
+                str2 = this.f123262s;
+            } else {
+                str2 = "";
+            }
+            if (z101) {
+                str3 = this.f123264t;
+            } else {
+                str3 = "";
+            }
+            ArrayList<Object> arrayList2 = this.f123245d;
+            kVar = ar8.k.f10380e;
+            String strU2 = u1(true, arrayList2, kVar.i6().getSecond());
+            String str13 = null;
+            int i105 = 0;
+            int i106 = 0;
+            String str14 = null;
+            String str15 = null;
+            Integer numValueOf2 = q1Var == zf4.q1.PASSIVE_REFRESH ? Integer.valueOf(sg1.h.a.HotStart.getValue()) : null;
+            Boolean bool2 = null;
+            dVar = wq1.d.f346109a;
+            if (dVar.U()) {
+                iIntValue = -1;
+            } else {
+                iIntValue = kVar.k6().getFirst().intValue() + 1;
+            }
+            if (dVar.U()) {
+                iIntValue2 = -1;
+            } else {
+                iIntValue2 = kVar.j6().getFirst().intValue();
+            }
+            if (dVar.U()) {
+                second = "";
+            } else {
+                second = kVar.j6().getSecond();
+            }
+            getMExplorePresenter().a5(true, new rq8.d(strA2, "", i104, q1Var, fVar2, q1VarA2, j2Var2, str10, str11, str12, lVar2, str2, str3, strU2, str13, i105, i106, str14, str15, numValueOf2, bool2, iIntValue, iIntValue2, second, null, null, false, null, str, num, 253216640, null), new f1(), rVar);
+            this.f123248g = false;
+        }
+        fVar2 = o0.f.PUSH_INSERT_NOTE;
+        strE = eVar.b();
+        i100 = eVar.a() ? 1 : 0;
+        num = i100;
+        str = strE;
+        if (!pw8.l.f269992a.a()) {
+            zq8.a.C9855a.Q(zq8.a.f394875a, fVar2, this.f123250l.a(), this.f123250l.c(), false, 8, null);
+        } else {
+            zq8.a.C9855a.Q(zq8.a.f394875a, fVar2, this.f123250l.a(), this.f123250l.c(), false, 8, null);
+        }
+        T2(true);
+        if (k3()) {
+            if (rVar != null) {
+                wq8.q.f346220a.v();
+            }
+            qVar = wq8.q.f346220a;
+            if (qVar.N()) {
+            }
+            j2Var = this.G;
+        } else {
+            j2Var = this.G;
+        }
+        j2Var2 = j2Var;
+        String strA3 = this.f123250l.a();
+        int i107 = 0;
+        zf4.q1 q1VarA3 = ar8.q.f10422a.a();
+        String str16 = null;
+        String str17 = null;
+        String str18 = null;
+        ca.l lVar3 = null;
+        z101 = this.f123258q;
+        if (z101) {
+            str2 = this.f123262s;
+        } else {
+            str2 = "";
+        }
+        if (z101) {
+            str3 = this.f123264t;
+        } else {
+            str3 = "";
+        }
+        ArrayList<Object> arrayList3 = this.f123245d;
+        kVar = ar8.k.f10380e;
+        String strU3 = u1(true, arrayList3, kVar.i6().getSecond());
+        String str19 = null;
+        int i108 = 0;
+        int i109 = 0;
+        String str110 = null;
+        String str111 = null;
+        Integer numValueOf3 = q1Var == zf4.q1.PASSIVE_REFRESH ? Integer.valueOf(sg1.h.a.HotStart.getValue()) : null;
+        Boolean bool3 = null;
+        dVar = wq1.d.f346109a;
+        if (dVar.U()) {
+            iIntValue = -1;
+        } else {
+            iIntValue = kVar.k6().getFirst().intValue() + 1;
+        }
+        if (dVar.U()) {
+            iIntValue2 = -1;
+        } else {
+            iIntValue2 = kVar.j6().getFirst().intValue();
+        }
+        if (dVar.U()) {
+            second = "";
+        } else {
+            second = kVar.j6().getSecond();
+        }
+        getMExplorePresenter().a5(true, new rq8.d(strA3, "", i107, q1Var, fVar2, q1VarA3, j2Var2, str16, str17, str18, lVar3, str2, str3, strU3, str19, i108, i109, str110, str111, numValueOf3, bool3, iIntValue, iIntValue2, second, null, null, false, null, str, num, 253216640, null), new f1(), rVar);
+        this.f123248g = false;
+    }

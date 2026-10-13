@@ -1,0 +1,11 @@
+    public static final void y7(final NoteDetailImageDisplayPresenter noteDetailImageDisplayPresenter) {
+        if (PatchProxy.proxyVoid1Para(noteDetailImageDisplayPresenter, null, NoteDetailImageDisplayPresenter.class, 298300)) {
+            return;
+        }
+        ((TextView) noteDetailImageDisplayPresenter.w6().findViewById(l56.n.f224121t0)).animate().alpha(0.0f).setDuration(200L).setInterpolator(new AccelerateInterpolator()).withEndAction(new Runnable() { // from class: t96.m0
+            @Override // java.lang.Runnable
+            public final void run() {
+                NoteDetailImageDisplayPresenter.z7(this.f309427d);
+            }
+        }).start();
+    }

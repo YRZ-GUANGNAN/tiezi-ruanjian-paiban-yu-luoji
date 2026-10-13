@@ -1,0 +1,153 @@
+{
+  "evidence_id": "ev_0b88784be8742807e806551c3940bdf8d7dfb5f4f4e9c9bde1c647e2ab5fc82c",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.video.feed.videoitem.engagebar.like.VideoFeedItemLikeBtnPresenter",
+    "method_name": "u7"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":91585,\"raw_class_count\":91585,\"resource_count\":12708,\"load_duration_ms\":15292,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.video.feed.videoitem.engagebar.like.VideoFeedItemLikeBtnPresenter"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"f66636q\",\"def_pos\":0,\"type\":\"bn9.d\"},{\"name\":\"f66637r\",\"def_pos\":0,\"type\":\"bn9.d\"},{\"name\":\"f66638s\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.NoteFeed\"}],\"field_count\":3,\"full_name\":\"com.xingin.video.feed.videoitem.engagebar.like.VideoFeedItemLikeBtnPresenter\",\"name\":\"VideoFeedItemLikeBtnPresenter\",\"inner_classes\":[\"com.xingin.video.feed.videoitem.engagebar.like.VideoFeedItemLikeBtnPresenter.a\",\"com.xingin.video.feed.videoitem.engagebar.like.VideoFeedItemLikeBtnPresenter.b\",\"com.xingin.video.feed.videoitem.engagebar.like.VideoFeedItemLikeBtnPresenter.c\"],\"inner_class_count\":3,\"method_count\":12,\"methods\":[{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(): void\"},{\"def_pos\":0,\"name\":\"P4\",\"is_constructor\":false,\"signature\":\"P4(): java.util.List\\u003cbn9.g\\u003cjava.lang.String, android.view.View\\u003e\\u003e\"},{\"def_pos\":0,\"name\":\"m7\",\"is_constructor\":false,\"signature\":\"m7(): void\"},{\"def_pos\":0,\"name\":\"p7\",\"is_constructor\":false,\"signature\":\"p7(): void\"},{\"def_pos\":0,\"name\":\"t7\",\"is_constructor\":false,\"signature\":\"t7(com.airbnb.lottie.l, boolean, boolean): void\"},{\"def_pos\":0,\"name\":\"u7\",\"is_constructor\":false,\"signature\":\"u7(com.xingin.entities.notedetail.NoteFeed): void\"},{\"def_pos\":0,\"name\":\"v3\",\"is_constructor\":false,\"signature\":\"v3(com.xingin.entities.notedetail.NoteFeed, boolean): void\"},{\"def_pos\":0,\"name\":\"v7\",\"is_constructor\":false,\"signature\":\"v7(com.xingin.entities.notedetail.NoteFeed, boolean): void\"},{\"def_pos\":0,\"name\":\"w7\",\"is_constructor\":false,\"signature\":\"w7(): void\"},{\"def_pos\":0,\"name\":\"x3\",\"is_constructor\":false,\"signature\":\"x3(): xg8.f\"},{\"def_pos\":0,\"name\":\"x7\",\"is_constructor\":false,\"signature\":\"x7(com.airbnb.lottie.l, boolean): void\"},{\"def_pos\":0,\"name\":\"z2\",\"is_constructor\":false,\"signature\":\"z2(com.xingin.entities.notedetail.NoteFeed, boolean): void\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.video.feed.videoitem.engagebar.like.VideoFeedItemLikeBtnPresenter",
+          "method_name": "u7",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"method_name\":\"u7\",\"overload_count\":1,\"body\":\"    public final void u7(NoteFeed noteFeed) {\\r\\n        DetailFeedConfigCenter detailFeedConfigCenter \\u003d DetailFeedConfigCenter.f50384a;\\r\\n        x3().setText(DetailFeedConfigCenter.r() ? m0.a(noteFeed.M0(), l7().getResources().getString(R.string._0_resource_name_obfuscated_res_0x7f112708)) : k0.d(noteFeed.M0(), l7().getResources().getString(R.string._0_resource_name_obfuscated_res_0x7f112708), true));\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.video.feed.videoitem.engagebar.like.VideoFeedItemLikeBtnPresenter\",\"full_name\":\"com.xingin.video.feed.videoitem.engagebar.like.VideoFeedItemLikeBtnPresenter.u7\",\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.video.feed.videoitem.engagebar.like.VideoFeedItemLikeBtnPresenter",
+    "method": {
+      "name": "u7",
+      "reported_signature": "u7(com.xingin.entities.notedetail.NoteFeed): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void u7(NoteFeed noteFeed) {\r\n        DetailFeedConfigCenter detailFeedConfigCenter = DetailFeedConfigCenter.f50384a;\r\n        x3().setText(DetailFeedConfigCenter.r() ? m0.a(noteFeed.M0(), l7().getResources().getString(R.string._0_resource_name_obfuscated_res_0x7f112708)) : k0.d(noteFeed.M0(), l7().getResources().getString(R.string._0_resource_name_obfuscated_res_0x7f112708), true));\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "696125660d084da2caedd1b6350a63b22b9d4ab9dfa5acc21b57015d69edda68",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

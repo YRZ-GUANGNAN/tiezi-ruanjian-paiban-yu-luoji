@@ -1,0 +1,2044 @@
+{
+  "createdAtUtc": "2026-10-13T15:49:45.7458550Z",
+  "version": "2026-10-13-v4-deep-research",
+  "scope": "排版、逐帧动效、内部机制、运行帧覆盖与已修订历史研究；不含APK、原手机XML和未裁系统栏录像。",
+  "note": "entries不包含清单自身；包外回执记录压缩包整体摘要。旧v3清单仅是历史记录。唯一允许的XML为旧包静态清单证据包/AndroidManifest.xml，不是手机页面层级。",
+  "entries": [
+    {
+      "file": "00-阅读入口与进度.md",
+      "bytes": 5731,
+      "sha256": "7b4c3bd92e88ac9b1f4170aab9dbbc85e99b2200c6b83ce7aff52ff8cbd2db4d"
+    },
+    {
+      "file": "01-手机端非购物研究报告.md",
+      "bytes": 24516,
+      "sha256": "b3e2a85eb3c8c69682d5a5a3e4b6b81ddaf6e160f1bfd0867bc5411ad4703acc"
+    },
+    {
+      "file": "02-页面状态机与复刻规格.md",
+      "bytes": 37659,
+      "sha256": "dc31aa0d43e8f5de211c83ca227313c6fc4fd670b4902c22d0b7a738e36d274f"
+    },
+    {
+      "file": "03-真机补测与验收清单.md",
+      "bytes": 37679,
+      "sha256": "01f2b8c92764482070b03a7659f9830b7aedd7e4baf8799f199f5c06e2a6fdbf"
+    },
+    {
+      "file": "04-官方资料与功能证据.md",
+      "bytes": 21889,
+      "sha256": "69b9dd0eb656117e837c1a8cc116b86a0401ca4c4106dabc83222b634d707ad6"
+    },
+    {
+      "file": "05-静态证据索引.md",
+      "bytes": 32632,
+      "sha256": "d1af161b596dc6aff6fb3c783bf1039c2fc8b3d92b0137688ff29b7243612f9c"
+    },
+    {
+      "file": "06-交付校验结果.md",
+      "bytes": 1238,
+      "sha256": "4d647ab4a9222fe83c1b7374372c221ba595f78155937e22535db97ec6abf899"
+    },
+    {
+      "file": "深度研究/00-深度研究阅读入口.md",
+      "bytes": 5098,
+      "sha256": "a9728d088896568b45fa3a4a1cf925c2c671acce1678c94a91a0a03ee008bb1b"
+    },
+    {
+      "file": "深度研究/01-复刻参数与验收.md",
+      "bytes": 6258,
+      "sha256": "922f9b00965ce31b34ad1235c540677e8fb0f6ad1743d3a1c8858316829c9371"
+    },
+    {
+      "file": "深度研究/02-证据与交付校验.md",
+      "bytes": 2265,
+      "sha256": "0a47125f042a69c8160c9d125d09139a74d6835f48375d37acadb8fa46ad6011"
+    },
+    {
+      "file": "深度研究/动效/export-manifest.json",
+      "bytes": 3902,
+      "sha256": "791ebec9a3d9f36d609187b90ad1f37973f769ce3d080908b84bc3b3567e8980"
+    },
+    {
+      "file": "深度研究/动效/metrics-summary.json",
+      "bytes": 3774,
+      "sha256": "01e5b82332f11afef79cd9837a37c5210b76bca65662ef40f74d146d45d60dee"
+    },
+    {
+      "file": "深度研究/动效/motion-findings.md",
+      "bytes": 8532,
+      "sha256": "d4cbb644b74eaa419cc335c80c7844c1ea46a64552bf14e00f0566e1339a3bd3"
+    },
+    {
+      "file": "深度研究/动效/R31/badge-fadeout-detail.png",
+      "bytes": 97064,
+      "sha256": "975b2aa1b0500bfec0399da1a7f90b6ee6141eb853e4b935534fdd147edd39d9"
+    },
+    {
+      "file": "深度研究/动效/R31/badge-timeline.png",
+      "bytes": 723569,
+      "sha256": "c3e712b644483cf39f5946755b66be7f47e8abc7a7e89cf4f9b2097fbe528b45"
+    },
+    {
+      "file": "深度研究/动效/R31/fadeout-curve-fit.json",
+      "bytes": 535,
+      "sha256": "b1d8e4a89f75ef0196ce0d9e5427bcac24b781e3179488037f49cf34d5e927c5"
+    },
+    {
+      "file": "深度研究/动效/R31/gallery-timeline.png",
+      "bytes": 505846,
+      "sha256": "75b2875bad984d750500cc77f093b5bf4d30e5268d272d2f70b615046033eb10"
+    },
+    {
+      "file": "深度研究/动效/R31/measurements.json",
+      "bytes": 48444,
+      "sha256": "58f36fd709620042106a1ed8b86c72940e86440c583d89826daea72f992f74ca"
+    },
+    {
+      "file": "深度研究/动效/R31/motion-app-only.mp4",
+      "bytes": 2111551,
+      "sha256": "6df133ca592e3370c6c7968a9f2b7298d4af059f7280eb7c13ab569383da8c0b"
+    },
+    {
+      "file": "深度研究/动效/R31/pixel-measurements.json",
+      "bytes": 20668,
+      "sha256": "236604028e9820690c0862176f7c902f729b16eb4f3b9b52cc59471fa44b09b5"
+    },
+    {
+      "file": "深度研究/动效/R31/preview-validation.json",
+      "bytes": 622,
+      "sha256": "a4cf78f5a0898f512e1ee4fdb5871a593dfec2bf66cda82c5d9f3995c08f096c"
+    },
+    {
+      "file": "深度研究/动效/T02/entrance-neutral-geometry.png",
+      "bytes": 13921,
+      "sha256": "44479ac26a65e82783391ebcec243e967984b556ceba596ebe4db6b9bc8664aa"
+    },
+    {
+      "file": "深度研究/动效/T02/geometry.json",
+      "bytes": 8759,
+      "sha256": "72a3c6442d44e927a742967febaa5b9103d59e9fc76d5be6e4e10eaf9fa87d47"
+    },
+    {
+      "file": "深度研究/动效/T02/measurements.json",
+      "bytes": 14108,
+      "sha256": "0a7694e02e6d97530a49c8069b2d145e2ea967ef593aa4f06d9cba47ecb3a584"
+    },
+    {
+      "file": "深度研究/动效/T03/exit-neutral-geometry.png",
+      "bytes": 14187,
+      "sha256": "06ab0dc17b63f3372540812e177d30cef8793df266288d598ff5881b738985a1"
+    },
+    {
+      "file": "深度研究/动效/T03/geometry.json",
+      "bytes": 9659,
+      "sha256": "53cdfe8270ae7ca9773bda96f82e825e72c4a0164af7d9ab9178f2637688f4db"
+    },
+    {
+      "file": "深度研究/动效/T03/measurements.json",
+      "bytes": 7156,
+      "sha256": "5b70c7122fe55a99639335d5f9f9b22330d6a9e12a7e3c09a6504814ed928ade"
+    },
+    {
+      "file": "深度研究/动效/T05/enter-neutral-geometry.png",
+      "bytes": 16263,
+      "sha256": "e11d0cd91f3660392cb2e07eca19325526d967be0aeddd1057a232d4bbafe412"
+    },
+    {
+      "file": "深度研究/动效/T05/geometry.json",
+      "bytes": 35615,
+      "sha256": "6407a7d2d2327022321707ea9aecef5bdb7be598bc115f444f5f9826cb2e971e"
+    },
+    {
+      "file": "深度研究/动效/T05/measurements.json",
+      "bytes": 115967,
+      "sha256": "511c37057b308a8fef39142e5875a8b001e462f7fad8c7655f34d3efd368359a"
+    },
+    {
+      "file": "深度研究/动效/T06/exit-neutral-geometry.png",
+      "bytes": 15854,
+      "sha256": "ed6137b414f7eb1798eef6446f459e5bf391559710c41de9f06e886a55d3aa94"
+    },
+    {
+      "file": "深度研究/动效/T06/geometry.json",
+      "bytes": 40883,
+      "sha256": "79294e47e6841ca4fd494b29c6a694894aae6e03dfb805d444b24eca21691bbf"
+    },
+    {
+      "file": "深度研究/动效/T06/measurements.json",
+      "bytes": 128817,
+      "sha256": "364c96b5c03ab35891f225f501058461bb02a19dd89258452f9a442a7829e8eb"
+    },
+    {
+      "file": "深度研究/复刻参数.json",
+      "bytes": 5190,
+      "sha256": "01630df4d3aabf9e7d9643dec6d3201f30540a2b40c795d0167a0835ba2a674d"
+    },
+    {
+      "file": "深度研究/机制/core-findings.md",
+      "bytes": 13844,
+      "sha256": "441e50b99ec91914e7959da21b2be5419bd94c2dea76817c96ba7e31317b33d9"
+    },
+    {
+      "file": "深度研究/机制/evidence-index.json",
+      "bytes": 371423,
+      "sha256": "fe9b3e681991b51de2425d4691b1e946b8ee5f30b50cf8259916e70363df1447"
+    },
+    {
+      "file": "深度研究/机制/raw/K001-device-package.json",
+      "bytes": 827769,
+      "sha256": "4962d8dfe1b49e2d0586af628b72eb68136ff133242663c2f1b3fd353881e1da"
+    },
+    {
+      "file": "深度研究/机制/raw/K002-image-presenter.json",
+      "bytes": 51122,
+      "sha256": "4991ccf8f461c917f8239a30caeec3e745782a6735013dca2fb35e361484bb23"
+    },
+    {
+      "file": "深度研究/机制/raw/K003-like-presenter.json",
+      "bytes": 9495,
+      "sha256": "a3c498b7b0fb8939464b63dae28d0104f94d98a9619275dd95a4452a558e6341"
+    },
+    {
+      "file": "深度研究/机制/raw/K004-gallery-view.json",
+      "bytes": 9735,
+      "sha256": "043fa413e58ea82280c22719b881fb307d6ba63c5766da5c48ea2f6bb44b1f61"
+    },
+    {
+      "file": "深度研究/机制/raw/K005-gallery-classes.json",
+      "bytes": 2121822,
+      "sha256": "030c511db79d33297aed3d836e48da5679cacee79c737f1c25cc54cd80af1be2"
+    },
+    {
+      "file": "深度研究/机制/raw/K006-feed-search.json",
+      "bytes": 2120492,
+      "sha256": "006c4f6b01a593d2f7a10527df17144cf40fd2f0bda74293f261f61dc80a69fd"
+    },
+    {
+      "file": "深度研究/机制/raw/K007-prebind-search.json",
+      "bytes": 2120751,
+      "sha256": "65b954719d7298cf074d37e6166a14ef81ce5a41112130c45d72b883651d852e"
+    },
+    {
+      "file": "深度研究/机制/raw/K008-prebind-manager.json",
+      "bytes": 6492,
+      "sha256": "736570a87f3bb9c1ef0794a6ff6e567d6faa4c98440953e8a43698954ad6a10f"
+    },
+    {
+      "file": "深度研究/机制/raw/K009-gallery-controller.json",
+      "bytes": 100502,
+      "sha256": "ca6ec130a4a3995c5c0e75185d001e65d183968985494703cc3a4f37d2c4b281"
+    },
+    {
+      "file": "深度研究/机制/raw/K010-gallery-item.json",
+      "bytes": 23308,
+      "sha256": "78c42d0271166056ffc28e023fcef78baa538b69866f1123ddf3c4e53c14aec3"
+    },
+    {
+      "file": "深度研究/机制/raw/K011-feed-adapter.error.json",
+      "bytes": 2291,
+      "sha256": "1edd4b22a6357d6cabfc146eb97afddc08a91232655cc49458ef6d038ac0bbc3"
+    },
+    {
+      "file": "深度研究/机制/raw/K012-explore-service.error.json",
+      "bytes": 2923,
+      "sha256": "dcb0353492a365ad8c6c0dc47d5e1d329e4f52622c8eb35798e9f3e783d4eed0"
+    },
+    {
+      "file": "深度研究/机制/raw/K013-explore-service-correct.json",
+      "bytes": 10577,
+      "sha256": "0b4ee310e1a0fa93a31fcd82e039f6600758df090ece4b3b0978982acb0d27fc"
+    },
+    {
+      "file": "深度研究/机制/raw/K014-image-event-store.json",
+      "bytes": 4658,
+      "sha256": "3a6407d332caf341d6b90c7b5fd8d43a0aa44ad57d99f60d4e6e860315e68377"
+    },
+    {
+      "file": "深度研究/机制/raw/K015-image-view.json",
+      "bytes": 13917,
+      "sha256": "dd7162d3c295530b7217f3103d06cd9b871bcc7db25c04f013ef154d29210c6f"
+    },
+    {
+      "file": "深度研究/机制/raw/K016-explore-classes.json",
+      "bytes": 2126064,
+      "sha256": "afe46907abb9560fed077bfbb38640d56f76ebe885116201e92bd58b91921d59"
+    },
+    {
+      "file": "深度研究/机制/raw/K017-image-state-store.json",
+      "bytes": 5533,
+      "sha256": "55a907d166357791d9ec6cc7a8c975785094819d3efe6534617c9d00a3ee6cca"
+    },
+    {
+      "file": "深度研究/机制/raw/K018-explore-view.json",
+      "bytes": 121964,
+      "sha256": "63e1d336c9b4f6855ba6873474e1040b1ffa6172b78693a23ddb72e24bfc802e"
+    },
+    {
+      "file": "深度研究/机制/raw/K019-explore-presenter.json",
+      "bytes": 28364,
+      "sha256": "d4b001a6555fc37712ce5d73fa0249dbc4954de1612d17e464a02651563a2694"
+    },
+    {
+      "file": "深度研究/机制/raw/K020-explore-manager.json",
+      "bytes": 7681,
+      "sha256": "be6ea04ba23000c53ff201433b700425f57761e4f13e879a9ab61730badd9262"
+    },
+    {
+      "file": "深度研究/机制/raw/K021-explore-decoration.json",
+      "bytes": 5736,
+      "sha256": "a66ac1d929025e4a89cb84a3a83efda3b3402f8584b8180c4c38a8258fb61a10"
+    },
+    {
+      "file": "深度研究/机制/raw/K022-follow-response.error.json",
+      "bytes": 2225,
+      "sha256": "9f1209e1fda4196505247e1e6731b621a27f22f1d9c9647d6473f97fc1f0e5cb"
+    },
+    {
+      "file": "深度研究/机制/raw/K023-follow-response-correct.error.json",
+      "bytes": 2294,
+      "sha256": "6d9df1a2d0b09701222b115565522a9f84f6fa9f8e527b87e3e747fd13720d7c"
+    },
+    {
+      "file": "深度研究/机制/raw/K024-prebind-setter.java.txt",
+      "bytes": 73,
+      "sha256": "994bb01a562c4aad112341f0bb2a5e7f58ae26a150b9a531d7bdcb480f190cfb"
+    },
+    {
+      "file": "深度研究/机制/raw/K024-prebind-setter.json",
+      "bytes": 6892,
+      "sha256": "4bbde74bbcc6c98247fb6036ffcdcd3276fa3a25a36dbf708b737899472791da"
+    },
+    {
+      "file": "深度研究/机制/raw/K025-gallery-height-helper.json",
+      "bytes": 4580,
+      "sha256": "dee79f7992a77742d0bf4c1f895492687c674595e9b5f403ec2281b19918a5f1"
+    },
+    {
+      "file": "深度研究/机制/raw/K101-image-attach.java.txt",
+      "bytes": 280,
+      "sha256": "b108bd1b18ad4fd58b5396fed0d1ede8fec7dd26b099ad6841bbd0666e58bf41"
+    },
+    {
+      "file": "深度研究/机制/raw/K101-image-attach.json",
+      "bytes": 25548,
+      "sha256": "9ad18b356259b699488ecda874a1b121770d43ad265061ff23239306637f42a0"
+    },
+    {
+      "file": "深度研究/机制/raw/K102-image-hide.java.txt",
+      "bytes": 642,
+      "sha256": "6c4d61ae995961738fc85a8ed44d9865dbafa3dd1212b7fbc5ac03a6b039ea9c"
+    },
+    {
+      "file": "深度研究/机制/raw/K102-image-hide.json",
+      "bytes": 25563,
+      "sha256": "45bd8bb699301ef83db18a523939a562f1f7a59d06db0e44765b6175c2ad6f6a"
+    },
+    {
+      "file": "深度研究/机制/raw/K103-image-data.java.txt",
+      "bytes": 1092,
+      "sha256": "91acb9cbfbb9decf66c28fd3dd1a1242068a0b05b64136bc9780160445bda7ef"
+    },
+    {
+      "file": "深度研究/机制/raw/K103-image-data.json",
+      "bytes": 26621,
+      "sha256": "7934a0dd47012c291099c078d97276895e19a6fbd99cb873c751cfd08f08712d"
+    },
+    {
+      "file": "深度研究/机制/raw/K104-image-bind-list.java.txt",
+      "bytes": 505,
+      "sha256": "b56a74972201277e4a3126a5c8b5576a84126bba862da3c4d0c5f27e99b03ebd"
+    },
+    {
+      "file": "深度研究/机制/raw/K104-image-bind-list.json",
+      "bytes": 25341,
+      "sha256": "f2aa93fb51e70b16f4926b6506d0d85ecf70c29cd7ba05ea4f2d4cad87c4d9cd"
+    },
+    {
+      "file": "深度研究/机制/raw/K105-image-update.java.txt",
+      "bytes": 1766,
+      "sha256": "fdc2d34d15b89caec86d863f4e7f576f5dd346c77ad6f876381bbd959e297e4a"
+    },
+    {
+      "file": "深度研究/机制/raw/K105-image-update.json",
+      "bytes": 28110,
+      "sha256": "0d0cd1fa14b90614ad851c1e4690965ee6509d717ba9143823bf4347fccfbfd5"
+    },
+    {
+      "file": "深度研究/机制/raw/K106-image-init.java.txt",
+      "bytes": 429,
+      "sha256": "656d09954c4342ce4286f2e2a1145794fcc170c5c1a6ca000a3f0b78980eceaf"
+    },
+    {
+      "file": "深度研究/机制/raw/K106-image-init.json",
+      "bytes": 25109,
+      "sha256": "df58a2026819d652bd82b2f9d7addbb4c2bce6fea800037bc76a7640978208de"
+    },
+    {
+      "file": "深度研究/机制/raw/K107-image-subscribe.java.txt",
+      "bytes": 925,
+      "sha256": "a541c352db1b9653e8a2f751d27fdf5cd5d58559b0a7440916252ed64c8ca677"
+    },
+    {
+      "file": "深度研究/机制/raw/K107-image-subscribe.json",
+      "bytes": 26161,
+      "sha256": "fe4777d8c0d73f8a562f65ae7016f303aa8ebd339a6d7ad5089db85712e6960a"
+    },
+    {
+      "file": "深度研究/机制/raw/K108-image-layout.java.txt",
+      "bytes": 1707,
+      "sha256": "73be11bd9a3080493b9c57b2dd27b0d1f58fca8e49402867d4ef8c8c0f5ac170"
+    },
+    {
+      "file": "深度研究/机制/raw/K108-image-layout.json",
+      "bytes": 27918,
+      "sha256": "5f4517084408d6bfe7c93c8fa86a482832562981730e6f98ffce3b3a341a97d6"
+    },
+    {
+      "file": "深度研究/机制/raw/K109-like-attach.java.txt",
+      "bytes": 1134,
+      "sha256": "c2656b95db50fa4d7e36de513588682cc3e9b3d480cd295b028e039e234ee6e6"
+    },
+    {
+      "file": "深度研究/机制/raw/K109-like-attach.json",
+      "bytes": 9718,
+      "sha256": "a88def14d110fedfba790f49ed24a80917b26de3dc1b1dc169fe25cd22390b05"
+    },
+    {
+      "file": "深度研究/机制/raw/K110-like-state.java.txt",
+      "bytes": 207,
+      "sha256": "8537198a3e12b37d37c52e219174e7dc93ff73fa16b2fca4d1b7874c425086b3"
+    },
+    {
+      "file": "深度研究/机制/raw/K110-like-state.json",
+      "bytes": 7711,
+      "sha256": "a48af889f2dc3afa21c7e3b98c9d0d2a41b19701654d47a6524f2030f02de6ad"
+    },
+    {
+      "file": "深度研究/机制/raw/K111-image-list-setup.java.txt",
+      "bytes": 1513,
+      "sha256": "648ca792c6785351b41178a710fca2bb163efb3d5957d038f1a5cdc30dc8c3c1"
+    },
+    {
+      "file": "深度研究/机制/raw/K111-image-list-setup.json",
+      "bytes": 28166,
+      "sha256": "af96eb777563f51e3b4c5665a18680bca9b6a110d70b17d819eb3ab4382f097e"
+    },
+    {
+      "file": "深度研究/机制/raw/K112-image-state-subscriptions.java.txt",
+      "bytes": 6940,
+      "sha256": "f66b4f843fef062b9df24d4898816ca206026742e66129589f2700ad59c3bb19"
+    },
+    {
+      "file": "深度研究/机制/raw/K112-image-state-subscriptions.json",
+      "bytes": 39931,
+      "sha256": "5110a94622dd24b43007ef502a98fa2d61c962d7fe7f4e9026814c4995139709"
+    },
+    {
+      "file": "深度研究/机制/raw/K113-image-data-replace.java.txt",
+      "bytes": 1007,
+      "sha256": "e9e5836c9aea73eeb18a63fa875d0b731e18f052a6c15f0264d5f3ab755949fc"
+    },
+    {
+      "file": "深度研究/机制/raw/K113-image-data-replace.json",
+      "bytes": 26420,
+      "sha256": "d3fce2ff591054bcd8b730563274e398c48fc48c61c6f926366ad90c190e4722"
+    },
+    {
+      "file": "深度研究/机制/raw/K114-image-fade-callback.java.txt",
+      "bytes": 687,
+      "sha256": "f706562357d1f3d967ab72d4c7fed31b8217dcf8168800dcf0377ab07cead26b"
+    },
+    {
+      "file": "深度研究/机制/raw/K114-image-fade-callback.json",
+      "bytes": 25694,
+      "sha256": "229e4dbd3f76e0f85576450373cc5bf7201d9fe9e541616c3bf7d4d7fd73802f"
+    },
+    {
+      "file": "深度研究/机制/raw/K115-prebind-extra.java.txt",
+      "bytes": 521,
+      "sha256": "f6224cf4a79e1dc2331c613ccc58bd6879b0c616db6c995640ac8e670f431f88"
+    },
+    {
+      "file": "深度研究/机制/raw/K115-prebind-extra.json",
+      "bytes": 7244,
+      "sha256": "3c4a19b96725850257dcd9f59514adaf22f76927865489777b5e6ee478da9255"
+    },
+    {
+      "file": "深度研究/机制/raw/K116-prebind-animation.java.txt",
+      "bytes": 488,
+      "sha256": "83db17cb39c0c634d15b0a0b2b80d497515a80e0c5f162aa1d4e92596bf9d112"
+    },
+    {
+      "file": "深度研究/机制/raw/K116-prebind-animation.json",
+      "bytes": 7195,
+      "sha256": "cfe475d48549b99cb96ed1e97561bae74157e7a426a27b28571bf261d4b9d4e2"
+    },
+    {
+      "file": "深度研究/机制/raw/K117-image-load.java.txt",
+      "bytes": 1751,
+      "sha256": "224cea7af98ce7fcdff5754c14deaf5212e5d6301a1b2d4d464f5b9d9a7bd250"
+    },
+    {
+      "file": "深度研究/机制/raw/K117-image-load.json",
+      "bytes": 17095,
+      "sha256": "03d44f6fde2899b468f14936bc27638f6ee37ae3c8fc2cf5752d5e28919493a5"
+    },
+    {
+      "file": "深度研究/机制/raw/K118-image-load-result.java.txt",
+      "bytes": 1049,
+      "sha256": "d1cb72b6a7b3188d158112affab55ade01a85533d83d244c4e910a48ec0145f2"
+    },
+    {
+      "file": "深度研究/机制/raw/K118-image-load-result.json",
+      "bytes": 15504,
+      "sha256": "245bb56f57b51d59a9a2be4161cff0288a15187ba9cb4fded6e62859bf5bc17f"
+    },
+    {
+      "file": "深度研究/机制/raw/K119-image-attach.java.txt",
+      "bytes": 393,
+      "sha256": "46a0e5b9f9d3a9d2e92c37bf9bcc74441c232684c1ebc32316fa1719977ae0a8"
+    },
+    {
+      "file": "深度研究/机制/raw/K119-image-attach.json",
+      "bytes": 14102,
+      "sha256": "1241caae67e1ec3157856c6ffb23061e18471ee159911e7371a4ab4ff4f07be1"
+    },
+    {
+      "file": "深度研究/机制/raw/K120-like-render.java.txt",
+      "bytes": 727,
+      "sha256": "bd96cc1a3f868917e90f710f9ba881c9ac0195d015ef8da1290746ec7fff2553"
+    },
+    {
+      "file": "深度研究/机制/raw/K120-like-render.json",
+      "bytes": 8853,
+      "sha256": "bd510f75ae3e7fe307c58f4dbb752364cd45a32bf0e997740f05edce6d14d888"
+    },
+    {
+      "file": "深度研究/机制/raw/K121-image-height.java.txt",
+      "bytes": 699,
+      "sha256": "4d2bb56d6c41c88ed6ff8f331cb76901d07a4706a8ff477ce43190b858805db6"
+    },
+    {
+      "file": "深度研究/机制/raw/K121-image-height.json",
+      "bytes": 26475,
+      "sha256": "6d72e240c38532b2ef721e9b656049bdfae17bbdc2a11159ecd4bfb6a79b6eb5"
+    },
+    {
+      "file": "深度研究/机制/raw/K122-image-page-state.java.txt",
+      "bytes": 1129,
+      "sha256": "1f2d5159d31fa647635816b4cef214fc5044dc76c509c49b20e977a464110281"
+    },
+    {
+      "file": "深度研究/机制/raw/K122-image-page-state.json",
+      "bytes": 26599,
+      "sha256": "edd28449333162a5ef036b8b6cc113e2ab7f85f9af6c870e13f9dc39ed55bc8f"
+    },
+    {
+      "file": "深度研究/机制/raw/K123-image-page-update.java.txt",
+      "bytes": 549,
+      "sha256": "f604a99e3b20875c62c61c649a7fb89c3b3ef9d6732523c02b94a361fe3c72e5"
+    },
+    {
+      "file": "深度研究/机制/raw/K123-image-page-update.json",
+      "bytes": 25455,
+      "sha256": "239db29d5cab68af76d04662547d3fd0776132ea7386027139c109dbff34f502"
+    },
+    {
+      "file": "深度研究/机制/raw/K124-image-teardown.java.txt",
+      "bytes": 513,
+      "sha256": "575cadcae7457d2b923fb1313b573a3b858bb1011038e1813c0ccab186b71f12"
+    },
+    {
+      "file": "深度研究/机制/raw/K124-image-teardown.json",
+      "bytes": 25301,
+      "sha256": "31d72212c339219c55717418c26645fadf2acca4c6ee87d32ebf773527d921ce"
+    },
+    {
+      "file": "深度研究/机制/raw/K125-image-request.java.txt",
+      "bytes": 1908,
+      "sha256": "96466746dbbed33980fb7712b34bc3b18098ecc927ca656cf3bdddcab6eb5f6d"
+    },
+    {
+      "file": "深度研究/机制/raw/K125-image-request.json",
+      "bytes": 13007,
+      "sha256": "11451087209b24a247d973bcb0ab4930275a51a34bab8e2b4a15a7a6eaa211c1"
+    },
+    {
+      "file": "深度研究/机制/raw/K126-image-sized-request.java.txt",
+      "bytes": 903,
+      "sha256": "01d119a5a75f9f989a893ac0a0fbee07ab935f6b1b9715c18dce5faee95b068a"
+    },
+    {
+      "file": "深度研究/机制/raw/K126-image-sized-request.json",
+      "bytes": 10976,
+      "sha256": "1e0881bd7d86d319f3b2423d2060508d4c34a9c6be5bd3534d15cfa28d926650"
+    },
+    {
+      "file": "深度研究/机制/raw/K127-image-fade-duration.java.txt",
+      "bytes": 274,
+      "sha256": "fa6a6bb86b55f50904ef8815b9d7f7a876f32cb694182a0130ba72d933b956de"
+    },
+    {
+      "file": "深度研究/机制/raw/K127-image-fade-duration.json",
+      "bytes": 9419,
+      "sha256": "f01d59caad8833e3a0c38bc376c4e640c5ec0aebb685f72fe253bfcbf5176b8a"
+    },
+    {
+      "file": "深度研究/机制/raw/K128-gallery-diff.java.txt",
+      "bytes": 1104,
+      "sha256": "b564e329f30193511ac555269ae0f89e6f39df88618f7b8fcb14d618afe73f29"
+    },
+    {
+      "file": "深度研究/机制/raw/K128-gallery-diff.json",
+      "bytes": 46104,
+      "sha256": "b912b077d01e60c895737c7581d5307744471935f6e94ce3eebc198812a57cfe"
+    },
+    {
+      "file": "深度研究/机制/raw/K129-gallery-height-helper.error.json",
+      "bytes": 3005,
+      "sha256": "364e678ddaff736f561315c09885d469b5c0d6045fa4e5a855e126a6b34b8a22"
+    },
+    {
+      "file": "深度研究/机制/raw/K130-indicator-show.java.txt",
+      "bytes": 780,
+      "sha256": "9a989397bc0218c207676727f08d6bc38cd916693f6ecb3c36677aa386ced3fa"
+    },
+    {
+      "file": "深度研究/机制/raw/K130-indicator-show.json",
+      "bytes": 26584,
+      "sha256": "97c31d4e603cee5e091b300981fa91d67cdbcb0fd535886949ecf572f7c42829"
+    },
+    {
+      "file": "深度研究/机制/raw/K131-recycled-pool.java.txt",
+      "bytes": 1135,
+      "sha256": "e0da277226d2276a93d5c9570709e799f77a4356f5d2fcb78767eb35119fb24a"
+    },
+    {
+      "file": "深度研究/机制/raw/K131-recycled-pool.json",
+      "bytes": 53692,
+      "sha256": "3fc417a28fe939991812589b21db241a7d0d1dfaec0c8e4dbe23a6b3777ef559"
+    },
+    {
+      "file": "深度研究/机制/raw/K132-feed-restore.java.txt",
+      "bytes": 984,
+      "sha256": "525ff8e87641f1cdf20bfa69b01ab82efea30b3ce5ec0155609769b506ce7a99"
+    },
+    {
+      "file": "深度研究/机制/raw/K132-feed-restore.json",
+      "bytes": 53401,
+      "sha256": "57073cc468b1e9c147a59b2fe9c2934d5727a8cc2021053d725619dbe46fc8ce"
+    },
+    {
+      "file": "深度研究/机制/raw/K133-feed-list-update.java.txt",
+      "bytes": 381,
+      "sha256": "f44db360e756aec26c01cd191074597e5d0d3a18f4d29a6aac1fc9f69bd41cff"
+    },
+    {
+      "file": "深度研究/机制/raw/K133-feed-list-update.json",
+      "bytes": 52025,
+      "sha256": "d82f74ddd9537255409e59da606c6b4d996d637f9a348e0b89517fe5f5930baf"
+    },
+    {
+      "file": "深度研究/机制/raw/K134-feed-offset.java.txt",
+      "bytes": 3922,
+      "sha256": "b443c100cd5b04eaa1cd8c3c0b0cfb97817a258cb494ce9024dffc3b6d901f17"
+    },
+    {
+      "file": "深度研究/机制/raw/K134-feed-offset.json",
+      "bytes": 14748,
+      "sha256": "3f302360523e76f64000dfaeb9364bf2e6cb712dd3a8c3bd772f3951df3b4d95"
+    },
+    {
+      "file": "深度研究/机制/raw/K135-feed-manager-animation.java.txt",
+      "bytes": 496,
+      "sha256": "8481c681c64f190eb6a0be1f65b806e761d3df5cec5edf1724f2181f0324ea0d"
+    },
+    {
+      "file": "深度研究/机制/raw/K135-feed-manager-animation.json",
+      "bytes": 7740,
+      "sha256": "a2154b9b9aec9a0adf1a88627aac0144f047e6227dd32db9c9f3600d3ef3af26"
+    },
+    {
+      "file": "深度研究/机制/raw/K136-main-observe-thread.java.txt",
+      "bytes": 67,
+      "sha256": "45b805084aa12bf56662362852ca712001dcf7ac536ad9ca15bca26e31a13998"
+    },
+    {
+      "file": "深度研究/机制/raw/K136-main-observe-thread.json",
+      "bytes": 4988,
+      "sha256": "7a53393c00bd9bd60aae61334333deeb33a06dc75c05847b08874a62ab0db2c5"
+    },
+    {
+      "file": "深度研究/机制/raw/K137-native-pagination.java.txt",
+      "bytes": 9481,
+      "sha256": "06f0df7d663ffbfcb32fe8401a058a10b8997a94524527571ec409512af7a010"
+    },
+    {
+      "file": "深度研究/机制/raw/K137-native-pagination.json",
+      "bytes": 72670,
+      "sha256": "f694096b391d504c0815072f1af3b2e0c11c21920988b5232c6f01714bdba61b"
+    },
+    {
+      "file": "深度研究/机制/raw/K138-indicator-delay.java.txt",
+      "bytes": 317,
+      "sha256": "cfd4d0d1b08f9b7973e293d79d431ce46dee087b0f0451c99c90cd51226f29bd"
+    },
+    {
+      "file": "深度研究/机制/raw/K138-indicator-delay.json",
+      "bytes": 25667,
+      "sha256": "e1cd07f4cda80bbeb98a82949205d579cf2c4b19d893f3fc109d7e41e0bfed51"
+    },
+    {
+      "file": "深度研究/机制/raw/K139-feed-spacing-init.java.txt",
+      "bytes": 149,
+      "sha256": "4f843bb77ffb7e603fccf86165dba06c393e84f8de202d5f097c7d12ebf69ada"
+    },
+    {
+      "file": "深度研究/机制/raw/K139-feed-spacing-init.json",
+      "bytes": 6192,
+      "sha256": "89f77cc81c904ad4164e3f1c3d694fea21b08b697b44a63cd000d59090c5e677"
+    },
+    {
+      "file": "深度研究/机制/raw/K140-pool-prebind.java.txt",
+      "bytes": 471,
+      "sha256": "12f2f963280f03b7077e58b0d511d1d406926f2eee9c0e734a173baaa178c114"
+    },
+    {
+      "file": "深度研究/机制/raw/K140-pool-prebind.json",
+      "bytes": 52268,
+      "sha256": "60d75d2afd34d898096d60d9cd9551d31cc1b2a9fde6b2aca08c0408f39389a2"
+    },
+    {
+      "file": "深度研究/机制/raw/K141-gallery-height-formula.java.txt",
+      "bytes": 644,
+      "sha256": "17b96cca759d37b4bb202e5fec5ae7e20323779b04629df87f2d32273731f4de"
+    },
+    {
+      "file": "深度研究/机制/raw/K141-gallery-height-formula.json",
+      "bytes": 7097,
+      "sha256": "13b71fcbdb0a8d3b8a74fe59cd0ebd2fdedc7c06cf4d978e8fc833b5bfc72fd8"
+    },
+    {
+      "file": "深度研究/机制/raw/K142-feed-spacing-default.java.txt",
+      "bytes": 108,
+      "sha256": "89ad71d984508f1ce6816dee6511433edf0c42f5fb0830f105995334d0596481"
+    },
+    {
+      "file": "深度研究/机制/raw/K142-feed-spacing-default.json",
+      "bytes": 6089,
+      "sha256": "d1042bc90f4f620597b787b122d287b4a95510f0f3c5f8e05e1640948ceac437"
+    },
+    {
+      "file": "深度研究/机制/raw/K143-main-scheduler-init.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "深度研究/机制/raw/K143-main-scheduler-init.json",
+      "bytes": 5033,
+      "sha256": "24e26aea636752cb0483fab0f151f395e74714e944894197d8155e6bd8883a39"
+    },
+    {
+      "file": "深度研究/机制/raw/K201-new-gallery-item.json",
+      "bytes": 12534,
+      "sha256": "001af4529c177443dfd808f0011595803f56705a96e6125c53055c0336144e3a"
+    },
+    {
+      "file": "深度研究/机制/raw/K202-new-feed-adapter.json",
+      "bytes": 8581,
+      "sha256": "f9d3a6b88e63271f87e8968fa0a7c6c541071913190efe97e05c7756b9444749"
+    },
+    {
+      "file": "深度研究/机制/raw/K203-new-image-loader.java.txt",
+      "bytes": 4162,
+      "sha256": "898d21b5a852f6028d6325de197cb967f2faf0af676ace4a6a94592339524088"
+    },
+    {
+      "file": "深度研究/机制/raw/K203-new-image-loader.json",
+      "bytes": 17855,
+      "sha256": "434c9ca4d167d5c224867ca315cb8cc17970247c397ad21617ffdd2eac044fe8"
+    },
+    {
+      "file": "深度研究/机制/raw/K204-new-feed-bind.java.txt",
+      "bytes": 718,
+      "sha256": "1e940ab6b9e2522e0ec7adebfa3be53c92611a328f38117601686671dc66d905"
+    },
+    {
+      "file": "深度研究/机制/raw/K204-new-feed-bind.json",
+      "bytes": 8754,
+      "sha256": "c1a343bf75ddc8f8979a06b3e9ab1b43e050abecd50ce336a9854c2ff62facba"
+    },
+    {
+      "file": "深度研究/机制/raw/K205-new-feed-recycle.java.txt",
+      "bytes": 521,
+      "sha256": "6ec6f6c3f06cc3456d16829633ffaa8115d334f93cfd0ed74a7ee524df02b7c9"
+    },
+    {
+      "file": "深度研究/机制/raw/K205-new-feed-recycle.json",
+      "bytes": 8223,
+      "sha256": "3685c8a0e87693437f935ad7f5423a84ff7bf6f0adf6585b721ac5807db5a482"
+    },
+    {
+      "file": "深度研究/机制/raw/N001-package.json",
+      "bytes": 1065758,
+      "sha256": "0567897eb6759060ffe82e1636fb715b5f2d5d7bbac6c897481ecda1185bb749"
+    },
+    {
+      "file": "深度研究/机制/raw/N106-follow-response.json",
+      "bytes": 8231,
+      "sha256": "0fdbe06c7a3d04436ba0417a89e61905a5a020555053f4f4fdfb043a3a03d7bd"
+    },
+    {
+      "file": "深度研究/机制/raw/N107-explore-service.json",
+      "bytes": 8373,
+      "sha256": "d7c38003de308f0c62c9d292bd88f65a88c458793183e129fcabd5e6cc69dd09"
+    },
+    {
+      "file": "深度研究/机制/raw/N113-image-presenter.json",
+      "bytes": 18518,
+      "sha256": "13427e9b403949e87517118c1bb11d8f8973d77352a06d31109c6ef8381293d7"
+    },
+    {
+      "file": "深度研究/机制/raw/N201-image-bind.java.txt",
+      "bytes": 11527,
+      "sha256": "fe907ad9bf3186911dfec901d55a63d68aad79c1f063dd21a0f4e0ec0c62c5a4"
+    },
+    {
+      "file": "深度研究/机制/raw/N201-image-bind.json",
+      "bytes": 36575,
+      "sha256": "a7e00f2afca08240140b8568ddc50b4bd76391ebfe54f26c47058ccfd6c00acb"
+    },
+    {
+      "file": "深度研究/机制/raw/N202-image-indicator-hide.java.txt",
+      "bytes": 367,
+      "sha256": "7582da51c7d8c62cf0c14e1e051a6674740b21f027ed9c841fc688d3a6109749"
+    },
+    {
+      "file": "深度研究/机制/raw/N202-image-indicator-hide.json",
+      "bytes": 11498,
+      "sha256": "820dd3d0ad1f5452220d364961cc54d38025163b90c1a9509ebf98068c9743de"
+    },
+    {
+      "file": "深度研究/机制/raw/N203-image-data.java.txt",
+      "bytes": 1917,
+      "sha256": "02364896f4d531f42bba4a5e9d00fb9333ee86aa3123fca1f1be40c7c0c41409"
+    },
+    {
+      "file": "深度研究/机制/raw/N203-image-data.json",
+      "bytes": 15011,
+      "sha256": "a42b3e9561681a21d3a61e9b70f7b12215c0fcd81f7879a3687e208f91216b94"
+    },
+    {
+      "file": "深度研究/机制/raw/N206-like-bind.java.txt",
+      "bytes": 1222,
+      "sha256": "ad896f608810edaf027ec1b1ab1243125023c622cd50b8458bdaed99e7de97e9"
+    },
+    {
+      "file": "深度研究/机制/raw/N206-like-bind.json",
+      "bytes": 8876,
+      "sha256": "0ac212b6e409d107ac85ce4900a211ba2f626011a04f6a9ecb6271b4f0cc271b"
+    },
+    {
+      "file": "深度研究/机制/raw/N207-like-state.java.txt",
+      "bytes": 1626,
+      "sha256": "919e5532ab161a3e13580c58abed818fdd70fd777e1f8eb99df3a0dd1de87224"
+    },
+    {
+      "file": "深度研究/机制/raw/N207-like-state.json",
+      "bytes": 9683,
+      "sha256": "1cc8c838ca8b8fe158e0829164f3dc0b713426fe5a1222b1f5c4d2bd618fd9f9"
+    },
+    {
+      "file": "深度研究/机制/source-excerpts.md",
+      "bytes": 9203,
+      "sha256": "ed7e05e311ceaae2e78d0520f8694a79b97fa12dc2fd9d24d959256d90c785ec"
+    },
+    {
+      "file": "深度研究/机制/validation.json",
+      "bytes": 559,
+      "sha256": "7619ae5d11ca2d2f32f1aebfc2eb1d3cd14ce9c59ac17884ccb5b5a1b79f7d81"
+    },
+    {
+      "file": "深度研究/排版/01-feed-layout.png",
+      "bytes": 142818,
+      "sha256": "81eacec7d0a336eaa18bb89894ed44304b5b2a48cc12a0c7bea7a12edaa0ce24"
+    },
+    {
+      "file": "深度研究/排版/02-gallery-layout.png",
+      "bytes": 144915,
+      "sha256": "433483c0391420f0f9464638e3cee69dd8db9f33ac195896520b3c680f223f3b"
+    },
+    {
+      "file": "深度研究/排版/03-video-comments-layout.png",
+      "bytes": 168248,
+      "sha256": "f1af0e876a290188e28afd5aec8bc15d2e49061469bb2ebb5fb0244d3f9b5dcc"
+    },
+    {
+      "file": "深度研究/排版/04-search-filter-layout.png",
+      "bytes": 197414,
+      "sha256": "fdf7648617a6da9d608d9a819af8f5e6ed6a62b39773a42efffae477e7deb68f"
+    },
+    {
+      "file": "深度研究/排版/05-author-sticky-layout.png",
+      "bytes": 144348,
+      "sha256": "4997ba6e37f852d8cac7525f7a8b457db21c1c97e788c780b8c0f9b4e91f48bf"
+    },
+    {
+      "file": "深度研究/排版/06-search-results-layout.png",
+      "bytes": 147624,
+      "sha256": "50005c018a569326ac7de9f00082c70aa40fe59606b7f8b75895a16adfa46a6a"
+    },
+    {
+      "file": "深度研究/排版/layout-findings.md",
+      "bytes": 13704,
+      "sha256": "56f7d520fa793254b415e9c99d34c3efe214a62b4762289fdbc23ceb706ddd50"
+    },
+    {
+      "file": "深度研究/排版/measurements.md",
+      "bytes": 12923,
+      "sha256": "417c553aa47e459e82d3cef98b08b04e0ffc3bb76fde4dc3798afabe31110960"
+    },
+    {
+      "file": "深度研究/排版/metrics.json",
+      "bytes": 85872,
+      "sha256": "7debbab8672b16ebb7b779cac84cba354949839bb4408f930b0573d757164a9e"
+    },
+    {
+      "file": "深度研究/排版/validation.json",
+      "bytes": 556,
+      "sha256": "0cd0a8c143e9270f57278bd87bbc4447ad5c78de4a093c900672acc82eab34df"
+    },
+    {
+      "file": "深度研究/运行/渲染管线与帧采样.md",
+      "bytes": 3872,
+      "sha256": "57b2501dbddcb9c05b7dc8e9b995e0c31e618728a4cc955ead1babda9237a1db"
+    },
+    {
+      "file": "深度研究/运行/environment.json",
+      "bytes": 862,
+      "sha256": "6f3deef7aefa17e67632635351cfcb8f0f3f9ae21a0ab5af7e3e5e9e0f4aa03b"
+    },
+    {
+      "file": "深度研究/运行/gfx-delta.json",
+      "bytes": 96599,
+      "sha256": "af1940cd50c6fa33a20de4f4a01684033114ae7989474221b77dac21dac741af"
+    },
+    {
+      "file": "深度研究/证据索引.json",
+      "bytes": 22878,
+      "sha256": "8b298f5a1f18261fe8877f496390a61d8059846cb1bb3064914fc68ad5818871"
+    },
+    {
+      "file": "深度研究/validation.json",
+      "bytes": 705,
+      "sha256": "da2fb1f244954f7ca6854a1bbe6944c9a278e5e1ffa2c031a3b075cc96202184"
+    },
+    {
+      "file": "新版研究/01-新版安装包来源.md",
+      "bytes": 4774,
+      "sha256": "8d5b18a57a1169c0a13b0b1111c41345835e1fb401aaf79e03e4519a10637441"
+    },
+    {
+      "file": "新版研究/04-魅族21真机实测.md",
+      "bytes": 8195,
+      "sha256": "7be40917ec125d2963180002fa876082244ed1ee241bf64520ab1c991b0d1149"
+    },
+    {
+      "file": "新版研究/05-滑动与导航复刻规格.md",
+      "bytes": 14460,
+      "sha256": "6d498b92851f4076b8f754336056aa64a308699223cc09984cf7eda48486d94d"
+    },
+    {
+      "file": "新版研究/06-实测覆盖与待补测.md",
+      "bytes": 8941,
+      "sha256": "710dab5d2f1f1db20d6aeeef0bb7ab525e7988505b2aa835512c86839028d15f"
+    },
+    {
+      "file": "新版研究/07-证据与交付校验.md",
+      "bytes": 4949,
+      "sha256": "c4af4b3150c9c2cbb369339836a74d39c1d5badce0aa2290d16056bfea34c2a5"
+    },
+    {
+      "file": "新版研究/交互证据/复刻验收场景.json",
+      "bytes": 13968,
+      "sha256": "66dec78b6379254404d2369917b4338c17355d42611eaac79deb0f26d74b643b"
+    },
+    {
+      "file": "新版研究/交互证据/资料包文件清单.json",
+      "bytes": 41814,
+      "sha256": "821f41fada21e5ca145e210a06ddfcc0370c9aaeb63c331322663c0e27017c3a"
+    },
+    {
+      "file": "新版研究/交互证据/index.json",
+      "bytes": 186470,
+      "sha256": "063c2d6d3087f6d8d367a3325090b85691af3d4daf24198f4b77a710275909c1"
+    },
+    {
+      "file": "新版研究/截图/D010-home.png",
+      "bytes": 2318730,
+      "sha256": "7a038cf77e1e735b9298860ebef54c0ec90ce8c113cf47838a7825c7dff9e4cb"
+    },
+    {
+      "file": "新版研究/截图/D020-image-detail.png",
+      "bytes": 4035575,
+      "sha256": "b9ef194b28158cd4603782dd679f3a3b3dd2a0c23b97491661e02d451345b5a8"
+    },
+    {
+      "file": "新版研究/截图/R03-video-pause.png",
+      "bytes": 2896293,
+      "sha256": "935ad30be98c02f471b4c1656b24bb1e36e978d2505139fc32852000c2b5dab5"
+    },
+    {
+      "file": "新版研究/截图/R05-video-seek.png",
+      "bytes": 3734363,
+      "sha256": "b58b8438bae3e6d0a9e3f4de695d8f0d7d289f80e6fabe3ab8dba312e2d509ea"
+    },
+    {
+      "file": "新版研究/截图/R06-video-comments.png",
+      "bytes": 1130210,
+      "sha256": "f06d60fc7f4ebdb92ae233dbe5ccedf04d249a5c1331e0f92b3ae0607b9e64d7"
+    },
+    {
+      "file": "新版研究/截图/R07-comment-replies.png",
+      "bytes": 1063750,
+      "sha256": "072ed707f0f42e9f3aef59c764723a05268482ac3f4030f9e697c5ac051a22dd"
+    },
+    {
+      "file": "新版研究/截图/R08-comment-scroll.png",
+      "bytes": 785454,
+      "sha256": "7605a45c5d2e47d3a0b9be4b928209241dcc783bc0bb6110b003655c62af0215"
+    },
+    {
+      "file": "新版研究/截图/R10-comment-reopen.png",
+      "bytes": 1101188,
+      "sha256": "a473bfb852c9270b51a42d6026cd1302786a7402b542e13580874dfba4e46967"
+    },
+    {
+      "file": "新版研究/截图/R19-image-comments.png",
+      "bytes": 374985,
+      "sha256": "79ebccd87f8dc4fefe3d839913957a66faf12bed70073b02c3cfee213ff18927"
+    },
+    {
+      "file": "新版研究/截图/R27-gallery-open.png",
+      "bytes": 1378588,
+      "sha256": "bf8911a988729f6a6246d94223f327ab7cc1948f1059e3f3f205f04d00403726"
+    },
+    {
+      "file": "新版研究/截图/R28-gallery-short.png",
+      "bytes": 1378588,
+      "sha256": "bf8911a988729f6a6246d94223f327ab7cc1948f1059e3f3f205f04d00403726"
+    },
+    {
+      "file": "新版研究/截图/R29-gallery-next.png",
+      "bytes": 640681,
+      "sha256": "82ae5bbae8f1cff80acd2b5fa9e1348e66b46effce27e2a1a2db270b1266b6c9"
+    },
+    {
+      "file": "新版研究/截图/R31-indicator-timing.png",
+      "bytes": 16400,
+      "sha256": "846159145012125fb59df29a5cb80af77b1c8bbe31cd6f7dd5bdc79d97fb167d"
+    },
+    {
+      "file": "新版研究/截图/R36-gallery-7.png",
+      "bytes": 412842,
+      "sha256": "52f6cfa020b0007bfdfbc2834e2d40e159374be3e02baf8bcf20809ec1bd51ec"
+    },
+    {
+      "file": "新版研究/截图/R37-gallery-end-boundary.png",
+      "bytes": 412842,
+      "sha256": "52f6cfa020b0007bfdfbc2834e2d40e159374be3e02baf8bcf20809ec1bd51ec"
+    },
+    {
+      "file": "新版研究/截图/R39-image-tools-only.png",
+      "bytes": 25295,
+      "sha256": "bb76aad8e662c7798a60c2e9e1ccca347dbef9c2adeb9d6e281a6043064a9b89"
+    },
+    {
+      "file": "新版研究/截图/R47-gallery-start-boundary.png",
+      "bytes": 1379306,
+      "sha256": "ecbf38a9d8b59af2334a5434cf43624d6cdddacab46b21741ae414ce6e246e04"
+    },
+    {
+      "file": "新版研究/截图/R49-author-stable.png",
+      "bytes": 2367513,
+      "sha256": "7f85469dca117abaaad0cc9b5d5f68c841502a5d523118b088d46343d37e9c73"
+    },
+    {
+      "file": "新版研究/截图/R50-author-scroll.png",
+      "bytes": 1645391,
+      "sha256": "098c818f5333f25053b928efbecca7043ad0f96c8354a6746ad0b5dfcac8ba70"
+    },
+    {
+      "file": "新版研究/截图/R51-author-collections.png",
+      "bytes": 2783521,
+      "sha256": "0bbfdb4943bf9392807f430f6339163c457918cb69e9561f40759ad8dc120a21"
+    },
+    {
+      "file": "新版研究/截图/R52-author-notes-restore.png",
+      "bytes": 1684898,
+      "sha256": "ca0b19a632334f50c2fe4e476a1129c34bfee9ea84e566cbd1d0f249a87db15b"
+    },
+    {
+      "file": "新版研究/截图/R59-search-stable.png",
+      "bytes": 3463202,
+      "sha256": "4de80926032e276be6fe8eda24197ff8e19c718b9bc9d11894f7d2cea8a2fc9f"
+    },
+    {
+      "file": "新版研究/截图/R61-search-return.png",
+      "bytes": 3463600,
+      "sha256": "9c310629743045ec9d2224eda0dfe82b6bc3e79cfeb2cb7535f248085bba78f0"
+    },
+    {
+      "file": "新版研究/截图/R63-search-filter.png",
+      "bytes": 821008,
+      "sha256": "50583b4edc7bd238cb4badbe41aef64eabb3469df27dcf115a9e967d88515451"
+    },
+    {
+      "file": "新版研究/截图/R64-filter-image.png",
+      "bytes": 649823,
+      "sha256": "7e0372260bb557a0247dea97e80e22230f1c0ed1a0d3487fbf600b0ed67e8e50"
+    },
+    {
+      "file": "新版研究/截图/R66-filter-reopen.png",
+      "bytes": 649823,
+      "sha256": "7e0372260bb557a0247dea97e80e22230f1c0ed1a0d3487fbf600b0ed67e8e50"
+    },
+    {
+      "file": "新版研究/截图/R67-filter-reset.png",
+      "bytes": 649529,
+      "sha256": "31afd233c4fe32c426e74322fcbc5625bddcc57fdf5956638f3372ced96e3c86"
+    },
+    {
+      "file": "证据包/AndroidManifest.xml",
+      "bytes": 396664,
+      "sha256": "e22a5ee157a11c133be1d10dd591479ecf0cf83cef85c86fe58d1e5c57db0a1b"
+    },
+    {
+      "file": "证据包/apk-package.json",
+      "bytes": 853839,
+      "sha256": "3b555577c950bc222ea4ab764b1375ef44c67cc5285bb100185f69ffddd46f7a"
+    },
+    {
+      "file": "证据包/classes-all.txt",
+      "bytes": 1578353,
+      "sha256": "cb23bbaf95c7376f737236e83b02c412a4500c3d31d8bd54e14a9ea3de6a6d38"
+    },
+    {
+      "file": "证据包/classes-note.json",
+      "bytes": 2033271,
+      "sha256": "b2d7ed0c02f6fa51c8a34e64f202400563fefc6665613424db28a853bb82b084"
+    },
+    {
+      "file": "证据包/focused/C01-note-feed.json",
+      "bytes": 132006,
+      "sha256": "3979d7c6c3cb9c994b4953086112a27a1bd7e7f704e2817caa528d17d90f01af"
+    },
+    {
+      "file": "证据包/focused/C02-note-card.json",
+      "bytes": 49161,
+      "sha256": "62d77504ed5962c49a1cd36f2f44b16497bfdea2e28be9d47d7f3adc7bb486f1"
+    },
+    {
+      "file": "证据包/focused/C03-note-service.json",
+      "bytes": 23848,
+      "sha256": "a3243fe82e9106421fc67289cdeb0f103ae08d2b21b2a25ab0d9f0835d17d59b"
+    },
+    {
+      "file": "证据包/focused/C04-note-base-service.json",
+      "bytes": 4181,
+      "sha256": "ab294c9a8c6a80418703afe555aacd0f884732e3e5779b9afadb6c7ca5926bb3"
+    },
+    {
+      "file": "证据包/focused/C05-comment-service.json",
+      "bytes": 17679,
+      "sha256": "cdbb2efbffde0c6f6928dda27a2850a2709556e733a3ba46c77e23b46a886dbe"
+    },
+    {
+      "file": "证据包/focused/C06-comment-request.json",
+      "bytes": 24560,
+      "sha256": "e4c5a28db80a0e093055d833abff3190a8022bc2f962718e8afb5ef0eb9c0416"
+    },
+    {
+      "file": "证据包/focused/C07-comment-result.json",
+      "bytes": 9896,
+      "sha256": "14d9a04fb73055ea943bace85b4f49e192be3ffd0ef96b9aea19617658d7f53d"
+    },
+    {
+      "file": "证据包/focused/C08-comment-target.json",
+      "bytes": 43305,
+      "sha256": "c531785ea2dcfeb90ade2a02efdbe9141fd27e10f54f3462c7b22ce6f7f94c72"
+    },
+    {
+      "file": "证据包/focused/C09-collect-service.json",
+      "bytes": 10346,
+      "sha256": "f2f11cec7b3b7df756e7c45fb5bec964607e51b0b42226b822d9feb623b843af"
+    },
+    {
+      "file": "证据包/focused/C10-collect-dialog.json",
+      "bytes": 4770,
+      "sha256": "9bbf9e6dd42020f6b4dd7e4b45a3796d98aac44affbebcb1e1473593f07310b4"
+    },
+    {
+      "file": "证据包/focused/C11-follow-feed-service.json",
+      "bytes": 6699,
+      "sha256": "202282469f5b7db7ca790b729df0b6272fd301a681bfefc0aae55892115a56a5"
+    },
+    {
+      "file": "证据包/focused/C12-local-feed-service.json",
+      "bytes": 8948,
+      "sha256": "b975665d52f3a87f59aef2ab49b8177dc6e8674dd9d3880ae39be74383ebacdc"
+    },
+    {
+      "file": "证据包/focused/C13-search-service.json",
+      "bytes": 22661,
+      "sha256": "4ac048764db8c2e4c9f18b1eddad0338a87b2dc502210e1c3da88237f554e239"
+    },
+    {
+      "file": "证据包/focused/C14-draft-param.json",
+      "bytes": 7353,
+      "sha256": "853c5449632f6d3b7f922e278cc464ce5120e3ab784249f8a6fe9342a2e8aae4"
+    },
+    {
+      "file": "证据包/focused/C15-draft-service.json",
+      "bytes": 4474,
+      "sha256": "8dc3b47a30143f79d2d5f03656d2b54f6c1ed684cabf1060966a6e6122c9d972"
+    },
+    {
+      "file": "证据包/focused/C16-message-model.json",
+      "bytes": 19463,
+      "sha256": "ee11b6162accaa4e81ad7a42588e30f3b1a287b2f3d0c633a7fc817b095a386d"
+    },
+    {
+      "file": "证据包/focused/C17-profile-message-service.json",
+      "bytes": 4177,
+      "sha256": "d45334dd25e87a825242c4707772dae22ded1c8e7b5bcbfd3c64183672f3f2c4"
+    },
+    {
+      "file": "证据包/focused/C18-likes-repo.json",
+      "bytes": 8664,
+      "sha256": "3b9eec9148d674a436828fbabcaa3113f0478b2411a39af3750017ac418e4447"
+    },
+    {
+      "file": "证据包/focused/C19-profile-collect.json",
+      "bytes": 13905,
+      "sha256": "7492b64397529021ca1274fe9f8780820f3f0c36928615536f1a8b82e00429ba"
+    },
+    {
+      "file": "证据包/focused/C20-auto-scroll.json",
+      "bytes": 11518,
+      "sha256": "3c727eca785b15ab69349fa6f23ab49e7a8151cddc15b7cbf7772c6652e9d270"
+    },
+    {
+      "file": "证据包/focused/C21-like-lottie.json",
+      "bytes": 10195,
+      "sha256": "fc4c7b7ee7b33de0fe3d2219eb13e456bc26e70386e6d67cbf82a3ccdd805a7b"
+    },
+    {
+      "file": "证据包/focused/C22-agree-follow-service.json",
+      "bytes": 4873,
+      "sha256": "fe499c5a5144c326cb98c79ffd9ac5c93a8ccb0e7f92ab439743828172adaafa"
+    },
+    {
+      "file": "证据包/focused/C23-follow-response.json",
+      "bytes": 8198,
+      "sha256": "fa2ca1a85512ce17ad29b6155b3be910b44c5f724194ac2175e7b9744f78d713"
+    },
+    {
+      "file": "证据包/focused/C24-live-square.json",
+      "bytes": 4383,
+      "sha256": "feef1b20951c6dc975db5669b6b6f2302c75b2eccb80c3a6d1d6a9ea4a6c7105"
+    },
+    {
+      "file": "证据包/focused/C25-like-presenter.json",
+      "bytes": 5993,
+      "sha256": "e92b363fcc3c648cf1aa7ae257b98fca385eb4d28aed70b88b7634be8e1a2304"
+    },
+    {
+      "file": "证据包/focused/C26-collect-presenter.json",
+      "bytes": 4973,
+      "sha256": "a7f1ee272129d8cffa210ba7b3962f37a02864f40eef295106f9cda97a1cee51"
+    },
+    {
+      "file": "证据包/focused/C27-detail-root.json",
+      "bytes": 4951,
+      "sha256": "100a04d6127180cd7c3b4ee4f146ef7959d904ff15c81dffbbb66b16d77a3b79"
+    },
+    {
+      "file": "证据包/focused/C28-image-presenter.json",
+      "bytes": 9638,
+      "sha256": "cfaa2c85ff527ec258ae0b3edb13060950de0637843b60f8b872a80b27687727"
+    },
+    {
+      "file": "证据包/focused/C29-search-filter.json",
+      "bytes": 10271,
+      "sha256": "1ca0d1f17ad11a4c28bd4bc01433b02ed47ad7da795db09d34ca90ac8d5f3a93"
+    },
+    {
+      "file": "证据包/focused/C30-chat-manager.json",
+      "bytes": 10054,
+      "sha256": "b001a2fa043d08c7d79d96deee9824c4801d68ca5e8d99cf58d764106aa54dc7"
+    },
+    {
+      "file": "证据包/focused/C31-explore-service.json",
+      "bytes": 10910,
+      "sha256": "b9d335aa4ce4a8356153204ba5cbad177cfd64a60c0a1959e4c58b46e6e884a4"
+    },
+    {
+      "file": "证据包/focused/C32-upload-flow.json",
+      "bytes": 14306,
+      "sha256": "f6fd1b770e3e78b7cd6905e321e27a361ee4068c2ae0444b69761d460c4caf97"
+    },
+    {
+      "file": "证据包/focused/C33-draft-entry.json",
+      "bytes": 4293,
+      "sha256": "da650c3775c0cecffb6b04b1b2f79124ab80ef93b297d69036cddb5ce61e8dba"
+    },
+    {
+      "file": "证据包/focused/C34-photo-gesture.json",
+      "bytes": 46654,
+      "sha256": "52e258636318571097e00193d82d3ec658ac93b884d2f81e9de14409f7c38d2b"
+    },
+    {
+      "file": "证据包/focused/C35-follow-config.json",
+      "bytes": 7752,
+      "sha256": "e9c07401077f8339a890f586fa61bd07a78688a7d63b985e7ad9ada157cb58d1"
+    },
+    {
+      "file": "证据包/focused/C36-new-note-route.json",
+      "bytes": 27726,
+      "sha256": "36996ebca7b9507d027f511ef386102491adf2008e9e5732b9ccd8bc8ac23ed1"
+    },
+    {
+      "file": "证据包/focused/C37-edit-note-route.json",
+      "bytes": 14072,
+      "sha256": "68ed0913520033eebaa11f14a05b2fff40054af8e0cab272517ca263eae4e4ea"
+    },
+    {
+      "file": "证据包/focused/C38-comment-sort.json",
+      "bytes": 7198,
+      "sha256": "74b132e0a407d0f19057a1c606aff351862494407cb96f572ed61fdb721c9aa8"
+    },
+    {
+      "file": "证据包/focused/C39-detail-error.json",
+      "bytes": 16475,
+      "sha256": "8b0c2352e05051a51af926c4c148a4d2e4dbc35ef3282421f63ee22026c3afe4"
+    },
+    {
+      "file": "证据包/focused/C40-feedback-service.json",
+      "bytes": 7365,
+      "sha256": "c34259b85fd9658311af0d6565172098c1ff29d325a89f6fe89c7b48d8e1fccf"
+    },
+    {
+      "file": "证据包/focused/C41-note-interaction-model.json",
+      "bytes": 6844,
+      "sha256": "7076e3889e222f24c7bd3fde04c1074be2d818481a1715dcb100fdbbcfa28074"
+    },
+    {
+      "file": "证据包/focused/C42-msg-content.json",
+      "bytes": 12196,
+      "sha256": "43862e9582b47aca4ce1343475b8525adf1e7df57d7345e20b310eb6d9832408"
+    },
+    {
+      "file": "证据包/focused/C43-comment-image-upload.json",
+      "bytes": 8381,
+      "sha256": "3e9b78c472c8f2f5107016ff23ea57bcebe821ec8c25ba6d60ad14cfab9e49ff"
+    },
+    {
+      "file": "证据包/focused/C44-new-note-config.json",
+      "bytes": 28474,
+      "sha256": "d30f5104cf69260f4bd3723b161d2e045aae1da9065c3dcfe4d61399f528080d"
+    },
+    {
+      "file": "证据包/focused/C45-new-note-page.json",
+      "bytes": 7984,
+      "sha256": "13c3ce736144d82ace7ee832a34a12b7a9613014c3e701ecb93dac2b4bcbdc81"
+    },
+    {
+      "file": "证据包/focused/C46-collection-info.json",
+      "bytes": 21632,
+      "sha256": "58873ef216d95969fc0b81ea3b734f0fd8b1ab006f0ad6db0afc6f0aa40fa6ba"
+    },
+    {
+      "file": "证据包/focused/C47-explore-tab.json",
+      "bytes": 6670,
+      "sha256": "93f6a311d38b2667f564e314332b32931ff27aeeda6e63cbd619278d10d51001"
+    },
+    {
+      "file": "证据包/focused/C48-editable-image.json",
+      "bytes": 87843,
+      "sha256": "9fdcbeaac67cae42bb40132d13490e1b8a34c6f9f990490c95fe91f160036cb7"
+    },
+    {
+      "file": "证据包/focused/C49-editable-video.json",
+      "bytes": 84931,
+      "sha256": "63bbab023626aea5aff1578b29b5cedde596580c3aa8d86afc367b449fb072cf"
+    },
+    {
+      "file": "证据包/focused/C50-chat-conversation.json",
+      "bytes": 8496,
+      "sha256": "8cbe452ef728e03af9d08ec95104f574c74f80bbf80a08c28c1ad38b53899337"
+    },
+    {
+      "file": "证据包/focused/C51-like-state-consumer.json",
+      "bytes": 4861,
+      "sha256": "da350582d0cbb9045d91e208002912c438ad96a61b7ee709b35fb66b9b1161fb"
+    },
+    {
+      "file": "证据包/focused/C52-collect-state-consumer.json",
+      "bytes": 4909,
+      "sha256": "bd140a8db6d443e4de199c6b77e41d2015af0bfa603fad1897eeb626eefe6d6f"
+    },
+    {
+      "file": "证据包/focused/C53-board-service.json",
+      "bytes": 13548,
+      "sha256": "c1d441732a1a623e03286decf7d35cc414cca7eea93457e0c2ee5f81609aad34"
+    },
+    {
+      "file": "证据包/focused/C54-follow-note-model.json",
+      "bytes": 7649,
+      "sha256": "992f927519490306a388d3692301cbd2d07f65faf84538d0406d7978a59e034e"
+    },
+    {
+      "file": "证据包/focused/C55-wish-board.json",
+      "bytes": 22527,
+      "sha256": "0ffa438eef0e867185660491dbd4782a1b2f80f7b5bb387239fd4f15c19e4071"
+    },
+    {
+      "file": "证据包/focused/C56-video-like.json",
+      "bytes": 9407,
+      "sha256": "8974170d3c470b4387be834bc0e3ea7cd7c23c039f2ff3ab357b14de1ebfd586"
+    },
+    {
+      "file": "证据包/focused/C57-doubleclick-like.json",
+      "bytes": 5120,
+      "sha256": "4a64ee108e80336a51989a93fe2b78d5699cd2cac451df9c2ea913d4cbe66a90"
+    },
+    {
+      "file": "证据包/focused/C58-comment-like.json",
+      "bytes": 6654,
+      "sha256": "019d648cea8190352fdadfb093fab409ecffbb25b8cd4a862a2c17e74c7683ac"
+    },
+    {
+      "file": "证据包/focused/M01-like-bind.java.txt",
+      "bytes": 1056,
+      "sha256": "d8002c4f466f965903ab693e8f28cd259568c649a6f039170c8d19cfa7e8819e"
+    },
+    {
+      "file": "证据包/focused/M01-like-bind.json",
+      "bytes": 8581,
+      "sha256": "332fd12d16373d6cc006f84c0715887d20ffb2a6311550ff3110e4cdd9843565"
+    },
+    {
+      "file": "证据包/focused/M02-like-update.java.txt",
+      "bytes": 1306,
+      "sha256": "7ca1fd31532e5289b83f5bee240e7aa3cb5c5be97f40a8bc71ef44c374299047"
+    },
+    {
+      "file": "证据包/focused/M02-like-update.json",
+      "bytes": 8407,
+      "sha256": "6d16491efd83d94db2e80229d52f5d3d6afa3d3c0c97bc8c6b5b07b17d2ef0ff"
+    },
+    {
+      "file": "证据包/focused/M03-collect-bind.java.txt",
+      "bytes": 1052,
+      "sha256": "92fcb3c2532fd7b716f721e7faa654cc8d42eac69e6f2d31ac9e8de425b1ed07"
+    },
+    {
+      "file": "证据包/focused/M03-collect-bind.json",
+      "bytes": 7768,
+      "sha256": "c980af67db27c1eaca5d711d9f2f5980181f7301ba2a2ca386aa03d5e4680d30"
+    },
+    {
+      "file": "证据包/focused/M04-image-bind.java.txt",
+      "bytes": 16783,
+      "sha256": "4bb486929ddd61e3344bd397b02380a866307506705dd53bf50624a064ff0650"
+    },
+    {
+      "file": "证据包/focused/M04-image-bind.json",
+      "bytes": 43670,
+      "sha256": "b9021712ebb8f822fefdfb414b9abc2ffdd1bd6ddafc8579d32022be9969f0af"
+    },
+    {
+      "file": "证据包/focused/M05-image-doubletap.java.txt",
+      "bytes": 4557,
+      "sha256": "de125fb22002fc2cd79148ffd4b229554fa808987ba5676ad9b29974f748d237"
+    },
+    {
+      "file": "证据包/focused/M05-image-doubletap.json",
+      "bytes": 16927,
+      "sha256": "8f3383bcc56df6f68b5a71cd83e04e0dc16016bf5304376bc4b811d724c7754d"
+    },
+    {
+      "file": "证据包/focused/M06-photo-touch.java.txt",
+      "bytes": 4357,
+      "sha256": "5cdff9e9fd6f555194fa315d9b2d5af66796fb138e56335c80eadeb5e1e53ac0"
+    },
+    {
+      "file": "证据包/focused/M06-photo-touch.json",
+      "bytes": 31154,
+      "sha256": "08bf44bad0bb3bfea8c057f0f99540583ee261841cf01890c337b280fe4b78db"
+    },
+    {
+      "file": "证据包/focused/M07-comment-list.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M07-comment-list.json",
+      "bytes": 11178,
+      "sha256": "657404ba8c4fa2197958ddd86bda05298eff1d2e43a39e55baf77784372e5412"
+    },
+    {
+      "file": "证据包/focused/M08-comment-replies.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M08-comment-replies.json",
+      "bytes": 11166,
+      "sha256": "a445374ce4f8a22faed59a499d786ba4533b05f1f67c76a5b5e757cccab75c21"
+    },
+    {
+      "file": "证据包/focused/M09-comment-post.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M09-comment-post.json",
+      "bytes": 11158,
+      "sha256": "66e5d73c97fa25123ad4a8a697959b5a07e3a523072eaf959088be472956d370"
+    },
+    {
+      "file": "证据包/focused/M10-collection-add.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M10-collection-add.json",
+      "bytes": 7859,
+      "sha256": "ae5318f191cb71196bdfb7b61d5abcdf2fce7d6530e50faa2ac73754584ad9c9"
+    },
+    {
+      "file": "证据包/focused/M11-collection-create.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M11-collection-create.json",
+      "bytes": 7897,
+      "sha256": "aa5f13693e771e863641675fb6ed1842ddc12a9bcd3f67c8560f3a494c96cbfa"
+    },
+    {
+      "file": "证据包/focused/M12-profile-like-load.java.txt",
+      "bytes": 1398,
+      "sha256": "e57372b20d06a66c9598d8cc7a85804ee180576c41eeae60bdfc639d18c9af89"
+    },
+    {
+      "file": "证据包/focused/M12-profile-like-load.json",
+      "bytes": 10284,
+      "sha256": "05ace01aa07962830f6e660901d67ccbf598e5b1b409ceff5eff7aa2c43c9309"
+    },
+    {
+      "file": "证据包/focused/M13-profile-collect-sync.java.txt",
+      "bytes": 637,
+      "sha256": "c70a41fe50542fbfc5cc3e7db1b1f59cdb3109a34a231ae32e35442696e5f420"
+    },
+    {
+      "file": "证据包/focused/M13-profile-collect-sync.json",
+      "bytes": 10885,
+      "sha256": "52620b878c39f14290e95d3bef34dae86358d474662232936e335d241a0b9253"
+    },
+    {
+      "file": "证据包/focused/M14-follow-feed.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M14-follow-feed.json",
+      "bytes": 6878,
+      "sha256": "cfb7dc472fb17b5ccbd3e1417c5dc861e7ff05734b8a03d103777eafa70d4053"
+    },
+    {
+      "file": "证据包/focused/M15-explore-feed.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M15-explore-feed.json",
+      "bytes": 8693,
+      "sha256": "30c9492cd60706bd3c018a1488ed19d54943c15f2a03f8fce3009357aefeb791"
+    },
+    {
+      "file": "证据包/focused/M16-local-feed.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M16-local-feed.json",
+      "bytes": 7590,
+      "sha256": "45e84b6fd0d81d85610fdb88186a5a23e74e3b3623f787db5f7493aabb2ad1f4"
+    },
+    {
+      "file": "证据包/focused/M17-search-notes.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M17-search-notes.json",
+      "bytes": 13886,
+      "sha256": "bda80375ed49fa18a8dcd34996251ee7da84dbf036a9f8db7744ffb611cb4b7f"
+    },
+    {
+      "file": "证据包/focused/M18-search-filter.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M18-search-filter.json",
+      "bytes": 13537,
+      "sha256": "3665d48a87dd0426414c2253093c9b2eb304687f51adfec2f49ec89ec45635df"
+    },
+    {
+      "file": "证据包/focused/M19-autoscroll-state.java.txt",
+      "bytes": 218,
+      "sha256": "e44020580534a3138a2bbf669c82438e926f3daf57d88c2a40393b27ffc8b73e"
+    },
+    {
+      "file": "证据包/focused/M19-autoscroll-state.json",
+      "bytes": 8468,
+      "sha256": "9071214b801a0d0066297a219b51a786903b96b7378f84552915cbbac4475d0d"
+    },
+    {
+      "file": "证据包/focused/M20-autoscroll-capability.java.txt",
+      "bytes": 376,
+      "sha256": "334b331baf9a659fbb8841b53368819c8a5d4f444e5c69c8452d12b3bcd8bbbc"
+    },
+    {
+      "file": "证据包/focused/M20-autoscroll-capability.json",
+      "bytes": 8852,
+      "sha256": "8b8d151ded279cb32931a0e226cc74a9dcd96a7dca272e6638ec928f2a09eb69"
+    },
+    {
+      "file": "证据包/focused/M21-follow-config.java.txt",
+      "bytes": 315,
+      "sha256": "a74bbd1b11f19d77164c6dc762bd0a6ef2b7534706347ae19233c94818b18b8e"
+    },
+    {
+      "file": "证据包/focused/M21-follow-config.json",
+      "bytes": 6933,
+      "sha256": "0b86a050ba95216c441d9ea9d76b420675200810e6e653ace84f0b76eaee6d59"
+    },
+    {
+      "file": "证据包/focused/M22-upload-cancel.java.txt",
+      "bytes": 172,
+      "sha256": "db5bf345086f9f3bdd90d7b597e8d639f2b38765e686ebc6a1ce90e28ebfe181"
+    },
+    {
+      "file": "证据包/focused/M22-upload-cancel.json",
+      "bytes": 9280,
+      "sha256": "0a2d59d544225b44e9cbda5308aec29701a1bfa6d04555f54b0f074357436169"
+    },
+    {
+      "file": "证据包/focused/M23-message-content.java.txt",
+      "bytes": 119,
+      "sha256": "b2b09c7b38a40b361de307f31d575b61bf8a46aeda928b65117fa5aaaff08986"
+    },
+    {
+      "file": "证据包/focused/M23-message-content.json",
+      "bytes": 11070,
+      "sha256": "1b70395cc0e44c41fdd783d8cc3b00eab327c7e218fae9211136f5253ec72a15"
+    },
+    {
+      "file": "证据包/focused/M24-chat-receive.java.txt",
+      "bytes": 777,
+      "sha256": "d9130d62de0fcb5888b8b5cc280e985bd6b10eec67aa41433cc03f761306d671"
+    },
+    {
+      "file": "证据包/focused/M24-chat-receive.json",
+      "bytes": 9087,
+      "sha256": "b19f7d57e544b3954b2d9002888799d7bf694ee98dcd4b05d6fd28ab58b526b0"
+    },
+    {
+      "file": "证据包/focused/M25-like-asset-select.java.txt",
+      "bytes": 323,
+      "sha256": "0c98dbe6db89fa966f1ecd8f57be3de8d538467870e151a7e78323161af06d2c"
+    },
+    {
+      "file": "证据包/focused/M25-like-asset-select.json",
+      "bytes": 8144,
+      "sha256": "5a5392e72799890ed2f349e6c864eba2befc110647e36941886f073ff3304e38"
+    },
+    {
+      "file": "证据包/focused/M26-note-detail-fetch.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M26-note-detail-fetch.json",
+      "bytes": 13927,
+      "sha256": "7117037006962ad89cc576de5a50e792357790e2a04cabe596ec74989ff38d00"
+    },
+    {
+      "file": "证据包/focused/M27-longpress-fetch.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "证据包/focused/M27-longpress-fetch.json",
+      "bytes": 6636,
+      "sha256": "4e2cc6a52d6daee435fc040823a5d81bc7bf05ad992744b382cf48f5ece2fe32"
+    },
+    {
+      "file": "证据包/focused/M28-note-liked-field.java.txt",
+      "bytes": 66,
+      "sha256": "cf1bf0cc65ff02ed3279ce4d9af3156297d9f23b59a14304743542dffc3a9475"
+    },
+    {
+      "file": "证据包/focused/M28-note-liked-field.json",
+      "bytes": 56372,
+      "sha256": "923454a8ba08cab051baead8d7d1ca4d2986d3547ebc424499afd030f8593f79"
+    },
+    {
+      "file": "证据包/focused/M29-note-animation-selector.java.txt",
+      "bytes": 97,
+      "sha256": "6bfd61e78c1e4b837ccbcb6daab0c24965a904ce5c87bacc3cd027f9c0fc5f42"
+    },
+    {
+      "file": "证据包/focused/M29-note-animation-selector.json",
+      "bytes": 56459,
+      "sha256": "f156a5716dffced63653c488c0c897e5e89ab1060782b6158084eb79d6f2e380"
+    },
+    {
+      "file": "证据包/focused/M30-image-indicator-hide.java.txt",
+      "bytes": 1190,
+      "sha256": "f25750f79f6ba555559d147623e453909b9fb52c07e8e6b51a09fe3c2360ef38"
+    },
+    {
+      "file": "证据包/focused/M30-image-indicator-hide.json",
+      "bytes": 9762,
+      "sha256": "0628ef8005ceb4ff90d3a91b9b830091d469c428620d195c66bb9e3ca8267d71"
+    },
+    {
+      "file": "证据包/focused/M31-image-switch.java.txt",
+      "bytes": 168,
+      "sha256": "7bc12da9a89cc1e8a7eb6520344f402edbad35c67063c5860b9c10cc7f315570"
+    },
+    {
+      "file": "证据包/focused/M31-image-switch.json",
+      "bytes": 7628,
+      "sha256": "09ca542321839cb9a121af9208c34ab152ed31f6e857e221f504f15708adc67c"
+    },
+    {
+      "file": "证据包/focused/M32-image-bind-data.java.txt",
+      "bytes": 1680,
+      "sha256": "d5d0513d288de34bb1a247564ebbed2597a8ad94e05d5bfc0cbf714a2f2a5f5b"
+    },
+    {
+      "file": "证据包/focused/M32-image-bind-data.json",
+      "bytes": 10993,
+      "sha256": "d6ed56edbe7d1d6fdd9cbbd85691a1db8c0dc8fc28674dba290aaff1e29c1db6"
+    },
+    {
+      "file": "证据包/focused/M33-comment-precache-guard.java.txt",
+      "bytes": 112,
+      "sha256": "2c60297443ad9fe8a991fe27b1779057a51089835d8eca5e9e9c07263796d522"
+    },
+    {
+      "file": "证据包/focused/M33-comment-precache-guard.json",
+      "bytes": 13326,
+      "sha256": "373e5726001742ce31cdc3f756e94be411135e57a0cd6622a19ea82752885da5"
+    },
+    {
+      "file": "证据包/focused/M34-filter-view-created.java.txt",
+      "bytes": 1549,
+      "sha256": "69b3c2b0d13582d265987528c6b3233f203218b94668b2e1ee74eae0794bbc16"
+    },
+    {
+      "file": "证据包/focused/M34-filter-view-created.json",
+      "bytes": 10927,
+      "sha256": "e42d8491dc3fb8e6af98c97b163aed8b35a69ae2c43b83417df5c1e9cd0544da"
+    },
+    {
+      "file": "证据包/focused/M35-profile-collect-diff.java.txt",
+      "bytes": 247,
+      "sha256": "96cdf33cee658a6f1aa927ab6e59147083ad1c19fee51779d47a07e29c624cc5"
+    },
+    {
+      "file": "证据包/focused/M35-profile-collect-diff.json",
+      "bytes": 10059,
+      "sha256": "210fcec352a7cbf9f714ddd1a0558aad45870f52ae50b7b0034f326cf8bce43c"
+    },
+    {
+      "file": "证据包/focused/M36-auto-activate.java.txt",
+      "bytes": 155,
+      "sha256": "c3722c695d7ab1eb6162925553468fed2793c985b3be4198e50ab97aaa9a1f1d"
+    },
+    {
+      "file": "证据包/focused/M36-auto-activate.json",
+      "bytes": 8349,
+      "sha256": "125ee0ee335c8acb29ba21dd5ef894b204f9db6246dcb2b0a6df02634e3baa57"
+    },
+    {
+      "file": "证据包/focused/M37-photo-scale.java.txt",
+      "bytes": 753,
+      "sha256": "f9039f27cc4bf322b5e481a89bef40502b092657bb3ca2f2705cdde68d70c5d1"
+    },
+    {
+      "file": "证据包/focused/M37-photo-scale.json",
+      "bytes": 22851,
+      "sha256": "73da6715e48e810a5295c170dfefbc3d86fbb5c037ab6a7cf4fb3755aee3306d"
+    },
+    {
+      "file": "证据包/focused/M38-message-state-read.java.txt",
+      "bytes": 71,
+      "sha256": "3be1402c6021a60848d9bd89f0e40b8cb89c3eb0a2f874c7dbf5eb9018631b73"
+    },
+    {
+      "file": "证据包/focused/M38-message-state-read.json",
+      "bytes": 10942,
+      "sha256": "c98267f370cb68f7bcff3e9addd887f89e65fa584ef628f48b8648978c41f800"
+    },
+    {
+      "file": "证据包/focused/M39-note-unlike-request.java.txt",
+      "bytes": 577,
+      "sha256": "243c4747558e7bbbb053bba1257c299b8026fb0c2c4c165c7a03d99afd647a92"
+    },
+    {
+      "file": "证据包/focused/M39-note-unlike-request.json",
+      "bytes": 6795,
+      "sha256": "0c8a61f6f91a91fc7733880de29a928492933865e911499948449cea6fc168b6"
+    },
+    {
+      "file": "证据包/focused/M40-note-like-request.java.txt",
+      "bytes": 568,
+      "sha256": "8168a949cebac85a9f3acb4b762403129969e5661352d3fb891c09e7ee69d8c5"
+    },
+    {
+      "file": "证据包/focused/M40-note-like-request.json",
+      "bytes": 6777,
+      "sha256": "029636be0a6b031cabbdcc90dd93f87750704a3148d43d4f97eef135c2ea2fd4"
+    },
+    {
+      "file": "证据包/focused/M41-upload-start.java.txt",
+      "bytes": 660,
+      "sha256": "baf8beeb31c9a6ea0a04d903abf4d5ba1148124d677cfea13ff526adaddeb5f8"
+    },
+    {
+      "file": "证据包/focused/M41-upload-start.json",
+      "bytes": 10354,
+      "sha256": "4496a6045847b99dbec0ca451146ec1cc5796101a9f63d9020d01a90e815c511"
+    },
+    {
+      "file": "证据包/focused/M42-like-state-render.java.txt",
+      "bytes": 1908,
+      "sha256": "ef399fed2b9e82c89273df9e58a4e58bfc54ba7080c0cdb642862bfd466b3592"
+    },
+    {
+      "file": "证据包/focused/M42-like-state-render.json",
+      "bytes": 9601,
+      "sha256": "a49fef33cd4e327ecc73aa73c6812e771d25380fb1a9d059e8e81a3ace4ee848"
+    },
+    {
+      "file": "证据包/focused/M43-collect-state-render.java.txt",
+      "bytes": 1804,
+      "sha256": "52b17547c276101beb6eb6d2c9ee2991b257dc8220908d9a12fed233bca6a110"
+    },
+    {
+      "file": "证据包/focused/M43-collect-state-render.json",
+      "bytes": 9423,
+      "sha256": "45e38a8f4e6f04fd4c57ea5a71ad336dac2a7629b5064f16b9dfdf6deed4c3e5"
+    },
+    {
+      "file": "证据包/focused/M44-explore-tab-assembly.java.txt",
+      "bytes": 214,
+      "sha256": "96d91fadbb2e389d9a2d5b26d71ad232f0528b0c43400783b3f32e9c72d6006a"
+    },
+    {
+      "file": "证据包/focused/M44-explore-tab-assembly.json",
+      "bytes": 6607,
+      "sha256": "3132f9b31e1eb0c862ad0e4a7181fa5ac9773e6a81265d3813d9967a26caa89a"
+    },
+    {
+      "file": "证据包/focused/M45-comment-upload-start.java.txt",
+      "bytes": 58,
+      "sha256": "9fdbee477424ed8238587b8818156f4b5ca8571aedc6a29a96d17f50f8a74bee"
+    },
+    {
+      "file": "证据包/focused/M45-comment-upload-start.json",
+      "bytes": 6923,
+      "sha256": "2981a54cb7cc2df1a9774c7d12a8acb76322e862d52178ff7f34ecd38aa46439"
+    },
+    {
+      "file": "证据包/focused/M46-like-count-field.java.txt",
+      "bytes": 68,
+      "sha256": "cd07b878a811ff45b9a865e587eff3628634b4ff48ada4bfdb61dc2456986c22"
+    },
+    {
+      "file": "证据包/focused/M46-like-count-field.json",
+      "bytes": 56373,
+      "sha256": "505f4a00dd543436bbe4151c0379b3ebf6879a3856718b881db2dd2e744aefb2"
+    },
+    {
+      "file": "证据包/focused/M47-collected-field.java.txt",
+      "bytes": 69,
+      "sha256": "40018dc35ebc986d21c045f8844b326dacb691a03541d1b43ece90175f35e5c4"
+    },
+    {
+      "file": "证据包/focused/M47-collected-field.json",
+      "bytes": 56372,
+      "sha256": "c1dfbd144e1dc27fa58733bc9eba924b385e6fc83c0f5ac5ef11e82681e9c5a1"
+    },
+    {
+      "file": "证据包/focused/M48-collect-count-field.java.txt",
+      "bytes": 71,
+      "sha256": "51bae43ab05901f2247b80594117be54fbe13f9f0d37847d718927e8490d8b4e"
+    },
+    {
+      "file": "证据包/focused/M48-collect-count-field.json",
+      "bytes": 56373,
+      "sha256": "2d2ab4bae7fbcca89e6e3c2030810bd622780ce2393512f0e5b0beb100652840"
+    },
+    {
+      "file": "证据包/focused/M49-like-extra-reset.java.txt",
+      "bytes": 73,
+      "sha256": "9947548a6ed6dd5a5f5de04adc108ace9cb8ea9697a0d8e957ce0a5874de7b6d"
+    },
+    {
+      "file": "证据包/focused/M49-like-extra-reset.json",
+      "bytes": 56393,
+      "sha256": "3bb9d15a3326e6714bfd3dbb0a3eda186a9dc3add8c329a8a058c374770b1d53"
+    },
+    {
+      "file": "证据包/focused/M50-collect-extra-reset.java.txt",
+      "bytes": 77,
+      "sha256": "b745f31cfeda3c5f29fc0e23690d0e57cc57d417e41c6678ec47a6df469b7dd1"
+    },
+    {
+      "file": "证据包/focused/M50-collect-extra-reset.json",
+      "bytes": 56401,
+      "sha256": "e821c457f384a204a23f8e85450d5de3ebdaef716f617185e2bdc0a1daffe042"
+    },
+    {
+      "file": "证据包/focused/M51-comment-upload-progress.java.txt",
+      "bytes": 526,
+      "sha256": "0e60a737a90f9f05ac87cd8639eef6411494a6fc106b6664af17459c8c37b77f"
+    },
+    {
+      "file": "证据包/focused/M51-comment-upload-progress.json",
+      "bytes": 8015,
+      "sha256": "103eea6e49eb8055599f231eb72227f9c638098db23109e77c1072e67acd505b"
+    },
+    {
+      "file": "证据包/focused/M52-comment-upload-finish.java.txt",
+      "bytes": 1504,
+      "sha256": "7c0a34820aa38960360958e49d2f5c623a24f3b3cb90f9f08a3c5211d34826bc"
+    },
+    {
+      "file": "证据包/focused/M52-comment-upload-finish.json",
+      "bytes": 10413,
+      "sha256": "8a6ceb105de6056336673d04cae64688f91cc039aad6979590dc1ab1cdc85ee5"
+    },
+    {
+      "file": "证据包/focused/M53-liked-reset-field.java.txt",
+      "bytes": 71,
+      "sha256": "952922a6dcc9e095c952c22a48faf6fca12da2c02d8aa0b6f68523f61c2079b8"
+    },
+    {
+      "file": "证据包/focused/M53-liked-reset-field.json",
+      "bytes": 56392,
+      "sha256": "985948b5e62681e09c566eb45577d4c3f3a1ad0c2848c69b9ac4892239ed3364"
+    },
+    {
+      "file": "证据包/focused/M54-collected-reset-field.java.txt",
+      "bytes": 75,
+      "sha256": "0a32c885e0b52744a3d587ef595844a2bdf74700de70edd81545874794c258cf"
+    },
+    {
+      "file": "证据包/focused/M54-collected-reset-field.json",
+      "bytes": 56400,
+      "sha256": "a3c0972d8b059bd5fe1445e58c48bc99017d886c80e8964b2a727b50020fa4ed"
+    },
+    {
+      "file": "证据包/focused/M55-video-like-update.java.txt",
+      "bytes": 410,
+      "sha256": "3c78ad1a2a426f9b9d0037895bdd30f4aa8798898c3bf8f404db32003662e925"
+    },
+    {
+      "file": "证据包/focused/M55-video-like-update.json",
+      "bytes": 8487,
+      "sha256": "696125660d084da2caedd1b6350a63b22b9d4ab9dfa5acc21b57015d69edda68"
+    },
+    {
+      "file": "证据包/focused/M56-video-like-animation.java.txt",
+      "bytes": 2085,
+      "sha256": "a252f98d58a5278b99b5593eacb3c45ed050d909d6f1ab07e57312b244a20554"
+    },
+    {
+      "file": "证据包/focused/M56-video-like-animation.json",
+      "bytes": 11421,
+      "sha256": "d0eb2122f31ee43edd49d1bac338b19dad26ce0ebe77f7bed6862b2f93bd76c4"
+    },
+    {
+      "file": "证据包/focused/M57-doubleclick-bind.java.txt",
+      "bytes": 522,
+      "sha256": "19f527d692cf060a061a658550303e8c579e1e28f372db89a693f449eed239ef"
+    },
+    {
+      "file": "证据包/focused/M57-doubleclick-bind.json",
+      "bytes": 6631,
+      "sha256": "83049cb31937badc226f649f672832b08e771bae518b503f3661f2afd4952a80"
+    },
+    {
+      "file": "证据包/focused/M58-comment-like-bind.java.txt",
+      "bytes": 810,
+      "sha256": "7db02f277e184e78705faa24d3d95a3bf1047a9aebbc67852d8bc0e05e6969af"
+    },
+    {
+      "file": "证据包/focused/M58-comment-like-bind.json",
+      "bytes": 7990,
+      "sha256": "6ef8a4a88f372f7bb0a1c65cea1f803aab9d29134c97e4be9c5f5f1dcc2eb0c1"
+    },
+    {
+      "file": "证据包/focused/M59-video-like-play-or-bind.java.txt",
+      "bytes": 298,
+      "sha256": "81707ec8768f2676f601a611ed7e5e921f8e2939c6806ed8fdc890f505bbdbb7"
+    },
+    {
+      "file": "证据包/focused/M59-video-like-play-or-bind.json",
+      "bytes": 8276,
+      "sha256": "e4baf7532b61bf974cff61f63dd8aac3e3e3879d8d4c453c852d122358dfdc02"
+    },
+    {
+      "file": "证据包/focused/M60-video-like-custom-compose.java.txt",
+      "bytes": 386,
+      "sha256": "860d55734bb82659079e2a41395fb1c4a3933aa9102929e4b97651eabdcf3c98"
+    },
+    {
+      "file": "证据包/focused/M60-video-like-custom-compose.json",
+      "bytes": 7688,
+      "sha256": "994df724294289a5036b2730bf39ad228fa74a70af870ce638ef87947e3abba8"
+    },
+    {
+      "file": "证据包/focused/X01-v3-like-callers.json",
+      "bytes": 6828,
+      "sha256": "664bfd138a44215fc2376cbe8d645e2b8dc5189de8f040d4ab8fe93a2197ab84"
+    },
+    {
+      "file": "证据包/index.json",
+      "bytes": 96941,
+      "sha256": "9466ff691c0c0288084efcf09453f050b2d4fcb719ebf934aff57491837e68fc"
+    },
+    {
+      "file": "证据包/package-summary.json",
+      "bytes": 4473,
+      "sha256": "72fcb06a80a1ec4d102a16ed76471a6edb888ae1796d8a8cb28771d355501b58"
+    },
+    {
+      "file": "证据包/resources-summary.json",
+      "bytes": 205053,
+      "sha256": "2d91f1bf8c0d5a6a6bf6fd9a22602d18060f527e6c2eb29603f026bf39807ea3"
+    }
+  ],
+  "publicationScope": "Historical local research verification or archive manifest. These counts and hashes do not validate the public derived repository. Use the root public-manifest.json and node tools/verify.mjs."
+}

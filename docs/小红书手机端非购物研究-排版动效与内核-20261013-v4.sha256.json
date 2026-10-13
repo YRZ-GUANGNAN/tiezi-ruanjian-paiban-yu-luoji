@@ -1,0 +1,9 @@
+{
+  "verifiedAtUtc": "2026-10-13T15:49:47.4276208Z",
+  "status": "PASS",
+  "archive": "小红书手机端非购物研究-排版动效与内核-20261013-v4.zip",
+  "entriesVerified": 408,
+  "bytes": 48603908,
+  "sha256": "f7489b683cd160b37b41f9b2db1117ed514cf0893f2c3db05a00617f5dcc4c1c",
+  "method": "每个ZIP成员解压流与清单以及当前本地文件逐项SHA-256对照。"
+}

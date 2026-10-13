@@ -1,0 +1,3 @@
+    public final void L2(long j4) {
+        this.collectedCount = j4;
+    }

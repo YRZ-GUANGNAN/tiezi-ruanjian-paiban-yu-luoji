@@ -1,0 +1,2651 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-13T10:43:58.261Z",
+  "sourceVersion": "8.72.0",
+  "method": "Match Window + StatsSince + IntendedVsync, subtract before snapshot; retain post-snapshot Flags=0 completed rows.",
+  "limits": [
+    "统计窗口包含录屏、等待、截图与层级采集，不等于单次转场时段。",
+    "HWUI 环形表只保留最近帧；持续播放场景会覆盖动画期间的记录。",
+    "FrameCompleted-IntendedVsync 是框架采样延迟，不是视频解码帧率、输入延迟或屏幕最终呈现时间。",
+    "累计 Janky 差值只属于两次采样之间的区间，不能当作某段动画的掉帧率。",
+    "Flags 或时间戳异常已排除；未用 DisplayPresentTime 反推 FPS。"
+  ],
+  "recordings": [
+    {
+      "id": "T02-detail-enter",
+      "beforeSha256": "1ce7bff9132c8f7a7e19b9052fd0900bd6f120d616d96f51f3a8c91335f423f3",
+      "afterSha256": "2f2ebb4014e4529fbdb4e8f80577864236bd7d88f0b28e2c28f1fd54dc871d19",
+      "pipeline": "Skia (Vulkan)",
+      "snapshotIntervalMs": 11797,
+      "windows": [
+        {
+          "name": "com.xingin.xhs/com.xingin.xhs.index.v2.IndexActivityV2",
+          "statsSinceNs": 134780396912490,
+          "sameLifetimeAsBefore": true,
+          "beforeProfileRows": 120,
+          "afterProfileRows": 120,
+          "unseenRows": 1,
+          "unseenPostSnapshotRows": 1,
+          "validPostSnapshotRows": 1,
+          "excludedFlagsOrTimestamps": 0,
+          "cumulativeRenderedDelta": 1,
+          "cumulativeJankyDelta": 1,
+          "firstSampleAfterBeforeSnapshotMs": 1130.340483,
+          "lastSampleBeforeAfterSnapshotMs": 10666.659517,
+          "capturedSampleSpanMs": 0,
+          "frameCompletedMinusIntendedVsyncMs": {
+            "median": 15.4204,
+            "p95": 15.4204,
+            "max": 15.4204
+          },
+          "sampleCompletedPastDeadline": 1,
+          "completeness": "bounded_snapshot_not_synced_to_animation",
+          "samples": [
+            {
+              "intendedVsyncNs": 135162539340483,
+              "frameTimelineVsyncId": 149328299,
+              "flags": 0,
+              "durationMs": 15.4204,
+              "intervalMs": 8.3253,
+              "frameDeadlineNs": 135162553007149,
+              "frameCompletedNs": 135162554760885
+            }
+          ]
+        },
+        {
+          "name": "com.xingin.xhs/com.xingin.matrix.notedetail.NoteDetailActivity",
+          "statsSinceNs": 135162631331146,
+          "sameLifetimeAsBefore": false,
+          "beforeProfileRows": null,
+          "afterProfileRows": 14,
+          "unseenRows": 14,
+          "unseenPostSnapshotRows": 14,
+          "validPostSnapshotRows": 13,
+          "excludedFlagsOrTimestamps": 1,
+          "cumulativeRenderedDelta": null,
+          "cumulativeJankyDelta": null,
+          "firstSampleAfterBeforeSnapshotMs": 1230.081174,
+          "lastSampleBeforeAfterSnapshotMs": 10134.172916,
+          "capturedSampleSpanMs": 432.74591,
+          "frameCompletedMinusIntendedVsyncMs": {
+            "median": 14.4625,
+            "p95": 89.8445,
+            "max": 89.8445
+          },
+          "sampleCompletedPastDeadline": 7,
+          "completeness": "window_lifetime_not_matched",
+          "samples": [
+            {
+              "intendedVsyncNs": 135162639081174,
+              "frameTimelineVsyncId": 149328469,
+              "flags": 0,
+              "durationMs": 89.8445,
+              "intervalMs": 8.3235,
+              "frameDeadlineNs": 135162661082518,
+              "frameCompletedNs": 135162728925677
+            },
+            {
+              "intendedVsyncNs": 135162689022826,
+              "frameTimelineVsyncId": 149328594,
+              "flags": 0,
+              "durationMs": 59.7217,
+              "intervalMs": 8.3235,
+              "frameDeadlineNs": 135162744306340,
+              "frameCompletedNs": 135162748744531
+            },
+            {
+              "intendedVsyncNs": 135162747273585,
+              "frameTimelineVsyncId": 149328734,
+              "flags": 0,
+              "durationMs": 35.7847,
+              "intervalMs": 8.3233,
+              "frameDeadlineNs": 135162769277180,
+              "frameCompletedNs": 135162783058333
+            },
+            {
+              "intendedVsyncNs": 135162772225859,
+              "frameTimelineVsyncId": 149328814,
+              "flags": 0,
+              "durationMs": 63.4608,
+              "intervalMs": 8.3221,
+              "frameDeadlineNs": 135162802556716,
+              "frameCompletedNs": 135162835686615
+            },
+            {
+              "intendedVsyncNs": 135162830471811,
+              "frameTimelineVsyncId": 149328982,
+              "flags": 0,
+              "durationMs": 34.3344,
+              "intervalMs": 8.3216,
+              "frameDeadlineNs": 135162852469557,
+              "frameCompletedNs": 135162864806250
+            },
+            {
+              "intendedVsyncNs": 135162863759282,
+              "frameTimelineVsyncId": 149329091,
+              "flags": 0,
+              "durationMs": 28.381,
+              "intervalMs": 8.3216,
+              "frameDeadlineNs": 135162885746352,
+              "frameCompletedNs": 135162892140260
+            },
+            {
+              "intendedVsyncNs": 135162888726491,
+              "frameTimelineVsyncId": 149329157,
+              "flags": 0,
+              "durationMs": 12.8751,
+              "intervalMs": 8.3218,
+              "frameDeadlineNs": 135162910712436,
+              "frameCompletedNs": 135162901601562
+            },
+            {
+              "intendedVsyncNs": 135162913696188,
+              "frameTimelineVsyncId": 149329223,
+              "flags": 0,
+              "durationMs": 3.6115,
+              "intervalMs": 8.322,
+              "frameDeadlineNs": 135162927362854,
+              "frameCompletedNs": 135162917307656
+            },
+            {
+              "intendedVsyncNs": 135162922018215,
+              "frameTimelineVsyncId": 149329238,
+              "flags": 0,
+              "durationMs": 2.0758,
+              "intervalMs": 8.322,
+              "frameDeadlineNs": 135162935684881,
+              "frameCompletedNs": 135162924094062
+            },
+            {
+              "intendedVsyncNs": 135162963629862,
+              "frameTimelineVsyncId": 149329310,
+              "flags": 0,
+              "durationMs": 4.2296,
+              "intervalMs": 8.3221,
+              "frameDeadlineNs": 135162977296528,
+              "frameCompletedNs": 135162967859427
+            },
+            {
+              "intendedVsyncNs": 135162980276456,
+              "frameTimelineVsyncId": 149329340,
+              "flags": 0,
+              "durationMs": 5.1472,
+              "intervalMs": 8.3222,
+              "frameDeadlineNs": 135162993943122,
+              "frameCompletedNs": 135162985423646
+            },
+            {
+              "intendedVsyncNs": 135162988598698,
+              "frameTimelineVsyncId": 149329355,
+              "flags": 0,
+              "durationMs": 3.0855,
+              "intervalMs": 8.3222,
+              "frameDeadlineNs": 135163002265364,
+              "frameCompletedNs": 135162991684219
+            },
+            {
+              "intendedVsyncNs": 135163071827084,
+              "frameTimelineVsyncId": 149329513,
+              "flags": 0,
+              "durationMs": 14.4625,
+              "intervalMs": 8.3225,
+              "frameDeadlineNs": 135163085493750,
+              "frameCompletedNs": 135163086289583
+            }
+          ]
+        }
+      ],
+      "removedWindows": []
+    },
+    {
+      "id": "T03-detail-exit",
+      "beforeSha256": "cf70d7913d26220ab9df2c03d1d04d7f23dc42b411aca1be5b38a2d90c0120ea",
+      "afterSha256": "0124483a28eef1a15934416f70271935646704b6ace3d81206ad8afea0000e02",
+      "pipeline": "Skia (Vulkan)",
+      "snapshotIntervalMs": 11647,
+      "windows": [
+        {
+          "name": "com.xingin.xhs/com.xingin.xhs.index.v2.IndexActivityV2",
+          "statsSinceNs": 134780396912490,
+          "sameLifetimeAsBefore": true,
+          "beforeProfileRows": 120,
+          "afterProfileRows": 120,
+          "unseenRows": 1,
+          "unseenPostSnapshotRows": 1,
+          "validPostSnapshotRows": 0,
+          "excludedFlagsOrTimestamps": 1,
+          "cumulativeRenderedDelta": 1,
+          "cumulativeJankyDelta": 1,
+          "firstSampleAfterBeforeSnapshotMs": null,
+          "lastSampleBeforeAfterSnapshotMs": null,
+          "capturedSampleSpanMs": 0,
+          "frameCompletedMinusIntendedVsyncMs": {
+            "median": null,
+            "p95": null,
+            "max": null
+          },
+          "sampleCompletedPastDeadline": 0,
+          "completeness": "bounded_snapshot_not_synced_to_animation",
+          "samples": []
+        }
+      ],
+      "removedWindows": [
+        {
+          "name": "com.xingin.xhs/com.xingin.matrix.notedetail.NoteDetailActivity",
+          "statsSinceNs": 135162631331146,
+          "beforeProfileRows": 14,
+          "reason": "not_in_after_snapshot_no_post_action_frame_verification"
+        }
+      ]
+    },
+    {
+      "id": "T05-comment-enter",
+      "beforeSha256": "af3000b6367e38b9caeb90a501cb5015a7ebeefe14c0391ca26bb038afcfdeab",
+      "afterSha256": "d09d8700fd70ffae5abe688ceff454cf4b7eb7cfad0c045ea8b00799b67c2b5b",
+      "pipeline": "Skia (Vulkan)",
+      "snapshotIntervalMs": 12032,
+      "windows": [
+        {
+          "name": "com.xingin.xhs/com.xingin.xhs.index.v2.IndexActivityV2",
+          "statsSinceNs": 134780396912490,
+          "sameLifetimeAsBefore": true,
+          "beforeProfileRows": 120,
+          "afterProfileRows": 120,
+          "unseenRows": 0,
+          "unseenPostSnapshotRows": 0,
+          "validPostSnapshotRows": 0,
+          "excludedFlagsOrTimestamps": 0,
+          "cumulativeRenderedDelta": 0,
+          "cumulativeJankyDelta": 0,
+          "firstSampleAfterBeforeSnapshotMs": null,
+          "lastSampleBeforeAfterSnapshotMs": null,
+          "capturedSampleSpanMs": 0,
+          "frameCompletedMinusIntendedVsyncMs": {
+            "median": null,
+            "p95": null,
+            "max": null
+          },
+          "sampleCompletedPastDeadline": 0,
+          "completeness": "no_new_rendered_frames",
+          "samples": []
+        },
+        {
+          "name": "com.xingin.xhs/com.xingin.matrix.detail.activity.DetailFeedActivity",
+          "statsSinceNs": 137103451047333,
+          "sameLifetimeAsBefore": true,
+          "beforeProfileRows": 120,
+          "afterProfileRows": 120,
+          "unseenRows": 120,
+          "unseenPostSnapshotRows": 120,
+          "validPostSnapshotRows": 120,
+          "excludedFlagsOrTimestamps": 0,
+          "cumulativeRenderedDelta": 684,
+          "cumulativeJankyDelta": 4,
+          "firstSampleAfterBeforeSnapshotMs": 10034.809959,
+          "lastSampleBeforeAfterSnapshotMs": 15.57605,
+          "capturedSampleSpanMs": 1981.613991,
+          "frameCompletedMinusIntendedVsyncMs": {
+            "median": 3.7932,
+            "p95": 4.7899,
+            "max": 5.4017
+          },
+          "sampleCompletedPastDeadline": 0,
+          "completeness": "ring_buffer_incomplete",
+          "samples": [
+            {
+              "intendedVsyncNs": 137289799809959,
+              "frameTimelineVsyncId": 151301457,
+              "flags": 0,
+              "durationMs": 3.7186,
+              "intervalMs": 16.6531,
+              "frameDeadlineNs": 137289816476625,
+              "frameCompletedNs": 137289803528511
+            },
+            {
+              "intendedVsyncNs": 137289816464553,
+              "frameTimelineVsyncId": 151301472,
+              "flags": 0,
+              "durationMs": 3.7754,
+              "intervalMs": 16.6532,
+              "frameDeadlineNs": 137289833131219,
+              "frameCompletedNs": 137289820239918
+            },
+            {
+              "intendedVsyncNs": 137289833119126,
+              "frameTimelineVsyncId": 151301487,
+              "flags": 0,
+              "durationMs": 3.984,
+              "intervalMs": 16.6533,
+              "frameDeadlineNs": 137289849785792,
+              "frameCompletedNs": 137289837103147
+            },
+            {
+              "intendedVsyncNs": 137289849773413,
+              "frameTimelineVsyncId": 151301502,
+              "flags": 0,
+              "durationMs": 3.7725,
+              "intervalMs": 16.6534,
+              "frameDeadlineNs": 137289866440079,
+              "frameCompletedNs": 137289853545959
+            },
+            {
+              "intendedVsyncNs": 137289866427756,
+              "frameTimelineVsyncId": 151301517,
+              "flags": 0,
+              "durationMs": 3.8742,
+              "intervalMs": 16.6535,
+              "frameDeadlineNs": 137289883094422,
+              "frameCompletedNs": 137289870301949
+            },
+            {
+              "intendedVsyncNs": 137289883082285,
+              "frameTimelineVsyncId": 151301532,
+              "flags": 0,
+              "durationMs": 3.4914,
+              "intervalMs": 16.6536,
+              "frameDeadlineNs": 137289899748951,
+              "frameCompletedNs": 137289886573720
+            },
+            {
+              "intendedVsyncNs": 137289899736978,
+              "frameTimelineVsyncId": 151301547,
+              "flags": 0,
+              "durationMs": 4.5072,
+              "intervalMs": 16.6537,
+              "frameDeadlineNs": 137289916403644,
+              "frameCompletedNs": 137289904244189
+            },
+            {
+              "intendedVsyncNs": 137289916391912,
+              "frameTimelineVsyncId": 151301562,
+              "flags": 0,
+              "durationMs": 4.001,
+              "intervalMs": 16.6537,
+              "frameDeadlineNs": 137289933058578,
+              "frameCompletedNs": 137289920392886
+            },
+            {
+              "intendedVsyncNs": 137289933046532,
+              "frameTimelineVsyncId": 151301577,
+              "flags": 0,
+              "durationMs": 4.3015,
+              "intervalMs": 16.6538,
+              "frameDeadlineNs": 137289949713198,
+              "frameCompletedNs": 137289937347991
+            },
+            {
+              "intendedVsyncNs": 137289949700929,
+              "frameTimelineVsyncId": 151301592,
+              "flags": 0,
+              "durationMs": 3.7595,
+              "intervalMs": 16.6538,
+              "frameDeadlineNs": 137289966367595,
+              "frameCompletedNs": 137289953460386
+            },
+            {
+              "intendedVsyncNs": 137289966355423,
+              "frameTimelineVsyncId": 151301607,
+              "flags": 0,
+              "durationMs": 3.0911,
+              "intervalMs": 16.6538,
+              "frameDeadlineNs": 137289983022089,
+              "frameCompletedNs": 137289969446532
+            },
+            {
+              "intendedVsyncNs": 137289983009297,
+              "frameTimelineVsyncId": 151301622,
+              "flags": 0,
+              "durationMs": 3.566,
+              "intervalMs": 16.6538,
+              "frameDeadlineNs": 137289999675963,
+              "frameCompletedNs": 137289986575282
+            },
+            {
+              "intendedVsyncNs": 137289999662721,
+              "frameTimelineVsyncId": 151301637,
+              "flags": 0,
+              "durationMs": 3.0597,
+              "intervalMs": 16.6537,
+              "frameDeadlineNs": 137290016329387,
+              "frameCompletedNs": 137290002722470
+            },
+            {
+              "intendedVsyncNs": 137290016315742,
+              "frameTimelineVsyncId": 151301652,
+              "flags": 0,
+              "durationMs": 3.1823,
+              "intervalMs": 16.6537,
+              "frameDeadlineNs": 137290032982408,
+              "frameCompletedNs": 137290019498043
+            },
+            {
+              "intendedVsyncNs": 137290032968910,
+              "frameTimelineVsyncId": 151301667,
+              "flags": 0,
+              "durationMs": 3.0538,
+              "intervalMs": 16.6537,
+              "frameDeadlineNs": 137290049635576,
+              "frameCompletedNs": 137290036022730
+            },
+            {
+              "intendedVsyncNs": 137290049622331,
+              "frameTimelineVsyncId": 151301682,
+              "flags": 0,
+              "durationMs": 2.8665,
+              "intervalMs": 16.6537,
+              "frameDeadlineNs": 137290066288997,
+              "frameCompletedNs": 137290052488824
+            },
+            {
+              "intendedVsyncNs": 137290066275538,
+              "frameTimelineVsyncId": 151301697,
+              "flags": 0,
+              "durationMs": 3.3892,
+              "intervalMs": 16.6536,
+              "frameDeadlineNs": 137290082942204,
+              "frameCompletedNs": 137290069664709
+            },
+            {
+              "intendedVsyncNs": 137290082928251,
+              "frameTimelineVsyncId": 151301712,
+              "flags": 0,
+              "durationMs": 4.4298,
+              "intervalMs": 16.6536,
+              "frameDeadlineNs": 137290099594917,
+              "frameCompletedNs": 137290087358043
+            },
+            {
+              "intendedVsyncNs": 137290099580740,
+              "frameTimelineVsyncId": 151301727,
+              "flags": 0,
+              "durationMs": 4.5381,
+              "intervalMs": 16.6535,
+              "frameDeadlineNs": 137290116247406,
+              "frameCompletedNs": 137290104118824
+            },
+            {
+              "intendedVsyncNs": 137290116233270,
+              "frameTimelineVsyncId": 151301742,
+              "flags": 0,
+              "durationMs": 4.0262,
+              "intervalMs": 16.6534,
+              "frameDeadlineNs": 137290132899936,
+              "frameCompletedNs": 137290120259449
+            },
+            {
+              "intendedVsyncNs": 137290132885719,
+              "frameTimelineVsyncId": 151301757,
+              "flags": 0,
+              "durationMs": 3.9281,
+              "intervalMs": 16.6534,
+              "frameDeadlineNs": 137290149552385,
+              "frameCompletedNs": 137290136813824
+            },
+            {
+              "intendedVsyncNs": 137290149538489,
+              "frameTimelineVsyncId": 151301772,
+              "flags": 0,
+              "durationMs": 4.0893,
+              "intervalMs": 16.6533,
+              "frameDeadlineNs": 137290166205155,
+              "frameCompletedNs": 137290153627782
+            },
+            {
+              "intendedVsyncNs": 137290166191371,
+              "frameTimelineVsyncId": 151301787,
+              "flags": 0,
+              "durationMs": 3.3436,
+              "intervalMs": 16.6533,
+              "frameDeadlineNs": 137290182858037,
+              "frameCompletedNs": 137290169534970
+            },
+            {
+              "intendedVsyncNs": 137290182844494,
+              "frameTimelineVsyncId": 151301809,
+              "flags": 0,
+              "durationMs": 1.9731,
+              "intervalMs": 16.6532,
+              "frameDeadlineNs": 137290199511160,
+              "frameCompletedNs": 137290184817574
+            },
+            {
+              "intendedVsyncNs": 137290199497744,
+              "frameTimelineVsyncId": 151301831,
+              "flags": 0,
+              "durationMs": 3.8779,
+              "intervalMs": 16.6533,
+              "frameDeadlineNs": 137290216164410,
+              "frameCompletedNs": 137290203375647
+            },
+            {
+              "intendedVsyncNs": 137290216151562,
+              "frameTimelineVsyncId": 151301853,
+              "flags": 0,
+              "durationMs": 4.1576,
+              "intervalMs": 16.6533,
+              "frameDeadlineNs": 137290232818228,
+              "frameCompletedNs": 137290220309188
+            },
+            {
+              "intendedVsyncNs": 137290232806012,
+              "frameTimelineVsyncId": 151301868,
+              "flags": 0,
+              "durationMs": 3.3329,
+              "intervalMs": 16.6535,
+              "frameDeadlineNs": 137290249472678,
+              "frameCompletedNs": 137290236138876
+            },
+            {
+              "intendedVsyncNs": 137290249461302,
+              "frameTimelineVsyncId": 151301883,
+              "flags": 0,
+              "durationMs": 3.1071,
+              "intervalMs": 16.6536,
+              "frameDeadlineNs": 137290266127968,
+              "frameCompletedNs": 137290252568407
+            },
+            {
+              "intendedVsyncNs": 137290266117150,
+              "frameTimelineVsyncId": 151301898,
+              "flags": 0,
+              "durationMs": 3.235,
+              "intervalMs": 16.6538,
+              "frameDeadlineNs": 137290282783816,
+              "frameCompletedNs": 137290269352105
+            },
+            {
+              "intendedVsyncNs": 137290282773388,
+              "frameTimelineVsyncId": 151301913,
+              "flags": 0,
+              "durationMs": 3.0349,
+              "intervalMs": 16.654,
+              "frameDeadlineNs": 137290299440054,
+              "frameCompletedNs": 137290285808251
+            },
+            {
+              "intendedVsyncNs": 137290299429689,
+              "frameTimelineVsyncId": 151301928,
+              "flags": 0,
+              "durationMs": 4.2574,
+              "intervalMs": 16.6541,
+              "frameDeadlineNs": 137290316096355,
+              "frameCompletedNs": 137290303687105
+            },
+            {
+              "intendedVsyncNs": 137290316086028,
+              "frameTimelineVsyncId": 151301943,
+              "flags": 0,
+              "durationMs": 3.8409,
+              "intervalMs": 16.6543,
+              "frameDeadlineNs": 137290332752694,
+              "frameCompletedNs": 137290319926897
+            },
+            {
+              "intendedVsyncNs": 137290332742442,
+              "frameTimelineVsyncId": 151301958,
+              "flags": 0,
+              "durationMs": 4.0173,
+              "intervalMs": 16.6544,
+              "frameDeadlineNs": 137290349409108,
+              "frameCompletedNs": 137290336759709
+            },
+            {
+              "intendedVsyncNs": 137290349398247,
+              "frameTimelineVsyncId": 151301973,
+              "flags": 0,
+              "durationMs": 3.7311,
+              "intervalMs": 16.6545,
+              "frameDeadlineNs": 137290366064913,
+              "frameCompletedNs": 137290353129397
+            },
+            {
+              "intendedVsyncNs": 137290366053742,
+              "frameTimelineVsyncId": 151301988,
+              "flags": 0,
+              "durationMs": 3.1406,
+              "intervalMs": 16.6546,
+              "frameDeadlineNs": 137290382720408,
+              "frameCompletedNs": 137290369194345
+            },
+            {
+              "intendedVsyncNs": 137290382708770,
+              "frameTimelineVsyncId": 151302003,
+              "flags": 0,
+              "durationMs": 2.4064,
+              "intervalMs": 16.6546,
+              "frameDeadlineNs": 137290399375436,
+              "frameCompletedNs": 137290385115178
+            },
+            {
+              "intendedVsyncNs": 137290399363560,
+              "frameTimelineVsyncId": 151302018,
+              "flags": 0,
+              "durationMs": 3.1507,
+              "intervalMs": 16.6546,
+              "frameDeadlineNs": 137290416030226,
+              "frameCompletedNs": 137290402514240
+            },
+            {
+              "intendedVsyncNs": 137290416018059,
+              "frameTimelineVsyncId": 151302033,
+              "flags": 0,
+              "durationMs": 3.231,
+              "intervalMs": 16.6546,
+              "frameDeadlineNs": 137290432684725,
+              "frameCompletedNs": 137290419249084
+            },
+            {
+              "intendedVsyncNs": 137290432672454,
+              "frameTimelineVsyncId": 151302048,
+              "flags": 0,
+              "durationMs": 2.9383,
+              "intervalMs": 16.6546,
+              "frameDeadlineNs": 137290449339120,
+              "frameCompletedNs": 137290435610751
+            },
+            {
+              "intendedVsyncNs": 137290449326577,
+              "frameTimelineVsyncId": 151302063,
+              "flags": 0,
+              "durationMs": 2.4011,
+              "intervalMs": 16.6546,
+              "frameDeadlineNs": 137290465993243,
+              "frameCompletedNs": 137290451727678
+            },
+            {
+              "intendedVsyncNs": 137290465980354,
+              "frameTimelineVsyncId": 151302078,
+              "flags": 0,
+              "durationMs": 3.3976,
+              "intervalMs": 16.6545,
+              "frameDeadlineNs": 137290482647020,
+              "frameCompletedNs": 137290469377938
+            },
+            {
+              "intendedVsyncNs": 137290482633965,
+              "frameTimelineVsyncId": 151302093,
+              "flags": 0,
+              "durationMs": 3.164,
+              "intervalMs": 16.6544,
+              "frameDeadlineNs": 137290499300631,
+              "frameCompletedNs": 137290485797938
+            },
+            {
+              "intendedVsyncNs": 137290499287208,
+              "frameTimelineVsyncId": 151302108,
+              "flags": 0,
+              "durationMs": 4.1067,
+              "intervalMs": 16.6543,
+              "frameDeadlineNs": 137290515953874,
+              "frameCompletedNs": 137290503393876
+            },
+            {
+              "intendedVsyncNs": 137290515939738,
+              "frameTimelineVsyncId": 151302123,
+              "flags": 0,
+              "durationMs": 3.767,
+              "intervalMs": 16.6541,
+              "frameDeadlineNs": 137290532606404,
+              "frameCompletedNs": 137290519706688
+            },
+            {
+              "intendedVsyncNs": 137290532591699,
+              "frameTimelineVsyncId": 151302138,
+              "flags": 0,
+              "durationMs": 4.8724,
+              "intervalMs": 16.6539,
+              "frameDeadlineNs": 137290549258365,
+              "frameCompletedNs": 137290537464136
+            },
+            {
+              "intendedVsyncNs": 137290549243051,
+              "frameTimelineVsyncId": 151302153,
+              "flags": 0,
+              "durationMs": 4.7899,
+              "intervalMs": 16.6537,
+              "frameDeadlineNs": 137290565909717,
+              "frameCompletedNs": 137290554032938
+            },
+            {
+              "intendedVsyncNs": 137290565894089,
+              "frameTimelineVsyncId": 151302168,
+              "flags": 0,
+              "durationMs": 3.5115,
+              "intervalMs": 16.6535,
+              "frameDeadlineNs": 137290582560755,
+              "frameCompletedNs": 137290569405595
+            },
+            {
+              "intendedVsyncNs": 137290582544826,
+              "frameTimelineVsyncId": 151302183,
+              "flags": 0,
+              "durationMs": 3.5262,
+              "intervalMs": 16.6533,
+              "frameDeadlineNs": 137290599211492,
+              "frameCompletedNs": 137290586071063
+            },
+            {
+              "intendedVsyncNs": 137290599195326,
+              "frameTimelineVsyncId": 151302198,
+              "flags": 0,
+              "durationMs": 3.1662,
+              "intervalMs": 16.6531,
+              "frameDeadlineNs": 137290615861992,
+              "frameCompletedNs": 137290602361532
+            },
+            {
+              "intendedVsyncNs": 137290615845534,
+              "frameTimelineVsyncId": 151302213,
+              "flags": 0,
+              "durationMs": 2.9247,
+              "intervalMs": 16.6529,
+              "frameDeadlineNs": 137290632512200,
+              "frameCompletedNs": 137290618770230
+            },
+            {
+              "intendedVsyncNs": 137290632492381,
+              "frameTimelineVsyncId": 151302235,
+              "flags": 0,
+              "durationMs": 2.3227,
+              "intervalMs": 16.6527,
+              "frameDeadlineNs": 137290649159047,
+              "frameCompletedNs": 137290634815126
+            },
+            {
+              "intendedVsyncNs": 137290649145037,
+              "frameTimelineVsyncId": 151302257,
+              "flags": 0,
+              "durationMs": 3.7514,
+              "intervalMs": 16.6525,
+              "frameDeadlineNs": 137290665811703,
+              "frameCompletedNs": 137290652896480
+            },
+            {
+              "intendedVsyncNs": 137290665794976,
+              "frameTimelineVsyncId": 151302272,
+              "flags": 0,
+              "durationMs": 3.7708,
+              "intervalMs": 16.6523,
+              "frameDeadlineNs": 137290682461642,
+              "frameCompletedNs": 137290669565751
+            },
+            {
+              "intendedVsyncNs": 137290682444660,
+              "frameTimelineVsyncId": 151302287,
+              "flags": 0,
+              "durationMs": 2.9857,
+              "intervalMs": 16.652,
+              "frameDeadlineNs": 137290699111326,
+              "frameCompletedNs": 137290685430334
+            },
+            {
+              "intendedVsyncNs": 137290699093915,
+              "frameTimelineVsyncId": 151302302,
+              "flags": 0,
+              "durationMs": 4.747,
+              "intervalMs": 16.6518,
+              "frameDeadlineNs": 137290715760581,
+              "frameCompletedNs": 137290703840907
+            },
+            {
+              "intendedVsyncNs": 137290715742797,
+              "frameTimelineVsyncId": 151302317,
+              "flags": 0,
+              "durationMs": 4.8668,
+              "intervalMs": 16.6516,
+              "frameDeadlineNs": 137290732409463,
+              "frameCompletedNs": 137290720609605
+            },
+            {
+              "intendedVsyncNs": 137290732392152,
+              "frameTimelineVsyncId": 151302332,
+              "flags": 0,
+              "durationMs": 4.3819,
+              "intervalMs": 16.6515,
+              "frameDeadlineNs": 137290749058818,
+              "frameCompletedNs": 137290736774084
+            },
+            {
+              "intendedVsyncNs": 137290749042013,
+              "frameTimelineVsyncId": 151302347,
+              "flags": 0,
+              "durationMs": 4.7574,
+              "intervalMs": 16.6514,
+              "frameDeadlineNs": 137290765708679,
+              "frameCompletedNs": 137290753799449
+            },
+            {
+              "intendedVsyncNs": 137290765692329,
+              "frameTimelineVsyncId": 151302362,
+              "flags": 0,
+              "durationMs": 4.3201,
+              "intervalMs": 16.6513,
+              "frameDeadlineNs": 137290782358995,
+              "frameCompletedNs": 137290770012417
+            },
+            {
+              "intendedVsyncNs": 137290782343014,
+              "frameTimelineVsyncId": 151302377,
+              "flags": 0,
+              "durationMs": 3.8499,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137290799009680,
+              "frameCompletedNs": 137290786192938
+            },
+            {
+              "intendedVsyncNs": 137290798993949,
+              "frameTimelineVsyncId": 151302392,
+              "flags": 0,
+              "durationMs": 4.2407,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137290815660615,
+              "frameCompletedNs": 137290803234657
+            },
+            {
+              "intendedVsyncNs": 137290815645165,
+              "frameTimelineVsyncId": 151302407,
+              "flags": 0,
+              "durationMs": 4.596,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137290832311831,
+              "frameCompletedNs": 137290820241115
+            },
+            {
+              "intendedVsyncNs": 137290832296371,
+              "frameTimelineVsyncId": 151302422,
+              "flags": 0,
+              "durationMs": 4.0693,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137290848963037,
+              "frameCompletedNs": 137290836365699
+            },
+            {
+              "intendedVsyncNs": 137290848947239,
+              "frameTimelineVsyncId": 151302437,
+              "flags": 0,
+              "durationMs": 3.9871,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137290865613905,
+              "frameCompletedNs": 137290852934344
+            },
+            {
+              "intendedVsyncNs": 137290865598083,
+              "frameTimelineVsyncId": 151302452,
+              "flags": 0,
+              "durationMs": 4.1701,
+              "intervalMs": 16.6511,
+              "frameDeadlineNs": 137290882264749,
+              "frameCompletedNs": 137290869768199
+            },
+            {
+              "intendedVsyncNs": 137290882248473,
+              "frameTimelineVsyncId": 151302467,
+              "flags": 0,
+              "durationMs": 4.3617,
+              "intervalMs": 16.6511,
+              "frameDeadlineNs": 137290898915139,
+              "frameCompletedNs": 137290886610126
+            },
+            {
+              "intendedVsyncNs": 137290898898684,
+              "frameTimelineVsyncId": 151302489,
+              "flags": 0,
+              "durationMs": 3.6238,
+              "intervalMs": 16.651,
+              "frameDeadlineNs": 137290915565350,
+              "frameCompletedNs": 137290902522469
+            },
+            {
+              "intendedVsyncNs": 137290915549076,
+              "frameTimelineVsyncId": 151302511,
+              "flags": 0,
+              "durationMs": 5.1189,
+              "intervalMs": 16.651,
+              "frameDeadlineNs": 137290932215742,
+              "frameCompletedNs": 137290920667938
+            },
+            {
+              "intendedVsyncNs": 137290932199324,
+              "frameTimelineVsyncId": 151302526,
+              "flags": 0,
+              "durationMs": 5.4017,
+              "intervalMs": 16.651,
+              "frameDeadlineNs": 137290948865990,
+              "frameCompletedNs": 137290937601063
+            },
+            {
+              "intendedVsyncNs": 137290948849635,
+              "frameTimelineVsyncId": 151302541,
+              "flags": 0,
+              "durationMs": 4.4466,
+              "intervalMs": 16.6509,
+              "frameDeadlineNs": 137290965516301,
+              "frameCompletedNs": 137290953296271
+            },
+            {
+              "intendedVsyncNs": 137290965500043,
+              "frameTimelineVsyncId": 151302556,
+              "flags": 0,
+              "durationMs": 4.3666,
+              "intervalMs": 16.6509,
+              "frameDeadlineNs": 137290982166709,
+              "frameCompletedNs": 137290969866688
+            },
+            {
+              "intendedVsyncNs": 137290982150705,
+              "frameTimelineVsyncId": 151302571,
+              "flags": 0,
+              "durationMs": 4.1701,
+              "intervalMs": 16.6509,
+              "frameDeadlineNs": 137290998817371,
+              "frameCompletedNs": 137290986320855
+            },
+            {
+              "intendedVsyncNs": 137290998801860,
+              "frameTimelineVsyncId": 151302586,
+              "flags": 0,
+              "durationMs": 4.228,
+              "intervalMs": 16.6509,
+              "frameDeadlineNs": 137291015468526,
+              "frameCompletedNs": 137291003029813
+            },
+            {
+              "intendedVsyncNs": 137291015453313,
+              "frameTimelineVsyncId": 151302601,
+              "flags": 0,
+              "durationMs": 3.9323,
+              "intervalMs": 16.6509,
+              "frameDeadlineNs": 137291032119979,
+              "frameCompletedNs": 137291019385646
+            },
+            {
+              "intendedVsyncNs": 137291032104762,
+              "frameTimelineVsyncId": 151302616,
+              "flags": 0,
+              "durationMs": 4.3268,
+              "intervalMs": 16.651,
+              "frameDeadlineNs": 137291048771428,
+              "frameCompletedNs": 137291036431584
+            },
+            {
+              "intendedVsyncNs": 137291048756305,
+              "frameTimelineVsyncId": 151302631,
+              "flags": 0,
+              "durationMs": 3.9656,
+              "intervalMs": 16.651,
+              "frameDeadlineNs": 137291065422971,
+              "frameCompletedNs": 137291052721948
+            },
+            {
+              "intendedVsyncNs": 137291065407767,
+              "frameTimelineVsyncId": 151302646,
+              "flags": 0,
+              "durationMs": 4.1852,
+              "intervalMs": 16.651,
+              "frameDeadlineNs": 137291082074433,
+              "frameCompletedNs": 137291069592990
+            },
+            {
+              "intendedVsyncNs": 137291082059213,
+              "frameTimelineVsyncId": 151302661,
+              "flags": 0,
+              "durationMs": 3.926,
+              "intervalMs": 16.651,
+              "frameDeadlineNs": 137291098725879,
+              "frameCompletedNs": 137291085985178
+            },
+            {
+              "intendedVsyncNs": 137291098710703,
+              "frameTimelineVsyncId": 151302676,
+              "flags": 0,
+              "durationMs": 3.1974,
+              "intervalMs": 16.6511,
+              "frameDeadlineNs": 137291115377369,
+              "frameCompletedNs": 137291101908146
+            },
+            {
+              "intendedVsyncNs": 137291115362432,
+              "frameTimelineVsyncId": 151302691,
+              "flags": 0,
+              "durationMs": 4.7419,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137291132029098,
+              "frameCompletedNs": 137291120104344
+            },
+            {
+              "intendedVsyncNs": 137291132014165,
+              "frameTimelineVsyncId": 151302706,
+              "flags": 0,
+              "durationMs": 4.6927,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137291148680831,
+              "frameCompletedNs": 137291136706844
+            },
+            {
+              "intendedVsyncNs": 137291148665858,
+              "frameTimelineVsyncId": 151302721,
+              "flags": 0,
+              "durationMs": 4.2627,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137291165332524,
+              "frameCompletedNs": 137291152928511
+            },
+            {
+              "intendedVsyncNs": 137291165317077,
+              "frameTimelineVsyncId": 151302736,
+              "flags": 0,
+              "durationMs": 4.22,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137291181983743,
+              "frameCompletedNs": 137291169537105
+            },
+            {
+              "intendedVsyncNs": 137291181966817,
+              "frameTimelineVsyncId": 151302758,
+              "flags": 0,
+              "durationMs": 3.1676,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137291198633483,
+              "frameCompletedNs": 137291185134396
+            },
+            {
+              "intendedVsyncNs": 137291198617986,
+              "frameTimelineVsyncId": 151302780,
+              "flags": 0,
+              "durationMs": 4.4866,
+              "intervalMs": 16.6511,
+              "frameDeadlineNs": 137291215284652,
+              "frameCompletedNs": 137291203104605
+            },
+            {
+              "intendedVsyncNs": 137291215267858,
+              "frameTimelineVsyncId": 151302795,
+              "flags": 0,
+              "durationMs": 4.1416,
+              "intervalMs": 16.651,
+              "frameDeadlineNs": 137291231934524,
+              "frameCompletedNs": 137291219409448
+            },
+            {
+              "intendedVsyncNs": 137291231917121,
+              "frameTimelineVsyncId": 151302810,
+              "flags": 0,
+              "durationMs": 3.9961,
+              "intervalMs": 16.6509,
+              "frameDeadlineNs": 137291248583787,
+              "frameCompletedNs": 137291235913251
+            },
+            {
+              "intendedVsyncNs": 137291248566440,
+              "frameTimelineVsyncId": 151302825,
+              "flags": 0,
+              "durationMs": 4.0977,
+              "intervalMs": 16.6507,
+              "frameDeadlineNs": 137291265233106,
+              "frameCompletedNs": 137291252664136
+            },
+            {
+              "intendedVsyncNs": 137291265215637,
+              "frameTimelineVsyncId": 151302840,
+              "flags": 0,
+              "durationMs": 3.3836,
+              "intervalMs": 16.6506,
+              "frameDeadlineNs": 137291281882303,
+              "frameCompletedNs": 137291268599188
+            },
+            {
+              "intendedVsyncNs": 137291281864886,
+              "frameTimelineVsyncId": 151302855,
+              "flags": 0,
+              "durationMs": 3.7582,
+              "intervalMs": 16.6505,
+              "frameDeadlineNs": 137291298531552,
+              "frameCompletedNs": 137291285623042
+            },
+            {
+              "intendedVsyncNs": 137291298514471,
+              "frameTimelineVsyncId": 151302870,
+              "flags": 0,
+              "durationMs": 3.047,
+              "intervalMs": 16.6505,
+              "frameDeadlineNs": 137291315181137,
+              "frameCompletedNs": 137291301561480
+            },
+            {
+              "intendedVsyncNs": 137291315164859,
+              "frameTimelineVsyncId": 151302885,
+              "flags": 0,
+              "durationMs": 4.4964,
+              "intervalMs": 16.6505,
+              "frameDeadlineNs": 137291331831525,
+              "frameCompletedNs": 137291319661219
+            },
+            {
+              "intendedVsyncNs": 137291331815999,
+              "frameTimelineVsyncId": 151302900,
+              "flags": 0,
+              "durationMs": 3.8412,
+              "intervalMs": 16.6506,
+              "frameDeadlineNs": 137291348482665,
+              "frameCompletedNs": 137291335657157
+            },
+            {
+              "intendedVsyncNs": 137291348467664,
+              "frameTimelineVsyncId": 151302915,
+              "flags": 0,
+              "durationMs": 3.7505,
+              "intervalMs": 16.6506,
+              "frameDeadlineNs": 137291365134330,
+              "frameCompletedNs": 137291352218198
+            },
+            {
+              "intendedVsyncNs": 137291365119483,
+              "frameTimelineVsyncId": 151302930,
+              "flags": 0,
+              "durationMs": 3.7932,
+              "intervalMs": 16.6507,
+              "frameDeadlineNs": 137291381786149,
+              "frameCompletedNs": 137291368912730
+            },
+            {
+              "intendedVsyncNs": 137291381771677,
+              "frameTimelineVsyncId": 151302945,
+              "flags": 0,
+              "durationMs": 2.9802,
+              "intervalMs": 16.6508,
+              "frameDeadlineNs": 137291398438343,
+              "frameCompletedNs": 137291384751844
+            },
+            {
+              "intendedVsyncNs": 137291398423625,
+              "frameTimelineVsyncId": 151302960,
+              "flags": 0,
+              "durationMs": 3.363,
+              "intervalMs": 16.6509,
+              "frameDeadlineNs": 137291415090291,
+              "frameCompletedNs": 137291401786584
+            },
+            {
+              "intendedVsyncNs": 137291415075837,
+              "frameTimelineVsyncId": 151302975,
+              "flags": 0,
+              "durationMs": 3.3351,
+              "intervalMs": 16.651,
+              "frameDeadlineNs": 137291431742503,
+              "frameCompletedNs": 137291418410907
+            },
+            {
+              "intendedVsyncNs": 137291431728045,
+              "frameTimelineVsyncId": 151302990,
+              "flags": 0,
+              "durationMs": 3.4908,
+              "intervalMs": 16.6511,
+              "frameDeadlineNs": 137291448394711,
+              "frameCompletedNs": 137291435218875
+            },
+            {
+              "intendedVsyncNs": 137291448380545,
+              "frameTimelineVsyncId": 151303005,
+              "flags": 0,
+              "durationMs": 3.2477,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137291465047211,
+              "frameCompletedNs": 137291451628198
+            },
+            {
+              "intendedVsyncNs": 137291465033191,
+              "frameTimelineVsyncId": 151303020,
+              "flags": 0,
+              "durationMs": 3.5607,
+              "intervalMs": 16.6513,
+              "frameDeadlineNs": 137291481699857,
+              "frameCompletedNs": 137291468593928
+            },
+            {
+              "intendedVsyncNs": 137291481685495,
+              "frameTimelineVsyncId": 151303035,
+              "flags": 0,
+              "durationMs": 3.8435,
+              "intervalMs": 16.6514,
+              "frameDeadlineNs": 137291498352161,
+              "frameCompletedNs": 137291485528980
+            },
+            {
+              "intendedVsyncNs": 137291498337238,
+              "frameTimelineVsyncId": 151303050,
+              "flags": 0,
+              "durationMs": 3.013,
+              "intervalMs": 16.6514,
+              "frameDeadlineNs": 137291515003904,
+              "frameCompletedNs": 137291501350282
+            },
+            {
+              "intendedVsyncNs": 137291514988436,
+              "frameTimelineVsyncId": 151303065,
+              "flags": 0,
+              "durationMs": 4.8756,
+              "intervalMs": 16.6514,
+              "frameDeadlineNs": 137291531655102,
+              "frameCompletedNs": 137291519864032
+            },
+            {
+              "intendedVsyncNs": 137291531638980,
+              "frameTimelineVsyncId": 151303080,
+              "flags": 0,
+              "durationMs": 4.5048,
+              "intervalMs": 16.6513,
+              "frameDeadlineNs": 137291548305646,
+              "frameCompletedNs": 137291536143771
+            },
+            {
+              "intendedVsyncNs": 137291548289714,
+              "frameTimelineVsyncId": 151303095,
+              "flags": 0,
+              "durationMs": 3.6905,
+              "intervalMs": 16.6513,
+              "frameDeadlineNs": 137291564956380,
+              "frameCompletedNs": 137291551980230
+            },
+            {
+              "intendedVsyncNs": 137291564940345,
+              "frameTimelineVsyncId": 151303110,
+              "flags": 0,
+              "durationMs": 4.4594,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137291581607011,
+              "frameCompletedNs": 137291569399709
+            },
+            {
+              "intendedVsyncNs": 137291581591016,
+              "frameTimelineVsyncId": 151303125,
+              "flags": 0,
+              "durationMs": 3.4137,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137291598257682,
+              "frameCompletedNs": 137291585004761
+            },
+            {
+              "intendedVsyncNs": 137291598241944,
+              "frameTimelineVsyncId": 151303140,
+              "flags": 0,
+              "durationMs": 3.7813,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137291614908610,
+              "frameCompletedNs": 137291602023198
+            },
+            {
+              "intendedVsyncNs": 137291614893092,
+              "frameTimelineVsyncId": 151303155,
+              "flags": 0,
+              "durationMs": 3.6758,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137291631559758,
+              "frameCompletedNs": 137291618568875
+            },
+            {
+              "intendedVsyncNs": 137291631544548,
+              "frameTimelineVsyncId": 151303170,
+              "flags": 0,
+              "durationMs": 3.5166,
+              "intervalMs": 16.6512,
+              "frameDeadlineNs": 137291648211214,
+              "frameCompletedNs": 137291635061167
+            },
+            {
+              "intendedVsyncNs": 137291648196600,
+              "frameTimelineVsyncId": 151303185,
+              "flags": 0,
+              "durationMs": 3.2394,
+              "intervalMs": 16.6513,
+              "frameDeadlineNs": 137291664863266,
+              "frameCompletedNs": 137291651435959
+            },
+            {
+              "intendedVsyncNs": 137291664849302,
+              "frameTimelineVsyncId": 151303200,
+              "flags": 0,
+              "durationMs": 3.346,
+              "intervalMs": 16.6514,
+              "frameDeadlineNs": 137291681515968,
+              "frameCompletedNs": 137291668195334
+            },
+            {
+              "intendedVsyncNs": 137291681502227,
+              "frameTimelineVsyncId": 151303215,
+              "flags": 0,
+              "durationMs": 3.972,
+              "intervalMs": 16.6515,
+              "frameDeadlineNs": 137291698168893,
+              "frameCompletedNs": 137291685474188
+            },
+            {
+              "intendedVsyncNs": 137291698154981,
+              "frameTimelineVsyncId": 151303230,
+              "flags": 0,
+              "durationMs": 1.4736,
+              "intervalMs": 16.6516,
+              "frameDeadlineNs": 137291714821647,
+              "frameCompletedNs": 137291699628615
+            },
+            {
+              "intendedVsyncNs": 137291714808029,
+              "frameTimelineVsyncId": 151303245,
+              "flags": 0,
+              "durationMs": 3.1544,
+              "intervalMs": 16.6517,
+              "frameDeadlineNs": 137291731474695,
+              "frameCompletedNs": 137291717962417
+            },
+            {
+              "intendedVsyncNs": 137291731461178,
+              "frameTimelineVsyncId": 151303260,
+              "flags": 0,
+              "durationMs": 4.0969,
+              "intervalMs": 16.6518,
+              "frameDeadlineNs": 137291748127844,
+              "frameCompletedNs": 137291735558042
+            },
+            {
+              "intendedVsyncNs": 137291748114913,
+              "frameTimelineVsyncId": 151303275,
+              "flags": 0,
+              "durationMs": 4.1128,
+              "intervalMs": 16.652,
+              "frameDeadlineNs": 137291764781579,
+              "frameCompletedNs": 137291752227729
+            },
+            {
+              "intendedVsyncNs": 137291764769230,
+              "frameTimelineVsyncId": 151303290,
+              "flags": 0,
+              "durationMs": 4.0964,
+              "intervalMs": 16.6522,
+              "frameDeadlineNs": 137291781435896,
+              "frameCompletedNs": 137291768865594
+            },
+            {
+              "intendedVsyncNs": 137291781423950,
+              "frameTimelineVsyncId": 151303305,
+              "flags": 0,
+              "durationMs": 2.9733,
+              "intervalMs": 16.6524,
+              "frameDeadlineNs": 137291798090616,
+              "frameCompletedNs": 137291784397209
+            }
+          ]
+        },
+        {
+          "name": "com.xingin.xhs/com.xingin.matrix.detail.activity.DetailFeedActivity",
+          "statsSinceNs": 137281046350702,
+          "sameLifetimeAsBefore": false,
+          "beforeProfileRows": null,
+          "afterProfileRows": 13,
+          "unseenRows": 13,
+          "unseenPostSnapshotRows": 13,
+          "validPostSnapshotRows": 11,
+          "excludedFlagsOrTimestamps": 2,
+          "cumulativeRenderedDelta": null,
+          "cumulativeJankyDelta": null,
+          "firstSampleAfterBeforeSnapshotMs": 1293.350223,
+          "lastSampleBeforeAfterSnapshotMs": 10430.722658,
+          "capturedSampleSpanMs": 307.927119,
+          "frameCompletedMinusIntendedVsyncMs": {
+            "median": 9.7223,
+            "p95": 82.2307,
+            "max": 82.2307
+          },
+          "sampleCompletedPastDeadline": 2,
+          "completeness": "window_lifetime_not_matched",
+          "samples": [
+            {
+              "intendedVsyncNs": 137281058350223,
+              "frameTimelineVsyncId": 151289699,
+              "flags": 0,
+              "durationMs": 43.5326,
+              "intervalMs": 8.3246,
+              "frameDeadlineNs": 137281105544392,
+              "frameCompletedNs": 137281101882786
+            },
+            {
+              "intendedVsyncNs": 137281099965234,
+              "frameTimelineVsyncId": 151289788,
+              "flags": 0,
+              "durationMs": 20.0727,
+              "intervalMs": 8.3241,
+              "frameDeadlineNs": 137281113631900,
+              "frameCompletedNs": 137281120037890
+            },
+            {
+              "intendedVsyncNs": 137281116618450,
+              "frameTimelineVsyncId": 151289825,
+              "flags": 0,
+              "durationMs": 10.1651,
+              "intervalMs": 8.3241,
+              "frameDeadlineNs": 137281138604323,
+              "frameCompletedNs": 137281126783567
+            },
+            {
+              "intendedVsyncNs": 137281124942505,
+              "frameTimelineVsyncId": 151289847,
+              "flags": 0,
+              "durationMs": 6.515,
+              "intervalMs": 8.3241,
+              "frameDeadlineNs": 137281146928378,
+              "frameCompletedNs": 137281131457473
+            },
+            {
+              "intendedVsyncNs": 137281133264102,
+              "frameTimelineVsyncId": 151289876,
+              "flags": 0,
+              "durationMs": 6.6108,
+              "intervalMs": 8.324,
+              "frameDeadlineNs": 137281155252433,
+              "frameCompletedNs": 137281139874921
+            },
+            {
+              "intendedVsyncNs": 137281141582421,
+              "frameTimelineVsyncId": 151289905,
+              "flags": 0,
+              "durationMs": 6.4928,
+              "intervalMs": 8.3239,
+              "frameDeadlineNs": 137281163576393,
+              "frameCompletedNs": 137281148075181
+            },
+            {
+              "intendedVsyncNs": 137281149906950,
+              "frameTimelineVsyncId": 151289934,
+              "flags": 0,
+              "durationMs": 82.2307,
+              "intervalMs": 8.3238,
+              "frameDeadlineNs": 137281171900294,
+              "frameCompletedNs": 137281232137629
+            },
+            {
+              "intendedVsyncNs": 137281158226506,
+              "frameTimelineVsyncId": 151289963,
+              "flags": 0,
+              "durationMs": 76.4202,
+              "intervalMs": 8.3238,
+              "frameDeadlineNs": 137281246811956,
+              "frameCompletedNs": 137281234646692
+            },
+            {
+              "intendedVsyncNs": 137281233119536,
+              "frameTimelineVsyncId": 151290119,
+              "flags": 0,
+              "durationMs": 9.7223,
+              "intervalMs": 8.3225,
+              "frameDeadlineNs": 137281255135720,
+              "frameCompletedNs": 137281242841796
+            },
+            {
+              "intendedVsyncNs": 137281241442076,
+              "frameTimelineVsyncId": 151290141,
+              "flags": 0,
+              "durationMs": 6.3318,
+              "intervalMs": 8.3225,
+              "frameDeadlineNs": 137281263458260,
+              "frameCompletedNs": 137281247773879
+            },
+            {
+              "intendedVsyncNs": 137281366277342,
+              "frameTimelineVsyncId": 151290394,
+              "flags": 0,
+              "durationMs": 9.0742,
+              "intervalMs": 8.3224,
+              "frameDeadlineNs": 137281379944008,
+              "frameCompletedNs": 137281375351588
+            }
+          ]
+        }
+      ],
+      "removedWindows": []
+    },
+    {
+      "id": "T06-comment-exit",
+      "beforeSha256": "9a4b0674219dbbd4705c649bd7dbecb36471b0e2fcfe5e73f13b4996bf6e317c",
+      "afterSha256": "081aa02bbe07fd3724b45def13e2ed06ae426d94728e2e30ecdf26a155c25cd6",
+      "pipeline": "Skia (Vulkan)",
+      "snapshotIntervalMs": 12280,
+      "windows": [
+        {
+          "name": "com.xingin.xhs/com.xingin.xhs.index.v2.IndexActivityV2",
+          "statsSinceNs": 134780396912490,
+          "sameLifetimeAsBefore": true,
+          "beforeProfileRows": 120,
+          "afterProfileRows": 120,
+          "unseenRows": 0,
+          "unseenPostSnapshotRows": 0,
+          "validPostSnapshotRows": 0,
+          "excludedFlagsOrTimestamps": 0,
+          "cumulativeRenderedDelta": 0,
+          "cumulativeJankyDelta": 0,
+          "firstSampleAfterBeforeSnapshotMs": null,
+          "lastSampleBeforeAfterSnapshotMs": null,
+          "capturedSampleSpanMs": 0,
+          "frameCompletedMinusIntendedVsyncMs": {
+            "median": null,
+            "p95": null,
+            "max": null
+          },
+          "sampleCompletedPastDeadline": 0,
+          "completeness": "no_new_rendered_frames",
+          "samples": []
+        },
+        {
+          "name": "com.xingin.xhs/com.xingin.matrix.detail.activity.DetailFeedActivity",
+          "statsSinceNs": 137103451047333,
+          "sameLifetimeAsBefore": true,
+          "beforeProfileRows": 120,
+          "afterProfileRows": 120,
+          "unseenRows": 120,
+          "unseenPostSnapshotRows": 120,
+          "validPostSnapshotRows": 120,
+          "excludedFlagsOrTimestamps": 0,
+          "cumulativeRenderedDelta": 769,
+          "cumulativeJankyDelta": 3,
+          "firstSampleAfterBeforeSnapshotMs": 10289.621599,
+          "lastSampleBeforeAfterSnapshotMs": 9.056341,
+          "capturedSampleSpanMs": 1981.32206,
+          "frameCompletedMinusIntendedVsyncMs": {
+            "median": 4.3353,
+            "p95": 5.3837,
+            "max": 7.3745
+          },
+          "sampleCompletedPastDeadline": 0,
+          "completeness": "ring_buffer_incomplete",
+          "samples": [
+            {
+              "intendedVsyncNs": 137389209621599,
+              "frameTimelineVsyncId": 151396955,
+              "flags": 0,
+              "durationMs": 3.7546,
+              "intervalMs": 16.6503,
+              "frameDeadlineNs": 137389226288265,
+              "frameCompletedNs": 137389213376182
+            },
+            {
+              "intendedVsyncNs": 137389226271645,
+              "frameTimelineVsyncId": 151396970,
+              "flags": 0,
+              "durationMs": 3.8873,
+              "intervalMs": 16.6503,
+              "frameDeadlineNs": 137389242938311,
+              "frameCompletedNs": 137389230158942
+            },
+            {
+              "intendedVsyncNs": 137389242921249,
+              "frameTimelineVsyncId": 151396985,
+              "flags": 0,
+              "durationMs": 3.8253,
+              "intervalMs": 16.6503,
+              "frameDeadlineNs": 137389259587915,
+              "frameCompletedNs": 137389246746599
+            },
+            {
+              "intendedVsyncNs": 137389259570867,
+              "frameTimelineVsyncId": 151397000,
+              "flags": 0,
+              "durationMs": 4.6906,
+              "intervalMs": 16.6502,
+              "frameDeadlineNs": 137389276237533,
+              "frameCompletedNs": 137389264261494
+            },
+            {
+              "intendedVsyncNs": 137389276220730,
+              "frameTimelineVsyncId": 151397015,
+              "flags": 0,
+              "durationMs": 4.0201,
+              "intervalMs": 16.6502,
+              "frameDeadlineNs": 137389292887396,
+              "frameCompletedNs": 137389280240869
+            },
+            {
+              "intendedVsyncNs": 137389292870570,
+              "frameTimelineVsyncId": 151397030,
+              "flags": 0,
+              "durationMs": 4.801,
+              "intervalMs": 16.6502,
+              "frameDeadlineNs": 137389309537236,
+              "frameCompletedNs": 137389297671546
+            },
+            {
+              "intendedVsyncNs": 137389309520055,
+              "frameTimelineVsyncId": 151397045,
+              "flags": 0,
+              "durationMs": 4.4985,
+              "intervalMs": 16.6501,
+              "frameDeadlineNs": 137389326186721,
+              "frameCompletedNs": 137389314018526
+            },
+            {
+              "intendedVsyncNs": 137389326169409,
+              "frameTimelineVsyncId": 151397060,
+              "flags": 0,
+              "durationMs": 4.8684,
+              "intervalMs": 16.65,
+              "frameDeadlineNs": 137389342836075,
+              "frameCompletedNs": 137389331037849
+            },
+            {
+              "intendedVsyncNs": 137389342818435,
+              "frameTimelineVsyncId": 151397075,
+              "flags": 0,
+              "durationMs": 3.9369,
+              "intervalMs": 16.6499,
+              "frameDeadlineNs": 137389359485101,
+              "frameCompletedNs": 137389346755296
+            },
+            {
+              "intendedVsyncNs": 137389359466850,
+              "frameTimelineVsyncId": 151397090,
+              "flags": 0,
+              "durationMs": 4.4932,
+              "intervalMs": 16.6498,
+              "frameDeadlineNs": 137389376133516,
+              "frameCompletedNs": 137389363960088
+            },
+            {
+              "intendedVsyncNs": 137389376115085,
+              "frameTimelineVsyncId": 151397105,
+              "flags": 0,
+              "durationMs": 4.4171,
+              "intervalMs": 16.6497,
+              "frameDeadlineNs": 137389392781751,
+              "frameCompletedNs": 137389380532223
+            },
+            {
+              "intendedVsyncNs": 137389392763565,
+              "frameTimelineVsyncId": 151397120,
+              "flags": 0,
+              "durationMs": 3.6953,
+              "intervalMs": 16.6496,
+              "frameDeadlineNs": 137389409430231,
+              "frameCompletedNs": 137389396458890
+            },
+            {
+              "intendedVsyncNs": 137389409412451,
+              "frameTimelineVsyncId": 151397135,
+              "flags": 0,
+              "durationMs": 4.2953,
+              "intervalMs": 16.6496,
+              "frameDeadlineNs": 137389426079117,
+              "frameCompletedNs": 137389413707744
+            },
+            {
+              "intendedVsyncNs": 137389426061558,
+              "frameTimelineVsyncId": 151397150,
+              "flags": 0,
+              "durationMs": 4.3277,
+              "intervalMs": 16.6496,
+              "frameDeadlineNs": 137389442728224,
+              "frameCompletedNs": 137389430389307
+            },
+            {
+              "intendedVsyncNs": 137389442710921,
+              "frameTimelineVsyncId": 151397165,
+              "flags": 0,
+              "durationMs": 4.3678,
+              "intervalMs": 16.6496,
+              "frameDeadlineNs": 137389459377587,
+              "frameCompletedNs": 137389447078734
+            },
+            {
+              "intendedVsyncNs": 137389459360526,
+              "frameTimelineVsyncId": 151397180,
+              "flags": 0,
+              "durationMs": 3.4278,
+              "intervalMs": 16.6496,
+              "frameDeadlineNs": 137389476027192,
+              "frameCompletedNs": 137389462788369
+            },
+            {
+              "intendedVsyncNs": 137389476010244,
+              "frameTimelineVsyncId": 151397195,
+              "flags": 0,
+              "durationMs": 3.4462,
+              "intervalMs": 16.6496,
+              "frameDeadlineNs": 137389492676910,
+              "frameCompletedNs": 137389479456442
+            },
+            {
+              "intendedVsyncNs": 137389492659984,
+              "frameTimelineVsyncId": 151397210,
+              "flags": 0,
+              "durationMs": 4.4695,
+              "intervalMs": 16.6496,
+              "frameDeadlineNs": 137389509326650,
+              "frameCompletedNs": 137389497129463
+            },
+            {
+              "intendedVsyncNs": 137389509309850,
+              "frameTimelineVsyncId": 151397225,
+              "flags": 0,
+              "durationMs": 4.3507,
+              "intervalMs": 16.6496,
+              "frameDeadlineNs": 137389525976516,
+              "frameCompletedNs": 137389513660557
+            },
+            {
+              "intendedVsyncNs": 137389525959951,
+              "frameTimelineVsyncId": 151397240,
+              "flags": 0,
+              "durationMs": 4.3584,
+              "intervalMs": 16.6497,
+              "frameDeadlineNs": 137389542626617,
+              "frameCompletedNs": 137389530318369
+            },
+            {
+              "intendedVsyncNs": 137389542610572,
+              "frameTimelineVsyncId": 151397255,
+              "flags": 0,
+              "durationMs": 4.4571,
+              "intervalMs": 16.6497,
+              "frameDeadlineNs": 137389559277238,
+              "frameCompletedNs": 137389547067692
+            },
+            {
+              "intendedVsyncNs": 137389559261061,
+              "frameTimelineVsyncId": 151397270,
+              "flags": 0,
+              "durationMs": 4.3596,
+              "intervalMs": 16.6498,
+              "frameDeadlineNs": 137389575927727,
+              "frameCompletedNs": 137389563620661
+            },
+            {
+              "intendedVsyncNs": 137389575911395,
+              "frameTimelineVsyncId": 151397285,
+              "flags": 0,
+              "durationMs": 3.6952,
+              "intervalMs": 16.6498,
+              "frameDeadlineNs": 137389592578061,
+              "frameCompletedNs": 137389579606546
+            },
+            {
+              "intendedVsyncNs": 137389592562595,
+              "frameTimelineVsyncId": 151397307,
+              "flags": 0,
+              "durationMs": 7.3745,
+              "intervalMs": 16.6499,
+              "frameDeadlineNs": 137389609229261,
+              "frameCompletedNs": 137389599937067
+            },
+            {
+              "intendedVsyncNs": 137389609212453,
+              "frameTimelineVsyncId": 151397329,
+              "flags": 0,
+              "durationMs": 4.9385,
+              "intervalMs": 16.6499,
+              "frameDeadlineNs": 137389625879119,
+              "frameCompletedNs": 137389614150973
+            },
+            {
+              "intendedVsyncNs": 137389625863213,
+              "frameTimelineVsyncId": 151397344,
+              "flags": 0,
+              "durationMs": 4.1898,
+              "intervalMs": 16.65,
+              "frameDeadlineNs": 137389642529879,
+              "frameCompletedNs": 137389630053057
+            },
+            {
+              "intendedVsyncNs": 137389642513821,
+              "frameTimelineVsyncId": 151397359,
+              "flags": 0,
+              "durationMs": 4.6419,
+              "intervalMs": 16.6501,
+              "frameDeadlineNs": 137389659180487,
+              "frameCompletedNs": 137389647155765
+            },
+            {
+              "intendedVsyncNs": 137389659164350,
+              "frameTimelineVsyncId": 151397374,
+              "flags": 0,
+              "durationMs": 4.0699,
+              "intervalMs": 16.6501,
+              "frameDeadlineNs": 137389675831016,
+              "frameCompletedNs": 137389663234203
+            },
+            {
+              "intendedVsyncNs": 137389675814294,
+              "frameTimelineVsyncId": 151397389,
+              "flags": 0,
+              "durationMs": 4.8985,
+              "intervalMs": 16.65,
+              "frameDeadlineNs": 137389692480960,
+              "frameCompletedNs": 137389680712796
+            },
+            {
+              "intendedVsyncNs": 137389692463883,
+              "frameTimelineVsyncId": 151397404,
+              "flags": 0,
+              "durationMs": 4.704,
+              "intervalMs": 16.65,
+              "frameDeadlineNs": 137389709130549,
+              "frameCompletedNs": 137389697167848
+            },
+            {
+              "intendedVsyncNs": 137389709113132,
+              "frameTimelineVsyncId": 151397419,
+              "flags": 0,
+              "durationMs": 4.7809,
+              "intervalMs": 16.65,
+              "frameDeadlineNs": 137389725779798,
+              "frameCompletedNs": 137389713894046
+            },
+            {
+              "intendedVsyncNs": 137389725762659,
+              "frameTimelineVsyncId": 151397434,
+              "flags": 0,
+              "durationMs": 4.5624,
+              "intervalMs": 16.6499,
+              "frameDeadlineNs": 137389742429325,
+              "frameCompletedNs": 137389730325088
+            },
+            {
+              "intendedVsyncNs": 137389742412286,
+              "frameTimelineVsyncId": 151397449,
+              "flags": 0,
+              "durationMs": 4.5409,
+              "intervalMs": 16.6499,
+              "frameDeadlineNs": 137389759078952,
+              "frameCompletedNs": 137389746953161
+            },
+            {
+              "intendedVsyncNs": 137389759061397,
+              "frameTimelineVsyncId": 151397464,
+              "flags": 0,
+              "durationMs": 4.7157,
+              "intervalMs": 16.6498,
+              "frameDeadlineNs": 137389775728063,
+              "frameCompletedNs": 137389763777119
+            },
+            {
+              "intendedVsyncNs": 137389775710687,
+              "frameTimelineVsyncId": 151397479,
+              "flags": 0,
+              "durationMs": 3.8771,
+              "intervalMs": 16.6498,
+              "frameDeadlineNs": 137389792377353,
+              "frameCompletedNs": 137389779587744
+            },
+            {
+              "intendedVsyncNs": 137389792360113,
+              "frameTimelineVsyncId": 151397494,
+              "flags": 0,
+              "durationMs": 4.8091,
+              "intervalMs": 16.6498,
+              "frameDeadlineNs": 137389809026779,
+              "frameCompletedNs": 137389797169255
+            },
+            {
+              "intendedVsyncNs": 137389809009600,
+              "frameTimelineVsyncId": 151397509,
+              "flags": 0,
+              "durationMs": 4.8216,
+              "intervalMs": 16.6498,
+              "frameDeadlineNs": 137389825676266,
+              "frameCompletedNs": 137389813831234
+            },
+            {
+              "intendedVsyncNs": 137389825659147,
+              "frameTimelineVsyncId": 151397524,
+              "flags": 0,
+              "durationMs": 3.8386,
+              "intervalMs": 16.6497,
+              "frameDeadlineNs": 137389842325813,
+              "frameCompletedNs": 137389829497796
+            },
+            {
+              "intendedVsyncNs": 137389842308810,
+              "frameTimelineVsyncId": 151397539,
+              "flags": 0,
+              "durationMs": 5.4043,
+              "intervalMs": 16.6497,
+              "frameDeadlineNs": 137389858975476,
+              "frameCompletedNs": 137389847713109
+            },
+            {
+              "intendedVsyncNs": 137389858958707,
+              "frameTimelineVsyncId": 151397554,
+              "flags": 0,
+              "durationMs": 4.0032,
+              "intervalMs": 16.6498,
+              "frameDeadlineNs": 137389875625373,
+              "frameCompletedNs": 137389862961859
+            },
+            {
+              "intendedVsyncNs": 137389875609006,
+              "frameTimelineVsyncId": 151397569,
+              "flags": 0,
+              "durationMs": 5.3837,
+              "intervalMs": 16.6498,
+              "frameDeadlineNs": 137389892275672,
+              "frameCompletedNs": 137389880992744
+            },
+            {
+              "intendedVsyncNs": 137389892259353,
+              "frameTimelineVsyncId": 151397584,
+              "flags": 0,
+              "durationMs": 4.4878,
+              "intervalMs": 16.6498,
+              "frameDeadlineNs": 137389908926019,
+              "frameCompletedNs": 137389896747119
+            },
+            {
+              "intendedVsyncNs": 137389908909944,
+              "frameTimelineVsyncId": 151397599,
+              "flags": 0,
+              "durationMs": 4.8695,
+              "intervalMs": 16.6499,
+              "frameDeadlineNs": 137389925576610,
+              "frameCompletedNs": 137389913779411
+            },
+            {
+              "intendedVsyncNs": 137389925560934,
+              "frameTimelineVsyncId": 151397614,
+              "flags": 0,
+              "durationMs": 4.73,
+              "intervalMs": 16.65,
+              "frameDeadlineNs": 137389942227600,
+              "frameCompletedNs": 137389930290921
+            },
+            {
+              "intendedVsyncNs": 137389942212190,
+              "frameTimelineVsyncId": 151397629,
+              "flags": 0,
+              "durationMs": 4.3978,
+              "intervalMs": 16.6501,
+              "frameDeadlineNs": 137389958878856,
+              "frameCompletedNs": 137389946609984
+            },
+            {
+              "intendedVsyncNs": 137389958863825,
+              "frameTimelineVsyncId": 151397644,
+              "flags": 0,
+              "durationMs": 4.3353,
+              "intervalMs": 16.6502,
+              "frameDeadlineNs": 137389975530491,
+              "frameCompletedNs": 137389963199098
+            },
+            {
+              "intendedVsyncNs": 137389975515588,
+              "frameTimelineVsyncId": 151397659,
+              "flags": 0,
+              "durationMs": 5.0414,
+              "intervalMs": 16.6503,
+              "frameDeadlineNs": 137389992182254,
+              "frameCompletedNs": 137389980557015
+            },
+            {
+              "intendedVsyncNs": 137389992167310,
+              "frameTimelineVsyncId": 151397674,
+              "flags": 0,
+              "durationMs": 4.8624,
+              "intervalMs": 16.6504,
+              "frameDeadlineNs": 137390008833976,
+              "frameCompletedNs": 137389997029671
+            },
+            {
+              "intendedVsyncNs": 137390008818835,
+              "frameTimelineVsyncId": 151397689,
+              "flags": 0,
+              "durationMs": 4.8388,
+              "intervalMs": 16.6505,
+              "frameDeadlineNs": 137390025485501,
+              "frameCompletedNs": 137390013657588
+            },
+            {
+              "intendedVsyncNs": 137390025470229,
+              "frameTimelineVsyncId": 151397704,
+              "flags": 0,
+              "durationMs": 5.0706,
+              "intervalMs": 16.6505,
+              "frameDeadlineNs": 137390042136895,
+              "frameCompletedNs": 137390030540817
+            },
+            {
+              "intendedVsyncNs": 137390042121340,
+              "frameTimelineVsyncId": 151397719,
+              "flags": 0,
+              "durationMs": 4.0033,
+              "intervalMs": 16.6506,
+              "frameDeadlineNs": 137390058788006,
+              "frameCompletedNs": 137390046124671
+            },
+            {
+              "intendedVsyncNs": 137390058772635,
+              "frameTimelineVsyncId": 151397734,
+              "flags": 0,
+              "durationMs": 3.5159,
+              "intervalMs": 16.6507,
+              "frameDeadlineNs": 137390075439301,
+              "frameCompletedNs": 137390062288577
+            },
+            {
+              "intendedVsyncNs": 137390075423594,
+              "frameTimelineVsyncId": 151397749,
+              "flags": 0,
+              "durationMs": 3.1859,
+              "intervalMs": 16.6507,
+              "frameDeadlineNs": 137390092090260,
+              "frameCompletedNs": 137390078609463
+            },
+            {
+              "intendedVsyncNs": 137390092074392,
+              "frameTimelineVsyncId": 151397764,
+              "flags": 0,
+              "durationMs": 3.8353,
+              "intervalMs": 16.6507,
+              "frameDeadlineNs": 137390108741058,
+              "frameCompletedNs": 137390095909671
+            },
+            {
+              "intendedVsyncNs": 137390108725199,
+              "frameTimelineVsyncId": 151397779,
+              "flags": 0,
+              "durationMs": 3.8906,
+              "intervalMs": 16.6507,
+              "frameDeadlineNs": 137390125391865,
+              "frameCompletedNs": 137390112615765
+            },
+            {
+              "intendedVsyncNs": 137390125375747,
+              "frameTimelineVsyncId": 151397794,
+              "flags": 0,
+              "durationMs": 3.7317,
+              "intervalMs": 16.6507,
+              "frameDeadlineNs": 137390142042413,
+              "frameCompletedNs": 137390129107432
+            },
+            {
+              "intendedVsyncNs": 137390142026250,
+              "frameTimelineVsyncId": 151397809,
+              "flags": 0,
+              "durationMs": 4.0583,
+              "intervalMs": 16.6507,
+              "frameDeadlineNs": 137390158692916,
+              "frameCompletedNs": 137390146084515
+            },
+            {
+              "intendedVsyncNs": 137390158676532,
+              "frameTimelineVsyncId": 151397824,
+              "flags": 0,
+              "durationMs": 3.821,
+              "intervalMs": 16.6506,
+              "frameDeadlineNs": 137390175343198,
+              "frameCompletedNs": 137390162497536
+            },
+            {
+              "intendedVsyncNs": 137390175326482,
+              "frameTimelineVsyncId": 151397839,
+              "flags": 0,
+              "durationMs": 3.7918,
+              "intervalMs": 16.6506,
+              "frameDeadlineNs": 137390191993148,
+              "frameCompletedNs": 137390179118317
+            },
+            {
+              "intendedVsyncNs": 137390191976465,
+              "frameTimelineVsyncId": 151397854,
+              "flags": 0,
+              "durationMs": 4.7163,
+              "intervalMs": 16.6505,
+              "frameDeadlineNs": 137390208643131,
+              "frameCompletedNs": 137390196692796
+            },
+            {
+              "intendedVsyncNs": 137390208626217,
+              "frameTimelineVsyncId": 151397869,
+              "flags": 0,
+              "durationMs": 4.0385,
+              "intervalMs": 16.6505,
+              "frameDeadlineNs": 137390225292883,
+              "frameCompletedNs": 137390212664671
+            },
+            {
+              "intendedVsyncNs": 137390225275973,
+              "frameTimelineVsyncId": 151397884,
+              "flags": 0,
+              "durationMs": 4.2651,
+              "intervalMs": 16.6504,
+              "frameDeadlineNs": 137390241942639,
+              "frameCompletedNs": 137390229541077
+            },
+            {
+              "intendedVsyncNs": 137390241926056,
+              "frameTimelineVsyncId": 151397899,
+              "flags": 0,
+              "durationMs": 4.3533,
+              "intervalMs": 16.6504,
+              "frameDeadlineNs": 137390258592722,
+              "frameCompletedNs": 137390246279306
+            },
+            {
+              "intendedVsyncNs": 137390258576394,
+              "frameTimelineVsyncId": 151397914,
+              "flags": 0,
+              "durationMs": 4.6765,
+              "intervalMs": 16.6504,
+              "frameDeadlineNs": 137390275243060,
+              "frameCompletedNs": 137390263252900
+            },
+            {
+              "intendedVsyncNs": 137390275226885,
+              "frameTimelineVsyncId": 151397929,
+              "flags": 0,
+              "durationMs": 4.187,
+              "intervalMs": 16.6504,
+              "frameDeadlineNs": 137390291893551,
+              "frameCompletedNs": 137390279413890
+            },
+            {
+              "intendedVsyncNs": 137390291877722,
+              "frameTimelineVsyncId": 151397951,
+              "flags": 0,
+              "durationMs": 5.4072,
+              "intervalMs": 16.6505,
+              "frameDeadlineNs": 137390308544388,
+              "frameCompletedNs": 137390297284879
+            },
+            {
+              "intendedVsyncNs": 137390308528898,
+              "frameTimelineVsyncId": 151397973,
+              "flags": 0,
+              "durationMs": 3.5917,
+              "intervalMs": 16.6505,
+              "frameDeadlineNs": 137390325195564,
+              "frameCompletedNs": 137390312120609
+            },
+            {
+              "intendedVsyncNs": 137390325180628,
+              "frameTimelineVsyncId": 151397988,
+              "flags": 0,
+              "durationMs": 5.1615,
+              "intervalMs": 16.6506,
+              "frameDeadlineNs": 137390341847294,
+              "frameCompletedNs": 137390330342171
+            },
+            {
+              "intendedVsyncNs": 137390341832770,
+              "frameTimelineVsyncId": 151398003,
+              "flags": 0,
+              "durationMs": 4.7674,
+              "intervalMs": 16.6507,
+              "frameDeadlineNs": 137390358499436,
+              "frameCompletedNs": 137390346600192
+            },
+            {
+              "intendedVsyncNs": 137390358484968,
+              "frameTimelineVsyncId": 151398018,
+              "flags": 0,
+              "durationMs": 4.306,
+              "intervalMs": 16.6509,
+              "frameDeadlineNs": 137390375151634,
+              "frameCompletedNs": 137390362790973
+            },
+            {
+              "intendedVsyncNs": 137390375137482,
+              "frameTimelineVsyncId": 151398033,
+              "flags": 0,
+              "durationMs": 4.7169,
+              "intervalMs": 16.651,
+              "frameDeadlineNs": 137390391804148,
+              "frameCompletedNs": 137390379854411
+            },
+            {
+              "intendedVsyncNs": 137390391789793,
+              "frameTimelineVsyncId": 151398048,
+              "flags": 0,
+              "durationMs": 4.7383,
+              "intervalMs": 16.651,
+              "frameDeadlineNs": 137390408456459,
+              "frameCompletedNs": 137390396528109
+            },
+            {
+              "intendedVsyncNs": 137390408441606,
+              "frameTimelineVsyncId": 151398063,
+              "flags": 0,
+              "durationMs": 4.4666,
+              "intervalMs": 16.6511,
+              "frameDeadlineNs": 137390425108272,
+              "frameCompletedNs": 137390412908161
+            },
+            {
+              "intendedVsyncNs": 137390425093161,
+              "frameTimelineVsyncId": 151398078,
+              "flags": 0,
+              "durationMs": 4.2494,
+              "intervalMs": 16.6511,
+              "frameDeadlineNs": 137390441759827,
+              "frameCompletedNs": 137390429342536
+            },
+            {
+              "intendedVsyncNs": 137390441743958,
+              "frameTimelineVsyncId": 151398093,
+              "flags": 0,
+              "durationMs": 3.5502,
+              "intervalMs": 16.6511,
+              "frameDeadlineNs": 137390458410624,
+              "frameCompletedNs": 137390445294202
+            },
+            {
+              "intendedVsyncNs": 137390458394173,
+              "frameTimelineVsyncId": 151398108,
+              "flags": 0,
+              "durationMs": 4.7214,
+              "intervalMs": 16.651,
+              "frameDeadlineNs": 137390475060839,
+              "frameCompletedNs": 137390463115608
+            },
+            {
+              "intendedVsyncNs": 137390475044360,
+              "frameTimelineVsyncId": 151398123,
+              "flags": 0,
+              "durationMs": 3.7193,
+              "intervalMs": 16.651,
+              "frameDeadlineNs": 137390491711026,
+              "frameCompletedNs": 137390478763681
+            },
+            {
+              "intendedVsyncNs": 137390491694156,
+              "frameTimelineVsyncId": 151398138,
+              "flags": 0,
+              "durationMs": 4.0292,
+              "intervalMs": 16.6508,
+              "frameDeadlineNs": 137390508360822,
+              "frameCompletedNs": 137390495723317
+            },
+            {
+              "intendedVsyncNs": 137390508343147,
+              "frameTimelineVsyncId": 151398153,
+              "flags": 0,
+              "durationMs": 3.8085,
+              "intervalMs": 16.6507,
+              "frameDeadlineNs": 137390525009813,
+              "frameCompletedNs": 137390512151650
+            },
+            {
+              "intendedVsyncNs": 137390524991538,
+              "frameTimelineVsyncId": 151398168,
+              "flags": 0,
+              "durationMs": 4.2183,
+              "intervalMs": 16.6505,
+              "frameDeadlineNs": 137390541658204,
+              "frameCompletedNs": 137390529209879
+            },
+            {
+              "intendedVsyncNs": 137390541639178,
+              "frameTimelineVsyncId": 151398183,
+              "flags": 0,
+              "durationMs": 3.6071,
+              "intervalMs": 16.6503,
+              "frameDeadlineNs": 137390558305844,
+              "frameCompletedNs": 137390545246233
+            },
+            {
+              "intendedVsyncNs": 137390558286319,
+              "frameTimelineVsyncId": 151398198,
+              "flags": 0,
+              "durationMs": 4.5267,
+              "intervalMs": 16.65,
+              "frameDeadlineNs": 137390574952985,
+              "frameCompletedNs": 137390562813056
+            },
+            {
+              "intendedVsyncNs": 137390574933099,
+              "frameTimelineVsyncId": 151398213,
+              "flags": 0,
+              "durationMs": 3.9728,
+              "intervalMs": 16.6498,
+              "frameDeadlineNs": 137390591599765,
+              "frameCompletedNs": 137390578905921
+            },
+            {
+              "intendedVsyncNs": 137390591577243,
+              "frameTimelineVsyncId": 151398235,
+              "flags": 0,
+              "durationMs": 4.3871,
+              "intervalMs": 16.6496,
+              "frameDeadlineNs": 137390608243909,
+              "frameCompletedNs": 137390595964306
+            },
+            {
+              "intendedVsyncNs": 137390608226812,
+              "frameTimelineVsyncId": 151398250,
+              "flags": 0,
+              "durationMs": 3.8375,
+              "intervalMs": 16.6494,
+              "frameDeadlineNs": 137390624893478,
+              "frameCompletedNs": 137390612064306
+            },
+            {
+              "intendedVsyncNs": 137390624873816,
+              "frameTimelineVsyncId": 151398265,
+              "flags": 0,
+              "durationMs": 3.753,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137390641540482,
+              "frameCompletedNs": 137390628626858
+            },
+            {
+              "intendedVsyncNs": 137390641521001,
+              "frameTimelineVsyncId": 151398280,
+              "flags": 0,
+              "durationMs": 3.904,
+              "intervalMs": 16.649,
+              "frameDeadlineNs": 137390658187667,
+              "frameCompletedNs": 137390645425036
+            },
+            {
+              "intendedVsyncNs": 137390658168475,
+              "frameTimelineVsyncId": 151398295,
+              "flags": 0,
+              "durationMs": 3.2507,
+              "intervalMs": 16.6489,
+              "frameDeadlineNs": 137390674835141,
+              "frameCompletedNs": 137390661419202
+            },
+            {
+              "intendedVsyncNs": 137390674816726,
+              "frameTimelineVsyncId": 151398310,
+              "flags": 0,
+              "durationMs": 3.7338,
+              "intervalMs": 16.6489,
+              "frameDeadlineNs": 137390691483392,
+              "frameCompletedNs": 137390678550556
+            },
+            {
+              "intendedVsyncNs": 137390691465337,
+              "frameTimelineVsyncId": 151398325,
+              "flags": 0,
+              "durationMs": 3.9142,
+              "intervalMs": 16.6489,
+              "frameDeadlineNs": 137390708132003,
+              "frameCompletedNs": 137390695379567
+            },
+            {
+              "intendedVsyncNs": 137390708114098,
+              "frameTimelineVsyncId": 151398340,
+              "flags": 0,
+              "durationMs": 4.0271,
+              "intervalMs": 16.6489,
+              "frameDeadlineNs": 137390724780764,
+              "frameCompletedNs": 137390712141181
+            },
+            {
+              "intendedVsyncNs": 137390724762881,
+              "frameTimelineVsyncId": 151398355,
+              "flags": 0,
+              "durationMs": 3.7579,
+              "intervalMs": 16.6489,
+              "frameDeadlineNs": 137390741429547,
+              "frameCompletedNs": 137390728520765
+            },
+            {
+              "intendedVsyncNs": 137390741411579,
+              "frameTimelineVsyncId": 151398370,
+              "flags": 0,
+              "durationMs": 4.3857,
+              "intervalMs": 16.6488,
+              "frameDeadlineNs": 137390758078245,
+              "frameCompletedNs": 137390745797275
+            },
+            {
+              "intendedVsyncNs": 137390758060216,
+              "frameTimelineVsyncId": 151398385,
+              "flags": 0,
+              "durationMs": 4.832,
+              "intervalMs": 16.6488,
+              "frameDeadlineNs": 137390774726882,
+              "frameCompletedNs": 137390762892223
+            },
+            {
+              "intendedVsyncNs": 137390774708698,
+              "frameTimelineVsyncId": 151398400,
+              "flags": 0,
+              "durationMs": 4.4911,
+              "intervalMs": 16.6488,
+              "frameDeadlineNs": 137390791375364,
+              "frameCompletedNs": 137390779199827
+            },
+            {
+              "intendedVsyncNs": 137390791357317,
+              "frameTimelineVsyncId": 151398415,
+              "flags": 0,
+              "durationMs": 4.5719,
+              "intervalMs": 16.6488,
+              "frameDeadlineNs": 137390808023983,
+              "frameCompletedNs": 137390795929254
+            },
+            {
+              "intendedVsyncNs": 137390808006653,
+              "frameTimelineVsyncId": 151398430,
+              "flags": 0,
+              "durationMs": 4.1592,
+              "intervalMs": 16.6489,
+              "frameDeadlineNs": 137390824673319,
+              "frameCompletedNs": 137390812165869
+            },
+            {
+              "intendedVsyncNs": 137390824656149,
+              "frameTimelineVsyncId": 151398445,
+              "flags": 0,
+              "durationMs": 4.0293,
+              "intervalMs": 16.649,
+              "frameDeadlineNs": 137390841322815,
+              "frameCompletedNs": 137390828685400
+            },
+            {
+              "intendedVsyncNs": 137390841305975,
+              "frameTimelineVsyncId": 151398460,
+              "flags": 0,
+              "durationMs": 4.6458,
+              "intervalMs": 16.6491,
+              "frameDeadlineNs": 137390857972641,
+              "frameCompletedNs": 137390845951806
+            },
+            {
+              "intendedVsyncNs": 137390857956454,
+              "frameTimelineVsyncId": 151398475,
+              "flags": 0,
+              "durationMs": 4.802,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137390874623120,
+              "frameCompletedNs": 137390862758473
+            },
+            {
+              "intendedVsyncNs": 137390874606911,
+              "frameTimelineVsyncId": 151398490,
+              "flags": 0,
+              "durationMs": 4.2103,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137390891273577,
+              "frameCompletedNs": 137390878817223
+            },
+            {
+              "intendedVsyncNs": 137390891256733,
+              "frameTimelineVsyncId": 151398505,
+              "flags": 0,
+              "durationMs": 4.4861,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137390907923399,
+              "frameCompletedNs": 137390895742796
+            },
+            {
+              "intendedVsyncNs": 137390907905959,
+              "frameTimelineVsyncId": 151398520,
+              "flags": 0,
+              "durationMs": 4.9319,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137390924572625,
+              "frameCompletedNs": 137390912837900
+            },
+            {
+              "intendedVsyncNs": 137390924554917,
+              "frameTimelineVsyncId": 151398542,
+              "flags": 0,
+              "durationMs": 4.1905,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137390941221583,
+              "frameCompletedNs": 137390928745400
+            },
+            {
+              "intendedVsyncNs": 137390941204102,
+              "frameTimelineVsyncId": 151398564,
+              "flags": 0,
+              "durationMs": 5.5577,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137390957870768,
+              "frameCompletedNs": 137390946761806
+            },
+            {
+              "intendedVsyncNs": 137390957853119,
+              "frameTimelineVsyncId": 151398586,
+              "flags": 0,
+              "durationMs": 3.5148,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137390974519785,
+              "frameCompletedNs": 137390961367900
+            },
+            {
+              "intendedVsyncNs": 137390974502124,
+              "frameTimelineVsyncId": 151398608,
+              "flags": 0,
+              "durationMs": 4.2807,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137390991168790,
+              "frameCompletedNs": 137390978782796
+            },
+            {
+              "intendedVsyncNs": 137390991151063,
+              "frameTimelineVsyncId": 151398630,
+              "flags": 0,
+              "durationMs": 3.6131,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137391007817729,
+              "frameCompletedNs": 137390994764150
+            },
+            {
+              "intendedVsyncNs": 137391007800252,
+              "frameTimelineVsyncId": 151398652,
+              "flags": 0,
+              "durationMs": 5.2932,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137391024466918,
+              "frameCompletedNs": 137391013093473
+            },
+            {
+              "intendedVsyncNs": 137391024449761,
+              "frameTimelineVsyncId": 151398674,
+              "flags": 0,
+              "durationMs": 3.7304,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137391041116427,
+              "frameCompletedNs": 137391028180192
+            },
+            {
+              "intendedVsyncNs": 137391041099066,
+              "frameTimelineVsyncId": 151398696,
+              "flags": 0,
+              "durationMs": 3.9603,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137391057765732,
+              "frameCompletedNs": 137391045059358
+            },
+            {
+              "intendedVsyncNs": 137391057748169,
+              "frameTimelineVsyncId": 151398718,
+              "flags": 0,
+              "durationMs": 3.3937,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137391074414835,
+              "frameCompletedNs": 137391061141858
+            },
+            {
+              "intendedVsyncNs": 137391074397199,
+              "frameTimelineVsyncId": 151398740,
+              "flags": 0,
+              "durationMs": 4.7862,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137391091063865,
+              "frameCompletedNs": 137391079183421
+            },
+            {
+              "intendedVsyncNs": 137391091046429,
+              "frameTimelineVsyncId": 151398762,
+              "flags": 0,
+              "durationMs": 3.7848,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137391107713095,
+              "frameCompletedNs": 137391094831181
+            },
+            {
+              "intendedVsyncNs": 137391107695520,
+              "frameTimelineVsyncId": 151398784,
+              "flags": 0,
+              "durationMs": 4.8244,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137391124362186,
+              "frameCompletedNs": 137391112519931
+            },
+            {
+              "intendedVsyncNs": 137391124344814,
+              "frameTimelineVsyncId": 151398806,
+              "flags": 0,
+              "durationMs": 2.92,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137391141011480,
+              "frameCompletedNs": 137391127264827
+            },
+            {
+              "intendedVsyncNs": 137391140994337,
+              "frameTimelineVsyncId": 151398828,
+              "flags": 0,
+              "durationMs": 4.2334,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137391157661003,
+              "frameCompletedNs": 137391145227692
+            },
+            {
+              "intendedVsyncNs": 137391157643868,
+              "frameTimelineVsyncId": 151398850,
+              "flags": 0,
+              "durationMs": 3.4611,
+              "intervalMs": 16.6492,
+              "frameDeadlineNs": 137391174310534,
+              "frameCompletedNs": 137391161104931
+            },
+            {
+              "intendedVsyncNs": 137391174293531,
+              "frameTimelineVsyncId": 151398872,
+              "flags": 0,
+              "durationMs": 5.4577,
+              "intervalMs": 16.6493,
+              "frameDeadlineNs": 137391190960197,
+              "frameCompletedNs": 137391179751233
+            },
+            {
+              "intendedVsyncNs": 137391190943659,
+              "frameTimelineVsyncId": 151398894,
+              "flags": 0,
+              "durationMs": 4.5613,
+              "intervalMs": 16.6493,
+              "frameDeadlineNs": 137391207610325,
+              "frameCompletedNs": 137391195504983
+            }
+          ]
+        }
+      ],
+      "removedWindows": [
+        {
+          "name": "com.xingin.xhs/com.xingin.matrix.detail.activity.DetailFeedActivity",
+          "statsSinceNs": 137281046350702,
+          "beforeProfileRows": 13,
+          "reason": "not_in_after_snapshot_no_post_action_frame_verification"
+        }
+      ]
+    }
+  ]
+}

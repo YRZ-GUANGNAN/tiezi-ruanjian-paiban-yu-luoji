@@ -1,0 +1,33 @@
+{
+  "verifiedAt": "2026-10-13T15:49:02.871Z",
+  "status": "PASS",
+  "deviceSourceFiles": 47,
+  "layoutSourceScreens": 12,
+  "layoutMetrics": 84,
+  "layoutFigures": 6,
+  "staticEvidence": {
+    "records": 77,
+    "methods": 51,
+    "availableMethodBodies": 50,
+    "unavailableMethodBodies": 1,
+    "byVersion": {
+      "8.72.0": 63,
+      "9.49.1": 14
+    },
+    "failedQueries": 5
+  },
+  "motionRecordings": 5,
+  "motionExportFiles": 22,
+  "motionSummaryAnchors": 17,
+  "previewValidation": {
+    "sourceFrames": 105,
+    "previewFrames": 105,
+    "maxPtsDifferenceSeconds": 0,
+    "identityVerified": true
+  },
+  "gfxSnapshotPairs": 4,
+  "parameterEntries": 28,
+  "documentLinks": 306,
+  "issues": [],
+  "publicationScope": "Historical local research verification or archive manifest. These counts and hashes do not validate the public derived repository. Use the root public-manifest.json and node tools/verify.mjs."
+}

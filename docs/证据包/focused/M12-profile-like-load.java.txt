@@ -1,0 +1,26 @@
+    public final Observable<g<List<Object>, DiffUtil.DiffResult>> d(final int i4, String str, final boolean z4, final List<Object> list) {
+        return (z4 ? new mz6.h().f(str) : new mz6.h().e(str)).map(new o() { // from class: kv6.c1
+            @Override // gl9.o
+            public final Object apply(Object obj) {
+                List list2 = list;
+                int i11 = i4;
+                LikesRepository likesRepository = this;
+                boolean z9 = z4;
+                Object obj2 = list2.get(i11);
+                NoteItemBean noteItemBean = obj2 instanceof NoteItemBean ? (NoteItemBean) obj2 : null;
+                NoteItemBean noteItemBean2 = noteItemBean != null ? (NoteItemBean) noteItemBean.clone() : null;
+                ArrayList arrayList = new ArrayList(list2);
+                if (noteItemBean2 != null) {
+                    noteItemBean2.inlikes = z9;
+                    noteItemBean2.likes += z9 ? 1 : -1;
+                    arrayList.set(i11, noteItemBean2);
+                }
+                return LikesRepository.a(likesRepository, arrayList, list2, false, null, 12, null);
+            }
+        }).doAfterNext(new gl9.g() { // from class: kv6.w0
+            @Override // gl9.g
+            public final void accept(Object obj) {
+                this.f143878d.f56967d = (List) ((bn9.g) obj).f11909d;
+            }
+        });
+    }

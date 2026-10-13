@@ -1,0 +1,18 @@
+    public final void t7(long j4) {
+        if (p.g((TextView) l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09106b))) {
+            this.f55319u.removeCallbacksAndMessages(null);
+            Handler handler = this.f55319u;
+            handler.sendMessageDelayed(Message.obtain(handler, new Runnable() { // from class: ne6.i1
+                @Override // java.lang.Runnable
+                public final void run() {
+                    final NoteDetailImageDisplayPresenter noteDetailImageDisplayPresenter = this.f159465d;
+                    ((TextView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09106b)).animate().alpha(0.0f).setDuration(200L).setInterpolator(new AccelerateInterpolator()).withEndAction(new Runnable() { // from class: ne6.g1
+                        @Override // java.lang.Runnable
+                        public final void run() {
+                            qe8.p.b((TextView) noteDetailImageDisplayPresenter.l7().findViewById(R.id._0_resource_name_obfuscated_res_0x7f09106b));
+                        }
+                    }).start();
+                }
+            }), j4);
+        }
+    }

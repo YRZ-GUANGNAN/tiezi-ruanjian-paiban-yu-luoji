@@ -1,0 +1,13 @@
+        public final int a(int i100, float f100, float f101, float f102) {
+            float f103;
+            PatchProxyResult patchProxyResultProxy4Para = PatchProxy.proxy4Para(new Integer(i100), new Float(f100), new Float(f101), new Float(f102), this, a.class, 124708);
+            if (patchProxyResultProxy4Para.isSupported) {
+                return ((Integer) patchProxyResultProxy4Para.result).intValue();
+            }
+            if (f100 < f101) {
+                f103 = i100 / f101;
+            } else {
+                f103 = f100 > f102 ? i100 / f102 : i100 / f100;
+            }
+            return (int) f103;
+        }

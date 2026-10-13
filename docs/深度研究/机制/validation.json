@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-10-13T10:40:25.239Z",
+  "status": "PASS",
+  "statistics": {
+    "records": 77,
+    "methods": 51,
+    "availableMethodBodies": 50,
+    "unavailableMethodBodies": 1,
+    "byVersion": {
+      "8.72.0": 63,
+      "9.49.1": 14
+    },
+    "failedQueries": 5
+  },
+  "checks": [
+    "all evidence files exist and SHA-256 match",
+    "source excerpts indexed against source text digests",
+    "all short evidence references resolve",
+    "relative report links exist",
+    "runtimeObserved false for all static records"
+  ],
+  "errors": [],
+  "publicationScope": "Historical local research verification or archive manifest. These counts and hashes do not validate the public derived repository. Use the root public-manifest.json and node tools/verify.mjs."
+}

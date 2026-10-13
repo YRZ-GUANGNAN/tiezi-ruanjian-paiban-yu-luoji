@@ -1,0 +1,864 @@
+{
+  "evidence_id": "ev_1c83e1397a4463a65f282afa0944ef07447a915f0ea8af4642827a47f1f265b9",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.entities.CommentCommentInfo"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.entities.CommentCommentInfo"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"CREATOR\",\"def_pos\":0,\"type\":\"android.os.Parcelable$Creator\\u003ccom.xingin.entities.CommentCommentInfo\\u003e\"},{\"name\":\"Companion\",\"def_pos\":0,\"type\":\"com.xingin.entities.CommentCommentInfo$a\"},{\"name\":\"atUsers\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.CommentCommentUser\\u003e\"},{\"name\":\"bizLabels\",\"def_pos\":0,\"type\":\"com.xingin.entities.CommentBizLabels\"},{\"name\":\"commentAiPlaceHolder\",\"def_pos\":0,\"type\":\"com.xingin.entities.CommentAIPlaceHolder\"},{\"name\":\"commentContentType\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"commentTags\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.CommentTagBean\\u003e\"},{\"name\":\"commentType\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"content\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"contentFilterRichText\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"contentTranslation\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"disableTranslate\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"enableInsertAnim\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"extraInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.CommentExtraInfo\"},{\"name\":\"hashTags\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.CommentHashTag\\u003e\"},{\"name\":\"id\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"ipLocation\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"isPicComment\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"},{\"name\":\"isSendSuccess\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"},{\"name\":\"likeCount\",\"def_pos\":0,\"type\":\"java.lang.Integer\"},{\"name\":\"liked\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"},{\"name\":\"localPicPathList\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.CommentPictureInfo\\u003e\"},{\"name\":\"mediaSourceType\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"noteId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"pageContext\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"pictures\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.CommentPictureInfo\\u003e\"},{\"name\":\"relatedWidgetInfo\",\"def_pos\":0,\"type\":\"com.xingin.entities.RelatedWidgetInfo\"},{\"name\":\"retryCount\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"rootCommentId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"rootCommentType\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"score\",\"def_pos\":0,\"type\":\"java.lang.Integer\"},{\"name\":\"showTags\",\"def_pos\":0,\"type\":\"java.util.List\\u003cjava.lang.String\\u003e\"},{\"name\":\"showType\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"showTypeText\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"status\",\"def_pos\":0,\"type\":\"java.lang.Integer\"},{\"name\":\"subCommentCount\",\"def_pos\":0,\"type\":\"java.lang.Integer\"},{\"name\":\"subCommentCursor\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"subComments\",\"def_pos\":0,\"type\":\"java.util.ArrayList\\u003ccom.xingin.entities.CommentCommentInfo\\u003e\"},{\"name\":\"tagsType\",\"def_pos\":0,\"type\":\"java.util.List\\u003ccom.xingin.entities.CommentCommentInfoTagsType\\u003e\"},{\"name\":\"targetComment\",\"def_pos\":0,\"type\":\"com.xingin.entities.CommentCommentInfoTargetComment\"},{\"name\":\"targetPos\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"textLanguageCode\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"time\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"trackId\",\"def_pos\":0,\"type\":\"java.lang.String\"},{\"name\":\"translateBtnState\",\"def_pos\":0,\"type\":\"java.lang.Integer\"},{\"name\":\"translationStrategy\",\"def_pos\":0,\"type\":\"java.lang.Integer\"},{\"name\":\"user\",\"def_pos\":0,\"type\":\"com.xingin.entities.CommentCommentUser\"}],\"field_count\":47,\"full_name\":\"com.xingin.entities.CommentCommentInfo\",\"name\":\"CommentCommentInfo\",\"inner_classes\":[\"com.xingin.entities.CommentCommentInfo.a\",\"com.xingin.entities.CommentCommentInfo.b\"],\"inner_class_count\":2,\"method_count\":81,\"methods\":[{\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false,\"signature\":\"\\u003cclinit\\u003e(): void\"},{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, java.util.List\\u003cjava.lang.String\\u003e, java.util.List\\u003ccom.xingin.entities.CommentCommentUser\\u003e, java.lang.String, java.lang.String, java.util.List\\u003ccom.xingin.entities.CommentHashTag\\u003e, java.util.List\\u003ccom.xingin.entities.CommentTagBean\\u003e, java.lang.Integer, java.lang.Boolean, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.util.ArrayList\\u003ccom.xingin.entities.CommentCommentInfo\\u003e, java.lang.String, com.xingin.entities.CommentCommentUser, com.xingin.entities.CommentCommentInfoTargetComment, java.lang.String, java.lang.String, com.xingin.entities.CommentBizLabels, java.util.List\\u003ccom.xingin.entities.CommentCommentInfoTagsType\\u003e, java.lang.String, com.xingin.entities.CommentExtraInfo, java.util.List\\u003ccom.xingin.entities.CommentPictureInfo\\u003e, int, int, java.lang.String, java.util.List\\u003ccom.xingin.entities.CommentPictureInfo\\u003e, java.lang.Boolean, java.lang.Boolean, java.lang.String, java.lang.String, int, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.String, com.xingin.entities.RelatedWidgetInfo, com.xingin.entities.CommentAIPlaceHolder): void\"},{\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true,\"signature\":\"\\u003cinit\\u003e(java.lang.String, java.lang.String, java.util.List, java.util.List, java.lang.String, java.lang.String, java.util.List, java.util.List, java.lang.Integer, java.lang.Boolean, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.util.ArrayList, java.lang.String, com.xingin.entities.CommentCommentUser, com.xingin.entities.CommentCommentInfoTargetComment, java.lang.String, java.lang.String, com.xingin.entities.CommentBizLabels, java.util.List, java.lang.String, com.xingin.entities.CommentExtraInfo, java.util.List, int, int, java.lang.String, java.util.List, java.lang.Boolean, java.lang.Boolean, java.lang.String, java.lang.String, int, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.String, com.xingin.entities.RelatedWidgetInfo, com.xingin.entities.CommentAIPlaceHolder, int, int, kotlin.jvm.internal.DefaultConstructorMarker): void\"},{\"def_pos\":0,\"name\":\"A\",\"is_constructor\":false,\"signature\":\"A(): java.lang.String\"},{\"def_pos\":0,\"name\":\"B\",\"is_constructor\":false,\"signature\":\"B(): java.lang.String\"},{\"def_pos\":0,\"name\":\"B0\",\"is_constructor\":false,\"signature\":\"B0(java.util.List\\u003ccom.xingin.entities.CommentPictureInfo\\u003e): void\"},{\"def_pos\":0,\"name\":\"C\",\"is_constructor\":false,\"signature\":\"C(): java.util.List\\u003cjava.lang.String\\u003e\"},{\"def_pos\":0,\"name\":\"C0\",\"is_constructor\":false,\"signature\":\"C0(int): void\"},{\"def_pos\":0,\"name\":\"D0\",\"is_constructor\":false,\"signature\":\"D0(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"F0\",\"is_constructor\":false,\"signature\":\"F0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"G0\",\"is_constructor\":false,\"signature\":\"G0(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"I0\",\"is_constructor\":false,\"signature\":\"I0(java.lang.Boolean): void\"},{\"def_pos\":0,\"name\":\"J0\",\"is_constructor\":false,\"signature\":\"J0(java.lang.Integer): void\"},{\"def_pos\":0,\"name\":\"K0\",\"is_constructor\":false,\"signature\":\"K0(com.xingin.entities.CommentCommentUser): void\"},{\"def_pos\":0,\"name\":\"L\",\"is_constructor\":false,\"signature\":\"L(): java.lang.String\"},{\"def_pos\":0,\"name\":\"M\",\"is_constructor\":false,\"signature\":\"M(): java.lang.String\"},{\"def_pos\":0,\"name\":\"P\",\"is_constructor\":false,\"signature\":\"P(): com.xingin.entities.BaseMediaBean\"},{\"def_pos\":0,\"name\":\"Q\",\"is_constructor\":false,\"signature\":\"Q(): java.lang.Integer\"},{\"def_pos\":0,\"name\":\"R\",\"is_constructor\":false,\"signature\":\"R(): java.lang.Integer\"},{\"def_pos\":0,\"name\":\"S\",\"is_constructor\":false,\"signature\":\"S(): java.lang.String\"},{\"def_pos\":0,\"name\":\"T\",\"is_constructor\":false,\"signature\":\"T(): java.util.ArrayList\\u003ccom.xingin.entities.CommentCommentInfo\\u003e\"},{\"def_pos\":0,\"name\":\"V\",\"is_constructor\":false,\"signature\":\"V(): java.util.List\\u003ccom.xingin.entities.CommentCommentInfoTagsType\\u003e\"},{\"def_pos\":0,\"name\":\"V0\",\"is_constructor\":false,\"signature\":\"V0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"W\",\"is_constructor\":false,\"signature\":\"W(): com.xingin.entities.CommentCommentInfoTargetComment\"},{\"def_pos\":0,\"name\":\"X\",\"is_constructor\":false,\"signature\":\"X(): java.lang.String\"},{\"def_pos\":0,\"name\":\"X0\",\"is_constructor\":false,\"signature\":\"X0(): java.util.List\\u003ccom.xingin.entities.CommentPictureInfo\\u003e\"},{\"def_pos\":0,\"name\":\"Y\",\"is_constructor\":false,\"signature\":\"Y(): java.lang.String\"},{\"def_pos\":0,\"name\":\"Z\",\"is_constructor\":false,\"signature\":\"Z(): int\"},{\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"signature\":\"a(): void\"},{\"def_pos\":0,\"name\":\"a0\",\"is_constructor\":false,\"signature\":\"a0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"signature\":\"b(com.xingin.entities.CommentCommentInfo, java.lang.String, java.lang.String, java.util.List, java.util.List, java.lang.String, java.lang.String, java.util.List, java.util.List, java.lang.Integer, java.lang.Boolean, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.util.ArrayList, java.lang.String, com.xingin.entities.CommentCommentUser, com.xingin.entities.CommentCommentInfoTargetComment, java.lang.String, java.lang.String, com.xingin.entities.CommentBizLabels, java.util.List, java.lang.String, com.xingin.entities.CommentExtraInfo, java.util.List, int, int, java.lang.String, java.util.List, java.lang.Boolean, java.lang.Boolean, java.lang.String, java.lang.String, int, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.String, com.xingin.entities.RelatedWidgetInfo, com.xingin.entities.CommentAIPlaceHolder, int, int, java.lang.Object): com.xingin.entities.CommentCommentInfo\"},{\"def_pos\":0,\"name\":\"b0\",\"is_constructor\":false,\"signature\":\"b0(): java.lang.Integer\"},{\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(): java.util.List\\u003ccom.xingin.entities.CommentCommentUser\\u003e\"},{\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"signature\":\"d(): com.xingin.entities.CommentBizLabels\"},{\"def_pos\":0,\"name\":\"d0\",\"is_constructor\":false,\"signature\":\"d0(): java.lang.Integer\"},{\"def_pos\":0,\"name\":\"describeContents\",\"is_constructor\":false,\"signature\":\"describeContents(): int\"},{\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"signature\":\"e(): com.xingin.entities.CommentAIPlaceHolder\"},{\"def_pos\":0,\"name\":\"e0\",\"is_constructor\":false,\"signature\":\"e0(): com.xingin.entities.CommentCommentUser\"},{\"def_pos\":0,\"name\":\"equals\",\"is_constructor\":false,\"signature\":\"equals(java.lang.Object): boolean\"},{\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"signature\":\"f(): java.lang.String\"},{\"def_pos\":0,\"name\":\"f0\",\"is_constructor\":false,\"signature\":\"f0(): boolean\"},{\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"signature\":\"g(): java.util.List\\u003ccom.xingin.entities.CommentTagBean\\u003e\"},{\"def_pos\":0,\"name\":\"g0\",\"is_constructor\":false,\"signature\":\"g0(): boolean\"},{\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"signature\":\"h(): int\"},{\"def_pos\":0,\"name\":\"h0\",\"is_constructor\":false,\"signature\":\"h0(): boolean\"},{\"def_pos\":0,\"name\":\"hashCode\",\"is_constructor\":false,\"signature\":\"hashCode(): int\"},{\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false,\"signature\":\"i(): java.lang.String\"},{\"def_pos\":0,\"name\":\"i0\",\"is_constructor\":false,\"signature\":\"i0(): java.lang.Boolean\"},{\"def_pos\":0,\"name\":\"j\",\"is_constructor\":false,\"signature\":\"j(): java.lang.String\"},{\"def_pos\":0,\"name\":\"j0\",\"is_constructor\":false,\"signature\":\"j0(): java.lang.Boolean\"},{\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false,\"signature\":\"k(): java.lang.String\"},{\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false,\"signature\":\"l(): boolean\"},{\"def_pos\":0,\"name\":\"l0\",\"is_constructor\":false,\"signature\":\"l0(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false,\"signature\":\"m(): boolean\"},{\"def_pos\":0,\"name\":\"m0\",\"is_constructor\":false,\"signature\":\"m0(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false,\"signature\":\"n(): com.xingin.entities.CommentExtraInfo\"},{\"def_pos\":0,\"name\":\"n0\",\"is_constructor\":false,\"signature\":\"n0(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"o\",\"is_constructor\":false,\"signature\":\"o(): java.util.List\\u003ccom.xingin.entities.CommentHashTag\\u003e\"},{\"def_pos\":0,\"name\":\"p\",\"is_constructor\":false,\"signature\":\"p(): java.lang.String\"},{\"def_pos\":0,\"name\":\"p0\",\"is_constructor\":false,\"signature\":\"p0(java.lang.String, java.lang.String, int): java.util.List\\u003cxi4.a\\u003e\"},{\"def_pos\":0,\"name\":\"q\",\"is_constructor\":false,\"signature\":\"q(): java.lang.String\"},{\"def_pos\":0,\"name\":\"q0\",\"is_constructor\":false,\"signature\":\"q0(): java.lang.String\"},{\"def_pos\":0,\"name\":\"r\",\"is_constructor\":false,\"signature\":\"r(): java.lang.Integer\"},{\"def_pos\":0,\"name\":\"r0\",\"is_constructor\":false,\"signature\":\"r0(boolean): void\"},{\"def_pos\":0,\"name\":\"s\",\"is_constructor\":false,\"signature\":\"s(): java.lang.Boolean\"},{\"def_pos\":0,\"name\":\"s0\",\"is_constructor\":false,\"signature\":\"s0(java.util.List\\u003ccom.xingin.entities.CommentHashTag\\u003e): void\"},{\"def_pos\":0,\"name\":\"t\",\"is_constructor\":false,\"signature\":\"t(): java.util.List\\u003ccom.xingin.entities.CommentPictureInfo\\u003e\"},{\"def_pos\":0,\"name\":\"t0\",\"is_constructor\":false,\"signature\":\"t0(java.lang.Integer): void\"},{\"def_pos\":0,\"name\":\"toString\",\"is_constructor\":false,\"signature\":\"toString(): java.lang.String\"},{\"def_pos\":0,\"name\":\"u\",\"is_constructor\":false,\"signature\":\"u(): int\"},{\"def_pos\":0,\"name\":\"v\",\"is_constructor\":false,\"signature\":\"v(): java.lang.String\"},{\"def_pos\":0,\"name\":\"v0\",\"is_constructor\":false,\"signature\":\"v0(java.lang.Boolean): void\"},{\"def_pos\":0,\"name\":\"w\",\"is_constructor\":false,\"signature\":\"w(): java.lang.String\"},{\"def_pos\":0,\"name\":\"w0\",\"is_constructor\":false,\"signature\":\"w0(java.util.List\\u003ccom.xingin.entities.CommentPictureInfo\\u003e): void\"},{\"def_pos\":0,\"name\":\"writeToParcel\",\"is_constructor\":false,\"signature\":\"writeToParcel(android.os.Parcel, int): void\"},{\"def_pos\":0,\"name\":\"x\",\"is_constructor\":false,\"signature\":\"x(): java.util.List\\u003ccom.xingin.entities.CommentPictureInfo\\u003e\"},{\"def_pos\":0,\"name\":\"x0\",\"is_constructor\":false,\"signature\":\"x0(int): void\"},{\"def_pos\":0,\"name\":\"y\",\"is_constructor\":false,\"signature\":\"y(): com.xingin.entities.RelatedWidgetInfo\"},{\"def_pos\":0,\"name\":\"y0\",\"is_constructor\":false,\"signature\":\"y0(java.lang.String): void\"},{\"def_pos\":0,\"name\":\"z\",\"is_constructor\":false,\"signature\":\"z(): int\"},{\"def_pos\":0,\"name\":\"z0\",\"is_constructor\":false,\"signature\":\"z0(java.lang.Boolean): void\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.entities.CommentCommentInfo",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, java.lang.String, java.util.List<java.lang.String>, java.util.List<com.xingin.entities.CommentCommentUser>, java.lang.String, java.lang.String, java.util.List<com.xingin.entities.CommentHashTag>, java.util.List<com.xingin.entities.CommentTagBean>, java.lang.Integer, java.lang.Boolean, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.util.ArrayList<com.xingin.entities.CommentCommentInfo>, java.lang.String, com.xingin.entities.CommentCommentUser, com.xingin.entities.CommentCommentInfoTargetComment, java.lang.String, java.lang.String, com.xingin.entities.CommentBizLabels, java.util.List<com.xingin.entities.CommentCommentInfoTagsType>, java.lang.String, com.xingin.entities.CommentExtraInfo, java.util.List<com.xingin.entities.CommentPictureInfo>, int, int, java.lang.String, java.util.List<com.xingin.entities.CommentPictureInfo>, java.lang.Boolean, java.lang.Boolean, java.lang.String, java.lang.String, int, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.String, com.xingin.entities.RelatedWidgetInfo, com.xingin.entities.CommentAIPlaceHolder): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(java.lang.String, java.lang.String, java.util.List, java.util.List, java.lang.String, java.lang.String, java.util.List, java.util.List, java.lang.Integer, java.lang.Boolean, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.util.ArrayList, java.lang.String, com.xingin.entities.CommentCommentUser, com.xingin.entities.CommentCommentInfoTargetComment, java.lang.String, java.lang.String, com.xingin.entities.CommentBizLabels, java.util.List, java.lang.String, com.xingin.entities.CommentExtraInfo, java.util.List, int, int, java.lang.String, java.util.List, java.lang.Boolean, java.lang.Boolean, java.lang.String, java.lang.String, int, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.String, com.xingin.entities.RelatedWidgetInfo, com.xingin.entities.CommentAIPlaceHolder, int, int, kotlin.jvm.internal.DefaultConstructorMarker): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A",
+        "reported_signature": "A(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B",
+        "reported_signature": "B(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B0",
+        "reported_signature": "B0(java.util.List<com.xingin.entities.CommentPictureInfo>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C",
+        "reported_signature": "C(): java.util.List<java.lang.String>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C0",
+        "reported_signature": "C0(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D0",
+        "reported_signature": "D0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F0",
+        "reported_signature": "F0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G0",
+        "reported_signature": "G0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I0",
+        "reported_signature": "I0(java.lang.Boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "J0",
+        "reported_signature": "J0(java.lang.Integer): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "K0",
+        "reported_signature": "K0(com.xingin.entities.CommentCommentUser): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "L",
+        "reported_signature": "L(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M",
+        "reported_signature": "M(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "P",
+        "reported_signature": "P(): com.xingin.entities.BaseMediaBean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Q",
+        "reported_signature": "Q(): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "R",
+        "reported_signature": "R(): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S",
+        "reported_signature": "S(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "T",
+        "reported_signature": "T(): java.util.ArrayList<com.xingin.entities.CommentCommentInfo>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "V",
+        "reported_signature": "V(): java.util.List<com.xingin.entities.CommentCommentInfoTagsType>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "V0",
+        "reported_signature": "V0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "W",
+        "reported_signature": "W(): com.xingin.entities.CommentCommentInfoTargetComment",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "X",
+        "reported_signature": "X(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "X0",
+        "reported_signature": "X0(): java.util.List<com.xingin.entities.CommentPictureInfo>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y",
+        "reported_signature": "Y(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Z",
+        "reported_signature": "Z(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a0",
+        "reported_signature": "a0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(com.xingin.entities.CommentCommentInfo, java.lang.String, java.lang.String, java.util.List, java.util.List, java.lang.String, java.lang.String, java.util.List, java.util.List, java.lang.Integer, java.lang.Boolean, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.Integer, java.util.ArrayList, java.lang.String, com.xingin.entities.CommentCommentUser, com.xingin.entities.CommentCommentInfoTargetComment, java.lang.String, java.lang.String, com.xingin.entities.CommentBizLabels, java.util.List, java.lang.String, com.xingin.entities.CommentExtraInfo, java.util.List, int, int, java.lang.String, java.util.List, java.lang.Boolean, java.lang.Boolean, java.lang.String, java.lang.String, int, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.String, com.xingin.entities.RelatedWidgetInfo, com.xingin.entities.CommentAIPlaceHolder, int, int, java.lang.Object): com.xingin.entities.CommentCommentInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b0",
+        "reported_signature": "b0(): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(): java.util.List<com.xingin.entities.CommentCommentUser>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(): com.xingin.entities.CommentBizLabels",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d0",
+        "reported_signature": "d0(): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "describeContents",
+        "reported_signature": "describeContents(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(): com.xingin.entities.CommentAIPlaceHolder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e0",
+        "reported_signature": "e0(): com.xingin.entities.CommentCommentUser",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "equals",
+        "reported_signature": "equals(java.lang.Object): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f0",
+        "reported_signature": "f0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(): java.util.List<com.xingin.entities.CommentTagBean>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g0",
+        "reported_signature": "g0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h0",
+        "reported_signature": "h0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "hashCode",
+        "reported_signature": "hashCode(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i0",
+        "reported_signature": "i0(): java.lang.Boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j",
+        "reported_signature": "j(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j0",
+        "reported_signature": "j0(): java.lang.Boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l0",
+        "reported_signature": "l0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m0",
+        "reported_signature": "m0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(): com.xingin.entities.CommentExtraInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n0",
+        "reported_signature": "n0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(): java.util.List<com.xingin.entities.CommentHashTag>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p",
+        "reported_signature": "p(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p0",
+        "reported_signature": "p0(java.lang.String, java.lang.String, int): java.util.List<xi4.a>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q",
+        "reported_signature": "q(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q0",
+        "reported_signature": "q0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r",
+        "reported_signature": "r(): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r0",
+        "reported_signature": "r0(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s",
+        "reported_signature": "s(): java.lang.Boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s0",
+        "reported_signature": "s0(java.util.List<com.xingin.entities.CommentHashTag>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t",
+        "reported_signature": "t(): java.util.List<com.xingin.entities.CommentPictureInfo>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t0",
+        "reported_signature": "t0(java.lang.Integer): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "toString",
+        "reported_signature": "toString(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u",
+        "reported_signature": "u(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v",
+        "reported_signature": "v(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v0",
+        "reported_signature": "v0(java.lang.Boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w",
+        "reported_signature": "w(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w0",
+        "reported_signature": "w0(java.util.List<com.xingin.entities.CommentPictureInfo>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "writeToParcel",
+        "reported_signature": "writeToParcel(android.os.Parcel, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x",
+        "reported_signature": "x(): java.util.List<com.xingin.entities.CommentPictureInfo>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x0",
+        "reported_signature": "x0(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y",
+        "reported_signature": "y(): com.xingin.entities.RelatedWidgetInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y0",
+        "reported_signature": "y0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z",
+        "reported_signature": "z(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z0",
+        "reported_signature": "z0(java.lang.Boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "CREATOR",
+        "reported_type": "android.os.Parcelable$Creator<com.xingin.entities.CommentCommentInfo>"
+      },
+      {
+        "name": "Companion",
+        "reported_type": "com.xingin.entities.CommentCommentInfo$a"
+      },
+      {
+        "name": "atUsers",
+        "reported_type": "java.util.List<com.xingin.entities.CommentCommentUser>"
+      },
+      {
+        "name": "bizLabels",
+        "reported_type": "com.xingin.entities.CommentBizLabels"
+      },
+      {
+        "name": "commentAiPlaceHolder",
+        "reported_type": "com.xingin.entities.CommentAIPlaceHolder"
+      },
+      {
+        "name": "commentContentType",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "commentTags",
+        "reported_type": "java.util.List<com.xingin.entities.CommentTagBean>"
+      },
+      {
+        "name": "commentType",
+        "reported_type": "int"
+      },
+      {
+        "name": "content",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "contentFilterRichText",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "contentTranslation",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "disableTranslate",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "enableInsertAnim",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "extraInfo",
+        "reported_type": "com.xingin.entities.CommentExtraInfo"
+      },
+      {
+        "name": "hashTags",
+        "reported_type": "java.util.List<com.xingin.entities.CommentHashTag>"
+      },
+      {
+        "name": "id",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "ipLocation",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "isPicComment",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "isSendSuccess",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "likeCount",
+        "reported_type": "java.lang.Integer"
+      },
+      {
+        "name": "liked",
+        "reported_type": "java.lang.Boolean"
+      },
+      {
+        "name": "localPicPathList",
+        "reported_type": "java.util.List<com.xingin.entities.CommentPictureInfo>"
+      },
+      {
+        "name": "mediaSourceType",
+        "reported_type": "int"
+      },
+      {
+        "name": "noteId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "pageContext",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "pictures",
+        "reported_type": "java.util.List<com.xingin.entities.CommentPictureInfo>"
+      },
+      {
+        "name": "relatedWidgetInfo",
+        "reported_type": "com.xingin.entities.RelatedWidgetInfo"
+      },
+      {
+        "name": "retryCount",
+        "reported_type": "int"
+      },
+      {
+        "name": "rootCommentId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "rootCommentType",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "score",
+        "reported_type": "java.lang.Integer"
+      },
+      {
+        "name": "showTags",
+        "reported_type": "java.util.List<java.lang.String>"
+      },
+      {
+        "name": "showType",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "showTypeText",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "status",
+        "reported_type": "java.lang.Integer"
+      },
+      {
+        "name": "subCommentCount",
+        "reported_type": "java.lang.Integer"
+      },
+      {
+        "name": "subCommentCursor",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "subComments",
+        "reported_type": "java.util.ArrayList<com.xingin.entities.CommentCommentInfo>"
+      },
+      {
+        "name": "tagsType",
+        "reported_type": "java.util.List<com.xingin.entities.CommentCommentInfoTagsType>"
+      },
+      {
+        "name": "targetComment",
+        "reported_type": "com.xingin.entities.CommentCommentInfoTargetComment"
+      },
+      {
+        "name": "targetPos",
+        "reported_type": "int"
+      },
+      {
+        "name": "textLanguageCode",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "time",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "trackId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "translateBtnState",
+        "reported_type": "java.lang.Integer"
+      },
+      {
+        "name": "translationStrategy",
+        "reported_type": "java.lang.Integer"
+      },
+      {
+        "name": "user",
+        "reported_type": "com.xingin.entities.CommentCommentUser"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.entities.CommentCommentInfo.a",
+      "com.xingin.entities.CommentCommentInfo.b"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "c531785ea2dcfeb90ade2a02efdbe9141fd27e10f54f3462c7b22ce6f7f94c72",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

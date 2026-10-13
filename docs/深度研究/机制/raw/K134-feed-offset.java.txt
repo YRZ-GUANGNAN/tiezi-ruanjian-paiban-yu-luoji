@@ -1,0 +1,75 @@
+    @Override // androidx.recyclerview.widget.RecyclerView.ItemDecoration
+    public void getItemOffsets(Rect rect, View view, RecyclerView recyclerView, RecyclerView.State state) {
+        StaggeredGridLayoutManager staggeredGridLayoutManager;
+        if (PatchProxy.proxyVoid4Para(rect, view, recyclerView, state, this, ExploreDoubleRowStaggeredDiverDecoration.class, 66808)) {
+            return;
+        }
+        super.getItemOffsets(rect, view, recyclerView, state);
+        ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
+        Objects.requireNonNull(layoutParams, "null cannot be cast to non-null type androidx.recyclerview.widget.StaggeredGridLayoutManager.LayoutParams");
+        int childAdapterPosition = recyclerView.getChildAdapterPosition(view);
+        boolean z100 = false;
+        if (((StaggeredGridLayoutManager.LayoutParams) layoutParams).isFullSpan()) {
+            rect.left = 0;
+            rect.top = 0;
+            rect.right = 0;
+            rect.bottom = 0;
+            this.f116814b = Math.max(this.f116814b, childAdapterPosition);
+            return;
+        }
+        if (this.f116814b == childAdapterPosition) {
+            this.f116814b = -1;
+        }
+        ViewGroup.LayoutParams layoutParams2 = view.getLayoutParams();
+        Objects.requireNonNull(layoutParams2, "null cannot be cast to non-null type androidx.recyclerview.widget.StaggeredGridLayoutManager.LayoutParams");
+        int spanIndex = ((StaggeredGridLayoutManager.LayoutParams) layoutParams2).getSpanIndex();
+        if ((view instanceof CardView) || (view instanceof e) || (view instanceof ConstraintLayout)) {
+            RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
+            staggeredGridLayoutManager = layoutManager instanceof StaggeredGridLayoutManager ? (StaggeredGridLayoutManager) layoutManager : null;
+            int spanCount = staggeredGridLayoutManager != null ? staggeredGridLayoutManager.getSpanCount() : 2;
+            int i100 = this.f116813a;
+            if (spanIndex != 0) {
+                i100 >>= 1;
+            }
+            rect.left = i100;
+            rect.right = spanIndex == spanCount + (-1) ? this.f116813a : this.f116813a >> 1;
+            int i101 = this.f116814b;
+            int i102 = i101 + 1;
+            if (childAdapterPosition <= i101 + spanCount && i102 <= childAdapterPosition) {
+                z100 = true;
+            }
+            int i103 = this.f116813a;
+            if (!z100) {
+                i103 >>= 1;
+            }
+            rect.top = i103;
+            if (staggeredGridLayoutManager != null) {
+                rect.bottom = recyclerView.indexOfChild(view) + staggeredGridLayoutManager.getSpanCount() > staggeredGridLayoutManager.getItemCount() ? this.f116813a : this.f116813a >> 1;
+                return;
+            }
+            return;
+        }
+        if (!(view instanceof FrameLayout) && !(view instanceof LinearLayout) && !(view instanceof CanvasLayout)) {
+            rect.left = 0;
+            rect.right = spanIndex == 0 ? this.f116813a : 0;
+            rect.top = this.f116813a;
+            rect.bottom = 0;
+            return;
+        }
+        RecyclerView.LayoutManager layoutManager2 = recyclerView.getLayoutManager();
+        staggeredGridLayoutManager = layoutManager2 instanceof StaggeredGridLayoutManager ? (StaggeredGridLayoutManager) layoutManager2 : null;
+        int spanCount2 = staggeredGridLayoutManager != null ? staggeredGridLayoutManager.getSpanCount() : 2;
+        int i104 = this.f116813a;
+        rect.top = i104;
+        rect.bottom = 0;
+        if (spanIndex == 0) {
+            rect.left = i104;
+        } else {
+            rect.left = i104 / 2;
+        }
+        if (spanIndex == spanCount2 - 1) {
+            rect.right = i104;
+        } else {
+            rect.right = i104 / 2;
+        }
+    }

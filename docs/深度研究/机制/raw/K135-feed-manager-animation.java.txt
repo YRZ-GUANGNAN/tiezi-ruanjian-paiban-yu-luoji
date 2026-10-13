@@ -1,0 +1,8 @@
+    @Override // androidx.recyclerview.widget.StaggeredGridLayoutManager, androidx.recyclerview.widget.RecyclerView.LayoutManager
+    public boolean supportsPredictiveItemAnimations() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, ExploreStaggeredGridLayoutManager.class, 66921);
+        if (patchProxyResultProxy0Para.isSupported) {
+            return ((Boolean) patchProxyResultProxy0Para.result).booleanValue();
+        }
+        return false;
+    }

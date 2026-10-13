@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_f0b0505c505d4115ac5393ef8cb2a3201b5c30146466999e4c3486ce4d0bb5dc",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.collection.repo.CollectionService",
+    "method_name": "createPortfolio"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.collection.repo.CollectionService"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":0,\"method_count\":13,\"methods\":[{\"signature\":\"addToCollection(java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0,\"name\":\"addToCollection\",\"is_constructor\":false},{\"signature\":\"collect(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0,\"name\":\"collect\",\"is_constructor\":false},{\"signature\":\"createPortfolio(java.lang.String, java.lang.String): io.reactivex.Observable\\u003ccom.xingin.collection.entities.CollectionId\\u003e\",\"def_pos\":0,\"name\":\"createPortfolio\",\"is_constructor\":false},{\"signature\":\"deletePortfolio(java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0,\"name\":\"deletePortfolio\",\"is_constructor\":false},{\"signature\":\"editPortfolio(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0,\"name\":\"editPortfolio\",\"is_constructor\":false},{\"signature\":\"getCandidateNotes(java.lang.String): io.reactivex.Observable\\u003cjava.util.List\\u003ccom.xingin.collection.entities.CollectionNoteBean\\u003e\\u003e\",\"def_pos\":0,\"name\":\"getCandidateNotes\",\"is_constructor\":false},{\"signature\":\"getCollectionInfo(java.lang.String, java.lang.String): io.reactivex.Observable\\u003ccom.xingin.entities.collection.CollectionInfo\\u003e\",\"def_pos\":0,\"name\":\"getCollectionInfo\",\"is_constructor\":false},{\"signature\":\"getNotesInCollection(java.lang.String, java.lang.String, boolean, int, java.lang.String, java.lang.Integer, java.lang.String): io.reactivex.Observable\\u003ccom.xingin.collection.entities.CollectionDetailNoteListBean\\u003e\",\"def_pos\":0,\"name\":\"getNotesInCollection\",\"is_constructor\":false},{\"signature\":\"getNotesInCollectionForManage(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003ccom.xingin.collection.entities.CollectionManageNoteListBean\\u003e\",\"def_pos\":0,\"name\":\"getNotesInCollectionForManage\",\"is_constructor\":false},{\"signature\":\"getSketchfeed(java.lang.String, java.lang.String, int, java.lang.String, int, java.lang.String): io.reactivex.Observable\\u003cn93.d\\u003e\",\"def_pos\":0,\"name\":\"getSketchfeed\",\"is_constructor\":false},{\"signature\":\"removeFromCollection(java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0,\"name\":\"removeFromCollection\",\"is_constructor\":false},{\"signature\":\"sortNotes(java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0,\"name\":\"sortNotes\",\"is_constructor\":false},{\"signature\":\"unCollect(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0,\"name\":\"unCollect\",\"is_constructor\":false}],\"fields\":[],\"field_count\":0,\"full_name\":\"com.xingin.collection.repo.CollectionService\",\"name\":\"CollectionService\",\"inner_classes\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.collection.repo.CollectionService",
+          "method_name": "createPortfolio",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.collection.repo.CollectionService\",\"full_name\":\"com.xingin.collection.repo.CollectionService.createPortfolio\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"createPortfolio\",\"overload_count\":1,\"body\":\"// method exists but has no decompiled body (native/abstract)\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.collection.repo.CollectionService",
+    "method": {
+      "name": "createPortfolio",
+      "reported_signature": "createPortfolio(java.lang.String, java.lang.String): io.reactivex.Observable<com.xingin.collection.entities.CollectionId>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "not_available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "// method exists but has no decompiled body (native/abstract)",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "aa5f13693e771e863641675fb6ed1842ddc12a9bcd3f67c8560f3a494c96cbfa",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

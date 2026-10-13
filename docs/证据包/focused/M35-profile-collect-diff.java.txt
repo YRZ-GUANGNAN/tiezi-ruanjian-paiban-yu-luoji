@@ -1,0 +1,3 @@
+    public final g<List<Object>, DiffUtil.DiffResult> f(ArrayList<Object> arrayList, List<? extends Object> list, boolean z4) {
+        return new g<>(arrayList, DiffUtil.calculateDiff(new CollectNotesDiffCalculator(list, arrayList), z4));
+    }

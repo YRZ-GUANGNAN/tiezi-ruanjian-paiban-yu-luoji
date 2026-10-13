@@ -1,0 +1,14 @@
+    @Override // se4.i
+    public boolean hasAutoscrollFunction(b bVar) {
+        if (DeviceInfoContainer.INSTANCE.isPad()) {
+            return false;
+        }
+        n nVar = n.f238043a;
+        if (n.e()) {
+            return false;
+        }
+        if (bVar.h0() || bVar.e()) {
+            return bVar.S() || bVar.q();
+        }
+        return false;
+    }

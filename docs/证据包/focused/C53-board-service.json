@@ -1,0 +1,247 @@
+{
+  "evidence_id": "ev_347caef1f366b47202b9627564a83e2f6ff31a95ff3fbec983967aea398fd2bb",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.models.services.CommonBoardService"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":91585,\"raw_class_count\":91585,\"resource_count\":12708,\"load_duration_ms\":15757,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.models.services.CommonBoardService"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[],\"field_count\":0,\"full_name\":\"com.xingin.models.services.CommonBoardService\",\"name\":\"CommonBoardService\",\"inner_classes\":[],\"inner_class_count\":0,\"method_count\":18,\"methods\":[{\"name\":\"cancelCollectNotes\",\"is_constructor\":false,\"signature\":\"cancelCollectNotes(java.util.List\\u003cjava.lang.String\\u003e): io.reactivex.Observable\\u003cxh4.x\\u003e\",\"def_pos\":0},{\"name\":\"cleanAlbumInvalidNotes\",\"is_constructor\":false,\"signature\":\"cleanAlbumInvalidNotes(java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.x\\u003e\",\"def_pos\":0},{\"name\":\"collectNoteV1\",\"is_constructor\":false,\"signature\":\"collectNoteV1(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.x\\u003e\",\"def_pos\":0},{\"name\":\"createBoard\",\"is_constructor\":false,\"signature\":\"createBoard(java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e, boolean, java.util.List\\u003cjava.lang.String\\u003e): io.reactivex.Observable\\u003ccom.xingin.entities.WishBoardDetail\\u003e\",\"def_pos\":0},{\"name\":\"deleteBoardV2\",\"is_constructor\":false,\"signature\":\"deleteBoardV2(java.lang.String): io.reactivex.Observable\\u003ccom.xingin.entities.WishBoardDetail\\u003e\",\"def_pos\":0},{\"name\":\"exitFromSharedBoard\",\"is_constructor\":false,\"signature\":\"exitFromSharedBoard(java.lang.String): io.reactivex.Observable\\u003cxh4.x\\u003e\",\"def_pos\":0},{\"name\":\"followBoard\",\"is_constructor\":false,\"signature\":\"followBoard(java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0},{\"name\":\"getBoardInfo\",\"is_constructor\":false,\"signature\":\"getBoardInfo(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003ccom.xingin.entities.WishBoardDetail\\u003e\",\"def_pos\":0},{\"name\":\"getMyWishBoardList\",\"is_constructor\":false,\"signature\":\"getMyWishBoardList(int, boolean): io.reactivex.Observable\\u003cjava.util.List\\u003ccom.xingin.entities.WishBoardDetail\\u003e\\u003e\",\"def_pos\":0},{\"name\":\"getMyWishBoardListV2\",\"is_constructor\":false,\"signature\":\"getMyWishBoardListV2(int, int, boolean, boolean): io.reactivex.Observable\\u003cjava.util.List\\u003ccom.xingin.entities.WishBoardDetail\\u003e\\u003e\",\"def_pos\":0},{\"name\":\"getUserBoardList\",\"is_constructor\":false,\"signature\":\"getUserBoardList(java.lang.String, int, int, boolean): io.reactivex.Observable\\u003cjava.util.List\\u003ccom.xingin.entities.WishBoardDetail\\u003e\\u003e\",\"def_pos\":0},{\"name\":\"getUserSubscribeBoardList\",\"is_constructor\":false,\"signature\":\"getUserSubscribeBoardList(java.lang.String, int): io.reactivex.Observable\\u003cjava.util.List\\u003ccom.xingin.entities.WishBoardDetail\\u003e\\u003e\",\"def_pos\":0},{\"name\":\"joinSharedBoard\",\"is_constructor\":false,\"signature\":\"joinSharedBoard(java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0},{\"name\":\"moveCollectNotesV1\",\"is_constructor\":false,\"signature\":\"moveCollectNotesV1(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.x\\u003e\",\"def_pos\":0},{\"name\":\"removeUserFromSharedBoard\",\"is_constructor\":false,\"signature\":\"removeUserFromSharedBoard(java.lang.String, java.lang.String): io.reactivex.Observable\\u003cxh4.x\\u003e\",\"def_pos\":0},{\"name\":\"reportBoardShareAction\",\"is_constructor\":false,\"signature\":\"reportBoardShareAction(java.lang.String, java.lang.String): io.reactivex.Observable\\u003ccom.xingin.entities.share.ReportBoardShareResultBean\\u003e\",\"def_pos\":0},{\"name\":\"unfollowBoard\",\"is_constructor\":false,\"signature\":\"unfollowBoard(java.lang.String): io.reactivex.Observable\\u003cxh4.y\\u003e\",\"def_pos\":0},{\"name\":\"updateBoard\",\"is_constructor\":false,\"signature\":\"updateBoard(java.util.Map\\u003cjava.lang.String, java.lang.String\\u003e, boolean, java.util.List\\u003cjava.lang.String\\u003e): io.reactivex.Observable\\u003ccom.xingin.entities.WishBoardDetail\\u003e\",\"def_pos\":0}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.models.services.CommonBoardService",
+    "methods": [
+      {
+        "name": "cancelCollectNotes",
+        "reported_signature": "cancelCollectNotes(java.util.List<java.lang.String>): io.reactivex.Observable<xh4.x>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "cleanAlbumInvalidNotes",
+        "reported_signature": "cleanAlbumInvalidNotes(java.lang.String, java.lang.String): io.reactivex.Observable<xh4.x>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "collectNoteV1",
+        "reported_signature": "collectNoteV1(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable<xh4.x>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "createBoard",
+        "reported_signature": "createBoard(java.util.Map<java.lang.String, java.lang.String>, boolean, java.util.List<java.lang.String>): io.reactivex.Observable<com.xingin.entities.WishBoardDetail>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "deleteBoardV2",
+        "reported_signature": "deleteBoardV2(java.lang.String): io.reactivex.Observable<com.xingin.entities.WishBoardDetail>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "exitFromSharedBoard",
+        "reported_signature": "exitFromSharedBoard(java.lang.String): io.reactivex.Observable<xh4.x>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "followBoard",
+        "reported_signature": "followBoard(java.lang.String): io.reactivex.Observable<xh4.y>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getBoardInfo",
+        "reported_signature": "getBoardInfo(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable<com.xingin.entities.WishBoardDetail>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getMyWishBoardList",
+        "reported_signature": "getMyWishBoardList(int, boolean): io.reactivex.Observable<java.util.List<com.xingin.entities.WishBoardDetail>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getMyWishBoardListV2",
+        "reported_signature": "getMyWishBoardListV2(int, int, boolean, boolean): io.reactivex.Observable<java.util.List<com.xingin.entities.WishBoardDetail>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getUserBoardList",
+        "reported_signature": "getUserBoardList(java.lang.String, int, int, boolean): io.reactivex.Observable<java.util.List<com.xingin.entities.WishBoardDetail>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getUserSubscribeBoardList",
+        "reported_signature": "getUserSubscribeBoardList(java.lang.String, int): io.reactivex.Observable<java.util.List<com.xingin.entities.WishBoardDetail>>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "joinSharedBoard",
+        "reported_signature": "joinSharedBoard(java.lang.String, java.lang.String): io.reactivex.Observable<xh4.y>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "moveCollectNotesV1",
+        "reported_signature": "moveCollectNotesV1(java.lang.String, java.lang.String, java.lang.String): io.reactivex.Observable<xh4.x>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "removeUserFromSharedBoard",
+        "reported_signature": "removeUserFromSharedBoard(java.lang.String, java.lang.String): io.reactivex.Observable<xh4.x>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "reportBoardShareAction",
+        "reported_signature": "reportBoardShareAction(java.lang.String, java.lang.String): io.reactivex.Observable<com.xingin.entities.share.ReportBoardShareResultBean>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "unfollowBoard",
+        "reported_signature": "unfollowBoard(java.lang.String): io.reactivex.Observable<xh4.y>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "updateBoard",
+        "reported_signature": "updateBoard(java.util.Map<java.lang.String, java.lang.String>, boolean, java.util.List<java.lang.String>): io.reactivex.Observable<com.xingin.entities.WishBoardDetail>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [],
+    "inner_classes": []
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "c1d441732a1a623e03286decf7d35cc414cca7eea93457e0c2ee5f81609aad34",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

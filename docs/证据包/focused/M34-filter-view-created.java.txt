@@ -1,0 +1,24 @@
+    @Override // com.xingin.business_framework.android.fragment.AbsComponentFragment, androidx.fragment.app.Fragment
+    public void onViewCreated(View view, Bundle bundle) {
+        super.onViewCreated(view, bundle);
+        SearchFilterPanelRootSectionGroup searchFilterPanelRootSectionGroup = new SearchFilterPanelRootSectionGroup(new em1.b(this, f00.b.class, requireContext(), P5(), null, getScopeNode(), null, null, false, null, null, 2000, null), view);
+        fm1.e eVar = searchFilterPanelRootSectionGroup.f125981g;
+        f00.b bVarJ6 = j6();
+        bVarJ6.l().e(true);
+        bVarJ6.l().d(Integer.valueOf(this.f36673x));
+        fm1.e.d(eVar, bVarJ6, false, 2, null);
+        h6().c(this, a00.w.class, new d00.b(searchFilterPanelRootSectionGroup, this));
+        P5().d(a00.g.class, new d00.g(this, view));
+        AliothOnlineConfigCenter aliothOnlineConfigCenter = AliothOnlineConfigCenter.f35644a;
+        if (AliothOnlineConfigCenter.f()) {
+            DeviceInfoContainer deviceInfoContainer = DeviceInfoContainer.INSTANCE;
+            if (deviceInfoContainer.isPad()) {
+                te8.a aVar = te8.a.f202235b;
+                qe8.k.i(te8.a.b(kl.l.class).observeOn(dl9.a.a()), R5(), new d00.h(this), new d00.i(u40.g0.f206650a));
+            }
+            if (deviceInfoContainer.isHorizontalFolderDevice()) {
+                te8.a aVar2 = te8.a.f202235b;
+                qe8.k.i(te8.a.b(kl.l.class).observeOn(dl9.a.a()), R5(), new d00.j(this), new d00.k(u40.g0.f206650a));
+            }
+        }
+    }

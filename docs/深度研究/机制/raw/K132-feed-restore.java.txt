@@ -1,0 +1,24 @@
+    public final void e3(List<? extends Object> list, Parcelable parcelable) {
+        if (PatchProxy.proxyVoid2Para(list, parcelable, this, ExploreView.class, 365258)) {
+            return;
+        }
+        this.f123245d = new ArrayList<>();
+        ArrayList<Object> arrayList = new ArrayList<>();
+        for (Object obj : list) {
+            if (obj instanceof NoteItemBean) {
+                ((NoteItemBean) obj).isFromCache = true;
+                arrayList.add(obj);
+            }
+        }
+        getMExplorePresenter().I7(arrayList, this.f123250l.a());
+        this.f123245d.addAll(list);
+        T0(this, false, 1, null);
+        this.f123252n.d0(this.f123245d);
+        this.f123252n.notifyDataSetChanged();
+        RecyclerView.LayoutManager layoutManager = getRecyclerView().getLayoutManager();
+        if (layoutManager != null) {
+            layoutManager.onRestoreInstanceState(parcelable);
+        }
+        this.C = true;
+        d3();
+    }

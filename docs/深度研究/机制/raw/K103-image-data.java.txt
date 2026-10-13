@@ -1,0 +1,15 @@
+    public final void q7(DetailNoteFeedHolder detailNoteFeedHolder) {
+        NoteFeed noteFeedB;
+        ArrayList<ImageBean> arrayListU0;
+        if (PatchProxy.proxyVoid1Para(detailNoteFeedHolder, this, NoteDetailImageDisplayPresenter.class, 298254)) {
+            return;
+        }
+        ej1.b bVar = ej1.b.f147742a;
+        View viewW6 = w6();
+        int i100 = l56.n.f224101o0;
+        ej1.b.l(bVar, (ImageGalleryView) viewW6.findViewById(i100), true, false, 4, null);
+        bVar.h((ImageGalleryView) w6().findViewById(i100), "图片,第" + (this.f108314r + 1) + "张,共 " + ((detailNoteFeedHolder == null || (noteFeedB = detailNoteFeedHolder.b()) == null || (arrayListU0 = noteFeedB.u0()) == null) ? null : Integer.valueOf(arrayListU0.size())) + "张,双指左划或右划即可查看更多内容");
+        ej1.b.l(bVar, (ImageView) w6().findViewById(l56.n.E0), false, false, 4, null);
+        ej1.b.l(bVar, (TextView) w6().findViewById(l56.n.f224121t0), false, false, 4, null);
+        bVar.k((FrameLayout) w6().findViewById(l56.n.f224076h2), false, false);
+    }

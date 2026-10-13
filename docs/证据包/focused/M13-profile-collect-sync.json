@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_8af41dd2314aa3e89793440fe3852c6078ba6cf95b3ccf9369a7d14d8a5475b4",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo",
+    "method_name": "c"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":2,\"method_count\":14,\"methods\":[{\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true},{\"signature\":\"a(com.xingin.entities.NoteItemBean, int, boolean): io.reactivex.Observable\\u003cbn9.g\\u003cjava.util.List\\u003cjava.lang.Object\\u003e, androidx.recyclerview.widget.DiffUtil$DiffResult\\u003e\\u003e\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false},{\"signature\":\"b(com.xingin.entities.NoteItemBean, int, boolean): io.reactivex.Observable\\u003cbn9.g\\u003cjava.util.List\\u003cjava.lang.Object\\u003e, androidx.recyclerview.widget.DiffUtil$DiffResult\\u003e\\u003e\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false},{\"signature\":\"c(com.xingin.entities.NoteItemBean, int, boolean): bn9.g\\u003cjava.util.List\\u003cjava.lang.Object\\u003e, androidx.recyclerview.widget.DiffUtil$DiffResult\\u003e\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false},{\"signature\":\"d(boolean, java.lang.Object, java.lang.String): bn9.g\\u003cjava.util.List\\u003cjava.lang.Object\\u003e, androidx.recyclerview.widget.DiffUtil$DiffResult\\u003e\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false},{\"signature\":\"e(java.lang.String): zr6.d\",\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false},{\"signature\":\"f(java.util.ArrayList\\u003cjava.lang.Object\\u003e, java.util.List\\u003c? extends java.lang.Object\\u003e, boolean): bn9.g\\u003cjava.util.List\\u003cjava.lang.Object\\u003e, androidx.recyclerview.widget.DiffUtil$DiffResult\\u003e\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false},{\"signature\":\"g(): com.xingin.matrix.v2.profile.newpage.noteinfo.collect.UserCollectedModel\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false},{\"signature\":\"h(): java.lang.String\",\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false},{\"signature\":\"i(): bm9.b\\u003cor6.d\\u003e\",\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false},{\"signature\":\"j(boolean, java.lang.String): io.reactivex.Observable\\u003cbn9.g\\u003cjava.util.List\\u003cjava.lang.Object\\u003e, androidx.recyclerview.widget.DiffUtil$DiffResult\\u003e\\u003e\",\"def_pos\":0,\"name\":\"j\",\"is_constructor\":false},{\"signature\":\"k(boolean, java.util.List\\u003cjava.lang.Object\\u003e): boolean\",\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false},{\"signature\":\"l(java.lang.String): io.reactivex.Observable\\u003cjava.lang.Object\\u003e\",\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false},{\"signature\":\"m(boolean, java.lang.String): void\",\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false}],\"fields\":[{\"type\":\"java.lang.String\",\"name\":\"f56567a\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"f56568b\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"f56569c\",\"def_pos\":0},{\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"name\":\"f56570d\",\"def_pos\":0},{\"type\":\"com.xingin.matrix.v2.profile.newpage.noteinfo.collect.UserCollectedModel\",\"name\":\"f56571e\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"f56572f\",\"def_pos\":0},{\"type\":\"bm9.b\\u003cor6.d\\u003e\",\"name\":\"f56573g\",\"def_pos\":0},{\"type\":\"an6.c\",\"name\":\"f56574h\",\"def_pos\":0},{\"type\":\"mz6.c\",\"name\":\"f56575i\",\"def_pos\":0},{\"type\":\"java.util.List\\u003cjava.lang.Object\\u003e\",\"name\":\"f56576j\",\"def_pos\":0},{\"type\":\"java.util.List\\u003cjava.lang.Object\\u003e\",\"name\":\"f56577k\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f56578l\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"f56579m\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f56580n\",\"def_pos\":0},{\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"name\":\"f56581o\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"f56582p\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f56583q\",\"def_pos\":0},{\"type\":\"java.util.concurrent.atomic.AtomicBoolean\",\"name\":\"f56584r\",\"def_pos\":0},{\"type\":\"java.util.List\\u003cbg6.k\\u003e\",\"name\":\"f56585s\",\"def_pos\":0},{\"type\":\"java.util.Queue\\u003cjava.lang.String\\u003e\",\"name\":\"f56586t\",\"def_pos\":0},{\"type\":\"java.util.Queue\\u003cjava.lang.String\\u003e\",\"name\":\"f56587u\",\"def_pos\":0}],\"field_count\":21,\"full_name\":\"com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo\",\"name\":\"ProfileCollectRepo\",\"inner_classes\":[\"com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo.CollectNotesDiffCalculator\",\"com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo.a\"]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo",
+          "method_name": "c",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo\",\"full_name\":\"com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo.c\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"c\",\"overload_count\":1,\"body\":\"    public final g\\u003cList\\u003cObject\\u003e, DiffUtil.DiffResult\\u003e c(NoteItemBean noteItemBean, int i4, boolean z4) {\\r\\n        if (z4) {\\r\\n            ArrayList\\u003cObject\\u003e arrayList \\u003d new ArrayList\\u003c\\u003e(this.f56577k);\\r\\n            if (arrayList.get(i4) instanceof NoteItemBean) {\\r\\n                arrayList.set(i4, noteItemBean);\\r\\n            }\\r\\n            return f(arrayList, this.f56577k, false);\\r\\n        }\\r\\n        ArrayList\\u003cObject\\u003e arrayList2 \\u003d new ArrayList\\u003c\\u003e(this.f56576j);\\r\\n        if (arrayList2.get(i4) instanceof NoteItemBean) {\\r\\n            arrayList2.set(i4, noteItemBean);\\r\\n        }\\r\\n        return f(arrayList2, this.f56576j, false);\\r\\n    }\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.v2.profile.newpage.noteinfo.collect.ProfileCollectRepo",
+    "method": {
+      "name": "c",
+      "reported_signature": "c(com.xingin.entities.NoteItemBean, int, boolean): bn9.g<java.util.List<java.lang.Object>, androidx.recyclerview.widget.DiffUtil$DiffResult>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final g<List<Object>, DiffUtil.DiffResult> c(NoteItemBean noteItemBean, int i4, boolean z4) {\r\n        if (z4) {\r\n            ArrayList<Object> arrayList = new ArrayList<>(this.f56577k);\r\n            if (arrayList.get(i4) instanceof NoteItemBean) {\r\n                arrayList.set(i4, noteItemBean);\r\n            }\r\n            return f(arrayList, this.f56577k, false);\r\n        }\r\n        ArrayList<Object> arrayList2 = new ArrayList<>(this.f56576j);\r\n        if (arrayList2.get(i4) instanceof NoteItemBean) {\r\n            arrayList2.set(i4, noteItemBean);\r\n        }\r\n        return f(arrayList2, this.f56576j, false);\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "52620b878c39f14290e95d3bef34dae86358d474662232936e335d241a0b9253",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}

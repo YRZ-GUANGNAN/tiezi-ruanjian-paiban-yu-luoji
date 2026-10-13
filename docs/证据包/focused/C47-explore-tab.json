@@ -1,0 +1,163 @@
+{
+  "evidence_id": "ev_3e58dbe0bda76751255e361e3a8be3bc0b2633a991f3048d794882077a88de93",
+  "subject": {
+    "name": "local-artifact/xiaohongshu-official.apk",
+    "digest": {
+      "sha256": "6dfe20d6954aee98220e87184712597e473523d9561a3b3d01a0518e0620c07d"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/xiaohongshu-official.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/xiaohongshu-official.apk",
+    "class_name": "com.xingin.xhs.homepage.explorefeed.tabconfig.ExploreFeedPageConfigProvider"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 91585,
+      "resource_count": 12708,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.xhs.homepage.explorefeed.tabconfig.ExploreFeedPageConfigProvider"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"name\":\"\\u003cinit\\u003e\",\"def_pos\":0,\"signature\":\"\\u003cinit\\u003e(): void\",\"is_constructor\":true},{\"name\":\"createFragment\",\"def_pos\":0,\"signature\":\"createFragment(): androidx.fragment.app.Fragment\",\"is_constructor\":false},{\"name\":\"createFragment\",\"def_pos\":0,\"signature\":\"createFragment(): com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExploreFragmentV2\",\"is_constructor\":false},{\"name\":\"createHomeChildPageImpl\",\"def_pos\":0,\"signature\":\"createHomeChildPageImpl(): a09.a\",\"is_constructor\":false},{\"name\":\"createHomeChildPageImpl\",\"def_pos\":0,\"signature\":\"createHomeChildPageImpl(): an1.b\",\"is_constructor\":false},{\"name\":\"getChildPage\",\"def_pos\":0,\"signature\":\"getChildPage(): dk4.f\",\"is_constructor\":false},{\"name\":\"getTabModel\",\"def_pos\":0,\"signature\":\"getTabModel(): dk4.e$a\",\"is_constructor\":false}],\"method_count\":7,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"ExploreFeedPageConfigProvider\",\"full_name\":\"com.xingin.xhs.homepage.explorefeed.tabconfig.ExploreFeedPageConfigProvider\",\"field_count\":2,\"fields\":[{\"type\":\"bm9.d\\u003cix8.v0\\u003e\",\"def_pos\":0,\"name\":\"mSystemBackPressedSubject\"},{\"type\":\"bm9.b\\u003cjava.lang.Boolean\\u003e\",\"def_pos\":0,\"name\":\"mTrackSubject\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.xhs.homepage.explorefeed.tabconfig.ExploreFeedPageConfigProvider",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "createFragment",
+        "reported_signature": "createFragment(): androidx.fragment.app.Fragment",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "createFragment",
+        "reported_signature": "createFragment(): com.xingin.xhs.homepage.explorefeed.smoothexplore.SmoothExploreFragmentV2",
+        "overload_index": 1,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "createHomeChildPageImpl",
+        "reported_signature": "createHomeChildPageImpl(): a09.a",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "createHomeChildPageImpl",
+        "reported_signature": "createHomeChildPageImpl(): an1.b",
+        "overload_index": 1,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getChildPage",
+        "reported_signature": "getChildPage(): dk4.f",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getTabModel",
+        "reported_signature": "getTabModel(): dk4.e$a",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "mSystemBackPressedSubject",
+        "reported_type": "bm9.d<ix8.v0>"
+      },
+      {
+        "name": "mTrackSubject",
+        "reported_type": "bm9.b<java.lang.Boolean>"
+      }
+    ],
+    "inner_classes": []
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "93f6a311d38b2667f564e314332b32931ff27aeeda6e63cbd619278d10d51001",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host/device paths generalized",
+      "SDK metadata removed where present"
+    ]
+  }
+}
