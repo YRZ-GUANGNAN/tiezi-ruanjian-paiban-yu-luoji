@@ -1,0 +1,13 @@
+    public final boolean a() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, c.class, 169);
+        if (patchProxyResultProxy0Para.isSupported) {
+            return ((Boolean) patchProxyResultProxy0Para.result).booleanValue();
+        }
+        if (!L()) {
+            return true;
+        }
+        if (Q()) {
+            return false;
+        }
+        return Intrinsics.areEqual(f212604d, "test");
+    }

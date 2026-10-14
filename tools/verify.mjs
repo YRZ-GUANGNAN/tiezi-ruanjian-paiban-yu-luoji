@@ -71,11 +71,32 @@ for(const a of motion.assets){
   check(fs.statSync(file).size===a.bytes&&digest(fs.readFileSync(file))===a.sha256,'动效文件摘要：'+a.file);
 }
 check(read(path.join(root,'docs/深度研究/复刻参数.json')).items.length===28,'参数计数变化');
-if(process.argv.includes('--write-manifest')&&!problems.length){
+
+const offlineRoot=path.join(root,'docs/离线补全');
+if(fs.existsSync(offlineRoot)){
+  const offlineIndex=read(path.join(offlineRoot,'evidence-index.json'));
+  check(offlineIndex.appVersion==='8.72.0'&&offlineIndex.records.length===9,'离线静态证据计数');
+  for(const record of offlineIndex.records){
+    const file=path.join(offlineRoot,record.file);
+    check(fs.existsSync(file),'离线静态证据缺失：'+record.id);
+    if(fs.existsSync(file))check(digest(fs.readFileSync(file))===record.publicSha256,'离线静态证据摘要：'+record.id);
+    if(record.sourceFile){
+      const source=path.join(offlineRoot,record.sourceFile);
+      check(fs.existsSync(source)&&digest(fs.readFileSync(source))===record.sourceSha256,'离线方法源码摘要：'+record.id);
+    }
+  }
+  const emulator=read(path.join(offlineRoot,'emulator-observations.json'));
+  check(emulator.observationCount===17&&emulator.observations.length===17,'模拟器观察计数');
+  check(emulator.settingsRestored===true,'模拟器设置未恢复');
+  check(emulator.fontExperiment?.cycles===3,'模拟器字号对照轮次');
+  check(emulator.observations.some(o=>o.id==='E017-final-home'&&o.page==='home'),'模拟器最终首页记录');
+}
+const writingManifest=process.argv.includes('--write-manifest');
+if(writingManifest&&!problems.length){
   const manifest={schemaVersion:1,title:'帖子软件排版与逻辑',scope:'Public derived repository; .git and this manifest are excluded.',files:files.map(p=>({file:relative(p),bytes:fs.statSync(p).size,sha256:digest(fs.readFileSync(p))}))};
   fs.writeFileSync(manifestFile,JSON.stringify(manifest,null,2)+'\n');
 }
-if(fs.existsSync(manifestFile)){
+if(!writingManifest&&fs.existsSync(manifestFile)){
   const manifest=read(manifestFile);
   check(manifest.files.length===files.length,'公开清单与当前文件数量不同');
   const indexed=new Set(manifest.files.map(e=>e.file));
@@ -84,6 +105,6 @@ if(fs.existsSync(manifestFile)){
     const p=path.join(root,e.file);
     check(fs.existsSync(p)&&fs.statSync(p).size===e.bytes&&digest(fs.readFileSync(p))===e.sha256,'仓库摘要不匹配：'+e.file);
   }
-}else check(false,'缺少 public-manifest.json');
+}else if(!writingManifest) check(false,'缺少 public-manifest.json');
 console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,issues:problems},null,2));
 if(problems.length)process.exitCode=1;

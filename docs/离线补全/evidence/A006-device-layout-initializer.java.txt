@@ -1,0 +1,5 @@
+    static {
+        so.c cVar = so.c.f301389a;
+        f288794b = cVar.p() || cVar.n();
+        f288795c = d59.j.k().n("screen_scale_sp_key", c.NORMAL.ordinal());
+    }

@@ -20,8 +20,8 @@
     },
     {
       "file": "CHANGELOG.md",
-      "bytes": 632,
-      "sha256": "e24f68eb8c2a42c2087bb00d7d8d4b5864bd73b9b861aba260b6d378a3dccb97"
+      "bytes": 1234,
+      "sha256": "fc04e454bb16575aa18babb5882c98fb6b3bfcfa841dd034e8b54e27890fb676"
     },
     {
       "file": "PUBLICATION.md",
@@ -30,8 +30,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 4782,
-      "sha256": "fc34a7ea89cea07cb238d0bde521cc8ae3c768139f6a0f4a88f20a60c4904ac5"
+      "bytes": 5062,
+      "sha256": "638d8183f57c3f4c4b5926dbaecfb16d1503c7fd0db05817b99539d9be0ba9bd"
     },
     {
       "file": "docs/00-阅读入口与进度.md",
@@ -1149,6 +1149,106 @@
       "sha256": "57b2501dbddcb9c05b7dc8e9b995e0c31e618728a4cc955ead1babda9237a1db"
     },
     {
+      "file": "docs/离线补全/01-开发规则与历史差异.md",
+      "bytes": 8325,
+      "sha256": "2baf3aea622e444819ca0fd4a9d43ed02ce56d26306cb695fc72c15059d3c665"
+    },
+    {
+      "file": "docs/离线补全/02-设备适配静态追踪.md",
+      "bytes": 6882,
+      "sha256": "c0b94847cba4baf9231538b7468ab5c4ca885f71101a7316b8c065ad03fbefc8"
+    },
+    {
+      "file": "docs/离线补全/03-真机补测执行表.md",
+      "bytes": 13575,
+      "sha256": "d8def257685be5df17f4aa8033195e6bab1f85c6e9ea7697e4d5bbe7acf83194"
+    },
+    {
+      "file": "docs/离线补全/04-模拟器可用性与测试边界.md",
+      "bytes": 5440,
+      "sha256": "7db989ca218357a8cea03510d7caed6cdb6eddcc47b3c7d4d276e92f560207df"
+    },
+    {
+      "file": "docs/离线补全/emulator-observations.json",
+      "bytes": 21354,
+      "sha256": "55b61092b63dbe7e601fe157e423e0ae6321ff8fa026a07751409bc803330f79"
+    },
+    {
+      "file": "docs/离线补全/evidence-index.json",
+      "bytes": 5993,
+      "sha256": "039c642226c3291f7977eef5016d553779d8ddb6133a9f195efe6bb72e14a032"
+    },
+    {
+      "file": "docs/离线补全/evidence/A001-device-layout-class.json",
+      "bytes": 11301,
+      "sha256": "0620e6351065629892fe1f830a9388b2e310169dde34e85a2e48bdc6f95c8c29"
+    },
+    {
+      "file": "docs/离线补全/evidence/A002-display-helper-class.json",
+      "bytes": 11943,
+      "sha256": "ef6b3e77e7b4bee90632c22c5401e4a6e4a69c7dee6b0bb8de32de842420e811"
+    },
+    {
+      "file": "docs/离线补全/evidence/A003-display-helper-names.json",
+      "bytes": 2121126,
+      "sha256": "d62fe1227cca18ff2028a85369768448624511c128d1e0b9d671d276c7bb7a57"
+    },
+    {
+      "file": "docs/离线补全/evidence/A004-device-layout-condition.java.txt",
+      "bytes": 63,
+      "sha256": "5e2130981a07e8c6d5fb6b81dad7ea7d86f06f46cc4e69ad39b17619ed4b8f24"
+    },
+    {
+      "file": "docs/离线补全/evidence/A004-device-layout-condition.json",
+      "bytes": 7706,
+      "sha256": "06b3182d205f71be95b9f2dd3e4b405b36203ca43b6d7debe63a166bef6d063e"
+    },
+    {
+      "file": "docs/离线补全/evidence/A005-display-version-condition.java.txt",
+      "bytes": 355,
+      "sha256": "03c706f895e3b5b84b2166fc5cfae250cb5112f07f1d8095b9b837ef462a4517"
+    },
+    {
+      "file": "docs/离线补全/evidence/A005-display-version-condition.json",
+      "bytes": 8175,
+      "sha256": "aa91494247adac98acb51845f26c7c7c4c01f8405583d08140ec99227f7ee1dd"
+    },
+    {
+      "file": "docs/离线补全/evidence/A006-device-layout-initializer.java.txt",
+      "bytes": 173,
+      "sha256": "08aaf37fb378f018c69ea790b4ed06b628cf3ce6857dfda438f1b17b45aa636a"
+    },
+    {
+      "file": "docs/离线补全/evidence/A006-device-layout-initializer.json",
+      "bytes": 7985,
+      "sha256": "7e612ee893212b99ca4e00a763edb063444fcd55dac957613676acce23cc29b6"
+    },
+    {
+      "file": "docs/离线补全/evidence/A007-display-device-category.java.txt",
+      "bytes": 267,
+      "sha256": "b24bdb9059d374040f0f161fdbc1e8899e3a75ffeb447acb605ec3afb6e67995"
+    },
+    {
+      "file": "docs/离线补全/evidence/A007-display-device-category.json",
+      "bytes": 7982,
+      "sha256": "8a656a6544d27ebc03f4609e13802a460b4ea4e9b062440436c32ccc66091e3a"
+    },
+    {
+      "file": "docs/离线补全/evidence/A008-device-condition-gate-class.json",
+      "bytes": 20583,
+      "sha256": "650f8fd831999ceadfc6f755094a244cb2bd04b89da18dcd36c6441a9eb218f1"
+    },
+    {
+      "file": "docs/离线补全/evidence/A009-device-condition-gate.java.txt",
+      "bytes": 454,
+      "sha256": "a7c052e211fcc3be5bf542e0df7ce95fb9965389105495b9c2cb937339135bca"
+    },
+    {
+      "file": "docs/离线补全/evidence/A009-device-condition-gate.json",
+      "bytes": 12176,
+      "sha256": "14883eb9625aa3a8d781e7178313c5ea660537c81c69180fdbdf8e3ffda09a39"
+    },
+    {
       "file": "docs/证据包/AndroidManifest.xml",
       "bytes": 398902,
       "sha256": "425db70b3e4c708e08240331047afea6971c0bdbc1c6f4005be94353f656781e"
@@ -2085,8 +2185,8 @@
     },
     {
       "file": "tools/verify.mjs",
-      "bytes": 6045,
-      "sha256": "72d8e3cf73dbf37b24a3cb102cf9189395feb2d0e01c4001e63157c79dcd18a0"
+      "bytes": 7350,
+      "sha256": "80b0a6ca8413c64bcdc24162c426b482e1b27425c0ecfba2f54b88ad87883420"
     }
   ]
 }

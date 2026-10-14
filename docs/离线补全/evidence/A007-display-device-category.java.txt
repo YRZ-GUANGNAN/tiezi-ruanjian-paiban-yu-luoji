@@ -1,0 +1,4 @@
+    public final String c() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, c.class, 4418);
+        return patchProxyResultProxy0Para.isSupported ? (String) patchProxyResultProxy0Para.result : (String) f301392d.getValue();
+    }

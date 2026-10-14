@@ -1,0 +1,533 @@
+{
+  "evidence_id": "ev_21dba8ff3e39d695cc929d4c4e0fbe14df083bd45ae09aedfdb940c503db3ecc",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "k84.c"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "k84.c"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"signature\":\"<clinit>(): void\",\"is_constructor\":false,\"name\":\"<clinit>\",\"def_pos\":0},{\"signature\":\"<init>(): void\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0},{\"signature\":\"A(): int\",\"is_constructor\":false,\"name\":\"A\",\"def_pos\":0},{\"signature\":\"B(): java.lang.String\",\"is_constructor\":false,\"name\":\"B\",\"def_pos\":0},{\"signature\":\"C(boolean, java.lang.String, boolean, int, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, boolean, boolean, java.lang.String): void\",\"is_constructor\":false,\"name\":\"C\",\"def_pos\":0},{\"signature\":\"D(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, boolean): void\",\"is_constructor\":false,\"name\":\"D\",\"def_pos\":0},{\"signature\":\"E(): boolean\",\"is_constructor\":false,\"name\":\"E\",\"def_pos\":0},{\"signature\":\"F(): boolean\",\"is_constructor\":false,\"name\":\"F\",\"def_pos\":0},{\"signature\":\"G(): boolean\",\"is_constructor\":false,\"name\":\"G\",\"def_pos\":0},{\"signature\":\"H(): boolean\",\"is_constructor\":false,\"name\":\"H\",\"def_pos\":0},{\"signature\":\"I(): boolean\",\"is_constructor\":false,\"name\":\"I\",\"def_pos\":0},{\"signature\":\"J(): boolean\",\"is_constructor\":false,\"name\":\"J\",\"def_pos\":0},{\"signature\":\"K(): boolean\",\"is_constructor\":false,\"name\":\"K\",\"def_pos\":0},{\"signature\":\"L(): boolean\",\"is_constructor\":false,\"name\":\"L\",\"def_pos\":0},{\"signature\":\"M(): boolean\",\"is_constructor\":false,\"name\":\"M\",\"def_pos\":0},{\"signature\":\"N(): boolean\",\"is_constructor\":false,\"name\":\"N\",\"def_pos\":0},{\"signature\":\"O(): boolean\",\"is_constructor\":false,\"name\":\"O\",\"def_pos\":0},{\"signature\":\"P(): boolean\",\"is_constructor\":false,\"name\":\"P\",\"def_pos\":0},{\"signature\":\"Q(): boolean\",\"is_constructor\":false,\"name\":\"Q\",\"def_pos\":0},{\"signature\":\"R(): boolean\",\"is_constructor\":false,\"name\":\"R\",\"def_pos\":0},{\"signature\":\"S(): boolean\",\"is_constructor\":false,\"name\":\"S\",\"def_pos\":0},{\"signature\":\"T(int): void\",\"is_constructor\":false,\"name\":\"T\",\"def_pos\":0},{\"signature\":\"a(): boolean\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0},{\"signature\":\"b(): boolean\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0},{\"signature\":\"c(): boolean\",\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0},{\"signature\":\"d(): boolean\",\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0},{\"signature\":\"e(): boolean\",\"is_constructor\":false,\"name\":\"e\",\"def_pos\":0},{\"signature\":\"f(): boolean\",\"is_constructor\":false,\"name\":\"f\",\"def_pos\":0},{\"signature\":\"g(): java.lang.String\",\"is_constructor\":false,\"name\":\"g\",\"def_pos\":0},{\"signature\":\"h(): java.lang.String\",\"is_constructor\":false,\"name\":\"h\",\"def_pos\":0},{\"signature\":\"i(): java.lang.String\",\"is_constructor\":false,\"name\":\"i\",\"def_pos\":0},{\"signature\":\"j(): java.lang.String\",\"is_constructor\":false,\"name\":\"j\",\"def_pos\":0},{\"signature\":\"k(): java.lang.String\",\"is_constructor\":false,\"name\":\"k\",\"def_pos\":0},{\"signature\":\"l(): int\",\"is_constructor\":false,\"name\":\"l\",\"def_pos\":0},{\"signature\":\"m(): java.lang.String\",\"is_constructor\":false,\"name\":\"m\",\"def_pos\":0},{\"signature\":\"n(): java.lang.String\",\"is_constructor\":false,\"name\":\"n\",\"def_pos\":0},{\"signature\":\"o(): java.lang.String\",\"is_constructor\":false,\"name\":\"o\",\"def_pos\":0},{\"signature\":\"p(): boolean\",\"is_constructor\":false,\"name\":\"p\",\"def_pos\":0},{\"signature\":\"q(): java.lang.String\",\"is_constructor\":false,\"name\":\"q\",\"def_pos\":0},{\"signature\":\"r(): boolean\",\"is_constructor\":false,\"name\":\"r\",\"def_pos\":0},{\"signature\":\"s(): boolean\",\"is_constructor\":false,\"name\":\"s\",\"def_pos\":0},{\"signature\":\"t(): boolean\",\"is_constructor\":false,\"name\":\"t\",\"def_pos\":0},{\"signature\":\"u(): boolean\",\"is_constructor\":false,\"name\":\"u\",\"def_pos\":0},{\"signature\":\"v(): boolean\",\"is_constructor\":false,\"name\":\"v\",\"def_pos\":0},{\"signature\":\"w(): java.lang.String\",\"is_constructor\":false,\"name\":\"w\",\"def_pos\":0},{\"signature\":\"x(): java.lang.String\",\"is_constructor\":false,\"name\":\"x\",\"def_pos\":0},{\"signature\":\"y(): java.lang.String\",\"is_constructor\":false,\"name\":\"y\",\"def_pos\":0},{\"signature\":\"z(): java.lang.String\",\"is_constructor\":false,\"name\":\"z\",\"def_pos\":0}],\"method_count\":48,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"c\",\"full_name\":\"k84.c\",\"field_count\":23,\"fields\":[{\"type\":\"k84.c\",\"def_pos\":0,\"name\":\"f212601a\"},{\"type\":\"kotlin.reflect.KProperty<java.lang.Object>[]\",\"def_pos\":0,\"name\":\"f212602b\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f212603c\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f212604d\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f212605e\"},{\"type\":\"kotlin.properties.ReadWriteProperty\",\"def_pos\":0,\"name\":\"f212606f\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f212607g\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f212608h\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f212609i\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f212610j\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f212611k\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f212612l\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f212613m\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f212614n\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f212615o\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f212616p\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f212617q\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f212618r\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f212619s\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f212620t\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f212621u\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f212622v\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f212623w\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "k84.c",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A",
+        "reported_signature": "A(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B",
+        "reported_signature": "B(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C",
+        "reported_signature": "C(boolean, java.lang.String, boolean, int, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, boolean, boolean, java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D",
+        "reported_signature": "D(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "E",
+        "reported_signature": "E(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F",
+        "reported_signature": "F(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G",
+        "reported_signature": "G(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H",
+        "reported_signature": "H(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I",
+        "reported_signature": "I(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "J",
+        "reported_signature": "J(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "K",
+        "reported_signature": "K(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "L",
+        "reported_signature": "L(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M",
+        "reported_signature": "M(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "N",
+        "reported_signature": "N(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "O",
+        "reported_signature": "O(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "P",
+        "reported_signature": "P(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Q",
+        "reported_signature": "Q(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "R",
+        "reported_signature": "R(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S",
+        "reported_signature": "S(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "T",
+        "reported_signature": "T(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j",
+        "reported_signature": "j(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p",
+        "reported_signature": "p(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q",
+        "reported_signature": "q(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r",
+        "reported_signature": "r(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s",
+        "reported_signature": "s(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t",
+        "reported_signature": "t(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u",
+        "reported_signature": "u(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v",
+        "reported_signature": "v(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w",
+        "reported_signature": "w(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x",
+        "reported_signature": "x(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y",
+        "reported_signature": "y(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z",
+        "reported_signature": "z(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "f212601a",
+        "reported_type": "k84.c"
+      },
+      {
+        "name": "f212602b",
+        "reported_type": "kotlin.reflect.KProperty<java.lang.Object>[]"
+      },
+      {
+        "name": "f212603c",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f212604d",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f212605e",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f212606f",
+        "reported_type": "kotlin.properties.ReadWriteProperty"
+      },
+      {
+        "name": "f212607g",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f212608h",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f212609i",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f212610j",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f212611k",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f212612l",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f212613m",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f212614n",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f212615o",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f212616p",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f212617q",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f212618r",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f212619s",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f212620t",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f212621u",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f212622v",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f212623w",
+        "reported_type": "java.lang.String"
+      }
+    ],
+    "inner_classes": []
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "563cfcc67a2e3420fd5a6baaa33e68e8e8c7dbefeb87c9e2a04a32ae1f4f5706",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

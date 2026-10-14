@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "appVersion": "8.72.0",
+  "kind": "static_artifact_analysis",
+  "publicDerived": true,
+  "records": [
+    {
+      "id": "A001-device-layout-class",
+      "evidenceId": "ev_5d2c5e2cf93bf8db9b678c91a853f25538a2f4e99739f436569830a72fc80290",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "file": "evidence/A001-device-layout-class.json",
+      "originalSha256": "dbfa8201963da6b7fafce7e352e0cdb333167d5b368c7104999077f570821d07",
+      "publicSha256": "0620e6351065629892fe1f830a9388b2e310169dde34e85a2e48bdc6f95c8c29"
+    },
+    {
+      "id": "A002-display-helper-class",
+      "evidenceId": "ev_1d628c210193654e7e91fb8d6b53ccbf920f296270d19feb3b027220f5e0fce7",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "file": "evidence/A002-display-helper-class.json",
+      "originalSha256": "08b43066a24d9d12f25fe8fa79a6fc29fd0b2b57eb01774fbf1bc5a9f5bbf0e3",
+      "publicSha256": "ef6b3e77e7b4bee90632c22c5401e4a6e4a69c7dee6b0bb8de32de842420e811"
+    },
+    {
+      "id": "A003-display-helper-names",
+      "evidenceId": "ev_35f383d6677f1ba831777281b76e220f6c37ff9f322ed606052137ad2a0c5684",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "search_android_classes",
+      "file": "evidence/A003-display-helper-names.json",
+      "originalSha256": "c9bad1bb727e2d6d415d1aa176c3ce08b3e6add2b83e741ca8c8fb508f3aecd0",
+      "publicSha256": "d62fe1227cca18ff2028a85369768448624511c128d1e0b9d671d276c7bb7a57"
+    },
+    {
+      "id": "A004-device-layout-condition",
+      "evidenceId": "ev_79162c0975c80195332fb39df3a4d942df13aff14ac9a3b451eac6ac4e40c47a",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "file": "evidence/A004-device-layout-condition.json",
+      "originalSha256": "63506651b72dc8786acd50ef1d003cdc39d0dd886177f7e341dd109acc6f1f71",
+      "publicSha256": "06b3182d205f71be95b9f2dd3e4b405b36203ca43b6d7debe63a166bef6d063e",
+      "sourceFile": "evidence/A004-device-layout-condition.java.txt",
+      "sourceSha256": "5e2130981a07e8c6d5fb6b81dad7ea7d86f06f46cc4e69ad39b17619ed4b8f24",
+      "bodyStatus": "available",
+      "sourceStatus": "complete"
+    },
+    {
+      "id": "A005-display-version-condition",
+      "evidenceId": "ev_0972c195cc8340b23a473a551ab8b95e4ffa2588d627b7af7e5a7b3ae012e5fc",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "file": "evidence/A005-display-version-condition.json",
+      "originalSha256": "ee7f8067bbddeb5a50a008c1cf7b0b10167aa69b0ae3a1d567093494802dfaa4",
+      "publicSha256": "aa91494247adac98acb51845f26c7c7c4c01f8405583d08140ec99227f7ee1dd",
+      "sourceFile": "evidence/A005-display-version-condition.java.txt",
+      "sourceSha256": "03c706f895e3b5b84b2166fc5cfae250cb5112f07f1d8095b9b837ef462a4517",
+      "bodyStatus": "available",
+      "sourceStatus": "complete"
+    },
+    {
+      "id": "A006-device-layout-initializer",
+      "evidenceId": "ev_35f5fcf00682d8a72407d3214a9831893f898840533bc038ecae288b0350f641",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "file": "evidence/A006-device-layout-initializer.json",
+      "originalSha256": "a4e7f5a8676a288837efda5bf7db82e0e1fb996b4acc752a0c9e506c8938b70a",
+      "publicSha256": "7e612ee893212b99ca4e00a763edb063444fcd55dac957613676acce23cc29b6",
+      "sourceFile": "evidence/A006-device-layout-initializer.java.txt",
+      "sourceSha256": "08aaf37fb378f018c69ea790b4ed06b628cf3ce6857dfda438f1b17b45aa636a",
+      "bodyStatus": "available",
+      "sourceStatus": "complete"
+    },
+    {
+      "id": "A007-display-device-category",
+      "evidenceId": "ev_d35da6d0fdeb6e27f1f0ed9b8c315962e605d1874b75b50f340e294eccf89a45",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "file": "evidence/A007-display-device-category.json",
+      "originalSha256": "f60c8796702e1b61c8473e8e75f90c460374f3fe8f97bc13f0cfbf180dc51522",
+      "publicSha256": "8a656a6544d27ebc03f4609e13802a460b4ea4e9b062440436c32ccc66091e3a",
+      "sourceFile": "evidence/A007-display-device-category.java.txt",
+      "sourceSha256": "b24bdb9059d374040f0f161fdbc1e8899e3a75ffeb447acb605ec3afb6e67995",
+      "bodyStatus": "available",
+      "sourceStatus": "complete"
+    },
+    {
+      "id": "A008-device-condition-gate-class",
+      "evidenceId": "ev_21dba8ff3e39d695cc929d4c4e0fbe14df083bd45ae09aedfdb940c503db3ecc",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "file": "evidence/A008-device-condition-gate-class.json",
+      "originalSha256": "563cfcc67a2e3420fd5a6baaa33e68e8e8c7dbefeb87c9e2a04a32ae1f4f5706",
+      "publicSha256": "650f8fd831999ceadfc6f755094a244cb2bd04b89da18dcd36c6441a9eb218f1"
+    },
+    {
+      "id": "A009-device-condition-gate",
+      "evidenceId": "ev_9ce5516639a2bff8157956a2e0f27e61625add74071f8e3305f9d231b6a4115f",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "file": "evidence/A009-device-condition-gate.json",
+      "originalSha256": "88a52dd7dcffb86509238e3b7aade6147a79958773b19b72f6a50d81422a7291",
+      "publicSha256": "14883eb9625aa3a8d781e7178313c5ea660537c81c69180fdbdf8e3ffda09a39",
+      "sourceFile": "evidence/A009-device-condition-gate.java.txt",
+      "sourceSha256": "a7c052e211fcc3be5bf542e0df7ce95fb9965389105495b9c2cb937339135bca",
+      "bodyStatus": "available",
+      "sourceStatus": "complete"
+    }
+  ]
+}
