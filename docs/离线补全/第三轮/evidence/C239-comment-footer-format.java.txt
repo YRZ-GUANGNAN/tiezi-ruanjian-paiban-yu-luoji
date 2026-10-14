@@ -1,0 +1,26 @@
+    public final SpannableStringBuilder R(Context context, CommentCommentInfo commentCommentInfo, boolean z100, boolean z101) {
+        PatchProxyResult patchProxyResultProxy4Para = PatchProxy.proxy4Para(context, commentCommentInfo, new Boolean(z100), new Boolean(z101), this, g0.class, 364248);
+        if (patchProxyResultProxy4Para.isSupported) {
+            return (SpannableStringBuilder) patchProxyResultProxy4Para.result;
+        }
+        boolean zA = zf4.d.a(commentCommentInfo);
+        if (!z100 && zA) {
+            return new SpannableStringBuilder();
+        }
+        String strV = commentCommentInfo.V();
+        if (strV == null) {
+            strV = "";
+        }
+        SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(c0(strV));
+        SpannableStringBuilder spannableStringBuilderAppend = spannableStringBuilder.append((CharSequence) " ");
+        String strO = commentCommentInfo.o();
+        spannableStringBuilderAppend.append((CharSequence) (strO != null ? strO : ""));
+        spannableStringBuilder.setSpan(new ForegroundColorSpan(p69.f.e(mp5.e.f238540u0)), 0, spannableStringBuilder.length(), 33);
+        int length = spannableStringBuilder.length();
+        if (!i1.f302844a.j(commentCommentInfo.A()) && z101) {
+            spannableStringBuilder.append((CharSequence) " ").append((CharSequence) p69.f.l(mp5.k.T0));
+        }
+        spannableStringBuilder.setSpan(new ForegroundColorSpan(p69.f.e(mp5.e.C0)), length, spannableStringBuilder.length(), 33);
+        spannableStringBuilder.setSpan(new TextAppearanceSpan(context, mp5.l.f238945c), 0, spannableStringBuilder.length(), 33);
+        return spannableStringBuilder;
+    }

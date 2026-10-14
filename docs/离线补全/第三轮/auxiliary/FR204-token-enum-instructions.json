@@ -1,0 +1,5448 @@
+{
+  "provider": "dexlib2-bundled-with-jadx-auxiliary-not-REA-Evidence",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "selectors": [
+    "Ls69/f;::<clinit>",
+    "Ls69/g;::<clinit>",
+    "Ls69/a;::<clinit>"
+  ],
+  "matches": [
+    {
+      "selector": "Ls69/a;::<clinit>",
+      "dexEntry": "classes14.dex",
+      "method": "Ls69/a;-><clinit>()V",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 3,
+      "codeUnits": 51,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/a;"
+        },
+        {
+          "offset": 2,
+          "opcode": "invoke-direct",
+          "registers": [
+            0
+          ],
+          "reference": "Ls69/a;-><init>()V"
+        },
+        {
+          "offset": 5,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/a;->a:Ls69/a;"
+        },
+        {
+          "offset": 7,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Lg68/f;->a()Landroid/app/Application;"
+        },
+        {
+          "offset": 10,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 11,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/a;->b:Landroid/app/Application;"
+        },
+        {
+          "offset": 13,
+          "opcode": "const/4",
+          "a": 0,
+          "literal": "3",
+          "literalHex": "0x3"
+        },
+        {
+          "offset": 14,
+          "opcode": "new-array",
+          "a": 0,
+          "b": 0,
+          "reference": "[Ljava/lang/Float;"
+        },
+        {
+          "offset": 16,
+          "opcode": "const/high16",
+          "a": 1,
+          "literal": "1065353216",
+          "literalHex": "0x3f800000"
+        },
+        {
+          "offset": 18,
+          "opcode": "invoke-static",
+          "registers": [
+            1
+          ],
+          "reference": "Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;"
+        },
+        {
+          "offset": 21,
+          "opcode": "move-result-object",
+          "a": 1
+        },
+        {
+          "offset": 22,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 23,
+          "opcode": "aput-object",
+          "a": 1,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "offset": 25,
+          "opcode": "const",
+          "a": 1,
+          "literal": "1066192077",
+          "literalHex": "0x3f8ccccd"
+        },
+        {
+          "offset": 28,
+          "opcode": "invoke-static",
+          "registers": [
+            1
+          ],
+          "reference": "Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;"
+        },
+        {
+          "offset": 31,
+          "opcode": "move-result-object",
+          "a": 1
+        },
+        {
+          "offset": 32,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 33,
+          "opcode": "aput-object",
+          "a": 1,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "offset": 35,
+          "opcode": "const/high16",
+          "a": 1,
+          "literal": "1067450368",
+          "literalHex": "0x3fa00000"
+        },
+        {
+          "offset": 37,
+          "opcode": "invoke-static",
+          "registers": [
+            1
+          ],
+          "reference": "Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;"
+        },
+        {
+          "offset": 40,
+          "opcode": "move-result-object",
+          "a": 1
+        },
+        {
+          "offset": 41,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "2",
+          "literalHex": "0x2"
+        },
+        {
+          "offset": 42,
+          "opcode": "aput-object",
+          "a": 1,
+          "b": 0,
+          "c": 2
+        },
+        {
+          "offset": 44,
+          "opcode": "invoke-static",
+          "registers": [
+            0
+          ],
+          "reference": "Lkotlin/collections/CollectionsKt__CollectionsKt;->arrayListOf([Ljava/lang/Object;)Ljava/util/ArrayList;"
+        },
+        {
+          "offset": 47,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 48,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/a;->c:Ljava/util/ArrayList;"
+        },
+        {
+          "offset": 50,
+          "opcode": "return-void"
+        }
+      ]
+    },
+    {
+      "selector": "Ls69/f;::<clinit>",
+      "dexEntry": "classes14.dex",
+      "method": "Ls69/f;-><clinit>()V",
+      "superclass": "Ljava/lang/Enum;",
+      "bodyPresent": true,
+      "registerCount": 3,
+      "codeUnits": 406,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 2,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H1\""
+        },
+        {
+          "offset": 4,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 5,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 8,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->H1:Ls69/f;"
+        },
+        {
+          "offset": 10,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 12,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H2\""
+        },
+        {
+          "offset": 14,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 15,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 18,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->H2:Ls69/f;"
+        },
+        {
+          "offset": 20,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 22,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H3\""
+        },
+        {
+          "offset": 24,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "2",
+          "literalHex": "0x2"
+        },
+        {
+          "offset": 25,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 28,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->H3:Ls69/f;"
+        },
+        {
+          "offset": 30,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 32,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T1\""
+        },
+        {
+          "offset": 34,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "3",
+          "literalHex": "0x3"
+        },
+        {
+          "offset": 35,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 38,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->T1:Ls69/f;"
+        },
+        {
+          "offset": 40,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 42,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T2\""
+        },
+        {
+          "offset": 44,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "4",
+          "literalHex": "0x4"
+        },
+        {
+          "offset": 45,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 48,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->T2:Ls69/f;"
+        },
+        {
+          "offset": 50,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 52,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T3\""
+        },
+        {
+          "offset": 54,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "5",
+          "literalHex": "0x5"
+        },
+        {
+          "offset": 55,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 58,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->T3:Ls69/f;"
+        },
+        {
+          "offset": 60,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 62,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1\""
+        },
+        {
+          "offset": 64,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "6",
+          "literalHex": "0x6"
+        },
+        {
+          "offset": 65,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 68,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->B1:Ls69/f;"
+        },
+        {
+          "offset": 70,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 72,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1Loose\""
+        },
+        {
+          "offset": 74,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "7",
+          "literalHex": "0x7"
+        },
+        {
+          "offset": 75,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 78,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->B1Loose:Ls69/f;"
+        },
+        {
+          "offset": 80,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 82,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2\""
+        },
+        {
+          "offset": 84,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "8",
+          "literalHex": "0x8"
+        },
+        {
+          "offset": 86,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 89,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->B2:Ls69/f;"
+        },
+        {
+          "offset": 91,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 93,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2Loose\""
+        },
+        {
+          "offset": 95,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "9",
+          "literalHex": "0x9"
+        },
+        {
+          "offset": 97,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 100,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->B2Loose:Ls69/f;"
+        },
+        {
+          "offset": 102,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 104,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2LooseSwitch\""
+        },
+        {
+          "offset": 106,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "10",
+          "literalHex": "0xa"
+        },
+        {
+          "offset": 108,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 111,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->B2LooseSwitch:Ls69/f;"
+        },
+        {
+          "offset": 113,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 115,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C1\""
+        },
+        {
+          "offset": 117,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "11",
+          "literalHex": "0xb"
+        },
+        {
+          "offset": 119,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 122,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->C1:Ls69/f;"
+        },
+        {
+          "offset": 124,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 126,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C1Emphasized\""
+        },
+        {
+          "offset": 128,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "12",
+          "literalHex": "0xc"
+        },
+        {
+          "offset": 130,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 133,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->C1Emphasized:Ls69/f;"
+        },
+        {
+          "offset": 135,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 137,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2\""
+        },
+        {
+          "offset": 139,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "13",
+          "literalHex": "0xd"
+        },
+        {
+          "offset": 141,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 144,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->C2:Ls69/f;"
+        },
+        {
+          "offset": 146,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 148,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2Emphasized\""
+        },
+        {
+          "offset": 150,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "14",
+          "literalHex": "0xe"
+        },
+        {
+          "offset": 152,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 155,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->C2Emphasized:Ls69/f;"
+        },
+        {
+          "offset": 157,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 159,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3\""
+        },
+        {
+          "offset": 161,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "15",
+          "literalHex": "0xf"
+        },
+        {
+          "offset": 163,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 166,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->C3:Ls69/f;"
+        },
+        {
+          "offset": 168,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 170,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3Emphasized\""
+        },
+        {
+          "offset": 172,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "16",
+          "literalHex": "0x10"
+        },
+        {
+          "offset": 174,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 177,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->C3Emphasized:Ls69/f;"
+        },
+        {
+          "offset": 179,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 181,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H1Number\""
+        },
+        {
+          "offset": 183,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "17",
+          "literalHex": "0x11"
+        },
+        {
+          "offset": 185,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 188,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->H1Number:Ls69/f;"
+        },
+        {
+          "offset": 190,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 192,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H1NumberEmphasized\""
+        },
+        {
+          "offset": 194,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "18",
+          "literalHex": "0x12"
+        },
+        {
+          "offset": 196,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 199,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->H1NumberEmphasized:Ls69/f;"
+        },
+        {
+          "offset": 201,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 203,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H2Number\""
+        },
+        {
+          "offset": 205,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "19",
+          "literalHex": "0x13"
+        },
+        {
+          "offset": 207,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 210,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->H2Number:Ls69/f;"
+        },
+        {
+          "offset": 212,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 214,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H2NumberEmphasized\""
+        },
+        {
+          "offset": 216,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "20",
+          "literalHex": "0x14"
+        },
+        {
+          "offset": 218,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 221,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->H2NumberEmphasized:Ls69/f;"
+        },
+        {
+          "offset": 223,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 225,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H3Number\""
+        },
+        {
+          "offset": 227,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "21",
+          "literalHex": "0x15"
+        },
+        {
+          "offset": 229,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 232,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->H3Number:Ls69/f;"
+        },
+        {
+          "offset": 234,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 236,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H3NumberEmphasized\""
+        },
+        {
+          "offset": 238,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "22",
+          "literalHex": "0x16"
+        },
+        {
+          "offset": 240,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 243,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->H3NumberEmphasized:Ls69/f;"
+        },
+        {
+          "offset": 245,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 247,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T1Number\""
+        },
+        {
+          "offset": 249,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "23",
+          "literalHex": "0x17"
+        },
+        {
+          "offset": 251,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 254,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->T1Number:Ls69/f;"
+        },
+        {
+          "offset": 256,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 258,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T1NumberEmphasized\""
+        },
+        {
+          "offset": 260,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "24",
+          "literalHex": "0x18"
+        },
+        {
+          "offset": 262,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 265,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->T1NumberEmphasized:Ls69/f;"
+        },
+        {
+          "offset": 267,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 269,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T2Number\""
+        },
+        {
+          "offset": 271,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "25",
+          "literalHex": "0x19"
+        },
+        {
+          "offset": 273,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 276,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->T2Number:Ls69/f;"
+        },
+        {
+          "offset": 278,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 280,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T2NumberEmphasized\""
+        },
+        {
+          "offset": 282,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "26",
+          "literalHex": "0x1a"
+        },
+        {
+          "offset": 284,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 287,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->T2NumberEmphasized:Ls69/f;"
+        },
+        {
+          "offset": 289,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 291,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T3Number\""
+        },
+        {
+          "offset": 293,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "27",
+          "literalHex": "0x1b"
+        },
+        {
+          "offset": 295,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 298,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->T3Number:Ls69/f;"
+        },
+        {
+          "offset": 300,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 302,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T3NumberEmphasized\""
+        },
+        {
+          "offset": 304,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "28",
+          "literalHex": "0x1c"
+        },
+        {
+          "offset": 306,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 309,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->T3NumberEmphasized:Ls69/f;"
+        },
+        {
+          "offset": 311,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 313,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1Number\""
+        },
+        {
+          "offset": 315,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "29",
+          "literalHex": "0x1d"
+        },
+        {
+          "offset": 317,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 320,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->B1Number:Ls69/f;"
+        },
+        {
+          "offset": 322,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 324,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1NumberEmphasized\""
+        },
+        {
+          "offset": 326,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "30",
+          "literalHex": "0x1e"
+        },
+        {
+          "offset": 328,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 331,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->B1NumberEmphasized:Ls69/f;"
+        },
+        {
+          "offset": 333,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 335,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2Number\""
+        },
+        {
+          "offset": 337,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "31",
+          "literalHex": "0x1f"
+        },
+        {
+          "offset": 339,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 342,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->B2Number:Ls69/f;"
+        },
+        {
+          "offset": 344,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 346,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2NumberEmphasized\""
+        },
+        {
+          "offset": 348,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "32",
+          "literalHex": "0x20"
+        },
+        {
+          "offset": 350,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 353,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->B2NumberEmphasized:Ls69/f;"
+        },
+        {
+          "offset": 355,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 357,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2Number\""
+        },
+        {
+          "offset": 359,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "33",
+          "literalHex": "0x21"
+        },
+        {
+          "offset": 361,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 364,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->C2Number:Ls69/f;"
+        },
+        {
+          "offset": 366,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 368,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2NumberEmphasized\""
+        },
+        {
+          "offset": 370,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "34",
+          "literalHex": "0x22"
+        },
+        {
+          "offset": 372,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 375,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->C2NumberEmphasized:Ls69/f;"
+        },
+        {
+          "offset": 377,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 379,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3Number\""
+        },
+        {
+          "offset": 381,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "35",
+          "literalHex": "0x23"
+        },
+        {
+          "offset": 383,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 386,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->C3Number:Ls69/f;"
+        },
+        {
+          "offset": 388,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/f;"
+        },
+        {
+          "offset": 390,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3NumberEmphasized\""
+        },
+        {
+          "offset": 392,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "36",
+          "literalHex": "0x24"
+        },
+        {
+          "offset": 394,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/f;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 397,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->C3NumberEmphasized:Ls69/f;"
+        },
+        {
+          "offset": 399,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Ls69/f;->$values()[Ls69/f;"
+        },
+        {
+          "offset": 402,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 403,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/f;->$VALUES:[Ls69/f;"
+        },
+        {
+          "offset": 405,
+          "opcode": "return-void"
+        }
+      ]
+    },
+    {
+      "selector": "Ls69/g;::<clinit>",
+      "dexEntry": "classes14.dex",
+      "method": "Ls69/g;-><clinit>()V",
+      "superclass": "Ljava/lang/Enum;",
+      "bodyPresent": true,
+      "registerCount": 3,
+      "codeUnits": 1220,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 2,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H1\""
+        },
+        {
+          "offset": 4,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 5,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 8,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H1:Ls69/g;"
+        },
+        {
+          "offset": 10,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 12,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H2\""
+        },
+        {
+          "offset": 14,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 15,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 18,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H2:Ls69/g;"
+        },
+        {
+          "offset": 20,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 22,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H3\""
+        },
+        {
+          "offset": 24,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "2",
+          "literalHex": "0x2"
+        },
+        {
+          "offset": 25,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 28,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H3:Ls69/g;"
+        },
+        {
+          "offset": 30,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 32,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T1\""
+        },
+        {
+          "offset": 34,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "3",
+          "literalHex": "0x3"
+        },
+        {
+          "offset": 35,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 38,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T1:Ls69/g;"
+        },
+        {
+          "offset": 40,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 42,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T2\""
+        },
+        {
+          "offset": 44,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "4",
+          "literalHex": "0x4"
+        },
+        {
+          "offset": 45,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 48,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T2:Ls69/g;"
+        },
+        {
+          "offset": 50,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 52,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T3\""
+        },
+        {
+          "offset": 54,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "5",
+          "literalHex": "0x5"
+        },
+        {
+          "offset": 55,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 58,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T3:Ls69/g;"
+        },
+        {
+          "offset": 60,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 62,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1\""
+        },
+        {
+          "offset": 64,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "6",
+          "literalHex": "0x6"
+        },
+        {
+          "offset": 65,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 68,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B1:Ls69/g;"
+        },
+        {
+          "offset": 70,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 72,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1Loose\""
+        },
+        {
+          "offset": 74,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "7",
+          "literalHex": "0x7"
+        },
+        {
+          "offset": 75,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 78,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B1Loose:Ls69/g;"
+        },
+        {
+          "offset": 80,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 82,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2\""
+        },
+        {
+          "offset": 84,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "8",
+          "literalHex": "0x8"
+        },
+        {
+          "offset": 86,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 89,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B2:Ls69/g;"
+        },
+        {
+          "offset": 91,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 93,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2Loose\""
+        },
+        {
+          "offset": 95,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "9",
+          "literalHex": "0x9"
+        },
+        {
+          "offset": 97,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 100,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B2Loose:Ls69/g;"
+        },
+        {
+          "offset": 102,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 104,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2LooseSwitch\""
+        },
+        {
+          "offset": 106,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "10",
+          "literalHex": "0xa"
+        },
+        {
+          "offset": 108,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 111,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B2LooseSwitch:Ls69/g;"
+        },
+        {
+          "offset": 113,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 115,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C1\""
+        },
+        {
+          "offset": 117,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "11",
+          "literalHex": "0xb"
+        },
+        {
+          "offset": 119,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 122,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C1:Ls69/g;"
+        },
+        {
+          "offset": 124,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 126,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C1Emphasized\""
+        },
+        {
+          "offset": 128,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "12",
+          "literalHex": "0xc"
+        },
+        {
+          "offset": 130,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 133,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C1Emphasized:Ls69/g;"
+        },
+        {
+          "offset": 135,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 137,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2\""
+        },
+        {
+          "offset": 139,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "13",
+          "literalHex": "0xd"
+        },
+        {
+          "offset": 141,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 144,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C2:Ls69/g;"
+        },
+        {
+          "offset": 146,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 148,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2Emphasized\""
+        },
+        {
+          "offset": 150,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "14",
+          "literalHex": "0xe"
+        },
+        {
+          "offset": 152,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 155,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C2Emphasized:Ls69/g;"
+        },
+        {
+          "offset": 157,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 159,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3\""
+        },
+        {
+          "offset": 161,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "15",
+          "literalHex": "0xf"
+        },
+        {
+          "offset": 163,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 166,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C3:Ls69/g;"
+        },
+        {
+          "offset": 168,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 170,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3Emphasized\""
+        },
+        {
+          "offset": 172,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "16",
+          "literalHex": "0x10"
+        },
+        {
+          "offset": 174,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 177,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C3Emphasized:Ls69/g;"
+        },
+        {
+          "offset": 179,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 181,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H1Number\""
+        },
+        {
+          "offset": 183,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "17",
+          "literalHex": "0x11"
+        },
+        {
+          "offset": 185,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 188,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H1Number:Ls69/g;"
+        },
+        {
+          "offset": 190,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 192,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H1NumberEmphasized\""
+        },
+        {
+          "offset": 194,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "18",
+          "literalHex": "0x12"
+        },
+        {
+          "offset": 196,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 199,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H1NumberEmphasized:Ls69/g;"
+        },
+        {
+          "offset": 201,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 203,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H2Number\""
+        },
+        {
+          "offset": 205,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "19",
+          "literalHex": "0x13"
+        },
+        {
+          "offset": 207,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 210,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H2Number:Ls69/g;"
+        },
+        {
+          "offset": 212,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 214,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H2NumberEmphasized\""
+        },
+        {
+          "offset": 216,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "20",
+          "literalHex": "0x14"
+        },
+        {
+          "offset": 218,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 221,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H2NumberEmphasized:Ls69/g;"
+        },
+        {
+          "offset": 223,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 225,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H3Number\""
+        },
+        {
+          "offset": 227,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "21",
+          "literalHex": "0x15"
+        },
+        {
+          "offset": 229,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 232,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H3Number:Ls69/g;"
+        },
+        {
+          "offset": 234,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 236,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H3NumberEmphasized\""
+        },
+        {
+          "offset": 238,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "22",
+          "literalHex": "0x16"
+        },
+        {
+          "offset": 240,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 243,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H3NumberEmphasized:Ls69/g;"
+        },
+        {
+          "offset": 245,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 247,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T1Number\""
+        },
+        {
+          "offset": 249,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "23",
+          "literalHex": "0x17"
+        },
+        {
+          "offset": 251,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 254,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T1Number:Ls69/g;"
+        },
+        {
+          "offset": 256,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 258,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T1NumberEmphasized\""
+        },
+        {
+          "offset": 260,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "24",
+          "literalHex": "0x18"
+        },
+        {
+          "offset": 262,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 265,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T1NumberEmphasized:Ls69/g;"
+        },
+        {
+          "offset": 267,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 269,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T2Number\""
+        },
+        {
+          "offset": 271,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "25",
+          "literalHex": "0x19"
+        },
+        {
+          "offset": 273,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 276,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T2Number:Ls69/g;"
+        },
+        {
+          "offset": 278,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 280,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T2NumberEmphasized\""
+        },
+        {
+          "offset": 282,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "26",
+          "literalHex": "0x1a"
+        },
+        {
+          "offset": 284,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 287,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T2NumberEmphasized:Ls69/g;"
+        },
+        {
+          "offset": 289,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 291,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T3Number\""
+        },
+        {
+          "offset": 293,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "27",
+          "literalHex": "0x1b"
+        },
+        {
+          "offset": 295,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 298,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T3Number:Ls69/g;"
+        },
+        {
+          "offset": 300,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 302,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T3NumberEmphasized\""
+        },
+        {
+          "offset": 304,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "28",
+          "literalHex": "0x1c"
+        },
+        {
+          "offset": 306,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 309,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T3NumberEmphasized:Ls69/g;"
+        },
+        {
+          "offset": 311,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 313,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1Number\""
+        },
+        {
+          "offset": 315,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "29",
+          "literalHex": "0x1d"
+        },
+        {
+          "offset": 317,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 320,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B1Number:Ls69/g;"
+        },
+        {
+          "offset": 322,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 324,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1NumberEmphasized\""
+        },
+        {
+          "offset": 326,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "30",
+          "literalHex": "0x1e"
+        },
+        {
+          "offset": 328,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 331,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B1NumberEmphasized:Ls69/g;"
+        },
+        {
+          "offset": 333,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 335,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2Number\""
+        },
+        {
+          "offset": 337,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "31",
+          "literalHex": "0x1f"
+        },
+        {
+          "offset": 339,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 342,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B2Number:Ls69/g;"
+        },
+        {
+          "offset": 344,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 346,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2NumberEmphasized\""
+        },
+        {
+          "offset": 348,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "32",
+          "literalHex": "0x20"
+        },
+        {
+          "offset": 350,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 353,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B2NumberEmphasized:Ls69/g;"
+        },
+        {
+          "offset": 355,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 357,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2Number\""
+        },
+        {
+          "offset": 359,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "33",
+          "literalHex": "0x21"
+        },
+        {
+          "offset": 361,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 364,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C2Number:Ls69/g;"
+        },
+        {
+          "offset": 366,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 368,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2NumberEmphasized\""
+        },
+        {
+          "offset": 370,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "34",
+          "literalHex": "0x22"
+        },
+        {
+          "offset": 372,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 375,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C2NumberEmphasized:Ls69/g;"
+        },
+        {
+          "offset": 377,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 379,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3Number\""
+        },
+        {
+          "offset": 381,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "35",
+          "literalHex": "0x23"
+        },
+        {
+          "offset": 383,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 386,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C3Number:Ls69/g;"
+        },
+        {
+          "offset": 388,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 390,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3NumberEmphasized\""
+        },
+        {
+          "offset": 392,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "36",
+          "literalHex": "0x24"
+        },
+        {
+          "offset": 394,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 397,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C3NumberEmphasized:Ls69/g;"
+        },
+        {
+          "offset": 399,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 401,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H1Xlarge\""
+        },
+        {
+          "offset": 403,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "37",
+          "literalHex": "0x25"
+        },
+        {
+          "offset": 405,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 408,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H1Xlarge:Ls69/g;"
+        },
+        {
+          "offset": 410,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 412,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H2Xlarge\""
+        },
+        {
+          "offset": 414,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "38",
+          "literalHex": "0x26"
+        },
+        {
+          "offset": 416,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 419,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H2Xlarge:Ls69/g;"
+        },
+        {
+          "offset": 421,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 423,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H3Xlarge\""
+        },
+        {
+          "offset": 425,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "39",
+          "literalHex": "0x27"
+        },
+        {
+          "offset": 427,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 430,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H3Xlarge:Ls69/g;"
+        },
+        {
+          "offset": 432,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 434,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T1Xlarge\""
+        },
+        {
+          "offset": 436,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "40",
+          "literalHex": "0x28"
+        },
+        {
+          "offset": 438,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 441,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T1Xlarge:Ls69/g;"
+        },
+        {
+          "offset": 443,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 445,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T2Xlarge\""
+        },
+        {
+          "offset": 447,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "41",
+          "literalHex": "0x29"
+        },
+        {
+          "offset": 449,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 452,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T2Xlarge:Ls69/g;"
+        },
+        {
+          "offset": 454,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 456,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T3Xlarge\""
+        },
+        {
+          "offset": 458,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "42",
+          "literalHex": "0x2a"
+        },
+        {
+          "offset": 460,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 463,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T3Xlarge:Ls69/g;"
+        },
+        {
+          "offset": 465,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 467,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1Xlarge\""
+        },
+        {
+          "offset": 469,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "43",
+          "literalHex": "0x2b"
+        },
+        {
+          "offset": 471,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 474,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B1Xlarge:Ls69/g;"
+        },
+        {
+          "offset": 476,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 478,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1LooseXlarge\""
+        },
+        {
+          "offset": 480,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "44",
+          "literalHex": "0x2c"
+        },
+        {
+          "offset": 482,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 485,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B1LooseXlarge:Ls69/g;"
+        },
+        {
+          "offset": 487,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 489,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2Xlarge\""
+        },
+        {
+          "offset": 491,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "45",
+          "literalHex": "0x2d"
+        },
+        {
+          "offset": 493,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 496,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B2Xlarge:Ls69/g;"
+        },
+        {
+          "offset": 498,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 500,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2LooseXlarge\""
+        },
+        {
+          "offset": 502,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "46",
+          "literalHex": "0x2e"
+        },
+        {
+          "offset": 504,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 507,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B2LooseXlarge:Ls69/g;"
+        },
+        {
+          "offset": 509,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 511,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2LooseSwitchXlarge\""
+        },
+        {
+          "offset": 513,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "47",
+          "literalHex": "0x2f"
+        },
+        {
+          "offset": 515,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 518,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B2LooseSwitchXlarge:Ls69/g;"
+        },
+        {
+          "offset": 520,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 522,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C1Xlarge\""
+        },
+        {
+          "offset": 524,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "48",
+          "literalHex": "0x30"
+        },
+        {
+          "offset": 526,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 529,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C1Xlarge:Ls69/g;"
+        },
+        {
+          "offset": 531,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 533,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C1EmphasizedXlarge\""
+        },
+        {
+          "offset": 535,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "49",
+          "literalHex": "0x31"
+        },
+        {
+          "offset": 537,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 540,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C1EmphasizedXlarge:Ls69/g;"
+        },
+        {
+          "offset": 542,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 544,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2Xlarge\""
+        },
+        {
+          "offset": 546,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "50",
+          "literalHex": "0x32"
+        },
+        {
+          "offset": 548,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 551,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C2Xlarge:Ls69/g;"
+        },
+        {
+          "offset": 553,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 555,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2EmphasizedXlarge\""
+        },
+        {
+          "offset": 557,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "51",
+          "literalHex": "0x33"
+        },
+        {
+          "offset": 559,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 562,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C2EmphasizedXlarge:Ls69/g;"
+        },
+        {
+          "offset": 564,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 566,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3Xlarge\""
+        },
+        {
+          "offset": 568,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "52",
+          "literalHex": "0x34"
+        },
+        {
+          "offset": 570,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 573,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C3Xlarge:Ls69/g;"
+        },
+        {
+          "offset": 575,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 577,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3EmphasizedXlarge\""
+        },
+        {
+          "offset": 579,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "53",
+          "literalHex": "0x35"
+        },
+        {
+          "offset": 581,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 584,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C3EmphasizedXlarge:Ls69/g;"
+        },
+        {
+          "offset": 586,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 588,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H1NumberXlarge\""
+        },
+        {
+          "offset": 590,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "54",
+          "literalHex": "0x36"
+        },
+        {
+          "offset": 592,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 595,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H1NumberXlarge:Ls69/g;"
+        },
+        {
+          "offset": 597,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 599,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H1NumberEmphasizedXlarge\""
+        },
+        {
+          "offset": 601,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "55",
+          "literalHex": "0x37"
+        },
+        {
+          "offset": 603,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 606,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H1NumberEmphasizedXlarge:Ls69/g;"
+        },
+        {
+          "offset": 608,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 610,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H2NumberXlarge\""
+        },
+        {
+          "offset": 612,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "56",
+          "literalHex": "0x38"
+        },
+        {
+          "offset": 614,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 617,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H2NumberXlarge:Ls69/g;"
+        },
+        {
+          "offset": 619,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 621,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H2NumberEmphasizedXlarge\""
+        },
+        {
+          "offset": 623,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "57",
+          "literalHex": "0x39"
+        },
+        {
+          "offset": 625,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 628,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H2NumberEmphasizedXlarge:Ls69/g;"
+        },
+        {
+          "offset": 630,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 632,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H3NumberXlarge\""
+        },
+        {
+          "offset": 634,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "58",
+          "literalHex": "0x3a"
+        },
+        {
+          "offset": 636,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 639,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H3NumberXlarge:Ls69/g;"
+        },
+        {
+          "offset": 641,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 643,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H3NumberEmphasizedXlarge\""
+        },
+        {
+          "offset": 645,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "59",
+          "literalHex": "0x3b"
+        },
+        {
+          "offset": 647,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 650,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H3NumberEmphasizedXlarge:Ls69/g;"
+        },
+        {
+          "offset": 652,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 654,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T1NumberXlarge\""
+        },
+        {
+          "offset": 656,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "60",
+          "literalHex": "0x3c"
+        },
+        {
+          "offset": 658,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 661,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T1NumberXlarge:Ls69/g;"
+        },
+        {
+          "offset": 663,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 665,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T1NumberEmphasizedXlarge\""
+        },
+        {
+          "offset": 667,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "61",
+          "literalHex": "0x3d"
+        },
+        {
+          "offset": 669,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 672,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T1NumberEmphasizedXlarge:Ls69/g;"
+        },
+        {
+          "offset": 674,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 676,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T2NumberXlarge\""
+        },
+        {
+          "offset": 678,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "62",
+          "literalHex": "0x3e"
+        },
+        {
+          "offset": 680,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 683,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T2NumberXlarge:Ls69/g;"
+        },
+        {
+          "offset": 685,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 687,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T2NumberEmphasizedXlarge\""
+        },
+        {
+          "offset": 689,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "63",
+          "literalHex": "0x3f"
+        },
+        {
+          "offset": 691,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 694,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T2NumberEmphasizedXlarge:Ls69/g;"
+        },
+        {
+          "offset": 696,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 698,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T3NumberXlarge\""
+        },
+        {
+          "offset": 700,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "64",
+          "literalHex": "0x40"
+        },
+        {
+          "offset": 702,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 705,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T3NumberXlarge:Ls69/g;"
+        },
+        {
+          "offset": 707,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 709,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T3NumberEmphasizedXlarge\""
+        },
+        {
+          "offset": 711,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "65",
+          "literalHex": "0x41"
+        },
+        {
+          "offset": 713,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 716,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T3NumberEmphasizedXlarge:Ls69/g;"
+        },
+        {
+          "offset": 718,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 720,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1NumberXlarge\""
+        },
+        {
+          "offset": 722,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "66",
+          "literalHex": "0x42"
+        },
+        {
+          "offset": 724,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 727,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B1NumberXlarge:Ls69/g;"
+        },
+        {
+          "offset": 729,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 731,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1NumberEmphasizedXlarge\""
+        },
+        {
+          "offset": 733,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "67",
+          "literalHex": "0x43"
+        },
+        {
+          "offset": 735,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 738,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B1NumberEmphasizedXlarge:Ls69/g;"
+        },
+        {
+          "offset": 740,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 742,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2NumberXlarge\""
+        },
+        {
+          "offset": 744,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "68",
+          "literalHex": "0x44"
+        },
+        {
+          "offset": 746,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 749,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B2NumberXlarge:Ls69/g;"
+        },
+        {
+          "offset": 751,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 753,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2NumberEmphasizedXlarge\""
+        },
+        {
+          "offset": 755,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "69",
+          "literalHex": "0x45"
+        },
+        {
+          "offset": 757,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 760,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B2NumberEmphasizedXlarge:Ls69/g;"
+        },
+        {
+          "offset": 762,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 764,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2NumberXlarge\""
+        },
+        {
+          "offset": 766,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "70",
+          "literalHex": "0x46"
+        },
+        {
+          "offset": 768,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 771,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C2NumberXlarge:Ls69/g;"
+        },
+        {
+          "offset": 773,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 775,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2NumberEmphasizedXlarge\""
+        },
+        {
+          "offset": 777,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "71",
+          "literalHex": "0x47"
+        },
+        {
+          "offset": 779,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 782,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C2NumberEmphasizedXlarge:Ls69/g;"
+        },
+        {
+          "offset": 784,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 786,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3NumberXlarge\""
+        },
+        {
+          "offset": 788,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "72",
+          "literalHex": "0x48"
+        },
+        {
+          "offset": 790,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 793,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C3NumberXlarge:Ls69/g;"
+        },
+        {
+          "offset": 795,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 797,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3NumberEmphasizedXlarge\""
+        },
+        {
+          "offset": 799,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "73",
+          "literalHex": "0x49"
+        },
+        {
+          "offset": 801,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 804,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C3NumberEmphasizedXlarge:Ls69/g;"
+        },
+        {
+          "offset": 806,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 808,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H1Xxlarge\""
+        },
+        {
+          "offset": 810,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "74",
+          "literalHex": "0x4a"
+        },
+        {
+          "offset": 812,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 815,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H1Xxlarge:Ls69/g;"
+        },
+        {
+          "offset": 817,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 819,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H2Xxlarge\""
+        },
+        {
+          "offset": 821,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "75",
+          "literalHex": "0x4b"
+        },
+        {
+          "offset": 823,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 826,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H2Xxlarge:Ls69/g;"
+        },
+        {
+          "offset": 828,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 830,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H3Xxlarge\""
+        },
+        {
+          "offset": 832,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "76",
+          "literalHex": "0x4c"
+        },
+        {
+          "offset": 834,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 837,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H3Xxlarge:Ls69/g;"
+        },
+        {
+          "offset": 839,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 841,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T1Xxlarge\""
+        },
+        {
+          "offset": 843,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "77",
+          "literalHex": "0x4d"
+        },
+        {
+          "offset": 845,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 848,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T1Xxlarge:Ls69/g;"
+        },
+        {
+          "offset": 850,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 852,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T2Xxlarge\""
+        },
+        {
+          "offset": 854,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "78",
+          "literalHex": "0x4e"
+        },
+        {
+          "offset": 856,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 859,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T2Xxlarge:Ls69/g;"
+        },
+        {
+          "offset": 861,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 863,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T3Xxlarge\""
+        },
+        {
+          "offset": 865,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "79",
+          "literalHex": "0x4f"
+        },
+        {
+          "offset": 867,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 870,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T3Xxlarge:Ls69/g;"
+        },
+        {
+          "offset": 872,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 874,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1Xxlarge\""
+        },
+        {
+          "offset": 876,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "80",
+          "literalHex": "0x50"
+        },
+        {
+          "offset": 878,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 881,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B1Xxlarge:Ls69/g;"
+        },
+        {
+          "offset": 883,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 885,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1LooseXxlarge\""
+        },
+        {
+          "offset": 887,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "81",
+          "literalHex": "0x51"
+        },
+        {
+          "offset": 889,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 892,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B1LooseXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 894,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 896,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2Xxlarge\""
+        },
+        {
+          "offset": 898,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "82",
+          "literalHex": "0x52"
+        },
+        {
+          "offset": 900,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 903,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B2Xxlarge:Ls69/g;"
+        },
+        {
+          "offset": 905,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 907,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2LooseXxlarge\""
+        },
+        {
+          "offset": 909,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "83",
+          "literalHex": "0x53"
+        },
+        {
+          "offset": 911,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 914,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B2LooseXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 916,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 918,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2LooseSwitchXxlarge\""
+        },
+        {
+          "offset": 920,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "84",
+          "literalHex": "0x54"
+        },
+        {
+          "offset": 922,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 925,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B2LooseSwitchXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 927,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 929,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C1Xxlarge\""
+        },
+        {
+          "offset": 931,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "85",
+          "literalHex": "0x55"
+        },
+        {
+          "offset": 933,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 936,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C1Xxlarge:Ls69/g;"
+        },
+        {
+          "offset": 938,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 940,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C1EmphasizedXxlarge\""
+        },
+        {
+          "offset": 942,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "86",
+          "literalHex": "0x56"
+        },
+        {
+          "offset": 944,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 947,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C1EmphasizedXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 949,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 951,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2Xxlarge\""
+        },
+        {
+          "offset": 953,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "87",
+          "literalHex": "0x57"
+        },
+        {
+          "offset": 955,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 958,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C2Xxlarge:Ls69/g;"
+        },
+        {
+          "offset": 960,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 962,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2EmphasizedXxlarge\""
+        },
+        {
+          "offset": 964,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "88",
+          "literalHex": "0x58"
+        },
+        {
+          "offset": 966,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 969,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C2EmphasizedXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 971,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 973,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3Xxlarge\""
+        },
+        {
+          "offset": 975,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "89",
+          "literalHex": "0x59"
+        },
+        {
+          "offset": 977,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 980,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C3Xxlarge:Ls69/g;"
+        },
+        {
+          "offset": 982,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 984,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3EmphasizedXxlarge\""
+        },
+        {
+          "offset": 986,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "90",
+          "literalHex": "0x5a"
+        },
+        {
+          "offset": 988,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 991,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C3EmphasizedXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 993,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 995,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H1NumberXxlarge\""
+        },
+        {
+          "offset": 997,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "91",
+          "literalHex": "0x5b"
+        },
+        {
+          "offset": 999,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1002,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H1NumberXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1004,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1006,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H1NumberEmphasizedXxlarge\""
+        },
+        {
+          "offset": 1008,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "92",
+          "literalHex": "0x5c"
+        },
+        {
+          "offset": 1010,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1013,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H1NumberEmphasizedXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1015,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1017,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H2NumberXxlarge\""
+        },
+        {
+          "offset": 1019,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "93",
+          "literalHex": "0x5d"
+        },
+        {
+          "offset": 1021,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1024,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H2NumberXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1026,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1028,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H2NumberEmphasizedXxlarge\""
+        },
+        {
+          "offset": 1030,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "94",
+          "literalHex": "0x5e"
+        },
+        {
+          "offset": 1032,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1035,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H2NumberEmphasizedXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1037,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1039,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H3NumberXxlarge\""
+        },
+        {
+          "offset": 1041,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "95",
+          "literalHex": "0x5f"
+        },
+        {
+          "offset": 1043,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1046,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H3NumberXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1048,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1050,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"H3NumberEmphasizedXxlarge\""
+        },
+        {
+          "offset": 1052,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "96",
+          "literalHex": "0x60"
+        },
+        {
+          "offset": 1054,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1057,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->H3NumberEmphasizedXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1059,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1061,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T1NumberXxlarge\""
+        },
+        {
+          "offset": 1063,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "97",
+          "literalHex": "0x61"
+        },
+        {
+          "offset": 1065,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1068,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T1NumberXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1070,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1072,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T1NumberEmphasizedXxlarge\""
+        },
+        {
+          "offset": 1074,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "98",
+          "literalHex": "0x62"
+        },
+        {
+          "offset": 1076,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1079,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T1NumberEmphasizedXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1081,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1083,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T2NumberXxlarge\""
+        },
+        {
+          "offset": 1085,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "99",
+          "literalHex": "0x63"
+        },
+        {
+          "offset": 1087,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1090,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T2NumberXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1092,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1094,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T2NumberEmphasizedXxlarge\""
+        },
+        {
+          "offset": 1096,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "100",
+          "literalHex": "0x64"
+        },
+        {
+          "offset": 1098,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1101,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T2NumberEmphasizedXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1103,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1105,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T3NumberXxlarge\""
+        },
+        {
+          "offset": 1107,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "101",
+          "literalHex": "0x65"
+        },
+        {
+          "offset": 1109,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1112,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T3NumberXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1114,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1116,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"T3NumberEmphasizedXxlarge\""
+        },
+        {
+          "offset": 1118,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "102",
+          "literalHex": "0x66"
+        },
+        {
+          "offset": 1120,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1123,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->T3NumberEmphasizedXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1125,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1127,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1NumberXxlarge\""
+        },
+        {
+          "offset": 1129,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "103",
+          "literalHex": "0x67"
+        },
+        {
+          "offset": 1131,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1134,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B1NumberXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1136,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1138,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B1NumberEmphasizedXxlarge\""
+        },
+        {
+          "offset": 1140,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "104",
+          "literalHex": "0x68"
+        },
+        {
+          "offset": 1142,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1145,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B1NumberEmphasizedXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1147,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1149,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2NumberXxlarge\""
+        },
+        {
+          "offset": 1151,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "105",
+          "literalHex": "0x69"
+        },
+        {
+          "offset": 1153,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1156,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B2NumberXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1158,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1160,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"B2NumberEmphasizedXxlarge\""
+        },
+        {
+          "offset": 1162,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "106",
+          "literalHex": "0x6a"
+        },
+        {
+          "offset": 1164,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1167,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->B2NumberEmphasizedXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1169,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1171,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2NumberXxlarge\""
+        },
+        {
+          "offset": 1173,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "107",
+          "literalHex": "0x6b"
+        },
+        {
+          "offset": 1175,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1178,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C2NumberXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1180,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1182,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C2NumberEmphasizedXxlarge\""
+        },
+        {
+          "offset": 1184,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "108",
+          "literalHex": "0x6c"
+        },
+        {
+          "offset": 1186,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1189,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C2NumberEmphasizedXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1191,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1193,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3NumberXxlarge\""
+        },
+        {
+          "offset": 1195,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "109",
+          "literalHex": "0x6d"
+        },
+        {
+          "offset": 1197,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1200,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C3NumberXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1202,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/g;"
+        },
+        {
+          "offset": 1204,
+          "opcode": "const-string",
+          "a": 1,
+          "reference": "\"C3NumberEmphasizedXxlarge\""
+        },
+        {
+          "offset": 1206,
+          "opcode": "const/16",
+          "a": 2,
+          "literal": "110",
+          "literalHex": "0x6e"
+        },
+        {
+          "offset": 1208,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Ls69/g;-><init>(Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 1211,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->C3NumberEmphasizedXxlarge:Ls69/g;"
+        },
+        {
+          "offset": 1213,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Ls69/g;->$values()[Ls69/g;"
+        },
+        {
+          "offset": 1216,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 1217,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Ls69/g;->$VALUES:[Ls69/g;"
+        },
+        {
+          "offset": 1219,
+          "opcode": "return-void"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Raw static instructions, not observed execution or a complete control-flow proof.",
+    "Offsets and branch targets are relative DEX code units, not APK byte offsets.",
+    "Hot patches, remote config, runtime values and resource selection are not resolved."
+  ]
+}

@@ -1,0 +1,70 @@
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
+        at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+        at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+        at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+        at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+        at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+        at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+        at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+     */
+    public final void L(qh6.e eVar, SpannableStringBuilder spannableStringBuilder) {
+        int i100;
+        CommentCommentUser commentCommentUserC;
+        String strD;
+        if (PatchProxy.proxyVoid2Para(eVar, spannableStringBuilder, this, h.class, 388068)) {
+            return;
+        }
+        jx8.d.a("acc_opt", "AsyncSubCommentPresenter.bindContent " + ((Object) spannableStringBuilder));
+        wg3.f fVar = wg3.f.f343557a;
+        if (fVar.J0()) {
+            H().e((HandlePressStateCommentTextView) ((AsyncSubCommentView) getView()).a(mp5.h.f238727o6), eVar.m());
+        }
+        HandlePressStateCommentTextView handlePressStateCommentTextView = (HandlePressStateCommentTextView) ((AsyncSubCommentView) getView()).a(mp5.h.f238727o6);
+        String str = "";
+        SpannableStringBuilder spannableStringBuilder2 = new SpannableStringBuilder("");
+        String strS = eVar.s();
+        CommentCommentInfoTargetComment commentCommentInfoTargetCommentS = eVar.m().S();
+        String strB = commentCommentInfoTargetCommentS != null ? commentCommentInfoTargetCommentS.b() : null;
+        if (strB == null) {
+            strB = "";
+        }
+        if (Intrinsics.areEqual(strS, strB)) {
+            i100 = 0;
+        } else {
+            String string = handlePressStateCommentTextView.getContext().getString(mp5.k.K0);
+            spannableStringBuilder2.append((CharSequence) string);
+            CommentCommentInfoTargetComment commentCommentInfoTargetCommentS2 = eVar.m().S();
+            if (commentCommentInfoTargetCommentS2 != null && (commentCommentUserC = commentCommentInfoTargetCommentS2.c()) != null && (strD = commentCommentUserC.d()) != null) {
+                str = strD;
+            }
+            spannableStringBuilder2.append((CharSequence) str);
+            spannableStringBuilder2.setSpan(new ForegroundColorSpan(p69.f.e(i69.b.A)), string.length(), spannableStringBuilder2.length(), 33);
+            spannableStringBuilder2.append((CharSequence) "：");
+            int length = string.length() + str.length() + 1;
+            spannableStringBuilder2.setSpan(h08.z.y(new c(), "comment_user_click"), string.length(), length, 33);
+            s68.o.q(handlePressStateCommentTextView);
+            i100 = length;
+        }
+        spannableStringBuilder2.append((CharSequence) spannableStringBuilder);
+        SpannableStringBuilder spannableStringBuilderV = fVar.J0() ? g0.f302805a.V(((AsyncSubCommentView) getView()).getContext(), eVar.m(), (40 & 4) != 0 ? false : false, (40 & 8) != 0, (40 & 16) != 0 ? "" : null, (40 & 32) != 0 ? null : null, new e(eVar)) : g0.S(g0.f302805a, ((AsyncSubCommentView) getView()).getContext(), eVar.m(), false, false, 12, null);
+        int i101 = i100;
+        if (new StaticLayout(new SpannableStringBuilder(spannableStringBuilder2).append((CharSequence) spannableStringBuilderV.toString()), handlePressStateCommentTextView.getPaint(), g0(), Layout.Alignment.ALIGN_NORMAL, 1.0f, 0.0f, false).getLineCount() > new StaticLayout(spannableStringBuilder2, handlePressStateCommentTextView.getPaint(), g0(), Layout.Alignment.ALIGN_NORMAL, 1.0f, 0.0f, false).getLineCount()) {
+            spannableStringBuilder2.append((CharSequence) "\n");
+            spannableStringBuilderV = g0.i0(g0.f302805a, spannableStringBuilderV, 0, 2, null);
+        }
+        spannableStringBuilder2.append((CharSequence) spannableStringBuilderV);
+        spannableStringBuilder2.setSpan(new d(), i101, spannableStringBuilder2.length(), 33);
+        ch6.i.a(handlePressStateCommentTextView, new View.OnLongClickListener() { // from class: ch6.g
+            @Override // android.view.View.OnLongClickListener
+            public final boolean onLongClick(View view) {
+                return h.M(view);
+            }
+        });
+        handlePressStateCommentTextView.setMovementMethod(mo5.e.f238332j.a());
+        handlePressStateCommentTextView.setHighlightColor(0);
+        handlePressStateCommentTextView.setText(spannableStringBuilder2);
+        wg3.e.f343554a.a(eVar.m(), spannableStringBuilder2);
+        T(eVar, spannableStringBuilder, spannableStringBuilderV, handlePressStateCommentTextView.getContext());
+    }

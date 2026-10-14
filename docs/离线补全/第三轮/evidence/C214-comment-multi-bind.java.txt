@@ -1,0 +1,68 @@
+    public final void K4(xc3.e eVar, i iVar, Function0<Unit> function0) {
+        r<n> rVarN1;
+        if (PatchProxy.proxyVoid3Para(eVar, iVar, function0, this, CommentMultiPictureItemView.class, 249242)) {
+            return;
+        }
+        this.f87461e = eVar;
+        this.f87462f = iVar;
+        this.f87464h = function0;
+        CommentCommentInfo commentCommentInfoA = eVar.a();
+        x.b("CommentConsumerList", "CommentMultiPictureItemView setData " + commentCommentInfoA.n());
+        S4(commentCommentInfoA, function0);
+        List<CommentPictureInfo> listR = commentCommentInfoA.r();
+        boolean z100 = listR != null && (listR.isEmpty() ^ true);
+        List<CommentPictureInfo> listR2 = z100 ? commentCommentInfoA.r() : commentCommentInfoA.v();
+        int size = listR2 != null ? listR2.size() : 0;
+        getAccessModeAdapter().w(this, getPicList());
+        int i100 = 0;
+        for (Object obj : getPicList()) {
+            int i101 = i100 + 1;
+            if (i100 < 0) {
+                CollectionsKt__CollectionsKt.throwIndexOverflow();
+            }
+            CommentSinglePictureView commentSinglePictureView = (CommentSinglePictureView) obj;
+            CommentPictureInfo commentPictureInfo = listR2 != null ? (CommentPictureInfo) CollectionsKt___CollectionsKt.getOrNull(listR2, i100) : null;
+            if (commentPictureInfo == null || (i100 >= 1 && f0.f343690a.h())) {
+                o.b(commentSinglePictureView);
+            } else {
+                u uVarC = wg3.m.f343720a.c(commentCommentInfoA.o0(), zf4.d.b(commentCommentInfoA).getTypeName());
+                commentPictureInfo.o(new CommentPictureTempInfo(Integer.valueOf(i100), Boolean.valueOf(eVar.g()), size));
+                if (z100) {
+                    commentSinglePictureView.j4(commentPictureInfo, uVarC, f0.f343690a.h() && size > 1);
+                } else {
+                    commentSinglePictureView.h4(commentPictureInfo, uVarC, new rg3.a(eVar), f0.f343690a.h() && size > 1);
+                }
+            }
+            i100 = i101;
+        }
+        if (z100) {
+            x86.i iVar2 = x86.i.f350564a;
+            String strN = commentCommentInfoA.n();
+            if (strN == null) {
+                strN = "";
+            }
+            r<n> rVarJ = iVar2.j(strN);
+            if (rVarJ != null && (rVarN1 = rVarJ.n1(wb9.a.a())) != null) {
+                final uc9.c cVarQ = uc9.c.Q();
+                s68.k.d(be.a.c(this), a0.f392849m0, new c(cVarQ));
+                s68.k.d(rVarN1, new a0() { // from class: id3.j
+                    @Override // zk.a0
+                    public final tb9.g requestScope() {
+                        return CommentMultiPictureItemView.P4(cVarQ);
+                    }
+                }, new d());
+                return;
+            }
+            ArrayList<CommentSinglePictureView> picList = getPicList();
+            ArrayList arrayList = new ArrayList();
+            for (Object obj2 : picList) {
+                if (((CommentSinglePictureView) obj2).getVisibility() == 0) {
+                    arrayList.add(obj2);
+                }
+            }
+            Iterator it9 = arrayList.iterator();
+            while (it9.hasNext()) {
+                ((CommentSinglePictureView) it9.next()).s4(100, false);
+            }
+        }
+    }

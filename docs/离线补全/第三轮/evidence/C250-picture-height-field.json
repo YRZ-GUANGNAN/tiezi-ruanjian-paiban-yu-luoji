@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_4e1785e959c5cd25d910678cba84e1a49222d8a0480c93ce8e52a3e646efeab5",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.entities.CommentPictureInfo",
+    "method_name": "b"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.entities.CommentPictureInfo"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"full_name\":\"com.xingin.entities.CommentPictureInfo\",\"name\":\"CommentPictureInfo\",\"inner_classes\":[\"com.xingin.entities.CommentPictureInfo.a\"],\"inner_class_count\":1,\"method_count\":26,\"methods\":[{\"signature\":\"<clinit>(): void\",\"def_pos\":0,\"name\":\"<clinit>\",\"is_constructor\":false},{\"signature\":\"<init>(java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, com.xingin.entities.CommentMemeInfo, com.xingin.entities.CommentStickerInfo, int, int, java.lang.String, java.lang.String, java.lang.String, com.xingin.entities.BaseMediaBean, ah4.b, com.xingin.entities.CommentPictureTempInfo): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true},{\"signature\":\"<init>(java.lang.String, int, int, java.lang.String, java.lang.String, java.lang.String, com.xingin.entities.CommentMemeInfo, com.xingin.entities.CommentStickerInfo, int, int, java.lang.String, java.lang.String, java.lang.String, com.xingin.entities.BaseMediaBean, ah4.b, com.xingin.entities.CommentPictureTempInfo, int, kotlin.jvm.internal.DefaultConstructorMarker): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true},{\"signature\":\"a(): java.lang.String\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false},{\"signature\":\"b(): int\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false},{\"signature\":\"c(): int\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false},{\"signature\":\"d(): com.xingin.entities.CommentPictureTempInfo\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false},{\"signature\":\"describeContents(): int\",\"def_pos\":0,\"name\":\"describeContents\",\"is_constructor\":false},{\"signature\":\"e(): java.lang.String\",\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false},{\"signature\":\"equals(java.lang.Object): boolean\",\"def_pos\":0,\"name\":\"equals\",\"is_constructor\":false},{\"signature\":\"f(): com.xingin.entities.BaseMediaBean\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false},{\"signature\":\"g(): ah4.b\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false},{\"signature\":\"getHeight(): int\",\"def_pos\":0,\"name\":\"getHeight\",\"is_constructor\":false},{\"signature\":\"getWidth(): int\",\"def_pos\":0,\"name\":\"getWidth\",\"is_constructor\":false},{\"signature\":\"h(): com.xingin.entities.CommentMemeInfo\",\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false},{\"signature\":\"hashCode(): int\",\"def_pos\":0,\"name\":\"hashCode\",\"is_constructor\":false},{\"signature\":\"i(): java.lang.String\",\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false},{\"signature\":\"j(): java.lang.String\",\"def_pos\":0,\"name\":\"j\",\"is_constructor\":false},{\"signature\":\"k(): com.xingin.entities.CommentStickerInfo\",\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false},{\"signature\":\"l(): java.lang.String\",\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false},{\"signature\":\"m(): java.lang.String\",\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false},{\"signature\":\"n(): boolean\",\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false},{\"signature\":\"o(com.xingin.entities.CommentPictureTempInfo): void\",\"def_pos\":0,\"name\":\"o\",\"is_constructor\":false},{\"signature\":\"p(ah4.b): void\",\"def_pos\":0,\"name\":\"p\",\"is_constructor\":false},{\"signature\":\"toString(): java.lang.String\",\"def_pos\":0,\"name\":\"toString\",\"is_constructor\":false},{\"signature\":\"writeToParcel(android.os.Parcel, int): void\",\"def_pos\":0,\"name\":\"writeToParcel\",\"is_constructor\":false}],\"fields\":[{\"def_pos\":0,\"type\":\"android.os.Parcelable$Creator<com.xingin.entities.CommentPictureInfo>\",\"name\":\"CREATOR\"},{\"def_pos\":0,\"type\":\"java.lang.String\",\"name\":\"animatedUrl\"},{\"def_pos\":0,\"type\":\"int\",\"name\":\"boxHeight\"},{\"def_pos\":0,\"type\":\"int\",\"name\":\"boxWidth\"},{\"def_pos\":0,\"type\":\"com.xingin.entities.CommentPictureTempInfo\",\"name\":\"cmtTempInfo\"},{\"def_pos\":0,\"type\":\"java.lang.String\",\"name\":\"fileId\"},{\"def_pos\":0,\"type\":\"int\",\"name\":\"height\"},{\"def_pos\":0,\"type\":\"com.xingin.entities.BaseMediaBean\",\"name\":\"localBaseMediaBean\"},{\"def_pos\":0,\"type\":\"ah4.b\",\"name\":\"localMediaTypePart2\"},{\"def_pos\":0,\"type\":\"com.xingin.entities.CommentMemeInfo\",\"name\":\"memeInfo\"},{\"def_pos\":0,\"type\":\"java.lang.String\",\"name\":\"originalPicUrl\"},{\"def_pos\":0,\"type\":\"java.lang.String\",\"name\":\"picUrl\"},{\"def_pos\":0,\"type\":\"com.xingin.entities.CommentStickerInfo\",\"name\":\"stickerInfo\"},{\"def_pos\":0,\"type\":\"java.lang.String\",\"name\":\"videoFileId\"},{\"def_pos\":0,\"type\":\"java.lang.String\",\"name\":\"videoId\"},{\"def_pos\":0,\"type\":\"java.lang.String\",\"name\":\"videoInfo\"},{\"def_pos\":0,\"type\":\"int\",\"name\":\"width\"}],\"field_count\":17}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.entities.CommentPictureInfo",
+          "method_name": "b",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.entities.CommentPictureInfo\",\"full_name\":\"com.xingin.entities.CommentPictureInfo.b\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"b\",\"overload_count\":1,\"body\":\"    public final int b() {\\r\\n        return this.boxHeight;\\r\\n    }\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.entities.CommentPictureInfo",
+    "method": {
+      "name": "b",
+      "reported_signature": "b(): int",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final int b() {\r\n        return this.boxHeight;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "8c3e58d78ffa6aab9659ef13140debb90c12ee9462547af562bfdf94c44ae2db",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

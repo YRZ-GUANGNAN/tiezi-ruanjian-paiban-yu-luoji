@@ -1,0 +1,167 @@
+{
+  "evidence_id": "ev_3ad2b9bd2d2609579b99210c6cf86414ddae330c87056aa7f8f758678d31b1d2",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "s69.e"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "s69.e"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"name\":\"e\",\"full_name\":\"s69.e\",\"field_count\":5,\"fields\":[{\"name\":\"f296523a\",\"type\":\"int[]\",\"def_pos\":0},{\"name\":\"f296524b\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"f296525c\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"f296526d\",\"type\":\"s69.c\",\"def_pos\":0},{\"name\":\"f296527e\",\"type\":\"int\",\"def_pos\":0}],\"methods\":[{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(int[], int, int, s69.c, int): void\"},{\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(): s69.c\"},{\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(): int\"},{\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(): int\"},{\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(): int[]\"},{\"is_constructor\":false,\"name\":\"e\",\"def_pos\":0,\"signature\":\"e(): int\"}],\"method_count\":6,\"inner_class_count\":0,\"inner_classes\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "s69.e",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(int[], int, int, s69.c, int): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): s69.c",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(): int[]",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "f296523a",
+        "reported_type": "int[]"
+      },
+      {
+        "name": "f296524b",
+        "reported_type": "int"
+      },
+      {
+        "name": "f296525c",
+        "reported_type": "int"
+      },
+      {
+        "name": "f296526d",
+        "reported_type": "s69.c"
+      },
+      {
+        "name": "f296527e",
+        "reported_type": "int"
+      }
+    ],
+    "inner_classes": []
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "8a20a5df0fdbece669baa4863b26bb525d6ad1b435036aa4dce6ad255183deb1",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

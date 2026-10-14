@@ -1,0 +1,9 @@
+    public static /* synthetic */ Pair b(v vVar, CommentPictureInfo commentPictureInfo, int i100, int i101, int i102, Object obj) {
+        if ((i102 & 2) != 0) {
+            i100 = 120;
+        }
+        if ((i102 & 4) != 0) {
+            i101 = 160;
+        }
+        return vVar.a(commentPictureInfo, i100, i101);
+    }

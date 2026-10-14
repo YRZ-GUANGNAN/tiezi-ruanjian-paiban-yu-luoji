@@ -1,0 +1,66 @@
+{
+  "runtimeObserved": false,
+  "provider": "jadx-resource-table-parser-not-REA-Evidence",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "limitations": [
+    "All matching packaged configurations retained; runtime selection not observed.",
+    "Resource names are obfuscated and do not carry reliable semantic names."
+  ],
+  "matches": [
+    {
+      "id": "0x7f0c0e8b",
+      "type": "layout",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataHex": "0x0000270f",
+        "type": 3,
+        "decoded": "res/sDl.xml"
+      }
+    },
+    {
+      "id": "0x7f0c0e8c",
+      "type": "layout",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataHex": "0x00001d23",
+        "type": 3,
+        "decoded": "res/eAH.xml"
+      }
+    },
+    {
+      "id": "0x7f0c0e90",
+      "type": "layout",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataHex": "0x00002b3c",
+        "type": 3,
+        "decoded": "res/yIq.xml"
+      }
+    },
+    {
+      "id": "0x7f0c14dd",
+      "type": "layout",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataHex": "0x00002bc2",
+        "type": 3,
+        "decoded": "res/z4X.xml"
+      }
+    }
+  ],
+  "requested": [
+    "res/eAH.xml",
+    "res/yIq.xml",
+    "res/z4X.xml",
+    "res/sDl.xml"
+  ],
+  "arscSha256": "5c9fce688019e4263deafff2da8dbf1da34da33885f9a29e199d994e2a704ba2"
+}

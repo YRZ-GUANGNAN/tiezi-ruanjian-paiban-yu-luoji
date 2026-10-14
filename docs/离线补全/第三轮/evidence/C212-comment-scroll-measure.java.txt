@@ -1,0 +1,12 @@
+    @Override // android.widget.ScrollView, android.widget.FrameLayout, android.view.View
+    public void onMeasure(int i100, int i101) {
+        if (PatchProxy.proxyVoid2Para(new Integer(i100), new Integer(i101), this, CommentContentScrollView.class, 329518)) {
+            return;
+        }
+        int size = View.MeasureSpec.getSize(i101);
+        int i102 = this.f88124d;
+        if (size > i102) {
+            i101 = View.MeasureSpec.makeMeasureSpec(i102, Integer.MIN_VALUE);
+        }
+        super.onMeasure(i100, i101);
+    }

@@ -1,0 +1,690 @@
+{
+  "provider": "dexlib2-bundled-with-jadx-auxiliary-not-REA-Evidence",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "selectors": [
+    "Ls69/b;::b",
+    "Ls69/b;::c",
+    "Ls69/b;::d",
+    "Ls69/b;::e",
+    "Ls69/b;::f"
+  ],
+  "matches": [
+    {
+      "selector": "Ls69/b;::b",
+      "dexEntry": "classes14.dex",
+      "method": "Ls69/b;->b()Z",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 3,
+      "codeUnits": 29,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "const-class",
+          "a": 0,
+          "reference": "Ls69/b;"
+        },
+        {
+          "offset": 2,
+          "opcode": "const",
+          "a": 1,
+          "literal": "93368",
+          "literalHex": "0x16cb8"
+        },
+        {
+          "offset": 5,
+          "opcode": "invoke-static",
+          "registers": [
+            2,
+            0,
+            1
+          ],
+          "reference": "Lcom/xingin/robust/PatchProxy;->proxy0Para(Ljava/lang/Object;Ljava/lang/Class;I)Lcom/xingin/robust/PatchProxyResult;"
+        },
+        {
+          "offset": 8,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 9,
+          "opcode": "iget-boolean",
+          "a": 1,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->isSupported:Z"
+        },
+        {
+          "offset": 11,
+          "opcode": "if-eqz",
+          "a": 1,
+          "target": 22
+        },
+        {
+          "offset": 13,
+          "opcode": "iget-object",
+          "a": 0,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->result:Ljava/lang/Object;"
+        },
+        {
+          "offset": 15,
+          "opcode": "check-cast",
+          "a": 0,
+          "reference": "Ljava/lang/Boolean;"
+        },
+        {
+          "offset": 17,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Ljava/lang/Boolean;->booleanValue()Z"
+        },
+        {
+          "offset": 20,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 21,
+          "opcode": "return",
+          "a": 0
+        },
+        {
+          "offset": 22,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Lp69/l;->a:Lp69/l;"
+        },
+        {
+          "offset": 24,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Lp69/l;->b()Z"
+        },
+        {
+          "offset": 27,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 28,
+          "opcode": "return",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Ls69/b;::c",
+      "dexEntry": "classes14.dex",
+      "method": "Ls69/b;->c()Z",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 3,
+      "codeUnits": 29,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "const-class",
+          "a": 0,
+          "reference": "Ls69/b;"
+        },
+        {
+          "offset": 2,
+          "opcode": "const",
+          "a": 1,
+          "literal": "93367",
+          "literalHex": "0x16cb7"
+        },
+        {
+          "offset": 5,
+          "opcode": "invoke-static",
+          "registers": [
+            2,
+            0,
+            1
+          ],
+          "reference": "Lcom/xingin/robust/PatchProxy;->proxy0Para(Ljava/lang/Object;Ljava/lang/Class;I)Lcom/xingin/robust/PatchProxyResult;"
+        },
+        {
+          "offset": 8,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 9,
+          "opcode": "iget-boolean",
+          "a": 1,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->isSupported:Z"
+        },
+        {
+          "offset": 11,
+          "opcode": "if-eqz",
+          "a": 1,
+          "target": 22
+        },
+        {
+          "offset": 13,
+          "opcode": "iget-object",
+          "a": 0,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->result:Ljava/lang/Object;"
+        },
+        {
+          "offset": 15,
+          "opcode": "check-cast",
+          "a": 0,
+          "reference": "Ljava/lang/Boolean;"
+        },
+        {
+          "offset": 17,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Ljava/lang/Boolean;->booleanValue()Z"
+        },
+        {
+          "offset": 20,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 21,
+          "opcode": "return",
+          "a": 0
+        },
+        {
+          "offset": 22,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Lp69/l;->a:Lp69/l;"
+        },
+        {
+          "offset": 24,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Lp69/l;->c()Z"
+        },
+        {
+          "offset": 27,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 28,
+          "opcode": "return",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Ls69/b;::d",
+      "dexEntry": "classes14.dex",
+      "method": "Ls69/b;->d()Z",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 3,
+      "codeUnits": 47,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "const-class",
+          "a": 0,
+          "reference": "Ls69/b;"
+        },
+        {
+          "offset": 2,
+          "opcode": "const",
+          "a": 1,
+          "literal": "93370",
+          "literalHex": "0x16cba"
+        },
+        {
+          "offset": 5,
+          "opcode": "invoke-static",
+          "registers": [
+            2,
+            0,
+            1
+          ],
+          "reference": "Lcom/xingin/robust/PatchProxy;->proxy0Para(Ljava/lang/Object;Ljava/lang/Class;I)Lcom/xingin/robust/PatchProxyResult;"
+        },
+        {
+          "offset": 8,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 9,
+          "opcode": "iget-boolean",
+          "a": 1,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->isSupported:Z"
+        },
+        {
+          "offset": 11,
+          "opcode": "if-eqz",
+          "a": 1,
+          "target": 22
+        },
+        {
+          "offset": 13,
+          "opcode": "iget-object",
+          "a": 0,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->result:Ljava/lang/Object;"
+        },
+        {
+          "offset": 15,
+          "opcode": "check-cast",
+          "a": 0,
+          "reference": "Ljava/lang/Boolean;"
+        },
+        {
+          "offset": 17,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Ljava/lang/Boolean;->booleanValue()Z"
+        },
+        {
+          "offset": 20,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 21,
+          "opcode": "return",
+          "a": 0
+        },
+        {
+          "offset": 22,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Lp69/l;->a:Lp69/l;"
+        },
+        {
+          "offset": 24,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Lp69/l;->f()Z"
+        },
+        {
+          "offset": 27,
+          "opcode": "move-result",
+          "a": 1
+        },
+        {
+          "offset": 28,
+          "opcode": "if-nez",
+          "a": 1,
+          "target": 45
+        },
+        {
+          "offset": 30,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Lp69/l;->g()Z"
+        },
+        {
+          "offset": 33,
+          "opcode": "move-result",
+          "a": 1
+        },
+        {
+          "offset": 34,
+          "opcode": "if-nez",
+          "a": 1,
+          "target": 45
+        },
+        {
+          "offset": 36,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Lp69/l;->e()Z"
+        },
+        {
+          "offset": 39,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 40,
+          "opcode": "if-eqz",
+          "a": 0,
+          "target": 43
+        },
+        {
+          "offset": 42,
+          "opcode": "goto",
+          "target": 45
+        },
+        {
+          "offset": 43,
+          "opcode": "const/4",
+          "a": 0,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 44,
+          "opcode": "goto",
+          "target": 46
+        },
+        {
+          "offset": 45,
+          "opcode": "const/4",
+          "a": 0,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 46,
+          "opcode": "return",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Ls69/b;::e",
+      "dexEntry": "classes14.dex",
+      "method": "Ls69/b;->e()Z",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 3,
+      "codeUnits": 29,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "const-class",
+          "a": 0,
+          "reference": "Ls69/b;"
+        },
+        {
+          "offset": 2,
+          "opcode": "const",
+          "a": 1,
+          "literal": "93371",
+          "literalHex": "0x16cbb"
+        },
+        {
+          "offset": 5,
+          "opcode": "invoke-static",
+          "registers": [
+            2,
+            0,
+            1
+          ],
+          "reference": "Lcom/xingin/robust/PatchProxy;->proxy0Para(Ljava/lang/Object;Ljava/lang/Class;I)Lcom/xingin/robust/PatchProxyResult;"
+        },
+        {
+          "offset": 8,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 9,
+          "opcode": "iget-boolean",
+          "a": 1,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->isSupported:Z"
+        },
+        {
+          "offset": 11,
+          "opcode": "if-eqz",
+          "a": 1,
+          "target": 22
+        },
+        {
+          "offset": 13,
+          "opcode": "iget-object",
+          "a": 0,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->result:Ljava/lang/Object;"
+        },
+        {
+          "offset": 15,
+          "opcode": "check-cast",
+          "a": 0,
+          "reference": "Ljava/lang/Boolean;"
+        },
+        {
+          "offset": 17,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Ljava/lang/Boolean;->booleanValue()Z"
+        },
+        {
+          "offset": 20,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 21,
+          "opcode": "return",
+          "a": 0
+        },
+        {
+          "offset": 22,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Lp69/l;->a:Lp69/l;"
+        },
+        {
+          "offset": 24,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Lp69/l;->i()Z"
+        },
+        {
+          "offset": 27,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 28,
+          "opcode": "return",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Ls69/b;::f",
+      "dexEntry": "classes14.dex",
+      "method": "Ls69/b;->f()Z",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 3,
+      "codeUnits": 47,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "const-class",
+          "a": 0,
+          "reference": "Ls69/b;"
+        },
+        {
+          "offset": 2,
+          "opcode": "const",
+          "a": 1,
+          "literal": "93369",
+          "literalHex": "0x16cb9"
+        },
+        {
+          "offset": 5,
+          "opcode": "invoke-static",
+          "registers": [
+            2,
+            0,
+            1
+          ],
+          "reference": "Lcom/xingin/robust/PatchProxy;->proxy0Para(Ljava/lang/Object;Ljava/lang/Class;I)Lcom/xingin/robust/PatchProxyResult;"
+        },
+        {
+          "offset": 8,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 9,
+          "opcode": "iget-boolean",
+          "a": 1,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->isSupported:Z"
+        },
+        {
+          "offset": 11,
+          "opcode": "if-eqz",
+          "a": 1,
+          "target": 22
+        },
+        {
+          "offset": 13,
+          "opcode": "iget-object",
+          "a": 0,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->result:Ljava/lang/Object;"
+        },
+        {
+          "offset": 15,
+          "opcode": "check-cast",
+          "a": 0,
+          "reference": "Ljava/lang/Boolean;"
+        },
+        {
+          "offset": 17,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Ljava/lang/Boolean;->booleanValue()Z"
+        },
+        {
+          "offset": 20,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 21,
+          "opcode": "return",
+          "a": 0
+        },
+        {
+          "offset": 22,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Lp69/l;->a:Lp69/l;"
+        },
+        {
+          "offset": 24,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Lp69/l;->j()Z"
+        },
+        {
+          "offset": 27,
+          "opcode": "move-result",
+          "a": 1
+        },
+        {
+          "offset": 28,
+          "opcode": "if-nez",
+          "a": 1,
+          "target": 45
+        },
+        {
+          "offset": 30,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Lp69/l;->d()Z"
+        },
+        {
+          "offset": 33,
+          "opcode": "move-result",
+          "a": 1
+        },
+        {
+          "offset": 34,
+          "opcode": "if-nez",
+          "a": 1,
+          "target": 45
+        },
+        {
+          "offset": 36,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Lp69/l;->h()Z"
+        },
+        {
+          "offset": 39,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 40,
+          "opcode": "if-eqz",
+          "a": 0,
+          "target": 43
+        },
+        {
+          "offset": 42,
+          "opcode": "goto",
+          "target": 45
+        },
+        {
+          "offset": 43,
+          "opcode": "const/4",
+          "a": 0,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 44,
+          "opcode": "goto",
+          "target": 46
+        },
+        {
+          "offset": 45,
+          "opcode": "const/4",
+          "a": 0,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 46,
+          "opcode": "return",
+          "a": 0
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Raw static instructions, not observed execution or a complete control-flow proof.",
+    "Offsets and branch targets are relative DEX code units, not APK byte offsets.",
+    "Hot patches, remote config, runtime values and resource selection are not resolved."
+  ]
+}

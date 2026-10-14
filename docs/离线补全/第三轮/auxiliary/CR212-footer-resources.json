@@ -1,0 +1,68 @@
+{
+  "runtimeObserved": false,
+  "provider": "jadx-resource-table-parser-not-REA-Evidence",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "limitations": [
+    "All matching packaged configurations retained; runtime selection not observed.",
+    "Resource names are obfuscated and do not carry reliable semantic names."
+  ],
+  "matches": [
+    {
+      "id": "0x7f111ccf",
+      "type": "string",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "type": 3,
+        "decoded": "回复",
+        "dataHex": "0x0000512b"
+      }
+    },
+    {
+      "id": "0x7f111ccf",
+      "type": "string",
+      "name": "-",
+      "configuration": "-en",
+      "parent": "0x00000000",
+      "value": {
+        "type": 3,
+        "decoded": "Reply",
+        "dataHex": "0x000072ee"
+      }
+    },
+    {
+      "id": "0x7f111ccf",
+      "type": "string",
+      "name": "-",
+      "configuration": "-zh-rTW",
+      "parent": "0x00000000",
+      "value": {
+        "type": 3,
+        "decoded": "回覆",
+        "dataHex": "0x00007cd8"
+      }
+    },
+    {
+      "id": "0x7f120501",
+      "type": "style",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "items": [
+        {
+          "type": 5,
+          "decoded": "12sp",
+          "dataHex": "0x00000c02",
+          "nameRef": "0x01010095",
+          "name": "android:attr.textSize"
+        }
+      ]
+    }
+  ],
+  "requested": [
+    "0x7f111ccf",
+    "0x7f120501"
+  ],
+  "arscSha256": "5c9fce688019e4263deafff2da8dbf1da34da33885f9a29e199d994e2a704ba2"
+}

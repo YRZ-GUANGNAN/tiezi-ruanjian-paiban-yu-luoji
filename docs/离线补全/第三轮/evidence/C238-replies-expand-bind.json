@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_5918b16450bbae32ad0b574269777f10a06eea09b13ccbbf9811d7bd8a09f750",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "eh6.f",
+    "method_name": "G"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "eh6.f"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"def_pos\":0,\"signature\":\"<init>(): void\",\"is_constructor\":true,\"name\":\"<init>\"},{\"def_pos\":0,\"signature\":\"F(kotlin.jvm.functions.Function1<java.lang.Object, w08.r>): void\",\"is_constructor\":false,\"name\":\"F\"},{\"def_pos\":0,\"signature\":\"G(z86.c, java.lang.Integer): void\",\"is_constructor\":false,\"name\":\"G\"},{\"def_pos\":0,\"signature\":\"H(): xc3.d\",\"is_constructor\":false,\"name\":\"H\"},{\"def_pos\":0,\"signature\":\"I(): void\",\"is_constructor\":false,\"name\":\"I\"},{\"def_pos\":0,\"signature\":\"J(): tb9.r<kotlin.Unit>\",\"is_constructor\":false,\"name\":\"J\"},{\"def_pos\":0,\"signature\":\"K(): void\",\"is_constructor\":false,\"name\":\"K\"},{\"def_pos\":0,\"signature\":\"didLoad(): void\",\"is_constructor\":false,\"name\":\"didLoad\"}],\"method_count\":8,\"inner_class_count\":1,\"inner_classes\":[\"eh6.f.a\"],\"name\":\"f\",\"full_name\":\"eh6.f\",\"field_count\":1,\"fields\":[{\"type\":\"xc3.d\",\"def_pos\":0,\"name\":\"f146963e\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "eh6.f",
+          "method_name": "G",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"mode\":\"java\",\"full_name\":\"eh6.f.G\",\"class_name\":\"eh6.f\",\"overload_index\":0,\"fell_back\":false,\"body\":\"    public final void G(z86.c cVar, Integer num) {\\r\\n        String string;\\r\\n        if (PatchProxy.proxyVoid2Para(cVar, num, this, f.class, 389073)) {\\r\\n            return;\\r\\n        }\\r\\n        AsyncSubCommentLoadMoreView view = getView();\\r\\n        int i100 = mp5.h.f238708m3;\\r\\n        ((TextView) view.a(i100)).setTextColor(p69.f.e(mp5.e.A0));\\r\\n        TextView textView = (TextView) getView().a(i100);\\r\\n        if (!cVar.d() || cVar.b() <= 0) {\\r\\n            string = cVar.b() > 0 ? getView().getContext().getResources().getString(k.B0, Integer.valueOf(cVar.b())) : getView().getContext().getResources().getString(k.A0);\\r\\n        } else {\\r\\n            string = getView().getContext().getResources().getString(k.C0, Integer.valueOf(cVar.b()));\\r\\n        }\\r\\n        textView.setText(string);\\r\\n        o.q((TextView) getView().a(i100));\\r\\n        o.q((LinearLayout) getView().a(mp5.h.f238724o3));\\r\\n        o.b((LinearLayout) getView().a(mp5.h.f238756s3));\\r\\n        ((LottieAnimationView) getView().a(mp5.h.f238748r3)).l();\\r\\n        if (wg3.f.f343557a.h()) {\\r\\n            return;\\r\\n        }\\r\\n        ej1.b bVar = ej1.b.f147742a;\\r\\n        ej1.b.l(bVar, getView(), true, false, 4, null);\\r\\n        bVar.h(getView(), ((TextView) getView().a(i100)).getText().toString());\\r\\n        bVar.g(getView());\\r\\n        ej1.b.l(bVar, (TextView) getView().a(i100), false, false, 4, null);\\r\\n        bVar.m(getView(), new a());\\r\\n    }\",\"overload_count\":1,\"method_name\":\"G\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "eh6.f",
+    "method": {
+      "name": "G",
+      "reported_signature": "G(z86.c, java.lang.Integer): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void G(z86.c cVar, Integer num) {\r\n        String string;\r\n        if (PatchProxy.proxyVoid2Para(cVar, num, this, f.class, 389073)) {\r\n            return;\r\n        }\r\n        AsyncSubCommentLoadMoreView view = getView();\r\n        int i100 = mp5.h.f238708m3;\r\n        ((TextView) view.a(i100)).setTextColor(p69.f.e(mp5.e.A0));\r\n        TextView textView = (TextView) getView().a(i100);\r\n        if (!cVar.d() || cVar.b() <= 0) {\r\n            string = cVar.b() > 0 ? getView().getContext().getResources().getString(k.B0, Integer.valueOf(cVar.b())) : getView().getContext().getResources().getString(k.A0);\r\n        } else {\r\n            string = getView().getContext().getResources().getString(k.C0, Integer.valueOf(cVar.b()));\r\n        }\r\n        textView.setText(string);\r\n        o.q((TextView) getView().a(i100));\r\n        o.q((LinearLayout) getView().a(mp5.h.f238724o3));\r\n        o.b((LinearLayout) getView().a(mp5.h.f238756s3));\r\n        ((LottieAnimationView) getView().a(mp5.h.f238748r3)).l();\r\n        if (wg3.f.f343557a.h()) {\r\n            return;\r\n        }\r\n        ej1.b bVar = ej1.b.f147742a;\r\n        ej1.b.l(bVar, getView(), true, false, 4, null);\r\n        bVar.h(getView(), ((TextView) getView().a(i100)).getText().toString());\r\n        bVar.g(getView());\r\n        ej1.b.l(bVar, (TextView) getView().a(i100), false, false, 4, null);\r\n        bVar.m(getView(), new a());\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "a7b42edefb804adde445053147e3ce32f163bf7a88464f406531dc0139d33c73",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

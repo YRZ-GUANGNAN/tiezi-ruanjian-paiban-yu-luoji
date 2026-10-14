@@ -1,0 +1,3 @@
+    public CommentListAdapter(int i100) {
+        super(null, i100, null, 5, null);
+    }

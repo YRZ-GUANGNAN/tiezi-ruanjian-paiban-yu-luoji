@@ -1,0 +1,7 @@
+    @JvmOverloads
+    public CommentSinglePictureView(Context context, AttributeSet attributeSet) {
+        super(context, attributeSet);
+        this.f87488d = b.INIT;
+        LayoutInflater.from(context).inflate(mp5.i.f238861z, (ViewGroup) this, true);
+        e4((RoundProgressView) _$_findCachedViewById(mp5.h.B4));
+    }

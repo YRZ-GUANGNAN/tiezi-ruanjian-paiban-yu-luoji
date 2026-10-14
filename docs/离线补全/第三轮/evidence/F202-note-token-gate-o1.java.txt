@@ -1,0 +1,10 @@
+    public final boolean o1() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, i.class, 46369);
+        if (patchProxyResultProxy0Para.isSupported) {
+            return ((Boolean) patchProxyResultProxy0Para.result).booleanValue();
+        }
+        if (or1.b.f259033a.d()) {
+            return false;
+        }
+        return ((Boolean) ln.g.c().g("android_text_token_optimization_exp", new d3().getType(), Boolean.FALSE)).booleanValue();
+    }

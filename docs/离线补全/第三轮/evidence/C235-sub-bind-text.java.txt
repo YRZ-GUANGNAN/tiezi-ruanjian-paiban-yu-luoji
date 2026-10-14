@@ -1,0 +1,50 @@
+    /* JADX WARN: Multi-variable type inference failed */
+    public final void T(qh6.e eVar, SpannableStringBuilder spannableStringBuilder, SpannableStringBuilder spannableStringBuilder2, Context context) {
+        CommentCommentUser commentCommentUserC;
+        if (PatchProxy.proxyVoid4Para(eVar, spannableStringBuilder, spannableStringBuilder2, context, this, h.class, 388070)) {
+            return;
+        }
+        ej1.b bVar = ej1.b.f147742a;
+        if (bVar.f(bm1.c.a())) {
+            jx8.d.a("acc_opt", "bindContent access " + getView());
+            AsyncSubCommentView asyncSubCommentView = (AsyncSubCommentView) getView();
+            int i100 = mp5.h.O2;
+            ej1.b.l(bVar, (XYAvatarView) asyncSubCommentView.a(i100), true, false, 4, null);
+            bVar.g((XYAvatarView) ((AsyncSubCommentView) getView()).a(i100));
+            XYAvatarView xYAvatarView = (XYAvatarView) ((AsyncSubCommentView) getView()).a(i100);
+            AsyncSubCommentView asyncSubCommentView2 = (AsyncSubCommentView) getView();
+            int i101 = mp5.h.f238743q6;
+            bVar.h(xYAvatarView, ((TextView) asyncSubCommentView2.a(i101)).getText().toString());
+            ej1.b.l(bVar, (TextView) ((AsyncSubCommentView) getView()).a(i101), false, false, 4, null);
+            ej1.b.l(bVar, (TextView) ((AsyncSubCommentView) getView()).a(mp5.h.f238711m6), false, false, 4, null);
+            ej1.b.l(bVar, (HandlePressStateCommentTextView) ((AsyncSubCommentView) getView()).a(mp5.h.f238727o6), false, false, 4, null);
+            ej1.b.l(bVar, (TextView) ((AsyncSubCommentView) getView()).a(mp5.h.f238719n6), false, false, 4, null);
+            ej1.b.l(bVar, (LinearLayout) ((AsyncSubCommentView) getView()).a(mp5.h.f238766t5), false, false, 4, null);
+            AsyncSubCommentView asyncSubCommentView3 = (AsyncSubCommentView) getView();
+            int i102 = mp5.h.K5;
+            bVar.g((AsyncSubCommentView) asyncSubCommentView3.a(i102));
+            jx8.d.a("acc_opt", "AsyncSubCommentPresenter set pic");
+            AsyncSubCommentView asyncSubCommentView4 = (AsyncSubCommentView) getView();
+            int i103 = mp5.h.f238623b5;
+            ej1.b.l(bVar, (SimpleDraweeView) asyncSubCommentView4.a(i103), true, false, 4, null);
+            AsyncSubCommentView asyncSubCommentView5 = (AsyncSubCommentView) getView();
+            int i104 = mp5.h.f238631c5;
+            ej1.b.l(bVar, (CommentPictureItemView) asyncSubCommentView5.a(i104), false, false, 4, null);
+            bVar.j((SimpleDraweeView) ((AsyncSubCommentView) getView()).a(i103));
+            bVar.h((SimpleDraweeView) ((AsyncSubCommentView) getView()).a(i103), "图片");
+            bVar.g((HandlePressStateCommentLinearLayout) ((AsyncSubCommentView) getView()).a(mp5.h.f238627c1));
+            String strReplace$default = StringsKt__StringsJVMKt.replace$default(StringsKt__StringsJVMKt.replace$default(spannableStringBuilder2.toString(), "-", "", false, 4, (Object) null), "回复", "", false, 4, (Object) null);
+            ej1.b.l(bVar, (AsyncSubCommentView) ((AsyncSubCommentView) getView()).a(i102), true, false, 4, null);
+            AsyncSubCommentView asyncSubCommentView6 = (AsyncSubCommentView) ((AsyncSubCommentView) getView()).a(i102);
+            CommentCommentUser commentCommentUserA0 = eVar.m().a0();
+            String strD = null;
+            String strD2 = commentCommentUserA0 != null ? commentCommentUserA0.d() : null;
+            String strW = W(eVar, context);
+            CommentCommentInfoTargetComment commentCommentInfoTargetCommentS = eVar.m().S();
+            if (commentCommentInfoTargetCommentS != null && (commentCommentUserC = commentCommentInfoTargetCommentS.c()) != null) {
+                strD = commentCommentUserC.d();
+            }
+            String str = (((CommentPictureItemView) ((AsyncSubCommentView) getView()).a(i104)) == null || ((CommentPictureItemView) ((AsyncSubCommentView) getView()).a(i104)).getVisibility() != 0) ? "" : "图片";
+            bVar.h(asyncSubCommentView6, strD2 + "，" + strW + "，回复 " + strD + "，" + ((Object) spannableStringBuilder) + "，" + str + "发布于" + strReplace$default + "，点赞" + eVar.m().p() + ", " + U(eVar, context));
+        }
+    }

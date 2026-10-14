@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_17917fce5bf1182ffee32c50b6ba9d1753df493a38b99685bf6ba7ec153f228f",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "wg3.v",
+    "method_name": "a"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "wg3.v"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"def_pos\":0,\"signature\":\"<clinit>(): void\",\"is_constructor\":false,\"name\":\"<clinit>\"},{\"def_pos\":0,\"signature\":\"<init>(): void\",\"is_constructor\":true,\"name\":\"<init>\"},{\"def_pos\":0,\"signature\":\"a(com.xingin.entities.CommentPictureInfo, int, int): kotlin.Pair<java.lang.Integer, java.lang.Integer>\",\"is_constructor\":false,\"name\":\"a\"},{\"def_pos\":0,\"signature\":\"b(wg3.v, com.xingin.entities.CommentPictureInfo, int, int, int, java.lang.Object): kotlin.Pair\",\"is_constructor\":false,\"name\":\"b\"},{\"def_pos\":0,\"signature\":\"c(com.xingin.entities.CommentPictureInfo, int, int): kotlin.Pair<java.lang.Integer, java.lang.Integer>\",\"is_constructor\":false,\"name\":\"c\"},{\"def_pos\":0,\"signature\":\"d(com.facebook.drawee.view.SimpleDraweeView, kotlin.Pair<java.lang.Integer, java.lang.Integer>): void\",\"is_constructor\":false,\"name\":\"d\"},{\"def_pos\":0,\"signature\":\"e(com.facebook.drawee.view.SimpleDraweeView, com.xingin.entities.CommentPictureInfo, int): void\",\"is_constructor\":false,\"name\":\"e\"},{\"def_pos\":0,\"signature\":\"f(wg3.v, com.facebook.drawee.view.SimpleDraweeView, com.xingin.entities.CommentPictureInfo, int, int, java.lang.Object): void\",\"is_constructor\":false,\"name\":\"f\"},{\"def_pos\":0,\"signature\":\"g(com.facebook.drawee.view.SimpleDraweeView, com.xingin.entities.CommentPictureInfo, int): void\",\"is_constructor\":false,\"name\":\"g\"},{\"def_pos\":0,\"signature\":\"h(wg3.v, com.facebook.drawee.view.SimpleDraweeView, com.xingin.entities.CommentPictureInfo, int, int, java.lang.Object): void\",\"is_constructor\":false,\"name\":\"h\"}],\"method_count\":10,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"v\",\"full_name\":\"wg3.v\",\"field_count\":1,\"fields\":[{\"type\":\"wg3.v\",\"def_pos\":0,\"name\":\"f343751a\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "wg3.v",
+          "method_name": "a",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"mode\":\"java\",\"full_name\":\"wg3.v.a\",\"class_name\":\"wg3.v\",\"overload_index\":0,\"fell_back\":false,\"body\":\"    public final Pair<Integer, Integer> a(CommentPictureInfo commentPictureInfo, int i100, int i101) {\\r\\n        PatchProxyResult patchProxyResultProxy3Para = PatchProxy.proxy3Para(commentPictureInfo, new Integer(i100), new Integer(i101), this, v.class, 326809);\\r\\n        if (patchProxyResultProxy3Para.isSupported) {\\r\\n            return (Pair) patchProxyResultProxy3Para.result;\\r\\n        }\\r\\n        int width = commentPictureInfo != null ? commentPictureInfo.getWidth() : -1;\\r\\n        int height = commentPictureInfo != null ? commentPictureInfo.getHeight() : -1;\\r\\n        if (width < 0 && height < 0) {\\r\\n            return new Pair<>(-1, -1);\\r\\n        }\\r\\n        float f100 = width / height;\\r\\n        boolean z100 = false;\\r\\n        if (0.9f <= f100 && f100 <= 1.1f) {\\r\\n            z100 = true;\\r\\n        }\\r\\n        if (z100) {\\r\\n            return new Pair<>(Integer.valueOf(i100), Integer.valueOf(i100));\\r\\n        }\\r\\n        return f100 < 0.9f ? new Pair<>(Integer.valueOf(i100), Integer.valueOf(i101)) : new Pair<>(Integer.valueOf(i101), Integer.valueOf(i100));\\r\\n    }\",\"overload_count\":1,\"method_name\":\"a\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "wg3.v",
+    "method": {
+      "name": "a",
+      "reported_signature": "a(com.xingin.entities.CommentPictureInfo, int, int): kotlin.Pair<java.lang.Integer, java.lang.Integer>",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final Pair<Integer, Integer> a(CommentPictureInfo commentPictureInfo, int i100, int i101) {\r\n        PatchProxyResult patchProxyResultProxy3Para = PatchProxy.proxy3Para(commentPictureInfo, new Integer(i100), new Integer(i101), this, v.class, 326809);\r\n        if (patchProxyResultProxy3Para.isSupported) {\r\n            return (Pair) patchProxyResultProxy3Para.result;\r\n        }\r\n        int width = commentPictureInfo != null ? commentPictureInfo.getWidth() : -1;\r\n        int height = commentPictureInfo != null ? commentPictureInfo.getHeight() : -1;\r\n        if (width < 0 && height < 0) {\r\n            return new Pair<>(-1, -1);\r\n        }\r\n        float f100 = width / height;\r\n        boolean z100 = false;\r\n        if (0.9f <= f100 && f100 <= 1.1f) {\r\n            z100 = true;\r\n        }\r\n        if (z100) {\r\n            return new Pair<>(Integer.valueOf(i100), Integer.valueOf(i100));\r\n        }\r\n        return f100 < 0.9f ? new Pair<>(Integer.valueOf(i100), Integer.valueOf(i101)) : new Pair<>(Integer.valueOf(i101), Integer.valueOf(i100));\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "898197df4714d2a15de9889c82ab9a9ff209c6a6f80d1930ba6d0b166d5b9876",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

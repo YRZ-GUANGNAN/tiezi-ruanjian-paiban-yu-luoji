@@ -1,0 +1,29 @@
+    public final void G(z86.c cVar, Integer num) {
+        String string;
+        if (PatchProxy.proxyVoid2Para(cVar, num, this, f.class, 389073)) {
+            return;
+        }
+        AsyncSubCommentLoadMoreView view = getView();
+        int i100 = mp5.h.f238708m3;
+        ((TextView) view.a(i100)).setTextColor(p69.f.e(mp5.e.A0));
+        TextView textView = (TextView) getView().a(i100);
+        if (!cVar.d() || cVar.b() <= 0) {
+            string = cVar.b() > 0 ? getView().getContext().getResources().getString(k.B0, Integer.valueOf(cVar.b())) : getView().getContext().getResources().getString(k.A0);
+        } else {
+            string = getView().getContext().getResources().getString(k.C0, Integer.valueOf(cVar.b()));
+        }
+        textView.setText(string);
+        o.q((TextView) getView().a(i100));
+        o.q((LinearLayout) getView().a(mp5.h.f238724o3));
+        o.b((LinearLayout) getView().a(mp5.h.f238756s3));
+        ((LottieAnimationView) getView().a(mp5.h.f238748r3)).l();
+        if (wg3.f.f343557a.h()) {
+            return;
+        }
+        ej1.b bVar = ej1.b.f147742a;
+        ej1.b.l(bVar, getView(), true, false, 4, null);
+        bVar.h(getView(), ((TextView) getView().a(i100)).getText().toString());
+        bVar.g(getView());
+        ej1.b.l(bVar, (TextView) getView().a(i100), false, false, 4, null);
+        bVar.m(getView(), new a());
+    }

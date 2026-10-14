@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "kind": "derived-static-comment-rules-with-prior-geometry-comparison",
+  "appVersion": "8.72.0",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "newRuntimeObservations": 0,
+  "layouts": {
+    "primary": {
+      "entry": "res/eAH.xml",
+      "resourceId": "0x7f0c0e8c",
+      "selector": "ah6.a.g -> mp5.i.S0"
+    },
+    "reply": {
+      "entry": "res/yIq.xml",
+      "resourceId": "0x7f0c0e90",
+      "selector": "ch6.a.g -> mp5.i.V0"
+    },
+    "bodyId": "0x7f09383b"
+  },
+  "typography": {
+    "packagedBodySp": 14,
+    "packagedAuthorSp": 13,
+    "footerSpanSp": 12,
+    "likeCountSp": 11,
+    "bodyLineSpacingExtraDp": 3,
+    "primaryBodyPaddingTopDp": 7,
+    "replyBodyPaddingTopDp": 5,
+    "bodyBottomMarginDp": 4,
+    "authorMaxWidthDp": {
+      "primary": 200,
+      "reply": 165
+    },
+    "runtimeTypefaceAndSizeConfirmed": false
+  },
+  "horizontal": {
+    "primary": {
+      "startPaddingDp": 15,
+      "avatarDp": 32,
+      "gapDp": 10,
+      "totalBodyStartDp": 57
+    },
+    "reply": {
+      "rootStartMarginDp": 47,
+      "avatarStartMarginDp": 10,
+      "avatarDp": 20,
+      "gapDp": 5,
+      "totalBodyStartDp": 82
+    },
+    "relativeIndentDp": 25,
+    "likeColumn": {
+      "startMarginDp": 10,
+      "widthDp": 37,
+      "endMarginDp": 6
+    }
+  },
+  "comparison": {
+    "deviceAlias": "meizu21-A",
+    "densityDpi": 440,
+    "density": 2.75,
+    "screenWidthPx": 1080,
+    "rounding": "Each XML dimension rounds to pixels separately; this is a reconstruction calculation, not a runtime trace.",
+    "predictedPrimaryStartPx": 157,
+    "predictedReplyStartPx": 226,
+    "predictedBodyRightPx": 933,
+    "observations": [
+      {
+        "id": "R06-video-comments",
+        "kind": "reused-prior-device-observation",
+        "sourceHashes": {
+          "observation": "c06e4411aa00722de8e786ee8bebd0f2507879d8bd0260154e17d30743c08539",
+          "hierarchy": "672613ea55c79a0023d82c65058e4e68b70fa04fe36bf9687a5c4533a6909d69"
+        },
+        "primaryBodyBounds": [
+          [
+            157,
+            923,
+            933,
+            987
+          ],
+          [
+            157,
+            1909,
+            933,
+            1973
+          ]
+        ],
+        "replyBodyBounds": [
+          [
+            226,
+            1603,
+            933,
+            1713
+          ],
+          [
+            226,
+            2055,
+            933,
+            2114
+          ]
+        ],
+        "containsUserText": false
+      },
+      {
+        "id": "R19-image-comments",
+        "kind": "reused-prior-device-observation",
+        "sourceHashes": {
+          "observation": "e9d1d64a1658cb56dc38cf8f75cdef2cd6e2c58e5f746691aa71b7b4e4fc2eca",
+          "hierarchy": "eefb9c3fb86d36f2f289bab27638f9269c1a06ec768b007344999f71aad4bf8b"
+        },
+        "primaryBodyBounds": [
+          [
+            157,
+            581,
+            933,
+            645
+          ],
+          [
+            157,
+            969,
+            933,
+            1033
+          ],
+          [
+            157,
+            1436,
+            933,
+            1500
+          ],
+          [
+            157,
+            1903,
+            933,
+            1967
+          ],
+          [
+            157,
+            2084,
+            933,
+            2117
+          ]
+        ],
+        "replyBodyBounds": [
+          [
+            226,
+            727,
+            933,
+            852
+          ],
+          [
+            226,
+            1115,
+            933,
+            1240
+          ],
+          [
+            226,
+            1582,
+            933,
+            1707
+          ]
+        ],
+        "containsUserText": false
+      }
+    ]
+  },
+  "footerWrap": {
+    "source": [
+      "C233-parent-build-text",
+      "C236-sub-build-text"
+    ],
+    "rule": "Compare StaticLayout line counts of body plus footer plain text and body alone; if the combined line count is greater, append a newline before the footer.",
+    "measurement": "Uses TextView Paint and helper width; later styling spans may affect final pixels.",
+    "longTextCollapseThreshold": null
+  },
+  "replyLabels": {
+    "countPositiveAndFlagTrue": "共 %1$d 条回复",
+    "countPositiveAndFlagFalse": "展开 %1$d 条回复",
+    "countNonPositive": "展开更多回复",
+    "flagSemantic": "z86.c.d() internal flag; business meaning unverified",
+    "countSemantic": "z86.c.b() integer; relation to server total/remaining count unverified"
+  },
+  "pictures": {
+    "singleDefaultDp": {
+      "nearSquare": [
+        120,
+        120
+      ],
+      "portrait": [
+        120,
+        160
+      ],
+      "landscape": [
+        160,
+        120
+      ]
+    },
+    "ratioThresholds": {
+      "lower": 0.9,
+      "upper": 1.1,
+      "boundaryInclusiveForSquare": true
+    },
+    "ratioArithmetic": "float division confirmed in DEX",
+    "explicitSizeBranch": "For positive b()/c() values with image count <= 1, clamp each component independently to 120..160 before dp conversion; not an aspect-preserving fit.",
+    "multiple": "Three views in the selected layout. Normal multiple-image square side is integer (wg3.f0.c() - trunc(dp(155)))/3 at class initialization. Lazy width source and single-display gate remain unverified.",
+    "legacySampleComparison": "330x440 pixels at density 2.75 is consistent with 120x160 dp; the recorded sample is not proven to have executed this exact class."
+  },
+  "limitations": [
+    "No new phone or emulator operation in this round.",
+    "Geometry agreement supports a candidate resource-to-screen relationship; UI XML has obfuscated IDs and does not prove exact layout inflation.",
+    "Cached view reuse can change margins and padding; resource defaults are not final runtime output.",
+    "Footer date and reply text are composed spans. Global truncation, expand-full-text thresholds, emoji wrapping and every configuration branch are not fully recovered."
+  ],
+  "sources": [
+    {
+      "file": "auxiliary/CR202-comment-resource-values.json",
+      "originalSha256": "304af861d1bcf7c30fe3e98ff168e0923cfc82598b0bfc4835204831112a1c2b",
+      "publicSha256": "77c69889b8faf10ff8689569810cbf80ab0cb48cc96ab78f6f6c08c0ce1edb19"
+    },
+    {
+      "file": "auxiliary/CR203-comment-instructions.json",
+      "originalSha256": "138461e79b2b950dff9b579f11385e3642586f29d281612db607959a682a285e",
+      "publicSha256": "6d131339d9d5434c139add13174fcb169b8bc17cb385ed64dce83bcce80d52e5"
+    },
+    {
+      "file": "auxiliary/CR205-picture-ratio-instructions.json",
+      "originalSha256": "550221868bfd0d58e59d26976d9ecaac22afabefe2851bf8701cc676611b23da",
+      "publicSha256": "149cfd6e45eab716e8258c6d04ead61b1cbd2fed388428e76a08ef60c38d9285"
+    },
+    {
+      "file": "auxiliary/CR206-comment-layout-identities.json",
+      "originalSha256": "559ccda68c1f0739d85934d30949c4bb3fa4dcf7bd45ee7f9287f402b90c73b0",
+      "publicSha256": "fda8d5a6e6710e65902c0b096764bf04c34ad201ed25a67e5302b8827811d238"
+    },
+    {
+      "file": "auxiliary/CR207-comment-inflate-selectors.json",
+      "originalSha256": "362c49d9b856af1238752a65aa56edf54ad8b338ade54354a81f3dac32bc4e43",
+      "publicSha256": "64ae42861504741118ff8a60769ef50ca14030f188026407f0930418c7ff53b6"
+    },
+    {
+      "file": "auxiliary/CR208-comment-field-binding.json",
+      "originalSha256": "eae578b0c22fc01eef8e84ed0ac94ef12ee339d3f420671159900d70897c5579",
+      "publicSha256": "38d41be81edfab7e357b75bf27f22b287b434944cbd07f3482f38fc18bdaf150"
+    },
+    {
+      "file": "auxiliary/CR209-comment-text-resources.json",
+      "originalSha256": "9d340a9a06ba7ebaa4835be5f9a18e23b69f27f25f1cf5d5ce44da97fa339ee3",
+      "publicSha256": "df2072403da59b21fb0ed03200fa373a71737b817fd474fb5b531ccfc63a5f77"
+    },
+    {
+      "file": "auxiliary/CR210-comment-attribute-identities.json",
+      "originalSha256": "f4333f5c466bb7da6f233835ece4e51f36d42f886c25900f49272a700a7a9989",
+      "publicSha256": "b62ff26c44f32356bdf37e1e3b079ed9f260dc8d9b5b780c9fdf9ef052d6fb42"
+    },
+    {
+      "file": "auxiliary/CR211-footer-fields.json",
+      "originalSha256": "2e854df5a4ab3c8992e44e15d3899de821640a22677e47187ea9a71435ad75c4",
+      "publicSha256": "724ad119d3dc03e275be966345903b97aadef092681e9dea12733f2216b84fda"
+    },
+    {
+      "file": "auxiliary/CR212-footer-resources.json",
+      "originalSha256": "17bd010432adccc306c69d90dc26d1fe4ec72df80be8ce976d662ace7d62fac3",
+      "publicSha256": "1621528fd316733ccf2884cd154a1c891d55cd4076c9b03cbbd67711350035b7"
+    }
+  ]
+}

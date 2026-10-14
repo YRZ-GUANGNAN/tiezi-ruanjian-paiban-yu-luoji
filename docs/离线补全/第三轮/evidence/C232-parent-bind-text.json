@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_cf4dd0bb771b4f338656ab33ab4da09b0571c9f73ab841f33597554a843678fa",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "ah6.h",
+    "method_name": "U"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "ah6.h"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"def_pos\":0,\"signature\":\"<clinit>(): void\",\"is_constructor\":false,\"name\":\"<clinit>\"},{\"def_pos\":0,\"signature\":\"<init>(): void\",\"is_constructor\":true,\"name\":\"<init>\"},{\"def_pos\":0,\"signature\":\"I(android.view.View): boolean\",\"is_constructor\":false,\"name\":\"I\"},{\"def_pos\":0,\"signature\":\"J(qh6.d): void\",\"is_constructor\":false,\"name\":\"J\"},{\"def_pos\":0,\"signature\":\"K(boolean, kotlin.jvm.functions.Function1<java.lang.Object, w08.r>): void\",\"is_constructor\":false,\"name\":\"K\"},{\"def_pos\":0,\"signature\":\"L(qh6.d, android.text.SpannableStringBuilder): void\",\"is_constructor\":false,\"name\":\"L\"},{\"def_pos\":0,\"signature\":\"M(android.view.View): boolean\",\"is_constructor\":false,\"name\":\"M\"},{\"def_pos\":0,\"signature\":\"N(com.xingin.entities.CommentCommentInfo): void\",\"is_constructor\":false,\"name\":\"N\"},{\"def_pos\":0,\"signature\":\"O(qh6.d): void\",\"is_constructor\":false,\"name\":\"O\"},{\"def_pos\":0,\"signature\":\"P(kotlin.jvm.functions.Function1<java.lang.Object, w08.r>): void\",\"is_constructor\":false,\"name\":\"P\"},{\"def_pos\":0,\"signature\":\"Q(int, qh6.d, java.lang.Integer): void\",\"is_constructor\":false,\"name\":\"Q\"},{\"def_pos\":0,\"signature\":\"R(boolean): void\",\"is_constructor\":false,\"name\":\"R\"},{\"def_pos\":0,\"signature\":\"S(): tb9.r<kotlin.Unit>\",\"is_constructor\":false,\"name\":\"S\"},{\"def_pos\":0,\"signature\":\"T(): tb9.r<kotlin.Unit>\",\"is_constructor\":false,\"name\":\"T\"},{\"def_pos\":0,\"signature\":\"U(qh6.d, android.text.SpannableStringBuilder, android.content.Context): void\",\"is_constructor\":false,\"name\":\"U\"},{\"def_pos\":0,\"signature\":\"W(): ug4.z\",\"is_constructor\":false,\"name\":\"W\"},{\"def_pos\":0,\"signature\":\"X(qh6.d, android.content.Context): java.lang.String\",\"is_constructor\":false,\"name\":\"X\"},{\"def_pos\":0,\"signature\":\"Y(qh6.d, android.content.Context): java.lang.String\",\"is_constructor\":false,\"name\":\"Y\"},{\"def_pos\":0,\"signature\":\"a0(): uc9.d<java.lang.Boolean>\",\"is_constructor\":false,\"name\":\"a0\"},{\"def_pos\":0,\"signature\":\"b0(): kotlin.jvm.functions.Function0<kotlin.Pair<java.lang.String, java.lang.String>>\",\"is_constructor\":false,\"name\":\"b0\"},{\"def_pos\":0,\"signature\":\"c0(): pq5.w0\",\"is_constructor\":false,\"name\":\"c0\"},{\"def_pos\":0,\"signature\":\"d0(): ni4.x\",\"is_constructor\":false,\"name\":\"d0\"},{\"def_pos\":0,\"signature\":\"didLoad(): void\",\"is_constructor\":false,\"name\":\"didLoad\"},{\"def_pos\":0,\"signature\":\"e0(): uc9.d<kotlin.Unit>\",\"is_constructor\":false,\"name\":\"e0\"},{\"def_pos\":0,\"signature\":\"f0(): int\",\"is_constructor\":false,\"name\":\"f0\"},{\"def_pos\":0,\"signature\":\"g0(): d86.f\",\"is_constructor\":false,\"name\":\"g0\"},{\"def_pos\":0,\"signature\":\"h0(): int\",\"is_constructor\":false,\"name\":\"h0\"},{\"def_pos\":0,\"signature\":\"i0(): boolean\",\"is_constructor\":false,\"name\":\"i0\"},{\"def_pos\":0,\"signature\":\"j0(): tb9.r<kotlin.Unit>\",\"is_constructor\":false,\"name\":\"j0\"},{\"def_pos\":0,\"signature\":\"k0(kotlin.jvm.functions.Function1<? super android.view.View, kotlin.Unit>): void\",\"is_constructor\":false,\"name\":\"k0\"},{\"def_pos\":0,\"signature\":\"l0(com.xingin.entities.CommentCommentInfo): android.text.SpannableStringBuilder\",\"is_constructor\":false,\"name\":\"l0\"},{\"def_pos\":0,\"signature\":\"m0(boolean): void\",\"is_constructor\":false,\"name\":\"m0\"},{\"def_pos\":0,\"signature\":\"n0(): void\",\"is_constructor\":false,\"name\":\"n0\"},{\"def_pos\":0,\"signature\":\"o0(qh6.d): void\",\"is_constructor\":false,\"name\":\"o0\"},{\"def_pos\":0,\"signature\":\"p0(com.xingin.entities.notedetail.BulletCommentLead): void\",\"is_constructor\":false,\"name\":\"p0\"},{\"def_pos\":0,\"signature\":\"q0(qh6.d): void\",\"is_constructor\":false,\"name\":\"q0\"},{\"def_pos\":0,\"signature\":\"r0(qh6.d): void\",\"is_constructor\":false,\"name\":\"r0\"},{\"def_pos\":0,\"signature\":\"s0(qh6.d, boolean): void\",\"is_constructor\":false,\"name\":\"s0\"},{\"def_pos\":0,\"signature\":\"t0(qh6.d): void\",\"is_constructor\":false,\"name\":\"t0\"},{\"def_pos\":0,\"signature\":\"u0(android.widget.TextView, java.lang.String): void\",\"is_constructor\":false,\"name\":\"u0\"},{\"def_pos\":0,\"signature\":\"v0(): tb9.r<kotlin.Unit>\",\"is_constructor\":false,\"name\":\"v0\"},{\"def_pos\":0,\"signature\":\"w0(): tb9.r<kotlin.Unit>\",\"is_constructor\":false,\"name\":\"w0\"}],\"method_count\":42,\"inner_class_count\":11,\"inner_classes\":[\"ah6.h.a\",\"ah6.h.b\",\"ah6.h.c\",\"ah6.h.d\",\"ah6.h.e\",\"ah6.h.f\",\"ah6.h.g\",\"ah6.h.C0134h\",\"ah6.h.i\",\"ah6.h.j\",\"ah6.h.k\"],\"name\":\"h\",\"full_name\":\"ah6.h\",\"field_count\":14,\"fields\":[{\"type\":\"ah6.h$a\",\"def_pos\":0,\"name\":\"f6834w\"},{\"type\":\"d86.f\",\"def_pos\":0,\"name\":\"f6835g\"},{\"type\":\"ni4.x\",\"def_pos\":0,\"name\":\"f6836h\"},{\"type\":\"kotlin.jvm.functions.Function0<kotlin.Pair<java.lang.String, java.lang.String>>\",\"def_pos\":0,\"name\":\"f6837l\"},{\"type\":\"ug4.z\",\"def_pos\":0,\"name\":\"f6838m\"},{\"type\":\"pq5.w0\",\"def_pos\":0,\"name\":\"f6839n\"},{\"type\":\"com.xingin.entities.notedetail.BulletCommentLead\",\"def_pos\":0,\"name\":\"f6840o\"},{\"type\":\"kotlin.Lazy\",\"def_pos\":0,\"name\":\"f6841p\"},{\"type\":\"java.lang.Integer\",\"def_pos\":0,\"name\":\"f6842q\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"f6843r\"},{\"type\":\"uc9.d<java.lang.Boolean>\",\"def_pos\":0,\"name\":\"f6844s\"},{\"type\":\"uc9.d<kotlin.Unit>\",\"def_pos\":0,\"name\":\"f6845t\"},{\"type\":\"ah6.h$b\",\"def_pos\":0,\"name\":\"f6846u\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"f6847v\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "ah6.h",
+          "method_name": "U",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"mode\":\"java\",\"full_name\":\"ah6.h.U\",\"class_name\":\"ah6.h\",\"overload_index\":0,\"fell_back\":false,\"body\":\"    /* JADX WARN: Multi-variable type inference failed */\\r\\n    public final void U(qh6.d dVar, SpannableStringBuilder spannableStringBuilder, Context context) {\\r\\n        if (PatchProxy.proxyVoid3Para(dVar, spannableStringBuilder, context, this, h.class, 385537)) {\\r\\n            return;\\r\\n        }\\r\\n        ej1.b bVar = ej1.b.f147742a;\\r\\n        if (bVar.f(bm1.c.a())) {\\r\\n            AsyncParentCommentView asyncParentCommentView = (AsyncParentCommentView) getView();\\r\\n            int i100 = mp5.h.O2;\\r\\n            bVar.g((XYAvatarView) asyncParentCommentView.a(i100));\\r\\n            AsyncParentCommentView asyncParentCommentView2 = (AsyncParentCommentView) getView();\\r\\n            int i101 = mp5.h.f238700l3;\\r\\n            bVar.g((LinearLayout) asyncParentCommentView2.a(i101));\\r\\n            XYAvatarView xYAvatarView = (XYAvatarView) ((AsyncParentCommentView) getView()).a(i100);\\r\\n            CommentCommentUser commentCommentUserA0 = dVar.m().a0();\\r\\n            bVar.h(xYAvatarView, String.valueOf(commentCommentUserA0 != null ? commentCommentUserA0.d() : null));\\r\\n            ej1.b.l(bVar, (LinearLayout) ((AsyncParentCommentView) getView()).a(i101), true, false, 4, null);\\r\\n            q0(dVar);\\r\\n            AsyncParentCommentView asyncParentCommentView3 = (AsyncParentCommentView) getView();\\r\\n            int i102 = mp5.h.f238692k3;\\r\\n            ej1.b.l(bVar, (AsyncParentCommentView) asyncParentCommentView3.a(i102), true, false, 4, null);\\r\\n            ej1.b.l(bVar, (TextView) ((AsyncParentCommentView) getView()).a(mp5.h.f238743q6), false, false, 4, null);\\r\\n            ej1.b.l(bVar, (HandlePressStateCommentTextView) ((AsyncParentCommentView) getView()).a(mp5.h.f238727o6), false, false, 4, null);\\r\\n            ej1.b.l(bVar, (TextView) ((AsyncParentCommentView) getView()).a(mp5.h.f238719n6), false, false, 4, null);\\r\\n            ej1.b.l(bVar, (TextView) ((AsyncParentCommentView) getView()).a(mp5.h.f238711m6), false, false, 4, null);\\r\\n            ej1.b.l(bVar, (LinearLayout) ((AsyncParentCommentView) getView()).a(mp5.h.f238766t5), false, false, 4, null);\\r\\n            ej1.b.l(bVar, (XYAvatarView) ((AsyncParentCommentView) getView()).a(i100), true, false, 4, null);\\r\\n            bVar.g((XYAvatarView) ((AsyncParentCommentView) getView()).a(i100));\\r\\n            bVar.g((AsyncParentCommentView) ((AsyncParentCommentView) getView()).a(i102));\\r\\n            ej1.b.l(bVar, (HandlePressStateCommentLinearLayout) ((AsyncParentCommentView) getView()).a(mp5.h.f238627c1), false, false, 4, null);\\r\\n            String strReplace$default = StringsKt__StringsJVMKt.replace$default(StringsKt__StringsJVMKt.replace$default(g0.S(g0.f302805a, ((AsyncParentCommentView) getView()).getContext(), dVar.m(), true, false, 8, null).toString(), \\\"-\\\", \\\"\\\", false, 4, (Object) null), \\\"回复\\\", \\\"\\\", false, 4, (Object) null);\\r\\n            AsyncParentCommentView asyncParentCommentView4 = (AsyncParentCommentView) ((AsyncParentCommentView) getView()).a(i102);\\r\\n            CommentCommentUser commentCommentUserA1 = dVar.m().a0();\\r\\n            String strD = commentCommentUserA1 != null ? commentCommentUserA1.d() : null;\\r\\n            String strY = Y(dVar, context);\\r\\n            AsyncParentCommentView asyncParentCommentView5 = (AsyncParentCommentView) getView();\\r\\n            int i103 = mp5.h.f238631c5;\\r\\n            String str = (((CommentPictureItemView) asyncParentCommentView5.a(i103)) == null || ((CommentPictureItemView) ((AsyncParentCommentView) getView()).a(i103)).getVisibility() != 0) ? \\\"\\\" : \\\"图片\\\";\\r\\n            bVar.h(asyncParentCommentView4, strD + \\\"，\\\" + strY + \\\"，说，\\\" + ((Object) spannableStringBuilder) + \\\"，\\\" + str + \\\"发布于\\\" + strReplace$default + \\\"，点赞\\\" + dVar.m().p() + \\\"， \\\" + X(dVar, context));\\r\\n            if (((CommentPictureItemView) ((AsyncParentCommentView) getView()).a(i103)).getVisibility() == 0) {\\r\\n                jx8.d.a(\\\"acc_opt\\\", \\\"AsyncPARENTCommentPresenter.bindPIC \\\" + getView());\\r\\n                AsyncParentCommentView asyncParentCommentView6 = (AsyncParentCommentView) getView();\\r\\n                int i104 = mp5.h.f238623b5;\\r\\n                ej1.b.l(bVar, (SimpleDraweeView) asyncParentCommentView6.a(i104), true, false, 4, null);\\r\\n                ej1.b.l(bVar, (CommentPictureItemView) ((AsyncParentCommentView) getView()).a(i103), false, false, 4, null);\\r\\n                bVar.j((SimpleDraweeView) ((AsyncParentCommentView) getView()).a(i104));\\r\\n                bVar.h((SimpleDraweeView) ((AsyncParentCommentView) getView()).a(i104), \\\"图片\\\");\\r\\n            }\\r\\n        }\\r\\n    }\",\"overload_count\":1,\"method_name\":\"U\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "ah6.h",
+    "method": {
+      "name": "U",
+      "reported_signature": "U(qh6.d, android.text.SpannableStringBuilder, android.content.Context): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Multi-variable type inference failed */\r\n    public final void U(qh6.d dVar, SpannableStringBuilder spannableStringBuilder, Context context) {\r\n        if (PatchProxy.proxyVoid3Para(dVar, spannableStringBuilder, context, this, h.class, 385537)) {\r\n            return;\r\n        }\r\n        ej1.b bVar = ej1.b.f147742a;\r\n        if (bVar.f(bm1.c.a())) {\r\n            AsyncParentCommentView asyncParentCommentView = (AsyncParentCommentView) getView();\r\n            int i100 = mp5.h.O2;\r\n            bVar.g((XYAvatarView) asyncParentCommentView.a(i100));\r\n            AsyncParentCommentView asyncParentCommentView2 = (AsyncParentCommentView) getView();\r\n            int i101 = mp5.h.f238700l3;\r\n            bVar.g((LinearLayout) asyncParentCommentView2.a(i101));\r\n            XYAvatarView xYAvatarView = (XYAvatarView) ((AsyncParentCommentView) getView()).a(i100);\r\n            CommentCommentUser commentCommentUserA0 = dVar.m().a0();\r\n            bVar.h(xYAvatarView, String.valueOf(commentCommentUserA0 != null ? commentCommentUserA0.d() : null));\r\n            ej1.b.l(bVar, (LinearLayout) ((AsyncParentCommentView) getView()).a(i101), true, false, 4, null);\r\n            q0(dVar);\r\n            AsyncParentCommentView asyncParentCommentView3 = (AsyncParentCommentView) getView();\r\n            int i102 = mp5.h.f238692k3;\r\n            ej1.b.l(bVar, (AsyncParentCommentView) asyncParentCommentView3.a(i102), true, false, 4, null);\r\n            ej1.b.l(bVar, (TextView) ((AsyncParentCommentView) getView()).a(mp5.h.f238743q6), false, false, 4, null);\r\n            ej1.b.l(bVar, (HandlePressStateCommentTextView) ((AsyncParentCommentView) getView()).a(mp5.h.f238727o6), false, false, 4, null);\r\n            ej1.b.l(bVar, (TextView) ((AsyncParentCommentView) getView()).a(mp5.h.f238719n6), false, false, 4, null);\r\n            ej1.b.l(bVar, (TextView) ((AsyncParentCommentView) getView()).a(mp5.h.f238711m6), false, false, 4, null);\r\n            ej1.b.l(bVar, (LinearLayout) ((AsyncParentCommentView) getView()).a(mp5.h.f238766t5), false, false, 4, null);\r\n            ej1.b.l(bVar, (XYAvatarView) ((AsyncParentCommentView) getView()).a(i100), true, false, 4, null);\r\n            bVar.g((XYAvatarView) ((AsyncParentCommentView) getView()).a(i100));\r\n            bVar.g((AsyncParentCommentView) ((AsyncParentCommentView) getView()).a(i102));\r\n            ej1.b.l(bVar, (HandlePressStateCommentLinearLayout) ((AsyncParentCommentView) getView()).a(mp5.h.f238627c1), false, false, 4, null);\r\n            String strReplace$default = StringsKt__StringsJVMKt.replace$default(StringsKt__StringsJVMKt.replace$default(g0.S(g0.f302805a, ((AsyncParentCommentView) getView()).getContext(), dVar.m(), true, false, 8, null).toString(), \"-\", \"\", false, 4, (Object) null), \"回复\", \"\", false, 4, (Object) null);\r\n            AsyncParentCommentView asyncParentCommentView4 = (AsyncParentCommentView) ((AsyncParentCommentView) getView()).a(i102);\r\n            CommentCommentUser commentCommentUserA1 = dVar.m().a0();\r\n            String strD = commentCommentUserA1 != null ? commentCommentUserA1.d() : null;\r\n            String strY = Y(dVar, context);\r\n            AsyncParentCommentView asyncParentCommentView5 = (AsyncParentCommentView) getView();\r\n            int i103 = mp5.h.f238631c5;\r\n            String str = (((CommentPictureItemView) asyncParentCommentView5.a(i103)) == null || ((CommentPictureItemView) ((AsyncParentCommentView) getView()).a(i103)).getVisibility() != 0) ? \"\" : \"图片\";\r\n            bVar.h(asyncParentCommentView4, strD + \"，\" + strY + \"，说，\" + ((Object) spannableStringBuilder) + \"，\" + str + \"发布于\" + strReplace$default + \"，点赞\" + dVar.m().p() + \"， \" + X(dVar, context));\r\n            if (((CommentPictureItemView) ((AsyncParentCommentView) getView()).a(i103)).getVisibility() == 0) {\r\n                jx8.d.a(\"acc_opt\", \"AsyncPARENTCommentPresenter.bindPIC \" + getView());\r\n                AsyncParentCommentView asyncParentCommentView6 = (AsyncParentCommentView) getView();\r\n                int i104 = mp5.h.f238623b5;\r\n                ej1.b.l(bVar, (SimpleDraweeView) asyncParentCommentView6.a(i104), true, false, 4, null);\r\n                ej1.b.l(bVar, (CommentPictureItemView) ((AsyncParentCommentView) getView()).a(i103), false, false, 4, null);\r\n                bVar.j((SimpleDraweeView) ((AsyncParentCommentView) getView()).a(i104));\r\n                bVar.h((SimpleDraweeView) ((AsyncParentCommentView) getView()).a(i104), \"图片\");\r\n            }\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "0035636e2ebb257ecf93b2657798a69dbb2f6bb210d2488458d2bd77cab5b70f",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

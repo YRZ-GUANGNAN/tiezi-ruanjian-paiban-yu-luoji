@@ -1,0 +1,22 @@
+    /* JADX WARN: Code duplicated, block: B:16:0x0033  */
+    public final void e(SimpleDraweeView simpleDraweeView, CommentPictureInfo commentPictureInfo, int i100) {
+        Pair<Integer, Integer> pairB;
+        if (PatchProxy.proxyVoid3Para(simpleDraweeView, commentPictureInfo, new Integer(i100), this, v.class, 326812)) {
+            return;
+        }
+        if (i100 <= 1) {
+            if ((commentPictureInfo != null ? commentPictureInfo.b() : 0) <= 0) {
+                pairB = b(this, commentPictureInfo, 0, 0, 6, null);
+            } else {
+                if ((commentPictureInfo != null ? commentPictureInfo.c() : 0) > 0) {
+                    pairB = c(commentPictureInfo, 120, 160);
+                } else {
+                    pairB = b(this, commentPictureInfo, 0, 0, 6, null);
+                }
+            }
+        } else {
+            pairB = b(this, commentPictureInfo, 0, 0, 6, null);
+        }
+        jx8.d.a("cmt_img_std_adj", "final image size width : " + pairB.getFirst() + ", height: " + pairB.getSecond());
+        d(simpleDraweeView, pairB);
+    }

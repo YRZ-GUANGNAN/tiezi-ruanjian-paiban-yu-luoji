@@ -1,0 +1,209 @@
+{
+  "evidence_id": "ev_9693d145eda764e59839aa42ce8ede26fec28e4753f562fa9e94c72c5a0cffd0",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "wg3.f0"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "wg3.f0"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"signature\":\"<clinit>(): void\",\"is_constructor\":false,\"name\":\"<clinit>\",\"def_pos\":0},{\"signature\":\"<init>(): void\",\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0},{\"signature\":\"a(): int\",\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0},{\"signature\":\"b(android.content.Context): int\",\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0},{\"signature\":\"c(): int\",\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0},{\"signature\":\"d(android.content.Context): int\",\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0},{\"signature\":\"e(): boolean\",\"is_constructor\":false,\"name\":\"e\",\"def_pos\":0},{\"signature\":\"f(): boolean\",\"is_constructor\":false,\"name\":\"f\",\"def_pos\":0},{\"signature\":\"g(): boolean\",\"is_constructor\":false,\"name\":\"g\",\"def_pos\":0},{\"signature\":\"h(): boolean\",\"is_constructor\":false,\"name\":\"h\",\"def_pos\":0}],\"method_count\":10,\"inner_class_count\":5,\"inner_classes\":[\"wg3.f0.a\",\"wg3.f0.b\",\"wg3.f0.c\",\"wg3.f0.d\",\"wg3.f0.e\"],\"name\":\"f0\",\"full_name\":\"wg3.f0\",\"field_count\":7,\"fields\":[{\"type\":\"wg3.f0\",\"def_pos\":0,\"name\":\"f343690a\"},{\"type\":\"kotlin.Lazy\",\"def_pos\":0,\"name\":\"f343691b\"},{\"type\":\"kotlin.Lazy\",\"def_pos\":0,\"name\":\"f343692c\"},{\"type\":\"java.lang.Integer\",\"def_pos\":0,\"name\":\"f343693d\"},{\"type\":\"kotlin.Lazy\",\"def_pos\":0,\"name\":\"f343694e\"},{\"type\":\"kotlin.Lazy\",\"def_pos\":0,\"name\":\"f343695f\"},{\"type\":\"kotlin.Lazy\",\"def_pos\":0,\"name\":\"f343696g\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "wg3.f0",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(android.content.Context): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(android.content.Context): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "f343690a",
+        "reported_type": "wg3.f0"
+      },
+      {
+        "name": "f343691b",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f343692c",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f343693d",
+        "reported_type": "java.lang.Integer"
+      },
+      {
+        "name": "f343694e",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f343695f",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f343696g",
+        "reported_type": "kotlin.Lazy"
+      }
+    ],
+    "inner_classes": [
+      "wg3.f0.a",
+      "wg3.f0.b",
+      "wg3.f0.c",
+      "wg3.f0.d",
+      "wg3.f0.e"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "350762ea16b98a189b67f555275a107d8869e318e4ac6e7f0ba2c26f0f5bd849",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

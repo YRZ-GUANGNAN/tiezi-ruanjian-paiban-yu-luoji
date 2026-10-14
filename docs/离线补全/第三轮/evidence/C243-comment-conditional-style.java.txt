@@ -1,0 +1,11 @@
+    public final void e(TextView textView, CommentCommentInfo commentCommentInfo) {
+        if (PatchProxy.proxyVoid2Para(textView, commentCommentInfo, this, i.class, 392214)) {
+            return;
+        }
+        this.f311574c = textView;
+        this.f311573b = commentCommentInfo;
+        this.f311572a = false;
+        if (commentCommentInfo.X() == null) {
+            ud3.a.f320188a.j(commentCommentInfo);
+        }
+    }

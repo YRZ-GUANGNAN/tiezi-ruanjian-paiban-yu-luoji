@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_8b7c342eea59ce6e9697b9e40001f99daf42ed13971fa153e678a3b369250a68",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "or1.b",
+    "method_name": "d"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "or1.b"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"name\":\"b\",\"full_name\":\"or1.b\",\"field_count\":3,\"fields\":[{\"name\":\"f259033a\",\"type\":\"or1.b\",\"def_pos\":0},{\"name\":\"f259034b\",\"type\":\"kotlin.Lazy\",\"def_pos\":0},{\"name\":\"f259035c\",\"type\":\"or1.a\",\"def_pos\":0}],\"methods\":[{\"is_constructor\":false,\"name\":\"<clinit>\",\"def_pos\":0,\"signature\":\"<clinit>(): void\"},{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(): void\"},{\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(or1.b): java.util.ArrayList\"},{\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(): java.util.ArrayList<or1.a>\"},{\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(): java.util.ArrayList<or1.a>\"},{\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(): boolean\"}],\"method_count\":6,\"inner_class_count\":2,\"inner_classes\":[\"or1.b.a\",\"or1.b.C5901b\"]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "or1.b",
+          "method_name": "d",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"body\":\"    public final boolean d() {\\r\\n        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, b.class, 53265);\\r\\n        if (patchProxyResultProxy0Para.isSupported) {\\r\\n            return ((Boolean) patchProxyResultProxy0Para.result).booleanValue();\\r\\n        }\\r\\n        ArrayList<or1.a> arrayListB = b();\\r\\n        or1.a aVar = f259035c;\\r\\n        if (aVar == null) {\\r\\n            aVar = null;\\r\\n        }\\r\\n        return arrayListB.contains(aVar);\\r\\n    }\",\"overload_count\":1,\"method_name\":\"d\",\"markers\":[],\"mode\":\"java\",\"full_name\":\"or1.b.d\",\"class_name\":\"or1.b\",\"overload_index\":0,\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "or1.b",
+    "method": {
+      "name": "d",
+      "reported_signature": "d(): boolean",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final boolean d() {\r\n        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, b.class, 53265);\r\n        if (patchProxyResultProxy0Para.isSupported) {\r\n            return ((Boolean) patchProxyResultProxy0Para.result).booleanValue();\r\n        }\r\n        ArrayList<or1.a> arrayListB = b();\r\n        or1.a aVar = f259035c;\r\n        if (aVar == null) {\r\n            aVar = null;\r\n        }\r\n        return arrayListB.contains(aVar);\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "ea6fae93621f33cc218b8ed9e71144c4c93c2c167d9033044afab88d700e8fe4",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

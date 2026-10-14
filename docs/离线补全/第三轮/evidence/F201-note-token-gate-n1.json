@@ -1,0 +1,152 @@
+{
+  "evidence_id": "ev_a71ee5b1da80af8c5e671db02d66b4e414b017438cc50942d8dad0e97ea9f8d2",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "wq1.i",
+    "method_name": "n1"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":82499,\"raw_class_count\":82499,\"resource_count\":18535,\"load_duration_ms\":41853,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "wq1.i"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"name\":\"i\",\"full_name\":\"wq1.i\",\"field_count\":6,\"fields\":[{\"name\":\"f346132a\",\"type\":\"wq1.i\",\"def_pos\":0},{\"name\":\"f346133b\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"f346134c\",\"type\":\"boolean\",\"def_pos\":0},{\"name\":\"f346135d\",\"type\":\"kotlin.Lazy\",\"def_pos\":0},{\"name\":\"f346136e\",\"type\":\"kotlin.Lazy\",\"def_pos\":0},{\"name\":\"f346137f\",\"type\":\"kotlin.Lazy\",\"def_pos\":0}],\"methods\":[{\"is_constructor\":false,\"name\":\"<clinit>\",\"def_pos\":0,\"signature\":\"<clinit>(): void\"},{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(): void\"},{\"is_constructor\":false,\"name\":\"A\",\"def_pos\":0,\"signature\":\"A(): boolean\"},{\"is_constructor\":false,\"name\":\"A0\",\"def_pos\":0,\"signature\":\"A0(): boolean\"},{\"is_constructor\":false,\"name\":\"B\",\"def_pos\":0,\"signature\":\"B(): int\"},{\"is_constructor\":false,\"name\":\"B0\",\"def_pos\":0,\"signature\":\"B0(): boolean\"},{\"is_constructor\":false,\"name\":\"C\",\"def_pos\":0,\"signature\":\"C(): boolean\"},{\"is_constructor\":false,\"name\":\"C0\",\"def_pos\":0,\"signature\":\"C0(): int\"},{\"is_constructor\":false,\"name\":\"D\",\"def_pos\":0,\"signature\":\"D(): boolean\"},{\"is_constructor\":false,\"name\":\"D0\",\"def_pos\":0,\"signature\":\"D0(): int\"},{\"is_constructor\":false,\"name\":\"E\",\"def_pos\":0,\"signature\":\"E(): boolean\"},{\"is_constructor\":false,\"name\":\"E0\",\"def_pos\":0,\"signature\":\"E0(): ca.g\"},{\"is_constructor\":false,\"name\":\"F\",\"def_pos\":0,\"signature\":\"F(): boolean\"},{\"is_constructor\":false,\"name\":\"F0\",\"def_pos\":0,\"signature\":\"F0(): ca.g\"},{\"is_constructor\":false,\"name\":\"G\",\"def_pos\":0,\"signature\":\"G(): boolean\"},{\"is_constructor\":false,\"name\":\"G0\",\"def_pos\":0,\"signature\":\"G0(): ca.g\"},{\"is_constructor\":false,\"name\":\"H\",\"def_pos\":0,\"signature\":\"H(): boolean\"},{\"is_constructor\":false,\"name\":\"H0\",\"def_pos\":0,\"signature\":\"H0(): boolean\"},{\"is_constructor\":false,\"name\":\"I\",\"def_pos\":0,\"signature\":\"I(): boolean\"},{\"is_constructor\":false,\"name\":\"I0\",\"def_pos\":0,\"signature\":\"I0(): int\"},{\"is_constructor\":false,\"name\":\"J\",\"def_pos\":0,\"signature\":\"J(): boolean\"},{\"is_constructor\":false,\"name\":\"J0\",\"def_pos\":0,\"signature\":\"J0(): int\"},{\"is_constructor\":false,\"name\":\"K\",\"def_pos\":0,\"signature\":\"K(): boolean\"},{\"is_constructor\":false,\"name\":\"K0\",\"def_pos\":0,\"signature\":\"K0(): long\"},{\"is_constructor\":false,\"name\":\"L\",\"def_pos\":0,\"signature\":\"L(): boolean\"},{\"is_constructor\":false,\"name\":\"L0\",\"def_pos\":0,\"signature\":\"L0(): int\"},{\"is_constructor\":false,\"name\":\"M\",\"def_pos\":0,\"signature\":\"M(): boolean\"},{\"is_constructor\":false,\"name\":\"M0\",\"def_pos\":0,\"signature\":\"M0(): int\"},{\"is_constructor\":false,\"name\":\"N\",\"def_pos\":0,\"signature\":\"N(): boolean\"},{\"is_constructor\":false,\"name\":\"N0\",\"def_pos\":0,\"signature\":\"N0(): int\"},{\"is_constructor\":false,\"name\":\"O\",\"def_pos\":0,\"signature\":\"O(): boolean\"},{\"is_constructor\":false,\"name\":\"O0\",\"def_pos\":0,\"signature\":\"O0(): int\"},{\"is_constructor\":false,\"name\":\"P\",\"def_pos\":0,\"signature\":\"P(): boolean\"},{\"is_constructor\":false,\"name\":\"P0\",\"def_pos\":0,\"signature\":\"P0(): int\"},{\"is_constructor\":false,\"name\":\"Q\",\"def_pos\":0,\"signature\":\"Q(): boolean\"},{\"is_constructor\":false,\"name\":\"Q0\",\"def_pos\":0,\"signature\":\"Q0(): int\"},{\"is_constructor\":false,\"name\":\"R\",\"def_pos\":0,\"signature\":\"R(): boolean\"},{\"is_constructor\":false,\"name\":\"R0\",\"def_pos\":0,\"signature\":\"R0(): int\"},{\"is_constructor\":false,\"name\":\"S\",\"def_pos\":0,\"signature\":\"S(): boolean\"},{\"is_constructor\":false,\"name\":\"S0\",\"def_pos\":0,\"signature\":\"S0(): boolean\"},{\"is_constructor\":false,\"name\":\"T\",\"def_pos\":0,\"signature\":\"T(java.lang.String): boolean\"},{\"is_constructor\":false,\"name\":\"T0\",\"def_pos\":0,\"signature\":\"T0(): boolean\"},{\"is_constructor\":false,\"name\":\"U\",\"def_pos\":0,\"signature\":\"U(): boolean\"},{\"is_constructor\":false,\"name\":\"U0\",\"def_pos\":0,\"signature\":\"U0(): boolean\"},{\"is_constructor\":false,\"name\":\"V\",\"def_pos\":0,\"signature\":\"V(): boolean\"},{\"is_constructor\":false,\"name\":\"V0\",\"def_pos\":0,\"signature\":\"V0(): boolean\"},{\"is_constructor\":false,\"name\":\"W\",\"def_pos\":0,\"signature\":\"W(): boolean\"},{\"is_constructor\":false,\"name\":\"W0\",\"def_pos\":0,\"signature\":\"W0(): boolean\"},{\"is_constructor\":false,\"name\":\"X\",\"def_pos\":0,\"signature\":\"X(): boolean\"},{\"is_constructor\":false,\"name\":\"X0\",\"def_pos\":0,\"signature\":\"X0(): boolean\"},{\"is_constructor\":false,\"name\":\"Y\",\"def_pos\":0,\"signature\":\"Y(): boolean\"},{\"is_constructor\":false,\"name\":\"Y0\",\"def_pos\":0,\"signature\":\"Y0(): boolean\"},{\"is_constructor\":false,\"name\":\"Z\",\"def_pos\":0,\"signature\":\"Z(): boolean\"},{\"is_constructor\":false,\"name\":\"Z0\",\"def_pos\":0,\"signature\":\"Z0(): boolean\"},{\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(): boolean\"},{\"is_constructor\":false,\"name\":\"a0\",\"def_pos\":0,\"signature\":\"a0(): boolean\"},{\"is_constructor\":false,\"name\":\"a1\",\"def_pos\":0,\"signature\":\"a1(): boolean\"},{\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(): boolean\"},{\"is_constructor\":false,\"name\":\"b0\",\"def_pos\":0,\"signature\":\"b0(): boolean\"},{\"is_constructor\":false,\"name\":\"b1\",\"def_pos\":0,\"signature\":\"b1(): boolean\"},{\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(): boolean\"},{\"is_constructor\":false,\"name\":\"c0\",\"def_pos\":0,\"signature\":\"c0(): boolean\"},{\"is_constructor\":false,\"name\":\"c1\",\"def_pos\":0,\"signature\":\"c1(): boolean\"},{\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(): boolean\"},{\"is_constructor\":false,\"name\":\"d0\",\"def_pos\":0,\"signature\":\"d0(): boolean\"},{\"is_constructor\":false,\"name\":\"d1\",\"def_pos\":0,\"signature\":\"d1(): boolean\"},{\"is_constructor\":false,\"name\":\"e\",\"def_pos\":0,\"signature\":\"e(): boolean\"},{\"is_constructor\":false,\"name\":\"e0\",\"def_pos\":0,\"signature\":\"e0(): boolean\"},{\"is_constructor\":false,\"name\":\"e1\",\"def_pos\":0,\"signature\":\"e1(): boolean\"},{\"is_constructor\":false,\"name\":\"f\",\"def_pos\":0,\"signature\":\"f(): boolean\"},{\"is_constructor\":false,\"name\":\"f0\",\"def_pos\":0,\"signature\":\"f0(): boolean\"},{\"is_constructor\":false,\"name\":\"f1\",\"def_pos\":0,\"signature\":\"f1(): boolean\"},{\"is_constructor\":false,\"name\":\"g\",\"def_pos\":0,\"signature\":\"g(): boolean\"},{\"is_constructor\":false,\"name\":\"g0\",\"def_pos\":0,\"signature\":\"g0(boolean, boolean, boolean, boolean): boolean\"},{\"is_constructor\":false,\"name\":\"g1\",\"def_pos\":0,\"signature\":\"g1(): int\"},{\"is_constructor\":false,\"name\":\"h\",\"def_pos\":0,\"signature\":\"h(): int\"},{\"is_constructor\":false,\"name\":\"h0\",\"def_pos\":0,\"signature\":\"h0(wq1.i, boolean, boolean, boolean, boolean, int, java.lang.Object): boolean\"},{\"is_constructor\":false,\"name\":\"h1\",\"def_pos\":0,\"signature\":\"h1(): int\"},{\"is_constructor\":false,\"name\":\"i\",\"def_pos\":0,\"signature\":\"i(): boolean\"},{\"is_constructor\":false,\"name\":\"i0\",\"def_pos\":0,\"signature\":\"i0(): boolean\"},{\"is_constructor\":false,\"name\":\"i1\",\"def_pos\":0,\"signature\":\"i1(): int\"},{\"is_constructor\":false,\"name\":\"j\",\"def_pos\":0,\"signature\":\"j(): boolean\"},{\"is_constructor\":false,\"name\":\"j0\",\"def_pos\":0,\"signature\":\"j0(): boolean\"},{\"is_constructor\":false,\"name\":\"j1\",\"def_pos\":0,\"signature\":\"j1(): int\"},{\"is_constructor\":false,\"name\":\"k\",\"def_pos\":0,\"signature\":\"k(): boolean\"},{\"is_constructor\":false,\"name\":\"k0\",\"def_pos\":0,\"signature\":\"k0(): boolean\"},{\"is_constructor\":false,\"name\":\"k1\",\"def_pos\":0,\"signature\":\"k1(): boolean\"},{\"is_constructor\":false,\"name\":\"l\",\"def_pos\":0,\"signature\":\"l(): boolean\"},{\"is_constructor\":false,\"name\":\"l0\",\"def_pos\":0,\"signature\":\"l0(): boolean\"},{\"is_constructor\":false,\"name\":\"l1\",\"def_pos\":0,\"signature\":\"l1(boolean, boolean): void\"},{\"is_constructor\":false,\"name\":\"m\",\"def_pos\":0,\"signature\":\"m(): boolean\"},{\"is_constructor\":false,\"name\":\"m0\",\"def_pos\":0,\"signature\":\"m0(): boolean\"},{\"is_constructor\":false,\"name\":\"m1\",\"def_pos\":0,\"signature\":\"m1(wq1.i, boolean, boolean, int, java.lang.Object): void\"},{\"is_constructor\":false,\"name\":\"n\",\"def_pos\":0,\"signature\":\"n(): boolean\"},{\"is_constructor\":false,\"name\":\"n0\",\"def_pos\":0,\"signature\":\"n0(): boolean\"},{\"is_constructor\":false,\"name\":\"n1\",\"def_pos\":0,\"signature\":\"n1(): boolean\"},{\"is_constructor\":false,\"name\":\"o\",\"def_pos\":0,\"signature\":\"o(): boolean\"},{\"is_constructor\":false,\"name\":\"o0\",\"def_pos\":0,\"signature\":\"o0(): boolean\"},{\"is_constructor\":false,\"name\":\"o1\",\"def_pos\":0,\"signature\":\"o1(): boolean\"},{\"is_constructor\":false,\"name\":\"p\",\"def_pos\":0,\"signature\":\"p(): boolean\"},{\"is_constructor\":false,\"name\":\"p0\",\"def_pos\":0,\"signature\":\"p0(): boolean\"},{\"is_constructor\":false,\"name\":\"p1\",\"def_pos\":0,\"signature\":\"p1(): int\"},{\"is_constructor\":false,\"name\":\"q\",\"def_pos\":0,\"signature\":\"q(): boolean\"},{\"is_constructor\":false,\"name\":\"q0\",\"def_pos\":0,\"signature\":\"q0(): boolean\"},{\"is_constructor\":false,\"name\":\"q1\",\"def_pos\":0,\"signature\":\"q1(): boolean\"},{\"is_constructor\":false,\"name\":\"r\",\"def_pos\":0,\"signature\":\"r(): boolean\"},{\"is_constructor\":false,\"name\":\"r0\",\"def_pos\":0,\"signature\":\"r0(): boolean\"},{\"is_constructor\":false,\"name\":\"r1\",\"def_pos\":0,\"signature\":\"r1(): int\"},{\"is_constructor\":false,\"name\":\"s\",\"def_pos\":0,\"signature\":\"s(): boolean\"},{\"is_constructor\":false,\"name\":\"s0\",\"def_pos\":0,\"signature\":\"s0(): boolean\"},{\"is_constructor\":false,\"name\":\"s1\",\"def_pos\":0,\"signature\":\"s1(): int\"},{\"is_constructor\":false,\"name\":\"t\",\"def_pos\":0,\"signature\":\"t(): boolean\"},{\"is_constructor\":false,\"name\":\"t0\",\"def_pos\":0,\"signature\":\"t0(): boolean\"},{\"is_constructor\":false,\"name\":\"t1\",\"def_pos\":0,\"signature\":\"t1(): boolean\"},{\"is_constructor\":false,\"name\":\"u\",\"def_pos\":0,\"signature\":\"u(): boolean\"},{\"is_constructor\":false,\"name\":\"u0\",\"def_pos\":0,\"signature\":\"u0(): boolean\"},{\"is_constructor\":false,\"name\":\"u1\",\"def_pos\":0,\"signature\":\"u1(): long\"},{\"is_constructor\":false,\"name\":\"v\",\"def_pos\":0,\"signature\":\"v(): boolean\"},{\"is_constructor\":false,\"name\":\"v0\",\"def_pos\":0,\"signature\":\"v0(): boolean\"},{\"is_constructor\":false,\"name\":\"w\",\"def_pos\":0,\"signature\":\"w(): boolean\"},{\"is_constructor\":false,\"name\":\"w0\",\"def_pos\":0,\"signature\":\"w0(): boolean\"},{\"is_constructor\":false,\"name\":\"x\",\"def_pos\":0,\"signature\":\"x(): boolean\"},{\"is_constructor\":false,\"name\":\"x0\",\"def_pos\":0,\"signature\":\"x0(): boolean\"},{\"is_constructor\":false,\"name\":\"y\",\"def_pos\":0,\"signature\":\"y(): boolean\"},{\"is_constructor\":false,\"name\":\"y0\",\"def_pos\":0,\"signature\":\"y0(): boolean\"},{\"is_constructor\":false,\"name\":\"z\",\"def_pos\":0,\"signature\":\"z(): boolean\"},{\"is_constructor\":false,\"name\":\"z0\",\"def_pos\":0,\"signature\":\"z0(): boolean\"}],\"method_count\":127,\"inner_class_count\":113,\"inner_classes\":[\"wq1.i.a\",\"wq1.i.a0\",\"wq1.i.a1\",\"wq1.i.a2\",\"wq1.i.a3\",\"wq1.i.b\",\"wq1.i.b0\",\"wq1.i.b1\",\"wq1.i.b2\",\"wq1.i.b3\",\"wq1.i.c\",\"wq1.i.c0\",\"wq1.i.c1\",\"wq1.i.c2\",\"wq1.i.c3\",\"wq1.i.d\",\"wq1.i.d0\",\"wq1.i.d1\",\"wq1.i.d2\",\"wq1.i.d3\",\"wq1.i.e\",\"wq1.i.e0\",\"wq1.i.e1\",\"wq1.i.e2\",\"wq1.i.e3\",\"wq1.i.f\",\"wq1.i.f0\",\"wq1.i.f1\",\"wq1.i.f2\",\"wq1.i.f3\",\"wq1.i.g\",\"wq1.i.g0\",\"wq1.i.g1\",\"wq1.i.g2\",\"wq1.i.g3\",\"wq1.i.h\",\"wq1.i.h0\",\"wq1.i.h1\",\"wq1.i.h2\",\"wq1.i.h3\",\"wq1.i.C8205i\",\"wq1.i.i0\",\"wq1.i.i1\",\"wq1.i.i2\",\"wq1.i.i3\",\"wq1.i.j\",\"wq1.i.j0\",\"wq1.i.j1\",\"wq1.i.j2\",\"wq1.i.k\",\"wq1.i.k0\",\"wq1.i.k1\",\"wq1.i.k2\",\"wq1.i.l\",\"wq1.i.l0\",\"wq1.i.l1\",\"wq1.i.l2\",\"wq1.i.m\",\"wq1.i.m0\",\"wq1.i.m1\",\"wq1.i.m2\",\"wq1.i.n\",\"wq1.i.n0\",\"wq1.i.n1\",\"wq1.i.n2\",\"wq1.i.o\",\"wq1.i.o0\",\"wq1.i.o1\",\"wq1.i.o2\",\"wq1.i.p\",\"wq1.i.p0\",\"wq1.i.p1\",\"wq1.i.p2\",\"wq1.i.q\",\"wq1.i.q0\",\"wq1.i.q1\",\"wq1.i.q2\",\"wq1.i.r\",\"wq1.i.r0\",\"wq1.i.r1\",\"wq1.i.r2\",\"wq1.i.s\",\"wq1.i.s0\",\"wq1.i.s1\",\"wq1.i.s2\",\"wq1.i.t\",\"wq1.i.t0\",\"wq1.i.t1\",\"wq1.i.t2\",\"wq1.i.u\",\"wq1.i.u0\",\"wq1.i.u1\",\"wq1.i.u2\",\"wq1.i.v\",\"wq1.i.v0\",\"wq1.i.v1\",\"wq1.i.v2\",\"wq1.i.w\",\"wq1.i.w0\",\"wq1.i.w1\",\"wq1.i.w2\",\"wq1.i.x\",\"wq1.i.x0\",\"wq1.i.x1\",\"wq1.i.x2\",\"wq1.i.y\",\"wq1.i.y0\",\"wq1.i.y1\",\"wq1.i.y2\",\"wq1.i.z\",\"wq1.i.z0\",\"wq1.i.z1\",\"wq1.i.z2\"]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "wq1.i",
+          "method_name": "n1",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"body\":\"    public final boolean n1() {\\r\\n        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, i.class, 46368);\\r\\n        if (patchProxyResultProxy0Para.isSupported) {\\r\\n            return ((Boolean) patchProxyResultProxy0Para.result).booleanValue();\\r\\n        }\\r\\n        return false;\\r\\n    }\",\"overload_count\":1,\"method_name\":\"n1\",\"markers\":[],\"mode\":\"java\",\"full_name\":\"wq1.i.n1\",\"class_name\":\"wq1.i\",\"overload_index\":0,\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "wq1.i",
+    "method": {
+      "name": "n1",
+      "reported_signature": "n1(): boolean",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final boolean n1() {\r\n        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, i.class, 46368);\r\n        if (patchProxyResultProxy0Para.isSupported) {\r\n            return ((Boolean) patchProxyResultProxy0Para.result).booleanValue();\r\n        }\r\n        return false;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "47a675c8e794d79cf547951968fe86f833843881cf5953bf8bb168364f3fb223",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

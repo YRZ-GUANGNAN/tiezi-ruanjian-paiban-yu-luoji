@@ -129,6 +129,53 @@ if(fs.existsSync(round2Root)){
   check(e.resume.sameObservedPid===true&&e.resume.processDeathTested===false&&e.keyboardSeries.fullSoftKeyboardVisible===false,'第二轮后台与键盘测试边界');
   round2Summary={staticEvidence:index.records.length,auxiliary:index.auxiliary.length,emulatorObservations:e.observations.length,excludedObservations:e.excludedObservations.length};
 }
+const round3Root=path.join(offlineRoot,'第三轮');
+let round3Summary=null;
+if(fs.existsSync(round3Root)){
+  const index=read(path.join(round3Root,'evidence-index.json'));
+  check(index.appVersion==='8.72.0'&&index.records.length===81,'第三轮证据计数或版本');
+  check(new Set(index.records.map(r=>r.id)).size===81,'第三轮证据编号重复');
+  const methods=index.records.filter(r=>r.operation==='inspect_android_method');
+  check(methods.length===60&&methods.filter(r=>r.bodyStatus==='available').length===57&&methods.filter(r=>r.bodyStatus==='not_available').length===3,'第三轮方法状态');
+  check(index.counts.reaEvidence===81&&index.counts.methodQueries===60&&index.counts.availableBodies===57&&index.counts.unavailableBodies===3,'第三轮索引方法计数');
+  check(index.auxiliary.length===20&&index.counts.auxiliary===20&&index.derived.length===2,'第三轮辅助和派生文件计数');
+  check(index.counts.newRuntimeObservations===0&&index.counts.reusedRuntimeObservations===2,'第三轮运行边界');
+  for(const r of index.records){
+    const file=path.join(round3Root,r.file),ev=read(file);
+    check(digest(fs.readFileSync(file))===r.publicSha256,'第三轮证据摘要：'+r.id);
+    check(ev.evidence_id===r.evidenceId&&ev.subject.digest.sha256===index.apkSha256&&r.artifactSha256===index.apkSha256,'第三轮证据身份：'+r.id);
+    check(/^[a-f0-9]{64}$/.test(r.originalSha256)&&ev._public_export?.originalFileSha256===r.originalSha256,'第三轮原件摘要：'+r.id);
+    if(r.sourceFile){
+      const source=fs.readFileSync(path.join(round3Root,r.sourceFile));
+      check(digest(source)===r.sourceSha256&&source.toString('utf8')===ev.normalized_result.source.text.replace(/\r\n/g,'\n').replace(/[ \t]+$/gm,'').replace(/^[ \t]+/gm,indent=>indent.replace(/\t/g,'    ')),'第三轮方法文本：'+r.id);
+      check(r.bodyStatus===ev.normalized_result.body_status&&r.sourceStatus===ev.normalized_result.source.status,'第三轮方法来源状态：'+r.id);
+    }
+  }
+  for(const r of index.auxiliary){
+    check(digest(fs.readFileSync(path.join(round3Root,r.file)))===r.publicSha256,'第三轮辅助摘要：'+r.id);
+    check(r.apkSha256===index.apkSha256&&r.isReaEvidence===false&&r.runtimeObserved===false&&/^[a-f0-9]{64}$/.test(r.originalSha256),'第三轮辅助来源：'+r.id);
+  }
+  for(const r of index.derived){
+    const data=read(path.join(round3Root,r.file));
+    check(digest(fs.readFileSync(path.join(round3Root,r.file)))===r.publicSha256&&/^[a-f0-9]{64}$/.test(r.originalSha256),'第三轮派生摘要：'+r.file);
+    check(data.appVersion===index.appVersion&&data.apkSha256===index.apkSha256,'第三轮派生版本：'+r.file);
+    for(const source of data.sources){
+      const a=index.auxiliary.find(a=>a.file===source.file);
+      check(a&&a.publicSha256===source.publicSha256&&a.originalSha256===source.originalSha256,'第三轮派生来源：'+source.file);
+    }
+  }
+  const font=read(path.join(round3Root,'font-condition-table.json'));
+  check(font.checks.baseEnumCount===37&&font.checks.expandedEnumCount===111&&font.checks.mapEntriesCrossCheckedAgainstDex===111&&font.checks.allValuesMatched===true,'第三轮字体表对照');
+  check(font.runtimeObserved===false&&font.selectedTokens.length===6&&font.detailAttribute.title===3&&font.detailAttribute.body===10,'第三轮字体映射和边界');
+  check(JSON.stringify(font.selectedTokens.map(t=>[t.ordinal,t.size,t.lineHeight]))===JSON.stringify([[3,18,26],[10,15,22],[40,20,29],[47,17,25],[77,22,32],[84,19,28]]),'第三轮详情字体数值');
+  check(JSON.stringify(font.selection.modeRows.map(r=>[r.mode,r.offset,r.unit]))===JSON.stringify([[-1,0,'sp'],[0,0,'dp'],[1,37,'dp'],[2,74,'dp']]),'第三轮字体单位');
+  const comments=read(path.join(round3Root,'comment-layout-rules.json'));
+  check(comments.newRuntimeObservations===0&&comments.comparison.observations.length===2,'第三轮评论复用观察');
+  check(comments.comparison.predictedPrimaryStartPx===157&&comments.comparison.predictedReplyStartPx===226&&comments.comparison.predictedBodyRightPx===933,'第三轮评论几何');
+  check(comments.footerWrap.longTextCollapseThreshold===null&&comments.typography.runtimeTypefaceAndSizeConfirmed===false,'第三轮未验证项边界');
+  for(const o of comments.comparison.observations)check(o.kind==='reused-prior-device-observation'&&o.containsUserText===false&&Object.values(o.sourceHashes).every(h=>/^[a-f0-9]{64}$/.test(h)),'第三轮旧观察来源：'+o.id);
+  round3Summary={staticEvidence:index.records.length,auxiliary:index.auxiliary.length,fontEntriesCrossChecked:111,reusedObservations:2,newRuntimeObservations:0};
+}
 if(writingManifest&&!problems.length){
   const manifest={schemaVersion:1,title:'帖子软件排版与逻辑',scope:'Public derived repository; .git and this manifest are excluded.',files:files.map(p=>({file:relative(p),bytes:fs.statSync(p).size,sha256:digest(fs.readFileSync(p))}))};
   fs.writeFileSync(manifestFile,JSON.stringify(manifest,null,2)+'\n');
@@ -143,5 +190,5 @@ if(!writingManifest&&fs.existsSync(manifestFile)){
     check(fs.existsSync(p)&&fs.statSync(p).size===e.bytes&&digest(fs.readFileSync(p))===e.sha256,'仓库摘要不匹配：'+e.file);
   }
 }else if(!writingManifest) check(false,'缺少 public-manifest.json');
-console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,round2:round2Summary,issues:problems},null,2));
+console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,round2:round2Summary,round3:round3Summary,issues:problems},null,2));
 if(problems.length)process.exitCode=1;

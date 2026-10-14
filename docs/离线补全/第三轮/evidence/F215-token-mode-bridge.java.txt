@@ -1,0 +1,6 @@
+    public static /* synthetic */ int b(a aVar, Context context, int i100, Object obj) {
+        if ((i100 & 1) != 0) {
+            context = f296516b;
+        }
+        return aVar.a(context);
+    }

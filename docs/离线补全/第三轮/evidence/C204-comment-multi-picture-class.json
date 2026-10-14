@@ -1,0 +1,421 @@
+{
+  "evidence_id": "ev_cde748a28eaad8ba883c970f95310b60ed4b258bbe95fdaaae4089d4f5b05329",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.comment.consumer.list.view.CommentMultiPictureItemView"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.comment.consumer.list.view.CommentMultiPictureItemView"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"name\":\"CommentMultiPictureItemView\",\"full_name\":\"com.xingin.comment.consumer.list.view.CommentMultiPictureItemView\",\"field_count\":7,\"fields\":[{\"name\":\"f87460d\",\"type\":\"java.util.ArrayList<com.xingin.comment.consumer.list.view.CommentSinglePictureView>\",\"def_pos\":0},{\"name\":\"f87461e\",\"type\":\"xc3.e\",\"def_pos\":0},{\"name\":\"f87462f\",\"type\":\"th6.i\",\"def_pos\":0},{\"name\":\"f87463g\",\"type\":\"kotlin.Lazy\",\"def_pos\":0},{\"name\":\"f87464h\",\"type\":\"kotlin.jvm.functions.Function0<kotlin.Unit>\",\"def_pos\":0},{\"name\":\"f87465l\",\"type\":\"kotlin.Lazy\",\"def_pos\":0},{\"name\":\"f87466m\",\"type\":\"java.util.Map<java.lang.Integer, android.view.View>\",\"def_pos\":0}],\"methods\":[{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(android.content.Context, android.util.AttributeSet): void\"},{\"is_constructor\":false,\"name\":\"A4\",\"def_pos\":0,\"signature\":\"A4(): tb9.r<java.lang.Integer>\"},{\"is_constructor\":false,\"name\":\"D4\",\"def_pos\":0,\"signature\":\"D4(kotlin.Unit): java.lang.Integer\"},{\"is_constructor\":false,\"name\":\"E4\",\"def_pos\":0,\"signature\":\"E4(kotlin.Unit): java.lang.Integer\"},{\"is_constructor\":false,\"name\":\"F4\",\"def_pos\":0,\"signature\":\"F4(kotlin.Unit): java.lang.Integer\"},{\"is_constructor\":false,\"name\":\"H4\",\"def_pos\":0,\"signature\":\"H4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, java.lang.Integer): boolean\"},{\"is_constructor\":false,\"name\":\"I4\",\"def_pos\":0,\"signature\":\"I4(): void\"},{\"is_constructor\":false,\"name\":\"K4\",\"def_pos\":0,\"signature\":\"K4(xc3.e, th6.i, kotlin.jvm.functions.Function0<kotlin.Unit>): void\"},{\"is_constructor\":false,\"name\":\"O4\",\"def_pos\":0,\"signature\":\"O4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, xc3.e, th6.i, kotlin.jvm.functions.Function0, int, java.lang.Object): void\"},{\"is_constructor\":false,\"name\":\"P4\",\"def_pos\":0,\"signature\":\"P4(uc9.c): tb9.g\"},{\"is_constructor\":false,\"name\":\"S4\",\"def_pos\":0,\"signature\":\"S4(com.xingin.entities.CommentCommentInfo, kotlin.jvm.functions.Function0<kotlin.Unit>): void\"},{\"is_constructor\":false,\"name\":\"T4\",\"def_pos\":0,\"signature\":\"T4(x86.n): void\"},{\"is_constructor\":false,\"name\":\"X3\",\"def_pos\":0,\"signature\":\"X3(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, com.xingin.comment.consumer.list.view.CommentSinglePictureView): boolean\"},{\"is_constructor\":false,\"name\":\"Y3\",\"def_pos\":0,\"signature\":\"Y3(uc9.c): tb9.g\"},{\"is_constructor\":false,\"name\":\"Z3\",\"def_pos\":0,\"signature\":\"Z3(com.xingin.comment.consumer.list.view.CommentSinglePictureView): com.xingin.entities.CommentPictureInfo\"},{\"is_constructor\":false,\"name\":\"_$_findCachedViewById\",\"def_pos\":0,\"signature\":\"_$_findCachedViewById(int): android.view.View\"},{\"is_constructor\":false,\"name\":\"c4\",\"def_pos\":0,\"signature\":\"c4(kotlin.Unit): java.lang.Integer\"},{\"is_constructor\":false,\"name\":\"d4\",\"def_pos\":0,\"signature\":\"d4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, kotlin.Unit): com.xingin.comment.consumer.list.view.CommentSinglePictureView\"},{\"is_constructor\":false,\"name\":\"e4\",\"def_pos\":0,\"signature\":\"e4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, kotlin.Unit): com.xingin.comment.consumer.list.view.CommentSinglePictureView\"},{\"is_constructor\":false,\"name\":\"g4\",\"def_pos\":0,\"signature\":\"g4(kotlin.Unit): java.lang.Integer\"},{\"is_constructor\":false,\"name\":\"getAccessModeAdapter\",\"def_pos\":0,\"signature\":\"getAccessModeAdapter(): wg3.c\"},{\"is_constructor\":false,\"name\":\"getClickReplyCallback\",\"def_pos\":0,\"signature\":\"getClickReplyCallback(): kotlin.jvm.functions.Function0<kotlin.Unit>\"},{\"is_constructor\":false,\"name\":\"getPicList\",\"def_pos\":0,\"signature\":\"getPicList(): java.util.ArrayList<com.xingin.comment.consumer.list.view.CommentSinglePictureView>\"},{\"is_constructor\":false,\"name\":\"getTranslateEnable\",\"def_pos\":0,\"signature\":\"getTranslateEnable(): boolean\"},{\"is_constructor\":false,\"name\":\"h4\",\"def_pos\":0,\"signature\":\"h4(kotlin.Unit): java.lang.Integer\"},{\"is_constructor\":false,\"name\":\"j4\",\"def_pos\":0,\"signature\":\"j4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, kotlin.Unit): com.xingin.comment.consumer.list.view.CommentSinglePictureView\"},{\"is_constructor\":false,\"name\":\"k4\",\"def_pos\":0,\"signature\":\"k4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, java.lang.Integer): boolean\"},{\"is_constructor\":false,\"name\":\"l4\",\"def_pos\":0,\"signature\":\"l4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView): boolean\"},{\"is_constructor\":false,\"name\":\"m4\",\"def_pos\":0,\"signature\":\"m4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView): th6.i\"},{\"is_constructor\":false,\"name\":\"o4\",\"def_pos\":0,\"signature\":\"o4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView): xc3.e\"},{\"is_constructor\":false,\"name\":\"p4\",\"def_pos\":0,\"signature\":\"p4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, x86.n): void\"},{\"is_constructor\":false,\"name\":\"r4\",\"def_pos\":0,\"signature\":\"r4(): tb9.r<com.xingin.entities.CommentPictureInfo>\"},{\"is_constructor\":false,\"name\":\"s4\",\"def_pos\":0,\"signature\":\"s4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, kotlin.Unit): com.xingin.comment.consumer.list.view.CommentSinglePictureView\"},{\"is_constructor\":false,\"name\":\"setClickReplyCallback\",\"def_pos\":0,\"signature\":\"setClickReplyCallback(kotlin.jvm.functions.Function0<kotlin.Unit>): void\"},{\"is_constructor\":false,\"name\":\"t4\",\"def_pos\":0,\"signature\":\"t4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, com.xingin.comment.consumer.list.view.CommentSinglePictureView): boolean\"},{\"is_constructor\":false,\"name\":\"v4\",\"def_pos\":0,\"signature\":\"v4(com.xingin.comment.consumer.list.view.CommentSinglePictureView): com.xingin.entities.CommentPictureInfo\"},{\"is_constructor\":false,\"name\":\"w4\",\"def_pos\":0,\"signature\":\"w4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, kotlin.Unit): com.xingin.comment.consumer.list.view.CommentSinglePictureView\"},{\"is_constructor\":false,\"name\":\"x4\",\"def_pos\":0,\"signature\":\"x4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, kotlin.Unit): com.xingin.comment.consumer.list.view.CommentSinglePictureView\"},{\"is_constructor\":false,\"name\":\"y4\",\"def_pos\":0,\"signature\":\"y4(com.xingin.comment.consumer.list.view.CommentSinglePictureView): boolean\"},{\"is_constructor\":false,\"name\":\"z4\",\"def_pos\":0,\"signature\":\"z4(java.util.ArrayList<com.xingin.comment.consumer.list.view.CommentSinglePictureView>): void\"}],\"method_count\":40,\"inner_class_count\":7,\"inner_classes\":[\"com.xingin.comment.consumer.list.view.CommentMultiPictureItemView.a\",\"com.xingin.comment.consumer.list.view.CommentMultiPictureItemView.b\",\"com.xingin.comment.consumer.list.view.CommentMultiPictureItemView.c\",\"com.xingin.comment.consumer.list.view.CommentMultiPictureItemView.d\",\"com.xingin.comment.consumer.list.view.CommentMultiPictureItemView.e\",\"com.xingin.comment.consumer.list.view.CommentMultiPictureItemView.f\",\"com.xingin.comment.consumer.list.view.CommentMultiPictureItemView.g\"]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.comment.consumer.list.view.CommentMultiPictureItemView",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context, android.util.AttributeSet): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A4",
+        "reported_signature": "A4(): tb9.r<java.lang.Integer>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D4",
+        "reported_signature": "D4(kotlin.Unit): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "E4",
+        "reported_signature": "E4(kotlin.Unit): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F4",
+        "reported_signature": "F4(kotlin.Unit): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H4",
+        "reported_signature": "H4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, java.lang.Integer): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I4",
+        "reported_signature": "I4(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "K4",
+        "reported_signature": "K4(xc3.e, th6.i, kotlin.jvm.functions.Function0<kotlin.Unit>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "O4",
+        "reported_signature": "O4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, xc3.e, th6.i, kotlin.jvm.functions.Function0, int, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "P4",
+        "reported_signature": "P4(uc9.c): tb9.g",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "S4",
+        "reported_signature": "S4(com.xingin.entities.CommentCommentInfo, kotlin.jvm.functions.Function0<kotlin.Unit>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "T4",
+        "reported_signature": "T4(x86.n): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "X3",
+        "reported_signature": "X3(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, com.xingin.comment.consumer.list.view.CommentSinglePictureView): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y3",
+        "reported_signature": "Y3(uc9.c): tb9.g",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Z3",
+        "reported_signature": "Z3(com.xingin.comment.consumer.list.view.CommentSinglePictureView): com.xingin.entities.CommentPictureInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "_$_findCachedViewById",
+        "reported_signature": "_$_findCachedViewById(int): android.view.View",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c4",
+        "reported_signature": "c4(kotlin.Unit): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d4",
+        "reported_signature": "d4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, kotlin.Unit): com.xingin.comment.consumer.list.view.CommentSinglePictureView",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e4",
+        "reported_signature": "e4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, kotlin.Unit): com.xingin.comment.consumer.list.view.CommentSinglePictureView",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g4",
+        "reported_signature": "g4(kotlin.Unit): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAccessModeAdapter",
+        "reported_signature": "getAccessModeAdapter(): wg3.c",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getClickReplyCallback",
+        "reported_signature": "getClickReplyCallback(): kotlin.jvm.functions.Function0<kotlin.Unit>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getPicList",
+        "reported_signature": "getPicList(): java.util.ArrayList<com.xingin.comment.consumer.list.view.CommentSinglePictureView>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getTranslateEnable",
+        "reported_signature": "getTranslateEnable(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h4",
+        "reported_signature": "h4(kotlin.Unit): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j4",
+        "reported_signature": "j4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, kotlin.Unit): com.xingin.comment.consumer.list.view.CommentSinglePictureView",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k4",
+        "reported_signature": "k4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, java.lang.Integer): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l4",
+        "reported_signature": "l4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m4",
+        "reported_signature": "m4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView): th6.i",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o4",
+        "reported_signature": "o4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView): xc3.e",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p4",
+        "reported_signature": "p4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, x86.n): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r4",
+        "reported_signature": "r4(): tb9.r<com.xingin.entities.CommentPictureInfo>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s4",
+        "reported_signature": "s4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, kotlin.Unit): com.xingin.comment.consumer.list.view.CommentSinglePictureView",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setClickReplyCallback",
+        "reported_signature": "setClickReplyCallback(kotlin.jvm.functions.Function0<kotlin.Unit>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t4",
+        "reported_signature": "t4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, com.xingin.comment.consumer.list.view.CommentSinglePictureView): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v4",
+        "reported_signature": "v4(com.xingin.comment.consumer.list.view.CommentSinglePictureView): com.xingin.entities.CommentPictureInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w4",
+        "reported_signature": "w4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, kotlin.Unit): com.xingin.comment.consumer.list.view.CommentSinglePictureView",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x4",
+        "reported_signature": "x4(com.xingin.comment.consumer.list.view.CommentMultiPictureItemView, kotlin.Unit): com.xingin.comment.consumer.list.view.CommentSinglePictureView",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y4",
+        "reported_signature": "y4(com.xingin.comment.consumer.list.view.CommentSinglePictureView): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z4",
+        "reported_signature": "z4(java.util.ArrayList<com.xingin.comment.consumer.list.view.CommentSinglePictureView>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "f87460d",
+        "reported_type": "java.util.ArrayList<com.xingin.comment.consumer.list.view.CommentSinglePictureView>"
+      },
+      {
+        "name": "f87461e",
+        "reported_type": "xc3.e"
+      },
+      {
+        "name": "f87462f",
+        "reported_type": "th6.i"
+      },
+      {
+        "name": "f87463g",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f87464h",
+        "reported_type": "kotlin.jvm.functions.Function0<kotlin.Unit>"
+      },
+      {
+        "name": "f87465l",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f87466m",
+        "reported_type": "java.util.Map<java.lang.Integer, android.view.View>"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.comment.consumer.list.view.CommentMultiPictureItemView.a",
+      "com.xingin.comment.consumer.list.view.CommentMultiPictureItemView.b",
+      "com.xingin.comment.consumer.list.view.CommentMultiPictureItemView.c",
+      "com.xingin.comment.consumer.list.view.CommentMultiPictureItemView.d",
+      "com.xingin.comment.consumer.list.view.CommentMultiPictureItemView.e",
+      "com.xingin.comment.consumer.list.view.CommentMultiPictureItemView.f",
+      "com.xingin.comment.consumer.list.view.CommentMultiPictureItemView.g"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "84789ec7296e82af782be1371e7236847c9bb610f4e243001ec55ac94a9e855f",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

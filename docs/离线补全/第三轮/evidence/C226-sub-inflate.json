@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_d076f065c88e5c10a5f3a7454f98525328e9d0253710f2fddbb6353516b5a27d",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "ch6.a",
+    "method_name": "f"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "ch6.a"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"def_pos\":0,\"signature\":\"<init>(ch6.a$c): void\",\"is_constructor\":true,\"name\":\"<init>\"},{\"def_pos\":0,\"signature\":\"a(): pl4.d\",\"is_constructor\":false,\"name\":\"a\"},{\"def_pos\":0,\"signature\":\"d(android.view.ViewGroup, kotlin.jvm.functions.Function1<? super com.xingin.matrix.v2.notedetail.async.itembinder.subcomment.child.AsyncSubCommentView, kotlin.Unit>): ch6.f\",\"is_constructor\":false,\"name\":\"d\"},{\"def_pos\":0,\"signature\":\"e(): ch6.h\",\"is_constructor\":false,\"name\":\"e\"},{\"def_pos\":0,\"signature\":\"f(android.view.ViewGroup, kotlin.jvm.functions.Function1<? super com.xingin.matrix.v2.notedetail.async.itembinder.subcomment.child.AsyncSubCommentView, kotlin.Unit>): ch6.h\",\"is_constructor\":false,\"name\":\"f\"},{\"def_pos\":0,\"signature\":\"g(): int\",\"is_constructor\":false,\"name\":\"g\"}],\"method_count\":6,\"inner_class_count\":4,\"inner_classes\":[\"ch6.a.InterfaceC0720a\",\"ch6.a.b\",\"ch6.a.c\",\"ch6.a.d\"],\"name\":\"a\",\"full_name\":\"ch6.a\",\"field_count\":0,\"fields\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "ch6.a",
+          "method_name": "f",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"mode\":\"java\",\"full_name\":\"ch6.a.f\",\"class_name\":\"ch6.a\",\"overload_index\":0,\"fell_back\":false,\"body\":\"    public final h f(ViewGroup viewGroup, Function1<? super AsyncSubCommentView, Unit> function1) {\\r\\n        PatchProxyResult patchProxyResultProxy2Para = PatchProxy.proxy2Para(viewGroup, function1, this, a.class, 386447);\\r\\n        if (patchProxyResultProxy2Para.isSupported) {\\r\\n            return (h) patchProxyResultProxy2Para.result;\\r\\n        }\\r\\n        View viewA = vd3.b.f331647a.a(wd3.d.COMMENT_SUB_ITEM);\\r\\n        AsyncSubCommentView asyncSubCommentView = viewA instanceof AsyncSubCommentView ? (AsyncSubCommentView) viewA : null;\\r\\n        if (asyncSubCommentView == null) {\\r\\n            return b(g(), viewGroup, new d(function1));\\r\\n        }\\r\\n        float f100 = 6;\\r\\n        j2.K((XYAvatarView) asyncSubCommentView.a(mp5.h.O2), (int) TypedValue.applyDimension(1, f100, Resources.getSystem().getDisplayMetrics()));\\r\\n        int i100 = mp5.h.f238627c1;\\r\\n        j2.K((HandlePressStateCommentLinearLayout) asyncSubCommentView.a(i100), (int) TypedValue.applyDimension(1, f100, Resources.getSystem().getDisplayMetrics()));\\r\\n        j2.J((HandlePressStateCommentLinearLayout) asyncSubCommentView.a(i100), (int) TypedValue.applyDimension(1, f100, Resources.getSystem().getDisplayMetrics()));\\r\\n        j2.J((HandlePressStateCommentTextView) asyncSubCommentView.a(mp5.h.f238727o6), 0);\\r\\n        j2.K((TextView) asyncSubCommentView.a(mp5.h.f238719n6), (int) TypedValue.applyDimension(1, 4, Resources.getSystem().getDisplayMetrics()));\\r\\n        asyncSubCommentView.setBackground(null);\\r\\n        function1.invoke(asyncSubCommentView);\\r\\n        h hVarA = a();\\r\\n        hVarA.D(asyncSubCommentView);\\r\\n        hVarA.k0(true);\\r\\n        return hVarA;\\r\\n    }\",\"overload_count\":1,\"method_name\":\"f\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "ch6.a",
+    "method": {
+      "name": "f",
+      "reported_signature": "f(android.view.ViewGroup, kotlin.jvm.functions.Function1<? super com.xingin.matrix.v2.notedetail.async.itembinder.subcomment.child.AsyncSubCommentView, kotlin.Unit>): ch6.h",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final h f(ViewGroup viewGroup, Function1<? super AsyncSubCommentView, Unit> function1) {\r\n        PatchProxyResult patchProxyResultProxy2Para = PatchProxy.proxy2Para(viewGroup, function1, this, a.class, 386447);\r\n        if (patchProxyResultProxy2Para.isSupported) {\r\n            return (h) patchProxyResultProxy2Para.result;\r\n        }\r\n        View viewA = vd3.b.f331647a.a(wd3.d.COMMENT_SUB_ITEM);\r\n        AsyncSubCommentView asyncSubCommentView = viewA instanceof AsyncSubCommentView ? (AsyncSubCommentView) viewA : null;\r\n        if (asyncSubCommentView == null) {\r\n            return b(g(), viewGroup, new d(function1));\r\n        }\r\n        float f100 = 6;\r\n        j2.K((XYAvatarView) asyncSubCommentView.a(mp5.h.O2), (int) TypedValue.applyDimension(1, f100, Resources.getSystem().getDisplayMetrics()));\r\n        int i100 = mp5.h.f238627c1;\r\n        j2.K((HandlePressStateCommentLinearLayout) asyncSubCommentView.a(i100), (int) TypedValue.applyDimension(1, f100, Resources.getSystem().getDisplayMetrics()));\r\n        j2.J((HandlePressStateCommentLinearLayout) asyncSubCommentView.a(i100), (int) TypedValue.applyDimension(1, f100, Resources.getSystem().getDisplayMetrics()));\r\n        j2.J((HandlePressStateCommentTextView) asyncSubCommentView.a(mp5.h.f238727o6), 0);\r\n        j2.K((TextView) asyncSubCommentView.a(mp5.h.f238719n6), (int) TypedValue.applyDimension(1, 4, Resources.getSystem().getDisplayMetrics()));\r\n        asyncSubCommentView.setBackground(null);\r\n        function1.invoke(asyncSubCommentView);\r\n        h hVarA = a();\r\n        hVarA.D(asyncSubCommentView);\r\n        hVarA.k0(true);\r\n        return hVarA;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "5304ecc1f4b3c2d98ce91bfe76c8e22aee7061a4788fd6524a9acae1ed59c433",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+    /* JADX WARN: Code duplicated, block: B:30:0x006e  */
+    public final void p4(CommentPictureInfo commentPictureInfo, boolean z100) {
+        boolean z101;
+        Integer numB;
+        if (PatchProxy.proxyVoid2Para(commentPictureInfo, new Boolean(z100), this, CommentSinglePictureView.class, 250077)) {
+            return;
+        }
+        CommentPictureTempInfo commentPictureTempInfoD = commentPictureInfo != null ? commentPictureInfo.d() : null;
+        x.b("CommentSinglePictureView", "updateOverLayerView picCount  : " + (commentPictureTempInfoD != null ? Integer.valueOf(commentPictureTempInfoD.a()) : null) + " posInList " + (commentPictureTempInfoD != null ? commentPictureTempInfoD.b() : null));
+        boolean z102 = true;
+        if ((commentPictureTempInfoD != null ? commentPictureTempInfoD.a() : 0) <= 3) {
+            z101 = false;
+        } else {
+            if ((commentPictureTempInfoD == null || (numB = commentPictureTempInfoD.b()) == null || numB.intValue() != 2) ? false : true) {
+                z101 = true;
+            } else {
+                z101 = false;
+            }
+        }
+        TextView textView = (TextView) _$_findCachedViewById(mp5.h.A4);
+        if (!z101 && !z100) {
+            z102 = false;
+        }
+        o.r(textView, z102, new g(commentPictureInfo));
+        l4();
+        s4(0, false);
+    }

@@ -1,0 +1,50 @@
+    /* JADX WARN: Multi-variable type inference failed */
+    public final void U(qh6.d dVar, SpannableStringBuilder spannableStringBuilder, Context context) {
+        if (PatchProxy.proxyVoid3Para(dVar, spannableStringBuilder, context, this, h.class, 385537)) {
+            return;
+        }
+        ej1.b bVar = ej1.b.f147742a;
+        if (bVar.f(bm1.c.a())) {
+            AsyncParentCommentView asyncParentCommentView = (AsyncParentCommentView) getView();
+            int i100 = mp5.h.O2;
+            bVar.g((XYAvatarView) asyncParentCommentView.a(i100));
+            AsyncParentCommentView asyncParentCommentView2 = (AsyncParentCommentView) getView();
+            int i101 = mp5.h.f238700l3;
+            bVar.g((LinearLayout) asyncParentCommentView2.a(i101));
+            XYAvatarView xYAvatarView = (XYAvatarView) ((AsyncParentCommentView) getView()).a(i100);
+            CommentCommentUser commentCommentUserA0 = dVar.m().a0();
+            bVar.h(xYAvatarView, String.valueOf(commentCommentUserA0 != null ? commentCommentUserA0.d() : null));
+            ej1.b.l(bVar, (LinearLayout) ((AsyncParentCommentView) getView()).a(i101), true, false, 4, null);
+            q0(dVar);
+            AsyncParentCommentView asyncParentCommentView3 = (AsyncParentCommentView) getView();
+            int i102 = mp5.h.f238692k3;
+            ej1.b.l(bVar, (AsyncParentCommentView) asyncParentCommentView3.a(i102), true, false, 4, null);
+            ej1.b.l(bVar, (TextView) ((AsyncParentCommentView) getView()).a(mp5.h.f238743q6), false, false, 4, null);
+            ej1.b.l(bVar, (HandlePressStateCommentTextView) ((AsyncParentCommentView) getView()).a(mp5.h.f238727o6), false, false, 4, null);
+            ej1.b.l(bVar, (TextView) ((AsyncParentCommentView) getView()).a(mp5.h.f238719n6), false, false, 4, null);
+            ej1.b.l(bVar, (TextView) ((AsyncParentCommentView) getView()).a(mp5.h.f238711m6), false, false, 4, null);
+            ej1.b.l(bVar, (LinearLayout) ((AsyncParentCommentView) getView()).a(mp5.h.f238766t5), false, false, 4, null);
+            ej1.b.l(bVar, (XYAvatarView) ((AsyncParentCommentView) getView()).a(i100), true, false, 4, null);
+            bVar.g((XYAvatarView) ((AsyncParentCommentView) getView()).a(i100));
+            bVar.g((AsyncParentCommentView) ((AsyncParentCommentView) getView()).a(i102));
+            ej1.b.l(bVar, (HandlePressStateCommentLinearLayout) ((AsyncParentCommentView) getView()).a(mp5.h.f238627c1), false, false, 4, null);
+            String strReplace$default = StringsKt__StringsJVMKt.replace$default(StringsKt__StringsJVMKt.replace$default(g0.S(g0.f302805a, ((AsyncParentCommentView) getView()).getContext(), dVar.m(), true, false, 8, null).toString(), "-", "", false, 4, (Object) null), "回复", "", false, 4, (Object) null);
+            AsyncParentCommentView asyncParentCommentView4 = (AsyncParentCommentView) ((AsyncParentCommentView) getView()).a(i102);
+            CommentCommentUser commentCommentUserA1 = dVar.m().a0();
+            String strD = commentCommentUserA1 != null ? commentCommentUserA1.d() : null;
+            String strY = Y(dVar, context);
+            AsyncParentCommentView asyncParentCommentView5 = (AsyncParentCommentView) getView();
+            int i103 = mp5.h.f238631c5;
+            String str = (((CommentPictureItemView) asyncParentCommentView5.a(i103)) == null || ((CommentPictureItemView) ((AsyncParentCommentView) getView()).a(i103)).getVisibility() != 0) ? "" : "图片";
+            bVar.h(asyncParentCommentView4, strD + "，" + strY + "，说，" + ((Object) spannableStringBuilder) + "，" + str + "发布于" + strReplace$default + "，点赞" + dVar.m().p() + "， " + X(dVar, context));
+            if (((CommentPictureItemView) ((AsyncParentCommentView) getView()).a(i103)).getVisibility() == 0) {
+                jx8.d.a("acc_opt", "AsyncPARENTCommentPresenter.bindPIC " + getView());
+                AsyncParentCommentView asyncParentCommentView6 = (AsyncParentCommentView) getView();
+                int i104 = mp5.h.f238623b5;
+                ej1.b.l(bVar, (SimpleDraweeView) asyncParentCommentView6.a(i104), true, false, 4, null);
+                ej1.b.l(bVar, (CommentPictureItemView) ((AsyncParentCommentView) getView()).a(i103), false, false, 4, null);
+                bVar.j((SimpleDraweeView) ((AsyncParentCommentView) getView()).a(i104));
+                bVar.h((SimpleDraweeView) ((AsyncParentCommentView) getView()).a(i104), "图片");
+            }
+        }
+    }

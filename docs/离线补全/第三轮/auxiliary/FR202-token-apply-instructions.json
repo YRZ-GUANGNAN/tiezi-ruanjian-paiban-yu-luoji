@@ -1,0 +1,1157 @@
+{
+  "provider": "dexlib2-bundled-with-jadx-auxiliary-not-REA-Evidence",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "selectors": [
+    "Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;::d",
+    "Ls69/e;::a",
+    "Ls69/e;::b",
+    "Ls69/e;::c",
+    "Ls69/e;::d",
+    "Ls69/e;::e"
+  ],
+  "matches": [
+    {
+      "selector": "Ls69/e;::a",
+      "dexEntry": "classes14.dex",
+      "method": "Ls69/e;->a()Ls69/c;",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 2,
+      "codeUnits": 3,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "iget-object",
+          "a": 0,
+          "b": 1,
+          "reference": "Ls69/e;->d:Ls69/c;"
+        },
+        {
+          "offset": 2,
+          "opcode": "return-object",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Ls69/e;::b",
+      "dexEntry": "classes14.dex",
+      "method": "Ls69/e;->b()I",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 2,
+      "codeUnits": 3,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "iget",
+          "a": 0,
+          "b": 1,
+          "reference": "Ls69/e;->c:I"
+        },
+        {
+          "offset": 2,
+          "opcode": "return",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Ls69/e;::c",
+      "dexEntry": "classes14.dex",
+      "method": "Ls69/e;->c()I",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 2,
+      "codeUnits": 3,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "iget",
+          "a": 0,
+          "b": 1,
+          "reference": "Ls69/e;->b:I"
+        },
+        {
+          "offset": 2,
+          "opcode": "return",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Ls69/e;::d",
+      "dexEntry": "classes14.dex",
+      "method": "Ls69/e;->d()[I",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 2,
+      "codeUnits": 3,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "iget-object",
+          "a": 0,
+          "b": 1,
+          "reference": "Ls69/e;->a:[I"
+        },
+        {
+          "offset": 2,
+          "opcode": "return-object",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Ls69/e;::e",
+      "dexEntry": "classes14.dex",
+      "method": "Ls69/e;->e()I",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 2,
+      "codeUnits": 3,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "iget",
+          "a": 0,
+          "b": 1,
+          "reference": "Ls69/e;->e:I"
+        },
+        {
+          "offset": 2,
+          "opcode": "return",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;::d",
+      "dexEntry": "classes14.dex",
+      "method": "Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;->d(I)V",
+      "superclass": "Landroidx/appcompat/widget/AppCompatTextView;",
+      "bodyPresent": true,
+      "registerCount": 11,
+      "codeUnits": 289,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ljava/lang/Integer;"
+        },
+        {
+          "offset": 2,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            10
+          ],
+          "reference": "Ljava/lang/Integer;-><init>(I)V"
+        },
+        {
+          "offset": 5,
+          "opcode": "const-class",
+          "a": 1,
+          "reference": "Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;"
+        },
+        {
+          "offset": 7,
+          "opcode": "const",
+          "a": 2,
+          "literal": "93422",
+          "literalHex": "0x16cee"
+        },
+        {
+          "offset": 10,
+          "opcode": "invoke-static",
+          "registers": [
+            0,
+            9,
+            1,
+            2
+          ],
+          "reference": "Lcom/xingin/robust/PatchProxy;->proxyVoid1Para(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;I)Z"
+        },
+        {
+          "offset": 13,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 14,
+          "opcode": "if-eqz",
+          "a": 0,
+          "target": 17
+        },
+        {
+          "offset": 16,
+          "opcode": "return-void"
+        },
+        {
+          "offset": 17,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Ls69/a;->a:Ls69/a;"
+        },
+        {
+          "offset": 19,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 20,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 21,
+          "opcode": "invoke-static",
+          "registers": [
+            0,
+            1,
+            2,
+            1
+          ],
+          "reference": "Ls69/a;->b(Ls69/a;Landroid/content/Context;ILjava/lang/Object;)I"
+        },
+        {
+          "offset": 24,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 25,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "2",
+          "literalHex": "0x2"
+        },
+        {
+          "offset": 26,
+          "opcode": "if-eq",
+          "a": 0,
+          "b": 2,
+          "target": 39
+        },
+        {
+          "offset": 28,
+          "opcode": "if-eq",
+          "a": 0,
+          "b": 1,
+          "target": 31
+        },
+        {
+          "offset": 30,
+          "opcode": "goto",
+          "target": 45
+        },
+        {
+          "offset": 31,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Ls69/f;->values()[Ls69/f;"
+        },
+        {
+          "offset": 34,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 35,
+          "opcode": "array-length",
+          "a": 3,
+          "b": 3
+        },
+        {
+          "offset": 36,
+          "opcode": "mul-int/lit8",
+          "a": 3,
+          "b": 3,
+          "literal": "2",
+          "literalHex": "0x2"
+        },
+        {
+          "offset": 38,
+          "opcode": "goto",
+          "target": 44
+        },
+        {
+          "offset": 39,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Ls69/f;->values()[Ls69/f;"
+        },
+        {
+          "offset": 42,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 43,
+          "opcode": "array-length",
+          "a": 3,
+          "b": 3
+        },
+        {
+          "offset": 44,
+          "opcode": "add-int/2addr",
+          "a": 10,
+          "b": 3
+        },
+        {
+          "offset": 45,
+          "opcode": "sget-object",
+          "a": 3,
+          "reference": "Ls69/d;->a:Ls69/d;"
+        },
+        {
+          "offset": 47,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Ls69/d;->a()Ljava/util/Map;"
+        },
+        {
+          "offset": 50,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 51,
+          "opcode": "invoke-static",
+          "registers": [
+            10
+          ],
+          "reference": "Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;"
+        },
+        {
+          "offset": 54,
+          "opcode": "move-result-object",
+          "a": 10
+        },
+        {
+          "offset": 55,
+          "opcode": "invoke-interface",
+          "registers": [
+            3,
+            10
+          ],
+          "reference": "Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 58,
+          "opcode": "move-result-object",
+          "a": 10
+        },
+        {
+          "offset": 59,
+          "opcode": "check-cast",
+          "a": 10,
+          "reference": "Ls69/e;"
+        },
+        {
+          "offset": 61,
+          "opcode": "invoke-virtual",
+          "registers": [
+            10
+          ],
+          "reference": "Ls69/e;->d()[I"
+        },
+        {
+          "offset": 64,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 65,
+          "opcode": "iget",
+          "a": 4,
+          "b": 9,
+          "reference": "Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;->d:I"
+        },
+        {
+          "offset": 67,
+          "opcode": "aget",
+          "a": 3,
+          "b": 3,
+          "c": 4
+        },
+        {
+          "offset": 69,
+          "opcode": "invoke-virtual",
+          "registers": [
+            10
+          ],
+          "reference": "Ls69/e;->a()Ls69/c;"
+        },
+        {
+          "offset": 72,
+          "opcode": "move-result-object",
+          "a": 4
+        },
+        {
+          "offset": 73,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4
+          ],
+          "reference": "Ls69/c;->getId()I"
+        },
+        {
+          "offset": 76,
+          "opcode": "move-result",
+          "a": 4
+        },
+        {
+          "offset": 77,
+          "opcode": "invoke-virtual",
+          "registers": [
+            10
+          ],
+          "reference": "Ls69/e;->e()I"
+        },
+        {
+          "offset": 80,
+          "opcode": "move-result",
+          "a": 5
+        },
+        {
+          "offset": 81,
+          "opcode": "invoke-virtual",
+          "registers": [
+            9
+          ],
+          "reference": "Landroid/widget/TextView;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 84,
+          "opcode": "move-result-object",
+          "a": 6
+        },
+        {
+          "offset": 85,
+          "opcode": "invoke-static",
+          "registers": [
+            6
+          ],
+          "reference": "Lp69/h;->c(Landroid/content/Context;)Landroid/graphics/Typeface;"
+        },
+        {
+          "offset": 88,
+          "opcode": "move-result-object",
+          "a": 6
+        },
+        {
+          "offset": 89,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Lp69/h;->f()Ljava/lang/Boolean;"
+        },
+        {
+          "offset": 92,
+          "opcode": "move-result-object",
+          "a": 7
+        },
+        {
+          "offset": 93,
+          "opcode": "invoke-virtual",
+          "registers": [
+            7
+          ],
+          "reference": "Ljava/lang/Boolean;->booleanValue()Z"
+        },
+        {
+          "offset": 96,
+          "opcode": "move-result",
+          "a": 7
+        },
+        {
+          "offset": 97,
+          "opcode": "const/4",
+          "a": 8,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 98,
+          "opcode": "if-nez",
+          "a": 7,
+          "target": 127
+        },
+        {
+          "offset": 100,
+          "opcode": "if-eq",
+          "a": 4,
+          "b": 2,
+          "target": 127
+        },
+        {
+          "offset": 102,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Landroid/os/Build$VERSION;->SDK_INT:I"
+        },
+        {
+          "offset": 104,
+          "opcode": "const/16",
+          "a": 5,
+          "literal": "28",
+          "literalHex": "0x1c"
+        },
+        {
+          "offset": 106,
+          "opcode": "if-lt",
+          "a": 4,
+          "b": 5,
+          "target": 113
+        },
+        {
+          "offset": 108,
+          "opcode": "invoke-static",
+          "registers": [
+            6,
+            3,
+            8
+          ],
+          "reference": "Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;IZ)Landroid/graphics/Typeface;"
+        },
+        {
+          "offset": 111,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 112,
+          "opcode": "goto",
+          "target": 210
+        },
+        {
+          "offset": 113,
+          "opcode": "const/16",
+          "a": 4,
+          "literal": "500",
+          "literalHex": "0x1f4"
+        },
+        {
+          "offset": 115,
+          "opcode": "if-le",
+          "a": 3,
+          "b": 4,
+          "target": 122
+        },
+        {
+          "offset": 117,
+          "opcode": "invoke-static",
+          "registers": [
+            6,
+            2
+          ],
+          "reference": "Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;I)Landroid/graphics/Typeface;"
+        },
+        {
+          "offset": 120,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 121,
+          "opcode": "goto",
+          "target": 210
+        },
+        {
+          "offset": 122,
+          "opcode": "invoke-static",
+          "registers": [
+            6,
+            8
+          ],
+          "reference": "Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;I)Landroid/graphics/Typeface;"
+        },
+        {
+          "offset": 125,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 126,
+          "opcode": "goto",
+          "target": 210
+        },
+        {
+          "offset": 127,
+          "opcode": "if-ne",
+          "a": 4,
+          "b": 2,
+          "target": 180
+        },
+        {
+          "offset": 129,
+          "opcode": "const-string",
+          "a": 3,
+          "reference": "\"fonts/REDNumber-Medium.ttf\""
+        },
+        {
+          "offset": 131,
+          "opcode": "if-eq",
+          "a": 5,
+          "b": 2,
+          "target": 167
+        },
+        {
+          "offset": 133,
+          "opcode": "if-eq",
+          "a": 5,
+          "b": 1,
+          "target": 150
+        },
+        {
+          "offset": 135,
+          "opcode": "invoke-virtual",
+          "registers": [
+            9
+          ],
+          "reference": "Landroid/widget/TextView;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 138,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 139,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;"
+        },
+        {
+          "offset": 142,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 143,
+          "opcode": "const-string",
+          "a": 4,
+          "reference": "\"fonts/REDNumber-Regular.ttf\""
+        },
+        {
+          "offset": 145,
+          "opcode": "invoke-static",
+          "registers": [
+            3,
+            4
+          ],
+          "reference": "Landroid/graphics/Typeface;->createFromAsset(Landroid/content/res/AssetManager;Ljava/lang/String;)Landroid/graphics/Typeface;"
+        },
+        {
+          "offset": 148,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 149,
+          "opcode": "goto",
+          "target": 210
+        },
+        {
+          "offset": 150,
+          "opcode": "invoke-virtual",
+          "registers": [
+            9
+          ],
+          "reference": "Landroid/widget/TextView;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 153,
+          "opcode": "move-result-object",
+          "a": 4
+        },
+        {
+          "offset": 154,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4
+          ],
+          "reference": "Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;"
+        },
+        {
+          "offset": 157,
+          "opcode": "move-result-object",
+          "a": 4
+        },
+        {
+          "offset": 158,
+          "opcode": "invoke-static",
+          "registers": [
+            4,
+            3
+          ],
+          "reference": "Landroid/graphics/Typeface;->createFromAsset(Landroid/content/res/AssetManager;Ljava/lang/String;)Landroid/graphics/Typeface;"
+        },
+        {
+          "offset": 161,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 162,
+          "opcode": "invoke-static",
+          "registers": [
+            3,
+            2
+          ],
+          "reference": "Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;I)Landroid/graphics/Typeface;"
+        },
+        {
+          "offset": 165,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 166,
+          "opcode": "goto",
+          "target": 210
+        },
+        {
+          "offset": 167,
+          "opcode": "invoke-virtual",
+          "registers": [
+            9
+          ],
+          "reference": "Landroid/widget/TextView;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 170,
+          "opcode": "move-result-object",
+          "a": 4
+        },
+        {
+          "offset": 171,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4
+          ],
+          "reference": "Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;"
+        },
+        {
+          "offset": 174,
+          "opcode": "move-result-object",
+          "a": 4
+        },
+        {
+          "offset": 175,
+          "opcode": "invoke-static",
+          "registers": [
+            4,
+            3
+          ],
+          "reference": "Landroid/graphics/Typeface;->createFromAsset(Landroid/content/res/AssetManager;Ljava/lang/String;)Landroid/graphics/Typeface;"
+        },
+        {
+          "offset": 178,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 179,
+          "opcode": "goto",
+          "target": 210
+        },
+        {
+          "offset": 180,
+          "opcode": "if-eq",
+          "a": 5,
+          "b": 2,
+          "target": 202
+        },
+        {
+          "offset": 182,
+          "opcode": "if-eq",
+          "a": 5,
+          "b": 1,
+          "target": 193
+        },
+        {
+          "offset": 184,
+          "opcode": "invoke-virtual",
+          "registers": [
+            9
+          ],
+          "reference": "Landroid/widget/TextView;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 187,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 188,
+          "opcode": "invoke-static",
+          "registers": [
+            3,
+            8
+          ],
+          "reference": "Lp69/h;->i(Landroid/content/Context;I)Landroid/graphics/Typeface;"
+        },
+        {
+          "offset": 191,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 192,
+          "opcode": "goto",
+          "target": 210
+        },
+        {
+          "offset": 193,
+          "opcode": "invoke-virtual",
+          "registers": [
+            9
+          ],
+          "reference": "Landroid/widget/TextView;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 196,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 197,
+          "opcode": "invoke-static",
+          "registers": [
+            3,
+            1
+          ],
+          "reference": "Lp69/h;->i(Landroid/content/Context;I)Landroid/graphics/Typeface;"
+        },
+        {
+          "offset": 200,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 201,
+          "opcode": "goto",
+          "target": 210
+        },
+        {
+          "offset": 202,
+          "opcode": "invoke-virtual",
+          "registers": [
+            9
+          ],
+          "reference": "Landroid/widget/TextView;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 205,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 206,
+          "opcode": "invoke-static",
+          "registers": [
+            3,
+            2
+          ],
+          "reference": "Lp69/h;->i(Landroid/content/Context;I)Landroid/graphics/Typeface;"
+        },
+        {
+          "offset": 209,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 210,
+          "opcode": "invoke-virtual",
+          "registers": [
+            9,
+            3
+          ],
+          "reference": "Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V"
+        },
+        {
+          "offset": 213,
+          "opcode": "const/4",
+          "a": 3,
+          "literal": "-1",
+          "literalHex": "0xffffffffffffffff"
+        },
+        {
+          "offset": 214,
+          "opcode": "if-ne",
+          "a": 0,
+          "b": 3,
+          "target": 225
+        },
+        {
+          "offset": 216,
+          "opcode": "invoke-virtual",
+          "registers": [
+            10
+          ],
+          "reference": "Ls69/e;->c()I"
+        },
+        {
+          "offset": 219,
+          "opcode": "move-result",
+          "a": 4
+        },
+        {
+          "offset": 220,
+          "opcode": "int-to-float",
+          "a": 4,
+          "b": 4
+        },
+        {
+          "offset": 221,
+          "opcode": "invoke-virtual",
+          "registers": [
+            9,
+            4
+          ],
+          "reference": "Landroid/widget/TextView;->setTextSize(F)V"
+        },
+        {
+          "offset": 224,
+          "opcode": "goto",
+          "target": 233
+        },
+        {
+          "offset": 225,
+          "opcode": "invoke-virtual",
+          "registers": [
+            10
+          ],
+          "reference": "Ls69/e;->c()I"
+        },
+        {
+          "offset": 228,
+          "opcode": "move-result",
+          "a": 4
+        },
+        {
+          "offset": 229,
+          "opcode": "int-to-float",
+          "a": 4,
+          "b": 4
+        },
+        {
+          "offset": 230,
+          "opcode": "invoke-virtual",
+          "registers": [
+            9,
+            2,
+            4
+          ],
+          "reference": "Landroidx/appcompat/widget/AppCompatTextView;->setTextSize(IF)V"
+        },
+        {
+          "offset": 233,
+          "opcode": "if-ne",
+          "a": 0,
+          "b": 3,
+          "target": 253
+        },
+        {
+          "offset": 235,
+          "opcode": "invoke-virtual",
+          "registers": [
+            10
+          ],
+          "reference": "Ls69/e;->b()I"
+        },
+        {
+          "offset": 238,
+          "opcode": "move-result",
+          "a": 10
+        },
+        {
+          "offset": 239,
+          "opcode": "int-to-float",
+          "a": 10,
+          "b": 10
+        },
+        {
+          "offset": 240,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;"
+        },
+        {
+          "offset": 243,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 244,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;"
+        },
+        {
+          "offset": 247,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 248,
+          "opcode": "invoke-static",
+          "registers": [
+            1,
+            10,
+            0
+          ],
+          "reference": "Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F"
+        },
+        {
+          "offset": 251,
+          "opcode": "move-result",
+          "a": 10
+        },
+        {
+          "offset": 252,
+          "opcode": "goto",
+          "target": 270
+        },
+        {
+          "offset": 253,
+          "opcode": "invoke-virtual",
+          "registers": [
+            10
+          ],
+          "reference": "Ls69/e;->b()I"
+        },
+        {
+          "offset": 256,
+          "opcode": "move-result",
+          "a": 10
+        },
+        {
+          "offset": 257,
+          "opcode": "int-to-float",
+          "a": 10,
+          "b": 10
+        },
+        {
+          "offset": 258,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;"
+        },
+        {
+          "offset": 261,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 262,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;"
+        },
+        {
+          "offset": 265,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 266,
+          "opcode": "invoke-static",
+          "registers": [
+            2,
+            10,
+            0
+          ],
+          "reference": "Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F"
+        },
+        {
+          "offset": 269,
+          "opcode": "move-result",
+          "a": 10
+        },
+        {
+          "offset": 270,
+          "opcode": "float-to-int",
+          "a": 10,
+          "b": 10
+        },
+        {
+          "offset": 271,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Ls69/h;"
+        },
+        {
+          "offset": 273,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            10
+          ],
+          "reference": "Ls69/h;-><init>(I)V"
+        },
+        {
+          "offset": 276,
+          "opcode": "iput-object",
+          "a": 0,
+          "b": 9,
+          "reference": "Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;->e:Landroid/text/style/LineHeightSpan;"
+        },
+        {
+          "offset": 278,
+          "opcode": "invoke-virtual",
+          "registers": [
+            9
+          ],
+          "reference": "Landroidx/appcompat/widget/AppCompatTextView;->getText()Ljava/lang/CharSequence;"
+        },
+        {
+          "offset": 281,
+          "opcode": "move-result-object",
+          "a": 10
+        },
+        {
+          "offset": 282,
+          "opcode": "invoke-virtual",
+          "registers": [
+            9,
+            10
+          ],
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V"
+        },
+        {
+          "offset": 285,
+          "opcode": "invoke-virtual",
+          "registers": [
+            9
+          ],
+          "reference": "Landroid/widget/TextView;->invalidate()V"
+        },
+        {
+          "offset": 288,
+          "opcode": "return-void"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Raw static instructions, not observed execution or a complete control-flow proof.",
+    "Offsets and branch targets are relative DEX code units, not APK byte offsets.",
+    "Hot patches, remote config, runtime values and resource selection are not resolved."
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "id": "FR205-token-attribute-resource",
+  "provider": "jadx-ResTableBinaryParser-direct-not-REA-Evidence",
+  "authority": "shipped-artifact",
+  "runtimeObserved": false,
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "arscSha256": "5c9fce688019e4263deafff2da8dbf1da34da33885f9a29e199d994e2a704ba2",
+  "resourceEntries": 66202,
+  "requestedIds": [
+    "0x7f040761"
+  ],
+  "matches": [
+    {
+      "id": "0x7f040761",
+      "type": "attr",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "items": [
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00010000",
+          "decoded": "65536",
+          "nameRef": "0x01000000"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000000",
+          "decoded": "0",
+          "nameRef": "0x7f090022",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000001",
+          "decoded": "1",
+          "nameRef": "0x7f090025",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000002",
+          "decoded": "2",
+          "nameRef": "0x7f090028",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000003",
+          "decoded": "3",
+          "nameRef": "0x7f090049",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000004",
+          "decoded": "4",
+          "nameRef": "0x7f09004c",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000005",
+          "decoded": "5",
+          "nameRef": "0x7f09004f",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000006",
+          "decoded": "6",
+          "nameRef": "0x7f090002",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000007",
+          "decoded": "7",
+          "nameRef": "0x7f090003",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000008",
+          "decoded": "8",
+          "nameRef": "0x7f090006",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000009",
+          "decoded": "9",
+          "nameRef": "0x7f090007",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x0000000a",
+          "decoded": "10",
+          "nameRef": "0x7f090008",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x0000000b",
+          "decoded": "11",
+          "nameRef": "0x7f090013",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x0000000c",
+          "decoded": "12",
+          "nameRef": "0x7f090014",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x0000000d",
+          "decoded": "13",
+          "nameRef": "0x7f090015",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x0000000e",
+          "decoded": "14",
+          "nameRef": "0x7f090016",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x0000000f",
+          "decoded": "15",
+          "nameRef": "0x7f090019",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000010",
+          "decoded": "16",
+          "nameRef": "0x7f09001a",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000011",
+          "decoded": "17",
+          "nameRef": "0x7f090023",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000012",
+          "decoded": "18",
+          "nameRef": "0x7f090024",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000013",
+          "decoded": "19",
+          "nameRef": "0x7f090026",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000014",
+          "decoded": "20",
+          "nameRef": "0x7f090027",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000015",
+          "decoded": "21",
+          "nameRef": "0x7f090029",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000016",
+          "decoded": "22",
+          "nameRef": "0x7f09002a",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000017",
+          "decoded": "23",
+          "nameRef": "0x7f09004a",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000018",
+          "decoded": "24",
+          "nameRef": "0x7f09004b",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000019",
+          "decoded": "25",
+          "nameRef": "0x7f09004d",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x0000001a",
+          "decoded": "26",
+          "nameRef": "0x7f09004e",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x0000001b",
+          "decoded": "27",
+          "nameRef": "0x7f090050",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x0000001c",
+          "decoded": "28",
+          "nameRef": "0x7f090051",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x0000001d",
+          "decoded": "29",
+          "nameRef": "0x7f090004",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x0000001e",
+          "decoded": "30",
+          "nameRef": "0x7f090005",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x0000001f",
+          "decoded": "31",
+          "nameRef": "0x7f090009",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000020",
+          "decoded": "32",
+          "nameRef": "0x7f09000a",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000021",
+          "decoded": "33",
+          "nameRef": "0x7f090017",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000022",
+          "decoded": "34",
+          "nameRef": "0x7f090018",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000023",
+          "decoded": "35",
+          "nameRef": "0x7f09001b",
+          "name": "id.-"
+        },
+        {
+          "dataType": 16,
+          "rawDataHex": "0x00000024",
+          "decoded": "36",
+          "nameRef": "0x7f09001c",
+          "name": "id.-"
+        }
+      ]
+    }
+  ],
+  "textContentLayout": [
+    {
+      "id": "0x7f0c0ec8",
+      "name": "-",
+      "configuration": "",
+      "type": "layout",
+      "value": "res/Oo5.xml"
+    }
+  ],
+  "limitations": [
+    "Static packaged resource defaults only; XML and code may override these values.",
+    "All matching configurations in the parsed table are retained; selection for a running device is not observed.",
+    "No APK execution, signature or split-APK verification was performed."
+  ]
+}

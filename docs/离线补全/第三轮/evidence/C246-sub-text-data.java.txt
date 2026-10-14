@@ -1,0 +1,33 @@
+    /* JADX WARN: Code duplicated, block: B:22:0x005e  */
+    public final SpannableStringBuilder j0(CommentCommentInfo commentCommentInfo) {
+        List listEmptyList;
+        PatchProxyResult patchProxyResultProxy1Para = PatchProxy.proxy1Para(commentCommentInfo, this, h.class, 388074);
+        if (patchProxyResultProxy1Para.isSupported) {
+            return (SpannableStringBuilder) patchProxyResultProxy1Para.result;
+        }
+        List<CommentCommentUser> listC = commentCommentInfo.c();
+        if (listC != null) {
+            ArrayList arrayList = new ArrayList(CollectionsKt__IterablesKt.collectionSizeOrDefault(listC, 10));
+            for (CommentCommentUser commentCommentUser : listC) {
+                String strD = commentCommentUser.d();
+                String str = strD == null ? "" : strD;
+                String strF = commentCommentUser.f();
+                arrayList.add(new AtUserInfo(str, strF == null ? "" : strF, 0, 4, null));
+            }
+            listEmptyList = CollectionsKt___CollectionsKt.toList(arrayList);
+            if (listEmptyList == null) {
+                listEmptyList = CollectionsKt__CollectionsKt.emptyList();
+            }
+        } else {
+            listEmptyList = CollectionsKt__CollectionsKt.emptyList();
+        }
+        List list = listEmptyList;
+        Application applicationF = XYUtilsCenter.f();
+        String strH = commentCommentInfo.h();
+        if (strH == null) {
+            strH = "";
+        }
+        SpannableStringBuilder spannableStringBuilderS = a1.s(applicationF, strH, list, commentCommentInfo.m(), (2208 & 16) != 0 ? null : this.f30520p, (2208 & 32) != 0 ? "" : null, ah4.c.IMAGE_TEXT, (2208 & 128) != 0 ? "note_detail_r10" : null, X().h(), X().getSource(), (2208 & 1024) != 0 ? a1.f.f302468d : new k(), (2208 & 2048) != 0 ? a1.g.f302469d : null);
+        spannableStringBuilderS.append((CharSequence) " ");
+        return spannableStringBuilderS;
+    }

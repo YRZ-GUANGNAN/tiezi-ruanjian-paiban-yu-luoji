@@ -20,8 +20,8 @@
     },
     {
       "file": "CHANGELOG.md",
-      "bytes": 2454,
-      "sha256": "f0edaaac02f8da4921c023f869ea617b048b3ef395d49f1f2b2c92c84d5c8d02"
+      "bytes": 3188,
+      "sha256": "ebfa1d6ddece5607b26081f0567badbc854b4a412f32ea410468bae4cfe47a95"
     },
     {
       "file": "PUBLICATION.md",
@@ -30,8 +30,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 5838,
-      "sha256": "57f083d08423ab53ace2299a7ec01e0b795fa1f8c7bd3e61b5b57374bb9d931b"
+      "bytes": 6330,
+      "sha256": "e63ec2e5ff477b54ee16cea6f173a00dd0b6cb2b946a0fafae45b948052ff9e9"
     },
     {
       "file": "docs/00-阅读入口与进度.md",
@@ -1252,6 +1252,841 @@
       "file": "docs/离线补全/evidence/A009-device-condition-gate.json",
       "bytes": 12176,
       "sha256": "14883eb9625aa3a8d781e7178313c5ea660537c81c69180fdbdf8e3ffda09a39"
+    },
+    {
+      "file": "docs/离线补全/第三轮/00-本轮结果.md",
+      "bytes": 3637,
+      "sha256": "730c4a97cb5e125aac772aca7d2d1e21c6d67676adbc55527206dd7191734ef8"
+    },
+    {
+      "file": "docs/离线补全/第三轮/01-详情字体条件表.md",
+      "bytes": 5340,
+      "sha256": "8c9248b8f18aab452d717ed5048260e36f6cbd8fc640d69b1eb4d183731e3d58"
+    },
+    {
+      "file": "docs/离线补全/第三轮/02-评论排版与文字逻辑.md",
+      "bytes": 7964,
+      "sha256": "4bc7dc06246c7afb07bf4f2a35b8326fb40f8048f29d66691c1cd7f2dda4a96f"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/CR201-layout-eAH.xml.txt",
+      "bytes": 7238,
+      "sha256": "6f762c7c16c311e8a1a8ab4899a4b54d1b54523e614f7cf077c5ac3be1e9e4d9"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/CR201-layout-yIq.xml.txt",
+      "bytes": 6877,
+      "sha256": "b701b651bb46819c83c5a897b40824320050d8f89f2526b471e216db874a2fdd"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/CR201-layout-z4X.xml.txt",
+      "bytes": 1963,
+      "sha256": "310075275d9dfb3947283fef7aa14befbe27da9e8b8ada350505bcdacd1a9c00"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/CR202-comment-resource-values.json",
+      "bytes": 5489,
+      "sha256": "77c69889b8faf10ff8689569810cbf80ab0cb48cc96ab78f6f6c08c0ce1edb19"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/CR203-comment-instructions.json",
+      "bytes": 23837,
+      "sha256": "6d131339d9d5434c139add13174fcb169b8bc17cb385ed64dce83bcce80d52e5"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/CR204-comment-view-references.json",
+      "bytes": 157558,
+      "sha256": "eb49262ef982b9431e2222712741c38f9f91120003a36e175e643b633bfc902d"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/CR205-picture-ratio-instructions.json",
+      "bytes": 28675,
+      "sha256": "149cfd6e45eab716e8258c6d04ead61b1cbd2fed388428e76a08ef60c38d9285"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/CR206-comment-layout-identities.json",
+      "bytes": 1559,
+      "sha256": "fda8d5a6e6710e65902c0b096764bf04c34ad201ed25a67e5302b8827811d238"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/CR207-comment-inflate-selectors.json",
+      "bytes": 133626,
+      "sha256": "64ae42861504741118ff8a60769ef50ca14030f188026407f0930418c7ff53b6"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/CR208-comment-field-binding.json",
+      "bytes": 72577,
+      "sha256": "38d41be81edfab7e357b75bf27f22b287b434944cbd07f3482f38fc18bdaf150"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/CR209-comment-text-resources.json",
+      "bytes": 4439,
+      "sha256": "df2072403da59b21fb0ed03200fa373a71737b817fd474fb5b531ccfc63a5f77"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/CR210-comment-attribute-identities.json",
+      "bytes": 92360,
+      "sha256": "b62ff26c44f32356bdf37e1e3b079ed9f260dc8d9b5b780c9fdf9ef052d6fb42"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/CR211-footer-fields.json",
+      "bytes": 931,
+      "sha256": "724ad119d3dc03e275be966345903b97aadef092681e9dea12733f2216b84fda"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/CR212-footer-resources.json",
+      "bytes": 1609,
+      "sha256": "1621528fd316733ccf2884cd154a1c891d55cd4076c9b03cbbd67711350035b7"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/FR202-token-apply-instructions.json",
+      "bytes": 27462,
+      "sha256": "594ee1a89493497ce2bcf19ab11e6ea2fadbe0da81865c263c8749a414abdcb1"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/FR204-token-enum-instructions.json",
+      "bytes": 126621,
+      "sha256": "9e3bf3eeb7f05965bfef76013bd10d896c62f756a67ade053c0cae38c6ba8053"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/FR205-token-attribute-resource.json",
+      "bytes": 7565,
+      "sha256": "dda73ca991a86c715ab701e476d7ebced41f1d30a6f909dc6db5113b96880dea"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/FR206-weight-helper-references.json",
+      "bytes": 15876,
+      "sha256": "e909326474ef5f1e5a92f24d6dfcada0642828e7e9dca175f91da7281e4eb248"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/FR207-font-style-and-map-instructions.json",
+      "bytes": 386184,
+      "sha256": "96d8a212210f31e0faea061459abfd008ff5b6e271685bd947c6434c933ed1dd"
+    },
+    {
+      "file": "docs/离线补全/第三轮/auxiliary/FR208-detail-attribute-identities.json",
+      "bytes": 19054,
+      "sha256": "e5296c52fa8b57cd2db8cc233e7c3f64889f12074783a19cbc0de754badf82da"
+    },
+    {
+      "file": "docs/离线补全/第三轮/comment-layout-rules.json",
+      "bytes": 8508,
+      "sha256": "69fabae2fc3e701e29993e3543851e950dc06fd4faad6a63cd0609f2f1a702af"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence-index.json",
+      "bytes": 94546,
+      "sha256": "5fff6ec48e80a7ea9b292b32147f0eec1fc7630814a2e3af4f4fbd4d2c4bb7f4"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C201-comment-class-search.json",
+      "bytes": 2129106,
+      "sha256": "a8c5b553abd6ded7adbdd45f6d6d9fb04f0bd7ae300be256e8ae794049f75c22"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C202-comment-text-class.json",
+      "bytes": 7327,
+      "sha256": "07538927bc48069f2df167df7134908d015e8b35f3dc85e56c0437050e0b7bbe"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C203-comment-picture-class.json",
+      "bytes": 15513,
+      "sha256": "90a33e2833fc450cc73a50b09f28c2600853d5addef5a5d90cf35aaeafec889f"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C204-comment-multi-picture-class.json",
+      "bytes": 22166,
+      "sha256": "6db2af01dcd37b1457d5a1e5e2bd6decb5fc505003650b316d4ba5fa9716107a"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C205-comment-adapter-class.json",
+      "bytes": 6094,
+      "sha256": "aa3ca6cb08893746beccb618c96512db824e1766063e7465fa477546b752a812"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C206-comment-scroll-class.json",
+      "bytes": 6595,
+      "sha256": "7628d48f4042e029fca27a9532bec5d254372ebe41caf7b91df389b68c00dc08"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C207-comment-text-init.java.txt",
+      "bytes": 302,
+      "sha256": "55af5710eb4a92b7460bb91703a630dee3217afd5e0be7d305c61de74237fccd"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C207-comment-text-init.json",
+      "bytes": 7032,
+      "sha256": "a35d26ebb0b6449412b1d2a50d4aeeb1bcb932cce00421de9b089a911dd9a5b2"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C208-comment-picture-init.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C208-comment-picture-init.json",
+      "bytes": 9704,
+      "sha256": "be50ad552d4bc5c31ecef3d58b4f29bc79cf55480a94f325588dcdad6c8ec555"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C209-comment-picture-layout.java.txt",
+      "bytes": 1350,
+      "sha256": "bea2fc5b749b30ae59b9894305bab0f5fd80ebf4f94a129a3ddd6da1b0f19690"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C209-comment-picture-layout.json",
+      "bytes": 12521,
+      "sha256": "3c6286d972a4451ba35cb3c003ddd7caf5c50a8f2ac51d5de957b014a3c894c7"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C210-comment-picture-size.java.txt",
+      "bytes": 983,
+      "sha256": "cf8054d5a7fe8c4829867eba59b453a5c89afd6d879f5c140ecdbce78f7d5121"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C210-comment-picture-size.json",
+      "bytes": 11762,
+      "sha256": "10146435df577eb0550b059bf71981b5ea93b9fc48a72a6d8ee9f34a0f22e776"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C211-comment-adapter-init.java.txt",
+      "bytes": 89,
+      "sha256": "e316fbe2d5d911040ffd197dd1f8187b01c2ae84af2ee25087251e090f7a3ef1"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C211-comment-adapter-init.json",
+      "bytes": 5906,
+      "sha256": "f07e1a6d56dafb8dd66a7e5b4f72a327379730c9819a1d851ea8009336626db8"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C212-comment-scroll-measure.java.txt",
+      "bytes": 534,
+      "sha256": "1add5d39d5e8a350909ab8b5773e7b418f6bd9d80e2120b0e94610a4dfe491a1"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C212-comment-scroll-measure.json",
+      "bytes": 7137,
+      "sha256": "0d0dfbf47bfe0e574cdb2fae1fa1fbd500b2ed3e76022b37ee0bdbc86a25b626"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C213-comment-picture-default.java.txt",
+      "bytes": 325,
+      "sha256": "347585610d8aaa29e402b3c944bdad4b010c4d315485a09dd13760ab71c4f484"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C213-comment-picture-default.json",
+      "bytes": 10338,
+      "sha256": "98496df1d0a31b20000930c5f25c2e919a32e53760787dca4e4b2c09b1796a7a"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C214-comment-multi-bind.java.txt",
+      "bytes": 3296,
+      "sha256": "6d58752b122f6ad1e7f0ee5175ff5e7583b70cebbf5549662a0cd6e4c4aac952"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C214-comment-multi-bind.json",
+      "bytes": 19400,
+      "sha256": "a6b745f0ee04fd27dea93b2a0bf6ce5221894809d6d7e21a96d291779366b785"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C215-parent-comment-class.json",
+      "bytes": 6086,
+      "sha256": "162136e9d36f8d599dcd83784dd982c5561d56d86db3ee743a15141600d7175d"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C216-sub-comment-class.json",
+      "bytes": 5603,
+      "sha256": "f77b37ab7fe8441d6f20dd6855a0aef9a05f90a528e7aed023a544fe540630a2"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C217-parent-binder-search.json",
+      "bytes": 2120499,
+      "sha256": "ffc008b4fb5efd928543a20d86cec3ea27a83902e2bc6ec1f1cb515f53680f20"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C218-sub-binder-search.json",
+      "bytes": 2120598,
+      "sha256": "55f8d8fe0ceeb17256119f746377c52e8266782618036a6fafabf6cdff8f0d49"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C219-picture-ratio-apply.java.txt",
+      "bytes": 1079,
+      "sha256": "bd88fb7874d7a7f5f2d88c6a86a7582f089aa1cb268f6920174950f9a27da346"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C219-picture-ratio-apply.json",
+      "bytes": 9142,
+      "sha256": "05542d9d9521de49c9dd48bcf69f2d155b3e32f94874c76db442b34892cc9b0d"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C220-picture-layout-config-class.json",
+      "bytes": 7427,
+      "sha256": "1bfbaa6993ece1db531e3a8f8c6876bce1dcd9d5bb1cbcb2ebf288b808e682a1"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C221-load-more-class.json",
+      "bytes": 5675,
+      "sha256": "63dc08ba8ed1dba5a2d1fae97730e3fb3cc9709323e843cd918877df20f93ac6"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C222-comment-presenter-class.json",
+      "bytes": 18789,
+      "sha256": "928af2729d391e89b7916ea2b67a6ce0e72c1b4a4087c0b090b47979d96538c0"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C223-comment-presenter-class.json",
+      "bytes": 17327,
+      "sha256": "71ab59207a5e62599fd2bf6f3555a86c022d2a53e27b2171628e38d98bf4db5d"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C224-comment-presenter-class.json",
+      "bytes": 5959,
+      "sha256": "d0fc75a188509a084880ca66bc7b9969dcb55c19f6ccf96adda7a475229304ee"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C225-parent-inflate.java.txt",
+      "bytes": 1777,
+      "sha256": "92e638e77f8012e964bd81fc82ed201d3e922495bb4a94fe80182b79a4ff9eb0"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C225-parent-inflate.json",
+      "bytes": 9267,
+      "sha256": "8849e1179215399c0a68fb2da90e1809b86b46b58975972958d96d8552492af8"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C226-sub-inflate.java.txt",
+      "bytes": 1626,
+      "sha256": "215fdd8e1629edde02cf4b6f11c9c9999675b1252d7667f26e68eede3ec1b2ec"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C226-sub-inflate.json",
+      "bytes": 8939,
+      "sha256": "d1db44c6a008b8f62054c2ca5956d21230e8493d4d025d77ab771c73b194944c"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C227-picture-width-source.java.txt",
+      "bytes": 291,
+      "sha256": "2b1238f64376b80ce053d3b3e3fe090d9d6ff8fc1705ada4d8976692fdff90b7"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C227-picture-width-source.json",
+      "bytes": 6468,
+      "sha256": "e60a223a67cf749475ae8e4609c276843b8a7f2b8b792b6ca78631c1291715ca"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C228-picture-single-gate.java.txt",
+      "bytes": 304,
+      "sha256": "dfa0b1c73394287966c2fc8970f6b80c89e8a8c285b0e06b738240a7c2fd9346"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C228-picture-single-gate.json",
+      "bytes": 6498,
+      "sha256": "7d70d22b29eab7615357e4b61d04931fed18e81adcb6f9cf3510499bfe805094"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C229-picture-ratio-fit.java.txt",
+      "bytes": 1044,
+      "sha256": "a8ca50b4659cd23d3ab9338511d48e1bc34a0527f718ea742afdd4a10c31f613"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C229-picture-ratio-fit.json",
+      "bytes": 8500,
+      "sha256": "01446cadb48b12f8be4c290c797c09864c9f345b68c634673f9886af667b5210"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C230-picture-ratio-fallback.java.txt",
+      "bytes": 1050,
+      "sha256": "7502413cead1bf8bdc228d3bae9a5e5904ee54ee4a7ec1be5d3e6863cf709c28"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C230-picture-ratio-fallback.json",
+      "bytes": 8464,
+      "sha256": "fdb4a15aafe67b5fb074c2ac724408c04eab6c19b1c756c956fd3fc7db35c917"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C231-picture-default-bridge.java.txt",
+      "bytes": 322,
+      "sha256": "ed90b493ba72a530c098f3339ab862213f62ea1b98db73dee0f6a5b80d61f7ec"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C231-picture-default-bridge.json",
+      "bytes": 6912,
+      "sha256": "d74b06f51ed3ab4d0256dd1e990e406c20e1e226ae6cd513c81f0730bb96e3d5"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C232-parent-bind-text.java.txt",
+      "bytes": 4469,
+      "sha256": "66a873c63ad8d9d6d28bd130d29a60aec2d4e35a1efa92c5ca08057187c3aef2"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C232-parent-bind-text.json",
+      "bytes": 19528,
+      "sha256": "9bc64865fe6a5d1c1bf77b6e54073a28958f968ab7ee8b5e1ad283d93c298e27"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C233-parent-build-text.java.txt",
+      "bytes": 2748,
+      "sha256": "f568e7c5f273a4901f3d360c67d030c6e455534271b10a8173c7974137adfdfe"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C233-parent-build-text.json",
+      "bytes": 15849,
+      "sha256": "8d33927de5433ff8af509ecb3bc51f8ab3e124452bcf97938a71332890fb713b"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C234-parent-bind.java.txt",
+      "bytes": 430,
+      "sha256": "01545f5cf780278f72c063661315af51a83226d0076750d10b8e54338c32da47"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C234-parent-bind.json",
+      "bytes": 10956,
+      "sha256": "a2c881cacdf90380925a6e3fe0a3043e9aa78d445223037687ae691bdacb2895"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C235-sub-bind-text.java.txt",
+      "bytes": 4214,
+      "sha256": "bcbb16cd44ec2204757dd165f0da4022bd4ea6b0a36d11c4e23a2aa2d9ad92a2"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C235-sub-bind-text.json",
+      "bytes": 18536,
+      "sha256": "83b3d2bd84ced5a80d55870600b3a5eb429b9500823a8cdf8fb6f6b05c91494d"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C236-sub-build-text.java.txt",
+      "bytes": 5133,
+      "sha256": "2a7685ddb0deaa91d4e6956d24e94cc95f53926f4868eb2a234f5b0a537303b2"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C236-sub-build-text.json",
+      "bytes": 20383,
+      "sha256": "69423cf92ea7728876aaee16372a378a77d4c446500ff5a248c8777e0c2d57b6"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C237-sub-bind.java.txt",
+      "bytes": 426,
+      "sha256": "f9e8cc3e0f4ef80bf9066f8b45ff0f55468360ef9ec4471aa39e796bd0b6a469"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C237-sub-bind.json",
+      "bytes": 10405,
+      "sha256": "973ceda55af63f3d402bedc2020e8fee34e2cb33b817e5583e72dcd9a94453a5"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C238-replies-expand-bind.java.txt",
+      "bytes": 1380,
+      "sha256": "5364fe7694ddc3810cce109141387a94aaa04c173175ea967f9365cf1297a37d"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C238-replies-expand-bind.json",
+      "bytes": 8294,
+      "sha256": "1b4b78b27ab8c3fe84a9f3cedb8f904e058e875567ab2aaaff38c2b7e32ea141"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C239-comment-footer-format.java.txt",
+      "bytes": 1686,
+      "sha256": "38109ebfb2e3024b1dd260660693021a97c3e624424009d74b369dd48c0530ad"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C239-comment-footer-format.json",
+      "bytes": 17686,
+      "sha256": "ef0f12cd027d0932b02e48ddbbe43f06992c0508d3175b039ae27102b88a6722"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C240-parent-text-width.java.txt",
+      "bytes": 493,
+      "sha256": "df9081d6891b5e0b518894693bcc3b04389c5e55d26d1f6e3aca9ea04efce0bd"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C240-parent-text-width.json",
+      "bytes": 11058,
+      "sha256": "fae6b47b5f4e86b026b547587a0b178821cc63307c0e7b007092fa7a6fa48e0f"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C241-sub-text-width.java.txt",
+      "bytes": 490,
+      "sha256": "3e84227b029eb9887daf10dacafa78858fc32ff18c125d0783b2bd59cf0ebc1c"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C241-sub-text-width.json",
+      "bytes": 10509,
+      "sha256": "98d5de206b5176e7287d4d76103731326644d02cdbf88ed946c073f5452ba094"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C242-picture-dp-apply.java.txt",
+      "bytes": 682,
+      "sha256": "d7cf7c2eda367af18ecbe4eb14a4faddae9558a82159e44aade5a565789e165b"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C242-picture-dp-apply.json",
+      "bytes": 7663,
+      "sha256": "6e7d50d746dc6bab1459de9550a3ca0009f8c4a004bfa3bdac2e2857bca29bd8"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C243-comment-conditional-style.java.txt",
+      "bytes": 428,
+      "sha256": "48446a5164ec2f83bdf1d1e14f0e7c6572c8f6d4f9717d1cbb6af6fc84d842c1"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C243-comment-conditional-style.json",
+      "bytes": 6936,
+      "sha256": "c346999a79e3c631c26468ecb786b92ae40a03c20abfc5c9f08f195b68fff71c"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C244-comment-footer-class.json",
+      "bytes": 27194,
+      "sha256": "a48719cc3ae0c4a64888321d23a7ba6763e39de072fb79c30404b7b2e37aacf3"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C245-parent-text-data.java.txt",
+      "bytes": 1949,
+      "sha256": "49a46fd0fc7aca6b6e7e50b6abe8b4377339b732cfbcf443f0af58ff70742e8e"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C245-parent-text-data.json",
+      "bytes": 14288,
+      "sha256": "0b92123cf6a1473e68e23fc6b2999cada45e492bc46ae7b6fd96fb70286a0afe"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C246-sub-text-data.java.txt",
+      "bytes": 1938,
+      "sha256": "512f9514ce6af753aed35df646a94e8feaf41bda0e25a0f4eab7a3cf049290fc"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C246-sub-text-data.json",
+      "bytes": 13723,
+      "sha256": "071c4dc7c0012e54f9ad91347650c5b4047bd992082d92a633e3cecec46083ed"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C247-footer-default-bridge.java.txt",
+      "bytes": 380,
+      "sha256": "0b63f18bd00483f14ca46d10ead00ba1fc16eeb29001e5a1f5ab8d1b842179d2"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C247-footer-default-bridge.json",
+      "bytes": 14937,
+      "sha256": "aef21e0618d6b6dc18f28b34ad4a02199559df5cb742c0a972583b6412357cd5"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C248-footer-experiment-format.java.txt",
+      "bytes": 4834,
+      "sha256": "5da45156e8953bf0a59d268ff2c6643aec4639d85a8e0250fc7f99b783becea5"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C248-footer-experiment-format.json",
+      "bytes": 24002,
+      "sha256": "0ea4d3718de04a7706948af482fd27803394c4920fcdd88122eb80ed3ba7b53a"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C249-footer-time-format.java.txt",
+      "bytes": 430,
+      "sha256": "ccc8837f29e966687e9ca531c3a294fce01b0613c5f1c7a8d4ac5d71681816c7"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C249-footer-time-format.json",
+      "bytes": 14333,
+      "sha256": "b036668230ed21f88984321ea2a247e0d0cc2b0eb923bb2f12224501170f09eb"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C250-picture-height-field.java.txt",
+      "bytes": 63,
+      "sha256": "1a9b41f5e80df45a0f5a2dd478326bf676dea0a54e0ddb7ba409b47a7da7928e"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C250-picture-height-field.json",
+      "bytes": 9431,
+      "sha256": "7d691aed833826609d7a1b7da201aa00ed4195372f4b1915470df71ca5d369e1"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C251-picture-width-field.java.txt",
+      "bytes": 62,
+      "sha256": "e87421e9ebd557253bbabbe52d3070eabde58b4ec5571114ea858d0cf9f2475d"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/C251-picture-width-field.json",
+      "bytes": 9429,
+      "sha256": "7779f73052424739b5c93a572463999e0868dea1e296f61cb06ef279fb9548f4"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F201-note-token-gate-n1.java.txt",
+      "bytes": 303,
+      "sha256": "30501d2f8417e444c606344cb2e2c43a1ff307bff9310a8c39dedf3d7a0850b3"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F201-note-token-gate-n1.json",
+      "bytes": 18783,
+      "sha256": "b03ea9e8e6ebb2c5814eaf0c5dcb06b6661e8a515f4bb9e110007f438b0a46d0"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F202-note-token-gate-o1.java.txt",
+      "bytes": 479,
+      "sha256": "9a435878e71132cda91c1b915a8f48d686e8bfd0213089f341fbec04c9c343eb"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F202-note-token-gate-o1.json",
+      "bytes": 18580,
+      "sha256": "556f4b18b99d163ce80c89df7049d976b245b9bd7cb24369b68bdec906683f16"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F203-token-mode-class.json",
+      "bytes": 5227,
+      "sha256": "80cf65aa400872cad964abd166736e2c7b11860b34b03b58e0a5ddd1c0d8e961"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F204-token-map-class.json",
+      "bytes": 4726,
+      "sha256": "d78b72792d800f5bd880269c9db866de9b2e68c91bbe7c47d9ca795f6ab47822"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F205-token-enum-class.json",
+      "bytes": 10221,
+      "sha256": "e5d4d5ae3a243d91ba09b522ce1cd1ddca652c2eefac9770488494f9be451f8c"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F206-token-value-class.json",
+      "bytes": 5779,
+      "sha256": "e2aff03d62e19100c69c409aa4f12b405b5fba41742632f9ce16d2eae50eba3d"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F207-token-map-init.java.txt",
+      "bytes": 14428,
+      "sha256": "28f47d33f34ee04a0ea765528bb09c497cabc7383bc98b99d704f093cdce4935"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F207-token-map-init.json",
+      "bytes": 34422,
+      "sha256": "e382ddfb50fc63c554c44b4e5a2a2fbb46e94578ee632e53020b63a764ce5271"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F208-token-mode-read.java.txt",
+      "bytes": 356,
+      "sha256": "e6855b87aa2a517aa1ef7e2ad9441185c2948832aa6eab90ff276795dc09a69f"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F208-token-mode-read.json",
+      "bytes": 5858,
+      "sha256": "14d2ff5f89d91b21b4832cea4ed8e3f97d67415a6eceb156592cf22852fddec8"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F209-token-mode-init.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F209-token-mode-init.json",
+      "bytes": 5252,
+      "sha256": "8685d5d7aaa97c5bbd757909bca3be7e43abe2afb66250c52278ffa4e4402bee"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F210-token-weight-class.json",
+      "bytes": 5996,
+      "sha256": "11dbd2beeb4d72c6050060bec0b59820def847ffa21307b806e649b03c7005b3"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F211-token-enum-init.java.txt",
+      "bytes": 61,
+      "sha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F211-token-enum-init.json",
+      "bytes": 7337,
+      "sha256": "bfb78390ec7eb3218f20d5cb47b7599477d0013811c4f781839c14513a09b009"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F212-token-value-init.java.txt",
+      "bytes": 220,
+      "sha256": "ac7d10717330537b7b759db240595c3f9df87b1814d777899934ee0c5480ce45"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F212-token-value-init.json",
+      "bytes": 5793,
+      "sha256": "7e9e923136ac1ae057c6235396935400b0b6835df3ff7915f6c2b48bd03904b4"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F213-token-guard.java.txt",
+      "bytes": 459,
+      "sha256": "b764f16113728b96f0ce001c640880f35bca26a475c02ec975ef06336a467256"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F213-token-guard.json",
+      "bytes": 6239,
+      "sha256": "7fe0f145e1072b3c2fc50a2be4e364eadc50acb8be7ddc1da3b126b8001b3a07"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F214-token-weight-select.java.txt",
+      "bytes": 578,
+      "sha256": "c3af20486d0521d4dd2a8a9e2b591a9f25add578423a53d28b62bc7b03357a9c"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F214-token-weight-select.json",
+      "bytes": 7209,
+      "sha256": "431fba4da130dbe46a6c5772c0c47a96767ba651faec171692d7c21bbf166cf6"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F215-token-mode-bridge.java.txt",
+      "bytes": 199,
+      "sha256": "a240e8c3deebbf7acd8025275d1b4b7aa57ad698c455ade9e3f726367a608fe0"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F215-token-mode-bridge.json",
+      "bytes": 5574,
+      "sha256": "3f6796258267d59fc0e050974a1e3b07c57f6df88aa123b5b35faaee84eeacdc"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F216-token-weight-b.java.txt",
+      "bytes": 270,
+      "sha256": "51502454ba84a95e4d472b3a6ec7d6cfe8ea0f0b9e1c6135114068c09119901b"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F216-token-weight-b.json",
+      "bytes": 6453,
+      "sha256": "439e54acd9f98b5f5a5077c6fcb1a6d06b128941be29623ec66a9934b103320a"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F217-token-weight-c.java.txt",
+      "bytes": 270,
+      "sha256": "ad73da543932ee3b76bc2cab4662073abecb5d4aff04bd22c723a835aecd7353"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F217-token-weight-c.json",
+      "bytes": 5866,
+      "sha256": "b37d93f2fa18c73d37097b1fe5e9c949c89363ee7ab7656fa2d38759e009fbd9"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F218-token-weight-d.java.txt",
+      "bytes": 358,
+      "sha256": "943b67b90b07341d39f80506b40feda83c23972d976bc1ec711f4ebeb60fc681"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F218-token-weight-d.json",
+      "bytes": 6074,
+      "sha256": "566eb7ef0255191a3c56e77a65388db9bd8d3bd7d4b4216e25d797da46b6cea9"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F219-token-weight-e.java.txt",
+      "bytes": 270,
+      "sha256": "e72a605a357e82a934033ef2af2f00f5e67f194f89afd7983876ebb9abf35538"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F219-token-weight-e.json",
+      "bytes": 5866,
+      "sha256": "6d176a50023ab9f1c4291dd3cfceae0ccb7d5dcc992cdf13032056ea7eba79bb"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F220-token-weight-f.java.txt",
+      "bytes": 358,
+      "sha256": "58639c2220a32c80bc9671b85c7a67484b6f551b7dc18e53c2323294c971eb60"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F220-token-weight-f.json",
+      "bytes": 6074,
+      "sha256": "366070321dfdd19c124f61f41d8b4a30d733501aa223dbedbba0d539ebba9ba3"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F221-platform-b.java.txt",
+      "bytes": 266,
+      "sha256": "17f4087cb8e904537095cc0ca594ebbca3480555aa8557fa46ceb56dbffa523f"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F221-platform-b.json",
+      "bytes": 6720,
+      "sha256": "1739ee38d57830d0a8d1c37f8ad15fe8914e104641d78634bab7d60201ce24c4"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F222-platform-c.java.txt",
+      "bytes": 267,
+      "sha256": "14b3ec0c667939901d1e98e4fb1eeaf97f3dadf713de08f735acef3f8efd5279"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F222-platform-c.json",
+      "bytes": 6135,
+      "sha256": "98296e73145a41d5e45f61422ecc5902438f10c895ef1274ad21526395130b28"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F223-platform-d.java.txt",
+      "bytes": 266,
+      "sha256": "c37920dc348569e5a73e34d0b7585cca9f647df4eb0a6d7d987f282ad1a5b62f"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F223-platform-d.json",
+      "bytes": 6133,
+      "sha256": "444242aca4f447700807d50cc52cd2244809fd0732a18ccd025f1545bc72c9a1"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F224-platform-e.java.txt",
+      "bytes": 268,
+      "sha256": "920132056f85339cf0119ce8b6436130df1e691f37a93113601db71f6948a7cb"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F224-platform-e.json",
+      "bytes": 6137,
+      "sha256": "df7eff4de2dc1501a31403dc63fa7a8f08f59b3cb8accc384c43a4bf991f0a87"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F225-platform-f.java.txt",
+      "bytes": 265,
+      "sha256": "855d38a0adede8cf8b46cc58739f189d2c9edf6c31a3d961164abbdf6bd7e137"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F225-platform-f.json",
+      "bytes": 6131,
+      "sha256": "0e5f4af13f95026a07e9582b93481209798280cca91b2425fc5ee893dd5edab3"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F226-platform-g.java.txt",
+      "bytes": 267,
+      "sha256": "0531f1878da0627fdf28c4ab4f514f5719c04d164c6998118e8f2ae7b992c89d"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F226-platform-g.json",
+      "bytes": 6135,
+      "sha256": "192de3f80e97a266061957a17dcf2bb58ea25e8db4ff0f3b8a9048a400d11baa"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F227-platform-h.java.txt",
+      "bytes": 266,
+      "sha256": "b7a30079419efc97738e8b18e607b1ba3e28326de8b456dcffe183ff24291860"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F227-platform-h.json",
+      "bytes": 6133,
+      "sha256": "87ddbaaf954ea8ce1e310c09ba0f7f14f515f1d4af8aeb69d5c426a513fc2bd5"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F228-platform-i.java.txt",
+      "bytes": 265,
+      "sha256": "6a9f862390094e76070f5bb8bd832c749d4069707cf32c70058062ff2f3e0f25"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F228-platform-i.json",
+      "bytes": 6131,
+      "sha256": "26cd7f09d5c8cb5cb4849970c151318c84ad8fb45600d1edc1ca445f0047396e"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F229-platform-j.java.txt",
+      "bytes": 267,
+      "sha256": "55049dd3b57b010cc4e5ed120d624dd4e33b2977e5b2ab0d1b3b2eb9e0076019"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F229-platform-j.json",
+      "bytes": 6135,
+      "sha256": "c0c2c4b399158122a210abe1c5b9b65f72d1ea5716cc0b3261fa376658cc3a2a"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F230-platform-match.java.txt",
+      "bytes": 505,
+      "sha256": "a772067ca592a971a48f42e0448ab2a3c48dd0843dbafd1c5d22a9972854f67c"
+    },
+    {
+      "file": "docs/离线补全/第三轮/evidence/F230-platform-match.json",
+      "bytes": 7246,
+      "sha256": "9729ade9a6894ea6c2f8684feffa03ad349dae4305b02f201a3da5498eef9e93"
+    },
+    {
+      "file": "docs/离线补全/第三轮/font-condition-table.json",
+      "bytes": 5495,
+      "sha256": "5320d9e708d9355018adad8618e10c1a36982775c188a20b8fdbf0000bc4b60b"
     },
     {
       "file": "docs/离线补全/第二轮/00-本轮结果.md",
@@ -2790,8 +3625,8 @@
     },
     {
       "file": "tools/verify.mjs",
-      "bytes": 10689,
-      "sha256": "b468826c17f13581ff11d03c6f1b4f32abf32b9b2dcd31d578ff912b1bae19e0"
+      "bytes": 15379,
+      "sha256": "27460b225a47c3daa9087ff10594d31072300fc0233db38acd4f7e4a8ab34ca8"
     }
   ]
 }

@@ -1,0 +1,24 @@
+    public final h f(ViewGroup viewGroup, Function1<? super AsyncSubCommentView, Unit> function1) {
+        PatchProxyResult patchProxyResultProxy2Para = PatchProxy.proxy2Para(viewGroup, function1, this, a.class, 386447);
+        if (patchProxyResultProxy2Para.isSupported) {
+            return (h) patchProxyResultProxy2Para.result;
+        }
+        View viewA = vd3.b.f331647a.a(wd3.d.COMMENT_SUB_ITEM);
+        AsyncSubCommentView asyncSubCommentView = viewA instanceof AsyncSubCommentView ? (AsyncSubCommentView) viewA : null;
+        if (asyncSubCommentView == null) {
+            return b(g(), viewGroup, new d(function1));
+        }
+        float f100 = 6;
+        j2.K((XYAvatarView) asyncSubCommentView.a(mp5.h.O2), (int) TypedValue.applyDimension(1, f100, Resources.getSystem().getDisplayMetrics()));
+        int i100 = mp5.h.f238627c1;
+        j2.K((HandlePressStateCommentLinearLayout) asyncSubCommentView.a(i100), (int) TypedValue.applyDimension(1, f100, Resources.getSystem().getDisplayMetrics()));
+        j2.J((HandlePressStateCommentLinearLayout) asyncSubCommentView.a(i100), (int) TypedValue.applyDimension(1, f100, Resources.getSystem().getDisplayMetrics()));
+        j2.J((HandlePressStateCommentTextView) asyncSubCommentView.a(mp5.h.f238727o6), 0);
+        j2.K((TextView) asyncSubCommentView.a(mp5.h.f238719n6), (int) TypedValue.applyDimension(1, 4, Resources.getSystem().getDisplayMetrics()));
+        asyncSubCommentView.setBackground(null);
+        function1.invoke(asyncSubCommentView);
+        h hVarA = a();
+        hVarA.D(asyncSubCommentView);
+        hVarA.k0(true);
+        return hVarA;
+    }

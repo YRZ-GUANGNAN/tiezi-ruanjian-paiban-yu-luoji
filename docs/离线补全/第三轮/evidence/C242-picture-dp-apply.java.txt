@@ -1,0 +1,12 @@
+    public final void d(SimpleDraweeView simpleDraweeView, Pair<Integer, Integer> pair) {
+        if (PatchProxy.proxyVoid2Para(simpleDraweeView, pair, this, v.class, 326811)) {
+            return;
+        }
+        int iIntValue = pair.getFirst().intValue();
+        int iIntValue2 = pair.getSecond().intValue();
+        if (iIntValue <= 0 || iIntValue2 <= 0) {
+            return;
+        }
+        simpleDraweeView.getLayoutParams().width = (int) TypedValue.applyDimension(1, iIntValue, Resources.getSystem().getDisplayMetrics());
+        simpleDraweeView.getLayoutParams().height = (int) TypedValue.applyDimension(1, iIntValue2, Resources.getSystem().getDisplayMetrics());
+    }

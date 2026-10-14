@@ -1,0 +1,82 @@
+    /* JADX WARN: Code duplicated, block: B:45:0x0162  */
+    /* JADX WARN: Code duplicated, block: B:47:0x016a  */
+    /* JADX WARN: Code duplicated, block: B:48:0x018f  */
+    /* JADX WARN: Code duplicated, block: B:51:0x01a7  */
+    public final SpannableStringBuilder V(Context context, CommentCommentInfo commentCommentInfo, boolean z100, boolean z101, String str, Function0<Unit> function0, Function1<? super Boolean, Unit> function1) {
+        boolean z102;
+        PatchProxyResult patchProxyResultProxy = PatchProxy.proxy(new Object[]{context, commentCommentInfo, new Boolean(z100), new Boolean(z101), str, function0, function1}, this, g0.class, 364246);
+        if (patchProxyResultProxy.isSupported) {
+            return (SpannableStringBuilder) patchProxyResultProxy.result;
+        }
+        boolean zA = zf4.d.a(commentCommentInfo);
+        if (!z100 && zA) {
+            return new SpannableStringBuilder();
+        }
+        String strV = commentCommentInfo.V();
+        if (strV == null) {
+            strV = "";
+        }
+        SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(c0(strV));
+        SpannableStringBuilder spannableStringBuilderAppend = spannableStringBuilder.append(" ");
+        CharSequence charSequenceO = commentCommentInfo.o();
+        spannableStringBuilderAppend.append(charSequenceO != null ? charSequenceO : "");
+        spannableStringBuilder.setSpan(new ForegroundColorSpan(p69.f.e(mp5.e.f238540u0)), 0, spannableStringBuilder.length(), 33);
+        int length = spannableStringBuilder.length();
+        if (!i1.f302844a.j(commentCommentInfo.A()) && z101) {
+            spannableStringBuilder.append(" ").append(p69.f.l(mp5.k.T0));
+            if (E()) {
+                f0(spannableStringBuilder, length);
+            }
+            if (function0 != null) {
+                try {
+                    spannableStringBuilder.setSpan(new b(function0), c0.f302494a.y() ? 0 : length, spannableStringBuilder.length(), 33);
+                } catch (Throwable th) {
+                    wg3.x.g(th);
+                }
+            }
+        }
+        spannableStringBuilder.setSpan(new ForegroundColorSpan(p69.f.e(mp5.e.C0)), length, spannableStringBuilder.length(), 33);
+        int length2 = spannableStringBuilder.length();
+        ud3.a aVar = ud3.a.f320188a;
+        if (aVar.g(commentCommentInfo)) {
+            String str2 = " " + p69.f.l(mp5.k.T1);
+            spannableStringBuilder.append((CharSequence) str2);
+            spannableStringBuilder.setSpan(new c(function1, str, commentCommentInfo), spannableStringBuilder.length() - str2.length(), spannableStringBuilder.length(), 33);
+        } else {
+            if (!aVar.i(commentCommentInfo)) {
+                if (aVar.h(commentCommentInfo)) {
+                    String str3 = " " + p69.f.l(mp5.k.U1);
+                    spannableStringBuilder.append((CharSequence) str3);
+                    spannableStringBuilder.setSpan(new d(function1, str, commentCommentInfo), spannableStringBuilder.length() - str3.length(), spannableStringBuilder.length(), 33);
+                } else {
+                    z102 = false;
+                }
+                if (z102) {
+                    if (wg3.f.f343557a.H0()) {
+                        spannableStringBuilder.setSpan(new j((int) TypedValue.applyDimension(1, 1, Resources.getSystem().getDisplayMetrics()), Integer.valueOf(p69.f.e(mp5.e.f238500d))), length2, spannableStringBuilder.length(), 33);
+                    } else {
+                        spannableStringBuilder.setSpan(new ForegroundColorSpan(p69.f.e(mp5.e.f238500d)), length2, spannableStringBuilder.length(), 33);
+                    }
+                    if (E()) {
+                        f0(spannableStringBuilder, length2);
+                    }
+                }
+                spannableStringBuilder.setSpan(new TextAppearanceSpan(context, mp5.l.f238945c), 0, spannableStringBuilder.length(), 33);
+                return spannableStringBuilder;
+            }
+            spannableStringBuilder.append(" " + p69.f.l(mp5.k.R1));
+        }
+        z102 = true;
+        if (z102) {
+            if (wg3.f.f343557a.H0()) {
+                spannableStringBuilder.setSpan(new j((int) TypedValue.applyDimension(1, 1, Resources.getSystem().getDisplayMetrics()), Integer.valueOf(p69.f.e(mp5.e.f238500d))), length2, spannableStringBuilder.length(), 33);
+            } else {
+                spannableStringBuilder.setSpan(new ForegroundColorSpan(p69.f.e(mp5.e.f238500d)), length2, spannableStringBuilder.length(), 33);
+            }
+            if (E()) {
+                f0(spannableStringBuilder, length2);
+            }
+        }
+        spannableStringBuilder.setSpan(new TextAppearanceSpan(context, mp5.l.f238945c), 0, spannableStringBuilder.length(), 33);
+        return spannableStringBuilder;
+    }

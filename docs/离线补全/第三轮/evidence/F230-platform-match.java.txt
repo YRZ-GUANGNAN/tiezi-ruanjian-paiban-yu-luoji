@@ -1,0 +1,9 @@
+    public final boolean a(String str) {
+        PatchProxyResult patchProxyResultProxy1Para = PatchProxy.proxy1Para(str, this, l.class, 93354);
+        if (patchProxyResultProxy1Para.isSupported) {
+            return ((Boolean) patchProxyResultProxy1Para.result).booleanValue();
+        }
+        String str2 = Build.MANUFACTURER;
+        Locale locale = Locale.ENGLISH;
+        return Intrinsics.areEqual(str2.toLowerCase(locale), str) || Intrinsics.areEqual(Build.BRAND.toLowerCase(locale), str);
+    }

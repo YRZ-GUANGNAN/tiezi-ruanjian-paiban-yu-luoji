@@ -1,0 +1,9 @@
+    public static /* synthetic */ SpannableStringBuilder S(g0 g0Var, Context context, CommentCommentInfo commentCommentInfo, boolean z100, boolean z101, int i100, Object obj) {
+        if ((i100 & 4) != 0) {
+            z100 = false;
+        }
+        if ((i100 & 8) != 0) {
+            z101 = true;
+        }
+        return g0Var.R(context, commentCommentInfo, z100, z101);
+    }

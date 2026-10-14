@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xingin.comment.consumer.list.view.CommentMultiPictureItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="0x7f094268"
+    android:clipChildren="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.xingin.comment.consumer.list.view.CommentSinglePictureView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="0x7f094264"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f0702e6"
+        android:NOT_FOUND_0x9="0x7f094267"
+        android:NOT_FOUND_0xc="0"
+        android:NOT_FOUND_0xe="0"/>
+    <com.xingin.comment.consumer.list.view.CommentSinglePictureView
+        android:id="0x7f094265"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0x7f0702e6"
+        android:NOT_FOUND_0x8="0x7f094264"
+        android:NOT_FOUND_0xb="0x7f094264"
+        android:NOT_FOUND_0xe="0x7f094264"/>
+    <com.xingin.comment.consumer.list.view.CommentSinglePictureView
+        android:id="0x7f094266"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0x7f0702e6"
+        android:NOT_FOUND_0x8="0x7f094264"
+        android:NOT_FOUND_0xa="0"
+        android:NOT_FOUND_0xb="0x7f094265"
+        android:NOT_FOUND_0xe="0x7f094264"/>
+    <TextView
+        android:textColor="0x7f0608ff"
+        android:id="0x7f094267"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0x7f0702e6"
+        android:NOT_FOUND_0x8="0"
+        android:NOT_FOUND_0xc="0x7f094264"
+        android:NOT_FOUND_0xd="0x7f094264"
+        style="0x7f1204af"/>
+</com.xingin.comment.consumer.list.view.CommentMultiPictureItemView>

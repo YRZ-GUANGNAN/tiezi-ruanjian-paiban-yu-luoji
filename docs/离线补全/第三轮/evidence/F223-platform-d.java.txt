@@ -1,0 +1,4 @@
+    public final boolean d() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, l.class, 93347);
+        return patchProxyResultProxy0Para.isSupported ? ((Boolean) patchProxyResultProxy0Para.result).booleanValue() : a("meitu");
+    }

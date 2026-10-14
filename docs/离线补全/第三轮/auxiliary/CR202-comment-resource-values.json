@@ -1,0 +1,245 @@
+{
+  "id": "CR202-comment-resource-values",
+  "provider": "jadx-ResTableBinaryParser-direct-not-REA-Evidence",
+  "authority": "shipped-artifact",
+  "runtimeObserved": false,
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "arscSha256": "5c9fce688019e4263deafff2da8dbf1da34da33885f9a29e199d994e2a704ba2",
+  "resourceEntries": 66202,
+  "requestedIds": [
+    "0x7f1204af",
+    "0x7f1204b5",
+    "0x7f1204b8",
+    "0x7f1204b9",
+    "0x7f1204ae",
+    "0x7f120488",
+    "0x7f070298",
+    "0x7f07027a",
+    "0x7f07027d",
+    "0x7f070267",
+    "0x7f0702ab",
+    "0x7f07029e",
+    "0x7f0702d2",
+    "0x7f0702e6",
+    "0x7f0702fa"
+  ],
+  "matches": [
+    {
+      "id": "0x7f070267",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataType": 5,
+        "rawDataHex": "0x00000a01",
+        "decoded": "10dp"
+      }
+    },
+    {
+      "id": "0x7f07027a",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataType": 5,
+        "rawDataHex": "0x00000001",
+        "decoded": "0dp"
+      }
+    },
+    {
+      "id": "0x7f07027d",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataType": 5,
+        "rawDataHex": "0x00000a01",
+        "decoded": "10dp"
+      }
+    },
+    {
+      "id": "0x7f070298",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataType": 5,
+        "rawDataHex": "0x00000f01",
+        "decoded": "15dp"
+      }
+    },
+    {
+      "id": "0x7f07029e",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataType": 5,
+        "rawDataHex": "0x0000a501",
+        "decoded": "165dp"
+      }
+    },
+    {
+      "id": "0x7f0702ab",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataType": 5,
+        "rawDataHex": "0x0000c801",
+        "decoded": "200dp"
+      }
+    },
+    {
+      "id": "0x7f0702d2",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataType": 5,
+        "rawDataHex": "0x00000401",
+        "decoded": "4dp"
+      }
+    },
+    {
+      "id": "0x7f0702e6",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataType": 5,
+        "rawDataHex": "0x00000601",
+        "decoded": "6dp"
+      }
+    },
+    {
+      "id": "0x7f0702fa",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataType": 5,
+        "rawDataHex": "0x00000801",
+        "decoded": "8dp"
+      }
+    },
+    {
+      "id": "0x7f120488",
+      "type": "style",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "items": []
+    },
+    {
+      "id": "0x7f1204ae",
+      "type": "style",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x7f120488",
+      "items": [
+        {
+          "dataType": 5,
+          "rawDataHex": "0x00000e02",
+          "decoded": "14sp",
+          "nameRef": "0x01010095",
+          "name": "android:attr.textSize"
+        },
+        {
+          "dataType": 17,
+          "rawDataHex": "0x00000000",
+          "decoded": "0x0",
+          "nameRef": "0x01010097",
+          "name": "android:attr.textStyle"
+        }
+      ]
+    },
+    {
+      "id": "0x7f1204af",
+      "type": "style",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x7f1204ae",
+      "items": [
+        {
+          "dataType": 5,
+          "rawDataHex": "0x00000d02",
+          "decoded": "13sp",
+          "nameRef": "0x01010095",
+          "name": "android:attr.textSize"
+        }
+      ]
+    },
+    {
+      "id": "0x7f1204b5",
+      "type": "style",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x7f1204ae",
+      "items": [
+        {
+          "dataType": 5,
+          "rawDataHex": "0x00000e02",
+          "decoded": "14sp",
+          "nameRef": "0x01010095",
+          "name": "android:attr.textSize"
+        }
+      ]
+    },
+    {
+      "id": "0x7f1204b8",
+      "type": "style",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x7f1204ae",
+      "items": [
+        {
+          "dataType": 5,
+          "rawDataHex": "0x00000b02",
+          "decoded": "11sp",
+          "nameRef": "0x01010095",
+          "name": "android:attr.textSize"
+        }
+      ]
+    },
+    {
+      "id": "0x7f1204b9",
+      "type": "style",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x7f1204a6",
+      "items": [
+        {
+          "dataType": 5,
+          "rawDataHex": "0x00000b02",
+          "decoded": "11sp",
+          "nameRef": "0x01010095",
+          "name": "android:attr.textSize"
+        }
+      ]
+    }
+  ],
+  "textContentLayout": [
+    {
+      "configuration": "",
+      "type": "layout",
+      "value": "res/Oo5.xml",
+      "id": "0x7f0c0ec8",
+      "name": "-"
+    }
+  ],
+  "limitations": [
+    "Static packaged resource defaults only; XML and code may override these values.",
+    "All matching configurations in the parsed table are retained; selection for a running device is not observed.",
+    "No APK execution, signature or split-APK verification was performed."
+  ]
+}

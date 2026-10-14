@@ -1,0 +1,7 @@
+    public e(int[] iArr, int i100, int i101, c cVar, int i102) {
+        this.f296523a = iArr;
+        this.f296524b = i100;
+        this.f296525c = i101;
+        this.f296526d = cVar;
+        this.f296527e = i102;
+    }

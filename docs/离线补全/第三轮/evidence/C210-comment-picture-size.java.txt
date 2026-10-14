@@ -1,0 +1,18 @@
+    public final void r4(SimpleDraweeView simpleDraweeView, CommentPictureInfo commentPictureInfo, int i100) {
+        if (PatchProxy.proxyVoid3Para(simpleDraweeView, commentPictureInfo, new Integer(i100), this, CommentSinglePictureView.class, 250080) || commentPictureInfo == null) {
+            return;
+        }
+        if (i100 == 1 || f0.f343690a.h()) {
+            int i101 = f87485m;
+            x.b("CommentConsumerList", "updatePicViewSize singlePicSize " + i101);
+            simpleDraweeView.getLayoutParams().width = i101;
+            simpleDraweeView.getLayoutParams().height = i101;
+            v.f343751a.e(simpleDraweeView, commentPictureInfo, i100);
+            return;
+        }
+        x.b("CommentConsumerList", "updatePicViewSize multiPicSize " + i100);
+        ViewGroup.LayoutParams layoutParams = simpleDraweeView.getLayoutParams();
+        int i102 = f87484l;
+        layoutParams.width = i102;
+        simpleDraweeView.getLayoutParams().height = i102;
+    }

@@ -1,0 +1,25 @@
+    public final h f(ViewGroup viewGroup, Function1<? super AsyncParentCommentView, Unit> function1) {
+        PatchProxyResult patchProxyResultProxy2Para = PatchProxy.proxy2Para(viewGroup, function1, this, a.class, 383862);
+        if (patchProxyResultProxy2Para.isSupported) {
+            return (h) patchProxyResultProxy2Para.result;
+        }
+        View viewA = vd3.b.f331647a.a(wd3.d.COMMENT_PARENT_ITEM);
+        AsyncParentCommentView asyncParentCommentView = viewA instanceof AsyncParentCommentView ? (AsyncParentCommentView) viewA : null;
+        if (asyncParentCommentView == null) {
+            return b(g(), viewGroup, new d(function1));
+        }
+        float f100 = 6;
+        j2.K((XYAvatarView) asyncParentCommentView.a(mp5.h.O2), (int) TypedValue.applyDimension(1, f100, Resources.getSystem().getDisplayMetrics()));
+        int i100 = mp5.h.f238627c1;
+        j2.K((HandlePressStateCommentLinearLayout) asyncParentCommentView.a(i100), (int) TypedValue.applyDimension(1, f100, Resources.getSystem().getDisplayMetrics()));
+        j2.J((HandlePressStateCommentLinearLayout) asyncParentCommentView.a(i100), (int) TypedValue.applyDimension(1, f100, Resources.getSystem().getDisplayMetrics()));
+        s68.o.b(asyncParentCommentView.a(mp5.h.f238611a0));
+        j2.J((HandlePressStateCommentTextView) asyncParentCommentView.a(mp5.h.f238727o6), 0);
+        j2.K((TextView) asyncParentCommentView.a(mp5.h.f238719n6), (int) TypedValue.applyDimension(1, 4, Resources.getSystem().getDisplayMetrics()));
+        ((AsyncParentCommentView) asyncParentCommentView.a(mp5.h.f238692k3)).setBackground(null);
+        function1.invoke(asyncParentCommentView);
+        h hVarA = a();
+        hVarA.D(asyncParentCommentView);
+        hVarA.m0(true);
+        return hVarA;
+    }

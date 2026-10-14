@@ -1,0 +1,4 @@
+    public final int a(Context context) {
+        PatchProxyResult patchProxyResultProxy1Para = PatchProxy.proxy1Para(context, this, a.class, 93358);
+        return patchProxyResultProxy1Para.isSupported ? ((Integer) patchProxyResultProxy1Para.result).intValue() : context.getSharedPreferences("font_size_setting", 0).getInt("font_size_setting", -1);
+    }

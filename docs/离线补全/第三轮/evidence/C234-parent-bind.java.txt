@@ -1,0 +1,11 @@
+    /* JADX WARN: Multi-variable type inference failed */
+    public final void J(qh6.d dVar) {
+        if (PatchProxy.proxyVoid1Para(dVar, this, h.class, 385539)) {
+            return;
+        }
+        if (dVar.n()) {
+            ((AsyncParentCommentView) getView()).setBackgroundColor(p69.f.e(mp5.e.Q0));
+        } else {
+            ((AsyncParentCommentView) getView()).setBackground(p69.f.h(mp5.g.f238588p0));
+        }
+    }

@@ -1,0 +1,8 @@
+    public final String c0(String str) {
+        PatchProxyResult patchProxyResultProxy1Para = PatchProxy.proxy1Para(str, this, g0.class, 364204);
+        if (patchProxyResultProxy1Para.isSupported) {
+            return (String) patchProxyResultProxy1Para.result;
+        }
+        Long longOrNull = StringsKt__StringNumberConversionsKt.toLongOrNull(str);
+        return b0(longOrNull != null ? longOrNull.longValue() : 0L);
+    }

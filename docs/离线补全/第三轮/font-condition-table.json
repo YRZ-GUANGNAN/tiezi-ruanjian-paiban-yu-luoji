@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "kind": "derived-static-font-table",
+  "appVersion": "8.72.0",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "checks": {
+    "baseEnumCount": 37,
+    "expandedEnumCount": 111,
+    "mapEntriesCrossCheckedAgainstDex": 111,
+    "allValuesMatched": true
+  },
+  "detailAttribute": {
+    "resourceId": "0x7f040761",
+    "styleable": "i69.j.V0",
+    "styleableIndexField": "i69.j.W0",
+    "index": 0,
+    "title": 3,
+    "body": 10
+  },
+  "selection": {
+    "gate": "wq1.i.n1() || wq1.i.o1()",
+    "preferenceFile": "font_size_setting",
+    "preferenceKey": "font_size_setting",
+    "defaultValue": -1,
+    "modeRows": [
+      {
+        "mode": -1,
+        "offset": 0,
+        "unit": "sp"
+      },
+      {
+        "mode": 0,
+        "offset": 0,
+        "unit": "dp"
+      },
+      {
+        "mode": 1,
+        "offset": 37,
+        "unit": "dp"
+      },
+      {
+        "mode": 2,
+        "offset": 74,
+        "unit": "dp"
+      }
+    ],
+    "otherIntegers": "Code uses base index and dp; no UI validity claim."
+  },
+  "weightSelection": {
+    "source": "F214 and F216-F230; FR206 exact helper references",
+    "match": "Build.MANUFACTURER or Build.BRAND lowercased with Locale.ENGLISH",
+    "priority": [
+      {
+        "index": 6,
+        "when": "SDK_INT < 29"
+      },
+      {
+        "index": 0,
+        "when": "huawei"
+      },
+      {
+        "index": 1,
+        "when": "honor"
+      },
+      {
+        "index": 2,
+        "when": "xiaomi or meitu or redmi"
+      },
+      {
+        "index": 3,
+        "when": "oppo or realme or oneplus"
+      },
+      {
+        "index": 4,
+        "when": "vivo"
+      },
+      {
+        "index": 5,
+        "when": "fallback"
+      }
+    ],
+    "runtimeSelectedIndex": null
+  },
+  "selectedTokens": [
+    {
+      "name": "T1",
+      "weights": [
+        700,
+        600,
+        450,
+        500,
+        600,
+        600,
+        700
+      ],
+      "size": 18,
+      "lineHeight": 26,
+      "fontCategory": "System",
+      "style": 2,
+      "ordinal": 3,
+      "dexConstructorOffset": 138,
+      "dexPairOffset": 141
+    },
+    {
+      "name": "B2LooseSwitch",
+      "weights": [
+        400,
+        400,
+        305,
+        400,
+        400,
+        400,
+        400
+      ],
+      "size": 15,
+      "lineHeight": 22,
+      "fontCategory": "System",
+      "style": 0,
+      "ordinal": 10,
+      "dexConstructorOffset": 359,
+      "dexPairOffset": 362
+    },
+    {
+      "name": "T1Xlarge",
+      "weights": [
+        500,
+        600,
+        450,
+        500,
+        600,
+        600,
+        700
+      ],
+      "size": 20,
+      "lineHeight": 29,
+      "fontCategory": "System",
+      "style": 2,
+      "ordinal": 40,
+      "dexConstructorOffset": 1329,
+      "dexPairOffset": 1332
+    },
+    {
+      "name": "B2LooseSwitchXlarge",
+      "weights": [
+        400,
+        400,
+        305,
+        400,
+        400,
+        400,
+        400
+      ],
+      "size": 17,
+      "lineHeight": 25,
+      "fontCategory": "System",
+      "style": 0,
+      "ordinal": 47,
+      "dexConstructorOffset": 1556,
+      "dexPairOffset": 1559
+    },
+    {
+      "name": "T1Xxlarge",
+      "weights": [
+        700,
+        600,
+        450,
+        500,
+        600,
+        600,
+        700
+      ],
+      "size": 22,
+      "lineHeight": 32,
+      "fontCategory": "System",
+      "style": 2,
+      "ordinal": 77,
+      "dexConstructorOffset": 2521,
+      "dexPairOffset": 2524
+    },
+    {
+      "name": "B2LooseSwitchXxlarge",
+      "weights": [
+        400,
+        400,
+        305,
+        400,
+        400,
+        400,
+        400
+      ],
+      "size": 19,
+      "lineHeight": 28,
+      "fontCategory": "System",
+      "style": 0,
+      "ordinal": 84,
+      "dexConstructorOffset": 2748,
+      "dexPairOffset": 2751
+    }
+  ],
+  "sources": [
+    {
+      "file": "auxiliary/FR207-font-style-and-map-instructions.json",
+      "originalSha256": "4a524b8b9b9e9451db1abf7b79d7bcc52222e2fc8d810c321741bdf772c8f8ed",
+      "publicSha256": "96d8a212210f31e0faea061459abfd008ff5b6e271685bd947c6434c933ed1dd"
+    },
+    {
+      "file": "auxiliary/FR202-token-apply-instructions.json",
+      "originalSha256": "ec3571afdf54aff7a353a5bbe85cc9cb9803bf741b6023d61ab94c676a5bb345",
+      "publicSha256": "594ee1a89493497ce2bcf19ab11e6ea2fadbe0da81865c263c8749a414abdcb1"
+    },
+    {
+      "file": "auxiliary/FR208-detail-attribute-identities.json",
+      "originalSha256": "5225418137e7b5c18c51f08c8acd4b2743e514ed75a592a3dff2e3b0abefc5db",
+      "publicSha256": "e5296c52fa8b57cd2db8cc233e7c3f64889f12074783a19cbc0de754badf82da"
+    },
+    {
+      "file": "auxiliary/FR204-token-enum-instructions.json",
+      "originalSha256": "552a42b0e2c9b24d44b6950e966d8e8171956e607316e807d9089bbbd5cc3c0f",
+      "publicSha256": "9e3bf3eeb7f05965bfef76013bd10d896c62f756a67ade053c0cae38c6ba8053"
+    },
+    {
+      "file": "auxiliary/FR205-token-attribute-resource.json",
+      "originalSha256": "95ff6986147206438e68a7e12aa964c3522cdeb4b75a9bf16270950ecc40e8f5",
+      "publicSha256": "dda73ca991a86c715ab701e476d7ebced41f1d30a6f909dc6db5113b96880dea"
+    }
+  ],
+  "limitations": [
+    "All results describe the unpatched packaged code, not current runtime config.",
+    "The enum names are internal names; they do not prove settings-screen labels.",
+    "Size and line height units depend on mode; weights also depend on selected platform category and font implementation."
+  ]
+}

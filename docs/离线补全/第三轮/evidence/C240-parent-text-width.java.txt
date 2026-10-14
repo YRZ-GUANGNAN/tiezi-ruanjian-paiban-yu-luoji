@@ -1,0 +1,8 @@
+    /* JADX WARN: Multi-variable type inference failed */
+    public final int h0() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, h.class, 385538);
+        if (patchProxyResultProxy0Para.isSupported) {
+            return ((Integer) patchProxyResultProxy0Para.result).intValue();
+        }
+        return ro.m.f288793a.c() ? Math.max(100, ((HandlePressStateCommentTextView) ((AsyncParentCommentView) getView()).a(mp5.h.f238727o6)).getWidth()) : f0();
+    }

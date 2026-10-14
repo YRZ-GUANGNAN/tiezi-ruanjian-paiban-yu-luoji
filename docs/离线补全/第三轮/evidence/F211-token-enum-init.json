@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_fe10f712a3071925e84baaa98914b3358d7974c6e42c9207d5ca6cc281853852",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "s69.f",
+    "method_name": "<clinit>"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "s69.f"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"name\":\"f\",\"full_name\":\"s69.f\",\"field_count\":38,\"fields\":[{\"name\":\"$VALUES\",\"type\":\"s69.f[]\",\"def_pos\":0},{\"name\":\"B1\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"B1Loose\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"B1Number\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"B1NumberEmphasized\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"B2\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"B2Loose\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"B2LooseSwitch\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"B2Number\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"B2NumberEmphasized\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"C1\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"C1Emphasized\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"C2\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"C2Emphasized\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"C2Number\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"C2NumberEmphasized\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"C3\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"C3Emphasized\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"C3Number\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"C3NumberEmphasized\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"H1\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"H1Number\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"H1NumberEmphasized\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"H2\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"H2Number\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"H2NumberEmphasized\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"H3\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"H3Number\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"H3NumberEmphasized\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"T1\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"T1Number\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"T1NumberEmphasized\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"T2\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"T2Number\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"T2NumberEmphasized\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"T3\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"T3Number\",\"type\":\"s69.f\",\"def_pos\":0},{\"name\":\"T3NumberEmphasized\",\"type\":\"s69.f\",\"def_pos\":0}],\"methods\":[{\"is_constructor\":false,\"name\":\"$values\",\"def_pos\":0,\"signature\":\"$values(): s69.f[]\"},{\"is_constructor\":false,\"name\":\"<clinit>\",\"def_pos\":0,\"signature\":\"<clinit>(): void\"},{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(java.lang.String, int): void\"},{\"is_constructor\":false,\"name\":\"valueOf\",\"def_pos\":0,\"signature\":\"valueOf(java.lang.String): s69.f\"},{\"is_constructor\":false,\"name\":\"values\",\"def_pos\":0,\"signature\":\"values(): s69.f[]\"}],\"method_count\":5,\"inner_class_count\":0,\"inner_classes\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "s69.f",
+          "method_name": "<clinit>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"body\":\"// method exists but has no decompiled body (native/abstract)\",\"overload_count\":1,\"method_name\":\"<clinit>\",\"markers\":[],\"mode\":\"java\",\"full_name\":\"s69.f.<clinit>\",\"class_name\":\"s69.f\",\"overload_index\":0,\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "s69.f",
+    "method": {
+      "name": "<clinit>",
+      "reported_signature": "<clinit>(): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "not_available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "// method exists but has no decompiled body (native/abstract)",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "8a57708ab9a48a908110e7ee44606f0c5c06c8802b95d871ebaa4e1dd1d6ef5e",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

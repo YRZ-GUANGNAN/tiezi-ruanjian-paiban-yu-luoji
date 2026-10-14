@@ -1,0 +1,2870 @@
+{
+  "provider": "dexlib2-bundled-with-jadx-auxiliary-not-REA-Evidence",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "selectors": [
+    "Lmp5/i;::field:S0",
+    "Lmp5/i;::field:V0",
+    "Lmp5/k;::field:A0",
+    "Lmp5/k;::field:B0",
+    "Lmp5/k;::field:C0",
+    "Lmp5/k;::field:K0",
+    "Lmp5/h;::field:o6",
+    "Lah6/h;::L",
+    "Lch6/h;::L",
+    "Lwg3/v;::d"
+  ],
+  "matches": [
+    {
+      "selector": "Lwg3/v;::d",
+      "dexEntry": "classes3.dex",
+      "method": "Lwg3/v;->d(Lcom/facebook/drawee/view/SimpleDraweeView;Lkotlin/Pair;)V",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 7,
+      "codeUnits": 78,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "const-class",
+          "a": 0,
+          "reference": "Lwg3/v;"
+        },
+        {
+          "offset": 2,
+          "opcode": "const",
+          "a": 1,
+          "literal": "326811",
+          "literalHex": "0x4fc9b"
+        },
+        {
+          "offset": 5,
+          "opcode": "invoke-static",
+          "registers": [
+            5,
+            6,
+            4,
+            0,
+            1
+          ],
+          "reference": "Lcom/xingin/robust/PatchProxy;->proxyVoid2Para(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;I)Z"
+        },
+        {
+          "offset": 8,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 9,
+          "opcode": "if-eqz",
+          "a": 0,
+          "target": 12
+        },
+        {
+          "offset": 11,
+          "opcode": "return-void"
+        },
+        {
+          "offset": 12,
+          "opcode": "invoke-virtual",
+          "registers": [
+            6
+          ],
+          "reference": "Lkotlin/Pair;->getFirst()Ljava/lang/Object;"
+        },
+        {
+          "offset": 15,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 16,
+          "opcode": "check-cast",
+          "a": 0,
+          "reference": "Ljava/lang/Number;"
+        },
+        {
+          "offset": 18,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Ljava/lang/Number;->intValue()I"
+        },
+        {
+          "offset": 21,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 22,
+          "opcode": "invoke-virtual",
+          "registers": [
+            6
+          ],
+          "reference": "Lkotlin/Pair;->getSecond()Ljava/lang/Object;"
+        },
+        {
+          "offset": 25,
+          "opcode": "move-result-object",
+          "a": 6
+        },
+        {
+          "offset": 26,
+          "opcode": "check-cast",
+          "a": 6,
+          "reference": "Ljava/lang/Number;"
+        },
+        {
+          "offset": 28,
+          "opcode": "invoke-virtual",
+          "registers": [
+            6
+          ],
+          "reference": "Ljava/lang/Number;->intValue()I"
+        },
+        {
+          "offset": 31,
+          "opcode": "move-result",
+          "a": 6
+        },
+        {
+          "offset": 32,
+          "opcode": "if-lez",
+          "a": 0,
+          "target": 77
+        },
+        {
+          "offset": 34,
+          "opcode": "if-lez",
+          "a": 6,
+          "target": 77
+        },
+        {
+          "offset": 36,
+          "opcode": "invoke-virtual",
+          "registers": [
+            5
+          ],
+          "reference": "Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;"
+        },
+        {
+          "offset": 39,
+          "opcode": "move-result-object",
+          "a": 1
+        },
+        {
+          "offset": 40,
+          "opcode": "int-to-float",
+          "a": 0,
+          "b": 0
+        },
+        {
+          "offset": 41,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;"
+        },
+        {
+          "offset": 44,
+          "opcode": "move-result-object",
+          "a": 2
+        },
+        {
+          "offset": 45,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2
+          ],
+          "reference": "Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;"
+        },
+        {
+          "offset": 48,
+          "opcode": "move-result-object",
+          "a": 2
+        },
+        {
+          "offset": 49,
+          "opcode": "const/4",
+          "a": 3,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 50,
+          "opcode": "invoke-static",
+          "registers": [
+            3,
+            0,
+            2
+          ],
+          "reference": "Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F"
+        },
+        {
+          "offset": 53,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 54,
+          "opcode": "float-to-int",
+          "a": 0,
+          "b": 0
+        },
+        {
+          "offset": 55,
+          "opcode": "iput",
+          "a": 0,
+          "b": 1,
+          "reference": "Landroid/view/ViewGroup$LayoutParams;->width:I"
+        },
+        {
+          "offset": 57,
+          "opcode": "invoke-virtual",
+          "registers": [
+            5
+          ],
+          "reference": "Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;"
+        },
+        {
+          "offset": 60,
+          "opcode": "move-result-object",
+          "a": 5
+        },
+        {
+          "offset": 61,
+          "opcode": "int-to-float",
+          "a": 6,
+          "b": 6
+        },
+        {
+          "offset": 62,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;"
+        },
+        {
+          "offset": 65,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 66,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;"
+        },
+        {
+          "offset": 69,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 70,
+          "opcode": "invoke-static",
+          "registers": [
+            3,
+            6,
+            0
+          ],
+          "reference": "Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F"
+        },
+        {
+          "offset": 73,
+          "opcode": "move-result",
+          "a": 6
+        },
+        {
+          "offset": 74,
+          "opcode": "float-to-int",
+          "a": 6,
+          "b": 6
+        },
+        {
+          "offset": 75,
+          "opcode": "iput",
+          "a": 6,
+          "b": 5,
+          "reference": "Landroid/view/ViewGroup$LayoutParams;->height:I"
+        },
+        {
+          "offset": 77,
+          "opcode": "return-void"
+        }
+      ]
+    },
+    {
+      "selector": "Lmp5/h;::field:o6",
+      "dexEntry": "classes7.dex",
+      "field": "Lmp5/h;->o6:I",
+      "encodedValuePresent": true,
+      "encodedValue": 2131310651
+    },
+    {
+      "selector": "Lmp5/i;::field:S0",
+      "dexEntry": "classes7.dex",
+      "field": "Lmp5/i;->S0:I",
+      "encodedValuePresent": true,
+      "encodedValue": 2131496588
+    },
+    {
+      "selector": "Lmp5/i;::field:V0",
+      "dexEntry": "classes7.dex",
+      "field": "Lmp5/i;->V0:I",
+      "encodedValuePresent": true,
+      "encodedValue": 2131496592
+    },
+    {
+      "selector": "Lmp5/k;::field:A0",
+      "dexEntry": "classes7.dex",
+      "field": "Lmp5/k;->A0:I",
+      "encodedValuePresent": true,
+      "encodedValue": 2131827883
+    },
+    {
+      "selector": "Lmp5/k;::field:B0",
+      "dexEntry": "classes7.dex",
+      "field": "Lmp5/k;->B0:I",
+      "encodedValuePresent": true,
+      "encodedValue": 2131827884
+    },
+    {
+      "selector": "Lmp5/k;::field:C0",
+      "dexEntry": "classes7.dex",
+      "field": "Lmp5/k;->C0:I",
+      "encodedValuePresent": true,
+      "encodedValue": 2131827885
+    },
+    {
+      "selector": "Lmp5/k;::field:K0",
+      "dexEntry": "classes7.dex",
+      "field": "Lmp5/k;->K0:I",
+      "encodedValuePresent": true,
+      "encodedValue": 2131827896
+    },
+    {
+      "selector": "Lah6/h;::L",
+      "dexEntry": "classes9.dex",
+      "method": "Lah6/h;->L(Lqh6/d;Landroid/text/SpannableStringBuilder;)V",
+      "superclass": "Lvg6/a;",
+      "bodyPresent": true,
+      "registerCount": 27,
+      "codeUnits": 310,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "move-object/from16",
+          "a": 0,
+          "b": 24
+        },
+        {
+          "offset": 2,
+          "opcode": "move-object/from16",
+          "a": 1,
+          "b": 25
+        },
+        {
+          "offset": 4,
+          "opcode": "move-object/from16",
+          "a": 2,
+          "b": 26
+        },
+        {
+          "offset": 6,
+          "opcode": "const-class",
+          "a": 3,
+          "reference": "Lah6/h;"
+        },
+        {
+          "offset": 8,
+          "opcode": "const",
+          "a": 4,
+          "literal": "385535",
+          "literalHex": "0x5e1ff"
+        },
+        {
+          "offset": 11,
+          "opcode": "invoke-static",
+          "registers": [
+            1,
+            2,
+            0,
+            3,
+            4
+          ],
+          "reference": "Lcom/xingin/robust/PatchProxy;->proxyVoid2Para(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;I)Z"
+        },
+        {
+          "offset": 14,
+          "opcode": "move-result",
+          "a": 3
+        },
+        {
+          "offset": 15,
+          "opcode": "if-eqz",
+          "a": 3,
+          "target": 18
+        },
+        {
+          "offset": 17,
+          "opcode": "return-void"
+        },
+        {
+          "offset": 18,
+          "opcode": "sget-object",
+          "a": 3,
+          "reference": "Lwg3/f;->a:Lwg3/f;"
+        },
+        {
+          "offset": 20,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Lwg3/f;->J0()Z"
+        },
+        {
+          "offset": 23,
+          "opcode": "move-result",
+          "a": 4
+        },
+        {
+          "offset": 24,
+          "opcode": "if-eqz",
+          "a": 4,
+          "target": 51
+        },
+        {
+          "offset": 26,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 24,
+          "argumentRegisters": 1,
+          "reference": "Lvg6/a;->H()Lth6/i;"
+        },
+        {
+          "offset": 29,
+          "opcode": "move-result-object",
+          "a": 4
+        },
+        {
+          "offset": 30,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 24,
+          "argumentRegisters": 1,
+          "reference": "Lpl4/d;->getView()Landroid/view/View;"
+        },
+        {
+          "offset": 33,
+          "opcode": "move-result-object",
+          "a": 5
+        },
+        {
+          "offset": 34,
+          "opcode": "check-cast",
+          "a": 5,
+          "reference": "Lcom/xingin/matrix/v2/notedetail/async/itembinder/parentcomment/child/AsyncParentCommentView;"
+        },
+        {
+          "offset": 36,
+          "opcode": "sget",
+          "a": 6,
+          "reference": "Lmp5/h;->o6:I"
+        },
+        {
+          "offset": 38,
+          "opcode": "invoke-virtual",
+          "registers": [
+            5,
+            6
+          ],
+          "reference": "Lcom/xingin/matrix/v2/notedetail/async/itembinder/parentcomment/child/AsyncParentCommentView;->a(I)Landroid/view/View;"
+        },
+        {
+          "offset": 41,
+          "opcode": "move-result-object",
+          "a": 5
+        },
+        {
+          "offset": 42,
+          "opcode": "check-cast",
+          "a": 5,
+          "reference": "Lcom/xingin/comment/widget/pressback/HandlePressStateCommentTextView;"
+        },
+        {
+          "offset": 44,
+          "opcode": "invoke-interface/range",
+          "startRegister": 25,
+          "argumentRegisters": 1,
+          "reference": "Lqh6/d;->m()Lcom/xingin/entities/CommentCommentInfo;"
+        },
+        {
+          "offset": 47,
+          "opcode": "move-result-object",
+          "a": 6
+        },
+        {
+          "offset": 48,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4,
+            5,
+            6
+          ],
+          "reference": "Lth6/i;->e(Landroid/widget/TextView;Lcom/xingin/entities/CommentCommentInfo;)V"
+        },
+        {
+          "offset": 51,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 24,
+          "argumentRegisters": 1,
+          "reference": "Lpl4/d;->getView()Landroid/view/View;"
+        },
+        {
+          "offset": 54,
+          "opcode": "move-result-object",
+          "a": 4
+        },
+        {
+          "offset": 55,
+          "opcode": "check-cast",
+          "a": 4,
+          "reference": "Lcom/xingin/matrix/v2/notedetail/async/itembinder/parentcomment/child/AsyncParentCommentView;"
+        },
+        {
+          "offset": 57,
+          "opcode": "sget",
+          "a": 5,
+          "reference": "Lmp5/h;->o6:I"
+        },
+        {
+          "offset": 59,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4,
+            5
+          ],
+          "reference": "Lcom/xingin/matrix/v2/notedetail/async/itembinder/parentcomment/child/AsyncParentCommentView;->a(I)Landroid/view/View;"
+        },
+        {
+          "offset": 62,
+          "opcode": "move-result-object",
+          "a": 4
+        },
+        {
+          "offset": 63,
+          "opcode": "check-cast",
+          "a": 4,
+          "reference": "Lcom/xingin/comment/widget/pressback/HandlePressStateCommentTextView;"
+        },
+        {
+          "offset": 65,
+          "opcode": "new-instance",
+          "a": 13,
+          "reference": "Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 67,
+          "opcode": "invoke-direct",
+          "registers": [
+            13,
+            2
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V"
+        },
+        {
+          "offset": 70,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Lwg3/f;->J0()Z"
+        },
+        {
+          "offset": 73,
+          "opcode": "move-result",
+          "a": 3
+        },
+        {
+          "offset": 74,
+          "opcode": "if-eqz",
+          "a": 3,
+          "target": 116
+        },
+        {
+          "offset": 76,
+          "opcode": "sget-object",
+          "a": 14,
+          "reference": "Lsq5/g0;->a:Lsq5/g0;"
+        },
+        {
+          "offset": 78,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 24,
+          "argumentRegisters": 1,
+          "reference": "Lpl4/d;->getView()Landroid/view/View;"
+        },
+        {
+          "offset": 81,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 82,
+          "opcode": "check-cast",
+          "a": 3,
+          "reference": "Lcom/xingin/matrix/v2/notedetail/async/itembinder/parentcomment/child/AsyncParentCommentView;"
+        },
+        {
+          "offset": 84,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 87,
+          "opcode": "move-result-object",
+          "a": 15
+        },
+        {
+          "offset": 88,
+          "opcode": "invoke-interface/range",
+          "startRegister": 25,
+          "argumentRegisters": 1,
+          "reference": "Lqh6/d;->m()Lcom/xingin/entities/CommentCommentInfo;"
+        },
+        {
+          "offset": 91,
+          "opcode": "move-result-object",
+          "a": 16
+        },
+        {
+          "offset": 92,
+          "opcode": "const/16",
+          "a": 17,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 94,
+          "opcode": "const/16",
+          "a": 18,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 96,
+          "opcode": "const/16",
+          "a": 19,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 98,
+          "opcode": "const/16",
+          "a": 20,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 100,
+          "opcode": "new-instance",
+          "a": 3,
+          "reference": "Lah6/h$d;"
+        },
+        {
+          "offset": 102,
+          "opcode": "invoke-direct",
+          "registers": [
+            3,
+            0,
+            1
+          ],
+          "reference": "Lah6/h$d;-><init>(Lah6/h;Lqh6/d;)V"
+        },
+        {
+          "offset": 105,
+          "opcode": "const/16",
+          "a": 22,
+          "literal": "60",
+          "literalHex": "0x3c"
+        },
+        {
+          "offset": 107,
+          "opcode": "const/16",
+          "a": 23,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 109,
+          "opcode": "move-object/from16",
+          "a": 21,
+          "b": 3
+        },
+        {
+          "offset": 111,
+          "opcode": "invoke-static/range",
+          "startRegister": 14,
+          "argumentRegisters": 10,
+          "reference": "Lsq5/g0;->W(Lsq5/g0;Landroid/content/Context;Lcom/xingin/entities/CommentCommentInfo;ZZLjava/lang/String;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 114,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 115,
+          "opcode": "goto",
+          "target": 141
+        },
+        {
+          "offset": 116,
+          "opcode": "sget-object",
+          "a": 5,
+          "reference": "Lsq5/g0;->a:Lsq5/g0;"
+        },
+        {
+          "offset": 118,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 24,
+          "argumentRegisters": 1,
+          "reference": "Lpl4/d;->getView()Landroid/view/View;"
+        },
+        {
+          "offset": 121,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 122,
+          "opcode": "check-cast",
+          "a": 3,
+          "reference": "Lcom/xingin/matrix/v2/notedetail/async/itembinder/parentcomment/child/AsyncParentCommentView;"
+        },
+        {
+          "offset": 124,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 127,
+          "opcode": "move-result-object",
+          "a": 6
+        },
+        {
+          "offset": 128,
+          "opcode": "invoke-interface/range",
+          "startRegister": 25,
+          "argumentRegisters": 1,
+          "reference": "Lqh6/d;->m()Lcom/xingin/entities/CommentCommentInfo;"
+        },
+        {
+          "offset": 131,
+          "opcode": "move-result-object",
+          "a": 7
+        },
+        {
+          "offset": 132,
+          "opcode": "const/4",
+          "a": 8,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 133,
+          "opcode": "const/4",
+          "a": 9,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 134,
+          "opcode": "const/16",
+          "a": 10,
+          "literal": "12",
+          "literalHex": "0xc"
+        },
+        {
+          "offset": 136,
+          "opcode": "const/4",
+          "a": 11,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 137,
+          "opcode": "invoke-static/range",
+          "startRegister": 5,
+          "argumentRegisters": 7,
+          "reference": "Lsq5/g0;->S(Lsq5/g0;Landroid/content/Context;Lcom/xingin/entities/CommentCommentInfo;ZZILjava/lang/Object;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 140,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 141,
+          "opcode": "new-instance",
+          "a": 14,
+          "reference": "Landroid/text/StaticLayout;"
+        },
+        {
+          "offset": 143,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4
+          ],
+          "reference": "Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;"
+        },
+        {
+          "offset": 146,
+          "opcode": "move-result-object",
+          "a": 7
+        },
+        {
+          "offset": 147,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 24,
+          "argumentRegisters": 1,
+          "reference": "Lah6/h;->h0()I"
+        },
+        {
+          "offset": 150,
+          "opcode": "move-result",
+          "a": 8
+        },
+        {
+          "offset": 151,
+          "opcode": "sget-object",
+          "a": 9,
+          "reference": "Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;"
+        },
+        {
+          "offset": 153,
+          "opcode": "const/high16",
+          "a": 10,
+          "literal": "1065353216",
+          "literalHex": "0x3f800000"
+        },
+        {
+          "offset": 155,
+          "opcode": "const/4",
+          "a": 11,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 156,
+          "opcode": "const/4",
+          "a": 12,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 157,
+          "opcode": "move-object",
+          "a": 5,
+          "b": 14
+        },
+        {
+          "offset": 158,
+          "opcode": "move-object",
+          "a": 6,
+          "b": 13
+        },
+        {
+          "offset": 159,
+          "opcode": "invoke-direct/range",
+          "startRegister": 5,
+          "argumentRegisters": 8,
+          "reference": "Landroid/text/StaticLayout;-><init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V"
+        },
+        {
+          "offset": 162,
+          "opcode": "new-instance",
+          "a": 5,
+          "reference": "Landroid/text/StaticLayout;"
+        },
+        {
+          "offset": 164,
+          "opcode": "new-instance",
+          "a": 6,
+          "reference": "Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 166,
+          "opcode": "invoke-direct",
+          "registers": [
+            6,
+            13
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V"
+        },
+        {
+          "offset": 169,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "offset": 172,
+          "opcode": "move-result-object",
+          "a": 7
+        },
+        {
+          "offset": 173,
+          "opcode": "invoke-virtual",
+          "registers": [
+            6,
+            7
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 176,
+          "opcode": "move-result-object",
+          "a": 16
+        },
+        {
+          "offset": 177,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4
+          ],
+          "reference": "Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;"
+        },
+        {
+          "offset": 180,
+          "opcode": "move-result-object",
+          "a": 17
+        },
+        {
+          "offset": 181,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 24,
+          "argumentRegisters": 1,
+          "reference": "Lah6/h;->h0()I"
+        },
+        {
+          "offset": 184,
+          "opcode": "move-result",
+          "a": 18
+        },
+        {
+          "offset": 185,
+          "opcode": "sget-object",
+          "a": 19,
+          "reference": "Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;"
+        },
+        {
+          "offset": 187,
+          "opcode": "const/high16",
+          "a": 20,
+          "literal": "1065353216",
+          "literalHex": "0x3f800000"
+        },
+        {
+          "offset": 189,
+          "opcode": "const/16",
+          "a": 21,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 191,
+          "opcode": "const/16",
+          "a": 22,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 193,
+          "opcode": "move-object",
+          "a": 15,
+          "b": 5
+        },
+        {
+          "offset": 194,
+          "opcode": "invoke-direct/range",
+          "startRegister": 15,
+          "argumentRegisters": 8,
+          "reference": "Landroid/text/StaticLayout;-><init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V"
+        },
+        {
+          "offset": 197,
+          "opcode": "invoke-virtual",
+          "registers": [
+            5
+          ],
+          "reference": "Landroid/text/StaticLayout;->getLineCount()I"
+        },
+        {
+          "offset": 200,
+          "opcode": "move-result",
+          "a": 5
+        },
+        {
+          "offset": 201,
+          "opcode": "invoke-virtual",
+          "registers": [
+            14
+          ],
+          "reference": "Landroid/text/StaticLayout;->getLineCount()I"
+        },
+        {
+          "offset": 204,
+          "opcode": "move-result",
+          "a": 6
+        },
+        {
+          "offset": 205,
+          "opcode": "const/4",
+          "a": 7,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 206,
+          "opcode": "const/4",
+          "a": 8,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 207,
+          "opcode": "if-le",
+          "a": 5,
+          "b": 6,
+          "target": 221
+        },
+        {
+          "offset": 209,
+          "opcode": "const-string",
+          "a": 5,
+          "reference": "\"\\n\""
+        },
+        {
+          "offset": 211,
+          "opcode": "invoke-virtual",
+          "registers": [
+            13,
+            5
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 214,
+          "opcode": "sget-object",
+          "a": 5,
+          "reference": "Lsq5/g0;->a:Lsq5/g0;"
+        },
+        {
+          "offset": 216,
+          "opcode": "const/4",
+          "a": 6,
+          "literal": "2",
+          "literalHex": "0x2"
+        },
+        {
+          "offset": 217,
+          "opcode": "invoke-static",
+          "registers": [
+            5,
+            3,
+            8,
+            6,
+            7
+          ],
+          "reference": "Lsq5/g0;->i0(Lsq5/g0;Landroid/text/SpannableStringBuilder;IILjava/lang/Object;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 220,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 221,
+          "opcode": "invoke-virtual",
+          "registers": [
+            13,
+            3
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 224,
+          "opcode": "sget-object",
+          "a": 3,
+          "reference": "Lsq5/i1;->a:Lsq5/i1;"
+        },
+        {
+          "offset": 226,
+          "opcode": "invoke-interface/range",
+          "startRegister": 25,
+          "argumentRegisters": 1,
+          "reference": "Lqh6/d;->m()Lcom/xingin/entities/CommentCommentInfo;"
+        },
+        {
+          "offset": 229,
+          "opcode": "move-result-object",
+          "a": 5
+        },
+        {
+          "offset": 230,
+          "opcode": "if-eqz",
+          "a": 5,
+          "target": 236
+        },
+        {
+          "offset": 232,
+          "opcode": "invoke-virtual",
+          "registers": [
+            5
+          ],
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->A()Ljava/lang/String;"
+        },
+        {
+          "offset": 235,
+          "opcode": "move-result-object",
+          "a": 7
+        },
+        {
+          "offset": 236,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3,
+            7
+          ],
+          "reference": "Lsq5/i1;->j(Ljava/lang/String;)Z"
+        },
+        {
+          "offset": 239,
+          "opcode": "move-result",
+          "a": 3
+        },
+        {
+          "offset": 240,
+          "opcode": "if-nez",
+          "a": 3,
+          "target": 261
+        },
+        {
+          "offset": 242,
+          "opcode": "new-instance",
+          "a": 3,
+          "reference": "Lah6/h$c;"
+        },
+        {
+          "offset": 244,
+          "opcode": "invoke-direct",
+          "registers": [
+            3,
+            0
+          ],
+          "reference": "Lah6/h$c;-><init>(Lah6/h;)V"
+        },
+        {
+          "offset": 247,
+          "opcode": "invoke-virtual",
+          "registers": [
+            13
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->length()I"
+        },
+        {
+          "offset": 250,
+          "opcode": "move-result",
+          "a": 5
+        },
+        {
+          "offset": 251,
+          "opcode": "const/16",
+          "a": 6,
+          "literal": "33",
+          "literalHex": "0x21"
+        },
+        {
+          "offset": 253,
+          "opcode": "invoke-virtual",
+          "registers": [
+            13,
+            3,
+            8,
+            5,
+            6
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V"
+        },
+        {
+          "offset": 256,
+          "opcode": "sget-object",
+          "a": 3,
+          "reference": "Lah6/g;->d:Lah6/g;"
+        },
+        {
+          "offset": 258,
+          "opcode": "invoke-static",
+          "registers": [
+            4,
+            3
+          ],
+          "reference": "Lah6/j;->a(Lcom/xingin/comment/widget/pressback/HandlePressStateCommentTextView;Landroid/view/View$OnLongClickListener;)V"
+        },
+        {
+          "offset": 261,
+          "opcode": "sget-object",
+          "a": 3,
+          "reference": "Lmo5/e;->j:Lmo5/e$c;"
+        },
+        {
+          "offset": 263,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Lmo5/e$c;->a()Lmo5/e;"
+        },
+        {
+          "offset": 266,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 267,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4,
+            3
+          ],
+          "reference": "Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V"
+        },
+        {
+          "offset": 270,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4,
+            8
+          ],
+          "reference": "Landroid/widget/TextView;->setHighlightColor(I)V"
+        },
+        {
+          "offset": 273,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4,
+            13
+          ],
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V"
+        },
+        {
+          "offset": 276,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 24,
+          "argumentRegisters": 1,
+          "reference": "Lpl4/d;->getView()Landroid/view/View;"
+        },
+        {
+          "offset": 279,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 280,
+          "opcode": "new-instance",
+          "a": 5,
+          "reference": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "offset": 282,
+          "opcode": "invoke-direct",
+          "registers": [
+            5
+          ],
+          "reference": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "offset": 285,
+          "opcode": "const-string",
+          "a": 6,
+          "reference": "\"AsyncPARENTCommentPresenter.bindContent \""
+        },
+        {
+          "offset": 287,
+          "opcode": "invoke-virtual",
+          "registers": [
+            5,
+            6
+          ],
+          "reference": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "offset": 290,
+          "opcode": "invoke-virtual",
+          "registers": [
+            5,
+            3
+          ],
+          "reference": "Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "offset": 293,
+          "opcode": "invoke-virtual",
+          "registers": [
+            5
+          ],
+          "reference": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "offset": 296,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 297,
+          "opcode": "const-string",
+          "a": 5,
+          "reference": "\"acc_opt\""
+        },
+        {
+          "offset": 299,
+          "opcode": "invoke-static",
+          "registers": [
+            5,
+            3
+          ],
+          "reference": "Ljx8/d;->a(Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "offset": 302,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4
+          ],
+          "reference": "Landroid/widget/TextView;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 305,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 306,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "reference": "Lah6/h;->U(Lqh6/d;Landroid/text/SpannableStringBuilder;Landroid/content/Context;)V"
+        },
+        {
+          "offset": 309,
+          "opcode": "return-void"
+        }
+      ]
+    },
+    {
+      "selector": "Lch6/h;::L",
+      "dexEntry": "classes9.dex",
+      "method": "Lch6/h;->L(Lqh6/e;Landroid/text/SpannableStringBuilder;)V",
+      "superclass": "Lvg6/a;",
+      "bodyPresent": true,
+      "registerCount": 38,
+      "codeUnits": 451,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "move-object/from16",
+          "a": 0,
+          "b": 35
+        },
+        {
+          "offset": 2,
+          "opcode": "move-object/from16",
+          "a": 1,
+          "b": 36
+        },
+        {
+          "offset": 4,
+          "opcode": "move-object/from16",
+          "a": 2,
+          "b": 37
+        },
+        {
+          "offset": 6,
+          "opcode": "const-class",
+          "a": 3,
+          "reference": "Lch6/h;"
+        },
+        {
+          "offset": 8,
+          "opcode": "const",
+          "a": 4,
+          "literal": "388068",
+          "literalHex": "0x5ebe4"
+        },
+        {
+          "offset": 11,
+          "opcode": "invoke-static",
+          "registers": [
+            1,
+            2,
+            0,
+            3,
+            4
+          ],
+          "reference": "Lcom/xingin/robust/PatchProxy;->proxyVoid2Para(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;I)Z"
+        },
+        {
+          "offset": 14,
+          "opcode": "move-result",
+          "a": 3
+        },
+        {
+          "offset": 15,
+          "opcode": "if-eqz",
+          "a": 3,
+          "target": 18
+        },
+        {
+          "offset": 17,
+          "opcode": "return-void"
+        },
+        {
+          "offset": 18,
+          "opcode": "new-instance",
+          "a": 3,
+          "reference": "Ljava/lang/StringBuilder;"
+        },
+        {
+          "offset": 20,
+          "opcode": "invoke-direct",
+          "registers": [
+            3
+          ],
+          "reference": "Ljava/lang/StringBuilder;-><init>()V"
+        },
+        {
+          "offset": 23,
+          "opcode": "const-string",
+          "a": 4,
+          "reference": "\"AsyncSubCommentPresenter.bindContent \""
+        },
+        {
+          "offset": 25,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3,
+            4
+          ],
+          "reference": "Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "offset": 28,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3,
+            2
+          ],
+          "reference": "Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "offset": 31,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Ljava/lang/StringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "offset": 34,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 35,
+          "opcode": "const-string",
+          "a": 4,
+          "reference": "\"acc_opt\""
+        },
+        {
+          "offset": 37,
+          "opcode": "invoke-static",
+          "registers": [
+            4,
+            3
+          ],
+          "reference": "Ljx8/d;->a(Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "offset": 40,
+          "opcode": "sget-object",
+          "a": 3,
+          "reference": "Lwg3/f;->a:Lwg3/f;"
+        },
+        {
+          "offset": 42,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Lwg3/f;->J0()Z"
+        },
+        {
+          "offset": 45,
+          "opcode": "move-result",
+          "a": 4
+        },
+        {
+          "offset": 46,
+          "opcode": "if-eqz",
+          "a": 4,
+          "target": 73
+        },
+        {
+          "offset": 48,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 35,
+          "argumentRegisters": 1,
+          "reference": "Lvg6/a;->H()Lth6/i;"
+        },
+        {
+          "offset": 51,
+          "opcode": "move-result-object",
+          "a": 4
+        },
+        {
+          "offset": 52,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 35,
+          "argumentRegisters": 1,
+          "reference": "Lpl4/d;->getView()Landroid/view/View;"
+        },
+        {
+          "offset": 55,
+          "opcode": "move-result-object",
+          "a": 5
+        },
+        {
+          "offset": 56,
+          "opcode": "check-cast",
+          "a": 5,
+          "reference": "Lcom/xingin/matrix/v2/notedetail/async/itembinder/subcomment/child/AsyncSubCommentView;"
+        },
+        {
+          "offset": 58,
+          "opcode": "sget",
+          "a": 6,
+          "reference": "Lmp5/h;->o6:I"
+        },
+        {
+          "offset": 60,
+          "opcode": "invoke-virtual",
+          "registers": [
+            5,
+            6
+          ],
+          "reference": "Lcom/xingin/matrix/v2/notedetail/async/itembinder/subcomment/child/AsyncSubCommentView;->a(I)Landroid/view/View;"
+        },
+        {
+          "offset": 63,
+          "opcode": "move-result-object",
+          "a": 5
+        },
+        {
+          "offset": 64,
+          "opcode": "check-cast",
+          "a": 5,
+          "reference": "Lcom/xingin/comment/widget/pressback/HandlePressStateCommentTextView;"
+        },
+        {
+          "offset": 66,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 36,
+          "argumentRegisters": 1,
+          "reference": "Lqh6/e;->m()Lcom/xingin/entities/CommentCommentInfo;"
+        },
+        {
+          "offset": 69,
+          "opcode": "move-result-object",
+          "a": 6
+        },
+        {
+          "offset": 70,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4,
+            5,
+            6
+          ],
+          "reference": "Lth6/i;->e(Landroid/widget/TextView;Lcom/xingin/entities/CommentCommentInfo;)V"
+        },
+        {
+          "offset": 73,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 35,
+          "argumentRegisters": 1,
+          "reference": "Lpl4/d;->getView()Landroid/view/View;"
+        },
+        {
+          "offset": 76,
+          "opcode": "move-result-object",
+          "a": 4
+        },
+        {
+          "offset": 77,
+          "opcode": "check-cast",
+          "a": 4,
+          "reference": "Lcom/xingin/matrix/v2/notedetail/async/itembinder/subcomment/child/AsyncSubCommentView;"
+        },
+        {
+          "offset": 79,
+          "opcode": "sget",
+          "a": 5,
+          "reference": "Lmp5/h;->o6:I"
+        },
+        {
+          "offset": 81,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4,
+            5
+          ],
+          "reference": "Lcom/xingin/matrix/v2/notedetail/async/itembinder/subcomment/child/AsyncSubCommentView;->a(I)Landroid/view/View;"
+        },
+        {
+          "offset": 84,
+          "opcode": "move-result-object",
+          "a": 4
+        },
+        {
+          "offset": 85,
+          "opcode": "check-cast",
+          "a": 4,
+          "reference": "Lcom/xingin/comment/widget/pressback/HandlePressStateCommentTextView;"
+        },
+        {
+          "offset": 87,
+          "opcode": "new-instance",
+          "a": 13,
+          "reference": "Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 89,
+          "opcode": "const-string",
+          "a": 5,
+          "reference": "\"\""
+        },
+        {
+          "offset": 91,
+          "opcode": "invoke-direct",
+          "registers": [
+            13,
+            5
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V"
+        },
+        {
+          "offset": 94,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 36,
+          "argumentRegisters": 1,
+          "reference": "Lqh6/e;->s()Ljava/lang/String;"
+        },
+        {
+          "offset": 97,
+          "opcode": "move-result-object",
+          "a": 6
+        },
+        {
+          "offset": 98,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 36,
+          "argumentRegisters": 1,
+          "reference": "Lqh6/e;->m()Lcom/xingin/entities/CommentCommentInfo;"
+        },
+        {
+          "offset": 101,
+          "opcode": "move-result-object",
+          "a": 7
+        },
+        {
+          "offset": 102,
+          "opcode": "invoke-virtual",
+          "registers": [
+            7
+          ],
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->S()Lcom/xingin/entities/CommentCommentInfoTargetComment;"
+        },
+        {
+          "offset": 105,
+          "opcode": "move-result-object",
+          "a": 7
+        },
+        {
+          "offset": 106,
+          "opcode": "const/4",
+          "a": 14,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 107,
+          "opcode": "if-eqz",
+          "a": 7,
+          "target": 114
+        },
+        {
+          "offset": 109,
+          "opcode": "invoke-virtual",
+          "registers": [
+            7
+          ],
+          "reference": "Lcom/xingin/entities/CommentCommentInfoTargetComment;->b()Ljava/lang/String;"
+        },
+        {
+          "offset": 112,
+          "opcode": "move-result-object",
+          "a": 7
+        },
+        {
+          "offset": 113,
+          "opcode": "goto",
+          "target": 115
+        },
+        {
+          "offset": 114,
+          "opcode": "move-object",
+          "a": 7,
+          "b": 14
+        },
+        {
+          "offset": 115,
+          "opcode": "if-nez",
+          "a": 7,
+          "target": 118
+        },
+        {
+          "offset": 117,
+          "opcode": "move-object",
+          "a": 7,
+          "b": 5
+        },
+        {
+          "offset": 118,
+          "opcode": "invoke-static",
+          "registers": [
+            6,
+            7
+          ],
+          "reference": "Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 121,
+          "opcode": "move-result",
+          "a": 6
+        },
+        {
+          "offset": 122,
+          "opcode": "const/16",
+          "a": 15,
+          "literal": "33",
+          "literalHex": "0x21"
+        },
+        {
+          "offset": 124,
+          "opcode": "const/4",
+          "a": 12,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 125,
+          "opcode": "if-nez",
+          "a": 6,
+          "target": 228
+        },
+        {
+          "offset": 127,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4
+          ],
+          "reference": "Landroid/widget/TextView;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 130,
+          "opcode": "move-result-object",
+          "a": 6
+        },
+        {
+          "offset": 131,
+          "opcode": "sget",
+          "a": 7,
+          "reference": "Lmp5/k;->K0:I"
+        },
+        {
+          "offset": 133,
+          "opcode": "invoke-virtual",
+          "registers": [
+            6,
+            7
+          ],
+          "reference": "Landroid/content/Context;->getString(I)Ljava/lang/String;"
+        },
+        {
+          "offset": 136,
+          "opcode": "move-result-object",
+          "a": 6
+        },
+        {
+          "offset": 137,
+          "opcode": "invoke-virtual",
+          "registers": [
+            13,
+            6
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 140,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 36,
+          "argumentRegisters": 1,
+          "reference": "Lqh6/e;->m()Lcom/xingin/entities/CommentCommentInfo;"
+        },
+        {
+          "offset": 143,
+          "opcode": "move-result-object",
+          "a": 7
+        },
+        {
+          "offset": 144,
+          "opcode": "invoke-virtual",
+          "registers": [
+            7
+          ],
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->S()Lcom/xingin/entities/CommentCommentInfoTargetComment;"
+        },
+        {
+          "offset": 147,
+          "opcode": "move-result-object",
+          "a": 7
+        },
+        {
+          "offset": 148,
+          "opcode": "if-eqz",
+          "a": 7,
+          "target": 164
+        },
+        {
+          "offset": 150,
+          "opcode": "invoke-virtual",
+          "registers": [
+            7
+          ],
+          "reference": "Lcom/xingin/entities/CommentCommentInfoTargetComment;->c()Lcom/xingin/entities/CommentCommentUser;"
+        },
+        {
+          "offset": 153,
+          "opcode": "move-result-object",
+          "a": 7
+        },
+        {
+          "offset": 154,
+          "opcode": "if-eqz",
+          "a": 7,
+          "target": 164
+        },
+        {
+          "offset": 156,
+          "opcode": "invoke-virtual",
+          "registers": [
+            7
+          ],
+          "reference": "Lcom/xingin/entities/CommentCommentUser;->d()Ljava/lang/String;"
+        },
+        {
+          "offset": 159,
+          "opcode": "move-result-object",
+          "a": 7
+        },
+        {
+          "offset": 160,
+          "opcode": "if-nez",
+          "a": 7,
+          "target": 163
+        },
+        {
+          "offset": 162,
+          "opcode": "goto",
+          "target": 164
+        },
+        {
+          "offset": 163,
+          "opcode": "move-object",
+          "a": 5,
+          "b": 7
+        },
+        {
+          "offset": 164,
+          "opcode": "invoke-virtual",
+          "registers": [
+            13,
+            5
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 167,
+          "opcode": "new-instance",
+          "a": 7,
+          "reference": "Landroid/text/style/ForegroundColorSpan;"
+        },
+        {
+          "offset": 169,
+          "opcode": "sget",
+          "a": 8,
+          "reference": "Li69/b;->A:I"
+        },
+        {
+          "offset": 171,
+          "opcode": "invoke-static",
+          "registers": [
+            8
+          ],
+          "reference": "Lp69/f;->e(I)I"
+        },
+        {
+          "offset": 174,
+          "opcode": "move-result",
+          "a": 8
+        },
+        {
+          "offset": 175,
+          "opcode": "invoke-direct",
+          "registers": [
+            7,
+            8
+          ],
+          "reference": "Landroid/text/style/ForegroundColorSpan;-><init>(I)V"
+        },
+        {
+          "offset": 178,
+          "opcode": "invoke-virtual",
+          "registers": [
+            6
+          ],
+          "reference": "Ljava/lang/String;->length()I"
+        },
+        {
+          "offset": 181,
+          "opcode": "move-result",
+          "a": 8
+        },
+        {
+          "offset": 182,
+          "opcode": "invoke-virtual",
+          "registers": [
+            13
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->length()I"
+        },
+        {
+          "offset": 185,
+          "opcode": "move-result",
+          "a": 9
+        },
+        {
+          "offset": 186,
+          "opcode": "invoke-virtual",
+          "registers": [
+            13,
+            7,
+            8,
+            9,
+            15
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V"
+        },
+        {
+          "offset": 189,
+          "opcode": "const-string",
+          "a": 7,
+          "reference": "\"\\uff1a\""
+        },
+        {
+          "offset": 191,
+          "opcode": "invoke-virtual",
+          "registers": [
+            13,
+            7
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 194,
+          "opcode": "invoke-virtual",
+          "registers": [
+            6
+          ],
+          "reference": "Ljava/lang/String;->length()I"
+        },
+        {
+          "offset": 197,
+          "opcode": "move-result",
+          "a": 7
+        },
+        {
+          "offset": 198,
+          "opcode": "invoke-virtual",
+          "registers": [
+            5
+          ],
+          "reference": "Ljava/lang/String;->length()I"
+        },
+        {
+          "offset": 201,
+          "opcode": "move-result",
+          "a": 5
+        },
+        {
+          "offset": 202,
+          "opcode": "add-int/2addr",
+          "a": 7,
+          "b": 5
+        },
+        {
+          "offset": 203,
+          "opcode": "add-int/lit8",
+          "a": 7,
+          "b": 7,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 205,
+          "opcode": "new-instance",
+          "a": 5,
+          "reference": "Lch6/h$c;"
+        },
+        {
+          "offset": 207,
+          "opcode": "invoke-direct",
+          "registers": [
+            5,
+            0
+          ],
+          "reference": "Lch6/h$c;-><init>(Lch6/h;)V"
+        },
+        {
+          "offset": 210,
+          "opcode": "const-string",
+          "a": 8,
+          "reference": "\"comment_user_click\""
+        },
+        {
+          "offset": 212,
+          "opcode": "invoke-static",
+          "registers": [
+            5,
+            8
+          ],
+          "reference": "Lh08/z;->y(Landroid/text/style/ClickableSpan;Ljava/lang/String;)Landroid/text/style/ClickableSpan;"
+        },
+        {
+          "offset": 215,
+          "opcode": "move-result-object",
+          "a": 5
+        },
+        {
+          "offset": 216,
+          "opcode": "invoke-virtual",
+          "registers": [
+            6
+          ],
+          "reference": "Ljava/lang/String;->length()I"
+        },
+        {
+          "offset": 219,
+          "opcode": "move-result",
+          "a": 6
+        },
+        {
+          "offset": 220,
+          "opcode": "invoke-virtual",
+          "registers": [
+            13,
+            5,
+            6,
+            7,
+            15
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V"
+        },
+        {
+          "offset": 223,
+          "opcode": "invoke-static",
+          "registers": [
+            4
+          ],
+          "reference": "Ls68/o;->q(Landroid/view/View;)V"
+        },
+        {
+          "offset": 226,
+          "opcode": "move",
+          "a": 11,
+          "b": 7
+        },
+        {
+          "offset": 227,
+          "opcode": "goto",
+          "target": 229
+        },
+        {
+          "offset": 228,
+          "opcode": "const/4",
+          "a": 11,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 229,
+          "opcode": "invoke-virtual",
+          "registers": [
+            13,
+            2
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 232,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Lwg3/f;->J0()Z"
+        },
+        {
+          "offset": 235,
+          "opcode": "move-result",
+          "a": 3
+        },
+        {
+          "offset": 236,
+          "opcode": "if-eqz",
+          "a": 3,
+          "target": 278
+        },
+        {
+          "offset": 238,
+          "opcode": "sget-object",
+          "a": 16,
+          "reference": "Lsq5/g0;->a:Lsq5/g0;"
+        },
+        {
+          "offset": 240,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 35,
+          "argumentRegisters": 1,
+          "reference": "Lpl4/d;->getView()Landroid/view/View;"
+        },
+        {
+          "offset": 243,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 244,
+          "opcode": "check-cast",
+          "a": 3,
+          "reference": "Lcom/xingin/matrix/v2/notedetail/async/itembinder/subcomment/child/AsyncSubCommentView;"
+        },
+        {
+          "offset": 246,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 249,
+          "opcode": "move-result-object",
+          "a": 17
+        },
+        {
+          "offset": 250,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 36,
+          "argumentRegisters": 1,
+          "reference": "Lqh6/e;->m()Lcom/xingin/entities/CommentCommentInfo;"
+        },
+        {
+          "offset": 253,
+          "opcode": "move-result-object",
+          "a": 18
+        },
+        {
+          "offset": 254,
+          "opcode": "const/16",
+          "a": 19,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 256,
+          "opcode": "const/16",
+          "a": 20,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 258,
+          "opcode": "const/16",
+          "a": 21,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 260,
+          "opcode": "const/16",
+          "a": 22,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 262,
+          "opcode": "new-instance",
+          "a": 3,
+          "reference": "Lch6/h$e;"
+        },
+        {
+          "offset": 264,
+          "opcode": "invoke-direct",
+          "registers": [
+            3,
+            0,
+            1
+          ],
+          "reference": "Lch6/h$e;-><init>(Lch6/h;Lqh6/e;)V"
+        },
+        {
+          "offset": 267,
+          "opcode": "const/16",
+          "a": 24,
+          "literal": "60",
+          "literalHex": "0x3c"
+        },
+        {
+          "offset": 269,
+          "opcode": "const/16",
+          "a": 25,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 271,
+          "opcode": "move-object/from16",
+          "a": 23,
+          "b": 3
+        },
+        {
+          "offset": 273,
+          "opcode": "invoke-static/range",
+          "startRegister": 16,
+          "argumentRegisters": 10,
+          "reference": "Lsq5/g0;->W(Lsq5/g0;Landroid/content/Context;Lcom/xingin/entities/CommentCommentInfo;ZZLjava/lang/String;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 276,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 277,
+          "opcode": "goto",
+          "target": 306
+        },
+        {
+          "offset": 278,
+          "opcode": "sget-object",
+          "a": 16,
+          "reference": "Lsq5/g0;->a:Lsq5/g0;"
+        },
+        {
+          "offset": 280,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 35,
+          "argumentRegisters": 1,
+          "reference": "Lpl4/d;->getView()Landroid/view/View;"
+        },
+        {
+          "offset": 283,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 284,
+          "opcode": "check-cast",
+          "a": 3,
+          "reference": "Lcom/xingin/matrix/v2/notedetail/async/itembinder/subcomment/child/AsyncSubCommentView;"
+        },
+        {
+          "offset": 286,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 289,
+          "opcode": "move-result-object",
+          "a": 17
+        },
+        {
+          "offset": 290,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 36,
+          "argumentRegisters": 1,
+          "reference": "Lqh6/e;->m()Lcom/xingin/entities/CommentCommentInfo;"
+        },
+        {
+          "offset": 293,
+          "opcode": "move-result-object",
+          "a": 18
+        },
+        {
+          "offset": 294,
+          "opcode": "const/16",
+          "a": 19,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 296,
+          "opcode": "const/16",
+          "a": 20,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 298,
+          "opcode": "const/16",
+          "a": 21,
+          "literal": "12",
+          "literalHex": "0xc"
+        },
+        {
+          "offset": 300,
+          "opcode": "const/16",
+          "a": 22,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 302,
+          "opcode": "invoke-static/range",
+          "startRegister": 16,
+          "argumentRegisters": 7,
+          "reference": "Lsq5/g0;->S(Lsq5/g0;Landroid/content/Context;Lcom/xingin/entities/CommentCommentInfo;ZZILjava/lang/Object;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 305,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 306,
+          "opcode": "new-instance",
+          "a": 16,
+          "reference": "Landroid/text/StaticLayout;"
+        },
+        {
+          "offset": 308,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4
+          ],
+          "reference": "Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;"
+        },
+        {
+          "offset": 311,
+          "opcode": "move-result-object",
+          "a": 7
+        },
+        {
+          "offset": 312,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 35,
+          "argumentRegisters": 1,
+          "reference": "Lch6/h;->g0()I"
+        },
+        {
+          "offset": 315,
+          "opcode": "move-result",
+          "a": 8
+        },
+        {
+          "offset": 316,
+          "opcode": "sget-object",
+          "a": 9,
+          "reference": "Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;"
+        },
+        {
+          "offset": 318,
+          "opcode": "const/high16",
+          "a": 10,
+          "literal": "1065353216",
+          "literalHex": "0x3f800000"
+        },
+        {
+          "offset": 320,
+          "opcode": "const/16",
+          "a": 17,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 322,
+          "opcode": "const/16",
+          "a": 18,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 324,
+          "opcode": "move-object/from16",
+          "a": 5,
+          "b": 16
+        },
+        {
+          "offset": 326,
+          "opcode": "move-object",
+          "a": 6,
+          "b": 13
+        },
+        {
+          "offset": 327,
+          "opcode": "move/from16",
+          "a": 26,
+          "b": 11
+        },
+        {
+          "offset": 329,
+          "opcode": "move/from16",
+          "a": 11,
+          "b": 17
+        },
+        {
+          "offset": 331,
+          "opcode": "const/4",
+          "a": 15,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 332,
+          "opcode": "move/from16",
+          "a": 12,
+          "b": 18
+        },
+        {
+          "offset": 334,
+          "opcode": "invoke-direct/range",
+          "startRegister": 5,
+          "argumentRegisters": 8,
+          "reference": "Landroid/text/StaticLayout;-><init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V"
+        },
+        {
+          "offset": 337,
+          "opcode": "new-instance",
+          "a": 5,
+          "reference": "Landroid/text/StaticLayout;"
+        },
+        {
+          "offset": 339,
+          "opcode": "new-instance",
+          "a": 6,
+          "reference": "Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 341,
+          "opcode": "invoke-direct",
+          "registers": [
+            6,
+            13
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V"
+        },
+        {
+          "offset": 344,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->toString()Ljava/lang/String;"
+        },
+        {
+          "offset": 347,
+          "opcode": "move-result-object",
+          "a": 7
+        },
+        {
+          "offset": 348,
+          "opcode": "invoke-virtual",
+          "registers": [
+            6,
+            7
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 351,
+          "opcode": "move-result-object",
+          "a": 28
+        },
+        {
+          "offset": 352,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4
+          ],
+          "reference": "Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;"
+        },
+        {
+          "offset": 355,
+          "opcode": "move-result-object",
+          "a": 29
+        },
+        {
+          "offset": 356,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 35,
+          "argumentRegisters": 1,
+          "reference": "Lch6/h;->g0()I"
+        },
+        {
+          "offset": 359,
+          "opcode": "move-result",
+          "a": 30
+        },
+        {
+          "offset": 360,
+          "opcode": "sget-object",
+          "a": 31,
+          "reference": "Landroid/text/Layout$Alignment;->ALIGN_NORMAL:Landroid/text/Layout$Alignment;"
+        },
+        {
+          "offset": 362,
+          "opcode": "const/high16",
+          "a": 32,
+          "literal": "1065353216",
+          "literalHex": "0x3f800000"
+        },
+        {
+          "offset": 364,
+          "opcode": "const/16",
+          "a": 33,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 366,
+          "opcode": "const/16",
+          "a": 34,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 368,
+          "opcode": "move-object/from16",
+          "a": 27,
+          "b": 5
+        },
+        {
+          "offset": 370,
+          "opcode": "invoke-direct/range",
+          "startRegister": 27,
+          "argumentRegisters": 8,
+          "reference": "Landroid/text/StaticLayout;-><init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V"
+        },
+        {
+          "offset": 373,
+          "opcode": "invoke-virtual",
+          "registers": [
+            5
+          ],
+          "reference": "Landroid/text/StaticLayout;->getLineCount()I"
+        },
+        {
+          "offset": 376,
+          "opcode": "move-result",
+          "a": 5
+        },
+        {
+          "offset": 377,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 16,
+          "argumentRegisters": 1,
+          "reference": "Landroid/text/StaticLayout;->getLineCount()I"
+        },
+        {
+          "offset": 380,
+          "opcode": "move-result",
+          "a": 6
+        },
+        {
+          "offset": 381,
+          "opcode": "if-le",
+          "a": 5,
+          "b": 6,
+          "target": 395
+        },
+        {
+          "offset": 383,
+          "opcode": "const-string",
+          "a": 5,
+          "reference": "\"\\n\""
+        },
+        {
+          "offset": 385,
+          "opcode": "invoke-virtual",
+          "registers": [
+            13,
+            5
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 388,
+          "opcode": "sget-object",
+          "a": 5,
+          "reference": "Lsq5/g0;->a:Lsq5/g0;"
+        },
+        {
+          "offset": 390,
+          "opcode": "const/4",
+          "a": 6,
+          "literal": "2",
+          "literalHex": "0x2"
+        },
+        {
+          "offset": 391,
+          "opcode": "invoke-static",
+          "registers": [
+            5,
+            3,
+            15,
+            6,
+            14
+          ],
+          "reference": "Lsq5/g0;->i0(Lsq5/g0;Landroid/text/SpannableStringBuilder;IILjava/lang/Object;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 394,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 395,
+          "opcode": "invoke-virtual",
+          "registers": [
+            13,
+            3
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;"
+        },
+        {
+          "offset": 398,
+          "opcode": "new-instance",
+          "a": 5,
+          "reference": "Lch6/h$d;"
+        },
+        {
+          "offset": 400,
+          "opcode": "invoke-direct",
+          "registers": [
+            5,
+            0
+          ],
+          "reference": "Lch6/h$d;-><init>(Lch6/h;)V"
+        },
+        {
+          "offset": 403,
+          "opcode": "invoke-virtual",
+          "registers": [
+            13
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->length()I"
+        },
+        {
+          "offset": 406,
+          "opcode": "move-result",
+          "a": 6
+        },
+        {
+          "offset": 407,
+          "opcode": "move/from16",
+          "a": 7,
+          "b": 26
+        },
+        {
+          "offset": 409,
+          "opcode": "const/16",
+          "a": 8,
+          "literal": "33",
+          "literalHex": "0x21"
+        },
+        {
+          "offset": 411,
+          "opcode": "invoke-virtual",
+          "registers": [
+            13,
+            5,
+            7,
+            6,
+            8
+          ],
+          "reference": "Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V"
+        },
+        {
+          "offset": 414,
+          "opcode": "sget-object",
+          "a": 5,
+          "reference": "Lch6/g;->d:Lch6/g;"
+        },
+        {
+          "offset": 416,
+          "opcode": "invoke-static",
+          "registers": [
+            4,
+            5
+          ],
+          "reference": "Lch6/i;->a(Lcom/xingin/comment/widget/pressback/HandlePressStateCommentTextView;Landroid/view/View$OnLongClickListener;)V"
+        },
+        {
+          "offset": 419,
+          "opcode": "sget-object",
+          "a": 5,
+          "reference": "Lmo5/e;->j:Lmo5/e$c;"
+        },
+        {
+          "offset": 421,
+          "opcode": "invoke-virtual",
+          "registers": [
+            5
+          ],
+          "reference": "Lmo5/e$c;->a()Lmo5/e;"
+        },
+        {
+          "offset": 424,
+          "opcode": "move-result-object",
+          "a": 5
+        },
+        {
+          "offset": 425,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4,
+            5
+          ],
+          "reference": "Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V"
+        },
+        {
+          "offset": 428,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4,
+            15
+          ],
+          "reference": "Landroid/widget/TextView;->setHighlightColor(I)V"
+        },
+        {
+          "offset": 431,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4,
+            13
+          ],
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V"
+        },
+        {
+          "offset": 434,
+          "opcode": "sget-object",
+          "a": 5,
+          "reference": "Lwg3/e;->a:Lwg3/e;"
+        },
+        {
+          "offset": 436,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 36,
+          "argumentRegisters": 1,
+          "reference": "Lqh6/e;->m()Lcom/xingin/entities/CommentCommentInfo;"
+        },
+        {
+          "offset": 439,
+          "opcode": "move-result-object",
+          "a": 6
+        },
+        {
+          "offset": 440,
+          "opcode": "invoke-virtual",
+          "registers": [
+            5,
+            6,
+            13
+          ],
+          "reference": "Lwg3/e;->a(Lcom/xingin/entities/CommentCommentInfo;Landroid/text/SpannableStringBuilder;)Z"
+        },
+        {
+          "offset": 443,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4
+          ],
+          "reference": "Landroid/widget/TextView;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 446,
+          "opcode": "move-result-object",
+          "a": 4
+        },
+        {
+          "offset": 447,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "reference": "Lch6/h;->T(Lqh6/e;Landroid/text/SpannableStringBuilder;Landroid/text/SpannableStringBuilder;Landroid/content/Context;)V"
+        },
+        {
+          "offset": 450,
+          "opcode": "return-void"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Raw static instructions, not observed execution or a complete control-flow proof.",
+    "Offsets and branch targets are relative DEX code units, not APK byte offsets.",
+    "Hot patches, remote config, runtime values and resource selection are not resolved."
+  ]
+}

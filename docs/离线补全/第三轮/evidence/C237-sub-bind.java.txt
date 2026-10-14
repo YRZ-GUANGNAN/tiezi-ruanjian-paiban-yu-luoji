@@ -1,0 +1,11 @@
+    /* JADX WARN: Multi-variable type inference failed */
+    public final void J(qh6.e eVar) {
+        if (PatchProxy.proxyVoid1Para(eVar, this, h.class, 388067)) {
+            return;
+        }
+        if (eVar.n()) {
+            ((AsyncSubCommentView) getView()).setBackground(p69.f.h(mp5.g.f238576j0));
+        } else {
+            ((AsyncSubCommentView) getView()).setBackground(p69.f.h(mp5.g.f238588p0));
+        }
+    }

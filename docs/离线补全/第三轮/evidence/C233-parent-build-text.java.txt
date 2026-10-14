@@ -1,0 +1,34 @@
+    /* JADX WARN: Multi-variable type inference failed */
+    public final void L(qh6.d dVar, SpannableStringBuilder spannableStringBuilder) {
+        if (PatchProxy.proxyVoid2Para(dVar, spannableStringBuilder, this, h.class, 385535)) {
+            return;
+        }
+        wg3.f fVar = wg3.f.f343557a;
+        if (fVar.J0()) {
+            H().e((HandlePressStateCommentTextView) ((AsyncParentCommentView) getView()).a(mp5.h.f238727o6), dVar.m());
+        }
+        HandlePressStateCommentTextView handlePressStateCommentTextView = (HandlePressStateCommentTextView) ((AsyncParentCommentView) getView()).a(mp5.h.f238727o6);
+        SpannableStringBuilder spannableStringBuilder2 = new SpannableStringBuilder(spannableStringBuilder);
+        SpannableStringBuilder spannableStringBuilderV = fVar.J0() ? g0.f302805a.V(((AsyncParentCommentView) getView()).getContext(), dVar.m(), (40 & 4) != 0 ? false : false, (40 & 8) != 0, (40 & 16) != 0 ? "" : null, (40 & 32) != 0 ? null : null, new d(dVar)) : g0.S(g0.f302805a, ((AsyncParentCommentView) getView()).getContext(), dVar.m(), false, false, 12, null);
+        if (new StaticLayout(new SpannableStringBuilder(spannableStringBuilder2).append((CharSequence) spannableStringBuilderV.toString()), handlePressStateCommentTextView.getPaint(), h0(), Layout.Alignment.ALIGN_NORMAL, 1.0f, 0.0f, false).getLineCount() > new StaticLayout(spannableStringBuilder2, handlePressStateCommentTextView.getPaint(), h0(), Layout.Alignment.ALIGN_NORMAL, 1.0f, 0.0f, false).getLineCount()) {
+            spannableStringBuilder2.append((CharSequence) "\n");
+            spannableStringBuilderV = g0.i0(g0.f302805a, spannableStringBuilderV, 0, 2, null);
+        }
+        spannableStringBuilder2.append((CharSequence) spannableStringBuilderV);
+        i1 i1Var = i1.f302844a;
+        CommentCommentInfo commentCommentInfoM = dVar.m();
+        if (!i1Var.j(commentCommentInfoM != null ? commentCommentInfoM.A() : null)) {
+            spannableStringBuilder2.setSpan(new c(), 0, spannableStringBuilder2.length(), 33);
+            ah6.j.a(handlePressStateCommentTextView, new View.OnLongClickListener() { // from class: ah6.g
+                @Override // android.view.View.OnLongClickListener
+                public final boolean onLongClick(View view) {
+                    return h.M(view);
+                }
+            });
+        }
+        handlePressStateCommentTextView.setMovementMethod(mo5.e.f238332j.a());
+        handlePressStateCommentTextView.setHighlightColor(0);
+        handlePressStateCommentTextView.setText(spannableStringBuilder2);
+        jx8.d.a("acc_opt", "AsyncPARENTCommentPresenter.bindContent " + getView());
+        U(dVar, spannableStringBuilder, handlePressStateCommentTextView.getContext());
+    }

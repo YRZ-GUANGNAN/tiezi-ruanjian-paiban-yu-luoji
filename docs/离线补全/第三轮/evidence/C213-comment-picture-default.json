@@ -1,0 +1,137 @@
+{
+  "evidence_id": "ev_95cfca64a528791b78225f27319ef74cb12bd3bcc118cc2229c2421c8684ac96",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.comment.consumer.list.view.CommentSinglePictureView",
+    "method_name": "<init>",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.comment.consumer.list.view.CommentSinglePictureView"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"name\":\"CommentSinglePictureView\",\"full_name\":\"com.xingin.comment.consumer.list.view.CommentSinglePictureView\",\"field_count\":9,\"fields\":[{\"name\":\"f87483h\",\"type\":\"com.xingin.comment.consumer.list.view.CommentSinglePictureView$a\",\"def_pos\":0},{\"name\":\"f87484l\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"f87485m\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"f87486n\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"f87487o\",\"type\":\"int\",\"def_pos\":0},{\"name\":\"f87488d\",\"type\":\"com.xingin.comment.consumer.list.view.CommentSinglePictureView$b\",\"def_pos\":0},{\"name\":\"f87489e\",\"type\":\"com.xingin.entities.CommentPictureInfo\",\"def_pos\":0},{\"name\":\"f87490f\",\"type\":\"cm.g$b\",\"def_pos\":0},{\"name\":\"f87491g\",\"type\":\"java.util.Map<java.lang.Integer, android.view.View>\",\"def_pos\":0}],\"methods\":[{\"is_constructor\":false,\"name\":\"<clinit>\",\"def_pos\":0,\"signature\":\"<clinit>(): void\"},{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(android.content.Context, android.util.AttributeSet): void\"},{\"is_constructor\":false,\"name\":\"X3\",\"def_pos\":0,\"signature\":\"X3(): int\"},{\"is_constructor\":false,\"name\":\"Y3\",\"def_pos\":0,\"signature\":\"Y3(): int\"},{\"is_constructor\":false,\"name\":\"Z3\",\"def_pos\":0,\"signature\":\"Z3(com.xingin.comment.consumer.list.view.CommentSinglePictureView, com.xingin.entities.CommentPictureInfo): boolean\"},{\"is_constructor\":false,\"name\":\"_$_findCachedViewById\",\"def_pos\":0,\"signature\":\"_$_findCachedViewById(int): android.view.View\"},{\"is_constructor\":false,\"name\":\"c4\",\"def_pos\":0,\"signature\":\"c4(com.xingin.comment.consumer.list.view.CommentSinglePictureView, com.xingin.entities.CommentPictureInfo, java.lang.Object, rg3.a): void\"},{\"is_constructor\":false,\"name\":\"d4\",\"def_pos\":0,\"signature\":\"d4(com.xingin.comment.consumer.list.view.CommentSinglePictureView, com.xingin.entities.CommentPictureInfo, boolean): void\"},{\"is_constructor\":false,\"name\":\"e4\",\"def_pos\":0,\"signature\":\"e4(com.xingin.redview.widgets.RoundProgressView): void\"},{\"is_constructor\":false,\"name\":\"g4\",\"def_pos\":0,\"signature\":\"g4(com.xingin.entities.CommentPictureInfo): boolean\"},{\"is_constructor\":false,\"name\":\"getLoadStatus\",\"def_pos\":0,\"signature\":\"getLoadStatus(): com.xingin.comment.consumer.list.view.CommentSinglePictureView$b\"},{\"is_constructor\":false,\"name\":\"getPicInfo\",\"def_pos\":0,\"signature\":\"getPicInfo(): com.xingin.entities.CommentPictureInfo\"},{\"is_constructor\":false,\"name\":\"h4\",\"def_pos\":0,\"signature\":\"h4(com.xingin.entities.CommentPictureInfo, java.lang.Object, rg3.a, boolean): void\"},{\"is_constructor\":false,\"name\":\"j4\",\"def_pos\":0,\"signature\":\"j4(com.xingin.entities.CommentPictureInfo, java.lang.Object, boolean): void\"},{\"is_constructor\":false,\"name\":\"k4\",\"def_pos\":0,\"signature\":\"k4(com.xingin.entities.CommentPictureInfo): java.lang.String\"},{\"is_constructor\":false,\"name\":\"l4\",\"def_pos\":0,\"signature\":\"l4(): void\"},{\"is_constructor\":false,\"name\":\"m4\",\"def_pos\":0,\"signature\":\"m4(com.xingin.entities.CommentPictureInfo, java.lang.Object): void\"},{\"is_constructor\":false,\"name\":\"o4\",\"def_pos\":0,\"signature\":\"o4(com.xingin.entities.CommentPictureInfo, java.lang.Object, rg3.a): void\"},{\"is_constructor\":false,\"name\":\"onAttachedToWindow\",\"def_pos\":0,\"signature\":\"onAttachedToWindow(): void\"},{\"is_constructor\":false,\"name\":\"p4\",\"def_pos\":0,\"signature\":\"p4(com.xingin.entities.CommentPictureInfo, boolean): void\"},{\"is_constructor\":false,\"name\":\"r4\",\"def_pos\":0,\"signature\":\"r4(com.facebook.drawee.view.SimpleDraweeView, com.xingin.entities.CommentPictureInfo, int): void\"},{\"is_constructor\":false,\"name\":\"s4\",\"def_pos\":0,\"signature\":\"s4(int, boolean): void\"},{\"is_constructor\":false,\"name\":\"setLoadStatus\",\"def_pos\":0,\"signature\":\"setLoadStatus(com.xingin.comment.consumer.list.view.CommentSinglePictureView$b): void\"},{\"is_constructor\":false,\"name\":\"setPicInfo\",\"def_pos\":0,\"signature\":\"setPicInfo(com.xingin.entities.CommentPictureInfo): void\"}],\"method_count\":24,\"inner_class_count\":9,\"inner_classes\":[\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.a\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.b\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.c\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.d\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.e\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.f\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.g\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.h\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.i\"]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.comment.consumer.list.view.CommentSinglePictureView",
+          "method_name": "<init>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"body\":\"    @JvmOverloads\\r\\n    public CommentSinglePictureView(Context context, AttributeSet attributeSet) {\\r\\n        super(context, attributeSet);\\r\\n        this.f87488d = b.INIT;\\r\\n        LayoutInflater.from(context).inflate(mp5.i.f238861z, (ViewGroup) this, true);\\r\\n        e4((RoundProgressView) _$_findCachedViewById(mp5.h.B4));\\r\\n    }\",\"overload_count\":1,\"method_name\":\"<init>\",\"markers\":[],\"mode\":\"java\",\"full_name\":\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.<init>\",\"class_name\":\"com.xingin.comment.consumer.list.view.CommentSinglePictureView\",\"overload_index\":0,\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.comment.consumer.list.view.CommentSinglePictureView",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(android.content.Context, android.util.AttributeSet): void",
+      "overload_index": 0,
+      "is_constructor": true,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @JvmOverloads\r\n    public CommentSinglePictureView(Context context, AttributeSet attributeSet) {\r\n        super(context, attributeSet);\r\n        this.f87488d = b.INIT;\r\n        LayoutInflater.from(context).inflate(mp5.i.f238861z, (ViewGroup) this, true);\r\n        e4((RoundProgressView) _$_findCachedViewById(mp5.h.B4));\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "894291eebef8b919493b740aa746c032e4d5aefacc4221cb1e34d1c6cd14764a",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

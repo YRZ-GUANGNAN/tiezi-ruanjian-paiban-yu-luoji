@@ -1,0 +1,20 @@
+    public final Pair<Integer, Integer> a(CommentPictureInfo commentPictureInfo, int i100, int i101) {
+        PatchProxyResult patchProxyResultProxy3Para = PatchProxy.proxy3Para(commentPictureInfo, new Integer(i100), new Integer(i101), this, v.class, 326809);
+        if (patchProxyResultProxy3Para.isSupported) {
+            return (Pair) patchProxyResultProxy3Para.result;
+        }
+        int width = commentPictureInfo != null ? commentPictureInfo.getWidth() : -1;
+        int height = commentPictureInfo != null ? commentPictureInfo.getHeight() : -1;
+        if (width < 0 && height < 0) {
+            return new Pair<>(-1, -1);
+        }
+        float f100 = width / height;
+        boolean z100 = false;
+        if (0.9f <= f100 && f100 <= 1.1f) {
+            z100 = true;
+        }
+        if (z100) {
+            return new Pair<>(Integer.valueOf(i100), Integer.valueOf(i100));
+        }
+        return f100 < 0.9f ? new Pair<>(Integer.valueOf(i100), Integer.valueOf(i101)) : new Pair<>(Integer.valueOf(i101), Integer.valueOf(i100));
+    }
