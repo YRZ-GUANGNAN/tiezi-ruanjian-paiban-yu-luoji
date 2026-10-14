@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "kind": "screenshot_pixel_fit",
+  "appVersion": "8.72.0",
+  "sourceHashes": {
+    "E073": "282527c60c3fa9b10554b2bca0c4c7f15849f06d4567cfc9bb2f179113e6dcc8",
+    "E074": "6f9d6d7e263ec967b9135e6d37d4ea0f7078f021dcca20b6e1a8c85afacabeb2"
+  },
+  "landscape": {
+    "thumbnailRect": [
+      100,
+      828,
+      380,
+      1038
+    ],
+    "viewerVisibleImageRectCandidate": [
+      0,
+      604,
+      1080,
+      1212
+    ],
+    "bestCropRectInViewerScreenshot": [
+      133.33333333333331,
+      604,
+      942.6666666666667,
+      1211
+    ],
+    "bestCropMeanAbsoluteRgbError": 11.143637037037037,
+    "fullImageRescaleMeanAbsoluteRgbError": 57.12527407407407,
+    "topFits": [
+      {
+        "meanAbsoluteRgbError": 11.143637037037037,
+        "rect": [
+          133.33333333333331,
+          604,
+          942.6666666666667,
+          1211
+        ]
+      },
+      {
+        "meanAbsoluteRgbError": 11.762014814814815,
+        "rect": [
+          132.66666666666669,
+          603,
+          943.3333333333333,
+          1211
+        ]
+      },
+      {
+        "meanAbsoluteRgbError": 12.004703703703704,
+        "rect": [
+          134.0,
+          604,
+          942.0,
+          1210
+        ]
+      },
+      {
+        "meanAbsoluteRgbError": 12.203259259259259,
+        "rect": [
+          132.66666666666669,
+          604,
+          943.3333333333333,
+          1212
+        ]
+      },
+      {
+        "meanAbsoluteRgbError": 12.511859259259259,
+        "rect": [
+          132.0,
+          603,
+          944.0,
+          1212
+        ]
+      }
+    ],
+    "comparisonExcludesBorderPx": 15,
+    "model": "Bounded search for 4:3 crop in 1080px-wide displayed image; resample to 280x210 thumbnail",
+    "interpretation": "Center crop is supported for this screenshot pair; original image pixels and exact source crop remain unavailable."
+  },
+  "corner": {
+    "backgroundRgb": [
+      25.0,
+      25.0,
+      31.0
+    ],
+    "candidateRadiusPx": 9.75,
+    "binaryMismatchOf1024Pixels": 3,
+    "topFits": [
+      {
+        "mismatchedPixels": 3,
+        "radiusPx": 9.75
+      },
+      {
+        "mismatchedPixels": 3,
+        "radiusPx": 10.0
+      },
+      {
+        "mismatchedPixels": 7,
+        "radiusPx": 10.25
+      },
+      {
+        "mismatchedPixels": 7,
+        "radiusPx": 10.5
+      },
+      {
+        "mismatchedPixels": 15,
+        "radiusPx": 10.75
+      },
+      {
+        "mismatchedPixels": 15,
+        "radiusPx": 11.0
+      },
+      {
+        "mismatchedPixels": 17,
+        "radiusPx": 8.75
+      }
+    ],
+    "thresholdRgbDistance": 15,
+    "density": 1.75,
+    "static6dpCandidatePx": 10.5,
+    "interpretation": "Approximate visible corner geometry only; antialiasing, image colors and render sampling affect the fit."
+  },
+  "limitations": [
+    "One landscape sample, one emulator, dark appearance.",
+    "No original image download; source resolution unknown.",
+    "E050 first-use guide excluded.",
+    "No proof of runtime view class or remote configuration.",
+    "No universal radius assertion."
+  ]
+}

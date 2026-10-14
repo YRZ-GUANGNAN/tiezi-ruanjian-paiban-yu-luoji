@@ -20,18 +20,18 @@
     },
     {
       "file": "CHANGELOG.md",
-      "bytes": 4067,
-      "sha256": "a06a87bc5a14b4881a816aa5e749bf48e334a679b0155025b746759973e17dfc"
+      "bytes": 5207,
+      "sha256": "dc65102935d199de821a988545ce5ba5ff7be0650b65292ba99742348c0d4d9e"
     },
     {
       "file": "PUBLICATION.md",
-      "bytes": 2673,
-      "sha256": "ac71e16e79635c83aac1b8a6f9293dbb0850c0df88fbefda54c9ca7be2bb701b"
+      "bytes": 3039,
+      "sha256": "103dcee0e7387be7aaba2f62f3286c591cbbd898e9cafc584c5b08dbbc8df15d"
     },
     {
       "file": "README.md",
-      "bytes": 6907,
-      "sha256": "8e96a44979f385c9784e6dc6601a9ac460d8554c2ff371992cd60f2c47ed03b2"
+      "bytes": 7502,
+      "sha256": "a460cb3d003641e9bf3303c8b198ca827594ab64fa15928e1dc5003415fdd4a3"
     },
     {
       "file": "docs/00-阅读入口与进度.md",
@@ -252,6 +252,41 @@
       "file": "docs/新版研究/截图/R67-filter-reset.png",
       "bytes": 649529,
       "sha256": "31afd233c4fe32c426e74322fcbc5625bddcc57fdf5956638f3372ced96e3c86"
+    },
+    {
+      "file": "docs/模拟器补测/第五轮/00-本轮结果.md",
+      "bytes": 4050,
+      "sha256": "4f9586cd3d868e40ec2cca434f1adc99ab4194438581f79abca925c2691e729d"
+    },
+    {
+      "file": "docs/模拟器补测/第五轮/01-长评论状态与改宽.md",
+      "bytes": 4647,
+      "sha256": "031444afebabdfd9a5e142ee62c01ff58aff13a8cf14d201c9810015438309f0"
+    },
+    {
+      "file": "docs/模拟器补测/第五轮/02-图片呈现与样本边界.md",
+      "bytes": 4302,
+      "sha256": "50b8f5bf9c7695a5d234157669fe30c09f0d9faaa29636a17aebc0971b41645a"
+    },
+    {
+      "file": "docs/模拟器补测/第五轮/03-剩余问题与复测顺序.md",
+      "bytes": 2886,
+      "sha256": "5b6df269604f5ef1de717833cd5ba84b331fa20bd805050623c6b0b29c71543e"
+    },
+    {
+      "file": "docs/模拟器补测/第五轮/evidence-index.json",
+      "bytes": 22950,
+      "sha256": "930a41bf04147b0959bf8c7c7ba71948d4b1c805a60d534f1152b15fb06b05ec"
+    },
+    {
+      "file": "docs/模拟器补测/第五轮/observations.json",
+      "bytes": 70549,
+      "sha256": "4d40a3563295e4ca0fec465218636e8574b1158f30fb6fdf964a3c47bab82799"
+    },
+    {
+      "file": "docs/模拟器补测/第五轮/pixel-fit.json",
+      "bytes": 3072,
+      "sha256": "5a96de5f8916ee1b6e45860146509a3df9acfc2b310574babde02c454e3757f4"
     },
     {
       "file": "docs/深度研究/00-深度研究阅读入口.md",
@@ -4085,8 +4120,8 @@
     },
     {
       "file": "tools/verify.mjs",
-      "bytes": 22261,
-      "sha256": "ff7f432a53b6dab05b8f96da10811fed3d6458231a3963b78ced993761994fa7"
+      "bytes": 26731,
+      "sha256": "96fabba8fb252e0ff0cf661d49edc95e1ee36302867e01ef606d310df4850ce2"
     }
   ]
 }

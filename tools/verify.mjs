@@ -240,6 +240,52 @@ if(fs.existsSync(round4Root)){
   for(const e of index.excludedLocalArtifacts)check(/^[a-f0-9]{64}$/.test(e.originalSha256)&&!index.records.some(r=>r.id===e.id),'第四轮排除项：'+e.id);
   round4Summary={selectedStaticEvidence:37,auxiliary:18,derived:2,excludedLocalArtifacts:33,newRuntimeObservations:0};
 }
+const round5Root=path.join(root,'docs/模拟器补测/第五轮');
+let round5Summary=null;
+if(fs.existsSync(round5Root)){
+  const index=read(path.join(round5Root,'evidence-index.json'));
+  const data=read(path.join(round5Root,'observations.json'));
+  const pixel=read(path.join(round5Root,'pixel-fit.json'));
+  check(data.counts.captured===52&&data.counts.selected===35&&data.counts.localOnly===17,'第五轮采集与选择计数');
+  check(data.observations.length===35&&data.excludedObservations.length===17&&data.observationCount===35,'第五轮派生观察计数');
+  check(index.sourceManifest.length===52&&index.rawArtifactCount===207,'第五轮本地原件清单');
+  const selected=new Map(data.observations.map(o=>[o.id,o]));
+  check(selected.size===35&&!selected.has('E037')&&selected.has('E088'),'第五轮选择编号或个人页排除');
+  check(new Set([...selected.keys(),...data.excludedObservations.map(o=>o.id)]).size===52,'第五轮编号重复或遗漏');
+  for(const entry of index.files){
+    check(digest(fs.readFileSync(path.join(round5Root,entry.file)))===entry.publicSha256,'第五轮派生文件摘要：'+entry.file);
+  }
+  for(const o of [...data.observations,...data.excludedObservations]){
+    const original=index.sourceManifest.find(r=>r.id===o.id);
+    check(original&&JSON.stringify(original.sourceHashes)===JSON.stringify(o.sourceHashes),'第五轮原件摘要映射：'+o.id);
+    check(['observation','screenshot','hierarchy'].every(k=>/^[a-f0-9]{64}$/.test(o.sourceHashes[k])),'第五轮原件摘要格式：'+o.id);
+  }
+  for(const o of data.observations){
+    check(o.kind==='emulator_observation'&&o.appVersion==='8.72.0'&&o.versionCode==='8720916','第五轮版本或证据类型：'+o.id);
+    check(o.environment.densityDpi===280&&o.environment.fontScale===1&&o.environment.height===1920&&[720,1080].includes(o.environment.width),'第五轮单变量环境：'+o.id);
+    check(o.environment.sameObservedPidAsBaseline===true&&o.environment.appFontSetting===null,'第五轮进程和字号边界：'+o.id);
+    check(Date.parse(o.capturedAt)<=Date.parse(o.completedAt),'第五轮时间顺序：'+o.id);
+  }
+  const final=selected.get('E088');
+  check(data.settingsRestored&&data.finalObservation==='E088'&&final?.page==='home'&&final.environment.width===1080,'第五轮设置恢复与最终页');
+  check(data.processDeathTested===false&&data.allRecordedPidsSame===true&&data.counts.newRecordings===0&&data.counts.newStaticAnalyses===0,'第五轮测试范围');
+  check(data.environmentEvidence.length===4&&data.environmentEvidence.every(e=>e.projectionOnly&&/^[a-f0-9]{64}$/.test(e.originalSha256)&&e.evidenceId.startsWith('ev_')),'第五轮环境投影');
+  check(data.textMeasurements.length===10,'第五轮完整文字节点数');
+  const measurements=new Map(data.textMeasurements.map(m=>[m.observation,m]));
+  const expected={E045:[886,214,4],E046:[886,296,6],E049:[886,296,6],E051:[886,296,6],E052:[526,460,10],E055:[526,337,7],E073:[886,214,4],E082:[886,214,4],E083:[886,255,5],E084:[886,214,4]};
+  for(const [id,values] of Object.entries(expected)){
+    const m=measurements.get(id);
+    check(m&&JSON.stringify([m.node.width,m.node.height,m.bodyLines])===JSON.stringify(values)&&m.isClipped===false&&m.metadataLines===1,'第五轮文字测量：'+id);
+  }
+  check(['E060','E061','E063'].every(id=>selected.get(id)?.purpose==='anomaly'),'第五轮异常没有冒充通过');
+  check(data.textEqualityChecks.some(x=>x.a==='E045'&&x.b==='E055'&&x.sameNodeText),'第五轮折叠文字相等证据');
+  check(data.pictureMeasurements.every(p=>p.totalImagesKnown===false&&p.observedSlots===1&&p.badgeObserved===false),'第五轮图片数量边界');
+  check(pixel.kind==='screenshot_pixel_fit'&&pixel.appVersion==='8.72.0','第五轮像素拟合类别');
+  for(const id of ['E073','E074'])check(pixel.sourceHashes[id]===selected.get(id)?.sourceHashes.screenshot,'第五轮拟合源截图：'+id);
+  check(pixel.landscape.bestCropMeanAbsoluteRgbError<pixel.landscape.fullImageRescaleMeanAbsoluteRgbError&&pixel.corner.static6dpCandidatePx===10.5,'第五轮拟合比较和静态单位');
+  check(/^[a-f0-9]{64}$/.test(index.localPixelAnalysisSha256)&&index.pixelPublicNormalization==='CRLF to LF only; numeric spelling preserved','第五轮像素原件摘要与公开换行规范');
+  round5Summary={captured:52,selected:35,localOnly:17,reaEnvironmentEvidence:4,rawArtifacts:207,settingsRestored:true};
+}
 if(writingManifest&&!problems.length){
   const manifest={schemaVersion:1,title:'帖子软件排版与逻辑',scope:'Public derived repository; .git and this manifest are excluded.',files:files.map(p=>({file:relative(p),bytes:fs.statSync(p).size,sha256:digest(fs.readFileSync(p))}))};
   fs.writeFileSync(manifestFile,JSON.stringify(manifest,null,2)+'\n');
@@ -254,5 +300,5 @@ if(!writingManifest&&fs.existsSync(manifestFile)){
     check(fs.existsSync(p)&&fs.statSync(p).size===e.bytes&&digest(fs.readFileSync(p))===e.sha256,'仓库摘要不匹配：'+e.file);
   }
 }else if(!writingManifest) check(false,'缺少 public-manifest.json');
-console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,round2:round2Summary,round3:round3Summary,round4:round4Summary,issues:problems},null,2));
+console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,round2:round2Summary,round3:round3Summary,round4:round4Summary,round5:round5Summary,issues:problems},null,2));
 if(problems.length)process.exitCode=1;
