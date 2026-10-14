@@ -286,6 +286,64 @@ if(fs.existsSync(round5Root)){
   check(/^[a-f0-9]{64}$/.test(index.localPixelAnalysisSha256)&&index.pixelPublicNormalization==='CRLF to LF only; numeric spelling preserved','第五轮像素原件摘要与公开换行规范');
   round5Summary={captured:52,selected:35,localOnly:17,reaEnvironmentEvidence:4,rawArtifacts:207,settingsRestored:true};
 }
+const round6Root=path.join(root,'docs/模拟器补测/第六轮');
+let round6Summary=null;
+if(fs.existsSync(round6Root)){
+  const index=read(path.join(round6Root,'evidence-index.json'));
+  const data=read(path.join(round6Root,'observations.json'));
+  const video=read(path.join(round6Root,'video-analysis.json'));
+  check(data.appVersion==='8.72.0'&&data.versionCode==='8720916','第六轮基线版本');
+  check(data.counts.captured===51&&data.counts.selected===39&&data.counts.localOnly===12,'第六轮采集/精选计数');
+  check(data.observations.length===39&&data.excludedObservations.length===12,'第六轮观察数组计数');
+  const selected=new Map(data.observations.map(o=>[o.id,o]));
+  const all=[...data.observations,...data.excludedObservations];
+  check(new Set(all.map(o=>o.id)).size===51&&selected.size===39,'第六轮编号唯一');
+  check(index.sourceManifest.length===51&&index.rawObservationArtifactCount===218,'第六轮原件清单计数');
+  for(const f of index.files)check(digest(fs.readFileSync(path.join(round6Root,f.file)))===f.publicSha256,'第六轮派生摘要：'+f.file);
+  for(const o of all){
+    const source=index.sourceManifest.find(r=>r.id===o.id);
+    check(source&&JSON.stringify(source.sourceHashes)===JSON.stringify(o.sourceHashes),'第六轮原件映射：'+o.id);
+    check(Object.values(o.sourceHashes).every(s=>/^[a-f0-9]{64}$/.test(s)),'第六轮原件摘要格式：'+o.id);
+  }
+  check(index.sourceManifest.reduce((n,r)=>n+Object.keys(r.sourceHashes).length,0)===218,'第六轮原件计数复算');
+  for(const o of data.observations){
+    check(o.kind==='emulator_observation'&&o.appVersion==='8.72.0'&&o.versionCode==='8720916','第六轮证据类型/版本：'+o.id);
+    check([720,1080].includes(o.environment.width)&&o.environment.height===1920&&o.environment.densityDpi===280&&o.environment.fontScale===1,'第六轮环境：'+o.id);
+    check(o.environment.sameObservedPidAsBaseline===true&&o.environment.appFontSetting===null,'第六轮进程/应用字号边界：'+o.id);
+    check(Date.parse(o.capturedAt)<=Date.parse(o.completedAt),'第六轮采集时序：'+o.id);
+  }
+  check(data.settingsRestored&&data.finalObservation==='E139'&&selected.get('E139')?.page==='home'&&selected.get('E139')?.environment.width===1080,'第六轮恢复状态');
+  check(data.processDeathTested===false&&data.allRecordedPidsSame===true&&data.counts.newStaticAnalyses===0,'第六轮生命周期/静态边界');
+  check(data.environmentEvidence.length===4&&data.environmentEvidence.every(e=>e.projectionOnly&&e.evidenceId.startsWith('ev_')&&/^[a-f0-9]{64}$/.test(e.originalSha256)),'第六轮REA环境投影');
+  check(index.excludedToolFailures.length===4&&index.excludedToolFailures.every(e=>/^[a-f0-9]{64}$/.test(e.originalSha256)),'第六轮初次工具失败排除');
+  check(data.panelTrials.length===5&&data.panelTrials.every(t=>t.insideReportedButtonBounds&&t.panelPresentInFinalHierarchy),'第六轮面板对照');
+  check(data.panelTrials.filter(t=>t.recorded).length===4,'第六轮面板进入录像计数');
+  const expected={E101:[526,337,7,0,1],E102:[526,460,10,0,1],E103:[526,337,7,0,1],E112:[886,214,4,0,1],E120:[886,724,15,3,0],E122:[886,724,15,3,0],E123:[886,164,3,1,0],E125:[886,724,15,3,0]};
+  check(data.textMeasurements.length===8,'第六轮完整文本测量计数');
+  for(const [id,values] of Object.entries(expected)){
+    const m=data.textMeasurements.find(m=>m.observation===id);
+    check(m&&JSON.stringify([m.node.width,m.node.height,m.bodyNonemptyLines,m.bodyBlankLines,m.metadataLinesInNode])===JSON.stringify(values)&&m.isClipped===false,'第六轮文字几何：'+id);
+  }
+  for(const c of data.hierarchyEqualityChecks)check(c.sameFullHierarchyDigest&&selected.get(c.a)?.sourceHashes.hierarchy===selected.get(c.b)?.sourceHashes.hierarchy,'第六轮层级复归：'+c.a+'/'+c.b);
+  check(data.longCommentState.L3.reopenedState==='expanded'&&data.longCommentState.L3.causalMarkerKnown===false,'第六轮置顶样本状态与因果边界');
+  const mp=data.multiPicture;
+  check(mp.viewerChecks.map(v=>v.displayedCounter).join(',')==='1/8,2/8,3/8'&&mp.viewerChecks.every(v=>v.totalShownByViewer===8&&!v.sourceArrayInspected),'第六轮多图查看器计数');
+  check(mp.layoutIsAnomalous&&mp.pristineProcessBaseline===false&&mp.thumbnailWidthsSuitableAsNormalImplementationDefaults===false&&mp.actualViewClassAndCacheCauseKnown===false,'第六轮异常没有冒充正常参数');
+  check(mp.thumbnailCountBadgeObserved===false&&mp.badgeAbsenceProven===false,'第六轮角标未知边界');
+  const narrow=mp.measurements.find(m=>m.observation==='E134');
+  check(narrow?.reportedImageNodes.length===3&&narrow.reportedImageNodes.filter(n=>n.validReportedRectangle).length===1,'第六轮窄屏报告节点数');
+  check(narrow.reportedImageNodes.slice(1).every(n=>n.left===637&&n.right===626&&n.width===-11&&!n.validReportedRectangle),'第六轮无效边界必须原样标记');
+  check(JSON.stringify(mp.measurements[0].reportedImageNodes)===JSON.stringify(mp.measurements[2].reportedImageNodes),'第六轮恢复异常几何');
+  check(video.recordings.length===7&&video.full_decode_total_frames===1914&&data.counts.newRecordings===7&&data.counts.decodedVideoFrames===1914,'第六轮录像/解码帧计数');
+  check(video.recordings.reduce((n,r)=>n+r.decoded_frame_count,0)===1914,'第六轮完整帧计数复算');
+  for(const r of video.recordings){
+    const o=selected.get(r.id.slice(0,4));
+    check(r.decoded_frame_count===r.probe_frame_count&&r.decoder_exit_code===0&&r.pts_strictly_increasing,'第六轮完整解码：'+r.id);
+    check(r.sources.find(s=>s.file==='motion.mp4')?.sha256===o?.sourceHashes.movie,'第六轮录像来源：'+r.id);
+  }
+  check(video._public_export.originalSha256===index.localVideoAnalysisSha256&&video._public_export.rawImageryIncluded===false,'第六轮视频派生关系');
+  round6Summary={captured:51,selected:39,localOnly:12,rawObservationArtifacts:218,reaEnvironmentEvidence:4,recordings:7,decodedFrames:1914,multiPictureSamples:1,settingsRestored:true};
+}
 if(writingManifest&&!problems.length){
   const manifest={schemaVersion:1,title:'帖子软件排版与逻辑',scope:'Public derived repository; .git and this manifest are excluded.',files:files.map(p=>({file:relative(p),bytes:fs.statSync(p).size,sha256:digest(fs.readFileSync(p))}))};
   fs.writeFileSync(manifestFile,JSON.stringify(manifest,null,2)+'\n');
@@ -300,5 +358,5 @@ if(!writingManifest&&fs.existsSync(manifestFile)){
     check(fs.existsSync(p)&&fs.statSync(p).size===e.bytes&&digest(fs.readFileSync(p))===e.sha256,'仓库摘要不匹配：'+e.file);
   }
 }else if(!writingManifest) check(false,'缺少 public-manifest.json');
-console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,round2:round2Summary,round3:round3Summary,round4:round4Summary,round5:round5Summary,issues:problems},null,2));
+console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,round2:round2Summary,round3:round3Summary,round4:round4Summary,round5:round5Summary,round6:round6Summary,issues:problems},null,2));
 if(problems.length)process.exitCode=1;

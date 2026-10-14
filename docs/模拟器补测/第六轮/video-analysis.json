@@ -1,0 +1,1308 @@
+{
+  "audit_id": "round6-offline-video-audit",
+  "evidence_type": "recorded_emulator_video_full_decode_and_pixel_registration",
+  "tool_sources": [
+    {
+      "file": "audit_videos.py",
+      "sha256": "90092f5c4266ce7fffcbfd8915acdd5d2e2cbbb98133099140637b75e0ca061d"
+    },
+    {
+      "file": "summarize_audit.py",
+      "sha256": "9f6fb831c1517b3b5bcaca208690718916c23b770d27627eb81bd9cdb5338b58"
+    }
+  ],
+  "privacy": "No usernames, comment bodies, thumbnails or screen imagery in this summary. Contact sheets contain source imagery and must stay local.",
+  "full_decode_total_frames": 1914,
+  "recordings": [
+    {
+      "id": "E093-comments1080-control",
+      "sources": [
+        {
+          "file": "motion.mp4",
+          "bytes": 3187794,
+          "sha256": "b2070ef9eeb97c32a11eb46f5427cf7f21ec2a28965a21d7a1adac986ee60d9a"
+        },
+        {
+          "file": "before.png",
+          "bytes": 1219722,
+          "sha256": "7720af95543ec688d2cd8dbc3acf96699b300591af6b457fc68a5d69f5fe0280"
+        },
+        {
+          "file": "screen.png",
+          "bytes": 1472162,
+          "sha256": "b161a12e4748ae126e4990f204987ac464b534fbd9f16b4170c8b7f80aaad4ec"
+        },
+        {
+          "file": "hierarchy.xml",
+          "bytes": 38043,
+          "sha256": "4c5e3e016abdce79ef38794db9e40a7ee8bcc5bab86823f41ecaabf9fe397857"
+        },
+        {
+          "file": "observation.json",
+          "bytes": 59060,
+          "sha256": "4e309929fdfd7875824e202cd8805076e76e674a602fc0abf9c149f347e2d5f1"
+        },
+        {
+          "file": "action.json",
+          "bytes": 599,
+          "sha256": "872df06479ecb38099d00763b8ac8ae89c818227c23f86d4cfd6ba36b0c31704"
+        }
+      ],
+      "decoded_frame_count": 266,
+      "probe_frame_count": 266,
+      "decoder_exit_code": 0,
+      "decoder_stderr": "",
+      "first_pts_s": 0,
+      "last_pts_s": 6.9859,
+      "pts_strictly_increasing": true,
+      "pts_gap_s": {
+        "min": 0.004467,
+        "median": 0.03267700000000007,
+        "max": 0.05073400000000028
+      },
+      "video_size_px": [
+        1080,
+        1920
+      ],
+      "recorded_hash_checks": {
+        "movie": true,
+        "screen": true,
+        "hierarchy": true
+      },
+      "header_template_analysis": {
+        "reference_patch_origin_y_px": 580,
+        "sampled_patch_rows": [
+          0,
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64,
+          72,
+          80,
+          88,
+          96,
+          104,
+          112,
+          120
+        ],
+        "sampled_patch_columns": [
+          32,
+          44,
+          56,
+          68,
+          80,
+          92,
+          104,
+          116,
+          128,
+          140,
+          152,
+          164,
+          176,
+          188,
+          200,
+          212,
+          224,
+          236,
+          248,
+          260,
+          272,
+          284,
+          296,
+          308,
+          320,
+          332,
+          344,
+          356,
+          368,
+          380,
+          392,
+          404,
+          416,
+          428,
+          440,
+          452,
+          464,
+          476,
+          488,
+          500,
+          512,
+          524,
+          536,
+          548,
+          560,
+          572,
+          584,
+          596,
+          608,
+          620,
+          632,
+          644,
+          656,
+          668,
+          680,
+          692,
+          704,
+          716,
+          728,
+          740,
+          752,
+          764,
+          776,
+          788,
+          800,
+          812,
+          824,
+          836,
+          848,
+          860,
+          872,
+          884,
+          896,
+          908,
+          920,
+          932,
+          944,
+          956,
+          968,
+          980,
+          992,
+          1004,
+          1016,
+          1028,
+          1040
+        ],
+        "matching_threshold_mean_abs_rgb_error": 6,
+        "matching_frame_count": 203,
+        "first_matching_frame": {
+          "frame_index_0based": 63,
+          "pts_s": 1.052533
+        },
+        "last_matching_frame": {
+          "frame_index_0based": 265,
+          "pts_s": 6.9859
+        },
+        "all_matching_origins_y_px": [
+          580
+        ],
+        "matching_mean_abs_rgb_error_range": [
+          0.8066176470588236,
+          1.5759803921568627
+        ],
+        "matching_frames_form_contiguous_run": true
+      },
+      "observation": "Opening transition is visible in local change sheet; matching final-position header is continuously present from first matching sample through the last decoded sample.",
+      "derived_files": [
+        {
+          "file": "E093-comments1080-control/summary.json",
+          "sha256": "bba40769d54d3f59ca2c53930def6f1209efd54c36aee536212c41b090a94ab4"
+        },
+        {
+          "file": "E093-comments1080-control/frames.json",
+          "sha256": "a6c6027698e13e2776464bb630998463c691334eee7b4edbd11426ff93fda7ea"
+        }
+      ],
+      "local_only_visual_review_files": [
+        "E093-comments1080-control/changes-local-only.jpg",
+        "E093-comments1080-control/uniform-local-only.jpg"
+      ]
+    },
+    {
+      "id": "E096-panel-reopen720",
+      "sources": [
+        {
+          "file": "motion.mp4",
+          "bytes": 2815555,
+          "sha256": "98bd7ffbfb3dc55efdd7259c1f30a29f49fa9a6d18211677d0ee1d3622bc74ff"
+        },
+        {
+          "file": "before.png",
+          "bytes": 556235,
+          "sha256": "747cd80c2e19695df959ac1570c9962200e64064b016483a628e4118cc3a19e0"
+        },
+        {
+          "file": "screen.png",
+          "bytes": 780338,
+          "sha256": "f1b1b4919cc120b5ae1a1bd591c56c271bfb5b57eb81f495719d3cacca55cb44"
+        },
+        {
+          "file": "hierarchy.xml",
+          "bytes": 37976,
+          "sha256": "e3c28a02e8993145e55195a872e2794e89eba1eca2b6f5bb3f093ab1229867ef"
+        },
+        {
+          "file": "observation.json",
+          "bytes": 59041,
+          "sha256": "69561e72e1ddd60db4a252514263854db035d4d32f3fa5a8d2c7a6d3e97aeadb"
+        },
+        {
+          "file": "action.json",
+          "bytes": 620,
+          "sha256": "f1408619ce554187d1cb82780d9c85cd450345b1185d08328b71373461f31abc"
+        }
+      ],
+      "decoded_frame_count": 267,
+      "probe_frame_count": 267,
+      "decoder_exit_code": 0,
+      "decoder_stderr": "",
+      "first_pts_s": 0,
+      "last_pts_s": 6.998933,
+      "pts_strictly_increasing": true,
+      "pts_gap_s": {
+        "min": 0.015144999999999964,
+        "median": 0.03300550000000024,
+        "max": 0.05047700000000033
+      },
+      "video_size_px": [
+        720,
+        1920
+      ],
+      "recorded_hash_checks": {
+        "movie": true,
+        "screen": true,
+        "hierarchy": true
+      },
+      "header_template_analysis": {
+        "reference_patch_origin_y_px": 580,
+        "sampled_patch_rows": [
+          0,
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64,
+          72,
+          80,
+          88,
+          96,
+          104,
+          112,
+          120
+        ],
+        "sampled_patch_columns": [
+          32,
+          44,
+          56,
+          68,
+          80,
+          92,
+          104,
+          116,
+          128,
+          140,
+          152,
+          164,
+          176,
+          188,
+          200,
+          212,
+          224,
+          236,
+          248,
+          260,
+          272,
+          284,
+          296,
+          308,
+          320,
+          332,
+          344,
+          356,
+          368,
+          380,
+          392,
+          404,
+          416,
+          428,
+          440,
+          452,
+          464,
+          476,
+          488,
+          500,
+          512,
+          524,
+          536,
+          548,
+          560,
+          572,
+          584,
+          596,
+          608,
+          620,
+          632,
+          644,
+          656,
+          668,
+          680
+        ],
+        "matching_threshold_mean_abs_rgb_error": 6,
+        "matching_frame_count": 200,
+        "first_matching_frame": {
+          "frame_index_0based": 67,
+          "pts_s": 1.131978
+        },
+        "last_matching_frame": {
+          "frame_index_0based": 266,
+          "pts_s": 6.998933
+        },
+        "all_matching_origins_y_px": [
+          580
+        ],
+        "matching_mean_abs_rgb_error_range": [
+          1.1950757575757576,
+          2.665909090909091
+        ],
+        "matching_frames_form_contiguous_run": true
+      },
+      "observation": "Opening transition is visible in local change sheet; matching final-position header is continuously present from first matching sample through the last decoded sample.",
+      "derived_files": [
+        {
+          "file": "E096-panel-reopen720/summary.json",
+          "sha256": "6845a5da518898176d13c010045e8af9e1c97c2a634d59f4b0b14e42cb6b4be8"
+        },
+        {
+          "file": "E096-panel-reopen720/frames.json",
+          "sha256": "915a44fa12085f0a558439e14e078328c845d20f036bdafd3405946ec35c902e"
+        }
+      ],
+      "local_only_visual_review_files": [
+        "E096-panel-reopen720/changes-local-only.jpg",
+        "E096-panel-reopen720/uniform-local-only.jpg"
+      ]
+    },
+    {
+      "id": "E100-comments-after-reentry720",
+      "sources": [
+        {
+          "file": "motion.mp4",
+          "bytes": 2822623,
+          "sha256": "63235c7a388e9081f31c2a0ac9d42ed7c2b7b8681214d5a5a783e9447a9da34a"
+        },
+        {
+          "file": "before.png",
+          "bytes": 584335,
+          "sha256": "7ee0d7b72dcd7c094c0847d8f63409275479f09adf23fc21032ab99a7980c45d"
+        },
+        {
+          "file": "screen.png",
+          "bytes": 1069787,
+          "sha256": "4e1db4d132bec36517abd1358a344afd8f2aeadd1fb7c6c875b68ed41ba25292"
+        },
+        {
+          "file": "hierarchy.xml",
+          "bytes": 37982,
+          "sha256": "dff01d5d7af6ebe93c88794dab06ac157a1fceb58fd9ca43eb48c949aff8f20d"
+        },
+        {
+          "file": "observation.json",
+          "bytes": 59053,
+          "sha256": "901a6a70e6b9cee0c657603fca9be8057d8ee9adc1e39ada9fb32ca8639b49ab"
+        },
+        {
+          "file": "action.json",
+          "bytes": 628,
+          "sha256": "97e0a75020ebbc8bcec46baacd103bc093aeb9e1e247e01a17474c69c21478b6"
+        }
+      ],
+      "decoded_frame_count": 263,
+      "probe_frame_count": 263,
+      "decoder_exit_code": 0,
+      "decoder_stderr": "",
+      "first_pts_s": 0,
+      "last_pts_s": 6.9983,
+      "pts_strictly_increasing": true,
+      "pts_gap_s": {
+        "min": 0.00336599999999998,
+        "median": 0.025421999999999945,
+        "max": 0.06824500000000011
+      },
+      "video_size_px": [
+        720,
+        1920
+      ],
+      "recorded_hash_checks": {
+        "movie": true,
+        "screen": true,
+        "hierarchy": true
+      },
+      "header_template_analysis": {
+        "reference_patch_origin_y_px": 580,
+        "sampled_patch_rows": [
+          0,
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64,
+          72,
+          80,
+          88,
+          96,
+          104,
+          112,
+          120
+        ],
+        "sampled_patch_columns": [
+          32,
+          44,
+          56,
+          68,
+          80,
+          92,
+          104,
+          116,
+          128,
+          140,
+          152,
+          164,
+          176,
+          188,
+          200,
+          212,
+          224,
+          236,
+          248,
+          260,
+          272,
+          284,
+          296,
+          308,
+          320,
+          332,
+          344,
+          356,
+          368,
+          380,
+          392,
+          404,
+          416,
+          428,
+          440,
+          452,
+          464,
+          476,
+          488,
+          500,
+          512,
+          524,
+          536,
+          548,
+          560,
+          572,
+          584,
+          596,
+          608,
+          620,
+          632,
+          644,
+          656,
+          668,
+          680
+        ],
+        "matching_threshold_mean_abs_rgb_error": 6,
+        "matching_frame_count": 198,
+        "first_matching_frame": {
+          "frame_index_0based": 65,
+          "pts_s": 1.215133
+        },
+        "last_matching_frame": {
+          "frame_index_0based": 262,
+          "pts_s": 6.9983
+        },
+        "all_matching_origins_y_px": [
+          580
+        ],
+        "matching_mean_abs_rgb_error_range": [
+          0.5579545454545455,
+          2.4064393939393938
+        ],
+        "matching_frames_form_contiguous_run": true
+      },
+      "observation": "Opening transition is visible in local change sheet; matching final-position header is continuously present from first matching sample through the last decoded sample.",
+      "derived_files": [
+        {
+          "file": "E100-comments-after-reentry720/summary.json",
+          "sha256": "fd2743ed1899d1c97a8aa61f7cdf24f8d819a5aee3bd1f3eaa822efa96f87982"
+        },
+        {
+          "file": "E100-comments-after-reentry720/frames.json",
+          "sha256": "c8684e600528170dbd67233cb8b2b804ab45f9898c77b47e6d6b28e92c7177e3"
+        }
+      ],
+      "local_only_visual_review_files": [
+        "E100-comments-after-reentry720/changes-local-only.jpg",
+        "E100-comments-after-reentry720/uniform-local-only.jpg"
+      ]
+    },
+    {
+      "id": "E102-expand-after-reentry720",
+      "sources": [
+        {
+          "file": "motion.mp4",
+          "bytes": 1828050,
+          "sha256": "ac9a2cb4f5bc4f48a961dad29173a6a688faf7bc5bf5e89094f7f11802ab1cfe"
+        },
+        {
+          "file": "before.png",
+          "bytes": 873670,
+          "sha256": "d45590db575382e1f08e6fb4e051b0f2c2657f6093848de923443ce13d4182f1"
+        },
+        {
+          "file": "screen.png",
+          "bytes": 278557,
+          "sha256": "bf9ea5c2fa1cb428a33273d3e9503e8822af6d1353abb7a68d9264237cfa221d"
+        },
+        {
+          "file": "hierarchy.xml",
+          "bytes": 35475,
+          "sha256": "09f85c269e44391c71d51c5c18c5b6cce183d3e7904eb3f0d416542aedd92780"
+        },
+        {
+          "file": "observation.json",
+          "bytes": 55196,
+          "sha256": "09e0012996564bea1c3085a2f2c7f1676799ba20364ef797b2abe2982a04afd1"
+        },
+        {
+          "file": "action.json",
+          "bytes": 626,
+          "sha256": "4b30e73d39a1f0f7369fe89a658156d29d75e6c47d2a8ddface52e12589137ca"
+        }
+      ],
+      "decoded_frame_count": 225,
+      "probe_frame_count": 225,
+      "decoder_exit_code": 0,
+      "decoder_stderr": "",
+      "first_pts_s": 0,
+      "last_pts_s": 6.979756,
+      "pts_strictly_increasing": true,
+      "pts_gap_s": {
+        "min": 0.013556,
+        "median": 0.03332250000000003,
+        "max": 0.10012200000000027
+      },
+      "video_size_px": [
+        720,
+        1920
+      ],
+      "recorded_hash_checks": {
+        "movie": true,
+        "screen": true,
+        "hierarchy": true
+      },
+      "header_template_analysis": {
+        "reference_patch_origin_y_px": 580,
+        "sampled_patch_rows": [
+          0,
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64,
+          72,
+          80,
+          88,
+          96,
+          104,
+          112,
+          120
+        ],
+        "sampled_patch_columns": [
+          32,
+          44,
+          56,
+          68,
+          80,
+          92,
+          104,
+          116,
+          128,
+          140,
+          152,
+          164,
+          176,
+          188,
+          200,
+          212,
+          224,
+          236,
+          248,
+          260,
+          272,
+          284,
+          296,
+          308,
+          320,
+          332,
+          344,
+          356,
+          368,
+          380,
+          392,
+          404,
+          416,
+          428,
+          440,
+          452,
+          464,
+          476,
+          488,
+          500,
+          512,
+          524,
+          536,
+          548,
+          560,
+          572,
+          584,
+          596,
+          608,
+          620,
+          632,
+          644,
+          656,
+          668,
+          680
+        ],
+        "matching_threshold_mean_abs_rgb_error": 6,
+        "matching_frame_count": 225,
+        "first_matching_frame": {
+          "frame_index_0based": 0,
+          "pts_s": 0
+        },
+        "last_matching_frame": {
+          "frame_index_0based": 224,
+          "pts_s": 6.979756
+        },
+        "all_matching_origins_y_px": [
+          580
+        ],
+        "matching_mean_abs_rgb_error_range": [
+          0.5579545454545455,
+          2.0265151515151514
+        ],
+        "matching_frames_form_contiguous_run": true
+      },
+      "landmark_changes": [
+        {
+          "last_old_sample": {
+            "frame_index_0based": 31,
+            "pts_s": 0.963189
+          },
+          "first_new_sample": {
+            "frame_index_0based": 32,
+            "pts_s": 0.979433
+          },
+          "y_before_px": 1338,
+          "y_after_px": 1461,
+          "delta_y_px": 123,
+          "adjacent_pts_gap_s_not_animation_duration": 0.016244
+        }
+      ],
+      "all_observed_landmark_y_px": [
+        1338,
+        1461
+      ],
+      "landmark_matching_error_range": [
+        4.589506172839506,
+        9.889917695473251
+      ],
+      "observation": "Reply landmark switches between two positions in adjacent recorded frames; no intermediate sampled position was found. A temporary press background is also visible and is not a height tween.",
+      "derived_files": [
+        {
+          "file": "E102-expand-after-reentry720/summary.json",
+          "sha256": "793bec313b12b275263add8251264ff7c645c3ffc07891c1ed5296e0e215100f"
+        },
+        {
+          "file": "E102-expand-after-reentry720/frames.json",
+          "sha256": "3d4086678b5436c8bc518b06c4138643a2913525f885863451b84c53e6aff0bf"
+        }
+      ],
+      "local_only_visual_review_files": [
+        "E102-expand-after-reentry720/changes-local-only.jpg",
+        "E102-expand-after-reentry720/uniform-local-only.jpg"
+      ]
+    },
+    {
+      "id": "E103-collapse-after-reentry720",
+      "sources": [
+        {
+          "file": "motion.mp4",
+          "bytes": 2568355,
+          "sha256": "e48212fb30f2ad0a48c17323c0fc932caa5bd95e664d3e93cef6b44639b627d1"
+        },
+        {
+          "file": "before.png",
+          "bytes": 788448,
+          "sha256": "d22d82db4a8caf6b18684f9ed7de553dbd622beb64124be6c680623ff05c05a1"
+        },
+        {
+          "file": "screen.png",
+          "bytes": 973448,
+          "sha256": "890fed88c401930be77ec2ebd030acc6492034ffa61857419ae18abbad72197f"
+        },
+        {
+          "file": "hierarchy.xml",
+          "bytes": 35314,
+          "sha256": "6082ceda38bff56a72b3d9b716f8b44aa3f8aee9f535d81e91701ada0fbf19d9"
+        },
+        {
+          "file": "observation.json",
+          "bytes": 55037,
+          "sha256": "7de375c3a30646e0e52afef59af6f6f11ea54eb157efd146498379faf4053044"
+        },
+        {
+          "file": "action.json",
+          "bytes": 628,
+          "sha256": "fa271e2cc3ffcfadcf617c5858cc22b93bda65ae4049baa35f0e101a46c4fe24"
+        }
+      ],
+      "decoded_frame_count": 242,
+      "probe_frame_count": 242,
+      "decoder_exit_code": 0,
+      "decoder_stderr": "",
+      "first_pts_s": 0,
+      "last_pts_s": 6.996733,
+      "pts_strictly_increasing": true,
+      "pts_gap_s": {
+        "min": 0.013633,
+        "median": 0.03327800000000014,
+        "max": 0.05022299999999991
+      },
+      "video_size_px": [
+        720,
+        1920
+      ],
+      "recorded_hash_checks": {
+        "movie": true,
+        "screen": true,
+        "hierarchy": true
+      },
+      "header_template_analysis": {
+        "reference_patch_origin_y_px": 580,
+        "sampled_patch_rows": [
+          0,
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64,
+          72,
+          80,
+          88,
+          96,
+          104,
+          112,
+          120
+        ],
+        "sampled_patch_columns": [
+          32,
+          44,
+          56,
+          68,
+          80,
+          92,
+          104,
+          116,
+          128,
+          140,
+          152,
+          164,
+          176,
+          188,
+          200,
+          212,
+          224,
+          236,
+          248,
+          260,
+          272,
+          284,
+          296,
+          308,
+          320,
+          332,
+          344,
+          356,
+          368,
+          380,
+          392,
+          404,
+          416,
+          428,
+          440,
+          452,
+          464,
+          476,
+          488,
+          500,
+          512,
+          524,
+          536,
+          548,
+          560,
+          572,
+          584,
+          596,
+          608,
+          620,
+          632,
+          644,
+          656,
+          668,
+          680
+        ],
+        "matching_threshold_mean_abs_rgb_error": 6,
+        "matching_frame_count": 242,
+        "first_matching_frame": {
+          "frame_index_0based": 0,
+          "pts_s": 0
+        },
+        "last_matching_frame": {
+          "frame_index_0based": 241,
+          "pts_s": 6.996733
+        },
+        "all_matching_origins_y_px": [
+          580
+        ],
+        "matching_mean_abs_rgb_error_range": [
+          0.9878787878787879,
+          3.202651515151515
+        ],
+        "matching_frames_form_contiguous_run": true
+      },
+      "landmark_changes": [
+        {
+          "last_old_sample": {
+            "frame_index_0based": 34,
+            "pts_s": 0.946622
+          },
+          "first_new_sample": {
+            "frame_index_0based": 35,
+            "pts_s": 0.963
+          },
+          "y_before_px": 1461,
+          "y_after_px": 1338,
+          "delta_y_px": -123,
+          "adjacent_pts_gap_s_not_animation_duration": 0.016378
+        }
+      ],
+      "all_observed_landmark_y_px": [
+        1338,
+        1461
+      ],
+      "landmark_matching_error_range": [
+        5.9681069958847734,
+        12.062757201646091
+      ],
+      "observation": "Reply landmark switches between two positions in adjacent recorded frames; no intermediate sampled position was found. A temporary press background is also visible and is not a height tween.",
+      "derived_files": [
+        {
+          "file": "E103-collapse-after-reentry720/summary.json",
+          "sha256": "f07237922feaae44d8f8530778e530a78b8c2201a58232f8a6f6c3fe5396db39"
+        },
+        {
+          "file": "E103-collapse-after-reentry720/frames.json",
+          "sha256": "434ecaa1409ecbd681bd3d2952b860e2ffedb5317dae055a091d4f3f9b302e43"
+        }
+      ],
+      "local_only_visual_review_files": [
+        "E103-collapse-after-reentry720/changes-local-only.jpg",
+        "E103-collapse-after-reentry720/uniform-local-only.jpg"
+      ]
+    },
+    {
+      "id": "E107-comments-reentry720-trial2",
+      "sources": [
+        {
+          "file": "motion.mp4",
+          "bytes": 2706757,
+          "sha256": "1861b44a934479d14dca3f0709c9f207fe146e2af1eb01e227aff3abaab562cf"
+        },
+        {
+          "file": "before.png",
+          "bytes": 418109,
+          "sha256": "e0d39340aad308a64086a29c9ea76a749c904dc877eda567bf8158b7fd8bbbbe"
+        },
+        {
+          "file": "screen.png",
+          "bytes": 1011651,
+          "sha256": "83d69d812f191099935ccf13ab944024b595fa566ab0bae2d9746b5cac79958f"
+        },
+        {
+          "file": "hierarchy.xml",
+          "bytes": 37982,
+          "sha256": "dff01d5d7af6ebe93c88794dab06ac157a1fceb58fd9ca43eb48c949aff8f20d"
+        },
+        {
+          "file": "observation.json",
+          "bytes": 59056,
+          "sha256": "734d136e30d316a7909dbf8746852759cbc0f87893686329812616e78d0c1de3"
+        },
+        {
+          "file": "action.json",
+          "bytes": 630,
+          "sha256": "3cbf8dda792ed6c424cc5903763a3c8ad38a4b5a938db222eaa1ad0c9038c2ed"
+        }
+      ],
+      "decoded_frame_count": 266,
+      "probe_frame_count": 266,
+      "decoder_exit_code": 0,
+      "decoder_stderr": "",
+      "first_pts_s": 0,
+      "last_pts_s": 6.997667,
+      "pts_strictly_increasing": true,
+      "pts_gap_s": {
+        "min": 0.014867,
+        "median": 0.0329669999999993,
+        "max": 0.06645599999999996
+      },
+      "video_size_px": [
+        720,
+        1920
+      ],
+      "recorded_hash_checks": {
+        "movie": true,
+        "screen": true,
+        "hierarchy": true
+      },
+      "header_template_analysis": {
+        "reference_patch_origin_y_px": 580,
+        "sampled_patch_rows": [
+          0,
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64,
+          72,
+          80,
+          88,
+          96,
+          104,
+          112,
+          120
+        ],
+        "sampled_patch_columns": [
+          32,
+          44,
+          56,
+          68,
+          80,
+          92,
+          104,
+          116,
+          128,
+          140,
+          152,
+          164,
+          176,
+          188,
+          200,
+          212,
+          224,
+          236,
+          248,
+          260,
+          272,
+          284,
+          296,
+          308,
+          320,
+          332,
+          344,
+          356,
+          368,
+          380,
+          392,
+          404,
+          416,
+          428,
+          440,
+          452,
+          464,
+          476,
+          488,
+          500,
+          512,
+          524,
+          536,
+          548,
+          560,
+          572,
+          584,
+          596,
+          608,
+          620,
+          632,
+          644,
+          656,
+          668,
+          680
+        ],
+        "matching_threshold_mean_abs_rgb_error": 6,
+        "matching_frame_count": 203,
+        "first_matching_frame": {
+          "frame_index_0based": 63,
+          "pts_s": 1.097622
+        },
+        "last_matching_frame": {
+          "frame_index_0based": 265,
+          "pts_s": 6.997667
+        },
+        "all_matching_origins_y_px": [
+          580
+        ],
+        "matching_mean_abs_rgb_error_range": [
+          1.437121212121212,
+          2.756060606060606
+        ],
+        "matching_frames_form_contiguous_run": true
+      },
+      "observation": "Opening transition is visible in local change sheet; matching final-position header is continuously present from first matching sample through the last decoded sample.",
+      "derived_files": [
+        {
+          "file": "E107-comments-reentry720-trial2/summary.json",
+          "sha256": "a54b59e5db3d70169882758a8c37a8d0dd09020357cdcb991ee480f7e3780636"
+        },
+        {
+          "file": "E107-comments-reentry720-trial2/frames.json",
+          "sha256": "138dadfab1d4f890fcc68cdd5f67fd72f982d5db7f0b30660bbba8dd53cca339"
+        }
+      ],
+      "local_only_visual_review_files": [
+        "E107-comments-reentry720-trial2/changes-local-only.jpg",
+        "E107-comments-reentry720-trial2/uniform-local-only.jpg"
+      ]
+    },
+    {
+      "id": "E109-panel-close1080",
+      "sources": [
+        {
+          "file": "motion.mp4",
+          "bytes": 4772995,
+          "sha256": "c55ccc782ffbfd7ccb7c856f163642b51513bc28b6da86f5c6f5d495629a2988"
+        },
+        {
+          "file": "before.png",
+          "bytes": 838757,
+          "sha256": "25ea4b7d956ed2d3bd35bf607314c0353cbf82e5af27848a621510e596b611fa"
+        },
+        {
+          "file": "screen.png",
+          "bytes": 855493,
+          "sha256": "c703495f4748a56403464bf230de2e651ee3f0d46078308212ac3a883898d836"
+        },
+        {
+          "file": "hierarchy.xml",
+          "bytes": 36435,
+          "sha256": "7455efd934b3132a4dba53ef92e81a12c3a146aebc82f71c8c9aea0dcd0ccf37"
+        },
+        {
+          "file": "observation.json",
+          "bytes": 56209,
+          "sha256": "6db1281355702c0cacd9cb4725f191b8ed36bde2049fd18c5f72e89067b7fc5f"
+        },
+        {
+          "file": "action.json",
+          "bytes": 592,
+          "sha256": "dfaf2f7fd6de62590e6addaf03789a07a101c56797fc922f87639ac7da4c28ad"
+        }
+      ],
+      "decoded_frame_count": 385,
+      "probe_frame_count": 385,
+      "decoder_exit_code": 0,
+      "decoder_stderr": "",
+      "first_pts_s": 0,
+      "last_pts_s": 6.963156,
+      "pts_strictly_increasing": true,
+      "pts_gap_s": {
+        "min": 0.010299999999999976,
+        "median": 0.01671099999999992,
+        "max": 0.09526699999999977
+      },
+      "video_size_px": [
+        1080,
+        1920
+      ],
+      "recorded_hash_checks": {
+        "movie": true,
+        "screen": true,
+        "hierarchy": true
+      },
+      "header_template_analysis": {
+        "reference_patch_origin_y_px": 580,
+        "sampled_patch_rows": [
+          0,
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64,
+          72,
+          80,
+          88,
+          96,
+          104,
+          112,
+          120
+        ],
+        "sampled_patch_columns": [
+          32,
+          44,
+          56,
+          68,
+          80,
+          92,
+          104,
+          116,
+          128,
+          140,
+          152,
+          164,
+          176,
+          188,
+          200,
+          212,
+          224,
+          236,
+          248,
+          260,
+          272,
+          284,
+          296,
+          308,
+          320,
+          332,
+          344,
+          356,
+          368,
+          380,
+          392,
+          404,
+          416,
+          428,
+          440,
+          452,
+          464,
+          476,
+          488,
+          500,
+          512,
+          524,
+          536,
+          548,
+          560,
+          572,
+          584,
+          596,
+          608,
+          620,
+          632,
+          644,
+          656,
+          668,
+          680,
+          692,
+          704,
+          716,
+          728,
+          740,
+          752,
+          764,
+          776,
+          788,
+          800,
+          812,
+          824,
+          836,
+          848,
+          860,
+          872,
+          884,
+          896,
+          908,
+          920,
+          932,
+          944,
+          956,
+          968,
+          980,
+          992,
+          1004,
+          1016,
+          1028,
+          1040
+        ],
+        "matching_threshold_mean_abs_rgb_error": 6,
+        "matching_frame_count": 34,
+        "first_matching_frame": {
+          "frame_index_0based": 0,
+          "pts_s": 0
+        },
+        "last_matching_frame": {
+          "frame_index_0based": 33,
+          "pts_s": 0.946378
+        },
+        "all_matching_origins_y_px": [
+          580
+        ],
+        "matching_mean_abs_rgb_error_range": [
+          0.7431372549019608,
+          1.1299019607843137
+        ],
+        "matching_frames_form_contiguous_run": true
+      },
+      "observation": "Closing transition and subsequent absence of the panel are visible in local change/coverage sheets. Initial header match ends at frame 33; later samples do not regain a matching header.",
+      "derived_files": [
+        {
+          "file": "E109-panel-close1080/summary.json",
+          "sha256": "18460d02557d1263820db1a505d736cd2be10afeade228bd34b904d8fb9797c6"
+        },
+        {
+          "file": "E109-panel-close1080/frames.json",
+          "sha256": "4e447e7da985d353402da916ebc5af023becc0e088ed73d61804f5a51208f19f"
+        }
+      ],
+      "local_only_visual_review_files": [
+        "E109-panel-close1080/changes-local-only.jpg",
+        "E109-panel-close1080/uniform-local-only.jpg"
+      ]
+    }
+  ],
+  "limits": [
+    "Video frames are recorder samples, not a complete history of display refreshes.",
+    "Host input clock and recording PTS are not precisely synchronized.",
+    "Neither encoded frame rate nor adjacent PTS gap is animation duration.",
+    "Header/landmark matches measure pixel templates, not internal View classes or rectangles.",
+    "Only seven recordings in one emulator session are included. No cold start, device/OEM or version-general conclusions.",
+    "The old narrow-width failure was not reproduced in these two re-entry trials; this does not prove it fixed or identify its cause."
+  ],
+  "_public_export": {
+    "originalSha256": "821616ff75e4dfba27dc5d1bc2b9403f1c626ce85aa5b4fc0baf0d305e7078b8",
+    "projection": "Sanitized numeric analysis copied; sources and derived_files are local artifact references, not files distributed in this directory.",
+    "rawImageryIncluded": false
+  }
+}
