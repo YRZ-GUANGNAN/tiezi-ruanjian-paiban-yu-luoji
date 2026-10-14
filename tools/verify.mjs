@@ -344,6 +344,65 @@ if(fs.existsSync(round6Root)){
   check(video._public_export.originalSha256===index.localVideoAnalysisSha256&&video._public_export.rawImageryIncluded===false,'第六轮视频派生关系');
   round6Summary={captured:51,selected:39,localOnly:12,rawObservationArtifacts:218,reaEnvironmentEvidence:4,recordings:7,decodedFrames:1914,multiPictureSamples:1,settingsRestored:true};
 }
+const round7Root=path.join(root,'docs/模拟器补测/第七轮');
+let round7Summary=null;
+if(fs.existsSync(round7Root)){
+  const index=read(path.join(round7Root,'evidence-index.json'));
+  const data=read(path.join(round7Root,'observations.json'));
+  const video=read(path.join(round7Root,'video-analysis.json'));
+  const visual=read(path.join(round7Root,'visual-analysis.json'));
+  const selected=new Map(data.observations.map(o=>[o.id,o]));
+  const all=[...data.observations,...data.excludedObservations];
+  check(data.appVersion==='8.72.0'&&data.versionCode==='8720916','第七轮版本基线');
+  check(data.counts.captured===35&&data.counts.selected===34&&data.counts.excluded===1,'第七轮观察计数');
+  check(selected.size===34&&all.length===35&&new Set(all.map(o=>o.id)).size===35,'第七轮观察唯一性');
+  check(data.excludedObservations[0]?.id==='E144'&&!selected.has('E144'),'第七轮联系人菜单排除');
+  check(index.rawObservationArtifactCount===200&&index.sourceManifest.length===35,'第七轮原件清单');
+  check(index.sourceManifest.reduce((n,r)=>n+Object.keys(r.sourceHashes).length,0)===200,'第七轮原件数量复算');
+  for(const f of index.files){
+    const file=path.join(round7Root,f.file);
+    check(fs.existsSync(file)&&digest(fs.readFileSync(file))===f.publicSha256,'第七轮派生摘要：'+f.file);
+    check(!fs.readFileSync(file,'utf8').includes('\uFFFD'),'第七轮文本编码：'+f.file);
+  }
+  for(const o of all){
+    const source=index.sourceManifest.find(r=>r.id===o.id);
+    check(source&&JSON.stringify(source.sourceHashes)===JSON.stringify(o.sourceHashes),'第七轮来源映射：'+o.id);
+    check(Object.values(o.sourceHashes).every(h=>/^[a-f0-9]{64}$/.test(h)),'第七轮摘要格式：'+o.id);
+  }
+  for(const o of selected.values()){
+    check(o.kind==='emulator_observation'&&o.appVersion==='8.72.0'&&o.versionCode==='8720916','第七轮身份：'+o.id);
+    check(o.environment.width===1080&&o.environment.height===1920&&o.environment.densityDpi===280&&o.environment.fontScale===1&&o.environment.sameObservedPidAsBaseline,'第七轮恒定环境：'+o.id);
+    check(Date.parse(o.capturedAt)<=Date.parse(o.completedAt),'第七轮时序：'+o.id);
+  }
+  check(data.settingsChanged===false&&data.settingsRestored&&data.finalObservation==='E174'&&selected.get('E174')?.page==='home','第七轮结束状态');
+  check(!data.processDeathTested&&data.allRecordedPidsSame&&data.counts.newStaticAnalyses===0,'第七轮未测边界');
+  check(data.environmentEvidence.length===4&&data.environmentEvidence.every(e=>e.projectionOnly&&e.evidenceId.startsWith('ev_')&&/^[a-f0-9]{64}$/.test(e.originalSha256)),'第七轮REA环境投影');
+  for(const pair of data.hierarchyEqualityChecks)check(selected.get(pair.a)?.sourceHashes.hierarchy===selected.get(pair.b)?.sourceHashes.hierarchy,'第七轮终态对照：'+pair.a+'/'+pair.b);
+  const pages={E141:1,E142:2,E143:2,E146:2,E147:1,E148:1,E149:1,E155:1};
+  for(const [id,page] of Object.entries(pages))check(selected.get(id)?.imagePage?.index===page&&selected.get(id)?.imagePage?.total===2,'第七轮图集页序：'+id);
+  check(data.feedReturn.deltaPx[1]===-639&&data.feedReturn.alignedCardExactPixelFraction===1&&data.feedReturn.directReentryControl.cardDisplacementFromE154Px[1]===0,'第七轮返回位移与反例');
+  const measure=(id,role)=>data.nodeMeasures.find(m=>m.id===id&&m.role===role);
+  check(['E170','E171','E172'].map(id=>measure(id,'same-first-comment-body')?.top).join(',')==='1159,879,949','第七轮内容滚动几何');
+  check(data.panelHandoff.lastSelectedContentOnlyFrame.avatarY===1119&&data.panelHandoff.firstSelectedPanelMovementFrame.titleY===667&&!data.panelHandoff.internalGestureDispatchProven,'第七轮手势交接边界');
+  check(data.counts.recordingsCaptured===30&&video.recordings.length===29&&video.totalDecodedFrames===893,'第七轮录屏计数');
+  check(new Set(video.recordings.map(v=>v.id)).size===29&&video.recordings.reduce((n,v)=>n+v.decodedFrames,0)===893,'第七轮解码帧复算');
+  check(!video.recordings.some(v=>v.id==='E144')&&!video.traces.E144&&!video.rawImageryIncluded,'第七轮录屏隐私边界');
+  for(const v of video.recordings){
+    check(v.decodedFrames===v.probeFrames&&v.decoderExitCode===0&&v.ptsStrictlyIncreasing,'第七轮完整解码：'+v.id);
+    check(v.movieSha256===selected.get(v.id)?.sourceHashes.movie,'第七轮视频原件：'+v.id);
+    const rows=video.traces[v.id]?.frames;
+    check(rows?.length===v.decodedFrames,'第七轮逐帧数量：'+v.id);
+    const times=rows?.map(r=>r.pts_s??r.pts);
+    check(times?.every((t,i)=>Number.isFinite(t)&&(i===0||t>times[i-1])),'第七轮PTS复算：'+v.id);
+  }
+  check(video.recordings.find(v=>v.id==='E146')?.decodedFrames===2&&video.recordings.find(v=>v.id==='E162')?.decodedFrames===2,'第七轮稀疏采样明确保留');
+  check(video.independentAudit.galleryIds.length===5&&video.independentAudit.panelIds.length===13&&video.independentAudit.remainingAuditedByPrimary.length===11,'第七轮复核分工');
+  check(visual._public_export.rawImageryIncluded===false&&visual.upper_media_scale_fit.accepted===false,'第七轮缩放拟合拒绝');
+  check(visual.upper_media_visible_edges.every(r=>r.left===324&&r.right_exclusive===756&&r.width===432),'第七轮视频可见宽度');
+  check(Math.abs(visual.composer_dim_fit.candidate_black_overlay_alpha-0.20)<0.001&&visual.composer_dim_fit.mean_abs_error<0.3,'第七轮遮罩拟合');
+  check(visual.panel_corner_fit.circle_fit_top5_radius_error_px[0][0]===20.75,'第七轮圆角候选');
+  round7Summary={captured:35,selected:34,excluded:1,rawObservationArtifacts:200,reaEnvironmentEvidence:4,recordingsCaptured:30,recordingsAnalyzed:29,decodedFrames:893,settingsUnchanged:true};
+}
 if(writingManifest&&!problems.length){
   const manifest={schemaVersion:1,title:'帖子软件排版与逻辑',scope:'Public derived repository; .git and this manifest are excluded.',files:files.map(p=>({file:relative(p),bytes:fs.statSync(p).size,sha256:digest(fs.readFileSync(p))}))};
   fs.writeFileSync(manifestFile,JSON.stringify(manifest,null,2)+'\n');
@@ -358,5 +417,5 @@ if(!writingManifest&&fs.existsSync(manifestFile)){
     check(fs.existsSync(p)&&fs.statSync(p).size===e.bytes&&digest(fs.readFileSync(p))===e.sha256,'仓库摘要不匹配：'+e.file);
   }
 }else if(!writingManifest) check(false,'缺少 public-manifest.json');
-console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,round2:round2Summary,round3:round3Summary,round4:round4Summary,round5:round5Summary,round6:round6Summary,issues:problems},null,2));
+console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,round2:round2Summary,round3:round3Summary,round4:round4Summary,round5:round5Summary,round6:round6Summary,round7:round7Summary,issues:problems},null,2));
 if(problems.length)process.exitCode=1;

@@ -1,0 +1,464 @@
+{
+  "schema": "round7-visual-pixel-analysis-v1",
+  "source_images": [
+    {
+      "id": "E141",
+      "sha256": "f8d223ebaf209e0b2cc2178ef911661bb0dcd14073749c67773f63dac5662261"
+    },
+    {
+      "id": "E149",
+      "sha256": "0ad7372bffd31d77c974ccd02915e38da1913a0b2a86ec49afaf06ea891bbf50"
+    },
+    {
+      "id": "E150",
+      "sha256": "a88dea0b5b76eaa3329b8d0531113a92265600a3cc2e0ef525fcc2eff70ce486"
+    },
+    {
+      "id": "E151",
+      "sha256": "648f8e5cd3e00246f960497d78e3d0209f7a75646074c99039920efc1133d3c7"
+    },
+    {
+      "id": "E152",
+      "sha256": "f89c2c73e708f18ef781f9e3de105b9bf7f402a11056bae66cc1d24faf189c17"
+    },
+    {
+      "id": "E153",
+      "sha256": "be1e1c602953ab507db1fe7dd55f42bf5f255290387f65a60f62a95b1a679310"
+    },
+    {
+      "id": "E158",
+      "sha256": "e12c78bcee5e8673e1d8b0c69e6d31ee7404f0a8b9b0f26358911780cf998643"
+    },
+    {
+      "id": "E159",
+      "sha256": "a020e19c89b0583e1665053cd2ce17cba08dda00f799c1b34b6d12cbf0fb5b42"
+    },
+    {
+      "id": "E161",
+      "sha256": "ca4d0e9bec1d8c33ea8fc0dc3a7fa1bd4c7402efe5406a81071bf69484af0757"
+    },
+    {
+      "id": "E169",
+      "sha256": "b8cd63c5b15d8d62b39b10585c23a3b785ff2e8927eebe81ab0f5465a66138ce"
+    }
+  ],
+  "colors": [
+    {
+      "evidence": "E141",
+      "role": "photo author toolbar",
+      "rect_px": [
+        700,
+        80,
+        800,
+        110
+      ],
+      "mode_rgb": [
+        25,
+        25,
+        30
+      ],
+      "mode_hex": "#19191E",
+      "mode_fraction": 1,
+      "scope": "rendered screenshot pixels; not a theme token or universal default"
+    },
+    {
+      "evidence": "E141",
+      "role": "photo body background",
+      "rect_px": [
+        100,
+        1590,
+        200,
+        1620
+      ],
+      "mode_rgb": [
+        25,
+        25,
+        31
+      ],
+      "mode_hex": "#19191F",
+      "mode_fraction": 1,
+      "scope": "rendered screenshot pixels; not a theme token or universal default"
+    },
+    {
+      "evidence": "E141",
+      "role": "photo input field fill",
+      "rect_px": [
+        500,
+        1855,
+        600,
+        1880
+      ],
+      "mode_rgb": [
+        38,
+        38,
+        44
+      ],
+      "mode_hex": "#26262C",
+      "mode_fraction": 1,
+      "scope": "rendered screenshot pixels; not a theme token or universal default"
+    },
+    {
+      "evidence": "E159",
+      "role": "video comment panel",
+      "rect_px": [
+        400,
+        680,
+        600,
+        700
+      ],
+      "mode_rgb": [
+        25,
+        25,
+        31
+      ],
+      "mode_hex": "#19191F",
+      "mode_fraction": 1,
+      "scope": "rendered screenshot pixels; not a theme token or universal default"
+    },
+    {
+      "evidence": "E159",
+      "role": "video upper side margin",
+      "rect_px": [
+        20,
+        200,
+        200,
+        400
+      ],
+      "mode_rgb": [
+        0,
+        0,
+        0
+      ],
+      "mode_hex": "#000000",
+      "mode_fraction": 1,
+      "scope": "rendered screenshot pixels; not a theme token or universal default"
+    },
+    {
+      "evidence": "E159",
+      "role": "comment input field fill",
+      "rect_px": [
+        500,
+        1848,
+        650,
+        1888
+      ],
+      "mode_rgb": [
+        35,
+        35,
+        41
+      ],
+      "mode_hex": "#232329",
+      "mode_fraction": 1,
+      "scope": "rendered screenshot pixels; not a theme token or universal default"
+    }
+  ],
+  "composer_dim_fit": {
+    "before": "E149",
+    "after": "E150",
+    "roi_px": [
+      30,
+      180,
+      1050,
+      1500
+    ],
+    "sampling_stride_px": 3,
+    "fit": "after = slope * before + intercept, RGB screenshot values",
+    "slope": 0.7999396519441295,
+    "intercept": 0.0066193281973897945,
+    "candidate_black_overlay_alpha": 0.20006034805587047,
+    "mean_abs_error": 0.2423628512187643,
+    "limit": "pixel-domain compositing fit on this photo, not original alpha property or linear-light evidence"
+  },
+  "panel_corner_fit": {
+    "evidence": "E159",
+    "top_px": 576,
+    "panel_color_rgb": [
+      25,
+      25,
+      31
+    ],
+    "edge_rule": "first x within 2 RGB levels of panel interior at each y; antialiasing excluded",
+    "edge_samples_y_offset_x_px": [
+      [
+        0,
+        19
+      ],
+      [
+        1,
+        14
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        9,
+        4
+      ],
+      [
+        10,
+        3
+      ],
+      [
+        11,
+        3
+      ],
+      [
+        12,
+        2
+      ],
+      [
+        13,
+        2
+      ],
+      [
+        14,
+        1
+      ],
+      [
+        15,
+        1
+      ],
+      [
+        16,
+        1
+      ],
+      [
+        17,
+        1
+      ],
+      [
+        18,
+        1
+      ],
+      [
+        19,
+        0
+      ],
+      [
+        20,
+        0
+      ],
+      [
+        21,
+        0
+      ],
+      [
+        22,
+        0
+      ],
+      [
+        23,
+        0
+      ],
+      [
+        24,
+        0
+      ],
+      [
+        25,
+        0
+      ],
+      [
+        26,
+        0
+      ],
+      [
+        27,
+        0
+      ],
+      [
+        28,
+        0
+      ],
+      [
+        29,
+        0
+      ],
+      [
+        30,
+        0
+      ],
+      [
+        31,
+        0
+      ],
+      [
+        32,
+        0
+      ],
+      [
+        33,
+        0
+      ],
+      [
+        34,
+        0
+      ],
+      [
+        35,
+        0
+      ]
+    ],
+    "circle_fit_top5_radius_error_px": [
+      [
+        20.75,
+        0.37206383450679936
+      ],
+      [
+        20.5,
+        0.38823437439173897
+      ],
+      [
+        21,
+        0.39055156717213796
+      ],
+      [
+        21.25,
+        0.40894547885533644
+      ],
+      [
+        20.25,
+        0.4349790046128422
+      ]
+    ],
+    "limit": "single screenshot edge fit, not a recovered corner-radius resource; integer edge and AA introduce bias"
+  },
+  "upper_media_visible_edges": [
+    {
+      "y": 80,
+      "left": 324,
+      "right_exclusive": 756,
+      "width": 432
+    },
+    {
+      "y": 160,
+      "left": 324,
+      "right_exclusive": 756,
+      "width": 432
+    },
+    {
+      "y": 240,
+      "left": 324,
+      "right_exclusive": 756,
+      "width": 432
+    },
+    {
+      "y": 400,
+      "left": 324,
+      "right_exclusive": 756,
+      "width": 432
+    },
+    {
+      "y": 500,
+      "left": 324,
+      "right_exclusive": 756,
+      "width": 432
+    }
+  ],
+  "upper_media_scale_fit": {
+    "candidates": [
+      {
+        "width_px": 420,
+        "scale": 0.3888888888888889,
+        "mean_abs_rgb_error": 73.94310265282584
+      },
+      {
+        "width_px": 422,
+        "scale": 0.3907407407407407,
+        "mean_abs_rgb_error": 74.14164946680427
+      },
+      {
+        "width_px": 424,
+        "scale": 0.3925925925925926,
+        "mean_abs_rgb_error": 74.32302781577748
+      },
+      {
+        "width_px": 426,
+        "scale": 0.39444444444444443,
+        "mean_abs_rgb_error": 74.3532670293551
+      },
+      {
+        "width_px": 440,
+        "scale": 0.4074074074074074,
+        "mean_abs_rgb_error": 74.68218954248366
+      },
+      {
+        "width_px": 438,
+        "scale": 0.40555555555555556,
+        "mean_abs_rgb_error": 74.76991729652755
+      },
+      {
+        "width_px": 442,
+        "scale": 0.40925925925925927,
+        "mean_abs_rgb_error": 74.85712003033258
+      },
+      {
+        "width_px": 428,
+        "scale": 0.3962962962962963,
+        "mean_abs_rgb_error": 74.87093757043047
+      },
+      {
+        "width_px": 444,
+        "scale": 0.4111111111111111,
+        "mean_abs_rgb_error": 74.89059739280327
+      },
+      {
+        "width_px": 436,
+        "scale": 0.40370370370370373,
+        "mean_abs_rgb_error": 74.96062458691341
+      },
+      {
+        "width_px": 430,
+        "scale": 0.39814814814814814,
+        "mean_abs_rgb_error": 75.23642016806723
+      },
+      {
+        "width_px": 434,
+        "scale": 0.40185185185185185,
+        "mean_abs_rgb_error": 75.24967597208375
+      },
+      {
+        "width_px": 432,
+        "scale": 0.4,
+        "mean_abs_rgb_error": 75.41388424688057
+      }
+    ],
+    "accepted": false,
+    "reason": "All candidates have high pixel error. Visible width ratio 432/1080 alone does not prove a uniform 0.4 transform of the pre-panel screenshot; media cropping or geometry must be treated separately."
+  },
+  "limits": [
+    "same emulator and dark appearance only",
+    "no OEM font, real touch, haptics, or display refresh validation",
+    "UI node bounds can be clipped; they are not automatically visible icon or actual touch-target extents"
+  ],
+  "_public_export": {
+    "projectionOnly": true,
+    "originalSha256": "7a6ef90b0aee4e3d285def1a62a85c66d3e475b317f326d25e0216aa7b24a290",
+    "rawImageryIncluded": false
+  }
+}

@@ -1,0 +1,532 @@
+{
+  "schemaVersion": 1,
+  "appVersion": "8.72.0",
+  "rawObservationArtifactCount": 200,
+  "sourceManifest": [
+    {
+      "id": "E140",
+      "selected": true,
+      "sourceHashes": {
+        "action": "41b1092f028a51616fc932d22153769bdbb3f07a396c5bbd65a41d5ddf777fc3",
+        "observation": "2ce0e97f7c3eeee19ac5563de0f4fcf574e91e50ee60bf5f2ebf94939a36340b",
+        "screenshot": "1b2668490385c0f5694d43a8ba20cb011ad75a98541f9607516de6266c982542",
+        "hierarchy": "d6326de3318ae7571861586fd931a2ea3ef46fdc06c53078976b5f8661912ed3"
+      }
+    },
+    {
+      "id": "E141",
+      "selected": true,
+      "sourceHashes": {
+        "action": "dcd873b5d6c4132b394369c6930e0fd9d2ddc1c7329c722e13f9d650f29b7788",
+        "observation": "c077a49fe302eedd171fbb641bba0f704d146b67eb9561dba6843e07dfd6fc45",
+        "screenshot": "f8d223ebaf209e0b2cc2178ef911661bb0dcd14073749c67773f63dac5662261",
+        "hierarchy": "8890d4af76744cd55ee161ce39a7a42d801066da4cdd0af045adb2ffd734495b",
+        "beforeScreenshot": "49487ebafb54f72b39ce66410f1a47e6e9d243609d13039cd275bf68d5428c4a",
+        "movie": "5a61336eb5dfc3719b8dbe57e269054e47e265bbeafd3de55facee8fffed5de1"
+      }
+    },
+    {
+      "id": "E142",
+      "selected": true,
+      "sourceHashes": {
+        "action": "153b5ca7b85a99e71123d47336a81a4f097d3df9524b169a00d2c395057e67a6",
+        "observation": "aedddd0a979c260138fb74a29123f634f815ec9511ad92712d030015b1df07fe",
+        "screenshot": "4c9ac85b8e0985d3626e253b4079e00a79001551836cc1bbec7b2ab6edd64100",
+        "hierarchy": "ba702b17991d9879d05ca871a7e35f992ff4c0477f18f3ba678685af76af5b4a",
+        "beforeScreenshot": "e01a02777478f34f1fa4a517ab3f07f215fe242858579d5e776b89844d240565",
+        "movie": "a5e5a94bc3fedf3d77fd9690edf04bf4f3b1d6d9b92c1e233a375bf4e4d373a1"
+      }
+    },
+    {
+      "id": "E143",
+      "selected": true,
+      "sourceHashes": {
+        "action": "ef4f2d2eec3e9daf2577426aa182368be5c92fd4b816530c8f2900547fd5b163",
+        "observation": "21ab7aeb6283f2b74cae5b53acfbe9e349999e6862ae4dc2e1ca67b30b8d5b9b",
+        "screenshot": "4c9ac85b8e0985d3626e253b4079e00a79001551836cc1bbec7b2ab6edd64100",
+        "hierarchy": "ba702b17991d9879d05ca871a7e35f992ff4c0477f18f3ba678685af76af5b4a",
+        "beforeScreenshot": "4c9ac85b8e0985d3626e253b4079e00a79001551836cc1bbec7b2ab6edd64100",
+        "movie": "883ec4a7ece30ed538c24c29f27550bc59f0f8ac07a6fea6dba414d559779a30"
+      }
+    },
+    {
+      "id": "E144",
+      "selected": false,
+      "sourceHashes": {
+        "action": "a2273edc38c594ad497aa7ee891040bbdb00b0c2895fd5cf20f68bbc7576c648",
+        "observation": "0491031e078f73e0240179aa68178d0a7f36d7d9e2a2a2cbd27928a209e70aa4",
+        "screenshot": "7ec6df0e31c045e8cacea5ffa8a6f3bb9cab86f8a4ee3c2ce76225361e1ebd29",
+        "hierarchy": "af898fb13c878bcca765d233ed956aadc3bdf1a63c521a8ecb4ab1b10b1f2650",
+        "beforeScreenshot": "defd43374ccc4463ea10613f8a99f50c521084c16107009626e021439713fa80",
+        "movie": "9ad2bee014955d95afe6a12f42050a8bb355aa473d7233a035fe9f06e9fa5fe9"
+      }
+    },
+    {
+      "id": "E145",
+      "selected": true,
+      "sourceHashes": {
+        "action": "6fddbea44a69fd0db67c30e1ddfe4a462e94b079c7215b726542b1607cc637e2",
+        "observation": "f41a563e3c78ab8ef035fb72cb0fffb9d5cdb13d0bcebdecc042d5663c482b3a",
+        "screenshot": "cfa5b2b1670d763d1714f326cf99b38db4027e3c476d9a10b9b7516960a95ec8",
+        "hierarchy": "ba702b17991d9879d05ca871a7e35f992ff4c0477f18f3ba678685af76af5b4a"
+      }
+    },
+    {
+      "id": "E146",
+      "selected": true,
+      "sourceHashes": {
+        "action": "351e17fbb56d8b9e25dd77f5c7310d24eeb6c26ac27fbfe00653c7768818d9e0",
+        "observation": "8fa14a274511c9ff924c03c40068bc84e414978fe5cbf88d255bbe72291b8875",
+        "screenshot": "cfa5b2b1670d763d1714f326cf99b38db4027e3c476d9a10b9b7516960a95ec8",
+        "hierarchy": "247fc072109d956ee06c87700b67fd2b02cfc926ce2ae0e4eeecb6813b8c874e",
+        "beforeScreenshot": "cfa5b2b1670d763d1714f326cf99b38db4027e3c476d9a10b9b7516960a95ec8",
+        "movie": "41f2d0064dc12fcea3042feb40dc21dbe82bc59f12688970a96650e84836de5a"
+      }
+    },
+    {
+      "id": "E147",
+      "selected": true,
+      "sourceHashes": {
+        "action": "8d34b7c068c6243ae46b761aa0778417a49c3ef6fa8ddcdb306c1e12b047a409",
+        "observation": "2c7767ec1aa0557994adf05c52eeab886b74e087e3e51a94fa4a8ad299f58a9d",
+        "screenshot": "e2946a413d5fa7fbf76abe5b4953a1865af89f4721470b1ae8b367a2674adaf7",
+        "hierarchy": "8890d4af76744cd55ee161ce39a7a42d801066da4cdd0af045adb2ffd734495b",
+        "beforeScreenshot": "cfa5b2b1670d763d1714f326cf99b38db4027e3c476d9a10b9b7516960a95ec8",
+        "movie": "56042f58aadeae21846e49f78ab51df84af134f0e4ede719bf0624c193b64e6e"
+      }
+    },
+    {
+      "id": "E148",
+      "selected": true,
+      "sourceHashes": {
+        "action": "e0fdf0d19b4c23b7458758b5e44c0d8a6f4e803d0957fab513e6df95df2f91ae",
+        "observation": "363d0723f3fa80b6864f467cf8b9ffbc0c614b51764ab1e864ef83ace8f3d531",
+        "screenshot": "2a238c8729301e6a4fa063c1fbcb5f151fb80856dc2057ab31bb749ea0efe42d",
+        "hierarchy": "8890d4af76744cd55ee161ce39a7a42d801066da4cdd0af045adb2ffd734495b",
+        "beforeScreenshot": "2a238c8729301e6a4fa063c1fbcb5f151fb80856dc2057ab31bb749ea0efe42d",
+        "movie": "f7b643ee501baf07378c78df4477834bb58b9cc19ab7d7b8f2a9c7dc397311ff"
+      }
+    },
+    {
+      "id": "E149",
+      "selected": true,
+      "sourceHashes": {
+        "action": "b61a5b1cf04881895d900137e25b9f709ca8620aec6f04aa57a1ade18349ef98",
+        "observation": "225ea003480890d136cc16c652315473c14e6c2aa5fbc46d7695474915108eea",
+        "screenshot": "0ad7372bffd31d77c974ccd02915e38da1913a0b2a86ec49afaf06ea891bbf50",
+        "hierarchy": "ceecd90ceb2e2551c220099cee0778a3c2012c22986992ad6a4e1cedcf4d4841",
+        "beforeScreenshot": "2a238c8729301e6a4fa063c1fbcb5f151fb80856dc2057ab31bb749ea0efe42d",
+        "movie": "5bc0fb4794bceef860d3928ecfca8d3f1b79a190491e79ce3e7efca4ce2b097d"
+      }
+    },
+    {
+      "id": "E150",
+      "selected": true,
+      "sourceHashes": {
+        "action": "c888eb4dff1537ecdce649f3247c6d9142927b21ecc95581047e7eedef257bca",
+        "observation": "ebff13ed8959245c4ecca45cede7ebd33d1745e5400f73447f4368723adb078f",
+        "screenshot": "a88dea0b5b76eaa3329b8d0531113a92265600a3cc2e0ef525fcc2eff70ce486",
+        "hierarchy": "92e7ae54fdfed2489facc8fb84b509751a487d3296cb254396fc37c2950a96db",
+        "beforeScreenshot": "0ad7372bffd31d77c974ccd02915e38da1913a0b2a86ec49afaf06ea891bbf50",
+        "movie": "5d056e9a9160f488e2cf22f0c56683b8d7b7ffbdb79e3d7b5ef064e256df9ee4"
+      }
+    },
+    {
+      "id": "E151",
+      "selected": true,
+      "sourceHashes": {
+        "action": "52d1b18e090fc4d1b0cc6f55ed524775eb3b599dc514225f19783ddddd9e1a14",
+        "observation": "d157229ecb71c4cf8cd1fe0fd6ff942000f94f0b5075b6e73e665136959f21a0",
+        "screenshot": "648f8e5cd3e00246f960497d78e3d0209f7a75646074c99039920efc1133d3c7",
+        "hierarchy": "92e7ae54fdfed2489facc8fb84b509751a487d3296cb254396fc37c2950a96db",
+        "beforeScreenshot": "648f8e5cd3e00246f960497d78e3d0209f7a75646074c99039920efc1133d3c7",
+        "movie": "b7891dae44d68f4a1d151ccefe0ad72fd89a3b04de2226a6ab362d96d7601887"
+      }
+    },
+    {
+      "id": "E152",
+      "selected": true,
+      "sourceHashes": {
+        "action": "47f205ac35cd6a8f94a9a200855688ce452d71e53160719979ed6707ecee6e3d",
+        "observation": "b71cd47865b4803873076d85c27ff205b5fa5828a7290bd7a984f71236b45865",
+        "screenshot": "f89c2c73e708f18ef781f9e3de105b9bf7f402a11056bae66cc1d24faf189c17",
+        "hierarchy": "ceecd90ceb2e2551c220099cee0778a3c2012c22986992ad6a4e1cedcf4d4841",
+        "beforeScreenshot": "99db058495033abe7681397c74be669ae3fe9686dabd812be14f20fc50f1cf94",
+        "movie": "76d67dac8e4384f176db5dca794aa7fb46227a9a1721e4bd79c0e0cf1f524ae3"
+      }
+    },
+    {
+      "id": "E153",
+      "selected": true,
+      "sourceHashes": {
+        "action": "5c495ba64a1b316ba1d7a60ee1b8036ff5bc1a7cbe60fbcef40c4f15200fa34e",
+        "observation": "3b23e3c36fe3d8fe7e855f6326ae09698ea7c9e33f8c0d2d72ecd359a2a62f26",
+        "screenshot": "be1e1c602953ab507db1fe7dd55f42bf5f255290387f65a60f62a95b1a679310",
+        "hierarchy": "6beea617bc052be9ed822636334d7dcfe0cd22117310cd2322b851458fe552c8",
+        "beforeScreenshot": "f89c2c73e708f18ef781f9e3de105b9bf7f402a11056bae66cc1d24faf189c17",
+        "movie": "c3483832c37d7fd95a6da0f968dfd6d6ff8a884eb5b2267a15d1228fd75b23a3"
+      }
+    },
+    {
+      "id": "E154",
+      "selected": true,
+      "sourceHashes": {
+        "action": "df7f3a568ad7995ac984ee4ab59f6b1c292438ee9184695fd5d2d9392c33ec60",
+        "observation": "b29518fc8a038e14b703123edbde3f955575931cfc5ec1033f9d668083454f06",
+        "screenshot": "3728bcfa1859093e277fa8360f4ff1223f9d248bf80cda1d375fe575fbbe2d22",
+        "hierarchy": "a1f047ba02448b1c859db867f65cddbded590a08f58e1fb8863635edaca2e749",
+        "beforeScreenshot": "be1e1c602953ab507db1fe7dd55f42bf5f255290387f65a60f62a95b1a679310",
+        "movie": "dde2b4e7dd7c40c257339a2d278f007adc3a34896f1575963456128d7ba6abd5"
+      }
+    },
+    {
+      "id": "E155",
+      "selected": true,
+      "sourceHashes": {
+        "action": "855d7c54a4760007b0eca561911aedd6c633fe43f181a5a9f3412ec8bcb5e20c",
+        "observation": "32db4addf1105b74d8cbfaea454478d311d879bcd4e6ca37efb438a5357aee3e",
+        "screenshot": "8302533d41821435b59b67ba4715a1d3cb871f9199dff06a783172d29cf87e64",
+        "hierarchy": "8890d4af76744cd55ee161ce39a7a42d801066da4cdd0af045adb2ffd734495b",
+        "beforeScreenshot": "3728bcfa1859093e277fa8360f4ff1223f9d248bf80cda1d375fe575fbbe2d22",
+        "movie": "743d5783df17ed4de7df46f552ac305122e1a041088f505a0129cd6e018ad90b"
+      }
+    },
+    {
+      "id": "E156",
+      "selected": true,
+      "sourceHashes": {
+        "action": "117fdf183f4b3a3bdabcaa56aba775f851bb05c6fc3b6d291a8b9f00d34d33f8",
+        "observation": "4091afa26de54879019d935c7182114dd2de57065c0c644ab4441a95a8d9f785",
+        "screenshot": "8825f02c198ce14908c0074abe447927d9d29dac0c722a0385ec67d42e03acf2",
+        "hierarchy": "a1f047ba02448b1c859db867f65cddbded590a08f58e1fb8863635edaca2e749",
+        "beforeScreenshot": "2bd073f7835d35147bfef09d0f046a62a462e0ef93c3075877c854afa27bd261",
+        "movie": "86df96504abb3a24dcd0733445569a54a3ae5dcb066f8e14a8ac579e65c613f4"
+      }
+    },
+    {
+      "id": "E157",
+      "selected": true,
+      "sourceHashes": {
+        "action": "273a8b0c3b04edfd1d8f507b177c224cbc77560693640d0878de8c39c1a39e4b",
+        "observation": "7ac912f15b37044ba761bfc3e8f0ed04daac9e061c14dda070fbf22f397ad590",
+        "screenshot": "97da5e931514cbbba6b1bf42dd71b82e57299805c9e257cd433c7830192aecf7",
+        "hierarchy": "ccc5b6aaf8a16e4c5465d7eb99a5e08cba7fe00a00f356cd37e1e0901781b006"
+      }
+    },
+    {
+      "id": "E158",
+      "selected": true,
+      "sourceHashes": {
+        "action": "af583810e690bcd304e7f5d54e4cc6ae6e34d44613eea153b1446ca6b674b629",
+        "observation": "31a5ae2a048e05c1432d5e7e0249ac77073ad24208095c4258cd977dedd69888",
+        "screenshot": "e12c78bcee5e8673e1d8b0c69e6d31ee7404f0a8b9b0f26358911780cf998643",
+        "hierarchy": "6047d621461e313111b161e7d44747345adc3b38bf96bebe9b539c87e3a792d7",
+        "beforeScreenshot": "8e381ed067c422dd513392b09fc7177c05bd2517e953bd5e85cd1ea98e685d9b",
+        "movie": "0e23715906185ef35b2d9d366a6758e823bbe2d93c5dc3a806388a957899b9b6"
+      }
+    },
+    {
+      "id": "E159",
+      "selected": true,
+      "sourceHashes": {
+        "action": "56e9b5ed337451074f937edf1efbe35d71e99be43143f00e0510eb3725f9c456",
+        "observation": "b3a5712d2e61cbd15eec72383ad819ec814451fd0779e5dafe227cad745f1518",
+        "screenshot": "a020e19c89b0583e1665053cd2ce17cba08dda00f799c1b34b6d12cbf0fb5b42",
+        "hierarchy": "21b2912519ff779474aa7d450f0b076502c188f0a52ee9fb5f6ce3d4d50321b8",
+        "beforeScreenshot": "a6152959d54fce24a9b7b4e09e88de71a4950f9f16dd94077b4c04dd96bf112c",
+        "movie": "1252d1311f06981e9d5850bbebf5b1fc9f8d0d9f9ec1fadf93652050e06ac8fc"
+      }
+    },
+    {
+      "id": "E160",
+      "selected": true,
+      "sourceHashes": {
+        "action": "42309c0eece3a009b64ef69624d930fd515e821bf889d065269507a8824bcafc",
+        "observation": "debabd7c455bb39983b6b24aaa9aff8a2c2c0afc69cb2bd5711e4ab60c011117",
+        "screenshot": "5fa4c63bcf8c39c8a5fcd9c7a8ff707504ac49aee0a7cf0b5284c220ab405f29",
+        "hierarchy": "6047d621461e313111b161e7d44747345adc3b38bf96bebe9b539c87e3a792d7",
+        "beforeScreenshot": "ad42b8a6a75a64fa0b5202813ee96bab6d1dc30ddfc9b9fc6b034b57f3625e03",
+        "movie": "08a0f639adcec08bd1177d0ad2f99204dccc355b67a0d4978637b0aea5145bca"
+      }
+    },
+    {
+      "id": "E161",
+      "selected": true,
+      "sourceHashes": {
+        "action": "5167c273ef7ebcfcbc9b8bcc854d3df643bdaca788c8ec0df671e91bffaf1eb6",
+        "observation": "0870471642e826deb40f5652342cc0dbe85880055709af346fd5e20ee9f3de3c",
+        "screenshot": "ca4d0e9bec1d8c33ea8fc0dc3a7fa1bd4c7402efe5406a81071bf69484af0757",
+        "hierarchy": "21b2912519ff779474aa7d450f0b076502c188f0a52ee9fb5f6ce3d4d50321b8",
+        "beforeScreenshot": "4624beb15e22fa6e5c5efceebf7a89a3e0f4a688e54fbd89658ce72171773cec",
+        "movie": "0386b9acab2388553a9375f338fca5c0d68224aae468cc1d19256924b8d16365"
+      }
+    },
+    {
+      "id": "E162",
+      "selected": true,
+      "sourceHashes": {
+        "action": "03b4b805cbfe35a4d9431785d0d914259a940a8192371b31d4d60473f268f03a",
+        "observation": "b04133fd51f9a187e693b0c17d83f47a264b7070d33ab33b9393735371384586",
+        "screenshot": "90b0faf60458b9e5783b2e1e2d0c232d82256c19d71f2cf512a6c81deb415166",
+        "hierarchy": "21b2912519ff779474aa7d450f0b076502c188f0a52ee9fb5f6ce3d4d50321b8",
+        "beforeScreenshot": "ca4d0e9bec1d8c33ea8fc0dc3a7fa1bd4c7402efe5406a81071bf69484af0757",
+        "movie": "9018ba5e6f946e8786cec59adeaa01112023a8fc97909333760e236338730540"
+      }
+    },
+    {
+      "id": "E163",
+      "selected": true,
+      "sourceHashes": {
+        "action": "415ecbf5761b300294eab3f98d85c83554e043d6e44d1754e1e9ac7115fb90b9",
+        "observation": "5061d4a141374db4c110cce1922359f7173d0f0398fdc59c0f445cbaf0a9618d",
+        "screenshot": "a96f14b5241cfd041dc6f5d7a8810f63347c8820652e5b686003cb0d0e4a071e",
+        "hierarchy": "6047d621461e313111b161e7d44747345adc3b38bf96bebe9b539c87e3a792d7",
+        "beforeScreenshot": "90b0faf60458b9e5783b2e1e2d0c232d82256c19d71f2cf512a6c81deb415166",
+        "movie": "8b7221934d69b8d68039a2046ea78580e56e2a7dc49d5cb4d6f517283a92ec1c"
+      }
+    },
+    {
+      "id": "E164",
+      "selected": true,
+      "sourceHashes": {
+        "action": "1612bc04eced17272cd5a5266d5d7c0e698286bb15db9edad2905e07e32b83eb",
+        "observation": "0fbaabb6ef081482d0cb3f4137b3a6f4e93093e7bfa292ae19631017dae6e3ce",
+        "screenshot": "53fe952cde940cba6217f1b746b21f326d379670f356e166c872899c57bb7ca1",
+        "hierarchy": "21b2912519ff779474aa7d450f0b076502c188f0a52ee9fb5f6ce3d4d50321b8"
+      }
+    },
+    {
+      "id": "E165",
+      "selected": true,
+      "sourceHashes": {
+        "action": "60ee47de160fc9ce25eb60e521f4c0707002217b7795bf18eabce7897a291d9d",
+        "observation": "c26c5b08860580b29db5b3a9207e301e572a768ff8bc8f33441bf99b8b329281",
+        "screenshot": "3250604a697bf823d67bffe116ac5c8504493b09e764b2402afb48a7771a8039",
+        "hierarchy": "78d3a94f6193d21622e03ad0657254357f157ac91e4b222ed5cee2dc019ad556",
+        "beforeScreenshot": "53fe952cde940cba6217f1b746b21f326d379670f356e166c872899c57bb7ca1",
+        "movie": "ccc29fc42626986efe35fff37495c28b680fb705fb0f182af93528bd3301c8ad"
+      }
+    },
+    {
+      "id": "E166",
+      "selected": true,
+      "sourceHashes": {
+        "action": "7f3265a4c1c104fd3cb3b8f087010dc5268b41d80bbf2bdcea94f15cb7f89d46",
+        "observation": "040917e13160d82f62a0b801582c741d006bc611fb1773a5ea0431141e2ab921",
+        "screenshot": "86654be458d476eaac2d868d1a1bbdae4f7481868c98d5a04605810a7c71092f",
+        "hierarchy": "78d3a94f6193d21622e03ad0657254357f157ac91e4b222ed5cee2dc019ad556",
+        "beforeScreenshot": "86654be458d476eaac2d868d1a1bbdae4f7481868c98d5a04605810a7c71092f",
+        "movie": "0a1a114f7cfda68791ae8082ab99c1568d9941eee6a50b9bb993636d6d8fa7a5"
+      }
+    },
+    {
+      "id": "E167",
+      "selected": true,
+      "sourceHashes": {
+        "action": "d51ff77bfdfd39328da77010038ede798b1981c741f6d84817c4551b530457bd",
+        "observation": "5796e0be0d1db67f9125ec1cd6db4f9efe5c61545bd9b09e92b9ba0c848219b8",
+        "screenshot": "7818cc458deee8b962f7318dfa8de004fb29d93cab696c4de5d9a812c7ce6654",
+        "hierarchy": "6047d621461e313111b161e7d44747345adc3b38bf96bebe9b539c87e3a792d7",
+        "beforeScreenshot": "4e85a2a34df72b10bfcd3129602212b0bfe48abaa0fec74f8843ef656ef4447f",
+        "movie": "88a276db792edab1e7ffb4258d5671426d7b296e36f197e93ef20c531f87bf6b"
+      }
+    },
+    {
+      "id": "E168",
+      "selected": true,
+      "sourceHashes": {
+        "action": "6a9927385ce360a730634a1e10e12169d3b98b092b1011394d2b23a2ebb1b0bd",
+        "observation": "2b20d13f5335a85e6ec5be96d727d43573b392e4b44dffcd2e36e581c5a5e006",
+        "screenshot": "5938e5c21be6f02cb38367d94b6d6d819551ec21575ff08efcfffadd22b43c45",
+        "hierarchy": "21b2912519ff779474aa7d450f0b076502c188f0a52ee9fb5f6ce3d4d50321b8"
+      }
+    },
+    {
+      "id": "E169",
+      "selected": true,
+      "sourceHashes": {
+        "action": "d4822860aff70c81ea53c5b507fda67c0fb0fc023086ccf29f9306a3562fe41d",
+        "observation": "464c04101bd7deb1ab893798789289ce72e8f7456b915b4be7936e1169c98dd7",
+        "screenshot": "b8cd63c5b15d8d62b39b10585c23a3b785ff2e8927eebe81ab0f5465a66138ce",
+        "hierarchy": "6047d621461e313111b161e7d44747345adc3b38bf96bebe9b539c87e3a792d7",
+        "beforeScreenshot": "5938e5c21be6f02cb38367d94b6d6d819551ec21575ff08efcfffadd22b43c45",
+        "movie": "25960f3417fc5c00e8c34abd5a60d82f29978cb3aad4d4ab1228474ed98f5386"
+      }
+    },
+    {
+      "id": "E170",
+      "selected": true,
+      "sourceHashes": {
+        "action": "9299157c58490779c18c4edf6304cf292d3c1c434a8c28ffefa542057afb0ab1",
+        "observation": "b0404899fe2d5710a850292af5c7751535d2cae7d32e93b7029cda88f425c6ca",
+        "screenshot": "aab700bef5aba2102ff5aa52d448a94e81d340489aa519a64d6e8ff49f836f9e",
+        "hierarchy": "de7a875a24c351bf890d329b47153ffcbb49d77d066d12b1fe283f9145d98ff3",
+        "beforeScreenshot": "4386ace000b3534897f66fe40171fab3efb6006b155332049af41a982f4560c7",
+        "movie": "c5cf9445792a065775044e4900c0a6f5cfcd942f3dfe34e5ab582f0a60e390ab"
+      }
+    },
+    {
+      "id": "E171",
+      "selected": true,
+      "sourceHashes": {
+        "action": "c4b1988e13a4dbcdc7f7f957d34714acdfcf88b53a1ad7b7dd2a0fe70c475b63",
+        "observation": "809932b5e10a03e6fe0c44c964ec22464262beb9483d471299ad4c4bf0d719e1",
+        "screenshot": "822ce531e23ee78a3e267a77288290b93be31988aaab234226c0f05ed9fd65d9",
+        "hierarchy": "b7cb9e45796b6a9917a5d871d412ed4da811067ffcd37580ca754d0856c150d2",
+        "beforeScreenshot": "6f206df25e304437c3bdc53bbe0624b40f76f3b9965d6f915693735f7e15e503",
+        "movie": "702e9b9ebcf329fecaca31eccdba2e2cae0efdb6e5651efdab462b0512e64d2d"
+      }
+    },
+    {
+      "id": "E172",
+      "selected": true,
+      "sourceHashes": {
+        "action": "ace6fb946f970bf35ebb1264865a9e0c59bd3014393a8df930036bebfe866e2f",
+        "observation": "ca37899c0ce8302d6d50c8abacb3070de18c59fa2c77f5e828a350178783fd80",
+        "screenshot": "15113a9be5ee6f395a31c6f6b4cd3f4de8d6986103969f57f3cee1b0aa75c9d5",
+        "hierarchy": "3ac923bc86c820d6537d595af5fb7dac8d4c878d87557751851a7fc9595c1a68",
+        "beforeScreenshot": "822ce531e23ee78a3e267a77288290b93be31988aaab234226c0f05ed9fd65d9",
+        "movie": "fde98a9160d8f29f2e6b752303a8faccf3dc92ec00ab5dc6ce8542cea485772f"
+      }
+    },
+    {
+      "id": "E173",
+      "selected": true,
+      "sourceHashes": {
+        "action": "0c123a43b0d30e33ae981278bf7dec87d6f9ce077785c0daeda5f4c61359fcd2",
+        "observation": "722d958afa44bfa43eff68e377ffdbd164fb51ed2281bada7cbb6408850e240b",
+        "screenshot": "54d5531a125466a78da28957e9ab892dbbd6f529587442554e2ec30aa3cfe305",
+        "hierarchy": "6047d621461e313111b161e7d44747345adc3b38bf96bebe9b539c87e3a792d7",
+        "beforeScreenshot": "8f456ca417d904bbbe5fcf632e269fc1075aa6cc3afd5e9ea6ff1177e38ef753",
+        "movie": "d8a8637f003595cf727a47ff4a91acb80a4b52d334681de17be6627a63a3869b"
+      }
+    },
+    {
+      "id": "E174",
+      "selected": true,
+      "sourceHashes": {
+        "action": "a75f3f4676cff72a437beb1760c8aae4ec9f9a8d368b4d55c272f157bd100525",
+        "observation": "c48fad7c896bf6455be48cd7f5f9fa41392a50a0c41f47aa87279f07c29da796",
+        "screenshot": "21250c189b5ea302cea28325371f6c7d4239c3432a84f7f415b52a592ff64cf3",
+        "hierarchy": "a1f047ba02448b1c859db867f65cddbded590a08f58e1fb8863635edaca2e749",
+        "beforeScreenshot": "82fa2b58608e8cc3719b9bc11989faf0a5252b48f600f7471ab1483308365b88",
+        "movie": "36e61b94df63918a45d489b980e2470a24d78164e9f9735c26841b2782800921"
+      }
+    }
+  ],
+  "environmentEvidence": [
+    {
+      "id": "ER701",
+      "evidenceId": "ev_e60d867ea0c035e3b7027e66ce0b752b85e175047e1a4de7bda23ac427852c3c",
+      "operation": "inspect_adb_package",
+      "projectionOnly": true,
+      "originalSha256": "ab5e3c7314803a3f11d05b517dd9030d58e549dbdaf5def0090d03b02e844d13",
+      "projection": {
+        "packageName": "com.xingin.xhs",
+        "versionName": "8.72.0",
+        "versionCode": 8720916
+      }
+    },
+    {
+      "id": "ER702",
+      "evidenceId": "ev_eca5e4d1ca92a9ea6c6b5f7ea73930e9ec7feff52d34d6efadd1656093842ca1",
+      "operation": "inspect_adb_device",
+      "projectionOnly": true,
+      "originalSha256": "f124a58461800c9b65569c20782a050c84eb8fb5b3f55be83b2c88eb883832ec",
+      "projection": {
+        "androidVersion": "15",
+        "sdk": "35",
+        "emulatorSource": "MuMu host and established task provenance; spoofed OEM model is not a physical-device claim"
+      }
+    },
+    {
+      "id": "ER703",
+      "evidenceId": "ev_9213541bf0be809943921702772975453640a1b4801165fb412e8261fc0833bd",
+      "operation": "inspect_adb_display",
+      "projectionOnly": true,
+      "originalSha256": "e6b8aaba47869e1e7f110d0ad7c086d25f46bc7619ab2e61eb80d95b52630873",
+      "projection": {
+        "physicalSize": {
+          "width": 1080,
+          "height": 1920
+        },
+        "overrideSize": null,
+        "physicalDensity": 280,
+        "overrideDensity": null
+      }
+    },
+    {
+      "id": "ER704",
+      "evidenceId": "ev_cb477d6aa430adf7f0e60b2f9772db6a2684674801feb8b0d7db09622b1bab2b",
+      "operation": "read_adb_setting",
+      "projectionOnly": true,
+      "originalSha256": "bd74686b955a3de100c83892cbd9a68d5a95e549109c50361f3beba0b47d4f5e",
+      "projection": {
+        "setting": "font_scale",
+        "value": "1.0"
+      }
+    }
+  ],
+  "files": [
+    {
+      "file": "00-本轮结果.md",
+      "publicSha256": "11cca91cb42d529dabafe7c2816088548a35ae0be1f303a277474be17fd93776"
+    },
+    {
+      "file": "01-图集手势与返回.md",
+      "publicSha256": "d8087211e7cd756761480372d85e7dd84182278f3c837b16e2ad5bb8d434106c"
+    },
+    {
+      "file": "02-评论面板与输入层.md",
+      "publicSha256": "09fa57ce2a1ff6c5115f1f3c8cee8188f00c3e0534b52783e8db74e42fbc88f1"
+    },
+    {
+      "file": "03-视觉参数与采样边界.md",
+      "publicSha256": "48f0aba944ec589a23ffdaece5455cfc1ced7ca696e6e7c389eaac463c9df5bd"
+    },
+    {
+      "file": "observations.json",
+      "publicSha256": "534532af9d24fb238a9504b4303b0a4ec6a27dfca7b04ca9c31810fed51a687c"
+    },
+    {
+      "file": "visual-analysis.json",
+      "publicSha256": "6dea9d9ac96c36fbd6d9a092e632a1710b8f934070f66e1037a7407c54aba69e"
+    },
+    {
+      "file": "video-analysis.json",
+      "publicSha256": "3d3f1ec7b11a288b6cc2ca060e692a6c486426876ab78a86af666aba1e6dcd0f"
+    }
+  ],
+  "producers": [
+    {
+      "file": "local-artifact/tools/emulator-step-round6.mjs",
+      "sha256": "2248cee63624998fd5f9197f77707ef4382b7ddb357c238b9deb65fc9895b5f0"
+    },
+    {
+      "file": "local-artifact/tools/research-batch.mjs",
+      "sha256": "aa84e4389e2e803ef45883e60de1b16faaddb200f14c03bae2ef2b47abbb9e94"
+    },
+    {
+      "file": "local-artifact/runtime-round7/analyze-visuals.py",
+      "sha256": "de2a0bd5d79469bed599e4effea6876c8cd47a5754b159b2e344f5d744adf0fc"
+    },
+    {
+      "file": "local-artifact/runtime-round7/export-round7.mjs",
+      "sha256": "9abb33e75090a0600e27ffd71d6b94909285d201a776ca31a671dc501e53e745"
+    },
+    {
+      "file": "local-artifact/runtime-round7/independent-gallery/audit_gallery.py",
+      "sha256": "875e0ad826cf27fd2194192c252529c2f65cc1f4f0bf82db979e8b0cd613c7be"
+    },
+    {
+      "file": "local-artifact/runtime-round7/independent-panel/audit_panel.py",
+      "sha256": "86d3ce52888f9913bf3790988a747a32437e55a3dc9e21c2b5639438646693cb"
+    }
+  ],
+  "independentReview": {
+    "gallerySourceSha256": "660b5903dd5118686bed8f257a58c9ad8e789aa845bad4f69fc3fc08e751f889",
+    "panelSourceSha256": "1f9b9db302eb50c73a657408bdfad94d5a1d9b3abba109b12b565aee9765272a",
+    "scope": "gallery five recordings, return card comparison, panel thirteen recordings; static visual fits and other eleven recordings by primary"
+  },
+  "noOriginalMediaOrUiIncluded": true
+}
