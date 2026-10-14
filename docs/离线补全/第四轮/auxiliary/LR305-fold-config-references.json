@@ -1,0 +1,77 @@
+{
+  "provider": "dexlib2-static-reference-scan-not-REA-Evidence",
+  "targets": [
+    "Lhc0/a;->d()I",
+    "Lk80/d;->T2()Lgb0/m;"
+  ],
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "matches": [
+    {
+      "method": "Lcom/xingin/alpha/chat/AlphaRoomMsgListAdapterV2;->r1(Ljq0/d;)Z",
+      "references": [
+        {
+          "targets": [
+            "Lk80/d;->T2()Lgb0/m;"
+          ],
+          "offset": 65,
+          "reference": "Lk80/d;->T2()Lgb0/m;",
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes21.dex",
+      "class": "Lcom/xingin/alpha/chat/AlphaRoomMsgListAdapterV2;"
+    },
+    {
+      "method": "Lcom/xingin/alpha/emcee/game/AlphaGameFloatCommentAdapter;->e0(Ljq0/d;)Z",
+      "references": [
+        {
+          "targets": [
+            "Lk80/d;->T2()Lgb0/m;"
+          ],
+          "offset": 65,
+          "reference": "Lk80/d;->T2()Lgb0/m;",
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes21.dex",
+      "class": "Lcom/xingin/alpha/emcee/game/AlphaGameFloatCommentAdapter;"
+    },
+    {
+      "method": "Lcom/xingin/alpha/chat/AlphaRoomMsgListAdapterV2$m;->invoke()Ljava/lang/Integer;",
+      "references": [
+        {
+          "targets": [
+            "Lhc0/a;->d()I"
+          ],
+          "offset": 20,
+          "reference": "Lhc0/a;->d()I",
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes21.dex",
+      "class": "Lcom/xingin/alpha/chat/AlphaRoomMsgListAdapterV2$m;"
+    },
+    {
+      "method": "Lk80/d$v6;->b()Lgb0/m;",
+      "references": [
+        {
+          "targets": [
+            "Lk80/d;->T2()Lgb0/m;"
+          ],
+          "offset": 20,
+          "reference": "Lk80/d;->T2()Lgb0/m;",
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes21.dex",
+      "class": "Lk80/d$v6;"
+    }
+  ],
+  "methodsExamined": 1368988,
+  "classesExamined": 249475,
+  "limitations": [
+    "Only encoded instruction references; reflection, native calls and runtime object types are not resolved.",
+    "A matching operand is a navigation clue, not proof the method executes in a visible page."
+  ],
+  "runtimeObserved": false
+}

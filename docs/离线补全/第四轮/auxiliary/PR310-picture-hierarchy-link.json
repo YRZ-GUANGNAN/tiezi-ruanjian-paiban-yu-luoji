@@ -1,0 +1,403 @@
+{
+  "provider": "dexlib2-bundled-with-jadx-auxiliary-not-REA-Evidence",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "selectors": [
+    "Lm7/e;::inflateHierarchy",
+    "Lcm/c;::h"
+  ],
+  "matches": [
+    {
+      "selector": "Lm7/e;::inflateHierarchy",
+      "dexEntry": "classes12.dex",
+      "method": "Lm7/e;->inflateHierarchy(Landroid/content/Context;Landroid/util/AttributeSet;)V",
+      "superclass": "Lm7/d;",
+      "bodyPresent": true,
+      "registerCount": 4,
+      "codeUnits": 39,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Lm8/b;->d()Z"
+        },
+        {
+          "offset": 3,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 4,
+          "opcode": "if-eqz",
+          "a": 0,
+          "target": 11
+        },
+        {
+          "offset": 6,
+          "opcode": "const-string",
+          "a": 0,
+          "reference": "\"GenericDraweeView#inflateHierarchy\""
+        },
+        {
+          "offset": 8,
+          "opcode": "invoke-static",
+          "registers": [
+            0
+          ],
+          "reference": "Lm8/b;->a(Ljava/lang/String;)V"
+        },
+        {
+          "offset": 11,
+          "opcode": "invoke-static",
+          "registers": [
+            2,
+            3
+          ],
+          "reference": "Lj7/c;->d(Landroid/content/Context;Landroid/util/AttributeSet;)Lj7/b;"
+        },
+        {
+          "offset": 14,
+          "opcode": "move-result-object",
+          "a": 2
+        },
+        {
+          "offset": 15,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2
+          ],
+          "reference": "Lj7/b;->f()F"
+        },
+        {
+          "offset": 18,
+          "opcode": "move-result",
+          "a": 3
+        },
+        {
+          "offset": 19,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1,
+            3
+          ],
+          "reference": "Lm7/d;->setAspectRatio(F)V"
+        },
+        {
+          "offset": 22,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2
+          ],
+          "reference": "Lj7/b;->a()Lj7/a;"
+        },
+        {
+          "offset": 25,
+          "opcode": "move-result-object",
+          "a": 2
+        },
+        {
+          "offset": 26,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1,
+            2
+          ],
+          "reference": "Lm7/d;->setHierarchy(Ll7/b;)V"
+        },
+        {
+          "offset": 29,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Lm8/b;->d()Z"
+        },
+        {
+          "offset": 32,
+          "opcode": "move-result",
+          "a": 2
+        },
+        {
+          "offset": 33,
+          "opcode": "if-eqz",
+          "a": 2,
+          "target": 38
+        },
+        {
+          "offset": 35,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Lm8/b;->b()V"
+        },
+        {
+          "offset": 38,
+          "opcode": "return-void"
+        }
+      ]
+    },
+    {
+      "selector": "Lcm/c;::h",
+      "dexEntry": "classes19.dex",
+      "method": "Lcm/c;->h(Lcom/facebook/drawee/view/SimpleDraweeView;Ljava/lang/String;IILkm/f;Ljava/lang/Object;Lkm/b;Lcom/facebook/imagepipeline/request/a$a;)V",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 16,
+      "codeUnits": 65,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "if-eqz",
+          "a": 8,
+          "target": 64
+        },
+        {
+          "offset": 2,
+          "opcode": "if-nez",
+          "a": 9,
+          "target": 5
+        },
+        {
+          "offset": 4,
+          "opcode": "goto",
+          "target": 64
+        },
+        {
+          "offset": 5,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Lq68/e;->q()Z"
+        },
+        {
+          "offset": 8,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 9,
+          "opcode": "if-eqz",
+          "a": 0,
+          "target": 47
+        },
+        {
+          "offset": 11,
+          "opcode": "const-string",
+          "a": 0,
+          "reference": "\"file://\""
+        },
+        {
+          "offset": 13,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 14,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "2",
+          "literalHex": "0x2"
+        },
+        {
+          "offset": 15,
+          "opcode": "const/4",
+          "a": 3,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 16,
+          "opcode": "invoke-static",
+          "registers": [
+            9,
+            0,
+            1,
+            2,
+            3
+          ],
+          "reference": "Lkotlin/text/StringsKt__StringsJVMKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z"
+        },
+        {
+          "offset": 19,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 20,
+          "opcode": "if-nez",
+          "a": 0,
+          "target": 47
+        },
+        {
+          "offset": 22,
+          "opcode": "const-string",
+          "a": 0,
+          "reference": "\"http\""
+        },
+        {
+          "offset": 24,
+          "opcode": "invoke-static",
+          "registers": [
+            9,
+            0,
+            1,
+            2,
+            3
+          ],
+          "reference": "Lkotlin/text/StringsKt__StringsJVMKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z"
+        },
+        {
+          "offset": 27,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 28,
+          "opcode": "if-nez",
+          "a": 0,
+          "target": 47
+        },
+        {
+          "offset": 30,
+          "opcode": "const-string",
+          "a": 0,
+          "reference": "\"res://\""
+        },
+        {
+          "offset": 32,
+          "opcode": "invoke-static",
+          "registers": [
+            9,
+            0,
+            1,
+            2,
+            3
+          ],
+          "reference": "Lkotlin/text/StringsKt__StringsJVMKt;->startsWith$default(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z"
+        },
+        {
+          "offset": 35,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 36,
+          "opcode": "if-eqz",
+          "a": 0,
+          "target": 39
+        },
+        {
+          "offset": 38,
+          "opcode": "goto",
+          "target": 47
+        },
+        {
+          "offset": 39,
+          "opcode": "new-instance",
+          "a": 8,
+          "reference": "Ljava/lang/RuntimeException;"
+        },
+        {
+          "offset": 41,
+          "opcode": "const-string",
+          "a": 9,
+          "reference": "\"uriString must start with http or file://\""
+        },
+        {
+          "offset": 43,
+          "opcode": "invoke-direct",
+          "registers": [
+            8,
+            9
+          ],
+          "reference": "Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V"
+        },
+        {
+          "offset": 46,
+          "opcode": "throw",
+          "a": 8
+        },
+        {
+          "offset": 47,
+          "opcode": "invoke-static",
+          "registers": [
+            9
+          ],
+          "reference": "Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;"
+        },
+        {
+          "offset": 50,
+          "opcode": "move-result-object",
+          "a": 1
+        },
+        {
+          "offset": 51,
+          "opcode": "if-nez",
+          "a": 1,
+          "target": 54
+        },
+        {
+          "offset": 53,
+          "opcode": "return-void"
+        },
+        {
+          "offset": 54,
+          "opcode": "move-object",
+          "a": 0,
+          "b": 8
+        },
+        {
+          "offset": 55,
+          "opcode": "move",
+          "a": 2,
+          "b": 10
+        },
+        {
+          "offset": 56,
+          "opcode": "move",
+          "a": 3,
+          "b": 11
+        },
+        {
+          "offset": 57,
+          "opcode": "move-object",
+          "a": 4,
+          "b": 12
+        },
+        {
+          "offset": 58,
+          "opcode": "move-object",
+          "a": 5,
+          "b": 13
+        },
+        {
+          "offset": 59,
+          "opcode": "move-object",
+          "a": 6,
+          "b": 14
+        },
+        {
+          "offset": 60,
+          "opcode": "move-object",
+          "a": 7,
+          "b": 15
+        },
+        {
+          "offset": 61,
+          "opcode": "invoke-static/range",
+          "startRegister": 0,
+          "argumentRegisters": 8,
+          "reference": "Lcm/c;->g(Lcom/facebook/drawee/view/SimpleDraweeView;Landroid/net/Uri;IILkm/f;Ljava/lang/Object;Lkm/b;Lcom/facebook/imagepipeline/request/a$a;)V"
+        },
+        {
+          "offset": 64,
+          "opcode": "return-void"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Raw static instructions, not observed execution or a complete control-flow proof.",
+    "Offsets and branch targets are relative DEX code units, not APK byte offsets.",
+    "Hot patches, remote config, runtime values and resource selection are not resolved."
+  ]
+}

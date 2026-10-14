@@ -1,0 +1,33 @@
+    public final void o4(CommentPictureInfo commentPictureInfo, Object obj, rg3.a aVar) {
+        cm.g.b tVar;
+        Boolean boolC;
+        Boolean boolC2;
+        if (PatchProxy.proxyVoid3Para(commentPictureInfo, obj, aVar, this, CommentSinglePictureView.class, 250082)) {
+            return;
+        }
+        String string = toString();
+        String strK4 = k4(commentPictureInfo);
+        aVar.b(string, strK4);
+        this.f87488d = b.LOADING;
+        x.b("CommentConsumerList", "CommentSinglePictureView Load " + commentPictureInfo + " picUrl " + strK4);
+        f fVar = new f(commentPictureInfo, strK4, this, aVar, string);
+        if (wg3.f.f343557a.z()) {
+            this.f87490f = fVar;
+            tVar = new t(strK4, fVar);
+        } else {
+            tVar = fVar;
+        }
+        int i100 = mp5.h.D4;
+        SimpleDraweeView simpleDraweeView = (SimpleDraweeView) _$_findCachedViewById(i100);
+        CommentPictureTempInfo commentPictureTempInfoD = commentPictureInfo.d();
+        r4(simpleDraweeView, commentPictureInfo, commentPictureTempInfoD != null ? commentPictureTempInfoD.a() : 1);
+        SimpleDraweeView simpleDraweeView2 = (SimpleDraweeView) _$_findCachedViewById(i100);
+        int i101 = ((SimpleDraweeView) _$_findCachedViewById(i100)).getLayoutParams().width;
+        int i102 = ((SimpleDraweeView) _$_findCachedViewById(i100)).getLayoutParams().height;
+        CommentPictureTempInfo commentPictureTempInfoD2 = commentPictureInfo.d();
+        boolean zBooleanValue = (commentPictureTempInfoD2 == null || (boolC2 = commentPictureTempInfoD2.c()) == null) ? false : boolC2.booleanValue();
+        CommentPictureTempInfo commentPictureTempInfoD3 = commentPictureInfo.d();
+        cm.c.h(simpleDraweeView2, strK4, i101, i102, (72 & 8) != 0 ? km.f.CENTER_CROP : null, (72 & 16) != 0 ? null : obj, (72 & 32) != 0 ? new km.b(null, 0, 0, 0, 0.0f, false, null, null, false, false, false, false, false, 7679, null) : new km.b(null, 0, 0, 0, 0.0f, (commentPictureTempInfoD3 == null || (boolC = commentPictureTempInfoD3.c()) == null) ? false : boolC.booleanValue(), tVar, null, false, false, zBooleanValue, false, false, 7071, null), (72 & 64) != 0 ? com.facebook.imagepipeline.request.a.EnumC0870a.DEFAULT : null);
+        ((SimpleDraweeView) _$_findCachedViewById(i100)).getHierarchy().z(mp5.g.f238556J);
+        ((SimpleDraweeView) _$_findCachedViewById(i100)).getHierarchy().I(new e());
+    }

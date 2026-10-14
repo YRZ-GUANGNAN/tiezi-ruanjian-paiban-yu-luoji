@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_08b09b5bae9907969d9899fbcccd0a33eba4d24746dd8b82eb03f6ee5274fbbe",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "ch6.d",
+    "method_name": "d2"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "ch6.d"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":18,\"inner_classes\":[\"ch6.d.a\",\"ch6.d.b\",\"ch6.d.c\",\"ch6.d.C0721d\",\"ch6.d.e\",\"ch6.d.f\",\"ch6.d.g\",\"ch6.d.h\",\"ch6.d.i\",\"ch6.d.j\",\"ch6.d.k\",\"ch6.d.l\",\"ch6.d.m\",\"ch6.d.n\",\"ch6.d.o\",\"ch6.d.p\",\"ch6.d.q\",\"ch6.d.r\"],\"name\":\"d\",\"full_name\":\"ch6.d\",\"field_count\":10,\"fields\":[{\"def_pos\":0,\"name\":\"f30483d\",\"type\":\"uc9.d<java.lang.Object>\"},{\"def_pos\":0,\"name\":\"f30484e\",\"type\":\"uc9.b<java.lang.Object>\"},{\"def_pos\":0,\"name\":\"f30485f\",\"type\":\"d86.f\"},{\"def_pos\":0,\"name\":\"f30486g\",\"type\":\"ni4.x\"},{\"def_pos\":0,\"name\":\"f30487h\",\"type\":\"pq5.w0\"},{\"def_pos\":0,\"name\":\"f30488l\",\"type\":\"ug4.z\"},{\"def_pos\":0,\"name\":\"f30489m\",\"type\":\"uc9.b<com.xingin.entities.notedetail.BulletCommentLead>\"},{\"def_pos\":0,\"name\":\"f30490n\",\"type\":\"kotlin.jvm.functions.Function0<java.lang.Integer>\"},{\"def_pos\":0,\"name\":\"f30491o\",\"type\":\"qh6.e\"},{\"def_pos\":0,\"name\":\"f30492p\",\"type\":\"java.lang.Integer\"}],\"methods\":[{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(): void\"},{\"is_constructor\":false,\"name\":\"G1\",\"def_pos\":0,\"signature\":\"G1(ch6.d, java.lang.String): android.text.SpannableStringBuilder\"},{\"is_constructor\":false,\"name\":\"I1\",\"def_pos\":0,\"signature\":\"I1(ch6.d): void\"},{\"is_constructor\":false,\"name\":\"K1\",\"def_pos\":0,\"signature\":\"K1(ch6.d): qh6.e\"},{\"is_constructor\":false,\"name\":\"L1\",\"def_pos\":0,\"signature\":\"L1(ch6.d, qh6.e, boolean, boolean): tg6.f\"},{\"is_constructor\":false,\"name\":\"M1\",\"def_pos\":0,\"signature\":\"M1(ch6.d): kotlin.jvm.functions.Function0\"},{\"is_constructor\":false,\"name\":\"N1\",\"def_pos\":0,\"signature\":\"N1(ch6.d): void\"},{\"is_constructor\":false,\"name\":\"O1\",\"def_pos\":0,\"signature\":\"O1(ch6.d, qh6.e): void\"},{\"is_constructor\":false,\"name\":\"P1\",\"def_pos\":0,\"signature\":\"P1(ch6.d, kotlin.jvm.functions.Function0): void\"},{\"is_constructor\":false,\"name\":\"Q1\",\"def_pos\":0,\"signature\":\"Q1(ch6.d, java.lang.Integer): void\"},{\"is_constructor\":false,\"name\":\"R1\",\"def_pos\":0,\"signature\":\"R1(): void\"},{\"is_constructor\":false,\"name\":\"S1\",\"def_pos\":0,\"signature\":\"S1(): void\"},{\"is_constructor\":false,\"name\":\"T1\",\"def_pos\":0,\"signature\":\"T1(): void\"},{\"is_constructor\":false,\"name\":\"U1\",\"def_pos\":0,\"signature\":\"U1(): ug4.z\"},{\"is_constructor\":false,\"name\":\"V1\",\"def_pos\":0,\"signature\":\"V1(): uc9.b<java.lang.Object>\"},{\"is_constructor\":false,\"name\":\"X1\",\"def_pos\":0,\"signature\":\"X1(): uc9.d<java.lang.Object>\"},{\"is_constructor\":false,\"name\":\"Y1\",\"def_pos\":0,\"signature\":\"Y1(): uc9.b<com.xingin.entities.notedetail.BulletCommentLead>\"},{\"is_constructor\":false,\"name\":\"Z1\",\"def_pos\":0,\"signature\":\"Z1(): pq5.w0\"},{\"is_constructor\":false,\"name\":\"a2\",\"def_pos\":0,\"signature\":\"a2(): ni4.x\"},{\"is_constructor\":false,\"name\":\"c2\",\"def_pos\":0,\"signature\":\"c2(): d86.f\"},{\"is_constructor\":false,\"name\":\"d2\",\"def_pos\":0,\"signature\":\"d2(qh6.e, boolean, boolean): tg6.f\"},{\"is_constructor\":false,\"name\":\"e2\",\"def_pos\":0,\"signature\":\"e2(): void\"},{\"is_constructor\":false,\"name\":\"f2\",\"def_pos\":0,\"signature\":\"f2(ch6.d, java.lang.String): android.text.SpannableStringBuilder\"},{\"is_constructor\":false,\"name\":\"onAttach\",\"def_pos\":0,\"signature\":\"onAttach(android.os.Bundle): void\"}],\"method_count\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "ch6.d",
+          "method_name": "d2",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_index\":0,\"fell_back\":false,\"body\":\"    /* JADX WARN: Multi-variable type inference failed */\\r\\n    public final tg6.f d2(qh6.e eVar, boolean z100, boolean z101) {\\r\\n        Triple triple;\\r\\n        CommentPictureInfo commentPictureInfo;\\r\\n        String strB;\\r\\n        String strD;\\r\\n        String strF;\\r\\n        CommentPictureInfo commentPictureInfo2;\\r\\n        PatchProxyResult patchProxyResultProxy3Para = PatchProxy.proxy3Para(eVar, new Boolean(z100), new Boolean(z101), this, d.class, 387430);\\r\\n        if (patchProxyResultProxy3Para.isSupported) {\\r\\n            return (tg6.f) patchProxyResultProxy3Para.result;\\r\\n        }\\r\\n        String strF2 = eVar.f();\\r\\n        String strJ = u1.f323016a.Z1().j();\\r\\n        Function0<Integer> function0 = this.f30490n;\\r\\n        if (function0 == null) {\\r\\n            function0 = null;\\r\\n        }\\r\\n        int iIntValue = function0.invoke().intValue();\\r\\n        String strN = eVar.m().n();\\r\\n        String str = strN == null ? \\\"\\\" : strN;\\r\\n        int iG = eVar.m().g();\\r\\n        int iS = eVar.m().s();\\r\\n        List<CommentPictureInfo> listV = eVar.m().v();\\r\\n        String strA = (listV == null || (commentPictureInfo2 = (CommentPictureInfo) CollectionsKt___CollectionsKt.getOrNull(listV, 0)) == null) ? null : commentPictureInfo2.a();\\r\\n        String str2 = strA == null ? \\\"\\\" : strA;\\r\\n        CommentCommentUser commentCommentUserA0 = eVar.m().a0();\\r\\n        String str3 = (commentCommentUserA0 == null || (strF = commentCommentUserA0.f()) == null) ? \\\"\\\" : strF;\\r\\n        CommentCommentUser commentCommentUserA1 = eVar.m().a0();\\r\\n        String str4 = (commentCommentUserA1 == null || (strD = commentCommentUserA1.d()) == null) ? \\\"\\\" : strD;\\r\\n        CommentCommentUser commentCommentUserA2 = eVar.m().a0();\\r\\n        String str5 = (commentCommentUserA2 == null || (strB = commentCommentUserA2.b()) == null) ? \\\"\\\" : strB;\\r\\n        boolean zAreEqual = Intrinsics.areEqual(strF2, strJ);\\r\\n        CommentCommentUser commentCommentUserA3 = eVar.m().a0();\\r\\n        String strF3 = commentCommentUserA3 != null ? commentCommentUserA3.f() : null;\\r\\n        if (strF3 == null) {\\r\\n            strF3 = \\\"\\\";\\r\\n        }\\r\\n        boolean zAreEqual2 = Intrinsics.areEqual(strJ, strF3);\\r\\n        sr7.g gVar = new sr7.g((Context) XYUtilsCenter.f(), false);\\r\\n        gVar.B(new ur7.n());\\r\\n        String string = gVar.s(XYUtilsCenter.f(), eVar.m().h()).toString();\\r\\n        SpannableStringBuilder spannableStringBuilderJ0 = ((ch6.h) getPresenter()).j0(eVar.m());\\r\\n        boolean zI = eVar.i();\\r\\n        boolean z102 = eVar.m().S() != null;\\r\\n        String strA2 = z101 ? w.a(eVar.m()) : \\\"\\\";\\r\\n        Integer numC = eVar.m().C();\\r\\n        boolean zA = zf4.d.a(eVar.m());\\r\\n        CommentPictureInfo commentPictureInfoD = zf4.d.d(eVar.m(), 0, 1, null);\\r\\n        if (commentPictureInfoD != null) {\\r\\n            String strJ2 = commentPictureInfoD.j();\\r\\n            if (strJ2 == null) {\\r\\n                strJ2 = \\\"\\\";\\r\\n            }\\r\\n            triple = new Triple(strJ2, Integer.valueOf(commentPictureInfoD.getWidth()), Integer.valueOf(commentPictureInfoD.getHeight()));\\r\\n        } else {\\r\\n            triple = null;\\r\\n        }\\r\\n        CommentPictureInfo commentPictureInfoD2 = zf4.d.d(eVar.m(), 0, 1, null);\\r\\n        CommentMemeInfo commentMemeInfoH = commentPictureInfoD2 != null ? commentPictureInfoD2.h() : null;\\r\\n        CommentPictureInfo commentPictureInfoD3 = zf4.d.d(eVar.m(), 0, 1, null);\\r\\n        CommentStickerInfo commentStickerInfoK = commentPictureInfoD3 != null ? commentPictureInfoD3.k() : null;\\r\\n        int iS2 = eVar.m().s();\\r\\n        String strO0 = eVar.m().o0();\\r\\n        List<CommentPictureInfo> listV2 = eVar.m().v();\\r\\n        return new tg6.f(iIntValue, iG, iS, str2, str, str3, str4, str5, zAreEqual, zAreEqual2, z100, string, spannableStringBuilderJ0, zI, false, z102, strA2, numC, zA, triple, 0L, commentMemeInfoH, commentStickerInfoK, Integer.valueOf(iS2), strO0, (listV2 == null || (commentPictureInfo = (CommentPictureInfo) CollectionsKt___CollectionsKt.getOrNull(listV2, 0)) == null || !commentPictureInfo.n()) ? false : true, eVar.m(), 1064960, null);\\r\\n    }\",\"overload_count\":1,\"method_name\":\"d2\",\"markers\":[],\"mode\":\"java\",\"full_name\":\"ch6.d.d2\",\"class_name\":\"ch6.d\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "ch6.d",
+    "method": {
+      "name": "d2",
+      "reported_signature": "d2(qh6.e, boolean, boolean): tg6.f",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Multi-variable type inference failed */\r\n    public final tg6.f d2(qh6.e eVar, boolean z100, boolean z101) {\r\n        Triple triple;\r\n        CommentPictureInfo commentPictureInfo;\r\n        String strB;\r\n        String strD;\r\n        String strF;\r\n        CommentPictureInfo commentPictureInfo2;\r\n        PatchProxyResult patchProxyResultProxy3Para = PatchProxy.proxy3Para(eVar, new Boolean(z100), new Boolean(z101), this, d.class, 387430);\r\n        if (patchProxyResultProxy3Para.isSupported) {\r\n            return (tg6.f) patchProxyResultProxy3Para.result;\r\n        }\r\n        String strF2 = eVar.f();\r\n        String strJ = u1.f323016a.Z1().j();\r\n        Function0<Integer> function0 = this.f30490n;\r\n        if (function0 == null) {\r\n            function0 = null;\r\n        }\r\n        int iIntValue = function0.invoke().intValue();\r\n        String strN = eVar.m().n();\r\n        String str = strN == null ? \"\" : strN;\r\n        int iG = eVar.m().g();\r\n        int iS = eVar.m().s();\r\n        List<CommentPictureInfo> listV = eVar.m().v();\r\n        String strA = (listV == null || (commentPictureInfo2 = (CommentPictureInfo) CollectionsKt___CollectionsKt.getOrNull(listV, 0)) == null) ? null : commentPictureInfo2.a();\r\n        String str2 = strA == null ? \"\" : strA;\r\n        CommentCommentUser commentCommentUserA0 = eVar.m().a0();\r\n        String str3 = (commentCommentUserA0 == null || (strF = commentCommentUserA0.f()) == null) ? \"\" : strF;\r\n        CommentCommentUser commentCommentUserA1 = eVar.m().a0();\r\n        String str4 = (commentCommentUserA1 == null || (strD = commentCommentUserA1.d()) == null) ? \"\" : strD;\r\n        CommentCommentUser commentCommentUserA2 = eVar.m().a0();\r\n        String str5 = (commentCommentUserA2 == null || (strB = commentCommentUserA2.b()) == null) ? \"\" : strB;\r\n        boolean zAreEqual = Intrinsics.areEqual(strF2, strJ);\r\n        CommentCommentUser commentCommentUserA3 = eVar.m().a0();\r\n        String strF3 = commentCommentUserA3 != null ? commentCommentUserA3.f() : null;\r\n        if (strF3 == null) {\r\n            strF3 = \"\";\r\n        }\r\n        boolean zAreEqual2 = Intrinsics.areEqual(strJ, strF3);\r\n        sr7.g gVar = new sr7.g((Context) XYUtilsCenter.f(), false);\r\n        gVar.B(new ur7.n());\r\n        String string = gVar.s(XYUtilsCenter.f(), eVar.m().h()).toString();\r\n        SpannableStringBuilder spannableStringBuilderJ0 = ((ch6.h) getPresenter()).j0(eVar.m());\r\n        boolean zI = eVar.i();\r\n        boolean z102 = eVar.m().S() != null;\r\n        String strA2 = z101 ? w.a(eVar.m()) : \"\";\r\n        Integer numC = eVar.m().C();\r\n        boolean zA = zf4.d.a(eVar.m());\r\n        CommentPictureInfo commentPictureInfoD = zf4.d.d(eVar.m(), 0, 1, null);\r\n        if (commentPictureInfoD != null) {\r\n            String strJ2 = commentPictureInfoD.j();\r\n            if (strJ2 == null) {\r\n                strJ2 = \"\";\r\n            }\r\n            triple = new Triple(strJ2, Integer.valueOf(commentPictureInfoD.getWidth()), Integer.valueOf(commentPictureInfoD.getHeight()));\r\n        } else {\r\n            triple = null;\r\n        }\r\n        CommentPictureInfo commentPictureInfoD2 = zf4.d.d(eVar.m(), 0, 1, null);\r\n        CommentMemeInfo commentMemeInfoH = commentPictureInfoD2 != null ? commentPictureInfoD2.h() : null;\r\n        CommentPictureInfo commentPictureInfoD3 = zf4.d.d(eVar.m(), 0, 1, null);\r\n        CommentStickerInfo commentStickerInfoK = commentPictureInfoD3 != null ? commentPictureInfoD3.k() : null;\r\n        int iS2 = eVar.m().s();\r\n        String strO0 = eVar.m().o0();\r\n        List<CommentPictureInfo> listV2 = eVar.m().v();\r\n        return new tg6.f(iIntValue, iG, iS, str2, str, str3, str4, str5, zAreEqual, zAreEqual2, z100, string, spannableStringBuilderJ0, zI, false, z102, strA2, numC, zA, triple, 0L, commentMemeInfoH, commentStickerInfoK, Integer.valueOf(iS2), strO0, (listV2 == null || (commentPictureInfo = (CommentPictureInfo) CollectionsKt___CollectionsKt.getOrNull(listV2, 0)) == null || !commentPictureInfo.n()) ? false : true, eVar.m(), 1064960, null);\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "ffb926f2861d55e5951405a4fd98e71b3737fd1979bcb4fb6c87cebd64b00b61",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

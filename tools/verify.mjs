@@ -176,6 +176,70 @@ if(fs.existsSync(round3Root)){
   for(const o of comments.comparison.observations)check(o.kind==='reused-prior-device-observation'&&o.containsUserText===false&&Object.values(o.sourceHashes).every(h=>/^[a-f0-9]{64}$/.test(h)),'第三轮旧观察来源：'+o.id);
   round3Summary={staticEvidence:index.records.length,auxiliary:index.auxiliary.length,fontEntriesCrossChecked:111,reusedObservations:2,newRuntimeObservations:0};
 }
+const round4Root=path.join(offlineRoot,'第四轮');
+let round4Summary=null;
+if(fs.existsSync(round4Root)){
+  const index=read(path.join(round4Root,'evidence-index.json'));
+  const methods=index.records.filter(r=>r.operation==='inspect_android_method');
+  check(index.appVersion==='8.72.0'&&index.records.length===37&&new Set(index.records.map(r=>r.id)).size===37,'第四轮精选证据版本或数量');
+  check(methods.length===30&&methods.filter(r=>r.bodyStatus==='available').length===28&&methods.filter(r=>r.bodyStatus==='not_available').length===2,'第四轮方法状态');
+  check(index.counts.reaEvidence===37&&index.counts.methodQueries===30&&index.counts.availableBodies===28&&index.counts.unavailableBodies===2,'第四轮索引方法计数');
+  check(index.auxiliary.length===18&&index.derived.length===2&&index.counts.auxiliary===18&&index.counts.derived===2,'第四轮辅助和派生计数');
+  check(index.counts.newRuntimeObservations===0&&index.counts.reusedRawRuntimeObservations===0,'第四轮运行边界');
+  check(index.excludedLocalArtifacts.length===33&&index.counts.excludedLocalArtifacts===33,'第四轮排除记录计数');
+  for(const r of index.records){
+    const file=path.join(round4Root,r.file),ev=read(file);
+    check(digest(fs.readFileSync(file))===r.publicSha256,'第四轮证据摘要：'+r.id);
+    check(ev.evidence_id===r.evidenceId&&ev.subject.digest.sha256===index.apkSha256&&r.artifactSha256===index.apkSha256,'第四轮证据身份：'+r.id);
+    check(/^[a-f0-9]{64}$/.test(r.originalSha256)&&ev._public_export?.originalFileSha256===r.originalSha256,'第四轮原件摘要：'+r.id);
+    if(r.sourceFile){
+      const source=fs.readFileSync(path.join(round4Root,r.sourceFile));
+      const normalized=ev.normalized_result.source.text.replace(/\r\n/g,'\n').replace(/[ \t]+$/gm,'').replace(/^[ \t]+/gm,i=>i.replace(/\t/g,'    '));
+      check(digest(source)===r.sourceSha256&&source.toString('utf8')===normalized,'第四轮方法文本：'+r.id);
+      check(r.bodyStatus===ev.normalized_result.body_status&&r.sourceStatus===ev.normalized_result.source.status,'第四轮方法来源状态：'+r.id);
+    }
+  }
+  for(const r of index.auxiliary){
+    const file=path.join(round4Root,r.file),a=read(file);
+    check(digest(fs.readFileSync(file))===r.publicSha256&&/^[a-f0-9]{64}$/.test(r.originalSha256),'第四轮辅助摘要：'+r.id);
+    check(r.isReaEvidence===false&&r.runtimeObserved===false&&r.apkSha256===index.apkSha256&&a.apkSha256===index.apkSha256&&a.runtimeObserved===false,'第四轮辅助来源：'+r.id);
+  }
+  const ids=new Set(index.records.map(r=>r.id.slice(0,4)));
+  for(const r of index.derived){
+    const file=path.join(round4Root,r.file),data=read(file);
+    check(digest(fs.readFileSync(file))===r.publicSha256&&/^[a-f0-9]{64}$/.test(r.originalSha256),'第四轮派生摘要：'+r.file);
+    check(data.appVersion===index.appVersion&&data.apkSha256===index.apkSha256&&data.runtimeObserved===false&&data.newRuntimeObservations===0,'第四轮派生边界：'+r.file);
+    check(data.evidenceRefs.every(id=>ids.has(id)),'第四轮派生证据引用：'+r.file);
+    for(const source of data.sources){
+      const a=index.auxiliary.find(a=>a.file===source.file);
+      check(a&&a.publicSha256===source.publicSha256&&a.originalSha256===source.originalSha256,'第四轮派生来源：'+source.file);
+    }
+  }
+  const text=read(path.join(round4Root,'comment-text-rules.json'));
+  check(text.width.cachedBranch.primaryDeductionDp===110.5&&text.width.cachedBranch.replyDeductionDp===135.5&&text.width.cachedBranch.notEquivalentToMinimumClamp===true&&text.width.runtimeBranchConfirmed===false,'第四轮正文宽度条件');
+  check(JSON.stringify(text.width.examples.map(e=>[e.primaryMeasurementWidthPx,e.replyMeasurementWidthPx]))===JSON.stringify([[777,708],[17,100]]),'第四轮宽度算例');
+  check(text.longComment.thresholdCharacters===null&&text.longComment.thresholdLines===null&&text.longComment.expandStateRestoration==='unresolved'&&text.longComment.runtimeLongCommentScenarioPerformed===false,'第四轮长评论未知边界');
+  const refs=read(path.join(round4Root,'auxiliary/LR302-text-and-expand-references.json'));
+  const consumers=refs.matches.filter(m=>m.references.some(r=>r.resourceReference||r.literalResourceId));
+  check(consumers.length===1&&consumers[0].class==='Lcom/xingin/matrix/detail/item/video/content/VideoNoteContentView;','第四轮展开全文资源归属');
+  const pic=read(path.join(round4Root,'comment-picture-rules.json'));
+  check(pic.onlyFirstPicture.configKey==='andr_cmt_pad_multi_opt_switch'&&pic.onlyFirstPicture.callDefault===1&&pic.onlyFirstPicture.currentValueKnown===false,'第四轮首图配置');
+  check(pic.multiPictureWidth.source==='WindowManager.getDefaultDisplay().getRealSize(Point).x'&&pic.multiPictureWidth.configurationChangeRefreshObserved===false,'第四轮图片宽度与刷新边界');
+  check(pic.image.layoutDefault.cornerRadiusDp===6&&pic.badge.background.cornerRadiusDp===16&&pic.badge.background.fillArgb==='#80303034'&&pic.badge.layoutDefault.textSizeSp===10,'第四轮图片与角标样式');
+  check(pic.badge.layoutDefault.marginEndDp===6&&pic.badge.layoutDefault.marginBottomDp===6&&pic.badge.layoutDefault.marginRightDp===undefined,'第四轮角标逻辑末端外距');
+  check(pic.image.renderRequests.scale==='CENTER_CROP'&&pic.image.renderRequests.defaultMask===72&&pic.image.actualCropPixelsObserved===false&&pic.image.actualCornerPixelsObserved===false,'第四轮裁切边界');
+  check(pic.checks.layoutAttributePairsChecked===4&&pic.image.layoutChecks.length===4,'第四轮图片布局对照数量');
+  const rawLayouts=read(path.join(round4Root,'auxiliary/PR303-picture-layout-attributes.json'));
+  for(const layout of pic.image.layoutChecks){
+    const raw=rawLayouts.matches.find(m=>m.entry===layout.entry),view=raw?.nodes.find(n=>n.element==='com.facebook.drawee.view.SimpleDraweeView');
+    check(raw?.entrySha256===layout.entrySha256&&view?.attributes.some(a=>a.resourceId==='0x7f04008e'&&a.data===6)&&view?.attributes.some(a=>a.resourceId==='0x7f0405cb'&&a.dataHex==='0x7f0702e6'),'第四轮图片属性原件：'+layout.entry);
+  }
+  const dim=read(path.join(round4Root,'auxiliary/PR306-picture-style-resources.json'));
+  check(dim.matches.some(m=>m.id==='0x7f0702e6'&&m.value?.decoded==='6dp')&&dim.matches.some(m=>m.id==='0x7f07029c'&&m.value?.decoded==='16dp'),'第四轮两类圆角资源');
+  check(pic.badge.text.some(t=>t.value==='共%d张')&&pic.badge.xmlPlaceholderIsNotMaximum===true,'第四轮数量文字边界');
+  for(const e of index.excludedLocalArtifacts)check(/^[a-f0-9]{64}$/.test(e.originalSha256)&&!index.records.some(r=>r.id===e.id),'第四轮排除项：'+e.id);
+  round4Summary={selectedStaticEvidence:37,auxiliary:18,derived:2,excludedLocalArtifacts:33,newRuntimeObservations:0};
+}
 if(writingManifest&&!problems.length){
   const manifest={schemaVersion:1,title:'帖子软件排版与逻辑',scope:'Public derived repository; .git and this manifest are excluded.',files:files.map(p=>({file:relative(p),bytes:fs.statSync(p).size,sha256:digest(fs.readFileSync(p))}))};
   fs.writeFileSync(manifestFile,JSON.stringify(manifest,null,2)+'\n');
@@ -190,5 +254,5 @@ if(!writingManifest&&fs.existsSync(manifestFile)){
     check(fs.existsSync(p)&&fs.statSync(p).size===e.bytes&&digest(fs.readFileSync(p))===e.sha256,'仓库摘要不匹配：'+e.file);
   }
 }else if(!writingManifest) check(false,'缺少 public-manifest.json');
-console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,round2:round2Summary,round3:round3Summary,issues:problems},null,2));
+console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,round2:round2Summary,round3:round3Summary,round4:round4Summary,issues:problems},null,2));
 if(problems.length)process.exitCode=1;

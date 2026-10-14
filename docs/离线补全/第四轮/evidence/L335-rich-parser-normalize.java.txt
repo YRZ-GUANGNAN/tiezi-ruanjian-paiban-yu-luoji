@@ -1,0 +1,22 @@
+    public final String d(String str) {
+        PatchProxyResult patchProxyResultProxy1Para = PatchProxy.proxy1Para(str, this, g.class, 175793);
+        if (patchProxyResultProxy1Para.isSupported) {
+            return (String) patchProxyResultProxy1Para.result;
+        }
+        Matcher matcher = Pattern.compile(f303358i).matcher(str);
+        while (matcher.find()) {
+            String strGroup = matcher.group();
+            if (!b(strGroup)) {
+                String[] strArrSplit = strGroup.split("\\[");
+                int length = strArrSplit.length;
+                StringBuilder sb4 = new StringBuilder();
+                for (int i100 = 0; i100 < length; i100++) {
+                    if (i100 != length - 1) {
+                        sb4.append(strArrSplit[i100]);
+                    }
+                }
+                str = str.replace(strGroup, sb4.toString());
+            }
+        }
+        return str;
+    }

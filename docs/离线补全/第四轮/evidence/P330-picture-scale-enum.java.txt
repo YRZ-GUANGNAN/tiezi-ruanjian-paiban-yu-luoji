@@ -1,0 +1,26 @@
+    public static q.c c(TypedArray typedArray, int i100) {
+        switch (typedArray.getInt(i100, -2)) {
+            case -1:
+                return null;
+            case 0:
+                return q.c.f190058a;
+            case 1:
+                return q.c.f190061d;
+            case 2:
+                return q.c.f190062e;
+            case 3:
+                return q.c.f190063f;
+            case 4:
+                return q.c.f190064g;
+            case 5:
+                return q.c.f190065h;
+            case 6:
+                return q.c.f190066i;
+            case 7:
+                return q.c.f190067j;
+            case 8:
+                return q.c.f190068k;
+            default:
+                throw new RuntimeException("XML attribute not specified!");
+        }
+    }

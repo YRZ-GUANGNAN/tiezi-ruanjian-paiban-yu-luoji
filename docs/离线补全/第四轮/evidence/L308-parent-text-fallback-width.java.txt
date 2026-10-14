@@ -1,0 +1,4 @@
+    public final int f0() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, h.class, 385525);
+        return patchProxyResultProxy0Para.isSupported ? ((Integer) patchProxyResultProxy0Para.result).intValue() : ((Number) this.f6841p.getValue()).intValue();
+    }

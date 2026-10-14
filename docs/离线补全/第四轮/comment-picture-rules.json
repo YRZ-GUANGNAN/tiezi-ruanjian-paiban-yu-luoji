@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "appVersion": "8.72.0",
+  "versionCode": "8720916",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "newRuntimeObservations": 0,
+  "scope": "Static image-comment width, badge, crop request and packaged rounding defaults; not actual pixel acceptance.",
+  "multiPictureWidth": {
+    "source": "WindowManager.getDefaultDisplay().getRealSize(Point).x",
+    "getter": "q68.c1.b()[0]",
+    "missingServiceOrDisplayReturn": [
+      0,
+      0
+    ],
+    "windowContentWidth": false,
+    "cache": "wg3.f0 width Lazy, then CommentSinglePictureView static field at class initialization",
+    "sidePxExpression": "(displayWidthPx - int(dpToPx(155))) / 3 with integer division",
+    "reusedRuleRefs": [
+      "C227",
+      "CR203"
+    ],
+    "evidenceRefs": [
+      "P317",
+      "P319"
+    ],
+    "configurationChangeRefreshObserved": false
+  },
+  "onlyFirstPicture": {
+    "condition": "ro.m.c() && wg3.f.I()",
+    "configKey": "andr_cmt_pad_multi_opt_switch",
+    "configuredType": "Integer",
+    "callDefault": 1,
+    "enabledComparison": "value > 0",
+    "cache": "wg3.f.a0 Lazy and wg3.f0.f Lazy",
+    "currentValueKnown": false,
+    "doNotRenameGate": "Not equivalent to an unconditional tablet or foldable-phone rule",
+    "evidenceRefs": [
+      "P318",
+      "P320",
+      "P328"
+    ],
+    "reusedRuleRefs": [
+      "A004",
+      "A006",
+      "C214",
+      "C228"
+    ]
+  },
+  "badge": {
+    "text": [
+      {
+        "configuration": "",
+        "value": "共%d张"
+      },
+      {
+        "configuration": "-en",
+        "value": "%d images"
+      },
+      {
+        "configuration": "-zh-rTW",
+        "value": "共%d张"
+      }
+    ],
+    "countMeaning": "total size of the chosen local or remote picture list; not remaining hidden count",
+    "visibleCondition": "(picCount > 3 && zeroBasedPosition == 2) || (onlyFirstPicture && picCount > 1)",
+    "textResourceId": "0x7f11295f",
+    "viewId": "0x7f0942c6",
+    "layoutDefault": {
+      "textSizeSp": 10,
+      "color": "#FFFFFFFF",
+      "paddingHorizontalDp": 4,
+      "paddingVerticalDp": 1,
+      "minHeightDp": 16,
+      "marginEndDp": 6,
+      "marginBottomDp": 6,
+      "initialVisibility": "gone"
+    },
+    "background": {
+      "resourceId": "0x7f08256f",
+      "entry": "res/0sg.xml",
+      "fillArgb": "#80303034",
+      "cornerRadiusDp": 16
+    },
+    "xmlPlaceholderIsNotMaximum": true,
+    "evidenceRefs": [
+      "P311"
+    ],
+    "reusedRuleRefs": [
+      "C209",
+      "C214"
+    ]
+  },
+  "image": {
+    "layoutDefault": {
+      "scaleAttributeId": "0x7f04008e",
+      "scaleEnum": 6,
+      "scaleIdentity": "center_crop",
+      "radiusAttributeId": "0x7f0405cb",
+      "radiusResourceId": "0x7f0702e6",
+      "cornerRadiusDp": 6,
+      "radiusConversion": "TypedArray.getDimensionPixelSize",
+      "fourCorners": "Enabled by default; theme/attribute overrides not observed"
+    },
+    "renderRequests": {
+      "paths": [
+        "online",
+        "local"
+      ],
+      "defaultMask": 72,
+      "scale": "CENTER_CROP",
+      "evidenceRefs": [
+        "P321",
+        "P322"
+      ]
+    },
+    "initialSizeVsFinal": {
+      "newInternalXmlSquareDp": 71,
+      "legacyInternalXmlSquareDp": 120,
+      "bindingMayOverride": true,
+      "selectedRuntimeRouteKnown": false
+    },
+    "layoutChecks": [
+      {
+        "entry": "res/6jm.xml",
+        "entrySha256": "814830e6794236c9a15df187c79074274dc4a62bd188d554efb03f07b0799058",
+        "scaleTypeValue": 6,
+        "radiusResourceId": "0x7f0702e6"
+      },
+      {
+        "entry": "res/6nv.xml",
+        "entrySha256": "bef2829d9be51518a9cb54023ccf4eb670a522924cde8b1c23a00534781c7bc0",
+        "scaleTypeValue": 6,
+        "radiusResourceId": "0x7f0702e6"
+      },
+      {
+        "entry": "res/GWn.xml",
+        "entrySha256": "0368f82546d4133979cd5b269641d0a7f94326435b8ddcccfcf49159ab13c311",
+        "scaleTypeValue": 6,
+        "radiusResourceId": "0x7f0702e6"
+      },
+      {
+        "entry": "res/RV3.xml",
+        "entrySha256": "8972713ab9b597d27112edb316c31ad0e7be5ce1115046bd2e3367e2d255fc5b",
+        "scaleTypeValue": 6,
+        "radiusResourceId": "0x7f0702e6"
+      }
+    ],
+    "evidenceRefs": [
+      "P316",
+      "P329",
+      "P330",
+      "P332"
+    ],
+    "actualCropPixelsObserved": false,
+    "actualCornerPixelsObserved": false
+  },
+  "checks": {
+    "layoutAttributePairsChecked": 4,
+    "scaleAndRadiusIndicesMatched": true,
+    "centerCropIdentityMatched": true,
+    "badgeBackgroundAndLabelMatched": true
+  },
+  "evidenceRefs": [
+    "P311",
+    "P316",
+    "P317",
+    "P318",
+    "P319",
+    "P320",
+    "P321",
+    "P322",
+    "P328",
+    "P329",
+    "P330",
+    "P332"
+  ],
+  "sources": [
+    {
+      "file": "auxiliary/PR301-picture-width-and-layout-binding.json",
+      "originalSha256": "79624decdf915147ec8fbc49648bb17bdf6862f2bf115643bbee6965071e44a3",
+      "publicSha256": "078639f7f9f256fc041dd8f24a514cf60041f2a19739d39aee63a6c62a43dbf9"
+    },
+    {
+      "file": "auxiliary/PR302-picture-layout-resource.json",
+      "originalSha256": "6ba3e22e33ff07ae3c667a18be963294dda0a3fb14590e45ef3aa192e10cc4e1",
+      "publicSha256": "27f55b1dfb1809acd377428ec4d8b6d245e2de1b3912296f9184fe3d275bdffa"
+    },
+    {
+      "file": "auxiliary/PR303-picture-layout-attributes.json",
+      "originalSha256": "367dbd2eba87b520466f43b3512db86f9259cc78d1cb03dbb94fb9623ea68063",
+      "publicSha256": "7e43c36d262b40cf9addb0872567f11a9b152e7d07a42e0c5e3e2bff2f75b871"
+    },
+    {
+      "file": "auxiliary/PR305-picture-resource-field-binding.json",
+      "originalSha256": "b9c871ead7c475d2a5122d735fc73ed50674443850ca3ebf49a98c1b85ec0938",
+      "publicSha256": "ae7460aab46f9df0a17379b7b11b252ce1a3912132ef8e3938bc835520bf3c08"
+    },
+    {
+      "file": "auxiliary/PR306-picture-style-resources.json",
+      "originalSha256": "d4a24323305096f2abf16c05b8b08bf1d609942ebaf4603ac198fde5b12fad4c",
+      "publicSha256": "22fcb987f09f25cb7947fbfa296ee2274870295d78b30802210c28dc36ebd3d6"
+    },
+    {
+      "file": "auxiliary/PR307-picture-render-and-config.json",
+      "originalSha256": "12a875b9eb9187a0c03760f2716252d8825c4859923bd8f1abdd2410396f5151",
+      "publicSha256": "77cf78958a6559093a630b73c1fde9430b9397a41979df2e8a51029029f9f6bd"
+    },
+    {
+      "file": "auxiliary/PR309-picture-generic-binding.json",
+      "originalSha256": "d4f758c67fa137a9d87c06de361702a08087a975480efce0d761f880c5cc3149",
+      "publicSha256": "837f57e3784141147b83280c634d6cdba4d2e4fb58112982fbcbc5e0bf07dd08"
+    },
+    {
+      "file": "auxiliary/PR310-picture-hierarchy-link.json",
+      "originalSha256": "a18371a10802ba5635a021f159134136565cf72d8b9d0652bdb822b5318e7a2b",
+      "publicSha256": "7c434ed783405785e01cb27ff5704348b9331a41966ebfda857ca8ab24cee22b"
+    },
+    {
+      "file": "auxiliary/PR311-picture-hierarchy-parser.json",
+      "originalSha256": "3e78f94315aacc92dcb017fb5ce5c5d16588b4ac675176492b54c8f1d25068aa",
+      "publicSha256": "fd3cd62382a858d68f042cfee809e30da20e96a92ef3bda37dac1f39c75ab674"
+    },
+    {
+      "file": "auxiliary/PR312-picture-radius-and-scale-binding.json",
+      "originalSha256": "6a82fdc08afa31c0d488b377b35eb22ea377be1764305e0beb13c46357a7adb1",
+      "publicSha256": "355ded5bb44aff986f725db6d6ffe4174f6a6ae648d8e570eb24ae46bee83369"
+    },
+    {
+      "file": "auxiliary/PR313-picture-badge-background-attributes.json",
+      "originalSha256": "67f1f0e04017ba76a1d36e0e357476f3b0ba135cda7deecb8b67b536d0bd3633",
+      "publicSha256": "579203fe6ed35d2ab954a35de01404189dc6deb5e202854a88bd449e25b18b8f"
+    },
+    {
+      "file": "auxiliary/PR315-picture-scale-identity-confirmed.json",
+      "originalSha256": "6577306e0f7313e6055885fae99dd498b6437b601c90610e3be213a67f192452",
+      "publicSha256": "1cb363795232be848dc4684dffe1c254167907db692af61f61467c0642e2d382"
+    }
+  ],
+  "limitations": [
+    "Packaged defaults and static caller requests only; no new phone/emulator observation.",
+    "XML background corner radius 16dp belongs to the count badge; image corner radius default is 6dp.",
+    "Real Display call result, current flags, theme overrides, active legacy/new route and hot patches remain unknown.",
+    "Changing density or window size does not prove a cached static field refreshed; needs a separate runtime scenario.",
+    "Older single-picture ratio rules are reused, not newly measured."
+  ]
+}

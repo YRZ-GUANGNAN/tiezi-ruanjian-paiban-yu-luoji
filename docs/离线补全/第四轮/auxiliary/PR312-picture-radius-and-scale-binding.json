@@ -1,0 +1,731 @@
+{
+  "provider": "dexlib2-bundled-with-jadx-auxiliary-not-REA-Evidence",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "selectors": [
+    "Lz6/a;::<clinit>",
+    "Lz6/a;::field:b",
+    "Lz6/a;::field:z",
+    "Lj7/e;::q",
+    "Lj7/b;::w",
+    "Li7/q$c;::<clinit>",
+    "Lj7/c;::c"
+  ],
+  "matches": [
+    {
+      "selector": "Li7/q$c;::<clinit>",
+      "dexEntry": "classes12.dex",
+      "method": "Li7/q$c;-><clinit>()V",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 1,
+      "codeUnits": 45,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Li7/q$l;->l:Li7/q$c;"
+        },
+        {
+          "offset": 2,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Li7/q$c;->a:Li7/q$c;"
+        },
+        {
+          "offset": 4,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Li7/q$k;->l:Li7/q$c;"
+        },
+        {
+          "offset": 6,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Li7/q$c;->b:Li7/q$c;"
+        },
+        {
+          "offset": 8,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Li7/q$m;->l:Li7/q$c;"
+        },
+        {
+          "offset": 10,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Li7/q$c;->c:Li7/q$c;"
+        },
+        {
+          "offset": 12,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Li7/q$j;->l:Li7/q$c;"
+        },
+        {
+          "offset": 14,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Li7/q$c;->d:Li7/q$c;"
+        },
+        {
+          "offset": 16,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Li7/q$h;->l:Li7/q$c;"
+        },
+        {
+          "offset": 18,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Li7/q$c;->e:Li7/q$c;"
+        },
+        {
+          "offset": 20,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Li7/q$i;->l:Li7/q$c;"
+        },
+        {
+          "offset": 22,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Li7/q$c;->f:Li7/q$c;"
+        },
+        {
+          "offset": 24,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Li7/q$d;->l:Li7/q$c;"
+        },
+        {
+          "offset": 26,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Li7/q$c;->g:Li7/q$c;"
+        },
+        {
+          "offset": 28,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Li7/q$f;->l:Li7/q$c;"
+        },
+        {
+          "offset": 30,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Li7/q$c;->h:Li7/q$c;"
+        },
+        {
+          "offset": 32,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Li7/q$e;->l:Li7/q$c;"
+        },
+        {
+          "offset": 34,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Li7/q$c;->i:Li7/q$c;"
+        },
+        {
+          "offset": 36,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Li7/q$n;->l:Li7/q$c;"
+        },
+        {
+          "offset": 38,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Li7/q$c;->j:Li7/q$c;"
+        },
+        {
+          "offset": 40,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Li7/q$g;->l:Li7/q$c;"
+        },
+        {
+          "offset": 42,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Li7/q$c;->k:Li7/q$c;"
+        },
+        {
+          "offset": 44,
+          "opcode": "return-void"
+        }
+      ]
+    },
+    {
+      "selector": "Lj7/b;::w",
+      "dexEntry": "classes12.dex",
+      "method": "Lj7/b;->w(Li7/q$c;)Lj7/b;",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 2,
+      "codeUnits": 6,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "iput-object",
+          "a": 1,
+          "b": 0,
+          "reference": "Lj7/b;->l:Li7/q$c;"
+        },
+        {
+          "offset": 2,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 3,
+          "opcode": "iput-object",
+          "a": 1,
+          "b": 0,
+          "reference": "Lj7/b;->m:Landroid/graphics/Matrix;"
+        },
+        {
+          "offset": 5,
+          "opcode": "return-object",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Lj7/c;::c",
+      "dexEntry": "classes12.dex",
+      "method": "Lj7/c;->c(Landroid/content/res/TypedArray;I)Li7/q$c;",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 3,
+      "codeUnits": 70,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "const/4",
+          "a": 0,
+          "literal": "-2",
+          "literalHex": "0xfffffffffffffffe"
+        },
+        {
+          "offset": 1,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1,
+            2,
+            0
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getInt(II)I"
+        },
+        {
+          "offset": 4,
+          "opcode": "move-result",
+          "a": 1
+        },
+        {
+          "offset": 5,
+          "opcode": "packed-switch",
+          "a": 1,
+          "target": 46
+        },
+        {
+          "offset": 8,
+          "opcode": "new-instance",
+          "a": 1,
+          "reference": "Ljava/lang/RuntimeException;"
+        },
+        {
+          "offset": 10,
+          "opcode": "const-string",
+          "a": 2,
+          "reference": "\"XML attribute not specified!\""
+        },
+        {
+          "offset": 12,
+          "opcode": "invoke-direct",
+          "registers": [
+            1,
+            2
+          ],
+          "reference": "Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V"
+        },
+        {
+          "offset": 15,
+          "opcode": "throw",
+          "a": 1
+        },
+        {
+          "offset": 16,
+          "opcode": "sget-object",
+          "a": 1,
+          "reference": "Li7/q$c;->k:Li7/q$c;"
+        },
+        {
+          "offset": 18,
+          "opcode": "return-object",
+          "a": 1
+        },
+        {
+          "offset": 19,
+          "opcode": "sget-object",
+          "a": 1,
+          "reference": "Li7/q$c;->j:Li7/q$c;"
+        },
+        {
+          "offset": 21,
+          "opcode": "return-object",
+          "a": 1
+        },
+        {
+          "offset": 22,
+          "opcode": "sget-object",
+          "a": 1,
+          "reference": "Li7/q$c;->i:Li7/q$c;"
+        },
+        {
+          "offset": 24,
+          "opcode": "return-object",
+          "a": 1
+        },
+        {
+          "offset": 25,
+          "opcode": "sget-object",
+          "a": 1,
+          "reference": "Li7/q$c;->h:Li7/q$c;"
+        },
+        {
+          "offset": 27,
+          "opcode": "return-object",
+          "a": 1
+        },
+        {
+          "offset": 28,
+          "opcode": "sget-object",
+          "a": 1,
+          "reference": "Li7/q$c;->g:Li7/q$c;"
+        },
+        {
+          "offset": 30,
+          "opcode": "return-object",
+          "a": 1
+        },
+        {
+          "offset": 31,
+          "opcode": "sget-object",
+          "a": 1,
+          "reference": "Li7/q$c;->f:Li7/q$c;"
+        },
+        {
+          "offset": 33,
+          "opcode": "return-object",
+          "a": 1
+        },
+        {
+          "offset": 34,
+          "opcode": "sget-object",
+          "a": 1,
+          "reference": "Li7/q$c;->e:Li7/q$c;"
+        },
+        {
+          "offset": 36,
+          "opcode": "return-object",
+          "a": 1
+        },
+        {
+          "offset": 37,
+          "opcode": "sget-object",
+          "a": 1,
+          "reference": "Li7/q$c;->d:Li7/q$c;"
+        },
+        {
+          "offset": 39,
+          "opcode": "return-object",
+          "a": 1
+        },
+        {
+          "offset": 40,
+          "opcode": "sget-object",
+          "a": 1,
+          "reference": "Li7/q$c;->a:Li7/q$c;"
+        },
+        {
+          "offset": 42,
+          "opcode": "return-object",
+          "a": 1
+        },
+        {
+          "offset": 43,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 44,
+          "opcode": "return-object",
+          "a": 1
+        },
+        {
+          "offset": 45,
+          "opcode": "nop"
+        },
+        {
+          "offset": 46,
+          "opcode": "packed-switch-payload",
+          "switchElements": [
+            {
+              "offset": 38,
+              "key": -1
+            },
+            {
+              "offset": 35,
+              "key": 0
+            },
+            {
+              "offset": 32,
+              "key": 1
+            },
+            {
+              "offset": 29,
+              "key": 2
+            },
+            {
+              "offset": 26,
+              "key": 3
+            },
+            {
+              "offset": 23,
+              "key": 4
+            },
+            {
+              "offset": 20,
+              "key": 5
+            },
+            {
+              "offset": 17,
+              "key": 6
+            },
+            {
+              "offset": 14,
+              "key": 7
+            },
+            {
+              "offset": 11,
+              "key": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "selector": "Lj7/e;::q",
+      "dexEntry": "classes12.dex",
+      "method": "Lj7/e;->q(FFFF)Lj7/e;",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 7,
+      "codeUnits": 29,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2
+          ],
+          "reference": "Lj7/e;->g()[F"
+        },
+        {
+          "offset": 3,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 4,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 5,
+          "opcode": "aput",
+          "a": 3,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "offset": 7,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 8,
+          "opcode": "aput",
+          "a": 3,
+          "b": 0,
+          "c": 1
+        },
+        {
+          "offset": 10,
+          "opcode": "const/4",
+          "a": 3,
+          "literal": "3",
+          "literalHex": "0x3"
+        },
+        {
+          "offset": 11,
+          "opcode": "aput",
+          "a": 4,
+          "b": 0,
+          "c": 3
+        },
+        {
+          "offset": 13,
+          "opcode": "const/4",
+          "a": 3,
+          "literal": "2",
+          "literalHex": "0x2"
+        },
+        {
+          "offset": 14,
+          "opcode": "aput",
+          "a": 4,
+          "b": 0,
+          "c": 3
+        },
+        {
+          "offset": 16,
+          "opcode": "const/4",
+          "a": 3,
+          "literal": "5",
+          "literalHex": "0x5"
+        },
+        {
+          "offset": 17,
+          "opcode": "aput",
+          "a": 5,
+          "b": 0,
+          "c": 3
+        },
+        {
+          "offset": 19,
+          "opcode": "const/4",
+          "a": 3,
+          "literal": "4",
+          "literalHex": "0x4"
+        },
+        {
+          "offset": 20,
+          "opcode": "aput",
+          "a": 5,
+          "b": 0,
+          "c": 3
+        },
+        {
+          "offset": 22,
+          "opcode": "const/4",
+          "a": 3,
+          "literal": "7",
+          "literalHex": "0x7"
+        },
+        {
+          "offset": 23,
+          "opcode": "aput",
+          "a": 6,
+          "b": 0,
+          "c": 3
+        },
+        {
+          "offset": 25,
+          "opcode": "const/4",
+          "a": 3,
+          "literal": "6",
+          "literalHex": "0x6"
+        },
+        {
+          "offset": 26,
+          "opcode": "aput",
+          "a": 6,
+          "b": 0,
+          "c": 3
+        },
+        {
+          "offset": 28,
+          "opcode": "return-object",
+          "a": 2
+        }
+      ]
+    },
+    {
+      "selector": "Lz6/a;::field:b",
+      "dexEntry": "classes12.dex",
+      "field": "Lz6/a;->b:I",
+      "encodedValuePresent": true,
+      "encodedValue": 0
+    },
+    {
+      "selector": "Lz6/a;::field:z",
+      "dexEntry": "classes12.dex",
+      "field": "Lz6/a;->z:I",
+      "encodedValuePresent": true,
+      "encodedValue": 24
+    },
+    {
+      "selector": "Lz6/a;::<clinit>",
+      "dexEntry": "classes12.dex",
+      "method": "Lz6/a;-><clinit>()V",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 1,
+      "codeUnits": 148,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "const/16",
+          "a": 0,
+          "literal": "29",
+          "literalHex": "0x1d"
+        },
+        {
+          "offset": 2,
+          "opcode": "new-array",
+          "a": 0,
+          "b": 0,
+          "reference": "[I"
+        },
+        {
+          "offset": 4,
+          "opcode": "fill-array-data",
+          "a": 0,
+          "target": 20
+        },
+        {
+          "offset": 7,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Lz6/a;->a:[I"
+        },
+        {
+          "offset": 9,
+          "opcode": "const/16",
+          "a": 0,
+          "literal": "31",
+          "literalHex": "0x1f"
+        },
+        {
+          "offset": 11,
+          "opcode": "new-array",
+          "a": 0,
+          "b": 0,
+          "reference": "[I"
+        },
+        {
+          "offset": 13,
+          "opcode": "fill-array-data",
+          "a": 0,
+          "target": 82
+        },
+        {
+          "offset": 16,
+          "opcode": "sput-object",
+          "a": 0,
+          "reference": "Lz6/a;->E:[I"
+        },
+        {
+          "offset": 18,
+          "opcode": "return-void"
+        },
+        {
+          "offset": 19,
+          "opcode": "nop"
+        },
+        {
+          "offset": 20,
+          "opcode": "array-payload",
+          "elementWidth": 4,
+          "elements": [
+            2130968718,
+            2130968943,
+            2130969394,
+            2130969395,
+            2130969396,
+            2130969842,
+            2130969872,
+            2130969873,
+            2130969886,
+            2130969913,
+            2130969914,
+            2130969915,
+            2130970040,
+            2130970041,
+            2130970048,
+            2130970049,
+            2130970050,
+            2130970051,
+            2130970052,
+            2130970054,
+            2130970055,
+            2130970056,
+            2130970057,
+            2130970058,
+            2130970059,
+            2130970060,
+            2130970061,
+            2130970062,
+            2130970500
+          ]
+        },
+        {
+          "offset": 82,
+          "opcode": "array-payload",
+          "elementWidth": 4,
+          "elements": [
+            2130968717,
+            2130968718,
+            2130968719,
+            2130968943,
+            2130969394,
+            2130969395,
+            2130969396,
+            2130969842,
+            2130969872,
+            2130969873,
+            2130969886,
+            2130969913,
+            2130969914,
+            2130969915,
+            2130970040,
+            2130970041,
+            2130970048,
+            2130970049,
+            2130970050,
+            2130970051,
+            2130970052,
+            2130970054,
+            2130970055,
+            2130970056,
+            2130970057,
+            2130970058,
+            2130970059,
+            2130970060,
+            2130970061,
+            2130970062,
+            2130970500
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Raw static instructions, not observed execution or a complete control-flow proof.",
+    "Offsets and branch targets are relative DEX code units, not APK byte offsets.",
+    "Hot patches, remote config, runtime values and resource selection are not resolved."
+  ]
+}

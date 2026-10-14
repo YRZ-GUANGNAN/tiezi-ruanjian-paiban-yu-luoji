@@ -1,0 +1,9 @@
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // kotlin.jvm.functions.Function0
+        public final Boolean invoke() {
+            PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, w.class, 322675);
+            if (patchProxyResultProxy0Para.isSupported) {
+                return (Boolean) patchProxyResultProxy0Para.result;
+            }
+            return Boolean.valueOf(((Number) l84.c.a().j("andr_cmt_pad_multi_opt_switch", new a().getType(), 1)).intValue() > 0);
+        }

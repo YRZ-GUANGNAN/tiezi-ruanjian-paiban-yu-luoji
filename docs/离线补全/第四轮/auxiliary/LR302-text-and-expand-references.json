@@ -1,0 +1,2088 @@
+{
+  "provider": "dexlib2-bounded-reference-scan-not-REA-Evidence",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "resourceIds": [
+    "0x7f1120b1",
+    "0x7f1120b3"
+  ],
+  "textOperationScopes": [
+    "Lah6/",
+    "Lch6/",
+    "Lsq5/a1",
+    "Lth6/",
+    "Lcom/xingin/comment/consumer/",
+    "Lcom/xingin/comment/widget/",
+    "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentComment",
+    "Lcom/xingin/matrix/v2/notedetail/itembinder/SubComment"
+  ],
+  "textOperations": [
+    "->setMaxLines(",
+    "->setEllipsize(",
+    "->setMaxHeight(",
+    "->setLines(",
+    "->subSequence(",
+    "->substring(",
+    "->setText(",
+    "->setMovementMethod(",
+    "->setOnClickListener(",
+    "->getLineCount(",
+    "->getLineEnd(",
+    "->s(",
+    "->l0(",
+    "->j0(",
+    "->L("
+  ],
+  "classesExamined": 249475,
+  "scopedMethods": 1938,
+  "resourceFields": [
+    {
+      "value": "0x7f1120b1",
+      "dexEntry": "classes7.dex",
+      "descriptor": "Lyr5/h;->C0:I"
+    },
+    {
+      "value": "0x7f1120b3",
+      "dexEntry": "classes7.dex",
+      "descriptor": "Lyr5/h;->E0:I"
+    }
+  ],
+  "matches": [
+    {
+      "method": "Lcom/xingin/comment/consumer/list/itembinder/topic/a;->a(Landroid/view/View;Landroid/view/View$OnClickListener;)V",
+      "references": [
+        {
+          "offset": 4,
+          "reference": "Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/itembinder/topic/a;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextView;->d4(Landroid/text/SpannableStringBuilder;)V",
+      "references": [
+        {
+          "offset": 20,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextView;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/itembinder/topic/TopicItemViewBinder$TopicHolder;-><init>(Lcom/xingin/comment/consumer/list/itembinder/topic/TopicItemViewBinder;Landroid/view/View;)V",
+      "references": [
+        {
+          "offset": 15,
+          "reference": "Lp69/h;->s(Landroid/widget/TextView;)V",
+          "resourceReference": false,
+          "opcode": "invoke-static"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/itembinder/topic/TopicItemViewBinder$TopicHolder;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/view/CommentPictureItemView;->Y3()V",
+      "references": [
+        {
+          "offset": 29,
+          "reference": "Lej1/j2;->s(Landroid/view/View;ZJLkotlin/jvm/functions/Function0;ILjava/lang/Object;)V",
+          "resourceReference": false,
+          "opcode": "invoke-static/range"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/view/CommentPictureItemView;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/view/CommentPictureItemView;->onDetachedFromWindow()V",
+      "references": [
+        {
+          "offset": 62,
+          "reference": "Lej1/j2;->s(Landroid/view/View;ZJLkotlin/jvm/functions/Function0;ILjava/lang/Object;)V",
+          "resourceReference": false,
+          "opcode": "invoke-static/range"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/view/CommentPictureItemView;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/view/CommentSinglePictureView;->s4(IZ)V",
+      "references": [
+        {
+          "offset": 111,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/view/CommentSinglePictureView;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/itembinder/topic/TopicItemViewBinder;->i(Lcom/xingin/comment/consumer/list/itembinder/topic/TopicItemViewBinder$TopicHolder;Lv57/i;)V",
+      "references": [
+        {
+          "offset": 38,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/itembinder/topic/TopicItemViewBinder;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/sections/bottomarea/guidebar/BottomGuideCommentAtFastItemBinder;->k(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Lcom/xingin/comment/consumer/sections/bottomarea/guidebar/BottomGuideCommentAtFastItemBinder$CommentAtFastItemViewHolder;",
+      "references": [
+        {
+          "offset": 408,
+          "reference": "Landroid/widget/TextView;->setMaxLines(I)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 413,
+          "reference": "Landroid/widget/TextView;->setEllipsize(Landroid/text/TextUtils$TruncateAt;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/sections/bottomarea/guidebar/BottomGuideCommentAtFastItemBinder;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/sections/bottomarea/guidebar/BottomGuideCommentAtFastItemBinder;->l(Lcom/xingin/comment/consumer/sections/bottomarea/guidebar/BottomGuideCommentAtFastItemBinder$CommentAtFastItemViewHolder;Ljava/lang/String;I)V",
+      "references": [
+        {
+          "offset": 97,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/sections/bottomarea/guidebar/BottomGuideCommentAtFastItemBinder;"
+    },
+    {
+      "method": "Lcom/xingin/comment/widget/recycleview/ScrollerCenterLinearLayoutManager;->onAttachedToWindow(Landroidx/recyclerview/widget/RecyclerView;)V",
+      "references": [
+        {
+          "offset": 23,
+          "reference": "Lcom/xingin/comment/consumer/list/CommentListView;->s()V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/widget/recycleview/ScrollerCenterLinearLayoutManager;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2$h$b;->invoke(ILandroid/view/View;)Ljava/lang/Object;",
+      "references": [
+        {
+          "offset": 183,
+          "reference": "Lpq5/w0;->L()Z",
+          "resourceReference": false,
+          "opcode": "invoke-interface"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2$h$b;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter$a;->c(Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;Lcom/xingin/entities/notedetail/NoteFeed;Ljava/util/ArrayList;Landroid/text/SpannableString;Ljava/util/ArrayList;)V",
+      "references": [
+        {
+          "offset": 34,
+          "reference": "Lcom/xingin/entities/notedetail/NoteFeed;->j0()Ljava/util/ArrayList;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 183,
+          "reference": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;->L(Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;I)V",
+          "resourceReference": false,
+          "opcode": "invoke-static"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter$a;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/view/CommentMultiPictureItemView$b;->invoke(Ljava/lang/Object;)Lh08/b1;",
+      "references": [
+        {
+          "offset": 456,
+          "reference": "Lsd3/b;->s(Ljava/lang/String;Ljava/lang/String;Lcom/xingin/entities/CommentCommentInfo;IZLjava/lang/Object;)Lw08/r;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual/range"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/view/CommentMultiPictureItemView$b;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/view/CommentMultiPictureItemView$e;->invoke(Landroid/widget/TextView;)V",
+      "references": [
+        {
+          "offset": 26,
+          "reference": "Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 31,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/view/CommentMultiPictureItemView$e;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/view/CommentSinglePictureView$g;->invoke(Landroid/widget/TextView;)V",
+      "references": [
+        {
+          "offset": 42,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/view/CommentSinglePictureView$g;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/view/CommentSinglePictureView$i;->invoke(Landroid/widget/TextView;)V",
+      "references": [
+        {
+          "offset": 31,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/view/CommentSinglePictureView$i;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/sections/bottomarea/guidebar/BottomGuideCommentAtFastItemBinder$e;->invoke(Landroid/widget/TextView;)V",
+      "references": [
+        {
+          "offset": 22,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/sections/bottomarea/guidebar/BottomGuideCommentAtFastItemBinder$e;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/sections/bottomarea/guidebar/BottomGuideCommentAtFastItemBinder$f;->invoke(Landroid/widget/TextView;)V",
+      "references": [
+        {
+          "offset": 34,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/sections/bottomarea/guidebar/BottomGuideCommentAtFastItemBinder$f;"
+    },
+    {
+      "method": "Lcom/xingin/comment/widget/CommonEngageButtonView$a;->invoke(Landroid/widget/TextView;)V",
+      "references": [
+        {
+          "offset": 20,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/widget/CommonEngageButtonView$a;"
+    },
+    {
+      "method": "Lcom/xingin/comment/widget/CommonEngageButtonView$b;->invoke(Landroid/widget/TextView;)V",
+      "references": [
+        {
+          "offset": 14,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/widget/CommonEngageButtonView$b;"
+    },
+    {
+      "method": "Lcom/xingin/comment/widget/recycleview/ScrollerCenterLinearLayoutManager$g;->invoke()V",
+      "references": [
+        {
+          "offset": 18,
+          "reference": "Lcom/xingin/comment/widget/recycleview/ScrollerCenterLinearLayoutManager;->s(Lcom/xingin/comment/widget/recycleview/ScrollerCenterLinearLayoutManager;Landroidx/recyclerview/widget/RecyclerView$Recycler;Landroidx/recyclerview/widget/RecyclerView$State;)V",
+          "resourceReference": false,
+          "opcode": "invoke-static"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/widget/recycleview/ScrollerCenterLinearLayoutManager$g;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;->L(Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;I)V",
+      "references": [
+        {
+          "offset": 0,
+          "reference": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;->j0(I)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;->M(Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;Z)V",
+      "references": [
+        {
+          "offset": 0,
+          "reference": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;->l0(Z)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;->P(Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;Lcom/xingin/entities/notedetail/NoteFeed;Ljava/util/ArrayList;Lkotlin/Unit;)Landroid/text/SpannableStringBuilder;",
+      "references": [
+        {
+          "offset": 65,
+          "reference": "Lcom/xingin/entities/notedetail/NoteFeed;->j0()Ljava/util/ArrayList;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;->N(Ljava/lang/String;)Landroid/text/SpannableString;",
+      "references": [
+        {
+          "offset": 264,
+          "reference": "Lvr7/g$a;->s(Z)Lvr7/g$a;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;->g0()V",
+      "references": [
+        {
+          "offset": 65,
+          "reference": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;->j0(I)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;->h0()V",
+      "references": [
+        {
+          "offset": 33,
+          "reference": "Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/itembinder/header/notetext/CommentHeaderWithNoteTextPresenter;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;->C1()V",
+      "references": [
+        {
+          "offset": 14,
+          "reference": "Lwg3/f;->j0()Z",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;->E1()V",
+      "references": [
+        {
+          "offset": 23,
+          "reference": "Lie1/c;->s()V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;->O0(Lnp5/a;)V",
+      "references": [
+        {
+          "offset": 108,
+          "reference": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;->l0()Ljava/lang/String;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;->Y()V",
+      "references": [
+        {
+          "offset": 14,
+          "reference": "Lwg3/f;->j0()Z",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;->q1(Lcom/xingin/entities/comment/CommentListScrollTarget;)V",
+      "references": [
+        {
+          "offset": 12,
+          "reference": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;->j0(Lcom/xingin/entities/comment/CommentListScrollTarget;)I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;->x1()V",
+      "references": [
+        {
+          "offset": 14,
+          "reference": "Lwg3/f;->j0()Z",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;->z0(I)Lug4/v;",
+      "references": [
+        {
+          "offset": 596,
+          "reference": "Lqh6/e;->s()Ljava/lang/String;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 682,
+          "reference": "Lqh6/e;->s()Ljava/lang/String;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/CommentListPresenterV2;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/controller/PfCommentListControllerV2;->Y6()V",
+      "references": [
+        {
+          "offset": 74,
+          "reference": "Lcom/xingin/entities/notedetail/NoteFeed;->j0()Ljava/util/ArrayList;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/controller/PfCommentListControllerV2;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/controller/PfCommentListControllerV2;->o6()V",
+      "references": [
+        {
+          "offset": 212,
+          "reference": "Lsq5/e0;->L(Lcom/xingin/entities/comment/CommentListArguments;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/controller/PfCommentListControllerV2;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/controller/PfCommentListControllerV2;->t6(Lug4/v;)V",
+      "references": [
+        {
+          "offset": 46,
+          "reference": "Lsq5/i1;->s(Lsq5/i1;Lcom/xingin/entities/notedetail/NoteFeed;ILjava/lang/String;ILjava/lang/Object;)V",
+          "resourceReference": false,
+          "opcode": "invoke-static/range"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/controller/PfCommentListControllerV2;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/controller/VideoCommentListControllerV2;->T6()V",
+      "references": [
+        {
+          "offset": 83,
+          "reference": "Lcom/xingin/matrix/v2/notedetail/itembinder/AbsEmptyBinder;->L(Z)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/controller/VideoCommentListControllerV2;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/controller/VideoCommentListControllerV2;->X6()V",
+      "references": [
+        {
+          "offset": 71,
+          "reference": "Lcom/xingin/entities/notedetail/NoteFeed;->j0()Ljava/util/ArrayList;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/controller/VideoCommentListControllerV2;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/controller/VideoCommentListControllerV2;->o6()V",
+      "references": [
+        {
+          "offset": 212,
+          "reference": "Lsq5/e0;->L(Lcom/xingin/entities/comment/CommentListArguments;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/controller/VideoCommentListControllerV2;"
+    },
+    {
+      "method": "Lcom/xingin/comment/consumer/list/controller/VideoCommentListControllerV2;->t6(Lug4/v;)V",
+      "references": [
+        {
+          "offset": 61,
+          "reference": "Lsq5/i1;->s(Lsq5/i1;Lcom/xingin/entities/notedetail/NoteFeed;ILjava/lang/String;ILjava/lang/Object;)V",
+          "resourceReference": false,
+          "opcode": "invoke-static/range"
+        }
+      ],
+      "dexEntry": "classes3.dex",
+      "class": "Lcom/xingin/comment/consumer/list/controller/VideoCommentListControllerV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/detail/item/video/content/VideoNoteContentView;->D(Landroid/text/SpannableStringBuilder;Landroid/text/SpannableString;Landroid/text/SpannableStringBuilder;Ljava/util/ArrayList;Lcom/xingin/entities/notedetail/NoteFeed;ZIZZZZ)V",
+      "references": [
+        {
+          "offset": 414,
+          "reference": "Lyr5/h;->C0:I",
+          "resourceReference": true,
+          "opcode": "sget"
+        },
+        {
+          "offset": 895,
+          "reference": "Lyr5/h;->E0:I",
+          "resourceReference": true,
+          "opcode": "sget"
+        }
+      ],
+      "dexEntry": "classes7.dex",
+      "class": "Lcom/xingin/matrix/detail/item/video/content/VideoNoteContentView;"
+    },
+    {
+      "method": "Lsq5/a1;->A(Landroid/content/Context;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Lzf4/n0;ZZ)Landroid/text/SpannableStringBuilder;",
+      "references": [
+        {
+          "offset": 82,
+          "reference": "Lsr7/g;->s(Landroid/content/Context;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 148,
+          "reference": "Lsr7/g;->s(Landroid/content/Context;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes7.dex",
+      "class": "Lsq5/a1;"
+    },
+    {
+      "method": "Lsq5/a1;->B(Landroid/content/Context;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Lzf4/n0;I)Landroid/text/SpannableStringBuilder;",
+      "references": [
+        {
+          "offset": 73,
+          "reference": "Lsr7/g;->s(Landroid/content/Context;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 97,
+          "reference": "Lsr7/g;->s(Landroid/content/Context;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes7.dex",
+      "class": "Lsq5/a1;"
+    },
+    {
+      "method": "Lsq5/a1;->C(Lsr7/g;Landroid/content/Context;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Lzf4/n0;Z)Landroid/text/SpannableStringBuilder;",
+      "references": [
+        {
+          "offset": 129,
+          "reference": "Lsr7/g;->s(Landroid/content/Context;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes7.dex",
+      "class": "Lsq5/a1;"
+    },
+    {
+      "method": "Lsq5/a1;->f(Ljava/util/List;)Ljava/util/ArrayList;",
+      "references": [
+        {
+          "offset": 42,
+          "reference": "Lcom/xingin/entities/BaseUserBean;->j0()Ljava/lang/String;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes7.dex",
+      "class": "Lsq5/a1;"
+    },
+    {
+      "method": "Lsq5/a1;->o(Landroid/content/Context;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Integer;Ljava/lang/String;Lah4/c;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Landroid/text/SpannableStringBuilder;",
+      "references": [
+        {
+          "offset": 160,
+          "reference": "Lsr7/g;->s(Landroid/content/Context;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes7.dex",
+      "class": "Lsq5/a1;"
+    },
+    {
+      "method": "Lsq5/a1;->r(Landroid/content/Context;Ljava/lang/String;Ljava/lang/Integer;I)Landroid/text/SpannableStringBuilder;",
+      "references": [
+        {
+          "offset": 212,
+          "reference": "Lsr7/g;->s(Landroid/content/Context;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes7.dex",
+      "class": "Lsq5/a1;"
+    },
+    {
+      "method": "Lsq5/a1;->s(Landroid/content/Context;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Integer;Ljava/lang/String;Lah4/c;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)Landroid/text/SpannableStringBuilder;",
+      "references": [
+        {
+          "offset": 211,
+          "reference": "Lsr7/g;->s(Landroid/content/Context;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes7.dex",
+      "class": "Lsq5/a1;"
+    },
+    {
+      "method": "Lsq5/a1;->t(Landroid/content/Context;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Integer;Ljava/lang/String;Lah4/c;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Landroid/text/SpannableStringBuilder;",
+      "references": [
+        {
+          "offset": 63,
+          "reference": "Lsq5/a1;->s(Landroid/content/Context;Ljava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/Integer;Ljava/lang/String;Lah4/c;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-static/range"
+        }
+      ],
+      "dexEntry": "classes7.dex",
+      "class": "Lsq5/a1;"
+    },
+    {
+      "method": "Lsq5/a1;->z(Landroid/content/Context;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Lzf4/n0;I)Landroid/text/SpannableStringBuilder;",
+      "references": [
+        {
+          "offset": 63,
+          "reference": "Lsr7/g;->s(Landroid/content/Context;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes7.dex",
+      "class": "Lsq5/a1;"
+    },
+    {
+      "method": "Lah6/h$b;->i(I)V",
+      "references": [
+        {
+          "offset": 104,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lah6/h$b;"
+    },
+    {
+      "method": "Lah6/h$b;->k()V",
+      "references": [
+        {
+          "offset": 41,
+          "reference": "Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lah6/h$b;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$a;->i(Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$ParentCommentViewHolder;I)V",
+      "references": [
+        {
+          "offset": 104,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$a;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$a;->k(Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$ParentCommentViewHolder;)V",
+      "references": [
+        {
+          "offset": 43,
+          "reference": "Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$a;"
+    },
+    {
+      "method": "Lth6/i;->f(Lcom/xingin/entities/CommentCommentInfo;)Ljava/lang/String;",
+      "references": [
+        {
+          "offset": 256,
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->j0(Ljava/lang/String;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/i;"
+    },
+    {
+      "method": "Lth6/i;->h(Z)V",
+      "references": [
+        {
+          "offset": 244,
+          "reference": "Lud3/a;->s(Lud3/a;Lcom/xingin/entities/CommentCommentInfo;ZILjava/lang/Object;)I",
+          "resourceReference": false,
+          "opcode": "invoke-static"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/i;"
+    },
+    {
+      "method": "Lth6/r;->a(Landroid/widget/LinearLayout;Landroid/view/View$OnClickListener;)V",
+      "references": [
+        {
+          "offset": 4,
+          "reference": "Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/r;"
+    },
+    {
+      "method": "Lth6/t;->g(Lcom/xingin/entities/CommentCommentInfo;)Ljava/lang/String;",
+      "references": [
+        {
+          "offset": 256,
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->j0(Ljava/lang/String;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/t;"
+    },
+    {
+      "method": "Lth6/t;->h(Z)V",
+      "references": [
+        {
+          "offset": 244,
+          "reference": "Lud3/a;->s(Lud3/a;Lcom/xingin/entities/CommentCommentInfo;ZILjava/lang/Object;)I",
+          "resourceReference": false,
+          "opcode": "invoke-static"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/t;"
+    },
+    {
+      "method": "Lah6/n;->d(Lah6/d;)Lah6/d;",
+      "references": [
+        {
+          "offset": 46,
+          "reference": "Lah6/a$c;->L()Luc9/b;",
+          "resourceReference": false,
+          "opcode": "invoke-interface"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lah6/n;"
+    },
+    {
+      "method": "Lch6/n;->d(Lch6/d;)Lch6/d;",
+      "references": [
+        {
+          "offset": 46,
+          "reference": "Lch6/a$c;->L()Luc9/b;",
+          "resourceReference": false,
+          "opcode": "invoke-interface"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lch6/n;"
+    },
+    {
+      "method": "Lth6/i$a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)V",
+      "references": [
+        {
+          "offset": 101,
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->l0(Ljava/lang/String;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/i$a;"
+    },
+    {
+      "method": "Lth6/t$a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)V",
+      "references": [
+        {
+          "offset": 101,
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->l0(Ljava/lang/String;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/t$a;"
+    },
+    {
+      "method": "Lah6/d$q;->a(Landroid/text/SpannableStringBuilder;)V",
+      "references": [
+        {
+          "offset": 50,
+          "reference": "Lah6/h;->L(Lqh6/d;Landroid/text/SpannableStringBuilder;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lah6/d$q;"
+    },
+    {
+      "method": "Lch6/d$a;->a(Ljava/lang/Object;)V",
+      "references": [
+        {
+          "offset": 215,
+          "reference": "Lch6/h;->l0(Lqh6/e;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lch6/d$a;"
+    },
+    {
+      "method": "Lch6/d$h;->invoke(Lkotlin/Unit;)V",
+      "references": [
+        {
+          "offset": 194,
+          "reference": "Lqh6/e;->s()Ljava/lang/String;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lch6/d$h;"
+    },
+    {
+      "method": "Lch6/d$q;->a(Landroid/text/SpannableStringBuilder;)V",
+      "references": [
+        {
+          "offset": 28,
+          "reference": "Lch6/h;->L(Lqh6/e;Landroid/text/SpannableStringBuilder;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lch6/d$q;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$f;->a(Lsq5/u;)V",
+      "references": [
+        {
+          "offset": 99,
+          "reference": "Lqh6/c;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 161,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$f;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$g;->a(Lsq5/u;)V",
+      "references": [
+        {
+          "offset": 99,
+          "reference": "Lqh6/c;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 161,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$g;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2$d;->a(Lsq5/u;)V",
+      "references": [
+        {
+          "offset": 139,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2$d;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2$e;->a(Lsq5/u;)V",
+      "references": [
+        {
+          "offset": 146,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2$e;"
+    },
+    {
+      "method": "Lth6/h$g;->a(Lcom/xingin/entities/CommentPictureInfo;)V",
+      "references": [
+        {
+          "offset": 71,
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/h$g;"
+    },
+    {
+      "method": "Lth6/h$k;->invoke()V",
+      "references": [
+        {
+          "offset": 35,
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 133,
+          "reference": "Lj7/e;->s(I)Lj7/e;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/h$k;"
+    },
+    {
+      "method": "Lth6/h$o;->a(Lx86/l;)V",
+      "references": [
+        {
+          "offset": 142,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/h$o;"
+    },
+    {
+      "method": "Lth6/h;->n(Lth6/h;Lcom/xingin/foundation/framework/v2/recyclerview/KotlinViewHolder;Z)V",
+      "references": [
+        {
+          "offset": 0,
+          "reference": "Lth6/h;->L(Lcom/xingin/foundation/framework/v2/recyclerview/KotlinViewHolder;Z)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/h;"
+    },
+    {
+      "method": "Lth6/h;->H(Lcom/xingin/foundation/framework/v2/recyclerview/KotlinViewHolder;Lcom/xingin/entities/CommentCommentInfo;ZZLjava/lang/String;ZI)Ltg6/f;",
+      "references": [
+        {
+          "offset": 107,
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual/range"
+        },
+        {
+          "offset": 245,
+          "reference": "Lsr7/g;->s(Landroid/content/Context;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 423,
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual/range"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/h;"
+    },
+    {
+      "method": "Lth6/h;->Q(Lcom/xingin/foundation/framework/v2/recyclerview/KotlinViewHolder;Lcom/xingin/entities/CommentCommentInfo;Ljava/util/List;I)V",
+      "references": [
+        {
+          "offset": 305,
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual/range"
+        },
+        {
+          "offset": 495,
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual/range"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/h;"
+    },
+    {
+      "method": "Lth6/h;->w(Lcom/xingin/foundation/framework/v2/recyclerview/KotlinViewHolder;Lcom/xingin/entities/CommentCommentInfo;Ljava/lang/String;ZLth6/i;)V",
+      "references": [
+        {
+          "offset": 465,
+          "reference": "Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 589,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 1162,
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual/range"
+        },
+        {
+          "offset": 1296,
+          "reference": "Lth6/h;->L(Lcom/xingin/foundation/framework/v2/recyclerview/KotlinViewHolder;Z)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/h;"
+    },
+    {
+      "method": "Lth6/m0;->l(Lcom/xingin/foundation/framework/v2/recyclerview/KotlinViewHolder;Lz86/c;)V",
+      "references": [
+        {
+          "offset": 145,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/m0;"
+    },
+    {
+      "method": "Lth6/s;->W(Lcom/xingin/matrix/v2/notedetail/itembinder/AbsEmptyBinder$EmptyViewHolder;Lz86/a;)V",
+      "references": [
+        {
+          "offset": 66,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/s;"
+    },
+    {
+      "method": "Lth6/s;->Y(Lcom/xingin/matrix/v2/notedetail/itembinder/AbsEmptyBinder$EmptyViewHolder;Lz86/a;)V",
+      "references": [
+        {
+          "offset": 37,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 95,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/s;"
+    },
+    {
+      "method": "Lth6/s;->a0(Lcom/xingin/matrix/v2/notedetail/itembinder/AbsEmptyBinder$EmptyViewHolder;Lz86/a;)V",
+      "references": [
+        {
+          "offset": 30,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 83,
+          "reference": "Lsr7/g;->s(Landroid/content/Context;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 87,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/s;"
+    },
+    {
+      "method": "Lth6/s;->c0(Lcom/xingin/matrix/v2/notedetail/itembinder/AbsEmptyBinder$EmptyViewHolder;Lz86/a;)V",
+      "references": [
+        {
+          "offset": 67,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 101,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lth6/s;"
+    },
+    {
+      "method": "Lah6/d;->Z1()V",
+      "references": [
+        {
+          "offset": 18,
+          "reference": "Lah6/h;->j0()Ltb9/r;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lah6/d;"
+    },
+    {
+      "method": "Lah6/d;->n2(Lqh6/d;ZZ)Ltg6/f;",
+      "references": [
+        {
+          "offset": 94,
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 227,
+          "reference": "Lah6/h;->l0(Lcom/xingin/entities/CommentCommentInfo;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 260,
+          "reference": "Lsr7/g;->s(Landroid/content/Context;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 432,
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lah6/d;"
+    },
+    {
+      "method": "Lch6/d;->S1()V",
+      "references": [
+        {
+          "offset": 179,
+          "reference": "Lqh6/e;->s()Ljava/lang/String;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lch6/d;"
+    },
+    {
+      "method": "Lch6/d;->d2(Lqh6/e;ZZ)Ltg6/f;",
+      "references": [
+        {
+          "offset": 94,
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 246,
+          "reference": "Lsr7/g;->s(Landroid/content/Context;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 264,
+          "reference": "Lch6/h;->j0(Lcom/xingin/entities/CommentCommentInfo;)Landroid/text/SpannableStringBuilder;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 409,
+          "reference": "Lcom/xingin/entities/CommentCommentInfo;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lch6/d;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;->W(Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$ParentCommentViewHolder;Lqh6/c;Lkotlin/Unit;)Ltg6/i;",
+      "references": [
+        {
+          "offset": 0,
+          "reference": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;->l0(Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$ParentCommentViewHolder;Lqh6/c;Lkotlin/Unit;)Ltg6/i;",
+          "resourceReference": false,
+          "opcode": "invoke-static"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;->c0(Lqh6/c;Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$ParentCommentViewHolder;Lkotlin/Unit;)Ljava/lang/Object;",
+      "references": [
+        {
+          "offset": 0,
+          "reference": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;->j0(Lqh6/c;Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$ParentCommentViewHolder;Lkotlin/Unit;)Ljava/lang/Object;",
+          "resourceReference": false,
+          "opcode": "invoke-static"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;->I0(Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$ParentCommentViewHolder;Lqh6/c;)V",
+      "references": [
+        {
+          "offset": 107,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 203,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 267,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 348,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 414,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 507,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 556,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 602,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 623,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;->K0(Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$ParentCommentViewHolder;Lqh6/c;Z)V",
+      "references": [
+        {
+          "offset": 248,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 285,
+          "reference": "Lwg3/c;->s(Landroid/view/View;ZI)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;->L0(Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$ParentCommentViewHolder;Lqh6/c;)V",
+      "references": [
+        {
+          "offset": 127,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 250,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;->M0(Landroid/widget/TextView;Ljava/lang/String;)V",
+      "references": [
+        {
+          "offset": 15,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;->g0(Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$ParentCommentViewHolder;Lqh6/c;)V",
+      "references": [
+        {
+          "offset": 221,
+          "reference": "Lth6/h;->s(Lcom/xingin/foundation/framework/v2/recyclerview/KotlinViewHolder;Lcom/xingin/entities/CommentCommentInfo;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;->n0(Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$ParentCommentViewHolder;Lqh6/c;)V",
+      "references": [
+        {
+          "offset": 362,
+          "reference": "Lqh6/c;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual/range"
+        },
+        {
+          "offset": 368,
+          "reference": "Lqh6/c;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual/range"
+        },
+        {
+          "offset": 420,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 466,
+          "reference": "Lqh6/c;->s()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual/range"
+        },
+        {
+          "offset": 514,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 589,
+          "reference": "Landroid/text/StaticLayout;->getLineCount()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 593,
+          "reference": "Landroid/text/StaticLayout;->getLineCount()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 656,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 681,
+          "reference": "Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;->p0(Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2$ParentCommentViewHolder;Lqh6/c;)V",
+      "references": [
+        {
+          "offset": 200,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;->X(Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2$SubCommentViewHolder;Lqh6/e;Lkotlin/Unit;)Ltg6/f;",
+      "references": [
+        {
+          "offset": 0,
+          "reference": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;->l0(Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2$SubCommentViewHolder;Lqh6/e;Lkotlin/Unit;)Ltg6/f;",
+          "resourceReference": false,
+          "opcode": "invoke-static"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;->Y(Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2$SubCommentViewHolder;Lqh6/e;Lkotlin/Unit;)Ltg6/i;",
+      "references": [
+        {
+          "offset": 0,
+          "reference": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;->j0(Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2$SubCommentViewHolder;Lqh6/e;Lkotlin/Unit;)Ltg6/i;",
+          "resourceReference": false,
+          "opcode": "invoke-static"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;->g0(Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2$SubCommentViewHolder;Lqh6/e;Lkotlin/Unit;)Ltg6/g;",
+      "references": [
+        {
+          "offset": 117,
+          "reference": "Lqh6/e;->s()Ljava/lang/String;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;->D0(Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2$SubCommentViewHolder;Lqh6/e;)V",
+      "references": [
+        {
+          "offset": 107,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 203,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 267,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 337,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 414,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 496,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 545,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 591,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 623,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;->F0(Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2$SubCommentViewHolder;Lqh6/e;Z)V",
+      "references": [
+        {
+          "offset": 243,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 280,
+          "reference": "Lwg3/c;->s(Landroid/view/View;ZI)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;->H0(Landroid/widget/TextView;Ljava/lang/String;)V",
+      "references": [
+        {
+          "offset": 15,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;->f0(Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2$SubCommentViewHolder;Lqh6/e;)V",
+      "references": [
+        {
+          "offset": 157,
+          "reference": "Lth6/h;->s(Lcom/xingin/foundation/framework/v2/recyclerview/KotlinViewHolder;Lcom/xingin/entities/CommentCommentInfo;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;->m0(Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2$SubCommentViewHolder;Lqh6/e;)V",
+      "references": [
+        {
+          "offset": 182,
+          "reference": "Lqh6/e;->s()Ljava/lang/String;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual/range"
+        },
+        {
+          "offset": 597,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 684,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 772,
+          "reference": "Landroid/text/StaticLayout;->getLineCount()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 776,
+          "reference": "Landroid/text/StaticLayout;->getLineCount()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 840,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 887,
+          "reference": "Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;"
+    },
+    {
+      "method": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;->o0(Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2$SubCommentViewHolder;Lqh6/e;)V",
+      "references": [
+        {
+          "offset": 219,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lcom/xingin/matrix/v2/notedetail/itembinder/SubCommentBinderV2;"
+    },
+    {
+      "method": "Lah6/h;->L(Lqh6/d;Landroid/text/SpannableStringBuilder;)V",
+      "references": [
+        {
+          "offset": 197,
+          "reference": "Landroid/text/StaticLayout;->getLineCount()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 201,
+          "reference": "Landroid/text/StaticLayout;->getLineCount()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 267,
+          "reference": "Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 273,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lah6/h;"
+    },
+    {
+      "method": "Lah6/h;->Q(ILqh6/d;Ljava/lang/Integer;)V",
+      "references": [
+        {
+          "offset": 238,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lah6/h;"
+    },
+    {
+      "method": "Lah6/h;->o0(Lqh6/d;)V",
+      "references": [
+        {
+          "offset": 134,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 230,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 294,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 364,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 462,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 544,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 593,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 639,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 671,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lah6/h;"
+    },
+    {
+      "method": "Lah6/h;->s0(Lqh6/d;Z)V",
+      "references": [
+        {
+          "offset": 350,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lah6/h;"
+    },
+    {
+      "method": "Lah6/h;->t0(Lqh6/d;)V",
+      "references": [
+        {
+          "offset": 139,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 262,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lah6/h;"
+    },
+    {
+      "method": "Lah6/h;->u0(Landroid/widget/TextView;Ljava/lang/String;)V",
+      "references": [
+        {
+          "offset": 15,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lah6/h;"
+    },
+    {
+      "method": "Lch6/h;->L(Lqh6/e;Landroid/text/SpannableStringBuilder;)V",
+      "references": [
+        {
+          "offset": 94,
+          "reference": "Lqh6/e;->s()Ljava/lang/String;",
+          "resourceReference": false,
+          "opcode": "invoke-virtual/range"
+        },
+        {
+          "offset": 373,
+          "reference": "Landroid/text/StaticLayout;->getLineCount()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 377,
+          "reference": "Landroid/text/StaticLayout;->getLineCount()I",
+          "resourceReference": false,
+          "opcode": "invoke-virtual/range"
+        },
+        {
+          "offset": 425,
+          "reference": "Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 431,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lch6/h;"
+    },
+    {
+      "method": "Lch6/h;->O(Lqh6/e;)V",
+      "references": [
+        {
+          "offset": 54,
+          "reference": "Lch6/h;->l0(Lqh6/e;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual/range"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lch6/h;"
+    },
+    {
+      "method": "Lch6/h;->Q(ILqh6/e;Ljava/lang/Integer;)V",
+      "references": [
+        {
+          "offset": 238,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lch6/h;"
+    },
+    {
+      "method": "Lch6/h;->l0(Lqh6/e;)V",
+      "references": [
+        {
+          "offset": 131,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 227,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 291,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 361,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 456,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 538,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 587,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 633,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        },
+        {
+          "offset": 665,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lch6/h;"
+    },
+    {
+      "method": "Lch6/h;->o0(Lqh6/e;Z)V",
+      "references": [
+        {
+          "offset": 349,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lch6/h;"
+    },
+    {
+      "method": "Lch6/h;->q0(Landroid/widget/TextView;Ljava/lang/String;)V",
+      "references": [
+        {
+          "offset": 15,
+          "reference": "Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V",
+          "resourceReference": false,
+          "opcode": "invoke-virtual"
+        }
+      ],
+      "dexEntry": "classes9.dex",
+      "class": "Lch6/h;"
+    }
+  ],
+  "limitations": [
+    "Resource references searched in all DEX instruction operands; text operations restricted to listed class prefixes.",
+    "Reflection, inherited operations, native behavior and runtime configurations remain unresolved; bounded absence is not feature absence."
+  ]
+}

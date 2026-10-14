@@ -1,0 +1,69 @@
+    /* JADX WARN: Multi-variable type inference failed */
+    public final tg6.f n2(qh6.d dVar, boolean z100, boolean z101) {
+        Triple triple;
+        CommentPictureInfo commentPictureInfo;
+        String strB;
+        String strD;
+        String strF;
+        CommentPictureInfo commentPictureInfo2;
+        PatchProxyResult patchProxyResultProxy3Para = PatchProxy.proxy3Para(dVar, new Boolean(z100), new Boolean(z101), this, d.class, 384661);
+        if (patchProxyResultProxy3Para.isSupported) {
+            return (tg6.f) patchProxyResultProxy3Para.result;
+        }
+        String strF2 = dVar.f();
+        String strJ = u1.f323016a.Z1().j();
+        Function0<Integer> function0 = this.f6810o;
+        if (function0 == null) {
+            function0 = null;
+        }
+        int iIntValue = function0.invoke().intValue();
+        String strN = dVar.m().n();
+        String str = strN == null ? "" : strN;
+        int iG = dVar.m().g();
+        int iS = dVar.m().s();
+        List<CommentPictureInfo> listV = dVar.m().v();
+        String strA = (listV == null || (commentPictureInfo2 = (CommentPictureInfo) CollectionsKt___CollectionsKt.getOrNull(listV, 0)) == null) ? null : commentPictureInfo2.a();
+        String str2 = strA == null ? "" : strA;
+        CommentCommentUser commentCommentUserA0 = dVar.m().a0();
+        String str3 = (commentCommentUserA0 == null || (strF = commentCommentUserA0.f()) == null) ? "" : strF;
+        CommentCommentUser commentCommentUserA1 = dVar.m().a0();
+        String str4 = (commentCommentUserA1 == null || (strD = commentCommentUserA1.d()) == null) ? "" : strD;
+        CommentCommentUser commentCommentUserA2 = dVar.m().a0();
+        String str5 = (commentCommentUserA2 == null || (strB = commentCommentUserA2.b()) == null) ? "" : strB;
+        boolean zAreEqual = Intrinsics.areEqual(strF2, strJ);
+        CommentCommentUser commentCommentUserA3 = dVar.m().a0();
+        String strF3 = commentCommentUserA3 != null ? commentCommentUserA3.f() : null;
+        if (strF3 == null) {
+            strF3 = "";
+        }
+        boolean zAreEqual2 = Intrinsics.areEqual(strF3, strJ);
+        SpannableStringBuilder spannableStringBuilderL0 = ((ah6.h) getPresenter()).l0(dVar.m());
+        sr7.g gVar = new sr7.g((Context) XYUtilsCenter.f(), false);
+        gVar.B(new ur7.n());
+        String string = gVar.s(XYUtilsCenter.f(), dVar.m().h()).toString();
+        boolean zI = dVar.i();
+        Integer numC = dVar.m().C();
+        boolean z102 = numC != null && numC.intValue() == 4;
+        boolean z103 = dVar.m().S() != null;
+        String strA2 = z101 ? w.a(dVar.m()) : "";
+        Integer numC2 = dVar.m().C();
+        boolean zA = zf4.d.a(dVar.m());
+        CommentPictureInfo commentPictureInfoD = zf4.d.d(dVar.m(), 0, 1, null);
+        if (commentPictureInfoD != null) {
+            String strJ2 = commentPictureInfoD.j();
+            if (strJ2 == null) {
+                strJ2 = "";
+            }
+            triple = new Triple(strJ2, Integer.valueOf(commentPictureInfoD.getWidth()), Integer.valueOf(commentPictureInfoD.getHeight()));
+        } else {
+            triple = null;
+        }
+        CommentPictureInfo commentPictureInfoD2 = zf4.d.d(dVar.m(), 0, 1, null);
+        CommentMemeInfo commentMemeInfoH = commentPictureInfoD2 != null ? commentPictureInfoD2.h() : null;
+        CommentPictureInfo commentPictureInfoD3 = zf4.d.d(dVar.m(), 0, 1, null);
+        CommentStickerInfo commentStickerInfoK = commentPictureInfoD3 != null ? commentPictureInfoD3.k() : null;
+        int iS2 = dVar.m().s();
+        String strO0 = dVar.m().o0();
+        List<CommentPictureInfo> listV2 = dVar.m().v();
+        return new tg6.f(iIntValue, iG, iS, str2, str, str3, str4, str5, zAreEqual, zAreEqual2, z100, string, spannableStringBuilderL0, zI, z102, z103, strA2, numC2, zA, triple, 0L, commentMemeInfoH, commentStickerInfoK, Integer.valueOf(iS2), strO0, (listV2 == null || (commentPictureInfo = (CommentPictureInfo) CollectionsKt___CollectionsKt.getOrNull(listV2, 0)) == null || !commentPictureInfo.n()) ? false : true, dVar.m(), 1048576, null);
+    }

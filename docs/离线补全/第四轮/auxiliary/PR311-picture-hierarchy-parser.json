@@ -1,0 +1,2366 @@
+{
+  "provider": "dexlib2-bundled-with-jadx-auxiliary-not-REA-Evidence",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "selectors": [
+    "Lj7/c;::d",
+    "Lj7/c;::e",
+    "Lcm/c;::g"
+  ],
+  "matches": [
+    {
+      "selector": "Lj7/c;::d",
+      "dexEntry": "classes12.dex",
+      "method": "Lj7/c;->d(Landroid/content/Context;Landroid/util/AttributeSet;)Lj7/b;",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 4,
+      "codeUnits": 34,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Lm8/b;->d()Z"
+        },
+        {
+          "offset": 3,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 4,
+          "opcode": "if-eqz",
+          "a": 0,
+          "target": 11
+        },
+        {
+          "offset": 6,
+          "opcode": "const-string",
+          "a": 0,
+          "reference": "\"GenericDraweeHierarchyBuilder#inflateBuilder\""
+        },
+        {
+          "offset": 8,
+          "opcode": "invoke-static",
+          "registers": [
+            0
+          ],
+          "reference": "Lm8/b;->a(Ljava/lang/String;)V"
+        },
+        {
+          "offset": 11,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2
+          ],
+          "reference": "Landroid/content/Context;->getResources()Landroid/content/res/Resources;"
+        },
+        {
+          "offset": 14,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 15,
+          "opcode": "new-instance",
+          "a": 1,
+          "reference": "Lj7/b;"
+        },
+        {
+          "offset": 17,
+          "opcode": "invoke-direct",
+          "registers": [
+            1,
+            0
+          ],
+          "reference": "Lj7/b;-><init>(Landroid/content/res/Resources;)V"
+        },
+        {
+          "offset": 20,
+          "opcode": "invoke-static",
+          "registers": [
+            1,
+            2,
+            3
+          ],
+          "reference": "Lj7/c;->e(Lj7/b;Landroid/content/Context;Landroid/util/AttributeSet;)Lj7/b;"
+        },
+        {
+          "offset": 23,
+          "opcode": "move-result-object",
+          "a": 2
+        },
+        {
+          "offset": 24,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Lm8/b;->d()Z"
+        },
+        {
+          "offset": 27,
+          "opcode": "move-result",
+          "a": 3
+        },
+        {
+          "offset": 28,
+          "opcode": "if-eqz",
+          "a": 3,
+          "target": 33
+        },
+        {
+          "offset": 30,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Lm8/b;->b()V"
+        },
+        {
+          "offset": 33,
+          "opcode": "return-object",
+          "a": 2
+        }
+      ]
+    },
+    {
+      "selector": "Lj7/c;::e",
+      "dexEntry": "classes12.dex",
+      "method": "Lj7/c;->e(Lj7/b;Landroid/content/Context;Landroid/util/AttributeSet;)Lj7/b;",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 20,
+      "codeUnits": 569,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "move-object/from16",
+          "a": 0,
+          "b": 17
+        },
+        {
+          "offset": 2,
+          "opcode": "move-object/from16",
+          "a": 1,
+          "b": 18
+        },
+        {
+          "offset": 4,
+          "opcode": "move-object/from16",
+          "a": 2,
+          "b": 19
+        },
+        {
+          "offset": 6,
+          "opcode": "if-eqz",
+          "a": 2,
+          "target": 513
+        },
+        {
+          "offset": 8,
+          "opcode": "sget-object",
+          "a": 6,
+          "reference": "Lz6/a;->a:[I"
+        },
+        {
+          "offset": 10,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1,
+            2,
+            6
+          ],
+          "reference": "Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;"
+        },
+        {
+          "offset": 13,
+          "opcode": "move-result-object",
+          "a": 2
+        },
+        {
+          "offset": 14,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getIndexCount()I"
+        },
+        {
+          "offset": 17,
+          "opcode": "move-result",
+          "a": 6
+        },
+        {
+          "offset": 18,
+          "opcode": "const/4",
+          "a": 5,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 19,
+          "opcode": "const/4",
+          "a": 7,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 20,
+          "opcode": "const/4",
+          "a": 8,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 21,
+          "opcode": "const/4",
+          "a": 9,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 22,
+          "opcode": "const/4",
+          "a": 10,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 23,
+          "opcode": "const/4",
+          "a": 11,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 24,
+          "opcode": "const/4",
+          "a": 12,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 25,
+          "opcode": "const/4",
+          "a": 13,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 26,
+          "opcode": "const/4",
+          "a": 14,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 27,
+          "opcode": "const/4",
+          "a": 15,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 28,
+          "opcode": "const/16",
+          "a": 16,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 30,
+          "opcode": "if-ge",
+          "a": 7,
+          "b": 6,
+          "target": 410
+        },
+        {
+          "offset": 32,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            7
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getIndex(I)I"
+        },
+        {
+          "offset": 35,
+          "opcode": "move-result",
+          "a": 3
+        },
+        {
+          "offset": 36,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->b:I"
+        },
+        {
+          "offset": 38,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 49
+        },
+        {
+          "offset": 40,
+          "opcode": "invoke-static",
+          "registers": [
+            2,
+            3
+          ],
+          "reference": "Lj7/c;->c(Landroid/content/res/TypedArray;I)Li7/q$c;"
+        },
+        {
+          "offset": 43,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 44,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            3
+          ],
+          "reference": "Lj7/b;->w(Li7/q$c;)Lj7/b;"
+        },
+        {
+          "offset": 47,
+          "opcode": "goto/16",
+          "target": 194
+        },
+        {
+          "offset": 49,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->h:I"
+        },
+        {
+          "offset": 51,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 62
+        },
+        {
+          "offset": 53,
+          "opcode": "invoke-static",
+          "registers": [
+            1,
+            2,
+            3
+          ],
+          "reference": "Lj7/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/graphics/drawable/Drawable;"
+        },
+        {
+          "offset": 56,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 57,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            3
+          ],
+          "reference": "Lj7/b;->E(Landroid/graphics/drawable/Drawable;)Lj7/b;"
+        },
+        {
+          "offset": 60,
+          "opcode": "goto/16",
+          "target": 194
+        },
+        {
+          "offset": 62,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->j:I"
+        },
+        {
+          "offset": 64,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 75
+        },
+        {
+          "offset": 66,
+          "opcode": "invoke-static",
+          "registers": [
+            1,
+            2,
+            3
+          ],
+          "reference": "Lj7/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/graphics/drawable/Drawable;"
+        },
+        {
+          "offset": 69,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 70,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            3
+          ],
+          "reference": "Lj7/b;->G(Landroid/graphics/drawable/Drawable;)Lj7/b;"
+        },
+        {
+          "offset": 73,
+          "opcode": "goto/16",
+          "target": 194
+        },
+        {
+          "offset": 75,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->l:I"
+        },
+        {
+          "offset": 77,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 88
+        },
+        {
+          "offset": 79,
+          "opcode": "invoke-static",
+          "registers": [
+            1,
+            2,
+            3
+          ],
+          "reference": "Lj7/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/graphics/drawable/Drawable;"
+        },
+        {
+          "offset": 82,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 83,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            3
+          ],
+          "reference": "Lj7/b;->H(Landroid/graphics/drawable/Drawable;)Lj7/b;"
+        },
+        {
+          "offset": 86,
+          "opcode": "goto/16",
+          "target": 194
+        },
+        {
+          "offset": 88,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->d:I"
+        },
+        {
+          "offset": 90,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 101
+        },
+        {
+          "offset": 92,
+          "opcode": "const/4",
+          "a": 4,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 93,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            4
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getInt(II)I"
+        },
+        {
+          "offset": 96,
+          "opcode": "move-result",
+          "a": 3
+        },
+        {
+          "offset": 97,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            3
+          ],
+          "reference": "Lj7/b;->z(I)Lj7/b;"
+        },
+        {
+          "offset": 100,
+          "opcode": "goto",
+          "target": 194
+        },
+        {
+          "offset": 101,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->D:I"
+        },
+        {
+          "offset": 103,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 114
+        },
+        {
+          "offset": 105,
+          "opcode": "const/4",
+          "a": 4,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 106,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            4
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getFloat(IF)F"
+        },
+        {
+          "offset": 109,
+          "opcode": "move-result",
+          "a": 3
+        },
+        {
+          "offset": 110,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            3
+          ],
+          "reference": "Lj7/b;->y(F)Lj7/b;"
+        },
+        {
+          "offset": 113,
+          "opcode": "goto",
+          "target": 194
+        },
+        {
+          "offset": 114,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->i:I"
+        },
+        {
+          "offset": 116,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 126
+        },
+        {
+          "offset": 118,
+          "opcode": "invoke-static",
+          "registers": [
+            2,
+            3
+          ],
+          "reference": "Lj7/c;->c(Landroid/content/res/TypedArray;I)Li7/q$c;"
+        },
+        {
+          "offset": 121,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 122,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            3
+          ],
+          "reference": "Lj7/b;->F(Li7/q$c;)Lj7/b;"
+        },
+        {
+          "offset": 125,
+          "opcode": "goto",
+          "target": 194
+        },
+        {
+          "offset": 126,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->n:I"
+        },
+        {
+          "offset": 128,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 138
+        },
+        {
+          "offset": 130,
+          "opcode": "invoke-static",
+          "registers": [
+            1,
+            2,
+            3
+          ],
+          "reference": "Lj7/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/graphics/drawable/Drawable;"
+        },
+        {
+          "offset": 133,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 134,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            3
+          ],
+          "reference": "Lj7/b;->J(Landroid/graphics/drawable/Drawable;)Lj7/b;"
+        },
+        {
+          "offset": 137,
+          "opcode": "goto",
+          "target": 194
+        },
+        {
+          "offset": 138,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->o:I"
+        },
+        {
+          "offset": 140,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 150
+        },
+        {
+          "offset": 142,
+          "opcode": "invoke-static",
+          "registers": [
+            2,
+            3
+          ],
+          "reference": "Lj7/c;->c(Landroid/content/res/TypedArray;I)Li7/q$c;"
+        },
+        {
+          "offset": 145,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 146,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            3
+          ],
+          "reference": "Lj7/b;->K(Li7/q$c;)Lj7/b;"
+        },
+        {
+          "offset": 149,
+          "opcode": "goto",
+          "target": 194
+        },
+        {
+          "offset": 150,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->e:I"
+        },
+        {
+          "offset": 152,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 162
+        },
+        {
+          "offset": 154,
+          "opcode": "invoke-static",
+          "registers": [
+            1,
+            2,
+            3
+          ],
+          "reference": "Lj7/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/graphics/drawable/Drawable;"
+        },
+        {
+          "offset": 157,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 158,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            3
+          ],
+          "reference": "Lj7/b;->A(Landroid/graphics/drawable/Drawable;)Lj7/b;"
+        },
+        {
+          "offset": 161,
+          "opcode": "goto",
+          "target": 194
+        },
+        {
+          "offset": 162,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->f:I"
+        },
+        {
+          "offset": 164,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 174
+        },
+        {
+          "offset": 166,
+          "opcode": "invoke-static",
+          "registers": [
+            2,
+            3
+          ],
+          "reference": "Lj7/c;->c(Landroid/content/res/TypedArray;I)Li7/q$c;"
+        },
+        {
+          "offset": 169,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 170,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            3
+          ],
+          "reference": "Lj7/b;->B(Li7/q$c;)Lj7/b;"
+        },
+        {
+          "offset": 173,
+          "opcode": "goto",
+          "target": 194
+        },
+        {
+          "offset": 174,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->m:I"
+        },
+        {
+          "offset": 176,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 186
+        },
+        {
+          "offset": 178,
+          "opcode": "invoke-static",
+          "registers": [
+            2,
+            3
+          ],
+          "reference": "Lj7/c;->c(Landroid/content/res/TypedArray;I)Li7/q$c;"
+        },
+        {
+          "offset": 181,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 182,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            3
+          ],
+          "reference": "Lj7/b;->I(Li7/q$c;)Lj7/b;"
+        },
+        {
+          "offset": 185,
+          "opcode": "goto",
+          "target": 194
+        },
+        {
+          "offset": 186,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->k:I"
+        },
+        {
+          "offset": 188,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 197
+        },
+        {
+          "offset": 190,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            5
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getInteger(II)I"
+        },
+        {
+          "offset": 193,
+          "opcode": "move-result",
+          "a": 5
+        },
+        {
+          "offset": 194,
+          "opcode": "const/4",
+          "a": 4,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 195,
+          "opcode": "goto/16",
+          "target": 401
+        },
+        {
+          "offset": 197,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->c:I"
+        },
+        {
+          "offset": 199,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 209
+        },
+        {
+          "offset": 201,
+          "opcode": "invoke-static",
+          "registers": [
+            1,
+            2,
+            3
+          ],
+          "reference": "Lj7/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/graphics/drawable/Drawable;"
+        },
+        {
+          "offset": 204,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 205,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            3
+          ],
+          "reference": "Lj7/b;->x(Landroid/graphics/drawable/Drawable;)Lj7/b;"
+        },
+        {
+          "offset": 208,
+          "opcode": "goto",
+          "target": 194
+        },
+        {
+          "offset": 209,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->g:I"
+        },
+        {
+          "offset": 211,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 221
+        },
+        {
+          "offset": 213,
+          "opcode": "invoke-static",
+          "registers": [
+            1,
+            2,
+            3
+          ],
+          "reference": "Lj7/c;->a(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/graphics/drawable/Drawable;"
+        },
+        {
+          "offset": 216,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 217,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            3
+          ],
+          "reference": "Lj7/b;->C(Landroid/graphics/drawable/Drawable;)Lj7/b;"
+        },
+        {
+          "offset": 220,
+          "opcode": "goto",
+          "target": 194
+        },
+        {
+          "offset": 221,
+          "opcode": "sget",
+          "a": 4,
+          "reference": "Lz6/a;->p:I"
+        },
+        {
+          "offset": 223,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 4,
+          "target": 238
+        },
+        {
+          "offset": 225,
+          "opcode": "invoke-static/range",
+          "startRegister": 17,
+          "argumentRegisters": 1,
+          "reference": "Lj7/c;->b(Lj7/b;)Lj7/e;"
+        },
+        {
+          "offset": 228,
+          "opcode": "move-result-object",
+          "a": 4
+        },
+        {
+          "offset": 229,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 230,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            1
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getBoolean(IZ)Z"
+        },
+        {
+          "offset": 233,
+          "opcode": "move-result",
+          "a": 3
+        },
+        {
+          "offset": 234,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4,
+            3
+          ],
+          "reference": "Lj7/e;->v(Z)Lj7/e;"
+        },
+        {
+          "offset": 237,
+          "opcode": "goto",
+          "target": 194
+        },
+        {
+          "offset": 238,
+          "opcode": "sget",
+          "a": 1,
+          "reference": "Lz6/a;->z:I"
+        },
+        {
+          "offset": 240,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 1,
+          "target": 249
+        },
+        {
+          "offset": 242,
+          "opcode": "move/from16",
+          "a": 4,
+          "b": 16
+        },
+        {
+          "offset": 244,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            4
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I"
+        },
+        {
+          "offset": 247,
+          "opcode": "move-result",
+          "a": 16
+        },
+        {
+          "offset": 248,
+          "opcode": "goto",
+          "target": 194
+        },
+        {
+          "offset": 249,
+          "opcode": "move/from16",
+          "a": 4,
+          "b": 16
+        },
+        {
+          "offset": 251,
+          "opcode": "sget",
+          "a": 1,
+          "reference": "Lz6/a;->v:I"
+        },
+        {
+          "offset": 253,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 1,
+          "target": 262
+        },
+        {
+          "offset": 255,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            8
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getBoolean(IZ)Z"
+        },
+        {
+          "offset": 258,
+          "opcode": "move-result",
+          "a": 8
+        },
+        {
+          "offset": 259,
+          "opcode": "move/from16",
+          "a": 16,
+          "b": 4
+        },
+        {
+          "offset": 261,
+          "opcode": "goto",
+          "target": 194
+        },
+        {
+          "offset": 262,
+          "opcode": "sget",
+          "a": 1,
+          "reference": "Lz6/a;->w:I"
+        },
+        {
+          "offset": 264,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 1,
+          "target": 271
+        },
+        {
+          "offset": 266,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            10
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getBoolean(IZ)Z"
+        },
+        {
+          "offset": 269,
+          "opcode": "move-result",
+          "a": 10
+        },
+        {
+          "offset": 270,
+          "opcode": "goto",
+          "target": 259
+        },
+        {
+          "offset": 271,
+          "opcode": "sget",
+          "a": 1,
+          "reference": "Lz6/a;->r:I"
+        },
+        {
+          "offset": 273,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 1,
+          "target": 280
+        },
+        {
+          "offset": 275,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            14
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getBoolean(IZ)Z"
+        },
+        {
+          "offset": 278,
+          "opcode": "move-result",
+          "a": 14
+        },
+        {
+          "offset": 279,
+          "opcode": "goto",
+          "target": 259
+        },
+        {
+          "offset": 280,
+          "opcode": "sget",
+          "a": 1,
+          "reference": "Lz6/a;->s:I"
+        },
+        {
+          "offset": 282,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 1,
+          "target": 289
+        },
+        {
+          "offset": 284,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            12
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getBoolean(IZ)Z"
+        },
+        {
+          "offset": 287,
+          "opcode": "move-result",
+          "a": 12
+        },
+        {
+          "offset": 288,
+          "opcode": "goto",
+          "target": 259
+        },
+        {
+          "offset": 289,
+          "opcode": "sget",
+          "a": 1,
+          "reference": "Lz6/a;->x:I"
+        },
+        {
+          "offset": 291,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 1,
+          "target": 298
+        },
+        {
+          "offset": 293,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            9
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getBoolean(IZ)Z"
+        },
+        {
+          "offset": 296,
+          "opcode": "move-result",
+          "a": 9
+        },
+        {
+          "offset": 297,
+          "opcode": "goto",
+          "target": 259
+        },
+        {
+          "offset": 298,
+          "opcode": "sget",
+          "a": 1,
+          "reference": "Lz6/a;->u:I"
+        },
+        {
+          "offset": 300,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 1,
+          "target": 307
+        },
+        {
+          "offset": 302,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            11
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getBoolean(IZ)Z"
+        },
+        {
+          "offset": 305,
+          "opcode": "move-result",
+          "a": 11
+        },
+        {
+          "offset": 306,
+          "opcode": "goto",
+          "target": 259
+        },
+        {
+          "offset": 307,
+          "opcode": "sget",
+          "a": 1,
+          "reference": "Lz6/a;->t:I"
+        },
+        {
+          "offset": 309,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 1,
+          "target": 316
+        },
+        {
+          "offset": 311,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            15
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getBoolean(IZ)Z"
+        },
+        {
+          "offset": 314,
+          "opcode": "move-result",
+          "a": 15
+        },
+        {
+          "offset": 315,
+          "opcode": "goto",
+          "target": 259
+        },
+        {
+          "offset": 316,
+          "opcode": "sget",
+          "a": 1,
+          "reference": "Lz6/a;->q:I"
+        },
+        {
+          "offset": 318,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 1,
+          "target": 325
+        },
+        {
+          "offset": 320,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            13
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getBoolean(IZ)Z"
+        },
+        {
+          "offset": 323,
+          "opcode": "move-result",
+          "a": 13
+        },
+        {
+          "offset": 324,
+          "opcode": "goto",
+          "target": 259
+        },
+        {
+          "offset": 325,
+          "opcode": "sget",
+          "a": 1,
+          "reference": "Lz6/a;->y:I"
+        },
+        {
+          "offset": 327,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 1,
+          "target": 345
+        },
+        {
+          "offset": 329,
+          "opcode": "invoke-static/range",
+          "startRegister": 17,
+          "argumentRegisters": 1,
+          "reference": "Lj7/c;->b(Lj7/b;)Lj7/e;"
+        },
+        {
+          "offset": 332,
+          "opcode": "move-result-object",
+          "a": 1
+        },
+        {
+          "offset": 333,
+          "opcode": "move/from16",
+          "a": 16,
+          "b": 4
+        },
+        {
+          "offset": 335,
+          "opcode": "const/4",
+          "a": 4,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 336,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            4
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getColor(II)I"
+        },
+        {
+          "offset": 339,
+          "opcode": "move-result",
+          "a": 3
+        },
+        {
+          "offset": 340,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1,
+            3
+          ],
+          "reference": "Lj7/e;->s(I)Lj7/e;"
+        },
+        {
+          "offset": 343,
+          "opcode": "goto/16",
+          "target": 194
+        },
+        {
+          "offset": 345,
+          "opcode": "move/from16",
+          "a": 16,
+          "b": 4
+        },
+        {
+          "offset": 347,
+          "opcode": "sget",
+          "a": 1,
+          "reference": "Lz6/a;->C:I"
+        },
+        {
+          "offset": 349,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 1,
+          "target": 366
+        },
+        {
+          "offset": 351,
+          "opcode": "invoke-static/range",
+          "startRegister": 17,
+          "argumentRegisters": 1,
+          "reference": "Lj7/c;->b(Lj7/b;)Lj7/e;"
+        },
+        {
+          "offset": 354,
+          "opcode": "move-result-object",
+          "a": 1
+        },
+        {
+          "offset": 355,
+          "opcode": "const/4",
+          "a": 4,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 356,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            4
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I"
+        },
+        {
+          "offset": 359,
+          "opcode": "move-result",
+          "a": 3
+        },
+        {
+          "offset": 360,
+          "opcode": "int-to-float",
+          "a": 3,
+          "b": 3
+        },
+        {
+          "offset": 361,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1,
+            3
+          ],
+          "reference": "Lj7/e;->p(F)Lj7/e;"
+        },
+        {
+          "offset": 364,
+          "opcode": "goto/16",
+          "target": 194
+        },
+        {
+          "offset": 366,
+          "opcode": "sget",
+          "a": 1,
+          "reference": "Lz6/a;->A:I"
+        },
+        {
+          "offset": 368,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 1,
+          "target": 384
+        },
+        {
+          "offset": 370,
+          "opcode": "invoke-static/range",
+          "startRegister": 17,
+          "argumentRegisters": 1,
+          "reference": "Lj7/c;->b(Lj7/b;)Lj7/e;"
+        },
+        {
+          "offset": 373,
+          "opcode": "move-result-object",
+          "a": 1
+        },
+        {
+          "offset": 374,
+          "opcode": "const/4",
+          "a": 4,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 375,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            4
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getColor(II)I"
+        },
+        {
+          "offset": 378,
+          "opcode": "move-result",
+          "a": 3
+        },
+        {
+          "offset": 379,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1,
+            3
+          ],
+          "reference": "Lj7/e;->o(I)Lj7/e;"
+        },
+        {
+          "offset": 382,
+          "opcode": "goto/16",
+          "target": 194
+        },
+        {
+          "offset": 384,
+          "opcode": "sget",
+          "a": 1,
+          "reference": "Lz6/a;->B:I"
+        },
+        {
+          "offset": 386,
+          "opcode": "if-ne",
+          "a": 3,
+          "b": 1,
+          "target": 194
+        },
+        {
+          "offset": 388,
+          "opcode": "invoke-static/range",
+          "startRegister": 17,
+          "argumentRegisters": 1,
+          "reference": "Lj7/c;->b(Lj7/b;)Lj7/e;"
+        },
+        {
+          "offset": 391,
+          "opcode": "move-result-object",
+          "a": 1
+        },
+        {
+          "offset": 392,
+          "opcode": "const/4",
+          "a": 4,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 393,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2,
+            3,
+            4
+          ],
+          "reference": "Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I"
+        },
+        {
+          "offset": 396,
+          "opcode": "move-result",
+          "a": 3
+        },
+        {
+          "offset": 397,
+          "opcode": "int-to-float",
+          "a": 3,
+          "b": 3
+        },
+        {
+          "offset": 398,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1,
+            3
+          ],
+          "reference": "Lj7/e;->t(F)Lj7/e;"
+        },
+        {
+          "offset": 401,
+          "opcode": "add-int/lit8",
+          "a": 7,
+          "b": 7,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 403,
+          "opcode": "move-object/from16",
+          "a": 1,
+          "b": 18
+        },
+        {
+          "offset": 405,
+          "opcode": "goto/16",
+          "target": 30
+        },
+        {
+          "offset": 407,
+          "opcode": "move-exception",
+          "a": 0
+        },
+        {
+          "offset": 408,
+          "opcode": "goto/16",
+          "target": 496
+        },
+        {
+          "offset": 410,
+          "opcode": "const/4",
+          "a": 4,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 411,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2
+          ],
+          "reference": "Landroid/content/res/TypedArray;->recycle()V"
+        },
+        {
+          "offset": 414,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 18,
+          "argumentRegisters": 1,
+          "reference": "Landroid/content/Context;->getResources()Landroid/content/res/Resources;"
+        },
+        {
+          "offset": 417,
+          "opcode": "move-result-object",
+          "a": 1
+        },
+        {
+          "offset": 418,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1
+          ],
+          "reference": "Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;"
+        },
+        {
+          "offset": 421,
+          "opcode": "move-result-object",
+          "a": 1
+        },
+        {
+          "offset": 422,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1
+          ],
+          "reference": "Landroid/content/res/Configuration;->getLayoutDirection()I"
+        },
+        {
+          "offset": 425,
+          "opcode": "move-result",
+          "a": 1
+        },
+        {
+          "offset": 426,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 427,
+          "opcode": "if-ne",
+          "a": 1,
+          "b": 2,
+          "target": 455
+        },
+        {
+          "offset": 429,
+          "opcode": "if-eqz",
+          "a": 8,
+          "target": 435
+        },
+        {
+          "offset": 431,
+          "opcode": "if-eqz",
+          "a": 11,
+          "target": 435
+        },
+        {
+          "offset": 433,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 434,
+          "opcode": "goto",
+          "target": 436
+        },
+        {
+          "offset": 435,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 436,
+          "opcode": "if-eqz",
+          "a": 10,
+          "target": 442
+        },
+        {
+          "offset": 438,
+          "opcode": "if-eqz",
+          "a": 9,
+          "target": 442
+        },
+        {
+          "offset": 440,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 441,
+          "opcode": "goto",
+          "target": 443
+        },
+        {
+          "offset": 442,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 443,
+          "opcode": "if-eqz",
+          "a": 12,
+          "target": 449
+        },
+        {
+          "offset": 445,
+          "opcode": "if-eqz",
+          "a": 15,
+          "target": 449
+        },
+        {
+          "offset": 447,
+          "opcode": "const/4",
+          "a": 3,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 448,
+          "opcode": "goto",
+          "target": 450
+        },
+        {
+          "offset": 449,
+          "opcode": "const/4",
+          "a": 3,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 450,
+          "opcode": "if-eqz",
+          "a": 14,
+          "target": 481
+        },
+        {
+          "offset": 452,
+          "opcode": "if-eqz",
+          "a": 13,
+          "target": 481
+        },
+        {
+          "offset": 454,
+          "opcode": "goto",
+          "target": 480
+        },
+        {
+          "offset": 455,
+          "opcode": "if-eqz",
+          "a": 8,
+          "target": 461
+        },
+        {
+          "offset": 457,
+          "opcode": "if-eqz",
+          "a": 9,
+          "target": 461
+        },
+        {
+          "offset": 459,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 460,
+          "opcode": "goto",
+          "target": 462
+        },
+        {
+          "offset": 461,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 462,
+          "opcode": "if-eqz",
+          "a": 10,
+          "target": 468
+        },
+        {
+          "offset": 464,
+          "opcode": "if-eqz",
+          "a": 11,
+          "target": 468
+        },
+        {
+          "offset": 466,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 467,
+          "opcode": "goto",
+          "target": 469
+        },
+        {
+          "offset": 468,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 469,
+          "opcode": "if-eqz",
+          "a": 12,
+          "target": 475
+        },
+        {
+          "offset": 471,
+          "opcode": "if-eqz",
+          "a": 13,
+          "target": 475
+        },
+        {
+          "offset": 473,
+          "opcode": "const/4",
+          "a": 3,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 474,
+          "opcode": "goto",
+          "target": 476
+        },
+        {
+          "offset": 475,
+          "opcode": "const/4",
+          "a": 3,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 476,
+          "opcode": "if-eqz",
+          "a": 14,
+          "target": 481
+        },
+        {
+          "offset": 478,
+          "opcode": "if-eqz",
+          "a": 15,
+          "target": 481
+        },
+        {
+          "offset": 480,
+          "opcode": "const/4",
+          "a": 4,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 481,
+          "opcode": "move",
+          "a": 6,
+          "b": 4
+        },
+        {
+          "offset": 482,
+          "opcode": "move",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "offset": 483,
+          "opcode": "move",
+          "a": 5,
+          "b": 1
+        },
+        {
+          "offset": 484,
+          "opcode": "move/from16",
+          "a": 1,
+          "b": 16
+        },
+        {
+          "offset": 486,
+          "opcode": "goto",
+          "target": 519
+        },
+        {
+          "offset": 487,
+          "opcode": "move-exception",
+          "a": 0
+        },
+        {
+          "offset": 488,
+          "opcode": "const/4",
+          "a": 8,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 489,
+          "opcode": "const/4",
+          "a": 9,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 490,
+          "opcode": "const/4",
+          "a": 10,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 491,
+          "opcode": "const/4",
+          "a": 11,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 492,
+          "opcode": "const/4",
+          "a": 12,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 493,
+          "opcode": "const/4",
+          "a": 13,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 494,
+          "opcode": "const/4",
+          "a": 14,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 495,
+          "opcode": "const/4",
+          "a": 15,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 496,
+          "opcode": "invoke-virtual",
+          "registers": [
+            2
+          ],
+          "reference": "Landroid/content/res/TypedArray;->recycle()V"
+        },
+        {
+          "offset": 499,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 18,
+          "argumentRegisters": 1,
+          "reference": "Landroid/content/Context;->getResources()Landroid/content/res/Resources;"
+        },
+        {
+          "offset": 502,
+          "opcode": "move-result-object",
+          "a": 1
+        },
+        {
+          "offset": 503,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1
+          ],
+          "reference": "Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;"
+        },
+        {
+          "offset": 506,
+          "opcode": "move-result-object",
+          "a": 1
+        },
+        {
+          "offset": 507,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1
+          ],
+          "reference": "Landroid/content/res/Configuration;->getLayoutDirection()I"
+        },
+        {
+          "offset": 510,
+          "opcode": "move-result",
+          "a": 1
+        },
+        {
+          "offset": 511,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 512,
+          "opcode": "throw",
+          "a": 0
+        },
+        {
+          "offset": 513,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 514,
+          "opcode": "const/4",
+          "a": 4,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 515,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 516,
+          "opcode": "const/4",
+          "a": 3,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 517,
+          "opcode": "const/4",
+          "a": 5,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 518,
+          "opcode": "const/4",
+          "a": 6,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 519,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 17,
+          "argumentRegisters": 1,
+          "reference": "Lj7/b;->n()Landroid/graphics/drawable/Drawable;"
+        },
+        {
+          "offset": 522,
+          "opcode": "move-result-object",
+          "a": 7
+        },
+        {
+          "offset": 523,
+          "opcode": "if-eqz",
+          "a": 7,
+          "target": 539
+        },
+        {
+          "offset": 525,
+          "opcode": "if-lez",
+          "a": 4,
+          "target": 539
+        },
+        {
+          "offset": 527,
+          "opcode": "new-instance",
+          "a": 7,
+          "reference": "Li7/b;"
+        },
+        {
+          "offset": 529,
+          "opcode": "invoke-virtual/range",
+          "startRegister": 17,
+          "argumentRegisters": 1,
+          "reference": "Lj7/b;->n()Landroid/graphics/drawable/Drawable;"
+        },
+        {
+          "offset": 532,
+          "opcode": "move-result-object",
+          "a": 8
+        },
+        {
+          "offset": 533,
+          "opcode": "invoke-direct",
+          "registers": [
+            7,
+            8,
+            4
+          ],
+          "reference": "Li7/b;-><init>(Landroid/graphics/drawable/Drawable;I)V"
+        },
+        {
+          "offset": 536,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            7
+          ],
+          "reference": "Lj7/b;->H(Landroid/graphics/drawable/Drawable;)Lj7/b;"
+        },
+        {
+          "offset": 539,
+          "opcode": "if-lez",
+          "a": 1,
+          "target": 568
+        },
+        {
+          "offset": 541,
+          "opcode": "invoke-static/range",
+          "startRegister": 17,
+          "argumentRegisters": 1,
+          "reference": "Lj7/c;->b(Lj7/b;)Lj7/e;"
+        },
+        {
+          "offset": 544,
+          "opcode": "move-result-object",
+          "a": 4
+        },
+        {
+          "offset": 545,
+          "opcode": "if-eqz",
+          "a": 5,
+          "target": 549
+        },
+        {
+          "offset": 547,
+          "opcode": "int-to-float",
+          "a": 5,
+          "b": 1
+        },
+        {
+          "offset": 548,
+          "opcode": "goto",
+          "target": 550
+        },
+        {
+          "offset": 549,
+          "opcode": "const/4",
+          "a": 5,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 550,
+          "opcode": "if-eqz",
+          "a": 2,
+          "target": 554
+        },
+        {
+          "offset": 552,
+          "opcode": "int-to-float",
+          "a": 2,
+          "b": 1
+        },
+        {
+          "offset": 553,
+          "opcode": "goto",
+          "target": 555
+        },
+        {
+          "offset": 554,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 555,
+          "opcode": "if-eqz",
+          "a": 3,
+          "target": 559
+        },
+        {
+          "offset": 557,
+          "opcode": "int-to-float",
+          "a": 3,
+          "b": 1
+        },
+        {
+          "offset": 558,
+          "opcode": "goto",
+          "target": 560
+        },
+        {
+          "offset": 559,
+          "opcode": "const/4",
+          "a": 3,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 560,
+          "opcode": "if-eqz",
+          "a": 6,
+          "target": 564
+        },
+        {
+          "offset": 562,
+          "opcode": "int-to-float",
+          "a": 1,
+          "b": 1
+        },
+        {
+          "offset": 563,
+          "opcode": "goto",
+          "target": 565
+        },
+        {
+          "offset": 564,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 565,
+          "opcode": "invoke-virtual",
+          "registers": [
+            4,
+            5,
+            2,
+            3,
+            1
+          ],
+          "reference": "Lj7/e;->q(FFFF)Lj7/e;"
+        },
+        {
+          "offset": 568,
+          "opcode": "return-object",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Lcm/c;::g",
+      "dexEntry": "classes19.dex",
+      "method": "Lcm/c;->g(Lcom/facebook/drawee/view/SimpleDraweeView;Landroid/net/Uri;IILkm/f;Ljava/lang/Object;Lkm/b;Lcom/facebook/imagepipeline/request/a$a;)V",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 17,
+      "codeUnits": 20,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "if-eqz",
+          "a": 9,
+          "target": 19
+        },
+        {
+          "offset": 2,
+          "opcode": "if-nez",
+          "a": 10,
+          "target": 5
+        },
+        {
+          "offset": 4,
+          "opcode": "goto",
+          "target": 19
+        },
+        {
+          "offset": 5,
+          "opcode": "sget-object",
+          "a": 4,
+          "reference": "Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;"
+        },
+        {
+          "offset": 7,
+          "opcode": "move-object",
+          "a": 0,
+          "b": 9
+        },
+        {
+          "offset": 8,
+          "opcode": "move-object",
+          "a": 1,
+          "b": 10
+        },
+        {
+          "offset": 9,
+          "opcode": "move",
+          "a": 2,
+          "b": 11
+        },
+        {
+          "offset": 10,
+          "opcode": "move",
+          "a": 3,
+          "b": 12
+        },
+        {
+          "offset": 11,
+          "opcode": "move-object",
+          "a": 5,
+          "b": 13
+        },
+        {
+          "offset": 12,
+          "opcode": "move-object",
+          "a": 6,
+          "b": 14
+        },
+        {
+          "offset": 13,
+          "opcode": "move-object",
+          "a": 7,
+          "b": 15
+        },
+        {
+          "offset": 14,
+          "opcode": "move-object/from16",
+          "a": 8,
+          "b": 16
+        },
+        {
+          "offset": 16,
+          "opcode": "invoke-static/range",
+          "startRegister": 0,
+          "argumentRegisters": 9,
+          "reference": "Lcm/c;->f(Lcom/facebook/drawee/view/SimpleDraweeView;Landroid/net/Uri;IILandroid/graphics/Bitmap$Config;Lkm/f;Ljava/lang/Object;Lkm/b;Lcom/facebook/imagepipeline/request/a$a;)V"
+        },
+        {
+          "offset": 19,
+          "opcode": "return-void"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Raw static instructions, not observed execution or a complete control-flow proof.",
+    "Offsets and branch targets are relative DEX code units, not APK byte offsets.",
+    "Hot patches, remote config, runtime values and resource selection are not resolved."
+  ]
+}

@@ -1,0 +1,10 @@
+    @JvmOverloads
+    public CommentPictureItemView(Context context, AttributeSet attributeSet) {
+        super(context, attributeSet);
+        this.f87478d = new Runnable() { // from class: id3.k
+            @Override // java.lang.Runnable
+            public final void run() {
+                CommentPictureItemView.Z3(this.f192071d);
+            }
+        };
+    }

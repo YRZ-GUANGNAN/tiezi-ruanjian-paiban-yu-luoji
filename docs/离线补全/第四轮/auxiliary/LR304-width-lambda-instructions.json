@@ -1,0 +1,510 @@
+{
+  "provider": "dexlib2-bundled-with-jadx-auxiliary-not-REA-Evidence",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "selectors": [
+    "Lah6/h$i;::invoke",
+    "Lch6/h$j;::invoke"
+  ],
+  "matches": [
+    {
+      "selector": "Lah6/h$i;::invoke",
+      "dexEntry": "classes9.dex",
+      "method": "Lah6/h$i;->invoke()Ljava/lang/Integer;",
+      "superclass": "Lkotlin/jvm/internal/Lambda;",
+      "bodyPresent": true,
+      "registerCount": 5,
+      "codeUnits": 60,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "const-class",
+          "a": 0,
+          "reference": "Lah6/h$i;"
+        },
+        {
+          "offset": 2,
+          "opcode": "const",
+          "a": 1,
+          "literal": "385250",
+          "literalHex": "0x5e0e2"
+        },
+        {
+          "offset": 5,
+          "opcode": "invoke-static",
+          "registers": [
+            4,
+            0,
+            1
+          ],
+          "reference": "Lcom/xingin/robust/PatchProxy;->proxy0Para(Ljava/lang/Object;Ljava/lang/Class;I)Lcom/xingin/robust/PatchProxyResult;"
+        },
+        {
+          "offset": 8,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 9,
+          "opcode": "iget-boolean",
+          "a": 1,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->isSupported:Z"
+        },
+        {
+          "offset": 11,
+          "opcode": "if-eqz",
+          "a": 1,
+          "target": 18
+        },
+        {
+          "offset": 13,
+          "opcode": "iget-object",
+          "a": 0,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->result:Ljava/lang/Object;"
+        },
+        {
+          "offset": 15,
+          "opcode": "check-cast",
+          "a": 0,
+          "reference": "Ljava/lang/Integer;"
+        },
+        {
+          "offset": 17,
+          "opcode": "return-object",
+          "a": 0
+        },
+        {
+          "offset": 18,
+          "opcode": "iget-object",
+          "a": 0,
+          "b": 4,
+          "reference": "Lah6/h$i;->d:Lah6/h;"
+        },
+        {
+          "offset": 20,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Lpl4/d;->getView()Landroid/view/View;"
+        },
+        {
+          "offset": 23,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 24,
+          "opcode": "check-cast",
+          "a": 0,
+          "reference": "Lcom/xingin/matrix/v2/notedetail/async/itembinder/parentcomment/child/AsyncParentCommentView;"
+        },
+        {
+          "offset": 26,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 29,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 30,
+          "opcode": "invoke-static",
+          "registers": [
+            0
+          ],
+          "reference": "Lq68/o1;->h(Landroid/content/Context;)I"
+        },
+        {
+          "offset": 33,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 34,
+          "opcode": "const/high16",
+          "a": 1,
+          "literal": "1121779712",
+          "literalHex": "0x42dd0000"
+        },
+        {
+          "offset": 36,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 37,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;"
+        },
+        {
+          "offset": 40,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 41,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;"
+        },
+        {
+          "offset": 44,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 45,
+          "opcode": "invoke-static",
+          "registers": [
+            2,
+            1,
+            3
+          ],
+          "reference": "Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F"
+        },
+        {
+          "offset": 48,
+          "opcode": "move-result",
+          "a": 1
+        },
+        {
+          "offset": 49,
+          "opcode": "float-to-int",
+          "a": 1,
+          "b": 1
+        },
+        {
+          "offset": 50,
+          "opcode": "sub-int/2addr",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "offset": 51,
+          "opcode": "if-gtz",
+          "a": 0,
+          "target": 55
+        },
+        {
+          "offset": 53,
+          "opcode": "const/16",
+          "a": 0,
+          "literal": "100",
+          "literalHex": "0x64"
+        },
+        {
+          "offset": 55,
+          "opcode": "invoke-static",
+          "registers": [
+            0
+          ],
+          "reference": "Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;"
+        },
+        {
+          "offset": 58,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 59,
+          "opcode": "return-object",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Lah6/h$i;::invoke",
+      "dexEntry": "classes9.dex",
+      "method": "Lah6/h$i;->invoke()Ljava/lang/Object;",
+      "superclass": "Lkotlin/jvm/internal/Lambda;",
+      "bodyPresent": true,
+      "registerCount": 2,
+      "codeUnits": 5,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1
+          ],
+          "reference": "Lah6/h$i;->invoke()Ljava/lang/Integer;"
+        },
+        {
+          "offset": 3,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 4,
+          "opcode": "return-object",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Lch6/h$j;::invoke",
+      "dexEntry": "classes9.dex",
+      "method": "Lch6/h$j;->invoke()Ljava/lang/Integer;",
+      "superclass": "Lkotlin/jvm/internal/Lambda;",
+      "bodyPresent": true,
+      "registerCount": 5,
+      "codeUnits": 61,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "const-class",
+          "a": 0,
+          "reference": "Lch6/h$j;"
+        },
+        {
+          "offset": 2,
+          "opcode": "const",
+          "a": 1,
+          "literal": "387962",
+          "literalHex": "0x5eb7a"
+        },
+        {
+          "offset": 5,
+          "opcode": "invoke-static",
+          "registers": [
+            4,
+            0,
+            1
+          ],
+          "reference": "Lcom/xingin/robust/PatchProxy;->proxy0Para(Ljava/lang/Object;Ljava/lang/Class;I)Lcom/xingin/robust/PatchProxyResult;"
+        },
+        {
+          "offset": 8,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 9,
+          "opcode": "iget-boolean",
+          "a": 1,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->isSupported:Z"
+        },
+        {
+          "offset": 11,
+          "opcode": "if-eqz",
+          "a": 1,
+          "target": 18
+        },
+        {
+          "offset": 13,
+          "opcode": "iget-object",
+          "a": 0,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->result:Ljava/lang/Object;"
+        },
+        {
+          "offset": 15,
+          "opcode": "check-cast",
+          "a": 0,
+          "reference": "Ljava/lang/Integer;"
+        },
+        {
+          "offset": 17,
+          "opcode": "return-object",
+          "a": 0
+        },
+        {
+          "offset": 18,
+          "opcode": "iget-object",
+          "a": 0,
+          "b": 4,
+          "reference": "Lch6/h$j;->d:Lch6/h;"
+        },
+        {
+          "offset": 20,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Lpl4/d;->getView()Landroid/view/View;"
+        },
+        {
+          "offset": 23,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 24,
+          "opcode": "check-cast",
+          "a": 0,
+          "reference": "Lcom/xingin/matrix/v2/notedetail/async/itembinder/subcomment/child/AsyncSubCommentView;"
+        },
+        {
+          "offset": 26,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;"
+        },
+        {
+          "offset": 29,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 30,
+          "opcode": "invoke-static",
+          "registers": [
+            0
+          ],
+          "reference": "Lq68/o1;->h(Landroid/content/Context;)I"
+        },
+        {
+          "offset": 33,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 34,
+          "opcode": "const",
+          "a": 1,
+          "literal": "1124564992",
+          "literalHex": "0x43078000"
+        },
+        {
+          "offset": 37,
+          "opcode": "const/4",
+          "a": 2,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 38,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;"
+        },
+        {
+          "offset": 41,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 42,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;"
+        },
+        {
+          "offset": 45,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 46,
+          "opcode": "invoke-static",
+          "registers": [
+            2,
+            1,
+            3
+          ],
+          "reference": "Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F"
+        },
+        {
+          "offset": 49,
+          "opcode": "move-result",
+          "a": 1
+        },
+        {
+          "offset": 50,
+          "opcode": "float-to-int",
+          "a": 1,
+          "b": 1
+        },
+        {
+          "offset": 51,
+          "opcode": "sub-int/2addr",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "offset": 52,
+          "opcode": "if-gtz",
+          "a": 0,
+          "target": 56
+        },
+        {
+          "offset": 54,
+          "opcode": "const/16",
+          "a": 0,
+          "literal": "100",
+          "literalHex": "0x64"
+        },
+        {
+          "offset": 56,
+          "opcode": "invoke-static",
+          "registers": [
+            0
+          ],
+          "reference": "Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;"
+        },
+        {
+          "offset": 59,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 60,
+          "opcode": "return-object",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Lch6/h$j;::invoke",
+      "dexEntry": "classes9.dex",
+      "method": "Lch6/h$j;->invoke()Ljava/lang/Object;",
+      "superclass": "Lkotlin/jvm/internal/Lambda;",
+      "bodyPresent": true,
+      "registerCount": 2,
+      "codeUnits": 5,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1
+          ],
+          "reference": "Lch6/h$j;->invoke()Ljava/lang/Integer;"
+        },
+        {
+          "offset": 3,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 4,
+          "opcode": "return-object",
+          "a": 0
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Raw static instructions, not observed execution or a complete control-flow proof.",
+    "Offsets and branch targets are relative DEX code units, not APK byte offsets.",
+    "Hot patches, remote config, runtime values and resource selection are not resolved."
+  ]
+}

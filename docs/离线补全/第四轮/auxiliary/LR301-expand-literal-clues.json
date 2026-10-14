@@ -1,0 +1,77 @@
+{
+  "runtimeObserved": false,
+  "limitations": [
+    "Only packaged string resource values and literal instruction operands, matched by case-insensitive substring.",
+    "Absence of a selected spelling is not absence of a feature; remote labels, constructed strings, obfuscation and native behavior remain outside the scan."
+  ],
+  "coverage": {
+    "dexMethods": 1368988,
+    "resourceEntries": 66202,
+    "dexClasses": 249475
+  },
+  "resourceMatches": [
+    {
+      "configuration": "",
+      "id": "0x7f1120b1",
+      "text": "... 展开全文",
+      "matchedNeedles": [
+        "展开全文"
+      ],
+      "type": "string"
+    },
+    {
+      "configuration": "",
+      "id": "0x7f1120b3",
+      "text": "展开全文",
+      "matchedNeedles": [
+        "展开全文"
+      ],
+      "type": "string"
+    }
+  ],
+  "needles": [
+    "展开全文",
+    "收起全文",
+    "展开评论",
+    "长评论",
+    "comment_expand",
+    "comment_fold",
+    "comment_max",
+    "comment_text_max",
+    "comment_limit",
+    "comment_trunc",
+    "commentellipsis"
+  ],
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "methodMatches": [
+    {
+      "dexEntry": "classes21.dex",
+      "hits": [
+        {
+          "matchedNeedles": [
+            "comment_fold"
+          ],
+          "text": "comment_fold",
+          "offset": 40
+        }
+      ],
+      "method": "Lhc0/a;->d()I",
+      "class": "Lhc0/a;"
+    },
+    {
+      "dexEntry": "classes21.dex",
+      "hits": [
+        {
+          "matchedNeedles": [
+            "comment_fold"
+          ],
+          "text": "all_alpha_comment_fold",
+          "offset": 43
+        }
+      ],
+      "method": "Lk80/d;->T2()Lgb0/m;",
+      "class": "Lk80/d;"
+    }
+  ],
+  "provider": "dexlib2-and-jadx-resource-literal-scan-not-REA-Evidence"
+}

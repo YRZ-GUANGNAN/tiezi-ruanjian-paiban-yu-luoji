@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_0ea66fae204a380254d2557fa965c161f1f8773edbb0440da4cc8c5aead4c213",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "ah6.h",
+    "method_name": "<init>"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "ah6.h"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"f6834w\",\"def_pos\":0,\"type\":\"ah6.h$a\"},{\"name\":\"f6835g\",\"def_pos\":0,\"type\":\"d86.f\"},{\"name\":\"f6836h\",\"def_pos\":0,\"type\":\"ni4.x\"},{\"name\":\"f6837l\",\"def_pos\":0,\"type\":\"kotlin.jvm.functions.Function0<kotlin.Pair<java.lang.String, java.lang.String>>\"},{\"name\":\"f6838m\",\"def_pos\":0,\"type\":\"ug4.z\"},{\"name\":\"f6839n\",\"def_pos\":0,\"type\":\"pq5.w0\"},{\"name\":\"f6840o\",\"def_pos\":0,\"type\":\"com.xingin.entities.notedetail.BulletCommentLead\"},{\"name\":\"f6841p\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"},{\"name\":\"f6842q\",\"def_pos\":0,\"type\":\"java.lang.Integer\"},{\"name\":\"f6843r\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f6844s\",\"def_pos\":0,\"type\":\"uc9.d<java.lang.Boolean>\"},{\"name\":\"f6845t\",\"def_pos\":0,\"type\":\"uc9.d<kotlin.Unit>\"},{\"name\":\"f6846u\",\"def_pos\":0,\"type\":\"ah6.h$b\"},{\"name\":\"f6847v\",\"def_pos\":0,\"type\":\"boolean\"}],\"field_count\":14,\"full_name\":\"ah6.h\",\"name\":\"h\",\"inner_classes\":[\"ah6.h.a\",\"ah6.h.b\",\"ah6.h.c\",\"ah6.h.d\",\"ah6.h.e\",\"ah6.h.f\",\"ah6.h.g\",\"ah6.h.C0134h\",\"ah6.h.i\",\"ah6.h.j\",\"ah6.h.k\"],\"inner_class_count\":11,\"method_count\":42,\"methods\":[{\"def_pos\":0,\"name\":\"<clinit>\",\"is_constructor\":false,\"signature\":\"<clinit>(): void\"},{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"signature\":\"<init>(): void\"},{\"def_pos\":0,\"name\":\"I\",\"is_constructor\":false,\"signature\":\"I(android.view.View): boolean\"},{\"def_pos\":0,\"name\":\"J\",\"is_constructor\":false,\"signature\":\"J(qh6.d): void\"},{\"def_pos\":0,\"name\":\"K\",\"is_constructor\":false,\"signature\":\"K(boolean, kotlin.jvm.functions.Function1<java.lang.Object, w08.r>): void\"},{\"def_pos\":0,\"name\":\"L\",\"is_constructor\":false,\"signature\":\"L(qh6.d, android.text.SpannableStringBuilder): void\"},{\"def_pos\":0,\"name\":\"M\",\"is_constructor\":false,\"signature\":\"M(android.view.View): boolean\"},{\"def_pos\":0,\"name\":\"N\",\"is_constructor\":false,\"signature\":\"N(com.xingin.entities.CommentCommentInfo): void\"},{\"def_pos\":0,\"name\":\"O\",\"is_constructor\":false,\"signature\":\"O(qh6.d): void\"},{\"def_pos\":0,\"name\":\"P\",\"is_constructor\":false,\"signature\":\"P(kotlin.jvm.functions.Function1<java.lang.Object, w08.r>): void\"},{\"def_pos\":0,\"name\":\"Q\",\"is_constructor\":false,\"signature\":\"Q(int, qh6.d, java.lang.Integer): void\"},{\"def_pos\":0,\"name\":\"R\",\"is_constructor\":false,\"signature\":\"R(boolean): void\"},{\"def_pos\":0,\"name\":\"S\",\"is_constructor\":false,\"signature\":\"S(): tb9.r<kotlin.Unit>\"},{\"def_pos\":0,\"name\":\"T\",\"is_constructor\":false,\"signature\":\"T(): tb9.r<kotlin.Unit>\"},{\"def_pos\":0,\"name\":\"U\",\"is_constructor\":false,\"signature\":\"U(qh6.d, android.text.SpannableStringBuilder, android.content.Context): void\"},{\"def_pos\":0,\"name\":\"W\",\"is_constructor\":false,\"signature\":\"W(): ug4.z\"},{\"def_pos\":0,\"name\":\"X\",\"is_constructor\":false,\"signature\":\"X(qh6.d, android.content.Context): java.lang.String\"},{\"def_pos\":0,\"name\":\"Y\",\"is_constructor\":false,\"signature\":\"Y(qh6.d, android.content.Context): java.lang.String\"},{\"def_pos\":0,\"name\":\"a0\",\"is_constructor\":false,\"signature\":\"a0(): uc9.d<java.lang.Boolean>\"},{\"def_pos\":0,\"name\":\"b0\",\"is_constructor\":false,\"signature\":\"b0(): kotlin.jvm.functions.Function0<kotlin.Pair<java.lang.String, java.lang.String>>\"},{\"def_pos\":0,\"name\":\"c0\",\"is_constructor\":false,\"signature\":\"c0(): pq5.w0\"},{\"def_pos\":0,\"name\":\"d0\",\"is_constructor\":false,\"signature\":\"d0(): ni4.x\"},{\"def_pos\":0,\"name\":\"didLoad\",\"is_constructor\":false,\"signature\":\"didLoad(): void\"},{\"def_pos\":0,\"name\":\"e0\",\"is_constructor\":false,\"signature\":\"e0(): uc9.d<kotlin.Unit>\"},{\"def_pos\":0,\"name\":\"f0\",\"is_constructor\":false,\"signature\":\"f0(): int\"},{\"def_pos\":0,\"name\":\"g0\",\"is_constructor\":false,\"signature\":\"g0(): d86.f\"},{\"def_pos\":0,\"name\":\"h0\",\"is_constructor\":false,\"signature\":\"h0(): int\"},{\"def_pos\":0,\"name\":\"i0\",\"is_constructor\":false,\"signature\":\"i0(): boolean\"},{\"def_pos\":0,\"name\":\"j0\",\"is_constructor\":false,\"signature\":\"j0(): tb9.r<kotlin.Unit>\"},{\"def_pos\":0,\"name\":\"k0\",\"is_constructor\":false,\"signature\":\"k0(kotlin.jvm.functions.Function1<? super android.view.View, kotlin.Unit>): void\"},{\"def_pos\":0,\"name\":\"l0\",\"is_constructor\":false,\"signature\":\"l0(com.xingin.entities.CommentCommentInfo): android.text.SpannableStringBuilder\"},{\"def_pos\":0,\"name\":\"m0\",\"is_constructor\":false,\"signature\":\"m0(boolean): void\"},{\"def_pos\":0,\"name\":\"n0\",\"is_constructor\":false,\"signature\":\"n0(): void\"},{\"def_pos\":0,\"name\":\"o0\",\"is_constructor\":false,\"signature\":\"o0(qh6.d): void\"},{\"def_pos\":0,\"name\":\"p0\",\"is_constructor\":false,\"signature\":\"p0(com.xingin.entities.notedetail.BulletCommentLead): void\"},{\"def_pos\":0,\"name\":\"q0\",\"is_constructor\":false,\"signature\":\"q0(qh6.d): void\"},{\"def_pos\":0,\"name\":\"r0\",\"is_constructor\":false,\"signature\":\"r0(qh6.d): void\"},{\"def_pos\":0,\"name\":\"s0\",\"is_constructor\":false,\"signature\":\"s0(qh6.d, boolean): void\"},{\"def_pos\":0,\"name\":\"t0\",\"is_constructor\":false,\"signature\":\"t0(qh6.d): void\"},{\"def_pos\":0,\"name\":\"u0\",\"is_constructor\":false,\"signature\":\"u0(android.widget.TextView, java.lang.String): void\"},{\"def_pos\":0,\"name\":\"v0\",\"is_constructor\":false,\"signature\":\"v0(): tb9.r<kotlin.Unit>\"},{\"def_pos\":0,\"name\":\"w0\",\"is_constructor\":false,\"signature\":\"w0(): tb9.r<kotlin.Unit>\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "ah6.h",
+          "method_name": "<init>",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"method_name\":\"<init>\",\"overload_count\":1,\"body\":\"// method exists but has no decompiled body (native/abstract)\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"ah6.h\",\"full_name\":\"ah6.h.<init>\",\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "ah6.h",
+    "method": {
+      "name": "<init>",
+      "reported_signature": "<init>(): void",
+      "overload_index": 0,
+      "is_constructor": true,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "not_available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "// method exists but has no decompiled body (native/abstract)",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "720fa83d7cdb7ac7e279755e5d1c6df775f69f8e116143336d1654bbb609b161",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

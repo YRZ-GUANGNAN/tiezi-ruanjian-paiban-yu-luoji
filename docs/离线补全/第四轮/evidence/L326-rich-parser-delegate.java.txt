@@ -1,0 +1,28 @@
+    public SpannableStringBuilder t(Context context, String str, boolean z100) {
+        PatchProxyResult patchProxyResultProxy3Para = PatchProxy.proxy3Para(context, str, new Boolean(z100), this, g.class, 175785);
+        if (patchProxyResultProxy3Para.isSupported) {
+            return (SpannableStringBuilder) patchProxyResultProxy3Para.result;
+        }
+        if (str == null) {
+            return SpannableStringBuilder.valueOf("");
+        }
+        String strD = d(str);
+        System.currentTimeMillis();
+        if (!b(strD)) {
+            return new SpannableStringBuilder(strD);
+        }
+        String strK = k(strD);
+        SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
+        while (!TextUtils.isEmpty(strK)) {
+            int iIndexOf = strD.indexOf(strK);
+            spannableStringBuilder.append((CharSequence) strD.substring(0, iIndexOf));
+            spannableStringBuilder.append((CharSequence) g(context, strK));
+            strD = strD.substring(iIndexOf + strK.length(), strD.length());
+            strK = k(strD);
+        }
+        if (strD.length() == 0 && !e(spannableStringBuilder.toString()) && z100) {
+            strD = " ";
+        }
+        spannableStringBuilder.append((CharSequence) strD);
+        return spannableStringBuilder;
+    }

@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_2d8f419c07cb2234c8eb76cce363e7ce81c02768c5b31f9ed5a93f11ac8b779e",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "j7.c",
+    "method_name": "d"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "j7.c"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_count\":5,\"methods\":[{\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"signature\":\"a(android.content.Context, android.content.res.TypedArray, int): android.graphics.drawable.Drawable\"},{\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"signature\":\"b(j7.b): j7.e\"},{\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(android.content.res.TypedArray, int): i7.q$c\"},{\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"signature\":\"d(android.content.Context, android.util.AttributeSet): j7.b\"},{\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"signature\":\"e(j7.b, android.content.Context, android.util.AttributeSet): j7.b\"}],\"fields\":[],\"field_count\":0,\"full_name\":\"j7.c\",\"name\":\"c\",\"inner_classes\":[],\"inner_class_count\":0}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "j7.c",
+          "method_name": "d",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"full_name\":\"j7.c.d\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"d\",\"overload_count\":1,\"body\":\"    public static b d(Context context, AttributeSet attributeSet) throws Throwable {\\r\\n        if (m8.b.d()) {\\r\\n            m8.b.a(\\\"GenericDraweeHierarchyBuilder#inflateBuilder\\\");\\r\\n        }\\r\\n        b bVarE = e(new b(context.getResources()), context, attributeSet);\\r\\n        if (m8.b.d()) {\\r\\n            m8.b.b();\\r\\n        }\\r\\n        return bVarE;\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"j7.c\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "j7.c",
+    "method": {
+      "name": "d",
+      "reported_signature": "d(android.content.Context, android.util.AttributeSet): j7.b",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public static b d(Context context, AttributeSet attributeSet) throws Throwable {\r\n        if (m8.b.d()) {\r\n            m8.b.a(\"GenericDraweeHierarchyBuilder#inflateBuilder\");\r\n        }\r\n        b bVarE = e(new b(context.getResources()), context, attributeSet);\r\n        if (m8.b.d()) {\r\n            m8.b.b();\r\n        }\r\n        return bVarE;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "5a1a8e1dc307661b0147299d030ddafa414a9287ea83b141295cfc9ee53de110",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

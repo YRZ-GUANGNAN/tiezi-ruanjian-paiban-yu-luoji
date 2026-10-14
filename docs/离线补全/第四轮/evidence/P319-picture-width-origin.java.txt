@@ -1,0 +1,14 @@
+    public static int[] b() {
+        Display defaultDisplay;
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(null, c1.class, 139767);
+        if (patchProxyResultProxy0Para.isSupported) {
+            return (int[]) patchProxyResultProxy0Para.result;
+        }
+        WindowManager windowManager = (WindowManager) XYUtilsCenter.f().getSystemService("window");
+        if (windowManager != null && (defaultDisplay = windowManager.getDefaultDisplay()) != null) {
+            Point point = new Point();
+            defaultDisplay.getRealSize(point);
+            return new int[]{point.x, point.y};
+        }
+        return new int[]{0, 0};
+    }

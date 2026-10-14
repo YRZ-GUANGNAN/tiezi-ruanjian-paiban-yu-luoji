@@ -1,0 +1,151 @@
+    /* JADX WARN: Code duplicated, block: B:131:0x01e0 A[PHI: r1 r2 r3
+  0x01e0: PHI (r1v18 boolean) = (r1v14 boolean), (r1v20 boolean) binds: [B:130:0x01de, B:115:0x01c4] A[DONT_GENERATE, DONT_INLINE]
+  0x01e0: PHI (r2v13 boolean) = (r2v10 boolean), (r2v15 boolean) binds: [B:130:0x01de, B:115:0x01c4] A[DONT_GENERATE, DONT_INLINE]
+  0x01e0: PHI (r3v9 boolean) = (r3v6 boolean), (r3v11 boolean) binds: [B:130:0x01de, B:115:0x01c4] A[DONT_GENERATE, DONT_INLINE]] */
+    public static b e(b bVar, Context context, AttributeSet attributeSet) throws Throwable {
+        boolean z100;
+        int i100;
+        int i101;
+        boolean z101;
+        boolean z102;
+        boolean z103;
+        boolean z104;
+        Context context2 = context;
+        if (attributeSet != null) {
+            TypedArray typedArrayObtainStyledAttributes = context2.obtainStyledAttributes(attributeSet, z6.a.f370833a);
+            try {
+                int indexCount = typedArrayObtainStyledAttributes.getIndexCount();
+                int integer = 0;
+                int i102 = 0;
+                boolean z105 = true;
+                boolean z106 = true;
+                boolean z107 = true;
+                boolean z108 = true;
+                boolean z109 = true;
+                boolean z110 = true;
+                boolean z111 = true;
+                boolean z112 = true;
+                int dimensionPixelSize = 0;
+                while (i102 < indexCount) {
+                    try {
+                        int index = typedArrayObtainStyledAttributes.getIndex(i102);
+                        if (index == z6.a.f370834b) {
+                            bVar.w(c(typedArrayObtainStyledAttributes, index));
+                        } else if (index == z6.a.f370840h) {
+                            bVar.E(a(context2, typedArrayObtainStyledAttributes, index));
+                        } else if (index == z6.a.f370842j) {
+                            bVar.G(a(context2, typedArrayObtainStyledAttributes, index));
+                        } else if (index == z6.a.f370844l) {
+                            bVar.H(a(context2, typedArrayObtainStyledAttributes, index));
+                        } else if (index == z6.a.f370836d) {
+                            bVar.z(typedArrayObtainStyledAttributes.getInt(index, 0));
+                        } else if (index == z6.a.D) {
+                            bVar.y(typedArrayObtainStyledAttributes.getFloat(index, 0.0f));
+                        } else if (index == z6.a.f370841i) {
+                            bVar.F(c(typedArrayObtainStyledAttributes, index));
+                        } else if (index == z6.a.f370846n) {
+                            bVar.J(a(context2, typedArrayObtainStyledAttributes, index));
+                        } else if (index == z6.a.f370847o) {
+                            bVar.K(c(typedArrayObtainStyledAttributes, index));
+                        } else if (index == z6.a.f370837e) {
+                            bVar.A(a(context2, typedArrayObtainStyledAttributes, index));
+                        } else if (index == z6.a.f370838f) {
+                            bVar.B(c(typedArrayObtainStyledAttributes, index));
+                        } else if (index == z6.a.f370845m) {
+                            bVar.I(c(typedArrayObtainStyledAttributes, index));
+                        } else if (index == z6.a.f370843k) {
+                            integer = typedArrayObtainStyledAttributes.getInteger(index, integer);
+                        } else if (index == z6.a.f370835c) {
+                            bVar.x(a(context2, typedArrayObtainStyledAttributes, index));
+                        } else if (index == z6.a.f370839g) {
+                            bVar.C(a(context2, typedArrayObtainStyledAttributes, index));
+                        } else if (index == z6.a.f370848p) {
+                            b(bVar).v(typedArrayObtainStyledAttributes.getBoolean(index, false));
+                        } else if (index == z6.a.f370858z) {
+                            dimensionPixelSize = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, dimensionPixelSize);
+                        } else {
+                            int i103 = dimensionPixelSize;
+                            if (index == z6.a.f370854v) {
+                                z105 = typedArrayObtainStyledAttributes.getBoolean(index, z105);
+                            } else if (index == z6.a.f370855w) {
+                                z107 = typedArrayObtainStyledAttributes.getBoolean(index, z107);
+                            } else if (index == z6.a.f370850r) {
+                                z111 = typedArrayObtainStyledAttributes.getBoolean(index, z111);
+                            } else if (index == z6.a.f370851s) {
+                                z109 = typedArrayObtainStyledAttributes.getBoolean(index, z109);
+                            } else if (index == z6.a.f370856x) {
+                                z106 = typedArrayObtainStyledAttributes.getBoolean(index, z106);
+                            } else if (index == z6.a.f370853u) {
+                                z108 = typedArrayObtainStyledAttributes.getBoolean(index, z108);
+                            } else if (index == z6.a.f370852t) {
+                                z112 = typedArrayObtainStyledAttributes.getBoolean(index, z112);
+                            } else {
+                                if (index == z6.a.f370849q) {
+                                    z110 = typedArrayObtainStyledAttributes.getBoolean(index, z110);
+                                } else if (index == z6.a.f370857y) {
+                                    dimensionPixelSize = i103;
+                                    b(bVar).s(typedArrayObtainStyledAttributes.getColor(index, 0));
+                                } else {
+                                    dimensionPixelSize = i103;
+                                    if (index == z6.a.C) {
+                                        b(bVar).p(typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0));
+                                    } else if (index == z6.a.A) {
+                                        b(bVar).o(typedArrayObtainStyledAttributes.getColor(index, 0));
+                                    } else if (index == z6.a.B) {
+                                        b(bVar).t(typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0));
+                                    }
+                                }
+                                i102++;
+                                context2 = context;
+                            }
+                            dimensionPixelSize = i103;
+                        }
+                        i102++;
+                        context2 = context;
+                    } catch (Throwable th) {
+                        th = th;
+                        typedArrayObtainStyledAttributes.recycle();
+                        context.getResources().getConfiguration().getLayoutDirection();
+                        throw th;
+                    }
+                }
+                boolean z113 = false;
+                typedArrayObtainStyledAttributes.recycle();
+                if (context.getResources().getConfiguration().getLayoutDirection() == 1) {
+                    z104 = z105 && z108;
+                    z100 = z107 && z106;
+                    z101 = z109 && z112;
+                    if (z111 && z110) {
+                        z113 = true;
+                    }
+                } else {
+                    z104 = z105 && z106;
+                    z100 = z107 && z108;
+                    z101 = z109 && z110;
+                    if (z111 && z112) {
+                        z113 = true;
+                    }
+                }
+                z103 = z113;
+                i100 = integer;
+                z102 = z104;
+                i101 = dimensionPixelSize;
+            } catch (Throwable th10) {
+                th = th10;
+            }
+        } else {
+            z100 = true;
+            i100 = 0;
+            i101 = 0;
+            z101 = true;
+            z102 = true;
+            z103 = true;
+        }
+        if (bVar.n() != null && i100 > 0) {
+            bVar.H(new i7.b(bVar.n(), i100));
+        }
+        if (i101 > 0) {
+            b(bVar).q(z102 ? i101 : 0.0f, z100 ? i101 : 0.0f, z101 ? i101 : 0.0f, z103 ? i101 : 0.0f);
+        }
+        return bVar;
+    }

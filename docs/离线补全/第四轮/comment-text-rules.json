@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "appVersion": "8.72.0",
+  "versionCode": "8720916",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "newRuntimeObservations": 0,
+  "scope": "Ordinary primary/reply comment width, bounded long-text investigation and disambiguation from note-body and Alpha chat folding.",
+  "width": {
+    "use": "StaticLayout footer-wrap decision; not an assignment of TextView layout width",
+    "gate": "ro.m.c()",
+    "actualWidthBranch": {
+      "expression": "max(100, textView.getWidth())",
+      "unit": "px",
+      "evidenceRefs": [
+        "C240",
+        "C241"
+      ]
+    },
+    "cachedBranch": {
+      "resourcesWidthSource": "context.getResources().getDisplayMetrics().widthPixels",
+      "densitySource": "Resources.getSystem().getDisplayMetrics()",
+      "primaryDeductionDp": 110.5,
+      "replyDeductionDp": 135.5,
+      "conversion": "TypedValue.applyDimension(COMPLEX_UNIT_DIP, deductionDp, systemMetrics); float-to-int",
+      "expression": "candidate = resourcesWidthPx - int(dpToPx(deductionDp)); result = candidate <= 0 ? 100 : candidate",
+      "fallbackPx": 100,
+      "notEquivalentToMinimumClamp": true,
+      "lifetime": "Kotlin Lazy on each presenter; calculated on first access, then reused by that instance",
+      "primaryLazyMode": "NONE",
+      "replyLazyMode": "default lazy initializer",
+      "evidenceRefs": [
+        "L308",
+        "L309",
+        "L329",
+        "L330",
+        "W104"
+      ],
+      "auxiliaryRefs": [
+        "LR303",
+        "LR304"
+      ]
+    },
+    "examples": [
+      {
+        "resourcesWidthPx": 1080,
+        "systemDensity": 2.75,
+        "primaryMeasurementWidthPx": 777,
+        "replyMeasurementWidthPx": 708,
+        "kind": "calculated-static-example-not-runtime-observation"
+      },
+      {
+        "resourcesWidthPx": 320,
+        "systemDensity": 2.75,
+        "primaryMeasurementWidthPx": 17,
+        "replyMeasurementWidthPx": 100,
+        "kind": "calculated-static-example-not-runtime-observation"
+      }
+    ],
+    "olderGeometryComparison": {
+      "kind": "comparison-to-published-round3-summary-not-new-observation",
+      "oldPrimaryWidthPx": 776,
+      "oldReplyWidthPx": 707,
+      "calculatedWidthDifferencePx": 1,
+      "interpretation": "Measurement estimate and previously published view geometry are distinct quantities; do not overwrite the earlier geometry."
+    },
+    "runtimeBranchConfirmed": false
+  },
+  "textFlow": {
+    "parserEntry": "sq5.a1.s -> sr7.g.s -> sr7.g.t",
+    "primaryProducer": "ah6.d.n2 -> ah6.h.l0",
+    "replyProducer": "ch6.d.d2 -> ch6.h.j0",
+    "callbacks": [
+      "ah6.d.q.a -> ah6.h.L",
+      "ch6.d.q.a -> ch6.h.L"
+    ],
+    "evidenceRefs": [
+      "C245",
+      "C246",
+      "C233",
+      "C236",
+      "L310",
+      "L325",
+      "L326",
+      "L331",
+      "L332",
+      "L333",
+      "L334",
+      "L335"
+    ],
+    "substringInterpretation": "Matched rich-text segments are separated, converted and appended with the remainder. This is not evidence of a fixed-length fold threshold.",
+    "normalizationMayChangeText": true,
+    "intermediateStateAndParserPluginsFullyTraced": false
+  },
+  "longComment": {
+    "status": "unresolved",
+    "thresholdCharacters": null,
+    "thresholdLines": null,
+    "collapseButtonObserved": false,
+    "runtimeLongCommentScenarioPerformed": false,
+    "expandStateRestoration": "unresolved",
+    "claimAllowed": "No ordinary-comment fixed-length or fixed-line fold threshold was established within these selected paths.",
+    "claimDisallowed": "The application never folds comments.",
+    "searchBoundary": {
+      "resourceAndLiteralScan": {
+        "dexMethods": 1368988,
+        "resourceEntries": 66202,
+        "dexClasses": 249475
+      },
+      "needles": [
+        "展开全文",
+        "收起全文",
+        "展开评论",
+        "长评论",
+        "comment_expand",
+        "comment_fold",
+        "comment_max",
+        "comment_text_max",
+        "comment_limit",
+        "comment_trunc",
+        "commentellipsis"
+      ],
+      "textOperationScopes": [
+        "Lah6/",
+        "Lch6/",
+        "Lsq5/a1",
+        "Lth6/",
+        "Lcom/xingin/comment/consumer/",
+        "Lcom/xingin/comment/widget/",
+        "Lcom/xingin/matrix/v2/notedetail/itembinder/ParentComment",
+        "Lcom/xingin/matrix/v2/notedetail/itembinder/SubComment"
+      ],
+      "scopedMethods": 1938,
+      "classesExamined": 249475
+    },
+    "excludedMechanisms": [
+      {
+        "clue": "packaged strings containing 展开全文",
+        "resourceIds": [
+          "0x7f1120b1",
+          "0x7f1120b3"
+        ],
+        "directConsumer": "Lcom/xingin/matrix/detail/item/video/content/VideoNoteContentView;->D(Landroid/text/SpannableStringBuilder;Landroid/text/SpannableString;Landroid/text/SpannableStringBuilder;Ljava/util/ArrayList;Lcom/xingin/entities/notedetail/NoteFeed;ZIZZZZ)V",
+        "interpretation": "Video note content, not the selected ordinary-comment body binding",
+        "evidenceRefs": [
+          "L328"
+        ],
+        "auxiliaryRefs": [
+          "LR301",
+          "LR302"
+        ]
+      },
+      {
+        "clue": "comment_fold / all_alpha_comment_fold",
+        "directConsumers": [
+          "Lcom/xingin/alpha/chat/AlphaRoomMsgListAdapterV2;->r1(Ljq0/d;)Z",
+          "Lcom/xingin/alpha/emcee/game/AlphaGameFloatCommentAdapter;->e0(Ljq0/d;)Z",
+          "Lcom/xingin/alpha/chat/AlphaRoomMsgListAdapterV2$m;->invoke()Ljava/lang/Integer;",
+          "Lk80/d$v6;->b()Lgb0/m;"
+        ],
+        "interpretation": "Direct consumers lead to Alpha chat/game-comment adapters and a config wrapper; no attribution to ordinary note comments",
+        "evidenceRefs": [
+          "L321",
+          "L322"
+        ],
+        "auxiliaryRefs": [
+          "LR305"
+        ]
+      },
+      {
+        "clue": "th6.i.h",
+        "interpretation": "Translation/original-text switch, not established as long-comment expansion",
+        "evidenceRefs": [
+          "L311"
+        ]
+      }
+    ]
+  },
+  "checks": {
+    "widthConstantsCrossCheckedAgainstDex": true,
+    "resourceConsumersCrossChecked": true,
+    "examplesChecked": 2,
+    "noNewRuntimeObservation": true
+  },
+  "evidenceRefs": [
+    "L305",
+    "L306",
+    "L307",
+    "L308",
+    "L309",
+    "L310",
+    "L311",
+    "L314",
+    "L315",
+    "L318",
+    "L319",
+    "L321",
+    "L322",
+    "L323",
+    "L324",
+    "L325",
+    "L326",
+    "L328",
+    "L329",
+    "L330",
+    "L331",
+    "L332",
+    "L333",
+    "L334",
+    "L335"
+  ],
+  "sources": [
+    {
+      "file": "auxiliary/LR301-expand-literal-clues.json",
+      "originalSha256": "545f7d90a6f46a4562e0b3f09351bff0f0f1142b098bd855f38fe2c0485f76aa",
+      "publicSha256": "2bdcf97d8e5cc3a751c4dd5b75d5c558eaa5621d05d9f49b6b4bd4016b26b944"
+    },
+    {
+      "file": "auxiliary/LR302-text-and-expand-references.json",
+      "originalSha256": "3cb9b3f4c83a359e058117cf0332c07cbbd81933228bfc1a9ac4f6f813b59863",
+      "publicSha256": "bafd8c286c1f865ce16e1c961855d3a3cc413fa3049c128f8779b95f13c69daf"
+    },
+    {
+      "file": "auxiliary/LR303-binder-init.json",
+      "originalSha256": "365bcf2e6b9569a84a354695f2ca46a8240a094b3e270b333e390370cd283d35",
+      "publicSha256": "fc11687e7e9ee2c22e70b7d44c553553dde172e6d95c49ce0681398f0cb52796"
+    },
+    {
+      "file": "auxiliary/LR304-width-lambda-instructions.json",
+      "originalSha256": "935572a35c327e93291cdeda0cd4dfc7ab90ab7cce027bc53179f9e444f6054e",
+      "publicSha256": "623c4cfef005e68478669032f32e640ca24ee55f510c3fb3cc3925a6425e53fe"
+    },
+    {
+      "file": "auxiliary/LR305-fold-config-references.json",
+      "originalSha256": "03ace12dd20bbb73c4d2524c7e468ecb1cbdf409a392607426ad82f53988247d",
+      "publicSha256": "f5ccfa41732f1ba88e51c4433cc3f921c694c1951e4f40048fbd9392418df852"
+    },
+    {
+      "file": "auxiliary/LR306-comment-text-callbacks.json",
+      "originalSha256": "4ac57c1a733e6a7aa589f262c008b477c509a882866f64fe3402d8d7424d441f",
+      "publicSha256": "99b8791527f69b908e601feeeacc91cf82ac96e2c6645e5de778b8e0fec93b73"
+    }
+  ],
+  "limitations": [
+    "Static default paths only; hot patches and remote values remain unresolved.",
+    "No exhaustive proof over all parser plugins, intermediate state, server-provided content, inherited or native paths.",
+    "No fixed-content long-comment, rotation, process death, crop or animation scenario was executed.",
+    "Constructor method-unavailable REA results remain explicit; raw DEX constructor instructions are independent auxiliary evidence."
+  ]
+}

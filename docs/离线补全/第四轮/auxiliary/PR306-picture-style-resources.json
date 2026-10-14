@@ -1,0 +1,283 @@
+{
+  "limitations": [
+    "All matching packaged configurations retained; runtime selection not observed.",
+    "Resource names are obfuscated and do not carry reliable semantic names."
+  ],
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "provider": "jadx-resource-table-parser-not-REA-Evidence",
+  "runtimeObserved": false,
+  "arscSha256": "5c9fce688019e4263deafff2da8dbf1da34da33885f9a29e199d994e2a704ba2",
+  "requested": [
+    "2131831135",
+    "0x7f0702e6",
+    "0x7f070310",
+    "0x7f070312",
+    "0x7f0702d2",
+    "0x7f07027c",
+    "0x7f07029c",
+    "0x7f060ad4",
+    "0x7f08256f",
+    "0x7f04008e",
+    "0x7f0405cb",
+    "res/6nv.xml",
+    "res/RV3.xml"
+  ],
+  "matches": [
+    {
+      "id": "0x7f04008e",
+      "type": "attr",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "items": [
+        {
+          "type": 16,
+          "dataHex": "0x00010000",
+          "decoded": "65536",
+          "nameRef": "0x01000000"
+        },
+        {
+          "type": 16,
+          "dataHex": "0xffffffff",
+          "decoded": "-1",
+          "nameRef": "0x7f0925fe",
+          "name": "id.-"
+        },
+        {
+          "type": 16,
+          "dataHex": "0x00000000",
+          "decoded": "0",
+          "nameRef": "0x7f091227",
+          "name": "id.-"
+        },
+        {
+          "type": 16,
+          "dataHex": "0x00000001",
+          "decoded": "1",
+          "nameRef": "0x7f091225",
+          "name": "id.-"
+        },
+        {
+          "type": 16,
+          "dataHex": "0x00000002",
+          "decoded": "2",
+          "nameRef": "0x7f091223",
+          "name": "id.-"
+        },
+        {
+          "type": 16,
+          "dataHex": "0x00000003",
+          "decoded": "3",
+          "nameRef": "0x7f091224",
+          "name": "id.-"
+        },
+        {
+          "type": 16,
+          "dataHex": "0x00000004",
+          "decoded": "4",
+          "nameRef": "0x7f0908c5",
+          "name": "id.-"
+        },
+        {
+          "type": 16,
+          "dataHex": "0x00000005",
+          "decoded": "5",
+          "nameRef": "0x7f0908cd",
+          "name": "id.-"
+        },
+        {
+          "type": 16,
+          "dataHex": "0x00000006",
+          "decoded": "6",
+          "nameRef": "0x7f0908cb",
+          "name": "id.-"
+        },
+        {
+          "type": 16,
+          "dataHex": "0x00000007",
+          "decoded": "7",
+          "nameRef": "0x7f091280",
+          "name": "id.-"
+        },
+        {
+          "type": 16,
+          "dataHex": "0x00000008",
+          "decoded": "8",
+          "nameRef": "0x7f091222",
+          "name": "id.-"
+        }
+      ]
+    },
+    {
+      "id": "0x7f0405cb",
+      "type": "attr",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "items": [
+        {
+          "type": 16,
+          "dataHex": "0x00000040",
+          "decoded": "64",
+          "nameRef": "0x01000000"
+        }
+      ]
+    },
+    {
+      "id": "0x7f060ad4",
+      "type": "color",
+      "name": "xhsTheme_colorWhitePatch1",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "type": 29,
+        "dataHex": "0xffffffff",
+        "decoded": "#ffffff"
+      }
+    },
+    {
+      "id": "0x7f07027c",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "type": 5,
+        "dataHex": "0x00000101",
+        "decoded": "1dp"
+      }
+    },
+    {
+      "id": "0x7f07029c",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "type": 5,
+        "dataHex": "0x00001001",
+        "decoded": "16dp"
+      }
+    },
+    {
+      "id": "0x7f0702d2",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "type": 5,
+        "dataHex": "0x00000401",
+        "decoded": "4dp"
+      }
+    },
+    {
+      "id": "0x7f0702e6",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "type": 5,
+        "dataHex": "0x00000601",
+        "decoded": "6dp"
+      }
+    },
+    {
+      "id": "0x7f070310",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "type": 5,
+        "dataHex": "0x00000a02",
+        "decoded": "10sp"
+      }
+    },
+    {
+      "id": "0x7f070312",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "type": 5,
+        "dataHex": "0x00000c02",
+        "decoded": "12sp"
+      }
+    },
+    {
+      "id": "0x7f08256f",
+      "type": "drawable",
+      "name": "comment_bg_303034_alpha_50_corner_16",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "type": 3,
+        "dataHex": "0x00000130",
+        "decoded": "res/0sg.xml"
+      }
+    },
+    {
+      "id": "0x7f0c0e81",
+      "type": "layout",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "type": 3,
+        "dataHex": "0x00000513",
+        "decoded": "res/6nv.xml"
+      }
+    },
+    {
+      "id": "0x7f0c0e82",
+      "type": "layout",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "type": 3,
+        "dataHex": "0x00001339",
+        "decoded": "res/RV3.xml"
+      }
+    },
+    {
+      "id": "0x7f11295f",
+      "type": "string",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "type": 3,
+        "dataHex": "0x00004cef",
+        "decoded": "共%d张"
+      }
+    },
+    {
+      "id": "0x7f11295f",
+      "type": "string",
+      "name": "-",
+      "configuration": "-en",
+      "parent": "0x00000000",
+      "value": {
+        "type": 3,
+        "dataHex": "0x00006946",
+        "decoded": "%d images"
+      }
+    },
+    {
+      "id": "0x7f11295f",
+      "type": "string",
+      "name": "-",
+      "configuration": "-zh-rTW",
+      "parent": "0x00000000",
+      "value": {
+        "type": 3,
+        "dataHex": "0x00004cef",
+        "decoded": "共%d张"
+      }
+    }
+  ]
+}

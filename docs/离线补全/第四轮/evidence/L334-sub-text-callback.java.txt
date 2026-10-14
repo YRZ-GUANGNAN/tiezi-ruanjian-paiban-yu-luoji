@@ -1,0 +1,8 @@
+        /* JADX WARN: Multi-variable type inference failed */
+        public final void a(SpannableStringBuilder spannableStringBuilder) {
+            qh6.e eVar;
+            if (PatchProxy.proxyVoid1Para(spannableStringBuilder, this, q.class, 387321) || (eVar = d.this.f30491o) == null) {
+                return;
+            }
+            ((ch6.h) d.this.getPresenter()).L(eVar, spannableStringBuilder);
+        }

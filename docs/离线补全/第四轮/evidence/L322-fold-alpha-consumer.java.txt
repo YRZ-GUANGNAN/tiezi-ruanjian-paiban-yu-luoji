@@ -1,0 +1,7 @@
+    public final gb0.m T2() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, d.class, 104862);
+        if (patchProxyResultProxy0Para.isSupported) {
+            return (gb0.m) patchProxyResultProxy0Para.result;
+        }
+        return (gb0.m) l84.c.a().j("all_alpha_comment_fold", new u6().getType(), new gb0.m(0, 0L, 0, 7, null));
+    }

@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_0180ae1d66672f4e47e18f48f9cad7b69c4c6e35ed45f80ab3208a73b04e9706",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.comment.consumer.list.view.CommentSinglePictureView",
+    "method_name": "m4"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.comment.consumer.list.view.CommentSinglePictureView"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"f87483h\",\"def_pos\":0,\"type\":\"com.xingin.comment.consumer.list.view.CommentSinglePictureView$a\"},{\"name\":\"f87484l\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f87485m\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f87486n\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f87487o\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f87488d\",\"def_pos\":0,\"type\":\"com.xingin.comment.consumer.list.view.CommentSinglePictureView$b\"},{\"name\":\"f87489e\",\"def_pos\":0,\"type\":\"com.xingin.entities.CommentPictureInfo\"},{\"name\":\"f87490f\",\"def_pos\":0,\"type\":\"cm.g$b\"},{\"name\":\"f87491g\",\"def_pos\":0,\"type\":\"java.util.Map<java.lang.Integer, android.view.View>\"}],\"field_count\":9,\"full_name\":\"com.xingin.comment.consumer.list.view.CommentSinglePictureView\",\"name\":\"CommentSinglePictureView\",\"inner_classes\":[\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.a\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.b\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.c\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.d\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.e\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.f\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.g\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.h\",\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.i\"],\"inner_class_count\":9,\"method_count\":24,\"methods\":[{\"is_constructor\":false,\"signature\":\"<clinit>(): void\",\"def_pos\":0,\"name\":\"<clinit>\"},{\"is_constructor\":true,\"signature\":\"<init>(android.content.Context, android.util.AttributeSet): void\",\"def_pos\":0,\"name\":\"<init>\"},{\"is_constructor\":false,\"signature\":\"X3(): int\",\"def_pos\":0,\"name\":\"X3\"},{\"is_constructor\":false,\"signature\":\"Y3(): int\",\"def_pos\":0,\"name\":\"Y3\"},{\"is_constructor\":false,\"signature\":\"Z3(com.xingin.comment.consumer.list.view.CommentSinglePictureView, com.xingin.entities.CommentPictureInfo): boolean\",\"def_pos\":0,\"name\":\"Z3\"},{\"is_constructor\":false,\"signature\":\"_$_findCachedViewById(int): android.view.View\",\"def_pos\":0,\"name\":\"_$_findCachedViewById\"},{\"is_constructor\":false,\"signature\":\"c4(com.xingin.comment.consumer.list.view.CommentSinglePictureView, com.xingin.entities.CommentPictureInfo, java.lang.Object, rg3.a): void\",\"def_pos\":0,\"name\":\"c4\"},{\"is_constructor\":false,\"signature\":\"d4(com.xingin.comment.consumer.list.view.CommentSinglePictureView, com.xingin.entities.CommentPictureInfo, boolean): void\",\"def_pos\":0,\"name\":\"d4\"},{\"is_constructor\":false,\"signature\":\"e4(com.xingin.redview.widgets.RoundProgressView): void\",\"def_pos\":0,\"name\":\"e4\"},{\"is_constructor\":false,\"signature\":\"g4(com.xingin.entities.CommentPictureInfo): boolean\",\"def_pos\":0,\"name\":\"g4\"},{\"is_constructor\":false,\"signature\":\"getLoadStatus(): com.xingin.comment.consumer.list.view.CommentSinglePictureView$b\",\"def_pos\":0,\"name\":\"getLoadStatus\"},{\"is_constructor\":false,\"signature\":\"getPicInfo(): com.xingin.entities.CommentPictureInfo\",\"def_pos\":0,\"name\":\"getPicInfo\"},{\"is_constructor\":false,\"signature\":\"h4(com.xingin.entities.CommentPictureInfo, java.lang.Object, rg3.a, boolean): void\",\"def_pos\":0,\"name\":\"h4\"},{\"is_constructor\":false,\"signature\":\"j4(com.xingin.entities.CommentPictureInfo, java.lang.Object, boolean): void\",\"def_pos\":0,\"name\":\"j4\"},{\"is_constructor\":false,\"signature\":\"k4(com.xingin.entities.CommentPictureInfo): java.lang.String\",\"def_pos\":0,\"name\":\"k4\"},{\"is_constructor\":false,\"signature\":\"l4(): void\",\"def_pos\":0,\"name\":\"l4\"},{\"is_constructor\":false,\"signature\":\"m4(com.xingin.entities.CommentPictureInfo, java.lang.Object): void\",\"def_pos\":0,\"name\":\"m4\"},{\"is_constructor\":false,\"signature\":\"o4(com.xingin.entities.CommentPictureInfo, java.lang.Object, rg3.a): void\",\"def_pos\":0,\"name\":\"o4\"},{\"is_constructor\":false,\"signature\":\"onAttachedToWindow(): void\",\"def_pos\":0,\"name\":\"onAttachedToWindow\"},{\"is_constructor\":false,\"signature\":\"p4(com.xingin.entities.CommentPictureInfo, boolean): void\",\"def_pos\":0,\"name\":\"p4\"},{\"is_constructor\":false,\"signature\":\"r4(com.facebook.drawee.view.SimpleDraweeView, com.xingin.entities.CommentPictureInfo, int): void\",\"def_pos\":0,\"name\":\"r4\"},{\"is_constructor\":false,\"signature\":\"s4(int, boolean): void\",\"def_pos\":0,\"name\":\"s4\"},{\"is_constructor\":false,\"signature\":\"setLoadStatus(com.xingin.comment.consumer.list.view.CommentSinglePictureView$b): void\",\"def_pos\":0,\"name\":\"setLoadStatus\"},{\"is_constructor\":false,\"signature\":\"setPicInfo(com.xingin.entities.CommentPictureInfo): void\",\"def_pos\":0,\"name\":\"setPicInfo\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.comment.consumer.list.view.CommentSinglePictureView",
+          "method_name": "m4",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_name\":\"m4\",\"overload_count\":1,\"body\":\"    public final void m4(CommentPictureInfo commentPictureInfo, Object obj) {\\r\\n        SimpleDraweeView simpleDraweeView;\\r\\n        if (PatchProxy.proxyVoid2Para(commentPictureInfo, obj, this, CommentSinglePictureView.class, 250081) || (simpleDraweeView = (SimpleDraweeView) _$_findCachedViewById(mp5.h.D4)) == null) {\\r\\n            return;\\r\\n        }\\r\\n        x.b(\\\"CommentConsumerList\\\", \\\"resetPicData  $\\\" + commentPictureInfo.j());\\r\\n        this.f87488d = b.LOADING;\\r\\n        CommentPictureTempInfo commentPictureTempInfoD = commentPictureInfo.d();\\r\\n        r4(simpleDraweeView, commentPictureInfo, commentPictureTempInfoD != null ? commentPictureTempInfoD.a() : 1);\\r\\n        cm.c.h(simpleDraweeView, commentPictureInfo.j(), simpleDraweeView.getLayoutParams().width, simpleDraweeView.getLayoutParams().height, (72 & 8) != 0 ? km.f.CENTER_CROP : null, (72 & 16) != 0 ? null : obj, (72 & 32) != 0 ? new km.b(null, 0, 0, 0, 0.0f, false, null, null, false, false, false, false, false, 7679, null) : new km.b(null, 0, 0, 0, 0.0f, false, null, null, false, false, false, false, false, 7167, null), (72 & 64) != 0 ? com.facebook.imagepipeline.request.a.EnumC0870a.DEFAULT : null);\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.comment.consumer.list.view.CommentSinglePictureView\",\"full_name\":\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.m4\",\"mode\":\"java\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.comment.consumer.list.view.CommentSinglePictureView",
+    "method": {
+      "name": "m4",
+      "reported_signature": "m4(com.xingin.entities.CommentPictureInfo, java.lang.Object): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void m4(CommentPictureInfo commentPictureInfo, Object obj) {\r\n        SimpleDraweeView simpleDraweeView;\r\n        if (PatchProxy.proxyVoid2Para(commentPictureInfo, obj, this, CommentSinglePictureView.class, 250081) || (simpleDraweeView = (SimpleDraweeView) _$_findCachedViewById(mp5.h.D4)) == null) {\r\n            return;\r\n        }\r\n        x.b(\"CommentConsumerList\", \"resetPicData  $\" + commentPictureInfo.j());\r\n        this.f87488d = b.LOADING;\r\n        CommentPictureTempInfo commentPictureTempInfoD = commentPictureInfo.d();\r\n        r4(simpleDraweeView, commentPictureInfo, commentPictureTempInfoD != null ? commentPictureTempInfoD.a() : 1);\r\n        cm.c.h(simpleDraweeView, commentPictureInfo.j(), simpleDraweeView.getLayoutParams().width, simpleDraweeView.getLayoutParams().height, (72 & 8) != 0 ? km.f.CENTER_CROP : null, (72 & 16) != 0 ? null : obj, (72 & 32) != 0 ? new km.b(null, 0, 0, 0, 0.0f, false, null, null, false, false, false, false, false, 7679, null) : new km.b(null, 0, 0, 0, 0.0f, false, null, null, false, false, false, false, false, 7167, null), (72 & 64) != 0 ? com.facebook.imagepipeline.request.a.EnumC0870a.DEFAULT : null);\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "b6836f2e0c5f892f92a37237451a4bd21727d43d0d2d72140d9ee1a40e3dd485",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

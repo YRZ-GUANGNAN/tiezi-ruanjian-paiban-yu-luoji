@@ -1,0 +1,4 @@
+    public final int d() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, a.class, 82081);
+        return patchProxyResultProxy0Para.isSupported ? ((Integer) patchProxyResultProxy0Para.result).intValue() : ((Number) ln.g.c().g("comment_fold", new m().getType(), 0)).intValue();
+    }

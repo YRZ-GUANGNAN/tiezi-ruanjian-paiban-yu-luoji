@@ -1,0 +1,2601 @@
+{
+  "limitations": [
+    "Packaged layout candidates, not proof of runtime inflation or final geometry.",
+    "Attributes retain numeric resource identities and encoded values; resource and theme resolution require separate evidence."
+  ],
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "targets": [
+    "res/GWn.xml",
+    "res/6jm.xml",
+    "com.xingin.comment.consumer.list.view.CommentPictureItemView"
+  ],
+  "provider": "independent-AXML-typed-attribute-parser-not-REA-Evidence",
+  "runtimeObserved": false,
+  "xmlEntriesExamined": 12678,
+  "matches": [
+    {
+      "nodes": [
+        {
+          "element": "merge",
+          "depth": 0,
+          "chunkOffset": 560,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313355,
+              "dataHex": "0x7f0942cb"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 10,
+              "namespace": "",
+              "resourceId": "0x010100ea",
+              "rawString": null,
+              "type": 18,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 11,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            }
+          ]
+        },
+        {
+          "element": "com.facebook.drawee.view.SimpleDraweeView",
+          "depth": 1,
+          "chunkOffset": 676,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 11,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 5,
+              "data": 18177,
+              "dataHex": "0x00004701"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 5,
+              "data": 18177,
+              "dataHex": "0x00004701"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 21,
+              "namespace": "",
+              "resourceId": "0x7f04008e",
+              "rawString": null,
+              "type": 16,
+              "data": 6,
+              "dataHex": "0x00000006"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 24,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 25,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "placeholderImage",
+              "nameStringIndex": 27,
+              "namespace": "",
+              "resourceId": "0x7f040510",
+              "rawString": null,
+              "type": 1,
+              "data": 2131102733,
+              "dataHex": "0x7f060c0d"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 28,
+              "namespace": "",
+              "resourceId": "0x7f0405cb",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            }
+          ]
+        },
+        {
+          "element": "TextView",
+          "depth": 1,
+          "chunkOffset": 896,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 0,
+              "namespace": "",
+              "resourceId": "0x01010095",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165970,
+              "dataHex": "0x7f070312"
+            },
+            {
+              "name": "textColor",
+              "nameStringIndex": 1,
+              "namespace": "",
+              "resourceId": "0x01010098",
+              "rawString": null,
+              "type": 1,
+              "data": 2131102735,
+              "dataHex": "0x7f060c0f"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 2,
+              "namespace": "",
+              "resourceId": "0x010100af",
+              "rawString": null,
+              "type": 17,
+              "data": 17,
+              "dataHex": "0x00000011"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313352,
+              "dataHex": "0x7f0942c8"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 11,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 5,
+              "data": 1,
+              "dataHex": "0x00000001"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 5,
+              "data": 1,
+              "dataHex": "0x00000001"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 22,
+              "namespace": "",
+              "resourceId": "0x7f0403d5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 23,
+              "namespace": "",
+              "resourceId": "0x7f0403db",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 24,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 25,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            }
+          ]
+        },
+        {
+          "element": "com.xingin.redview.widgets.RoundProgressView",
+          "depth": 1,
+          "chunkOffset": 1156,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313351,
+              "dataHex": "0x7f0942c7"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 11,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165907,
+              "dataHex": "0x7f0702d3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165907,
+              "dataHex": "0x7f0702d3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 22,
+              "namespace": "",
+              "resourceId": "0x7f0403d5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 23,
+              "namespace": "",
+              "resourceId": "0x7f0403db",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 24,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 25,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 26,
+              "namespace": "",
+              "resourceId": "0x7f0403f3",
+              "rawString": null,
+              "type": 16,
+              "data": 2,
+              "dataHex": "0x00000002"
+            }
+          ]
+        },
+        {
+          "element": "View",
+          "depth": 1,
+          "chunkOffset": 1376,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313354,
+              "dataHex": "0x7f0942ca"
+            },
+            {
+              "name": "background",
+              "nameStringIndex": 4,
+              "namespace": "",
+              "resourceId": "0x010100d4",
+              "rawString": null,
+              "type": 1,
+              "data": 2131236292,
+              "dataHex": "0x7f0815c4"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 9,
+              "namespace": "",
+              "resourceId": "0x010100dc",
+              "rawString": null,
+              "type": 16,
+              "data": 2,
+              "dataHex": "0x00000002"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 11,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165852,
+              "dataHex": "0x7f07029c"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165852,
+              "dataHex": "0x7f07029c"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 13,
+              "namespace": "",
+              "resourceId": "0x010100f8",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 17,
+              "namespace": "",
+              "resourceId": "0x010103b5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 24,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 25,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            }
+          ]
+        },
+        {
+          "element": "TextView",
+          "depth": 1,
+          "chunkOffset": 1616,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 0,
+              "namespace": "",
+              "resourceId": "0x01010095",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165968,
+              "dataHex": "0x7f070310"
+            },
+            {
+              "name": "textColor",
+              "nameStringIndex": 1,
+              "namespace": "",
+              "resourceId": "0x01010098",
+              "rawString": null,
+              "type": 1,
+              "data": 2131102420,
+              "dataHex": "0x7f060ad4"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 2,
+              "namespace": "",
+              "resourceId": "0x010100af",
+              "rawString": null,
+              "type": 17,
+              "data": 17,
+              "dataHex": "0x00000011"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313350,
+              "dataHex": "0x7f0942c6"
+            },
+            {
+              "name": "background",
+              "nameStringIndex": 4,
+              "namespace": "",
+              "resourceId": "0x010100d4",
+              "rawString": null,
+              "type": 1,
+              "data": 2131240303,
+              "dataHex": "0x7f08256f"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 5,
+              "namespace": "",
+              "resourceId": "0x010100d6",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165906,
+              "dataHex": "0x7f0702d2"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 6,
+              "namespace": "",
+              "resourceId": "0x010100d7",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165820,
+              "dataHex": "0x7f07027c"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 7,
+              "namespace": "",
+              "resourceId": "0x010100d8",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165906,
+              "dataHex": "0x7f0702d2"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 8,
+              "namespace": "",
+              "resourceId": "0x010100d9",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165820,
+              "dataHex": "0x7f07027c"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 9,
+              "namespace": "",
+              "resourceId": "0x010100dc",
+              "rawString": null,
+              "type": 16,
+              "data": 2,
+              "dataHex": "0x00000002"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 11,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 14,
+              "namespace": "",
+              "resourceId": "0x010100fa",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 15,
+              "namespace": "",
+              "resourceId": "0x01010140",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165852,
+              "dataHex": "0x7f07029c"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 16,
+              "namespace": "",
+              "resourceId": "0x0101014f",
+              "rawString": "共9张",
+              "type": 3,
+              "data": 38,
+              "dataHex": "0x00000026",
+              "string": "共9张"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 18,
+              "namespace": "",
+              "resourceId": "0x010103b6",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 19,
+              "namespace": "",
+              "resourceId": "0x0101053d",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165906,
+              "dataHex": "0x7f0702d2"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 20,
+              "namespace": "",
+              "resourceId": "0x0101053e",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165820,
+              "dataHex": "0x7f07027c"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 22,
+              "namespace": "",
+              "resourceId": "0x7f0403d5",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 23,
+              "namespace": "",
+              "resourceId": "0x7f0403db",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            }
+          ]
+        }
+      ],
+      "entrySha256": "814830e6794236c9a15df187c79074274dc4a62bd188d554efb03f07b0799058",
+      "bytes": 2148,
+      "entry": "res/6jm.xml",
+      "targetHits": [
+        "res/6jm.xml"
+      ]
+    },
+    {
+      "nodes": [
+        {
+          "element": "com.xingin.comment.consumer.list.view.CommentPictureItemView",
+          "depth": 0,
+          "chunkOffset": 628,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306660,
+              "dataHex": "0x7f0928a4"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 6,
+              "namespace": "",
+              "resourceId": "0x010100ea",
+              "rawString": null,
+              "type": 18,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 8,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 16,
+              "data": -1,
+              "dataHex": "0xffffffff"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 9,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 10,
+              "namespace": "",
+              "resourceId": "0x010100f8",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            }
+          ]
+        },
+        {
+          "element": "com.facebook.drawee.view.SimpleDraweeView",
+          "depth": 1,
+          "chunkOffset": 764,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 8,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 5,
+              "data": 30721,
+              "dataHex": "0x00007801"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 9,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 5,
+              "data": 30721,
+              "dataHex": "0x00007801"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 15,
+              "namespace": "",
+              "resourceId": "0x7f04008e",
+              "rawString": null,
+              "type": 16,
+              "data": 6,
+              "dataHex": "0x00000006"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 19,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 21,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "placeholderImage",
+              "nameStringIndex": 23,
+              "namespace": "",
+              "resourceId": "0x7f040510",
+              "rawString": null,
+              "type": 1,
+              "data": 2131102035,
+              "dataHex": "0x7f060953"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 24,
+              "namespace": "",
+              "resourceId": "0x7f0405cb",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            }
+          ]
+        },
+        {
+          "element": "com.xingin.widgets.XYImageView",
+          "depth": 1,
+          "chunkOffset": 984,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131303858,
+              "dataHex": "0x7f091db2"
+            },
+            {
+              "name": "background",
+              "nameStringIndex": 4,
+              "namespace": "",
+              "resourceId": "0x010100d4",
+              "rawString": null,
+              "type": 1,
+              "data": 2131236292,
+              "dataHex": "0x7f0815c4"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 5,
+              "namespace": "",
+              "resourceId": "0x010100dc",
+              "rawString": null,
+              "type": 16,
+              "data": 2,
+              "dataHex": "0x00000002"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 8,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 5,
+              "data": 5121,
+              "dataHex": "0x00001401"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 9,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 5,
+              "data": 5121,
+              "dataHex": "0x00001401"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 10,
+              "namespace": "",
+              "resourceId": "0x010100f8",
+              "rawString": null,
+              "type": 5,
+              "data": 1537,
+              "dataHex": "0x00000601"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 14,
+              "namespace": "",
+              "resourceId": "0x010103b5",
+              "rawString": null,
+              "type": 5,
+              "data": 1537,
+              "dataHex": "0x00000601"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 19,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 21,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            }
+          ]
+        },
+        {
+          "element": "View",
+          "depth": 1,
+          "chunkOffset": 1224,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306658,
+              "dataHex": "0x7f0928a2"
+            },
+            {
+              "name": "background",
+              "nameStringIndex": 4,
+              "namespace": "",
+              "resourceId": "0x010100d4",
+              "rawString": null,
+              "type": 1,
+              "data": 2131236026,
+              "dataHex": "0x7f0814ba"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 8,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 5,
+              "data": 1,
+              "dataHex": "0x00000001"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 9,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 5,
+              "data": 1,
+              "dataHex": "0x00000001"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 16,
+              "namespace": "",
+              "resourceId": "0x7f0403d5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 18,
+              "namespace": "",
+              "resourceId": "0x7f0403db",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 19,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 21,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            }
+          ]
+        },
+        {
+          "element": "com.xingin.redview.widgets.RoundProgressView",
+          "depth": 1,
+          "chunkOffset": 1444,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306662,
+              "dataHex": "0x7f0928a6"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 8,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165913,
+              "dataHex": "0x7f0702d9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 9,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165913,
+              "dataHex": "0x7f0702d9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 17,
+              "namespace": "",
+              "resourceId": "0x7f0403d6",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306663,
+              "dataHex": "0x7f0928a7"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 18,
+              "namespace": "",
+              "resourceId": "0x7f0403db",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 19,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 21,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 22,
+              "namespace": "",
+              "resourceId": "0x7f0403f3",
+              "rawString": null,
+              "type": 16,
+              "data": 2,
+              "dataHex": "0x00000002"
+            }
+          ]
+        },
+        {
+          "element": "TextView",
+          "depth": 1,
+          "chunkOffset": 1664,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 0,
+              "namespace": "",
+              "resourceId": "0x01010095",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165970,
+              "dataHex": "0x7f070312"
+            },
+            {
+              "name": "textColor",
+              "nameStringIndex": 1,
+              "namespace": "",
+              "resourceId": "0x01010098",
+              "rawString": null,
+              "type": 1,
+              "data": 2131102420,
+              "dataHex": "0x7f060ad4"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 2,
+              "namespace": "",
+              "resourceId": "0x010100ab",
+              "rawString": null,
+              "type": 16,
+              "data": 3,
+              "dataHex": "0x00000003"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306663,
+              "dataHex": "0x7f0928a7"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 8,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 9,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 10,
+              "namespace": "",
+              "resourceId": "0x010100f8",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165821,
+              "dataHex": "0x7f07027d"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 11,
+              "namespace": "",
+              "resourceId": "0x0101014f",
+              "rawString": null,
+              "type": 1,
+              "data": 2131827894,
+              "dataHex": "0x7f111cb6"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x01010153",
+              "rawString": null,
+              "type": 16,
+              "data": 1,
+              "dataHex": "0x00000001"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 13,
+              "namespace": "",
+              "resourceId": "0x0101015d",
+              "rawString": null,
+              "type": 18,
+              "data": -1,
+              "dataHex": "0xffffffff"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 16,
+              "namespace": "",
+              "resourceId": "0x7f0403d5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 18,
+              "namespace": "",
+              "resourceId": "0x7f0403db",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 19,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 20,
+              "namespace": "",
+              "resourceId": "0x7f0403f0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306662,
+              "dataHex": "0x7f0928a6"
+            }
+          ]
+        },
+        {
+          "element": "TextView",
+          "depth": 1,
+          "chunkOffset": 2004,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 0,
+              "namespace": "",
+              "resourceId": "0x01010095",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165970,
+              "dataHex": "0x7f070312"
+            },
+            {
+              "name": "textColor",
+              "nameStringIndex": 1,
+              "namespace": "",
+              "resourceId": "0x01010098",
+              "rawString": null,
+              "type": 1,
+              "data": 2131102420,
+              "dataHex": "0x7f060ad4"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 2,
+              "namespace": "",
+              "resourceId": "0x010100ab",
+              "rawString": null,
+              "type": 16,
+              "data": 3,
+              "dataHex": "0x00000003"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306664,
+              "dataHex": "0x7f0928a8"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 8,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 9,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x01010153",
+              "rawString": null,
+              "type": 16,
+              "data": 1,
+              "dataHex": "0x00000001"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 13,
+              "namespace": "",
+              "resourceId": "0x0101015d",
+              "rawString": null,
+              "type": 18,
+              "data": -1,
+              "dataHex": "0xffffffff"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 16,
+              "namespace": "",
+              "resourceId": "0x7f0403d5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306662,
+              "dataHex": "0x7f0928a6"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 18,
+              "namespace": "",
+              "resourceId": "0x7f0403db",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306662,
+              "dataHex": "0x7f0928a6"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 19,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306662,
+              "dataHex": "0x7f0928a6"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 21,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306662,
+              "dataHex": "0x7f0928a6"
+            }
+          ]
+        },
+        {
+          "element": "ViewStub",
+          "depth": 1,
+          "chunkOffset": 2304,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306661,
+              "dataHex": "0x7f0928a5"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 6,
+              "namespace": "",
+              "resourceId": "0x010100ea",
+              "rawString": null,
+              "type": 18,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 7,
+              "namespace": "",
+              "resourceId": "0x010100f2",
+              "rawString": null,
+              "type": 1,
+              "data": 2131495009,
+              "dataHex": "0x7f0c0861"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 8,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 5,
+              "data": 1,
+              "dataHex": "0x00000001"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 9,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 5,
+              "data": 1,
+              "dataHex": "0x00000001"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 16,
+              "namespace": "",
+              "resourceId": "0x7f0403d5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 18,
+              "namespace": "",
+              "resourceId": "0x7f0403db",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 19,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 21,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            }
+          ]
+        },
+        {
+          "element": "TextView",
+          "depth": 1,
+          "chunkOffset": 2544,
+          "attributes": [
+            {
+              "name": "textColor",
+              "nameStringIndex": 1,
+              "namespace": "",
+              "resourceId": "0x01010098",
+              "rawString": null,
+              "type": 1,
+              "data": 2131101951,
+              "dataHex": "0x7f0608ff"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306665,
+              "dataHex": "0x7f0928a9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 8,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 9,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 10,
+              "namespace": "",
+              "resourceId": "0x010100f8",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 19,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 20,
+              "namespace": "",
+              "resourceId": "0x7f0403f0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "style",
+              "nameStringIndex": 36,
+              "namespace": null,
+              "resourceId": null,
+              "rawString": null,
+              "type": 1,
+              "data": 2131887279,
+              "dataHex": "0x7f1204af"
+            }
+          ]
+        }
+      ],
+      "entrySha256": "bef2829d9be51518a9cb54023ccf4eb670a522924cde8b1c23a00534781c7bc0",
+      "bytes": 2836,
+      "entry": "res/6nv.xml",
+      "targetHits": [
+        "com.xingin.comment.consumer.list.view.CommentPictureItemView"
+      ]
+    },
+    {
+      "nodes": [
+        {
+          "element": "merge",
+          "depth": 0,
+          "chunkOffset": 540,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313355,
+              "dataHex": "0x7f0942cb"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 10,
+              "namespace": "",
+              "resourceId": "0x010100ea",
+              "rawString": null,
+              "type": 18,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 11,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            }
+          ]
+        },
+        {
+          "element": "com.facebook.drawee.view.SimpleDraweeView",
+          "depth": 1,
+          "chunkOffset": 656,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 11,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 5,
+              "data": 18177,
+              "dataHex": "0x00004701"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 5,
+              "data": 18177,
+              "dataHex": "0x00004701"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 19,
+              "namespace": "",
+              "resourceId": "0x7f04008e",
+              "rawString": null,
+              "type": 16,
+              "data": 6,
+              "dataHex": "0x00000006"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 22,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 23,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "placeholderImage",
+              "nameStringIndex": 25,
+              "namespace": "",
+              "resourceId": "0x7f040510",
+              "rawString": null,
+              "type": 1,
+              "data": 2131102733,
+              "dataHex": "0x7f060c0d"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 26,
+              "namespace": "",
+              "resourceId": "0x7f0405cb",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            }
+          ]
+        },
+        {
+          "element": "TextView",
+          "depth": 1,
+          "chunkOffset": 876,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 0,
+              "namespace": "",
+              "resourceId": "0x01010095",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165970,
+              "dataHex": "0x7f070312"
+            },
+            {
+              "name": "textColor",
+              "nameStringIndex": 1,
+              "namespace": "",
+              "resourceId": "0x01010098",
+              "rawString": null,
+              "type": 1,
+              "data": 2131102735,
+              "dataHex": "0x7f060c0f"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 2,
+              "namespace": "",
+              "resourceId": "0x010100af",
+              "rawString": null,
+              "type": 17,
+              "data": 17,
+              "dataHex": "0x00000011"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313352,
+              "dataHex": "0x7f0942c8"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 11,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 5,
+              "data": 1,
+              "dataHex": "0x00000001"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 5,
+              "data": 1,
+              "dataHex": "0x00000001"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 20,
+              "namespace": "",
+              "resourceId": "0x7f0403d5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 21,
+              "namespace": "",
+              "resourceId": "0x7f0403db",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 22,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 23,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            }
+          ]
+        },
+        {
+          "element": "com.xingin.redview.widgets.RoundProgressView",
+          "depth": 1,
+          "chunkOffset": 1136,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313351,
+              "dataHex": "0x7f0942c7"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 11,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165907,
+              "dataHex": "0x7f0702d3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165907,
+              "dataHex": "0x7f0702d3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 20,
+              "namespace": "",
+              "resourceId": "0x7f0403d5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 21,
+              "namespace": "",
+              "resourceId": "0x7f0403db",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 22,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 23,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313353,
+              "dataHex": "0x7f0942c9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 24,
+              "namespace": "",
+              "resourceId": "0x7f0403f3",
+              "rawString": null,
+              "type": 16,
+              "data": 2,
+              "dataHex": "0x00000002"
+            }
+          ]
+        },
+        {
+          "element": "View",
+          "depth": 1,
+          "chunkOffset": 1356,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313354,
+              "dataHex": "0x7f0942ca"
+            },
+            {
+              "name": "background",
+              "nameStringIndex": 4,
+              "namespace": "",
+              "resourceId": "0x010100d4",
+              "rawString": null,
+              "type": 1,
+              "data": 2131236292,
+              "dataHex": "0x7f0815c4"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 9,
+              "namespace": "",
+              "resourceId": "0x010100dc",
+              "rawString": null,
+              "type": 16,
+              "data": 2,
+              "dataHex": "0x00000002"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 11,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165852,
+              "dataHex": "0x7f07029c"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165852,
+              "dataHex": "0x7f07029c"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 13,
+              "namespace": "",
+              "resourceId": "0x010100f8",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 17,
+              "namespace": "",
+              "resourceId": "0x010103b5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 22,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 23,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            }
+          ]
+        },
+        {
+          "element": "TextView",
+          "depth": 1,
+          "chunkOffset": 1596,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 0,
+              "namespace": "",
+              "resourceId": "0x01010095",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165968,
+              "dataHex": "0x7f070310"
+            },
+            {
+              "name": "textColor",
+              "nameStringIndex": 1,
+              "namespace": "",
+              "resourceId": "0x01010098",
+              "rawString": null,
+              "type": 1,
+              "data": 2131102420,
+              "dataHex": "0x7f060ad4"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 2,
+              "namespace": "",
+              "resourceId": "0x010100af",
+              "rawString": null,
+              "type": 17,
+              "data": 17,
+              "dataHex": "0x00000011"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131313350,
+              "dataHex": "0x7f0942c6"
+            },
+            {
+              "name": "background",
+              "nameStringIndex": 4,
+              "namespace": "",
+              "resourceId": "0x010100d4",
+              "rawString": null,
+              "type": 1,
+              "data": 2131240303,
+              "dataHex": "0x7f08256f"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 5,
+              "namespace": "",
+              "resourceId": "0x010100d6",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165906,
+              "dataHex": "0x7f0702d2"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 6,
+              "namespace": "",
+              "resourceId": "0x010100d7",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165820,
+              "dataHex": "0x7f07027c"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 7,
+              "namespace": "",
+              "resourceId": "0x010100d8",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165906,
+              "dataHex": "0x7f0702d2"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 8,
+              "namespace": "",
+              "resourceId": "0x010100d9",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165820,
+              "dataHex": "0x7f07027c"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 9,
+              "namespace": "",
+              "resourceId": "0x010100dc",
+              "rawString": null,
+              "type": 16,
+              "data": 2,
+              "dataHex": "0x00000002"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 11,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 14,
+              "namespace": "",
+              "resourceId": "0x010100fa",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 15,
+              "namespace": "",
+              "resourceId": "0x01010140",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165852,
+              "dataHex": "0x7f07029c"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 16,
+              "namespace": "",
+              "resourceId": "0x0101014f",
+              "rawString": "共9张",
+              "type": 3,
+              "data": 36,
+              "dataHex": "0x00000024",
+              "string": "共9张"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 18,
+              "namespace": "",
+              "resourceId": "0x010103b6",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 20,
+              "namespace": "",
+              "resourceId": "0x7f0403d5",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 21,
+              "namespace": "",
+              "resourceId": "0x7f0403db",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            }
+          ]
+        }
+      ],
+      "entrySha256": "0368f82546d4133979cd5b269641d0a7f94326435b8ddcccfcf49159ab13c311",
+      "bytes": 2088,
+      "entry": "res/GWn.xml",
+      "targetHits": [
+        "res/GWn.xml"
+      ]
+    },
+    {
+      "nodes": [
+        {
+          "element": "com.xingin.comment.consumer.list.view.CommentPictureItemView",
+          "depth": 0,
+          "chunkOffset": 500,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 1,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306660,
+              "dataHex": "0x7f0928a4"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 2,
+              "namespace": "",
+              "resourceId": "0x010100ea",
+              "rawString": null,
+              "type": 18,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 4,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 16,
+              "data": -1,
+              "dataHex": "0xffffffff"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 5,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 6,
+              "namespace": "",
+              "resourceId": "0x010100f8",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            }
+          ]
+        },
+        {
+          "element": "com.facebook.drawee.view.SimpleDraweeView",
+          "depth": 1,
+          "chunkOffset": 636,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 1,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 4,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 5,
+              "data": 30721,
+              "dataHex": "0x00007801"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 5,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 5,
+              "data": 30721,
+              "dataHex": "0x00007801"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 7,
+              "namespace": "",
+              "resourceId": "0x7f04008e",
+              "rawString": null,
+              "type": 16,
+              "data": 6,
+              "dataHex": "0x00000006"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 14,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "placeholderImage",
+              "nameStringIndex": 15,
+              "namespace": "",
+              "resourceId": "0x7f040510",
+              "rawString": null,
+              "type": 1,
+              "data": 2131102035,
+              "dataHex": "0x7f060953"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 16,
+              "namespace": "",
+              "resourceId": "0x7f0405cb",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            }
+          ]
+        },
+        {
+          "element": "com.xingin.redview.widgets.RedViewStub",
+          "depth": 1,
+          "chunkOffset": 856,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 1,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131311038,
+              "dataHex": "0x7f0939be"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 4,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 5,
+              "data": 1,
+              "dataHex": "0x00000001"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 5,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 5,
+              "data": 1,
+              "dataHex": "0x00000001"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 8,
+              "namespace": "",
+              "resourceId": "0x7f040398",
+              "rawString": null,
+              "type": 1,
+              "data": 2131311037,
+              "dataHex": "0x7f0939bd"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 9,
+              "namespace": "",
+              "resourceId": "0x7f0403c4",
+              "rawString": null,
+              "type": 1,
+              "data": 2131496579,
+              "dataHex": "0x7f0c0e83"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 10,
+              "namespace": "",
+              "resourceId": "0x7f0403d5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 11,
+              "namespace": "",
+              "resourceId": "0x7f0403db",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 14,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            }
+          ]
+        },
+        {
+          "element": "ViewStub",
+          "depth": 1,
+          "chunkOffset": 1096,
+          "attributes": [
+            {
+              "name": "",
+              "nameStringIndex": 1,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306661,
+              "dataHex": "0x7f0928a5"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 2,
+              "namespace": "",
+              "resourceId": "0x010100ea",
+              "rawString": null,
+              "type": 18,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 3,
+              "namespace": "",
+              "resourceId": "0x010100f2",
+              "rawString": null,
+              "type": 1,
+              "data": 2131495009,
+              "dataHex": "0x7f0c0861"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 4,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 5,
+              "data": 1,
+              "dataHex": "0x00000001"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 5,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 5,
+              "data": 1,
+              "dataHex": "0x00000001"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 10,
+              "namespace": "",
+              "resourceId": "0x7f0403d5",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 11,
+              "namespace": "",
+              "resourceId": "0x7f0403db",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 14,
+              "namespace": "",
+              "resourceId": "0x7f0403f1",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            }
+          ]
+        },
+        {
+          "element": "TextView",
+          "depth": 1,
+          "chunkOffset": 1336,
+          "attributes": [
+            {
+              "name": "textColor",
+              "nameStringIndex": 0,
+              "namespace": "",
+              "resourceId": "0x01010098",
+              "rawString": null,
+              "type": 1,
+              "data": 2131101951,
+              "dataHex": "0x7f0608ff"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 1,
+              "namespace": "",
+              "resourceId": "0x010100d0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306665,
+              "dataHex": "0x7f0928a9"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 4,
+              "namespace": "",
+              "resourceId": "0x010100f4",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 5,
+              "namespace": "",
+              "resourceId": "0x010100f5",
+              "rawString": null,
+              "type": 16,
+              "data": -2,
+              "dataHex": "0xfffffffe"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 6,
+              "namespace": "",
+              "resourceId": "0x010100f8",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165926,
+              "dataHex": "0x7f0702e6"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 12,
+              "namespace": "",
+              "resourceId": "0x7f0403ee",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "",
+              "nameStringIndex": 13,
+              "namespace": "",
+              "resourceId": "0x7f0403f0",
+              "rawString": null,
+              "type": 1,
+              "data": 2131306659,
+              "dataHex": "0x7f0928a3"
+            },
+            {
+              "name": "style",
+              "nameStringIndex": 26,
+              "namespace": null,
+              "resourceId": null,
+              "rawString": null,
+              "type": 1,
+              "data": 2131887279,
+              "dataHex": "0x7f1204af"
+            }
+          ]
+        }
+      ],
+      "entrySha256": "8972713ab9b597d27112edb316c31ad0e7be5ce1115046bd2e3367e2d255fc5b",
+      "bytes": 1628,
+      "entry": "res/RV3.xml",
+      "targetHits": [
+        "com.xingin.comment.consumer.list.view.CommentPictureItemView"
+      ]
+    }
+  ]
+}

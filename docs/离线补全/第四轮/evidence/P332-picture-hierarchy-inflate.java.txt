@@ -1,0 +1,10 @@
+    public static b d(Context context, AttributeSet attributeSet) throws Throwable {
+        if (m8.b.d()) {
+            m8.b.a("GenericDraweeHierarchyBuilder#inflateBuilder");
+        }
+        b bVarE = e(new b(context.getResources()), context, attributeSet);
+        if (m8.b.d()) {
+            m8.b.b();
+        }
+        return bVarE;
+    }

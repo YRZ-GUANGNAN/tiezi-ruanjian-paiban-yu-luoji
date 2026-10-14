@@ -1,0 +1,38 @@
+{
+  "provider": "dexlib2-bundled-with-jadx-auxiliary-not-REA-Evidence",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "selectors": [
+    "Lmp5/k;::field:o",
+    "Lmp5/h;::field:A4",
+    "Lmp5/h;::field:D4"
+  ],
+  "matches": [
+    {
+      "selector": "Lmp5/h;::field:A4",
+      "dexEntry": "classes7.dex",
+      "field": "Lmp5/h;->A4:I",
+      "encodedValuePresent": true,
+      "encodedValue": 2131313350
+    },
+    {
+      "selector": "Lmp5/h;::field:D4",
+      "dexEntry": "classes7.dex",
+      "field": "Lmp5/h;->D4:I",
+      "encodedValuePresent": true,
+      "encodedValue": 2131313353
+    },
+    {
+      "selector": "Lmp5/k;::field:o",
+      "dexEntry": "classes7.dex",
+      "field": "Lmp5/k;->o:I",
+      "encodedValuePresent": true,
+      "encodedValue": 2131831135
+    }
+  ],
+  "limitations": [
+    "Raw static instructions, not observed execution or a complete control-flow proof.",
+    "Offsets and branch targets are relative DEX code units, not APK byte offsets.",
+    "Hot patches, remote config, runtime values and resource selection are not resolved."
+  ]
+}

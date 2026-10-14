@@ -1,0 +1,79 @@
+{
+  "limitations": [
+    "Only encoded instruction references; reflection, native calls and runtime object types are not resolved.",
+    "A matching operand is a navigation clue, not proof the method executes in a visible page."
+  ],
+  "classesExamined": 249475,
+  "methodsExamined": 1368988,
+  "matches": [
+    {
+      "dexEntry": "classes9.dex",
+      "references": [
+        {
+          "opcode": "invoke-virtual",
+          "reference": "Lah6/h;->L(Lqh6/d;Landroid/text/SpannableStringBuilder;)V",
+          "offset": 50,
+          "targets": [
+            "Lah6/h;->L("
+          ]
+        }
+      ],
+      "method": "Lah6/d$q;->a(Landroid/text/SpannableStringBuilder;)V",
+      "class": "Lah6/d$q;"
+    },
+    {
+      "dexEntry": "classes9.dex",
+      "references": [
+        {
+          "opcode": "invoke-virtual",
+          "reference": "Lch6/h;->L(Lqh6/e;Landroid/text/SpannableStringBuilder;)V",
+          "offset": 28,
+          "targets": [
+            "Lch6/h;->L("
+          ]
+        }
+      ],
+      "method": "Lch6/d$q;->a(Landroid/text/SpannableStringBuilder;)V",
+      "class": "Lch6/d$q;"
+    },
+    {
+      "dexEntry": "classes9.dex",
+      "references": [
+        {
+          "opcode": "invoke-virtual",
+          "reference": "Lah6/h;->l0(Lcom/xingin/entities/CommentCommentInfo;)Landroid/text/SpannableStringBuilder;",
+          "offset": 227,
+          "targets": [
+            "Lah6/h;->l0("
+          ]
+        }
+      ],
+      "method": "Lah6/d;->n2(Lqh6/d;ZZ)Ltg6/f;",
+      "class": "Lah6/d;"
+    },
+    {
+      "dexEntry": "classes9.dex",
+      "references": [
+        {
+          "opcode": "invoke-virtual",
+          "reference": "Lch6/h;->j0(Lcom/xingin/entities/CommentCommentInfo;)Landroid/text/SpannableStringBuilder;",
+          "offset": 264,
+          "targets": [
+            "Lch6/h;->j0("
+          ]
+        }
+      ],
+      "method": "Lch6/d;->d2(Lqh6/e;ZZ)Ltg6/f;",
+      "class": "Lch6/d;"
+    }
+  ],
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "targets": [
+    "Lah6/h;->l0(",
+    "Lch6/h;->j0(",
+    "Lah6/h;->L(",
+    "Lch6/h;->L("
+  ],
+  "provider": "dexlib2-static-reference-scan-not-REA-Evidence",
+  "runtimeObserved": false
+}

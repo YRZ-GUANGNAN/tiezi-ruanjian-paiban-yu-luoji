@@ -1,0 +1,11 @@
+    public final void m4(CommentPictureInfo commentPictureInfo, Object obj) {
+        SimpleDraweeView simpleDraweeView;
+        if (PatchProxy.proxyVoid2Para(commentPictureInfo, obj, this, CommentSinglePictureView.class, 250081) || (simpleDraweeView = (SimpleDraweeView) _$_findCachedViewById(mp5.h.D4)) == null) {
+            return;
+        }
+        x.b("CommentConsumerList", "resetPicData  $" + commentPictureInfo.j());
+        this.f87488d = b.LOADING;
+        CommentPictureTempInfo commentPictureTempInfoD = commentPictureInfo.d();
+        r4(simpleDraweeView, commentPictureInfo, commentPictureTempInfoD != null ? commentPictureTempInfoD.a() : 1);
+        cm.c.h(simpleDraweeView, commentPictureInfo.j(), simpleDraweeView.getLayoutParams().width, simpleDraweeView.getLayoutParams().height, (72 & 8) != 0 ? km.f.CENTER_CROP : null, (72 & 16) != 0 ? null : obj, (72 & 32) != 0 ? new km.b(null, 0, 0, 0, 0.0f, false, null, null, false, false, false, false, false, 7679, null) : new km.b(null, 0, 0, 0, 0.0f, false, null, null, false, false, false, false, false, 7167, null), (72 & 64) != 0 ? com.facebook.imagepipeline.request.a.EnumC0870a.DEFAULT : null);
+    }

@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_452c0f4899308fc1926561d9c7f1b6bcfb9ffe7379fc3235d02910b58095cd3b",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "th6.i",
+    "method_name": "h"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "th6.i"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"f311572a\",\"def_pos\":0,\"type\":\"boolean\"},{\"name\":\"f311573b\",\"def_pos\":0,\"type\":\"com.xingin.entities.CommentCommentInfo\"},{\"name\":\"f311574c\",\"def_pos\":0,\"type\":\"android.widget.TextView\"},{\"name\":\"f311575d\",\"def_pos\":0,\"type\":\"kotlin.jvm.functions.Function0<kotlin.Unit>\"},{\"name\":\"f311576e\",\"def_pos\":0,\"type\":\"java.lang.String\"}],\"field_count\":5,\"full_name\":\"th6.i\",\"name\":\"i\",\"inner_classes\":[\"th6.i.a\",\"th6.i.b\"],\"inner_class_count\":2,\"method_count\":10,\"methods\":[{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"signature\":\"<init>(): void\"},{\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"signature\":\"a(th6.i): com.xingin.entities.CommentCommentInfo\"},{\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"signature\":\"b(th6.i): java.lang.String\"},{\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(th6.i, boolean): void\"},{\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"signature\":\"d(th6.i, int): void\"},{\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"signature\":\"e(android.widget.TextView, com.xingin.entities.CommentCommentInfo): void\"},{\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"signature\":\"f(com.xingin.entities.CommentCommentInfo): java.lang.String\"},{\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"signature\":\"g(kotlin.jvm.functions.Function0<kotlin.Unit>): void\"},{\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"signature\":\"h(boolean): void\"},{\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false,\"signature\":\"i(int): void\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "th6.i",
+          "method_name": "h",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"method_name\":\"h\",\"overload_count\":1,\"body\":\"    /* JADX WARN: Code duplicated, block: B:27:0x008f  */\\r\\n    public final void h(boolean z100) {\\r\\n        Integer numX;\\r\\n        boolean z101;\\r\\n        String strJ;\\r\\n        String string;\\r\\n        if (PatchProxy.proxyVoid1Para(new Boolean(z100), this, i.class, 392215)) {\\r\\n            return;\\r\\n        }\\r\\n        String str = this.f311576e;\\r\\n        CommentCommentInfo commentCommentInfo = this.f311573b;\\r\\n        wg3.x.b(str, \\\"startTranslateOrOriginal \\\" + (commentCommentInfo != null ? commentCommentInfo.n() : null) + \\\" isShowTranslateOrOriginal: \\\" + z100);\\r\\n        if (!z100) {\\r\\n            int iQ = ud3.a.f320188a.q(this.f311573b);\\r\\n            wg3.x.b(this.f311576e, \\\"nextStateOnClickSeeOrig: \\\" + iQ);\\r\\n            i(iQ);\\r\\n            return;\\r\\n        }\\r\\n        ud3.a aVar = ud3.a.f320188a;\\r\\n        if (aVar.k(this.f311573b)) {\\r\\n            dj8.g.f(\\\"自动翻译 展示译文\\\");\\r\\n            CommentCommentInfo commentCommentInfo2 = this.f311573b;\\r\\n            if (commentCommentInfo2 != null && (strJ = commentCommentInfo2.j()) != null && (string = StringsKt__StringsKt.trim((CharSequence) strJ).toString()) != null) {\\r\\n                z101 = string.length() > 0;\\r\\n            }\\r\\n            int iT = aVar.t(commentCommentInfo2, z101);\\r\\n            this.f311572a = false;\\r\\n            i(iT);\\r\\n            return;\\r\\n        }\\r\\n        if (this.f311572a) {\\r\\n            CommentCommentInfo commentCommentInfo3 = this.f311573b;\\r\\n            if (!((commentCommentInfo3 == null || (numX = commentCommentInfo3.X()) == null || numX.intValue() != 3) ? false : true)) {\\r\\n                CommentCommentInfo commentCommentInfo4 = this.f311573b;\\r\\n                dj8.g.f(\\\"当前按钮状态 错误  \\\" + (commentCommentInfo4 != null ? commentCommentInfo4.X() : null));\\r\\n            }\\r\\n            dj8.g.f(\\\"正在翻译中，请稍后\\\");\\r\\n            wg3.x.b(this.f311576e, \\\"正在翻译中，请稍后\\\");\\r\\n            return;\\r\\n        }\\r\\n        CommentCommentInfo commentCommentInfo5 = this.f311573b;\\r\\n        if (commentCommentInfo5 != null) {\\r\\n            if (aVar.e(commentCommentInfo5)) {\\r\\n                this.f311572a = false;\\r\\n                i(aVar.r(commentCommentInfo5, true));\\r\\n                return;\\r\\n            }\\r\\n            this.f311572a = true;\\r\\n            int iS = ud3.a.s(aVar, this.f311573b, false, 2, null);\\r\\n            String str2 = this.f311576e;\\r\\n            CommentCommentInfo commentCommentInfo6 = this.f311573b;\\r\\n            wg3.x.b(str2, \\\" \\\" + (commentCommentInfo6 != null ? commentCommentInfo6.n() : null) + \\\" nextStateWithCheckShowTrans: \\\" + iS);\\r\\n            i(iS);\\r\\n            String strF = f(commentCommentInfo5);\\r\\n            if (StringsKt__StringsKt.trim((CharSequence) strF).toString().length() == 0) {\\r\\n                this.f311572a = false;\\r\\n                i(aVar.t(this.f311573b, false));\\r\\n                return;\\r\\n            }\\r\\n            String str3 = this.f311576e;\\r\\n            CommentCommentInfo commentCommentInfo7 = this.f311573b;\\r\\n            String strN = commentCommentInfo7 != null ? commentCommentInfo7.n() : null;\\r\\n            wg3.x.b(str3, strN + \\\" start translate text \\\" + commentCommentInfo5.h() + \\\" removeRichText: \\\" + strF);\\r\\n            e58.i.e(strF, \\\"comment\\\", MapsKt__MapsJVMKt.mapOf(TuplesKt.to(\\\"id\\\", String.valueOf(commentCommentInfo5.n()))), new a(commentCommentInfo5), new b(commentCommentInfo5));\\r\\n        }\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"th6.i\",\"full_name\":\"th6.i.h\",\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "th6.i",
+    "method": {
+      "name": "h",
+      "reported_signature": "h(boolean): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Code duplicated, block: B:27:0x008f  */\r\n    public final void h(boolean z100) {\r\n        Integer numX;\r\n        boolean z101;\r\n        String strJ;\r\n        String string;\r\n        if (PatchProxy.proxyVoid1Para(new Boolean(z100), this, i.class, 392215)) {\r\n            return;\r\n        }\r\n        String str = this.f311576e;\r\n        CommentCommentInfo commentCommentInfo = this.f311573b;\r\n        wg3.x.b(str, \"startTranslateOrOriginal \" + (commentCommentInfo != null ? commentCommentInfo.n() : null) + \" isShowTranslateOrOriginal: \" + z100);\r\n        if (!z100) {\r\n            int iQ = ud3.a.f320188a.q(this.f311573b);\r\n            wg3.x.b(this.f311576e, \"nextStateOnClickSeeOrig: \" + iQ);\r\n            i(iQ);\r\n            return;\r\n        }\r\n        ud3.a aVar = ud3.a.f320188a;\r\n        if (aVar.k(this.f311573b)) {\r\n            dj8.g.f(\"自动翻译 展示译文\");\r\n            CommentCommentInfo commentCommentInfo2 = this.f311573b;\r\n            if (commentCommentInfo2 != null && (strJ = commentCommentInfo2.j()) != null && (string = StringsKt__StringsKt.trim((CharSequence) strJ).toString()) != null) {\r\n                z101 = string.length() > 0;\r\n            }\r\n            int iT = aVar.t(commentCommentInfo2, z101);\r\n            this.f311572a = false;\r\n            i(iT);\r\n            return;\r\n        }\r\n        if (this.f311572a) {\r\n            CommentCommentInfo commentCommentInfo3 = this.f311573b;\r\n            if (!((commentCommentInfo3 == null || (numX = commentCommentInfo3.X()) == null || numX.intValue() != 3) ? false : true)) {\r\n                CommentCommentInfo commentCommentInfo4 = this.f311573b;\r\n                dj8.g.f(\"当前按钮状态 错误  \" + (commentCommentInfo4 != null ? commentCommentInfo4.X() : null));\r\n            }\r\n            dj8.g.f(\"正在翻译中，请稍后\");\r\n            wg3.x.b(this.f311576e, \"正在翻译中，请稍后\");\r\n            return;\r\n        }\r\n        CommentCommentInfo commentCommentInfo5 = this.f311573b;\r\n        if (commentCommentInfo5 != null) {\r\n            if (aVar.e(commentCommentInfo5)) {\r\n                this.f311572a = false;\r\n                i(aVar.r(commentCommentInfo5, true));\r\n                return;\r\n            }\r\n            this.f311572a = true;\r\n            int iS = ud3.a.s(aVar, this.f311573b, false, 2, null);\r\n            String str2 = this.f311576e;\r\n            CommentCommentInfo commentCommentInfo6 = this.f311573b;\r\n            wg3.x.b(str2, \" \" + (commentCommentInfo6 != null ? commentCommentInfo6.n() : null) + \" nextStateWithCheckShowTrans: \" + iS);\r\n            i(iS);\r\n            String strF = f(commentCommentInfo5);\r\n            if (StringsKt__StringsKt.trim((CharSequence) strF).toString().length() == 0) {\r\n                this.f311572a = false;\r\n                i(aVar.t(this.f311573b, false));\r\n                return;\r\n            }\r\n            String str3 = this.f311576e;\r\n            CommentCommentInfo commentCommentInfo7 = this.f311573b;\r\n            String strN = commentCommentInfo7 != null ? commentCommentInfo7.n() : null;\r\n            wg3.x.b(str3, strN + \" start translate text \" + commentCommentInfo5.h() + \" removeRichText: \" + strF);\r\n            e58.i.e(strF, \"comment\", MapsKt__MapsJVMKt.mapOf(TuplesKt.to(\"id\", String.valueOf(commentCommentInfo5.n()))), new a(commentCommentInfo5), new b(commentCommentInfo5));\r\n        }\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "2549dbd09f920365c3e3e1283ae951d8a97378b64b780b45bda0569d4106dbe5",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

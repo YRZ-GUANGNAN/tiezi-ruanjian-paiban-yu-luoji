@@ -1,0 +1,6 @@
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // kotlin.jvm.functions.Function0
+        public final Integer invoke() {
+            PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, e.class, 327884);
+            return patchProxyResultProxy0Para.isSupported ? (Integer) patchProxyResultProxy0Para.result : Integer.valueOf(c1.b()[0]);
+        }

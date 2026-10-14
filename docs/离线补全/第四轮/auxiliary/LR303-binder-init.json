@@ -1,0 +1,251 @@
+{
+  "provider": "dexlib2-bundled-with-jadx-auxiliary-not-REA-Evidence",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "selectors": [
+    "Lah6/h;::<init>",
+    "Lch6/h;::<init>"
+  ],
+  "matches": [
+    {
+      "selector": "Lah6/h;::<init>",
+      "dexEntry": "classes9.dex",
+      "method": "Lah6/h;-><init>()V",
+      "superclass": "Lvg6/a;",
+      "bodyPresent": true,
+      "registerCount": 3,
+      "codeUnits": 36,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "invoke-direct",
+          "registers": [
+            2
+          ],
+          "reference": "Lvg6/a;-><init>()V"
+        },
+        {
+          "offset": 3,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Lkotlin/LazyThreadSafetyMode;->NONE:Lkotlin/LazyThreadSafetyMode;"
+        },
+        {
+          "offset": 5,
+          "opcode": "new-instance",
+          "a": 1,
+          "reference": "Lah6/h$i;"
+        },
+        {
+          "offset": 7,
+          "opcode": "invoke-direct",
+          "registers": [
+            1,
+            2
+          ],
+          "reference": "Lah6/h$i;-><init>(Lah6/h;)V"
+        },
+        {
+          "offset": 10,
+          "opcode": "invoke-static",
+          "registers": [
+            0,
+            1
+          ],
+          "reference": "Lkotlin/LazyKt__LazyJVMKt;->lazy(Lkotlin/LazyThreadSafetyMode;Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;"
+        },
+        {
+          "offset": 13,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 14,
+          "opcode": "iput-object",
+          "a": 0,
+          "b": 2,
+          "reference": "Lah6/h;->p:Lkotlin/Lazy;"
+        },
+        {
+          "offset": 16,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Luc9/d;->z2()Luc9/d;"
+        },
+        {
+          "offset": 19,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 20,
+          "opcode": "iput-object",
+          "a": 0,
+          "b": 2,
+          "reference": "Lah6/h;->s:Luc9/d;"
+        },
+        {
+          "offset": 22,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Luc9/d;->z2()Luc9/d;"
+        },
+        {
+          "offset": 25,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 26,
+          "opcode": "iput-object",
+          "a": 0,
+          "b": 2,
+          "reference": "Lah6/h;->t:Luc9/d;"
+        },
+        {
+          "offset": 28,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Lah6/h$b;"
+        },
+        {
+          "offset": 30,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            2
+          ],
+          "reference": "Lah6/h$b;-><init>(Lah6/h;)V"
+        },
+        {
+          "offset": 33,
+          "opcode": "iput-object",
+          "a": 0,
+          "b": 2,
+          "reference": "Lah6/h;->u:Lah6/h$b;"
+        },
+        {
+          "offset": 35,
+          "opcode": "return-void"
+        }
+      ]
+    },
+    {
+      "selector": "Lch6/h;::<init>",
+      "dexEntry": "classes9.dex",
+      "method": "Lch6/h;-><init>()V",
+      "superclass": "Lvg6/a;",
+      "bodyPresent": true,
+      "registerCount": 2,
+      "codeUnits": 33,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "invoke-direct",
+          "registers": [
+            1
+          ],
+          "reference": "Lvg6/a;-><init>()V"
+        },
+        {
+          "offset": 3,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Lch6/h$j;"
+        },
+        {
+          "offset": 5,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1
+          ],
+          "reference": "Lch6/h$j;-><init>(Lch6/h;)V"
+        },
+        {
+          "offset": 8,
+          "opcode": "invoke-static",
+          "registers": [
+            0
+          ],
+          "reference": "Lkotlin/LazyKt__LazyJVMKt;->lazy(Lkotlin/jvm/functions/Function0;)Lkotlin/Lazy;"
+        },
+        {
+          "offset": 11,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 12,
+          "opcode": "iput-object",
+          "a": 0,
+          "b": 1,
+          "reference": "Lch6/h;->o:Lkotlin/Lazy;"
+        },
+        {
+          "offset": 14,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Luc9/d;->z2()Luc9/d;"
+        },
+        {
+          "offset": 17,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 18,
+          "opcode": "iput-object",
+          "a": 0,
+          "b": 1,
+          "reference": "Lch6/h;->r:Luc9/d;"
+        },
+        {
+          "offset": 20,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Luc9/d;->z2()Luc9/d;"
+        },
+        {
+          "offset": 23,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 24,
+          "opcode": "iput-object",
+          "a": 0,
+          "b": 1,
+          "reference": "Lch6/h;->s:Luc9/d;"
+        },
+        {
+          "offset": 26,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Luc9/d;->z2()Luc9/d;"
+        },
+        {
+          "offset": 29,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 30,
+          "opcode": "iput-object",
+          "a": 0,
+          "b": 1,
+          "reference": "Lch6/h;->t:Luc9/d;"
+        },
+        {
+          "offset": 32,
+          "opcode": "return-void"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Raw static instructions, not observed execution or a complete control-flow proof.",
+    "Offsets and branch targets are relative DEX code units, not APK byte offsets.",
+    "Hot patches, remote config, runtime values and resource selection are not resolved."
+  ]
+}

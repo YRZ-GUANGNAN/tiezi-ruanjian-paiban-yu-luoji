@@ -1,0 +1,16 @@
+        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        public final void invoke2(TextView textView) {
+            CommentPictureTempInfo commentPictureTempInfoD;
+            if (PatchProxy.proxyVoid1Para(textView, this, g.class, 249963)) {
+                return;
+            }
+            int i100 = k.f238907o;
+            int iA = 1;
+            Object[] objArr = new Object[1];
+            CommentPictureInfo commentPictureInfo = this.f87503d;
+            if (commentPictureInfo != null && (commentPictureTempInfoD = commentPictureInfo.d()) != null) {
+                iA = commentPictureTempInfoD.a();
+            }
+            objArr[0] = Integer.valueOf(iA);
+            textView.setText(i1.e(i100, objArr));
+        }

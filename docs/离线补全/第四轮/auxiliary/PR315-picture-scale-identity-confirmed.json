@@ -1,0 +1,95 @@
+{
+  "provider": "dexlib2-bundled-with-jadx-auxiliary-not-REA-Evidence",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "selectors": [
+    "Li7/q$e;::toString",
+    "Lj7/e;::g"
+  ],
+  "matches": [
+    {
+      "selector": "Lj7/e;::g",
+      "dexEntry": "classes12.dex",
+      "method": "Lj7/e;->g()[F",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 2,
+      "codeUnits": 13,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "iget-object",
+          "a": 0,
+          "b": 1,
+          "reference": "Lj7/e;->c:[F"
+        },
+        {
+          "offset": 2,
+          "opcode": "if-nez",
+          "a": 0,
+          "target": 10
+        },
+        {
+          "offset": 4,
+          "opcode": "const/16",
+          "a": 0,
+          "literal": "8",
+          "literalHex": "0x8"
+        },
+        {
+          "offset": 6,
+          "opcode": "new-array",
+          "a": 0,
+          "b": 0,
+          "reference": "[F"
+        },
+        {
+          "offset": 8,
+          "opcode": "iput-object",
+          "a": 0,
+          "b": 1,
+          "reference": "Lj7/e;->c:[F"
+        },
+        {
+          "offset": 10,
+          "opcode": "iget-object",
+          "a": 0,
+          "b": 1,
+          "reference": "Lj7/e;->c:[F"
+        },
+        {
+          "offset": 12,
+          "opcode": "return-object",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Li7/q$e;::toString",
+      "dexEntry": "classes12.dex",
+      "method": "Li7/q$e;->toString()Ljava/lang/String;",
+      "superclass": "Li7/q$a;",
+      "bodyPresent": true,
+      "registerCount": 2,
+      "codeUnits": 3,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "const-string",
+          "a": 0,
+          "reference": "\"center_crop\""
+        },
+        {
+          "offset": 2,
+          "opcode": "return-object",
+          "a": 0
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Raw static instructions, not observed execution or a complete control-flow proof.",
+    "Offsets and branch targets are relative DEX code units, not APK byte offsets.",
+    "Hot patches, remote config, runtime values and resource selection are not resolved."
+  ]
+}

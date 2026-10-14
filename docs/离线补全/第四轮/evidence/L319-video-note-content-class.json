@@ -1,0 +1,653 @@
+{
+  "evidence_id": "ev_774fc92b1afad9eb28dee53363478c430a2b8355339403ecd82a692f4afba57f",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.matrix.detail.item.video.content.VideoNoteContentView"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.detail.item.video.content.VideoNoteContentView"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":13,\"inner_classes\":[\"com.xingin.matrix.detail.item.video.content.VideoNoteContentView.a\",\"com.xingin.matrix.detail.item.video.content.VideoNoteContentView.b\",\"com.xingin.matrix.detail.item.video.content.VideoNoteContentView.c\",\"com.xingin.matrix.detail.item.video.content.VideoNoteContentView.d\",\"com.xingin.matrix.detail.item.video.content.VideoNoteContentView.e\",\"com.xingin.matrix.detail.item.video.content.VideoNoteContentView.f\",\"com.xingin.matrix.detail.item.video.content.VideoNoteContentView.g\",\"com.xingin.matrix.detail.item.video.content.VideoNoteContentView.h\",\"com.xingin.matrix.detail.item.video.content.VideoNoteContentView.i\",\"com.xingin.matrix.detail.item.video.content.VideoNoteContentView.j\",\"com.xingin.matrix.detail.item.video.content.VideoNoteContentView.k\",\"com.xingin.matrix.detail.item.video.content.VideoNoteContentView.l\",\"com.xingin.matrix.detail.item.video.content.VideoNoteContentView.m\"],\"name\":\"VideoNoteContentView\",\"full_name\":\"com.xingin.matrix.detail.item.video.content.VideoNoteContentView\",\"field_count\":25,\"fields\":[{\"def_pos\":0,\"name\":\"A\",\"type\":\"android.text.SpannableString\"},{\"def_pos\":0,\"name\":\"B\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"C\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"D\",\"type\":\"java.util.Map<java.lang.Integer, android.view.View>\"},{\"def_pos\":0,\"name\":\"E\",\"type\":\"com.xingin.matrix.detail.item.video.content.VideoNoteContentView$a\"},{\"def_pos\":0,\"name\":\"f106785d\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"f106786e\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"f106787f\",\"type\":\"tv5.a\"},{\"def_pos\":0,\"name\":\"f106788g\",\"type\":\"iu6.d\"},{\"def_pos\":0,\"name\":\"f106789h\",\"type\":\"uc9.d<b67.h>\"},{\"def_pos\":0,\"name\":\"f106790l\",\"type\":\"uc9.d<b67.d>\"},{\"def_pos\":0,\"name\":\"f106791m\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"f106792n\",\"type\":\"com.xingin.matrix.detail.item.common.itembinder.VideoTopicItemViewBinder\"},{\"def_pos\":0,\"name\":\"f106793o\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"f106794p\",\"type\":\"kotlin.Lazy\"},{\"def_pos\":0,\"name\":\"f106795q\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"f106796r\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"f106797s\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"f106798t\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"f106799u\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"f106800v\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"f106801w\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"f106802x\",\"type\":\"boolean\"},{\"def_pos\":0,\"name\":\"f106803y\",\"type\":\"java.util.ArrayList<com.xingin.entities.HashTagListBean$HashTag>\"},{\"def_pos\":0,\"name\":\"f106804z\",\"type\":\"boolean\"}],\"methods\":[{\"is_constructor\":false,\"name\":\"<clinit>\",\"def_pos\":0,\"signature\":\"<clinit>(): void\"},{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(android.content.Context, android.util.AttributeSet): void\"},{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(android.content.Context, android.util.AttributeSet, int): void\"},{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(android.content.Context, android.util.AttributeSet, int, int, kotlin.jvm.internal.DefaultConstructorMarker): void\"},{\"is_constructor\":false,\"name\":\"A\",\"def_pos\":0,\"signature\":\"A(android.text.SpannableStringBuilder): void\"},{\"is_constructor\":false,\"name\":\"B\",\"def_pos\":0,\"signature\":\"B(android.text.SpannableStringBuilder): void\"},{\"is_constructor\":false,\"name\":\"C\",\"def_pos\":0,\"signature\":\"C(android.text.SpannableStringBuilder): void\"},{\"is_constructor\":false,\"name\":\"D\",\"def_pos\":0,\"signature\":\"D(android.text.SpannableStringBuilder, android.text.SpannableString, android.text.SpannableStringBuilder, java.util.ArrayList<v57.i>, com.xingin.entities.notedetail.NoteFeed, boolean, int, boolean, boolean, boolean, boolean): void\"},{\"is_constructor\":false,\"name\":\"E\",\"def_pos\":0,\"signature\":\"E(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, android.text.SpannableStringBuilder, android.text.SpannableString, android.text.SpannableStringBuilder, java.util.ArrayList, com.xingin.entities.notedetail.NoteFeed, boolean, int, boolean, boolean, boolean, boolean, int, java.lang.Object): void\"},{\"is_constructor\":false,\"name\":\"F\",\"def_pos\":0,\"signature\":\"F(): void\"},{\"is_constructor\":false,\"name\":\"G\",\"def_pos\":0,\"signature\":\"G(int, int): void\"},{\"is_constructor\":false,\"name\":\"H\",\"def_pos\":0,\"signature\":\"H(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, int, int, int, java.lang.Object): void\"},{\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, int, int, android.animation.ValueAnimator): void\"},{\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, int, int, android.animation.ValueAnimator): void\"},{\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(int): android.view.View\"},{\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(com.xingin.matrix.detail.item.video.content.VideoNoteContentView): boolean\"},{\"is_constructor\":false,\"name\":\"dispatchTouchEvent\",\"def_pos\":0,\"signature\":\"dispatchTouchEvent(android.view.MotionEvent): boolean\"},{\"is_constructor\":false,\"name\":\"e\",\"def_pos\":0,\"signature\":\"e(com.xingin.matrix.detail.item.video.content.VideoNoteContentView): com.drakeet.multitype.MultiTypeAdapter\"},{\"is_constructor\":false,\"name\":\"f\",\"def_pos\":0,\"signature\":\"f(com.xingin.matrix.detail.item.video.content.VideoNoteContentView): com.drakeet.multitype.MultiTypeAdapter\"},{\"is_constructor\":false,\"name\":\"g\",\"def_pos\":0,\"signature\":\"g(com.xingin.matrix.detail.item.video.content.VideoNoteContentView): com.xingin.matrix.detail.item.common.itembinder.VideoTopicItemViewBinder\"},{\"is_constructor\":false,\"name\":\"getAnimDuration\",\"def_pos\":0,\"signature\":\"getAnimDuration(): long\"},{\"is_constructor\":false,\"name\":\"getCanFold\",\"def_pos\":0,\"signature\":\"getCanFold(): boolean\"},{\"is_constructor\":false,\"name\":\"getHasResetUI\",\"def_pos\":0,\"signature\":\"getHasResetUI(): boolean\"},{\"is_constructor\":false,\"name\":\"getHideCleanModeIconBtn\",\"def_pos\":0,\"signature\":\"getHideCleanModeIconBtn(): boolean\"},{\"is_constructor\":false,\"name\":\"getInnerTopicAdapter\",\"def_pos\":0,\"signature\":\"getInnerTopicAdapter(): com.drakeet.multitype.MultiTypeAdapter\"},{\"is_constructor\":false,\"name\":\"getMScreenHeight\",\"def_pos\":0,\"signature\":\"getMScreenHeight(): int\"},{\"is_constructor\":false,\"name\":\"getNotFullScreenGap\",\"def_pos\":0,\"signature\":\"getNotFullScreenGap(): int\"},{\"is_constructor\":false,\"name\":\"getOnNoteExpandListener\",\"def_pos\":0,\"signature\":\"getOnNoteExpandListener(): tv5.a\"},{\"is_constructor\":false,\"name\":\"getOnPOIWarnClickListener\",\"def_pos\":0,\"signature\":\"getOnPOIWarnClickListener(): iu6.d\"},{\"is_constructor\":false,\"name\":\"getResetTagActionSubject\",\"def_pos\":0,\"signature\":\"getResetTagActionSubject(): uc9.d<b67.d>\"},{\"is_constructor\":false,\"name\":\"getSecondTabContentEllipsize\",\"def_pos\":0,\"signature\":\"getSecondTabContentEllipsize(): boolean\"},{\"is_constructor\":false,\"name\":\"getShownHashTags\",\"def_pos\":0,\"signature\":\"getShownHashTags(): java.util.ArrayList<com.xingin.entities.HashTagListBean$HashTag>\"},{\"is_constructor\":false,\"name\":\"getTopicActionSubject\",\"def_pos\":0,\"signature\":\"getTopicActionSubject(): uc9.d<b67.h>\"},{\"is_constructor\":false,\"name\":\"getTopicAdapter\",\"def_pos\":0,\"signature\":\"getTopicAdapter(): com.drakeet.multitype.MultiTypeAdapter\"},{\"is_constructor\":false,\"name\":\"h\",\"def_pos\":0,\"signature\":\"h(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, boolean): void\"},{\"is_constructor\":false,\"name\":\"i\",\"def_pos\":0,\"signature\":\"i(boolean, android.text.TextPaint, int, android.text.SpannableStringBuilder, java.lang.CharSequence, java.lang.String): android.text.SpannableStringBuilder\"},{\"is_constructor\":false,\"name\":\"j\",\"def_pos\":0,\"signature\":\"j(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, boolean, android.text.TextPaint, int, android.text.SpannableStringBuilder, java.lang.CharSequence, java.lang.String, int, java.lang.Object): android.text.SpannableStringBuilder\"},{\"is_constructor\":false,\"name\":\"k\",\"def_pos\":0,\"signature\":\"k(com.xingin.matrix.widget.breakline.ImageTextBreakLineView, com.xingin.entities.notedetail.NoteFeed, int): java.lang.String\"},{\"is_constructor\":false,\"name\":\"l\",\"def_pos\":0,\"signature\":\"l(com.xingin.matrix.widget.TimeSwitchTextView, com.xingin.entities.notedetail.NoteFeed, int): void\"},{\"is_constructor\":false,\"name\":\"m\",\"def_pos\":0,\"signature\":\"m(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, com.xingin.matrix.widget.TimeSwitchTextView, com.xingin.entities.notedetail.NoteFeed, int, int, java.lang.Object): void\"},{\"is_constructor\":false,\"name\":\"n\",\"def_pos\":0,\"signature\":\"n(java.util.List<v57.i>, boolean): void\"},{\"is_constructor\":false,\"name\":\"o\",\"def_pos\":0,\"signature\":\"o(): void\"},{\"is_constructor\":false,\"name\":\"p\",\"def_pos\":0,\"signature\":\"p(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, int, int, android.animation.ValueAnimator): void\"},{\"is_constructor\":false,\"name\":\"q\",\"def_pos\":0,\"signature\":\"q(): void\"},{\"is_constructor\":false,\"name\":\"r\",\"def_pos\":0,\"signature\":\"r(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, int, int, android.animation.ValueAnimator): void\"},{\"is_constructor\":false,\"name\":\"s\",\"def_pos\":0,\"signature\":\"s(android.text.SpannableStringBuilder): void\"},{\"is_constructor\":false,\"name\":\"setCanFold\",\"def_pos\":0,\"signature\":\"setCanFold(boolean): void\"},{\"is_constructor\":false,\"name\":\"setExpanded\",\"def_pos\":0,\"signature\":\"setExpanded(boolean): void\"},{\"is_constructor\":false,\"name\":\"setHasResetUI\",\"def_pos\":0,\"signature\":\"setHasResetUI(boolean): void\"},{\"is_constructor\":false,\"name\":\"setHideCleanModeIconBtn\",\"def_pos\":0,\"signature\":\"setHideCleanModeIconBtn(boolean): void\"},{\"is_constructor\":false,\"name\":\"setNotFullScreenGap\",\"def_pos\":0,\"signature\":\"setNotFullScreenGap(int): void\"},{\"is_constructor\":false,\"name\":\"setOnNoteExpandListener\",\"def_pos\":0,\"signature\":\"setOnNoteExpandListener(tv5.a): void\"},{\"is_constructor\":false,\"name\":\"setOnPOIWarnClickListener\",\"def_pos\":0,\"signature\":\"setOnPOIWarnClickListener(iu6.d): void\"},{\"is_constructor\":false,\"name\":\"setSecondTabContentEllipsize\",\"def_pos\":0,\"signature\":\"setSecondTabContentEllipsize(boolean): void\"},{\"is_constructor\":false,\"name\":\"setShownHashTags\",\"def_pos\":0,\"signature\":\"setShownHashTags(java.util.ArrayList<com.xingin.entities.HashTagListBean$HashTag>): void\"},{\"is_constructor\":false,\"name\":\"t\",\"def_pos\":0,\"signature\":\"t(android.text.TextPaint, android.text.SpannableStringBuilder, int): android.text.StaticLayout\"},{\"is_constructor\":false,\"name\":\"u\",\"def_pos\":0,\"signature\":\"u(): void\"},{\"is_constructor\":false,\"name\":\"v\",\"def_pos\":0,\"signature\":\"v(): boolean\"},{\"is_constructor\":false,\"name\":\"w\",\"def_pos\":0,\"signature\":\"w(): boolean\"},{\"is_constructor\":false,\"name\":\"x\",\"def_pos\":0,\"signature\":\"x(): boolean\"},{\"is_constructor\":false,\"name\":\"y\",\"def_pos\":0,\"signature\":\"y(android.text.SpannableStringBuilder): void\"},{\"is_constructor\":false,\"name\":\"z\",\"def_pos\":0,\"signature\":\"z(android.text.SpannableStringBuilder, android.text.style.ClickableSpan): void\"}],\"method_count\":62}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.detail.item.video.content.VideoNoteContentView",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context, android.util.AttributeSet): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context, android.util.AttributeSet, int): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context, android.util.AttributeSet, int, int, kotlin.jvm.internal.DefaultConstructorMarker): void",
+        "overload_index": 2,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A",
+        "reported_signature": "A(android.text.SpannableStringBuilder): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B",
+        "reported_signature": "B(android.text.SpannableStringBuilder): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C",
+        "reported_signature": "C(android.text.SpannableStringBuilder): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D",
+        "reported_signature": "D(android.text.SpannableStringBuilder, android.text.SpannableString, android.text.SpannableStringBuilder, java.util.ArrayList<v57.i>, com.xingin.entities.notedetail.NoteFeed, boolean, int, boolean, boolean, boolean, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "E",
+        "reported_signature": "E(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, android.text.SpannableStringBuilder, android.text.SpannableString, android.text.SpannableStringBuilder, java.util.ArrayList, com.xingin.entities.notedetail.NoteFeed, boolean, int, boolean, boolean, boolean, boolean, int, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F",
+        "reported_signature": "F(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G",
+        "reported_signature": "G(int, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H",
+        "reported_signature": "H(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, int, int, int, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, int, int, android.animation.ValueAnimator): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, int, int, android.animation.ValueAnimator): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(int): android.view.View",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(com.xingin.matrix.detail.item.video.content.VideoNoteContentView): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "dispatchTouchEvent",
+        "reported_signature": "dispatchTouchEvent(android.view.MotionEvent): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(com.xingin.matrix.detail.item.video.content.VideoNoteContentView): com.drakeet.multitype.MultiTypeAdapter",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(com.xingin.matrix.detail.item.video.content.VideoNoteContentView): com.drakeet.multitype.MultiTypeAdapter",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(com.xingin.matrix.detail.item.video.content.VideoNoteContentView): com.xingin.matrix.detail.item.common.itembinder.VideoTopicItemViewBinder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getAnimDuration",
+        "reported_signature": "getAnimDuration(): long",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCanFold",
+        "reported_signature": "getCanFold(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getHasResetUI",
+        "reported_signature": "getHasResetUI(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getHideCleanModeIconBtn",
+        "reported_signature": "getHideCleanModeIconBtn(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getInnerTopicAdapter",
+        "reported_signature": "getInnerTopicAdapter(): com.drakeet.multitype.MultiTypeAdapter",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getMScreenHeight",
+        "reported_signature": "getMScreenHeight(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getNotFullScreenGap",
+        "reported_signature": "getNotFullScreenGap(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getOnNoteExpandListener",
+        "reported_signature": "getOnNoteExpandListener(): tv5.a",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getOnPOIWarnClickListener",
+        "reported_signature": "getOnPOIWarnClickListener(): iu6.d",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getResetTagActionSubject",
+        "reported_signature": "getResetTagActionSubject(): uc9.d<b67.d>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getSecondTabContentEllipsize",
+        "reported_signature": "getSecondTabContentEllipsize(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getShownHashTags",
+        "reported_signature": "getShownHashTags(): java.util.ArrayList<com.xingin.entities.HashTagListBean$HashTag>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getTopicActionSubject",
+        "reported_signature": "getTopicActionSubject(): uc9.d<b67.h>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getTopicAdapter",
+        "reported_signature": "getTopicAdapter(): com.drakeet.multitype.MultiTypeAdapter",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(boolean, android.text.TextPaint, int, android.text.SpannableStringBuilder, java.lang.CharSequence, java.lang.String): android.text.SpannableStringBuilder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j",
+        "reported_signature": "j(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, boolean, android.text.TextPaint, int, android.text.SpannableStringBuilder, java.lang.CharSequence, java.lang.String, int, java.lang.Object): android.text.SpannableStringBuilder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(com.xingin.matrix.widget.breakline.ImageTextBreakLineView, com.xingin.entities.notedetail.NoteFeed, int): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(com.xingin.matrix.widget.TimeSwitchTextView, com.xingin.entities.notedetail.NoteFeed, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, com.xingin.matrix.widget.TimeSwitchTextView, com.xingin.entities.notedetail.NoteFeed, int, int, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(java.util.List<v57.i>, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p",
+        "reported_signature": "p(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, int, int, android.animation.ValueAnimator): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q",
+        "reported_signature": "q(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r",
+        "reported_signature": "r(com.xingin.matrix.detail.item.video.content.VideoNoteContentView, int, int, android.animation.ValueAnimator): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s",
+        "reported_signature": "s(android.text.SpannableStringBuilder): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setCanFold",
+        "reported_signature": "setCanFold(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setExpanded",
+        "reported_signature": "setExpanded(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setHasResetUI",
+        "reported_signature": "setHasResetUI(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setHideCleanModeIconBtn",
+        "reported_signature": "setHideCleanModeIconBtn(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setNotFullScreenGap",
+        "reported_signature": "setNotFullScreenGap(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setOnNoteExpandListener",
+        "reported_signature": "setOnNoteExpandListener(tv5.a): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setOnPOIWarnClickListener",
+        "reported_signature": "setOnPOIWarnClickListener(iu6.d): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setSecondTabContentEllipsize",
+        "reported_signature": "setSecondTabContentEllipsize(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "setShownHashTags",
+        "reported_signature": "setShownHashTags(java.util.ArrayList<com.xingin.entities.HashTagListBean$HashTag>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t",
+        "reported_signature": "t(android.text.TextPaint, android.text.SpannableStringBuilder, int): android.text.StaticLayout",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u",
+        "reported_signature": "u(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v",
+        "reported_signature": "v(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w",
+        "reported_signature": "w(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x",
+        "reported_signature": "x(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y",
+        "reported_signature": "y(android.text.SpannableStringBuilder): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z",
+        "reported_signature": "z(android.text.SpannableStringBuilder, android.text.style.ClickableSpan): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "A",
+        "reported_type": "android.text.SpannableString"
+      },
+      {
+        "name": "B",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "C",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "D",
+        "reported_type": "java.util.Map<java.lang.Integer, android.view.View>"
+      },
+      {
+        "name": "E",
+        "reported_type": "com.xingin.matrix.detail.item.video.content.VideoNoteContentView$a"
+      },
+      {
+        "name": "f106785d",
+        "reported_type": "int"
+      },
+      {
+        "name": "f106786e",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f106787f",
+        "reported_type": "tv5.a"
+      },
+      {
+        "name": "f106788g",
+        "reported_type": "iu6.d"
+      },
+      {
+        "name": "f106789h",
+        "reported_type": "uc9.d<b67.h>"
+      },
+      {
+        "name": "f106790l",
+        "reported_type": "uc9.d<b67.d>"
+      },
+      {
+        "name": "f106791m",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f106792n",
+        "reported_type": "com.xingin.matrix.detail.item.common.itembinder.VideoTopicItemViewBinder"
+      },
+      {
+        "name": "f106793o",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f106794p",
+        "reported_type": "kotlin.Lazy"
+      },
+      {
+        "name": "f106795q",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f106796r",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f106797s",
+        "reported_type": "int"
+      },
+      {
+        "name": "f106798t",
+        "reported_type": "int"
+      },
+      {
+        "name": "f106799u",
+        "reported_type": "int"
+      },
+      {
+        "name": "f106800v",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f106801w",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f106802x",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f106803y",
+        "reported_type": "java.util.ArrayList<com.xingin.entities.HashTagListBean$HashTag>"
+      },
+      {
+        "name": "f106804z",
+        "reported_type": "boolean"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.matrix.detail.item.video.content.VideoNoteContentView.a",
+      "com.xingin.matrix.detail.item.video.content.VideoNoteContentView.b",
+      "com.xingin.matrix.detail.item.video.content.VideoNoteContentView.c",
+      "com.xingin.matrix.detail.item.video.content.VideoNoteContentView.d",
+      "com.xingin.matrix.detail.item.video.content.VideoNoteContentView.e",
+      "com.xingin.matrix.detail.item.video.content.VideoNoteContentView.f",
+      "com.xingin.matrix.detail.item.video.content.VideoNoteContentView.g",
+      "com.xingin.matrix.detail.item.video.content.VideoNoteContentView.h",
+      "com.xingin.matrix.detail.item.video.content.VideoNoteContentView.i",
+      "com.xingin.matrix.detail.item.video.content.VideoNoteContentView.j",
+      "com.xingin.matrix.detail.item.video.content.VideoNoteContentView.k",
+      "com.xingin.matrix.detail.item.video.content.VideoNoteContentView.l",
+      "com.xingin.matrix.detail.item.video.content.VideoNoteContentView.m"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "99b8c19e3cbe85d9f72584fceb8db1bec62861d47aa4c989d9c65203e95ecebe",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

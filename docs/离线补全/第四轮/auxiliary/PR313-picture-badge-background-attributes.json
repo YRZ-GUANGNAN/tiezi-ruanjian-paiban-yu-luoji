@@ -1,0 +1,76 @@
+{
+  "runtimeObserved": false,
+  "provider": "independent-AXML-typed-attribute-parser-not-REA-Evidence",
+  "targets": [
+    "res/0sg.xml"
+  ],
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "limitations": [
+    "Packaged layout candidates, not proof of runtime inflation or final geometry.",
+    "Attributes retain numeric resource identities and encoded values; resource and theme resolution require separate evidence."
+  ],
+  "matches": [
+    {
+      "entry": "res/0sg.xml",
+      "bytes": 484,
+      "entrySha256": "58eeb96647bb6bee57cfd30e30a542b0adc7471ff997cfebf477531e0c2758c4",
+      "nodes": [
+        {
+          "element": "shape",
+          "depth": 0,
+          "chunkOffset": 220,
+          "attributes": [
+            {
+              "name": "shape",
+              "nameStringIndex": 0,
+              "namespace": "http://schemas.android.com/apk/res/android",
+              "resourceId": "0x0101019a",
+              "rawString": null,
+              "type": 16,
+              "data": 0,
+              "dataHex": "0x00000000"
+            }
+          ]
+        },
+        {
+          "element": "corners",
+          "depth": 1,
+          "chunkOffset": 276,
+          "attributes": [
+            {
+              "name": "radius",
+              "nameStringIndex": 2,
+              "namespace": "http://schemas.android.com/apk/res/android",
+              "resourceId": "0x010101a8",
+              "rawString": null,
+              "type": 1,
+              "data": 2131165852,
+              "dataHex": "0x7f07029c"
+            }
+          ]
+        },
+        {
+          "element": "solid",
+          "depth": 1,
+          "chunkOffset": 356,
+          "attributes": [
+            {
+              "name": "color",
+              "nameStringIndex": 1,
+              "namespace": "http://schemas.android.com/apk/res/android",
+              "resourceId": "0x010101a5",
+              "rawString": null,
+              "type": 28,
+              "data": -2144325580,
+              "dataHex": "0x80303034"
+            }
+          ]
+        }
+      ],
+      "targetHits": [
+        "res/0sg.xml"
+      ]
+    }
+  ],
+  "xmlEntriesExamined": 12678
+}

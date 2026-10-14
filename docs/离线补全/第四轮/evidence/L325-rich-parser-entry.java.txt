@@ -1,0 +1,9 @@
+    public SpannableStringBuilder s(Context context, String str) {
+        PatchProxyResult patchProxyResultProxy2Para = PatchProxy.proxy2Para(context, str, this, g.class, 175783);
+        if (patchProxyResultProxy2Para.isSupported) {
+            return (SpannableStringBuilder) patchProxyResultProxy2Para.result;
+        }
+        this.f303363e = str;
+        this.f303364f = t(context, str, true);
+        return new SpannableStringBuilder(this.f303364f);
+    }

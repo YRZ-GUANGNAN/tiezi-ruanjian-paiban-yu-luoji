@@ -1,0 +1,35 @@
+    public static final SpannableStringBuilder s(Context context, String str, final List<AtUserInfo> list, final List<CommentHashTag> list2, Integer num, final String str2, final ah4.c cVar, final String str3, final String str4, final String str5, final Function0<Unit> function0, final Function1<? super CommentHashTag, Unit> function1) {
+        sr7.g gVar;
+        PatchProxyResult patchProxyResultProxy = PatchProxy.proxy(new Object[]{context, str, list, list2, num, str2, cVar, str3, str4, str5, function0, function1}, null, a1.class, 366458);
+        if (patchProxyResultProxy.isSupported) {
+            return (SpannableStringBuilder) patchProxyResultProxy.result;
+        }
+        wg3.x.b("CommentConsumerList", "parseRichContentV2 " + str);
+        if (c0.f302494a.u()) {
+            gVar = tg3.d.d(tg3.d.f311206a, context, list, list2, null, 8, null);
+        } else {
+            gVar = new sr7.g(context, false, list);
+            gVar.B(new ur7.b(list, true));
+            gVar.B(new ur7.n());
+            gVar.B(new ur7.j(context, true));
+            gVar.B(new ur7.o());
+            ur7.g0 g0Var = new ur7.g0();
+            if (list2 != null) {
+                g0Var.u(g(list2));
+            }
+            gVar.B(g0Var);
+        }
+        if (num != null) {
+            gVar.D(num.intValue());
+        }
+        final WeakReference weakReference = new WeakReference(context);
+        gVar.G(new tr7.h() { // from class: sq5.w0
+            @Override // tr7.h
+            public final void a(Object obj, tr7.a aVar, String str6, String str7, HashTagListBean.HashTag hashTag) {
+                a1.u(weakReference, list, function0, list2, str2, str3, cVar, str4, str5, function1, obj, aVar, str6, str7, hashTag);
+            }
+        });
+        SpannableStringBuilder spannableStringBuilderS = gVar.s(context, str);
+        wg3.e.f343554a.b(str, list, list2, num, str2, cVar, str3, spannableStringBuilderS);
+        return spannableStringBuilderS;
+    }

@@ -1,0 +1,66 @@
+    /* JADX WARN: Code duplicated, block: B:27:0x008f  */
+    public final void h(boolean z100) {
+        Integer numX;
+        boolean z101;
+        String strJ;
+        String string;
+        if (PatchProxy.proxyVoid1Para(new Boolean(z100), this, i.class, 392215)) {
+            return;
+        }
+        String str = this.f311576e;
+        CommentCommentInfo commentCommentInfo = this.f311573b;
+        wg3.x.b(str, "startTranslateOrOriginal " + (commentCommentInfo != null ? commentCommentInfo.n() : null) + " isShowTranslateOrOriginal: " + z100);
+        if (!z100) {
+            int iQ = ud3.a.f320188a.q(this.f311573b);
+            wg3.x.b(this.f311576e, "nextStateOnClickSeeOrig: " + iQ);
+            i(iQ);
+            return;
+        }
+        ud3.a aVar = ud3.a.f320188a;
+        if (aVar.k(this.f311573b)) {
+            dj8.g.f("自动翻译 展示译文");
+            CommentCommentInfo commentCommentInfo2 = this.f311573b;
+            if (commentCommentInfo2 != null && (strJ = commentCommentInfo2.j()) != null && (string = StringsKt__StringsKt.trim((CharSequence) strJ).toString()) != null) {
+                z101 = string.length() > 0;
+            }
+            int iT = aVar.t(commentCommentInfo2, z101);
+            this.f311572a = false;
+            i(iT);
+            return;
+        }
+        if (this.f311572a) {
+            CommentCommentInfo commentCommentInfo3 = this.f311573b;
+            if (!((commentCommentInfo3 == null || (numX = commentCommentInfo3.X()) == null || numX.intValue() != 3) ? false : true)) {
+                CommentCommentInfo commentCommentInfo4 = this.f311573b;
+                dj8.g.f("当前按钮状态 错误  " + (commentCommentInfo4 != null ? commentCommentInfo4.X() : null));
+            }
+            dj8.g.f("正在翻译中，请稍后");
+            wg3.x.b(this.f311576e, "正在翻译中，请稍后");
+            return;
+        }
+        CommentCommentInfo commentCommentInfo5 = this.f311573b;
+        if (commentCommentInfo5 != null) {
+            if (aVar.e(commentCommentInfo5)) {
+                this.f311572a = false;
+                i(aVar.r(commentCommentInfo5, true));
+                return;
+            }
+            this.f311572a = true;
+            int iS = ud3.a.s(aVar, this.f311573b, false, 2, null);
+            String str2 = this.f311576e;
+            CommentCommentInfo commentCommentInfo6 = this.f311573b;
+            wg3.x.b(str2, " " + (commentCommentInfo6 != null ? commentCommentInfo6.n() : null) + " nextStateWithCheckShowTrans: " + iS);
+            i(iS);
+            String strF = f(commentCommentInfo5);
+            if (StringsKt__StringsKt.trim((CharSequence) strF).toString().length() == 0) {
+                this.f311572a = false;
+                i(aVar.t(this.f311573b, false));
+                return;
+            }
+            String str3 = this.f311576e;
+            CommentCommentInfo commentCommentInfo7 = this.f311573b;
+            String strN = commentCommentInfo7 != null ? commentCommentInfo7.n() : null;
+            wg3.x.b(str3, strN + " start translate text " + commentCommentInfo5.h() + " removeRichText: " + strF);
+            e58.i.e(strF, "comment", MapsKt__MapsJVMKt.mapOf(TuplesKt.to("id", String.valueOf(commentCommentInfo5.n()))), new a(commentCommentInfo5), new b(commentCommentInfo5));
+        }
+    }

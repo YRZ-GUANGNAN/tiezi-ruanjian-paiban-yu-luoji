@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_05c0b8c4256f3d0213e5cf6bf781569c7138372ff7b39806ff59876f13027f6a",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "q68.c1",
+    "method_name": "b"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "q68.c1"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[],\"field_count\":0,\"full_name\":\"q68.c1\",\"name\":\"c1\",\"inner_classes\":[],\"inner_class_count\":0,\"method_count\":5,\"methods\":[{\"is_constructor\":true,\"signature\":\"<init>(): void\",\"def_pos\":0,\"name\":\"<init>\"},{\"is_constructor\":false,\"signature\":\"a(): int\",\"def_pos\":0,\"name\":\"a\"},{\"is_constructor\":false,\"signature\":\"b(): int[]\",\"def_pos\":0,\"name\":\"b\"},{\"is_constructor\":false,\"signature\":\"c(): int\",\"def_pos\":0,\"name\":\"c\"},{\"is_constructor\":false,\"signature\":\"d(): boolean\",\"def_pos\":0,\"name\":\"d\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "q68.c1",
+          "method_name": "b",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_name\":\"b\",\"overload_count\":1,\"body\":\"    public static int[] b() {\\r\\n        Display defaultDisplay;\\r\\n        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(null, c1.class, 139767);\\r\\n        if (patchProxyResultProxy0Para.isSupported) {\\r\\n            return (int[]) patchProxyResultProxy0Para.result;\\r\\n        }\\r\\n        WindowManager windowManager = (WindowManager) XYUtilsCenter.f().getSystemService(\\\"window\\\");\\r\\n        if (windowManager != null && (defaultDisplay = windowManager.getDefaultDisplay()) != null) {\\r\\n            Point point = new Point();\\r\\n            defaultDisplay.getRealSize(point);\\r\\n            return new int[]{point.x, point.y};\\r\\n        }\\r\\n        return new int[]{0, 0};\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"q68.c1\",\"full_name\":\"q68.c1.b\",\"mode\":\"java\",\"markers\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "q68.c1",
+    "method": {
+      "name": "b",
+      "reported_signature": "b(): int[]",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public static int[] b() {\r\n        Display defaultDisplay;\r\n        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(null, c1.class, 139767);\r\n        if (patchProxyResultProxy0Para.isSupported) {\r\n            return (int[]) patchProxyResultProxy0Para.result;\r\n        }\r\n        WindowManager windowManager = (WindowManager) XYUtilsCenter.f().getSystemService(\"window\");\r\n        if (windowManager != null && (defaultDisplay = windowManager.getDefaultDisplay()) != null) {\r\n            Point point = new Point();\r\n            defaultDisplay.getRealSize(point);\r\n            return new int[]{point.x, point.y};\r\n        }\r\n        return new int[]{0, 0};\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "e9509134596dc7fef92ca350f26d318387087c14e6a6b88996fba943d82163af",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

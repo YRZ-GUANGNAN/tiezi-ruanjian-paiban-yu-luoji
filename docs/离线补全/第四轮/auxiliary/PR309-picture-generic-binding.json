@@ -1,0 +1,740 @@
+{
+  "provider": "dexlib2-bundled-with-jadx-auxiliary-not-REA-Evidence",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "runtimeObserved": false,
+  "selectors": [
+    "Lm7/e;::<init>",
+    "Lwg3/f$w;::invoke",
+    "Lcm/c;::k"
+  ],
+  "matches": [
+    {
+      "selector": "Lm7/e;::<init>",
+      "dexEntry": "classes12.dex",
+      "method": "Lm7/e;-><init>(Landroid/content/Context;)V",
+      "superclass": "Lm7/d;",
+      "bodyPresent": true,
+      "registerCount": 3,
+      "codeUnits": 8,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "invoke-direct",
+          "registers": [
+            1,
+            2
+          ],
+          "reference": "Lm7/d;-><init>(Landroid/content/Context;)V"
+        },
+        {
+          "offset": 3,
+          "opcode": "const/4",
+          "a": 0,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 4,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1,
+            2,
+            0
+          ],
+          "reference": "Lm7/e;->inflateHierarchy(Landroid/content/Context;Landroid/util/AttributeSet;)V"
+        },
+        {
+          "offset": 7,
+          "opcode": "return-void"
+        }
+      ]
+    },
+    {
+      "selector": "Lm7/e;::<init>",
+      "dexEntry": "classes12.dex",
+      "method": "Lm7/e;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V",
+      "superclass": "Lm7/d;",
+      "bodyPresent": true,
+      "registerCount": 3,
+      "codeUnits": 7,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Lm7/d;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V"
+        },
+        {
+          "offset": 3,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Lm7/e;->inflateHierarchy(Landroid/content/Context;Landroid/util/AttributeSet;)V"
+        },
+        {
+          "offset": 6,
+          "opcode": "return-void"
+        }
+      ]
+    },
+    {
+      "selector": "Lm7/e;::<init>",
+      "dexEntry": "classes12.dex",
+      "method": "Lm7/e;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V",
+      "superclass": "Lm7/d;",
+      "bodyPresent": true,
+      "registerCount": 4,
+      "codeUnits": 7,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "reference": "Lm7/d;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V"
+        },
+        {
+          "offset": 3,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Lm7/e;->inflateHierarchy(Landroid/content/Context;Landroid/util/AttributeSet;)V"
+        },
+        {
+          "offset": 6,
+          "opcode": "return-void"
+        }
+      ]
+    },
+    {
+      "selector": "Lm7/e;::<init>",
+      "dexEntry": "classes12.dex",
+      "method": "Lm7/e;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V",
+      "superclass": "Lm7/d;",
+      "bodyPresent": true,
+      "registerCount": 5,
+      "codeUnits": 7,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "reference": "Lm7/d;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V"
+        },
+        {
+          "offset": 3,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            1,
+            2
+          ],
+          "reference": "Lm7/e;->inflateHierarchy(Landroid/content/Context;Landroid/util/AttributeSet;)V"
+        },
+        {
+          "offset": 6,
+          "opcode": "return-void"
+        }
+      ]
+    },
+    {
+      "selector": "Lm7/e;::<init>",
+      "dexEntry": "classes12.dex",
+      "method": "Lm7/e;-><init>(Landroid/content/Context;Lj7/a;)V",
+      "superclass": "Lm7/d;",
+      "bodyPresent": true,
+      "registerCount": 3,
+      "codeUnits": 7,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "invoke-direct",
+          "registers": [
+            0,
+            1
+          ],
+          "reference": "Lm7/d;-><init>(Landroid/content/Context;)V"
+        },
+        {
+          "offset": 3,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0,
+            2
+          ],
+          "reference": "Lm7/d;->setHierarchy(Ll7/b;)V"
+        },
+        {
+          "offset": 6,
+          "opcode": "return-void"
+        }
+      ]
+    },
+    {
+      "selector": "Lcm/c;::k",
+      "dexEntry": "classes19.dex",
+      "method": "Lcm/c;->k(Lcom/facebook/drawee/view/SimpleDraweeView;Ljava/lang/String;IILkm/f;Ljava/lang/Object;Lkm/b;Lcom/facebook/imagepipeline/request/a$a;ILjava/lang/Object;)V",
+      "superclass": "Ljava/lang/Object;",
+      "bodyPresent": true,
+      "registerCount": 33,
+      "codeUnits": 76,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "and-int/lit8",
+          "a": 0,
+          "b": 31,
+          "literal": "8",
+          "literalHex": "0x8"
+        },
+        {
+          "offset": 2,
+          "opcode": "if-eqz",
+          "a": 0,
+          "target": 8
+        },
+        {
+          "offset": 4,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Lkm/f;->CENTER_CROP:Lkm/f;"
+        },
+        {
+          "offset": 6,
+          "opcode": "move-object",
+          "a": 5,
+          "b": 0
+        },
+        {
+          "offset": 7,
+          "opcode": "goto",
+          "target": 10
+        },
+        {
+          "offset": 8,
+          "opcode": "move-object/from16",
+          "a": 5,
+          "b": 27
+        },
+        {
+          "offset": 10,
+          "opcode": "and-int/lit8",
+          "a": 0,
+          "b": 31,
+          "literal": "16",
+          "literalHex": "0x10"
+        },
+        {
+          "offset": 12,
+          "opcode": "if-eqz",
+          "a": 0,
+          "target": 17
+        },
+        {
+          "offset": 14,
+          "opcode": "const/4",
+          "a": 0,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 15,
+          "opcode": "move-object",
+          "a": 6,
+          "b": 0
+        },
+        {
+          "offset": 16,
+          "opcode": "goto",
+          "target": 19
+        },
+        {
+          "offset": 17,
+          "opcode": "move-object/from16",
+          "a": 6,
+          "b": 28
+        },
+        {
+          "offset": 19,
+          "opcode": "and-int/lit8",
+          "a": 0,
+          "b": 31,
+          "literal": "32",
+          "literalHex": "0x20"
+        },
+        {
+          "offset": 21,
+          "opcode": "if-eqz",
+          "a": 0,
+          "target": 52
+        },
+        {
+          "offset": 23,
+          "opcode": "new-instance",
+          "a": 0,
+          "reference": "Lkm/b;"
+        },
+        {
+          "offset": 25,
+          "opcode": "const/4",
+          "a": 8,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 26,
+          "opcode": "const/4",
+          "a": 9,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 27,
+          "opcode": "const/4",
+          "a": 10,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 28,
+          "opcode": "const/4",
+          "a": 11,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 29,
+          "opcode": "const/4",
+          "a": 12,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 30,
+          "opcode": "const/4",
+          "a": 13,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 31,
+          "opcode": "const/4",
+          "a": 14,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 32,
+          "opcode": "const/4",
+          "a": 15,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 33,
+          "opcode": "const/16",
+          "a": 16,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 35,
+          "opcode": "const/16",
+          "a": 17,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 37,
+          "opcode": "const/16",
+          "a": 18,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 39,
+          "opcode": "const/16",
+          "a": 19,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 41,
+          "opcode": "const/16",
+          "a": 20,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 43,
+          "opcode": "const/16",
+          "a": 21,
+          "literal": "7679",
+          "literalHex": "0x1dff"
+        },
+        {
+          "offset": 45,
+          "opcode": "const/16",
+          "a": 22,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 47,
+          "opcode": "move-object",
+          "a": 7,
+          "b": 0
+        },
+        {
+          "offset": 48,
+          "opcode": "invoke-direct/range",
+          "startRegister": 7,
+          "argumentRegisters": 16,
+          "reference": "Lkm/b;-><init>(Lkm/d;IIIFZLcm/g$b;Lf7/c;ZZZZZILkotlin/jvm/internal/DefaultConstructorMarker;)V"
+        },
+        {
+          "offset": 51,
+          "opcode": "goto",
+          "target": 54
+        },
+        {
+          "offset": 52,
+          "opcode": "move-object/from16",
+          "a": 7,
+          "b": 29
+        },
+        {
+          "offset": 54,
+          "opcode": "and-int/lit8",
+          "a": 0,
+          "b": 31,
+          "literal": "64",
+          "literalHex": "0x40"
+        },
+        {
+          "offset": 56,
+          "opcode": "if-eqz",
+          "a": 0,
+          "target": 62
+        },
+        {
+          "offset": 58,
+          "opcode": "sget-object",
+          "a": 0,
+          "reference": "Lcom/facebook/imagepipeline/request/a$a;->DEFAULT:Lcom/facebook/imagepipeline/request/a$a;"
+        },
+        {
+          "offset": 60,
+          "opcode": "move-object",
+          "a": 8,
+          "b": 0
+        },
+        {
+          "offset": 61,
+          "opcode": "goto",
+          "target": 64
+        },
+        {
+          "offset": 62,
+          "opcode": "move-object/from16",
+          "a": 8,
+          "b": 30
+        },
+        {
+          "offset": 64,
+          "opcode": "move-object/from16",
+          "a": 1,
+          "b": 23
+        },
+        {
+          "offset": 66,
+          "opcode": "move-object/from16",
+          "a": 2,
+          "b": 24
+        },
+        {
+          "offset": 68,
+          "opcode": "move/from16",
+          "a": 3,
+          "b": 25
+        },
+        {
+          "offset": 70,
+          "opcode": "move/from16",
+          "a": 4,
+          "b": 26
+        },
+        {
+          "offset": 72,
+          "opcode": "invoke-static/range",
+          "startRegister": 1,
+          "argumentRegisters": 8,
+          "reference": "Lcm/c;->h(Lcom/facebook/drawee/view/SimpleDraweeView;Ljava/lang/String;IILkm/f;Ljava/lang/Object;Lkm/b;Lcom/facebook/imagepipeline/request/a$a;)V"
+        },
+        {
+          "offset": 75,
+          "opcode": "return-void"
+        }
+      ]
+    },
+    {
+      "selector": "Lwg3/f$w;::invoke",
+      "dexEntry": "classes3.dex",
+      "method": "Lwg3/f$w;->invoke()Ljava/lang/Boolean;",
+      "superclass": "Lkotlin/jvm/internal/Lambda;",
+      "bodyPresent": true,
+      "registerCount": 6,
+      "codeUnits": 57,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "const-class",
+          "a": 0,
+          "reference": "Lwg3/f$w;"
+        },
+        {
+          "offset": 2,
+          "opcode": "const",
+          "a": 1,
+          "literal": "322675",
+          "literalHex": "0x4ec73"
+        },
+        {
+          "offset": 5,
+          "opcode": "invoke-static",
+          "registers": [
+            5,
+            0,
+            1
+          ],
+          "reference": "Lcom/xingin/robust/PatchProxy;->proxy0Para(Ljava/lang/Object;Ljava/lang/Class;I)Lcom/xingin/robust/PatchProxyResult;"
+        },
+        {
+          "offset": 8,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 9,
+          "opcode": "iget-boolean",
+          "a": 1,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->isSupported:Z"
+        },
+        {
+          "offset": 11,
+          "opcode": "if-eqz",
+          "a": 1,
+          "target": 18
+        },
+        {
+          "offset": 13,
+          "opcode": "iget-object",
+          "a": 0,
+          "b": 0,
+          "reference": "Lcom/xingin/robust/PatchProxyResult;->result:Ljava/lang/Object;"
+        },
+        {
+          "offset": 15,
+          "opcode": "check-cast",
+          "a": 0,
+          "reference": "Ljava/lang/Boolean;"
+        },
+        {
+          "offset": 17,
+          "opcode": "return-object",
+          "a": 0
+        },
+        {
+          "offset": 18,
+          "opcode": "invoke-static",
+          "registers": [],
+          "reference": "Ll84/c;->a()Ll84/h;"
+        },
+        {
+          "offset": 21,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 22,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "1",
+          "literalHex": "0x1"
+        },
+        {
+          "offset": 23,
+          "opcode": "invoke-static",
+          "registers": [
+            1
+          ],
+          "reference": "Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;"
+        },
+        {
+          "offset": 26,
+          "opcode": "move-result-object",
+          "a": 2
+        },
+        {
+          "offset": 27,
+          "opcode": "new-instance",
+          "a": 3,
+          "reference": "Lwg3/f$w$a;"
+        },
+        {
+          "offset": 29,
+          "opcode": "invoke-direct",
+          "registers": [
+            3
+          ],
+          "reference": "Lwg3/f$w$a;-><init>()V"
+        },
+        {
+          "offset": 32,
+          "opcode": "invoke-virtual",
+          "registers": [
+            3
+          ],
+          "reference": "Lia/a;->getType()Ljava/lang/reflect/Type;"
+        },
+        {
+          "offset": 35,
+          "opcode": "move-result-object",
+          "a": 3
+        },
+        {
+          "offset": 36,
+          "opcode": "const-string",
+          "a": 4,
+          "reference": "\"andr_cmt_pad_multi_opt_switch\""
+        },
+        {
+          "offset": 38,
+          "opcode": "invoke-interface",
+          "registers": [
+            0,
+            4,
+            3,
+            2
+          ],
+          "reference": "Ll84/h;->j(Ljava/lang/String;Ljava/lang/reflect/Type;Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 41,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 42,
+          "opcode": "check-cast",
+          "a": 0,
+          "reference": "Ljava/lang/Number;"
+        },
+        {
+          "offset": 44,
+          "opcode": "invoke-virtual",
+          "registers": [
+            0
+          ],
+          "reference": "Ljava/lang/Number;->intValue()I"
+        },
+        {
+          "offset": 47,
+          "opcode": "move-result",
+          "a": 0
+        },
+        {
+          "offset": 48,
+          "opcode": "if-lez",
+          "a": 0,
+          "target": 51
+        },
+        {
+          "offset": 50,
+          "opcode": "goto",
+          "target": 52
+        },
+        {
+          "offset": 51,
+          "opcode": "const/4",
+          "a": 1,
+          "literal": "0",
+          "literalHex": "0x0"
+        },
+        {
+          "offset": 52,
+          "opcode": "invoke-static",
+          "registers": [
+            1
+          ],
+          "reference": "Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;"
+        },
+        {
+          "offset": 55,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 56,
+          "opcode": "return-object",
+          "a": 0
+        }
+      ]
+    },
+    {
+      "selector": "Lwg3/f$w;::invoke",
+      "dexEntry": "classes3.dex",
+      "method": "Lwg3/f$w;->invoke()Ljava/lang/Object;",
+      "superclass": "Lkotlin/jvm/internal/Lambda;",
+      "bodyPresent": true,
+      "registerCount": 2,
+      "codeUnits": 5,
+      "instructions": [
+        {
+          "offset": 0,
+          "opcode": "invoke-virtual",
+          "registers": [
+            1
+          ],
+          "reference": "Lwg3/f$w;->invoke()Ljava/lang/Boolean;"
+        },
+        {
+          "offset": 3,
+          "opcode": "move-result-object",
+          "a": 0
+        },
+        {
+          "offset": 4,
+          "opcode": "return-object",
+          "a": 0
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Raw static instructions, not observed execution or a complete control-flow proof.",
+    "Offsets and branch targets are relative DEX code units, not APK byte offsets.",
+    "Hot patches, remote config, runtime values and resource selection are not resolved."
+  ]
+}

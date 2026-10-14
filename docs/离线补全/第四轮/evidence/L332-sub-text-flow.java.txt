@@ -1,0 +1,67 @@
+    /* JADX WARN: Multi-variable type inference failed */
+    public final tg6.f d2(qh6.e eVar, boolean z100, boolean z101) {
+        Triple triple;
+        CommentPictureInfo commentPictureInfo;
+        String strB;
+        String strD;
+        String strF;
+        CommentPictureInfo commentPictureInfo2;
+        PatchProxyResult patchProxyResultProxy3Para = PatchProxy.proxy3Para(eVar, new Boolean(z100), new Boolean(z101), this, d.class, 387430);
+        if (patchProxyResultProxy3Para.isSupported) {
+            return (tg6.f) patchProxyResultProxy3Para.result;
+        }
+        String strF2 = eVar.f();
+        String strJ = u1.f323016a.Z1().j();
+        Function0<Integer> function0 = this.f30490n;
+        if (function0 == null) {
+            function0 = null;
+        }
+        int iIntValue = function0.invoke().intValue();
+        String strN = eVar.m().n();
+        String str = strN == null ? "" : strN;
+        int iG = eVar.m().g();
+        int iS = eVar.m().s();
+        List<CommentPictureInfo> listV = eVar.m().v();
+        String strA = (listV == null || (commentPictureInfo2 = (CommentPictureInfo) CollectionsKt___CollectionsKt.getOrNull(listV, 0)) == null) ? null : commentPictureInfo2.a();
+        String str2 = strA == null ? "" : strA;
+        CommentCommentUser commentCommentUserA0 = eVar.m().a0();
+        String str3 = (commentCommentUserA0 == null || (strF = commentCommentUserA0.f()) == null) ? "" : strF;
+        CommentCommentUser commentCommentUserA1 = eVar.m().a0();
+        String str4 = (commentCommentUserA1 == null || (strD = commentCommentUserA1.d()) == null) ? "" : strD;
+        CommentCommentUser commentCommentUserA2 = eVar.m().a0();
+        String str5 = (commentCommentUserA2 == null || (strB = commentCommentUserA2.b()) == null) ? "" : strB;
+        boolean zAreEqual = Intrinsics.areEqual(strF2, strJ);
+        CommentCommentUser commentCommentUserA3 = eVar.m().a0();
+        String strF3 = commentCommentUserA3 != null ? commentCommentUserA3.f() : null;
+        if (strF3 == null) {
+            strF3 = "";
+        }
+        boolean zAreEqual2 = Intrinsics.areEqual(strJ, strF3);
+        sr7.g gVar = new sr7.g((Context) XYUtilsCenter.f(), false);
+        gVar.B(new ur7.n());
+        String string = gVar.s(XYUtilsCenter.f(), eVar.m().h()).toString();
+        SpannableStringBuilder spannableStringBuilderJ0 = ((ch6.h) getPresenter()).j0(eVar.m());
+        boolean zI = eVar.i();
+        boolean z102 = eVar.m().S() != null;
+        String strA2 = z101 ? w.a(eVar.m()) : "";
+        Integer numC = eVar.m().C();
+        boolean zA = zf4.d.a(eVar.m());
+        CommentPictureInfo commentPictureInfoD = zf4.d.d(eVar.m(), 0, 1, null);
+        if (commentPictureInfoD != null) {
+            String strJ2 = commentPictureInfoD.j();
+            if (strJ2 == null) {
+                strJ2 = "";
+            }
+            triple = new Triple(strJ2, Integer.valueOf(commentPictureInfoD.getWidth()), Integer.valueOf(commentPictureInfoD.getHeight()));
+        } else {
+            triple = null;
+        }
+        CommentPictureInfo commentPictureInfoD2 = zf4.d.d(eVar.m(), 0, 1, null);
+        CommentMemeInfo commentMemeInfoH = commentPictureInfoD2 != null ? commentPictureInfoD2.h() : null;
+        CommentPictureInfo commentPictureInfoD3 = zf4.d.d(eVar.m(), 0, 1, null);
+        CommentStickerInfo commentStickerInfoK = commentPictureInfoD3 != null ? commentPictureInfoD3.k() : null;
+        int iS2 = eVar.m().s();
+        String strO0 = eVar.m().o0();
+        List<CommentPictureInfo> listV2 = eVar.m().v();
+        return new tg6.f(iIntValue, iG, iS, str2, str, str3, str4, str5, zAreEqual, zAreEqual2, z100, string, spannableStringBuilderJ0, zI, false, z102, strA2, numC, zA, triple, 0L, commentMemeInfoH, commentStickerInfoK, Integer.valueOf(iS2), strO0, (listV2 == null || (commentPictureInfo = (CommentPictureInfo) CollectionsKt___CollectionsKt.getOrNull(listV2, 0)) == null || !commentPictureInfo.n()) ? false : true, eVar.m(), 1064960, null);
+    }

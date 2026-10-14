@@ -1,0 +1,439 @@
+{
+  "evidence_id": "ev_c8055ef77b5e8997e00e70c80d6105f5b50c4f56a267c82670fa1bdd4cc85e69",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "sr7.g"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":82499,\"raw_class_count\":82499,\"resource_count\":18535,\"load_duration_ms\":35646,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "sr7.g"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_class_count\":1,\"inner_classes\":[\"sr7.g.a\"],\"name\":\"g\",\"full_name\":\"sr7.g\",\"field_count\":9,\"fields\":[{\"def_pos\":0,\"name\":\"f303358i\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"f303359a\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"f303360b\",\"type\":\"java.util.List<tr7.b>\"},{\"def_pos\":0,\"name\":\"f303361c\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"f303362d\",\"type\":\"java.util.List<com.xingin.entities.AtUserInfo>\"},{\"def_pos\":0,\"name\":\"f303363e\",\"type\":\"java.lang.String\"},{\"def_pos\":0,\"name\":\"f303364f\",\"type\":\"android.text.SpannableStringBuilder\"},{\"def_pos\":0,\"name\":\"f303365g\",\"type\":\"int\"},{\"def_pos\":0,\"name\":\"f303366h\",\"type\":\"java.lang.String\"}],\"methods\":[{\"is_constructor\":false,\"name\":\"<clinit>\",\"def_pos\":0,\"signature\":\"<clinit>(): void\"},{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(android.content.Context): void\"},{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(android.content.Context, java.util.List<com.xingin.entities.AtUserInfo>): void\"},{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(android.content.Context, boolean): void\"},{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(android.content.Context, boolean, java.util.List<com.xingin.entities.AtUserInfo>): void\"},{\"is_constructor\":false,\"name\":\"A\",\"def_pos\":0,\"signature\":\"A(android.content.Context, java.lang.String): java.lang.String\"},{\"is_constructor\":false,\"name\":\"B\",\"def_pos\":0,\"signature\":\"B(tr7.b): void\"},{\"is_constructor\":false,\"name\":\"C\",\"def_pos\":0,\"signature\":\"C(java.lang.String): void\"},{\"is_constructor\":false,\"name\":\"D\",\"def_pos\":0,\"signature\":\"D(int): void\"},{\"is_constructor\":false,\"name\":\"E\",\"def_pos\":0,\"signature\":\"E(boolean): void\"},{\"is_constructor\":false,\"name\":\"F\",\"def_pos\":0,\"signature\":\"F(boolean): void\"},{\"is_constructor\":false,\"name\":\"G\",\"def_pos\":0,\"signature\":\"G(tr7.h): void\"},{\"is_constructor\":false,\"name\":\"H\",\"def_pos\":0,\"signature\":\"H(boolean): void\"},{\"is_constructor\":false,\"name\":\"I\",\"def_pos\":0,\"signature\":\"I(tr7.b): void\"},{\"is_constructor\":false,\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(android.text.SpannableStringBuilder): boolean\"},{\"is_constructor\":false,\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(java.lang.String): boolean\"},{\"is_constructor\":false,\"name\":\"c\",\"def_pos\":0,\"signature\":\"c(android.text.SpannableStringBuilder): android.text.SpannableStringBuilder\"},{\"is_constructor\":false,\"name\":\"d\",\"def_pos\":0,\"signature\":\"d(java.lang.String): java.lang.String\"},{\"is_constructor\":false,\"name\":\"e\",\"def_pos\":0,\"signature\":\"e(java.lang.String): boolean\"},{\"is_constructor\":false,\"name\":\"f\",\"def_pos\":0,\"signature\":\"f(android.text.SpannableStringBuilder): java.lang.String\"},{\"is_constructor\":false,\"name\":\"g\",\"def_pos\":0,\"signature\":\"g(android.content.Context, java.lang.String): android.text.SpannableStringBuilder\"},{\"is_constructor\":false,\"name\":\"h\",\"def_pos\":0,\"signature\":\"h(android.content.Context, java.lang.String): android.util.Pair<android.text.SpannableStringBuilder, tr7.b>\"},{\"is_constructor\":false,\"name\":\"i\",\"def_pos\":0,\"signature\":\"i(android.text.SpannableStringBuilder): tr7.i\"},{\"is_constructor\":false,\"name\":\"j\",\"def_pos\":0,\"signature\":\"j(android.text.SpannableStringBuilder): sr7.g$a\"},{\"is_constructor\":false,\"name\":\"k\",\"def_pos\":0,\"signature\":\"k(java.lang.String): java.lang.String\"},{\"is_constructor\":false,\"name\":\"l\",\"def_pos\":0,\"signature\":\"l(android.text.SpannableStringBuilder): sr7.g$a\"},{\"is_constructor\":false,\"name\":\"m\",\"def_pos\":0,\"signature\":\"m(android.content.Context): void\"},{\"is_constructor\":false,\"name\":\"n\",\"def_pos\":0,\"signature\":\"n(android.text.SpannableStringBuilder): java.util.List<com.xingin.entities.HashTagListBean$HashTag>\"},{\"is_constructor\":false,\"name\":\"o\",\"def_pos\":0,\"signature\":\"o(android.content.Context, java.lang.CharSequence, boolean): android.text.SpannableStringBuilder\"},{\"is_constructor\":false,\"name\":\"p\",\"def_pos\":0,\"signature\":\"p(tr7.i, android.text.SpannableStringBuilder): void\"},{\"is_constructor\":false,\"name\":\"q\",\"def_pos\":0,\"signature\":\"q(android.text.SpannableStringBuilder): com.xingin.entities.HashTagListBean$HashTag\"},{\"is_constructor\":false,\"name\":\"r\",\"def_pos\":0,\"signature\":\"r(android.text.SpannableStringBuilder): java.lang.String\"},{\"is_constructor\":false,\"name\":\"s\",\"def_pos\":0,\"signature\":\"s(android.content.Context, java.lang.String): android.text.SpannableStringBuilder\"},{\"is_constructor\":false,\"name\":\"t\",\"def_pos\":0,\"signature\":\"t(android.content.Context, java.lang.String, boolean): android.text.SpannableStringBuilder\"},{\"is_constructor\":false,\"name\":\"u\",\"def_pos\":0,\"signature\":\"u(android.content.Context, java.lang.String, boolean, java.util.ArrayList<java.lang.Integer>): int[]\"},{\"is_constructor\":false,\"name\":\"v\",\"def_pos\":0,\"signature\":\"v(android.content.Context, java.lang.String, boolean, java.util.ArrayList<java.lang.String>, java.util.ArrayList<java.lang.String>): android.text.SpannableStringBuilder\"},{\"is_constructor\":false,\"name\":\"w\",\"def_pos\":0,\"signature\":\"w(android.content.Context, java.lang.String, boolean, java.util.ArrayList<java.lang.String>, java.util.ArrayList<android.util.Pair<java.lang.String, tr7.b>>): android.text.SpannableStringBuilder\"},{\"is_constructor\":false,\"name\":\"x\",\"def_pos\":0,\"signature\":\"x(java.lang.String, boolean): android.text.SpannableStringBuilder\"},{\"is_constructor\":false,\"name\":\"y\",\"def_pos\":0,\"signature\":\"y(android.content.Context, java.lang.String, java.util.ArrayList<java.lang.String>, java.util.ArrayList<java.lang.String>): android.text.SpannableStringBuilder\"},{\"is_constructor\":false,\"name\":\"z\",\"def_pos\":0,\"signature\":\"z(android.content.Context, java.lang.String, java.util.ArrayList<java.lang.String>, java.util.ArrayList<android.util.Pair<java.lang.String, java.lang.String>>): android.text.SpannableStringBuilder\"}],\"method_count\":40}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "sr7.g",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context, java.util.List<com.xingin.entities.AtUserInfo>): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context, boolean): void",
+        "overload_index": 2,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context, boolean, java.util.List<com.xingin.entities.AtUserInfo>): void",
+        "overload_index": 3,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A",
+        "reported_signature": "A(android.content.Context, java.lang.String): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "B",
+        "reported_signature": "B(tr7.b): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "C",
+        "reported_signature": "C(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D",
+        "reported_signature": "D(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "E",
+        "reported_signature": "E(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F",
+        "reported_signature": "F(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G",
+        "reported_signature": "G(tr7.h): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H",
+        "reported_signature": "H(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I",
+        "reported_signature": "I(tr7.b): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(android.text.SpannableStringBuilder): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(java.lang.String): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(android.text.SpannableStringBuilder): android.text.SpannableStringBuilder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(java.lang.String): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(java.lang.String): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(android.text.SpannableStringBuilder): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(android.content.Context, java.lang.String): android.text.SpannableStringBuilder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(android.content.Context, java.lang.String): android.util.Pair<android.text.SpannableStringBuilder, tr7.b>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(android.text.SpannableStringBuilder): tr7.i",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j",
+        "reported_signature": "j(android.text.SpannableStringBuilder): sr7.g$a",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(java.lang.String): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(android.text.SpannableStringBuilder): sr7.g$a",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(android.content.Context): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(android.text.SpannableStringBuilder): java.util.List<com.xingin.entities.HashTagListBean$HashTag>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(android.content.Context, java.lang.CharSequence, boolean): android.text.SpannableStringBuilder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p",
+        "reported_signature": "p(tr7.i, android.text.SpannableStringBuilder): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q",
+        "reported_signature": "q(android.text.SpannableStringBuilder): com.xingin.entities.HashTagListBean$HashTag",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r",
+        "reported_signature": "r(android.text.SpannableStringBuilder): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s",
+        "reported_signature": "s(android.content.Context, java.lang.String): android.text.SpannableStringBuilder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t",
+        "reported_signature": "t(android.content.Context, java.lang.String, boolean): android.text.SpannableStringBuilder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u",
+        "reported_signature": "u(android.content.Context, java.lang.String, boolean, java.util.ArrayList<java.lang.Integer>): int[]",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v",
+        "reported_signature": "v(android.content.Context, java.lang.String, boolean, java.util.ArrayList<java.lang.String>, java.util.ArrayList<java.lang.String>): android.text.SpannableStringBuilder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w",
+        "reported_signature": "w(android.content.Context, java.lang.String, boolean, java.util.ArrayList<java.lang.String>, java.util.ArrayList<android.util.Pair<java.lang.String, tr7.b>>): android.text.SpannableStringBuilder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x",
+        "reported_signature": "x(java.lang.String, boolean): android.text.SpannableStringBuilder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y",
+        "reported_signature": "y(android.content.Context, java.lang.String, java.util.ArrayList<java.lang.String>, java.util.ArrayList<java.lang.String>): android.text.SpannableStringBuilder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z",
+        "reported_signature": "z(android.content.Context, java.lang.String, java.util.ArrayList<java.lang.String>, java.util.ArrayList<android.util.Pair<java.lang.String, java.lang.String>>): android.text.SpannableStringBuilder",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "f303358i",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f303359a",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f303360b",
+        "reported_type": "java.util.List<tr7.b>"
+      },
+      {
+        "name": "f303361c",
+        "reported_type": "int"
+      },
+      {
+        "name": "f303362d",
+        "reported_type": "java.util.List<com.xingin.entities.AtUserInfo>"
+      },
+      {
+        "name": "f303363e",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "f303364f",
+        "reported_type": "android.text.SpannableStringBuilder"
+      },
+      {
+        "name": "f303365g",
+        "reported_type": "int"
+      },
+      {
+        "name": "f303366h",
+        "reported_type": "java.lang.String"
+      }
+    ],
+    "inner_classes": [
+      "sr7.g.a"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "2913e7a48531c83d1f7a26568e33016b5d1b701d9bdb14e6591531bd2ba9b203",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

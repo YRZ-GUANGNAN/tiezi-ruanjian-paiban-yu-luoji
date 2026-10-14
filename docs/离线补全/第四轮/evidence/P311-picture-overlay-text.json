@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_d434cc8c75916b1df374a898d2e02679d214f1632ba67c38e24675e883a9192d",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.comment.consumer.list.view.CommentSinglePictureView.g",
+    "method_name": "invoke2"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.comment.consumer.list.view.CommentSinglePictureView.g"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_count\":3,\"methods\":[{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"signature\":\"<init>(com.xingin.entities.CommentPictureInfo): void\"},{\"def_pos\":0,\"name\":\"invoke\",\"is_constructor\":false,\"signature\":\"invoke(android.widget.TextView): kotlin.Unit\"},{\"def_pos\":0,\"name\":\"invoke2\",\"is_constructor\":false,\"signature\":\"invoke2(android.widget.TextView): void\"}],\"fields\":[{\"name\":\"f87503d\",\"def_pos\":0,\"type\":\"com.xingin.entities.CommentPictureInfo\"}],\"field_count\":1,\"full_name\":\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.g\",\"name\":\"g\",\"inner_classes\":[],\"inner_class_count\":0}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.comment.consumer.list.view.CommentSinglePictureView.g",
+          "method_name": "invoke2",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"full_name\":\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.g.invoke\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"invoke2\",\"overload_count\":1,\"body\":\"        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */\\r\\n        public final void invoke2(TextView textView) {\\r\\n            CommentPictureTempInfo commentPictureTempInfoD;\\r\\n            if (PatchProxy.proxyVoid1Para(textView, this, g.class, 249963)) {\\r\\n                return;\\r\\n            }\\r\\n            int i100 = k.f238907o;\\r\\n            int iA = 1;\\r\\n            Object[] objArr = new Object[1];\\r\\n            CommentPictureInfo commentPictureInfo = this.f87503d;\\r\\n            if (commentPictureInfo != null && (commentPictureTempInfoD = commentPictureInfo.d()) != null) {\\r\\n                iA = commentPictureTempInfoD.a();\\r\\n            }\\r\\n            objArr[0] = Integer.valueOf(iA);\\r\\n            textView.setText(i1.e(i100, objArr));\\r\\n        }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.comment.consumer.list.view.CommentSinglePictureView.g\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.comment.consumer.list.view.CommentSinglePictureView.g",
+    "method": {
+      "name": "invoke2",
+      "reported_signature": "invoke2(android.widget.TextView): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */\r\n        public final void invoke2(TextView textView) {\r\n            CommentPictureTempInfo commentPictureTempInfoD;\r\n            if (PatchProxy.proxyVoid1Para(textView, this, g.class, 249963)) {\r\n                return;\r\n            }\r\n            int i100 = k.f238907o;\r\n            int iA = 1;\r\n            Object[] objArr = new Object[1];\r\n            CommentPictureInfo commentPictureInfo = this.f87503d;\r\n            if (commentPictureInfo != null && (commentPictureTempInfoD = commentPictureInfo.d()) != null) {\r\n                iA = commentPictureTempInfoD.a();\r\n            }\r\n            objArr[0] = Integer.valueOf(iA);\r\n            textView.setText(i1.e(i100, objArr));\r\n        }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "cd80a7ce16cb20645f8e7b43a2e7f72fe19966f4d36fbcb0fcc6c62c9bf0158a",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

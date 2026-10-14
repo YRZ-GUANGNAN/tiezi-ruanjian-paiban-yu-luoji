@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_7afaf7b53307c1114be28c538ebf13e5aba13be1956acfd2d9e7270ba7b1d512",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "j7.c",
+    "method_name": "e"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "j7.c"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_count\":5,\"methods\":[{\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"signature\":\"a(android.content.Context, android.content.res.TypedArray, int): android.graphics.drawable.Drawable\"},{\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"signature\":\"b(j7.b): j7.e\"},{\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(android.content.res.TypedArray, int): i7.q$c\"},{\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"signature\":\"d(android.content.Context, android.util.AttributeSet): j7.b\"},{\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"signature\":\"e(j7.b, android.content.Context, android.util.AttributeSet): j7.b\"}],\"fields\":[],\"field_count\":0,\"full_name\":\"j7.c\",\"name\":\"c\",\"inner_classes\":[],\"inner_class_count\":0}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "j7.c",
+          "method_name": "e",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"full_name\":\"j7.c.e\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"e\",\"overload_count\":1,\"body\":\"    /* JADX WARN: Code duplicated, block: B:131:0x01e0 A[PHI: r1 r2 r3\\n  0x01e0: PHI (r1v18 boolean) = (r1v14 boolean), (r1v20 boolean) binds: [B:130:0x01de, B:115:0x01c4] A[DONT_GENERATE, DONT_INLINE]\\n  0x01e0: PHI (r2v13 boolean) = (r2v10 boolean), (r2v15 boolean) binds: [B:130:0x01de, B:115:0x01c4] A[DONT_GENERATE, DONT_INLINE]\\n  0x01e0: PHI (r3v9 boolean) = (r3v6 boolean), (r3v11 boolean) binds: [B:130:0x01de, B:115:0x01c4] A[DONT_GENERATE, DONT_INLINE]] */\\r\\n    public static b e(b bVar, Context context, AttributeSet attributeSet) throws Throwable {\\r\\n        boolean z100;\\r\\n        int i100;\\r\\n        int i101;\\r\\n        boolean z101;\\r\\n        boolean z102;\\r\\n        boolean z103;\\r\\n        boolean z104;\\r\\n        Context context2 = context;\\r\\n        if (attributeSet != null) {\\r\\n            TypedArray typedArrayObtainStyledAttributes = context2.obtainStyledAttributes(attributeSet, z6.a.f370833a);\\r\\n            try {\\r\\n                int indexCount = typedArrayObtainStyledAttributes.getIndexCount();\\r\\n                int integer = 0;\\r\\n                int i102 = 0;\\r\\n                boolean z105 = true;\\r\\n                boolean z106 = true;\\r\\n                boolean z107 = true;\\r\\n                boolean z108 = true;\\r\\n                boolean z109 = true;\\r\\n                boolean z110 = true;\\r\\n                boolean z111 = true;\\r\\n                boolean z112 = true;\\r\\n                int dimensionPixelSize = 0;\\r\\n                while (i102 < indexCount) {\\r\\n                    try {\\r\\n                        int index = typedArrayObtainStyledAttributes.getIndex(i102);\\r\\n                        if (index == z6.a.f370834b) {\\r\\n                            bVar.w(c(typedArrayObtainStyledAttributes, index));\\r\\n                        } else if (index == z6.a.f370840h) {\\r\\n                            bVar.E(a(context2, typedArrayObtainStyledAttributes, index));\\r\\n                        } else if (index == z6.a.f370842j) {\\r\\n                            bVar.G(a(context2, typedArrayObtainStyledAttributes, index));\\r\\n                        } else if (index == z6.a.f370844l) {\\r\\n                            bVar.H(a(context2, typedArrayObtainStyledAttributes, index));\\r\\n                        } else if (index == z6.a.f370836d) {\\r\\n                            bVar.z(typedArrayObtainStyledAttributes.getInt(index, 0));\\r\\n                        } else if (index == z6.a.D) {\\r\\n                            bVar.y(typedArrayObtainStyledAttributes.getFloat(index, 0.0f));\\r\\n                        } else if (index == z6.a.f370841i) {\\r\\n                            bVar.F(c(typedArrayObtainStyledAttributes, index));\\r\\n                        } else if (index == z6.a.f370846n) {\\r\\n                            bVar.J(a(context2, typedArrayObtainStyledAttributes, index));\\r\\n                        } else if (index == z6.a.f370847o) {\\r\\n                            bVar.K(c(typedArrayObtainStyledAttributes, index));\\r\\n                        } else if (index == z6.a.f370837e) {\\r\\n                            bVar.A(a(context2, typedArrayObtainStyledAttributes, index));\\r\\n                        } else if (index == z6.a.f370838f) {\\r\\n                            bVar.B(c(typedArrayObtainStyledAttributes, index));\\r\\n                        } else if (index == z6.a.f370845m) {\\r\\n                            bVar.I(c(typedArrayObtainStyledAttributes, index));\\r\\n                        } else if (index == z6.a.f370843k) {\\r\\n                            integer = typedArrayObtainStyledAttributes.getInteger(index, integer);\\r\\n                        } else if (index == z6.a.f370835c) {\\r\\n                            bVar.x(a(context2, typedArrayObtainStyledAttributes, index));\\r\\n                        } else if (index == z6.a.f370839g) {\\r\\n                            bVar.C(a(context2, typedArrayObtainStyledAttributes, index));\\r\\n                        } else if (index == z6.a.f370848p) {\\r\\n                            b(bVar).v(typedArrayObtainStyledAttributes.getBoolean(index, false));\\r\\n                        } else if (index == z6.a.f370858z) {\\r\\n                            dimensionPixelSize = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, dimensionPixelSize);\\r\\n                        } else {\\r\\n                            int i103 = dimensionPixelSize;\\r\\n                            if (index == z6.a.f370854v) {\\r\\n                                z105 = typedArrayObtainStyledAttributes.getBoolean(index, z105);\\r\\n                            } else if (index == z6.a.f370855w) {\\r\\n                                z107 = typedArrayObtainStyledAttributes.getBoolean(index, z107);\\r\\n                            } else if (index == z6.a.f370850r) {\\r\\n                                z111 = typedArrayObtainStyledAttributes.getBoolean(index, z111);\\r\\n                            } else if (index == z6.a.f370851s) {\\r\\n                                z109 = typedArrayObtainStyledAttributes.getBoolean(index, z109);\\r\\n                            } else if (index == z6.a.f370856x) {\\r\\n                                z106 = typedArrayObtainStyledAttributes.getBoolean(index, z106);\\r\\n                            } else if (index == z6.a.f370853u) {\\r\\n                                z108 = typedArrayObtainStyledAttributes.getBoolean(index, z108);\\r\\n                            } else if (index == z6.a.f370852t) {\\r\\n                                z112 = typedArrayObtainStyledAttributes.getBoolean(index, z112);\\r\\n                            } else {\\r\\n                                if (index == z6.a.f370849q) {\\r\\n                                    z110 = typedArrayObtainStyledAttributes.getBoolean(index, z110);\\r\\n                                } else if (index == z6.a.f370857y) {\\r\\n                                    dimensionPixelSize = i103;\\r\\n                                    b(bVar).s(typedArrayObtainStyledAttributes.getColor(index, 0));\\r\\n                                } else {\\r\\n                                    dimensionPixelSize = i103;\\r\\n                                    if (index == z6.a.C) {\\r\\n                                        b(bVar).p(typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0));\\r\\n                                    } else if (index == z6.a.A) {\\r\\n                                        b(bVar).o(typedArrayObtainStyledAttributes.getColor(index, 0));\\r\\n                                    } else if (index == z6.a.B) {\\r\\n                                        b(bVar).t(typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0));\\r\\n                                    }\\r\\n                                }\\r\\n                                i102++;\\r\\n                                context2 = context;\\r\\n                            }\\r\\n                            dimensionPixelSize = i103;\\r\\n                        }\\r\\n                        i102++;\\r\\n                        context2 = context;\\r\\n                    } catch (Throwable th) {\\r\\n                        th = th;\\r\\n                        typedArrayObtainStyledAttributes.recycle();\\r\\n                        context.getResources().getConfiguration().getLayoutDirection();\\r\\n                        throw th;\\r\\n                    }\\r\\n                }\\r\\n                boolean z113 = false;\\r\\n                typedArrayObtainStyledAttributes.recycle();\\r\\n                if (context.getResources().getConfiguration().getLayoutDirection() == 1) {\\r\\n                    z104 = z105 && z108;\\r\\n                    z100 = z107 && z106;\\r\\n                    z101 = z109 && z112;\\r\\n                    if (z111 && z110) {\\r\\n                        z113 = true;\\r\\n                    }\\r\\n                } else {\\r\\n                    z104 = z105 && z106;\\r\\n                    z100 = z107 && z108;\\r\\n                    z101 = z109 && z110;\\r\\n                    if (z111 && z112) {\\r\\n                        z113 = true;\\r\\n                    }\\r\\n                }\\r\\n                z103 = z113;\\r\\n                i100 = integer;\\r\\n                z102 = z104;\\r\\n                i101 = dimensionPixelSize;\\r\\n            } catch (Throwable th10) {\\r\\n                th = th10;\\r\\n            }\\r\\n        } else {\\r\\n            z100 = true;\\r\\n            i100 = 0;\\r\\n            i101 = 0;\\r\\n            z101 = true;\\r\\n            z102 = true;\\r\\n            z103 = true;\\r\\n        }\\r\\n        if (bVar.n() != null && i100 > 0) {\\r\\n            bVar.H(new i7.b(bVar.n(), i100));\\r\\n        }\\r\\n        if (i101 > 0) {\\r\\n            b(bVar).q(z102 ? i101 : 0.0f, z100 ? i101 : 0.0f, z101 ? i101 : 0.0f, z103 ? i101 : 0.0f);\\r\\n        }\\r\\n        return bVar;\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"j7.c\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "j7.c",
+    "method": {
+      "name": "e",
+      "reported_signature": "e(j7.b, android.content.Context, android.util.AttributeSet): j7.b",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Code duplicated, block: B:131:0x01e0 A[PHI: r1 r2 r3\n  0x01e0: PHI (r1v18 boolean) = (r1v14 boolean), (r1v20 boolean) binds: [B:130:0x01de, B:115:0x01c4] A[DONT_GENERATE, DONT_INLINE]\n  0x01e0: PHI (r2v13 boolean) = (r2v10 boolean), (r2v15 boolean) binds: [B:130:0x01de, B:115:0x01c4] A[DONT_GENERATE, DONT_INLINE]\n  0x01e0: PHI (r3v9 boolean) = (r3v6 boolean), (r3v11 boolean) binds: [B:130:0x01de, B:115:0x01c4] A[DONT_GENERATE, DONT_INLINE]] */\r\n    public static b e(b bVar, Context context, AttributeSet attributeSet) throws Throwable {\r\n        boolean z100;\r\n        int i100;\r\n        int i101;\r\n        boolean z101;\r\n        boolean z102;\r\n        boolean z103;\r\n        boolean z104;\r\n        Context context2 = context;\r\n        if (attributeSet != null) {\r\n            TypedArray typedArrayObtainStyledAttributes = context2.obtainStyledAttributes(attributeSet, z6.a.f370833a);\r\n            try {\r\n                int indexCount = typedArrayObtainStyledAttributes.getIndexCount();\r\n                int integer = 0;\r\n                int i102 = 0;\r\n                boolean z105 = true;\r\n                boolean z106 = true;\r\n                boolean z107 = true;\r\n                boolean z108 = true;\r\n                boolean z109 = true;\r\n                boolean z110 = true;\r\n                boolean z111 = true;\r\n                boolean z112 = true;\r\n                int dimensionPixelSize = 0;\r\n                while (i102 < indexCount) {\r\n                    try {\r\n                        int index = typedArrayObtainStyledAttributes.getIndex(i102);\r\n                        if (index == z6.a.f370834b) {\r\n                            bVar.w(c(typedArrayObtainStyledAttributes, index));\r\n                        } else if (index == z6.a.f370840h) {\r\n                            bVar.E(a(context2, typedArrayObtainStyledAttributes, index));\r\n                        } else if (index == z6.a.f370842j) {\r\n                            bVar.G(a(context2, typedArrayObtainStyledAttributes, index));\r\n                        } else if (index == z6.a.f370844l) {\r\n                            bVar.H(a(context2, typedArrayObtainStyledAttributes, index));\r\n                        } else if (index == z6.a.f370836d) {\r\n                            bVar.z(typedArrayObtainStyledAttributes.getInt(index, 0));\r\n                        } else if (index == z6.a.D) {\r\n                            bVar.y(typedArrayObtainStyledAttributes.getFloat(index, 0.0f));\r\n                        } else if (index == z6.a.f370841i) {\r\n                            bVar.F(c(typedArrayObtainStyledAttributes, index));\r\n                        } else if (index == z6.a.f370846n) {\r\n                            bVar.J(a(context2, typedArrayObtainStyledAttributes, index));\r\n                        } else if (index == z6.a.f370847o) {\r\n                            bVar.K(c(typedArrayObtainStyledAttributes, index));\r\n                        } else if (index == z6.a.f370837e) {\r\n                            bVar.A(a(context2, typedArrayObtainStyledAttributes, index));\r\n                        } else if (index == z6.a.f370838f) {\r\n                            bVar.B(c(typedArrayObtainStyledAttributes, index));\r\n                        } else if (index == z6.a.f370845m) {\r\n                            bVar.I(c(typedArrayObtainStyledAttributes, index));\r\n                        } else if (index == z6.a.f370843k) {\r\n                            integer = typedArrayObtainStyledAttributes.getInteger(index, integer);\r\n                        } else if (index == z6.a.f370835c) {\r\n                            bVar.x(a(context2, typedArrayObtainStyledAttributes, index));\r\n                        } else if (index == z6.a.f370839g) {\r\n                            bVar.C(a(context2, typedArrayObtainStyledAttributes, index));\r\n                        } else if (index == z6.a.f370848p) {\r\n                            b(bVar).v(typedArrayObtainStyledAttributes.getBoolean(index, false));\r\n                        } else if (index == z6.a.f370858z) {\r\n                            dimensionPixelSize = typedArrayObtainStyledAttributes.getDimensionPixelSize(index, dimensionPixelSize);\r\n                        } else {\r\n                            int i103 = dimensionPixelSize;\r\n                            if (index == z6.a.f370854v) {\r\n                                z105 = typedArrayObtainStyledAttributes.getBoolean(index, z105);\r\n                            } else if (index == z6.a.f370855w) {\r\n                                z107 = typedArrayObtainStyledAttributes.getBoolean(index, z107);\r\n                            } else if (index == z6.a.f370850r) {\r\n                                z111 = typedArrayObtainStyledAttributes.getBoolean(index, z111);\r\n                            } else if (index == z6.a.f370851s) {\r\n                                z109 = typedArrayObtainStyledAttributes.getBoolean(index, z109);\r\n                            } else if (index == z6.a.f370856x) {\r\n                                z106 = typedArrayObtainStyledAttributes.getBoolean(index, z106);\r\n                            } else if (index == z6.a.f370853u) {\r\n                                z108 = typedArrayObtainStyledAttributes.getBoolean(index, z108);\r\n                            } else if (index == z6.a.f370852t) {\r\n                                z112 = typedArrayObtainStyledAttributes.getBoolean(index, z112);\r\n                            } else {\r\n                                if (index == z6.a.f370849q) {\r\n                                    z110 = typedArrayObtainStyledAttributes.getBoolean(index, z110);\r\n                                } else if (index == z6.a.f370857y) {\r\n                                    dimensionPixelSize = i103;\r\n                                    b(bVar).s(typedArrayObtainStyledAttributes.getColor(index, 0));\r\n                                } else {\r\n                                    dimensionPixelSize = i103;\r\n                                    if (index == z6.a.C) {\r\n                                        b(bVar).p(typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0));\r\n                                    } else if (index == z6.a.A) {\r\n                                        b(bVar).o(typedArrayObtainStyledAttributes.getColor(index, 0));\r\n                                    } else if (index == z6.a.B) {\r\n                                        b(bVar).t(typedArrayObtainStyledAttributes.getDimensionPixelSize(index, 0));\r\n                                    }\r\n                                }\r\n                                i102++;\r\n                                context2 = context;\r\n                            }\r\n                            dimensionPixelSize = i103;\r\n                        }\r\n                        i102++;\r\n                        context2 = context;\r\n                    } catch (Throwable th) {\r\n                        th = th;\r\n                        typedArrayObtainStyledAttributes.recycle();\r\n                        context.getResources().getConfiguration().getLayoutDirection();\r\n                        throw th;\r\n                    }\r\n                }\r\n                boolean z113 = false;\r\n                typedArrayObtainStyledAttributes.recycle();\r\n                if (context.getResources().getConfiguration().getLayoutDirection() == 1) {\r\n                    z104 = z105 && z108;\r\n                    z100 = z107 && z106;\r\n                    z101 = z109 && z112;\r\n                    if (z111 && z110) {\r\n                        z113 = true;\r\n                    }\r\n                } else {\r\n                    z104 = z105 && z106;\r\n                    z100 = z107 && z108;\r\n                    z101 = z109 && z110;\r\n                    if (z111 && z112) {\r\n                        z113 = true;\r\n                    }\r\n                }\r\n                z103 = z113;\r\n                i100 = integer;\r\n                z102 = z104;\r\n                i101 = dimensionPixelSize;\r\n            } catch (Throwable th10) {\r\n                th = th10;\r\n            }\r\n        } else {\r\n            z100 = true;\r\n            i100 = 0;\r\n            i101 = 0;\r\n            z101 = true;\r\n            z102 = true;\r\n            z103 = true;\r\n        }\r\n        if (bVar.n() != null && i100 > 0) {\r\n            bVar.H(new i7.b(bVar.n(), i100));\r\n        }\r\n        if (i101 > 0) {\r\n            b(bVar).q(z102 ? i101 : 0.0f, z100 ? i101 : 0.0f, z101 ? i101 : 0.0f, z103 ? i101 : 0.0f);\r\n        }\r\n        return bVar;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "0b1c934da72a5843f3023a30567ad5c137c18ac57b06da9508c94436a28c646c",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}
