@@ -1,0 +1,16 @@
+    public final void H6(CharSequence charSequence, SpannableStringBuilder spannableStringBuilder) {
+        if (PatchProxy.proxyVoid2Para(charSequence, spannableStringBuilder, this, NoteDetailContentPresenter.class, 290812)) {
+            return;
+        }
+        if (charSequence != null) {
+            O6(charSequence);
+        }
+        boolean z100 = false;
+        P6(charSequence != null);
+        o.q(w6());
+        NoteDetailTextView contentTextView = ((TextContentView) w6()).getContentTextView();
+        if (spannableStringBuilder != null && (!StringsKt__StringsJVMKt.isBlank(spannableStringBuilder))) {
+            z100 = true;
+        }
+        o.r(contentTextView, z100, new a(spannableStringBuilder));
+    }

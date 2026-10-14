@@ -1,0 +1,6 @@
+    public final void P6(boolean z100) {
+        if (PatchProxy.proxyVoid1Para(new Boolean(z100), this, NoteDetailContentPresenter.class, 290809)) {
+            return;
+        }
+        ((TextContentView) w6()).setTitleVisible(z100);
+    }

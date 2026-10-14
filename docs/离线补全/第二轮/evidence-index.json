@@ -1,0 +1,1370 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-14",
+  "appVersion": "8.72.0",
+  "versionCode": "8720916",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "scope": "Android non-shopping detail layout; static artifact analysis and separately indexed emulator observations",
+  "counts": {
+    "reaEvidence": 55,
+    "methodQueries": 39,
+    "availableBodies": 36,
+    "unavailableBodies": 3,
+    "auxiliary": 20
+  },
+  "records": [
+    {
+      "id": "A010-fold-condition",
+      "evidenceId": "ev_aa049cec2ae08d5e5468e048b4cc257fd9e7f67580332256e8c3786accd2247d",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c",
+        "method_name": "n",
+        "overload_index": 0
+      },
+      "file": "evidence/A010-fold-condition.json",
+      "originalSha256": "de95fe1b01d284f0ae1bf174b8807383b2ec290afdef3e1c18f2a2aa24bdf4a2",
+      "publicSha256": "87416183e314b3c1631488c67c3df06a7f78a2c01830c0d810e7b776130ef272",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A010-fold-condition.java.txt",
+      "sourceSha256": "f11995971369c55351c1f47dbac711dc762df866fd862c650145d49bea6b98ff",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A011-device-category-initializer",
+      "evidenceId": "ev_b97217219120e51334c7deb946ffe19534da7b2e0520082c59b99d4514e6fbde",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c",
+        "method_name": "<clinit>",
+        "overload_index": 0
+      },
+      "file": "evidence/A011-device-category-initializer.json",
+      "originalSha256": "b4ee4e693c401693b580ae08279f3d9a7c846c9512aad2016c4d330d70097e02",
+      "publicSha256": "75411fbd497e1d9d0d7364ea8f467a7cc1299baa2e4a5e6cc98ecaef0d102e85",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A011-device-category-initializer.java.txt",
+      "sourceSha256": "76869ff8dc3ce42b13de9033ada0951121b10442508d86077f0c910ae208d8be",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A012-special-condition-f",
+      "evidenceId": "ev_df292c538fdfd4d9e3d44f543562400f7af6aa37af40a5b50de8554cfabad8fa",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c",
+        "method_name": "f",
+        "overload_index": 0
+      },
+      "file": "evidence/A012-special-condition-f.json",
+      "originalSha256": "8e2e7e2cbe7353f84cafbdbfbf3683de381961c3528a65775ef76a0252043340",
+      "publicSha256": "70dc803a32ade65085cd674dd6b2be034ced8a927828104bb3d167663a03b621",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A012-special-condition-f.java.txt",
+      "sourceSha256": "c77bb8b5ec7e753c278fc6f52123e0dee16249ddea2069ccf3efce0e9bf4d5af",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A013-special-condition-s",
+      "evidenceId": "ev_cbfaec51790152c98e885bbea637cbde7108dcdd42729d484781092460351349",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c",
+        "method_name": "s",
+        "overload_index": 0
+      },
+      "file": "evidence/A013-special-condition-s.json",
+      "originalSha256": "14f76937df530ae06a905a2b1b45c1e5ecbce5fcbaba14c94e4a3f477f2196d9",
+      "publicSha256": "67fe5c1ccd7fe9b8020937878087e09f70317ff04e5fa3d7b64f97dc6ee7142d",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A013-special-condition-s.java.txt",
+      "sourceSha256": "98eae5c7428eb443b5a9f67adca11bbff60573494045e4c6aecdd83719591e94",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A014-category-lambda-class",
+      "evidenceId": "ev_3b97c257fa4540f1c98a3cd5102c85996c8ec906817a4f2e76b54ea38219eff6",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c.a"
+      },
+      "file": "evidence/A014-category-lambda-class.json",
+      "originalSha256": "6d76103b6aa23a3ac7fe47f6099fa2f0fe39189e8ef122adbbd89e9f121380a5",
+      "publicSha256": "59ceb37ff483863f325c9519b5b29567a0d592c374d842b0504fde5d2d2c2b9f"
+    },
+    {
+      "id": "A015-gate-L",
+      "evidenceId": "ev_34395289c23374c0c6297f8bdbb627d4d36ca1387c58ffd0c83211e2851e30e9",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "k84.c",
+        "method_name": "L",
+        "overload_index": 0
+      },
+      "file": "evidence/A015-gate-L.json",
+      "originalSha256": "450194a939680ea32b2e1b622dbc644232a9b3714209e4b2e5932eeb8b69b64b",
+      "publicSha256": "12f15aa2340c34f182d0176a790234b6c96db7289ea7401184cf1e1b5eaa913c",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A015-gate-L.java.txt",
+      "sourceSha256": "6c20c0fb046a48e14ada8527c23c9a7d1b7e35036ab6b76c3d09d05b158da6da",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A016-gate-Q",
+      "evidenceId": "ev_74dfafed92431ca760bba3823f726f12b276a6a0b09a161fba3af6f0f0a034e0",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "k84.c",
+        "method_name": "Q",
+        "overload_index": 0
+      },
+      "file": "evidence/A016-gate-Q.json",
+      "originalSha256": "0abbece6add4d13471ee3000f642b1cba0821b148998f93b0ddabf7ad96822b7",
+      "publicSha256": "a37e31564da439615907189186962fea8979c706a32e547b30a31c9de621fe50",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A016-gate-Q.java.txt",
+      "sourceSha256": "c150749847cea5a498c0d7d8b828dd5435f74bf6e25b779116294782705fe274",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A017-category-property",
+      "evidenceId": "ev_492125847d8932713ac43be9d8f649ade0ea56678664c236a07b3d66b88687da",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c.a",
+        "method_name": "invoke2",
+        "overload_index": 0
+      },
+      "file": "evidence/A017-category-property.json",
+      "originalSha256": "693ba192f6f83facc5901bd9ea05fdffa5b708fa94011ec552c9e98adcdcbe4e",
+      "publicSha256": "03a01b5c672b0fbe29bc912a6531dbb2ac14da69d851d8dd51e96ebd66863037",
+      "bodyStatus": "not_available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A017-category-property.java.txt",
+      "sourceSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A018-special-condition-g",
+      "evidenceId": "ev_ac493019d9e05f870600e8dd04fa28dd7bc70ccae4e75728f4e18574f3ff8d51",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c",
+        "method_name": "g",
+        "overload_index": 0
+      },
+      "file": "evidence/A018-special-condition-g.json",
+      "originalSha256": "1d02afc0681195edbd28f7f4639bab878e684228e1d5853b6882af44b4a7bb66",
+      "publicSha256": "9caedf69409cade4c6a363dae0d3bff6916c9b6e2ea23605e814ec452ad9f00c",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A018-special-condition-g.java.txt",
+      "sourceSha256": "a44ce73817eeb936b71fe4328b16b9c9b3bd1454bc776e730095b4c63dcc89d4",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A019-special-lambda-class",
+      "evidenceId": "ev_4d52595deec25a2357990cdb918ae1ff3a1348477ee70a8ca8fb2ded35512aa7",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c.b"
+      },
+      "file": "evidence/A019-special-lambda-class.json",
+      "originalSha256": "3a7498d5960d080db59c617e66d4d020e8f0332e233b44fba7e8bde4af0c5d44",
+      "publicSha256": "a98c9d9f30c0bccbe602a6d37553fea8370c0f295848a0be09f1cf848fc00039"
+    },
+    {
+      "id": "A020-category-property-invoke",
+      "evidenceId": "ev_1f1ebd1d36b9a28108e757c2eb16ffea8724abc79d92f10068636f6e0237a6ec",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c.a",
+        "method_name": "invoke",
+        "overload_index": 0
+      },
+      "file": "evidence/A020-category-property-invoke.json",
+      "originalSha256": "151d1a414cadfc152ade18857aa31d3efb09b93ce0745d409e7691ab5d045299",
+      "publicSha256": "d18422d8c2e495f1c691abce3c752f853ffa692a81de4bd049f8da4f7930cb04",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A020-category-property-invoke.java.txt",
+      "sourceSha256": "af267b393c79b3fe5b2c78e2aeb0d708798cc2b980b6122301a353bdb2a45f17",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A021-special-lambda-b0",
+      "evidenceId": "ev_d06487292440e8da4993f5cd931fc164489cb6df4cd4b3729af336003f53f1e7",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c.b",
+        "method_name": "invoke",
+        "overload_index": 0
+      },
+      "file": "evidence/A021-special-lambda-b0.json",
+      "originalSha256": "1235b9c8b1421aff906a2fad6aeae8502051b67e118e9b279860fb9482168d7b",
+      "publicSha256": "56175d8dfbc796f1a01a5f715a9794f4c28529574a5f31b9b7be11a3a576fcd7",
+      "bodyStatus": "not_available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A021-special-lambda-b0.java.txt",
+      "sourceSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A022-special-lambda-b1",
+      "evidenceId": "ev_cf8666da2e3956be87f3edb60f93d2f95c10470b16e9b6e2bddedb39ddad663c",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c.b",
+        "method_name": "invoke",
+        "overload_index": 1
+      },
+      "file": "evidence/A022-special-lambda-b1.json",
+      "originalSha256": "57ddbe205345dbbdcb58ad7866975fdffc1e284c09a2dce89f7aac3aefcb26d0",
+      "publicSha256": "1cab56dcf9fde2edc08ec5be16445fd8dd49be343034317ca81dba16cbc8c35e",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A022-special-lambda-b1.java.txt",
+      "sourceSha256": "e42d588e950e6167b8363d9ac015ee3e503935c0f6295a217f326f8d38880c9b",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A023-special-lambda-c-class",
+      "evidenceId": "ev_99a09ae70b4642524331599d0bfba9fd90594324d637ca9e2d0dcac757be95ae",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c.C7068c"
+      },
+      "file": "evidence/A023-special-lambda-c-class.json",
+      "originalSha256": "caf5c100af7f2f08f8c54e1963a1c4a81dac6cfab6cc96f9b6e88c3fc40bfbc2",
+      "publicSha256": "2df136012badecd63c8f174b89634b2821ea368efe111493bc84f20372be4a93"
+    },
+    {
+      "id": "A024-special-lambda-c1",
+      "evidenceId": "ev_2c4b89c5f544019fc12dd4fb4e30aaf40c103b7737a7314787a1da7534dba106",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c.C7068c",
+        "method_name": "invoke",
+        "overload_index": 1
+      },
+      "file": "evidence/A024-special-lambda-c1.json",
+      "originalSha256": "db15a80aaba4019db2ba283db5f15f19b5575e4b3811d76deafe06b7acc705a8",
+      "publicSha256": "33d1c0501c53eea30948cb2d64a3cdf7d6b853738faa5f2c6ddeac1622312867",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A024-special-lambda-c1.java.txt",
+      "sourceSha256": "3fa707a024761299b9c6a7cfb89514fa9c0193259c732f30e321a3598043ecba",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A025-default-pad-condition",
+      "evidenceId": "ev_4ed47d740dc1140eee86244402ff42d26deef443f39f425a2df018f3f81e8c18",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c",
+        "method_name": "u",
+        "overload_index": 0
+      },
+      "file": "evidence/A025-default-pad-condition.json",
+      "originalSha256": "b0157931eceb587a5c3da440df2b8d10e2a4f60996551a83252066985eef4883",
+      "publicSha256": "dadd206e11a2a9022f335a073492f2518c3872616fbcae493a5f993b1ef5f268",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A025-default-pad-condition.java.txt",
+      "sourceSha256": "79e79a6e8323f027c78c2afd0c8f2574e728891cc67534a68a0100d93873b8aa",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A026-device-list-key",
+      "evidenceId": "ev_edac91801242b889f2780eaf2426681242c8f4b2471d2cd1e0e18055a3ddfebc",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c",
+        "method_name": "b",
+        "overload_index": 0
+      },
+      "file": "evidence/A026-device-list-key.json",
+      "originalSha256": "0a767c8a0146e168ca9ebc2d2800da4dd434193d178a4f0b17817db42ec0c743",
+      "publicSha256": "f8ed208bbec240917dd5d1976cfe43748cc599d447d0be3e15b9d7eb6549182a",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A026-device-list-key.java.txt",
+      "sourceSha256": "468dea049bc68005de9aed4f511f45a63eace8cb501567e070f39ba5763835fb",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A027-default-pad-v",
+      "evidenceId": "ev_37eb587b0c3ec02403b6cd3fb83c1dd6d7e1246b622c3c77a822bb5762b8e075",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c",
+        "method_name": "v",
+        "overload_index": 0
+      },
+      "file": "evidence/A027-default-pad-v.json",
+      "originalSha256": "d846ca58c775c4cb6f7d7cd8e0d3021b20ddf0a5fcc801b3adc3f8dd1dd70ccc",
+      "publicSha256": "16db5e1a6afec93cb782bfeeaaf3e6740371bd6a8ed4fff3770c58a6266b1a90",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A027-default-pad-v.java.txt",
+      "sourceSha256": "5230eb247f076cf9c51c6807fe2312d950eee4d0e2b19c91fd47ed8d94bf66e4",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A028-default-pad-w",
+      "evidenceId": "ev_dc09a7a6798d97553b6de227555870d7ce3d23d55dfdac990fbaf8c5a2c29cdb",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "so.c",
+        "method_name": "w",
+        "overload_index": 0
+      },
+      "file": "evidence/A028-default-pad-w.json",
+      "originalSha256": "edac3ef9d6604ebd99e06838f4fe562d40bc336e0f390734697f652ec72bf9d2",
+      "publicSha256": "cd3d9e17eca41958bd4b353ad9cd697825aa205cdd8ec603d4b2d374b639e508",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A028-default-pad-w.java.txt",
+      "sourceSha256": "0e7594a0dd375e18703058bdc991d178ced50a8f71fed8cb582173aaf15414cb",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "A029-device-measurement",
+      "evidenceId": "ev_1139fa0b3a426deef2eb133f9480aa9a6b792455e7c8b1f2a6af1a97f6fc4eab",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "xo.d",
+        "method_name": "c"
+      },
+      "file": "evidence/A029-device-measurement.json",
+      "originalSha256": "5deac35b115a5719de070216747d7ab2f11399e5883940398cfdeadf593462ac",
+      "publicSha256": "8e6382a0bcb958d81f8de8a5bb6810dac6d9cdbca7eb9b6084f92b855619eff0",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/A029-device-measurement.java.txt",
+      "sourceSha256": "bc4458fd2fe254500b7176f30db7bafe74a9e037ba738fcf0fb44ae95e561390",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F101-detail-content-class",
+      "evidenceId": "ev_8195602b2dcf64e7063d9210edacfd8b7ada905b3efd7e49ce07f5ed45201a3c",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter"
+      },
+      "file": "evidence/F101-detail-content-class.json",
+      "originalSha256": "78a552c554903f3f68bba489fae2599c2760e734f503f45d7bd51a25414a954e",
+      "publicSha256": "2efea3a1736e80f121554c4e1ab6162e89bc9fd8293bfa613ceca81fc9726896"
+    },
+    {
+      "id": "F102-detail-content-view-class",
+      "evidenceId": "ev_05a05787c5862153e88b6edc4096cd6c7446489fc7402688a06269f2d019632f",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.matrix.notedetail.notewithcomment.notecontentnew.NoteDetailContentNewView"
+      },
+      "file": "evidence/F102-detail-content-view-class.json",
+      "originalSha256": "2dcf72f2af5447dd67f1fd92d8a0e1d6e3cfa8c3cab7f70252a0570d2ac75c55",
+      "publicSha256": "30aa5fb458461126574900a752e14a1770efb298184f86316ac454fe7fab8a08"
+    },
+    {
+      "id": "F104-detail-content-attach",
+      "evidenceId": "ev_34830edf3cc6afcab0bbc9d5349950b965e8c6305df4ea38380af921c9d2a243",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter",
+        "method_name": "x6"
+      },
+      "file": "evidence/F104-detail-content-attach.json",
+      "originalSha256": "e7fd4d2772e3f05592aace6b9b1783757b1ad0a22d3ebd684289c5a557bba814",
+      "publicSha256": "5d312654dd1b77737ab7c4a13597d9d69553890ed8f7d5ad333379be087b9c95",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F104-detail-content-attach.java.txt",
+      "sourceSha256": "fa3b543f4174ea695bf333d814cc35e730490c79c6db153028fdcb74d0019c99",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F105-detail-content-bind",
+      "evidenceId": "ev_6c5d2bb6cf1691b065a563b73e3419eecedb2653fcfbbf7a3db3d2c742e89caf",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter",
+        "method_name": "I6"
+      },
+      "file": "evidence/F105-detail-content-bind.json",
+      "originalSha256": "65c1d6904b3c5741857afcf9c4db533fde32fad39c371ba7606cd5a9b9cb4854",
+      "publicSha256": "3b00118f16674af6614ada440248e0243be5d51edcfad8d0937f6dec1af6e01a",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F105-detail-content-bind.java.txt",
+      "sourceSha256": "6dd0242bea2ea287e581d82fc7d1139d04c00835334734f105559a711749c253",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F106-detail-content-span",
+      "evidenceId": "ev_36679bcea75a7d45b7848754ef76a4a882e5ef7e7069e89bbc3d800de877d7ec",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter",
+        "method_name": "H6"
+      },
+      "file": "evidence/F106-detail-content-span.json",
+      "originalSha256": "99c2050c80bfce42a77c2f0e09b749543b27871397642b5a8ea4ec413f919fcd",
+      "publicSha256": "f4ea29304cca2682edb3032345aa16434cd436bc06104e55935b02b6f9d961c8",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F106-detail-content-span.java.txt",
+      "sourceSha256": "5d91df14bcff56f433f4413b1fd3f22a51b12eae557e34c294c9c465c5700cac",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F107-comment-content-search",
+      "evidenceId": "ev_2377ab5415544d7fc03f466736cfcb7f576d6d6ef3cc692792a7086f10aafab3",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "search_android_classes",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "query": "CommentContent"
+      },
+      "file": "evidence/F107-comment-content-search.json",
+      "originalSha256": "fc1c16acda4ffcf078bf35b2a301791ad5e8ffef26c8de535bbc77cf8eaa7751",
+      "publicSha256": "5090e7cf228ebc20b82f0a561ba25094532881c74e6503fe8da69e5369cf1514"
+    },
+    {
+      "id": "F108-detail-title-bind",
+      "evidenceId": "ev_b1d53dac43e1c95cc6b7ab98a2c568987bdd2c4bdff059656fe354e812a5256e",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter",
+        "method_name": "O6"
+      },
+      "file": "evidence/F108-detail-title-bind.json",
+      "originalSha256": "bc059459ef0a0d1a5f5a975ee412a8373fcc5459d6403fac890afab8dbbb0127",
+      "publicSha256": "3a216b58eb5869e6010d902abcda4cd586f7bab3a6d04a2934c2d84c3a8df9d3",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F108-detail-title-bind.java.txt",
+      "sourceSha256": "8bc07042f28ad8c6c10b3810f9af1da8800e3ef3e3ef2810ef4defb9d13d5be5",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F109-detail-title-layout",
+      "evidenceId": "ev_f38feccbd8ce2816bf0b03fcc4b564feb703951c32283b787750633db352c31b",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter",
+        "method_name": "P6"
+      },
+      "file": "evidence/F109-detail-title-layout.json",
+      "originalSha256": "110dfb612881e2d9b64a37f99addac5808ff744e8559b734df08e9d14f5c5cef",
+      "publicSha256": "a4da66136a9aff05a4146045fb677fe68b6db7bd89c096d349ee809860af2169",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F109-detail-title-layout.java.txt",
+      "sourceSha256": "d630b7d45d9e0885d2d2b4f580c083ab1adf94d8e8410003214054a879be63f1",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F110-text-content-search",
+      "evidenceId": "ev_466a4febe9876ca4e8a7dafed96e85cb2f033d6baf93283d39a742ee705c6de4",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "search_android_classes",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "query": "TextContentView"
+      },
+      "file": "evidence/F110-text-content-search.json",
+      "originalSha256": "2425083afb13194d9fa3ce6cd5650e6bece7e12ff8a5b5107f68389e280ec4f8",
+      "publicSha256": "ea5de17b73b7f9ab8f07b3959401b3aa25ba5616fc24751319ee674551bfc609"
+    },
+    {
+      "id": "F111-detail-text-search",
+      "evidenceId": "ev_df7fcfadbeaac72ccb625060ea6ddc7da1de56a491d2039eefe047568b3ec0b7",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "search_android_classes",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "query": "NoteDetailTextView"
+      },
+      "file": "evidence/F111-detail-text-search.json",
+      "originalSha256": "8d537932202a899f8b1d11ede7f4ef217d30bd428613f85f8ab0a4c4d5163d85",
+      "publicSha256": "c576558dcb08fd3e4028899168359f6653ed529dbd7dbe3cd07564893cb423e2"
+    },
+    {
+      "id": "F112-text-content-class",
+      "evidenceId": "ev_79e20e00584450f6757afffee896dc15fcfe5095276b0fb218cb34e38be97e30",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.matrix.notedetail.imagecontent.textcontent.view.TextContentView"
+      },
+      "file": "evidence/F112-text-content-class.json",
+      "originalSha256": "57cbd760524e5af46808437485f16fd1288631ed530b1656a1d2acb438b9e184",
+      "publicSha256": "0bc04ca02f5dc61dc53aba9d8ec8e50b4b2264ab8ec57a3da23a36c384cdaa2f"
+    },
+    {
+      "id": "F113-note-text-class",
+      "evidenceId": "ev_6c227e70d3a72e35ef86b6ab5c22fad163519b7fc901f689a53b0a4b7b245211",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.matrix.notedetail.imagecontent.textcontent.view.NoteDetailTextView"
+      },
+      "file": "evidence/F113-note-text-class.json",
+      "originalSha256": "6cfbf3c5d8ab1a845fdc0cf25d8de0a0671db483530cef9ce1cbf4708f6e0121",
+      "publicSha256": "a4d705fe916672d048d13e64066ff4c65eeb7a50722d9af733d6bc0387ffada9"
+    },
+    {
+      "id": "F114-text-content-init",
+      "evidenceId": "ev_e3c5bc64390a4ca40d64f39f8eba5f4fe11090eef23077ef416b9aec22292ff1",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.matrix.notedetail.imagecontent.textcontent.view.TextContentView",
+        "method_name": "<init>",
+        "overload_index": 1
+      },
+      "file": "evidence/F114-text-content-init.json",
+      "originalSha256": "67f636dcfa3592753e870bc0961e06bbd397fa0024b5082b47be88cdf2d2a77b",
+      "publicSha256": "c219f32002b201ba20b122e6d1d844725f08cdb7fb99c97e852490d1deaca230",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F114-text-content-init.java.txt",
+      "sourceSha256": "f628fb77eb640bb9089b7b98ebd778ff0d38398a8fe6878234bca09ba1144100",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F115-text-content-title-visible",
+      "evidenceId": "ev_3de1a46d05a618b6f26b9d37cb4387bca96301ec227caaf72051fdb7e1d68ca8",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.matrix.notedetail.imagecontent.textcontent.view.TextContentView",
+        "method_name": "setTitleVisible"
+      },
+      "file": "evidence/F115-text-content-title-visible.json",
+      "originalSha256": "2631c994f31d01c36a925a84d8a52ec095cea4f9273576313ab6230967f903f6",
+      "publicSha256": "c39ba7620f48150fe5c8096bba9a5848effbae9613b89104d0201ba397c32fd8",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F115-text-content-title-visible.java.txt",
+      "sourceSha256": "26c703631a25bd439ecc8fc915433fcda3e00ecb1aed645d995f84c9a7308022",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F116-note-text-init",
+      "evidenceId": "ev_528dfe08923f7df65e33ca793afec68ef7d92834b5c381a29b754af48a6e20a8",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.matrix.notedetail.imagecontent.textcontent.view.NoteDetailTextView",
+        "method_name": "<init>",
+        "overload_index": 1
+      },
+      "file": "evidence/F116-note-text-init.json",
+      "originalSha256": "1b0e6e530adee3c38c1b271abeda79a613e591b78695abf94adee806037fa67e",
+      "publicSha256": "d54490357637051fcf96c18072146885eb7a1bc81497716e7fc6ac785e6d9868",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F116-note-text-init.java.txt",
+      "sourceSha256": "c886b2fabada08640c02addd965f1654882fa3072739e8482a5500560f5b9c12",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F117-text-format-helper-class",
+      "evidenceId": "ev_0355f8879941c69919ccd7d5eef0ea469e1f5518010051717677ca48a3377594",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "gt7.h"
+      },
+      "file": "evidence/F117-text-format-helper-class.json",
+      "originalSha256": "5206275782282b6e5415239699593f5479ebc8492067a24cefa3b3b26f61d031",
+      "publicSha256": "5522019bb4d88d6f9033c8531faee6458bf592614dc1972635b891995ee73fed"
+    },
+    {
+      "id": "F118-text-content-body-callback-class",
+      "evidenceId": "ev_f2ad5715bc19ecf3b58c09c9a8843616dfb2ea2b2d4bf37a62a3d6bf5110e6c3",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter.a"
+      },
+      "file": "evidence/F118-text-content-body-callback-class.json",
+      "originalSha256": "03f84e1f87f0bfe6ad0995f7bf7838dd41462676da42bba8ebd204e37836301d",
+      "publicSha256": "e6b9f47212a5f52a614f83e23054799720be22e59d0ea54253c621229a450fac"
+    },
+    {
+      "id": "F119-text-token-class",
+      "evidenceId": "ev_8ac4ad7cd52e37848c79f7fc8cf893fb47c961c3f19b9571200a4be8a7e0971e",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView"
+      },
+      "file": "evidence/F119-text-token-class.json",
+      "originalSha256": "749482261406f4605582581167892306fe9ecdb80afec8d88b55682ab1667b67",
+      "publicSha256": "1ea0819ae11bfce17d3b7f2b77768f573b80e924fd23c226f1967ad54856aaa2"
+    },
+    {
+      "id": "F120-text-format-apply",
+      "evidenceId": "ev_2a323187f3d0e33ddee8197abe31f77803cea61a5b889a0305421af7a8aa63b4",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "gt7.h",
+        "method_name": "a"
+      },
+      "file": "evidence/F120-text-format-apply.json",
+      "originalSha256": "f453898d2ba1826c38529aa6d0c96024937af34ca6dcbf30cb2f89538c27b98d",
+      "publicSha256": "aa8e4540a9230ea299359c4dab34d336a136ef6bf0609c0567270b58ecb3de3e",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F120-text-format-apply.java.txt",
+      "sourceSha256": "ce634de4e6e61bd3836ad7d6315f245a4bc131d6363b49081e830481dfeeaf6b",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F121-text-format-defaults",
+      "evidenceId": "ev_68bc1e986e1590ca41960182dfbe2dbb891bb7dcadcde6adc0bc5cde0c2aee47",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "gt7.h",
+        "method_name": "b"
+      },
+      "file": "evidence/F121-text-format-defaults.json",
+      "originalSha256": "11392489a9cc73ee95c77c81a0760810afc068b8451fab4c54bbfb032796e586",
+      "publicSha256": "a46010c65db35edae7f3d598442bee5af4514149d818d893f46fead441f48231",
+      "bodyStatus": "not_available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F121-text-format-defaults.java.txt",
+      "sourceSha256": "b0ecf94d5c076e5859635541efb266166fa68b82b84e9d9334c6ebf17043e908",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F122-text-content-body-callback",
+      "evidenceId": "ev_e18cf0909c480027fdc0902e22a7b02f2edf8ff1eb4713b22f0efd11f4368a37",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter.a",
+        "method_name": "a"
+      },
+      "file": "evidence/F122-text-content-body-callback.json",
+      "originalSha256": "83e0e40c225a30cbaaf0daadb2688003f20a333af486978a3841d56b50355035",
+      "publicSha256": "2fc66d8a6fc92b4ae53557615a54b26ca385a473c0d1b26bd8d8cce38f38f018",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F122-text-content-body-callback.java.txt",
+      "sourceSha256": "74b571cedd37d822909f6d87b9a6917fdf02fd7141b9082b3d713aec0f869d06",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F123-text-token-init",
+      "evidenceId": "ev_b91226981b5183c734da6fba3cbf8e0c3a4051cbad70fe7dce77f393572b08c9",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView",
+        "method_name": "<init>",
+        "overload_index": 1
+      },
+      "file": "evidence/F123-text-token-init.json",
+      "originalSha256": "23379e589a8b32296b9cf205160866a7e2378d4521127c7ca7ef10d1142d0c41",
+      "publicSha256": "934db7edd02c33d916f388c3b6380a9b2b23e74c69b4a3f6feacb39921af8f5e",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F123-text-token-init.java.txt",
+      "sourceSha256": "3b0bb0105d017fcdf167171c7296dbdfb0c79653fc18345f0c0ff191b1b329c2",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F124-text-token-apply",
+      "evidenceId": "ev_d12f4dd06d01a767714522fdfe382db21e345b1e8ebb10dc7c529bdcdc83af27",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView",
+        "method_name": "d"
+      },
+      "file": "evidence/F124-text-token-apply.json",
+      "originalSha256": "ef9216a1253e6fddd47b006ebc3b3bd203e8adaab14ca3bccf201155a69c9720",
+      "publicSha256": "0684bfb613cf7d5116fe88357095032d51fa4e02ccf15cd32b89a93db134e8b0",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F124-text-token-apply.java.txt",
+      "sourceSha256": "4be0ef3a22e26482cff6aea68ca41a0a8a217deb16421c4bc2f05bd44894c68a",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F125-text-token-set-text",
+      "evidenceId": "ev_f0815629a9d17f85ce1c9f0a3ad4e0d37eb08b09bb2240dcf94caf3e5edc1ce6",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView",
+        "method_name": "setText"
+      },
+      "file": "evidence/F125-text-token-set-text.json",
+      "originalSha256": "0f65ba3a3ad49727155bcc548a1d5cbd62f3bb065f754073a7fb64aa544d3172",
+      "publicSha256": "bd35098ddf0d426184761a18601a310cc4facb685c0c2860301ddaab3a12e0a7",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F125-text-token-set-text.java.txt",
+      "sourceSha256": "7869c8a6642d28cfd1c1c74e8b4e484bd52f8a8c446ba871e2af9d1c83886a80",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F126-note-text-token-condition",
+      "evidenceId": "ev_f341ff45867c1c66e2e422732f5440736f4f818e57de9060d17073bf2a790287",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.matrix.notedetail.imagecontent.textcontent.view.NoteDetailTextView",
+        "method_name": "c"
+      },
+      "file": "evidence/F126-note-text-token-condition.json",
+      "originalSha256": "b649f7f551d8f76ad9fe141bfede8c80ce2df98051b0dbeeb9b4925adcba0231",
+      "publicSha256": "5cf4492e1c82aa8f935a518775dcecf04a838fb7502d7946d1b504d92f8b8f4e",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F126-note-text-token-condition.java.txt",
+      "sourceSha256": "4f5a1f71bb50766bfd746ec991cadb036841c397189e07112d61d10ab176be5e",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "F127-text-token-condition",
+      "evidenceId": "ev_49ea1615c9559a14bde4187bea13284903131c304e63fb1c52b9d58f9add0f9f",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView",
+        "method_name": "c"
+      },
+      "file": "evidence/F127-text-token-condition.json",
+      "originalSha256": "a951ab647c56773a055cf41b81aef3abaf418b9c8b90507f6497cc4cb3825436",
+      "publicSha256": "5e747b18bc838823bb57caa4bc20cfb31ca1933053751df42aa0d9a2f813342f",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/F127-text-token-condition.java.txt",
+      "sourceSha256": "33f64824f969e746dedb4654700197005af65cccb57b22723a31ccc18b9e926a",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "W101-q68-o1-class",
+      "evidenceId": "ev_4a36d9685a9d918c4338e7cfd99f463ccd9c7836f59a146b78789536c63f9d92",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "q68.o1"
+      },
+      "file": "evidence/W101-q68-o1-class.json",
+      "originalSha256": "b0e48b7fe1583b7e8b3d257a44c6e2655f9497d06e8ea282d06e8d8d6fa3a1b7",
+      "publicSha256": "8bd0cd5f66e54bd9f3519d71a8849a383849860339c67af296b77b5bb2c67d45"
+    },
+    {
+      "id": "W102-q68-o1-f",
+      "evidenceId": "ev_faf938f53776b8b2babf08a17f063cc197bd409e3c124fbc4242fc526efe6a6d",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "q68.o1",
+        "method_name": "f",
+        "overload_index": 0
+      },
+      "file": "evidence/W102-q68-o1-f.json",
+      "originalSha256": "2db2c5deae77a8a451d31e32e2d7f870e2f22498cf75116512de5d22b3628447",
+      "publicSha256": "55eca6f995382bdf0d80c698db7e43e77fe888e681d29ff068f8d9e79a2fbbb0",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/W102-q68-o1-f.java.txt",
+      "sourceSha256": "75dd55ddd09c173cc4f2b1b9c33fc9d542834f65a8f1b768a6c9fe24610dc1e5",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "W103-q68-o1-e",
+      "evidenceId": "ev_d78b1465a1472a8d2cd4079f2b813e0707ec077ab8dd5ef090c1bb95546f29e9",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "q68.o1",
+        "method_name": "e",
+        "overload_index": 0
+      },
+      "file": "evidence/W103-q68-o1-e.json",
+      "originalSha256": "2020d268fa91e383ae33d157ade538b6e88d9ea4cfa457f55ff00a013120f44f",
+      "publicSha256": "c6f9fb4952f046b0a37b427abc8f67e9459ef951847dff4f0108bf09ba94aef3",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/W103-q68-o1-e.java.txt",
+      "sourceSha256": "224e85597931222c76fa5bfa671695d510b7ad4a2e26b8e84230fdf03e11cd28",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "W104-q68-o1-h",
+      "evidenceId": "ev_9c8a1e271da2fd3fc4323ed7d2233e9603361def9940a502a088513310395369",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "q68.o1",
+        "method_name": "h",
+        "overload_index": 0
+      },
+      "file": "evidence/W104-q68-o1-h.json",
+      "originalSha256": "2329389ccb7b7606ba72e70df8a66f5caafd41ba1eff9243a1b73bcbb69ee298",
+      "publicSha256": "8c1df1fd4e127c5bffc799a9d22fb0614b5ccd5792782a4ab8f569f01c70ed01",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/W104-q68-o1-h.java.txt",
+      "sourceSha256": "8cd1c94556c7653b55e1d5d6253eca8595942353a0980dca844f3f37a12d8271",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "W105-note-feed-class",
+      "evidenceId": "ev_709a85f244753131dbb028912aece18188393d6d4bb26ea484af85a589a4ed5d",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.entities.notedetail.NoteFeed"
+      },
+      "file": "evidence/W105-note-feed-class.json",
+      "originalSha256": "751c94fb6264e458bef274f9f5a29b09c0326c0e098ce8cd00687cca9194b001",
+      "publicSha256": "df2a427ce4ffb8e594ec9140cfe6d0e6807f2288700b0459101c89499e68aae8"
+    },
+    {
+      "id": "W106-note-feed-q0",
+      "evidenceId": "ev_f62de5a1c78980c88a4e542f5e24fef5ad0e9691245672e99a51f8fb02f9e781",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.entities.notedetail.NoteFeed",
+        "method_name": "q0",
+        "overload_index": 0
+      },
+      "file": "evidence/W106-note-feed-q0.json",
+      "originalSha256": "eac5051b283207a3007e24b7870ea068742ee06cea633ab3c2457e6e3fbbdd77",
+      "publicSha256": "a71c656b8a1a775a04ee1f733125c88bec1c6009e730b750f833104385ff1ce3",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/W106-note-feed-q0.java.txt",
+      "sourceSha256": "506532a95be3c6e52d36e74de54f02924af9dacc5d0877fce5dfa2a7695fb4a2",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "W109-image-bean-class",
+      "evidenceId": "ev_72222158858f156dac5879aaeff96e7645b070421468ec99c19624c1fa0c976e",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_class",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.entities.ImageBean"
+      },
+      "file": "evidence/W109-image-bean-class.json",
+      "originalSha256": "5c867b1222673dcc5ee92c1ac631e529a3e7e91dcb979b5c1a84c4ad80d50cb5",
+      "publicSha256": "c813d535e5ede809fcf3e32a7c111198ddbf925d09c6027e967b7f6a19097618"
+    },
+    {
+      "id": "W110-image-bean-width",
+      "evidenceId": "ev_ba4b053c50e8aa8b8d4200c6738475ae2ba83bc6a82733c890b4be5ad2a9ad3f",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.entities.ImageBean",
+        "method_name": "getWidth",
+        "overload_index": 0
+      },
+      "file": "evidence/W110-image-bean-width.json",
+      "originalSha256": "615d08555b3b3f8d36d0cb4aa92f43e79512cabe5c8509de84f19b3f79ac10dc",
+      "publicSha256": "7c2c5a5b86b56711706041d9b7ffb65763565b2a65d8f3c17fbe37b3d89f85dc",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/W110-image-bean-width.java.txt",
+      "sourceSha256": "ff2869c027162de2df377e9c3809c9a3cc406f7675bfbe0dbfe076d96eadcb7b",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    },
+    {
+      "id": "W111-image-bean-height",
+      "evidenceId": "ev_2036b35013e498715e948f6564b6b07dd86f61d4abcb47ca61eab03fd2d192aa",
+      "artifactSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "operation": "inspect_android_method",
+      "parameters": {
+        "path": "local-artifact/base.apk",
+        "class_name": "com.xingin.entities.ImageBean",
+        "method_name": "getHeight",
+        "overload_index": 0
+      },
+      "file": "evidence/W111-image-bean-height.json",
+      "originalSha256": "3977a640d6875048d523798649ccf29c07cadef0437f55d43309d3b014370cb0",
+      "publicSha256": "20bf102beac81609b783b4409463774611136ab565b20239cf715b85b3481f72",
+      "bodyStatus": "available",
+      "sourceStatus": "complete",
+      "representation": "java",
+      "markers": [],
+      "sourceFile": "evidence/W111-image-bean-height.java.txt",
+      "sourceSha256": "23461050b8c0cd01cd975cc132e3bff1a38f336a258f0da0b22fa74e539c9c7c",
+      "sourceTransformation": "LF line endings; trailing whitespace trimmed; Evidence retains source text"
+    }
+  ],
+  "auxiliary": [
+    {
+      "id": "FR104",
+      "file": "auxiliary/FR104-layout-candidates.json",
+      "originalSha256": "ac5d74a0459ccedc79a8d1c4acb7acdeab47d22e4217b277055676c2797998b6",
+      "publicSha256": "2f2d98205940afa246d96a2dc8991d9685822737b4e6050cd30b04cd69a430c0",
+      "producer": "JADX format parser or dexlib2; not REA Evidence",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "FR105",
+      "file": "auxiliary/FR105-text-content-layout.xml.txt",
+      "originalSha256": "e1ed06c06483172e8fdafbefcec4f376e7083610c6e31da0a689336b37ded262",
+      "publicSha256": "bb22fbfa9549fc93d3b5c851a368dea179cf01f94084b491941fd814d7e559da",
+      "producer": "JADX format parser or dexlib2; not REA Evidence",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "FR106",
+      "file": "auxiliary/FR106-title-bind-dex-references.txt",
+      "originalSha256": "dfb798e8bdf1e7d615f72cce74dd099b4679db08b72b9283d1c5525b507ccb44",
+      "publicSha256": "c682c0a9f80b72c757296ec586e68b12a749ffd72d4adabc531329636864843d",
+      "producer": "JADX format parser or dexlib2; not REA Evidence",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "FR107",
+      "file": "auxiliary/FR107-content-accessor-dex-references.txt",
+      "originalSha256": "90d2754626dc4f20d988577fb54729839dc91ea186ea2bfbeff2b03a1a3e35ac",
+      "publicSha256": "c5aa647ae77ef2337bb8837894d9b0b4252c350c02fa0c6c56c072228940479f",
+      "producer": "JADX format parser or dexlib2; not REA Evidence",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "FR108",
+      "file": "auxiliary/FR108-resource-table-selection.json",
+      "originalSha256": "0926dbab04e00aaaa726675edd66a0eb58f5c004c3098a7298b0536d0452671a",
+      "publicSha256": "39e50519d0fab998f1ba65929f48eb98848278a260de99ea2b62e2f8849f4abc",
+      "producer": "JADX format parser or dexlib2; not REA Evidence",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "FR109",
+      "file": "auxiliary/FR109-title-id-field.txt",
+      "originalSha256": "3edb6cf2ba6677569bd1d849ff1629e57e9918fccff9813d96be78e2b8262dad",
+      "publicSha256": "3edb6cf2ba6677569bd1d849ff1629e57e9918fccff9813d96be78e2b8262dad",
+      "producer": "JADX format parser or dexlib2; not REA Evidence",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "FR110",
+      "file": "auxiliary/FR110-content-id-field.txt",
+      "originalSha256": "2c383e0dee62cc0fc41abee483b93cdadb9f9078200f3eb1a9c3d5cae6e7ffd2",
+      "publicSha256": "2c383e0dee62cc0fc41abee483b93cdadb9f9078200f3eb1a9c3d5cae6e7ffd2",
+      "producer": "JADX format parser or dexlib2; not REA Evidence",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "FR111",
+      "file": "auxiliary/FR111-resource-parent-style.json",
+      "originalSha256": "33f5597901cfe177fe149084e19084f775634bbb778cb2b02e920f781c227736",
+      "publicSha256": "33f5597901cfe177fe149084e19084f775634bbb778cb2b02e920f781c227736",
+      "producer": "JADX format parser or dexlib2; not REA Evidence",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "FR112",
+      "file": "auxiliary/FR112-resource-ancestor-style.json",
+      "originalSha256": "3fcfb86ac05307e5332fa442a18fe8772ce8ee98f9750839dc5ac4b052cc37d9",
+      "publicSha256": "caaaaa180fd009f48b28b15070f5220414976976599f35cd8920e0ea53e6c4e1",
+      "producer": "JADX format parser or dexlib2; not REA Evidence",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "FR113",
+      "file": "auxiliary/FR113-note-text-constructor-dex-references.txt",
+      "originalSha256": "a7d02564e45f7036662922cb57b183bd8f11a4c85ec6aecb160b71073a38e7fb",
+      "publicSha256": "2741762141d7ce186dfe21322f4e9271e207e74d5455abe1c4aa8b1d77f6a830",
+      "producer": "JADX format parser or dexlib2; not REA Evidence",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "FR114",
+      "file": "auxiliary/FR114-note-token-gate-dex-references.txt",
+      "originalSha256": "dbf1940273fff87d2d61af7d16e8ab4c914df8b56f4c604e5a6acbdb326c9421",
+      "publicSha256": "fdd90b8fe30608e0d6413ea8b7734982c66aedeb34ffc64665c8f4c0151f079c",
+      "producer": "JADX format parser or dexlib2; not REA Evidence",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "FR115",
+      "file": "auxiliary/FR115-token-init-dex-references.txt",
+      "originalSha256": "571c0ece90ce68a4cb10e5daf1999d106a3dc557a4675cd87f7896822838121a",
+      "publicSha256": "c2806d99789b985239df01ddc6f82e68fe699e1ab3facce39c18a522abed0341",
+      "producer": "JADX format parser or dexlib2; not REA Evidence",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "W100-C7-dex-references",
+      "file": "auxiliary/W100-C7-dex-references.txt",
+      "originalSha256": "1a5e0aaa5f9d7b5b34b677973c9f265a6f14de742fcb8b2535a1491bc05a3218",
+      "publicSha256": "cd2081af2cb9686a5d960f2352048aba927e96685af628c4ba1a31b31f5d6dfc",
+      "producer": "DexMethodReferences.java with dexlib2 bundled in jadx-headless-mcp-0.7.1-all.jar",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "W100-image-bean-field-height",
+      "file": "auxiliary/W100-image-bean-field-height.txt",
+      "originalSha256": "3c9a48355e1c56adfec9d9cb613236c5f5b00c3bd1c3520ab63ccdf3d20ecd00",
+      "publicSha256": "3c9a48355e1c56adfec9d9cb613236c5f5b00c3bd1c3520ab63ccdf3d20ecd00",
+      "producer": "DexMethodReferences.java with dexlib2 bundled in jadx-headless-mcp-0.7.1-all.jar",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "W100-image-bean-field-width",
+      "file": "auxiliary/W100-image-bean-field-width.txt",
+      "originalSha256": "6e865f98aefa5e2e9ef51f8eb9f3207ebc46f74e1b3c99639523793d3a75311a",
+      "publicSha256": "6e865f98aefa5e2e9ef51f8eb9f3207ebc46f74e1b3c99639523793d3a75311a",
+      "producer": "DexMethodReferences.java with dexlib2 bundled in jadx-headless-mcp-0.7.1-all.jar",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "W100-note-feed-field-imageList",
+      "file": "auxiliary/W100-note-feed-field-imageList.txt",
+      "originalSha256": "0ccdb131a1c268c379962b526a40a45155ec710578f4d783f14f46635e433752",
+      "publicSha256": "0ccdb131a1c268c379962b526a40a45155ec710578f4d783f14f46635e433752",
+      "producer": "DexMethodReferences.java with dexlib2 bundled in jadx-headless-mcp-0.7.1-all.jar",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "W100-note-feed-q0-dex-references",
+      "file": "auxiliary/W100-note-feed-q0-dex-references.txt",
+      "originalSha256": "aa403a7266d8dad6c2f2636fadb1ddc96843ee2764c5f4e0c7f04393b6167d88",
+      "publicSha256": "b65ecc6869a236a4a79245b3edb554ba531491ab581b2583689052c0472d26a0",
+      "producer": "DexMethodReferences.java with dexlib2 bundled in jadx-headless-mcp-0.7.1-all.jar",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "W100-q68-o1-e-dex-references",
+      "file": "auxiliary/W100-q68-o1-e-dex-references.txt",
+      "originalSha256": "c57b4c4209c33417ff1f208013dd133b41eee66f4676a59d8ed28aa87ff4f282",
+      "publicSha256": "ddcd10105232177f811c07b5c46e57101d09c3023f957457be1eee65cea083bc",
+      "producer": "DexMethodReferences.java with dexlib2 bundled in jadx-headless-mcp-0.7.1-all.jar",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "W100-q68-o1-f-dex-references",
+      "file": "auxiliary/W100-q68-o1-f-dex-references.txt",
+      "originalSha256": "28d6c75f88e73f000af2c074670dbfc39ab09e0d91e5885803e4ff4e88846621",
+      "publicSha256": "61a6ffe929fbfa2b05437f01e53fa38cb8129e1a447ae4c168c43648fe1e9ef2",
+      "producer": "DexMethodReferences.java with dexlib2 bundled in jadx-headless-mcp-0.7.1-all.jar",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    },
+    {
+      "id": "W100-q68-o1-h-dex-references",
+      "file": "auxiliary/W100-q68-o1-h-dex-references.txt",
+      "originalSha256": "152ec50600eff9ae7b80cb82753e7e9b569d53ee14a2d2d20c2491f393b50604",
+      "publicSha256": "3c54a06d1306399a55e46b953e33ee3b6c8c509ee829785b37540baf6c303142",
+      "producer": "DexMethodReferences.java with dexlib2 bundled in jadx-headless-mcp-0.7.1-all.jar",
+      "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "isReaEvidence": false,
+      "runtimeObserved": false,
+      "transformations": [
+        "host paths generalized",
+        "text line endings normalized to LF and trailing whitespace trimmed"
+      ]
+    }
+  ],
+  "failedSelectors": [
+    {
+      "id": "F103-comment-content-class",
+      "reason": "Old-version candidate not resolved in this version; not proof the feature is absent."
+    },
+    {
+      "id": "W107-image-helper-class",
+      "reason": "DEX nested-class syntax used for a JADX display selector; no absence conclusion."
+    },
+    {
+      "id": "W108-image-helper-a",
+      "reason": "Same selector issue; reused existing K141 instead."
+    }
+  ],
+  "limitations": [
+    "Static branches and packaged resource defaults do not prove runtime selection.",
+    "Auxiliary DEX and resource parsers are independently labelled and are not REA Evidence.",
+    "Existing 84 geometry measurements, 77 core Evidence and 100-case coverage are unchanged."
+  ]
+}

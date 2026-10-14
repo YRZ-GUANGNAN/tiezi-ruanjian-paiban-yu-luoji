@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_d12f4dd06d01a767714522fdfe382db21e345b1e8ebb10dc7c529bdcdc83af27",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView",
+    "method_name": "d"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"def_pos\":0,\"name\":\"<clinit>\",\"is_constructor\":false,\"signature\":\"<clinit>(): void\"},{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"signature\":\"<init>(android.content.Context, android.util.AttributeSet): void\"},{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"signature\":\"<init>(android.content.Context, android.util.AttributeSet, int): void\"},{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"signature\":\"<init>(android.content.Context, android.util.AttributeSet, int, int, kotlin.jvm.internal.DefaultConstructorMarker): void\"},{\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(): boolean\"},{\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"signature\":\"d(int): void\"},{\"def_pos\":0,\"name\":\"setText\",\"is_constructor\":false,\"signature\":\"setText(java.lang.CharSequence, android.widget.TextView$BufferType): void\"},{\"def_pos\":0,\"name\":\"setTokenName\",\"is_constructor\":false,\"signature\":\"setTokenName(s69.f): void\"}],\"fields\":[{\"name\":\"f125731g\",\"def_pos\":0,\"type\":\"com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView$a\"},{\"name\":\"f125732d\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f125733e\",\"def_pos\":0,\"type\":\"android.text.style.LineHeightSpan\"},{\"name\":\"f125734f\",\"def_pos\":0,\"type\":\"java.util.Map<java.lang.Integer, android.view.View>\"}],\"field_count\":4,\"full_name\":\"com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView\",\"name\":\"TextTokenCustomView\",\"inner_classes\":[\"com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView.a\"],\"inner_class_count\":1,\"method_count\":8}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView",
+          "method_name": "d",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"method_name\":\"d\",\"overload_count\":1,\"body\":\"    /* JADX WARN: Code duplicated, block: B:22:0x007f A[DONT_INVERT] */\\r\\n    /* JADX WARN: Code duplicated, block: B:23:0x0081  */\\r\\n    /* JADX WARN: Code duplicated, block: B:25:0x0085 A[DONT_INVERT] */\\r\\n    /* JADX WARN: Code duplicated, block: B:26:0x0087  */\\r\\n    /* JADX WARN: Code duplicated, block: B:27:0x0096  */\\r\\n    /* JADX WARN: Code duplicated, block: B:28:0x00a7  */\\r\\n    /* JADX WARN: Code duplicated, block: B:29:0x00b4 A[DONT_INVERT] */\\r\\n    /* JADX WARN: Code duplicated, block: B:30:0x00b6 A[DONT_INVERT] */\\r\\n    /* JADX WARN: Code duplicated, block: B:31:0x00b8  */\\r\\n    /* JADX WARN: Code duplicated, block: B:32:0x00c1  */\\r\\n    /* JADX WARN: Code duplicated, block: B:33:0x00ca  */\\r\\n    /* JADX WARN: Code duplicated, block: B:36:0x00d8  */\\r\\n    /* JADX WARN: Code duplicated, block: B:37:0x00e1  */\\r\\n    /* JADX WARN: Code duplicated, block: B:39:0x00eb  */\\r\\n    /* JADX WARN: Code duplicated, block: B:40:0x00fd  */\\r\\n    public final void d(int i100) {\\r\\n        int length;\\r\\n        e eVar;\\r\\n        int id10;\\r\\n        int iE;\\r\\n        Typeface typefaceI;\\r\\n        float fApplyDimension;\\r\\n        if (PatchProxy.proxyVoid1Para(new Integer(i100), this, TextTokenCustomView.class, 93422)) {\\r\\n            return;\\r\\n        }\\r\\n        int iB = s69.a.b(s69.a.f296515a, null, 1, null);\\r\\n        if (iB != 1) {\\r\\n            if (iB == 2) {\\r\\n                length = f.values().length * 2;\\r\\n            }\\r\\n            eVar = d.f296521a.a().get(Integer.valueOf(i100));\\r\\n            int i101 = eVar.d()[this.f125732d];\\r\\n            id10 = eVar.a().getId();\\r\\n            iE = eVar.e();\\r\\n            Typeface typefaceC = h.c(getContext());\\r\\n            if (!h.f().booleanValue() || id10 == 1) {\\r\\n                if (id10 == 1) {\\r\\n                    if (iE == 1) {\\r\\n                        typefaceI = Typeface.createFromAsset(getContext().getAssets(), \\\"fonts/REDNumber-Medium.ttf\\\");\\r\\n                    } else if (iE != 2) {\\r\\n                        typefaceI = Typeface.createFromAsset(getContext().getAssets(), \\\"fonts/REDNumber-Regular.ttf\\\");\\r\\n                    } else {\\r\\n                        typefaceI = Typeface.create(Typeface.createFromAsset(getContext().getAssets(), \\\"fonts/REDNumber-Medium.ttf\\\"), 1);\\r\\n                    }\\r\\n                } else if (iE == 1) {\\r\\n                    typefaceI = h.i(getContext(), 1);\\r\\n                } else if (iE != 2) {\\r\\n                    typefaceI = h.i(getContext(), 0);\\r\\n                } else {\\r\\n                    typefaceI = h.i(getContext(), 2);\\r\\n                }\\r\\n            } else if (Build.VERSION.SDK_INT >= 28) {\\r\\n                typefaceI = Typeface.create(typefaceC, i101, false);\\r\\n            } else {\\r\\n                typefaceI = i101 > 500 ? Typeface.create(typefaceC, 1) : Typeface.create(typefaceC, 0);\\r\\n            }\\r\\n            setTypeface(typefaceI);\\r\\n            if (iB == -1) {\\r\\n                setTextSize(eVar.c());\\r\\n            } else {\\r\\n                setTextSize(1, eVar.c());\\r\\n            }\\r\\n            if (iB == -1) {\\r\\n                fApplyDimension = TypedValue.applyDimension(2, eVar.b(), Resources.getSystem().getDisplayMetrics());\\r\\n            } else {\\r\\n                fApplyDimension = TypedValue.applyDimension(1, eVar.b(), Resources.getSystem().getDisplayMetrics());\\r\\n            }\\r\\n            this.f125733e = new s69.h((int) fApplyDimension);\\r\\n            setText(getText());\\r\\n            invalidate();\\r\\n        }\\r\\n        length = f.values().length;\\r\\n        i100 += length;\\r\\n        eVar = d.f296521a.a().get(Integer.valueOf(i100));\\r\\n        int i102 = eVar.d()[this.f125732d];\\r\\n        id10 = eVar.a().getId();\\r\\n        iE = eVar.e();\\r\\n        Typeface typefaceC2 = h.c(getContext());\\r\\n        if (h.f().booleanValue()) {\\r\\n            if (id10 == 1) {\\r\\n                if (iE == 1) {\\r\\n                    typefaceI = Typeface.createFromAsset(getContext().getAssets(), \\\"fonts/REDNumber-Medium.ttf\\\");\\r\\n                } else if (iE != 2) {\\r\\n                    typefaceI = Typeface.createFromAsset(getContext().getAssets(), \\\"fonts/REDNumber-Regular.ttf\\\");\\r\\n                } else {\\r\\n                    typefaceI = Typeface.create(Typeface.createFromAsset(getContext().getAssets(), \\\"fonts/REDNumber-Medium.ttf\\\"), 1);\\r\\n                }\\r\\n            } else if (iE == 1) {\\r\\n                typefaceI = h.i(getContext(), 1);\\r\\n            } else if (iE != 2) {\\r\\n                typefaceI = h.i(getContext(), 0);\\r\\n            } else {\\r\\n                typefaceI = h.i(getContext(), 2);\\r\\n            }\\r\\n        } else if (id10 == 1) {\\r\\n            if (iE == 1) {\\r\\n                typefaceI = Typeface.createFromAsset(getContext().getAssets(), \\\"fonts/REDNumber-Medium.ttf\\\");\\r\\n            } else if (iE != 2) {\\r\\n                typefaceI = Typeface.createFromAsset(getContext().getAssets(), \\\"fonts/REDNumber-Regular.ttf\\\");\\r\\n            } else {\\r\\n                typefaceI = Typeface.create(Typeface.createFromAsset(getContext().getAssets(), \\\"fonts/REDNumber-Medium.ttf\\\"), 1);\\r\\n            }\\r\\n        } else if (iE == 1) {\\r\\n            typefaceI = h.i(getContext(), 1);\\r\\n        } else if (iE != 2) {\\r\\n            typefaceI = h.i(getContext(), 0);\\r\\n        } else {\\r\\n            typefaceI = h.i(getContext(), 2);\\r\\n        }\\r\\n        setTypeface(typefaceI);\\r\\n        if (iB == -1) {\\r\\n            setTextSize(eVar.c());\\r\\n        } else {\\r\\n            setTextSize(1, eVar.c());\\r\\n        }\\r\\n        if (iB == -1) {\\r\\n            fApplyDimension = TypedValue.applyDimension(2, eVar.b(), Resources.getSystem().getDisplayMetrics());\\r\\n        } else {\\r\\n            fApplyDimension = TypedValue.applyDimension(1, eVar.b(), Resources.getSystem().getDisplayMetrics());\\r\\n        }\\r\\n        this.f125733e = new s69.h((int) fApplyDimension);\\r\\n        setText(getText());\\r\\n        invalidate();\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView\",\"full_name\":\"com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView.d\",\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView",
+    "method": {
+      "name": "d",
+      "reported_signature": "d(int): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    /* JADX WARN: Code duplicated, block: B:22:0x007f A[DONT_INVERT] */\r\n    /* JADX WARN: Code duplicated, block: B:23:0x0081  */\r\n    /* JADX WARN: Code duplicated, block: B:25:0x0085 A[DONT_INVERT] */\r\n    /* JADX WARN: Code duplicated, block: B:26:0x0087  */\r\n    /* JADX WARN: Code duplicated, block: B:27:0x0096  */\r\n    /* JADX WARN: Code duplicated, block: B:28:0x00a7  */\r\n    /* JADX WARN: Code duplicated, block: B:29:0x00b4 A[DONT_INVERT] */\r\n    /* JADX WARN: Code duplicated, block: B:30:0x00b6 A[DONT_INVERT] */\r\n    /* JADX WARN: Code duplicated, block: B:31:0x00b8  */\r\n    /* JADX WARN: Code duplicated, block: B:32:0x00c1  */\r\n    /* JADX WARN: Code duplicated, block: B:33:0x00ca  */\r\n    /* JADX WARN: Code duplicated, block: B:36:0x00d8  */\r\n    /* JADX WARN: Code duplicated, block: B:37:0x00e1  */\r\n    /* JADX WARN: Code duplicated, block: B:39:0x00eb  */\r\n    /* JADX WARN: Code duplicated, block: B:40:0x00fd  */\r\n    public final void d(int i100) {\r\n        int length;\r\n        e eVar;\r\n        int id10;\r\n        int iE;\r\n        Typeface typefaceI;\r\n        float fApplyDimension;\r\n        if (PatchProxy.proxyVoid1Para(new Integer(i100), this, TextTokenCustomView.class, 93422)) {\r\n            return;\r\n        }\r\n        int iB = s69.a.b(s69.a.f296515a, null, 1, null);\r\n        if (iB != 1) {\r\n            if (iB == 2) {\r\n                length = f.values().length * 2;\r\n            }\r\n            eVar = d.f296521a.a().get(Integer.valueOf(i100));\r\n            int i101 = eVar.d()[this.f125732d];\r\n            id10 = eVar.a().getId();\r\n            iE = eVar.e();\r\n            Typeface typefaceC = h.c(getContext());\r\n            if (!h.f().booleanValue() || id10 == 1) {\r\n                if (id10 == 1) {\r\n                    if (iE == 1) {\r\n                        typefaceI = Typeface.createFromAsset(getContext().getAssets(), \"fonts/REDNumber-Medium.ttf\");\r\n                    } else if (iE != 2) {\r\n                        typefaceI = Typeface.createFromAsset(getContext().getAssets(), \"fonts/REDNumber-Regular.ttf\");\r\n                    } else {\r\n                        typefaceI = Typeface.create(Typeface.createFromAsset(getContext().getAssets(), \"fonts/REDNumber-Medium.ttf\"), 1);\r\n                    }\r\n                } else if (iE == 1) {\r\n                    typefaceI = h.i(getContext(), 1);\r\n                } else if (iE != 2) {\r\n                    typefaceI = h.i(getContext(), 0);\r\n                } else {\r\n                    typefaceI = h.i(getContext(), 2);\r\n                }\r\n            } else if (Build.VERSION.SDK_INT >= 28) {\r\n                typefaceI = Typeface.create(typefaceC, i101, false);\r\n            } else {\r\n                typefaceI = i101 > 500 ? Typeface.create(typefaceC, 1) : Typeface.create(typefaceC, 0);\r\n            }\r\n            setTypeface(typefaceI);\r\n            if (iB == -1) {\r\n                setTextSize(eVar.c());\r\n            } else {\r\n                setTextSize(1, eVar.c());\r\n            }\r\n            if (iB == -1) {\r\n                fApplyDimension = TypedValue.applyDimension(2, eVar.b(), Resources.getSystem().getDisplayMetrics());\r\n            } else {\r\n                fApplyDimension = TypedValue.applyDimension(1, eVar.b(), Resources.getSystem().getDisplayMetrics());\r\n            }\r\n            this.f125733e = new s69.h((int) fApplyDimension);\r\n            setText(getText());\r\n            invalidate();\r\n        }\r\n        length = f.values().length;\r\n        i100 += length;\r\n        eVar = d.f296521a.a().get(Integer.valueOf(i100));\r\n        int i102 = eVar.d()[this.f125732d];\r\n        id10 = eVar.a().getId();\r\n        iE = eVar.e();\r\n        Typeface typefaceC2 = h.c(getContext());\r\n        if (h.f().booleanValue()) {\r\n            if (id10 == 1) {\r\n                if (iE == 1) {\r\n                    typefaceI = Typeface.createFromAsset(getContext().getAssets(), \"fonts/REDNumber-Medium.ttf\");\r\n                } else if (iE != 2) {\r\n                    typefaceI = Typeface.createFromAsset(getContext().getAssets(), \"fonts/REDNumber-Regular.ttf\");\r\n                } else {\r\n                    typefaceI = Typeface.create(Typeface.createFromAsset(getContext().getAssets(), \"fonts/REDNumber-Medium.ttf\"), 1);\r\n                }\r\n            } else if (iE == 1) {\r\n                typefaceI = h.i(getContext(), 1);\r\n            } else if (iE != 2) {\r\n                typefaceI = h.i(getContext(), 0);\r\n            } else {\r\n                typefaceI = h.i(getContext(), 2);\r\n            }\r\n        } else if (id10 == 1) {\r\n            if (iE == 1) {\r\n                typefaceI = Typeface.createFromAsset(getContext().getAssets(), \"fonts/REDNumber-Medium.ttf\");\r\n            } else if (iE != 2) {\r\n                typefaceI = Typeface.createFromAsset(getContext().getAssets(), \"fonts/REDNumber-Regular.ttf\");\r\n            } else {\r\n                typefaceI = Typeface.create(Typeface.createFromAsset(getContext().getAssets(), \"fonts/REDNumber-Medium.ttf\"), 1);\r\n            }\r\n        } else if (iE == 1) {\r\n            typefaceI = h.i(getContext(), 1);\r\n        } else if (iE != 2) {\r\n            typefaceI = h.i(getContext(), 0);\r\n        } else {\r\n            typefaceI = h.i(getContext(), 2);\r\n        }\r\n        setTypeface(typefaceI);\r\n        if (iB == -1) {\r\n            setTextSize(eVar.c());\r\n        } else {\r\n            setTextSize(1, eVar.c());\r\n        }\r\n        if (iB == -1) {\r\n            fApplyDimension = TypedValue.applyDimension(2, eVar.b(), Resources.getSystem().getDisplayMetrics());\r\n        } else {\r\n            fApplyDimension = TypedValue.applyDimension(1, eVar.b(), Resources.getSystem().getDisplayMetrics());\r\n        }\r\n        this.f125733e = new s69.h((int) fApplyDimension);\r\n        setText(getText());\r\n        invalidate();\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "ef9216a1253e6fddd47b006ebc3b3bd203e8adaab14ca3bccf201155a69c9720",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

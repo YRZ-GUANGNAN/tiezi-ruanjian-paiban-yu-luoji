@@ -1,0 +1,11 @@
+        public final void a(NoteDetailTextView noteDetailTextView) {
+            if (PatchProxy.proxyVoid1Para(noteDetailTextView, this, a.class, 290604)) {
+                return;
+            }
+            SpannableStringBuilder spannableStringBuilder = this.f108165d;
+            noteDetailTextView.setTextColor(f.e(k.f224011v));
+            h.f175371a.a(noteDetailTextView, spannableStringBuilder, (52 & 4) != 0 ? 0.0f : 0.0f, (52 & 8) != 0 ? 0.0f : 0.015f, (52 & 16) != 0 ? 0.0f : 0.0f, (52 & 32) != 0 ? 0.0f : 0.0f);
+            noteDetailTextView.setMovementMethod(LinkMovementMethod.getInstance());
+            noteDetailTextView.setHighlightColor(f.e(R.color.transparent));
+            noteDetailTextView.setText(spannableStringBuilder);
+        }

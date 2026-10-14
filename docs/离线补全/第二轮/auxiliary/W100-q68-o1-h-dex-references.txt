@@ -1,0 +1,20 @@
+source_status: auxiliary-dex-parse
+scope: exact method instruction references; static only
+parser: dexlib2 bundled in jadx-headless-mcp-0.7.1-all.jar
+apk_sha256: 44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5
+requested_class: Lq68/o1;
+requested_method: h
+dex_entry: classes13.dex
+method_descriptor: Lq68/o1;->h(Landroid/content/Context;)I
+  code_unit_offset=0x0 opcode=const-class reference=Lq68/o1;
+  code_unit_offset=0x6 opcode=invoke-static reference=Lcom/xingin/robust/PatchProxy;->proxy1Para(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;I)Lcom/xingin/robust/PatchProxyResult;
+  code_unit_offset=0xa opcode=iget-boolean reference=Lcom/xingin/robust/PatchProxyResult;->isSupported:Z
+  code_unit_offset=0xe opcode=iget-object reference=Lcom/xingin/robust/PatchProxyResult;->result:Ljava/lang/Object;
+  code_unit_offset=0x10 opcode=check-cast reference=Ljava/lang/Integer;
+  code_unit_offset=0x12 opcode=invoke-virtual reference=Ljava/lang/Integer;->intValue()I
+  code_unit_offset=0x17 opcode=invoke-virtual reference=Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+  code_unit_offset=0x1b opcode=invoke-virtual reference=Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+  code_unit_offset=0x1f opcode=iget reference=Landroid/util/DisplayMetrics;->widthPixels:I
+instruction_code_units: 34
+matched_methods: 1
+limitations: reports encoded references only, not observed execution; offsets are code units relative to instructions, not APK byte offsets; static and dynamic patch behavior is not resolved.

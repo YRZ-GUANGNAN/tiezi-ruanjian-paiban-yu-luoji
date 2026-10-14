@@ -1,0 +1,51 @@
+{
+  "id": "FR111-resource-parent-style",
+  "provider": "jadx-ResTableBinaryParser-direct-not-REA-Evidence",
+  "authority": "shipped-artifact",
+  "runtimeObserved": false,
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "arscSha256": "5c9fce688019e4263deafff2da8dbf1da34da33885f9a29e199d994e2a704ba2",
+  "resourceEntries": 66202,
+  "requestedIds": [
+    "0x7f1204ae"
+  ],
+  "matches": [
+    {
+      "id": "0x7f1204ae",
+      "type": "style",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x7f120488",
+      "items": [
+        {
+          "dataType": 5,
+          "rawDataHex": "0x00000e02",
+          "decoded": "14sp",
+          "nameRef": "0x01010095",
+          "name": "android:attr.textSize"
+        },
+        {
+          "dataType": 17,
+          "rawDataHex": "0x00000000",
+          "decoded": "0x0",
+          "nameRef": "0x01010097",
+          "name": "android:attr.textStyle"
+        }
+      ]
+    }
+  ],
+  "textContentLayout": [
+    {
+      "value": "res/Oo5.xml",
+      "type": "layout",
+      "configuration": "",
+      "name": "-",
+      "id": "0x7f0c0ec8"
+    }
+  ],
+  "limitations": [
+    "Static packaged resource defaults only; XML and code may override these values.",
+    "All matching configurations in the parsed table are retained; selection for a running device is not observed.",
+    "No APK execution, signature or split-APK verification was performed."
+  ]
+}

@@ -1,0 +1,124 @@
+    /* JADX WARN: Code duplicated, block: B:22:0x007f A[DONT_INVERT] */
+    /* JADX WARN: Code duplicated, block: B:23:0x0081  */
+    /* JADX WARN: Code duplicated, block: B:25:0x0085 A[DONT_INVERT] */
+    /* JADX WARN: Code duplicated, block: B:26:0x0087  */
+    /* JADX WARN: Code duplicated, block: B:27:0x0096  */
+    /* JADX WARN: Code duplicated, block: B:28:0x00a7  */
+    /* JADX WARN: Code duplicated, block: B:29:0x00b4 A[DONT_INVERT] */
+    /* JADX WARN: Code duplicated, block: B:30:0x00b6 A[DONT_INVERT] */
+    /* JADX WARN: Code duplicated, block: B:31:0x00b8  */
+    /* JADX WARN: Code duplicated, block: B:32:0x00c1  */
+    /* JADX WARN: Code duplicated, block: B:33:0x00ca  */
+    /* JADX WARN: Code duplicated, block: B:36:0x00d8  */
+    /* JADX WARN: Code duplicated, block: B:37:0x00e1  */
+    /* JADX WARN: Code duplicated, block: B:39:0x00eb  */
+    /* JADX WARN: Code duplicated, block: B:40:0x00fd  */
+    public final void d(int i100) {
+        int length;
+        e eVar;
+        int id10;
+        int iE;
+        Typeface typefaceI;
+        float fApplyDimension;
+        if (PatchProxy.proxyVoid1Para(new Integer(i100), this, TextTokenCustomView.class, 93422)) {
+            return;
+        }
+        int iB = s69.a.b(s69.a.f296515a, null, 1, null);
+        if (iB != 1) {
+            if (iB == 2) {
+                length = f.values().length * 2;
+            }
+            eVar = d.f296521a.a().get(Integer.valueOf(i100));
+            int i101 = eVar.d()[this.f125732d];
+            id10 = eVar.a().getId();
+            iE = eVar.e();
+            Typeface typefaceC = h.c(getContext());
+            if (!h.f().booleanValue() || id10 == 1) {
+                if (id10 == 1) {
+                    if (iE == 1) {
+                        typefaceI = Typeface.createFromAsset(getContext().getAssets(), "fonts/REDNumber-Medium.ttf");
+                    } else if (iE != 2) {
+                        typefaceI = Typeface.createFromAsset(getContext().getAssets(), "fonts/REDNumber-Regular.ttf");
+                    } else {
+                        typefaceI = Typeface.create(Typeface.createFromAsset(getContext().getAssets(), "fonts/REDNumber-Medium.ttf"), 1);
+                    }
+                } else if (iE == 1) {
+                    typefaceI = h.i(getContext(), 1);
+                } else if (iE != 2) {
+                    typefaceI = h.i(getContext(), 0);
+                } else {
+                    typefaceI = h.i(getContext(), 2);
+                }
+            } else if (Build.VERSION.SDK_INT >= 28) {
+                typefaceI = Typeface.create(typefaceC, i101, false);
+            } else {
+                typefaceI = i101 > 500 ? Typeface.create(typefaceC, 1) : Typeface.create(typefaceC, 0);
+            }
+            setTypeface(typefaceI);
+            if (iB == -1) {
+                setTextSize(eVar.c());
+            } else {
+                setTextSize(1, eVar.c());
+            }
+            if (iB == -1) {
+                fApplyDimension = TypedValue.applyDimension(2, eVar.b(), Resources.getSystem().getDisplayMetrics());
+            } else {
+                fApplyDimension = TypedValue.applyDimension(1, eVar.b(), Resources.getSystem().getDisplayMetrics());
+            }
+            this.f125733e = new s69.h((int) fApplyDimension);
+            setText(getText());
+            invalidate();
+        }
+        length = f.values().length;
+        i100 += length;
+        eVar = d.f296521a.a().get(Integer.valueOf(i100));
+        int i102 = eVar.d()[this.f125732d];
+        id10 = eVar.a().getId();
+        iE = eVar.e();
+        Typeface typefaceC2 = h.c(getContext());
+        if (h.f().booleanValue()) {
+            if (id10 == 1) {
+                if (iE == 1) {
+                    typefaceI = Typeface.createFromAsset(getContext().getAssets(), "fonts/REDNumber-Medium.ttf");
+                } else if (iE != 2) {
+                    typefaceI = Typeface.createFromAsset(getContext().getAssets(), "fonts/REDNumber-Regular.ttf");
+                } else {
+                    typefaceI = Typeface.create(Typeface.createFromAsset(getContext().getAssets(), "fonts/REDNumber-Medium.ttf"), 1);
+                }
+            } else if (iE == 1) {
+                typefaceI = h.i(getContext(), 1);
+            } else if (iE != 2) {
+                typefaceI = h.i(getContext(), 0);
+            } else {
+                typefaceI = h.i(getContext(), 2);
+            }
+        } else if (id10 == 1) {
+            if (iE == 1) {
+                typefaceI = Typeface.createFromAsset(getContext().getAssets(), "fonts/REDNumber-Medium.ttf");
+            } else if (iE != 2) {
+                typefaceI = Typeface.createFromAsset(getContext().getAssets(), "fonts/REDNumber-Regular.ttf");
+            } else {
+                typefaceI = Typeface.create(Typeface.createFromAsset(getContext().getAssets(), "fonts/REDNumber-Medium.ttf"), 1);
+            }
+        } else if (iE == 1) {
+            typefaceI = h.i(getContext(), 1);
+        } else if (iE != 2) {
+            typefaceI = h.i(getContext(), 0);
+        } else {
+            typefaceI = h.i(getContext(), 2);
+        }
+        setTypeface(typefaceI);
+        if (iB == -1) {
+            setTextSize(eVar.c());
+        } else {
+            setTextSize(1, eVar.c());
+        }
+        if (iB == -1) {
+            fApplyDimension = TypedValue.applyDimension(2, eVar.b(), Resources.getSystem().getDisplayMetrics());
+        } else {
+            fApplyDimension = TypedValue.applyDimension(1, eVar.b(), Resources.getSystem().getDisplayMetrics());
+        }
+        this.f125733e = new s69.h((int) fApplyDimension);
+        setText(getText());
+        invalidate();
+    }

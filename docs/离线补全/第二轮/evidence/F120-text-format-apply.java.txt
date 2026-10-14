@@ -1,0 +1,19 @@
+    public final void a(TextView textView, SpannableStringBuilder spannableStringBuilder, float f100, float f101, float f102, float f103) {
+        if (PatchProxy.proxyVoid(new Object[]{textView, spannableStringBuilder, new Float(f100), new Float(f101), new Float(f102), new Float(f103)}, this, h.class, 134971)) {
+            return;
+        }
+        if (!(f100 == 0.0f)) {
+            textView.setTextSize(f100);
+        }
+        if (!(f101 == 0.0f)) {
+            textView.setLetterSpacing(f101);
+        }
+        if (!(f102 == 0.0f)) {
+            textView.setLineSpacing(0.0f, f102);
+        }
+        if (f103 == 0.0f) {
+            return;
+        }
+        textView.setText(new sr7.g(textView.getContext()).r(spannableStringBuilder));
+        jx8.d.a("UnifiedNoteContentController", "fix parser: " + ((Object) textView.getText()));
+    }

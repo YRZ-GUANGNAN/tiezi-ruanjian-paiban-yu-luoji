@@ -1,0 +1,12 @@
+    public final boolean w() {
+        String lowerCase;
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, c.class, 4436);
+        if (patchProxyResultProxy0Para.isSupported) {
+            return ((Boolean) patchProxyResultProxy0Para.result).booleanValue();
+        }
+        String strJ = j(this, "ro.build.characteristics", null, 2, null);
+        if (strJ == null || (lowerCase = strJ.toLowerCase(Locale.getDefault())) == null) {
+            return false;
+        }
+        return StringsKt__StringsKt.contains$default((CharSequence) lowerCase, (CharSequence) "tablet", false, 2, (Object) null);
+    }

@@ -1,0 +1,747 @@
+{
+  "evidence_id": "ev_72222158858f156dac5879aaeff96e7645b070421468ec99c19624c1fa0c976e",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.entities.ImageBean"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":82499,\"raw_class_count\":82499,\"resource_count\":18535,\"load_duration_ms\":39744,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.entities.ImageBean"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"def_pos\":0,\"signature\":\"<clinit>(): void\",\"is_constructor\":false,\"name\":\"<clinit>\"},{\"def_pos\":0,\"signature\":\"<init>(): void\",\"is_constructor\":true,\"name\":\"<init>\"},{\"def_pos\":0,\"signature\":\"<init>(android.os.Parcel): void\",\"is_constructor\":true,\"name\":\"<init>\"},{\"def_pos\":0,\"signature\":\"A0(): boolean\",\"is_constructor\":false,\"name\":\"A0\"},{\"def_pos\":0,\"signature\":\"D(): java.lang.Integer\",\"is_constructor\":false,\"name\":\"D\"},{\"def_pos\":0,\"signature\":\"E0(java.lang.String): void\",\"is_constructor\":false,\"name\":\"E0\"},{\"def_pos\":0,\"signature\":\"G0(java.lang.String): void\",\"is_constructor\":false,\"name\":\"G0\"},{\"def_pos\":0,\"signature\":\"H0(com.xingin.entities.XhsFilterModel): void\",\"is_constructor\":false,\"name\":\"H0\"},{\"def_pos\":0,\"signature\":\"I0(int): void\",\"is_constructor\":false,\"name\":\"I0\"},{\"def_pos\":0,\"signature\":\"M0(java.lang.Integer): void\",\"is_constructor\":false,\"name\":\"M0\"},{\"def_pos\":0,\"signature\":\"N(): com.xingin.entities.ImageTemplate\",\"is_constructor\":false,\"name\":\"N\"},{\"def_pos\":0,\"signature\":\"O0(java.lang.String): void\",\"is_constructor\":false,\"name\":\"O0\"},{\"def_pos\":0,\"signature\":\"P0(java.lang.Integer): void\",\"is_constructor\":false,\"name\":\"P0\"},{\"def_pos\":0,\"signature\":\"R(): java.lang.String\",\"is_constructor\":false,\"name\":\"R\"},{\"def_pos\":0,\"signature\":\"U(): double\",\"is_constructor\":false,\"name\":\"U\"},{\"def_pos\":0,\"signature\":\"V(): java.lang.String\",\"is_constructor\":false,\"name\":\"V\"},{\"def_pos\":0,\"signature\":\"W(): com.xingin.entities.video.VideoInfoV2\",\"is_constructor\":false,\"name\":\"W\"},{\"def_pos\":0,\"signature\":\"X(): java.lang.String\",\"is_constructor\":false,\"name\":\"X\"},{\"def_pos\":0,\"signature\":\"Y(): java.lang.String\",\"is_constructor\":false,\"name\":\"Y\"},{\"def_pos\":0,\"signature\":\"Y0(com.xingin.entities.ImageTemplate): void\",\"is_constructor\":false,\"name\":\"Y0\"},{\"def_pos\":0,\"signature\":\"Z0(java.lang.String): void\",\"is_constructor\":false,\"name\":\"Z0\"},{\"def_pos\":0,\"signature\":\"a0(): double\",\"is_constructor\":false,\"name\":\"a0\"},{\"def_pos\":0,\"signature\":\"a1(java.lang.String): void\",\"is_constructor\":false,\"name\":\"a1\"},{\"def_pos\":0,\"signature\":\"b0(): com.xingin.entities.capa.ImageMetaData\",\"is_constructor\":false,\"name\":\"b0\"},{\"def_pos\":0,\"signature\":\"d1(com.xingin.entities.video.VideoInfoV2): void\",\"is_constructor\":false,\"name\":\"d1\"},{\"def_pos\":0,\"signature\":\"describeContents(): int\",\"is_constructor\":false,\"name\":\"describeContents\"},{\"def_pos\":0,\"signature\":\"e0(): boolean\",\"is_constructor\":false,\"name\":\"e0\"},{\"def_pos\":0,\"signature\":\"e1(int): void\",\"is_constructor\":false,\"name\":\"e1\"},{\"def_pos\":0,\"signature\":\"f(java.lang.String, int, kotlin.jvm.functions.Function1<? super java.lang.String, com.xingin.entities.CoProduceNoteExtraInfo>): java.util.List<mi4.a>\",\"is_constructor\":false,\"name\":\"f\"},{\"def_pos\":0,\"signature\":\"f0(): java.lang.String\",\"is_constructor\":false,\"name\":\"f0\"},{\"def_pos\":0,\"signature\":\"g0(): java.lang.String\",\"is_constructor\":false,\"name\":\"g0\"},{\"def_pos\":0,\"signature\":\"g1(java.lang.String): void\",\"is_constructor\":false,\"name\":\"g1\"},{\"def_pos\":0,\"signature\":\"getHeight(): int\",\"is_constructor\":false,\"name\":\"getHeight\"},{\"def_pos\":0,\"signature\":\"getId(): java.lang.String\",\"is_constructor\":false,\"name\":\"getId\"},{\"def_pos\":0,\"signature\":\"getWidth(): int\",\"is_constructor\":false,\"name\":\"getWidth\"},{\"def_pos\":0,\"signature\":\"h0(): android.graphics.Rect\",\"is_constructor\":false,\"name\":\"h0\"},{\"def_pos\":0,\"signature\":\"i1(boolean): void\",\"is_constructor\":false,\"name\":\"i1\"},{\"def_pos\":0,\"signature\":\"j0(): float\",\"is_constructor\":false,\"name\":\"j0\"},{\"def_pos\":0,\"signature\":\"j1(android.graphics.Rect): void\",\"is_constructor\":false,\"name\":\"j1\"},{\"def_pos\":0,\"signature\":\"k(int): int\",\"is_constructor\":false,\"name\":\"k\"},{\"def_pos\":0,\"signature\":\"k1(java.lang.String): void\",\"is_constructor\":false,\"name\":\"k1\"},{\"def_pos\":0,\"signature\":\"l(): java.lang.String\",\"is_constructor\":false,\"name\":\"l\"},{\"def_pos\":0,\"signature\":\"l0(): java.lang.String\",\"is_constructor\":false,\"name\":\"l0\"},{\"def_pos\":0,\"signature\":\"m(): com.xingin.entities.CoProduceNoteInfo\",\"is_constructor\":false,\"name\":\"m\"},{\"def_pos\":0,\"signature\":\"m0(): java.lang.String\",\"is_constructor\":false,\"name\":\"m0\"},{\"def_pos\":0,\"signature\":\"m1(java.lang.String): void\",\"is_constructor\":false,\"name\":\"m1\"},{\"def_pos\":0,\"signature\":\"n(): java.lang.String\",\"is_constructor\":false,\"name\":\"n\"},{\"def_pos\":0,\"signature\":\"n1(java.lang.String): void\",\"is_constructor\":false,\"name\":\"n1\"},{\"def_pos\":0,\"signature\":\"o(): com.xingin.entities.XhsFilterModel\",\"is_constructor\":false,\"name\":\"o\"},{\"def_pos\":0,\"signature\":\"p0(): java.lang.String\",\"is_constructor\":false,\"name\":\"p0\"},{\"def_pos\":0,\"signature\":\"p1(java.lang.String): void\",\"is_constructor\":false,\"name\":\"p1\"},{\"def_pos\":0,\"signature\":\"q0(): java.lang.String\",\"is_constructor\":false,\"name\":\"q0\"},{\"def_pos\":0,\"signature\":\"q1(java.lang.String): void\",\"is_constructor\":false,\"name\":\"q1\"},{\"def_pos\":0,\"signature\":\"r0(): java.lang.String\",\"is_constructor\":false,\"name\":\"r0\"},{\"def_pos\":0,\"signature\":\"r1(com.xingin.entities.VideoInfo): void\",\"is_constructor\":false,\"name\":\"r1\"},{\"def_pos\":0,\"signature\":\"s1(int): void\",\"is_constructor\":false,\"name\":\"s1\"},{\"def_pos\":0,\"signature\":\"t0(): java.lang.String\",\"is_constructor\":false,\"name\":\"t0\"},{\"def_pos\":0,\"signature\":\"t1(java.lang.Integer): void\",\"is_constructor\":false,\"name\":\"t1\"},{\"def_pos\":0,\"signature\":\"u0(): com.xingin.entities.VideoInfo\",\"is_constructor\":false,\"name\":\"u0\"},{\"def_pos\":0,\"signature\":\"u1(boolean): void\",\"is_constructor\":false,\"name\":\"u1\"},{\"def_pos\":0,\"signature\":\"w0(): java.lang.Integer\",\"is_constructor\":false,\"name\":\"w0\"},{\"def_pos\":0,\"signature\":\"writeToParcel(android.os.Parcel, int): void\",\"is_constructor\":false,\"name\":\"writeToParcel\"},{\"def_pos\":0,\"signature\":\"y(): java.lang.String\",\"is_constructor\":false,\"name\":\"y\"},{\"def_pos\":0,\"signature\":\"y0(): boolean\",\"is_constructor\":false,\"name\":\"y0\"},{\"def_pos\":0,\"signature\":\"z(): java.lang.Integer\",\"is_constructor\":false,\"name\":\"z\"}],\"method_count\":65,\"inner_class_count\":2,\"inner_classes\":[\"com.xingin.entities.ImageBean.a\",\"com.xingin.entities.ImageBean.b\"],\"name\":\"ImageBean\",\"full_name\":\"com.xingin.entities.ImageBean\",\"field_count\":42,\"fields\":[{\"type\":\"com.xingin.entities.ImageBean$a\",\"def_pos\":0,\"name\":\"CREATOR\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"anchorId\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"bgColor\"},{\"type\":\"com.xingin.entities.CoProduceNoteInfo\",\"def_pos\":0,\"name\":\"coProduceInfo\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"f96655id\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"fileid\"},{\"type\":\"com.xingin.entities.XhsFilterModel\",\"def_pos\":0,\"name\":\"filter\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"filterId\"},{\"type\":\"float\",\"def_pos\":0,\"name\":\"firstImageRation\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"height\"},{\"type\":\"java.lang.Integer\",\"def_pos\":0,\"name\":\"heightRotated\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"image\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"imageCount\"},{\"type\":\"java.lang.Integer\",\"def_pos\":0,\"name\":\"imageSourceType\"},{\"type\":\"com.xingin.entities.ImageTemplate\",\"def_pos\":0,\"name\":\"imageTemplate\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"isLivePhotoSoundMute\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"isPreload\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"isZoomStatus\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"itemid\"},{\"type\":\"double\",\"def_pos\":0,\"name\":\"latitude\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"link\"},{\"type\":\"com.xingin.entities.video.VideoInfoV2\",\"def_pos\":0,\"name\":\"livePhoto\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"livePhotoUrl\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"livePhotoVideoFileId\"},{\"type\":\"double\",\"def_pos\":0,\"name\":\"longitude\"},{\"type\":\"com.xingin.entities.capa.ImageMetaData\",\"def_pos\":0,\"name\":\"metadata\"},{\"type\":\"com.xingin.entities.MultiLevelImageUrls\",\"def_pos\":0,\"name\":\"multiLevelImageUrls\"},{\"type\":\"boolean\",\"def_pos\":0,\"name\":\"needLoadOriginalImage\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"original\"},{\"type\":\"android.graphics.Rect\",\"def_pos\":0,\"name\":\"rect\"},{\"type\":\"float\",\"def_pos\":0,\"name\":\"scaleToLarge\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"text\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"time\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"title\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"traceId\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"url\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"url_anim\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"url_size_large\"},{\"type\":\"java.lang.String\",\"def_pos\":0,\"name\":\"url_size_small\"},{\"type\":\"com.xingin.entities.VideoInfo\",\"def_pos\":0,\"name\":\"videoInfoFromLivePhoto\"},{\"type\":\"int\",\"def_pos\":0,\"name\":\"width\"},{\"type\":\"java.lang.Integer\",\"def_pos\":0,\"name\":\"widthRotated\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.entities.ImageBean",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.os.Parcel): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "A0",
+        "reported_signature": "A0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "D",
+        "reported_signature": "D(): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "E0",
+        "reported_signature": "E0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G0",
+        "reported_signature": "G0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H0",
+        "reported_signature": "H0(com.xingin.entities.XhsFilterModel): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I0",
+        "reported_signature": "I0(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M0",
+        "reported_signature": "M0(java.lang.Integer): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "N",
+        "reported_signature": "N(): com.xingin.entities.ImageTemplate",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "O0",
+        "reported_signature": "O0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "P0",
+        "reported_signature": "P0(java.lang.Integer): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "R",
+        "reported_signature": "R(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "U",
+        "reported_signature": "U(): double",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "V",
+        "reported_signature": "V(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "W",
+        "reported_signature": "W(): com.xingin.entities.video.VideoInfoV2",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "X",
+        "reported_signature": "X(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y",
+        "reported_signature": "Y(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Y0",
+        "reported_signature": "Y0(com.xingin.entities.ImageTemplate): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "Z0",
+        "reported_signature": "Z0(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a0",
+        "reported_signature": "a0(): double",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a1",
+        "reported_signature": "a1(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b0",
+        "reported_signature": "b0(): com.xingin.entities.capa.ImageMetaData",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d1",
+        "reported_signature": "d1(com.xingin.entities.video.VideoInfoV2): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "describeContents",
+        "reported_signature": "describeContents(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e0",
+        "reported_signature": "e0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e1",
+        "reported_signature": "e1(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(java.lang.String, int, kotlin.jvm.functions.Function1<? super java.lang.String, com.xingin.entities.CoProduceNoteExtraInfo>): java.util.List<mi4.a>",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f0",
+        "reported_signature": "f0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g0",
+        "reported_signature": "g0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g1",
+        "reported_signature": "g1(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getHeight",
+        "reported_signature": "getHeight(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getId",
+        "reported_signature": "getId(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getWidth",
+        "reported_signature": "getWidth(): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h0",
+        "reported_signature": "h0(): android.graphics.Rect",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i1",
+        "reported_signature": "i1(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j0",
+        "reported_signature": "j0(): float",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j1",
+        "reported_signature": "j1(android.graphics.Rect): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(int): int",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k1",
+        "reported_signature": "k1(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l0",
+        "reported_signature": "l0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(): com.xingin.entities.CoProduceNoteInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m0",
+        "reported_signature": "m0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m1",
+        "reported_signature": "m1(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n1",
+        "reported_signature": "n1(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(): com.xingin.entities.XhsFilterModel",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p0",
+        "reported_signature": "p0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p1",
+        "reported_signature": "p1(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q0",
+        "reported_signature": "q0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q1",
+        "reported_signature": "q1(java.lang.String): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r0",
+        "reported_signature": "r0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r1",
+        "reported_signature": "r1(com.xingin.entities.VideoInfo): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s1",
+        "reported_signature": "s1(int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t0",
+        "reported_signature": "t0(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t1",
+        "reported_signature": "t1(java.lang.Integer): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u0",
+        "reported_signature": "u0(): com.xingin.entities.VideoInfo",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u1",
+        "reported_signature": "u1(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w0",
+        "reported_signature": "w0(): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "writeToParcel",
+        "reported_signature": "writeToParcel(android.os.Parcel, int): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y",
+        "reported_signature": "y(): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y0",
+        "reported_signature": "y0(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "z",
+        "reported_signature": "z(): java.lang.Integer",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "CREATOR",
+        "reported_type": "com.xingin.entities.ImageBean$a"
+      },
+      {
+        "name": "anchorId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "bgColor",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "coProduceInfo",
+        "reported_type": "com.xingin.entities.CoProduceNoteInfo"
+      },
+      {
+        "name": "f96655id",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "fileid",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "filter",
+        "reported_type": "com.xingin.entities.XhsFilterModel"
+      },
+      {
+        "name": "filterId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "firstImageRation",
+        "reported_type": "float"
+      },
+      {
+        "name": "height",
+        "reported_type": "int"
+      },
+      {
+        "name": "heightRotated",
+        "reported_type": "java.lang.Integer"
+      },
+      {
+        "name": "image",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "imageCount",
+        "reported_type": "int"
+      },
+      {
+        "name": "imageSourceType",
+        "reported_type": "java.lang.Integer"
+      },
+      {
+        "name": "imageTemplate",
+        "reported_type": "com.xingin.entities.ImageTemplate"
+      },
+      {
+        "name": "isLivePhotoSoundMute",
+        "reported_type": "int"
+      },
+      {
+        "name": "isPreload",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "isZoomStatus",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "itemid",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "latitude",
+        "reported_type": "double"
+      },
+      {
+        "name": "link",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "livePhoto",
+        "reported_type": "com.xingin.entities.video.VideoInfoV2"
+      },
+      {
+        "name": "livePhotoUrl",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "livePhotoVideoFileId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "longitude",
+        "reported_type": "double"
+      },
+      {
+        "name": "metadata",
+        "reported_type": "com.xingin.entities.capa.ImageMetaData"
+      },
+      {
+        "name": "multiLevelImageUrls",
+        "reported_type": "com.xingin.entities.MultiLevelImageUrls"
+      },
+      {
+        "name": "needLoadOriginalImage",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "original",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "rect",
+        "reported_type": "android.graphics.Rect"
+      },
+      {
+        "name": "scaleToLarge",
+        "reported_type": "float"
+      },
+      {
+        "name": "text",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "time",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "title",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "traceId",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "url",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "url_anim",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "url_size_large",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "url_size_small",
+        "reported_type": "java.lang.String"
+      },
+      {
+        "name": "videoInfoFromLivePhoto",
+        "reported_type": "com.xingin.entities.VideoInfo"
+      },
+      {
+        "name": "width",
+        "reported_type": "int"
+      },
+      {
+        "name": "widthRotated",
+        "reported_type": "java.lang.Integer"
+      }
+    ],
+    "inner_classes": [
+      "com.xingin.entities.ImageBean.a",
+      "com.xingin.entities.ImageBean.b"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "5c867b1222673dcc5ee92c1ac631e529a3e7e91dcb979b5c1a84c4ad80d50cb5",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+    public final void setTitleVisible(boolean z100) {
+        if (PatchProxy.proxyVoid1Para(new Boolean(z100), this, TextContentView.class, 281431)) {
+            return;
+        }
+        if (z100) {
+            o.q((NoteDetailTextView) a(n.O1));
+        } else {
+            o.b((NoteDetailTextView) a(n.O1));
+        }
+    }

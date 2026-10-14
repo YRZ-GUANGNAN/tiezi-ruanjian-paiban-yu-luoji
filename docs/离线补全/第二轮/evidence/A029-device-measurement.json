@@ -1,0 +1,152 @@
+{
+  "evidence_id": "ev_1139fa0b3a426deef2eb133f9480aa9a6b792455e7c8b1f2a6af1a97f6fc4eab",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "xo.d",
+    "method_name": "c"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":82499,\"raw_class_count\":82499,\"resource_count\":18535,\"load_duration_ms\":62654,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "xo.d"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"method_count\":17,\"methods\":[{\"def_pos\":0,\"name\":\"<clinit>\",\"is_constructor\":false,\"signature\":\"<clinit>(): void\"},{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"signature\":\"<init>(): void\"},{\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"signature\":\"a(android.content.Context): android.view.Display\"},{\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"signature\":\"b(android.content.Context): int\"},{\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(android.content.Context): float\"},{\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"signature\":\"d(android.content.Context): android.graphics.Point\"},{\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false,\"signature\":\"e(android.content.Context): int\"},{\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false,\"signature\":\"f(android.content.Context): android.view.Display\"},{\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false,\"signature\":\"g(android.content.Context): boolean\"},{\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false,\"signature\":\"h(android.content.Context): boolean\"},{\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false,\"signature\":\"i(android.content.Context): boolean\"},{\"def_pos\":0,\"name\":\"j\",\"is_constructor\":false,\"signature\":\"j(android.app.Activity): boolean\"},{\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false,\"signature\":\"k(android.content.Context): boolean\"},{\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false,\"signature\":\"l(android.content.Context): boolean\"},{\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false,\"signature\":\"m(android.content.Context): android.graphics.Rect\"},{\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false,\"signature\":\"n(android.content.Context): android.util.Size\"},{\"def_pos\":0,\"name\":\"o\",\"is_constructor\":false,\"signature\":\"o(android.content.Context): android.util.Size\"}],\"fields\":[{\"name\":\"f353707a\",\"def_pos\":0,\"type\":\"xo.d\"},{\"name\":\"f353708b\",\"def_pos\":0,\"type\":\"java.lang.Boolean\"}],\"field_count\":2,\"full_name\":\"xo.d\",\"name\":\"d\",\"inner_classes\":[],\"inner_class_count\":0}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "xo.d",
+          "method_name": "c",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"full_name\":\"xo.d.c\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"c\",\"overload_count\":1,\"body\":\"    public final float c(Context context) {\\r\\n        PatchProxyResult patchProxyResultProxy1Para = PatchProxy.proxy1Para(context, this, d.class, 6076);\\r\\n        if (patchProxyResultProxy1Para.isSupported) {\\r\\n            return ((Float) patchProxyResultProxy1Para.result).floatValue();\\r\\n        }\\r\\n        Point pointD = d(context);\\r\\n        DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();\\r\\n        if (context.getResources().getConfiguration().orientation == 2) {\\r\\n            int i100 = pointD.x;\\r\\n            pointD.x = pointD.y;\\r\\n            pointD.y = i100;\\r\\n        }\\r\\n        double d19 = 2;\\r\\n        return (float) Math.sqrt(((float) Math.pow(pointD.x / displayMetrics.xdpi, d19)) + ((float) Math.pow(pointD.y / displayMetrics.ydpi, d19)));\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"xo.d\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "xo.d",
+    "method": {
+      "name": "c",
+      "reported_signature": "c(android.content.Context): float",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final float c(Context context) {\r\n        PatchProxyResult patchProxyResultProxy1Para = PatchProxy.proxy1Para(context, this, d.class, 6076);\r\n        if (patchProxyResultProxy1Para.isSupported) {\r\n            return ((Float) patchProxyResultProxy1Para.result).floatValue();\r\n        }\r\n        Point pointD = d(context);\r\n        DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();\r\n        if (context.getResources().getConfiguration().orientation == 2) {\r\n            int i100 = pointD.x;\r\n            pointD.x = pointD.y;\r\n            pointD.y = i100;\r\n        }\r\n        double d19 = 2;\r\n        return (float) Math.sqrt(((float) Math.pow(pointD.x / displayMetrics.xdpi, d19)) + ((float) Math.pow(pointD.y / displayMetrics.ydpi, d19)));\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "5deac35b115a5719de070216747d7ab2f11399e5883940398cfdeadf593462ac",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

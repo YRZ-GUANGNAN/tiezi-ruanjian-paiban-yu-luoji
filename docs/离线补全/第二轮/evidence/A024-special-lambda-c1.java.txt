@@ -1,0 +1,6 @@
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // kotlin.jvm.functions.Function0
+        public final Boolean invoke() {
+            PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, C7068c.class, 4266);
+            return patchProxyResultProxy0Para.isSupported ? (Boolean) patchProxyResultProxy0Para.result : Boolean.valueOf(xo.a.f353701a.c().b().contains(c.f301389a.b()));
+        }

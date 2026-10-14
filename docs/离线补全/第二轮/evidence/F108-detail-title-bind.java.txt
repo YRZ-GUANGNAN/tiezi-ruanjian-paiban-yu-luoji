@@ -1,0 +1,10 @@
+    public final void O6(CharSequence charSequence) {
+        if (PatchProxy.proxyVoid1Para(charSequence, this, NoteDetailContentPresenter.class, 290810)) {
+            return;
+        }
+        NoteDetailTextView noteDetailTextView = (NoteDetailTextView) w6().findViewById(n.O1);
+        noteDetailTextView.setTextColor(f.e(k.f224011v));
+        h.f175371a.a(noteDetailTextView, new SpannableStringBuilder(charSequence), (52 & 4) != 0 ? 0.0f : 17.0f, (52 & 8) != 0 ? 0.0f : 0.015f, (52 & 16) != 0 ? 0.0f : 0.0f, (52 & 32) != 0 ? 0.0f : 0.0f);
+        noteDetailTextView.setMovementMethod(LinkMovementMethod.getInstance());
+        noteDetailTextView.setText(charSequence);
+    }

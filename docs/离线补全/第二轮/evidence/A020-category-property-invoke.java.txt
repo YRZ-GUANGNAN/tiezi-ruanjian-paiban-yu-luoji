@@ -1,0 +1,17 @@
+        @Override // kotlin.jvm.functions.Function0
+        public final String invoke() {
+            PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, a.class, 4222);
+            if (patchProxyResultProxy0Para.isSupported) {
+                return (String) patchProxyResultProxy0Para.result;
+            }
+            c cVar = c.f301389a;
+            if (cVar.l()) {
+                jx8.d.a("DeviceInfoContainer", "deviceType = " + j.k().r("key_device_type_from_cloud", "phone"));
+            } else {
+                jx8.d.C("DeviceInfoContainer", "has not init deviceType from cloud " + new Exception("text").getStackTrace());
+            }
+            String strR = j.k().r("key_device_type_from_cloud", cVar.u() ? "pad" : "phone");
+            cVar.d().a(strR);
+            e.f301404a.e(strR, XYUtilsCenter.f());
+            return strR;
+        }

@@ -1,0 +1,4 @@
+    public final boolean Q() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, c.class, 159);
+        return patchProxyResultProxy0Para.isSupported ? ((Boolean) patchProxyResultProxy0Para.result).booleanValue() : f212610j;
+    }

@@ -1,0 +1,23 @@
+    public final void I6(NoteFeed noteFeed) {
+        if (PatchProxy.proxyVoid1Para(noteFeed, this, NoteDetailContentPresenter.class, 290808)) {
+            return;
+        }
+        sr7.g gVar = new sr7.g(s6(), xq1.b.a(noteFeed.h()));
+        gVar.D(k.f224008s);
+        gVar.G(new tr7.h() { // from class: l96.f
+            @Override // tr7.h
+            public final void a(Object obj, tr7.a aVar, String str, String str2, HashTagListBean.HashTag hashTag) {
+                NoteDetailContentPresenter.J6(obj, aVar, str, str2, hashTag);
+            }
+        });
+        String strU1 = noteFeed.U1();
+        if (StringsKt__StringsJVMKt.isBlank(strU1)) {
+            strU1 = "";
+        }
+        if (!StringsKt__StringsJVMKt.isBlank(noteFeed.C())) {
+            strU1 = strU1 + noteFeed.C();
+        }
+        if (!StringsKt__StringsJVMKt.isBlank(strU1)) {
+            noteFeed.F3(gVar.s(s6(), strU1));
+        }
+    }

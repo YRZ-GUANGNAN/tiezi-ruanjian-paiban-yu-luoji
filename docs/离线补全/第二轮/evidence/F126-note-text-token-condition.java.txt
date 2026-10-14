@@ -1,0 +1,9 @@
+    @Override // com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView
+    public boolean c() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, NoteDetailTextView.class, 281407);
+        if (patchProxyResultProxy0Para.isSupported) {
+            return ((Boolean) patchProxyResultProxy0Para.result).booleanValue();
+        }
+        i iVar = i.f346132a;
+        return iVar.n1() || iVar.o1();
+    }

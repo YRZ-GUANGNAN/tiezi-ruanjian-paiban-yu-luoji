@@ -1,0 +1,136 @@
+{
+  "evidence_id": "ev_f0815629a9d17f85ce1c9f0a3ad4e0d37eb08b09bb2240dcf94caf3e5edc1ce6",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView",
+    "method_name": "setText"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"def_pos\":0,\"name\":\"<clinit>\",\"is_constructor\":false,\"signature\":\"<clinit>(): void\"},{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"signature\":\"<init>(android.content.Context, android.util.AttributeSet): void\"},{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"signature\":\"<init>(android.content.Context, android.util.AttributeSet, int): void\"},{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"signature\":\"<init>(android.content.Context, android.util.AttributeSet, int, int, kotlin.jvm.internal.DefaultConstructorMarker): void\"},{\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(): boolean\"},{\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"signature\":\"d(int): void\"},{\"def_pos\":0,\"name\":\"setText\",\"is_constructor\":false,\"signature\":\"setText(java.lang.CharSequence, android.widget.TextView$BufferType): void\"},{\"def_pos\":0,\"name\":\"setTokenName\",\"is_constructor\":false,\"signature\":\"setTokenName(s69.f): void\"}],\"fields\":[{\"name\":\"f125731g\",\"def_pos\":0,\"type\":\"com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView$a\"},{\"name\":\"f125732d\",\"def_pos\":0,\"type\":\"int\"},{\"name\":\"f125733e\",\"def_pos\":0,\"type\":\"android.text.style.LineHeightSpan\"},{\"name\":\"f125734f\",\"def_pos\":0,\"type\":\"java.util.Map<java.lang.Integer, android.view.View>\"}],\"field_count\":4,\"full_name\":\"com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView\",\"name\":\"TextTokenCustomView\",\"inner_classes\":[\"com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView.a\"],\"inner_class_count\":1,\"method_count\":8}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView",
+          "method_name": "setText",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"method_name\":\"setText\",\"overload_count\":1,\"body\":\"    @Override // android.widget.TextView\\r\\n    public void setText(CharSequence charSequence, TextView.BufferType bufferType) {\\r\\n        if (PatchProxy.proxyVoid2Para(charSequence, bufferType, this, TextTokenCustomView.class, 93427)) {\\r\\n            return;\\r\\n        }\\r\\n        if (!c() || this.f125733e == null) {\\r\\n            super.setText(charSequence, bufferType);\\r\\n            return;\\r\\n        }\\r\\n        SpannableString spannableString = new SpannableString(charSequence);\\r\\n        LineHeightSpan lineHeightSpan = this.f125733e;\\r\\n        if (lineHeightSpan == null) {\\r\\n            lineHeightSpan = null;\\r\\n        }\\r\\n        spannableString.setSpan(lineHeightSpan, 0, spannableString.length(), 33);\\r\\n        super.setText(spannableString, bufferType);\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView\",\"full_name\":\"com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView.setText\",\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.xhstheme.view.texttoken.view.TextTokenCustomView",
+    "method": {
+      "name": "setText",
+      "reported_signature": "setText(java.lang.CharSequence, android.widget.TextView$BufferType): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    @Override // android.widget.TextView\r\n    public void setText(CharSequence charSequence, TextView.BufferType bufferType) {\r\n        if (PatchProxy.proxyVoid2Para(charSequence, bufferType, this, TextTokenCustomView.class, 93427)) {\r\n            return;\r\n        }\r\n        if (!c() || this.f125733e == null) {\r\n            super.setText(charSequence, bufferType);\r\n            return;\r\n        }\r\n        SpannableString spannableString = new SpannableString(charSequence);\r\n        LineHeightSpan lineHeightSpan = this.f125733e;\r\n        if (lineHeightSpan == null) {\r\n            lineHeightSpan = null;\r\n        }\r\n        spannableString.setSpan(lineHeightSpan, 0, spannableString.length(), 33);\r\n        super.setText(spannableString, bufferType);\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "0f65ba3a3ad49727155bcc548a1d5cbd62f3bb065f754073a7fb64aa544d3172",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

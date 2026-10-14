@@ -1,0 +1,152 @@
+{
+  "evidence_id": "ev_2a323187f3d0e33ddee8197abe31f77803cea61a5b889a0305421af7a8aa63b4",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "gt7.h",
+    "method_name": "a"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":82499,\"raw_class_count\":82499,\"resource_count\":18535,\"load_duration_ms\":34844,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "gt7.h"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"methods\":[{\"def_pos\":0,\"name\":\"<clinit>\",\"is_constructor\":false,\"signature\":\"<clinit>(): void\"},{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"signature\":\"<init>(): void\"},{\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false,\"signature\":\"a(android.widget.TextView, android.text.SpannableStringBuilder, float, float, float, float): void\"},{\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false,\"signature\":\"b(gt7.h, android.widget.TextView, android.text.SpannableStringBuilder, float, float, float, float, int, java.lang.Object): void\"},{\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false,\"signature\":\"c(): boolean\"},{\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false,\"signature\":\"d(int, android.graphics.PorterDuff$Mode): android.graphics.PorterDuff$Mode\"}],\"fields\":[{\"name\":\"f175371a\",\"def_pos\":0,\"type\":\"gt7.h\"},{\"name\":\"f175372b\",\"def_pos\":0,\"type\":\"kotlin.Lazy\"}],\"field_count\":2,\"full_name\":\"gt7.h\",\"name\":\"h\",\"inner_classes\":[\"gt7.h.a\"],\"inner_class_count\":1,\"method_count\":6}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "gt7.h",
+          "method_name": "a",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"method_name\":\"a\",\"overload_count\":1,\"body\":\"    public final void a(TextView textView, SpannableStringBuilder spannableStringBuilder, float f100, float f101, float f102, float f103) {\\r\\n        if (PatchProxy.proxyVoid(new Object[]{textView, spannableStringBuilder, new Float(f100), new Float(f101), new Float(f102), new Float(f103)}, this, h.class, 134971)) {\\r\\n            return;\\r\\n        }\\r\\n        if (!(f100 == 0.0f)) {\\r\\n            textView.setTextSize(f100);\\r\\n        }\\r\\n        if (!(f101 == 0.0f)) {\\r\\n            textView.setLetterSpacing(f101);\\r\\n        }\\r\\n        if (!(f102 == 0.0f)) {\\r\\n            textView.setLineSpacing(0.0f, f102);\\r\\n        }\\r\\n        if (f103 == 0.0f) {\\r\\n            return;\\r\\n        }\\r\\n        textView.setText(new sr7.g(textView.getContext()).r(spannableStringBuilder));\\r\\n        jx8.d.a(\\\"UnifiedNoteContentController\\\", \\\"fix parser: \\\" + ((Object) textView.getText()));\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"gt7.h\",\"full_name\":\"gt7.h.a\",\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "gt7.h",
+    "method": {
+      "name": "a",
+      "reported_signature": "a(android.widget.TextView, android.text.SpannableStringBuilder, float, float, float, float): void",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final void a(TextView textView, SpannableStringBuilder spannableStringBuilder, float f100, float f101, float f102, float f103) {\r\n        if (PatchProxy.proxyVoid(new Object[]{textView, spannableStringBuilder, new Float(f100), new Float(f101), new Float(f102), new Float(f103)}, this, h.class, 134971)) {\r\n            return;\r\n        }\r\n        if (!(f100 == 0.0f)) {\r\n            textView.setTextSize(f100);\r\n        }\r\n        if (!(f101 == 0.0f)) {\r\n            textView.setLetterSpacing(f101);\r\n        }\r\n        if (!(f102 == 0.0f)) {\r\n            textView.setLineSpacing(0.0f, f102);\r\n        }\r\n        if (f103 == 0.0f) {\r\n            return;\r\n        }\r\n        textView.setText(new sr7.g(textView.getContext()).r(spannableStringBuilder));\r\n        jx8.d.a(\"UnifiedNoteContentController\", \"fix parser: \" + ((Object) textView.getText()));\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "f453898d2ba1826c38529aa6d0c96024937af34ca6dcbf30cb2f89538c27b98d",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+source_status: auxiliary-dex-parse
+scope: exact method instruction references or field annotations; static only
+parser: dexlib2 bundled in jadx-headless-mcp-0.7.1-all.jar
+apk_sha256: 44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5
+requested_class: Lcom/xingin/matrix/notedetail/v3/content/NoteDetailContentPresenter;
+requested_selector: O6
+dex_entry: classes8.dex
+method_descriptor: Lcom/xingin/matrix/notedetail/v3/content/NoteDetailContentPresenter;->O6(Ljava/lang/CharSequence;)V
+  code_unit_offset=0x0 opcode=const-class reference=Lcom/xingin/matrix/notedetail/v3/content/NoteDetailContentPresenter;
+  code_unit_offset=0x5 opcode=invoke-static reference=Lcom/xingin/robust/PatchProxy;->proxyVoid1Para(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;I)Z
+  code_unit_offset=0xc opcode=invoke-virtual reference=Lcom/xingin/foundation/core/v2/Presenter;->w6()Landroid/view/View;
+  code_unit_offset=0x10 opcode=sget reference=Ll56/n;->O1:I
+  code_unit_offset=0x12 opcode=invoke-virtual reference=Landroid/view/View;->findViewById(I)Landroid/view/View;
+  code_unit_offset=0x16 opcode=check-cast reference=Lcom/xingin/matrix/notedetail/imagecontent/textcontent/view/NoteDetailTextView;
+  code_unit_offset=0x18 opcode=sget reference=Ll56/k;->v:I
+  code_unit_offset=0x1a opcode=invoke-static reference=Lp69/f;->e(I)I
+  code_unit_offset=0x1e opcode=invoke-virtual reference=Landroid/widget/TextView;->setTextColor(I)V
+  code_unit_offset=0x21 opcode=sget-object reference=Lgt7/h;->a:Lgt7/h;
+  code_unit_offset=0x23 opcode=new-instance reference=Landroid/text/SpannableStringBuilder;
+  code_unit_offset=0x25 opcode=invoke-direct reference=Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V
+  code_unit_offset=0x33 opcode=invoke-static/range reference=Lgt7/h;->b(Lgt7/h;Landroid/widget/TextView;Landroid/text/SpannableStringBuilder;FFFFILjava/lang/Object;)V
+  code_unit_offset=0x36 opcode=invoke-static reference=Landroid/text/method/LinkMovementMethod;->getInstance()Landroid/text/method/MovementMethod;
+  code_unit_offset=0x3a opcode=invoke-virtual reference=Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
+  code_unit_offset=0x3d opcode=invoke-virtual reference=Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+instruction_code_units: 65
+matched_selectors: 1
+limitations: reports encoded references only, not observed execution; offsets are code units relative to instructions, not APK byte offsets; static and dynamic patch behavior is not resolved.

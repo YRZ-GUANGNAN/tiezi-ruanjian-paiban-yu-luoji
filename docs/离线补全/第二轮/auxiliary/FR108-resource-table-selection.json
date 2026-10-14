@@ -1,0 +1,100 @@
+{
+  "id": "FR108-resource-table-selection",
+  "provider": "jadx-ResTableBinaryParser-direct-not-REA-Evidence",
+  "authority": "shipped-artifact",
+  "runtimeObserved": false,
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "arscSha256": "5c9fce688019e4263deafff2da8dbf1da34da33885f9a29e199d994e2a704ba2",
+  "resourceEntries": 66202,
+  "requestedIds": [
+    "0x7f1204a8",
+    "0x7f1204ab",
+    "0x7f0702db",
+    "0x7f09269d",
+    "0x7f09189d"
+  ],
+  "matches": [
+    {
+      "id": "0x7f0702db",
+      "type": "dimen",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataType": 5,
+        "rawDataHex": "0x00000501",
+        "decoded": "5dp"
+      }
+    },
+    {
+      "id": "0x7f09189d",
+      "type": "id",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataType": 18,
+        "rawDataHex": "0x00000000",
+        "decoded": "false"
+      }
+    },
+    {
+      "id": "0x7f09269d",
+      "type": "id",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x00000000",
+      "value": {
+        "dataType": 18,
+        "rawDataHex": "0x00000000",
+        "decoded": "false"
+      }
+    },
+    {
+      "id": "0x7f1204a8",
+      "type": "style",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x7f1204ae",
+      "items": [
+        {
+          "dataType": 5,
+          "rawDataHex": "0x00001002",
+          "decoded": "16sp",
+          "nameRef": "0x01010095",
+          "name": "android:attr.textSize"
+        }
+      ]
+    },
+    {
+      "id": "0x7f1204ab",
+      "type": "style",
+      "name": "-",
+      "configuration": "",
+      "parent": "0x7f1204ae",
+      "items": [
+        {
+          "dataType": 5,
+          "rawDataHex": "0x00000f02",
+          "decoded": "15sp",
+          "nameRef": "0x01010095",
+          "name": "android:attr.textSize"
+        }
+      ]
+    }
+  ],
+  "textContentLayout": [
+    {
+      "name": "-",
+      "id": "0x7f0c0ec8",
+      "value": "res/Oo5.xml",
+      "type": "layout",
+      "configuration": ""
+    }
+  ],
+  "limitations": [
+    "Static packaged resource defaults only; XML and code may override these values.",
+    "All matching configurations in the parsed table are retained; selection for a running device is not observed.",
+    "No APK execution, signature or split-APK verification was performed."
+  ]
+}

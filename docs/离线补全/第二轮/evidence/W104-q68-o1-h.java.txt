@@ -1,0 +1,5 @@
+    @Deprecated
+    public static int h(Context context) {
+        PatchProxyResult patchProxyResultProxy1Para = PatchProxy.proxy1Para(context, null, o1.class, 140262);
+        return patchProxyResultProxy1Para.isSupported ? ((Integer) patchProxyResultProxy1Para.result).intValue() : context.getResources().getDisplayMetrics().widthPixels;
+    }

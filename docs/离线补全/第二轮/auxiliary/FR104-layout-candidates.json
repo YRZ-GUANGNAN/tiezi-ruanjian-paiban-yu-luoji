@@ -1,0 +1,29 @@
+{
+  "id": "FR104-layout-candidates",
+  "createdAt": "2026-10-14T05:25:23.3416156Z",
+  "authority": "shipped-artifact",
+  "runtimeObserved": false,
+  "provider": "dotnet-zip-string-candidate-scan",
+  "apkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+  "xmlEntriesExamined": 12678,
+  "targets": [
+    "com.xingin.matrix.notedetail.imagecontent.textcontent.view.TextContentView",
+    "com.xingin.matrix.notedetail.imagecontent.textcontent.view.NoteDetailTextView"
+  ],
+  "matches": [
+    {
+      "name": "res/Oo5.xml",
+      "bytes": 2388,
+      "sha256": "04e2394aff07e4e1efef372f29b0f8962e3c0ecf6a391f5e7f1b2ccc57fcb993",
+      "stringHits": [
+        "com.xingin.matrix.notedetail.imagecontent.textcontent.view.TextContentView",
+        "com.xingin.matrix.notedetail.imagecontent.textcontent.view.NoteDetailTextView"
+      ]
+    }
+  ],
+  "limitations": [
+    "String hits are layout candidates, not proof of runtime use.",
+    "Only res/*.xml archive entries are scanned; programmatic layouts are outside this scan.",
+    "UTF8 and UTF16LE text searches are not a complete AXML parser; selected candidates require format-aware decoding."
+  ]
+}

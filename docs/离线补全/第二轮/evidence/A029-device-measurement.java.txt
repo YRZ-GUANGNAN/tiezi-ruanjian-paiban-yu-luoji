@@ -1,0 +1,15 @@
+    public final float c(Context context) {
+        PatchProxyResult patchProxyResultProxy1Para = PatchProxy.proxy1Para(context, this, d.class, 6076);
+        if (patchProxyResultProxy1Para.isSupported) {
+            return ((Float) patchProxyResultProxy1Para.result).floatValue();
+        }
+        Point pointD = d(context);
+        DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
+        if (context.getResources().getConfiguration().orientation == 2) {
+            int i100 = pointD.x;
+            pointD.x = pointD.y;
+            pointD.y = i100;
+        }
+        double d19 = 2;
+        return (float) Math.sqrt(((float) Math.pow(pointD.x / displayMetrics.xdpi, d19)) + ((float) Math.pow(pointD.y / displayMetrics.ydpi, d19)));
+    }

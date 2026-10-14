@@ -1,0 +1,153 @@
+{
+  "evidence_id": "ev_2c4b89c5f544019fc12dd4fb4e30aaf40c103b7737a7314787a1da7534dba106",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "so.c.C7068c",
+    "method_name": "invoke",
+    "overload_index": 1
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":82499,\"raw_class_count\":82499,\"resource_count\":18535,\"load_duration_ms\":57530,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "so.c.C7068c"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"name\":\"f301398d\",\"def_pos\":0,\"type\":\"so.c$c\"}],\"field_count\":1,\"full_name\":\"so.c.C7068c\",\"name\":\"C7068c\",\"inner_classes\":[],\"inner_class_count\":0,\"method_count\":4,\"methods\":[{\"def_pos\":0,\"name\":\"<clinit>\",\"is_constructor\":false,\"signature\":\"<clinit>(): void\"},{\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true,\"signature\":\"<init>(): void\"},{\"def_pos\":0,\"name\":\"invoke\",\"is_constructor\":false,\"signature\":\"invoke(): java.lang.Boolean\"},{\"def_pos\":0,\"name\":\"invoke\",\"is_constructor\":false,\"signature\":\"invoke(): java.lang.Boolean\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "so.c.C7068c",
+          "method_name": "invoke",
+          "overload_index": 1,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"markers\":[],\"method_name\":\"invoke\",\"overload_count\":2,\"body\":\"        /* JADX WARN: Can't rename method to resolve collision */\\r\\n        @Override // kotlin.jvm.functions.Function0\\r\\n        public final Boolean invoke() {\\r\\n            PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, C7068c.class, 4266);\\r\\n            return patchProxyResultProxy0Para.isSupported ? (Boolean) patchProxyResultProxy0Para.result : Boolean.valueOf(xo.a.f353701a.c().b().contains(c.f301389a.b()));\\r\\n        }\",\"fell_back\":false,\"overload_index\":1,\"class_name\":\"so.c.C7068c\",\"full_name\":\"so.c.c.invoke\",\"mode\":\"java\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "so.c.C7068c",
+    "method": {
+      "name": "invoke",
+      "reported_signature": "invoke(): java.lang.Boolean",
+      "overload_index": 1,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 2,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "        /* JADX WARN: Can't rename method to resolve collision */\r\n        @Override // kotlin.jvm.functions.Function0\r\n        public final Boolean invoke() {\r\n            PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, C7068c.class, 4266);\r\n            return patchProxyResultProxy0Para.isSupported ? (Boolean) patchProxyResultProxy0Para.result : Boolean.valueOf(xo.a.f353701a.c().b().contains(c.f301389a.b()));\r\n        }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "db15a80aaba4019db2ba283db5f15f19b5575e4b3811d76deafe06b7acc705a8",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

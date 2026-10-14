@@ -1,0 +1,6 @@
+    public final float q0(int i100) {
+        if (i100 < this.imageList.size()) {
+            return (this.imageList.get(i100).getWidth() * 1.0f) / this.imageList.get(i100).getHeight();
+        }
+        return 0.0f;
+    }

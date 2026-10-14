@@ -1,0 +1,223 @@
+{
+  "evidence_id": "ev_8195602b2dcf64e7063d9210edacfd8b7ada905b3efd7e49ce07f5ed45201a3c",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":82499,\"raw_class_count\":82499,\"resource_count\":18535,\"load_duration_ms\":45630,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"field_count\":0,\"fields\":[],\"methods\":[{\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(): void\",\"is_constructor\":true},{\"name\":\"F6\",\"def_pos\":0,\"signature\":\"F6(java.lang.Object, tr7.a, java.lang.String, java.lang.String, com.xingin.entities.HashTagListBean$HashTag): void\",\"is_constructor\":false},{\"name\":\"G6\",\"def_pos\":0,\"signature\":\"G6(com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter, com.xingin.entities.notedetail.NoteFeed): void\",\"is_constructor\":false},{\"name\":\"H6\",\"def_pos\":0,\"signature\":\"H6(java.lang.CharSequence, android.text.SpannableStringBuilder): void\",\"is_constructor\":false},{\"name\":\"I6\",\"def_pos\":0,\"signature\":\"I6(com.xingin.entities.notedetail.NoteFeed): void\",\"is_constructor\":false},{\"name\":\"J6\",\"def_pos\":0,\"signature\":\"J6(java.lang.Object, tr7.a, java.lang.String, java.lang.String, com.xingin.entities.HashTagListBean$HashTag): void\",\"is_constructor\":false},{\"name\":\"K6\",\"def_pos\":0,\"signature\":\"K6(com.xingin.entities.notedetail.NoteFeed): void\",\"is_constructor\":false},{\"name\":\"L6\",\"def_pos\":0,\"signature\":\"L6(java.lang.String): java.lang.String\",\"is_constructor\":false},{\"name\":\"M6\",\"def_pos\":0,\"signature\":\"M6(com.xingin.entities.notedetail.NoteFeed): x76.f$c\",\"is_constructor\":false},{\"name\":\"N6\",\"def_pos\":0,\"signature\":\"N6(com.xingin.entities.notedetail.NoteFeed): void\",\"is_constructor\":false},{\"name\":\"O6\",\"def_pos\":0,\"signature\":\"O6(java.lang.CharSequence): void\",\"is_constructor\":false},{\"name\":\"P6\",\"def_pos\":0,\"signature\":\"P6(boolean): void\",\"is_constructor\":false},{\"name\":\"x6\",\"def_pos\":0,\"signature\":\"x6(): void\",\"is_constructor\":false},{\"name\":\"y6\",\"def_pos\":0,\"signature\":\"y6(): void\",\"is_constructor\":false}],\"method_count\":14,\"inner_class_count\":4,\"inner_classes\":[\"com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter.a\",\"com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter.b\",\"com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter.c\",\"com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter.d\"],\"name\":\"NoteDetailContentPresenter\",\"full_name\":\"com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "F6",
+        "reported_signature": "F6(java.lang.Object, tr7.a, java.lang.String, java.lang.String, com.xingin.entities.HashTagListBean$HashTag): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "G6",
+        "reported_signature": "G6(com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter, com.xingin.entities.notedetail.NoteFeed): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "H6",
+        "reported_signature": "H6(java.lang.CharSequence, android.text.SpannableStringBuilder): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "I6",
+        "reported_signature": "I6(com.xingin.entities.notedetail.NoteFeed): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "J6",
+        "reported_signature": "J6(java.lang.Object, tr7.a, java.lang.String, java.lang.String, com.xingin.entities.HashTagListBean$HashTag): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "K6",
+        "reported_signature": "K6(com.xingin.entities.notedetail.NoteFeed): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "L6",
+        "reported_signature": "L6(java.lang.String): java.lang.String",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "M6",
+        "reported_signature": "M6(com.xingin.entities.notedetail.NoteFeed): x76.f$c",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "N6",
+        "reported_signature": "N6(com.xingin.entities.notedetail.NoteFeed): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "O6",
+        "reported_signature": "O6(java.lang.CharSequence): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "P6",
+        "reported_signature": "P6(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x6",
+        "reported_signature": "x6(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y6",
+        "reported_signature": "y6(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [],
+    "inner_classes": [
+      "com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter.a",
+      "com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter.b",
+      "com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter.c",
+      "com.xingin.matrix.notedetail.v3.content.NoteDetailContentPresenter.d"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "78a552c554903f3f68bba489fae2599c2760e734f503f45d7bd51a25414a954e",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

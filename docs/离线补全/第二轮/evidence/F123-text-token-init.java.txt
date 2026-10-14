@@ -1,0 +1,19 @@
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    @JvmOverloads
+    public TextTokenCustomView(Context context, AttributeSet attributeSet, int i100) {
+        super(context, attributeSet, i100);
+        this.f125734f = new LinkedHashMap();
+        this.f125732d = 5;
+        if (c()) {
+            TypedArray typedArrayObtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, j.V0, i100, 0);
+            try {
+                int i101 = typedArrayObtainStyledAttributes.getInt(j.W0, -1);
+                if (i101 != -1) {
+                    this.f125732d = b.f296518a.a();
+                    d(i101);
+                }
+            } finally {
+                typedArrayObtainStyledAttributes.recycle();
+            }
+        }
+    }

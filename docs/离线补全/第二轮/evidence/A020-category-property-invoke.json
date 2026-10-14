@@ -1,0 +1,153 @@
+{
+  "evidence_id": "ev_1f1ebd1d36b9a28108e757c2eb16ffea8724abc79d92f10068636f6e0237a6ec",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "so.c.a",
+    "method_name": "invoke",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":82499,\"raw_class_count\":82499,\"resource_count\":18535,\"load_duration_ms\":61727,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "so.c.a"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"name\":\"a\",\"full_name\":\"so.c.a\",\"field_count\":1,\"fields\":[{\"name\":\"f301396d\",\"type\":\"so.c$a\",\"def_pos\":0}],\"methods\":[{\"is_constructor\":false,\"name\":\"<clinit>\",\"def_pos\":0,\"signature\":\"<clinit>(): void\"},{\"is_constructor\":true,\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(): void\"},{\"is_constructor\":false,\"name\":\"invoke\",\"def_pos\":0,\"signature\":\"invoke(): java.lang.String\"},{\"is_constructor\":false,\"name\":\"invoke2\",\"def_pos\":0,\"signature\":\"invoke2(): java.lang.String\"}],\"method_count\":4,\"inner_class_count\":0,\"inner_classes\":[]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "so.c.a",
+          "method_name": "invoke",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"body\":\"        @Override // kotlin.jvm.functions.Function0\\r\\n        public final String invoke() {\\r\\n            PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, a.class, 4222);\\r\\n            if (patchProxyResultProxy0Para.isSupported) {\\r\\n                return (String) patchProxyResultProxy0Para.result;\\r\\n            }\\r\\n            c cVar = c.f301389a;\\r\\n            if (cVar.l()) {\\r\\n                jx8.d.a(\\\"DeviceInfoContainer\\\", \\\"deviceType = \\\" + j.k().r(\\\"key_device_type_from_cloud\\\", \\\"phone\\\"));\\r\\n            } else {\\r\\n                jx8.d.C(\\\"DeviceInfoContainer\\\", \\\"has not init deviceType from cloud \\\" + new Exception(\\\"text\\\").getStackTrace());\\r\\n            }\\r\\n            String strR = j.k().r(\\\"key_device_type_from_cloud\\\", cVar.u() ? \\\"pad\\\" : \\\"phone\\\");\\r\\n            cVar.d().a(strR);\\r\\n            e.f301404a.e(strR, XYUtilsCenter.f());\\r\\n            return strR;\\r\\n        }\",\"overload_count\":1,\"method_name\":\"invoke\",\"markers\":[],\"mode\":\"java\",\"full_name\":\"so.c.a.invoke\",\"class_name\":\"so.c.a\",\"overload_index\":0,\"fell_back\":false}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "so.c.a",
+    "method": {
+      "name": "invoke",
+      "reported_signature": "invoke(): java.lang.String",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "        @Override // kotlin.jvm.functions.Function0\r\n        public final String invoke() {\r\n            PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, a.class, 4222);\r\n            if (patchProxyResultProxy0Para.isSupported) {\r\n                return (String) patchProxyResultProxy0Para.result;\r\n            }\r\n            c cVar = c.f301389a;\r\n            if (cVar.l()) {\r\n                jx8.d.a(\"DeviceInfoContainer\", \"deviceType = \" + j.k().r(\"key_device_type_from_cloud\", \"phone\"));\r\n            } else {\r\n                jx8.d.C(\"DeviceInfoContainer\", \"has not init deviceType from cloud \" + new Exception(\"text\").getStackTrace());\r\n            }\r\n            String strR = j.k().r(\"key_device_type_from_cloud\", cVar.u() ? \"pad\" : \"phone\");\r\n            cVar.d().a(strR);\r\n            e.f301404a.e(strR, XYUtilsCenter.f());\r\n            return strR;\r\n        }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "151d1a414cadfc152ade18857aa31d3efb09b93ce0745d409e7691ab5d045299",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

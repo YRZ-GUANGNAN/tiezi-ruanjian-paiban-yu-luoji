@@ -1,0 +1,153 @@
+{
+  "evidence_id": "ev_37eb587b0c3ec02403b6cd3fb83c1dd6d7e1246b622c3c77a822bb5762b8e075",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "so.c",
+    "method_name": "v",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"engine_reported_version\":\"0.7.1\",\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":82499,\"raw_class_count\":82499,\"resource_count\":18535,\"load_duration_ms\":52986,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "so.c"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fields\":[{\"def_pos\":0,\"type\":\"so.c\",\"name\":\"f301389a\"},{\"def_pos\":0,\"type\":\"uc9.h<java.lang.String>\",\"name\":\"f301390b\"},{\"def_pos\":0,\"type\":\"kotlin.Lazy<java.lang.String>\",\"name\":\"f301391c\"},{\"def_pos\":0,\"type\":\"kotlin.Lazy\",\"name\":\"f301392d\"},{\"def_pos\":0,\"type\":\"kotlin.Lazy\",\"name\":\"f301393e\"},{\"def_pos\":0,\"type\":\"kotlin.Lazy\",\"name\":\"f301394f\"},{\"def_pos\":0,\"type\":\"kotlin.Lazy\",\"name\":\"f301395g\"}],\"field_count\":7,\"full_name\":\"so.c\",\"name\":\"c\",\"inner_classes\":[\"so.c.a\",\"so.c.b\",\"so.c.C7068c\",\"so.c.d\"],\"inner_class_count\":4,\"method_count\":26,\"methods\":[{\"is_constructor\":false,\"signature\":\"<clinit>(): void\",\"def_pos\":0,\"name\":\"<clinit>\"},{\"is_constructor\":true,\"signature\":\"<init>(): void\",\"def_pos\":0,\"name\":\"<init>\"},{\"is_constructor\":false,\"signature\":\"a(): long\",\"def_pos\":0,\"name\":\"a\"},{\"is_constructor\":false,\"signature\":\"b(): java.lang.String\",\"def_pos\":0,\"name\":\"b\"},{\"is_constructor\":false,\"signature\":\"c(): java.lang.String\",\"def_pos\":0,\"name\":\"c\"},{\"is_constructor\":false,\"signature\":\"d(): uc9.h<java.lang.String>\",\"def_pos\":0,\"name\":\"d\"},{\"is_constructor\":false,\"signature\":\"e(): java.lang.String\",\"def_pos\":0,\"name\":\"e\"},{\"is_constructor\":false,\"signature\":\"f(): boolean\",\"def_pos\":0,\"name\":\"f\"},{\"is_constructor\":false,\"signature\":\"g(): boolean\",\"def_pos\":0,\"name\":\"g\"},{\"is_constructor\":false,\"signature\":\"h(): boolean\",\"def_pos\":0,\"name\":\"h\"},{\"is_constructor\":false,\"signature\":\"i(java.lang.String, java.lang.String): java.lang.String\",\"def_pos\":0,\"name\":\"i\"},{\"is_constructor\":false,\"signature\":\"j(so.c, java.lang.String, java.lang.String, int, java.lang.Object): java.lang.String\",\"def_pos\":0,\"name\":\"j\"},{\"is_constructor\":false,\"signature\":\"k(): java.lang.String\",\"def_pos\":0,\"name\":\"k\"},{\"is_constructor\":false,\"signature\":\"l(): boolean\",\"def_pos\":0,\"name\":\"l\"},{\"is_constructor\":false,\"signature\":\"m(): boolean\",\"def_pos\":0,\"name\":\"m\"},{\"is_constructor\":false,\"signature\":\"n(): boolean\",\"def_pos\":0,\"name\":\"n\"},{\"is_constructor\":false,\"signature\":\"o(): boolean\",\"def_pos\":0,\"name\":\"o\"},{\"is_constructor\":false,\"signature\":\"p(): boolean\",\"def_pos\":0,\"name\":\"p\"},{\"is_constructor\":false,\"signature\":\"q(): boolean\",\"def_pos\":0,\"name\":\"q\"},{\"is_constructor\":false,\"signature\":\"r(): boolean\",\"def_pos\":0,\"name\":\"r\"},{\"is_constructor\":false,\"signature\":\"s(): boolean\",\"def_pos\":0,\"name\":\"s\"},{\"is_constructor\":false,\"signature\":\"t(): boolean\",\"def_pos\":0,\"name\":\"t\"},{\"is_constructor\":false,\"signature\":\"u(): boolean\",\"def_pos\":0,\"name\":\"u\"},{\"is_constructor\":false,\"signature\":\"v(): boolean\",\"def_pos\":0,\"name\":\"v\"},{\"is_constructor\":false,\"signature\":\"w(): boolean\",\"def_pos\":0,\"name\":\"w\"},{\"is_constructor\":false,\"signature\":\"x(java.lang.String): void\",\"def_pos\":0,\"name\":\"x\"}]}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "so.c",
+          "method_name": "v",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"overload_count\":1,\"body\":\"    public final boolean v() {\\r\\n        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, c.class, 4435);\\r\\n        if (patchProxyResultProxy0Para.isSupported) {\\r\\n            return ((Boolean) patchProxyResultProxy0Para.result).booleanValue();\\r\\n        }\\r\\n        if (s()) {\\r\\n            return false;\\r\\n        }\\r\\n        float fC = xo.d.f353707a.c(XYUtilsCenter.f());\\r\\n        return 8.4f <= fC && fC <= 19.0f;\\r\\n    }\",\"fell_back\":false,\"overload_index\":0,\"class_name\":\"so.c\",\"full_name\":\"so.c.v\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"v\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "so.c",
+    "method": {
+      "name": "v",
+      "reported_signature": "v(): boolean",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final boolean v() {\r\n        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, c.class, 4435);\r\n        if (patchProxyResultProxy0Para.isSupported) {\r\n            return ((Boolean) patchProxyResultProxy0Para.result).booleanValue();\r\n        }\r\n        if (s()) {\r\n            return false;\r\n        }\r\n        float fC = xo.d.f353707a.c(XYUtilsCenter.f());\r\n        return 8.4f <= fC && fC <= 19.0f;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "d846ca58c775c4cb6f7d7cd8e0d3021b20ddf0a5fcc801b3adc3f8dd1dd70ccc",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "evidence_id": "ev_ba4b053c50e8aa8b8d4200c6738475ae2ba83bc6a82733c890b4be5ad2a9ad3f",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_method",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.entities.ImageBean",
+    "method_name": "getWidth",
+    "overload_index": 0
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":24,\"java_version\":\"25.0.2\",\"max_heap_bytes\":6442450944,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "local-artifact/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"local-artifact/target.apk\",\"class_count\":82499,\"raw_class_count\":82499,\"resource_count\":18535,\"load_duration_ms\":84298,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.entities.ImageBean"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"inner_classes\":[\"com.xingin.entities.ImageBean.a\",\"com.xingin.entities.ImageBean.b\"],\"inner_class_count\":2,\"method_count\":65,\"methods\":[{\"signature\":\"<clinit>(): void\",\"def_pos\":0,\"name\":\"<clinit>\",\"is_constructor\":false},{\"signature\":\"<init>(): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true},{\"signature\":\"<init>(android.os.Parcel): void\",\"def_pos\":0,\"name\":\"<init>\",\"is_constructor\":true},{\"signature\":\"A0(): boolean\",\"def_pos\":0,\"name\":\"A0\",\"is_constructor\":false},{\"signature\":\"D(): java.lang.Integer\",\"def_pos\":0,\"name\":\"D\",\"is_constructor\":false},{\"signature\":\"E0(java.lang.String): void\",\"def_pos\":0,\"name\":\"E0\",\"is_constructor\":false},{\"signature\":\"G0(java.lang.String): void\",\"def_pos\":0,\"name\":\"G0\",\"is_constructor\":false},{\"signature\":\"H0(com.xingin.entities.XhsFilterModel): void\",\"def_pos\":0,\"name\":\"H0\",\"is_constructor\":false},{\"signature\":\"I0(int): void\",\"def_pos\":0,\"name\":\"I0\",\"is_constructor\":false},{\"signature\":\"M0(java.lang.Integer): void\",\"def_pos\":0,\"name\":\"M0\",\"is_constructor\":false},{\"signature\":\"N(): com.xingin.entities.ImageTemplate\",\"def_pos\":0,\"name\":\"N\",\"is_constructor\":false},{\"signature\":\"O0(java.lang.String): void\",\"def_pos\":0,\"name\":\"O0\",\"is_constructor\":false},{\"signature\":\"P0(java.lang.Integer): void\",\"def_pos\":0,\"name\":\"P0\",\"is_constructor\":false},{\"signature\":\"R(): java.lang.String\",\"def_pos\":0,\"name\":\"R\",\"is_constructor\":false},{\"signature\":\"U(): double\",\"def_pos\":0,\"name\":\"U\",\"is_constructor\":false},{\"signature\":\"V(): java.lang.String\",\"def_pos\":0,\"name\":\"V\",\"is_constructor\":false},{\"signature\":\"W(): com.xingin.entities.video.VideoInfoV2\",\"def_pos\":0,\"name\":\"W\",\"is_constructor\":false},{\"signature\":\"X(): java.lang.String\",\"def_pos\":0,\"name\":\"X\",\"is_constructor\":false},{\"signature\":\"Y(): java.lang.String\",\"def_pos\":0,\"name\":\"Y\",\"is_constructor\":false},{\"signature\":\"Y0(com.xingin.entities.ImageTemplate): void\",\"def_pos\":0,\"name\":\"Y0\",\"is_constructor\":false},{\"signature\":\"Z0(java.lang.String): void\",\"def_pos\":0,\"name\":\"Z0\",\"is_constructor\":false},{\"signature\":\"a0(): double\",\"def_pos\":0,\"name\":\"a0\",\"is_constructor\":false},{\"signature\":\"a1(java.lang.String): void\",\"def_pos\":0,\"name\":\"a1\",\"is_constructor\":false},{\"signature\":\"b0(): com.xingin.entities.capa.ImageMetaData\",\"def_pos\":0,\"name\":\"b0\",\"is_constructor\":false},{\"signature\":\"d1(com.xingin.entities.video.VideoInfoV2): void\",\"def_pos\":0,\"name\":\"d1\",\"is_constructor\":false},{\"signature\":\"describeContents(): int\",\"def_pos\":0,\"name\":\"describeContents\",\"is_constructor\":false},{\"signature\":\"e0(): boolean\",\"def_pos\":0,\"name\":\"e0\",\"is_constructor\":false},{\"signature\":\"e1(int): void\",\"def_pos\":0,\"name\":\"e1\",\"is_constructor\":false},{\"signature\":\"f(java.lang.String, int, kotlin.jvm.functions.Function1<? super java.lang.String, com.xingin.entities.CoProduceNoteExtraInfo>): java.util.List<mi4.a>\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false},{\"signature\":\"f0(): java.lang.String\",\"def_pos\":0,\"name\":\"f0\",\"is_constructor\":false},{\"signature\":\"g0(): java.lang.String\",\"def_pos\":0,\"name\":\"g0\",\"is_constructor\":false},{\"signature\":\"g1(java.lang.String): void\",\"def_pos\":0,\"name\":\"g1\",\"is_constructor\":false},{\"signature\":\"getHeight(): int\",\"def_pos\":0,\"name\":\"getHeight\",\"is_constructor\":false},{\"signature\":\"getId(): java.lang.String\",\"def_pos\":0,\"name\":\"getId\",\"is_constructor\":false},{\"signature\":\"getWidth(): int\",\"def_pos\":0,\"name\":\"getWidth\",\"is_constructor\":false},{\"signature\":\"h0(): android.graphics.Rect\",\"def_pos\":0,\"name\":\"h0\",\"is_constructor\":false},{\"signature\":\"i1(boolean): void\",\"def_pos\":0,\"name\":\"i1\",\"is_constructor\":false},{\"signature\":\"j0(): float\",\"def_pos\":0,\"name\":\"j0\",\"is_constructor\":false},{\"signature\":\"j1(android.graphics.Rect): void\",\"def_pos\":0,\"name\":\"j1\",\"is_constructor\":false},{\"signature\":\"k(int): int\",\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false},{\"signature\":\"k1(java.lang.String): void\",\"def_pos\":0,\"name\":\"k1\",\"is_constructor\":false},{\"signature\":\"l(): java.lang.String\",\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false},{\"signature\":\"l0(): java.lang.String\",\"def_pos\":0,\"name\":\"l0\",\"is_constructor\":false},{\"signature\":\"m(): com.xingin.entities.CoProduceNoteInfo\",\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false},{\"signature\":\"m0(): java.lang.String\",\"def_pos\":0,\"name\":\"m0\",\"is_constructor\":false},{\"signature\":\"m1(java.lang.String): void\",\"def_pos\":0,\"name\":\"m1\",\"is_constructor\":false},{\"signature\":\"n(): java.lang.String\",\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false},{\"signature\":\"n1(java.lang.String): void\",\"def_pos\":0,\"name\":\"n1\",\"is_constructor\":false},{\"signature\":\"o(): com.xingin.entities.XhsFilterModel\",\"def_pos\":0,\"name\":\"o\",\"is_constructor\":false},{\"signature\":\"p0(): java.lang.String\",\"def_pos\":0,\"name\":\"p0\",\"is_constructor\":false},{\"signature\":\"p1(java.lang.String): void\",\"def_pos\":0,\"name\":\"p1\",\"is_constructor\":false},{\"signature\":\"q0(): java.lang.String\",\"def_pos\":0,\"name\":\"q0\",\"is_constructor\":false},{\"signature\":\"q1(java.lang.String): void\",\"def_pos\":0,\"name\":\"q1\",\"is_constructor\":false},{\"signature\":\"r0(): java.lang.String\",\"def_pos\":0,\"name\":\"r0\",\"is_constructor\":false},{\"signature\":\"r1(com.xingin.entities.VideoInfo): void\",\"def_pos\":0,\"name\":\"r1\",\"is_constructor\":false},{\"signature\":\"s1(int): void\",\"def_pos\":0,\"name\":\"s1\",\"is_constructor\":false},{\"signature\":\"t0(): java.lang.String\",\"def_pos\":0,\"name\":\"t0\",\"is_constructor\":false},{\"signature\":\"t1(java.lang.Integer): void\",\"def_pos\":0,\"name\":\"t1\",\"is_constructor\":false},{\"signature\":\"u0(): com.xingin.entities.VideoInfo\",\"def_pos\":0,\"name\":\"u0\",\"is_constructor\":false},{\"signature\":\"u1(boolean): void\",\"def_pos\":0,\"name\":\"u1\",\"is_constructor\":false},{\"signature\":\"w0(): java.lang.Integer\",\"def_pos\":0,\"name\":\"w0\",\"is_constructor\":false},{\"signature\":\"writeToParcel(android.os.Parcel, int): void\",\"def_pos\":0,\"name\":\"writeToParcel\",\"is_constructor\":false},{\"signature\":\"y(): java.lang.String\",\"def_pos\":0,\"name\":\"y\",\"is_constructor\":false},{\"signature\":\"y0(): boolean\",\"def_pos\":0,\"name\":\"y0\",\"is_constructor\":false},{\"signature\":\"z(): java.lang.Integer\",\"def_pos\":0,\"name\":\"z\",\"is_constructor\":false}],\"fields\":[{\"type\":\"com.xingin.entities.ImageBean$a\",\"name\":\"CREATOR\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"anchorId\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"bgColor\",\"def_pos\":0},{\"type\":\"com.xingin.entities.CoProduceNoteInfo\",\"name\":\"coProduceInfo\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"f96655id\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"fileid\",\"def_pos\":0},{\"type\":\"com.xingin.entities.XhsFilterModel\",\"name\":\"filter\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"filterId\",\"def_pos\":0},{\"type\":\"float\",\"name\":\"firstImageRation\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"height\",\"def_pos\":0},{\"type\":\"java.lang.Integer\",\"name\":\"heightRotated\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"image\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"imageCount\",\"def_pos\":0},{\"type\":\"java.lang.Integer\",\"name\":\"imageSourceType\",\"def_pos\":0},{\"type\":\"com.xingin.entities.ImageTemplate\",\"name\":\"imageTemplate\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"isLivePhotoSoundMute\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"isPreload\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"isZoomStatus\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"itemid\",\"def_pos\":0},{\"type\":\"double\",\"name\":\"latitude\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"link\",\"def_pos\":0},{\"type\":\"com.xingin.entities.video.VideoInfoV2\",\"name\":\"livePhoto\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"livePhotoUrl\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"livePhotoVideoFileId\",\"def_pos\":0},{\"type\":\"double\",\"name\":\"longitude\",\"def_pos\":0},{\"type\":\"com.xingin.entities.capa.ImageMetaData\",\"name\":\"metadata\",\"def_pos\":0},{\"type\":\"com.xingin.entities.MultiLevelImageUrls\",\"name\":\"multiLevelImageUrls\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"needLoadOriginalImage\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"original\",\"def_pos\":0},{\"type\":\"android.graphics.Rect\",\"name\":\"rect\",\"def_pos\":0},{\"type\":\"float\",\"name\":\"scaleToLarge\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"text\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"time\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"title\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"traceId\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"url\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"url_anim\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"url_size_large\",\"def_pos\":0},{\"type\":\"java.lang.String\",\"name\":\"url_size_small\",\"def_pos\":0},{\"type\":\"com.xingin.entities.VideoInfo\",\"name\":\"videoInfoFromLivePhoto\",\"def_pos\":0},{\"type\":\"int\",\"name\":\"width\",\"def_pos\":0},{\"type\":\"java.lang.Integer\",\"name\":\"widthRotated\",\"def_pos\":0}],\"field_count\":42,\"full_name\":\"com.xingin.entities.ImageBean\",\"name\":\"ImageBean\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_method_body",
+        "input": {
+          "class_name": "com.xingin.entities.ImageBean",
+          "method_name": "getWidth",
+          "overload_index": 0,
+          "smali_fallback": true
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"fell_back\":false,\"overload_index\":0,\"class_name\":\"com.xingin.entities.ImageBean\",\"full_name\":\"com.xingin.entities.ImageBean.getWidth\",\"mode\":\"java\",\"markers\":[],\"method_name\":\"getWidth\",\"overload_count\":1,\"body\":\"    public final int getWidth() {\\r\\n        return this.width;\\r\\n    }\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.entities.ImageBean",
+    "method": {
+      "name": "getWidth",
+      "reported_signature": "getWidth(): int",
+      "overload_index": 0,
+      "is_constructor": false,
+      "dex_descriptor": null
+    },
+    "overload_count": 1,
+    "representation": "java",
+    "body_status": "available",
+    "fell_back": false,
+    "markers": [],
+    "source": {
+      "status": "complete",
+      "text": "    public final int getWidth() {\r\n        return this.width;\r\n    }",
+      "reported_total_bytes": null
+    }
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "615d08555b3b3f8d36d0cb4aa92f43e79512cabe5c8509de84f19b3f79ac10dc",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

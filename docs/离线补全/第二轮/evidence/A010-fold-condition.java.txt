@@ -1,0 +1,7 @@
+    public final boolean n() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, c.class, 4426);
+        if (patchProxyResultProxy0Para.isSupported) {
+            return ((Boolean) patchProxyResultProxy0Para.result).booleanValue();
+        }
+        return f() || s();
+    }

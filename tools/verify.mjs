@@ -92,6 +92,43 @@ if(fs.existsSync(offlineRoot)){
   check(emulator.observations.some(o=>o.id==='E017-final-home'&&o.page==='home'),'模拟器最终首页记录');
 }
 const writingManifest=process.argv.includes('--write-manifest');
+const round2Root=path.join(offlineRoot,'第二轮');
+let round2Summary=null;
+if(fs.existsSync(round2Root)){
+  const index=read(path.join(round2Root,'evidence-index.json'));
+  check(index.appVersion==='8.72.0'&&index.records.length===55,'第二轮证据计数或版本');
+  check(new Set(index.records.map(r=>r.id)).size===index.records.length,'第二轮编号重复');
+  const methods=index.records.filter(r=>r.operation==='inspect_android_method');
+  check(methods.length===39&&methods.filter(r=>r.bodyStatus==='available').length===36&&methods.filter(r=>r.bodyStatus==='not_available').length===3,'第二轮方法查询状态');
+  check(index.auxiliary.length===20&&index.counts.reaEvidence===55&&index.counts.auxiliary===20,'第二轮辅助记录计数');
+  for(const r of index.records){
+    const file=path.join(round2Root,r.file),ev=read(file);
+    check(digest(fs.readFileSync(file))===r.publicSha256,'第二轮公开证据摘要：'+r.id);
+    check(ev.evidence_id===r.evidenceId&&ev.subject.digest.sha256===index.apkSha256&&r.artifactSha256===index.apkSha256,'第二轮证据身份：'+r.id);
+    check(/^[a-f0-9]{64}$/.test(r.originalSha256)&&ev._public_export?.originalFileSha256===r.originalSha256,'第二轮原件摘要：'+r.id);
+    if(r.sourceFile){
+      const text=fs.readFileSync(path.join(round2Root,r.sourceFile));
+      const normalized=ev.normalized_result.source.text.replace(/\r\n/g,'\n').replace(/[ \t]+$/gm,'');
+      check(digest(text)===r.sourceSha256&&text.toString('utf8')===normalized,'第二轮方法文本：'+r.id);
+      check(r.bodyStatus===ev.normalized_result.body_status&&r.sourceStatus===ev.normalized_result.source.status,'第二轮方法状态：'+r.id);
+    }
+  }
+  for(const r of index.auxiliary){
+    check(digest(fs.readFileSync(path.join(round2Root,r.file)))===r.publicSha256,'第二轮辅助摘要：'+r.id);
+    check(r.isReaEvidence===false&&r.runtimeObserved===false&&r.apkSha256===index.apkSha256,'第二轮辅助来源边界：'+r.id);
+  }
+  const e=read(path.join(round2Root,'emulator-observations.json'));
+  check(e.observationCount===18&&e.observations.length===18&&new Set(e.observations.map(o=>o.id)).size===18,'第二轮模拟器有效观察');
+  check(e.excludedObservations.length===1&&e.excludedObservations[0].id==='E022-gallery-open'&&!e.observations.some(o=>o.id==='E022-gallery-open'),'第二轮排除观察');
+  for(const o of e.observations){
+    check(o.appVersion==='8.72.0'&&o.kind==='emulator_observation','第二轮观察版本和类型：'+o.id);
+    check(['observation','screenshot','hierarchy'].every(k=>/^[a-f0-9]{64}$/.test(o.sourceHashes[k])),'第二轮观察原件摘要：'+o.id);
+  }
+  const final=e.observations.find(o=>o.id==='E036-final-home-restored');
+  check(e.settingsRestored===true&&final?.page==='home'&&final.environment.size==='Physical size: 1080x1920'&&final.environment.density==='Physical density: 280'&&final.environment.fontScale==='1.0','第二轮设置恢复');
+  check(e.resume.sameObservedPid===true&&e.resume.processDeathTested===false&&e.keyboardSeries.fullSoftKeyboardVisible===false,'第二轮后台与键盘测试边界');
+  round2Summary={staticEvidence:index.records.length,auxiliary:index.auxiliary.length,emulatorObservations:e.observations.length,excludedObservations:e.excludedObservations.length};
+}
 if(writingManifest&&!problems.length){
   const manifest={schemaVersion:1,title:'帖子软件排版与逻辑',scope:'Public derived repository; .git and this manifest are excluded.',files:files.map(p=>({file:relative(p),bytes:fs.statSync(p).size,sha256:digest(fs.readFileSync(p))}))};
   fs.writeFileSync(manifestFile,JSON.stringify(manifest,null,2)+'\n');
@@ -106,5 +143,5 @@ if(!writingManifest&&fs.existsSync(manifestFile)){
     check(fs.existsSync(p)&&fs.statSync(p).size===e.bytes&&digest(fs.readFileSync(p))===e.sha256,'仓库摘要不匹配：'+e.file);
   }
 }else if(!writingManifest) check(false,'缺少 public-manifest.json');
-console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,issues:problems},null,2));
+console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,round2:round2Summary,issues:problems},null,2));
 if(problems.length)process.exitCode=1;

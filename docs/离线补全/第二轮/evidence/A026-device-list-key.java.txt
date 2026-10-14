@@ -1,0 +1,16 @@
+    public final String b() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, c.class, 4434);
+        if (patchProxyResultProxy0Para.isSupported) {
+            return (String) patchProxyResultProxy0Para.result;
+        }
+        String strReplace = Build.MODEL;
+        if (strReplace == null) {
+            return "unknown";
+        }
+        String str = Build.MANUFACTURER;
+        Regex regex = new Regex(str != null ? str : "unknown", RegexOption.IGNORE_CASE);
+        if (regex.containsMatchIn(strReplace)) {
+            strReplace = regex.replace(strReplace, "");
+        }
+        return StringsKt__StringsKt.trim((CharSequence) strReplace).toString();
+    }

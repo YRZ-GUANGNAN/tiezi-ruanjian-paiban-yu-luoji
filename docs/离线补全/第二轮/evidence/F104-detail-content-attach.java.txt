@@ -1,0 +1,17 @@
+    @Override // com.xingin.foundation.core.v2.Presenter
+    public void x6() {
+        r rVarY0;
+        if (PatchProxy.proxyVoid0Para(this, NoteDetailContentPresenter.class, 290802)) {
+            return;
+        }
+        super.x6();
+        o.q(w6());
+        o.b((LinearLayout) w6().findViewById(n.W1));
+        xb9.b bVarT6 = t6();
+        e eVarN = u.n(e6());
+        Result<Object> result = eVarN.b().get(ka6.a.class);
+        if (result == null || (rVarY0 = r.b1(Result.m1123boximpl(result.m1133unboximpl()))) == null) {
+            rVarY0 = r.y0();
+        }
+        bVarT6.a(r.I(rVarY0, eVarN.a().B0(b.f108166d).d1(c.f108167d)).n1(wb9.a.a()).K1(new d()));
+    }

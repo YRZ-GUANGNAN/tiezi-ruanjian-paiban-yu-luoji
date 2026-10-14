@@ -1,0 +1,17 @@
+    @Override // android.widget.TextView
+    public void setText(CharSequence charSequence, TextView.BufferType bufferType) {
+        if (PatchProxy.proxyVoid2Para(charSequence, bufferType, this, TextTokenCustomView.class, 93427)) {
+            return;
+        }
+        if (!c() || this.f125733e == null) {
+            super.setText(charSequence, bufferType);
+            return;
+        }
+        SpannableString spannableString = new SpannableString(charSequence);
+        LineHeightSpan lineHeightSpan = this.f125733e;
+        if (lineHeightSpan == null) {
+            lineHeightSpan = null;
+        }
+        spannableString.setSpan(lineHeightSpan, 0, spannableString.length(), 33);
+        super.setText(spannableString, bufferType);
+    }

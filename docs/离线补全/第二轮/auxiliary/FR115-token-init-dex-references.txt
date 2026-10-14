@@ -1,0 +1,34 @@
+source_status: auxiliary-dex-parse
+scope: exact method instruction references or field annotations; static only
+parser: dexlib2 bundled in jadx-headless-mcp-0.7.1-all.jar
+apk_sha256: 44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5
+requested_class: Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;
+requested_selector: <init>
+dex_entry: classes14.dex
+method_descriptor: Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+  code_unit_offset=0x6 opcode=invoke-direct/range reference=Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+instruction_code_units: 10
+method_descriptor: Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+  code_unit_offset=0x0 opcode=new-instance reference=Ljava/util/LinkedHashMap;
+  code_unit_offset=0x2 opcode=invoke-direct reference=Ljava/util/LinkedHashMap;-><init>()V
+  code_unit_offset=0x5 opcode=iput-object reference=Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;->f:Ljava/util/Map;
+  code_unit_offset=0x7 opcode=invoke-direct reference=Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+  code_unit_offset=0xb opcode=iput reference=Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;->d:I
+  code_unit_offset=0xd opcode=invoke-virtual reference=Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;->c()Z
+  code_unit_offset=0x13 opcode=invoke-virtual reference=Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+  code_unit_offset=0x17 opcode=sget-object reference=Li69/j;->V0:[I
+  code_unit_offset=0x1a opcode=invoke-virtual reference=Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+  code_unit_offset=0x1e opcode=sget reference=Li69/j;->W0:I
+  code_unit_offset=0x21 opcode=invoke-virtual reference=Landroid/content/res/TypedArray;->getInt(II)I
+  code_unit_offset=0x27 opcode=sget-object reference=Ls69/b;->a:Ls69/b;
+  code_unit_offset=0x29 opcode=invoke-virtual reference=Ls69/b;->a()I
+  code_unit_offset=0x2d opcode=iput reference=Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;->d:I
+  code_unit_offset=0x2f opcode=invoke-virtual reference=Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;->d(I)V
+  code_unit_offset=0x32 opcode=invoke-virtual reference=Landroid/content/res/TypedArray;->recycle()V
+  code_unit_offset=0x37 opcode=invoke-virtual reference=Landroid/content/res/TypedArray;->recycle()V
+instruction_code_units: 60
+method_descriptor: Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+  code_unit_offset=0xa opcode=invoke-direct reference=Lcom/xingin/xhstheme/view/texttoken/view/TextTokenCustomView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+instruction_code_units: 14
+matched_selectors: 3
+limitations: reports encoded references only, not observed execution; offsets are code units relative to instructions, not APK byte offsets; static and dynamic patch behavior is not resolved.

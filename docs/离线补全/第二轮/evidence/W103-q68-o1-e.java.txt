@@ -1,0 +1,13 @@
+    public static int e(Context context) {
+        PatchProxyResult patchProxyResultProxy1Para = PatchProxy.proxy1Para(context, null, o1.class, 140264);
+        if (patchProxyResultProxy1Para.isSupported) {
+            return ((Integer) patchProxyResultProxy1Para.result).intValue();
+        }
+        WindowManager windowManager = (WindowManager) context.getSystemService("window");
+        if (Build.VERSION.SDK_INT >= 30) {
+            return windowManager.getCurrentWindowMetrics().getBounds().height();
+        }
+        Point point = new Point();
+        windowManager.getDefaultDisplay().getSize(point);
+        return point.y;
+    }

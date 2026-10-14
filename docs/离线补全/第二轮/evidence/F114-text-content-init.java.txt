@@ -1,0 +1,6 @@
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    @JvmOverloads
+    public TextContentView(Context context, AttributeSet attributeSet, int i100) {
+        super(context, attributeSet, i100);
+        this.f107900d = new LinkedHashMap();
+    }

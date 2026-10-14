@@ -1,0 +1,183 @@
+{
+  "evidence_id": "ev_05a05787c5862153e88b6edc4096cd6c7446489fc7402688a06269f2d019632f",
+  "subject": {
+    "name": "local-artifact/base.apk",
+    "digest": {
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "local-artifact/base.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "local-artifact/base.apk",
+    "class_name": "com.xingin.matrix.notedetail.notewithcomment.notecontentnew.NoteDetailContentNewView"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "local-artifact/target.apk",
+      "class_count": 82499,
+      "resource_count": 18535,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"metadata_scope\":\"parsed_members\",\"max_heap_bytes\":6442450944,\"java_version\":\"25.0.2\",\"available_processors\":24,\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.xingin.matrix.notedetail.notewithcomment.notecontentnew.NoteDetailContentNewView"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"field_count\":2,\"fields\":[{\"name\":\"f107930d\",\"type\":\"vm7.c\",\"def_pos\":0},{\"name\":\"f107931e\",\"type\":\"java.util.Map<java.lang.Integer, android.view.View>\",\"def_pos\":0}],\"methods\":[{\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(android.content.Context, android.util.AttributeSet): void\",\"is_constructor\":true},{\"name\":\"<init>\",\"def_pos\":0,\"signature\":\"<init>(android.content.Context, android.util.AttributeSet, int): void\",\"is_constructor\":true},{\"name\":\"a\",\"def_pos\":0,\"signature\":\"a(vm7.c$b): void\",\"is_constructor\":false},{\"name\":\"b\",\"def_pos\":0,\"signature\":\"b(int): android.view.View\",\"is_constructor\":false},{\"name\":\"getEngageBarContainer\",\"def_pos\":0,\"signature\":\"getEngageBarContainer(): android.widget.FrameLayout\",\"is_constructor\":false},{\"name\":\"getNestedHeaderContainer\",\"def_pos\":0,\"signature\":\"getNestedHeaderContainer(): android.widget.LinearLayout\",\"is_constructor\":false},{\"name\":\"getNestedScrollLayout\",\"def_pos\":0,\"signature\":\"getNestedScrollLayout(): com.google.android.material.appbar.AppBarLayout\",\"is_constructor\":false},{\"name\":\"getNoteLikeAnimation\",\"def_pos\":0,\"signature\":\"getNoteLikeAnimation(): com.airbnb.lottie.LottieAnimationView\",\"is_constructor\":false},{\"name\":\"getTitleBarContainer\",\"def_pos\":0,\"signature\":\"getTitleBarContainer(): android.widget.FrameLayout\",\"is_constructor\":false},{\"name\":\"onInterceptTouchEvent\",\"def_pos\":0,\"signature\":\"onInterceptTouchEvent(android.view.MotionEvent): boolean\",\"is_constructor\":false}],\"method_count\":10,\"inner_class_count\":0,\"inner_classes\":[],\"name\":\"NoteDetailContentNewView\",\"full_name\":\"com.xingin.matrix.notedetail.notewithcomment.notecontentnew.NoteDetailContentNewView\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 6144
+    },
+    "class_name": "com.xingin.matrix.notedetail.notewithcomment.notecontentnew.NoteDetailContentNewView",
+    "methods": [
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context, android.util.AttributeSet): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(android.content.Context, android.util.AttributeSet, int): void",
+        "overload_index": 1,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(vm7.c$b): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(int): android.view.View",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getEngageBarContainer",
+        "reported_signature": "getEngageBarContainer(): android.widget.FrameLayout",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getNestedHeaderContainer",
+        "reported_signature": "getNestedHeaderContainer(): android.widget.LinearLayout",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getNestedScrollLayout",
+        "reported_signature": "getNestedScrollLayout(): com.google.android.material.appbar.AppBarLayout",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getNoteLikeAnimation",
+        "reported_signature": "getNoteLikeAnimation(): com.airbnb.lottie.LottieAnimationView",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getTitleBarContainer",
+        "reported_signature": "getTitleBarContainer(): android.widget.FrameLayout",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "onInterceptTouchEvent",
+        "reported_signature": "onInterceptTouchEvent(android.view.MotionEvent): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "f107930d",
+        "reported_type": "vm7.c"
+      },
+      {
+        "name": "f107931e",
+        "reported_type": "java.util.Map<java.lang.Integer, android.view.View>"
+      }
+    ],
+    "inner_classes": []
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": [],
+  "_public_export": {
+    "kind": "sanitized_derivative",
+    "originalFileSha256": "2dcf72f2af5447dd67f1fd92d8a0e1d6e3cfa8c3cab7f70252a0570d2ac75c55",
+    "evidenceIdRefersTo": "original_local_evidence",
+    "changes": [
+      "host paths generalized"
+    ]
+  }
+}

@@ -1,0 +1,1010 @@
+{
+  "schemaVersion": 1,
+  "appVersion": "8.72.0",
+  "observationCount": 18,
+  "excludedObservations": [
+    {
+      "id": "E022-gallery-open",
+      "reason": "Expected gallery precondition was not established; resulting unrelated page is excluded. Original content remains local."
+    }
+  ],
+  "settingsRestored": true,
+  "observations": [
+    {
+      "id": "E018-width-baseline",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T05:07:41.962Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "0ebc007934a73c6930069ce644a9ae140b3b42e02f88bddc4e0fa6a7884d5541",
+        "screenshot": "0bba4f8755fbce4d9bfc6ec1e181f4257664db286e090dbe6b73c7bd40e06d7c",
+        "hierarchy": "8d6e060c5954d6fb4378343393e7ce0b940f6268d3d45128c58fdc0b7d956ee9"
+      },
+      "page": "home",
+      "sampleAlias": "home-A",
+      "metrics": {
+        "firstRowCards": [
+          [
+            8,
+            119,
+            536,
+            942
+          ],
+          [
+            544,
+            119,
+            1072,
+            979
+          ]
+        ],
+        "homeTab": [
+          0,
+          1841,
+          216,
+          1920
+        ],
+        "searchButton": [
+          1001,
+          49,
+          1064,
+          112
+        ]
+      },
+      "action": {
+        "kind": "baseline_observation",
+        "parameters": []
+      }
+    },
+    {
+      "id": "E019-home-width720",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T05:16:42.741Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920\r\nOverride size: 720x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "177a1ea8117bc2961c79815693b56cf41a91ee9deef2728c1ac9ed000fd4e803",
+        "screenshot": "c8e0a952a9a578c7ed4b83a6872dc922312e410637712c0d79345905fea790ea",
+        "hierarchy": "0ed0c1719210a2cf70c2ec29cb02ccd2a21c1c7a169fbf5b2171017149b87384",
+        "action": "1858cd9a06f11da247747bac632f4b5f5710824f8eed65e92ae6b35034cf72b7"
+      },
+      "page": "home",
+      "sampleAlias": "home-A",
+      "metrics": {
+        "firstRowCards": [
+          [
+            8,
+            119,
+            356,
+            702
+          ],
+          [
+            364,
+            119,
+            712,
+            739
+          ]
+        ],
+        "homeTab": [
+          0,
+          1841,
+          144,
+          1920
+        ],
+        "searchButton": [
+          641,
+          49,
+          704,
+          112
+        ]
+      },
+      "action": {
+        "kind": "width",
+        "parameters": [
+          "720"
+        ]
+      }
+    },
+    {
+      "id": "E020-home-width900",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T05:20:01.843Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920\r\nOverride size: 900x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "bc0c0cbfe93fa2f5b5b4bf8e55bc181ad797899e5c13db077831b3ae21e55507",
+        "screenshot": "1f8fc1f4a61104c850cef00f10a76edf2cdf12beefe0cc37254f19d2618011fa",
+        "hierarchy": "c0cb057901890d42e585ab5001c22e80cd69a153d3f89162d593cb3b4be90248",
+        "action": "0ee0a426fcfdbb660c3ef2e90f064b9327fafd059ad3bf6e2d2d79bc502f720f"
+      },
+      "page": "home",
+      "sampleAlias": "home-A",
+      "metrics": {
+        "firstRowCards": [
+          [
+            8,
+            119,
+            446,
+            859
+          ],
+          [
+            454,
+            119,
+            892,
+            859
+          ]
+        ],
+        "homeTab": [
+          0,
+          1841,
+          180,
+          1920
+        ],
+        "searchButton": [
+          821,
+          49,
+          884,
+          112
+        ]
+      },
+      "action": {
+        "kind": "width",
+        "parameters": [
+          "900"
+        ]
+      }
+    },
+    {
+      "id": "E021-home-width-restored",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T05:23:43.732Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "d424e09a6d08ee969eb6b2cd7f2a9f79c47ebe052b2334d82be268b3f15c3f13",
+        "screenshot": "4e044e5413317f9d9519bd8fa5b97e46d9e1e46e2158bb4457438788fe303e9e",
+        "hierarchy": "8d6e060c5954d6fb4378343393e7ce0b940f6268d3d45128c58fdc0b7d956ee9",
+        "action": "84172018aa9819590321c0eb5f530b757d0e435f2bf65db012577c4978791fd2"
+      },
+      "page": "home",
+      "sampleAlias": "home-A",
+      "metrics": {
+        "firstRowCards": [
+          [
+            8,
+            119,
+            536,
+            942
+          ],
+          [
+            544,
+            119,
+            1072,
+            979
+          ]
+        ],
+        "homeTab": [
+          0,
+          1841,
+          216,
+          1920
+        ],
+        "searchButton": [
+          1001,
+          49,
+          1064,
+          112
+        ]
+      },
+      "action": {
+        "kind": "width",
+        "parameters": [
+          "reset"
+        ]
+      }
+    },
+    {
+      "id": "E023-return-home",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T08:09:39.973Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "4a52703a01cc7de620447854b26c4a240d7e1c330140496aaa2fc8b330bf4419",
+        "screenshot": "8cc581964cb2bca4af5f5a4c0b22f5170fdc02aa3c7b2257f0942303894495f0",
+        "hierarchy": "57391c7eb889327e08de3fd98a6528d62d8beafcede3b37867ff2085b7f82891",
+        "action": "52b39b60d61194b416c048703e7ebcc9772e82ead30ad1a7d5c02bf980a90e06"
+      },
+      "page": "home",
+      "sampleAlias": "home-B",
+      "metrics": {
+        "firstRowCards": [
+          [
+            8,
+            119,
+            536,
+            979
+          ],
+          [
+            544,
+            119,
+            1072,
+            942
+          ]
+        ],
+        "homeTab": [
+          0,
+          1841,
+          216,
+          1920
+        ],
+        "searchButton": [
+          1001,
+          49,
+          1064,
+          112
+        ]
+      },
+      "action": {
+        "kind": "tap",
+        "parameters": [
+          "106",
+          "1883"
+        ]
+      }
+    },
+    {
+      "id": "E024-gallery-open-confirmed",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T08:10:03.688Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "5c88167b1092beff837f7ec13b4ad5429a622a8db5e7a760f11700597616996a",
+        "screenshot": "21b6638cf67c4a244469b559e3dce20a1d83694f80776d63bd2777bbe088128a",
+        "hierarchy": "2b40bcda8164d9a446ae00720a96bf7c4f0b8d499961174cac417787488bc84d",
+        "action": "8d359ef82db106e50a7aa49233070c876d22c833292ac624982b4425afba9b82"
+      },
+      "page": "gallery",
+      "sampleAlias": "gallery-B",
+      "metrics": {
+        "media": [
+          0,
+          140,
+          1080,
+          1580
+        ],
+        "author": [
+          158,
+          71,
+          860,
+          110
+        ],
+        "commentInput": [
+          26,
+          1840,
+          734,
+          1903
+        ],
+        "title": null
+      },
+      "action": {
+        "kind": "tap",
+        "parameters": [
+          "798",
+          "460"
+        ]
+      }
+    },
+    {
+      "id": "E025-gallery-width720",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T08:10:39.590Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920\r\nOverride size: 720x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "8a54806b4de7d27223607048ae2a7b6ffb705b9fb74e082efd2bef060d520f68",
+        "screenshot": "366e2968b015a243428cce077daf71b206ef2ddd19398529d7e694e71b1bab2c",
+        "hierarchy": "51d0596674e25711082c03b4cdaa8b4ff1abbc87c10ef048857b2202a434f3ed",
+        "action": "905ce22efca8e0789c4d8a5bc44d4bf7b64a7f8172c652b1e55b600d4dcb6574"
+      },
+      "page": "gallery",
+      "sampleAlias": "gallery-B",
+      "metrics": {
+        "media": [
+          0,
+          140,
+          720,
+          1580
+        ],
+        "author": [
+          158,
+          71,
+          500,
+          110
+        ],
+        "commentInput": [
+          26,
+          1840,
+          374,
+          1903
+        ],
+        "title": null
+      },
+      "action": {
+        "kind": "width",
+        "parameters": [
+          "720"
+        ]
+      }
+    },
+    {
+      "id": "E026-home-width720-after-detail",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T08:11:06.801Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920\r\nOverride size: 720x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "e473f4d25f1d52f6387f848654c3520f11b2dbe363e1fcadb69bb937facf3f87",
+        "screenshot": "72b5ff0517e9383d39d304e6e548faabf461c2f012be7d00baa3b9e138b714d8",
+        "hierarchy": "111b4855873afebf4af1d6672dc99b291cef47fea7bf51fdcbba68204529c627",
+        "action": "66929e919545f4506dc1e7be7ca6a55eb5ca872e85c28059ebc7f91ab2cb1453"
+      },
+      "page": "home",
+      "sampleAlias": "home-B",
+      "metrics": {
+        "firstRowCards": [
+          [
+            8,
+            119,
+            356,
+            739
+          ],
+          [
+            364,
+            119,
+            712,
+            739
+          ]
+        ],
+        "homeTab": [
+          0,
+          1841,
+          144,
+          1920
+        ],
+        "searchButton": [
+          641,
+          49,
+          704,
+          112
+        ]
+      },
+      "action": {
+        "kind": "back",
+        "parameters": []
+      }
+    },
+    {
+      "id": "E027-gallery-reopen-width720",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T08:11:46.773Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920\r\nOverride size: 720x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "24adea3505f5711bb31adc28d59485791294bfdb911915d44372bcf7d3f5017a",
+        "screenshot": "775eeb0df0d1688585fb41d12e1addd723cd93eaba2bbf49a8bf422ebcc7bfe5",
+        "hierarchy": "e213d307233c065e48c799a5275814b432ae37cd3d67fe562353690ea33b3920",
+        "action": "b65232aa93c1ba468124a682110e58b970d16dddda074c6e4f4ffbd8f7fbe0eb"
+      },
+      "page": "gallery",
+      "sampleAlias": "gallery-B",
+      "metrics": {
+        "media": [
+          0,
+          140,
+          720,
+          1100
+        ],
+        "author": [
+          158,
+          71,
+          500,
+          110
+        ],
+        "commentInput": [
+          26,
+          1840,
+          374,
+          1903
+        ],
+        "title": null
+      },
+      "action": {
+        "kind": "tap",
+        "parameters": [
+          "534",
+          "385"
+        ]
+      }
+    },
+    {
+      "id": "E028-comment-keyboard-width720",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T08:12:41.053Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920\r\nOverride size: 720x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "d68eb7b966a5fd7e4b78722fe83322c33d7acd96fa92272eeb1f7eddb5712950",
+        "screenshot": "12e1ab27369e8b7bf16b94ac8df5e2f88aae0cb8343394c119c56c66f2dbed5b",
+        "hierarchy": "29b134b96c65457d4bfece50969c741b4874e4605868cc74bc3427400362a42d",
+        "action": "cf58eb54c8ba20f8932f12dc5df26418d2fece8086ad5a9d9af61e773e99d4f1"
+      },
+      "page": "comment_editor",
+      "sampleAlias": "gallery-B",
+      "metrics": {
+        "media": null,
+        "author": null,
+        "commentInput": null,
+        "title": null,
+        "editor": [
+          52,
+          1661,
+          668,
+          1734
+        ],
+        "sendButton": [
+          597,
+          1780,
+          699,
+          1836
+        ]
+      },
+      "action": {
+        "kind": "tap",
+        "parameters": [
+          "180",
+          "1872"
+        ]
+      }
+    },
+    {
+      "id": "E029-comment-editor-settled",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T08:13:21.297Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920\r\nOverride size: 720x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "eaf1b1d6818d1ca789f70b12d3a5c6a8ab06da2c62e9ad6a2a98a97daee6e0df",
+        "screenshot": "8f9bf4c1b0f00080e1ec0b62982900ee9ae96bdddc8a550c47b4b61cf20d8539",
+        "hierarchy": "29b134b96c65457d4bfece50969c741b4874e4605868cc74bc3427400362a42d",
+        "action": "81e797b14049be5a80f7c617721682fcbb20edbde38ba354f5f34424279b747c"
+      },
+      "page": "comment_editor",
+      "sampleAlias": "gallery-B",
+      "metrics": {
+        "media": null,
+        "author": null,
+        "commentInput": null,
+        "title": null,
+        "editor": [
+          52,
+          1661,
+          668,
+          1734
+        ],
+        "sendButton": [
+          597,
+          1780,
+          699,
+          1836
+        ]
+      },
+      "action": {
+        "kind": "observe",
+        "parameters": []
+      },
+      "runtime": {
+        "observedAt": "2026-10-14T08:13:23.422Z",
+        "imeInputShown": true,
+        "imeWindowVis": 3
+      }
+    },
+    {
+      "id": "E030-comment-back",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T08:13:49.578Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920\r\nOverride size: 720x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "6ad17c7572f70b5773fba40e3f13a5788bd748ce7bb606dd2008845d4da51d7b",
+        "screenshot": "8f9bf4c1b0f00080e1ec0b62982900ee9ae96bdddc8a550c47b4b61cf20d8539",
+        "hierarchy": "29b134b96c65457d4bfece50969c741b4874e4605868cc74bc3427400362a42d",
+        "action": "cc70bd0f7b054b2bebf9245fce3c8a6dc30558e68891d9504bfccbaeb67afb81"
+      },
+      "page": "comment_editor",
+      "sampleAlias": "gallery-B",
+      "metrics": {
+        "media": null,
+        "author": null,
+        "commentInput": null,
+        "title": null,
+        "editor": [
+          52,
+          1661,
+          668,
+          1734
+        ],
+        "sendButton": [
+          597,
+          1780,
+          699,
+          1836
+        ]
+      },
+      "action": {
+        "kind": "back",
+        "parameters": []
+      },
+      "runtime": {
+        "observedAt": "2026-10-14T08:13:51.699Z",
+        "imeInputShown": false,
+        "imeWindowVis": 0
+      }
+    },
+    {
+      "id": "E031-comment-editor-back",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T08:14:36.505Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920\r\nOverride size: 720x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "68f6b44c9b06987d5633489f47a52c95bef4d281fb95a356cba4418a5492be4a",
+        "screenshot": "a4b941b7e20ee3d0fc69e0f50a898ea32478ebdd4113594a486505acda6b587d",
+        "hierarchy": "e69057ad40208dfe1f269c96988a6e6ea6a9f5efea9ca154d8baffa96fbb3f92",
+        "action": "3eb794dd1b5b6d6472df920c2c3ef2d18699ffaebf8f3047238264f6756571cf"
+      },
+      "page": "gallery",
+      "sampleAlias": "gallery-B",
+      "metrics": {
+        "media": [
+          0,
+          140,
+          720,
+          1100
+        ],
+        "author": [
+          158,
+          71,
+          500,
+          110
+        ],
+        "commentInput": [
+          26,
+          1840,
+          374,
+          1903
+        ],
+        "title": null
+      },
+      "action": {
+        "kind": "back",
+        "parameters": []
+      },
+      "runtime": {
+        "observedAt": "2026-10-14T08:14:38.633Z",
+        "imeInputShown": false,
+        "imeWindowVis": 0
+      }
+    },
+    {
+      "id": "E032-gallery-background-resume",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T08:15:12.004Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920\r\nOverride size: 720x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "5bc6da0dd87b945906ed08975b03632dd65511d26ff19cc80d47b1e59e6fcb6f",
+        "screenshot": "0d01221a751bcded5f6adaaf52c0f9c884f4d09c386998f0dfee4ac8df444abb",
+        "hierarchy": "e69057ad40208dfe1f269c96988a6e6ea6a9f5efea9ca154d8baffa96fbb3f92",
+        "action": "4d45444b584b6b80357cdb54f28ea6d48931494dd847b1587ffccf1948fca12e"
+      },
+      "page": "gallery",
+      "sampleAlias": "gallery-B",
+      "metrics": {
+        "media": [
+          0,
+          140,
+          720,
+          1100
+        ],
+        "author": [
+          158,
+          71,
+          500,
+          110
+        ],
+        "commentInput": [
+          26,
+          1840,
+          374,
+          1903
+        ],
+        "title": null
+      },
+      "action": {
+        "kind": "home-resume",
+        "parameters": []
+      },
+      "runtime": {
+        "observedAt": "2026-10-14T08:15:14.208Z",
+        "imeInputShown": false,
+        "imeWindowVis": 0
+      }
+    },
+    {
+      "id": "E033-gallery-width-restored",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T08:15:42.065Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "e5ead916b031c798871559ef9437eb5a643a89a8260041991566c523bb537b61",
+        "screenshot": "12a7f3b046cdeb478eab80d7c2862b8d1bd0ced66b0b2bdfb3bb7c9f5849a5af",
+        "hierarchy": "52a79a1ce2dcb71a98ad75eb4fbebbeb1d0a124b8cbb832e84dfb597c3b3a894",
+        "action": "c41755af0455b04e6a4be15dc7bf3196c74f87b78e490f992c77e8685a9d00d7"
+      },
+      "page": "gallery",
+      "sampleAlias": "gallery-B",
+      "metrics": {
+        "media": [
+          0,
+          140,
+          1080,
+          1100
+        ],
+        "author": [
+          158,
+          71,
+          860,
+          110
+        ],
+        "commentInput": [
+          26,
+          1840,
+          734,
+          1903
+        ],
+        "title": null
+      },
+      "action": {
+        "kind": "width",
+        "parameters": [
+          "reset"
+        ]
+      },
+      "runtime": {
+        "observedAt": "2026-10-14T08:15:45.050Z",
+        "imeInputShown": false,
+        "imeWindowVis": 0
+      }
+    },
+    {
+      "id": "E034-home-restored-after-detail",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T08:16:24.737Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "d0e35e17397b023328ce406ab1ab853befbd2c091787307f8fadb4a3f08d87af",
+        "screenshot": "130a1a6d748a502c6f2651e442f7b9666bc9efd42bcadb3efb97d460e60e635b",
+        "hierarchy": "57391c7eb889327e08de3fd98a6528d62d8beafcede3b37867ff2085b7f82891",
+        "action": "897d08230270e8dbb2c7f3ed78170a213c202e49fcc1e2b23c50b3d1601c27e5"
+      },
+      "page": "home",
+      "sampleAlias": "home-B",
+      "metrics": {
+        "firstRowCards": [
+          [
+            8,
+            119,
+            536,
+            979
+          ],
+          [
+            544,
+            119,
+            1072,
+            942
+          ]
+        ],
+        "homeTab": [
+          0,
+          1841,
+          216,
+          1920
+        ],
+        "searchButton": [
+          1001,
+          49,
+          1064,
+          112
+        ]
+      },
+      "action": {
+        "kind": "back",
+        "parameters": []
+      },
+      "runtime": {
+        "observedAt": "2026-10-14T08:16:26.897Z",
+        "imeInputShown": false,
+        "imeWindowVis": 0
+      }
+    },
+    {
+      "id": "E035-gallery-reopen-width1080",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T08:17:09.206Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "4d10f39ad69788053d0a92cb498afc7a90cf28289f3250043ade506776a3fa2a",
+        "screenshot": "bebcea18c9f827dda02e5551fcbac4bdbdeb774d85f3a40e4f06f0293902b77a",
+        "hierarchy": "2b40bcda8164d9a446ae00720a96bf7c4f0b8d499961174cac417787488bc84d",
+        "action": "38b2b2c51f9237516508f15b4d47e741ef4324c9ca69aef86c23b398359e2fac"
+      },
+      "page": "gallery",
+      "sampleAlias": "gallery-B",
+      "metrics": {
+        "media": [
+          0,
+          140,
+          1080,
+          1580
+        ],
+        "author": [
+          158,
+          71,
+          860,
+          110
+        ],
+        "commentInput": [
+          26,
+          1840,
+          734,
+          1903
+        ],
+        "title": null
+      },
+      "action": {
+        "kind": "tap",
+        "parameters": [
+          "802",
+          "472"
+        ]
+      },
+      "runtime": {
+        "observedAt": "2026-10-14T08:17:11.439Z",
+        "imeInputShown": false,
+        "imeWindowVis": 0
+      }
+    },
+    {
+      "id": "E036-final-home-restored",
+      "kind": "emulator_observation",
+      "deviceAlias": "mumu15-A",
+      "appVersion": "8.72.0",
+      "capturedAt": "2026-10-14T08:17:42.116Z",
+      "environment": {
+        "android": "15",
+        "abi": "x86_64,arm64-v8a,x86",
+        "size": "Physical size: 1080x1920",
+        "density": "Physical density: 280",
+        "fontScale": "1.0"
+      },
+      "sourceHashes": {
+        "observation": "99deb105ed885b478032c009c8703be70d874efd38e20c21f06e424fc22408aa",
+        "screenshot": "5ef16de100a4bc80084f2a91d45a05136be36fb4ecd8d6254b09f87a75920985",
+        "hierarchy": "57391c7eb889327e08de3fd98a6528d62d8beafcede3b37867ff2085b7f82891",
+        "action": "e16a440923e181fe2d71aba2d28117d37c5100572d045c140818118a2ae583bf"
+      },
+      "page": "home",
+      "sampleAlias": "home-B",
+      "metrics": {
+        "firstRowCards": [
+          [
+            8,
+            119,
+            536,
+            979
+          ],
+          [
+            544,
+            119,
+            1072,
+            942
+          ]
+        ],
+        "homeTab": [
+          0,
+          1841,
+          216,
+          1920
+        ],
+        "searchButton": [
+          1001,
+          49,
+          1064,
+          112
+        ]
+      },
+      "action": {
+        "kind": "back",
+        "parameters": []
+      },
+      "runtime": {
+        "observedAt": "2026-10-14T08:17:44.272Z",
+        "imeInputShown": false,
+        "imeWindowVis": 0
+      }
+    }
+  ],
+  "widthSeries": {
+    "home": [
+      "E018-width-baseline",
+      "E019-home-width720",
+      "E020-home-width900",
+      "E021-home-width-restored"
+    ],
+    "detail": [
+      "E024-gallery-open-confirmed",
+      "E025-gallery-width720",
+      "E027-gallery-reopen-width720",
+      "E033-gallery-width-restored",
+      "E035-gallery-reopen-width1080"
+    ],
+    "measurement": "media control rectangle, not decoded image dimensions"
+  },
+  "keyboardSeries": {
+    "ids": [
+      "E028-comment-keyboard-width720",
+      "E029-comment-editor-settled",
+      "E030-comment-back",
+      "E031-comment-editor-back"
+    ],
+    "fullSoftKeyboardVisible": false,
+    "note": "Editor observed; IME reports shown then hidden, but a complete on-screen character keyboard is not visible. No typing or sending was performed."
+  },
+  "resume": {
+    "before": "E031-comment-editor-back",
+    "after": "E032-gallery-background-resume",
+    "sameObservedPid": true,
+    "processDeathTested": false,
+    "note": "Home key followed by bringing the existing task to foreground; not process recreation."
+  },
+  "limits": [
+    "One emulator, Android 15, 280 dpi, font scale 1.0, dark appearance.",
+    "Display-size override is not OEM, physical-panel or foldable-device testing.",
+    "No animation frame timeline, weak-network, process-death, posting or messaging coverage.",
+    "Observation count does not equal full acceptance-case coverage."
+  ]
+}

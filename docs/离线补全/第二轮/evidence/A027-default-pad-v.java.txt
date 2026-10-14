@@ -1,0 +1,11 @@
+    public final boolean v() {
+        PatchProxyResult patchProxyResultProxy0Para = PatchProxy.proxy0Para(this, c.class, 4435);
+        if (patchProxyResultProxy0Para.isSupported) {
+            return ((Boolean) patchProxyResultProxy0Para.result).booleanValue();
+        }
+        if (s()) {
+            return false;
+        }
+        float fC = xo.d.f353707a.c(XYUtilsCenter.f());
+        return 8.4f <= fC && fC <= 19.0f;
+    }
