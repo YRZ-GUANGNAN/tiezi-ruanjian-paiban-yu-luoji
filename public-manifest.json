@@ -20,18 +20,18 @@
     },
     {
       "file": "CHANGELOG.md",
-      "bytes": 7388,
-      "sha256": "dce6a11cad0331464184fd9977f5691eaf94850895cbae85e75b8d68f75d2544"
+      "bytes": 8650,
+      "sha256": "236454d21f55e4d1acc621a33e16ba3719cee3f7f063bcafc4cc546c4bd5f77f"
     },
     {
       "file": "PUBLICATION.md",
-      "bytes": 4033,
-      "sha256": "98adc384a748ead3a8530e0bae367450c2c519d25bcb202fd75d088644c86ec5"
+      "bytes": 4517,
+      "sha256": "7b22b58b3146e16d4d305e2130913ff907c67a47a7b945675e5664d7175a2564"
     },
     {
       "file": "README.md",
-      "bytes": 9047,
-      "sha256": "df594bd236066c0c8503a589381c4d249e9eb3673e90e1641bf15a1c6ad22d6e"
+      "bytes": 9899,
+      "sha256": "333f6341223547436ae26f35072076914b15b39a97484f38fd121d94d8a27671"
     },
     {
       "file": "docs/00-阅读入口与进度.md",
@@ -327,6 +327,46 @@
       "file": "docs/模拟器补测/第五轮/pixel-fit.json",
       "bytes": 3072,
       "sha256": "5a96de5f8916ee1b6e45860146509a3df9acfc2b310574babde02c454e3757f4"
+    },
+    {
+      "file": "docs/模拟器补测/第八轮/00-本轮结果.md",
+      "bytes": 2990,
+      "sha256": "9ed48def233ccab1d5793d4e635b3ffb04f242302bf12ccc5a236b394c8bce38"
+    },
+    {
+      "file": "docs/模拟器补测/第八轮/01-返回位置与页面转场.md",
+      "bytes": 4010,
+      "sha256": "c6716b12b9e16223b52a74d6e39ea054d9394fdf3df7738f6f78e88d5a20bd01"
+    },
+    {
+      "file": "docs/模拟器补测/第八轮/02-连续反向与面板中断.md",
+      "bytes": 3941,
+      "sha256": "681a7160f55e92b4ebb9463cface6abf8b4aeec6010ff26ba784512059ee5f86"
+    },
+    {
+      "file": "docs/模拟器补测/第八轮/03-证据边界与后续补测.md",
+      "bytes": 3179,
+      "sha256": "f8f8620d6955991b11b768f20bd9775c8c97094b91dd42599d491510bcea4b07"
+    },
+    {
+      "file": "docs/模拟器补测/第八轮/evidence-index.json",
+      "bytes": 27250,
+      "sha256": "10022c716d6a0a9d85700de4448f550ae1e59b998ba8c3b3f80249a706934502"
+    },
+    {
+      "file": "docs/模拟器补测/第八轮/observations.json",
+      "bytes": 71527,
+      "sha256": "be8fa1947c8449361b965310d4dbbbe4084520cc3e5686557bc6533ad4f3afc9"
+    },
+    {
+      "file": "docs/模拟器补测/第八轮/return-analysis.json",
+      "bytes": 306290,
+      "sha256": "1d2f038fc0de2fb39ba20fa943d027b444a037ab89925128e8537615102b6215"
+    },
+    {
+      "file": "docs/模拟器补测/第八轮/video-analysis.json",
+      "bytes": 1311100,
+      "sha256": "2fbbe70967e7fe2dc1dc54aa3b71998c5c40fd974fd43f41d11ed528be41eef0"
     },
     {
       "file": "docs/模拟器补测/第六轮/00-本轮结果.md",
@@ -4195,8 +4235,8 @@
     },
     {
       "file": "tools/verify.mjs",
-      "bytes": 38624,
-      "sha256": "4895575b244abc45208d03e82884ff47b7c9081103ad39089e569d92460740a8"
+      "bytes": 44127,
+      "sha256": "7a2345ea4e913f14feb41f41d335faadfffb2287d77b58d2510d2ce271b2775d"
     }
   ]
 }

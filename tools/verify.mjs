@@ -403,6 +403,63 @@ if(fs.existsSync(round7Root)){
   check(visual.panel_corner_fit.circle_fit_top5_radius_error_px[0][0]===20.75,'第七轮圆角候选');
   round7Summary={captured:35,selected:34,excluded:1,rawObservationArtifacts:200,reaEnvironmentEvidence:4,recordingsCaptured:30,recordingsAnalyzed:29,decodedFrames:893,settingsUnchanged:true};
 }
+const round8Root=path.join(root,'docs/模拟器补测/第八轮');
+let round8Summary=null;
+if(fs.existsSync(round8Root)){
+  const index=read(path.join(round8Root,'evidence-index.json'));
+  const data=read(path.join(round8Root,'observations.json'));
+  const video=read(path.join(round8Root,'video-analysis.json'));
+  const returned=read(path.join(round8Root,'return-analysis.json'));
+  const selected=new Map(data.observations.map(o=>[o.id,o]));
+  const all=[...data.observations,...data.localOnlyObservations];
+  check(data.appVersion==='8.72.0'&&data.versionCode==='8720916','第八轮版本');
+  check(data.counts.captured===38&&data.counts.selected===35&&data.counts.localOnly===3,'第八轮观察计数');
+  check(selected.size===35&&all.length===38&&new Set(all.map(o=>o.id)).size===38,'第八轮观察唯一性');
+  check(data.localOnlyObservations.map(o=>o.id).join(',')==='E202,E203,E204','第八轮导航排除范围');
+  check(index.rawObservationArtifactCount===198&&index.sourceManifest.length===38,'第八轮来源清单');
+  check(index.sourceManifest.reduce((n,r)=>n+Object.keys(r.sourceHashes).length,0)===198,'第八轮原件计数复算');
+  for(const f of index.files){
+    const file=path.join(round8Root,f.file);
+    check(fs.existsSync(file)&&digest(fs.readFileSync(file))===f.publicSha256,'第八轮派生摘要：'+f.file);
+    check(!fs.readFileSync(file,'utf8').includes('\uFFFD'),'第八轮编码：'+f.file);
+  }
+  for(const o of all){
+    const s=index.sourceManifest.find(r=>r.id===o.id);
+    check(s&&JSON.stringify(s.sourceHashes)===JSON.stringify(o.sourceHashes),'第八轮来源映射：'+o.id);
+    check(Object.values(o.sourceHashes).every(h=>/^[a-f0-9]{64}$/.test(h)),'第八轮来源摘要格式：'+o.id);
+  }
+  for(const o of selected.values()){
+    check(o.appVersion==='8.72.0'&&o.versionCode==='8720916'&&o.kind==='emulator_observation','第八轮观察身份：'+o.id);
+    check(o.environment.width===1080&&o.environment.height===1920&&o.environment.densityDpi===280&&o.environment.fontScale===1&&o.environment.sameObservedPidAsBaseline,'第八轮恒定环境：'+o.id);
+    check(Date.parse(o.capturedAt)<=Date.parse(o.completedAt),'第八轮观察时序：'+o.id);
+  }
+  check(!data.settingsChanged&&!data.processDeathTested&&data.allRecordedPidsSame&&data.finalObservation==='E212'&&selected.get('E212')?.page==='home','第八轮最终状态与未测边界');
+  check(data.environmentEvidence.length===4&&data.environmentEvidence.every(e=>e.projectionOnly&&e.evidenceId.startsWith('ev_')&&/^[a-f0-9]{64}$/.test(e.originalSha256)),'第八轮REA投影');
+  for(const group of data.equalityGroups)for(const id of group)check(selected.get(id)?.sourceHashes.hierarchy===selected.get(group[0])?.sourceHashes.hierarchy,'第八轮层级对照：'+id);
+  check(selected.get('E185')?.sourceHashes.hierarchy!==selected.get('E188')?.sourceHashes.hierarchy&&data.entryBadgeDifference.beforeNodes===57&&data.entryBadgeDifference.afterNodes===56,'第八轮页码角标状态差异');
+  check(data.returnControls.map(c=>c.cardTopDisplacementPx).join(',')==='0,0,-639,-639,-639,-639','第八轮返回位移控制');
+  check(data.returnControls.every(c=>!c.matchedDwellTimeAcrossGroups&&c.durationIsNotAnAnimationOrTouchMeasurement),'第八轮时间混杂边界');
+  check(JSON.stringify(returned.controls)===JSON.stringify(data.returnControls),'第八轮返回表一致');
+  check(data.endpointComparisons.length===6&&data.endpointComparisons.every(c=>c.wholeScreenshotExactlyEqual&&c.fullXmlExactlyEqual&&c.excludingTop40PxMae===0),'第八轮六组终态复算');
+  check(video.recordings.length===20&&video.totalDecodedFrames===615&&new Set(video.recordings.map(v=>v.id)).size===20,'第八轮录像计数');
+  check(video.recordings.reduce((n,v)=>n+v.decodedFrames,0)===615&&!video.rawImageryIncluded&&!returned.rawImageryIncluded,'第八轮解码总数与隐私范围');
+  for(const v of video.recordings){
+    check(v.decodedFrames===v.probeFrames&&v.decoderExitCode===0&&v.ptsStrictlyIncreasing,'第八轮完整解码：'+v.id);
+    check(v.movieSha256===selected.get(v.id)?.sourceHashes.movie,'第八轮录像原件：'+v.id);
+    const rows=video.traces[v.id]?.frames;
+    check(rows?.length===v.decodedFrames&&rows.every((r,i)=>Number.isFinite(r.pts)&&(i===0||r.pts>rows[i-1].pts)),'第八轮帧序与PTS：'+v.id);
+  }
+  check(video.independentAudit.returnIds.length===11&&video.independentAudit.galleryIds.length===3&&video.independentAudit.panelIds.length===5&&video.independentAudit.remainingByPrimary.join(',')==='E201','第八轮独立复核范围');
+  for(const [id,min] of [['E198',404],['E199',396],['E200',0]]){
+    const fits=video.traces[id].frames.map(r=>r.page2_translation_fit).filter(r=>r.accepted);
+    check(Math.min(...fits.map(r=>r.candidate_offset_x_px))===min,'第八轮图集反向：'+id);
+  }
+  check(video.traces.E200.frames[27].page2_image_mae<=8,'第八轮整页对齐采样');
+  const reversal=video.traces.E210.frames.slice(8,11);
+  check(reversal.map(r=>r.title.matched_y_px).join(',')==='650,1221,1375'&&reversal.map(r=>r.video_band_nonblack_envelope.width).join(',')==='596,523,708','第八轮分层反向');
+  check(!video.traces.E209.frames.some(r=>r.title.matched_y_px===650),'第八轮不同中断阶段');
+  round8Summary={captured:38,selected:35,localOnly:3,rawObservationArtifacts:198,reaEnvironmentEvidence:4,recordings:20,decodedFrames:615,independentlyAuditedRecordings:19,settingsUnchanged:true};
+}
 if(writingManifest&&!problems.length){
   const manifest={schemaVersion:1,title:'帖子软件排版与逻辑',scope:'Public derived repository; .git and this manifest are excluded.',files:files.map(p=>({file:relative(p),bytes:fs.statSync(p).size,sha256:digest(fs.readFileSync(p))}))};
   fs.writeFileSync(manifestFile,JSON.stringify(manifest,null,2)+'\n');
@@ -417,5 +474,5 @@ if(!writingManifest&&fs.existsSync(manifestFile)){
     check(fs.existsSync(p)&&fs.statSync(p).size===e.bytes&&digest(fs.readFileSync(p))===e.sha256,'仓库摘要不匹配：'+e.file);
   }
 }else if(!writingManifest) check(false,'缺少 public-manifest.json');
-console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,round2:round2Summary,round3:round3Summary,round4:round4Summary,round5:round5Summary,round6:round6Summary,round7:round7Summary,issues:problems},null,2));
+console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,round2:round2Summary,round3:round3Summary,round4:round4Summary,round5:round5Summary,round6:round6Summary,round7:round7Summary,round8:round8Summary,issues:problems},null,2));
 if(problems.length)process.exitCode=1;
