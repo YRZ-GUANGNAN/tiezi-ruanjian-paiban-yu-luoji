@@ -20,8 +20,8 @@
     },
     {
       "file": "CHANGELOG.md",
-      "bytes": 1234,
-      "sha256": "fc04e454bb16575aa18babb5882c98fb6b3bfcfa841dd034e8b54e27890fb676"
+      "bytes": 1662,
+      "sha256": "ae186fff6f00b98b9f23312eb6ed7a0a005905ab1dcc406f610cf4c8b765e5ad"
     },
     {
       "file": "PUBLICATION.md",
@@ -30,8 +30,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 5062,
-      "sha256": "638d8183f57c3f4c4b5926dbaecfb16d1503c7fd0db05817b99539d9be0ba9bd"
+      "bytes": 5250,
+      "sha256": "39ccb5f5b7faffd5b9a498b88a2883a828776e6181a7b59e7e7657bb90a53d26"
     },
     {
       "file": "docs/00-阅读入口与进度.md",
@@ -67,6 +67,11 @@
       "file": "docs/06-交付校验结果.md",
       "bytes": 1461,
       "sha256": "e24f78c6901347d39ff65c91afa00bf954887e4eeaf09248a0f250470d9fd548"
+    },
+    {
+      "file": "docs/外部资料/01-GitHub资料筛选.md",
+      "bytes": 10345,
+      "sha256": "c4fc0aa73c315d1bddb1184fab3d08b4ca70b33ff9d1134a1ca6612c5622a366"
     },
     {
       "file": "docs/小红书手机端非购物研究-排版动效与内核-20261013-v4.sha256.json",
