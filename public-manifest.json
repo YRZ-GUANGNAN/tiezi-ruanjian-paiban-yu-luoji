@@ -20,8 +20,8 @@
     },
     {
       "file": "CHANGELOG.md",
-      "bytes": 10867,
-      "sha256": "ffb39b1827e9da3576947a2a3a0b340e4b98410b486e933431ea0e0e442be11e"
+      "bytes": 11496,
+      "sha256": "9934c8e5c8ebdaf57816ac619fa43502bbb7c60fed61396564e067dce67dc16a"
     },
     {
       "file": "PUBLICATION.md",
@@ -30,8 +30,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 11758,
-      "sha256": "5f4ff57d88d771f8ab3327676438e8bf6dd60e22eb58d7443da39e7017f1f196"
+      "bytes": 12516,
+      "sha256": "d1e2984818e663aacf67f8ff4b3cbbe80b72f1904485a7e83c2fd8c1f304f5a2"
     },
     {
       "file": "docs/00-阅读入口与进度.md",
@@ -2897,6 +2897,16 @@
       "file": "docs/离线补全/第十一轮/证据索引.json",
       "bytes": 2648,
       "sha256": "ada96ef99dcda850c8d2dde46f54a5b7bad3c3b916c2e90558b322bc303b8cd3"
+    },
+    {
+      "file": "docs/离线补全/第十二轮/00-私信与聊天静态研究.md",
+      "bytes": 14483,
+      "sha256": "69f68898b6c9c58d26ecbcaacd5403393fdaf5683c64ace0168880856baf9f9d"
+    },
+    {
+      "file": "docs/离线补全/第十二轮/证据索引.json",
+      "bytes": 20343,
+      "sha256": "b18d1e0fa4f82af526b822c48ce5c22174ffa48a1309d473640838c05ee3b598"
     },
     {
       "file": "docs/离线补全/第四轮/00-本轮结果.md",
