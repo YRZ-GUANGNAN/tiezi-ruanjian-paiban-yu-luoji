@@ -1,0 +1,911 @@
+{
+  "schemaVersion": 1,
+  "projectionOnly": true,
+  "runtimeObserved": false,
+  "target": {
+    "package": "com.xingin.xhs",
+    "version": "8.72.0",
+    "versionCode": "8720916",
+    "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+  },
+  "counts": {
+    "requests": 43,
+    "evidence": 41,
+    "errors": 2,
+    "methodBodiesUnavailable": 3
+  },
+  "records": [
+    {
+      "id": "PB001",
+      "evidence_id": "ev_4718fc5f479685c14323234c6a54c9b62e382a5b47d9df75218a3f4300e5745a",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "57af794d5e148c7b088f826e5b820b2602a7140337876478227ff7d3741add13",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.matrix.v2.profile.editinformation.EditProfileNewActivity",
+      "method": null,
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB002",
+      "evidence_id": "ev_a1cf316c4c71ff11a09207baa2601ff1e619616800a73ed4967b0e1a10225273",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "b2e5f1aced91c5a219cdeaae2052361c4201ddeabcd4bbc4a67554582eaeb7bc",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.matrix.v2.profile.editinformation.editbridgeinfo.BannerEditInfo",
+      "method": null,
+      "optionalPublicFields": [
+        {
+          "name": "CREATOR",
+          "reportedType": "com.xingin.matrix.v2.profile.editinformation.editbridgeinfo.BannerEditInfo$a"
+        },
+        {
+          "name": "bannerFileId",
+          "reportedType": "java.lang.String"
+        },
+        {
+          "name": "bannerUrl",
+          "reportedType": "java.lang.String"
+        },
+        {
+          "name": "tips",
+          "reportedType": "com.xingin.matrix.v2.profile.editinformation.editbridgeinfo.Tips"
+        }
+      ]
+    },
+    {
+      "id": "PB003",
+      "evidence_id": "ev_a0685a2220e32f1ffd9e8f4c363088799b9914f364c6d464eed64eb46eeb6249",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "aadd6e968559823f4188c83167a799a3d7dec4295e94c495b2f8190c83c100eb",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.xhs.v2.album.ui.clip.ClipActivity",
+      "method": null,
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB004",
+      "evidence_id": "ev_df6fc91b2b65e73fd9b484431b11c60b32b66d46992c24adf5154dcd26254874",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "f84e9efc00e78184de685b455641e3452d92e185565b0d236e39fbd8660318c8",
+      "operation": "trace_android_references",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.matrix.v2.profile.editinformation.editbridgeinfo.BannerEditInfo",
+      "method": null,
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB005",
+      "evidence_id": "ev_f2dffaadd27dc73e8ded03d208e55a7d61fc6ecfeba82d6c4594907cfa60a63e",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "00af3b08b637ef331fcf3a49341b4edf0a45916cdd36dcf7f07acaa60dc12cf1",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment",
+      "method": null,
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB006",
+      "evidence_id": "ev_dbc9d052c635f29ff9666f230750a79a135d7b3ce955a89a2c8e292871ce3dbb",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "7359205aede5c9934eb5d73b0f2cdbc9dc4f7ba2efdfd1038763af4389638e1a",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.matrix.v2.profile.newpage.basicinfo.bannerpreview.ProfileBannerImagePreviewActivityV2",
+      "method": null,
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB007",
+      "evidence_id": "ev_7ebb10ba103454709ca6e2f1cef79404082f0888bb324daf1ffc4bddae4278df",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "0e85571180b5f5460e4f40fbf76db7b5259f9d49e7c966e5bab78ad95e23c44e",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.v2.profile.editinformation.EditProfileNewActivity",
+      "method": {
+        "name": "createLinker",
+        "reportedSignature": "createLinker(android.view.ViewGroup): nl4.v<?, ?, ?, ?>",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB008",
+      "evidence_id": "ev_7d50152988824870cfcdda1cf55c18824acfcb53832e93e1b2745cb8d7d6586f",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "16ef3956740e7248c6fc4df761ffcef301e860aba33370aba90d76de0885716a",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.xhs.v2.album.ui.clip.ClipActivity",
+      "method": {
+        "name": "initView",
+        "reportedSignature": "initView(): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB009",
+      "evidence_id": "ev_41ff21de4d6dd968369b14c300746ea817179a9c525196ebbd97e2e4a34dc7ea",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "8ffc84daddeb33ad7e1632bc547176591d8bce9893761a86864fa8a174a871b2",
+      "operation": "trace_android_references",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.matrix.v2.profile.newpage.basicinfo.bannerpreview.ProfileBannerImagePreviewActivityV2",
+      "method": null,
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB010",
+      "evidence_id": "ev_2cfba6f16e3946d8e9b96996830d7bb7af2766b50fb632c9ea1eea7d4c01da05",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "eecf8a3836aeb14dfb779937810cbbd9972423529e3a9873536c342b1ddabdb5",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment",
+      "method": {
+        "name": "onClick",
+        "reportedSignature": "onClick(android.view.View): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB011",
+      "evidence_id": "ev_74a9417d2e50b45256d9ec9116ea03925f814b188fffd7fdb363e9bf861411a9",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "2e684d5beb7ff9c13c50e7532065967efbabecf43ecbaacbee6ab8f3949c3058",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment",
+      "method": {
+        "name": "g7",
+        "reportedSignature": "g7(android.content.Context, java.lang.String): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB012",
+      "evidence_id": "ev_fbcf72f552de5eafca0f3e8f0e6ee8b647ab9f2cbebe880e9f4b58e97e46fa97",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "76defc11a090305da688273ce3264b21a7248fa1891a9e834dd64a1f9743bfd5",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.v2.profile.newpage.basicinfo.bannerpreview.ProfileBannerImagePreviewActivityV2",
+      "method": {
+        "name": "createLinker",
+        "reportedSignature": "createLinker(android.view.ViewGroup): nl4.v<?, ?, ?, ?>",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB013",
+      "evidence_id": "ev_82df53be933d9aff2ca0f7a34e42d9f03072be7eef0c685fbdfb05f828a8290d",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "8e316b04c394e942ae087dddc8a72817c05d3dcea0e8fef544d78b461845ca18",
+      "operation": "trace_android_references",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.matrix.v2.profile.newpage.basicinfo.bannerpreview.ProfileBannerImagePreviewView",
+      "method": null,
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB014",
+      "evidence_id": "ev_ffb07593fec84d2e6195c87314b281df1fc29998b75ed4015ae9058dc0139033",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "6d419ead62999e5dbe601d428b7ded2a525a0754ec67723ce012c91ba75ba712",
+      "operation": "trace_android_references",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.matrix.v2.profile.editinformation.EditNewProfileView",
+      "method": null,
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB015",
+      "evidence_id": "ev_91b91cbd4cfb8da675caae93cd7cdc8f260fe39e1a8398ac0d936c7415a395c7",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "5a4ee88b35e1a57740d6d4e0a9919be047fb8196c7af23eef31bafb74c1adea2",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.xhs.v2.album.ui.clip.ClipActivity",
+      "method": {
+        "name": "onCreate$___twin___",
+        "reportedSignature": "onCreate$___twin___(android.os.Bundle): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB016",
+      "evidence_id": "ev_c37d0dc72f6926cfa1705ab3c4f393068b64e91dd58f79dedc4480f08c246d00",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "16b5586f89e98a81e116a81afaf21b019dadfcfc9398094e9238711f5b1a63ef",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewActivity",
+      "method": null,
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB017",
+      "evidence_id": "ev_50364b56e8f7cd7c83e28dc57ff97b3bb328a01f7b4721e72962f938e4ee81b4",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "46da66b01bc6256043ce45b2690a66ae9390ea78e1a24a7f360fbf0a3eb0670b",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment",
+      "method": {
+        "name": "onViewCreated",
+        "reportedSignature": "onViewCreated(android.view.View, android.os.Bundle): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB018",
+      "evidence_id": "ev_ebde82dd2f529eea50bc5414ef655b365a11a5f09917d91326b4770790ad2160",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "042de80a887a83e3615066d526a68365bcd03fc9615eae15689b765f12f57c96",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment",
+      "method": {
+        "name": "W6",
+        "reportedSignature": "W6(): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB019",
+      "evidence_id": "ev_44efd486b5a64ce6d90e53611e690c8c243d45147b25816b4e717a8ee3c4bc4a",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "06aeabe843f3c1f3e25b54d6c8c2e8538f892eb90e57c393c274a0e09bdcb0aa",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment",
+      "method": {
+        "name": "Y6",
+        "reportedSignature": "Y6(): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB020",
+      "evidence_id": "ev_376ce8b1fec77ba573272df660fbad36b8d611db7661210efa24d46649023f12",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "58286196299999f06e9505fbc82211794017d144e46eb7ad1111a9f209c2c3ca",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment.o",
+      "method": null,
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB021",
+      "evidence_id": "ev_825a4a76288748afc1fd3e21c993b2c7de3fd0480ad613cd66a446b364cdd62a",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "f3feec5b518e64223f973009592ff4a2d82eedb8c832c3152c3e4bff14048f50",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "qs6.j",
+      "method": null,
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB022",
+      "evidence_id": "ev_8a3a7d136254622111983025e620fff495c6958f6a190c3a3bd378832b6abebe",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "12c6c74c6ad223994ef5762c6bb9c88691f3e6ff93e142ec51285d68448070c4",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewActivity",
+      "method": {
+        "name": "onCreate$___twin___",
+        "reportedSignature": "onCreate$___twin___(android.os.Bundle): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB023",
+      "evidence_id": "ev_94a3fc871937550b07c49be5d903038634cd7b39a8d6dbe8fafecaf42477745e",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "cc7acf806f9e9dc09e7b74491611936740e0426326ccb2b835121a151eb71a78",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "qs6.j",
+      "method": {
+        "name": "m",
+        "reportedSignature": "m(android.content.Context, kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit>, int, java.lang.String, java.lang.String): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB024",
+      "evidence_id": "ev_39c6fba9135c38a093f2b45f442abac54ff77b282265cc6b662c2b36dee4a555",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "cfa426851a1372d1316c5bbe064e049dc53f3984dc8d2ac2b5da792602d83ec8",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment.o",
+      "method": {
+        "name": "invoke2",
+        "reportedSignature": "invoke2(java.lang.String): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB025",
+      "evidence_id": "ev_7056f88636efc8e948563d33bedd60446d9c91c8fe9d42f1acd0629af954ccf8",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "61595aa12039fae611f3cf8900af03d5b006ee9c5e65a90a9b23569099184774",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment.m",
+      "method": null,
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB026",
+      "evidence_id": "ev_d16c8dd69788dfa9333d3409a4b472a1ab3352378a6b5f9a2981b5f0274a08c5",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "ebeea914c695751ac5e78694a19e308c3335fc1079aa6d5235c54c912ef2b742",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment",
+      "method": {
+        "name": "e7",
+        "reportedSignature": "e7(): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB027",
+      "evidence_id": "ev_695528fb4e0c56498d35d686db562dbc0234929500cac1bcb316bf475be74a61",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "7e61d9d96f010941430d36b0fea8dfa6cfbdedf93f00a257195c1134a42891ce",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.xhs.v2.album.ui.clip.ClipActivity",
+      "method": {
+        "name": "tb",
+        "reportedSignature": "tb(): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB028",
+      "evidence_id": "ev_c36232cccf10a34dd3a171f12cad55d01eaad9e8af20c772c4df142693029c69",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "ee8a4b61226ff0f378d9fc58d05dfea55c1a00dd792bc4b468bd09a8871626ed",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment",
+      "method": {
+        "name": "n7",
+        "reportedSignature": "n7(java.lang.String): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB029",
+      "evidence_id": "ev_81b748875d6a9ca6352b11b516473f51a940be2d87d0ffcf7bcb176f491296f9",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "10ddbd3cb5cde7a1b5da91292b3e515b3228047f6676ab046d6775aa9059525e",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment",
+      "method": {
+        "name": "f7",
+        "reportedSignature": "f7(java.lang.String, boolean): tb9.r<zf4.v>",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB030",
+      "evidence_id": "ev_ce518b6272c86da9012a8a8cf7482f24236cc8ecf8c885cde07fea4a233470cd",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "58efe0fb1410b76522b52e54a1611b1a450aee16fbc5ac30e71a7a841959857a",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment",
+      "method": {
+        "name": "l7",
+        "reportedSignature": "l7(java.lang.String, java.lang.String, java.lang.String, zk.a0, kotlin.jvm.functions.Function2<? super java.lang.String, ? super com.xingin.matrix.v2.profile.editinformation.editbridgeinfo.ProfileEditImageBean, kotlin.Unit>, kotlin.jvm.functions.Function1<? super java.lang.Throwable, kotlin.Unit>): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB031",
+      "evidence_id": "ev_78d17ddf269d15c849db9d3dc1aad58f8e7544d8e013355d7159ba67afb6d79f",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "32cca4d9da778826847ed06b7f59c70a9dd961d6ea2a8d4df6b4182e2d2c7fdc",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment",
+      "method": {
+        "name": "Q6",
+        "reportedSignature": "Q6(com.xingin.matrix.profile.ProfileBannerImagePreviewFragment, java.lang.String): void",
+        "overloadIndex": 0,
+        "bodyStatus": "not_available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB032",
+      "evidence_id": "ev_7d2812a89c3aecebb6c068d02d5184f0b87951498ace292da6341d566ad960ec",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "cfc612473da2ad5de6b8e4bc3bda006a7a20e5f9d5a53c8f885b69678da0e876",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment",
+      "method": {
+        "name": "M6",
+        "reportedSignature": "M6(com.xingin.matrix.profile.ProfileBannerImagePreviewFragment, java.lang.String, boolean): tb9.r",
+        "overloadIndex": 0,
+        "bodyStatus": "not_available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB033",
+      "evidence_id": "ev_9221c684537fdb84390ca4da4261861e37556706759890998a3a53d23762418d",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "53dfacab84892da1701a6271c118a05847971ef8ea848533a78091b7c2bbef3b",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.matrix.v2.profile.editinformation.editbridgeinfo.ProfileEditImageBean",
+      "method": null,
+      "optionalPublicFields": [
+        {
+          "name": "CREATOR",
+          "reportedType": "android.os.Parcelable$Creator<com.xingin.matrix.v2.profile.editinformation.editbridgeinfo.ProfileEditImageBean>"
+        },
+        {
+          "name": "code",
+          "reportedType": "java.lang.Integer"
+        },
+        {
+          "name": "data",
+          "reportedType": "com.xingin.matrix.v2.profile.editinformation.editbridgeinfo.ProfileEditImageResult"
+        },
+        {
+          "name": "message",
+          "reportedType": "java.lang.String"
+        },
+        {
+          "name": "success",
+          "reportedType": "java.lang.Boolean"
+        }
+      ]
+    },
+    {
+      "id": "PB036",
+      "evidence_id": "ev_a7ea55bc6c741d5c5597d8083c37813e0cb0973d5c7bb7ff8f4b90ac9d31e7b7",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "6100cda615f742c596825e32686d40b38e30f50797b818eb2b4cb3af8bb224ed",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment",
+      "method": {
+        "name": "T6",
+        "reportedSignature": "T6(com.xingin.matrix.profile.ProfileBannerImagePreviewFragment, java.util.List): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB037",
+      "evidence_id": "ev_6ac1fc7c30d445fd4dd519e5def740228cca35980d999d4c6b552f512121131f",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "6037e28b8a9154620927e81908a6519fef585e16c0d7ffe0e7aa92e7b55adbd8",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment",
+      "method": {
+        "name": "O6",
+        "reportedSignature": "O6(com.xingin.matrix.profile.ProfileBannerImagePreviewFragment, boolean): void",
+        "overloadIndex": 0,
+        "bodyStatus": "not_available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB038",
+      "evidence_id": "ev_2127b5120e9132200e6e6fe1cdf733924eeadeb01b8b086ef586779e47ceaa49",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "e5154cad9c432d8ff80312eb7c2e61332a5364c3fc6031e9650ea6c4c515b569",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.matrix.profile.ProfileBannerImagePreviewFragment.m",
+      "method": {
+        "name": "a",
+        "reportedSignature": "a(mj6.d): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB039",
+      "evidence_id": "ev_81a1783cb0444a73ed9492bb5cb6cc44a68e39124100ce8062d8c4bc57950b38",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "d67d3e7a3dffdac3d62073a05637776d329f87d9b2b70d97494c62f981becdbd",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.xhs.v2.album.entities.FileChoosingParams.Image",
+      "method": null,
+      "optionalPublicFields": [
+        {
+          "name": "CREATOR",
+          "reportedType": "android.os.Parcelable$Creator<com.xingin.xhs.v2.album.entities.FileChoosingParams$Image>"
+        },
+        {
+          "name": "clipShape",
+          "reportedType": "com.xingin.xhs.v2.album.ui.clip.CropShape"
+        },
+        {
+          "name": "maxCount",
+          "reportedType": "int"
+        },
+        {
+          "name": "maxHeight",
+          "reportedType": "int"
+        },
+        {
+          "name": "maxWidth",
+          "reportedType": "int"
+        },
+        {
+          "name": "quality",
+          "reportedType": "float"
+        }
+      ]
+    },
+    {
+      "id": "PB040",
+      "evidence_id": "ev_52d05f0b8c9eaa1eb33fbe69dd943a86b4f0d0ba1b732a1b4dafaafe7bcf3faf",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "20295c6b2d5e6ec4dada8bb16fa8fa72f06ba4386ac273e82a62622cf8902c3c",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.xhs.v2.album.ui.clip.Rectangle",
+      "method": null,
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB041",
+      "evidence_id": "ev_b1c0948563849eb32ab1a81d9f64bb558727aae19243bf2deb05e8ba2163f9d1",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "62fe244699322ffc9b921d82c9cf0f61fe5558e097b2fb9209d72637c6f4a52b",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.xhs.v2.album.entities.FileChoosingParams.Image",
+      "method": {
+        "name": "d",
+        "reportedSignature": "d(int): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB042",
+      "evidence_id": "ev_e3f8caa2bc3599b08b8a7851868e11c61eb5ef5c82a7012e94d5ed595f0a7217",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "77f390754f9e1f1740bd3f8345c26369019da82a058bb0be4b8c4385f09c636d",
+      "operation": "inspect_android_method",
+      "authority": "shipped-artifact",
+      "confidence": "derived",
+      "className": "com.xingin.xhs.v2.album.ui.clip.Rectangle",
+      "method": {
+        "name": "<init>",
+        "reportedSignature": "<init>(int, int, java.lang.Integer): void",
+        "overloadIndex": 0,
+        "bodyStatus": "available",
+        "sourceStatus": "complete",
+        "representation": "java",
+        "fellBack": false
+      },
+      "optionalPublicFields": []
+    },
+    {
+      "id": "PB043",
+      "evidence_id": "ev_9dcf6e2859185148cd27e36a5c6a3430f796b7181deb88003d90ca3fb771c5eb",
+      "targetSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5",
+      "recordSha256": "e915ea5e563bef5388011ef9e3bda2eb13e07d5e301297ba8edd56f4156e559a",
+      "operation": "inspect_android_class",
+      "authority": "shipped-artifact",
+      "confidence": "observed",
+      "className": "com.xingin.matrix.ProfileUploader",
+      "method": null,
+      "optionalPublicFields": [
+        {
+          "name": "f106028a",
+          "reportedType": "com.xingin.matrix.ProfileUploader"
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "id": "PB034",
+      "recordKind": "error-not-evidence",
+      "recordSha256": "ad5a2e3123a9e70a62af3f70556b2194926ce8e291cd033f7814f450eb7a476a",
+      "reason": "exact-class-not-found",
+      "resolvedBy": "PB043"
+    },
+    {
+      "id": "PB035",
+      "recordKind": "error-not-evidence",
+      "recordSha256": "e125bc2ca6e97ef6cb0bf85dd2b8b617f29361f7e3e4d92a69cfdd992ac6d7df",
+      "reason": "exact-class-not-found",
+      "resolvedBy": "PB043"
+    }
+  ],
+  "claims": [
+    {
+      "id": "R01",
+      "evidence": [
+        "PB010",
+        "PB025",
+        "PB038"
+      ],
+      "statement": "首控件的 m.a 处理 EditInfoBean；非空且 a() 为真时进入 g7，来源为 edit_profile_list 或回退 profile_page，随后在 FragmentManager 状态未保存时弹栈并 finish。",
+      "status": "static-observed",
+      "limits": [
+        "EditInfoBean.a() 业务语义未知",
+        "不能把该门槛命名为 Android 系统权限",
+        "静态代码与 E219/E220 直接回编辑资料相容，不证明一次运行的内部调用"
+      ]
+    },
+    {
+      "id": "R02",
+      "evidence": [
+        "PB011",
+        "PB023"
+      ],
+      "statement": "g7 的 selector 表达式化简为 1，该静态调用选择 Rectangle(500,400,-65536) 分支。",
+      "status": "static-derived",
+      "limits": [
+        "运行是否实际进入裁剪尚未观察"
+      ]
+    },
+    {
+      "id": "R03",
+      "evidence": [
+        "PB023",
+        "PB039",
+        "PB041"
+      ],
+      "statement": "FileChoosingParams.Image.d(1) 明确写入 maxCount=1，是图片数量上限配置。",
+      "status": "static-observed",
+      "limits": [
+        "不是实际已选一张",
+        "配置执行和 UI 约束仍需运行验证"
+      ]
+    },
+    {
+      "id": "R04",
+      "evidence": [
+        "PB040",
+        "PB042"
+      ],
+      "statement": "Rectangle 三个构造参数存入 f125163d、f125164e、f125165f，尚未确认输出尺寸或控件比例语义。",
+      "status": "static-observed",
+      "limits": [
+        "500/400/-65536 仅作为字面量",
+        "不称固定 5:4 屏幕比例",
+        "Circle 分支只恢复 SentryCoreConfig.LOGCAT_MAIN_LINES，未证实值为1000"
+      ]
+    },
+    {
+      "id": "R05",
+      "evidence": [
+        "PB028",
+        "PB030",
+        "PB033",
+        "PB043"
+      ],
+      "statement": "n7 调用 m7，参数包含 BANNER 和 banner_image；独立恢复的 l7 调用 com.xingin.matrix.ProfileUploader.f106028a.a，并具有 ProfileEditImageBean 与错误回调参数。",
+      "status": "partial-static-chain",
+      "limits": [
+        "未展开 m7 默认参数封装及上传后处理",
+        "不是完整保存调用链",
+        "未证明服务器字段或保存成功"
+      ]
+    },
+    {
+      "id": "R06",
+      "evidence": [
+        "PB031",
+        "PB032",
+        "PB037"
+      ],
+      "statement": "Q6、M6、O6 的 body_status 均 not_available。",
+      "status": "unavailable-bodies",
+      "limits": [
+        "source.status=complete 不等于存在完整方法体"
+      ]
+    }
+  ],
+  "additionalFindings": [
+    {
+      "id": "S01",
+      "evidence": [
+        "PB022"
+      ],
+      "statement": "旧 Activity 创建 ProfileBannerImagePreviewFragment，调用 disableSwipeBack 和 overridePendingTransition；不能据此恢复时长。"
+    },
+    {
+      "id": "S02",
+      "evidence": [
+        "PB018",
+        "PB019"
+      ],
+      "statement": "W6/Y6 为贴纸装扮相关路由，未作为更换背景链。"
+    },
+    {
+      "id": "S03",
+      "evidence": [
+        "PB008",
+        "PB027"
+      ],
+      "statement": "ClipActivity 读取 source/function/shape/callbackKey 及源图和选择配置；未运行裁剪页面。"
+    },
+    {
+      "id": "S04",
+      "evidence": [
+        "PB029"
+      ],
+      "statement": "背景点赞与取消喜欢属于独立服务调用，未执行、不并入上传链。"
+    }
+  ],
+  "limits": [
+    "本文件是原始Evidence的选字段投影，不是完整Evidence或源码。",
+    "同版APK静态代码不证明实际运行或服务器成功。",
+    "热修复和其他动态分支未验证。",
+    "V2背景Activity仅作候选，现场是旧版；编辑页现场是XhsReactActivity。"
+  ]
+}

@@ -460,6 +460,74 @@ if(fs.existsSync(round8Root)){
   check(!video.traces.E209.frames.some(r=>r.title.matched_y_px===650),'第八轮不同中断阶段');
   round8Summary={captured:38,selected:35,localOnly:3,rawObservationArtifacts:198,reaEnvironmentEvidence:4,recordings:20,decodedFrames:615,independentlyAuditedRecordings:19,settingsUnchanged:true};
 }
+const round9Root=path.join(root,'docs/模拟器补测/第九轮');
+let round9Summary=null;
+if(fs.existsSync(round9Root)){
+  const index=read(path.join(round9Root,'evidence-index.json'));
+  const data=read(path.join(round9Root,'observations.json'));
+  const video=read(path.join(round9Root,'recordings-analysis.json'));
+  const stat=read(path.join(round9Root,'static-findings.json'));
+  const sha=h=>typeof h==='string'&&/^[a-f0-9]{64}$/.test(h);
+  const all=[...data.observations,...data.incompleteCaptures];
+  const byId=new Map(all.map(o=>[o.id,o]));
+  check(data.appVersion==='8.72.0'&&data.versionCode==='8720916','第九轮版本');
+  check(data.counts.captureAttempts===24&&data.counts.completeObservations===23&&data.counts.incompleteCaptures===1,'第九轮计数');
+  check(data.observations.length===23&&all.length===24&&byId.size===24,'第九轮观察唯一性');
+  check(data.incompleteCaptures.length===1&&data.incompleteCaptures[0].id==='E217'&&!data.observations.some(o=>o.id==='E217'),'第九轮失败与完整观察隔离');
+  check(index.rawObservationArtifactCount===114&&index.sourceManifest.length===24&&index.sourceManifest.reduce((n,s)=>n+Object.keys(s.sourceHashes).length,0)===114,'第九轮原件计数');
+  check(JSON.stringify(index.counts)===JSON.stringify(data.counts),'第九轮索引计数一致');
+  for(const f of index.files){
+    const p=path.join(round9Root,f.file);
+    check(fs.existsSync(p)&&digest(fs.readFileSync(p))===f.publicSha256&&fs.statSync(p).size===f.bytes,'第九轮公开摘要：'+f.file);
+  }
+  check(index.files.length===7&&fs.readdirSync(round9Root).length===8,'第九轮公开文件范围');
+  for(const o of all){
+    const source=index.sourceManifest.find(s=>s.id===o.id);
+    check(source&&JSON.stringify(source.sourceHashes)===JSON.stringify(o.sourceHashes)&&Object.values(o.sourceHashes).every(sha),'第九轮来源映射：'+o.id);
+  }
+  check(!byId.get('E217').sourceHashes.observation&&!byId.get('E217').sourceHashes.screenshot&&sha(byId.get('E217').sourceHashes.failure),'第九轮未完成边界');
+  for(const o of data.observations){
+    check(['observation','screenshot','hierarchy'].every(k=>sha(o.sourceHashes[k]))&&o.kind==='emulator_observation','第九轮完整原件：'+o.id);
+    check(Date.parse(o.capturedAt)<=Date.parse(o.completedAt)&&o.screenshotSizePx.join(',')==='1080,1920','第九轮时序/画面尺寸：'+o.id);
+    if(o.perCaptureEnvironmentAvailable)check(o.appVersion==='8.72.0'&&o.versionCode==='8720916'&&o.environment.width===1080&&o.environment.height===1920&&o.environment.densityDpi===280&&o.environment.fontScale===1&&o.environment.sameObservedPidAsBaseline,'第九轮逐次环境：'+o.id);
+    else check(['E218','E219'].includes(o.id)&&o.environment===null&&o.appVersion===null&&o.contextLimit,'第九轮专用采集器元信息限制：'+o.id);
+    check(!Object.hasOwn(o,'nodes')&&!Object.hasOwn(o,'text')&&!Object.hasOwn(o,'serial'),'第九轮原始内容隔离：'+o.id);
+  }
+  check(data.observations.filter(o=>!o.perCaptureEnvironmentAvailable).length===2,'第九轮元信息缺省范围');
+  check(data.environmentEvidence.length===4&&data.environmentEvidence.every(e=>e.projectionOnly&&e.evidenceId.startsWith('ev_')&&sha(e.originalSha256)),'第九轮环境Evidence');
+  check(JSON.stringify(index.environmentEvidence)===JSON.stringify(data.environmentEvidence),'第九轮环境投影映射');
+  check(!data.settingsChangedByResearcher&&!data.accountDataSaved&&!data.permissionGrantedByResearcher&&!data.permissionStateVerifiedUnchanged&&!data.cropGestureTested&&!data.uploadOrSaveTested,'第九轮权限/写入边界');
+  check(data.finalObservation==='E236'&&byId.get('E236')?.page==='home','第九轮最终状态');
+  const metrics=data.geometry.metrics;
+  check(metrics.length===42&&!data.geometry.crossDeviceRuleVerified,'第九轮几何数量/适配边界');
+  for(const m of metrics)check(byId.has(m.id)&&m.boundsPx.length===4&&m.widthPx===m.boundsPx[2]-m.boundsPx[0]&&m.heightPx===m.boundsPx[3]-m.boundsPx[1]&&m.sourceNodeIndices.length>0,'第九轮几何：'+m.id+'/'+m.role);
+  const metric=(id,role)=>metrics.find(m=>m.id===id&&m.role===role);
+  check(metric('E215','avatar')?.widthPx===140&&metric('E215','background-thumbnail')?.widthPx===87&&metric('E215','bio-card')?.heightPx===84&&metric('E232','collapsed-avatar')?.widthPx===49,'第九轮核心尺寸');
+  check(data.geometry.appearanceControls.length===3&&data.geometry.appearanceControls.every(c=>['E224','E226'].includes(c.id)&&c.checked===true),'第九轮仅外观开关投影');
+  check(video.recordings.length===11&&video.totalDecodedFrames===276&&video.recordings.reduce((n,v)=>n+v.decodedFrames,0)===276&&!video.rawImageryIncluded,'第九轮录像计数');
+  for(const v of video.recordings){
+    check(v.movieSha256===byId.get(v.id)?.sourceHashes.movie&&v.probeFrames===v.decodedFrames&&v.decoderExitCode===0&&v.ptsStrictlyIncreasing&&!v.usedForAnimationTiming,'第九轮录像来源/用途：'+v.id);
+    check(v.pts.length===v.decodedFrames&&v.pts.every((p,i)=>Number.isFinite(p)&&(i===0||p>v.pts[i-1])),'第九轮PTS：'+v.id);
+    check(v.stableCaptureComplete===(v.id!=='E217'),'第九轮录像与稳定采集状态：'+v.id);
+  }
+  check(video.endpointComparisons.length===10&&video.endpointComparisons.filter(p=>p.excludingStatusBarMae===0&&p.fullXmlExactlyEqual).length===8,'第九轮返回对照');
+  for(const p of video.endpointComparisons){
+    check(p.sourceScreenHashes[0]===byId.get(p.a)?.sourceHashes.screenshot&&p.sourceScreenHashes[1]===byId.get(p.b)?.sourceHashes.screenshot,'第九轮对照原件：'+p.a+'/'+p.b);
+    check(p.fullXmlExactlyEqual===(byId.get(p.a)?.sourceHashes.hierarchy===byId.get(p.b)?.sourceHashes.hierarchy),'第九轮XML对照：'+p.a+'/'+p.b);
+  }
+  check(video.endpointComparisons.find(p=>p.a==='E233'&&p.b==='E235')?.fullXmlExactlyEqual===false&&video.endpointComparisons.find(p=>p.a==='E213'&&p.b==='E236')?.wholeScreenshotExactlyEqual===false,'第九轮不一致结果保留');
+  check(video.colors.length===8&&video.colors.every(c=>c.screenshotSha256===byId.get(c.id)?.sourceHashes.screenshot&&c.modalFraction===1),'第九轮颜色取样');
+  check(stat.projectionOnly&&!stat.runtimeObserved&&stat.records.length===41&&stat.errors.length===2&&stat.counts.requests===43&&stat.counts.evidence===41,'第九轮静态Evidence计数');
+  check(stat.target.sha256===index.apkSha256&&stat.records.filter(r=>r.method).length===24&&stat.records.filter(r=>r.method?.bodyStatus==='not_available').map(r=>r.id).join(',')==='PB031,PB032,PB037','第九轮静态目标/方法状态');
+  check(stat.errors.map(r=>r.id).join(',')==='PB034,PB035'&&!stat.records.some(r=>['PB034','PB035'].includes(r.id)),'第九轮错误不冒充Evidence');
+  for(const r of stat.records){
+    const s=index.staticSources.find(s=>s.id===r.id);
+    check(s&&r.evidence_id===s.evidenceId&&r.recordSha256===s.originalSha256&&sha(r.recordSha256)&&r.targetSha256===index.apkSha256&&s.artifactSha256===index.apkSha256,'第九轮静态映射：'+r.id);
+  }
+  for(const c of [...stat.claims,...stat.additionalFindings])check(c.evidence.every(id=>stat.records.some(r=>r.id===id)),'第九轮静态结论引用：'+c.id);
+  check(sha(index.derivation.exporterSha256)&&sha(index.derivation.numericAnalyzerSha256)&&sha(index.derivation.localNumericAnalysisSha256)&&index.derivation.numericDataValuesPreserved&&index.derivation.publicNumericAnalysisSha256===digest(fs.readFileSync(path.join(round9Root,'recordings-analysis.json'))),'第九轮派生来源');
+  round9Summary={captureAttempts:24,completeObservations:23,incompleteCaptures:1,rawObservationArtifacts:114,geometryMetrics:42,recordings:11,decodedFrames:276,staticEvidence:41,staticErrors:2,environmentEvidence:4,cropOrSaveTested:false};
+}
 if(writingManifest&&!problems.length){
   const manifest={schemaVersion:1,title:'帖子软件排版与逻辑',scope:'Public derived repository; .git and this manifest are excluded.',files:files.map(p=>({file:relative(p),bytes:fs.statSync(p).size,sha256:digest(fs.readFileSync(p))}))};
   fs.writeFileSync(manifestFile,JSON.stringify(manifest,null,2)+'\n');
@@ -474,5 +542,5 @@ if(!writingManifest&&fs.existsSync(manifestFile)){
     check(fs.existsSync(p)&&fs.statSync(p).size===e.bytes&&digest(fs.readFileSync(p))===e.sha256,'仓库摘要不匹配：'+e.file);
   }
 }else if(!writingManifest) check(false,'缺少 public-manifest.json');
-console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,round2:round2Summary,round3:round3Summary,round4:round4Summary,round5:round5Summary,round6:round6Summary,round7:round7Summary,round8:round8Summary,issues:problems},null,2));
+console.log(JSON.stringify({status:problems.length?'FAIL':'PASS',files:files.length+Number(fs.existsSync(manifestFile)),importedResearchFiles:provenance.records.length,jsonFiles,localLinks:links,layoutMetrics:layout.metrics.length,coreEvidence:core.records.length,round2:round2Summary,round3:round3Summary,round4:round4Summary,round5:round5Summary,round6:round6Summary,round7:round7Summary,round8:round8Summary,round9:round9Summary,issues:problems},null,2));
 if(problems.length)process.exitCode=1;

@@ -20,18 +20,18 @@
     },
     {
       "file": "CHANGELOG.md",
-      "bytes": 8650,
-      "sha256": "236454d21f55e4d1acc621a33e16ba3719cee3f7f063bcafc4cc546c4bd5f77f"
+      "bytes": 10044,
+      "sha256": "8ef523ecf3918ab37aa5092461400a81af79b86c8ecbc4a8a5969f49b6ba6fed"
     },
     {
       "file": "PUBLICATION.md",
-      "bytes": 4517,
-      "sha256": "7b22b58b3146e16d4d305e2130913ff907c67a47a7b945675e5664d7175a2564"
+      "bytes": 5126,
+      "sha256": "99923054be39b1b073039cc5e51c9971f176f3c0f580df0ac597b7685060de21"
     },
     {
       "file": "README.md",
-      "bytes": 9899,
-      "sha256": "333f6341223547436ae26f35072076914b15b39a97484f38fd121d94d8a27671"
+      "bytes": 10876,
+      "sha256": "a070b06c80b10f50ae67d2c1132ff60488722ce51cbde3c3abb5d77db05ad266"
     },
     {
       "file": "docs/00-阅读入口与进度.md",
@@ -294,6 +294,46 @@
       "sha256": "6dea9d9ac96c36fbd6d9a092e632a1710b8f934070f66e1037a7407c54aba69e"
     },
     {
+      "file": "docs/模拟器补测/第九轮/00-本轮结果.md",
+      "bytes": 4004,
+      "sha256": "385150636eec281a5ac8275bc7fa1cb58d504c3e4a61e7eeacb148d25d17a4ef"
+    },
+    {
+      "file": "docs/模拟器补测/第九轮/01-我的页面与编辑资料.md",
+      "bytes": 3899,
+      "sha256": "7fc446739e4e2364e0446313aac6534e36ea2fcef6c7f9f8ea2494d531ae9861"
+    },
+    {
+      "file": "docs/模拟器补测/第九轮/02-设置页面.md",
+      "bytes": 3519,
+      "sha256": "c77e3cadb883eb19045c57e79d5ea496793a0dd6409e23a39a968594dbbf1a67"
+    },
+    {
+      "file": "docs/模拟器补测/第九轮/03-背景图入口与静态裁剪.md",
+      "bytes": 4809,
+      "sha256": "320802478bcc2e4141ed08490e266bec042c7425cb6bfe9df50ae454f0ba618a"
+    },
+    {
+      "file": "docs/模拟器补测/第九轮/evidence-index.json",
+      "bytes": 29877,
+      "sha256": "3f857cd64c76865e328f97a312c6fc9d6251d54a25d3b8abfcd623916ea18dc0"
+    },
+    {
+      "file": "docs/模拟器补测/第九轮/observations.json",
+      "bytes": 71916,
+      "sha256": "293ac08975ac62e5eff1eccaed16756bfc4223bc167afdb74399290b98ca55af"
+    },
+    {
+      "file": "docs/模拟器补测/第九轮/recordings-analysis.json",
+      "bytes": 16209,
+      "sha256": "df979a2be590c1eb60f14a4712391b013bfc2ce2d0f7ce6fe7ac89af452a0371"
+    },
+    {
+      "file": "docs/模拟器补测/第九轮/static-findings.json",
+      "bytes": 36164,
+      "sha256": "57d72c55bc152950b6197e39ea4b12090b9dee381fb0f70fb511a6ad63561583"
+    },
+    {
       "file": "docs/模拟器补测/第五轮/00-本轮结果.md",
       "bytes": 4050,
       "sha256": "4f9586cd3d868e40ec2cca434f1adc99ab4194438581f79abca925c2691e729d"
@@ -405,8 +445,8 @@
     },
     {
       "file": "docs/深度研究/00-深度研究阅读入口.md",
-      "bytes": 5098,
-      "sha256": "a9728d088896568b45fa3a4a1cf925c2c671acce1678c94a91a0a03ee008bb1b"
+      "bytes": 5680,
+      "sha256": "d5fbf0a67f928d79d8330125253316057149986448cc991e8ac5afffb77419b1"
     },
     {
       "file": "docs/深度研究/01-复刻参数与验收.md",
@@ -4230,13 +4270,13 @@
     },
     {
       "file": "provenance.json",
-      "bytes": 157467,
-      "sha256": "4283b4584988939d0874cf730969f7459a046167bd8e705aa579a552af086624"
+      "bytes": 157466,
+      "sha256": "98b75e6f680e8fb85293f5fad861bfac9627768acc1f26e92d1ec815e5b2fafd"
     },
     {
       "file": "tools/verify.mjs",
-      "bytes": 44127,
-      "sha256": "7a2345ea4e913f14feb41f41d335faadfffb2287d77b58d2510d2ce271b2775d"
+      "bytes": 51932,
+      "sha256": "2f54890620982acef828611dd3f0e3249a12a35cf6e59b1635ae809948346a8e"
     }
   ]
 }

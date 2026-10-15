@@ -1,0 +1,2559 @@
+{
+  "schemaVersion": 1,
+  "appVersion": "8.72.0",
+  "versionCode": "8720916",
+  "device": "MuMu Android 15",
+  "roundDate": "2026-10-15",
+  "counts": {
+    "captureAttempts": 24,
+    "completeObservations": 23,
+    "incompleteCaptures": 1,
+    "recordings": 11,
+    "decodedFrames": 276,
+    "staticRequests": 43,
+    "staticEvidence": 41,
+    "staticErrors": 2,
+    "environmentEvidence": 4
+  },
+  "sessionBoundary": "MuMu实例启动后新会话；不承接第八轮进程连续性。",
+  "settingsChangedByResearcher": false,
+  "accountDataSaved": false,
+  "permissionGrantedByResearcher": false,
+  "permissionStateVerifiedUnchanged": false,
+  "permissionLimit": "仅系统返回关闭弹窗；未点击允许或不允许，不证明系统权限历史/拒绝计数未变化。",
+  "realDeviceTested": false,
+  "cropGestureTested": false,
+  "uploadOrSaveTested": false,
+  "processDeathRecoveryTested": false,
+  "finalObservation": "E236",
+  "environmentEvidence": [
+    {
+      "id": "ER901",
+      "evidenceId": "ev_e60d867ea0c035e3b7027e66ce0b752b85e175047e1a4de7bda23ac427852c3c",
+      "originalSha256": "ab5e3c7314803a3f11d05b517dd9030d58e549dbdaf5def0090d03b02e844d13",
+      "operation": "inspect_adb_package",
+      "projectionOnly": true,
+      "projection": {
+        "packageName": "com.xingin.xhs",
+        "versionName": "8.72.0",
+        "versionCode": 8720916
+      }
+    },
+    {
+      "id": "ER902",
+      "evidenceId": "ev_eca5e4d1ca92a9ea6c6b5f7ea73930e9ec7feff52d34d6efadd1656093842ca1",
+      "originalSha256": "f124a58461800c9b65569c20782a050c84eb8fb5b3f55be83b2c88eb883832ec",
+      "operation": "inspect_adb_device",
+      "projectionOnly": true,
+      "projection": {
+        "androidRelease": "15",
+        "apiLevel": "35"
+      }
+    },
+    {
+      "id": "ER903",
+      "evidenceId": "ev_9213541bf0be809943921702772975453640a1b4801165fb412e8261fc0833bd",
+      "originalSha256": "e6b8aaba47869e1e7f110d0ad7c086d25f46bc7619ab2e61eb80d95b52630873",
+      "operation": "inspect_adb_display",
+      "projectionOnly": true,
+      "projection": {
+        "physicalSize": {
+          "width": 1080,
+          "height": 1920
+        },
+        "overrideSize": null,
+        "physicalDensity": 280,
+        "overrideDensity": null
+      }
+    },
+    {
+      "id": "ER904",
+      "evidenceId": "ev_cb477d6aa430adf7f0e60b2f9772db6a2684674801feb8b0d7db09622b1bab2b",
+      "originalSha256": "bd74686b955a3de100c83892cbd9a68d5a95e549109c50361f3beba0b47d4f5e",
+      "operation": "read_adb_setting",
+      "projectionOnly": true,
+      "projection": {
+        "namespace": "system",
+        "key": "font_scale",
+        "value": "1.0"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "id": "E213",
+      "kind": "emulator_observation",
+      "page": "home",
+      "surface": "app",
+      "capturedAt": "2026-10-15T05:46:21.197Z",
+      "completedAt": "2026-10-15T05:46:23.321Z",
+      "foregroundComponent": "com.xingin.xhs/.index.v2.IndexActivityV2",
+      "action": {
+        "type": "capture",
+        "parameters": [],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "只查看并返回；未修改设置。",
+      "sourceHashes": {
+        "action": "5f62550c9c3600ef4923ca3bd680636eda3c40a3f596ef31e644ec2cc6a41595",
+        "hierarchy": "e0e7422761ead24c8507911d00d9ea174001d5e46077d21581d0c5d95bd16595",
+        "observation": "2ac986f7b42bfb59efa0542b42abd8c713329b938ccfc637d04e18602aaa0a62",
+        "screenshot": "476877e5f529108d9f4d7fd74181f799ed80174faeab25cdf82b81e870740a16"
+      }
+    },
+    {
+      "id": "E214",
+      "kind": "emulator_observation",
+      "page": "mine-with-recommendations",
+      "surface": "app",
+      "capturedAt": "2026-10-15T05:46:47.408Z",
+      "completedAt": "2026-10-15T05:46:49.615Z",
+      "foregroundComponent": "com.xingin.xhs/.index.v2.IndexActivityV2",
+      "action": {
+        "type": "tap",
+        "parameters": [
+          972,
+          1880
+        ],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "首次我的页有推荐关注区；仅导出模块几何。",
+      "sourceHashes": {
+        "action": "d6abe025a42e1beede5594f8bde1073e54c97838876e2e17f8ac2644f5478784",
+        "beforeScreenshot": "476877e5f529108d9f4d7fd74181f799ed80174faeab25cdf82b81e870740a16",
+        "hierarchy": "9d0770aa5bb928d84f130b51e9610d311c402f67841ccc219d149c19e2346225",
+        "movie": "69376f0699a068ffe9e558f27db12218a7e2bd17d39e77ef1143d5d7efd6a1c0",
+        "observation": "82e70c0801d45db69a587edc6ab2a3f12e3686e14314bdbd47b125084d0ea15f",
+        "screenshot": "f3cdd2fbfe41e9067566b3d627ed888fd99b0f4b8e9dcda9533e7d65a75c463d"
+      }
+    },
+    {
+      "id": "E215",
+      "kind": "emulator_observation",
+      "page": "edit-profile",
+      "surface": "app",
+      "capturedAt": "2026-10-15T05:47:33.920Z",
+      "completedAt": "2026-10-15T05:47:35.970Z",
+      "foregroundComponent": "com.xingin.xhs/com.xingin.reactnative.ui.XhsReactActivity",
+      "action": {
+        "type": "tap",
+        "parameters": [
+          885,
+          425
+        ],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "实际前台为 XhsReactActivity；浅色编辑页，未编辑保存。",
+      "sourceHashes": {
+        "action": "d0cc5d63a5f08aa9c8eea1eaeb67ff395cb88e1724aece785f0f2f9ce3b1c035",
+        "beforeScreenshot": "31b901f82677b9307c6862ad6995efc904af765633c5f9b6e6baedf38f336945",
+        "hierarchy": "ec33656bd74a3eb5201849e1b65095adb7135aad99d4506d3bd844230b159cc2",
+        "movie": "bb9c342c868a4bf129b7c12d61320ee404e86642702fdf69bce21ebb82f61012",
+        "observation": "22de83a7ee3b6f89ce1b52fce6e07f418cc97f6995bbffaac8b45ca3fcf690a7",
+        "screenshot": "585768908ee8a52b929a1d79c0d6fa1dd9b8915e2e2e45f0c4ce3d8ebe7f7fd2"
+      }
+    },
+    {
+      "id": "E216",
+      "kind": "emulator_observation",
+      "page": "background-preview",
+      "surface": "app",
+      "capturedAt": "2026-10-15T05:48:15.431Z",
+      "completedAt": "2026-10-15T05:48:17.458Z",
+      "foregroundComponent": "com.xingin.xhs/com.xingin.matrix.profile.ProfileBannerImagePreviewActivity",
+      "action": {
+        "type": "tap",
+        "parameters": [
+          700,
+          568
+        ],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "编辑资料入口进入旧背景预览 Activity。",
+      "sourceHashes": {
+        "action": "c5d1ff7d6130f38996c7604cc65f7b1de0a412d9455082189f79e15627b9c6c7",
+        "beforeScreenshot": "92f9cb71371091c994cde6c46d684aae02b44eb2f38541f7050e924f320c0fec",
+        "hierarchy": "0f9a3e5bb6b0e794b9045d7ff8ca1e39e0d3536bbed56ac309b63e3e8bd21f6f",
+        "movie": "b5c902ca4bde3d58d54385fcf8f174f450cc9de5558d4a7d0573d34b1dc37b22",
+        "observation": "e67f11ff36ee69a063f778810a96e34ad33d68ff78f80927fe3c676780905f27",
+        "screenshot": "1d8a3e7abc4090d22254cddb5249483abf28c0500a83347ca1e65a3b61d24388"
+      }
+    },
+    {
+      "id": "E218",
+      "kind": "emulator_observation",
+      "page": "system-media-permission",
+      "surface": "android-system",
+      "capturedAt": "2026-10-15T05:49:50.609Z",
+      "completedAt": "2026-10-15T05:49:52.662Z",
+      "foregroundComponent": "com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity",
+      "action": {
+        "type": "capture",
+        "parameters": [],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": null,
+      "versionCode": null,
+      "environment": null,
+      "perCaptureEnvironmentAvailable": false,
+      "contextLimit": "系统弹窗专用采集器未重复采包版本、显示密度和PID；只关联同一次会话的环境证据。",
+      "note": "系统请求音乐和音频权限；没有点击允许或不允许。",
+      "sourceHashes": {
+        "hierarchy": "fbfffb7f6657393ad07317b8d4c57c91e65fe8e7ff84ec13ec37cdf82d052ef9",
+        "observation": "3ddafc84a7111ed4660c333faa24f56851a919da495b7b49d92f6c044219f6fa",
+        "screenshot": "ba6b3abb43303751f4ac39cca691a130c75c52c51ffd3787784eec8c440b0c31"
+      }
+    },
+    {
+      "id": "E219",
+      "kind": "emulator_observation",
+      "page": "album-permission-empty",
+      "surface": "app",
+      "capturedAt": "2026-10-15T05:50:49.257Z",
+      "completedAt": "2026-10-15T05:50:51.301Z",
+      "foregroundComponent": "com.xingin.xhs/.v2.album.ui.choose.XhsAlbumActivity",
+      "action": {
+        "type": "back",
+        "parameters": [],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": null,
+      "versionCode": null,
+      "environment": null,
+      "perCaptureEnvironmentAvailable": false,
+      "contextLimit": "系统弹窗专用采集器未重复采包版本、显示密度和PID；只关联同一次会话的环境证据。",
+      "note": "用系统返回关闭权限提示后进入相册权限空态；没有授予权限。",
+      "sourceHashes": {
+        "hierarchy": "7549072044f49e7779928e9c3e113c530eda867589fc68ce8891df3b8789edc8",
+        "observation": "973100f02a0ad7a86f0f04c2b657f29946829a0d64f4a642eb28fc43fd583d97",
+        "screenshot": "83359116144f65c3edbc6a52926274cd19fdb08a62421213867b8a6745cfb770"
+      }
+    },
+    {
+      "id": "E220",
+      "kind": "emulator_observation",
+      "page": "edit-profile",
+      "surface": "app",
+      "capturedAt": "2026-10-15T05:51:17.306Z",
+      "completedAt": "2026-10-15T05:51:19.355Z",
+      "foregroundComponent": "com.xingin.xhs/com.xingin.reactnative.ui.XhsReactActivity",
+      "action": {
+        "type": "back",
+        "parameters": [],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "相册返回直接到编辑资料；没有经过背景预览。",
+      "sourceHashes": {
+        "action": "a01ce9192cff5fd4fcd3f9214fd71195d94c43cc0c5196ec7625ad43ef119a22",
+        "beforeScreenshot": "7f1a504cb8630514860dff8090917a121b51b3a18aebce6ac777fef8582961d6",
+        "hierarchy": "ec33656bd74a3eb5201849e1b65095adb7135aad99d4506d3bd844230b159cc2",
+        "movie": "93331266b75363afd1afbad274e7029c29a5b97b3ec4e4e90ec520be015e1d3b",
+        "observation": "ed3f2fe9c8101f36f93cd76f3c444b4b8a4e5c22f135374d3d6d92d29a70b434",
+        "screenshot": "9a8fb21ed594f33be764d7719e44896b874e2730ae1cde20792c42f0c4274b26"
+      }
+    },
+    {
+      "id": "E221",
+      "kind": "emulator_observation",
+      "page": "mine",
+      "surface": "app",
+      "capturedAt": "2026-10-15T05:51:36.976Z",
+      "completedAt": "2026-10-15T05:51:39.026Z",
+      "foregroundComponent": "com.xingin.xhs/.index.v2.IndexActivityV2",
+      "action": {
+        "type": "back",
+        "parameters": [],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "推荐关注区已不再出现；未主动关闭推荐区，消失原因和精确时点未知。",
+      "sourceHashes": {
+        "action": "eca8d4fd7676a949053f6b52b1e080281c27c6a595626239ee70e0094081ad81",
+        "beforeScreenshot": "9a8fb21ed594f33be764d7719e44896b874e2730ae1cde20792c42f0c4274b26",
+        "hierarchy": "a7dd474bc0f2b37d8060be41d443d475558e0b4511f7a085d4996835034814d8",
+        "movie": "fb157168b4f047ffc7bfc39c201744ced2002d67cf5ea4a10b3bd1350ae00f59",
+        "observation": "d78507e42a2ba6092534e7c4184c2d6c5c0a0cf8cb3a789520872eb9ddb21726",
+        "screenshot": "58ecf8b729b9ff3d0bdcfb2455885d73c4513643dced7f5a5b04488a8b0da242"
+      }
+    },
+    {
+      "id": "E222",
+      "kind": "emulator_observation",
+      "page": "settings",
+      "surface": "app",
+      "capturedAt": "2026-10-15T05:52:09.365Z",
+      "completedAt": "2026-10-15T05:52:11.399Z",
+      "foregroundComponent": "com.xingin.xhs/com.xingin.matrix.setting.SettingActivityV2",
+      "action": {
+        "type": "tap",
+        "parameters": [
+          1020,
+          425
+        ],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "只查看并返回；未修改设置。",
+      "sourceHashes": {
+        "action": "bbbd346e03bb5c714c2792dc975032fa54dbf880487f698beffe5511e4e2a56f",
+        "beforeScreenshot": "fb2db0a62c42279f5f80ceb41a30782896f8151fc5f211bbdf323beb84cf2d9c",
+        "hierarchy": "9870077184c1fac27c3ec48846ef4f7a8e72056ce9f5a6a3732b121c64f0c6b9",
+        "movie": "ef02e7143190cb2edfd55477a4e6f20f8ddb1a694b714c12e339a84940d8074b",
+        "observation": "91946b03d2a4b7a14c8e3a95e9a552eee1f16ecce3caf4c028ab4aec30176311",
+        "screenshot": "4ccdcc436c61663f837ffd665353c3c0598b312908cd0f678e99a2e850f8985c"
+      }
+    },
+    {
+      "id": "E223",
+      "kind": "emulator_observation",
+      "page": "general-settings",
+      "surface": "app",
+      "capturedAt": "2026-10-15T05:52:39.300Z",
+      "completedAt": "2026-10-15T05:52:41.313Z",
+      "foregroundComponent": "com.xingin.xhs/com.xingin.matrix.setting.generalsettings.GeneralSettingsActivityV2",
+      "action": {
+        "type": "tap",
+        "parameters": [
+          500,
+          285
+        ],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "只查看并返回；未修改设置。",
+      "sourceHashes": {
+        "action": "c63be230b6f198cade02594f3c9c851bbae9a7b0d8e4b9713ad7c3d8ad8043cd",
+        "hierarchy": "ecb1495b87847d687063782aeec067314e6b46f9e268e6061461e53a19980309",
+        "observation": "07e6235162c23f0318305c456ee09037ce08ddc36ccb64b738e48a212c82d4b3",
+        "screenshot": "522197c54dfc76324b9f019d37c2101ed8f376fc9ac4ad450451d5f211c7c231"
+      }
+    },
+    {
+      "id": "E224",
+      "kind": "emulator_observation",
+      "page": "font-settings",
+      "surface": "app",
+      "capturedAt": "2026-10-15T05:53:02.104Z",
+      "completedAt": "2026-10-15T05:53:04.125Z",
+      "foregroundComponent": "com.xingin.xhs/com.xingin.matrix.setting.fontsize.FontSizeSettingActivityV2",
+      "action": {
+        "type": "tap",
+        "parameters": [
+          500,
+          303
+        ],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "字体页跟随系统设置显示开启；点击取消返回，未改动。",
+      "sourceHashes": {
+        "action": "bf9feccf0b2bf70255feef9d37c9947011a8996d0eaa869930ee3591d091c067",
+        "hierarchy": "0adb6be32df6418395ab78ff8b0b08138aac5f22d4f10aeffbaa41c891b5a6bd",
+        "observation": "62c3d5fc5daad94e0b4a37dcc8860e4b02a119b87930339c9837983bd75eaad7",
+        "screenshot": "db7e1f62c05481ad973aed0d8014f5a49c3c072116755d93a0f397557a800244"
+      }
+    },
+    {
+      "id": "E225",
+      "kind": "emulator_observation",
+      "page": "general-settings",
+      "surface": "app",
+      "capturedAt": "2026-10-15T05:53:25.045Z",
+      "completedAt": "2026-10-15T05:53:27.093Z",
+      "foregroundComponent": "com.xingin.xhs/com.xingin.matrix.setting.generalsettings.GeneralSettingsActivityV2",
+      "action": {
+        "type": "tap",
+        "parameters": [
+          73,
+          80
+        ],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "只查看并返回；未修改设置。",
+      "sourceHashes": {
+        "action": "bb576df1f7cc4f2e37dae71d80398fac564fd5ed9cbbc1f6f29c06850133aeb3",
+        "hierarchy": "ecb1495b87847d687063782aeec067314e6b46f9e268e6061461e53a19980309",
+        "observation": "476f4dad7ccc6b85859bd7808d90da05c92c40ae41d5b6f4dd4228cb29dbf6c4",
+        "screenshot": "d083b5dc2605798624c20a5b31999c50d2e1c5f36756a939e32a6f1d779408a8"
+      }
+    },
+    {
+      "id": "E226",
+      "kind": "emulator_observation",
+      "page": "dark-mode-settings",
+      "surface": "app",
+      "capturedAt": "2026-10-15T05:53:42.806Z",
+      "completedAt": "2026-10-15T05:53:44.828Z",
+      "foregroundComponent": "com.xingin.xhs/com.xingin.matrix.setting.darkmode.DarkModeSettingsActivityV2",
+      "action": {
+        "type": "tap",
+        "parameters": [
+          500,
+          472
+        ],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "跟随系统设置与深色模式均显示开启；未改动。",
+      "sourceHashes": {
+        "action": "afa7025dd73dd98033f0bfa57c0d619a535b46e6a50e446d13de573290a9d223",
+        "hierarchy": "fc41a2c21f27e058a4a4ad517876cbcb3608140531ffb30e06854275b2100882",
+        "observation": "f34ba9fb3b25c40667d23af24d5502e0ad8e71ded44f9d2e386f362a241c0c26",
+        "screenshot": "41f37fcdeb231babd0d6e12aaae5fd5f52ffd7a759cf2034948f66d2e66bd187"
+      }
+    },
+    {
+      "id": "E227",
+      "kind": "emulator_observation",
+      "page": "general-settings",
+      "surface": "app",
+      "capturedAt": "2026-10-15T05:54:10.724Z",
+      "completedAt": "2026-10-15T05:54:12.794Z",
+      "foregroundComponent": "com.xingin.xhs/com.xingin.matrix.setting.generalsettings.GeneralSettingsActivityV2",
+      "action": {
+        "type": "back",
+        "parameters": [],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "只查看并返回；未修改设置。",
+      "sourceHashes": {
+        "action": "4b0fcf552fb60a0b0539a29e5f8fd28d3632de0f5d5f1c39c6069d7f4c8ab039",
+        "hierarchy": "ecb1495b87847d687063782aeec067314e6b46f9e268e6061461e53a19980309",
+        "observation": "0b23360131cc3d5303dd812cff06b6706e2e1d3a5a081a372f6f7c857bc266e1",
+        "screenshot": "92c74eb8d4a061b3d869b7e8e8aca0d9a6d0d5f8ac25c372d2982479f066eb43"
+      }
+    },
+    {
+      "id": "E228",
+      "kind": "emulator_observation",
+      "page": "settings",
+      "surface": "app",
+      "capturedAt": "2026-10-15T05:55:21.794Z",
+      "completedAt": "2026-10-15T05:55:23.878Z",
+      "foregroundComponent": "com.xingin.xhs/com.xingin.matrix.setting.SettingActivityV2",
+      "action": {
+        "type": "back",
+        "parameters": [],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "只查看并返回；未修改设置。",
+      "sourceHashes": {
+        "action": "fcee72df43f47742d0d7cb0fc134031857d88e3a946fee7465dc4f98d7081b65",
+        "hierarchy": "9870077184c1fac27c3ec48846ef4f7a8e72056ce9f5a6a3732b121c64f0c6b9",
+        "observation": "f7b4ec9a7b7bf4dce6882c430811728709350b0d104fb4c658132c4bd44ee859",
+        "screenshot": "a9ccb2f51e9937dfcf1ccd9accf6478247a66863e73fb423be82cbf0c58ff67e"
+      }
+    },
+    {
+      "id": "E229",
+      "kind": "emulator_observation",
+      "page": "privacy-settings-first-screen",
+      "surface": "app",
+      "capturedAt": "2026-10-15T05:55:26.576Z",
+      "completedAt": "2026-10-15T05:55:28.626Z",
+      "foregroundComponent": "com.xingin.xhs/com.xingin.matrix.setting.privacy.PrivacySettingsActivityV2",
+      "action": {
+        "type": "tap",
+        "parameters": [
+          500,
+          466
+        ],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "只观察隐私首屏；底部内容裁切，未导出账号开关值。",
+      "sourceHashes": {
+        "action": "fa4cf261a63abbcb722aab74d673dd6f0dd3a58e9031d16d9bc729a2c325d164",
+        "hierarchy": "12ff4b006ce9859735e3218815ba0f45b0b3a814585cb596be7693661dc9007b",
+        "observation": "b633c494c4f3275f20456154ede9691e9f0a2b3e8cc0a5f6864cea954d5662b9",
+        "screenshot": "c41d93b43e287ac8bb6c07759850dad5abbc91a7e1301861dc82a2317779ebae"
+      }
+    },
+    {
+      "id": "E230",
+      "kind": "emulator_observation",
+      "page": "settings",
+      "surface": "app",
+      "capturedAt": "2026-10-15T06:06:11.468Z",
+      "completedAt": "2026-10-15T06:06:13.535Z",
+      "foregroundComponent": "com.xingin.xhs/com.xingin.matrix.setting.SettingActivityV2",
+      "action": {
+        "type": "back",
+        "parameters": [],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "只查看并返回；未修改设置。",
+      "sourceHashes": {
+        "action": "076b7b4a7ce47f1f470fb01ed3ed5e8873dbd6f28491b708494bbd642f21f3a6",
+        "hierarchy": "9870077184c1fac27c3ec48846ef4f7a8e72056ce9f5a6a3732b121c64f0c6b9",
+        "observation": "efab0b07097511c06a76a0ef29b6f0f5811c5248acd4dc0f296c5a55f5dca526",
+        "screenshot": "1a675cabf367a6d5ad275d5d6def7a03e6c25217050ba1c179679e4d3b9b1f4c"
+      }
+    },
+    {
+      "id": "E231",
+      "kind": "emulator_observation",
+      "page": "mine",
+      "surface": "app",
+      "capturedAt": "2026-10-15T06:06:16.245Z",
+      "completedAt": "2026-10-15T06:06:18.303Z",
+      "foregroundComponent": "com.xingin.xhs/.index.v2.IndexActivityV2",
+      "action": {
+        "type": "back",
+        "parameters": [],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "只查看并返回；未修改设置。",
+      "sourceHashes": {
+        "action": "c93034bc1487df866004d8b9178845870245ed59b31c8a7d7acbd09eb238a27a",
+        "hierarchy": "a7dd474bc0f2b37d8060be41d443d475558e0b4511f7a085d4996835034814d8",
+        "observation": "9615271a502af2ce6f96890c95bf75f06990bcb7dcdcf73e87a4937346d834a8",
+        "screenshot": "5f9e10f303acaed8924e0aaca9c1476d4978152d48f4d9d209c560dbaced2598"
+      }
+    },
+    {
+      "id": "E232",
+      "kind": "emulator_observation",
+      "page": "mine-collapsed",
+      "surface": "app",
+      "capturedAt": "2026-10-15T06:06:26.851Z",
+      "completedAt": "2026-10-15T06:06:28.893Z",
+      "foregroundComponent": "com.xingin.xhs/.index.v2.IndexActivityV2",
+      "action": {
+        "type": "swipe",
+        "parameters": [
+          540,
+          1450,
+          540,
+          600,
+          500
+        ],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "栏目吸顶、小头像可见；头图仍有节点，不推断组件销毁或滚动实现。",
+      "sourceHashes": {
+        "action": "0c17e5dce038128551e08b966b786580f825be963686afad6bda7a59ea54f84b",
+        "beforeScreenshot": "5f9e10f303acaed8924e0aaca9c1476d4978152d48f4d9d209c560dbaced2598",
+        "hierarchy": "59dcf01b100d0e9c68b4763e103e4b2bbf620b44535c609e42ea40107e6012e4",
+        "movie": "e4e0714bfc6ff35d8b4ec478c52bdadd3c6e1dbf1cda87d5e3a3612454a2bbb5",
+        "observation": "68663042d1e8157aca7fac62a6fe5d7cd41f8917273621e886467462b906efab",
+        "screenshot": "6de304eecbe09728d51854c52b54893c79dff2cb517cb81a09e48a1613335247"
+      }
+    },
+    {
+      "id": "E233",
+      "kind": "emulator_observation",
+      "page": "mine",
+      "surface": "app",
+      "capturedAt": "2026-10-15T06:10:11.149Z",
+      "completedAt": "2026-10-15T06:10:13.205Z",
+      "foregroundComponent": "com.xingin.xhs/.index.v2.IndexActivityV2",
+      "action": {
+        "type": "swipe",
+        "parameters": [
+          540,
+          600,
+          540,
+          1450,
+          500
+        ],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "与 E231 完整 XML 和去顶部42px画面相同。",
+      "sourceHashes": {
+        "action": "1b0932b0eb07cb580358001b17f0ecf83540a8db3707de9340afb0f43f1d5f2c",
+        "beforeScreenshot": "24b1e0fff5e09032e94bf4cf62635cfddb0ed59f4629863ea869a2bd23758e05",
+        "hierarchy": "a7dd474bc0f2b37d8060be41d443d475558e0b4511f7a085d4996835034814d8",
+        "movie": "08803989df73643f0b76fb2cfd1803e8b56b02b19d21a1a36bb37265ee5d00ec",
+        "observation": "9ce60521cf8ce5e161aa03a00e2752f600cae43aa8eb0635795e39febb5ffc6d",
+        "screenshot": "187c09e83859398131a0a04b707b1396765b3c67d71da1675f1bb87557060546"
+      }
+    },
+    {
+      "id": "E234",
+      "kind": "emulator_observation",
+      "page": "background-preview",
+      "surface": "app",
+      "capturedAt": "2026-10-15T06:29:43.143Z",
+      "completedAt": "2026-10-15T06:29:45.229Z",
+      "foregroundComponent": "com.xingin.xhs/com.xingin.matrix.profile.ProfileBannerImagePreviewActivity",
+      "action": {
+        "type": "tap",
+        "parameters": [
+          800,
+          250
+        ],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "直接点击我的页头图进入同一旧背景预览页。",
+      "sourceHashes": {
+        "action": "07e7c590c1f15eb5feee2dedd811eb715fda7faa030ae9289651bb3cae758991",
+        "beforeScreenshot": "a10a8b1903aafc66d749796c40a18ff9edd1ef89639ff373907c5ecb3606fb9e",
+        "hierarchy": "0f9a3e5bb6b0e794b9045d7ff8ca1e39e0d3536bbed56ac309b63e3e8bd21f6f",
+        "movie": "c0277246f9f44eff77745ab636ea0c6ec1522f7d4d63758d7b68248f3ed43a92",
+        "observation": "b890a7eb1c887bb0f398e18b8de9b3d6ffe74d3f6cc8685abb0a1a09352c44eb",
+        "screenshot": "1e69f07ee429d5c9b2298dc9d8ea741944240fa88ae6882d33de899aab4afe77"
+      }
+    },
+    {
+      "id": "E235",
+      "kind": "emulator_observation",
+      "page": "mine",
+      "surface": "app",
+      "capturedAt": "2026-10-15T06:31:06.592Z",
+      "completedAt": "2026-10-15T06:31:08.648Z",
+      "foregroundComponent": "com.xingin.xhs/.index.v2.IndexActivityV2",
+      "action": {
+        "type": "back",
+        "parameters": [],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "返回我的页；空态文案变化，不能称完整画面恢复。",
+      "sourceHashes": {
+        "action": "37a93ea8f8f9b6b755a04bc178505db27e34bf1d01ba9f301498bf494152ee8d",
+        "beforeScreenshot": "123b4bf62d21431d0d9cc3d62ca2ef08def689e2a1dde20015bce0d151a0ef8f",
+        "hierarchy": "cc7cc1a9e7367182c94c8b48a53e797b8f805f56997b9e254bad0810bb0aeb5f",
+        "movie": "78ced2ddebed6106feda3b2b4d49c2aa23d0e815145ca1327b91bf922d724632",
+        "observation": "187e9f1b7a260a176c8b98b611e476664a33c23648eec8a99bd043170c58e566",
+        "screenshot": "0e643af5a8c4ea3c56e978338ce3819878d23486c29c329e29868bd70b94173e"
+      }
+    },
+    {
+      "id": "E236",
+      "kind": "emulator_observation",
+      "page": "home",
+      "surface": "app",
+      "capturedAt": "2026-10-15T06:31:32.180Z",
+      "completedAt": "2026-10-15T06:31:34.319Z",
+      "foregroundComponent": "com.xingin.xhs/.index.v2.IndexActivityV2",
+      "action": {
+        "type": "tap",
+        "parameters": [
+          108,
+          1880
+        ],
+        "timeBasis": "requested ADB input, not measured physical touch timing"
+      },
+      "screenshotSizePx": [
+        1080,
+        1920
+      ],
+      "appVersion": "8.72.0",
+      "versionCode": "8720916",
+      "environment": {
+        "width": 1080,
+        "height": 1920,
+        "densityDpi": 280,
+        "fontScale": 1,
+        "sameObservedPidAsBaseline": true
+      },
+      "perCaptureEnvironmentAvailable": true,
+      "contextLimit": null,
+      "note": "最终回首页；XML 同初始，画面并非逐像素相同。",
+      "sourceHashes": {
+        "action": "ee8a3391b94147c86674709f2587dadd418181cd5627573d262dfe6128fc714c",
+        "hierarchy": "e0e7422761ead24c8507911d00d9ea174001d5e46077d21581d0c5d95bd16595",
+        "observation": "437337559154af000e0b73a15246bfff0ff638af55532a2f35a68d61225e59fd",
+        "screenshot": "6406d243f9345706b9f8dbec77f1d2c2e6d466f1350a722136e9eb47afbd611b"
+      }
+    }
+  ],
+  "incompleteCaptures": [
+    {
+      "id": "E217",
+      "kind": "incomplete_capture",
+      "page": null,
+      "action": {
+        "type": "tap",
+        "parameters": [
+          516,
+          1655
+        ]
+      },
+      "reason": "点击更换背景后前台切到系统权限页，旧采集器前台保护中止；保留录像和失败记录，后续由E218单独采集系统页。",
+      "sourceHashes": {
+        "action": "503f808cb9c32189a6db7104e2f3ab407f4fa4448fa0e01ab1ada04dfd6b4971",
+        "beforeScreenshot": "453b978c563606a9b1c1d5ccad0ea6730100364ab86ef909e8c8e2f0b2b09ee8",
+        "failure": "38727fec0b98d007aaf576f8e01256faa0ece33643e0026ef71da033ef318795",
+        "movie": "a6623a738d3c3f7d604431142f7567b4087bd85ebe5a05a8d9e694d8e0a180b8"
+      }
+    }
+  ],
+  "geometry": {
+    "unit": "screenshot px at 1080x1920 and 280dpi",
+    "crossDeviceRuleVerified": false,
+    "metrics": [
+      {
+        "id": "E214",
+        "role": "header-image",
+        "boundsPx": [
+          0,
+          0,
+          1080,
+          492
+        ],
+        "widthPx": 1080,
+        "heightPx": 492,
+        "sourceNodeIndices": [
+          123,
+          124,
+          125
+        ],
+        "reportedClasses": [
+          "android.widget.FrameLayout",
+          "android.widget.ImageView",
+          "android.view.View"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E214",
+        "role": "top-toolbar",
+        "boundsPx": [
+          0,
+          42,
+          1080,
+          119
+        ],
+        "widthPx": 1080,
+        "heightPx": 77,
+        "sourceNodeIndices": [
+          129
+        ],
+        "reportedClasses": [
+          "android.widget.FrameLayout"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E214",
+        "role": "edit-entry",
+        "boundsPx": [
+          815,
+          400,
+          958,
+          449
+        ],
+        "widthPx": 143,
+        "heightPx": 49,
+        "sourceNodeIndices": [
+          42
+        ],
+        "reportedClasses": [
+          "android.widget.Button"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E214",
+        "role": "settings-entry",
+        "boundsPx": [
+          984,
+          400,
+          1054,
+          449
+        ],
+        "widthPx": 70,
+        "heightPx": 49,
+        "sourceNodeIndices": [
+          43
+        ],
+        "reportedClasses": [
+          "android.widget.ImageView"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E214",
+        "role": "recommendation-outer",
+        "boundsPx": [
+          0,
+          492,
+          1080,
+          841
+        ],
+        "widthPx": 1080,
+        "heightPx": 349,
+        "sourceNodeIndices": [
+          44,
+          45
+        ],
+        "reportedClasses": [
+          "android.widget.FrameLayout"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E214",
+        "role": "recommendation-panel",
+        "boundsPx": [
+          28,
+          492,
+          1052,
+          806
+        ],
+        "widthPx": 1024,
+        "heightPx": 314,
+        "sourceNodeIndices": [
+          46
+        ],
+        "reportedClasses": [
+          "android.view.ViewGroup"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E214",
+        "role": "out-of-scope-module-placeholder",
+        "boundsPx": [
+          0,
+          841,
+          1080,
+          925
+        ],
+        "widthPx": 1080,
+        "heightPx": 84,
+        "sourceNodeIndices": [
+          105
+        ],
+        "reportedClasses": [
+          "androidx.recyclerview.widget.RecyclerView"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E214",
+        "role": "primary-tabs",
+        "boundsPx": [
+          0,
+          953,
+          1080,
+          1030
+        ],
+        "widthPx": 1080,
+        "heightPx": 77,
+        "sourceNodeIndices": [
+          135
+        ],
+        "reportedClasses": [
+          "android.widget.FrameLayout"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E214",
+        "role": "secondary-tabs",
+        "boundsPx": [
+          0,
+          1031,
+          1080,
+          1103
+        ],
+        "widthPx": 1080,
+        "heightPx": 72,
+        "sourceNodeIndices": [
+          159,
+          160,
+          161
+        ],
+        "reportedClasses": [
+          "android.widget.RelativeLayout",
+          "android.widget.FrameLayout",
+          "androidx.recyclerview.widget.RecyclerView"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E214",
+        "role": "bottom-navigation",
+        "boundsPx": [
+          0,
+          1841,
+          1080,
+          1920
+        ],
+        "widthPx": 1080,
+        "heightPx": 79,
+        "sourceNodeIndices": [
+          175
+        ],
+        "reportedClasses": [
+          "android.view.ViewGroup"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E215",
+        "role": "top-toolbar",
+        "boundsPx": [
+          0,
+          42,
+          1080,
+          119
+        ],
+        "widthPx": 1080,
+        "heightPx": 77,
+        "sourceNodeIndices": [
+          25
+        ],
+        "reportedClasses": [
+          "android.view.ViewGroup"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E215",
+        "role": "preview-entry",
+        "boundsPx": [
+          974,
+          42,
+          1080,
+          119
+        ],
+        "widthPx": 106,
+        "heightPx": 77,
+        "sourceNodeIndices": [
+          30
+        ],
+        "reportedClasses": [
+          "android.view.ViewGroup"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E215",
+        "role": "scroll-viewport",
+        "boundsPx": [
+          0,
+          119,
+          1080,
+          1822
+        ],
+        "widthPx": 1080,
+        "heightPx": 1703,
+        "sourceNodeIndices": [
+          32
+        ],
+        "reportedClasses": [
+          "android.widget.ScrollView"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E215",
+        "role": "avatar",
+        "boundsPx": [
+          470,
+          154,
+          610,
+          294
+        ],
+        "widthPx": 140,
+        "heightPx": 140,
+        "sourceNodeIndices": [
+          35,
+          36,
+          37
+        ],
+        "reportedClasses": [
+          "android.view.ViewGroup",
+          "android.widget.ImageView"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E215",
+        "role": "identity-card",
+        "boundsPx": [
+          28,
+          343,
+          1052,
+          623
+        ],
+        "widthPx": 1024,
+        "heightPx": 280,
+        "sourceNodeIndices": [
+          38
+        ],
+        "reportedClasses": [
+          "android.view.ViewGroup"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E215",
+        "role": "name-row",
+        "boundsPx": [
+          28,
+          343,
+          1052,
+          427
+        ],
+        "widthPx": 1024,
+        "heightPx": 84,
+        "sourceNodeIndices": [
+          39
+        ],
+        "reportedClasses": [
+          "android.view.ViewGroup"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E215",
+        "role": "account-id-row",
+        "boundsPx": [
+          28,
+          427,
+          1052,
+          511
+        ],
+        "widthPx": 1024,
+        "heightPx": 84,
+        "sourceNodeIndices": [
+          46
+        ],
+        "reportedClasses": [
+          "android.view.ViewGroup"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E215",
+        "role": "background-row",
+        "boundsPx": [
+          28,
+          511,
+          1052,
+          623
+        ],
+        "widthPx": 1024,
+        "heightPx": 112,
+        "sourceNodeIndices": [
+          53
+        ],
+        "reportedClasses": [
+          "android.view.ViewGroup"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E215",
+        "role": "background-entry",
+        "boundsPx": [
+          56,
+          532,
+          1024,
+          602
+        ],
+        "widthPx": 968,
+        "heightPx": 70,
+        "sourceNodeIndices": [
+          54
+        ],
+        "reportedClasses": [
+          "android.view.ViewGroup"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E215",
+        "role": "background-thumbnail",
+        "boundsPx": [
+          240,
+          532,
+          327,
+          602
+        ],
+        "widthPx": 87,
+        "heightPx": 70,
+        "sourceNodeIndices": [
+          56
+        ],
+        "reportedClasses": [
+          "android.widget.ImageView"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E215",
+        "role": "bio-card",
+        "boundsPx": [
+          28,
+          644,
+          1052,
+          728
+        ],
+        "widthPx": 1024,
+        "heightPx": 84,
+        "sourceNodeIndices": [
+          59,
+          60
+        ],
+        "reportedClasses": [
+          "android.view.ViewGroup"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E215",
+        "role": "details-card",
+        "boundsPx": [
+          28,
+          749,
+          1052,
+          1253
+        ],
+        "widthPx": 1024,
+        "heightPx": 504,
+        "sourceNodeIndices": [
+          66
+        ],
+        "reportedClasses": [
+          "android.view.ViewGroup"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E215",
+        "role": "save-button",
+        "boundsPx": [
+          28,
+          1836,
+          1052,
+          1906
+        ],
+        "widthPx": 1024,
+        "heightPx": 70,
+        "sourceNodeIndices": [
+          109
+        ],
+        "reportedClasses": [
+          "android.view.ViewGroup"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E216",
+        "role": "close-entry",
+        "boundsPx": [
+          11,
+          77,
+          88,
+          154
+        ],
+        "widthPx": 77,
+        "heightPx": 77,
+        "sourceNodeIndices": [
+          8
+        ],
+        "reportedClasses": [
+          "android.widget.ImageView"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E216",
+        "role": "image",
+        "boundsPx": [
+          0,
+          528,
+          1080,
+          1392
+        ],
+        "widthPx": 1080,
+        "heightPx": 864,
+        "sourceNodeIndices": [
+          9,
+          10
+        ],
+        "reportedClasses": [
+          "android.widget.ImageView",
+          "android.view.View"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E216",
+        "role": "change-bar",
+        "boundsPx": [
+          56,
+          1614,
+          1024,
+          1699
+        ],
+        "widthPx": 968,
+        "heightPx": 85,
+        "sourceNodeIndices": [
+          11
+        ],
+        "reportedClasses": [
+          "android.widget.LinearLayout"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E216",
+        "role": "change-entry",
+        "boundsPx": [
+          56,
+          1615,
+          1024,
+          1699
+        ],
+        "widthPx": 968,
+        "heightPx": 84,
+        "sourceNodeIndices": [
+          13
+        ],
+        "reportedClasses": [
+          "android.widget.LinearLayout"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E216",
+        "role": "change-icon",
+        "boundsPx": [
+          954,
+          1636,
+          996,
+          1678
+        ],
+        "widthPx": 42,
+        "heightPx": 42,
+        "sourceNodeIndices": [
+          15
+        ],
+        "reportedClasses": [
+          "android.widget.ImageView"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E222",
+        "role": "top-toolbar",
+        "boundsPx": [
+          0,
+          42,
+          1080,
+          130
+        ],
+        "widthPx": 1080,
+        "heightPx": 88,
+        "sourceNodeIndices": [
+          7
+        ],
+        "reportedClasses": [
+          "android.widget.FrameLayout"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E222",
+        "role": "list-viewport",
+        "boundsPx": [
+          0,
+          130,
+          1080,
+          1920
+        ],
+        "widthPx": 1080,
+        "heightPx": 1790,
+        "sourceNodeIndices": [
+          16
+        ],
+        "reportedClasses": [
+          "androidx.recyclerview.widget.RecyclerView"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E222",
+        "role": "general-row",
+        "boundsPx": [
+          0,
+          242,
+          1080,
+          333
+        ],
+        "widthPx": 1080,
+        "heightPx": 91,
+        "sourceNodeIndices": [
+          28
+        ],
+        "reportedClasses": [
+          "android.widget.LinearLayout"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E222",
+        "role": "privacy-row",
+        "boundsPx": [
+          0,
+          424,
+          1080,
+          515
+        ],
+        "widthPx": 1080,
+        "heightPx": 91,
+        "sourceNodeIndices": [
+          50
+        ],
+        "reportedClasses": [
+          "android.widget.LinearLayout"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E223",
+        "role": "font-row",
+        "boundsPx": [
+          28,
+          261,
+          1052,
+          345
+        ],
+        "widthPx": 1024,
+        "heightPx": 84,
+        "sourceNodeIndices": [
+          24,
+          25
+        ],
+        "reportedClasses": [
+          "android.widget.FrameLayout",
+          "android.view.ViewGroup"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E223",
+        "role": "dark-mode-row",
+        "boundsPx": [
+          28,
+          431,
+          1052,
+          515
+        ],
+        "widthPx": 1024,
+        "heightPx": 84,
+        "sourceNodeIndices": [
+          36,
+          37
+        ],
+        "reportedClasses": [
+          "android.widget.FrameLayout",
+          "android.view.ViewGroup"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E224",
+        "role": "font-adjustment-area",
+        "boundsPx": [
+          28,
+          1699,
+          1052,
+          1843
+        ],
+        "widthPx": 1024,
+        "heightPx": 144,
+        "sourceNodeIndices": [
+          18
+        ],
+        "reportedClasses": [
+          "android.view.View"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E229",
+        "role": "list-viewport",
+        "boundsPx": [
+          0,
+          130,
+          1080,
+          1920
+        ],
+        "widthPx": 1080,
+        "heightPx": 1790,
+        "sourceNodeIndices": [
+          14
+        ],
+        "reportedClasses": [
+          "androidx.recyclerview.widget.RecyclerView"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E232",
+        "role": "remaining-header-node",
+        "boundsPx": [
+          0,
+          0,
+          1080,
+          133
+        ],
+        "widthPx": 1080,
+        "heightPx": 133,
+        "sourceNodeIndices": [
+          16,
+          17,
+          38,
+          39,
+          40
+        ],
+        "reportedClasses": [
+          "android.widget.FrameLayout",
+          "android.widget.LinearLayout",
+          "android.widget.ImageView",
+          "android.view.View"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E232",
+        "role": "collapsed-avatar",
+        "boundsPx": [
+          515,
+          57,
+          564,
+          106
+        ],
+        "widthPx": 49,
+        "heightPx": 49,
+        "sourceNodeIndices": [
+          50
+        ],
+        "reportedClasses": [
+          "android.view.View"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E232",
+        "role": "sticky-tabs",
+        "boundsPx": [
+          0,
+          119,
+          1080,
+          196
+        ],
+        "widthPx": 1080,
+        "heightPx": 77,
+        "sourceNodeIndices": [
+          51
+        ],
+        "reportedClasses": [
+          "android.widget.FrameLayout"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E232",
+        "role": "tab-divider",
+        "boundsPx": [
+          0,
+          196,
+          1080,
+          197
+        ],
+        "widthPx": 1080,
+        "heightPx": 1,
+        "sourceNodeIndices": [
+          66
+        ],
+        "reportedClasses": [
+          "android.view.View"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E234",
+        "role": "image",
+        "boundsPx": [
+          0,
+          528,
+          1080,
+          1392
+        ],
+        "widthPx": 1080,
+        "heightPx": 864,
+        "sourceNodeIndices": [
+          9,
+          10
+        ],
+        "reportedClasses": [
+          "android.widget.ImageView",
+          "android.view.View"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      },
+      {
+        "id": "E234",
+        "role": "change-entry",
+        "boundsPx": [
+          56,
+          1615,
+          1024,
+          1699
+        ],
+        "widthPx": 968,
+        "heightPx": 84,
+        "sourceNodeIndices": [
+          13
+        ],
+        "reportedClasses": [
+          "android.widget.LinearLayout"
+        ],
+        "basis": "exact reported node bounds; manually assigned anonymous role, not visible silhouette or universal design token"
+      }
+    ],
+    "labelGeometry": [
+      {
+        "id": "E215",
+        "label": "编辑资料",
+        "sourceNodeIndex": 29,
+        "boundsPx": [
+          484,
+          63,
+          596,
+          98
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E215",
+        "label": "预览",
+        "sourceNodeIndex": 31,
+        "boundsPx": [
+          1002,
+          63,
+          1052,
+          98
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E215",
+        "label": "名字",
+        "sourceNodeIndex": 41,
+        "boundsPx": [
+          56,
+          364,
+          212,
+          406
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E215",
+        "label": "小红书号",
+        "sourceNodeIndex": 48,
+        "boundsPx": [
+          56,
+          448,
+          212,
+          490
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E215",
+        "label": "背景图",
+        "sourceNodeIndex": 55,
+        "boundsPx": [
+          56,
+          546,
+          212,
+          588
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E215",
+        "label": "简介",
+        "sourceNodeIndex": 62,
+        "boundsPx": [
+          56,
+          665,
+          212,
+          707
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E215",
+        "label": "性别",
+        "sourceNodeIndex": 69,
+        "boundsPx": [
+          56,
+          770,
+          212,
+          812
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E215",
+        "label": "生日",
+        "sourceNodeIndex": 76,
+        "boundsPx": [
+          56,
+          854,
+          212,
+          896
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E215",
+        "label": "地区",
+        "sourceNodeIndex": 83,
+        "boundsPx": [
+          56,
+          938,
+          212,
+          980
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E215",
+        "label": "职业",
+        "sourceNodeIndex": 90,
+        "boundsPx": [
+          56,
+          1022,
+          212,
+          1064
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E215",
+        "label": "学校",
+        "sourceNodeIndex": 97,
+        "boundsPx": [
+          56,
+          1106,
+          212,
+          1148
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E215",
+        "label": "原创信息",
+        "sourceNodeIndex": 104,
+        "boundsPx": [
+          56,
+          1190,
+          212,
+          1232
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E215",
+        "label": "保存",
+        "sourceNodeIndex": 110,
+        "boundsPx": [
+          515,
+          1855,
+          565,
+          1887
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E222",
+        "label": "设置",
+        "sourceNodeIndex": 13,
+        "boundsPx": [
+          512,
+          42,
+          568,
+          129
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E222",
+        "label": "账号与安全",
+        "sourceNodeIndex": 23,
+        "boundsPx": [
+          123,
+          177,
+          996,
+          209
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E222",
+        "label": "通用设置",
+        "sourceNodeIndex": 34,
+        "boundsPx": [
+          123,
+          268,
+          996,
+          300
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E222",
+        "label": "通知设置",
+        "sourceNodeIndex": 45,
+        "boundsPx": [
+          123,
+          359,
+          996,
+          391
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E222",
+        "label": "隐私设置",
+        "sourceNodeIndex": 56,
+        "boundsPx": [
+          123,
+          450,
+          996,
+          482
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E222",
+        "label": "存储空间",
+        "sourceNodeIndex": 67,
+        "boundsPx": [
+          123,
+          583,
+          877,
+          615
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E222",
+        "label": "内容偏好调节",
+        "sourceNodeIndex": 79,
+        "boundsPx": [
+          123,
+          674,
+          968,
+          706
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E222",
+        "label": "添加小组件",
+        "sourceNodeIndex": 101,
+        "boundsPx": [
+          123,
+          856,
+          996,
+          888
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E222",
+        "label": "未成年人模式",
+        "sourceNodeIndex": 112,
+        "boundsPx": [
+          123,
+          947,
+          884,
+          979
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E222",
+        "label": "帮助与客服",
+        "sourceNodeIndex": 124,
+        "boundsPx": [
+          123,
+          1080,
+          996,
+          1112
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E222",
+        "label": "关于小红书",
+        "sourceNodeIndex": 135,
+        "boundsPx": [
+          123,
+          1171,
+          996,
+          1203
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E222",
+        "label": "切换账号",
+        "sourceNodeIndex": 143,
+        "boundsPx": [
+          484,
+          1304,
+          596,
+          1336
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E222",
+        "label": "退出登录",
+        "sourceNodeIndex": 148,
+        "boundsPx": [
+          484,
+          1388,
+          596,
+          1420
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E223",
+        "label": "通用设置",
+        "sourceNodeIndex": 13,
+        "boundsPx": [
+          484,
+          42,
+          596,
+          129
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E223",
+        "label": "显示",
+        "sourceNodeIndex": 17,
+        "boundsPx": [
+          56,
+          130,
+          1080,
+          155
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E223",
+        "label": "多语言",
+        "sourceNodeIndex": 21,
+        "boundsPx": [
+          56,
+          202,
+          996,
+          234
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E223",
+        "label": "字体大小",
+        "sourceNodeIndex": 27,
+        "boundsPx": [
+          56,
+          287,
+          996,
+          319
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E223",
+        "label": "使用系统默认字体",
+        "sourceNodeIndex": 33,
+        "boundsPx": [
+          56,
+          372,
+          954,
+          404
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E223",
+        "label": "深色模式",
+        "sourceNodeIndex": 39,
+        "boundsPx": [
+          56,
+          457,
+          996,
+          489
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E223",
+        "label": "功能",
+        "sourceNodeIndex": 42,
+        "boundsPx": [
+          56,
+          557,
+          1080,
+          582
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E223",
+        "label": "默认播放图文笔记声音",
+        "sourceNodeIndex": 46,
+        "boundsPx": [
+          56,
+          629,
+          954,
+          661
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E223",
+        "label": "允许自动刷新",
+        "sourceNodeIndex": 52,
+        "boundsPx": [
+          56,
+          714,
+          954,
+          746
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E223",
+        "label": "打开视频和直播时默认静音",
+        "sourceNodeIndex": 59,
+        "boundsPx": [
+          56,
+          836,
+          954,
+          868
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E223",
+        "label": "浏览记录",
+        "sourceNodeIndex": 71,
+        "boundsPx": [
+          56,
+          1006,
+          954,
+          1038
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E223",
+        "label": "其他",
+        "sourceNodeIndex": 75,
+        "boundsPx": [
+          56,
+          1143,
+          1080,
+          1168
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E223",
+        "label": "允许发布时提前上传视频",
+        "sourceNodeIndex": 79,
+        "boundsPx": [
+          56,
+          1215,
+          954,
+          1247
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E224",
+        "label": "取消",
+        "sourceNodeIndex": 8,
+        "boundsPx": [
+          28,
+          54,
+          124,
+          107
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E224",
+        "label": "字体大小",
+        "sourceNodeIndex": 9,
+        "boundsPx": [
+          484,
+          64,
+          596,
+          96
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E224",
+        "label": "保存",
+        "sourceNodeIndex": 10,
+        "boundsPx": [
+          956,
+          54,
+          1052,
+          107
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E224",
+        "label": "跟随系统设置",
+        "sourceNodeIndex": 15,
+        "boundsPx": [
+          56,
+          1604,
+          224,
+          1646
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E226",
+        "label": "深色模式",
+        "sourceNodeIndex": 13,
+        "boundsPx": [
+          484,
+          42,
+          596,
+          129
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E226",
+        "label": "跟随系统设置",
+        "sourceNodeIndex": 15,
+        "boundsPx": [
+          56,
+          172,
+          1024,
+          207
+        ],
+        "reportedClass": "android.widget.Switch"
+      },
+      {
+        "id": "E226",
+        "label": "深色模式",
+        "sourceNodeIndex": 17,
+        "boundsPx": [
+          28,
+          286,
+          1052,
+          370
+        ],
+        "reportedClass": "android.widget.Switch"
+      },
+      {
+        "id": "E229",
+        "label": "隐私设置",
+        "sourceNodeIndex": 13,
+        "boundsPx": [
+          484,
+          42,
+          596,
+          129
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E229",
+        "label": "一键防护",
+        "sourceNodeIndex": 21,
+        "boundsPx": [
+          56,
+          265,
+          968,
+          297
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E229",
+        "label": "在线状态",
+        "sourceNodeIndex": 31,
+        "boundsPx": [
+          56,
+          386,
+          912,
+          418
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E229",
+        "label": "展示聊天标识",
+        "sourceNodeIndex": 42,
+        "boundsPx": [
+          56,
+          470,
+          968,
+          502
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E229",
+        "label": "允许下载我的全部视频",
+        "sourceNodeIndex": 78,
+        "boundsPx": [
+          56,
+          806,
+          968,
+          838
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E229",
+        "label": "谁可以私信我",
+        "sourceNodeIndex": 87,
+        "boundsPx": [
+          56,
+          890,
+          912,
+          922
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E229",
+        "label": "我的收藏",
+        "sourceNodeIndex": 98,
+        "boundsPx": [
+          56,
+          974,
+          884,
+          1006
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E229",
+        "label": "找到我的方式",
+        "sourceNodeIndex": 121,
+        "boundsPx": [
+          56,
+          1272,
+          996,
+          1304
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E229",
+        "label": "关注与粉丝列表",
+        "sourceNodeIndex": 131,
+        "boundsPx": [
+          56,
+          1356,
+          996,
+          1388
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E229",
+        "label": "给我推荐可能认识的人",
+        "sourceNodeIndex": 141,
+        "boundsPx": [
+          56,
+          1440,
+          968,
+          1472
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E229",
+        "label": "个性化选项",
+        "sourceNodeIndex": 161,
+        "boundsPx": [
+          56,
+          1738,
+          996,
+          1770
+        ],
+        "reportedClass": "android.widget.TextView"
+      },
+      {
+        "id": "E229",
+        "label": "第三方数据合作",
+        "sourceNodeIndex": 171,
+        "boundsPx": [
+          56,
+          1822,
+          996,
+          1854
+        ],
+        "reportedClass": "android.widget.TextView"
+      }
+    ],
+    "appearanceControls": [
+      {
+        "id": "E224",
+        "role": "follow-system-font",
+        "sourceNodeIndex": 16,
+        "boundsPx": [
+          954,
+          1604,
+          1024,
+          1646
+        ],
+        "checked": true
+      },
+      {
+        "id": "E226",
+        "role": "follow-system-theme",
+        "sourceNodeIndex": 15,
+        "boundsPx": [
+          56,
+          172,
+          1024,
+          207
+        ],
+        "checked": true
+      },
+      {
+        "id": "E226",
+        "role": "dark-mode",
+        "sourceNodeIndex": 17,
+        "boundsPx": [
+          28,
+          286,
+          1052,
+          370
+        ],
+        "checked": true
+      }
+    ]
+  },
+  "limits": [
+    "截图与层级按顺序采集，不是原子快照。",
+    "XML边界不是精确可见图形轮廓。",
+    "标签几何只列白名单匹配项，不代表完整页面清单。",
+    "账号资料和隐私开关值不导出。",
+    "未记录触摸持续反向或物理触感，录屏只作完整性校验。"
+  ]
+}
