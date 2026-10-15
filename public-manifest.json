@@ -20,18 +20,18 @@
     },
     {
       "file": "CHANGELOG.md",
-      "bytes": 10044,
-      "sha256": "8ef523ecf3918ab37aa5092461400a81af79b86c8ecbc4a8a5969f49b6ba6fed"
+      "bytes": 10867,
+      "sha256": "ffb39b1827e9da3576947a2a3a0b340e4b98410b486e933431ea0e0e442be11e"
     },
     {
       "file": "PUBLICATION.md",
-      "bytes": 5126,
-      "sha256": "99923054be39b1b073039cc5e51c9971f176f3c0f580df0ac597b7685060de21"
+      "bytes": 5553,
+      "sha256": "c44a353921a58e23a43f689c726780d283f24ed80e5f1558e14b68a7dd4fcf7e"
     },
     {
       "file": "README.md",
-      "bytes": 10876,
-      "sha256": "a070b06c80b10f50ae67d2c1132ff60488722ce51cbde3c3abb5d77db05ad266"
+      "bytes": 11500,
+      "sha256": "83648e473d383147f76efff0614fdd4a5268c161528e1e1b5ff3c680ce43f5f1"
     },
     {
       "file": "docs/00-阅读入口与进度.md",
@@ -95,13 +95,23 @@
     },
     {
       "file": "docs/新版研究/06-实测覆盖与待补测.md",
-      "bytes": 8941,
-      "sha256": "710dab5d2f1f1db20d6aeeef0bb7ab525e7988505b2aa835512c86839028d15f"
+      "bytes": 9027,
+      "sha256": "e80ed2db078f1c7e9eab669eae1685e25aaf15bdbe982310f10e27fd54172985"
     },
     {
       "file": "docs/新版研究/07-证据与交付校验.md",
       "bytes": 5172,
       "sha256": "b324e776ecaec2e2da7c778579f7b2965ee1a062469010f1cc41f3f5156a9372"
+    },
+    {
+      "file": "docs/新版研究/08-9.49.1静态对照.json",
+      "bytes": 3072,
+      "sha256": "3a120a66a41a6b7e687759adb52e65c71a1ef58013aec465cbd4ac6845aaa0ad"
+    },
+    {
+      "file": "docs/新版研究/08-9.49.1静态对照.md",
+      "bytes": 7717,
+      "sha256": "097f9001630ee92d04d6cbbc69a5c198e73c758b66867ac44eb21b388dc77012"
     },
     {
       "file": "docs/新版研究/交互证据/index.json",
@@ -445,8 +455,8 @@
     },
     {
       "file": "docs/深度研究/00-深度研究阅读入口.md",
-      "bytes": 5680,
-      "sha256": "d5fbf0a67f928d79d8330125253316057149986448cc991e8ac5afffb77419b1"
+      "bytes": 6135,
+      "sha256": "ffc5c1bde3b0941123788c88b7b4f1f4255001862e7a881aab832ba97219eb9b"
     },
     {
       "file": "docs/深度研究/01-复刻参数与验收.md",
@@ -4271,7 +4281,7 @@
     {
       "file": "provenance.json",
       "bytes": 157466,
-      "sha256": "98b75e6f680e8fb85293f5fad861bfac9627768acc1f26e92d1ec815e5b2fafd"
+      "sha256": "3c6c6b2ee799e34484f91ac60babb5a1866a748ad7e9e0b6464ad862a883f4ba"
     },
     {
       "file": "tools/verify.mjs",

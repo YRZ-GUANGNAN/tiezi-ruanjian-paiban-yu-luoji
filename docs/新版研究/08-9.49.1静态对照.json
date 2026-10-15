@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "title": "9.49.1个人页、设置与背景图静态对照",
+  "scope": "脱敏公开摘要；不含APK、反编译原文、原始路径、截图、录像或账号内容。",
+  "runtimeBoundary": {
+    "observedVersion": "8.72.0",
+    "comparedVersion": "9.49.1",
+    "newVersionRuntimeObserved": false
+  },
+  "artifacts": [
+    {
+      "version": "8.72.0",
+      "versionCode": "8720916",
+      "package": "com.xingin.xhs",
+      "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+    },
+    {
+      "version": "9.49.1",
+      "package": "com.xingin.xhs",
+      "sha256": "d22b4e7c776ec59ae80aa4a4e30e306ca1bcc2a5744c35e4a7702428c05178a3"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "status": "confirmed-static",
+      "statement": "ProfileBannerImagePreviewActivityV2 在两版均存在；不能称为9.49.1新增。",
+      "evidence": ["O001", "O004", "N308", "N341", "N344"]
+    },
+    {
+      "id": "F02",
+      "status": "confirmed-static",
+      "statement": "FileChoosingParamsV2 在两版均存在，均包含 maxSelectCnt；9.49.1 的 materialType 显示类型为 qpd.a，旧版为 f49.a。",
+      "evidence": ["O002", "O003", "N311", "N336", "N343"]
+    },
+    {
+      "id": "F03",
+      "status": "confirmed-static",
+      "statement": "两版 Image 类摘要都包含 maxCount、maxWidth、maxHeight、quality、clipShape；9.49.1 方法 d(int) 写入 maxCount。",
+      "evidence": ["PB039", "PB041", "N337", "N338", "N339", "N340"]
+    },
+    {
+      "id": "F04",
+      "status": "confirmed-static",
+      "statement": "9.49.1 仍保留旧 ProfileBannerImagePreviewActivity、ProfileBannerImagePreviewFragment 和 ProfileUploader。",
+      "evidence": ["N301", "N302", "N303", "N342", "N347"]
+    },
+    {
+      "id": "F05",
+      "status": "confirmed-static-difference",
+      "statement": "9.49.1 的 V2 createLinker 反编译体显式创建视图、依赖与事件/回调组装；8.72.0 对应体是简化的视图/linker构造。",
+      "evidence": ["O004", "N344"]
+    },
+    {
+      "id": "F06",
+      "status": "partial-static-chain",
+      "statement": "旧背景链仍可见 banner_image 跨平台数据回写与 ProfileUploader 结果/错误回调槽位；服务器保存成功和新版实际执行未知。",
+      "evidence": ["N320", "N323", "PB028", "PB030", "PB033", "PB043"]
+    },
+    {
+      "id": "F07",
+      "status": "runtime-unknown",
+      "statement": "9.49.1 真机入口、权限弹窗、相册空态、裁剪手感、上传进度、保存刷新和动画时长均未在本轮运行观察。",
+      "evidence": ["N341", "N342", "N344", "N346"]
+    }
+  ],
+  "limitations": [
+    "静态 JADX 结果不是运行时观察。",
+    "混淆方法名不能跨版本直接按同名对应。",
+    "incoming-reference 搜索不覆盖反射、动态加载或运行时路由。",
+    "构造字面量与字段槽位不等于实际输出像素、裁剪框或已选择媒体。",
+    "Evidence ID 指向本地原始记录；公开仓库不包含原始 Evidence。"
+  ]
+}
