@@ -30,8 +30,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 11500,
-      "sha256": "83648e473d383147f76efff0614fdd4a5268c161528e1e1b5ff3c680ce43f5f1"
+      "bytes": 11758,
+      "sha256": "5f4ff57d88d771f8ab3327676438e8bf6dd60e22eb58d7443da39e7017f1f196"
     },
     {
       "file": "docs/00-阅读入口与进度.md",
@@ -2887,6 +2887,16 @@
       "file": "docs/离线补全/第二轮/evidence/W111-image-bean-height.json",
       "bytes": 14575,
       "sha256": "20bf102beac81609b783b4409463774611136ab565b20239cf715b85b3481f72"
+    },
+    {
+      "file": "docs/离线补全/第十一轮/00-安装包静态手势与动效.md",
+      "bytes": 10742,
+      "sha256": "fae601dd41a5b01bd704bc3cbaa805cc6532b4c983e5c27ae748f1bc22519074"
+    },
+    {
+      "file": "docs/离线补全/第十一轮/证据索引.json",
+      "bytes": 2648,
+      "sha256": "ada96ef99dcda850c8d2dde46f54a5b7bad3c3b916c2e90558b322bc303b8cd3"
     },
     {
       "file": "docs/离线补全/第四轮/00-本轮结果.md",

@@ -1,0 +1,16 @@
+{
+  "title": "第十一轮安装包静态手势与动效证据索引",
+  "scope": "脱敏派生索引；原始 APK、JADX 输出和资源文件仅保留在本地",
+  "artifacts": [
+    {"version": "8.72.0", "versionCode": "8720916", "sha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5", "authority": "shipped-artifact"},
+    {"version": "9.49.1", "versionCode": "9491803", "sha256": "d22b4e7c776ec59ae80aa4a4e30e306ca1bcc2a5744c35e4a7702428c05178a3", "authority": "shipped-artifact"}
+  ],
+  "claims": [
+    {"id": "drag-exit-snap", "evidence": ["ev_6e7b3d68446e3773954aa542f0b4499514ac88249e00d5fb9b3bce2b82f944a6", "ev_0ef171c6dc858d6387ef4fc1e317cd96b902985f398466b93cba636fa39dd96c", "ev_01544adb94f063ded696db339888b087b0b7462e51ac045976cdd0975d98b024", "ev_eaf5ab3050efd7ac1c55b09151913ca7c0f94cc149f5427b7c8d98fb5d17876c"]},
+    {"id": "comment-nested-handoff", "evidence": ["ev_a86a579fe884fd1b21c271fac7549df6e161c2569521e24896259ccd20ca3bef", "ev_227a2d9e3814f7d0e49c09060bcb14f0430014cf662e07a4d558b5d6d2939b71", "ev_ddd6f305ef7dd7ba8e3b2ea9d41cf7a6e2a2872d6829f91490b8dfd2f0889080", "ev_4c382403a55fd8350fafee154099c866f63626e31ddecf3303bf33c44f174679", "ev_07def295f026a436239664a36f043aadfa32db212c6e0a240f08bac715e6c31a", "ev_ac06f559ba19fe96ae29419bea760262f44ab2925f65009c1d7de33cf209708a", "ev_5764837204260a302fe1ba1e4560042bfee2b7b3bfa29097993d59e0b00629cf"]},
+    {"id": "comment-dismiss", "evidence": ["ev_63b242a5c0cb8390f2baccc7dd98859b0012b6512a29b37e1a6834afa2a3ec1a", "ev_5cb6297800223da1b371249c3770323bcab3a9ee927b06b2751ae86697a411b1", "ev_945173d84252c4e0d73a12a375a050b1e788416910bf62b8a928c5dbb1632dcc"]},
+    {"id": "swipe-back", "evidence": ["ev_a6f2e8126dba3c024e258db21c99f2756b013e158201c591f2d5f11e8b01d43e", "ev_e305f06675a41641c1f7717e654d1c0db7041dea0c45e9869965c3467f0dd88e", "ev_b8c5b16fe16b5ce7893d12c4591fc8f775f691a0644c06afc9222c934fb483a4", "ev_875569194c7c385d6d2e3b45c4af70b3f56d69d659ff260e765d3e7070a53120", "ev_3d88c636df40c2af13cf54898b583331b80b5b8d91c3be2ef4ef58aa81a9e5cd", "ev_dc28630afc06d44f7dc229d71b8f11a36626db7da0aa33a2212f222e878b03d1", "ev_843ed3be097c3c5d33d199807c2de66f97b6c250198af1769b6959f7e1d0780d"]},
+    {"id": "resource-diff", "authority": "artifact-bytes", "source": "local-derived-animation-index", "summary": {"allJsonAssets": {"8.72.0": 230, "9.49.1": 1129}, "diff": {"added": 158, "changed": 4, "removed": 8}, "lottieSubset": {"8.72.0": 93, "9.49.1": 146}}}
+  ],
+  "boundaries": ["静态结果不是运行观察", "资源时间轴不是手机耗时", "9.49.1 未在魅族21运行", "PatchProxy、实验配置和反射调用未完全恢复"]
+}
