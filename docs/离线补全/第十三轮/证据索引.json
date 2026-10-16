@@ -1,0 +1,56 @@
+{
+  "round": "第十三轮",
+  "title": "9.49.1 私信与聊天静态对照",
+  "updated": "2026-10-16",
+  "authority": "shipped-artifact",
+  "runtime": false,
+  "target": {
+    "package": "com.xingin.xhs",
+    "versionName": "9.49.1",
+    "apkSha256": "d22b4e7c776ec59ae80aa4a4e30e306ca1bcc2a5744c35e4a7702428c05178a3"
+  },
+  "comparison": {
+    "baselineVersion": "8.72.0",
+    "baselineReport": "docs/离线补全/第十二轮/00-私信与聊天静态研究.md",
+    "baselineApkSha256": "44b2c6ee8247d4f21ef58974bfe3f4f18318b5918ff01857b18d84827d2f05a5"
+  },
+  "evidence": [
+    {"id":"ev_50f645da51dbcdeeb5a4b6998fd4e11b569e15ff9e3d17739821cbc46c554c51","source":"class","class":"com.xingin.im.ui.activity.ChatActivity","note":"新版主聊天 Activity 类级索引"},
+    {"id":"ev_0c14fae1168cf10e2a58cf0ca512a011fa9173458add2cb04f288e368b8beb5d","source":"class","class":"com.xingin.im.v2.message.MessagePageFragment","note":"新版消息首页 Fragment"},
+    {"id":"ev_5268c2321eec7973b3ded616f8796ce503c00aa491ac88108ad3f73b4056f62c","source":"class","class":"com.xingin.im.v2.message.MessagePageView","note":"新版消息首页 View"},
+    {"id":"ev_a56a663e5767007fb9ebab07ed3632039790dc146786b8905a649f57c2205cf2","source":"class","class":"com.xingin.im.v2.message.send.MsgPrivateSendActivity","note":"新版私信分享/转发 Activity"},
+    {"id":"ev_7a4365bd8834c5f9c8cd0a2a802cfc4e653b93d09b0347321b87fc150fb5828f","source":"class","class":"com.xingin.im.ui.message.msgcenter.MsgCenterActivity","note":"新版消息中心 Activity"},
+    {"id":"ev_229a68113876b80c210902d07c2870a0068e6cb249c2ff93597f3e438ca465f4","source":"class","class":"com.xingin.im.ui.message.msgcenter.service.MsgCenterServices","note":"新版消息中心服务接口"},
+    {"id":"ev_f0c9051d17ef61d4b2b130b62feffe1865a94953af1c723a153ac87dde481407","source":"class","class":"com.xingin.im.ui.message.notificationV2.repo.MessageServiceV2","note":"新版通知服务接口"},
+    {"id":"ev_3219131e31a76ab8d1b06d3f4d2acc255a0e4ede361fcfbfd2eb3e0ca44d7ecd","source":"class","class":"com.xingin.chatbase.hedwig.database.HedwigDatabase","note":"Hedwig 数据库类"},
+    {"id":"ev_896c39a4cd5ded9cb08486e762abf192be2b3d8f89c78f58b16a5c9cecfbc15b","source":"class","class":"com.xingin.chatbase.hedwig.database.ConversationDao_Impl","note":"Hedwig 会话 DAO 实现"},
+    {"id":"ev_93f4db3f56da525c81642d58e6d7810b917e7d77dc2a76d6e758629a5b999d11","source":"class","class":"com.xingin.chatbase.manager.MsgUnreadService","note":"新版未读服务"},
+    {"id":"ev_86ce5c77ddd82e0e316ae7c0bc606f1fd42143c1bc6510c5420f1eefd07d08bb","source":"class","class":"com.xingin.chatbase.bean.MsgDSLBean","note":"DSL 消息数据结构候选"},
+    {"id":"ev_ebb9461023698d996b49f3e8ec2e4b375a4042beef4a9541090ee41097b692bd","source":"class","class":"com.xingin.chatbase.bean.VoiceConvertInfo","note":"语音转文字信息候选"},
+    {"id":"ev_3d0f4beab9acabdf87bdb949189db0a93a18e3194935b2d031d73d4bde73b2d6","source":"class","class":"com.xingin.entities.chat.MessageBubble","note":"消息气泡结构候选"},
+    {"id":"ev_276ec35e8a67d91058360973af1ca78d8854cbe76ee9ba9d6c381da2e23462ed","source":"class","class":"com.xingin.entities.chat.ChatWarningBean","note":"聊天风险提示结构候选"},
+    {"id":"ev_d02b020025cfa648bf004b77f5d8de62d7cacf746f7035ccbf27c2303971892e","source":"class","class":"com.xingin.im.pet.v2.chat.page.PetChatActivity","note":"宠物聊天页面候选"},
+    {"id":"ev_f924b0b5d4f61707fa5691e4f9c9c35cb79000f9aeea6c4fbf9b7d0e2030992b","source":"class","class":"com.xingin.im.pet.v2.chat.item.PetChatTextViewHolder","note":"宠物聊天文本 holder 候选"},
+    {"id":"ev_6c08e8c42fd0de8ec3431128a64a8c7cda8873b385496479daa86aa8239dd2b","source":"class","class":"com.xingin.im.v2.message.search.repo.MessageSearchService","note":"新版消息搜索服务"},
+    {"id":"ev_ed93485420df178fdecfd6fb451a7b25b02e19f313bf738ee477c727fd55baf0","source":"method","class":"com.xingin.im.ui.message.msgcenter.service.MsgCenterServices","method":"loadCommentData","note":"签名存在但未提供方法体"},
+    {"id":"ev_56e9c16e41ab25a08c567243f8db985a477ae083560ee3d9578ccfef6a0b06a5","source":"method","class":"com.xingin.im.ui.message.msgcenter.service.MsgCenterServices","method":"loadCollectData","note":"签名存在但未提供方法体"},
+    {"id":"ev_56bea6677f5b0dbdd5745f5611c3bdd826ce89651051a7326053fb2394dd17c6","source":"method","class":"com.xingin.im.ui.message.msgcenter.service.MsgCenterServices","method":"updateCommentData","note":"评论/提及更新接口声明"},
+    {"id":"ev_c819927e79c697958f5e734c82c380090c21100fee00151f0969e6a83d4185c6","source":"method","class":"com.xingin.im.ui.message.notificationV2.repo.MessageServiceV2","method":"updateNotificationStatus","note":"通知曝光上报接口声明"},
+    {"id":"ev_a25a17415f90b276661714a594b7e2210043be422b48fa0d43aad5502cb5cbd0","source":"method","class":"com.xingin.chatbase.hedwig.database.ConversationDao_Impl","method":"a","note":"会话按亲密度排序并 LIMIT/OFFSET 分页"},
+    {"id":"ev_cf05ad581facfb43bdf08615a9b103310d4cddd3ab62698c3e98b05c24246278","source":"method","class":"com.xingin.chatbase.hedwig.database.ConversationDao_Impl","method":"b","note":"会话批量插入事务"},
+    {"id":"ev_5252845803520c201a36ba83451c37a7a7aecd661a75a552b81e9194c422dddd","source":"method","class":"com.xingin.chatbase.hedwig.database.ConversationDao_Impl","method":"e","note":"按会话 ID 集合过滤并按亲密度排序"},
+    {"id":"ev_248438832137fb59bf002a6cd4d124ebec71f4ab409a60e5890c0c1f215472df","source":"method","class":"com.xingin.chatbase.manager.MsgUnreadService","method":"getServerUnreadCount","note":"全局服务器未读签名，未提供方法体"},
+    {"id":"ev_f743d90e4df62923e1bd37580c25f98cc72102f032abef32d8bcacedeb3fd83d","source":"method","class":"com.xingin.chatbase.manager.MsgUnreadService","method":"setChatUnread","note":"设置单聊未读字段与路径"},
+    {"id":"ev_9eb427c0ddf09bc944b9eb907b3376acb1fb3eb4cec133e717e06792aa80f723","source":"method","class":"com.xingin.im.v2.message.search.repo.MessageSearchService","method":"searchAllMessages","note":"全量搜索签名，未提供方法体"},
+    {"id":"ev_fd9cb360113049cccfb09f050d4cc3d4e1ef5a14939822bf0e805490f7ce8843","source":"method","class":"com.xingin.im.v2.message.search.repo.MessageSearchService","method":"searchOneMessage","note":"单条搜索接口声明"},
+    {"id":"ev_4992b0fd99436de080e2969f85e46b0e0c5c6a00f6d6b23e20994a9108ce9840","source":"method","class":"com.xingin.im.ui.message.msgcenter.actions.MsgCenterMuteUpdater","method":"updateModel","note":"第一个重载，无可用方法体"},
+    {"id":"ev_76443233bc42dfd06e7805ffe92af357dc711c786d35cefab9fe3721c70e401b","source":"method","class":"com.xingin.im.ui.message.msgcenter.actions.MsgCenterMuteUpdater","method":"updateModel","note":"第二个重载把 muteInfo 布尔值写为 false"},
+    {"id":"ev_7dd8ae996ffe9ae081b305e87a3e53ff1a417c626e50ad5ad6ac0f6cdb6b4514","source":"method","class":"com.xingin.im.pet.v2.chat.page.PetChatActivity","method":"ta","note":"消息状态、file_path 与 duration 分支"}
+  ],
+  "limitations": [
+    "9.49.1 本轮未运行，类名、签名、SQL 和方法体均为静态观察。",
+    "不把新增类名当作运行时新增功能，不把接口声明当作已发出的网络请求。",
+    "混淆、PatchProxy、反射、动态路由、服务端灰度和字段语义仍有未知。",
+    "公开仓库不含 APK、完整反编译文本、原始 UI XML、未裁切录像、私信正文、联系人或头像原图。"
+  ]
+}
